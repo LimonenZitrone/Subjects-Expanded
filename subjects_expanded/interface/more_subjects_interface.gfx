@@ -1,0 +1,67 @@
+spriteTypes = {
+	#Subject Icons
+	spriteType = {
+		name = "GFX_icon_protectorate"
+		texturefile = "gfx/interface/icon_protectorate.dds"
+	}
+	spriteType = {
+		name = "GFX_diplomacy_leadprotectorate"
+		texturefile = "gfx//interface//icon_diplomacy_leadprotectorate.dds"
+	}
+	spriteType = {
+		name = "GFX_diplomacy_amprotectorate"
+		texturefile = "gfx//interface//icon_diplomacy_amprotectorate.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_icon_puppet"
+		texturefile = "gfx/interface/icon_puppet.dds"
+	}
+	spriteType = {
+		name = "GFX_diplomacy_leadpuppet"
+		texturefile = "gfx//interface//icon_diplomacy_leadpuppet.dds"
+	}
+	spriteType = {
+		name = "GFX_diplomacy_ampuppet"
+		texturefile = "gfx//interface//icon_diplomacy_ampuppet.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_icon_autonomous_dominion"
+		texturefile = "gfx/interface/icon_autonomous_dominion.dds"
+	}
+	spriteType = {
+		name = "GFX_diplomacy_leadautonomous_dominion"
+		texturefile = "gfx//interface//icon_diplomacy_leadautonomous_dominion.dds"
+	}
+	spriteType = {
+		name = "GFX_diplomacy_amautonomous_dominion"
+		texturefile = "gfx//interface//icon_diplomacy_amautonomous_dominion.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_icon_roman_client_kingdom"
+		texturefile = "gfx/interface/icon_roman_client_kingdom.dds"
+	}
+	spriteType = {
+		name = "GFX_diplomacy_leadroman_client_kingdom"
+		texturefile = "gfx//interface//icon_diplomacy_leadroman_client_kingdom.dds"
+	}
+	spriteType = {
+		name = "GFX_diplomacy_amroman_client_kingdom"
+		texturefile = "gfx//interface//icon_diplomacy_amroman_client_kingdom.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_icon_voivodeship"
+		texturefile = "gfx/interface/icon_voivodeship.dds"
+	}
+	spriteType = {
+		name = "GFX_diplomacy_leadvoivodeship"
+		texturefile = "gfx//interface//icon_diplomacy_leadvoivodeship.dds"
+	}
+	spriteType = {
+		name = "GFX_diplomacy_amvoivodeship"
+		texturefile = "gfx//interface//icon_diplomacy_amvoivodeship.dds"
+	}
+}

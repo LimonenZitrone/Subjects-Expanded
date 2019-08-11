@@ -1,0 +1,196 @@
+is_possible_subject_of_subject_type_vassal = {
+	NOT = { is_subject_of_type = vassal }
+	is_possible_vassal = yes
+}
+
+is_possible_subject_of_subject_type_march = {
+	NOT = { is_subject_of_type = march }
+	is_possible_march = yes
+}
+
+is_possible_subject_of_subject_type_daimyo_vassal = {
+	NOT = { is_subject_of_type = daimyo_vassal }
+}
+
+is_possible_subject_of_subject_type_personal_union = {
+	is_subject = no
+}
+
+is_possible_subject_of_subject_type_client_vassal = {
+	NOT = { is_subject_of_type = client_vassal }
+}
+
+is_possible_subject_of_subject_type_client_march = {
+	NOT = { is_subject_of_type = client_march }
+}
+
+is_possible_subject_of_subject_type_colony = {
+	NOT = { is_subject_of_type = colony }
+}
+
+is_possible_subject_of_subject_type_tributary_state = {
+	has_dlc = "Mandate of Heaven"
+	NOT = { is_subject_of_type = tributary_state }
+}
+
+is_possible_subject_of_subject_type_protectorate = {
+	# PREVs in THIS scope refer to possible overlord
+	is_subject = no
+	NOT = { technology_group = western }
+	NOT = { technology_group = eastern }
+	NOT = { technology_group = roman_group }
+	NOT = { technology_group = muslim }
+	PREV = {
+		NOT = { same_continent = PREV }
+	}
+	is_nomad = no
+	OR = {
+		PREV = { institution_difference = { who = PREV value = 3 } }
+		# THIS is at least 9 techs behind PREV
+		variable_arithmetic_trigger = {
+			export_to_variable = {
+				which = our_adm_tech_level
+				value = trigger_value:adm_tech
+			}
+			export_to_variable = {
+				which = our_dip_tech_level
+				value = trigger_value:dip_tech
+			}
+			export_to_variable = {
+				which = our_mil_tech_level
+				value = trigger_value:mil_tech
+			}
+			export_to_variable = {
+				which = their_adm_tech_level
+				value = trigger_value:adm_tech
+				who = PREV
+			}
+			export_to_variable = {
+				which = their_dip_tech_level
+				value = trigger_value:dip_tech
+				who = PREV
+			}
+			export_to_variable = {
+				which = their_mil_tech_level
+				value = trigger_value:mil_tech
+				who = PREV
+			}
+			export_to_variable = {
+				which = our_total_tech_level
+				value = 0
+			}
+			export_to_variable = {
+				which = their_total_tech_level
+				value = 0
+			}
+			change_variable = { which = our_total_tech_level which = our_adm_tech_level }
+			change_variable = { which = our_total_tech_level which = our_dip_tech_level }
+			change_variable = { which = our_total_tech_level which = our_mil_tech_level }
+			change_variable = { which = their_total_tech_level which = their_adm_tech_level }
+			change_variable = { which = their_total_tech_level which = their_dip_tech_level }
+			change_variable = { which = their_total_tech_level which = their_mil_tech_level }
+			change_variable = { which = their_total_tech_level value = -9 }
+			
+			check_variable = { which = their_total_tech_level which = our_total_tech_level }
+		}
+	}
+	# Capital in Trade Range of possible Overlord has to be checked additionally
+}
+
+is_possible_subject_of_subject_type_puppet_state = {
+	# PREVs in THIS scope refer to possible overlord
+	OR = {
+		is_subject = no
+		AND = {
+			is_subject_of = PREV
+			is_subject_of_type = client_vassal
+		}
+	}
+	is_nomad = no
+	is_tribal = no
+	primitives = no
+	is_great_power = no
+	OR = {
+		war_with = PREV
+		is_subject_of = PREV
+		has_opinion_modifier = {
+			modifier = released_in_peace
+			who = PREV
+		}
+	}
+	OR = {
+		is_year = 1700
+		current_age = age_of_absolutism
+		PREV = {
+			has_casus_belli = { type = cb_imperial target = PREV }
+		}
+	}
+	# Capital in Trade Range of possible Overlord has to be checked additionally
+}
+
+is_possible_subject_of_subject_type_autonomous_dominion = {
+	# PREVs in THIS scope refer to possible overlord
+	NOT = { is_subject_of_type = autonomous_dominion }
+	OR = {
+		AND = {
+			is_subject_of = PREV
+			is_subject_of_type = colony
+			total_development = 450
+		}
+		PREV = {
+			OR = {
+				is_year = 1700
+				current_age = age_of_absolutism
+				has_country_modifier = can_create_autonomous_dominion_in_west_india
+				has_country_modifier = can_create_autonomous_dominion_in_east_india
+				has_country_modifier = can_create_autonomous_dominion_in_north_india
+				has_country_modifier = can_create_autonomous_dominion_in_south_india
+				has_country_modifier = can_create_autonomous_dominion_in_coromandel
+				has_country_modifier = can_create_autonomous_dominion_in_indonesia
+				has_country_modifier = can_create_autonomous_dominion_in_moluccas
+				has_country_modifier = can_create_autonomous_dominion_in_west_africa
+				has_country_modifier = can_create_autonomous_dominion_in_east_africa
+				has_country_modifier = can_create_autonomous_dominion_in_south_africa
+				has_country_modifier = can_create_autonomous_dominion_in_indochina
+				AND = {
+					ai = no
+					OR = {
+						has_dlc = "Wealth of Nations"
+						has_dlc = "Dharma"
+					}
+					capital_scope = {
+						is_node_in_trade_company_region = no
+					}
+					any_owned_province = {
+						is_node_in_trade_company_region = yes
+					}
+				}
+			}
+		}
+	}
+	# Capital in Trade Range of possible Overlord has to be checked additionally
+}
+
+is_possible_subject_of_subject_type_roman_client_kingdom = {
+	NOT = { is_subject_of_type = roman_client_kingdom }
+	OR = {
+		government = monarchy
+		war_with = PREV
+	}
+}
+
+is_possible_subject_of_subject_type_voivodeship = {
+	NOT = { is_subject_of_type = voivodeship }
+	vassal_of = PREV
+	is_neighbor_of = PREV
+}
+
+can_create_subject_type = {
+	can_be_overlord = $subject_type$
+	$subject$ = {
+		custom_trigger_tooltip = {
+			tooltip = IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_$subject_type$
+			is_possible_subject_of_subject_type_$subject_type$ = yes
+		}
+	}
+}

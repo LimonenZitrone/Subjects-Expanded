@@ -1,0 +1,250 @@
+# Audax Validator "!" Ignore_1009
+# Copied from "Extended Timeline"
+
+government = tribal_despotism
+#aristocracy_plutocracy = -2
+#centralization_decentralization = 4
+#innovative_narrowminded = 2
+#mercantilism_freetrade = -4
+mercantilism = 0.1
+#offensive_defensive = 0
+#land_naval = -2
+#quality_quantity = 3
+#serfdom_freesubjects = -3
+primary_culture = bambara
+religion = shamanism
+technology_group = sub_saharan
+capital = 2308	# Koumbi Saleh
+
+350.1.1 = {
+	monarch = {
+		name = "Kaya Magha"
+		dynasty = "Cisse"
+		adm = 4
+		dip = 3
+		mil = 1
+	}
+}
+
+450.1.1 = {
+	monarch = {
+		name = "(regency council)"
+		adm = 2
+		mil = 2
+		dip = 2
+		regent = yes
+	}
+}
+
+790.1.1 = {
+	monarch = {
+		name = "Mayan Dyabe"
+		dynasty = "Cisse"
+		adm = 1
+		dip = 2
+		mil = 3
+	}
+}
+
+890.1.1 = {
+	monarch = {
+		name = "(regency council)"
+		adm = 2
+		mil = 2
+		dip = 2
+		regent = yes
+	}
+}
+
+1000.1.1 = {
+	monarch = {
+		name = "Bassi"
+		dynasty = "Cisse"
+		adm = 1
+		mil = 3
+		dip = 5
+	}
+}
+
+1147.1.1 = {
+	monarch = {
+		name = "Soumaba"
+		dynasty = "Cisse"
+		adm = 4
+		dip = 3
+		mil = 1
+	}
+}
+
+1950.1.1 = { 
+	government = constitutional_republic 
+	religion = secularism
+	primary_culture = aka
+	technology_group = muslim
+	capital = 1139 #Accra
+}
+
+1957.3.6 = {
+	monarch = {
+		name = "Charles Arden-Clarke"
+		birth_date = 1898.7.25
+		adm = 2
+		dip = 3
+		mil = 2
+		religion = protestant
+	}
+}
+
+1957.6.24 = {
+	monarch = {
+		name = "William Francis Hare"
+		birth_date = 1906.9.28
+		adm = 2
+		dip = 2
+		mil = 3
+		religion = protestant
+	}
+}
+
+1960.7.1 = {
+	monarch = {
+		name = "Kwame Nkurumah"
+		birth_date = 1909.9.21
+		adm = 2
+		dip = 4
+		mil = 3
+		religion = protestant
+	}
+}
+
+1966.2.24 = {
+	monarch = {
+		name = "Joseph Ankrah"
+		birth_date = 1915.8.18
+		adm = 4
+		dip = 2
+		mil = 3
+		religion = protestant
+	}
+}
+
+1969.4.2 = {
+	monarch = {
+		name = "Akwasi Afrifa"
+		birth_date = 1936.4.24
+		adm = 3
+		dip = 2
+		mil = 3
+		religion = protestant
+	}
+}
+
+1970.8.31 = {
+	monarch = {
+		name = "Edward Akufo-Addo"
+		birth_date = 1906.6.26
+		adm = 2
+		dip = 4
+		mil = 3
+		religion = protestant
+	}
+}
+
+1972.1.13 = {
+	monarch = {
+		name = "Ignatius Acheampong"
+		birth_date = 1931.9.23
+		adm = 4
+		dip = 5
+		mil = 2
+		religion = protestant
+	}
+}
+
+1978.7.5 = {
+	monarch = {
+		name = "Fred Akuffo"
+		birth_date = 1937.3.21
+		adm = 2
+		dip = 3
+		mil = 2
+		religion = protestant
+	}
+}
+
+1979.7.4 = {
+	monarch = {
+		name = "Jerry Rawlings"
+		birth_date = 1947.6.22
+		adm = 4
+		dip = 2
+		mil = 3
+		religion = protestant
+	}
+}
+
+1979.9.24 = {
+	monarch = {
+		name = "Hilla Limann"
+		birth_date = 1934.12.12
+		adm = 2
+		dip = 4
+		mil = 3
+		religion = protestant
+	}
+}
+
+1981.12.31 = {
+	monarch = {
+		name = "Jerry Rawlings"
+		birth_date = 1947.6.22
+		adm = 4
+		dip = 2
+		mil = 3
+		religion = protestant
+	}
+}
+
+2001.1.7 = {
+	monarch = {
+		name = "John Kufuor"
+		birth_date = 1938.12.8
+		adm = 4
+		dip = 2
+		mil = 3
+		religion = protestant
+	}
+}
+
+2009.1.7 = {
+	monarch = {
+		name = "John Atta Mills"
+		birth_date = 1944.7.21
+		adm = 2
+		dip = 4
+		mil = 3
+		religion = protestant
+	}
+}
+
+2012.7.24 = {
+	monarch = {
+		name = "John Mahama"
+		birth_date = 1958.11.29
+		adm = 3
+		dip = 4
+		mil = 3
+		religion = protestant
+	}
+}
+
+2017.1.7 = {
+	monarch = {
+		name = "Nana Akufo-Addo"
+		birth_date = 1944.3.29
+		adm = 4
+		dip = 2
+		mil = 3
+		religion = protestant
+	}
+}

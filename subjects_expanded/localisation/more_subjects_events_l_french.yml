@@ -1,0 +1,66 @@
+﻿l_french:
+ more_subjects_protectorate_events.EVTNAME2: "Independence granted!"
+ more_subjects_protectorate_events.EVTDESC2: "Our former overlord [From.GetName] decided to grant us independence. But this also means that they could attack as again..."
+ more_subjects_protectorate_events2.EVTOPT1: "All right."
+ 
+ more_subjects_protectorate_events.EVTNAME3: "Independence!"
+ more_subjects_protectorate_events.EVTDESC3: "Our overlord §Y[Root.Overlord.GetName]§! has betrayed us and decided to not help us in our defensive war! Thereby they have shown themselves as unworthy to be our overlord any longer."
+ more_subjects_protectorate_events3.EVTOPT1: "All right."
+  
+ more_subjects_puppet_state_events.EVTNAME2: "Independence granted!"
+ more_subjects_puppet_state_events.EVTDESC2: "Our former overlord [From.GetName] decided to grant us independence. But this also means that they could attack us again, after the truce expired..."
+ more_subjects_puppet_state_events2.EVTOPT1: "All right."
+ 
+ more_subjects_autonomous_dominion_events.EVTNAME3: "Autonomous Dominion receives provinces"
+ more_subjects_autonomous_dominion_events.EVTDESC3: "Because we own provinces in Indian trade company regions, which are not connected to our capital and we have an autonomous dominion in these regions, we decided to cede those provinces to our autonomous dominion in India. All in all we will give them §R[Root.num_of_provinces_ceded_to_autonomous_dominion_india.GetValue]§! provinces."
+ more_subjects_autonomous_dominion_events3.EVTOPT1: "All right."
+ 
+ more_subjects_autonomous_dominion_events.EVTNAME4: "Autonomous Dominion receives provinces"
+ more_subjects_autonomous_dominion_events.EVTDESC4: "Because we own provinces in East Indian / Indonesian trade company regions, which are not connected to our capital and we have an autonomous dominion in these regions, we decided to cede those provinces to our autonomous dominion in the East Indies / Indonesia. All in all we will give them §R[Root.num_of_provinces_ceded_to_autonomous_dominion_east_indies.GetValue]§! provinces."
+ more_subjects_autonomous_dominion_events4.EVTOPT1: "All right."
+ 
+ more_subjects_autonomous_dominion_events.EVTNAME5: "Autonomous Dominion receives provinces"
+ more_subjects_autonomous_dominion_events.EVTDESC5: "Because we own provinces in Indochinese trade company regions, which are not connected to our capital and we have an autonomous dominion in these regions, we decided to cede those provinces to our autonomous dominion in Indochina. All in all we will give them §R[Root.num_of_provinces_ceded_to_autonomous_dominion_indochina.GetValue]§! provinces."
+ more_subjects_autonomous_dominion_events5.EVTOPT1: "All right."
+ 
+ more_subjects_autonomous_dominion_events.EVTNAME6: "Autonomous Dominion receives provinces"
+ more_subjects_autonomous_dominion_events.EVTDESC6: "Because we own provinces in West African trade company regions, which are not connected to our capital and we have an autonomous dominion in these regions, we decided to cede those provinces to our autonomous dominion in West Africa. All in all we will give them §R[Root.num_of_provinces_ceded_to_autonomous_dominion_west_africa.GetValue]§! provinces."
+ more_subjects_autonomous_dominion_events6.EVTOPT1: "All right."
+ 
+ more_subjects_autonomous_dominion_events.EVTNAME7: "Autonomous Dominion receives provinces"
+ more_subjects_autonomous_dominion_events.EVTDESC7: "Because we own provinces in East African trade company regions, which are not connected to our capital and we have an autonomous dominion in these regions, we decided to cede those provinces to our autonomous dominion in East Africa. All in all we will give them §R[Root.num_of_provinces_ceded_to_autonomous_dominion_east_africa.GetValue]§! provinces."
+ more_subjects_autonomous_dominion_events7.EVTOPT1: "All right."
+ 
+ more_subjects_autonomous_dominion_events.EVTNAME8: "Autonomous Dominion receives provinces"
+ more_subjects_autonomous_dominion_events.EVTDESC8: "Because we own provinces in South African trade company regions, which are not connected to our capital and we have an autonomous dominion in these regions, we decided to cede those provinces to our autonomous dominion in South Africa. All in all we will give them §R[Root.num_of_provinces_ceded_to_autonomous_dominion_south_africa.GetValue]§! provinces."
+ more_subjects_autonomous_dominion_events8.EVTOPT1: "All right."
+ 
+ more_subjects_autonomous_dominion_events.EVTNAME9: "[Root.Overlord.GetName] reduced our development"
+ more_subjects_autonomous_dominion_events.EVTDESC9: "Our overlord §Y[Root.Overlord.GetName]§! reduced our total development to gain money, manpower and sailors. This increased our liberty desire by §G30%§!."
+ more_subjects_autonomous_dominion_events9.EVTOPT1: "Interessant..."
+ 
+ more_subjects_roman_client_kingdom_events.EVTNAME1: "Roman Client Kingdom"
+ more_subjects_roman_client_kingdom_events.EVTDESC1: "We lost the war against [From.GetName]. They made us to their Roman Client Kingdom and sentenced our ruler [Root.Monarch.GetName] [Root.Monarch.Dynasty.GetName] to death because of his resistance."
+ more_subjects_roman_client_kingdom_events1.EVTOPT1: "Damn!"
+ 
+ more_subjects_roman_client_kingdom_events.EVTNAME2: "New heir in §Y[From.GetName]§!"
+ more_subjects_roman_client_kingdom_events.EVTDESC2: "Our Roman Client Kingdom [From.GetName] has received a new heir to their throne. Because they are subject to us, we have to acknowledge his status as heir, so that he is the rightful inheritor of [From.Monarch.GetName]. \nShall we accept the [From.GetAdjective] heir?"
+ more_subjects_roman_client_kingdom_events2.EVTOPT1: "Do NOT acknowledge [From.Heir.GetName] as the rightful heir."
+ more_subjects_roman_client_kingdom_events2.EVTOPT2: "Acknowledge [From.Heir.GetName] as the rightful heir."
+ 
+ more_subjects_roman_client_kingdom_events.EVTNAME4: "Demand additional tribute from §Y[From.GetName]§!"
+ more_subjects_roman_client_kingdom_events.EVTDESC4: "We can demand tribute additonal to their monthly taxes from our Roman Client Kingdoms. We can demand money (one [From.GetAdjective] year of income), manpower (once the [From.GetAdjective] yearly manpower) or monarch power (once the yearly amount of monarch power that is generated by their ruler)."
+ more_subjects_roman_client_kingdom_events4.EVTOPT1: "Demand additional tribute in form of ¤."
+ more_subjects_roman_client_kingdom_events4.EVTOPT2: "Demand additional tribute in form of £icon_manpower£."
+ more_subjects_roman_client_kingdom_events4.EVTOPT3: "Demand additional tribute in form of £adm£, £dip£ and £mil£."
+ more_subjects_roman_client_kingdom_events4.EVTOPT4: "[From.GetIfCanNotReceiveAdditionalTributeOrCancel]."
+ 
+ more_subjects_roman_client_kingdom_events.EVTNAME6: "Heir not acknowledged"
+ more_subjects_roman_client_kingdom_events.EVTDESC6: "Our overlord [From.GetName] did not acknowledge the legitimacy of our heir! Without their approval we do not have any other possibility than waiting for a new heir..."
+ more_subjects_roman_client_kingdom_events6.EVTOPT1: "I can't believe this..."
+ 
+ more_subjects_voivodeship_events.EVTNAME1: "The [SIL.GetAdjective] Voivodeship"
+ more_subjects_voivodeship_events.EVTDESC1: "[SIL.GetName] is a vassal of our personal union [BOH.GetName]. However they are rightful [Root.GetAdjective] territory, so we might want to think about making them a voivodeship."
+ more_subjects_voivodeship_events1.EVTOPT1: "They shall become a voivodeship."
+ more_subjects_voivodeship_events1.EVTOPT2: "They can keep them as a vassal."
+ 

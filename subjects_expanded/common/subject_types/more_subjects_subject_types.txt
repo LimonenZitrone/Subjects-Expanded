@@ -1,0 +1,1132 @@
+protectorate = {
+	copy_from = default
+	
+	# Graphics:
+	sprite = GFX_icon_protectorate
+	diplomacy_overlord_sprite = GFX_diplomacy_leadprotectorate # The one that the overlord sees
+	diplomacy_subject_sprite = GFX_diplomacy_amprotectorate	# The one that the subject sees
+	
+	# Triggers:
+	is_potential_overlord = {
+		is_subject = no
+		tech_difference = -2
+		OR = {
+			technology_group = western
+			technology_group = eastern
+			technology_group = roman_group
+			technology_group = muslim
+		}
+	}
+	
+	can_be_established = {
+		FROM = {
+			ROOT = {
+				is_possible_subject_of_subject_type_protectorate = yes
+			}
+		}
+		capital_scope = { trade_range = FROM }
+	}
+	
+	# Properties:
+	transfer_trade_power = yes
+	joins_overlords_wars = no
+	joins_colonial_wars = yes
+	overlord_can_attack = no
+	overlord_can_be_subject = no
+	can_have_subjects_of_other_types = yes
+	takes_diplo_slot = no
+	has_power_projection = yes
+	can_release_in_peace = yes
+	uses_military_focus = no
+	overlord_protects_external = yes
+	counts_for_borders = no							# Whether distance between borders counts this subject type as part of its overlord's borders.
+	can_use_claims = no								# Whether the overlord can use the subject's claims and cores for declaring war
+	share_rebel_popup = no								# Whether the Overlord gets popups about Subject's rebels and sees them in Stability View.
+	allows_taking_land_without_independence = yes
+	can_transfer_in_peace = no							# Whether this subject type can be made into a vassal with the "Transfer Subject" Age Ability.
+	can_set_mil_focus = no
+	can_send_missionary_to_subject = no				# Requires Cradle of Civilization
+	
+	max_government_rank = 0								# 0 means no limit
+	cities_required_for_bonuses = 25						# How many cities the subject needs before giving bonuses to overlord
+	trust_on_start = 5									# Overlord and subject will each get this much extra trust with each other at game start
+
+	base_liberty_desire = 0.0
+	liberty_desire_negative_prestige = 0.0
+	liberty_desire_development_ratio = 0.1
+	liberty_desire_same_dynasty = 0.0
+	pays_overlord = 0.0									# 1.0 represents the amount payed by vassals
+	forcelimit_bonus = 0.0								# 1.0 represents bonus from having a vassal
+	military_focus = 0.5								# How much the AI subject should spend etc. on army and forts. 0 should make them spend nothing. Very high values will probably not make a big difference since there will be sanity checks.
+
+	relative_power_class = 0 							# See description above
+	diplomacy_view_class = 1							# See description above
+
+	can_fight = {
+		independent_nations = yes
+		other_overlord = all
+	}
+	can_rival = {
+		independent_nations = yes
+		other_overlord = all
+	}
+	can_ally = {
+		same_overlord = all
+	}
+	can_marry = {
+		independent_nations = yes
+		same_overlord = all
+		other_overlord = all
+	}
+
+	# Subject Interactions:
+	# (continuous)
+	embargo_rivals = no
+	divert_trade = yes
+	# (immediate)
+	siphon_income = yes
+	bestow_gifts = yes
+
+	# Modifiers:
+	modifier_subject = clear # Use this to clear after copy_from.
+	modifier_subject = {
+		modifier = protectorate_modifier
+	}
+	modifier_subject = {
+		trigger = {
+			FROM = {
+				institution_difference = { who = ROOT value = 3 }
+			}
+		}
+		modifier = protectorate_institution_modifier_3
+	}
+	modifier_subject = {
+		trigger = {
+			FROM = {
+				institution_difference = { who = ROOT value = 2 }
+			}
+			NOT = {
+				FROM = {
+					institution_difference = { who = ROOT value = 3 }
+				}
+			}
+		}
+		modifier = protectorate_institution_modifier_2
+	}
+	modifier_subject = {
+		trigger = {
+			FROM = {
+				institution_difference = { who = ROOT value = 1 }
+			}
+			NOT = {
+				FROM = {
+					institution_difference = { who = ROOT value = 2 }
+				}
+			}
+		}
+		modifier = protectorate_institution_modifier_1
+	}
+	modifier_subject = {
+		trigger = {
+			NOT = { adm_tech = FROM }
+		}
+		modifier = protectorate_adm_tech_modifier
+	}
+	modifier_subject = {
+		trigger = {
+			NOT = { dip_tech = FROM }
+		}
+		modifier = protectorate_dip_tech_modifier
+	}
+	modifier_subject = {
+		trigger = {
+			NOT = { mil_tech = FROM }
+		}
+		modifier = protectorate_mil_tech_modifier
+	}
+	modifier_subject = {
+		trigger = {
+			adm_tech = FROM
+			FROM = { adm_tech = ROOT }
+		}
+		modifier = protectorate_adm_liberty_desire_modifier
+	}
+	modifier_subject = {
+		trigger = {
+			dip_tech = FROM
+			FROM = { dip_tech = ROOT }
+		}
+		modifier = protectorate_dip_liberty_desire_modifier
+	}
+	modifier_subject = {
+		trigger = {
+			mil_tech = FROM
+			FROM = { mil_tech = ROOT }
+		}
+		modifier = protectorate_mil_liberty_desire_modifier
+	}
+	modifier_subject = {
+		trigger = {
+			FROM = { NOT = { adm_tech = ROOT } }
+		}
+		modifier = protectorate_advanced_adm_liberty_desire_modifier
+	}
+	modifier_subject = {
+		trigger = {
+			FROM = { NOT = { dip_tech = ROOT } }
+		}
+		modifier = protectorate_advanced_dip_liberty_desire_modifier
+	}
+	modifier_subject = {
+		trigger = {
+			FROM = { NOT = { mil_tech = ROOT } }
+		}
+		modifier = protectorate_advanced_mil_liberty_desire_modifier
+	}
+	
+	modifier_overlord = clear
+	
+	modifier_overlord = {
+		modifier = large_colonial_nation
+		trigger = {
+			num_of_cities = 25
+		}
+	}
+
+	overlord_opinion_modifier = is_protectorate # If not "null" it will look for a modifier with that name in 00_opinion_modifiers.txt and other files in that directory.
+	subject_opinion_modifier = is_protectorate
+}
+
+puppet_state = {
+	copy_from = default
+	count = vassal
+	
+	# Graphics:
+	sprite = GFX_icon_puppet
+	diplomacy_overlord_sprite = GFX_diplomacy_leadpuppet # The one that the overlord sees
+	diplomacy_subject_sprite = GFX_diplomacy_ampuppet	# The one that the subject sees
+
+	# Triggers:
+	is_potential_overlord = {
+		is_subject = no
+		is_nomad = no
+		is_tribal = no
+		primitives = no
+		legitimacy_equivalent = 50
+		total_development = 300
+	}
+	can_be_established = {
+		FROM = {
+			ROOT = {
+				is_possible_subject_of_subject_type_puppet_state = yes
+			}
+		}
+		capital_scope = { trade_range = FROM }
+		NOT = { total_development = 300 }
+	}
+	
+	# Properties:
+	can_be_annexed = yes
+	forcelimit_to_overlord = 0.2
+	has_power_projection = no
+	can_transfer_in_peace = no							# Whether this subject type can be made into a vassal with the "Transfer Subject" Age Ability.
+	
+	max_government_rank = 1								# 0 means no limit
+	cities_required_for_bonuses = 0						# How many cities the subject needs before giving bonuses to overlord
+	trust_on_start = 35									# Overlord and subject will each get this much extra trust with each other at game start
+
+	base_liberty_desire = -15.0
+	liberty_desire_development_ratio = 0.2
+	forcelimit_bonus = 1.0								# 1.0 represents bonus from having a vassal
+	military_focus = 1.0								# How much the AI subject should spend etc. on army and forts. 0 should make them spend nothing. Very high values will probably not make a big difference since there will be sanity checks.
+
+	relative_power_class = 2 							# See description above
+	diplomacy_view_class = 1							# See description above
+
+	can_rival = {
+		other_overlord = puppet_state
+	}
+
+	# Subject Interactions:
+	# (continuous)
+	support_loyalists = yes
+	subsidize_armies = yes
+	# (immediate)
+	placate_rulers = yes
+	replace_governor = yes
+	fortify_march = yes
+	seize_territory = yes
+	send_additional_troops = yes
+
+	# Modifiers:
+	modifier_subject = {
+		modifier = puppet_state_modifier
+		trigger = {
+			NOT = {
+				development_of_overlord_fraction = 0.33
+			}
+		}
+	}
+	modifier_subject = {
+		modifier = puppet_state_overlord_has_parliament_modifier
+		trigger = {
+			FROM = {
+				government = monarchy
+				has_parliament = yes
+			}
+		}
+	}
+	
+	modifier_overlord = clear
+	modifier_overlord = {
+		modifier = puppet_state_overlord_modifier
+	}
+
+	overlord_opinion_modifier = is_puppet_state # If not "null" it will look for a modifier with that name in 00_opinion_modifiers.txt and other files in that directory.
+	subject_opinion_modifier = is_puppet_state
+}
+
+autonomous_dominion = {
+	copy_from = default
+	count = colony
+	
+	# Graphics:
+	sprite = GFX_icon_autonomous_dominion
+	diplomacy_overlord_sprite = GFX_diplomacy_leadautonomous_dominion
+	diplomacy_subject_sprite = GFX_diplomacy_amautonomous_dominion
+	
+	# Triggers:
+	is_potential_overlord = {
+		OR = {
+			is_year = 1700
+			current_age = age_of_absolutism
+			has_country_modifier = can_create_autonomous_dominion_in_west_india
+			has_country_modifier = can_create_autonomous_dominion_in_east_india
+			has_country_modifier = can_create_autonomous_dominion_in_north_india
+			has_country_modifier = can_create_autonomous_dominion_in_south_india
+			has_country_modifier = can_create_autonomous_dominion_in_coromandel
+			has_country_modifier = can_create_autonomous_dominion_in_indonesia
+			has_country_modifier = can_create_autonomous_dominion_in_moluccas
+			has_country_modifier = can_create_autonomous_dominion_in_west_africa
+			has_country_modifier = can_create_autonomous_dominion_in_east_africa
+			has_country_modifier = can_create_autonomous_dominion_in_south_africa
+			has_country_modifier = can_create_autonomous_dominion_in_indochina
+			AND = {
+				ai = no
+				OR = {
+					has_dlc = "Wealth of Nations"
+					has_dlc = "Dharma"
+				}
+				capital_scope = {
+					is_node_in_trade_company_region = no
+				}
+				any_owned_province = {
+					is_node_in_trade_company_region = yes
+				}
+			}
+		}
+	}
+	can_be_established = {
+		FROM = {
+			ROOT = {
+				is_possible_subject_of_subject_type_autonomous_dominion = yes
+			}
+		}
+		capital_scope = { trade_range = FROM }
+	}
+
+	# Properties:
+	transfer_trade_power = yes
+	can_release_and_play = yes
+	uses_tariffs = no
+	eats_overlords_colonies = yes
+	has_colonial_parent = yes
+	overlord_can_attack = no
+	overlord_can_be_subject = yes
+	takes_diplo_slot = no
+	can_release_in_peace = yes
+	dynamically_created_during_history = yes
+	overlord_enforce_peace_attacking = yes
+	can_transfer_in_peace = no
+	press_sailors = yes
+	forcelimit_bonus = 1.0
+	
+	liberty_desire_development_ratio = 0.075
+
+	max_government_rank = 1
+	cities_required_for_bonuses = 10
+
+	relative_power_class = 0
+	
+	can_fight = {
+		other_overlord = autonomous_dominion
+		neighboring_primitives = yes
+		colonial_region_nations = yes
+	}
+	can_rival = {
+		other_overlord = autonomous_dominion
+		neighboring_primitives = yes
+		colonial_region_nations = yes
+	}
+	can_ally = {
+		neighboring_primitives = yes
+	}
+	
+	# Subject Interactions:
+	start_colonial_war = no
+	increase_tariffs = no
+	decrease_tariffs = no
+	customize_subject = yes
+	replace_governor = yes
+	
+	# Modifiers:
+	modifier_subject = {
+		trigger = {
+			NOT = { has_dlc = "Wealth of Nations" }
+			capital_scope = {
+				is_node_in_trade_company_region = yes
+			}
+		}
+		modifier = autonomous_dominion_trade_company_modifier
+	}
+	
+	modifier_overlord = {
+		modifier = large_colonial_nation
+		trigger = {
+			num_of_cities = 10
+		}
+	}
+	
+	modifier_overlord = {
+		trigger = {
+			NOT = { has_dlc = "Wealth of Nations" }
+			capital_scope = {
+				is_node_in_trade_company_region = yes
+			}
+			num_of_cities = 1
+		}
+		modifier = autonomous_dominion_overlord_trade_company_modifier_1
+	}
+	
+	modifier_overlord = {
+		trigger = {
+			NOT = { has_dlc = "Wealth of Nations" }
+			capital_scope = {
+				is_node_in_trade_company_region = yes
+			}
+			num_of_cities = 2
+		}
+		modifier = autonomous_dominion_overlord_trade_company_modifier_2
+	}
+	
+	modifier_overlord = {
+		trigger = {
+			NOT = { has_dlc = "Wealth of Nations" }
+			capital_scope = {
+				is_node_in_trade_company_region = yes
+			}
+			num_of_cities = 3
+		}
+		modifier = autonomous_dominion_overlord_trade_company_modifier_3
+	}
+	
+	modifier_overlord = {
+		trigger = {
+			NOT = { has_dlc = "Wealth of Nations" }
+			capital_scope = {
+				is_node_in_trade_company_region = yes
+			}
+			num_of_cities = 4
+		}
+		modifier = autonomous_dominion_overlord_trade_company_modifier_4
+	}
+	
+	modifier_overlord = {
+		trigger = {
+			NOT = { has_dlc = "Wealth of Nations" }
+			capital_scope = {
+				is_node_in_trade_company_region = yes
+			}
+			num_of_cities = 5
+		}
+		modifier = autonomous_dominion_overlord_trade_company_modifier_5
+	}
+	
+	modifier_overlord = {
+		trigger = {
+			NOT = { has_dlc = "Wealth of Nations" }
+			capital_scope = {
+				is_node_in_trade_company_region = yes
+			}
+			num_of_cities = 6
+		}
+		modifier = autonomous_dominion_overlord_trade_company_modifier_6
+	}
+	
+	modifier_overlord = {
+		trigger = {
+			NOT = { has_dlc = "Wealth of Nations" }
+			capital_scope = {
+				is_node_in_trade_company_region = yes
+			}
+			num_of_cities = 7
+		}
+		modifier = autonomous_dominion_overlord_trade_company_modifier_7
+	}
+	
+	modifier_overlord = {
+		trigger = {
+			NOT = { has_dlc = "Wealth of Nations" }
+			capital_scope = {
+				is_node_in_trade_company_region = yes
+			}
+			num_of_cities = 8
+		}
+		modifier = autonomous_dominion_overlord_trade_company_modifier_8
+	}
+	
+	modifier_overlord = {
+		trigger = {
+			NOT = { has_dlc = "Wealth of Nations" }
+			capital_scope = {
+				is_node_in_trade_company_region = yes
+			}
+			num_of_cities = 9
+		}
+		modifier = autonomous_dominion_overlord_trade_company_modifier_9
+	}
+	
+	modifier_overlord = {
+		trigger = {
+			NOT = { has_dlc = "Wealth of Nations" }
+			capital_scope = {
+				is_node_in_trade_company_region = yes
+			}
+			num_of_cities = 10
+		}
+		modifier = autonomous_dominion_overlord_trade_company_modifier_10
+	}
+	
+	modifier_overlord = {
+		trigger = {
+			NOT = { has_dlc = "Wealth of Nations" }
+			capital_scope = {
+				is_node_in_trade_company_region = yes
+			}
+			num_of_cities = 11
+		}
+		modifier = autonomous_dominion_overlord_trade_company_modifier_11
+	}
+	
+	modifier_overlord = {
+		trigger = {
+			NOT = { has_dlc = "Wealth of Nations" }
+			capital_scope = {
+				is_node_in_trade_company_region = yes
+			}
+			num_of_cities = 12
+		}
+		modifier = autonomous_dominion_overlord_trade_company_modifier_12
+	}
+	
+	modifier_overlord = {
+		trigger = {
+			NOT = { has_dlc = "Wealth of Nations" }
+			capital_scope = {
+				is_node_in_trade_company_region = yes
+			}
+			num_of_cities = 13
+		}
+		modifier = autonomous_dominion_overlord_trade_company_modifier_13
+	}
+	
+	modifier_overlord = {
+		trigger = {
+			NOT = { has_dlc = "Wealth of Nations" }
+			capital_scope = {
+				is_node_in_trade_company_region = yes
+			}
+			num_of_cities = 14
+		}
+		modifier = autonomous_dominion_overlord_trade_company_modifier_14
+	}
+	
+	modifier_overlord = {
+		trigger = {
+			NOT = { has_dlc = "Wealth of Nations" }
+			capital_scope = {
+				is_node_in_trade_company_region = yes
+			}
+			num_of_cities = 15
+		}
+		modifier = autonomous_dominion_overlord_trade_company_modifier_15
+	}
+	
+	modifier_overlord = {
+		trigger = {
+			NOT = { has_dlc = "Wealth of Nations" }
+			capital_scope = {
+				is_node_in_trade_company_region = yes
+			}
+			num_of_cities = 16
+		}
+		modifier = autonomous_dominion_overlord_trade_company_modifier_16
+	}
+	
+	modifier_overlord = {
+		trigger = {
+			NOT = { has_dlc = "Wealth of Nations" }
+			capital_scope = {
+				is_node_in_trade_company_region = yes
+			}
+			num_of_cities = 17
+		}
+		modifier = autonomous_dominion_overlord_trade_company_modifier_17
+	}
+	
+	modifier_overlord = {
+		trigger = {
+			NOT = { has_dlc = "Wealth of Nations" }
+			capital_scope = {
+				is_node_in_trade_company_region = yes
+			}
+			num_of_cities = 18
+		}
+		modifier = autonomous_dominion_overlord_trade_company_modifier_18
+	}
+	
+	modifier_overlord = {
+		trigger = {
+			NOT = { has_dlc = "Wealth of Nations" }
+			capital_scope = {
+				is_node_in_trade_company_region = yes
+			}
+			num_of_cities = 19
+		}
+		modifier = autonomous_dominion_overlord_trade_company_modifier_19
+	}
+	
+	modifier_overlord = {
+		trigger = {
+			NOT = { has_dlc = "Wealth of Nations" }
+			capital_scope = {
+				is_node_in_trade_company_region = yes
+			}
+			num_of_cities = 20
+		}
+		modifier = autonomous_dominion_overlord_trade_company_modifier_20
+	}
+	
+	modifier_overlord = {
+		trigger = {
+			NOT = { has_dlc = "Wealth of Nations" }
+			capital_scope = {
+				is_node_in_trade_company_region = yes
+			}
+			num_of_cities = 21
+		}
+		modifier = autonomous_dominion_overlord_trade_company_modifier_21
+	}
+	
+	modifier_overlord = {
+		trigger = {
+			NOT = { has_dlc = "Wealth of Nations" }
+			capital_scope = {
+				is_node_in_trade_company_region = yes
+			}
+			num_of_cities = 22
+		}
+		modifier = autonomous_dominion_overlord_trade_company_modifier_22
+	}
+	
+	modifier_overlord = {
+		trigger = {
+			NOT = { has_dlc = "Wealth of Nations" }
+			capital_scope = {
+				is_node_in_trade_company_region = yes
+			}
+			num_of_cities = 23
+		}
+		modifier = autonomous_dominion_overlord_trade_company_modifier_23
+	}
+	
+	modifier_overlord = {
+		trigger = {
+			NOT = { has_dlc = "Wealth of Nations" }
+			capital_scope = {
+				is_node_in_trade_company_region = yes
+			}
+			num_of_cities = 24
+		}
+		modifier = autonomous_dominion_overlord_trade_company_modifier_24
+	}
+	
+	modifier_overlord = {
+		trigger = {
+			NOT = { has_dlc = "Wealth of Nations" }
+			capital_scope = {
+				is_node_in_trade_company_region = yes
+			}
+			num_of_cities = 25
+		}
+		modifier = autonomous_dominion_overlord_trade_company_modifier_25
+	}
+	
+	modifier_overlord = {
+		trigger = {
+			NOT = { has_dlc = "Wealth of Nations" }
+			capital_scope = {
+				is_node_in_trade_company_region = yes
+			}
+			num_of_cities = 26
+		}
+		modifier = autonomous_dominion_overlord_trade_company_modifier_26
+	}
+	
+	modifier_overlord = {
+		trigger = {
+			NOT = { has_dlc = "Wealth of Nations" }
+			capital_scope = {
+				is_node_in_trade_company_region = yes
+			}
+			num_of_cities = 27
+		}
+		modifier = autonomous_dominion_overlord_trade_company_modifier_27
+	}
+	
+	modifier_overlord = {
+		trigger = {
+			NOT = { has_dlc = "Wealth of Nations" }
+			capital_scope = {
+				is_node_in_trade_company_region = yes
+			}
+			num_of_cities = 28
+		}
+		modifier = autonomous_dominion_overlord_trade_company_modifier_28
+	}
+	
+	modifier_overlord = {
+		trigger = {
+			NOT = { has_dlc = "Wealth of Nations" }
+			capital_scope = {
+				is_node_in_trade_company_region = yes
+			}
+			num_of_cities = 29
+		}
+		modifier = autonomous_dominion_overlord_trade_company_modifier_29
+	}
+	
+	modifier_overlord = {
+		trigger = {
+			NOT = { has_dlc = "Wealth of Nations" }
+			capital_scope = {
+				is_node_in_trade_company_region = yes
+			}
+			num_of_cities = 30
+		}
+		modifier = autonomous_dominion_overlord_trade_company_modifier_30
+	}
+	
+	modifier_overlord = {
+		trigger = {
+			NOT = { has_dlc = "Wealth of Nations" }
+			capital_scope = {
+				is_node_in_trade_company_region = yes
+			}
+			num_of_cities = 31
+		}
+		modifier = autonomous_dominion_overlord_trade_company_modifier_31
+	}
+	
+	modifier_overlord = {
+		trigger = {
+			NOT = { has_dlc = "Wealth of Nations" }
+			capital_scope = {
+				is_node_in_trade_company_region = yes
+			}
+			num_of_cities = 32
+		}
+		modifier = autonomous_dominion_overlord_trade_company_modifier_32
+	}
+	
+	modifier_overlord = {
+		trigger = {
+			NOT = { has_dlc = "Wealth of Nations" }
+			capital_scope = {
+				is_node_in_trade_company_region = yes
+			}
+			num_of_cities = 33
+		}
+		modifier = autonomous_dominion_overlord_trade_company_modifier_33
+	}
+	
+	modifier_overlord = {
+		trigger = {
+			NOT = { has_dlc = "Wealth of Nations" }
+			capital_scope = {
+				is_node_in_trade_company_region = yes
+			}
+			num_of_cities = 34
+		}
+		modifier = autonomous_dominion_overlord_trade_company_modifier_34
+	}
+	
+	modifier_overlord = {
+		trigger = {
+			NOT = { has_dlc = "Wealth of Nations" }
+			capital_scope = {
+				is_node_in_trade_company_region = yes
+			}
+			num_of_cities = 35
+		}
+		modifier = autonomous_dominion_overlord_trade_company_modifier_35
+	}
+	
+	modifier_overlord = {
+		trigger = {
+			NOT = { has_dlc = "Wealth of Nations" }
+			capital_scope = {
+				is_node_in_trade_company_region = yes
+			}
+			num_of_cities = 36
+		}
+		modifier = autonomous_dominion_overlord_trade_company_modifier_36
+	}
+	
+	modifier_overlord = {
+		trigger = {
+			NOT = { has_dlc = "Wealth of Nations" }
+			capital_scope = {
+				is_node_in_trade_company_region = yes
+			}
+			num_of_cities = 37
+		}
+		modifier = autonomous_dominion_overlord_trade_company_modifier_37
+	}
+	
+	modifier_overlord = {
+		trigger = {
+			NOT = { has_dlc = "Wealth of Nations" }
+			capital_scope = {
+				is_node_in_trade_company_region = yes
+			}
+			num_of_cities = 38
+		}
+		modifier = autonomous_dominion_overlord_trade_company_modifier_38
+	}
+	
+	modifier_overlord = {
+		trigger = {
+			NOT = { has_dlc = "Wealth of Nations" }
+			capital_scope = {
+				is_node_in_trade_company_region = yes
+			}
+			num_of_cities = 39
+		}
+		modifier = autonomous_dominion_overlord_trade_company_modifier_39
+	}
+	
+	modifier_overlord = {
+		trigger = {
+			NOT = { has_dlc = "Wealth of Nations" }
+			capital_scope = {
+				is_node_in_trade_company_region = yes
+			}
+			num_of_cities = 40
+		}
+		modifier = autonomous_dominion_overlord_trade_company_modifier_40
+	}
+	
+	modifier_overlord = {
+		trigger = {
+			NOT = { has_dlc = "Wealth of Nations" }
+			capital_scope = {
+				is_node_in_trade_company_region = yes
+			}
+			num_of_cities = 41
+		}
+		modifier = autonomous_dominion_overlord_trade_company_modifier_41
+	}
+	
+	modifier_overlord = {
+		trigger = {
+			NOT = { has_dlc = "Wealth of Nations" }
+			capital_scope = {
+				is_node_in_trade_company_region = yes
+			}
+			num_of_cities = 42
+		}
+		modifier = autonomous_dominion_overlord_trade_company_modifier_42
+	}
+	
+	modifier_overlord = {
+		trigger = {
+			NOT = { has_dlc = "Wealth of Nations" }
+			capital_scope = {
+				is_node_in_trade_company_region = yes
+			}
+			num_of_cities = 43
+		}
+		modifier = autonomous_dominion_overlord_trade_company_modifier_43
+	}
+	
+	modifier_overlord = {
+		trigger = {
+			NOT = { has_dlc = "Wealth of Nations" }
+			capital_scope = {
+				is_node_in_trade_company_region = yes
+			}
+			num_of_cities = 44
+		}
+		modifier = autonomous_dominion_overlord_trade_company_modifier_44
+	}
+	
+	modifier_overlord = {
+		trigger = {
+			NOT = { has_dlc = "Wealth of Nations" }
+			capital_scope = {
+				is_node_in_trade_company_region = yes
+			}
+			num_of_cities = 45
+		}
+		modifier = autonomous_dominion_overlord_trade_company_modifier_45
+	}
+	
+	modifier_overlord = {
+		trigger = {
+			NOT = { has_dlc = "Wealth of Nations" }
+			capital_scope = {
+				is_node_in_trade_company_region = yes
+			}
+			num_of_cities = 46
+		}
+		modifier = autonomous_dominion_overlord_trade_company_modifier_46
+	}
+	
+	modifier_overlord = {
+		trigger = {
+			NOT = { has_dlc = "Wealth of Nations" }
+			capital_scope = {
+				is_node_in_trade_company_region = yes
+			}
+			num_of_cities = 47
+		}
+		modifier = autonomous_dominion_overlord_trade_company_modifier_47
+	}
+	
+	modifier_overlord = {
+		trigger = {
+			NOT = { has_dlc = "Wealth of Nations" }
+			capital_scope = {
+				is_node_in_trade_company_region = yes
+			}
+			num_of_cities = 48
+		}
+		modifier = autonomous_dominion_overlord_trade_company_modifier_48
+	}
+	
+	modifier_overlord = {
+		trigger = {
+			NOT = { has_dlc = "Wealth of Nations" }
+			capital_scope = {
+				is_node_in_trade_company_region = yes
+			}
+			num_of_cities = 49
+		}
+		modifier = autonomous_dominion_overlord_trade_company_modifier_49
+	}
+	
+	modifier_overlord = {
+		trigger = {
+			NOT = { has_dlc = "Wealth of Nations" }
+			capital_scope = {
+				is_node_in_trade_company_region = yes
+			}
+			num_of_cities = 50
+		}
+		modifier = autonomous_dominion_overlord_trade_company_modifier_50
+	}
+
+	overlord_opinion_modifier = is_autonomous_dominion
+	subject_opinion_modifier = is_autonomous_dominion
+}
+
+roman_client_kingdom = {
+	copy_from = default
+	count = vassal
+	
+	# Graphics:
+	sprite = GFX_icon_roman_client_kingdom
+	diplomacy_overlord_sprite = GFX_diplomacy_leadroman_client_kingdom # The one that the overlord sees
+	diplomacy_subject_sprite = GFX_diplomacy_amroman_client_kingdom	# The one that the subject sees
+
+	# Triggers:
+	is_potential_overlord = {
+		OR = {
+			tag = ROM
+			tag = ROW
+			tag = BYZ
+		}
+		NOT = { has_reform = salic_reform }
+	}
+	
+	can_be_established = {
+		FROM = {
+			ROOT = {
+				is_possible_subject_of_subject_type_roman_client_kingdom = yes
+			}
+		}
+	}
+	
+	# Properties:
+	can_be_annexed = yes
+	takes_diplo_slot = yes
+	overlord_enforce_peace_attacking = yes				# Whether the overlord can enforce peace on the subject's enemy even when the subject is the attacker
+	gets_help_with_rebels = yes							# Only for AI. Bidirectional.
+	allows_taking_land_without_independence = no
+	
+	max_government_rank = 2								# 0 means no limit
+	
+	base_liberty_desire = -10.0
+	liberty_desire_development_ratio = 0.25
+	liberty_desire_same_dynasty = -5.0
+	pays_overlord = 2.0									# 1.0 represents the amount payed by vassals
+	forcelimit_bonus = 1.0								# 1.0 represents bonus from having a vassal
+	military_focus = 1.0								# How much the AI subject should spend etc. on army and forts. 0 should make them spend nothing. Very high values will probably not make a big difference since there will be sanity checks.
+
+	relative_power_class = 2 							# See description above
+	diplomacy_view_class = 1							# See description above
+
+	can_fight = {
+		neighboring_primitives = yes
+		other_overlord = all
+	}
+	can_rival = {
+		other_overlord = all
+		independent_nations = yes
+	}
+	can_ally = {
+		same_overlord = roman_client_kingdom
+	}
+	can_marry = {
+		overlord = yes
+		same_overlord = roman_client_kingdom
+	}
+	
+	restoration_cb = cb_disloyal_vassal
+
+	# Subject Interactions:
+	# (continuous)
+	support_loyalists = yes
+	# (immediate)
+	enforce_culture = yes
+	seize_territory = yes
+
+	# Modifiers:
+	modifier_subject = {
+		modifier = roman_client_kingdom_modifier
+	}
+	modifier_overlord = {
+		modifier = roman_client_kingdom_overlord_modifier
+	}
+	modifier_overlord = {
+		trigger = {
+			any_neighbor_country = {
+				OR = {
+					is_rival = FROM
+					is_enemy = FROM
+				}
+			}
+		}
+		modifier = roman_client_kingdom_no_dip_upkeep_cost_modifier
+	}
+	modifier_overlord = {
+		trigger = {
+			FROM = {
+				NOT = { num_of_colonists = 1 }
+			}
+		}
+		modifier = roman_client_kingdom_extra_range_modifier
+	}
+
+	overlord_opinion_modifier = is_roman_client_kingdom # If not "null" it will look for a modifier with that name in 00_opinion_modifiers.txt and other files in that directory.
+	subject_opinion_modifier = is_roman_client_kingdom
+}
+
+voivodeship = {
+	copy_from = default
+	count = vassal
+	
+	# Graphics:
+	sprite = GFX_icon_voivodeship
+	diplomacy_overlord_sprite = GFX_diplomacy_leadvoivodeship # The one that the overlord sees
+	diplomacy_subject_sprite = GFX_diplomacy_amvoivodeship	# The one that the subject sees
+
+	# Triggers:
+	is_potential_overlord = {
+		OR = {
+			tag = POL
+			tag = PLC
+		}
+		is_subject = no
+	}
+	can_be_established = {
+		FROM = {
+			ROOT = {
+				is_possible_subject_of_subject_type_voivodeship = yes
+			}
+		}
+	}
+	
+	# Properties:
+	can_be_annexed = yes
+	forcelimit_to_overlord = 0.2
+	has_power_projection = no
+	can_transfer_in_peace = no							# Whether this subject type can be made into a vassal with the "Transfer Subject" Age Ability.
+	
+	max_government_rank = 1								# 0 means no limit
+	cities_required_for_bonuses = 0						# How many cities the subject needs before giving bonuses to overlord
+	trust_on_start = 35									# Overlord and subject will each get this much extra trust with each other at game start
+
+	base_liberty_desire = -15.0
+	liberty_desire_development_ratio = 0.25
+	liberty_desire_same_dynasty = -5.0
+	forcelimit_bonus = 1.5								# 1.0 represents bonus from having a vassal
+	military_focus = 1.5								# How much the AI subject should spend etc. on army and forts. 0 should make them spend nothing. Very high values will probably not make a big difference since there will be sanity checks.
+
+	relative_power_class = 2 							# See description above
+	diplomacy_view_class = 1							# See description above
+
+	# Subject Interactions:
+	# (continuous)
+	subsidize_armies = yes
+	# (immediate)
+	placate_rulers = yes
+	fortify_march = yes
+	seize_territory = yes
+	send_additional_troops = yes
+
+	# Modifiers:
+	modifier_subject = {
+		modifier = voivodeship_modifier
+		trigger = {
+			NOT = {
+				development_of_overlord_fraction = 0.33
+			}
+		}
+	}
+	modifier_subject = {
+		modifier = voivodeship_overlord_has_parliament_modifier
+		trigger = {
+			FROM = {
+				government = monarchy
+				has_parliament = yes
+			}
+		}
+	}
+	
+	modifier_overlord = clear
+
+	overlord_opinion_modifier = is_voivodeship # If not "null" it will look for a modifier with that name in 00_opinion_modifiers.txt and other files in that directory.
+	subject_opinion_modifier = is_voivodeship
+}

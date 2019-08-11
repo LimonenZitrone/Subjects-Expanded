@@ -1,0 +1,22 @@
+﻿l_spanish:
+ is_protectorate: "Protectorate"
+ released_protectorate: "Released Protectorate"
+ protectorate_forced: "Forced Protectorate"
+ declined_establish_protectorate: "Demand of Protectorate declined"
+ declined_ask_to_become_protectorate: "Offer for Protectorate declined"
+ 
+ is_puppet_state: "Puppet State"
+ released_puppet_state: "Released Puppet State"
+ puppet_state_forced: "Forced Puppet State"
+ declined_establish_puppet_state: "Demand of Puppet State declines"
+ 
+ is_autonomous_dominion: "Autonomous Dominion"
+ 
+ is_roman_client_kingdom: "Roman Client Kingdom"
+ roman_client_kingdom_forced: "Forced Roman Client Kingdom"
+ roman_client_kingdom_rejected_heir: "Did not acknowledge the legitimacy of our heir"
+ roman_client_kingdom_accepted_heir: "Acknowledged the legitimacy of our heir"
+ roman_client_kingdom_replaced_ruler: "Helped ruler to ascend the throne"
+ 
+ is_voivodeship: "Voivodeship"
+ 

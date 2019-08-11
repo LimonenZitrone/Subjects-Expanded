@@ -1,0 +1,31 @@
+﻿l_french:
+ protectorate_title: "Protectorate"
+ protectorate_title_plural: "Protectorates"
+ protectorate_is_our: "§Y$NAME$§! is our Protectorate."
+ protectorate_long_desc: "A Protectorate gives us some of their trade power in return for technological progress and military protection.\n"
+ protectorate_no_overlord_dow: "You can not declare war on your own Protectorate."
+ 
+ puppet_state_title: "Puppet State"
+ puppet_state_title_plural: "Puppet States"
+ puppet_state_is_our: "§Y$NAME$§! is our Puppet State."
+ puppet_state_long_desc: "A Puppet State is a mixture off a vassal and a march. It receives similar bonuses as a march, but can be annexed after 10 years. Further more it increases our reputation at home and in foreign countries.\n"
+ puppet_state_no_overlord_dow: "You can not declare war on your own Puppet State."
+ 
+ autonomous_dominion_title: "Autonomous Dominion"
+ autonomous_dominion_title_plural: "Autonomous Dominions"
+ autonomous_dominion_is_our: "§Y$NAME$§! is our Autonomous Dominion."
+ autonomous_dominion_long_desc: "An Autonomous Dominion behaves like a colonial nation, but has less liberty desire and pays no tarrifs to its overlord. \nAutonomous Dominions that are released in trade company regions by decision, can not be individualized.\n"
+ autonomous_dominion_no_overlord_dow: "You can not declare war on your own Autonomous Dominion."
+ 
+ roman_client_kingdom_title: "Roman Client Kingdom"
+ roman_client_kingdom_title_plural: "Roman Client Kingdoms"
+ roman_client_kingdom_is_our: "§Y$NAME$§! is our Roman Client Kingdom."
+ roman_client_kingdom_long_desc: "A Roman Client Kingdom behaves like a vassal, but has less liberty desire and can only be created by the §YRoman Empire§!, §YWest Roman Empire§! and §YByzantine Empire§!. Further more they pay more money to their overlord and are a little less restricted in their diplomatic actions than normal vassals. \nIf they border one of our rivals or enemies, §YRoman Client Kingdoms§! do not cost a diplomatic relation and as long as we do not have any colonists, they increase our core range by §G+5%§! each. \nWhen they receive a new heir, he/she has to be acknowledged by us or he/she will not be accepted as rightful heir.\n"
+ roman_client_kingdom_no_overlord_dow: "You can not declare war on your own Roman Client Kingdom."
+ 
+ voivodeship_title: "Voivodeship"
+ voivodeship_title_plural: "Voivodeships"
+ voivodeship_is_our: "§Y$NAME$§! is our Voivodeship."
+ voivodeship_long_desc: "A Voivodeship is a mixture off a vassal and a march. It receives similar bonuses as a march, but can be annexed after 10 years. Further more it has increased military expanses.\n"
+ voivodeship_no_overlord_dow: "You can not declare war on your own Puppet State."
+ 

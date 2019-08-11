@@ -1,0 +1,80 @@
+﻿l_german:
+ # New Diplomatic Actions:
+ establish_protectorate_title: "Protektorat fordern"
+ establish_protectorate_desc: "Wollt Ihr §Y[From.GetName]§! vorschlagen unser Protektorat zu werden? \nEin Protektorat gibt uns Handelsmacht im Gegenzug für technologischen Fortschritt und militärischen Schutz."
+ establish_protectorate_tooltip: "§Y[From.GetName]§! zu einem [Root.GetAdjective]en Protektorat machen.\n"
+ establish_protectorate_alert_tooltip: "Protektorat fordern"
+ establish_protectorate_dialog: "§Y[This.GetName]§! schlägt vor, dass wir ihr Protektorat werden. Dies bedeutet, dass wir ihnen Handelsmacht übertragen müssen, im Gegenzug jedoch militärischen Schutz ihrerseits genießen und Boni auf Technologiekosten und Institutionsverbreitung erhalten. Protektorate sind in diplomatischen Aktionen teilweise eingeschränkt. \n\nWollt ihr dies akzeptieren?"
+ 
+ ask_to_become_protectorate_title: "Protektorat erbitten"
+ ask_to_become_protectorate_desc: "Wollt Ihr §Y[From.GetName]§! vorschlagen, dass wir ihr Protektorat werden? \nDies bedeutet, dass wir ihnen Handelsmacht übertragen müssen, im Gegenzug jedoch militärischen Schutz ihrerseits genießen und Boni auf Technologiekosten und Institutionsverbreitung erhalten. Protektorate sind in diplomatischen Aktionen teilweise eingeschränkt."
+ ask_to_become_protectorate_tooltip: "§Y[From.GetName]§! bitten, §Y[Root.GetName]§! zu einem [From.GetAdjective]en Protektorat zu machen.\n"
+ ask_to_become_protectorate_alert_tooltip: "Protektorat erbitten"
+ ask_to_become_protectorate_dialog: "§Y[This.GetName]§! schlägt vor, dass sie unser Protektorat werden. \n\nEin Protektorat gibt uns Handelsmacht im Gegenzug für technologischen Fortschritt und militärischen Schutz. \n\nWollt ihr dies akzeptieren?"
+  
+ cancel_protectorate_title: "Protektorat entlassen"
+ cancel_protectorate_desc: "Wollt Ihr das §YProtektorat§! aufkündigen und §Y[From.GetName]§! in die Freiheit entlassen? \nDies wird[Root.GetIfCancelProtectorateGivesStabHit]ihre Meinung über uns um §R-200§! verschlechtern."
+ cancel_protectorate_tooltip: "Das Protektoratsverhältnis mit §Y[From.GetName]§! kündigen.\n"
+ 
+ 
+ establish_puppet_state_title: "Marionettenstaat fordern"
+ establish_puppet_state_desc: "Wollt Ihr §Y[From.GetName]§! vorschlagen unser Marionettenstaat zu werden? \nEin Marionettenstaat ist eine Mischung aus Vasall und Mark. Er erhält einige Boni ähnlich denen einer Mark, kann allerdings nach 10 Jahren unter unserer Herrschaft annektiert werden. Weiterhin stärkt er unser Ansehen im In- und Ausland."
+ establish_puppet_state_tooltip: "§Y[From.GetName]§! zu einem [Root.GetAdjective]en Marionettenstaat machen.\n"
+ establish_puppet_state_alert_tooltip: "Marionettenstaat fordern"
+ establish_puppet_state_dialog: "§Y[This.GetName]§! schlägt vor, dass wir ihr Marionettenstaat werden. Ein Marionettenstaat ist eine Mischung aus Vasall und Mark. Er erhält einige Boni ähnlich denen einer Mark, kann allerdings nach 10 Jahren unter ihrer Herrschaft annektiert werden. Weiterhin stärkt er ihr Ansehen im In- und Ausland. \n\nWenn wir annehmen wird unsere Regierungsform zu §YMarionettenregierung§! (Republik) geändert. \nSolange wir weniger als §Y33%§! der [This.GetAdjective]en Gesamtentwicklung besitzen, würden wir folgende Boni erhalten: \nRekrutenreserve (Global): §G+25.0%§! \nRegeneration (Rekrutenreserve): §G+20.0%§! \nEinheitenlimit (Armee): §G+30.0%§! \nRepublikanische Tradition (Jährlich): §G+0.25§! \nFreiheitsstreben: §G-10.00%§! \n\nWollt ihr dies akzeptieren?"
+ 
+ cancel_puppet_state_title: "Marionettenstaat entlassen"
+ cancel_puppet_state_desc: "Wollt Ihr den Status des §YMarionettenstaats§! von §Y[From.GetName]§! aufkündigen und sie in die Freiheit entlassen? \nDies wird[Root.GetIfCancelProtectorateGivesStabHit]ihre Meinung über uns um §R-100§! verschlechtern. Außerdem erhalten wir einen Waffenstillstand mit [From.GetName] und unser Prestige verschlechtert sich um §R-20§!."
+ cancel_puppet_state_tooltip: "Das Marionettenstaatsverhältnis mit §Y[From.GetName]§! kündigen.\n"
+ 
+ 
+ establish_autonomous_dominion_title: "Mehr Autonomie zugestehen"
+ establish_autonomous_dominion_desc: "Wollt Ihr Eure Kolonialnation §Y[From.GetName]§! zu einem §YAutonomen Herrschaftsgebiet§! machen? \nEin Autonomes Herrschaftsgebiet verhält sich wie eine Kolonialnation, besitzt jedoch ein verringertes Freiheitsstreben und zahlt keine Zollabgaben an seinen Lehnsherrn."
+ establish_autonomous_dominion_tooltip: "§Y[From.GetName]§! zu einem [Root.GetAdjective]en Autonomen Herrschaftsgebiet machen.\n"
+ 
+ lower_development_of_autonomous_development_title: "Entwicklung verringern"
+ lower_development_of_autonomous_development_desc: "Ihre Gesamtentwicklung ist auf über §Y500§! gestiegen, was ihr Freiheitsstreben deutlich erhöht hat. Wenn wir ihre Entwicklung verringern, wird dies zwar kurzfristig ihr Freiheitsstreben erhöhen, langfristig gesehen könnte es uns allerdings nutzen. Weiterhin erhalten wir einmalig eine bestimme Menge an ¤, £icon_manpower£ und £icon_sailors£ und ihre Entwicklungskosten sind für §Y10 Jahre§! nach der Verringerung ihrer Entwicklung um §G300%§! erhöht. \nWir können die Entwicklung nur einmal in §Y10 Jahren§! bei einem Autonomen Herrschaftsgebiet verringern."
+ lower_development_of_autonomous_development_tooltip: "Verringert die [From.GetAdjective]e Gesamtentwicklung um §Y200§! und erhaltet ein Jahreseinkommen an ¤, £icon_manpower£ und £icon_sailors£ von ihnen. Dies erhöht ihr Freiheitsstreben um §R30%§!.\n"
+ 
+ 
+ establish_roman_client_kingdom_title: "Klientelkönigtum ernennen"
+ establish_roman_client_kingdom_desc: "Ernennt Euren Vasallen [From.GetName] zu einem §YRömischen Klientelkönigtum§!. \nEin Römisches Klientelkönigtum verhält sich ähnlich wie ein Vasall, besitzt allerdings ein geringeres Freiheitsstreben und kann nur vom §YRömischen Reich§!, §YWeströmischen Reich§! und §YByzantinischem Reich§! ernannt werden. Weiterhin zahlen sie mehr Geld als gewöhnliche Vasallen und sind ein bisschen weniger in ihren diplomatischen Aktionen eingeschränkt als normale Vasallen. \nSofern sie an einen unserer Rivalen oder Feinde grenzen, kosten §YRömische Klientelkönigtümer§! keine diplomatische Beziehung und solange wir keine Kolonisten besitzen, erhöhen sie unsere Reichweite für Kernprovinzen jeweils um §G+5%§!. \nWenn sie einen neuen Thronfolger erhalten, muss er von uns akzeptiert werden, oder er wird nicht als rechtmäßiger Erbe akzeptiert."
+ establish_roman_client_kingdom_tooltip: "Ernennt Euren Vasallen [From.GetName] zu einem §YRömischen Klientelkönigtum§!.\n"
+ 
+ place_roman_ruler_on_subject_throne_title: "Herrscher ersetzen"
+ place_roman_ruler_on_subject_throne_desc: "Ersetzt ihre(n) [From.Monarch.GetTitle] durch einen §Y[Root.Culture.GetName]en§! Adligen. Dies wird ihr Freiheitsstreben um §R+10%§! erhöhen, ihre Meinung über uns jedoch um §G+30§! verbessern."
+ place_roman_ruler_on_subject_throne_tooltip: "[From.GetName] erhält einen neuen §Y[Root.Culture.GetName]en§!, dem §Y[Root.Religion.GetName]en§! Glauben folgenden Herrscher.\n"
+ 
+ demand_additional_tribute_from_roman_client_kingdom_title: "Zusätzlichen Tribut fordern"
+ demand_additional_tribute_from_roman_client_kingdom_desc: "Fordert zusätzlich zu ihren monatlichen Steuerabgaben einmalig eine Zahlung ihrerseits. Ihr könnt auswählen, ob sie Euch ein Jahreseinkommen, die pro Jahr generierte Anzahl an Rekrutenreserve oder die pro Jahr durch ihren Herrscher generierte Anzahl an Machtpunkten zahlen sollen. \nDies wird ihr Freiheitsstreben um §R+25%§! ändern."
+ demand_additional_tribute_from_roman_client_kingdom_tooltip: "Fordert eine zusätzliche Tributzahlung von §Y[From.GetName]§! (entweder ¤, £icon_manpower£ oder £adm£ und £dip£ und £mil£).\n"
+ 
+ cancel_roman_client_kingdom_title: "Klientelkönigtum entlassen"
+ cancel_roman_client_kingdom_desc: "Beendet das Abhängigkeitsverhältnis von §Y[From.GetName]§! zu uns. Dies wird ihre Meinung über uns um §R-200§! verschlechtern, sofern sie ein Freiheitsstreben unter §Y50%§! besitzen. Außerdem verlieren wir §R-25§! Prestige und erhalten eine §Y5-jährige§! Waffenruhe mit ihnen."
+ cancel_roman_client_kingdom_tooltip: "Beedet die Vasallisierung von §Y[From.GetName]§! und entlasst sie in die Freiheit.\n"
+ 
+ 
+ establish_voivodeship_title: "Woiwodschaft ernennen"
+ establish_voivodeship_desc: "Ernennt Euren Vasallen [From.GetName] zu einer §YWoiwodschaft§!. \nEine Woiwodschaft ist eine Mischung aus Vasall und Mark. Sie erhält ähnliche Boni wie eine Mark, kann aber nach 10 Jahren unter unserer Herrschaft annektiert werden. Weiterhin hat sie erhöhte Militärausgaben und kann nur von §Y[POL.GetName]§! und §Y[PLC.GetName]§! ernannt werden."
+ establish_voivodeship_tooltip: "Ernennt Euren Vasall [From.GetName] zu einer §YWoiwodschaft§!.\n"
+ 
+ cancel_voivodeship_title: "Woiwodschaft entlassen"
+ cancel_voivodeship_desc: "Beendet das Abhängigkeitsverhältnis von §Y[From.GetName]§! zu uns. Dies wird ihre Meinung über uns um §R-200§! verschlechtern, sofern sie ein Freiheitsstreben unter §Y50%§! besitzen. Außerdem verlieren wir §R-25§! Prestige und erhalten eine §Y5-jährige§! Waffenruhe mit ihnen."
+ cancel_voivodeship_tooltip: "Beedet die Vasallisierung von §Y[From.GetName]§! und entlasst sie in die Freiheit.\n"
+ 
+ # AI Acceptance Reasons:
+ ROOT_FROM_ECONOMIC_POWER_COMPARED: "Relative Wirtschaftliche Stärke"
+ ROOT_FROM_MILITARY_POWER_COMPARED: "Relative Militärische Stärke"
+ FROM_HAS_SUBJECTS: "Sie besitzen selbst Untertanen"
+ FROM_TOTAL_DEVELOPMENT_OVER_200: "Sie besitzen mehr als §Y200§! Gesamtentwicklung"
+ IS_MERCHANT_REPUBLIC: "Regierungsform \"Handelsrepublik\""
+ NUM_OF_PROTECTORATES: "Wir besitzen bereits Protektorate"
+ OUR_DIPLOMATIC_REPUTATION: "Diplomatische Reputation"
+ FROM_ATTITUDE_TOWARDS_ROOT: "Haltung uns gegenüber"
+ FROM_IS_MONARCHY: "Sie sind eine Monarchie"
+ FROM_HAS_OTHER_IDEOLOGY: "Sie besitzen eine andere Ideologie als wir"
+ NOT_RELEASED_FROM_IN_A_WAR: "Wir haben sie nicht in einem Krieg befreit"
+ RELEASED_FROM_IN_A_WAR: "Wir haben sie in einem Krieg befreit"
+ FROM_HAS_AT_LEAST_HALF_OF_ROOT_TOTAL_DEVELOPMENT: "Sie haben mindestens §Y50%§! unserer Gesamtentwicklung"
+ FROM_IS_SUBJECT_AT_RIVAL_BORDER: "Sie grenzen an einen unserer Rivalen"
+ 

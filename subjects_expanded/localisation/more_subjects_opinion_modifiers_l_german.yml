@@ -1,0 +1,22 @@
+﻿l_german:
+ is_protectorate: "Protektorat"
+ released_protectorate: "Protektorat aufgekündigt"
+ protectorate_forced: "Protektorat erzwungen"
+ declined_establish_protectorate: "Forderung nach Protektorat abgelehnt"
+ declined_ask_to_become_protectorate: "Bitte nach Protektorat abgelehnt"
+ 
+ is_puppet_state: "Marionettenstaat"
+ released_puppet_state: "Marionettenstaat aufgekündigt"
+ puppet_state_forced: "Marionettenstaat erzwungen"
+ declined_establish_puppet_state: "Forderung nach Marionettenstaat abgelehnt"
+ 
+ is_autonomous_dominion: "Autonomes Herrschaftsgebiet"
+ 
+ is_roman_client_kingdom: "Römisches Klientelkönigtum"
+ roman_client_kingdom_forced: "Römisches Klientelkönigtum erzwungen"
+ roman_client_kingdom_rejected_heir: "Rechtmäßigkeit unseres Thronfolgers nicht anerkannt"
+ roman_client_kingdom_accepted_heir: "Rechtmäßigkeit unseres Thronfolgers anerkannt"
+ roman_client_kingdom_replaced_ruler: "Herrscher auf Thron verholfen"
+ 
+ is_voivodeship: "Woiwodschaft"
+ 

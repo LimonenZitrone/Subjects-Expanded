@@ -1,0 +1,18 @@
+﻿l_german:
+ # Peace Treaties:
+ make_protectorate_desc: "@[From.GetTag] §Y[From.GetName]§! wird zu einem Protektorat von @[Root.GetTag] §Y[Root.GetName]§!."
+ CB_ALLOWED_make_protectorate: "Protektorat erzwingen"
+ PEACE_make_protectorate: "$TAKERS$es Protektorat"
+ 
+ make_puppet_state_desc: "@[From.GetTag] §Y[From.GetName]§! wird zu einem Marionettenstaat von @[Root.GetTag] §Y[Root.GetName]§!."
+ CB_ALLOWED_make_puppet_state: "Marionettenstaat erzwingen"
+ PEACE_make_puppet_state: "$TAKERS$er Marionettenstaat"
+ 
+ make_puppet_state_et_desc: "@[From.GetTag] §Y[From.GetName]§! wird zu einem Marionettenstaat von @[Root.GetTag] §Y[Root.GetName]§!."
+ CB_ALLOWED_make_puppet_state_et: "Marionettenstaat erzwingen"
+ PEACE_make_puppet_state_et: "$TAKERS$er Marionettenstaat"
+ 
+ make_roman_client_kingdom_desc: "@[From.GetTag] §Y[From.GetName]§! wird zu einem Römischen Klientelkönigtum von @[Root.GetTag] §Y[Root.GetName]§!."
+ CB_ALLOWED_make_roman_client_kingdom: "Römisches Klientelkönigtum erzwingen"
+ PEACE_make_roman_client_kingdom: "$TAKERS$es Klientelkönigtum"
+ 

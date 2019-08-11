@@ -1,0 +1,69 @@
+is_autonomous_dominion_tag = {
+	OR = {
+		# East African Dominions:
+		tag = DA1
+		tag = DA2
+		tag = DA3
+		tag = DA4
+		tag = DA5
+		tag = DA6
+		tag = DA7
+		# Indochinese Dominions:
+		tag = DC1
+		tag = DC2
+		tag = DC3
+		tag = DC4
+		tag = DC5
+		tag = DC6
+		tag = DC7
+		# East Indies Dominions:
+		tag = DE1
+		tag = DE2
+		tag = DE3
+		tag = DE4
+		tag = DE5
+		tag = DE6
+		tag = DE7
+		tag = DE8
+		tag = DE9
+		# Indian Dominions:
+		tag = DI1
+		tag = DI2
+		tag = DI3
+		tag = DI4
+		tag = DI5
+		tag = DI6
+		tag = DI7
+		tag = DI8
+		tag = DI9
+		# South African Dominions:
+		tag = DS1
+		tag = DS2
+		tag = DS3
+		tag = DS4
+		tag = DS5
+		tag = DS6
+		tag = DS7
+		# West African Dominions:
+		tag = DW1
+		tag = DW2
+		tag = DW3
+		tag = DW4
+		tag = DW5
+		tag = DW6
+		tag = DW7
+	}
+}
+
+is_former_autonomous_dominion = {
+	custom_trigger_tooltip = {
+		tooltip = THIS_IS_FORMER_AUTONOMOUS_DOMINION
+		OR = {
+			AND = {
+				NOT = { is_subject_of_type = autonomous_dominion }
+				has_country_flag = was_autonomous_dominion_subject
+			}
+			is_former_colonial_nation = yes
+		}
+	}
+}

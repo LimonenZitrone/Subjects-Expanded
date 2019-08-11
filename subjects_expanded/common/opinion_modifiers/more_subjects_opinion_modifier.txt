@@ -1,0 +1,83 @@
+is_protectorate = {
+	opinion = 30
+}
+
+released_protectorate = {
+	opinion = -200
+	yearly_decay = 5
+}
+
+protectorate_forced = {
+	opinion = -50
+	yearly_decay = 3
+	min = -50
+}
+
+declined_establish_protectorate = {
+	opinion = -25
+	yearly_decay = 1
+	min = -100
+}
+
+declined_ask_to_become_protectorate = {
+	opinion = -25
+	yearly_decay = 1
+	min = -100
+}
+
+is_puppet_state = {
+	opinion = 50
+}
+
+released_puppet_state = {
+	opinion = -100
+	yearly_decay = 5
+}
+
+puppet_state_forced = {
+	opinion = -50
+	yearly_decay = 3
+	min = -50
+}
+
+declined_establish_puppet_state = {
+	opinion = -25
+	yearly_decay = 1
+	min = -100
+}
+
+is_autonomous_dominion = {
+	opinion = 75
+}
+
+is_roman_client_kingdom = {
+	opinion = 50
+}
+
+roman_client_kingdom_forced = {
+	opinion = -50
+	yearly_decay = 3
+	min = -50
+}
+
+roman_client_kingdom_rejected_heir = {
+	opinion = -15
+	yearly_decay = 1
+	min = -60
+}
+
+roman_client_kingdom_accepted_heir = {
+	opinion = 10
+	yearly_decay = 1
+	max = 10
+}
+
+roman_client_kingdom_replaced_ruler = {
+	opinion = 30
+	yearly_decay = 1
+	max = 30
+}
+
+is_voivodeship = {
+	opinion = 50
+}

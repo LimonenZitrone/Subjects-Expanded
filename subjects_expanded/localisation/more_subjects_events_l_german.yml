@@ -1,0 +1,66 @@
+﻿l_german:
+ more_subjects_protectorate_events.EVTNAME2: "Unabhängigkeit gewährt!"
+ more_subjects_protectorate_events.EVTDESC2: "Unser ehemaliger Lehnsherr [From.GetName] hat sich dazu entschlossen, uns Unabhängigkeit zu gewähren. Das bedeutet allerdings auch, dass sie uns jetzt wieder den Krieg erklären könnten..."
+ more_subjects_protectorate_events2.EVTOPT1: "In Ordnung."
+ 
+ more_subjects_protectorate_events.EVTNAME3: "Unabhängigkeit!"
+ more_subjects_protectorate_events.EVTDESC3: "Unser Lehnsherr §Y[Root.Overlord.GetName]§! hat uns verraten und sich geweigert, uns bei unserem Verteidigungskrieg zur Seite zu stehen! Damit haben sie sich als unwürdig erwiesen, weiterhin unser Lehnsherr zu sein."
+ more_subjects_protectorate_events3.EVTOPT1: "In Ordnung."
+  
+ more_subjects_puppet_state_events.EVTNAME2: "Unabhängigkeit gewährt!"
+ more_subjects_puppet_state_events.EVTDESC2: "Unser ehemaliger Lehnsherr [From.GetName] hat sich dazu entschlossen, uns Unabhängigkeit zu gewähren. Das bedeutet allerdings auch, dass sie uns nachdem der Waffenstillstand abgelaufen ist, wieder den Krieg erklären könnten..."
+ more_subjects_puppet_state_events2.EVTOPT1: "In Ordnung."
+ 
+ more_subjects_autonomous_dominion_events.EVTNAME3: "Autonomes Herrschaftsgebiet erhält Provinzen"
+ more_subjects_autonomous_dominion_events.EVTDESC3: "Da wir Provinzen in indischen Handelshaus-Regionen besitzen, die nicht mit unserer Hauptstadt verbunden sind und wir dort ein Autonomes Herrschaftsgebiet besitzen, haben wir diese Provinzen an unser Autonomes Herrschaftsgebiet in Indien abgetreten. Insgesamt handelt es sich dabei um §R[Root.num_of_provinces_ceded_to_autonomous_dominion_india.GetValue]§! Provinzen."
+ more_subjects_autonomous_dominion_events3.EVTOPT1: "In Ordnung."
+ 
+ more_subjects_autonomous_dominion_events.EVTNAME4: "Autonomes Herrschaftsgebiet erhält Provinzen"
+ more_subjects_autonomous_dominion_events.EVTDESC4: "Da wir Provinzen in ostindischen / indonesischen Handelshaus-Regionen besitzen, die nicht mit unserer Hauptstadt verbunden sind und wir dort ein Autonomes Herrschaftsgebiet besitzen, haben wir diese Provinzen an unser Autonomes Herrschaftsgebiet in Ostindien / Indonesien abgetreten. Insgesamt handelt es sich dabei um §R[Root.num_of_provinces_ceded_to_autonomous_dominion_east_indies.GetValue]§! Provinzen."
+ more_subjects_autonomous_dominion_events4.EVTOPT1: "In Ordnung."
+ 
+ more_subjects_autonomous_dominion_events.EVTNAME5: "Autonomes Herrschaftsgebiet erhält Provinzen"
+ more_subjects_autonomous_dominion_events.EVTDESC5: "Da wir Provinzen in indochinesischen Handelshaus-Regionen besitzen, die nicht mit unserer Hauptstadt verbunden sind und wir dort ein Autonomes Herrschaftsgebiet besitzen, haben wir diese Provinzen an unser Autonomes Herrschaftsgebiet in Indochina abgetreten. Insgesamt handelt es sich dabei um §R[Root.num_of_provinces_ceded_to_autonomous_dominion_indochina.GetValue]§! Provinzen."
+ more_subjects_autonomous_dominion_events5.EVTOPT1: "In Ordnung."
+ 
+ more_subjects_autonomous_dominion_events.EVTNAME6: "Autonomes Herrschaftsgebiet erhält Provinzen"
+ more_subjects_autonomous_dominion_events.EVTDESC6: "Da wir Provinzen in westafrikanischen Handelshaus-Regionen besitzen, die nicht mit unserer Hauptstadt verbunden sind und wir dort ein Autonomes Herrschaftsgebiet besitzen, haben wir diese Provinzen an unser Autonomes Herrschaftsgebiet in Westafrika abgetreten. Insgesamt handelt es sich dabei um §R[Root.num_of_provinces_ceded_to_autonomous_dominion_west_africa.GetValue]§! Provinzen."
+ more_subjects_autonomous_dominion_events6.EVTOPT1: "In Ordnung."
+ 
+ more_subjects_autonomous_dominion_events.EVTNAME7: "Autonomes Herrschaftsgebiet erhält Provinzen"
+ more_subjects_autonomous_dominion_events.EVTDESC7: "Da wir Provinzen in ostafrikanischen Handelshaus-Regionen besitzen, die nicht mit unserer Hauptstadt verbunden sind und wir dort ein Autonomes Herrschaftsgebiet besitzen, haben wir diese Provinzen an unser Autonomes Herrschaftsgebiet in Ostafrika abgetreten. Insgesamt handelt es sich dabei um §R[Root.num_of_provinces_ceded_to_autonomous_dominion_east_africa.GetValue]§! Provinzen."
+ more_subjects_autonomous_dominion_events7.EVTOPT1: "In Ordnung."
+ 
+ more_subjects_autonomous_dominion_events.EVTNAME8: "Autonomes Herrschaftsgebiet erhält Provinzen"
+ more_subjects_autonomous_dominion_events.EVTDESC8: "Da wir Provinzen in südafrikanischen Handelshaus-Regionen besitzen, die nicht mit unserer Hauptstadt verbunden sind und wir dort ein Autonomes Herrschaftsgebiet besitzen, haben wir diese Provinzen an unser Autonomes Herrschaftsgebiet in Südafrika abgetreten. Insgesamt handelt es sich dabei um §R[Root.num_of_provinces_ceded_to_autonomous_dominion_south_africa.GetValue]§! Provinzen."
+ more_subjects_autonomous_dominion_events8.EVTOPT1: "In Ordnung."
+ 
+ more_subjects_autonomous_dominion_events.EVTNAME9: "[Root.Overlord.GetName] verringerte unsere Entwicklung"
+ more_subjects_autonomous_dominion_events.EVTDESC9: "Unser Lehnsherr §Y[Root.Overlord.GetName]§! hat unsere Entwicklung verringert, um Geld, Mannstärke und Seeleute zu erhalten. Dies hat unser Freiheitsstreben um §G30%§! erhöht."
+ more_subjects_autonomous_dominion_events9.EVTOPT1: "Interessant..."
+ 
+ more_subjects_roman_client_kingdom_events.EVTNAME1: "Römisches Klientelkönigtum"
+ more_subjects_roman_client_kingdom_events.EVTDESC1: "Wir haben den Krieg gegen [From.GetName] verloren. Sie haben uns zu ihrem Römischen Klientelkönigtum gemacht und unseren Herrscher [Root.Monarch.GetName] [Root.Monarch.Dynasty.GetName] aufgrund seines Widerstandes gegen sie zum Tode verurteilt."
+ more_subjects_roman_client_kingdom_events1.EVTOPT1: "Verdammt!"
+ 
+ more_subjects_roman_client_kingdom_events.EVTNAME2: "Neuer Thronfolger in §Y[From.GetName]§!"
+ more_subjects_roman_client_kingdom_events.EVTDESC2: "Unser Römisches Klientelkönigtum [From.GetName] hat einen neuen Thronfolger erhalten. Da sie uns unterstehen, müssen wir seinen Status als Thronfolger anerkennen, damit er der Rechtmäßige Erbe von [From.Monarch.GetName] ist. \nSollen wir ihn als [From.GetAdjective]en Thronfolger akzeptieren oder nicht?"
+ more_subjects_roman_client_kingdom_events2.EVTOPT1: "Erkennt [From.Heir.GetName] NICHT als rechtmäßigen Nachfolger an."
+ more_subjects_roman_client_kingdom_events2.EVTOPT2: "Akzeptiert [From.Heir.GetName] als rechtmäßigen Nachfolger."
+ 
+ more_subjects_roman_client_kingdom_events.EVTNAME4: "Zusätzlichen Tribut von §Y[From.GetName]§! fordern"
+ more_subjects_roman_client_kingdom_events.EVTDESC4: "Wir können zusätzlich zu ihren monatlichen Steuerabgaben weiteren Tribut von unseren Römischen Klientelkönigtümern fordern. Wir können von ihnen Geld (ein [From.GetAdjective]es Jahreseinkommen), Rekrutenreserve (einmal die [From.GetAdjective]e jährliche Rekrutenreserve) oder Machtpunkte (einmmal die jährliche durch ihren Herrscher generierte Anzalh an Machtpunkten)."
+ more_subjects_roman_client_kingdom_events4.EVTOPT1: "Fordert weiteren Tribut in Form von ¤."
+ more_subjects_roman_client_kingdom_events4.EVTOPT2: "Fordert weiteren Tribut in Form von £icon_manpower£."
+ more_subjects_roman_client_kingdom_events4.EVTOPT3: "Fordert weiteren Tribut in Form von £adm£, £dip£ und £mil£."
+ more_subjects_roman_client_kingdom_events4.EVTOPT4: "[From.GetIfCanNotReceiveAdditionalTributeOrCancel]."
+ 
+ more_subjects_roman_client_kingdom_events.EVTNAME6: "Nachfolger nicht akzeptiert"
+ more_subjects_roman_client_kingdom_events.EVTDESC6: "Unser Lehnsherr [From.GetName] hat die Rechtmäßigkeit unseres Nachfolgers nicht anerkannt! Ohne ihre Zustimmung haben wir leider keine andere Wahl, als ihn zu verstoßen und auf einen anderen Thronfolger zu warten..."
+ more_subjects_roman_client_kingdom_events6.EVTOPT1: "Sowas aber auch..."
+ 
+ more_subjects_voivodeship_events.EVTNAME1: "Die [SIL.GetAdjective]e Woiwodschaft"
+ more_subjects_voivodeship_events.EVTDESC1: "[SIL.GetName] ist eine Vasall unserer Personalunion [BOH.GetName]. Allerdings sind sie Teil des rechtmäßigen [Root.GetAdjective] Besitzes, dementsprechend sollten wir darüber nachdenken, sie zu einer Woiwodschaft zu ernennen."
+ more_subjects_voivodeship_events1.EVTOPT1: "Sie sollen eine Woiwodschaft werden."
+ more_subjects_voivodeship_events1.EVTOPT2: "Sie können sie als Vasallen behalten."
+ 

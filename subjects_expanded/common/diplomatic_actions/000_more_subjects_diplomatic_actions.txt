@@ -1,0 +1,68 @@
+declarewar = {
+	condition = {
+		tooltip = CANNOT_DECLARE_WAR_ON_OVERLORD_ALLY
+		potential = {
+			is_subject_of_type = protectorate
+		}
+		allow = {
+			overlord = {
+				NOT = { alliance_with = FROM }
+				NOT = { has_guaranteed = FROM }
+			}
+		}
+	}
+	condition = {
+		tooltip = CANNOT_DECLARE_WAR_ON_NEIGHBOR_PUPPET_STATE_OF_RIVAL_WITHOUT_CORE_CLAIM
+		potential = {
+			FROM = {
+				is_subject_of_type = puppet_state
+				is_neighbor_of = ROOT
+				overlord = {
+					NOT = { is_neighbor_of = ROOT }
+					is_neighbor_of = FROM
+					OR = {
+						is_rival = ROOT
+						is_enemy = ROOT
+					}
+				}
+			}
+		}
+		allow = {
+			FROM = {
+				any_owned_province = {
+					is_core = ROOT
+					any_neighbor_province = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+				}
+			}
+		}
+	}
+	effect = {
+		if = {
+			limit = {
+				FROM = {
+					is_subject_of_type = protectorate
+					overlord = {
+						NOT = { war_with = ROOT }
+					}
+				}
+			}
+			FROM = {
+				country_event = { id = more_subjects_protectorate_events.3 days = 70 }
+			}
+		}
+		# Needed for Extended Timeline
+		if = {
+			limit = {
+				OR = {
+					has_casus_belli = { type = cb_spread_communism target = FROM }
+					has_casus_belli = { type = cb_spread_fascism target = FROM }
+					has_casus_belli = { type = cb_spread_democracy target = FROM }
+				}
+			}
+			set_country_flag = forcing_government
+		}
+	}
+}

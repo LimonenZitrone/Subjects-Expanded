@@ -1,0 +1,1443 @@
+# Can create an Autonomous Dominion in Indian Trade Company Regions
+can_create_autonomous_dominion_in_west_india = {
+	potential = {
+		NOT = { has_dlc = "Wealth of Nations" }
+		NOT = { has_dlc = "Dharma" }
+		is_subject = no
+		# can_be_overlord = autonomous_dominion
+		NOT = { is_autonomous_dominion_tag = yes }
+		any_owned_province = {
+			is_node_in_trade_company_region = yes
+		}
+		capital_scope = {
+			is_node_in_trade_company_region = no
+			NOT = { continent = asia }
+			NOT = { continent = oceania }
+		}
+		OR = {
+			AND = {
+				OR = {
+					culture_group = british
+					tag = GBR
+					tag = ENG
+				}
+				NOT = { exists = DI1 }
+			}
+			AND = {
+				OR = {
+					culture_group = germanic
+					tag = GER
+					tag = PRU
+				}
+				NOT = { exists = DI2 }
+			}
+			AND = {
+				OR = {
+					culture_group = iberian
+					tag = SPA
+					tag = POR
+					tag = CAS
+					tag = ARA
+				}
+				NOT = { exists = DI3 }
+			}
+			AND = {
+				OR = {
+					culture_group = french
+					tag = FRA
+					tag = FR2
+					tag = BRI
+					tag = BUR
+				}
+				NOT = { exists = DI4 }
+			}
+			AND = {
+				OR = {
+					tag = PAP
+					religion_group = christian
+				}
+				NOT = { exists = DI5 }
+			}
+			AND = {
+				religion_group = muslim
+				NOT = { exists = DI6 }
+			}
+			NOT = { exists = DI7 }
+			NOT = { exists = DI8 }
+			NOT = { exists = DI9 }
+		}
+		NOT = {
+			any_subject_country = {
+				OR = {
+					tag = DI1
+					tag = DI2
+					tag = DI3
+					tag = DI4
+					tag = DI5
+					tag = DI6
+					tag = DI7
+					tag = DI8
+					tag = DI9
+				}
+			}
+		}
+		trade_company_west_india = {
+			type = all
+			OR = {
+				NOT = { owned_by = ROOT }
+				is_in_capital_area = no
+			}
+		}
+		trade_company_deccan = {
+			type = all
+			OR = {
+				NOT = { owned_by = ROOT }
+				is_in_capital_area = no
+			}
+		}
+		trade_company_east_india = {
+			type = all
+			OR = {
+				NOT = { owned_by = ROOT }
+				is_in_capital_area = no
+			}
+		}
+		trade_company_coromandel = {
+			type = all
+			OR = {
+				NOT = { owned_by = ROOT }
+				is_in_capital_area = no
+			}
+		}
+		trade_company_north_india = {
+			type = all
+			OR = {
+				NOT = { owned_by = ROOT }
+				is_in_capital_area = no
+			}
+		}
+		OR = {
+			trade_company_west_india = {
+				owned_by = ROOT
+			}
+			trade_company_deccan = {
+				owned_by = ROOT
+			}
+			trade_company_east_india = {
+				owned_by = ROOT
+			}
+			trade_company_coromandel = {
+				owned_by = ROOT
+			}
+			trade_company_north_india = {
+				owned_by = ROOT
+			}
+		}
+	}
+
+	trigger = {
+		trade_company_west_india = {
+			owned_by = ROOT
+		}
+	}
+
+	global_unrest = 2
+	global_autonomy = 0.05
+	trade_efficiency = -0.1
+}
+
+can_create_autonomous_dominion_in_south_india = {
+	potential = {
+		NOT = { has_dlc = "Wealth of Nations" }
+		NOT = { has_dlc = "Dharma" }
+		is_subject = no
+		# can_be_overlord = autonomous_dominion
+		NOT = { is_autonomous_dominion_tag = yes }
+		any_owned_province = {
+			is_node_in_trade_company_region = yes
+		}
+		capital_scope = {
+			is_node_in_trade_company_region = no
+			NOT = { continent = asia }
+			NOT = { continent = oceania }
+		}
+		OR = {
+			AND = {
+				OR = {
+					culture_group = british
+					tag = GBR
+					tag = ENG
+				}
+				NOT = { exists = DI1 }
+			}
+			AND = {
+				OR = {
+					culture_group = germanic
+					tag = GER
+					tag = PRU
+				}
+				NOT = { exists = DI2 }
+			}
+			AND = {
+				OR = {
+					culture_group = iberian
+					tag = SPA
+					tag = POR
+					tag = CAS
+					tag = ARA
+				}
+				NOT = { exists = DI3 }
+			}
+			AND = {
+				OR = {
+					culture_group = french
+					tag = FRA
+					tag = FR2
+					tag = BRI
+					tag = BUR
+				}
+				NOT = { exists = DI4 }
+			}
+			AND = {
+				OR = {
+					tag = PAP
+					religion_group = christian
+				}
+				NOT = { exists = DI5 }
+			}
+			AND = {
+				religion_group = muslim
+				NOT = { exists = DI6 }
+			}
+			NOT = { exists = DI7 }
+			NOT = { exists = DI8 }
+			NOT = { exists = DI9 }
+		}
+		NOT = {
+			any_subject_country = {
+				OR = {
+					tag = DI1
+					tag = DI2
+					tag = DI3
+					tag = DI4
+					tag = DI5
+					tag = DI6
+					tag = DI7
+					tag = DI8
+					tag = DI9
+				}
+			}
+		}
+		trade_company_west_india = {
+			type = all
+			OR = {
+				NOT = { owned_by = ROOT }
+				is_in_capital_area = no
+			}
+		}
+		trade_company_deccan = {
+			type = all
+			OR = {
+				NOT = { owned_by = ROOT }
+				is_in_capital_area = no
+			}
+		}
+		trade_company_east_india = {
+			type = all
+			OR = {
+				NOT = { owned_by = ROOT }
+				is_in_capital_area = no
+			}
+		}
+		trade_company_coromandel = {
+			type = all
+			OR = {
+				NOT = { owned_by = ROOT }
+				is_in_capital_area = no
+			}
+		}
+		trade_company_north_india = {
+			type = all
+			OR = {
+				NOT = { owned_by = ROOT }
+				is_in_capital_area = no
+			}
+		}
+		OR = {
+			trade_company_west_india = {
+				owned_by = ROOT
+			}
+			trade_company_deccan = {
+				owned_by = ROOT
+			}
+			trade_company_east_india = {
+				owned_by = ROOT
+			}
+			trade_company_coromandel = {
+				owned_by = ROOT
+			}
+			trade_company_north_india = {
+				owned_by = ROOT
+			}
+		}
+	}
+
+	trigger = {
+		trade_company_deccan = {
+			owned_by = ROOT
+		}
+	}
+
+	global_unrest = 2
+	global_autonomy = 0.05
+	trade_efficiency = -0.1
+}
+
+can_create_autonomous_dominion_in_east_india = {
+	potential = {
+		NOT = { has_dlc = "Wealth of Nations" }
+		NOT = { has_dlc = "Dharma" }
+		is_subject = no
+		# can_be_overlord = autonomous_dominion
+		NOT = { is_autonomous_dominion_tag = yes }
+		any_owned_province = {
+			is_node_in_trade_company_region = yes
+		}
+		capital_scope = {
+			is_node_in_trade_company_region = no
+			NOT = { continent = asia }
+			NOT = { continent = oceania }
+		}
+		OR = {
+			AND = {
+				OR = {
+					culture_group = british
+					tag = GBR
+					tag = ENG
+				}
+				NOT = { exists = DI1 }
+			}
+			AND = {
+				OR = {
+					culture_group = germanic
+					tag = GER
+					tag = PRU
+				}
+				NOT = { exists = DI2 }
+			}
+			AND = {
+				OR = {
+					culture_group = iberian
+					tag = SPA
+					tag = POR
+					tag = CAS
+					tag = ARA
+				}
+				NOT = { exists = DI3 }
+			}
+			AND = {
+				OR = {
+					culture_group = french
+					tag = FRA
+					tag = FR2
+					tag = BRI
+					tag = BUR
+				}
+				NOT = { exists = DI4 }
+			}
+			AND = {
+				OR = {
+					tag = PAP
+					religion_group = christian
+				}
+				NOT = { exists = DI5 }
+			}
+			AND = {
+				religion_group = muslim
+				NOT = { exists = DI6 }
+			}
+			NOT = { exists = DI7 }
+			NOT = { exists = DI8 }
+			NOT = { exists = DI9 }
+		}
+		NOT = {
+			any_subject_country = {
+				OR = {
+					tag = DI1
+					tag = DI2
+					tag = DI3
+					tag = DI4
+					tag = DI5
+					tag = DI6
+					tag = DI7
+					tag = DI8
+					tag = DI9
+				}
+			}
+		}
+		trade_company_west_india = {
+			type = all
+			OR = {
+				NOT = { owned_by = ROOT }
+				is_in_capital_area = no
+			}
+		}
+		trade_company_deccan = {
+			type = all
+			OR = {
+				NOT = { owned_by = ROOT }
+				is_in_capital_area = no
+			}
+		}
+		trade_company_east_india = {
+			type = all
+			OR = {
+				NOT = { owned_by = ROOT }
+				is_in_capital_area = no
+			}
+		}
+		trade_company_coromandel = {
+			type = all
+			OR = {
+				NOT = { owned_by = ROOT }
+				is_in_capital_area = no
+			}
+		}
+		trade_company_north_india = {
+			type = all
+			OR = {
+				NOT = { owned_by = ROOT }
+				is_in_capital_area = no
+			}
+		}
+		OR = {
+			trade_company_west_india = {
+				owned_by = ROOT
+			}
+			trade_company_deccan = {
+				owned_by = ROOT
+			}
+			trade_company_east_india = {
+				owned_by = ROOT
+			}
+			trade_company_coromandel = {
+				owned_by = ROOT
+			}
+			trade_company_north_india = {
+				owned_by = ROOT
+			}
+		}
+	}
+
+	trigger = {
+		trade_company_east_india = {
+			owned_by = ROOT
+		}
+	}
+
+	global_unrest = 2
+	global_autonomy = 0.05
+	trade_efficiency = -0.1
+}
+
+can_create_autonomous_dominion_in_coromandel = {
+	potential = {
+		NOT = { has_dlc = "Wealth of Nations" }
+		NOT = { has_dlc = "Dharma" }
+		is_subject = no
+		# can_be_overlord = autonomous_dominion
+		NOT = { is_autonomous_dominion_tag = yes }
+		any_owned_province = {
+			is_node_in_trade_company_region = yes
+		}
+		capital_scope = {
+			is_node_in_trade_company_region = no
+			NOT = { continent = asia }
+			NOT = { continent = oceania }
+		}
+		OR = {
+			AND = {
+				OR = {
+					culture_group = british
+					tag = GBR
+					tag = ENG
+				}
+				NOT = { exists = DI1 }
+			}
+			AND = {
+				OR = {
+					culture_group = germanic
+					tag = GER
+					tag = PRU
+				}
+				NOT = { exists = DI2 }
+			}
+			AND = {
+				OR = {
+					culture_group = iberian
+					tag = SPA
+					tag = POR
+					tag = CAS
+					tag = ARA
+				}
+				NOT = { exists = DI3 }
+			}
+			AND = {
+				OR = {
+					culture_group = french
+					tag = FRA
+					tag = FR2
+					tag = BRI
+					tag = BUR
+				}
+				NOT = { exists = DI4 }
+			}
+			AND = {
+				OR = {
+					tag = PAP
+					religion_group = christian
+				}
+				NOT = { exists = DI5 }
+			}
+			AND = {
+				religion_group = muslim
+				NOT = { exists = DI6 }
+			}
+			NOT = { exists = DI7 }
+			NOT = { exists = DI8 }
+			NOT = { exists = DI9 }
+		}
+		NOT = {
+			any_subject_country = {
+				OR = {
+					tag = DI1
+					tag = DI2
+					tag = DI3
+					tag = DI4
+					tag = DI5
+					tag = DI6
+					tag = DI7
+					tag = DI8
+					tag = DI9
+				}
+			}
+		}
+		trade_company_west_india = {
+			type = all
+			OR = {
+				NOT = { owned_by = ROOT }
+				is_in_capital_area = no
+			}
+		}
+		trade_company_deccan = {
+			type = all
+			OR = {
+				NOT = { owned_by = ROOT }
+				is_in_capital_area = no
+			}
+		}
+		trade_company_east_india = {
+			type = all
+			OR = {
+				NOT = { owned_by = ROOT }
+				is_in_capital_area = no
+			}
+		}
+		trade_company_coromandel = {
+			type = all
+			OR = {
+				NOT = { owned_by = ROOT }
+				is_in_capital_area = no
+			}
+		}
+		trade_company_north_india = {
+			type = all
+			OR = {
+				NOT = { owned_by = ROOT }
+				is_in_capital_area = no
+			}
+		}
+		OR = {
+			trade_company_west_india = {
+				owned_by = ROOT
+			}
+			trade_company_deccan = {
+				owned_by = ROOT
+			}
+			trade_company_east_india = {
+				owned_by = ROOT
+			}
+			trade_company_coromandel = {
+				owned_by = ROOT
+			}
+			trade_company_north_india = {
+				owned_by = ROOT
+			}
+		}
+	}
+
+	trigger = {
+		trade_company_coromandel = {
+			owned_by = ROOT
+		}
+	}
+
+	global_unrest = 2
+	global_autonomy = 0.05
+	trade_efficiency = -0.1
+}
+
+can_create_autonomous_dominion_in_north_india = {
+	potential = {
+		NOT = { has_dlc = "Wealth of Nations" }
+		NOT = { has_dlc = "Dharma" }
+		is_subject = no
+		# can_be_overlord = autonomous_dominion
+		NOT = { is_autonomous_dominion_tag = yes }
+		any_owned_province = {
+			is_node_in_trade_company_region = yes
+		}
+		capital_scope = {
+			is_node_in_trade_company_region = no
+			NOT = { continent = asia }
+			NOT = { continent = oceania }
+		}
+		OR = {
+			AND = {
+				OR = {
+					culture_group = british
+					tag = GBR
+					tag = ENG
+				}
+				NOT = { exists = DI1 }
+			}
+			AND = {
+				OR = {
+					culture_group = germanic
+					tag = GER
+					tag = PRU
+				}
+				NOT = { exists = DI2 }
+			}
+			AND = {
+				OR = {
+					culture_group = iberian
+					tag = SPA
+					tag = POR
+					tag = CAS
+					tag = ARA
+				}
+				NOT = { exists = DI3 }
+			}
+			AND = {
+				OR = {
+					culture_group = french
+					tag = FRA
+					tag = FR2
+					tag = BRI
+					tag = BUR
+				}
+				NOT = { exists = DI4 }
+			}
+			AND = {
+				OR = {
+					tag = PAP
+					religion_group = christian
+				}
+				NOT = { exists = DI5 }
+			}
+			AND = {
+				religion_group = muslim
+				NOT = { exists = DI6 }
+			}
+			NOT = { exists = DI7 }
+			NOT = { exists = DI8 }
+			NOT = { exists = DI9 }
+		}
+		NOT = {
+			any_subject_country = {
+				OR = {
+					tag = DI1
+					tag = DI2
+					tag = DI3
+					tag = DI4
+					tag = DI5
+					tag = DI6
+					tag = DI7
+					tag = DI8
+					tag = DI9
+				}
+			}
+		}
+		trade_company_west_india = {
+			type = all
+			OR = {
+				NOT = { owned_by = ROOT }
+				is_in_capital_area = no
+			}
+		}
+		trade_company_deccan = {
+			type = all
+			OR = {
+				NOT = { owned_by = ROOT }
+				is_in_capital_area = no
+			}
+		}
+		trade_company_east_india = {
+			type = all
+			OR = {
+				NOT = { owned_by = ROOT }
+				is_in_capital_area = no
+			}
+		}
+		trade_company_coromandel = {
+			type = all
+			OR = {
+				NOT = { owned_by = ROOT }
+				is_in_capital_area = no
+			}
+		}
+		trade_company_north_india = {
+			type = all
+			OR = {
+				NOT = { owned_by = ROOT }
+				is_in_capital_area = no
+			}
+		}
+		OR = {
+			trade_company_west_india = {
+				owned_by = ROOT
+			}
+			trade_company_deccan = {
+				owned_by = ROOT
+			}
+			trade_company_east_india = {
+				owned_by = ROOT
+			}
+			trade_company_coromandel = {
+				owned_by = ROOT
+			}
+			trade_company_north_india = {
+				owned_by = ROOT
+			}
+		}
+	}
+
+	trigger = {
+		trade_company_north_india = {
+			owned_by = ROOT
+		}
+	}
+
+	global_unrest = 2
+	global_autonomy = 0.05
+	trade_efficiency = -0.1
+}
+
+# Can create an Autonomous Dominion in East Indies Trade Company Regions
+can_create_autonomous_dominion_in_indonesia = {
+	potential = {
+		NOT = { has_dlc = "Wealth of Nations" }
+		NOT = { has_dlc = "Dharma" }
+		is_subject = no
+		# can_be_overlord = autonomous_dominion
+		NOT = { is_autonomous_dominion_tag = yes }
+		any_owned_province = {
+			is_node_in_trade_company_region = yes
+		}
+		capital_scope = {
+			is_node_in_trade_company_region = no
+			NOT = { continent = asia }
+			NOT = { continent = oceania }
+		}
+		OR = {
+			AND = {
+				OR = {
+					culture_group = british
+					tag = GBR
+					tag = ENG
+				}
+				NOT = { exists = DE1 }
+			}
+			AND = {
+				OR = {
+					culture_group = germanic
+					tag = GER
+					tag = PRU
+				}
+				OR = {
+					AND = {
+						NOT = { tag = NED }
+						NOT = { tag = HOL }
+						NOT = { primary_culture = dutch }
+					}
+					exists = DE7
+				}
+				NOT = { exists = DE2 }
+			}
+			AND = {
+				OR = {
+					culture_group = iberian
+					tag = SPA
+					tag = POR
+					tag = CAS
+					tag = ARA
+				}
+				NOT = { exists = DE3 }
+			}
+			AND = {
+				OR = {
+					culture_group = french
+					tag = FRA
+					tag = FR2
+					tag = BRI
+					tag = BUR
+				}
+				NOT = { exists = DE4 }
+			}
+			AND = {
+				OR = {
+					tag = PAP
+					religion_group = christian
+				}
+				OR = {
+					AND = {
+						NOT = { tag = NED }
+						NOT = { tag = HOL }
+						NOT = { primary_culture = dutch }
+					}
+					exists = DE7
+				}
+				NOT = { exists = DE5 }
+			}
+			AND = {
+				religion_group = muslim
+				OR = {
+					AND = {
+						NOT = { tag = NED }
+						NOT = { tag = HOL }
+						NOT = { primary_culture = dutch }
+					}
+					exists = DE7
+				}
+				NOT = { exists = DE6 }
+			}
+			AND = {
+				OR = {
+					tag = NED
+					tag = HOL
+					primary_culture = dutch
+				}
+				NOT = { exists = DE7 }
+			}
+			NOT = { exists = DE8 }
+			NOT = { exists = DE9 }
+		}
+		NOT = {
+			any_subject_country = {
+				OR = {
+					tag = DE1
+					tag = DE2
+					tag = DE3
+					tag = DE4
+					tag = DE5
+					tag = DE6
+					tag = DE7
+					tag = DE8
+					tag = DE9
+				}
+			}
+		}
+		trade_company_indonesia = {
+			type = all
+			OR = {
+				NOT = { owned_by = ROOT }
+				is_in_capital_area = no
+			}
+		}
+		trade_company_moluccas = {
+			type = all
+			OR = {
+				NOT = { owned_by = ROOT }
+				is_in_capital_area = no
+			}
+		}
+		OR = {
+			trade_company_indonesia = {
+				owned_by = ROOT
+			}
+			trade_company_moluccas = {
+				owned_by = ROOT
+			}
+		}
+	}
+
+	trigger = {
+		trade_company_indonesia = {
+			owned_by = ROOT
+		}
+	}
+
+	global_unrest = 2
+	global_autonomy = 0.05
+	trade_efficiency = -0.1
+}
+
+can_create_autonomous_dominion_in_moluccas = {
+	potential = {
+		NOT = { has_dlc = "Wealth of Nations" }
+		NOT = { has_dlc = "Dharma" }
+		is_subject = no
+		# can_be_overlord = autonomous_dominion
+		NOT = { is_autonomous_dominion_tag = yes }
+		any_owned_province = {
+			is_node_in_trade_company_region = yes
+		}
+		capital_scope = {
+			is_node_in_trade_company_region = no
+			NOT = { continent = asia }
+			NOT = { continent = oceania }
+		}
+		OR = {
+			AND = {
+				OR = {
+					culture_group = british
+					tag = GBR
+					tag = ENG
+				}
+				NOT = { exists = DE1 }
+			}
+			AND = {
+				OR = {
+					culture_group = germanic
+					tag = GER
+					tag = PRU
+				}
+				OR = {
+					AND = {
+						NOT = { tag = NED }
+						NOT = { tag = HOL }
+						NOT = { primary_culture = dutch }
+					}
+					exists = DE7
+				}
+				NOT = { exists = DE2 }
+			}
+			AND = {
+				OR = {
+					culture_group = iberian
+					tag = SPA
+					tag = POR
+					tag = CAS
+					tag = ARA
+				}
+				NOT = { exists = DE3 }
+			}
+			AND = {
+				OR = {
+					culture_group = french
+					tag = FRA
+					tag = FR2
+					tag = BRI
+					tag = BUR
+				}
+				NOT = { exists = DE4 }
+			}
+			AND = {
+				OR = {
+					tag = PAP
+					religion_group = christian
+				}
+				OR = {
+					AND = {
+						NOT = { tag = NED }
+						NOT = { tag = HOL }
+						NOT = { primary_culture = dutch }
+					}
+					exists = DE7
+				}
+				NOT = { exists = DE5 }
+			}
+			AND = {
+				religion_group = muslim
+				OR = {
+					AND = {
+						NOT = { tag = NED }
+						NOT = { tag = HOL }
+						NOT = { primary_culture = dutch }
+					}
+					exists = DE7
+				}
+				NOT = { exists = DE6 }
+			}
+			AND = {
+				OR = {
+					tag = NED
+					tag = HOL
+					primary_culture = dutch
+				}
+				NOT = { exists = DE7 }
+			}
+			NOT = { exists = DE8 }
+			NOT = { exists = DE9 }
+		}
+		NOT = {
+			any_subject_country = {
+				OR = {
+					tag = DE1
+					tag = DE2
+					tag = DE3
+					tag = DE4
+					tag = DE5
+					tag = DE6
+					tag = DE7
+					tag = DE8
+					tag = DE9
+				}
+			}
+		}
+		trade_company_indonesia = {
+			type = all
+			OR = {
+				NOT = { owned_by = ROOT }
+				is_in_capital_area = no
+			}
+		}
+		trade_company_moluccas = {
+			type = all
+			OR = {
+				NOT = { owned_by = ROOT }
+				is_in_capital_area = no
+			}
+		}
+		OR = {
+			trade_company_indonesia = {
+				owned_by = ROOT
+			}
+			trade_company_moluccas = {
+				owned_by = ROOT
+			}
+		}
+	}
+
+	trigger = {
+		trade_company_moluccas = {
+			owned_by = ROOT
+		}
+	}
+
+	global_unrest = 2
+	global_autonomy = 0.05
+	trade_efficiency = -0.1
+}
+
+# Can create an Autonomous Dominion in Indochina
+can_create_autonomous_dominion_in_indochina = {
+	potential = {
+		NOT = { has_dlc = "Wealth of Nations" }
+		NOT = { has_dlc = "Dharma" }
+		is_subject = no
+		# can_be_overlord = autonomous_dominion
+		NOT = { is_autonomous_dominion_tag = yes }
+		any_owned_province = {
+			is_node_in_trade_company_region = yes
+		}
+		capital_scope = {
+			is_node_in_trade_company_region = no
+			NOT = { continent = asia }
+			NOT = { continent = oceania }
+		}
+		OR = {
+			AND = {
+				OR = {
+					culture_group = british
+					tag = GBR
+					tag = ENG
+				}
+				NOT = { exists = DC1 }
+			}
+			AND = {
+				OR = {
+					culture_group = germanic
+					tag = GER
+					tag = PRU
+				}
+				NOT = { exists = DC2 }
+			}
+			AND = {
+				OR = {
+					culture_group = iberian
+					tag = SPA
+					tag = POR
+					tag = CAS
+					tag = ARA
+				}
+				NOT = { exists = DC3 }
+			}
+			AND = {
+				OR = {
+					culture_group = french
+					tag = FRA
+					tag = FR2
+					tag = BRI
+					tag = BUR
+				}
+				NOT = { exists = DC4 }
+			}
+			AND = {
+				OR = {
+					tag = PAP
+					religion_group = christian
+				}
+				NOT = { exists = DC5 }
+			}
+			AND = {
+				religion_group = muslim
+				NOT = { exists = DC6 }
+			}
+			NOT = { exists = DC7 }
+		}
+		NOT = {
+			any_subject_country = {
+				OR = {
+					tag = DC1
+					tag = DC2
+					tag = DC3
+					tag = DC4
+					tag = DC5
+					tag = DC6
+					tag = DC7
+				}
+			}
+		}
+		trade_company_indochina = {
+			type = all
+			OR = {
+				NOT = { owned_by = ROOT }
+				is_in_capital_area = no
+			}
+		}
+	}
+
+	trigger = {
+		trade_company_indochina = {
+			owned_by = ROOT
+		}
+	}
+
+	global_unrest = 2
+	global_autonomy = 0.05
+	trade_efficiency = -0.1
+}
+
+# Can create an Autonomous Dominion in West Africa
+can_create_autonomous_dominion_in_west_africa = {
+	potential = {
+		NOT = { has_dlc = "Wealth of Nations" }
+		NOT = { has_dlc = "Dharma" }
+		is_subject = no
+		# can_be_overlord = autonomous_dominion
+		NOT = { is_autonomous_dominion_tag = yes }
+		any_owned_province = {
+			is_node_in_trade_company_region = yes
+		}
+		capital_scope = {
+			is_node_in_trade_company_region = no
+			NOT = { continent = africa }
+		}
+		OR = {
+			AND = {
+				OR = {
+					culture_group = british
+					tag = GBR
+					tag = ENG
+				}
+				NOT = { exists = DW1 }
+			}
+			AND = {
+				OR = {
+					culture_group = germanic
+					tag = GER
+					tag = PRU
+				}
+				NOT = { exists = DW2 }
+			}
+			AND = {
+				OR = {
+					culture_group = iberian
+					tag = SPA
+					tag = POR
+					tag = CAS
+					tag = ARA
+				}
+				NOT = { exists = DW3 }
+			}
+			AND = {
+				OR = {
+					culture_group = french
+					tag = FRA
+					tag = FR2
+					tag = BRI
+					tag = BUR
+				}
+				NOT = { exists = DW4 }
+			}
+			AND = {
+				OR = {
+					tag = PAP
+					religion_group = christian
+				}
+				NOT = { exists = DW5 }
+			}
+			AND = {
+				religion_group = muslim
+				NOT = { exists = DW6 }
+			}
+			NOT = { exists = DW7 }
+		}
+		NOT = {
+			any_subject_country = {
+				OR = {
+					tag = DW1
+					tag = DW2
+					tag = DW3
+					tag = DW4
+					tag = DW5
+					tag = DW6
+					tag = DW7
+				}
+			}
+		}
+		trade_company_west_africa = {
+			type = all
+			OR = {
+				NOT = { owned_by = ROOT }
+				is_in_capital_area = no
+			}
+		}
+		# Extended Timeline has colonial regions in Africa, not Trace Company Regions
+		NOT = {
+			any_province = {
+				colonial_region = colonial_west_africa
+			}
+		}
+	}
+
+	trigger = {
+		trade_company_west_africa = {
+			owned_by = ROOT
+		}
+	}
+
+	global_unrest = 2
+	global_autonomy = 0.05
+	trade_efficiency = -0.1
+}
+
+# Can create an Autonomous Dominion in South Africa
+can_create_autonomous_dominion_in_south_africa = {
+	potential = {
+		NOT = { has_dlc = "Wealth of Nations" }
+		NOT = { has_dlc = "Dharma" }
+		is_subject = no
+		# can_be_overlord = autonomous_dominion
+		NOT = { is_autonomous_dominion_tag = yes }
+		any_owned_province = {
+			is_node_in_trade_company_region = yes
+		}
+		capital_scope = {
+			is_node_in_trade_company_region = no
+			NOT = { continent = africa }
+		}
+		OR = {
+			AND = {
+				OR = {
+					culture_group = british
+					tag = GBR
+					tag = ENG
+				}
+				NOT = { exists = DS1 }
+			}
+			AND = {
+				OR = {
+					culture_group = germanic
+					tag = GER
+					tag = PRU
+				}
+				NOT = { exists = DS2 }
+			}
+			AND = {
+				OR = {
+					culture_group = iberian
+					tag = SPA
+					tag = POR
+					tag = CAS
+					tag = ARA
+				}
+				NOT = { exists = DS3 }
+			}
+			AND = {
+				OR = {
+					culture_group = french
+					tag = FRA
+					tag = FR2
+					tag = BRI
+					tag = BUR
+				}
+				NOT = { exists = DS4 }
+			}
+			AND = {
+				OR = {
+					tag = PAP
+					religion_group = christian
+				}
+				NOT = { exists = DS5 }
+			}
+			AND = {
+				religion_group = muslim
+				NOT = { exists = DS6 }
+			}
+			NOT = { exists = DS7 }
+		}
+		NOT = {
+			any_subject_country = {
+				OR = {
+					tag = DS1
+					tag = DS2
+					tag = DS3
+					tag = DS4
+					tag = DS5
+					tag = DS6
+					tag = DS7
+				}
+			}
+		}
+		trade_company_south_africa = {
+			type = all
+			OR = {
+				NOT = { owned_by = ROOT }
+				is_in_capital_area = no
+			}
+		}
+		# Extended Timeline has colonial regions in Africa, not Trace Company Regions
+		NOT = {
+			any_province = {
+				colonial_region = colonial_south_africa
+			}
+		}
+	}
+
+	trigger = {
+		trade_company_south_africa = {
+			owned_by = ROOT
+		}
+	}
+
+	global_unrest = 2
+	global_autonomy = 0.05
+	trade_efficiency = -0.1
+}
+
+# Can create an Autonomous Dominion in East Africa
+can_create_autonomous_dominion_in_east_africa = {
+	potential = {
+		NOT = { has_dlc = "Wealth of Nations" }
+		NOT = { has_dlc = "Dharma" }
+		is_subject = no
+		# can_be_overlord = autonomous_dominion
+		NOT = { is_autonomous_dominion_tag = yes }
+		any_owned_province = {
+			is_node_in_trade_company_region = yes
+		}
+		capital_scope = {
+			is_node_in_trade_company_region = no
+			NOT = { continent = africa }
+		}
+		OR = {
+			AND = {
+				OR = {
+					culture_group = british
+					tag = GBR
+					tag = ENG
+				}
+				NOT = { exists = DA1 }
+			}
+			AND = {
+				OR = {
+					culture_group = germanic
+					tag = GER
+					tag = PRU
+				}
+				NOT = { exists = DA2 }
+			}
+			AND = {
+				OR = {
+					culture_group = iberian
+					tag = SPA
+					tag = POR
+					tag = CAS
+					tag = ARA
+				}
+				NOT = { exists = DA3 }
+			}
+			AND = {
+				OR = {
+					culture_group = french
+					tag = FRA
+					tag = FR2
+					tag = BRI
+					tag = BUR
+				}
+				NOT = { exists = DA4 }
+			}
+			AND = {
+				OR = {
+					tag = PAP
+					religion_group = christian
+				}
+				NOT = { exists = DA5 }
+			}
+			AND = {
+				religion_group = muslim
+				NOT = { exists = DA6 }
+			}
+			NOT = { exists = DA7 }
+		}
+		NOT = {
+			any_subject_country = {
+				OR = {
+					tag = DA1
+					tag = DA2
+					tag = DA3
+					tag = DA4
+					tag = DA5
+					tag = DA6
+					tag = DA7
+				}
+			}
+		}
+		trade_company_east_africa = {
+			type = all
+			OR = {
+				NOT = { owned_by = ROOT }
+				is_in_capital_area = no
+			}
+		}
+		# Extended Timeline has colonial regions in Africa, not Trace Company Regions
+		NOT = {
+			any_province = {
+				colonial_region = colonial_east_africa
+			}
+		}
+	}
+
+	trigger = {
+		trade_company_east_africa = {
+			owned_by = ROOT
+		}
+	}
+
+	global_unrest = 2
+	global_autonomy = 0.05
+	trade_efficiency = -0.1
+}

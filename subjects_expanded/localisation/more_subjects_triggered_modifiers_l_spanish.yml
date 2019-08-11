@@ -1,0 +1,68 @@
+﻿l_spanish:
+ can_create_autonomous_dominion_in_west_india: "Provinces in overseas trade company region (West India)"
+ desc_can_create_autonomous_dominion_in_west_india: "We own provinces in the §West Indian Charter§! overseas. Because of their distance to our capital it's difficult to efficiently administer them, that's why we should release an autonomous dominion there."
+ 
+ can_create_autonomous_dominion_in_south_india: "Provinces in overseas trade company region (South India)"
+ desc_can_create_autonomous_dominion_in_south_india: "We own provinces in the §YDeccan Charter§! overseas. Because of their distance to our capital it's difficult to efficiently administer them, that's why we should release an autonomous dominion there."
+ 
+ can_create_autonomous_dominion_in_north_india: "Provinces in overseas trade company region (North India)"
+ desc_can_create_autonomous_dominion_in_north_india: "We own provinces in the §YNorth Indian Charter§! overseas. Because of their distance to our capital it's difficult to efficiently administer them, that's why we should release an autonomous dominion there."
+ 
+ can_create_autonomous_dominion_in_east_india: "Provinces in overseas trade company region (East India)"
+ desc_can_create_autonomous_dominion_in_east_india: "We own provinces in the §YEast Indian Charter§! overseas. Because of their distance to our capital it's difficult to efficiently administer them, that's why we should release an autonomous dominion there."
+ 
+ can_create_autonomous_dominion_in_coromandel: "Provinces in overseas trade company region (Coromandel)"
+ desc_can_create_autonomous_dominion_in_coromandel: "We own provinces in the §YCoromandel Charter§! overseas. Because of their distance to our capital it's difficult to efficiently administer them, that's why we should release an autonomous dominion there."
+ 
+ can_create_autonomous_dominion_in_indochina: "Provinces in overseas trade company region (Indochina)"
+ desc_can_create_autonomous_dominion_in_indochina: "We own provinces in the §YIndochinese Charter§! overseas. Because of their distance to our capital it's difficult to efficiently administer them, that's why we should release an autonomous dominion there."
+ 
+ can_create_autonomous_dominion_in_west_africa: "Provinces in overseas trade company region (West Africa)"
+ desc_can_create_autonomous_dominion_in_west_africa: "We own provinces in the §YWest African Charter§! overseas. Because of their distance to our capital it's difficult to efficiently administer them, that's why we should release an autonomous dominion there."
+ 
+ can_create_autonomous_dominion_in_south_africa: "Provinces in overseas trade company region (South Africa)"
+ desc_can_create_autonomous_dominion_in_south_africa: "We own provinces in the §YSouth African Charter§! overseas. Because of their distance to our capital it's difficult to efficiently administer them, that's why we should release an autonomous dominion there."
+ 
+ can_create_autonomous_dominion_in_east_africa: "Provinces in overseas trade company region (East Africa)"
+ desc_can_create_autonomous_dominion_in_east_africa: "We own provinces in the §YEast African Charter§! overseas. Because of their distance to our capital it's difficult to efficiently administer them, that's why we should release an autonomous dominion there."
+ 
+ can_create_autonomous_dominion_in_moluccas: "Provinces in overseas trade company region (Moluccas)"
+ desc_can_create_autonomous_dominion_in_moluccas: "We own provinces in the §YMollucan Charter§! overseas. Because of their distance to our capital it's difficult to efficiently administer them, that's why we should release an autonomous dominion there."
+ 
+ can_create_autonomous_dominion_in_indonesia: "Provinces in overseas trade company region (Indonesia)"
+ desc_can_create_autonomous_dominion_in_indonesia: "We own provinces in the §YIndonesian Charter§! overseas. Because of their distance to our capital it's difficult to efficiently administer them, that's why we should release an autonomous dominion there."
+ 
+ 
+ can_not_create_autonomous_dominion_in_west_india: "Provinces in overseas trade company region (West India)"
+ desc_can_not_create_autonomous_dominion_in_west_india: "We own provinces in the §West Indian Charter§! overseas. Because of their distance to our capital it's difficult to efficiently administer them, that's why we should release an autonomous dominion there. But that's currently impossible, because these autonomous dominions already exist: [DI1.GetIfADExists][DI2.GetIfADExists][DI3.GetIfADExists][DI4.GetIfADExists][DI5.GetIfADExists][DI6.GetIfADExists][DI7.GetIfADExists][DI8.GetIfADExists][DI9.GetIfADExists]."
+ 
+ can_not_create_autonomous_dominion_in_south_india: "Provinces in overseas trade company region (South India)"
+ desc_can_not_create_autonomous_dominion_in_south_india: "We own provinces in the §YDeccan Charter§! overseas. Because of their distance to our capital it's difficult to efficiently administer them, that's why we should release an autonomous dominion there. But that's currently impossible, because these autonomous dominions already exist: [DI1.GetIfADExists][DI2.GetIfADExists][DI3.GetIfADExists][DI4.GetIfADExists][DI5.GetIfADExists][DI6.GetIfADExists][DI7.GetIfADExists][DI8.GetIfADExists][DI9.GetIfADExists]."
+ 
+ can_not_create_autonomous_dominion_in_north_india: "Provinces in overseas trade company region (North India)"
+ desc_can_not_create_autonomous_dominion_in_north_india: "We own provinces in the §YNorth Indian Charter§! overseas. Because of their distance to our capital it's difficult to efficiently administer them, that's why we should release an autonomous dominion there. But that's currently impossible, because these autonomous dominions already exist: [DI1.GetIfADExists][DI2.GetIfADExists][DI3.GetIfADExists][DI4.GetIfADExists][DI5.GetIfADExists][DI6.GetIfADExists][DI7.GetIfADExists][DI8.GetIfADExists][DI9.GetIfADExists]."
+ 
+ can_not_create_autonomous_dominion_in_east_india: "Provinces in overseas trade company region (East India)"
+ desc_can_not_create_autonomous_dominion_in_east_india: "We own provinces in the §YEast Indian Charter§! overseas. Because of their distance to our capital it's difficult to efficiently administer them, that's why we should release an autonomous dominion there. But that's currently impossible, because these autonomous dominions already exist: [DI1.GetIfADExists][DI2.GetIfADExists][DI3.GetIfADExists][DI4.GetIfADExists][DI5.GetIfADExists][DI6.GetIfADExists][DI7.GetIfADExists][DI8.GetIfADExists][DI9.GetIfADExists]."
+ 
+ can_not_create_autonomous_dominion_in_coromandel: "Provinces in overseas trade company region (Coromandel)"
+ desc_can_not_create_autonomous_dominion_in_coromandel: "We own provinces in the §YCoromandel Charter§! overseas. Because of their distance to our capital it's difficult to efficiently administer them, that's why we should release an autonomous dominion there. But that's currently impossible, because these autonomous dominions already exist: [DI1.GetIfADExists][DI2.GetIfADExists][DI3.GetIfADExists][DI4.GetIfADExists][DI5.GetIfADExists][DI6.GetIfADExists][DI7.GetIfADExists][DI8.GetIfADExists][DI9.GetIfADExists]."
+ 
+ can_not_create_autonomous_dominion_in_indochina: "Provinces in overseas trade company region (Indochina)"
+ desc_can_not_create_autonomous_dominion_in_indochina: "We own provinces in the §YIndochinese Charter§! overseas. Because of their distance to our capital it's difficult to efficiently administer them, that's why we should release an autonomous dominion there. But that's currently impossible, because these autonomous dominions already exist: [DC1.GetIfADExists][DC2.GetIfADExists][DC3.GetIfADExists][DC4.GetIfADExists][DC5.GetIfADExists][DC6.GetIfADExists][DC7.GetIfADExists]."
+ 
+ can_not_create_autonomous_dominion_in_west_africa: "Provinces in overseas trade company region (West Africa)"
+ desc_can_not_create_autonomous_dominion_in_west_africa: "We own provinces in the §YWest African Charter§! overseas. Because of their distance to our capital it's difficult to efficiently administer them, that's why we should release an autonomous dominion there. But that's currently impossible, because these autonomous dominions already exist: [DW1.GetIfADExists][DW2.GetIfADExists][DW3.GetIfADExists][DW4.GetIfADExists][DW5.GetIfADExists][DW6.GetIfADExists][DW7.GetIfADExists]."
+ 
+ can_not_create_autonomous_dominion_in_south_africa: "Provinces in overseas trade company region (South Africa)"
+ desc_can_not_create_autonomous_dominion_in_south_africa: "We own provinces in the §YSouth African Charter§! overseas. Because of their distance to our capital it's difficult to efficiently administer them, that's why we should release an autonomous dominion there. But that's currently impossible, because these autonomous dominions already exist: [DS1.GetIfADExists][DS2.GetIfADExists][DS3.GetIfADExists][DS4.GetIfADExists][DS5.GetIfADExists][DS6.GetIfADExists][DS7.GetIfADExists]."
+ 
+ can_not_create_autonomous_dominion_in_east_africa: "Provinces in overseas trade company region (East Africa)"
+ desc_can_not_create_autonomous_dominion_in_east_africa: "We own provinces in the §YEast African Charter§! overseas. Because of their distance to our capital it's difficult to efficiently administer them, that's why we should release an autonomous dominion there. But that's currently impossible, because these autonomous dominions already exist: [DA1.GetIfADExists][DA2.GetIfADExists][DA3.GetIfADExists][DA4.GetIfADExists][DA5.GetIfADExists][DA6.GetIfADExists][DA7.GetIfADExists]."
+ 
+ can_not_create_autonomous_dominion_in_moluccas: "Provinces in overseas trade company region (Moluccas)"
+ desc_can_not_create_autonomous_dominion_in_moluccas: "We own provinces in the §YMollucan Charter§! overseas. Because of their distance to our capital it's difficult to efficiently administer them, that's why we should release an autonomous dominion there. But that's currently impossible, because these autonomous dominions already exist: [DE1.GetIfADExists][DE2.GetIfADExists][DE3.GetIfADExists][DE4.GetIfADExists][DE5.GetIfADExists][DE6.GetIfADExists][DE7.GetIfADExists][DE8.GetIfADExists][DE9.GetIfADExists]."
+ 
+ can_not_create_autonomous_dominion_in_indonesia: "Provinces in overseas trade company region (Indonesia)"
+ desc_can_not_create_autonomous_dominion_in_indonesia: "We own provinces in the §YIndonesian Charter§! overseas. Because of their distance to our capital it's difficult to efficiently administer them, that's why we should release an autonomous dominion there. But that's currently impossible, because these autonomous dominions already exist: [DE1.GetIfADExists][DE2.GetIfADExists][DE3.GetIfADExists][DE4.GetIfADExists][DE5.GetIfADExists][DE6.GetIfADExists][DE7.GetIfADExists][DE8.GetIfADExists][DE9.GetIfADExists]."
+ 

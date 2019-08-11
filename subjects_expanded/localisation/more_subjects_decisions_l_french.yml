@@ -1,0 +1,38 @@
+﻿l_french:
+ create_autonomous_dominion_in_india_title: "Autonomous Dominion in India"
+ create_autonomous_dominion_in_india_desc: "We own provinces in India, but those are too far away from our capital [Root.Capital.GetName] to be administered efficiently. We therefor should create an autonomous dominion under our control there that is administered by a General Gouverner. \nAn autonomous dominion transfers 50% of its trade power to us, gives us bonuses to our naval force limit and receives modifiers, which affect trade, institution growth and religious unity in a positive way, as well as tax, manpower, missionary strength and sailors in a negative way. \nIf we gain more provinces in the specific trade company regions (§YWest Indian Charter§!, §YEast Indian Charter§!, §YDeccan Charter§!, §YNorth Indian Charter§!, §YCoromandel Charter§!) afterwards, which are not connected to our capital, these provinces will be ceded to our autonomous dominion."
+ 
+ create_autonomous_dominion_in_east_indies_title: "Autonomous Dominion in the East Indies"
+ create_autonomous_dominion_in_east_indies_desc: "We own provinces in the East Indies (Indonesia), but those are too far away from our capital [Root.Capital.GetName] to be administered efficiently. We therefor should create an autonomous dominion under our control there that is administered by a General Gouverner. \nAn autonomous dominion transfers 50% of its trade power to us, gives us bonuses to our naval force limit and receives modifiers, which affect trade, institution growth and religious unity in a positive way, as well as tax, manpower, missionary strength and sailors in a negative way. \nIf we gain more provinces in the specific trade company regions (§YMollucan Charter§!, §YIndonesian Charter§!) afterwards, which are not connected to our capital, these provinces will be ceded to our autonomous dominion."
+ 
+ create_autonomous_dominion_in_indochina_title: "Autonomous Dominion in Indochina"
+ create_autonomous_dominion_in_indochina_desc: "We own provinces in Indochina, but those are too far away from our capital [Root.Capital.GetName] to be administered efficiently. We therefor should create an autonomous dominion under our control there that is administered by a General Gouverner. \nAn autonomous dominion transfers 50% of its trade power to us, gives us bonuses to our naval force limit and receives modifiers, which affect trade, institution growth and religious unity in a positive way, as well as tax, manpower, missionary strength and sailors in a negative way. \nIf we gain more provinces in the specific trade company regions (§YIndochinese Charter§!) afterwards, which are not connected to our capital, these provinces will be ceded to our autonomous dominion."
+ 
+ create_autonomous_dominion_in_west_africa_title: "Autonomous Dominion in West Africa"
+ create_autonomous_dominion_in_west_africa_desc: "We own provinces in West Africa, but those are too far away from our capital [Root.Capital.GetName] to be administered efficiently. We therefor should create an autonomous dominion under our control there that is administered by a General Gouverner. \nAn autonomous dominion transfers 50% of its trade power to us, gives us bonuses to our naval force limit and receives modifiers, which affect trade, institution growth and religious unity in a positive way, as well as tax, manpower, missionary strength and sailors in a negative way. \nIf we gain more provinces in the specific trade company regions (§YWest African Charter§!) afterwards, which are not connected to our capital, these provinces will be ceded to our autonomous dominion."
+ 
+ create_autonomous_dominion_in_south_africa_title: "Autonomous Dominion in South Africa"
+ create_autonomous_dominion_in_south_africa_desc: "We own provinces in South Africa, but those are too far away from our capital [Root.Capital.GetName] to be administered efficiently. We therefor should create an autonomous dominion under our control there that is administered by a General Gouverner. \nAn autonomous dominion transfers 50% of its trade power to us, gives us bonuses to our naval force limit and receives modifiers, which affect trade, institution growth and religious unity in a positive way, as well as tax, manpower, missionary strength and sailors in a negative way. \nIf we gain more provinces in the specific trade company regions (§YSouth African Charter§!) afterwards, which are not connected to our capital, these provinces will be ceded to our autonomous dominion."
+ 
+ create_autonomous_dominion_in_east_africa_title: "Autonomous Dominion in East Africa"
+ create_autonomous_dominion_in_east_africa_desc: "We own provinces in East Africa, but those are too far away from our capital [Root.Capital.GetName] to be administered efficiently. We therefor should create an autonomous dominion under our control there that is administered by a General Gouverner. \nAn autonomous dominion transfers 50% of its trade power to us, gives us bonuses to our naval force limit and receives modifiers, which affect trade, institution growth and religious unity in a positive way, as well as tax, manpower, missionary strength and sailors in a negative way. \nIf we gain more provinces in the specific trade company regions (§YEast African Charter§!) afterwards, which are not connected to our capital, these provinces will be ceded to our autonomous dominion."
+ 
+ 
+ autonomous_dominion_ghana_nation_title: "Found Ghana"
+ autonomous_dominion_ghana_nation_desc: "After becoming independent, we no longer shall call ourselves [Root.GetName] and our geographical position allows us to found §Y[GHA.GetName]§!."
+ 
+ autonomous_dominion_zimbabwe_nation_title: "Found Zimbabwe"
+ autonomous_dominion_zimbabwe_nation_desc: "After becoming independent, we no longer shall call ourselves [Root.GetName] and our geographical position allows us to found §Y[ZIB.GetName]§!."
+ 
+ autonomous_dominion_south_africa_nation_title: "Found South Africa"
+ autonomous_dominion_south_africa_nation_desc: "After becoming independent, we no longer shall call ourselves [Root.GetName] and our geographical position allows us to found §Y[RSA.GetName]§!."
+ 
+ autonomous_dominion_india_nation_title: "Found India"
+ autonomous_dominion_india_nation_desc: "After becoming independent, we no longer shall call ourselves [Root.GetName] and our geographical position allows us to found §Y[IND.GetName]§!."
+ 
+ autonomous_dominion_indonesia_nation_title: "Found Indonesia"
+ autonomous_dominion_indonesia_nation_desc: "After becoming independent, we no longer shall call ourselves [Root.GetName] and our geographical position allows us to found §Y[IDN.GetName]§!."
+ 
+ autonomous_dominion_thailand_nation_title: "Found Thailand"
+ autonomous_dominion_thailand_nation_desc: "After becoming independent, we no longer shall call ourselves [Root.GetName] and our geographical position allows us to found §Y[THL.GetName]§!."
+ 

@@ -1,0 +1,31 @@
+﻿l_german:
+ protectorate_title: "Protektorat"
+ protectorate_title_plural: "Protektorate"
+ protectorate_is_our: "§Y$NAME$§! ist unser Protektorat."
+ protectorate_long_desc: "Ein Protektorat gibt uns Handelsmacht im Gegenzug für technologischen Fortschritt und militärischen Schutz.\n"
+ protectorate_no_overlord_dow: "Ihr könnt Eurem eigenen Protektorat nicht den Krieg erklären."
+ 
+ puppet_state_title: "Marionettenstaat"
+ puppet_state_title_plural: "Marionettenstaaten"
+ puppet_state_is_our: "§Y$NAME$§! ist unser Marionettenstaat."
+ puppet_state_long_desc: "Ein Marionettenstaat ist eine Mischung aus Vasall und Mark. Er erhält einige Boni ähnlich denen einer Mark, kann allerdings nach 10 Jahren unter unserer Herrschaft annektiert werden. Weiterhin stärkt er unser Ansehen im In- und Ausland.\n"
+ puppet_state_no_overlord_dow: "Ihr könnt Eurem eigenen Marionettenstaat nicht den Krieg erklären."
+ 
+ autonomous_dominion_title: "Autonomes Herrschaftsgebiet"
+ autonomous_dominion_title_plural: "Autonome Herrschaftsgebiete"
+ autonomous_dominion_is_our: "§Y$NAME$§! ist unser Autonomes Herrschaftsgebiet."
+ autonomous_dominion_long_desc: "Ein Autonomes Herrschaftsgebiet verhält sich wie eine Kolonialnation, besitzt jedoch ein verringertes Freiheitsstreben und zahlt keine Zollabgaben an seinen Lehnsherrn. \nAutonome Herrschachtsgebiete die per Entscheidung in Handelshaus-Regionen entlassen werden, können nicht individualisert werden.\n"
+ autonomous_dominion_no_overlord_dow: "Ihr könnt Eurem eigenen Autonomen Herrschaftsgebiet nicht den Krieg erklären."
+ 
+ roman_client_kingdom_title: "Römisches Klientelkönigtum"
+ roman_client_kingdom_title_plural: "Römische Klientelkönigtümer"
+ roman_client_kingdom_is_our: "§Y$NAME$§! ist unser Römisches Klientelkönigtum."
+ roman_client_kingdom_long_desc: "Ein Römisches Klientelkönigtum verhält sich ähnlich wie ein Vasall, besitzt allerdings ein geringeres Freiheitsstreben und kann nur vom §YRömischen Reich§!, §YWeströmischen Reich§! und §YByzantinischem Reich§! ernannt werden. Weiterhin zahlen sie mehr Geld als gewöhnliche Vasallen und sind ein bisschen weniger in ihren diplomatischen Aktionen eingeschränkt als normale Vasallen. \nSofern sie an einen unserer Rivalen oder Feinde grenzen, kosten §YRömische Klientelkönigtümer§! keine diplomatische Beziehung und solange wir keine Kolonisten besitzen, erhöhen sie unsere Reichweite für Kernprovinzen jeweils um §G+5%§!. \nWenn sie einen neuen Thronfolger erhalten, muss er von uns akzeptiert werden, oder er wird nicht als rechtmäßiger Erbe akzeptiert.\n"
+ roman_client_kingdom_no_overlord_dow: "Ihr könnt Eurem eigenen Römischen Klientelkönigtum nicht den Krieg erklären."
+ 
+ voivodeship_title: "Woiwodschaft"
+ voivodeship_title_plural: "Woiwodschaften"
+ voivodeship_is_our: "§Y$NAME$§! ist unsere Woiwodschaft."
+ voivodeship_long_desc: "Eine Woiwodschaft ist eine Mischen aus Vasall und Mark. Sie erhält einige Boni ähnlich denen einer Mark, kann allerdings nach 10 Jahren unter unserer Herrschaft annektiert werden. Weiterhin besitzt sie höhere Militärausgaben.\n"
+ voivodeship_no_overlord_dow: "You can not declare war on your own Puppet State."
+ 

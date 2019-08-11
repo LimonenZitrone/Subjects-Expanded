@@ -1,0 +1,38 @@
+﻿l_german:
+ create_autonomous_dominion_in_india_title: "Autonomes Herrschaftsgebiet in Indien"
+ create_autonomous_dominion_in_india_desc: "Wir besitzen Provinzen in Indien, jedoch sind diese ziemlich weit von unserer Hauptstadt [Root.Capital.GetName] entfernt, um effizient verwaltet werden zu können. Wir sollten dort deshalb ein Autonomes Herrschaftsgebiet unter unserer Kontrolle errichten, das von einem Generalgouverneur verwaltet wird. \nEin Autonomes Herrschaftsgebiet überträgt uns 50% seiner Handelsmacht, gibt uns Boni auf unser Flottenlimit und erhält selbst einige Modifikatoren, die Handel, Institutionsverbreitung und Religiöse Einheit positiv, sowie Steuern, Mannstärke, Missionarsstärke und Seeleute negativ beeinflussen. \nSollten wir anschließend weitere Provinzen in den betreffenden Handelsregionen (§YWestindische Handelsregion§!, §YOstindische Handelsregion§!, §YSüdindische Handelsregion§!, §YNordindische Handelsregion§!, §YKoromandelische Handelsregion§!) erhalten, die nicht mit unserer Hauptstadt verbunden sind, werden diese an unser Autonomes Herrschaftsgebiet abgetreten."
+ 
+ create_autonomous_dominion_in_east_indies_title: "Autonomes Herrschaftsgebiet in Ostindien"
+ create_autonomous_dominion_in_east_indies_desc: "Wir besitzen Provinzen in Ostindien (Indonesien), jedoch sind diese ziemlich weit von unserer Hauptstadt [Root.Capital.GetName] entfernt, um effizient verwaltet werden zu können. Wir sollten dort deshalb ein Autonomes Herrschaftsgebiet unter unserer Kontrolle errichten, das von einem Generalgouverneur verwaltet wird. \nEin Autonomes Herrschaftsgebiet überträgt uns 50% seiner Handelsmacht, gibt uns Boni auf unser Flottenlimit und erhält selbst einige Modifikatoren, die Handel, Institutionsverbreitung und Religiöse Einheit positiv, sowie Steuern, Mannstärke, Missionarsstärke und Seeleute negativ beeinflussen. \nSollten wir anschließend weitere Provinzen in den betreffenden Handelsregionen (§YMolukkische Handelsregion§!, §YIndonesische Handelsregion§!) erhalten, die nicht mit unserer Hauptstadt verbunden sind, werden diese an unser Autonomes Herrschaftsgebiet abgetreten."
+ 
+ create_autonomous_dominion_in_indochina_title: "Autonomes Herrschaftsgebiet in Indochina"
+ create_autonomous_dominion_in_indochina_desc: "Wir besitzen Provinzen in Indochina, jedoch sind diese ziemlich weit von unserer Hauptstadt [Root.Capital.GetName] entfernt, um effizient verwaltet werden zu können. Wir sollten dort deshalb ein Autonomes Herrschaftsgebiet unter unserer Kontrolle errichten, das von einem Generalgouverneur verwaltet wird. \nEin Autonomes Herrschaftsgebiet überträgt uns 50% seiner Handelsmacht, gibt uns Boni auf unser Flottenlimit und erhält selbst einige Modifikatoren, die Handel, Institutionsverbreitung und Religiöse Einheit positiv, sowie Steuern, Mannstärke, Missionarsstärke und Seeleute negativ beeinflussen. \nSollten wir anschließend weitere Provinzen in den betreffenden Handelsregionen (§YIndochinesische Handelsregion§!) erhalten, die nicht mit unserer Hauptstadt verbunden sind, werden diese an unser Autonomes Herrschaftsgebiet abgetreten."
+ 
+ create_autonomous_dominion_in_west_africa_title: "Autonomes Herrschaftsgebiet in Westafrika"
+ create_autonomous_dominion_in_west_africa_desc: "Wir besitzen Provinzen in Westafrika, jedoch sind diese ziemlich weit von unserer Hauptstadt [Root.Capital.GetName] entfernt, um effizient verwaltet werden zu können. Wir sollten dort deshalb ein Autonomes Herrschaftsgebiet unter unserer Kontrolle errichten, das von einem Generalgouverneur verwaltet wird. \nEin Autonomes Herrschaftsgebiet überträgt uns 50% seiner Handelsmacht, gibt uns Boni auf unser Flottenlimit und erhält selbst einige Modifikatoren, die Handel, Institutionsverbreitung und Religiöse Einheit positiv, sowie Steuern, Mannstärke, Missionarsstärke und Seeleute negativ beeinflussen. \nSollten wir anschließend weitere Provinzen in den betreffenden Handelsregionen (§YWestafrikanische Handelsregion§!) erhalten, die nicht mit unserer Hauptstadt verbunden sind, werden diese an unser Autonomes Herrschaftsgebiet abgetreten."
+ 
+ create_autonomous_dominion_in_south_africa_title: "Autonomes Herrschaftsgebiet in Südafrika"
+ create_autonomous_dominion_in_south_africa_desc: "Wir besitzen Provinzen in Südafrika, jedoch sind diese ziemlich weit von unserer Hauptstadt [Root.Capital.GetName] entfernt, um effizient verwaltet werden zu können. Wir sollten dort deshalb ein Autonomes Herrschaftsgebiet unter unserer Kontrolle errichten, das von einem Generalgouverneur verwaltet wird. \nEin Autonomes Herrschaftsgebiet überträgt uns 50% seiner Handelsmacht, gibt uns Boni auf unser Flottenlimit und erhält selbst einige Modifikatoren, die Handel, Institutionsverbreitung und Religiöse Einheit positiv, sowie Steuern, Mannstärke, Missionarsstärke und Seeleute negativ beeinflussen. \nSollten wir anschließend weitere Provinzen in den betreffenden Handelsregionen (§YSüdafrikanische Handelsregion§!) erhalten, die nicht mit unserer Hauptstadt verbunden sind, werden diese an unser Autonomes Herrschaftsgebiet abgetreten."
+ 
+ create_autonomous_dominion_in_east_africa_title: "Autonomes Herrschaftsgebiet in Ostafrika"
+ create_autonomous_dominion_in_east_africa_desc: "Wir besitzen Provinzen in Ostafrika, jedoch sind diese ziemlich weit von unserer Hauptstadt [Root.Capital.GetName] entfernt, um effizient verwaltet werden zu können. Wir sollten dort deshalb ein Autonomes Herrschaftsgebiet unter unserer Kontrolle errichten, das von einem Generalgouverneur verwaltet wird. \nEin Autonomes Herrschaftsgebiet überträgt uns 50% seiner Handelsmacht, gibt uns Boni auf unser Flottenlimit und erhält selbst einige Modifikatoren, die Handel, Institutionsverbreitung und Religiöse Einheit positiv, sowie Steuern, Mannstärke, Missionarsstärke und Seeleute negativ beeinflussen. \nSollten wir anschließend weitere Provinzen in den betreffenden Handelsregionen (§YOstafrikanische Handelsregion§!) erhalten, die nicht mit unserer Hauptstadt verbunden sind, werden diese an unser Autonomes Herrschaftsgebiet abgetreten."
+ 
+ 
+ autonomous_dominion_ghana_nation_title: "Gründet Ghana"
+ autonomous_dominion_ghana_nation_desc: "Nachdem wir unabhängig geworden sind, sollten wir uns nicht länger [Root.GetName] nennen und unsere geografische Lage erlaubt es uns, §Y[GHA.GetName]§! zu bilden."
+ 
+ autonomous_dominion_zimbabwe_nation_title: "Gründet Simbabwe"
+ autonomous_dominion_zimbabwe_nation_desc: "Nachdem wir unabhängig geworden sind, sollten wir uns nicht länger [Root.GetName] nennen und unsere geografische Lage erlaubt es uns, §Y[ZIB.GetName]§! zu bilden."
+ 
+ autonomous_dominion_south_africa_nation_title: "Gründet Südafrika"
+ autonomous_dominion_south_africa_nation_desc: "Nachdem wir unabhängig geworden sind, sollten wir uns nicht länger [Root.GetName] nennen und unsere geografische Lage erlaubt es uns, §Y[RSA.GetName]§! zu bilden."
+ 
+ autonomous_dominion_india_nation_title: "Gründet Indien"
+ autonomous_dominion_india_nation_desc: "Nachdem wir unabhängig geworden sind, sollten wir uns nicht länger [Root.GetName] nennen und unsere geografische Lage erlaubt es uns, §Y[IND.GetName]§! zu bilden."
+ 
+ autonomous_dominion_indonesia_nation_title: "Gründet Indonesien"
+ autonomous_dominion_indonesia_nation_desc: "Nachdem wir unabhängig geworden sind, sollten wir uns nicht länger [Root.GetName] nennen und unsere geografische Lage erlaubt es uns, §Y[IDN.GetName]§! zu bilden."
+ 
+ autonomous_dominion_thailand_nation_title: "Gründet Thailand"
+ autonomous_dominion_thailand_nation_desc: "Nachdem wir unabhängig geworden sind, sollten wir uns nicht länger [Root.GetName] nennen und unsere geografische Lage erlaubt es uns, §Y[THL.GetName]§! zu bilden."
+ 

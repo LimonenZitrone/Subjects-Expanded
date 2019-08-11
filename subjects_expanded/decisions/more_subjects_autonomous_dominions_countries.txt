@@ -1,0 +1,305 @@
+country_decisions = {
+	autonomous_dominion_thailand_nation = {
+		major = yes
+		potential = {
+			NOT = { exists = THL }
+			NOT = { has_country_flag = changed_from_colonial_nation }
+			OR = {
+				is_former_autonomous_dominion = yes
+				is_colonial_nation = yes
+			}
+			OR = {
+				trade_company_indochina = {
+					owned_by = ROOT
+				}
+				tag = DC1
+				tag = DC2
+				tag = DC3
+				tag = DC4
+				tag = DC5
+				tag = DC6
+				tag = DC7
+			}
+		}
+		allow = {
+			is_former_autonomous_dominion = yes
+			is_subject = no
+			is_at_war = no
+			capital_scope = {
+				is_node_in_trade_company_region = yes
+			}
+		}
+		effect = {
+			add_prestige = 25
+			change_tag = THL
+			set_country_flag = changed_from_colonial_nation
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			swap_free_idea_group = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	autonomous_dominion_india_nation = {
+		major = yes
+		potential = {
+			NOT = { exists = IND }
+			NOT = { has_country_flag = changed_from_colonial_nation }
+			OR = {
+				is_former_autonomous_dominion = yes
+				is_colonial_nation = yes
+			}
+			OR = {
+				trade_company_west_india = {
+					owned_by = ROOT
+				}
+				trade_company_east_india = {
+					owned_by = ROOT
+				}
+				trade_company_deccan = {
+					owned_by = ROOT
+				}
+				trade_company_north_india = {
+					owned_by = ROOT
+				}
+				trade_company_coromandel = {
+					owned_by = ROOT
+				}
+				tag = DI1
+				tag = DI2
+				tag = DI3
+				tag = DI4
+				tag = DI5
+				tag = DI6
+				tag = DI7
+				tag = DI8
+				tag = DI9
+			}
+		}
+		allow = {
+			is_former_autonomous_dominion = yes
+			is_subject = no
+			is_at_war = no
+			capital_scope = {
+				is_node_in_trade_company_region = yes
+			}
+		}
+		effect = {
+			add_prestige = 25
+			change_tag = IND
+			set_country_flag = changed_from_colonial_nation
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			swap_free_idea_group = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	autonomous_dominion_indonesia_nation = {
+		major = yes
+		potential = {
+			NOT = { exists = IDN }
+			NOT = { has_country_flag = changed_from_colonial_nation }
+			OR = {
+				is_former_autonomous_dominion = yes
+				is_colonial_nation = yes
+			}
+			OR = {
+				trade_company_moluccas = {
+					owned_by = ROOT
+				}
+				trade_company_indonesia = {
+					owned_by = ROOT
+				}
+				tag = DE1
+				tag = DE2
+				tag = DE3
+				tag = DE4
+				tag = DE5
+				tag = DE6
+				tag = DE7
+				tag = DE8
+				tag = DE9
+			}
+		}
+		allow = {
+			is_former_autonomous_dominion = yes
+			is_subject = no
+			is_at_war = no
+			capital_scope = {
+				is_node_in_trade_company_region = yes
+			}
+		}
+		effect = {
+			add_prestige = 25
+			change_tag = IDN
+			set_country_flag = changed_from_colonial_nation
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			swap_free_idea_group = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	autonomous_dominion_ghana_nation = {
+		major = yes
+		potential = {
+			NOT = { exists = GHA }
+			NOT = { has_country_flag = changed_from_colonial_nation }
+			OR = {
+				is_former_autonomous_dominion = yes
+				is_colonial_nation = yes
+			}
+			OR = {
+				trade_company_west_africa = {
+					owned_by = ROOT
+				}
+				tag = DW1
+				tag = DW2
+				tag = DW3
+				tag = DW4
+				tag = DW5
+				tag = DW6
+				tag = DW7
+			}
+			NOT = {
+				any_province = {
+					colonial_region = colonial_west_africa
+				}
+			}
+		}
+		allow = {
+			is_former_autonomous_dominion = yes
+			is_subject = no
+			is_at_war = no
+			capital_scope = {
+				is_node_in_trade_company_region = yes
+			}
+		}
+		effect = {
+			add_prestige = 25
+			change_tag = GHA
+			set_country_flag = changed_from_colonial_nation
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			swap_free_idea_group = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	autonomous_dominion_zimbabwe_nation = {
+		major = yes
+		potential = {
+			NOT = { exists = ZIB }
+			NOT = { has_country_flag = changed_from_colonial_nation }
+			OR = {
+				is_former_autonomous_dominion = yes
+				is_colonial_nation = yes
+			}
+			OR = {
+				trade_company_east_africa = {
+					owned_by = ROOT
+				}
+				tag = DA1
+				tag = DA2
+				tag = DA3
+				tag = DA4
+				tag = DA5
+				tag = DA6
+				tag = DA7
+			}
+			NOT = {
+				any_province = {
+					colonial_region = colonial_east_africa
+				}
+			}
+		}
+		allow = {
+			is_former_autonomous_dominion = yes
+			is_subject = no
+			is_at_war = no
+			capital_scope = {
+				is_node_in_trade_company_region = yes
+			}
+		}
+		effect = {
+			add_prestige = 25
+			change_tag = ZIB
+			set_country_flag = changed_from_colonial_nation
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			swap_free_idea_group = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	autonomous_dominion_south_africa_nation = {
+		major = yes
+		potential = {
+			NOT = { exists = RSA }
+			NOT = { has_country_flag = changed_from_colonial_nation }
+			OR = {
+				is_former_autonomous_dominion = yes
+				is_colonial_nation = yes
+			}
+			OR = {
+				trade_company_south_africa = {
+					owned_by = ROOT
+				}
+				tag = DS1
+				tag = DS2
+				tag = DS3
+				tag = DS4
+				tag = DS5
+				tag = DS6
+				tag = DS7
+			}
+			NOT = {
+				any_province = {
+					colonial_region = colonial_south_africa
+				}
+			}
+		}
+		allow = {
+			is_former_autonomous_dominion = yes
+			is_subject = no
+			is_at_war = no
+			capital_scope = {
+				is_node_in_trade_company_region = yes
+			}
+		}
+		effect = {
+			add_prestige = 25
+			change_tag = RSA
+			set_country_flag = changed_from_colonial_nation
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			swap_free_idea_group = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

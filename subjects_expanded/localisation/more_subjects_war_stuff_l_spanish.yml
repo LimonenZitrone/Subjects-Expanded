@@ -1,0 +1,18 @@
+﻿l_spanish:
+ # Peace Treaties:
+ make_protectorate_desc: "@[From.GetTag] §Y[From.GetName]§! is made to a protectorate of @[Root.GetTag] §Y[Root.GetName]§!."
+ CB_ALLOWED_make_protectorate: "Force Protectorate"
+ PEACE_make_protectorate: "$TAKERS$ Protectorate"
+ 
+ make_puppet_state_desc: "@[From.GetTag] §Y[From.GetName]§! is made to a puppet state of @[Root.GetTag] §Y[Root.GetName]§!."
+ CB_ALLOWED_make_puppet_state: "Force Puppet State"
+ PEACE_make_puppet_state: "$TAKERS$ Puppet State"
+ 
+ make_puppet_state_et_desc: "@[From.GetTag] §Y[From.GetName]§! is made to a puppet state of @[Root.GetTag] §Y[Root.GetName]§!."
+ CB_ALLOWED_make_puppet_state_et: "Force Puppet State"
+ PEACE_make_puppet_state_et: "$TAKERS$ Puppet State"
+ 
+ make_roman_client_kingdom_desc: "@[From.GetTag] §Y[From.GetName]§! is made to a Roman client kingdom of @[Root.GetTag] §Y[Root.GetName]§!."
+ CB_ALLOWED_make_roman_client_kingdom: "Force Roman Client Kingdom"
+ PEACE_make_roman_client_kingdom: "$TAKERS$ Client Kingdom"
+ 

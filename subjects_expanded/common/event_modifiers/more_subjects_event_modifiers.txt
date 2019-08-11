@@ -1,0 +1,348 @@
+# Subject Type: Protectorate
+protectorate_modifier = {
+	global_unrest = -2
+	embracement_cost = -0.2
+}
+
+protectorate_institution_modifier_1 = {
+	global_institution_spread = 0.2
+}
+
+protectorate_institution_modifier_2 = {
+	global_institution_spread = 0.25
+}
+
+protectorate_institution_modifier_3 = {
+	global_institution_spread = 0.3
+}
+
+protectorate_adm_tech_modifier = {
+	adm_tech_cost_modifier = -0.2
+}
+
+protectorate_dip_tech_modifier = {
+	dip_tech_cost_modifier = -0.2
+}
+
+protectorate_mil_tech_modifier = {
+	mil_tech_cost_modifier = -0.2
+}
+
+protectorate_adm_liberty_desire_modifier = {
+	liberty_desire = 20
+}
+
+protectorate_dip_liberty_desire_modifier = {
+	liberty_desire = 20
+}
+
+protectorate_mil_liberty_desire_modifier = {
+	liberty_desire = 20
+}
+
+protectorate_advanced_adm_liberty_desire_modifier = {
+	liberty_desire = 33
+}
+
+protectorate_advanced_dip_liberty_desire_modifier = {
+	liberty_desire = 33
+}
+
+protectorate_advanced_mil_liberty_desire_modifier = {
+	liberty_desire = 33
+}
+
+
+# Subject Type: Puppet State
+puppet_state_modifier = {
+	global_manpower_modifier = 0.25
+	land_forcelimit_modifier = 0.30
+	manpower_recovery_speed = 0.20
+	republican_tradition = 0.25
+}
+
+puppet_state_overlord_modifier = {
+	prestige = 0.1
+	legitimacy = 0.1
+	republican_tradition = 0.05
+	devotion = 0.1
+	meritocracy = 0.1
+	horde_unity = 0.1
+	improve_relation_modifier = 0.05
+}
+
+puppet_state_overlord_has_parliament_modifier = {
+	liberty_desire = 10
+}
+
+# Subject Type Autonomous Dominion:
+autonomous_dominion_trade_company_modifier = {
+	global_unrest = -1
+	global_institution_spread = 0.05
+	global_trade_power = 0.5
+	global_missionary_strength = -1
+	religious_unity = 1
+	global_tax_modifier = -0.25
+	global_sailors_modifier = -0.25
+	global_manpower_modifier = -0.25
+	min_autonomy = -75
+	max_states = 30
+	liberty_desire = -25
+	tolerance_heathen = 3
+	tolerance_heretic = 3
+	num_accepted_cultures = 5
+}
+
+autonomous_dominion_overlord_trade_company_modifier_1 = {
+	naval_forcelimit = 0.5
+}
+
+autonomous_dominion_overlord_trade_company_modifier_2 = {
+	naval_forcelimit = 0.5
+}
+
+autonomous_dominion_overlord_trade_company_modifier_3 = {
+	naval_forcelimit = 0.5
+}
+
+autonomous_dominion_overlord_trade_company_modifier_4 = {
+	naval_forcelimit = 0.5
+}
+
+autonomous_dominion_overlord_trade_company_modifier_5 = {
+	naval_forcelimit = 0.5
+}
+
+autonomous_dominion_overlord_trade_company_modifier_6 = {
+	naval_forcelimit = 0.5
+}
+
+autonomous_dominion_overlord_trade_company_modifier_7 = {
+	naval_forcelimit = 0.5
+}
+
+autonomous_dominion_overlord_trade_company_modifier_8 = {
+	naval_forcelimit = 0.5
+}
+
+autonomous_dominion_overlord_trade_company_modifier_9 = {
+	naval_forcelimit = 0.5
+}
+
+autonomous_dominion_overlord_trade_company_modifier_10 = {
+	naval_forcelimit = 0.5
+}
+
+autonomous_dominion_overlord_trade_company_modifier_11 = {
+	naval_forcelimit = 0.5
+}
+
+autonomous_dominion_overlord_trade_company_modifier_12 = {
+	naval_forcelimit = 0.5
+}
+
+autonomous_dominion_overlord_trade_company_modifier_13 = {
+	naval_forcelimit = 0.5
+}
+
+autonomous_dominion_overlord_trade_company_modifier_14 = {
+	naval_forcelimit = 0.5
+}
+
+autonomous_dominion_overlord_trade_company_modifier_15 = {
+	naval_forcelimit = 0.5
+}
+
+autonomous_dominion_overlord_trade_company_modifier_16 = {
+	naval_forcelimit = 0.5
+}
+
+autonomous_dominion_overlord_trade_company_modifier_17 = {
+	naval_forcelimit = 0.5
+}
+
+autonomous_dominion_overlord_trade_company_modifier_18 = {
+	naval_forcelimit = 0.5
+}
+
+autonomous_dominion_overlord_trade_company_modifier_19 = {
+	naval_forcelimit = 0.5
+}
+
+autonomous_dominion_overlord_trade_company_modifier_20 = {
+	naval_forcelimit = 0.5
+}
+
+autonomous_dominion_overlord_trade_company_modifier_21 = {
+	naval_forcelimit = 0.5
+}
+
+autonomous_dominion_overlord_trade_company_modifier_22 = {
+	naval_forcelimit = 0.5
+}
+
+autonomous_dominion_overlord_trade_company_modifier_23 = {
+	naval_forcelimit = 0.5
+}
+
+autonomous_dominion_overlord_trade_company_modifier_24 = {
+	naval_forcelimit = 0.5
+}
+
+autonomous_dominion_overlord_trade_company_modifier_25 = {
+	naval_forcelimit = 0.5
+}
+
+autonomous_dominion_overlord_trade_company_modifier_26 = {
+	naval_forcelimit = 0.5
+}
+
+autonomous_dominion_overlord_trade_company_modifier_27 = {
+	naval_forcelimit = 0.5
+}
+
+autonomous_dominion_overlord_trade_company_modifier_28 = {
+	naval_forcelimit = 0.5
+}
+
+autonomous_dominion_overlord_trade_company_modifier_29 = {
+	naval_forcelimit = 0.5
+}
+
+autonomous_dominion_overlord_trade_company_modifier_30 = {
+	naval_forcelimit = 0.5
+}
+
+autonomous_dominion_overlord_trade_company_modifier_31 = {
+	naval_forcelimit = 0.5
+}
+
+autonomous_dominion_overlord_trade_company_modifier_32 = {
+	naval_forcelimit = 0.5
+}
+
+autonomous_dominion_overlord_trade_company_modifier_33 = {
+	naval_forcelimit = 0.5
+}
+
+autonomous_dominion_overlord_trade_company_modifier_34 = {
+	naval_forcelimit = 0.5
+}
+
+autonomous_dominion_overlord_trade_company_modifier_35 = {
+	naval_forcelimit = 0.5
+}
+
+autonomous_dominion_overlord_trade_company_modifier_36 = {
+	naval_forcelimit = 0.5
+}
+
+autonomous_dominion_overlord_trade_company_modifier_37 = {
+	naval_forcelimit = 0.5
+}
+
+autonomous_dominion_overlord_trade_company_modifier_38 = {
+	naval_forcelimit = 0.5
+}
+
+autonomous_dominion_overlord_trade_company_modifier_39 = {
+	naval_forcelimit = 0.5
+}
+
+autonomous_dominion_overlord_trade_company_modifier_40 = {
+	naval_forcelimit = 0.5
+}
+
+autonomous_dominion_overlord_trade_company_modifier_41 = {
+	naval_forcelimit = 0.5
+}
+
+autonomous_dominion_overlord_trade_company_modifier_42 = {
+	naval_forcelimit = 0.5
+}
+
+autonomous_dominion_overlord_trade_company_modifier_43 = {
+	naval_forcelimit = 0.5
+}
+
+autonomous_dominion_overlord_trade_company_modifier_44 = {
+	naval_forcelimit = 0.5
+}
+
+autonomous_dominion_overlord_trade_company_modifier_45 = {
+	naval_forcelimit = 0.5
+}
+
+autonomous_dominion_overlord_trade_company_modifier_46 = {
+	naval_forcelimit = 0.5
+}
+
+autonomous_dominion_overlord_trade_company_modifier_47 = {
+	naval_forcelimit = 0.5
+}
+
+autonomous_dominion_overlord_trade_company_modifier_48 = {
+	naval_forcelimit = 0.5
+}
+
+autonomous_dominion_overlord_trade_company_modifier_49 = {
+	naval_forcelimit = 0.5
+}
+
+autonomous_dominion_overlord_trade_company_modifier_50 = {
+	naval_forcelimit = 0.5
+}
+
+
+reduced_autonomous_dominion_development = {
+	development_cost = 3
+}
+
+
+# Subject Type Roman Client Kingdom:
+roman_client_kingdom_modifier = {
+	legitimacy = 0.15
+	garrison_size = 0.15
+}
+
+roman_client_kingdom_overlord_modifier = {
+	land_forcelimit = 1
+}
+
+roman_client_kingdom_no_dip_upkeep_cost_modifier = {
+	diplomatic_upkeep = 1
+}
+
+roman_client_kingdom_extra_range_modifier = {
+	range = 0.05
+}
+
+# Modifiers that function as timers
+protectorate_got_monarch_power_this_year = {
+}
+
+declined_establish_protectorate = {
+}
+
+declined_become_protectorate = {
+}
+
+declined_establish_puppet_state = {
+}
+
+established_autonomous_dominion = {
+}
+
+cooldown_reduced_autonomous_dominion_development = {
+}
+
+cooldown_placed_roman_ruler_on_subject_throne = {
+}
+
+# Subject Type: Voivodeship
+voivodeship_modifier = {
+	global_manpower_modifier = 0.25
+	land_forcelimit_modifier = 0.30
+	manpower_recovery_speed = 0.20
+	republican_tradition = 0.25
+}

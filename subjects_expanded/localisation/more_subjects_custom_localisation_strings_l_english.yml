@@ -1,0 +1,103 @@
+﻿l_english:
+ string_cancel_protectorate_stab_hit: " decrease our stability by §R-1§! and "
+ string_cancel_protectorate_no_stab_hit: " "
+ 
+ string_created_ad_name_east_africa_1: "@DA1 §Y[DA1.GetName]§!"
+ string_created_ad_name_east_africa_2: "@DA2 §Y[DA2.GetName]§!"
+ string_created_ad_name_east_africa_3: "@DA3 §Y[DA3.GetName]§!"
+ string_created_ad_name_east_africa_4: "@DA4 §Y[DA4.GetName]§!"
+ string_created_ad_name_east_africa_5: "@DA5 §Y[DA5.GetName]§!"
+ string_created_ad_name_east_africa_6: "@DA6 §Y[DA6.GetName]§!"
+ string_created_ad_name_east_africa_7: "@DA7 §Y[DA7.GetName]§!"
+ 
+ string_created_ad_name_indochina_1: "@DC1 §Y[DC1.GetName]§!"
+ string_created_ad_name_indochina_2: "@DC2 §Y[DC2.GetName]§!"
+ string_created_ad_name_indochina_3: "@DC3 §Y[DC3.GetName]§!"
+ string_created_ad_name_indochina_4: "@DC4 §Y[DC4.GetName]§!"
+ string_created_ad_name_indochina_5: "@DC5 §Y[DC5.GetName]§!"
+ string_created_ad_name_indochina_6: "@DC6 §Y[DC6.GetName]§!"
+ string_created_ad_name_indochina_7: "@DC7 §Y[DC7.GetName]§!"
+ 
+ string_created_ad_name_east_indies_1: "@DE1 §Y[DE1.GetName]§!"
+ string_created_ad_name_east_indies_2: "@DE2 §Y[DE2.GetName]§!"
+ string_created_ad_name_east_indies_3: "@DE3 §Y[DE3.GetName]§!"
+ string_created_ad_name_east_indies_4: "@DE4 §Y[DE4.GetName]§!"
+ string_created_ad_name_east_indies_5: "@DE5 §Y[DE5.GetName]§!"
+ string_created_ad_name_east_indies_6: "@DE6 §Y[DE6.GetName]§!"
+ string_created_ad_name_east_indies_7: "@DE7 §Y[DE7.GetName]§!"
+ string_created_ad_name_east_indies_8: "@DE8 §Y[DE8.GetName]§!"
+ string_created_ad_name_east_indies_9: "@DE9 §Y[DE9.GetName]§!"
+ 
+ string_created_ad_name_india_1: "@DI1 §Y[DI1.GetName]§!"
+ string_created_ad_name_india_2: "@DI2 §Y[DI2.GetName]§!"
+ string_created_ad_name_india_3: "@DI3 §Y[DI3.GetName]§!"
+ string_created_ad_name_india_4: "@DI4 §Y[DI4.GetName]§!"
+ string_created_ad_name_india_5: "@DI5 §Y[DI5.GetName]§!"
+ string_created_ad_name_india_6: "@DI6 §Y[DI6.GetName]§!"
+ string_created_ad_name_india_7: "@DI7 §Y[DI7.GetName]§!"
+ string_created_ad_name_india_8: "@DI8 §Y[DI8.GetName]§!"
+ string_created_ad_name_india_9: "@DI9 §Y[DI9.GetName]§!"
+ 
+ string_created_ad_name_south_africa_1: "@DS1 §Y[DS1.GetName]§!"
+ string_created_ad_name_south_africa_2: "@DS2 §Y[DS2.GetName]§!"
+ string_created_ad_name_south_africa_3: "@DS3 §Y[DS3.GetName]§!"
+ string_created_ad_name_south_africa_4: "@DS4 §Y[DS4.GetName]§!"
+ string_created_ad_name_south_africa_5: "@DS5 §Y[DS5.GetName]§!"
+ string_created_ad_name_south_africa_6: "@DS6 §Y[DS6.GetName]§!"
+ string_created_ad_name_south_africa_7: "@DS7 §Y[DS7.GetName]§!"
+ 
+ string_created_ad_name_west_africa_1: "@DW1 §Y[DW1.GetName]§!"
+ string_created_ad_name_west_africa_2: "@DW2 §Y[DW2.GetName]§!"
+ string_created_ad_name_west_africa_3: "@DW3 §Y[DW3.GetName]§!"
+ string_created_ad_name_west_africa_4: "@DW4 §Y[DW4.GetName]§!"
+ string_created_ad_name_west_africa_5: "@DW5 §Y[DW5.GetName]§!"
+ string_created_ad_name_west_africa_6: "@DW6 §Y[DW6.GetName]§!"
+ string_created_ad_name_west_africa_7: "@DW7 §Y[DW7.GetName]§!"
+ 
+ 
+ string_west_indian_trade_company_region: "§YWest Indian Charter§!"
+ string_no_west_indian_trade_company_region: ""
+ 
+ string_east_indian_trade_company_region: "[Root.GetFirstIndianTradeCompanyRegionWeCedeComma]§YEast Indian Charter§!"
+ string_no_east_indian_trade_company_region: ""
+ 
+ string_south_indian_trade_company_region: "[Root.GetSecondIndianTradeCompanyRegionWeCedeComma]§YDeccan Charter§!"
+ string_no_south_indian_trade_company_region: ""
+ 
+ string_north_indian_trade_company_region: "[Root.GetThirdIndianTradeCompanyRegionWeCedeComma]§YNorth Indian Charter§!"
+ string_no_north_indian_trade_company_region: ""
+ 
+ string_coromandel_indian_trade_company_region: "[Root.GetFourthIndianTradeCompanyRegionWeCedeComma]§YCoromandel Charter§!"
+ string_no_coromandel_indian_trade_company_region: ""
+ 
+ string_moluccas_trade_company_region: "§YMollucan Charter§!"
+ string_no_moluccas_trade_company_region: ""
+ 
+ string_indonesian_trade_company_region: "[Root.GetFirstEastIndiesTradeCompanyRegionWeCedeComma]§YIndonesian Charter§!"
+ string_no_indonesian_trade_company_region: ""
+  
+ string_trade_company_list_comma: ", "
+ string_trade_company_list_no_comma: ""
+ 
+ string_trade_company_region_sg: "the trade company region"
+ string_trade_company_region_pl: "the trade company regions"
+ 
+ string_ad_exists_with_comma: "@[This.GetTag]§Y[This.GetName]§! (Overlord: [This.Overlord.GetName]), "
+ string_ad_exists_without_comma: "@[This.GetTag]§Y[This.GetName]§! (Overlord: [This.Overlord.GetName])"
+ string_ad_does_not_exist: ""
+ 
+ string_heir_strong_claim_text: "§GStrong§!"
+ string_heir_average_claim_text: "§YAverage§!"
+ string_heir_weak_claim_text: "§RWeak§!"
+ 
+ string_cannot_receive_additional_tribute: "We can not demand additional tribute, because all values are §Y0§!"
+ string_cancel: "Cancel"
+ 
+ string_monarch_power_value_6: "6"
+ string_monarch_power_value_5: "5"
+ string_monarch_power_value_4: "4"
+ string_monarch_power_value_3: "3"
+ string_monarch_power_value_2: "2"
+ string_monarch_power_value_1: "1"
+ string_monarch_power_value_0: "0"
+ 

@@ -60,7 +60,7 @@
  more_subjects_roman_client_kingdom_events6.EVTOPT1: "I can't believe this..."
  
  more_subjects_voivodeship_events.EVTNAME1: "The [SIL.GetAdjective] Voivodeship"
- more_subjects_voivodeship_events.EVTDESC1: "[SIL.GetName] is a vassal of our personal union [BOH.GetName]. However they are rightful [Root.GetAdjective] territory, so we might want to think about making them a voivodeship."
+ more_subjects_voivodeship_events.EVTDESC1: "Our dynastical union with the Kingdom of Bohemia has allowed us to finally regain control over Silesia, long since splintered from our patrimony. The Piast dukes of Silesia pledged fealty to the monarch of Bohemia, which has become our king through acts of union. Following this logic, we might gain their fealty by pressuring them to shift their dependency from the Czechs to us."
  more_subjects_voivodeship_events1.EVTOPT1: "They shall become a voivodeship."
- more_subjects_voivodeship_events1.EVTOPT2: "They can keep them as a vassal."
+ more_subjects_voivodeship_events1.EVTOPT2: "They would better serve as a Bohemian vassal."
  

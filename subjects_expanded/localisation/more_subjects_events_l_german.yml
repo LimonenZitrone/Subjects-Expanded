@@ -60,7 +60,7 @@
  more_subjects_roman_client_kingdom_events6.EVTOPT1: "Sowas aber auch..."
  
  more_subjects_voivodeship_events.EVTNAME1: "Die [SIL.GetAdjective]e Woiwodschaft"
- more_subjects_voivodeship_events.EVTDESC1: "[SIL.GetName] ist eine Vasall unserer Personalunion [BOH.GetName]. Allerdings sind sie Teil des rechtmäßigen [Root.GetAdjective] Besitzes, dementsprechend sollten wir darüber nachdenken, sie zu einer Woiwodschaft zu ernennen."
+ more_subjects_voivodeship_events.EVTDESC1: "Unsere dynastische Union mit dem/der [BOH.GovernmentName] von [BOH.GetName] erlaubte es uns endlich wieder die Kontrolle über [SIL.GetName] zu gewinnen, lange Zeit nachdem sie sich von uns abgespalten haben. Die Piastenherzöge von [SIL.GetName] haben dem Herrscher von [BOH.GetName] Treue geschworen, welcher durch den die Union unser [Root.Monarch.GetTitle] geworden ist. Nach dieser Logik könnten wir ihre Treue gewinnen, indem wir sie unter Druck setzen, ihre Abhängigkeit von den Tschechen auf uns zu verlagern."
  more_subjects_voivodeship_events1.EVTOPT1: "Sie sollen eine Woiwodschaft werden."
- more_subjects_voivodeship_events1.EVTOPT2: "Sie können sie als Vasallen behalten."
+ more_subjects_voivodeship_events1.EVTOPT2: "Sie dienen besser als [BOH.GetAdjective]er Vasall."
  

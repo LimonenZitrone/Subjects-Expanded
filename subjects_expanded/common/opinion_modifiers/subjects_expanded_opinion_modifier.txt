@@ -103,3 +103,7 @@ fief_subject_forced = {
 	yearly_decay = 5
 	min = -100
 }
+
+is_crusader_state_vassal = {
+	opinion = 50
+}

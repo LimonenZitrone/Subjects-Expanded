@@ -148,11 +148,7 @@ is_possible_subject_of_subject_type_roman_client_kingdom = {
 is_possible_subject_of_subject_type_voivodeship = {
 	NOT = { is_subject_of_type = voivodeship }
 	is_subject_of = PREV
-	OR = {
-		is_subject_of_type = vassal
-		is_subject_of_type = client_vassal
-		is_subject_of_type = fief_subject
-	}
+	is_vassal_or_similar_subject = yes
 	is_neighbor_of = PREV
 }
 
@@ -162,14 +158,21 @@ is_possible_subject_of_subject_type_fief_subject = {
 		is_subject = no
 		AND = {
 			is_subject_of = PREV
-			OR = {
-				is_subject_of_type = vassal
-				is_subject_of_type = client_vassal
-				is_subject_of_type = voivodeship
-			}
+			is_vassal_or_similar_subject = yes
 		}
 	}
 	primary_culture = PREV
+}
+
+is_possible_subject_of_subject_type_crusader_state_vassal = {
+	NOT = { is_subject_of_type = crusader_state_vassal }
+	is_subject_of = PREV
+	is_vassal_or_similar_subject = yes
+	is_excommunicated = no
+	religion = catholic
+	capital_scope = {
+		continent = europe
+	}
 }
 
 can_create_subject_type = {

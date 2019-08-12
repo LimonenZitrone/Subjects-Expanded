@@ -2,6 +2,8 @@
  string_cancel_protectorate_stab_hit: " decrease our stability by §R-1§! and "
  string_cancel_protectorate_no_stab_hit: " "
  
+ string_establish_crusader_state_costs_papal_influence: "This will change our papal influence by §R-20§!."
+ 
  string_created_ad_name_east_africa_1: "@DA1 §Y[DA1.GetName]§!"
  string_created_ad_name_east_africa_2: "@DA2 §Y[DA2.GetName]§!"
  string_created_ad_name_east_africa_3: "@DA3 §Y[DA3.GetName]§!"

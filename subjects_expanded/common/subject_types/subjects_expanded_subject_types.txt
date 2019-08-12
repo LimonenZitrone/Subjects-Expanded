@@ -1211,3 +1211,105 @@ fief_subject = {
 	overlord_opinion_modifier = is_fief_subject
 	subject_opinion_modifier = is_fief_subject
 }
+
+crusader_state_vassal = {
+	copy_from = default
+	count = vassal
+	
+	# Graphics:
+	sprite = GFX_icon_crusader_state_vassal
+	diplomacy_overlord_sprite = GFX_diplomacy_leadcrusader_state_vassal # The one that the overlord sees
+	diplomacy_subject_sprite = GFX_diplomacy_amcrusader_state_vassal	# The one that the subject sees
+
+	# Triggers:
+	is_potential_overlord = {
+		government = theocracy
+		OR = {
+			tag = PAP
+			has_reform = monastic_order_reform
+		}
+		religion = catholic
+		is_excommunicated = no
+		capital_scope = {
+			OR = {
+				continent = europe
+				province_id = 379
+			}
+		}
+		NOT = {
+			calc_true_if = {
+				all_subject_country = {
+					is_subject_of_type = crusader_state_vassal
+				}
+				amount = 2
+			}
+		}
+	}
+	
+	# Properties:
+	transfer_trade_if_merchant_republic = yes
+	overlord_can_attack = no
+	has_power_projection = no
+	gets_help_with_rebels = yes							# Only for AI. Bidirectional.
+	can_transfer_in_peace = no							# Whether this subject type can be made into a vassal with the "Transfer Subject" Age Ability.
+	can_set_mil_focus = yes
+	can_send_missionary_to_subject = yes				# Requires Cradle of Civilization
+	
+	max_government_rank = 2								# 0 means no limit
+	cities_required_for_bonuses = 0						# How many cities the subject needs before giving bonuses to overlord
+	trust_on_start = 50									# Overlord and subject will each get this much extra trust with each other at game start
+
+	base_liberty_desire = -15.0
+	liberty_desire_development_ratio = 0.25
+	liberty_desire_same_dynasty = -5.0
+	pays_overlord = 0.5
+	forcelimit_bonus = 1.0
+	forcelimit_to_overlord = 0.1
+	military_focus = 1.25								# How much the AI subject should spend etc. on army and forts. 0 should make them spend nothing. Very high values will probably not make a big difference since there will be sanity checks.
+
+	relative_power_class = 2 							# See description above
+	diplomacy_view_class = 1							# See description above
+
+	can_rival = {
+		other_overlord = all
+		independent_nations = yes
+	}
+	can_ally = {
+		same_overlord = crusader_state_vassal
+	}
+	can_marry = {
+		same_overlord = crusader_state_vassal
+	}
+
+	# Subject Interactions:
+	# (continuous)
+	subsidize_armies = yes
+	send_officers = yes
+	# (immediate)
+	fortify_march = yes
+	takeondebt = yes
+	bestow_gifts = yes
+	send_additional_troops = yes
+	return_land = yes
+
+	# Modifiers:
+	modifier_subject = clear
+	modifier_subject = {
+		modifier = crusader_state_vassal_modifier
+	}
+	modifier_subject = {
+		trigger = {
+			FROM = {
+				is_papal_controller = yes
+			}
+		}
+		modifier = crusader_state_vassal_overlord_is_papal_controller_modifier
+	}
+	modifier_overlord = clear
+	modifier_overlord = {
+		modifier = crusader_state_vassal_overlord_modifier
+	}
+
+	overlord_opinion_modifier = is_crusader_state_vassal
+	subject_opinion_modifier = is_crusader_state_vassal
+}

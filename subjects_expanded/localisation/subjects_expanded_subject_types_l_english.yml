@@ -8,7 +8,7 @@
  puppet_state_title: "Puppet State"
  puppet_state_title_plural: "Puppet States"
  puppet_state_is_our: "§Y$NAME$§! is our Puppet State."
- puppet_state_long_desc: "A Puppet State is a mixture off a vassal and a march. It receives similar bonuses as a march, but can be annexed after 10 years. Further more it increases our reputation at home and in foreign countries.\n"
+ puppet_state_long_desc: "A Puppet State is a mixture of a vassal and a march. It receives similar bonuses as a march, but can be annexed after 10 years. Further more it increases our reputation at home and in foreign countries.\n"
  puppet_state_no_overlord_dow: "You can not declare war on your own Puppet State."
  
  autonomous_dominion_title: "Autonomous Dominion"
@@ -26,7 +26,7 @@
  voivodeship_title: "Voivodeship"
  voivodeship_title_plural: "Voivodeships"
  voivodeship_is_our: "§Y$NAME$§! is our Voivodeship."
- voivodeship_long_desc: "A Voivodeship is a mixture off a vassal and a march. It receives similar bonuses as a march, but can be annexed after 10 years. Further more it has increased military expanses.\n"
+ voivodeship_long_desc: "A Voivodeship is a mixture of a vassal and a march. It receives similar bonuses as a march, but can be annexed after 10 years. Further more it has increased military expanses.\n"
  voivodeship_no_overlord_dow: "You can not declare war on your own Voivodeship."
  
  fief_subject_title: "Fiefdom"
@@ -34,4 +34,10 @@
  fief_subject_is_our: "§Y$NAME$§! is our Fiefdom."
  fief_subject_long_desc: "A Fiefdom is a vassal of the same primary culture. It behaves similar to normal vassals, but has a slightly lower liberty desire, does not join its overlords wars and can only be integrated. However it pays more money to its overlord and the overlord can demand troops from it. Further more it has increased tax income and decreased culture conversion cost and also affects these modifiers for its overlord.\n"
  fief_subject_no_overlord_dow: "You can not declare war on your own Fiefdom."
+ 
+ crusader_state_vassal_title: "Crusader State"
+ crusader_state_vassal_title_plural: "Crusader States"
+ crusader_state_vassal_is_our: "§Y$NAME$§! is our Crusader State."
+ crusader_state_vassal_long_desc: "A Crusader State is a mixture of a vassal and a march. It receives bonuses to discipline, manpower, war score cost against other religions and missionary strength. Further more they increase the papal authority and missionary strength of its overlord and cannot be annexed. They can only be established by §Y[PAP.GetName]§! and §YMonastic Orders§! in Europe and a country can only have §Y2§! Crusader States at the same time.\n"
+ crusader_state_vassal_no_overlord_dow: "You can not declare war on your own Crusader State."
  

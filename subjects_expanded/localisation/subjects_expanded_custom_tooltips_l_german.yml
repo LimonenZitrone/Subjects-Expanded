@@ -14,6 +14,7 @@
  IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_roman_client_kingdom: "Kann zu einem §YRömischen Klientelkönigreich§! gemacht werden"
  IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_voivodeship: "Kann zu einer §YWoiwodschaft§! gemacht werden"
  IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_fief_subject: "Kann zu einem §YFeudalvasall§! gemacht werden"
+ IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_crusader_state_vassal: "Kann zu einem §YKreuzfahrerstaat§! gemacht werden"
  
  THIS_IS_FORMER_AUTONOMOUS_DOMINION: "Ist ein ehemaliges §YAutonomes Herrschaftsgebiet§! oder eine ehemalige §YKolonialnation§!"
  
@@ -27,6 +28,8 @@
  DID_NOT_REPLACE_RULER_WITHIN_LAST_50_YEARS: "Hat in den letzten §Y50 Jahren§! KEINEN Herrscher eines Römischen Klientelkönigtums ersetzt"
  
  DID_NOT_DEMAND_TROOPS_OF_FIEF_WITHIN_LAST_10_YEARS: "Wurde innerhalb der letzten §Y10 Jahre§! NICHT dazu gezwungen, Truppen an ihren Lehnsherrn zu transferieren"
+ 
+ HAS_LESS_THAN_HALF_OF_PREV_TOTAL_DEVELOPMENT: "Hat weniger als §Y50%§! der Entwicklung von §Y[Prev.GetName]§!"
  
  # Decisions:
  ALL_PROVINCES_IN_INDIAN_TRADE_COMPANY_REGIONS_CEDED_TO_AUTONOMOUS_DOMINION: "\nAlle unsere Provinzen in [Root.GetIndianTradeCompanyRegionsSgPl] [Root.GetFirstIndianTradeCompanyRegionWeCede][Root.GetSecondIndianTradeCompanyRegionWeCede][Root.GetThirdIndianTradeCompanyRegionWeCede][Root.GetFourthIndianTradeCompanyRegionWeCede][Root.GetFifthIndianTradeCompanyRegionWeCede] werden an unser dort entlassenes Autonomes Herrschaftsgebiet \n[Root.GetCreatedADNameIndia] abgetreten."

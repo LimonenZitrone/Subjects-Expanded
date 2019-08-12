@@ -2,7 +2,7 @@
  # New Diplomatic Actions:
  establish_protectorate_title: "Protektorat fordern"
  establish_protectorate_desc: "Wollt Ihr §Y[From.GetName]§! vorschlagen unser Protektorat zu werden? \nEin Protektorat gibt uns Handelsmacht im Gegenzug für technologischen Fortschritt und militärischen Schutz."
- establish_protectorate_tooltip: "§Y[From.GetName]§! zu einem [Root.GetAdjective]en §YProtektorat§! machen.\n"
+ establish_protectorate_tooltip: "Macht §Y[From.GetName]§! zu einem [Root.GetAdjective]en §YProtektorat§!.\n"
  establish_protectorate_alert_tooltip: "Protektorat fordern"
  establish_protectorate_dialog: "§Y[This.GetName]§! schlägt vor, dass wir ihr §YProtektorat§! werden. Dies bedeutet, dass wir ihnen Handelsmacht übertragen müssen, im Gegenzug jedoch militärischen Schutz ihrerseits genießen und Boni auf Technologiekosten und Institutionsverbreitung erhalten. Protektorate sind in diplomatischen Aktionen teilweise eingeschränkt. \n\nWollt ihr dies akzeptieren?"
  
@@ -76,6 +76,19 @@
  cancel_fief_subject_title: "Feudalvasall entlassen"
  cancel_fief_subject_desc: "Beendet das Abhängigkeitsverhältnis von §Y[From.GetName]§! zu uns. Dies wird ihre Meinung über uns um §R-200§! verschlechtern, sofern sie ein Freiheitsstreben unter §Y50%§! besitzen. Außerdem verlieren wir §R-25§! Prestige und erhalten eine §Y5-jährige§! Waffenruhe mit ihnen."
  cancel_fief_subject_tooltip: "Beedet die Vasallisierung von §Y[From.GetName]§! und entlasst sie in die Freiheit.\n"
+ 
+ 
+ establish_crusader_state_vassal_title: "Kreuzfahrerstaat ernennen"
+ establish_crusader_state_vassal_desc: "Ernennt Euren Vasallen [From.GetName] zu einem §YKreuzfahrerstaat§!. Ein Kreuzfahrerstaat ist eine Mischung aus Vasall und Mark. Er erhält Boni auf seine Disziplin, Mannstärke, Kriegspunktkosten gegen andere Religionen und Missionarsstärke. Weiterhin erhöhen sie die päpstlicher Einfluss und Missionarsstärke ihres Lehnsherrn und können nicht annektiert werden. Sie können nur von §Y[PAP.GetName]§! und §YRitterorden§! in Europa errichtet werden und ein Land kann maximal §Y2§! Kreuzfahrerstaaten zur gleichen Zeit besitzen. \n[Root.GetIfEstablishCrusaderStateCostsPapalInfluence]"
+ establish_crusader_state_vassal_tooltip: "Ernennt Euren Vasallen [From.GetName] zu einem §YKreuzfahrerstaat§!.\n"
+ 
+ send_crusader_knights_to_crusader_state_vassal_title: "Kreuzritter entsenden"
+ send_crusader_knights_to_crusader_state_vassal_desc: "Entsendet Kreuzritter nach §Y[From.GetName]§!. Dies wird ihre Infanteriekampffähigkeit und Kavalleriekampffähigkeit für §Y5 Jahre§! um §G+5%§! verbessern. \nDies wird uns §R-1000§! Mannstärke und §R-500§! Dukaten kosten."
+ send_crusader_knights_to_crusader_state_vassal_tooltip: "Entsendet Kreuzritter nach §Y[From.GetName]§!.\n"
+ 
+ invite_missionars_from_crusader_state_vassal_title: "Missionare einziehen"
+ invite_missionars_from_crusader_state_vassal_desc: "Zieht Missionare von §Y[From.GetName]§! ein. Dies wird uns, für §Y5 Jahre§!, §G1§! zusätzlichen Missionar geben und unsere Missionarsstärke um §G+1%§! verbessern. \nDies wird uns §R-1000§! Dukaten kosten und ihr Freiheitsstreben um §R+25%§! ändern."
+ invite_missionars_from_crusader_state_vassal_tooltip: "Zieht Missionare von §Y[From.GetName]§! ein.\n"
  
  
  return_subject_to_vassal_title: "Zum Vasall degradieren"

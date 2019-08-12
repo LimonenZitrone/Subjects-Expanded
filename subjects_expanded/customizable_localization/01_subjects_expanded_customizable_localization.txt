@@ -17,6 +17,24 @@ defined_text = {
 }
 
 defined_text = {
+    name = GetIfEstablishCrusaderStateCostsPapalInfluence
+	random = no
+
+	text = {
+        localisation_key = string_establish_crusader_state_costs_papal_influence
+        trigger = {
+			NOT = { tag = PAP }
+        }
+    }
+	text = {
+        localisation_key = ""
+        trigger = {
+			tag = PAP
+        }
+    }
+}
+
+defined_text = {
     name = GetCreatedADNameIndia
 	random = no
 

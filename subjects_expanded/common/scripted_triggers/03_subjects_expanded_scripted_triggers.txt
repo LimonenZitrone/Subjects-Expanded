@@ -1,0 +1,29 @@
+is_vassal_or_similar_subject = {
+	OR = {
+		is_subject_of_type = vassal
+		is_subject_of_type = client_vassal
+		is_subject_of_type = daimyo_vassal
+		is_similar_vassal_subject = yes
+	}
+}
+
+is_similar_vassal_subject = {
+	OR = {
+		is_subject_of_type = puppet_state
+		is_subject_of_type = roman_client_kingdom
+		is_subject_of_type = voivodeship
+		is_subject_of_type = fief_subject
+	}
+}
+
+is_march_or_similar_subject = {
+	OR = {
+		is_subject_of_type = march
+		is_subject_of_type = client_march
+		is_similar_march_subject = yes
+	}
+}
+
+is_similar_march_subject = {
+	is_subject_of_type = crusader_state_vassal
+}

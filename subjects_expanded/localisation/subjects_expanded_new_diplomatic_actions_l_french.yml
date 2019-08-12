@@ -18,10 +18,10 @@
  
  
  establish_puppet_state_title: "Establish Puppet State"
- establish_puppet_state_desc: "Do you want to offer §Y[From.GetName]§! to become our Puppet State? \nA Puppet State is a mixture off a vassal and a march. It receives similar bonuses as a march, but can be annexed after 10 years. Further more it increases our reputation at home and in foreign countries."
+ establish_puppet_state_desc: "Do you want to offer §Y[From.GetName]§! to become our Puppet State? \nA Puppet State is a mixture of a vassal and a march. It receives similar bonuses as a march, but can be annexed after 10 years. Further more it increases our reputation at home and in foreign countries."
  establish_puppet_state_tooltip: "Make §Y[From.GetName]§! to a [Root.GetAdjective] §YPuppet State§!.\n"
  establish_puppet_state_alert_tooltip: "Establish Puppet State"
- establish_puppet_state_dialog: "§Y[This.GetName]§! offers us that we become their §YPuppet State§!. A Puppet State is a mixture off a vassal and a march. It receives similar bonuses as a march, but can be annexed after 10 years. Further more it increases our reputation at home and in foreign countries. \n\nIf we accept, our government is changed to §YPuppet State Government§! (Republic). \nAs long as we have less than §Y33%§! of the [This.GetAdjective] total development, we would gain the following bonuses: \nGlobal Manpower Modifier: §G+25.0%§! \nManpower Recovery Speed: §G+20.0%§! \nLand Force Limit: §G+30.0%§! \nYearly Republican Tradition: §G+0.25§! \nLiberty Desire: §G-10.00%§! \n\nDo you want to accept?"
+ establish_puppet_state_dialog: "§Y[This.GetName]§! offers us that we become their §YPuppet State§!. A Puppet State is a mixture of a vassal and a march. It receives similar bonuses as a march, but can be annexed after 10 years. Further more it increases our reputation at home and in foreign countries. \n\nIf we accept, our government is changed to §YPuppet State Government§! (Republic). \nAs long as we have less than §Y33%§! of the [This.GetAdjective] total development, we would gain the following bonuses: \nGlobal Manpower Modifier: §G+25.0%§! \nManpower Recovery Speed: §G+20.0%§! \nLand Force Limit: §G+30.0%§! \nYearly Republican Tradition: §G+0.25§! \nLiberty Desire: §G-10.00%§! \n\nDo you want to accept?"
  
  cancel_puppet_state_title: "Release Puppet State"
  cancel_puppet_state_desc: "Do you want to cancel the §YPuppet State§! and grant §Y[From.GetName]§! independence? \nThis will[Root.GetIfCancelProtectorateGivesStabHit]and decrease their opinion about us by §R-100§!. We also gain a truce with [From.GetName] and our prestige decreases by §R-20§!."
@@ -55,7 +55,7 @@
  
  
  establish_voivodeship_title: "Establish Voivodeship"
- establish_voivodeship_desc: "Make your vassal [From.GetName] to a §YVoivodeship§!. \nA Voivodeship is a mixture off a vassal and a march. It receives similar bonuses as a march, but can be annexed after 10 years. Further more it has increased military expanses and can only be established by §Y[POL.GetName]§! and §Y[PLC.GetName]§!."
+ establish_voivodeship_desc: "Make your vassal [From.GetName] to a §YVoivodeship§!. \nA Voivodeship is a mixture of a vassal and a march. It receives similar bonuses as a march, but can be annexed after 10 years. Further more it has increased military expanses and can only be established by §Y[POL.GetName]§! and §Y[PLC.GetName]§!."
  establish_voivodeship_tooltip: "Make your vassal [From.GetName] to a §YVoivodeship§!.\n"
  
  cancel_voivodeship_title: "Release Voivodeship"
@@ -76,6 +76,19 @@
  cancel_fief_subject_title: "Release Fiefdom"
  cancel_fief_subject_desc: "Cancel the dependency of §Y[From.GetName]§! of us. This will decrease their opinion about us by §R-200§!, if their liberty desire is below §Y50%§!. We will also lose §R-25§! prestige and gain a truce with them for §Y5 years§!."
  cancel_fief_subject_tooltip: "Cancel the vassalisation of §Y[From.GetName]§! and grant them independence.\n"
+ 
+ 
+ establish_crusader_state_vassal_title: "Establish Crusader State"
+ establish_crusader_state_vassal_desc: "Make your vassal [From.GetName] to a §YCrusader State§!. A Crusader State is a mixture of a vassal and a march. It receives bonuses to discipline, manpower, war score cost against other religions and missionary strength. Further more they increase the papal authority and missionary strength of its overlord and cannot be annexed. They can only be established by §Y[PAP.GetName]§! and §YMonastic Orders§! in Europe and a country can only have §Y2§! Crusader States at the same time. \n[Root.GetIfEstablishCrusaderStateCostsPapalInfluence]"
+ establish_crusader_state_vassal_tooltip: "Make your vassal [From.GetName] to a §YCrusader State§!.\n"
+ 
+ send_crusader_knights_to_crusader_state_vassal_title: "Send Crusader Knights"
+ send_crusader_knights_to_crusader_state_vassal_desc: "Send Crusader Knights to §Y[From.GetName]§!. This will increase their Infantry Combat Ability and Cavalry Combat Ability by §G+5%§! for §Y5 years§!. \nThis will cost us §R-1000§! manpower and §R-500§! ducats."
+ send_crusader_knights_to_crusader_state_vassal_tooltip: "Send Crusader Knights to §Y[From.GetName]§!.\n"
+ 
+ invite_missionars_from_crusader_state_vassal_title: "Conscript Missionaries"
+ invite_missionars_from_crusader_state_vassal_desc: "Conscript Missionaries from §Y[From.GetName]§!. This will give us §G1§! additional missionary and increase our missionary strength by §G+1%§! for §Y5 years§!. \nThis will cost us §R-1000§! ducats and change their liberty desire by §R+25%§!."
+ invite_missionars_from_crusader_state_vassal_tooltip: "Conscript Missionaries from §Y[From.GetName]§!.\n"
  
  
  return_subject_to_vassal_title: "Demote to Vassal"

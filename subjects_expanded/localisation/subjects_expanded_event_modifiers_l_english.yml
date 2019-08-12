@@ -82,3 +82,9 @@
  fief_subject_modifier: "Fiefdom"
  fief_subject_overlord_modifier: "Has Fiefdom"
  
+ crusader_state_vassal_modifier: "Crusader State"
+ crusader_state_vassal_overlord_is_papal_controller_modifier: "Curia Controller"
+ crusader_state_vassal_overlord_modifier: "Has Crusader States"
+ send_crusader_knights_to_crusader_state_vassal: "Received Crusade Knights"
+ invite_missionars_from_crusader_state_vassal: "Conscripted Missionaries from Crusader State"
+ 

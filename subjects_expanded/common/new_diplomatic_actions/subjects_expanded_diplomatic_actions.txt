@@ -184,7 +184,7 @@ establish_protectorate = {
 			multiply_variable = { which = ai_value value = -1 }
 		}
 		add_entry = {
-			name = DIPLOMATIC_REPUTATION
+			name = MODIFIER_DIPLO_SKILL
 			export_to_variable = {
 				which = ai_value
 				value = modifier:diplomatic_reputation
@@ -886,7 +886,7 @@ ask_to_become_protectorate = {
 			multiply_variable = { which = ai_value value = -1 }
 		}
 		add_entry = {
-			name = DIPLOMATIC_REPUTATION
+			name = MODIFIER_DIPLO_SKILL
 			export_to_variable = {
 				which = ai_value
 				value = modifier:diplomatic_reputation
@@ -2054,7 +2054,7 @@ establish_puppet_state = {
 			multiply_variable = { which = ai_value value = -1 }
 		}
 		add_entry = {
-			name = DIPLOMATIC_REPUTATION
+			name = MODIFIER_DIPLO_SKILL
 			export_to_variable = {
 				which = ai_value
 				value = modifier:diplomatic_reputation
@@ -3410,7 +3410,7 @@ establish_fief_subject = {
 			multiply_variable = { which = ai_value value = -1 }
 		}
 		add_entry = {
-			name = DIPLOMATIC_REPUTATION
+			name = MODIFIER_DIPLO_SKILL
 			limit = {
 				NOT = { overlord_of = FROM }
 			}

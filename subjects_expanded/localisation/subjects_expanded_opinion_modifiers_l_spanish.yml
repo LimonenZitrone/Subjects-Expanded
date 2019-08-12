@@ -24,4 +24,5 @@
  
  is_fief_subject: "Fiefdom"
  declined_establish_fief_subject_opinion: "Demand of Fiefdom declined"
+ fief_subject_forced: "Forced Fiefdom"
  

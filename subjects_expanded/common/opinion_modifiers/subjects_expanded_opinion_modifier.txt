@@ -97,3 +97,9 @@ declined_establish_fief_subject_opinion = {
 	yearly_decay = 1
 	min = -100
 }
+
+fief_subject_forced = {
+	opinion = -100
+	yearly_decay = 5
+	min = -100
+}

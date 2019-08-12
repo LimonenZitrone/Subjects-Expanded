@@ -16,3 +16,7 @@
  CB_ALLOWED_make_roman_client_kingdom: "Römisches Klientelkönigtum erzwingen"
  PEACE_make_roman_client_kingdom: "$TAKERS$es Klientelkönigtum"
  
+ make_fief_subject_desc: "@[From.GetTag] §Y[From.GetName]§! wird zu einem Feudalvasall von @[Root.GetTag] §Y[Root.GetName]§!."
+ CB_ALLOWED_make_fief_subject: "Feudalvasall erzwingen"
+ PEACE_make_fief_subject: "$TAKERS$er Feudalvasall"
+ 

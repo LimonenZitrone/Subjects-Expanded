@@ -24,4 +24,5 @@
  
  is_fief_subject: "Feudalvasall"
  declined_establish_fief_subject_opinion: "Forderung nach Feudalvasall abgelehnt"
+ fief_subject_forced: "Feudalvasall erzwungen"
  

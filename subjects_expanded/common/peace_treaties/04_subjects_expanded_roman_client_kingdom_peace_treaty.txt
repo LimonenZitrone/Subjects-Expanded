@@ -73,7 +73,7 @@ make_roman_client_kingdom = {
 				add_government_reform = autocracy_reform
 			}
 		}
-		FROM = { country_event = { id = more_subjects_roman_client_kingdom_events.1 } }
+		FROM = { country_event = { id = subjects_expanded_roman_client_kingdom_events.1 } }
 	}
 	ai_weight = { # Defaults to always evaluate to 0
 		export_to_variable = {

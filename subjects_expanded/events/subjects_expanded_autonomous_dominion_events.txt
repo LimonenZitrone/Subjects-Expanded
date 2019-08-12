@@ -1,9 +1,9 @@
-namespace = more_subjects_autonomous_dominion_events
+namespace = subjects_expanded_autonomous_dominion_events
 
 country_event = {
-	id = more_subjects_autonomous_dominion_events.1
-	title = more_subjects_autonomous_dominion_events.EVTNAME1
-	desc = more_subjects_autonomous_dominion_events.EVTDESC1
+	id = subjects_expanded_autonomous_dominion_events.1
+	title = subjects_expanded_autonomous_dominion_events.EVTNAME1
+	desc = subjects_expanded_autonomous_dominion_events.EVTDESC1
 	picture = DIPLOMACY_eventPicture
 	
 	hidden = yes
@@ -36,7 +36,7 @@ country_event = {
 	}
 	
 	option = {
-		name = more_subjects_autonomous_dominion_events1.EVTOPT1
+		name = subjects_expanded_autonomous_dominion_events1.EVTOPT1
 		
 		ai_chance = { factor = 100 }
 	}
@@ -46,9 +46,9 @@ country_event = {
 
 # Give provinces in Indian trade company regions to specific autonomous dominion
 country_event = {
-	id = more_subjects_autonomous_dominion_events.3
-	title = more_subjects_autonomous_dominion_events.EVTNAME3
-	desc = more_subjects_autonomous_dominion_events.EVTDESC3
+	id = subjects_expanded_autonomous_dominion_events.3
+	title = subjects_expanded_autonomous_dominion_events.EVTNAME3
+	desc = subjects_expanded_autonomous_dominion_events.EVTDESC3
 	picture = DIPLOMACY_eventPicture
 	
 	# hidden = yes
@@ -725,7 +725,7 @@ country_event = {
 	}
 	
 	option = {
-		name = more_subjects_autonomous_dominion_events3.EVTOPT1
+		name = subjects_expanded_autonomous_dominion_events3.EVTOPT1
 		
 		ai_chance = { factor = 100 }
 	}
@@ -733,9 +733,9 @@ country_event = {
 
 # Give provinces in East Indies trade company regions to specific autonomous dominion
 country_event = {
-	id = more_subjects_autonomous_dominion_events.4
-	title = more_subjects_autonomous_dominion_events.EVTNAME4
-	desc = more_subjects_autonomous_dominion_events.EVTDESC4
+	id = subjects_expanded_autonomous_dominion_events.4
+	title = subjects_expanded_autonomous_dominion_events.EVTNAME4
+	desc = subjects_expanded_autonomous_dominion_events.EVTDESC4
 	picture = DIPLOMACY_eventPicture
 	
 	# hidden = yes
@@ -1028,7 +1028,7 @@ country_event = {
 	}
 	
 	option = {
-		name = more_subjects_autonomous_dominion_events4.EVTOPT1
+		name = subjects_expanded_autonomous_dominion_events4.EVTOPT1
 		
 		ai_chance = { factor = 100 }
 	}
@@ -1036,9 +1036,9 @@ country_event = {
 
 # Give provinces in Indochina trade company regions to specific autonomous dominion
 country_event = {
-	id = more_subjects_autonomous_dominion_events.5
-	title = more_subjects_autonomous_dominion_events.EVTNAME5
-	desc = more_subjects_autonomous_dominion_events.EVTDESC5
+	id = subjects_expanded_autonomous_dominion_events.5
+	title = subjects_expanded_autonomous_dominion_events.EVTNAME5
+	desc = subjects_expanded_autonomous_dominion_events.EVTDESC5
 	picture = DIPLOMACY_eventPicture
 	
 	# hidden = yes
@@ -1173,7 +1173,7 @@ country_event = {
 	}
 	
 	option = {
-		name = more_subjects_autonomous_dominion_events5.EVTOPT1
+		name = subjects_expanded_autonomous_dominion_events5.EVTOPT1
 		
 		ai_chance = { factor = 100 }
 	}
@@ -1181,9 +1181,9 @@ country_event = {
 
 # Give provinces in West Africa trade company regions to specific autonomous dominion
 country_event = {
-	id = more_subjects_autonomous_dominion_events.6
-	title = more_subjects_autonomous_dominion_events.EVTNAME6
-	desc = more_subjects_autonomous_dominion_events.EVTDESC6
+	id = subjects_expanded_autonomous_dominion_events.6
+	title = subjects_expanded_autonomous_dominion_events.EVTNAME6
+	desc = subjects_expanded_autonomous_dominion_events.EVTDESC6
 	picture = DIPLOMACY_eventPicture
 	
 	# hidden = yes
@@ -1323,7 +1323,7 @@ country_event = {
 	}
 	
 	option = {
-		name = more_subjects_autonomous_dominion_events6.EVTOPT1
+		name = subjects_expanded_autonomous_dominion_events6.EVTOPT1
 		
 		ai_chance = { factor = 100 }
 	}
@@ -1331,9 +1331,9 @@ country_event = {
 
 # Give provinces in East Africa trade company regions to specific autonomous dominion
 country_event = {
-	id = more_subjects_autonomous_dominion_events.7
-	title = more_subjects_autonomous_dominion_events.EVTNAME7
-	desc = more_subjects_autonomous_dominion_events.EVTDESC7
+	id = subjects_expanded_autonomous_dominion_events.7
+	title = subjects_expanded_autonomous_dominion_events.EVTNAME7
+	desc = subjects_expanded_autonomous_dominion_events.EVTDESC7
 	picture = DIPLOMACY_eventPicture
 	
 	# hidden = yes
@@ -1473,7 +1473,7 @@ country_event = {
 	}
 	
 	option = {
-		name = more_subjects_autonomous_dominion_events7.EVTOPT1
+		name = subjects_expanded_autonomous_dominion_events7.EVTOPT1
 		
 		ai_chance = { factor = 100 }
 	}
@@ -1481,9 +1481,9 @@ country_event = {
 
 # Give provinces in South Africa trade company regions to specific autonomous dominion
 country_event = {
-	id = more_subjects_autonomous_dominion_events.8
-	title = more_subjects_autonomous_dominion_events.EVTNAME8
-	desc = more_subjects_autonomous_dominion_events.EVTDESC8
+	id = subjects_expanded_autonomous_dominion_events.8
+	title = subjects_expanded_autonomous_dominion_events.EVTNAME8
+	desc = subjects_expanded_autonomous_dominion_events.EVTDESC8
 	picture = DIPLOMACY_eventPicture
 	
 	# hidden = yes
@@ -1623,7 +1623,7 @@ country_event = {
 	}
 	
 	option = {
-		name = more_subjects_autonomous_dominion_events8.EVTOPT1
+		name = subjects_expanded_autonomous_dominion_events8.EVTOPT1
 		
 		ai_chance = { factor = 100 }
 	}
@@ -1631,9 +1631,9 @@ country_event = {
 
 # Development lowered in Autonomous Dominion
 country_event = {
-	id = more_subjects_autonomous_dominion_events.9
-	title = more_subjects_autonomous_dominion_events.EVTNAME9
-	desc = more_subjects_autonomous_dominion_events.EVTDESC9
+	id = subjects_expanded_autonomous_dominion_events.9
+	title = subjects_expanded_autonomous_dominion_events.EVTNAME9
+	desc = subjects_expanded_autonomous_dominion_events.EVTDESC9
 	picture = DIPLOMACY_eventPicture
 	
 	major = yes
@@ -1654,7 +1654,7 @@ country_event = {
 	}
 	
 	option = {
-		name = more_subjects_autonomous_dominion_events9.EVTOPT1
+		name = subjects_expanded_autonomous_dominion_events9.EVTOPT1
 		
 		ai_chance = { factor = 100 }
 		

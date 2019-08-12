@@ -209,7 +209,7 @@ country_decisions = {
 					DI1 = {
 						add_treasury = 5000
 						add_truce_with = ROOT
-						country_event = { id = more_subjects_autonomous_dominion_events.1 }
+						country_event = { id = subjects_expanded_autonomous_dominion_events.1 }
 						define_ruler = {
 							culture = ROOT
 							religion = ROOT
@@ -332,7 +332,7 @@ country_decisions = {
 					DI2 = {
 						add_treasury = 5000
 						add_truce_with = ROOT
-						country_event = { id = more_subjects_autonomous_dominion_events.1 }
+						country_event = { id = subjects_expanded_autonomous_dominion_events.1 }
 						define_ruler = {
 							culture = ROOT
 							religion = ROOT
@@ -457,7 +457,7 @@ country_decisions = {
 					DI3 = {
 						add_treasury = 5000
 						add_truce_with = ROOT
-						country_event = { id = more_subjects_autonomous_dominion_events.1 }
+						country_event = { id = subjects_expanded_autonomous_dominion_events.1 }
 						define_ruler = {
 							culture = ROOT
 							religion = ROOT
@@ -582,7 +582,7 @@ country_decisions = {
 					DI4 = {
 						add_treasury = 5000
 						add_truce_with = ROOT
-						country_event = { id = more_subjects_autonomous_dominion_events.1 }
+						country_event = { id = subjects_expanded_autonomous_dominion_events.1 }
 						define_ruler = {
 							culture = ROOT
 							religion = ROOT
@@ -704,7 +704,7 @@ country_decisions = {
 					DI5 = {
 						add_treasury = 5000
 						add_truce_with = ROOT
-						country_event = { id = more_subjects_autonomous_dominion_events.1 }
+						country_event = { id = subjects_expanded_autonomous_dominion_events.1 }
 						define_ruler = {
 							culture = ROOT
 							religion = ROOT
@@ -823,7 +823,7 @@ country_decisions = {
 					DI6 = {
 						add_treasury = 5000
 						add_truce_with = ROOT
-						country_event = { id = more_subjects_autonomous_dominion_events.1 }
+						country_event = { id = subjects_expanded_autonomous_dominion_events.1 }
 						define_ruler = {
 							culture = ROOT
 							religion = ROOT
@@ -941,7 +941,7 @@ country_decisions = {
 					DI7 = {
 						add_treasury = 5000
 						add_truce_with = ROOT
-						country_event = { id = more_subjects_autonomous_dominion_events.1 }
+						country_event = { id = subjects_expanded_autonomous_dominion_events.1 }
 						define_ruler = {
 							culture = ROOT
 							religion = ROOT
@@ -1059,7 +1059,7 @@ country_decisions = {
 					DI8 = {
 						add_treasury = 5000
 						add_truce_with = ROOT
-						country_event = { id = more_subjects_autonomous_dominion_events.1 }
+						country_event = { id = subjects_expanded_autonomous_dominion_events.1 }
 						define_ruler = {
 							culture = ROOT
 							religion = ROOT
@@ -1177,7 +1177,7 @@ country_decisions = {
 					DI9 = {
 						add_treasury = 5000
 						add_truce_with = ROOT
-						country_event = { id = more_subjects_autonomous_dominion_events.1 }
+						country_event = { id = subjects_expanded_autonomous_dominion_events.1 }
 						define_ruler = {
 							culture = ROOT
 							religion = ROOT
@@ -1534,7 +1534,7 @@ country_decisions = {
 					DE1 = {
 						add_treasury = 5000
 						add_truce_with = ROOT
-						country_event = { id = more_subjects_autonomous_dominion_events.1 }
+						country_event = { id = subjects_expanded_autonomous_dominion_events.1 }
 						define_ruler = {
 							culture = ROOT
 							religion = ROOT
@@ -1623,7 +1623,7 @@ country_decisions = {
 					DE2 = {
 						add_treasury = 5000
 						add_truce_with = ROOT
-						country_event = { id = more_subjects_autonomous_dominion_events.1 }
+						country_event = { id = subjects_expanded_autonomous_dominion_events.1 }
 						define_ruler = {
 							culture = ROOT
 							religion = ROOT
@@ -1706,7 +1706,7 @@ country_decisions = {
 					DE3 = {
 						add_treasury = 5000
 						add_truce_with = ROOT
-						country_event = { id = more_subjects_autonomous_dominion_events.1 }
+						country_event = { id = subjects_expanded_autonomous_dominion_events.1 }
 						define_ruler = {
 							culture = ROOT
 							religion = ROOT
@@ -1789,7 +1789,7 @@ country_decisions = {
 					DE4 = {
 						add_treasury = 5000
 						add_truce_with = ROOT
-						country_event = { id = more_subjects_autonomous_dominion_events.1 }
+						country_event = { id = subjects_expanded_autonomous_dominion_events.1 }
 						define_ruler = {
 							culture = ROOT
 							religion = ROOT
@@ -1877,7 +1877,7 @@ country_decisions = {
 					DE5 = {
 						add_treasury = 5000
 						add_truce_with = ROOT
-						country_event = { id = more_subjects_autonomous_dominion_events.1 }
+						country_event = { id = subjects_expanded_autonomous_dominion_events.1 }
 						define_ruler = {
 							culture = ROOT
 							religion = ROOT
@@ -1962,7 +1962,7 @@ country_decisions = {
 					DE6 = {
 						add_treasury = 5000
 						add_truce_with = ROOT
-						country_event = { id = more_subjects_autonomous_dominion_events.1 }
+						country_event = { id = subjects_expanded_autonomous_dominion_events.1 }
 						define_ruler = {
 							culture = ROOT
 							religion = ROOT
@@ -2038,7 +2038,7 @@ country_decisions = {
 					DE7 = {
 						add_treasury = 5000
 						add_truce_with = ROOT
-						country_event = { id = more_subjects_autonomous_dominion_events.1 }
+						country_event = { id = subjects_expanded_autonomous_dominion_events.1 }
 						define_ruler = {
 							culture = ROOT
 							religion = ROOT
@@ -2114,7 +2114,7 @@ country_decisions = {
 					DE8 = {
 						add_treasury = 5000
 						add_truce_with = ROOT
-						country_event = { id = more_subjects_autonomous_dominion_events.1 }
+						country_event = { id = subjects_expanded_autonomous_dominion_events.1 }
 						define_ruler = {
 							culture = ROOT
 							religion = ROOT
@@ -2190,7 +2190,7 @@ country_decisions = {
 					DE9 = {
 						add_treasury = 5000
 						add_truce_with = ROOT
-						country_event = { id = more_subjects_autonomous_dominion_events.1 }
+						country_event = { id = subjects_expanded_autonomous_dominion_events.1 }
 						define_ruler = {
 							culture = ROOT
 							religion = ROOT
@@ -2458,7 +2458,7 @@ country_decisions = {
 					DC1 = {
 						add_treasury = 5000
 						add_truce_with = ROOT
-						country_event = { id = more_subjects_autonomous_dominion_events.1 }
+						country_event = { id = subjects_expanded_autonomous_dominion_events.1 }
 						define_ruler = {
 							culture = ROOT
 							religion = ROOT
@@ -2519,7 +2519,7 @@ country_decisions = {
 					DC2 = {
 						add_treasury = 5000
 						add_truce_with = ROOT
-						country_event = { id = more_subjects_autonomous_dominion_events.1 }
+						country_event = { id = subjects_expanded_autonomous_dominion_events.1 }
 						define_ruler = {
 							culture = ROOT
 							religion = ROOT
@@ -2582,7 +2582,7 @@ country_decisions = {
 					DC3 = {
 						add_treasury = 5000
 						add_truce_with = ROOT
-						country_event = { id = more_subjects_autonomous_dominion_events.1 }
+						country_event = { id = subjects_expanded_autonomous_dominion_events.1 }
 						define_ruler = {
 							culture = ROOT
 							religion = ROOT
@@ -2645,7 +2645,7 @@ country_decisions = {
 					DC4 = {
 						add_treasury = 5000
 						add_truce_with = ROOT
-						country_event = { id = more_subjects_autonomous_dominion_events.1 }
+						country_event = { id = subjects_expanded_autonomous_dominion_events.1 }
 						define_ruler = {
 							culture = ROOT
 							religion = ROOT
@@ -2705,7 +2705,7 @@ country_decisions = {
 					DC5 = {
 						add_treasury = 5000
 						add_truce_with = ROOT
-						country_event = { id = more_subjects_autonomous_dominion_events.1 }
+						country_event = { id = subjects_expanded_autonomous_dominion_events.1 }
 						define_ruler = {
 							culture = ROOT
 							religion = ROOT
@@ -2762,7 +2762,7 @@ country_decisions = {
 					DC6 = {
 						add_treasury = 5000
 						add_truce_with = ROOT
-						country_event = { id = more_subjects_autonomous_dominion_events.1 }
+						country_event = { id = subjects_expanded_autonomous_dominion_events.1 }
 						define_ruler = {
 							culture = ROOT
 							religion = ROOT
@@ -2818,7 +2818,7 @@ country_decisions = {
 					DC7 = {
 						add_treasury = 5000
 						add_truce_with = ROOT
-						country_event = { id = more_subjects_autonomous_dominion_events.1 }
+						country_event = { id = subjects_expanded_autonomous_dominion_events.1 }
 						define_ruler = {
 							culture = ROOT
 							religion = ROOT
@@ -3065,7 +3065,7 @@ country_decisions = {
 					DW1 = {
 						add_treasury = 5000
 						add_truce_with = ROOT
-						country_event = { id = more_subjects_autonomous_dominion_events.1 }
+						country_event = { id = subjects_expanded_autonomous_dominion_events.1 }
 						define_ruler = {
 							culture = ROOT
 							religion = ROOT
@@ -3126,7 +3126,7 @@ country_decisions = {
 					DW2 = {
 						add_treasury = 5000
 						add_truce_with = ROOT
-						country_event = { id = more_subjects_autonomous_dominion_events.1 }
+						country_event = { id = subjects_expanded_autonomous_dominion_events.1 }
 						define_ruler = {
 							culture = ROOT
 							religion = ROOT
@@ -3189,7 +3189,7 @@ country_decisions = {
 					DW3 = {
 						add_treasury = 5000
 						add_truce_with = ROOT
-						country_event = { id = more_subjects_autonomous_dominion_events.1 }
+						country_event = { id = subjects_expanded_autonomous_dominion_events.1 }
 						define_ruler = {
 							culture = ROOT
 							religion = ROOT
@@ -3252,7 +3252,7 @@ country_decisions = {
 					DW4 = {
 						add_treasury = 5000
 						add_truce_with = ROOT
-						country_event = { id = more_subjects_autonomous_dominion_events.1 }
+						country_event = { id = subjects_expanded_autonomous_dominion_events.1 }
 						define_ruler = {
 							culture = ROOT
 							religion = ROOT
@@ -3312,7 +3312,7 @@ country_decisions = {
 					DW5 = {
 						add_treasury = 5000
 						add_truce_with = ROOT
-						country_event = { id = more_subjects_autonomous_dominion_events.1 }
+						country_event = { id = subjects_expanded_autonomous_dominion_events.1 }
 						define_ruler = {
 							culture = ROOT
 							religion = ROOT
@@ -3369,7 +3369,7 @@ country_decisions = {
 					DW6 = {
 						add_treasury = 5000
 						add_truce_with = ROOT
-						country_event = { id = more_subjects_autonomous_dominion_events.1 }
+						country_event = { id = subjects_expanded_autonomous_dominion_events.1 }
 						define_ruler = {
 							culture = ROOT
 							religion = ROOT
@@ -3425,7 +3425,7 @@ country_decisions = {
 					DW7 = {
 						add_treasury = 5000
 						add_truce_with = ROOT
-						country_event = { id = more_subjects_autonomous_dominion_events.1 }
+						country_event = { id = subjects_expanded_autonomous_dominion_events.1 }
 						define_ruler = {
 							culture = ROOT
 							religion = ROOT
@@ -3673,7 +3673,7 @@ country_decisions = {
 					DS1 = {
 						add_treasury = 5000
 						add_truce_with = ROOT
-						country_event = { id = more_subjects_autonomous_dominion_events.1 }
+						country_event = { id = subjects_expanded_autonomous_dominion_events.1 }
 						define_ruler = {
 							culture = ROOT
 							religion = ROOT
@@ -3734,7 +3734,7 @@ country_decisions = {
 					DS2 = {
 						add_treasury = 5000
 						add_truce_with = ROOT
-						country_event = { id = more_subjects_autonomous_dominion_events.1 }
+						country_event = { id = subjects_expanded_autonomous_dominion_events.1 }
 						define_ruler = {
 							culture = ROOT
 							religion = ROOT
@@ -3797,7 +3797,7 @@ country_decisions = {
 					DS3 = {
 						add_treasury = 5000
 						add_truce_with = ROOT
-						country_event = { id = more_subjects_autonomous_dominion_events.1 }
+						country_event = { id = subjects_expanded_autonomous_dominion_events.1 }
 						define_ruler = {
 							culture = ROOT
 							religion = ROOT
@@ -3860,7 +3860,7 @@ country_decisions = {
 					DS4 = {
 						add_treasury = 5000
 						add_truce_with = ROOT
-						country_event = { id = more_subjects_autonomous_dominion_events.1 }
+						country_event = { id = subjects_expanded_autonomous_dominion_events.1 }
 						define_ruler = {
 							culture = ROOT
 							religion = ROOT
@@ -3920,7 +3920,7 @@ country_decisions = {
 					DS5 = {
 						add_treasury = 5000
 						add_truce_with = ROOT
-						country_event = { id = more_subjects_autonomous_dominion_events.1 }
+						country_event = { id = subjects_expanded_autonomous_dominion_events.1 }
 						define_ruler = {
 							culture = ROOT
 							religion = ROOT
@@ -3977,7 +3977,7 @@ country_decisions = {
 					DS6 = {
 						add_treasury = 5000
 						add_truce_with = ROOT
-						country_event = { id = more_subjects_autonomous_dominion_events.1 }
+						country_event = { id = subjects_expanded_autonomous_dominion_events.1 }
 						define_ruler = {
 							culture = ROOT
 							religion = ROOT
@@ -4033,7 +4033,7 @@ country_decisions = {
 					DS7 = {
 						add_treasury = 5000
 						add_truce_with = ROOT
-						country_event = { id = more_subjects_autonomous_dominion_events.1 }
+						country_event = { id = subjects_expanded_autonomous_dominion_events.1 }
 						define_ruler = {
 							culture = ROOT
 							religion = ROOT
@@ -4277,7 +4277,7 @@ country_decisions = {
 					DA1 = {
 						add_treasury = 5000
 						add_truce_with = ROOT
-						country_event = { id = more_subjects_autonomous_dominion_events.1 }
+						country_event = { id = subjects_expanded_autonomous_dominion_events.1 }
 						define_ruler = {
 							culture = ROOT
 							religion = ROOT
@@ -4338,7 +4338,7 @@ country_decisions = {
 					DA2 = {
 						add_treasury = 5000
 						add_truce_with = ROOT
-						country_event = { id = more_subjects_autonomous_dominion_events.1 }
+						country_event = { id = subjects_expanded_autonomous_dominion_events.1 }
 						define_ruler = {
 							culture = ROOT
 							religion = ROOT
@@ -4401,7 +4401,7 @@ country_decisions = {
 					DA3 = {
 						add_treasury = 5000
 						add_truce_with = ROOT
-						country_event = { id = more_subjects_autonomous_dominion_events.1 }
+						country_event = { id = subjects_expanded_autonomous_dominion_events.1 }
 						define_ruler = {
 							culture = ROOT
 							religion = ROOT
@@ -4464,7 +4464,7 @@ country_decisions = {
 					DA4 = {
 						add_treasury = 5000
 						add_truce_with = ROOT
-						country_event = { id = more_subjects_autonomous_dominion_events.1 }
+						country_event = { id = subjects_expanded_autonomous_dominion_events.1 }
 						define_ruler = {
 							culture = ROOT
 							religion = ROOT
@@ -4524,7 +4524,7 @@ country_decisions = {
 					DA5 = {
 						add_treasury = 5000
 						add_truce_with = ROOT
-						country_event = { id = more_subjects_autonomous_dominion_events.1 }
+						country_event = { id = subjects_expanded_autonomous_dominion_events.1 }
 						define_ruler = {
 							culture = ROOT
 							religion = ROOT
@@ -4581,7 +4581,7 @@ country_decisions = {
 					DA6 = {
 						add_treasury = 5000
 						add_truce_with = ROOT
-						country_event = { id = more_subjects_autonomous_dominion_events.1 }
+						country_event = { id = subjects_expanded_autonomous_dominion_events.1 }
 						define_ruler = {
 							culture = ROOT
 							religion = ROOT
@@ -4637,7 +4637,7 @@ country_decisions = {
 					DA7 = {
 						add_treasury = 5000
 						add_truce_with = ROOT
-						country_event = { id = more_subjects_autonomous_dominion_events.1 }
+						country_event = { id = subjects_expanded_autonomous_dominion_events.1 }
 						define_ruler = {
 							culture = ROOT
 							religion = ROOT

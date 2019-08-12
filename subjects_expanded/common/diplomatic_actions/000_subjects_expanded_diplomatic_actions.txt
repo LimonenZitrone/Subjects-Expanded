@@ -50,7 +50,7 @@ declarewar = {
 				}
 			}
 			FROM = {
-				country_event = { id = more_subjects_protectorate_events.3 days = 70 }
+				country_event = { id = subjects_expanded_protectorate_events.3 days = 70 }
 			}
 		}
 		# Needed for Extended Timeline

@@ -1274,7 +1274,7 @@ cancel_protectorate = {
 			}
 			FROM = {
 				grant_independence = yes
-				country_event = { id = more_subjects_protectorate_events.2 }
+				country_event = { id = subjects_expanded_protectorate_events.2 }
 				add_opinion = {
 					who = ROOT
 					modifier = released_protectorate
@@ -1387,7 +1387,7 @@ establish_puppet_state = {
 				subject_type = puppet_state
 			}
 			FROM = {
-				country_event = { id = more_subjects_puppet_state_events.1 }
+				country_event = { id = subjects_expanded_puppet_state_events.1 }
 			}
 		}
 	}
@@ -2481,8 +2481,8 @@ cancel_puppet_state = {
 			add_prestige = -20
 			FROM = {
 				grant_independence = yes
-				country_event = { id = more_subjects_puppet_state_events.2 }
-				country_event = { id = more_subjects_puppet_state_events.3 }
+				country_event = { id = subjects_expanded_puppet_state_events.2 }
+				country_event = { id = subjects_expanded_puppet_state_events.3 }
 				add_opinion = {
 					who = ROOT
 					modifier = released_puppet_state
@@ -2538,26 +2538,26 @@ establish_autonomous_dominion = {
 	require_acceptance = no
 	
 	is_visible = {
+		num_of_colonists = 1
 		can_create_subject_type = {
 			subject = FROM
 			subject_type = autonomous_dominion
 		}
-		num_of_colonists = 1
 	}
 	
 	is_allowed = {
+		num_of_colonists = 1
 		can_create_subject_type = {
 			subject = FROM
 			subject_type = autonomous_dominion
 		}
-		num_of_colonists = 1
+		FROM = {
+			capital_scope = { trade_range = ROOT }
+		}
 		is_at_war = no
 		FROM = { is_at_war = no }
 		FROM = {
 			liberty_desire = 50
-		}
-		FROM = {
-			capital_scope = { trade_range = ROOT }
 		}
 	}
 	
@@ -2583,7 +2583,7 @@ establish_autonomous_dominion = {
 				subject_type = autonomous_dominion
 			}
 			FROM = {
-				country_event = { id = more_subjects_autonomous_dominion_events.1 }
+				country_event = { id = subjects_expanded_autonomous_dominion_events.1 }
 			}
 			add_country_modifier = {
 				name = established_autonomous_dominion
@@ -2728,7 +2728,7 @@ lower_development_of_autonomous_development = {
 				NOT = { has_country_modifier = cooldown_reduced_autonomous_dominion_development }
 			}
 			FROM = {
-				country_event = { id = more_subjects_autonomous_dominion_events.9 }
+				country_event = { id = subjects_expanded_autonomous_dominion_events.9 }
 				add_country_modifier = {
 					name = reduced_autonomous_dominion_development
 					duration = 3650
@@ -2996,7 +2996,7 @@ demand_additional_tribute_from_roman_client_kingdom = {
 				FROM = { NOT = { liberty_desire = 50 } }
 			}
 			FROM = {
-				country_event = { id = more_subjects_roman_client_kingdom_events.3 }
+				country_event = { id = subjects_expanded_roman_client_kingdom_events.3 }
 			}
 		}
 	}
@@ -3979,7 +3979,7 @@ demand_troops_from_fief_subject = {
 					duration = 1825
 					hidden = yes
 				}
-				country_event = { id = more_subjects_fief_subject_events.1 }
+				country_event = { id = subjects_expanded_fief_subject_events.1 }
 			}
 			random_province = {
 				limit = {

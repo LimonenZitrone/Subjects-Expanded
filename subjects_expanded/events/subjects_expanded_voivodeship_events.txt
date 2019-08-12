@@ -1,9 +1,9 @@
-namespace = more_subjects_voivodeship_events
+namespace = subjects_expanded_voivodeship_events
 
 country_event = {
-	id = more_subjects_voivodeship_events.1
-	title = more_subjects_voivodeship_events.EVTNAME1
-	desc = more_subjects_voivodeship_events.EVTDESC1
+	id = subjects_expanded_voivodeship_events.1
+	title = subjects_expanded_voivodeship_events.EVTNAME1
+	desc = subjects_expanded_voivodeship_events.EVTDESC1
 	picture = DIPLOMACY_eventPicture
 	
 	fire_only_once = yes
@@ -26,7 +26,7 @@ country_event = {
 	mean_time_to_happen = { months = 1 }
 	
 	option = {
-		name = more_subjects_voivodeship_events1.EVTOPT1
+		name = subjects_expanded_voivodeship_events1.EVTOPT1
 		
 		ai_chance = { factor = 100 }
 		
@@ -44,7 +44,7 @@ country_event = {
 	}
 	
 	option = {
-		name = more_subjects_voivodeship_events1.EVTOPT2
+		name = subjects_expanded_voivodeship_events1.EVTOPT2
 		
 		ai_chance = { factor = 0 }
 		

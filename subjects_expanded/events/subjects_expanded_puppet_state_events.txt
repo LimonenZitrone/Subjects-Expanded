@@ -1,9 +1,9 @@
-namespace = more_subjects_puppet_state_events
+namespace = subjects_expanded_puppet_state_events
 
 country_event = {
-	id = more_subjects_puppet_state_events.1
-	title = more_subjects_puppet_state_events.EVTNAME1
-	desc = more_subjects_puppet_state_events.EVTDESC1
+	id = subjects_expanded_puppet_state_events.1
+	title = subjects_expanded_puppet_state_events.EVTNAME1
+	desc = subjects_expanded_puppet_state_events.EVTDESC1
 	picture = DIPLOMACY_eventPicture
 	
 	hidden = yes
@@ -23,22 +23,22 @@ country_event = {
 	}
 	
 	option = {
-		name = more_subjects_puppet_state_events1.EVTOPT1
+		name = subjects_expanded_puppet_state_events1.EVTOPT1
 		
 		ai_chance = { factor = 100 }
 	}
 }
 
 country_event = {
-	id = more_subjects_puppet_state_events.2
-	title = more_subjects_puppet_state_events.EVTNAME2
-	desc = more_subjects_puppet_state_events.EVTDESC2
+	id = subjects_expanded_puppet_state_events.2
+	title = subjects_expanded_puppet_state_events.EVTNAME2
+	desc = subjects_expanded_puppet_state_events.EVTDESC2
 	picture = DIPLOMACY_eventPicture
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = more_subjects_puppet_state_events2.EVTOPT1
+		name = subjects_expanded_puppet_state_events2.EVTOPT1
 		
 		ai_chance = { factor = 100 }
 	}

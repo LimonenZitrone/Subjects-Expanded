@@ -131,34 +131,9 @@ is_possible_subject_of_subject_type_puppet_state = {
 is_possible_subject_of_subject_type_autonomous_dominion = {
 	# PREVs in THIS scope refer to possible overlord
 	NOT = { is_subject_of_type = autonomous_dominion }
-	OR = {
-		AND = {
-			is_subject_of = PREV
-			is_subject_of_type = colony
-			total_development = 450
-		}
-		PREV = {
-			OR = {
-				is_year = 1700
-				current_age = age_of_absolutism
-				AND = {
-					OR = {
-						ai = no
-						AND = {
-							NOT = { has_dlc = "Wealth of Nations" }
-							NOT = { has_dlc = "Dharma" }
-						}
-					}
-					capital_scope = {
-						is_node_in_trade_company_region = no
-					}
-					any_owned_province = {
-						is_node_in_trade_company_region = yes
-					}
-				}
-			}
-		}
-	}
+	is_subject_of = PREV
+	is_subject_of_type = colony
+	total_development = 450
 	# Capital in Trade Range of possible Overlord has to be checked additionally
 }
 

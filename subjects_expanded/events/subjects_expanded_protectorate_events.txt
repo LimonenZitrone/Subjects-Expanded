@@ -1,9 +1,9 @@
-namespace = more_subjects_protectorate_events
+namespace = subjects_expanded_protectorate_events
 
 country_event = {
-	id = more_subjects_protectorate_events.1
-	title = more_subjects_protectorate_events.EVTNAME1
-	desc = more_subjects_protectorate_events.EVTDESC1
+	id = subjects_expanded_protectorate_events.1
+	title = subjects_expanded_protectorate_events.EVTNAME1
+	desc = subjects_expanded_protectorate_events.EVTDESC1
 	picture = DIPLOMACY_eventPicture
 	
 	hidden = yes
@@ -31,31 +31,31 @@ country_event = {
 	}
 	
 	option = {
-		name = more_subjects_protectorate_events1.EVTOPT1
+		name = subjects_expanded_protectorate_events1.EVTOPT1
 		
 		ai_chance = { factor = 100 }
 	}
 }
 
 country_event = {
-	id = more_subjects_protectorate_events.2
-	title = more_subjects_protectorate_events.EVTNAME2
-	desc = more_subjects_protectorate_events.EVTDESC2
+	id = subjects_expanded_protectorate_events.2
+	title = subjects_expanded_protectorate_events.EVTNAME2
+	desc = subjects_expanded_protectorate_events.EVTDESC2
 	picture = DIPLOMACY_eventPicture
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = more_subjects_protectorate_events2.EVTOPT1
+		name = subjects_expanded_protectorate_events2.EVTOPT1
 		
 		ai_chance = { factor = 100 }
 	}
 }
 
 country_event = {
-	id = more_subjects_protectorate_events.3
-	title = more_subjects_protectorate_events.EVTNAME3
-	desc = more_subjects_protectorate_events.EVTDESC3
+	id = subjects_expanded_protectorate_events.3
+	title = subjects_expanded_protectorate_events.EVTNAME3
+	desc = subjects_expanded_protectorate_events.EVTDESC3
 	picture = DIPLOMACY_eventPicture
 	
 	major = yes
@@ -77,7 +77,7 @@ country_event = {
 	}
 	
 	option = {
-		name = more_subjects_protectorate_events3.EVTOPT1
+		name = subjects_expanded_protectorate_events3.EVTOPT1
 		
 		ai_chance = { factor = 100 }
 		
@@ -88,9 +88,9 @@ country_event = {
 }
 
 country_event = {
-	id = more_subjects_protectorate_events.4
-	title = more_subjects_protectorate_events.EVTNAME4
-	desc = more_subjects_protectorate_events.EVTDESC4
+	id = subjects_expanded_protectorate_events.4
+	title = subjects_expanded_protectorate_events.EVTNAME4
+	desc = subjects_expanded_protectorate_events.EVTDESC4
 	picture = DIPLOMACY_eventPicture
 	
 	hidden = yes
@@ -117,7 +117,7 @@ country_event = {
 	}
 	
 	option = {
-		name = more_subjects_protectorate_events4.EVTOPT1
+		name = subjects_expanded_protectorate_events4.EVTOPT1
 		
 		ai_chance = { factor = 100 }
 	}

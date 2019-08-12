@@ -79,3 +79,6 @@
  
  voivodeship_modifier: "Voivodeship"
  
+ fief_subject_modifier: "Fiefdom"
+ fief_subject_overlord_modifier: "Has Fiefdom"
+ 

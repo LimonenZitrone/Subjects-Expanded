@@ -27,5 +27,11 @@
  voivodeship_title_plural: "Woiwodschaften"
  voivodeship_is_our: "§Y$NAME$§! ist unsere Woiwodschaft."
  voivodeship_long_desc: "Eine Woiwodschaft ist eine Mischen aus Vasall und Mark. Sie erhält einige Boni ähnlich denen einer Mark, kann allerdings nach 10 Jahren unter unserer Herrschaft annektiert werden. Weiterhin besitzt sie höhere Militärausgaben.\n"
- voivodeship_no_overlord_dow: "You can not declare war on your own Puppet State."
+ voivodeship_no_overlord_dow: "Ihr könnt Eurer eigenen Woiwodschaft nicht den Krieg erklären."
+ 
+ fief_subject_title: "Feudalvasall"
+ fief_subject_title_plural: "Feudalvasallen"
+ fief_subject_is_our: "§Y$NAME$§! ist unser Feudalvasall."
+ fief_subject_long_desc: "Ein Feudalvasall ist ein Vasall mit der gleichen Primärkultur. Er verhält sich ähnlich wie ein Vasall, hat jedoch ein leicht reduziertes Freiheitsstreben, tritt Kriegen seines Lehnsherrn nicht bei und kann nur integriert werden. Allerdings zahlt es mehr Geld an seinen Lehnsherrn und der Lehnsherr kann Truppen von ihm fordern. Weiterhin besitzt er erhöhte Steuereinnahmen und reduzierte Kulturkonvertierungskosten und beeinflusst diese Modifikatoren auch bei seinem Lehnsherrn.\n"
+ fief_subject_no_overlord_dow: "Ihr könnt Eurem eigenen Feudalvasall nicht den Krieg erklären."
  

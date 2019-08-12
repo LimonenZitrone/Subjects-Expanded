@@ -1,3 +1,9 @@
+returned_to_vassal = {
+	opinion = -100
+	yearly_decay = 3
+	min = -200
+}
+
 is_protectorate = {
 	opinion = 30
 }
@@ -13,7 +19,7 @@ protectorate_forced = {
 	min = -50
 }
 
-declined_establish_protectorate = {
+declined_establish_protectorate_opinion = {
 	opinion = -25
 	yearly_decay = 1
 	min = -100
@@ -40,7 +46,7 @@ puppet_state_forced = {
 	min = -50
 }
 
-declined_establish_puppet_state = {
+declined_establish_puppet_state_opinion = {
 	opinion = -25
 	yearly_decay = 1
 	min = -100
@@ -80,4 +86,14 @@ roman_client_kingdom_replaced_ruler = {
 
 is_voivodeship = {
 	opinion = 50
+}
+
+is_fief_subject = {
+	opinion = 50
+}
+
+declined_establish_fief_subject_opinion = {
+	opinion = -25
+	yearly_decay = 1
+	min = -100
 }

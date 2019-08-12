@@ -1,14 +1,16 @@
 ﻿l_german:
+ returned_to_vassal: "Degradiert zum Vasall"
+ 
  is_protectorate: "Protektorat"
  released_protectorate: "Protektorat aufgekündigt"
  protectorate_forced: "Protektorat erzwungen"
- declined_establish_protectorate: "Forderung nach Protektorat abgelehnt"
+ declined_establish_protectorate_opinion: "Forderung nach Protektorat abgelehnt"
  declined_ask_to_become_protectorate: "Bitte nach Protektorat abgelehnt"
  
  is_puppet_state: "Marionettenstaat"
  released_puppet_state: "Marionettenstaat aufgekündigt"
  puppet_state_forced: "Marionettenstaat erzwungen"
- declined_establish_puppet_state: "Forderung nach Marionettenstaat abgelehnt"
+ declined_establish_puppet_state_opinion: "Forderung nach Marionettenstaat abgelehnt"
  
  is_autonomous_dominion: "Autonomes Herrschaftsgebiet"
  
@@ -19,4 +21,7 @@
  roman_client_kingdom_replaced_ruler: "Herrscher auf Thron verholfen"
  
  is_voivodeship: "Woiwodschaft"
+ 
+ is_fief_subject: "Feudalvasall"
+ declined_establish_fief_subject_opinion: "Forderung nach Feudalvasall abgelehnt"
  

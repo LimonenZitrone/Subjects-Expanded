@@ -2,16 +2,16 @@
  # New Diplomatic Actions:
  establish_protectorate_title: "Establish Protectorate"
  establish_protectorate_desc: "Do you want to offer §Y[From.GetName]§! to become our Protectorate? \nA Protectorate gives us some of their trade power in return for technological progress and military protection."
- establish_protectorate_tooltip: "Make §Y[From.GetName]§! to a [Root.GetAdjective] protectorate.\n"
+ establish_protectorate_tooltip: "Make §Y[From.GetName]§! to a [Root.GetAdjective] §YProtectorate§!.\n"
  establish_protectorate_alert_tooltip: "Establish Protectorate"
- establish_protectorate_dialog: "§Y[This.GetName]§! offers us that we become their Protectorate. This means that we have to transfer trade power to them, but in return we gain military protection from them and receive bonuses on technology cost and institution growth. Protectorates are partly restricted in their diplomatic actions. \n\nDo you want to accept?"
+ establish_protectorate_dialog: "§Y[This.GetName]§! offers us that we become their §YProtectorate§!. This means that we have to transfer trade power to them, but in return we gain military protection from them and receive bonuses on technology cost and institution growth. Protectorates are partly restricted in their diplomatic actions. \n\nDo you want to accept?"
  
  ask_to_become_protectorate_title: "Ask to become Protectorate"
  ask_to_become_protectorate_desc: "Do you want to offer §Y[From.GetName]§! that we become their Protectorate? \nThis means that we have to transfer trade power to them, but in return we gain military protection from them and receive bonuses on technology cost and institution growth. Protectorates are partly restricted in their diplomatic actions."
- ask_to_become_protectorate_tooltip: "Ask §Y[From.GetName]§! to make §Y[Root.GetName]§! to a [From.GetAdjective] protectorate.\n"
+ ask_to_become_protectorate_tooltip: "Ask §Y[From.GetName]§! to make §Y[Root.GetName]§! to a [From.GetAdjective] §YProtectorate§!.\n"
  ask_to_become_protectorate_alert_tooltip: "Ask to become Protectorate"
- ask_to_become_protectorate_dialog: "§Y[This.GetName]§! offers us that they become our Protectorate. \n\nA Protectorate gives us some of their trade power in return for technological progress and military protection. \n\nDo you want to accept?"
-  
+ ask_to_become_protectorate_dialog: "§Y[This.GetName]§! offers us that they become our §YProtectorate§!. \n\nA Protectorate gives us some of their trade power in return for technological progress and military protection. \n\nDo you want to accept?"
+ 
  cancel_protectorate_title: "Release Protectorate"
  cancel_protectorate_desc: "Do you want to cancel the §YProtectorate§! and grant §Y[From.GetName]§! independence? \nThis will[Root.GetIfCancelProtectorateGivesStabHit]decrease their opinion about us by §R-200§!."
  cancel_protectorate_tooltip: "Cancel the protectorate status of §Y[From.GetName]§!.\n"
@@ -19,20 +19,20 @@
  
  establish_puppet_state_title: "Establish Puppet State"
  establish_puppet_state_desc: "Do you want to offer §Y[From.GetName]§! to become our Puppet State? \nA Puppet State is a mixture off a vassal and a march. It receives similar bonuses as a march, but can be annexed after 10 years. Further more it increases our reputation at home and in foreign countries."
- establish_puppet_state_tooltip: "Make §Y[From.GetName]§! to a [Root.GetAdjective] puppet state.\n"
+ establish_puppet_state_tooltip: "Make §Y[From.GetName]§! to a [Root.GetAdjective] §YPuppet State§!.\n"
  establish_puppet_state_alert_tooltip: "Establish Puppet State"
- establish_puppet_state_dialog: "§Y[This.GetName]§! offers us that we become their Puppet State. A Puppet State is a mixture off a vassal and a march. It receives similar bonuses as a march, but can be annexed after 10 years. Further more it increases our reputation at home and in foreign countries. \n\nIf we accept, our government is changed to §YPuppet State Government§! (Republic). \nAs long as we have less than §Y33%§! of the [This.GetAdjective] total development, we would gain the following bonuses: \nGlobal Manpower Modifier: §G+25.0%§! \nManpower Recovery Speed: §G+20.0%§! \nLand Force Limit: §G+30.0%§! \nYearly Republican Tradition: §G+0.25§! \nLiberty Desire: §G-10.00%§! \n\nDo you want to accept?"
+ establish_puppet_state_dialog: "§Y[This.GetName]§! offers us that we become their §YPuppet State§!. A Puppet State is a mixture off a vassal and a march. It receives similar bonuses as a march, but can be annexed after 10 years. Further more it increases our reputation at home and in foreign countries. \n\nIf we accept, our government is changed to §YPuppet State Government§! (Republic). \nAs long as we have less than §Y33%§! of the [This.GetAdjective] total development, we would gain the following bonuses: \nGlobal Manpower Modifier: §G+25.0%§! \nManpower Recovery Speed: §G+20.0%§! \nLand Force Limit: §G+30.0%§! \nYearly Republican Tradition: §G+0.25§! \nLiberty Desire: §G-10.00%§! \n\nDo you want to accept?"
  
  cancel_puppet_state_title: "Release Puppet State"
  cancel_puppet_state_desc: "Do you want to cancel the §YPuppet State§! and grant §Y[From.GetName]§! independence? \nThis will[Root.GetIfCancelProtectorateGivesStabHit]and decrease their opinion about us by §R-100§!. We also gain a truce with [From.GetName] and our prestige decreases by §R-20§!."
  cancel_puppet_state_tooltip: "Cancel the puppet state status of §Y[From.GetName]§!.\n"
  
  
- establish_autonomous_dominion_title: "Grant more autonomy"
+ establish_autonomous_dominion_title: "Grant More Autonomy"
  establish_autonomous_dominion_desc: "Do you want to make your colonial nation §Y[From.GetName]§! to an §YAutonomous Dominion§!? \nAn Autonomous Dominion behaves like a colonial nation, but has less liberty desire and pays no tarrifs to its overlord."
- establish_autonomous_dominion_tooltip: "Make §Y[From.GetName]§! to a [Root.GetAdjective] autonomous dominion.\n"
+ establish_autonomous_dominion_tooltip: "Make §Y[From.GetName]§! to a [Root.GetAdjective] §YAutonomous Dominion§!.\n"
  
- lower_development_of_autonomous_development_title: "Reduce development"
+ lower_development_of_autonomous_development_title: "Reduce Development"
  lower_development_of_autonomous_development_desc: "Their total development increased to above §Y500§!, which increased their liberty desire noticeably. If we reduce their development, their liberty desire will be increased in the short term though, but seen in the long term this might help us. Additional to that we once gain ¤, £icon_manpower£ and £icon_sailors£ and their development cost are increased for §Y10 years§! after the reduction by §G300%§!. \nWe can only reduce the development of an Autonomen Dominion every §Y10 years§!."
  lower_development_of_autonomous_development_tooltip: "Reduce the [From.GetAdjective] total development by §Y200§! and gain one year of income of ¤, £icon_manpower£ and £icon_sailors£ from them. This increases their liberty desire by §R30%§!.\n"
  
@@ -62,14 +62,32 @@
  cancel_voivodeship_desc: "Cancel the dependency of §Y[From.GetName]§! of us. This will decrease their opinion about us by §R-200§!, if their liberty desire is below §Y50%§!. We will also lose §R-25§! prestige and gain a truce with them for §Y5 years§!."
  cancel_voivodeship_tooltip: "Cancel the vassalisation of §Y[From.GetName]§! and grant them independence.\n"
  
+ 
+ establish_fief_subject_title: "Establish Fiefdom"
+ establish_fief_subject_desc: "Do you want to offer §Y[From.GetName]§! to become our Fiefdom? \nA Fiefdom is a vassal of the same primary culture. It behaves similar to normal vassals, but has a slightly lower liberty desire, does not join its overlords wars and can only be integrated. However it pays more money to its overlord and the overlord can demand troops from it. Further more it has increased tax income and decreased culture conversion cost and also affects these modifiers for its overlord."
+ establish_fief_subject_tooltip: "Make §Y[From.GetName]§! to a [Root.GetAdjective] §YFiefdom§!.\n"
+ establish_fief_subject_alert_tooltip: "Establish Fiefdom"
+ establish_fief_subject_dialog: "§Y[This.GetName]§! offers us that we become their §YFiefdom§!. A Fiefdom is a vassal of the same primary culture. It behaves similar to normal vassals, but has a slightly lower liberty desire, does not join its overlords wars and can only be integrated. However it pays more money to its overlord and the overlord can demand troops from it. Further more it has increased tax income and decreased culture conversion cost and also affects these modifiers for its overlord. Fiefdoms are restricted in their diplomatic actions. \n\nDo you want to accept?"
+ 
+ demand_troops_from_fief_subject_title: "Demand Troops"
+ demand_troops_from_fief_subject_desc: "Demand troops of §Y[From.GetName]§! to fight for [Root.GetName]. This will transfer §Y5§! infantry units of their army to our capital. \nThis will increase their liberty desire by §R+10%§!."
+ demand_troops_from_fief_subject_tooltip: "Demand troops of §Y[From.GetName]§! to fight for [Root.GetName].\n"
+ 
+ cancel_fief_subject_title: "Release Fiefdom"
+ cancel_fief_subject_desc: "Cancel the dependency of §Y[From.GetName]§! of us. This will decrease their opinion about us by §R-200§!, if their liberty desire is below §Y50%§!. We will also lose §R-25§! prestige and gain a truce with them for §Y5 years§!."
+ cancel_fief_subject_tooltip: "Cancel the vassalisation of §Y[From.GetName]§! and grant them independence.\n"
+ 
+ 
+ return_subject_to_vassal_title: "Demote to Vassal"
+ return_subject_to_vassal_desc: "Cancel the current status §Y[From.GetName]§! has and make them to a vassal. This will decrease their opinion of us by §R-100§!. We will also lose §R-10§! prestige."
+ return_subject_to_vassal_tooltip: "Make §Y[From.GetName]§! to a vassal again.\n"
+ 
  # AI Acceptance Reasons:
  ROOT_FROM_ECONOMIC_POWER_COMPARED: "Relative Economic Strength"
  ROOT_FROM_MILITARY_POWER_COMPARED: "Relative Military Strength"
  FROM_HAS_SUBJECTS: "They have subjects themselves"
  FROM_TOTAL_DEVELOPMENT_OVER_200: "They have more than §Y200§! total development"
- IS_MERCHANT_REPUBLIC: "Government \"Merchant Republic\""
  NUM_OF_PROTECTORATES: "We already have protectorates"
- OUR_DIPLOMATIC_REPUTATION: "Diplomatic Reputation"
  FROM_ATTITUDE_TOWARDS_ROOT: "Attitude towards us"
  FROM_IS_MONARCHY: "They are a monarchy"
  FROM_HAS_OTHER_IDEOLOGY: "They have another ideology than we have"
@@ -77,4 +95,18 @@
  RELEASED_FROM_IN_A_WAR: "We liberated them in a war"
  FROM_HAS_AT_LEAST_HALF_OF_ROOT_TOTAL_DEVELOPMENT: "They have at least §Y50%§! of our total development"
  FROM_IS_SUBJECT_AT_RIVAL_BORDER: "They border one of our rivals"
+ FROM_IS_VASSAL_OF_ROOT: "They are our vassal"
+ FROM_HAS_MARRIAGE_WITH_ROOT: "We have a royal marriage"
+ ROOT_FROM_DIFF_OF_GOV_RANKS: "Difference in government ranks"
+ ROOT_FROM_NOT_SAME_RELIGION_GROUP: "Not the same religious group"
+ ROOT_FROM_NOT_SAME_RELIGION: "Not the same religion"
+ FROM_IS_MERCHANT_REPUBLIC: "They are a \"Merchant Republic\""
+ ROOT_IS_MERCHANT_REPUBLIC: "We are a \"Merchant Republic\""
+ FROM_IS_HRE_MEMBER: "They are a member of the Empire"
+ FROM_IS_HRE_ELECTOR: "They are an elector"
+ FROM_IS_PAPAL_STATE: "They are the Papal State"
+ FROM_HAS_MORE_THAN_100_TOTAL_DEVELOPMENT: "They have more than §Y100§! development"
+ ROOT_OWNS_FROM_CORE_PROVINCES: "We own their cores"
+ ROOT_FROM_HAVE_SAME_PRIMARY_CULTURE: "We have the same primary culture"
+ FROM_LIBERTY_DESIRE_TOO_HIGH: "Their liberty desire is too high"
  

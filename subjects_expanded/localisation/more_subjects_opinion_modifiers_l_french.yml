@@ -1,14 +1,16 @@
 ﻿l_french:
+ returned_to_vassal: "Demoted to Vassal"
+ 
  is_protectorate: "Protectorate"
  released_protectorate: "Released Protectorate"
  protectorate_forced: "Forced Protectorate"
- declined_establish_protectorate: "Demand of Protectorate declined"
+ declined_establish_protectorate_opinion: "Demand of Protectorate declined"
  declined_ask_to_become_protectorate: "Offer for Protectorate declined"
  
  is_puppet_state: "Puppet State"
  released_puppet_state: "Released Puppet State"
  puppet_state_forced: "Forced Puppet State"
- declined_establish_puppet_state: "Demand of Puppet State declines"
+ declined_establish_puppet_state_opinion: "Demand of Puppet State declines"
  
  is_autonomous_dominion: "Autonomous Dominion"
  
@@ -19,4 +21,7 @@
  roman_client_kingdom_replaced_ruler: "Helped ruler to ascend the throne"
  
  is_voivodeship: "Voivodeship"
+ 
+ is_fief_subject: "Fiefdom"
+ declined_establish_fief_subject_opinion: "Demand of Fiefdom declined"
  

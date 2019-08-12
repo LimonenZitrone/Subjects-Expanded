@@ -317,17 +317,27 @@ roman_client_kingdom_extra_range_modifier = {
 	range = 0.05
 }
 
+# Subject Type: Voivodeship
+voivodeship_modifier = {
+	global_manpower_modifier = 0.25
+	land_forcelimit_modifier = 0.30
+	manpower_recovery_speed = 0.20
+	republican_tradition = 0.25
+}
+
+# Subject Type: Fief
+fief_subject_modifier = {
+	culture_conversion_cost = -0.1
+	global_tax_modifier = 0.1
+}
+
+fief_subject_overlord_modifier = {
+	culture_conversion_cost = -0.01
+	global_tax_modifier = 0.01
+}
+
 # Modifiers that function as timers
 protectorate_got_monarch_power_this_year = {
-}
-
-declined_establish_protectorate = {
-}
-
-declined_become_protectorate = {
-}
-
-declined_establish_puppet_state = {
 }
 
 established_autonomous_dominion = {
@@ -339,10 +349,5 @@ cooldown_reduced_autonomous_dominion_development = {
 cooldown_placed_roman_ruler_on_subject_throne = {
 }
 
-# Subject Type: Voivodeship
-voivodeship_modifier = {
-	global_manpower_modifier = 0.25
-	land_forcelimit_modifier = 0.30
-	manpower_recovery_speed = 0.20
-	republican_tradition = 0.25
+cooldown_demand_troops_from_fief_subject = {
 }

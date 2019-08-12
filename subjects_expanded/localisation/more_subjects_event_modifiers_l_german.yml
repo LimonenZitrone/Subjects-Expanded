@@ -79,3 +79,6 @@
  
  voivodeship_modifier: "Woiwodschaft"
  
+ fief_subject_modifier: "Feudalvasall"
+ fief_subject_overlord_modifier: "Besitzt Feudalvasallen"
+ 

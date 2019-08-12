@@ -64,4 +64,17 @@ spriteTypes = {
 		name = "GFX_diplomacy_amvoivodeship"
 		texturefile = "gfx//interface//icon_diplomacy_amvoivodeship.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_icon_fief_subject"
+		texturefile = "gfx/interface/icon_fief_subject.dds"
+	}
+	spriteType = {
+		name = "GFX_diplomacy_leadfief_subject"
+		texturefile = "gfx//interface//icon_diplomacy_leadfief_subject.dds"
+	}
+	spriteType = {
+		name = "GFX_diplomacy_amfief_subject"
+		texturefile = "gfx//interface//icon_diplomacy_amfief_subject.dds"
+	}
 }

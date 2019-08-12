@@ -64,3 +64,7 @@
  more_subjects_voivodeship_events1.EVTOPT1: "They shall become a voivodeship."
  more_subjects_voivodeship_events1.EVTOPT2: "They would better serve as a [BOH.GetAdjective] vassal."
  
+ more_subjects_fief_subject_events.EVTNAME1: "Troops Demanded"
+ more_subjects_fief_subject_events.EVTDESC1: "Our overlord made use of his right and demanded troops for his army."
+ more_subjects_fief_subject_events1.EVTOPT1: "Was this really necessary?"
+ 

@@ -13,6 +13,7 @@
  IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_autonomous_dominion: "Can be made to an §YAutonomous Dominion§!"
  IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_roman_client_kingdom: "Can be made to a §YRoman Client Kingdom§!"
  IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_voivodeship: "Can be made to a §YVoivodeship§!"
+ IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_fief_subject: "Can be made to a §YFiefdom§!"
  
  THIS_IS_FORMER_AUTONOMOUS_DOMINION: "Is a former §YAutonomous Dominion§! or a former §YColonial Nation§!"
  
@@ -24,6 +25,8 @@
  DID_NOT_LOWER_DEVELOPMENT_WITHIN_LAST_10_YEARS: "Did NOT reduce the development of an autonomous dominion within the last §Y10 years§!"
  DID_NOT_REPLACE_CURRENT_RULER: "We did NOT help §Y[From.Monarch.GetName]§! to ascend the throne"
  DID_NOT_REPLACE_RULER_WITHIN_LAST_50_YEARS: "Did NOT replace the ruler of a Roman client kingdom with the last §Y50 years§!"
+ 
+ DID_NOT_DEMAND_TROOPS_OF_FIEF_WITHIN_LAST_10_YEARS: "Was NOT forced to transfer troops to its overlord within the last §Y10 years§!"
  
  # Decisions:
  ALL_PROVINCES_IN_INDIAN_TRADE_COMPANY_REGIONS_CEDED_TO_AUTONOMOUS_DOMINION: "\nAll our provinces in [Root.GetIndianTradeCompanyRegionsSgPl] [Root.GetFirstIndianTradeCompanyRegionWeCede][Root.GetSecondIndianTradeCompanyRegionWeCede][Root.GetThirdIndianTradeCompanyRegionWeCede][Root.GetFourthIndianTradeCompanyRegionWeCede][Root.GetFifthIndianTradeCompanyRegionWeCede] are ceded to our autonomous dominion \n[Root.GetCreatedADNameIndia], which is released there."
@@ -45,4 +48,6 @@
  ROMAN_CLIENT_KINGDOM_PAYS_ONE_YEAR_OF_INCOME: "§Y[From.GetName]§! pays us §G[From.roman_client_kingdom_yearly_years_of_income_var.GetValue]§! ducats."
  ROMAN_CLIENT_KINGDOM_PAYS_YEARLY_MANPOWER: "§Y[From.GetName]§! gives us §G[From.roman_client_kingdom_yearly_manpower_var.GetValue]§! manpower."
  ROMAN_CLIENT_KINGDOM_PAYS_YEARLY_MONARCH_POWER: "§Y[From.GetName]§! gives us §G[From.roman_client_kingdom_yearly_adm_from_ruler_var.GetValue]§! Administrative Power, §G[From.roman_client_kingdom_yearly_dip_from_ruler_var.GetValue]§! Diplomatic Power and §G[From.roman_client_kingdom_yearly_mil_from_ruler_var.GetValue]§! Military Power."
+ 
+ FIEF_OVERLORD_DEMANDED_TROOPS: "Our overlord, §Y[From.GetName]§!, demanded that we send troops. This means, §Y5§! of our infantry units were transfered to their army."
  

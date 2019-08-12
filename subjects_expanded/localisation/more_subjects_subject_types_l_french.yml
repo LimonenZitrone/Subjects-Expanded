@@ -27,5 +27,11 @@
  voivodeship_title_plural: "Voivodeships"
  voivodeship_is_our: "§Y$NAME$§! is our Voivodeship."
  voivodeship_long_desc: "A Voivodeship is a mixture off a vassal and a march. It receives similar bonuses as a march, but can be annexed after 10 years. Further more it has increased military expanses.\n"
- voivodeship_no_overlord_dow: "You can not declare war on your own Puppet State."
+ voivodeship_no_overlord_dow: "You can not declare war on your own Voivodeship."
+ 
+ fief_subject_title: "Fiefdom"
+ fief_subject_title_plural: "Fiefdoms"
+ fief_subject_is_our: "§Y$NAME$§! is our Fiefdom."
+ fief_subject_long_desc: "A Fiefdom is a vassal of the same primary culture. It behaves similar to normal vassals, but has a slightly lower liberty desire, does not join its overlords wars and can only be integrated. However it pays more money to its overlord and the overlord can demand troops from it. Further more it has increased tax income and decreased culture conversion cost and also affects these modifiers for its overlord.\n"
+ fief_subject_no_overlord_dow: "You can not declare war on your own Fiefdom."
  

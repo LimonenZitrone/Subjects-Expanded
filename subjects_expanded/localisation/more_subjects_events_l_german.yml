@@ -64,3 +64,7 @@
  more_subjects_voivodeship_events1.EVTOPT1: "Sie sollen eine Woiwodschaft werden."
  more_subjects_voivodeship_events1.EVTOPT2: "Sie dienen besser als [BOH.GetAdjective]er Vasall."
  
+ more_subjects_fief_subject_events.EVTNAME1: "Truppen gefordert"
+ more_subjects_fief_subject_events.EVTDESC1: "Unser LehnshOur hat von seinem Recht Gebrauch gemacht und Truppen für seine Armee gefordert."
+ more_subjects_fief_subject_events1.EVTOPT1: "War das wirklich nötig?"
+ 

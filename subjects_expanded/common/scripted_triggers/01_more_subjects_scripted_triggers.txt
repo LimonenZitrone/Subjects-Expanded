@@ -141,22 +141,13 @@ is_possible_subject_of_subject_type_autonomous_dominion = {
 			OR = {
 				is_year = 1700
 				current_age = age_of_absolutism
-				has_country_modifier = can_create_autonomous_dominion_in_west_india
-				has_country_modifier = can_create_autonomous_dominion_in_east_india
-				has_country_modifier = can_create_autonomous_dominion_in_north_india
-				has_country_modifier = can_create_autonomous_dominion_in_south_india
-				has_country_modifier = can_create_autonomous_dominion_in_coromandel
-				has_country_modifier = can_create_autonomous_dominion_in_indonesia
-				has_country_modifier = can_create_autonomous_dominion_in_moluccas
-				has_country_modifier = can_create_autonomous_dominion_in_west_africa
-				has_country_modifier = can_create_autonomous_dominion_in_east_africa
-				has_country_modifier = can_create_autonomous_dominion_in_south_africa
-				has_country_modifier = can_create_autonomous_dominion_in_indochina
 				AND = {
-					ai = no
 					OR = {
-						has_dlc = "Wealth of Nations"
-						has_dlc = "Dharma"
+						ai = no
+						AND = {
+							NOT = { has_dlc = "Wealth of Nations" }
+							NOT = { has_dlc = "Dharma" }
+						}
 					}
 					capital_scope = {
 						is_node_in_trade_company_region = no
@@ -181,8 +172,29 @@ is_possible_subject_of_subject_type_roman_client_kingdom = {
 
 is_possible_subject_of_subject_type_voivodeship = {
 	NOT = { is_subject_of_type = voivodeship }
-	vassal_of = PREV
+	is_subject_of = PREV
+	OR = {
+		is_subject_of_type = vassal
+		is_subject_of_type = client_vassal
+		is_subject_of_type = fief_subject
+	}
 	is_neighbor_of = PREV
+}
+
+is_possible_subject_of_subject_type_fief_subject = {
+	NOT = { is_subject_of_type = fief_subject }
+	OR = {
+		is_subject = no
+		AND = {
+			is_subject_of = PREV
+			OR = {
+				is_subject_of_type = vassal
+				is_subject_of_type = client_vassal
+				is_subject_of_type = voivodeship
+			}
+		}
+	}
+	primary_culture = PREV
 }
 
 can_create_subject_type = {

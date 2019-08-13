@@ -137,3 +137,6 @@
  send_crusader_knights_to_crusader_state_vassal: "Received Crusade Knights"
  invite_missionars_from_crusader_state_vassal: "Conscripted Missionaries from Crusader State"
  
+ nahuatl_vassal_modifier: "Overlord does not fulfill requirements for Nahuatl Vassal"
+ nahuatl_vassal_overlord_modifier: "Has Nahuatl Vassals"
+ 

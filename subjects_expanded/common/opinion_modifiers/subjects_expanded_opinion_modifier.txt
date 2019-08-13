@@ -111,3 +111,7 @@ fief_subject_forced = {
 is_crusader_state_vassal = {
 	opinion = 50
 }
+
+is_nahuatl_vassal = {
+	opinion = 50
+}

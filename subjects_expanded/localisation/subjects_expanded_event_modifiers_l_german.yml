@@ -137,3 +137,6 @@
  send_crusader_knights_to_crusader_state_vassal: "Kreuzritter erhalten"
  invite_missionars_from_crusader_state_vassal: "Missionare aus Kreuzfahrerstaat eingezogen"
  
+ nahuatl_vassal_modifier: "Lehnsherr erfüllt nicht die Bedingungen von Nahuatlischen Vasallen"
+ nahuatl_vassal_overlord_modifier: "Besitzt Nahuatlische Vasallen"
+ 

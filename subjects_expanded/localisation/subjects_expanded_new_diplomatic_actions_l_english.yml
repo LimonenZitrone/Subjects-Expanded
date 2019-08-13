@@ -95,6 +95,11 @@
  invite_missionars_from_crusader_state_vassal_tooltip: "Conscript Missionaries from §Y[From.GetName]§!.\n"
  
  
+ establish_nahuatl_vassal_title: "Establish Nahuatl Vassal"
+ establish_nahuatl_vassal_desc: "Make your vassal [From.GetName] to a §YNahuatl Vassal§!. A Nahuatl Vassal behaves like a vassal, but does not cost a diplomatic relation and has a reduced liberty desire. Further more it gives a bonus for manpower, manpower recovery speed and province war score cost to its overlord. It can only be established by §YNahuatl§! nations, which did not reform their religion, in §YMexico§!, §YCalifornia§!, §YRio Grande§! and §YCentral America§!. If an overlord does not fulfill these requirements, the Nahuatl Vassal will get §R+100%§! liberty desire. \nThis will change our doom by §R+10§!."
+ establish_nahuatl_vassal_tooltip: "Make your vassal [From.GetName] to a §YNahuatl Vassal§!.\n"
+ 
+ 
  return_subject_to_vassal_title: "Demote to Vassal"
  return_subject_to_vassal_desc: "Cancel the current status §Y[From.GetName]§! has and make them to a vassal. This will decrease their opinion of us by §R-100§!. We will also lose §R-10§! prestige."
  return_subject_to_vassal_tooltip: "Make §Y[From.GetName]§! to a vassal again.\n"

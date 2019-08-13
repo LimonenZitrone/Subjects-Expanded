@@ -576,6 +576,17 @@ invite_missionars_from_crusader_state_vassal = {
 	global_missionary_strength = 0.01
 }
 
+# Subject Type: Nahuatl Vassal
+nahuatl_vassal_modifier = {
+	liberty_desire = 100
+}
+
+nahuatl_vassal_overlord_modifier = {
+	global_manpower_modifier = 0.05
+	manpower_recovery_speed = 0.05
+	province_warscore_cost = -0.02
+}
+
 # Modifiers that function as timers
 protectorate_got_monarch_power_this_year = {
 }

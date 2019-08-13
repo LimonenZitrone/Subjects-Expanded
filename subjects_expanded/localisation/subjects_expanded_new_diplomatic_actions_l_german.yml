@@ -95,6 +95,11 @@
  invite_missionars_from_crusader_state_vassal_tooltip: "Zieht Missionare von §Y[From.GetName]§! ein.\n"
  
  
+ establish_nahuatl_vassal_title: "Nahuatlischen Vasall ernennen"
+ establish_nahuatl_vassal_desc: "Ernennt Euren Vasallen [From.GetName] zu einem §YNahuatlischen Vasall§!. Ein Nahuatlischer Vasall verhält sich wie ein Vasall, kostet jedoch keine diplomatische Beziehung und besitzt ein verringertes Freiheitsstreben. Weiterhin gibt er seinem Lehnsherrn Boni auf Mannstärke, Erholungsgeschwindigkeit der Mannstärke und Kriegspunktkosten von Provizen. Er kann nur von §YNahuatlischen§! Nationen, die ihre Religion noch nicht reformiert haben, in §YMexiko§!, §YKalifornien§!, §YRio Grande§! und §YZentralamerika§! errichtet werden. Falls ein Lehnsherr diese Bedingungen nicht erfüllt, erhält der Nahuatlische Vasall §R+100%§! Freiheitsstreben. \nDies wird unser Verhängnis um §R+10§! verändern."
+ establish_nahuatl_vassal_tooltip: "Ernennt Euren Vasallen [From.GetName] zu einem §YNahuatlischen Vasall§!.\n"
+ 
+ 
  return_subject_to_vassal_title: "Zum Vasall degradieren"
  return_subject_to_vassal_desc: "Beendet den derzeitigen Status von §Y[From.GetName]§! und macht sie zu einem Vasallen. Dies wird ihre Meinung über uns um §R-100§! verschlechtern. Außerdem verlieren wir §R-10§! Prestige."
  return_subject_to_vassal_tooltip: "Macht §Y[From.GetName]§! wieder zu einem Vasall.\n"

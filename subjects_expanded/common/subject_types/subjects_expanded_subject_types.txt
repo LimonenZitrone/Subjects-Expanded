@@ -231,6 +231,10 @@ puppet_state = {
 	send_additional_troops = yes
 
 	# Modifiers:
+	modifier_subject = clear
+	modifier_subject = {
+		modifier = subject_nation
+	}
 	modifier_subject = {
 		modifier = puppet_state_modifier
 		trigger = {
@@ -325,6 +329,10 @@ dominion = {
 	decrease_tariffs = no
 	
 	# Modifiers:
+	modifier_subject = clear
+	modifier_subject = {
+		modifier = subject_nation
+	}
 	modifier_subject = {
 		trigger = {
 			capital_scope = {
@@ -903,6 +911,10 @@ autonomous_dominion = {
 	press_sailors = no
 	
 	# Modifiers:
+	modifier_subject = clear
+	modifier_subject = {
+		modifier = subject_nation
+	}
 	modifier_subject = {
 		trigger = {
 			capital_scope = {
@@ -1495,6 +1507,10 @@ roman_client_kingdom = {
 	seize_territory = yes
 
 	# Modifiers:
+	modifier_subject = clear
+	modifier_subject = {
+		modifier = subject_nation
+	}
 	modifier_subject = {
 		modifier = roman_client_kingdom_modifier
 	}
@@ -1512,6 +1528,8 @@ roman_client_kingdom = {
 		}
 		modifier = roman_client_kingdom_no_dip_upkeep_cost_modifier
 	}
+	
+	modifier_overlord = clear
 	modifier_overlord = {
 		trigger = {
 			FROM = {
@@ -1574,6 +1592,10 @@ voivodeship = {
 	send_additional_troops = yes
 
 	# Modifiers:
+	modifier_subject = clear
+	modifier_subject = {
+		modifier = subject_nation
+	}
 	modifier_subject = {
 		modifier = voivodeship_modifier
 		trigger = {
@@ -1654,6 +1676,9 @@ fief_subject = {
 	# Modifiers:
 	modifier_subject = clear
 	modifier_subject = {
+		modifier = subject_nation
+	}
+	modifier_subject = {
 		modifier = vassal_nation
 	}
 	modifier_subject = {
@@ -1674,7 +1699,7 @@ fief_subject = {
 
 crusader_state_vassal = {
 	copy_from = default
-	count = vassal
+	count = march
 	
 	# Graphics:
 	sprite = GFX_icon_crusader_state_vassal
@@ -1755,6 +1780,9 @@ crusader_state_vassal = {
 	# Modifiers:
 	modifier_subject = clear
 	modifier_subject = {
+		modifier = subject_nation
+	}
+	modifier_subject = {
 		modifier = crusader_state_vassal_modifier
 	}
 	modifier_subject = {
@@ -1793,4 +1821,56 @@ salic_personal_union = {
 	# Properties:
 	can_be_integrated = no
 	can_be_annexed = yes
+}
+
+nahuatl_vassal = {
+	copy_from = vassal
+	count = vassal
+	
+	# Graphics:
+	sprite = GFX_icon_nahuatl_vassal
+	diplomacy_overlord_sprite = GFX_diplomacy_leadnahuatl_vassal
+	diplomacy_subject_sprite = GFX_diplomacy_amnahuatl_vassal
+
+	# Triggers:
+	is_potential_overlord = {
+		has_dlc = "El Dorado"
+		religion = nahuatl
+		is_religion_reformed = no
+	}
+	
+	# Properties:
+	takes_diplo_slot = no
+
+	max_government_rank = 1
+	
+	base_liberty_desire = -10.0
+	
+	relative_power_class = 2
+	diplomacy_view_class = 1
+	
+	restoration_cb = cb_disloyal_vassal
+
+	# Subject Interactions:
+	scutage = no
+
+	# Modifiers:
+	modifier_subject = {
+		trigger = {
+			FROM = {
+				NOT = { can_be_overlord = nahuatl_vassal }
+			}
+		}
+		modifier = nahuatl_vassal_modifier
+	}
+
+	modifier_overlord = {
+		trigger = {
+			NOT = { liberty_desire = 50 }
+		}
+		modifier = nahuatl_vassal_overlord_modifier
+	}
+
+	overlord_opinion_modifier = is_nahuatl_vassal
+	subject_opinion_modifier = is_nahuatl_vassal
 }

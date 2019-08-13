@@ -187,6 +187,16 @@ is_possible_subject_of_subject_type_crusader_state_vassal = {
 	}
 }
 
+is_possible_subject_of_subject_type_salic_personal_union = {
+	is_subject = no
+	has_reform = salic_reform
+	is_in_war = {
+		attacker_leader = PREV
+		defender_leader = THIS
+		casus_belli = cb_salic_reunification
+	}
+}
+
 can_create_subject_type = {
 	can_be_overlord = $subject_type$
 	$subject$ = {

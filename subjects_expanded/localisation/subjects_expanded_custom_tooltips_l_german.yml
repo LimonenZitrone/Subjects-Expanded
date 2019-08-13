@@ -16,6 +16,7 @@
  IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_voivodeship: "Kann zu einer §YWoiwodschaft§! gemacht werden"
  IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_fief_subject: "Kann zu einem §YFeudalvasall§! gemacht werden"
  IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_crusader_state_vassal: "Kann zu einem §YKreuzfahrerstaat§! gemacht werden"
+ IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_salic_personal_union: "Kann zu einer §YSalischen Union§! gemacht werden"
  
  THIS_IS_FORMER_AUTONOMOUS_DOMINION: "Ist ein ehemaliges §YAutonomes Herrschaftsgebiet§! oder eine ehemalige §YKolonialnation§!"
  

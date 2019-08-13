@@ -23,11 +23,8 @@ protectorate = {
 	joins_overlords_wars = no
 	joins_colonial_wars = yes
 	overlord_can_attack = no
-	overlord_can_be_subject = no
 	can_have_subjects_of_other_types = yes
 	takes_diplo_slot = no
-	has_power_projection = yes
-	can_release_in_peace = yes
 	uses_military_focus = no
 	overlord_protects_external = yes
 	counts_for_borders = no							# Whether distance between borders counts this subject type as part of its overlord's borders.
@@ -38,16 +35,10 @@ protectorate = {
 	can_set_mil_focus = no
 	can_send_missionary_to_subject = no				# Requires Cradle of Civilization
 	
-	max_government_rank = 0								# 0 means no limit
 	cities_required_for_bonuses = 25						# How many cities the subject needs before giving bonuses to overlord
 	trust_on_start = 5									# Overlord and subject will each get this much extra trust with each other at game start
 
-	base_liberty_desire = 0.0
-	liberty_desire_negative_prestige = 0.0
 	liberty_desire_development_ratio = 0.1
-	liberty_desire_same_dynasty = 0.0
-	pays_overlord = 0.0									# 1.0 represents the amount payed by vassals
-	forcelimit_bonus = 0.0								# 1.0 represents bonus from having a vassal
 	military_focus = 0.5								# How much the AI subject should spend etc. on army and forts. 0 should make them spend nothing. Very high values will probably not make a big difference since there will be sanity checks.
 
 	relative_power_class = 0 							# See description above
@@ -79,7 +70,7 @@ protectorate = {
 	bestow_gifts = yes
 
 	# Modifiers:
-	modifier_subject = clear # Use this to clear after copy_from.
+	modifier_subject = clear
 	modifier_subject = {
 		modifier = protectorate_modifier
 	}
@@ -176,7 +167,6 @@ protectorate = {
 	}
 	
 	modifier_overlord = clear
-	
 	modifier_overlord = {
 		modifier = large_colonial_nation
 		trigger = {
@@ -1639,7 +1629,7 @@ fief_subject = {
 	trust_on_start = 50									# Overlord and subject will each get this much extra trust with each other at game start
 
 	base_liberty_desire = -5.0
-	liberty_desire_negative_prestige = 10.0
+	liberty_desire_negative_prestige = 1.0
 	liberty_desire_development_ratio = 0.25
 	liberty_desire_same_dynasty = -5.0
 	pays_overlord = 2.0
@@ -1775,6 +1765,7 @@ crusader_state_vassal = {
 		}
 		modifier = crusader_state_vassal_overlord_is_papal_controller_modifier
 	}
+	
 	modifier_overlord = clear
 	modifier_overlord = {
 		modifier = crusader_state_vassal_overlord_modifier
@@ -1782,4 +1773,24 @@ crusader_state_vassal = {
 
 	overlord_opinion_modifier = is_crusader_state_vassal
 	subject_opinion_modifier = is_crusader_state_vassal
+}
+
+salic_personal_union = {
+	copy_from = personal_union
+	count = personal_union
+	
+	# Graphics:
+	sprite = GFX_court_union
+	diplomacy_overlord_sprite = GFX_diplomacy_leadunions
+	diplomacy_subject_sprite = GFX_diplomacy_inunion
+	
+	# Triggers:
+	is_potential_overlord = {
+		is_subject = no
+		has_reform = salic_reform
+	}
+	
+	# Properties:
+	can_be_integrated = no
+	can_be_annexed = yes
 }

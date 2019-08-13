@@ -16,6 +16,7 @@
  IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_voivodeship: "Can be made to a §YVoivodeship§!"
  IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_fief_subject: "Can be made to a §YFiefdom§!"
  IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_crusader_state_vassal: "Can be made to a §YCrusader State§!"
+ IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_salic_personal_union: "Can be made to a §YSalic Union§!"
  
  THIS_IS_FORMER_AUTONOMOUS_DOMINION: "Is a former §YAutonomous Dominion§! or a former §YColonial Nation§!"
  

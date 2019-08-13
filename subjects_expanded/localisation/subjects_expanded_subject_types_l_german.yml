@@ -47,3 +47,9 @@
  crusader_state_vassal_long_desc: "Ein Kreuzfahrerstaat ist eine Mischung aus Vasall und Mark. Er erhält Boni auf seine Disziplin, Mannstärke, Kriegspunktkosten gegen andere Religionen und Missionarsstärke. Weiterhin erhöhen sie die päpstlicher Einfluss und Missionarsstärke ihres Lehnsherrn und können nicht annektiert werden. Sie können nur von §Y[PAP.GetName]§! und §YRitterorden§! in Europa errichtet werden und ein Land kann maximal §Y2§! Kreuzfahrerstaaten zur gleichen Zeit besitzen.\n"
  crusader_state_vassal_no_overlord_dow: "Ihr könnt Eurem eigenen Kreuzfahrerstaat nicht den Krieg erklären."
  
+ salic_personal_union_title: "Salische Union"
+ salic_personal_union_title_plural: "Salische Unionen"
+ salic_personal_union_is_our: "§Y$NAME$§! ist unsere Salische Union."
+ salic_personal_union_long_desc: "Eine Salische Union verhält sich genau wie eine Personalunion, kann aber nach 10 Jahren annektiert werden.\n"
+ salic_personal_union_no_overlord_dow: "Ihr könnt Eurer eigenen Salischen Union nicht den Krieg erklären."
+ 

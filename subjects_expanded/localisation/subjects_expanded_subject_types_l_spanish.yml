@@ -47,3 +47,9 @@
  crusader_state_vassal_long_desc: "A Crusader State is a mixture of a vassal and a march. It receives bonuses to discipline, manpower, war score cost against other religions and missionary strength. Further more they increase the papal authority and missionary strength of its overlord and cannot be annexed. They can only be established by §Y[PAP.GetName]§! and §YMonastic Orders§! in Europe and a country can only have §Y2§! Crusader States at the same time.\n"
  crusader_state_vassal_no_overlord_dow: "You can not declare war on your own Crusader State."
  
+ salic_personal_union_title: "Salic Union"
+ salic_personal_union_title_plural: "Salic Unions"
+ salic_personal_union_is_our: "§Y$NAME$§! is our Salic Union."
+ salic_personal_union_long_desc: "A Salic Union behaves exactly like a Personal Union, but can be annexed after 10 years.\n"
+ salic_personal_union_no_overlord_dow: "You can not declare war on your own Salic Union."
+ 

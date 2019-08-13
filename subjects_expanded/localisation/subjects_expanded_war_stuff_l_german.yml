@@ -20,3 +20,7 @@
  CB_ALLOWED_make_fief_subject: "Feudalvasall erzwingen"
  PEACE_make_fief_subject: "$TAKERS$er Feudalvasall"
  
+ make_salic_personal_union_desc: "@[From.GetTag] §Y[From.GetName]§! wird zu einer Salischen Union von @[Root.GetTag] §Y[Root.GetName]§!."
+ CB_ALLOWED_make_salic_personal_union: "Salische Union erzwingen"
+ PEACE_make_salic_personal_union: "$TAKERS$e Salische Union"
+ 

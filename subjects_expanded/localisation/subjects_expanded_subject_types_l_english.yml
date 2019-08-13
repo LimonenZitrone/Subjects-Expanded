@@ -11,10 +11,16 @@
  puppet_state_long_desc: "A Puppet State is a mixture of a vassal and a march. It receives similar bonuses as a march, but can be annexed after 10 years. Further more it increases our reputation at home and in foreign countries.\n"
  puppet_state_no_overlord_dow: "You can not declare war on your own Puppet State."
  
+ dominion_title: "Dominion"
+ dominion_title_plural: "Dominions"
+ dominion_is_our: "§Y$NAME$§! is our Dominion."
+ dominion_long_desc: "A Dominion behaves like a colonial nation, but has less liberty desire and pays no tarrifs to its overlord. They are a little bit less limited than colonial nations in diplomatic actions, but cannot be forced to start colonial wars. \nAutonomous Dominions in trade company regions, can not be individualized, but give a bonus to its overlord's naval forcelimit.\n"
+ dominion_no_overlord_dow: "You can not declare war on your own Dominion."
+ 
  autonomous_dominion_title: "Autonomous Dominion"
  autonomous_dominion_title_plural: "Autonomous Dominions"
  autonomous_dominion_is_our: "§Y$NAME$§! is our Autonomous Dominion."
- autonomous_dominion_long_desc: "An Autonomous Dominion behaves like a colonial nation, but has less liberty desire and pays no tarrifs to its overlord. \nAutonomous Dominions that are released in trade company regions by decision, can not be individualized.\n"
+ autonomous_dominion_long_desc: "An Autonomous Dominion behaves like a colonial nation, but has less liberty desire, pays no tarrifs to its overlord and does not join its overlord's wars. They are less limited in diplomatic actions than colonial nations and their overlord can decline helping them in defensive wars. Further more they grant two merchants to its overlord. \nAutonomous Dominions in trade company regions, can not be individualized, but give a bonus to its overlord's naval forcelimit.\n"
  autonomous_dominion_no_overlord_dow: "You can not declare war on your own Autonomous Dominion."
  
  roman_client_kingdom_title: "Roman Client Kingdom"

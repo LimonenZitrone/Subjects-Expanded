@@ -1,19 +1,22 @@
-namespace = subjects_expanded_autonomous_dominion_events
+namespace = subjects_expanded_dominion_events
 
 country_event = {
-	id = subjects_expanded_autonomous_dominion_events.1
-	title = subjects_expanded_autonomous_dominion_events.EVTNAME1
-	desc = subjects_expanded_autonomous_dominion_events.EVTDESC1
+	id = subjects_expanded_dominion_events.1
+	title = subjects_expanded_dominion_events.EVTNAME1
+	desc = subjects_expanded_dominion_events.EVTDESC1
 	picture = DIPLOMACY_eventPicture
 	
 	hidden = yes
 	is_triggered_only = yes
 	
 	trigger = {
-		is_subject_of_type = autonomous_dominion
+		OR = {
+			is_subject_of_type = dominion
+			is_subject_of_type = autonomous_dominion
+		}
 		OR = {
 			NOT = { has_reform = colonial_government }
-			NOT = { has_country_flag = was_autonomous_dominion_subject }
+			NOT = { has_country_flag = was_dominion_subject }
 		}
 	}
 	
@@ -28,27 +31,48 @@ country_event = {
 			}
 			if = {
 				limit = {
-					NOT = { has_country_flag = was_autonomous_dominion_subject }
+					NOT = { has_country_flag = was_dominion_subject }
 				}
-				set_country_flag = was_autonomous_dominion_subject
+				set_country_flag = was_dominion_subject
 			}
 		}
 	}
 	
 	option = {
-		name = subjects_expanded_autonomous_dominion_events1.EVTOPT1
+		name = subjects_expanded_dominion_events1.EVTOPT1
 		
 		ai_chance = { factor = 100 }
 	}
 }
 
-# event no.2 deleted
+country_event = {
+	id = subjects_expanded_dominion_events.2
+	title = subjects_expanded_dominion_events.EVTNAME2
+	desc = subjects_expanded_dominion_events.EVTDESC2
+	picture = BATTLE_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = subjects_expanded_dominion_events2.EVTOPT1
+		
+		ai_chance = { factor = 100 }
+		
+		tooltip = {
+			FROM = {
+				add_manpower = 5
+			}
+			add_manpower = -5
+			add_liberty_desire = 10
+		}
+	}
+}
 
 # Give provinces in Indian trade company regions to specific autonomous dominion
 country_event = {
-	id = subjects_expanded_autonomous_dominion_events.3
-	title = subjects_expanded_autonomous_dominion_events.EVTNAME3
-	desc = subjects_expanded_autonomous_dominion_events.EVTDESC3
+	id = subjects_expanded_dominion_events.3
+	title = subjects_expanded_dominion_events.EVTNAME3
+	desc = subjects_expanded_dominion_events.EVTDESC3
 	picture = DIPLOMACY_eventPicture
 	
 	# hidden = yes
@@ -57,9 +81,12 @@ country_event = {
 		capital_scope = {
 			is_node_in_trade_company_region = no
 		}
-		NOT = { is_autonomous_dominion_tag = yes }
+		NOT = { is_dominion_tag = yes }
 		any_subject_country = {
-			is_subject_of_type = autonomous_dominion
+			OR = {
+				is_subject_of_type = dominion
+				is_subject_of_type = autonomous_dominion
+			}
 			OR = {
 				tag = DI1
 				tag = DI2
@@ -725,7 +752,7 @@ country_event = {
 	}
 	
 	option = {
-		name = subjects_expanded_autonomous_dominion_events3.EVTOPT1
+		name = subjects_expanded_dominion_events3.EVTOPT1
 		
 		ai_chance = { factor = 100 }
 	}
@@ -733,9 +760,9 @@ country_event = {
 
 # Give provinces in East Indies trade company regions to specific autonomous dominion
 country_event = {
-	id = subjects_expanded_autonomous_dominion_events.4
-	title = subjects_expanded_autonomous_dominion_events.EVTNAME4
-	desc = subjects_expanded_autonomous_dominion_events.EVTDESC4
+	id = subjects_expanded_dominion_events.4
+	title = subjects_expanded_dominion_events.EVTNAME4
+	desc = subjects_expanded_dominion_events.EVTDESC4
 	picture = DIPLOMACY_eventPicture
 	
 	# hidden = yes
@@ -744,9 +771,12 @@ country_event = {
 		capital_scope = {
 			is_node_in_trade_company_region = no
 		}
-		NOT = { is_autonomous_dominion_tag = yes }
+		NOT = { is_dominion_tag = yes }
 		any_subject_country = {
-			is_subject_of_type = autonomous_dominion
+			OR = {
+				is_subject_of_type = dominion
+				is_subject_of_type = autonomous_dominion
+			}
 			OR = {
 				tag = DE1
 				tag = DE2
@@ -1028,7 +1058,7 @@ country_event = {
 	}
 	
 	option = {
-		name = subjects_expanded_autonomous_dominion_events4.EVTOPT1
+		name = subjects_expanded_dominion_events4.EVTOPT1
 		
 		ai_chance = { factor = 100 }
 	}
@@ -1036,9 +1066,9 @@ country_event = {
 
 # Give provinces in Indochina trade company regions to specific autonomous dominion
 country_event = {
-	id = subjects_expanded_autonomous_dominion_events.5
-	title = subjects_expanded_autonomous_dominion_events.EVTNAME5
-	desc = subjects_expanded_autonomous_dominion_events.EVTDESC5
+	id = subjects_expanded_dominion_events.5
+	title = subjects_expanded_dominion_events.EVTNAME5
+	desc = subjects_expanded_dominion_events.EVTDESC5
 	picture = DIPLOMACY_eventPicture
 	
 	# hidden = yes
@@ -1047,9 +1077,12 @@ country_event = {
 		capital_scope = {
 			is_node_in_trade_company_region = no
 		}
-		NOT = { is_autonomous_dominion_tag = yes }
+		NOT = { is_dominion_tag = yes }
 		any_subject_country = {
-			is_subject_of_type = autonomous_dominion
+			OR = {
+				is_subject_of_type = dominion
+				is_subject_of_type = autonomous_dominion
+			}
 			OR = {
 				tag = DC1
 				tag = DC2
@@ -1173,7 +1206,7 @@ country_event = {
 	}
 	
 	option = {
-		name = subjects_expanded_autonomous_dominion_events5.EVTOPT1
+		name = subjects_expanded_dominion_events5.EVTOPT1
 		
 		ai_chance = { factor = 100 }
 	}
@@ -1181,9 +1214,9 @@ country_event = {
 
 # Give provinces in West Africa trade company regions to specific autonomous dominion
 country_event = {
-	id = subjects_expanded_autonomous_dominion_events.6
-	title = subjects_expanded_autonomous_dominion_events.EVTNAME6
-	desc = subjects_expanded_autonomous_dominion_events.EVTDESC6
+	id = subjects_expanded_dominion_events.6
+	title = subjects_expanded_dominion_events.EVTNAME6
+	desc = subjects_expanded_dominion_events.EVTDESC6
 	picture = DIPLOMACY_eventPicture
 	
 	# hidden = yes
@@ -1192,9 +1225,12 @@ country_event = {
 		capital_scope = {
 			is_node_in_trade_company_region = no
 		}
-		NOT = { is_autonomous_dominion_tag = yes }
+		NOT = { is_dominion_tag = yes }
 		any_subject_country = {
-			is_subject_of_type = autonomous_dominion
+			OR = {
+				is_subject_of_type = dominion
+				is_subject_of_type = autonomous_dominion
+			}
 			OR = {
 				tag = DW1
 				tag = DW2
@@ -1323,7 +1359,7 @@ country_event = {
 	}
 	
 	option = {
-		name = subjects_expanded_autonomous_dominion_events6.EVTOPT1
+		name = subjects_expanded_dominion_events6.EVTOPT1
 		
 		ai_chance = { factor = 100 }
 	}
@@ -1331,9 +1367,9 @@ country_event = {
 
 # Give provinces in East Africa trade company regions to specific autonomous dominion
 country_event = {
-	id = subjects_expanded_autonomous_dominion_events.7
-	title = subjects_expanded_autonomous_dominion_events.EVTNAME7
-	desc = subjects_expanded_autonomous_dominion_events.EVTDESC7
+	id = subjects_expanded_dominion_events.7
+	title = subjects_expanded_dominion_events.EVTNAME7
+	desc = subjects_expanded_dominion_events.EVTDESC7
 	picture = DIPLOMACY_eventPicture
 	
 	# hidden = yes
@@ -1342,9 +1378,12 @@ country_event = {
 		capital_scope = {
 			is_node_in_trade_company_region = no
 		}
-		NOT = { is_autonomous_dominion_tag = yes }
+		NOT = { is_dominion_tag = yes }
 		any_subject_country = {
-			is_subject_of_type = autonomous_dominion
+			OR = {
+				is_subject_of_type = dominion
+				is_subject_of_type = autonomous_dominion
+			}
 			OR = {
 				tag = DA1
 				tag = DA2
@@ -1473,7 +1512,7 @@ country_event = {
 	}
 	
 	option = {
-		name = subjects_expanded_autonomous_dominion_events7.EVTOPT1
+		name = subjects_expanded_dominion_events7.EVTOPT1
 		
 		ai_chance = { factor = 100 }
 	}
@@ -1481,9 +1520,9 @@ country_event = {
 
 # Give provinces in South Africa trade company regions to specific autonomous dominion
 country_event = {
-	id = subjects_expanded_autonomous_dominion_events.8
-	title = subjects_expanded_autonomous_dominion_events.EVTNAME8
-	desc = subjects_expanded_autonomous_dominion_events.EVTDESC8
+	id = subjects_expanded_dominion_events.8
+	title = subjects_expanded_dominion_events.EVTNAME8
+	desc = subjects_expanded_dominion_events.EVTDESC8
 	picture = DIPLOMACY_eventPicture
 	
 	# hidden = yes
@@ -1492,9 +1531,12 @@ country_event = {
 		capital_scope = {
 			is_node_in_trade_company_region = no
 		}
-		NOT = { is_autonomous_dominion_tag = yes }
+		NOT = { is_dominion_tag = yes }
 		any_subject_country = {
-			is_subject_of_type = autonomous_dominion
+			OR = {
+				is_subject_of_type = dominion
+				is_subject_of_type = autonomous_dominion
+			}
 			OR = {
 				tag = DS1
 				tag = DS2
@@ -1623,241 +1665,8 @@ country_event = {
 	}
 	
 	option = {
-		name = subjects_expanded_autonomous_dominion_events8.EVTOPT1
+		name = subjects_expanded_dominion_events8.EVTOPT1
 		
 		ai_chance = { factor = 100 }
-	}
-}
-
-# Development lowered in Autonomous Dominion
-country_event = {
-	id = subjects_expanded_autonomous_dominion_events.9
-	title = subjects_expanded_autonomous_dominion_events.EVTNAME9
-	desc = subjects_expanded_autonomous_dominion_events.EVTDESC9
-	picture = DIPLOMACY_eventPicture
-	
-	major = yes
-	is_triggered_only = yes
-	
-	immediate = {
-		hidden_effect = {
-			# Calculate 1 year of income
-			export_to_variable = {
-				which = autonomous_dominion_years_of_income_var
-				value = years_of_income
-			}
-			divide_variable = { which = autonomous_dominion_years_of_income_var value = 10 }
-			multiply_variable = { which = autonomous_dominion_years_of_income_var value = 10 }
-			ms_calculate_yearly_manpower = yes
-			ms_calculate_yearly_sailors = yes
-		}
-	}
-	
-	option = {
-		name = subjects_expanded_autonomous_dominion_events9.EVTOPT1
-		
-		ai_chance = { factor = 100 }
-		
-		custom_tooltip = LOWER_OUR_TOTAL_DEVELOPMENT_BY_200
-		
-		custom_tooltip = " "
-		
-		tooltip = {
-			add_country_modifier = {
-				name = reduced_autonomous_dominion_development
-				duration = 3650
-			}
-		}
-		
-		add_liberty_desire = 30
-		
-		custom_tooltip = " "
-		
-		FROM = {
-			custom_tooltip = THIS_RECEIVES_ROOT_YEARS_OF_MONEY_INCOME
-			custom_tooltip = THIS_RECEIVES_ROOT_YEARS_OF_MANPOWER_INCOME
-			custom_tooltip = THIS_RECEIVES_ROOT_YEARS_OF_SAILORS_INCOME
-		}
-		
-		hidden_effect = {
-			# Lower Development
-			set_variable = { which = lower_our_total_development_var value = 200 }
-			while = {
-				limit = {
-					check_variable = { which = lower_our_total_development_var value = 1 }
-					OR = {
-						any_owned_province = {
-							base_tax = 2
-						}
-						any_owned_province = {
-							base_production = 2
-						}
-						any_owned_province = {
-							base_manpower = 2
-						}
-					}
-				}
-				if = {
-					limit = {
-						check_variable = { which = lower_our_total_development_var value = 1 }
-						any_owned_province = {
-							base_tax = 2
-						}
-					}
-					change_variable = { which = lower_our_total_development_var value = -1 }
-					random_owned_province = {
-						limit = {
-							base_tax = 2
-						}
-						add_base_tax = -1
-					}
-				}
-				if = {
-					limit = {
-						check_variable = { which = lower_our_total_development_var value = 1 }
-						any_owned_province = {
-							base_production = 2
-						}
-					}
-					change_variable = { which = lower_our_total_development_var value = -1 }
-					random_owned_province = {
-						limit = {
-							base_production = 2
-						}
-						add_base_production = -1
-					}
-				}
-				if = {
-					limit = {
-						check_variable = { which = lower_our_total_development_var value = 1 }
-						any_owned_province = {
-							base_manpower = 2
-						}
-					}
-					change_variable = { which = lower_our_total_development_var value = -1 }
-					random_owned_province = {
-						limit = {
-							base_manpower = 2
-						}
-						add_base_manpower = -1
-					}
-				}
-			}
-			# FROM receives years of income
-			while = {
-				limit = {
-					check_variable = { which = autonomous_dominion_years_of_income_var value = 10000 }
-				}
-				change_variable = { which = autonomous_dominion_years_of_income_var value = -10000 }
-				FROM = { add_treasury = 10000 }
-			}
-			while = {
-				limit = {
-					check_variable = { which = autonomous_dominion_years_of_income_var value = 1000 }
-				}
-				change_variable = { which = autonomous_dominion_years_of_income_var value = -1000 }
-				FROM = { add_treasury = 1000 }
-			}
-			while = {
-				limit = {
-					check_variable = { which = autonomous_dominion_years_of_income_var value = 100 }
-				}
-				change_variable = { which = autonomous_dominion_years_of_income_var value = -100 }
-				FROM = { add_treasury = 100 }
-			}
-			while = {
-				limit = {
-					check_variable = { which = autonomous_dominion_years_of_income_var value = 10 }
-				}
-				change_variable = { which = autonomous_dominion_years_of_income_var value = -10 }
-				FROM = { add_treasury = 10 }
-			}
-			while = {
-				limit = {
-					check_variable = { which = autonomous_dominion_years_of_income_var value = 1 }
-				}
-				change_variable = { which = autonomous_dominion_years_of_income_var value = -1 }
-				FROM = { add_treasury = 1 }
-			}
-			while = {
-				limit = {
-					check_variable = { which = autonomous_dominion_years_of_income_var value = 0.1 }
-				}
-				change_variable = { which = autonomous_dominion_years_of_income_var value = -0.1 }
-				FROM = { add_treasury = 0.1 }
-			}
-			while = {
-				limit = {
-					check_variable = { which = autonomous_dominion_years_of_income_var value = 0.01 }
-				}
-				change_variable = { which = autonomous_dominion_years_of_income_var value = -0.01 }
-				FROM = { add_treasury = 0.01 }
-			}
-			# FROM receives years of manpower income
-			while = {
-				limit = {
-					check_variable = { which = autonomous_dominion_global_manpower_var value = 10000 }
-				}
-				change_variable = { which = autonomous_dominion_global_manpower_var value = -10000 }
-				FROM = { add_manpower = 10 }
-			}
-			while = {
-				limit = {
-					check_variable = { which = autonomous_dominion_global_manpower_var value = 1000 }
-				}
-				change_variable = { which = autonomous_dominion_global_manpower_var value = -1000 }
-				FROM = { add_manpower = 1 }
-			}
-			while = {
-				limit = {
-					check_variable = { which = autonomous_dominion_global_manpower_var value = 100 }
-				}
-				change_variable = { which = autonomous_dominion_global_manpower_var value = -100 }
-				FROM = { add_manpower = 0.1 }
-			}
-			while = {
-				limit = {
-					check_variable = { which = autonomous_dominion_global_manpower_var value = 10 }
-				}
-				change_variable = { which = autonomous_dominion_global_manpower_var value = -10 }
-				FROM = { add_manpower = 0.01 }
-			}
-			# FROM receives years of sailors income
-			while = {
-				limit = {
-					check_variable = { which = autonomous_dominion_global_sailors_var value = 10000 }
-				}
-				change_variable = { which = autonomous_dominion_global_sailors_var value = -10000 }
-				FROM = { add_sailors = 10000 }
-			}
-			while = {
-				limit = {
-					check_variable = { which = autonomous_dominion_global_sailors_var value = 1000 }
-				}
-				change_variable = { which = autonomous_dominion_global_sailors_var value = -1000 }
-				FROM = { add_sailors = 1000 }
-			}
-			while = {
-				limit = {
-					check_variable = { which = autonomous_dominion_global_sailors_var value = 100 }
-				}
-				change_variable = { which = autonomous_dominion_global_sailors_var value = -100 }
-				FROM = { add_sailors = 100 }
-			}
-			while = {
-				limit = {
-					check_variable = { which = autonomous_dominion_global_sailors_var value = 10 }
-				}
-				change_variable = { which = autonomous_dominion_global_sailors_var value = -10 }
-				FROM = { add_sailors = 10 }
-			}
-			while = {
-				limit = {
-					check_variable = { which = autonomous_dominion_global_sailors_var value = 1 }
-				}
-				change_variable = { which = autonomous_dominion_global_sailors_var value = -1 }
-				FROM = { add_sailors = 1 }
-			}
-		}
 	}
 }

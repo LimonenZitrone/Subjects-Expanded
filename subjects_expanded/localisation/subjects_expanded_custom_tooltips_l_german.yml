@@ -10,6 +10,7 @@
  IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_tributary_state: "Kann zu einem §YTributstaat§! gemacht werden"
  IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_protectorate: "Kann zu einem §YProtektorat§! gemacht werden"
  IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_puppet_state: "Kann zu einem §YMarionettenstaat§! gemacht werden"
+ IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_dominion: "Kann zu einem §YHerrschaftsgebiet§! gemacht werden"
  IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_autonomous_dominion: "Kann zu einem §YAutonomen Herrschaftsgebiet§! gemacht werden"
  IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_roman_client_kingdom: "Kann zu einem §YRömischen Klientelkönigreich§! gemacht werden"
  IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_voivodeship: "Kann zu einer §YWoiwodschaft§! gemacht werden"
@@ -31,22 +32,18 @@
  
  HAS_LESS_THAN_HALF_OF_PREV_TOTAL_DEVELOPMENT: "Hat weniger als §Y50%§! der Entwicklung von §Y[Prev.GetName]§!"
  
+ DID_NOT_DEMAND_MANPOWER_OF_AUTONOMOUS_DOMINION_WITHIN_LAST_5_YEARS: "Wurde innerhalb der letzten §Y5 Jahre§! NICHT dazu gezwungen, Mannstärke an ihren Lehnsherrn zu transferieren"
+ 
  # Decisions:
- ALL_PROVINCES_IN_INDIAN_TRADE_COMPANY_REGIONS_CEDED_TO_AUTONOMOUS_DOMINION: "\nAlle unsere Provinzen in [Root.GetIndianTradeCompanyRegionsSgPl] [Root.GetFirstIndianTradeCompanyRegionWeCede][Root.GetSecondIndianTradeCompanyRegionWeCede][Root.GetThirdIndianTradeCompanyRegionWeCede][Root.GetFourthIndianTradeCompanyRegionWeCede][Root.GetFifthIndianTradeCompanyRegionWeCede] werden an unser dort entlassenes Autonomes Herrschaftsgebiet \n[Root.GetCreatedADNameIndia] abgetreten."
- ALL_PROVINCES_IN_EAST_INDIES_TRADE_COMPANY_REGIONS_CEDED_TO_AUTONOMOUS_DOMINION: "\nAlle unsere Provinzen in [Root.GetEastIndiesTradeCompanyRegionsSgPl] [Root.GetFirstEastIndiesTradeCompanyRegionWeCede][Root.GetSecondEastIndiesTradeCompanyRegionWeCede] werden an unser dort entlassenes Autonomes Herrschaftsgebiet \n[Root.GetCreatedADNameEastIndies] abgetreten."
- ALL_PROVINCES_IN_SOUTH_AFRICA_TRADE_COMPANY_REGIONS_CEDED_TO_AUTONOMOUS_DOMINION: "\nAlle unsere Provinzen in der Handelshaus-Region §YSüdafrikanische Handelsregion§! werden an unser dort entlassenes Autonomes Herrschaftsgebiet \n[Root.GetCreatedADNameSouthAfrica] abgetreten."
- ALL_PROVINCES_IN_WEST_AFRICA_TRADE_COMPANY_REGIONS_CEDED_TO_AUTONOMOUS_DOMINION: "\nAlle unsere Provinzen in der Handelshaus-Region §YWestafrikanische Handelsregion§! werden an unser dort entlassenes Autonomes Herrschaftsgebiet \n[Root.GetCreatedADNameWestAfrica] abgetreten."
- ALL_PROVINCES_IN_EAST_AFRICA_TRADE_COMPANY_REGIONS_CEDED_TO_AUTONOMOUS_DOMINION: "\nAlle unsere Provinzen in der Handelshaus-Region §YOstafrikanische Handelsregion§! werden an unser dort entlassenes Autonomes Herrschaftsgebiet \n[Root.GetCreatedADNameEastAfrica] abgetreten."
- ALL_PROVINCES_IN_INDOCHINA_TRADE_COMPANY_REGIONS_CEDED_TO_AUTONOMOUS_DOMINION: "\nAlle unsere Provinzen in der Handelshaus-Region §YIndochinesische Handelsregion§! werden an unser dort entlassenes Autonomes Herrschaftsgebiet \n[Root.GetCreatedADNameIndochina] abgetreten."
+ ALL_PROVINCES_IN_INDIAN_TRADE_COMPANY_REGIONS_CEDED_TO_DOMINION: "\nAlle unsere Provinzen in [Root.GetIndianTradeCompanyRegionsSgPl] [Root.GetFirstIndianTradeCompanyRegionWeCede][Root.GetSecondIndianTradeCompanyRegionWeCede][Root.GetThirdIndianTradeCompanyRegionWeCede][Root.GetFourthIndianTradeCompanyRegionWeCede][Root.GetFifthIndianTradeCompanyRegionWeCede] werden an unser dort entlassenes Herrschaftsgebiet \n[Root.GetCreatedADNameIndia] abgetreten."
+ ALL_PROVINCES_IN_EAST_INDIES_TRADE_COMPANY_REGIONS_CEDED_TO_DOMINION: "\nAlle unsere Provinzen in [Root.GetEastIndiesTradeCompanyRegionsSgPl] [Root.GetFirstEastIndiesTradeCompanyRegionWeCede][Root.GetSecondEastIndiesTradeCompanyRegionWeCede] werden an unser dort entlassenes Herrschaftsgebiet \n[Root.GetCreatedADNameEastIndies] abgetreten."
+ ALL_PROVINCES_IN_SOUTH_AFRICA_TRADE_COMPANY_REGIONS_CEDED_TO_DOMINION: "\nAlle unsere Provinzen in der Handelshaus-Region §YSüdafrikanische Handelsregion§! werden an unser dort entlassenes Herrschaftsgebiet \n[Root.GetCreatedADNameSouthAfrica] abgetreten."
+ ALL_PROVINCES_IN_WEST_AFRICA_TRADE_COMPANY_REGIONS_CEDED_TO_DOMINION: "\nAlle unsere Provinzen in der Handelshaus-Region §YWestafrikanische Handelsregion§! werden an unser dort entlassenes Herrschaftsgebiet \n[Root.GetCreatedADNameWestAfrica] abgetreten."
+ ALL_PROVINCES_IN_EAST_AFRICA_TRADE_COMPANY_REGIONS_CEDED_TO_DOMINION: "\nAlle unsere Provinzen in der Handelshaus-Region §YOstafrikanische Handelsregion§! werden an unser dort entlassenes Herrschaftsgebiet \n[Root.GetCreatedADNameEastAfrica] abgetreten."
+ ALL_PROVINCES_IN_INDOCHINA_TRADE_COMPANY_REGIONS_CEDED_TO_DOMINION: "\nAlle unsere Provinzen in der Handelshaus-Region §YIndochinesische Handelsregion§! werden an unser dort entlassenes Herrschaftsgebiet \n[Root.GetCreatedADNameIndochina] abgetreten."
  
  # Events:
- LOWER_OUR_TOTAL_DEVELOPMENT_BY_200: "Unsere §YGesamtentwicklung§! wird um §R200§! verringert."
- 
- THIS_RECEIVES_ROOT_YEARS_OF_MONEY_INCOME: "Erhält: §G[Root.autonomous_dominion_years_of_income_var.GetValue]§! Dukaten."
- THIS_RECEIVES_ROOT_YEARS_OF_MANPOWER_INCOME: "Erhält: §G[Root.autonomous_dominion_global_manpower_var.GetValue]§! Rekrutenreserve."
- THIS_RECEIVES_ROOT_YEARS_OF_SAILORS_INCOME: "Erhält: §G[Root.autonomous_dominion_global_sailors_var.GetValue]§! Seeleute."
- 
- ROMAN_CLIENT_KINGDOM_HEIR_ACCEPTED: "§Y[From.Heir.GetName] [From.Heir.Dynasty.GetName]§! (Anspruch: [From.GetHeirClaimText]) \n  £adm£ [From.GetHeirAdm] £dip£ [From.GetHeirDip] £mil£ [From.GetHeirMil] \nist von nun an rechtmäßiger Thronfolger von: \n@[From.GetTag] §Y[From.GetName]§!.\n"
+ ROMAN_CLIENT_KINGDOM_HEIR_ACCEPTED: "§Y[From.Heir.GetName] [From.Heir.Dynasty.GetName]§! (Anspruch: [From.GetHeirClaimText]) \n £adm£ [From.GetHeirAdm] £dip£ [From.GetHeirDip] £mil£ [From.GetHeirMil] \nist von nun an rechtmäßiger Thronfolger von: \n@[From.GetTag] §Y[From.GetName]§!.\n"
  
  ROMAN_CLIENT_KINGDOM_PAYS_ONE_YEAR_OF_INCOME: "§Y[From.GetName]§! zahlt uns §G[From.roman_client_kingdom_yearly_years_of_income_var.GetValue]§! Dukaten."
  ROMAN_CLIENT_KINGDOM_PAYS_YEARLY_MANPOWER: "§Y[From.GetName]§! gibt uns §G[From.roman_client_kingdom_yearly_manpower_var.GetValue]§! Rekrutenreserve."

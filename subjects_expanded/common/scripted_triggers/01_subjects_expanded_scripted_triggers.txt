@@ -128,12 +128,24 @@ is_possible_subject_of_subject_type_puppet_state = {
 	# Capital in Trade Range of possible Overlord has to be checked additionally
 }
 
+is_possible_subject_of_subject_type_dominion = {
+	# PREVs in THIS scope refer to possible overlord
+	NOT = { is_subject_of_type = dominion }
+	is_subject_of = PREV
+	OR = {
+		is_subject_of_type = colony
+		is_subject_of_type = autonomous_dominion
+	}
+	total_development = 100
+	# Capital in Trade Range of possible Overlord has to be checked additionally
+}
+
 is_possible_subject_of_subject_type_autonomous_dominion = {
 	# PREVs in THIS scope refer to possible overlord
 	NOT = { is_subject_of_type = autonomous_dominion }
 	is_subject_of = PREV
-	is_subject_of_type = colony
-	total_development = 450
+	is_subject_of_type = dominion
+	total_development = 300
 	# Capital in Trade Range of possible Overlord has to be checked additionally
 }
 

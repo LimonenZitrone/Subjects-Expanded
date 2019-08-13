@@ -268,23 +268,20 @@ puppet_state = {
 	subject_opinion_modifier = is_puppet_state
 }
 
-autonomous_dominion = {
-	copy_from = default
+dominion = {
+	copy_from = colony
 	count = colony
 	
 	# Graphics:
-	sprite = GFX_icon_autonomous_dominion
-	diplomacy_overlord_sprite = GFX_diplomacy_leadautonomous_dominion
-	diplomacy_subject_sprite = GFX_diplomacy_amautonomous_dominion
+	sprite = GFX_icon_dominion
+	diplomacy_overlord_sprite = GFX_diplomacy_leaddominion
+	diplomacy_subject_sprite = GFX_diplomacy_amdominion
 	
 	# Triggers:
 	is_potential_overlord = {
 		OR = {
 			is_year = 1700
 			current_age = age_of_absolutism
-			any_owned_province = {
-				is_node_in_trade_company_region = yes
-			}
 			AND = {
 				OR = {
 					ai = no
@@ -304,36 +301,27 @@ autonomous_dominion = {
 	}
 
 	# Properties:
-	transfer_trade_power = yes
-	can_release_and_play = yes
 	uses_tariffs = no
-	eats_overlords_colonies = yes
-	has_colonial_parent = yes
-	overlord_can_attack = no
-	overlord_can_be_subject = yes
-	takes_diplo_slot = no
 	can_release_in_peace = yes
-	dynamically_created_during_history = yes
-	overlord_enforce_peace_attacking = yes
-	can_transfer_in_peace = no
-	press_sailors = yes
-	forcelimit_bonus = 1.0
 	
+	base_liberty_desire = -10.0
 	liberty_desire_development_ratio = 0.075
-	pays_overlord = 1.0
+	pays_overlord = 2.0
 
 	max_government_rank = 1
-	cities_required_for_bonuses = 10
+	cities_required_for_bonuses = 15
 
 	relative_power_class = 0
 	
 	can_fight = {
-		other_overlord = autonomous_dominion
+		other_overlord = colony
+		other_overlord = dominion
 		neighboring_primitives = yes
 		colonial_region_nations = yes
 	}
 	can_rival = {
-		other_overlord = autonomous_dominion
+		other_overlord = colony
+		other_overlord = dominion
 		neighboring_primitives = yes
 		colonial_region_nations = yes
 	}
@@ -345,14 +333,588 @@ autonomous_dominion = {
 	start_colonial_war = no
 	increase_tariffs = no
 	decrease_tariffs = no
-	customize_subject = yes
-	replace_governor = yes
 	
 	# Modifiers:
 	modifier_subject = {
 		trigger = {
-			NOT = { has_dlc = "Wealth of Nations" }
-			NOT = { has_dlc = "Dharma" }
+			capital_scope = {
+				is_node_in_trade_company_region = yes
+			}
+		}
+		modifier = dominion_trade_company_modifier
+	}
+	
+	modifier_overlord = clear
+	modifier_overlord = {
+		modifier = large_colonial_nation
+		trigger = {
+			num_of_cities = 15
+		}
+	}
+	
+	modifier_overlord = {
+		trigger = {
+			capital_scope = {
+				is_node_in_trade_company_region = yes
+			}
+			num_of_cities = 1
+		}
+		modifier = dominion_overlord_trade_company_modifier_1
+	}
+	
+	modifier_overlord = {
+		trigger = {
+			capital_scope = {
+				is_node_in_trade_company_region = yes
+			}
+			num_of_cities = 2
+		}
+		modifier = dominion_overlord_trade_company_modifier_2
+	}
+	
+	modifier_overlord = {
+		trigger = {
+			capital_scope = {
+				is_node_in_trade_company_region = yes
+			}
+			num_of_cities = 3
+		}
+		modifier = dominion_overlord_trade_company_modifier_3
+	}
+	
+	modifier_overlord = {
+		trigger = {
+			capital_scope = {
+				is_node_in_trade_company_region = yes
+			}
+			num_of_cities = 4
+		}
+		modifier = dominion_overlord_trade_company_modifier_4
+	}
+	
+	modifier_overlord = {
+		trigger = {
+			capital_scope = {
+				is_node_in_trade_company_region = yes
+			}
+			num_of_cities = 5
+		}
+		modifier = dominion_overlord_trade_company_modifier_5
+	}
+	
+	modifier_overlord = {
+		trigger = {
+			capital_scope = {
+				is_node_in_trade_company_region = yes
+			}
+			num_of_cities = 6
+		}
+		modifier = dominion_overlord_trade_company_modifier_6
+	}
+	
+	modifier_overlord = {
+		trigger = {
+			capital_scope = {
+				is_node_in_trade_company_region = yes
+			}
+			num_of_cities = 7
+		}
+		modifier = dominion_overlord_trade_company_modifier_7
+	}
+	
+	modifier_overlord = {
+		trigger = {
+			capital_scope = {
+				is_node_in_trade_company_region = yes
+			}
+			num_of_cities = 8
+		}
+		modifier = dominion_overlord_trade_company_modifier_8
+	}
+	
+	modifier_overlord = {
+		trigger = {
+			capital_scope = {
+				is_node_in_trade_company_region = yes
+			}
+			num_of_cities = 9
+		}
+		modifier = dominion_overlord_trade_company_modifier_9
+	}
+	
+	modifier_overlord = {
+		trigger = {
+			capital_scope = {
+				is_node_in_trade_company_region = yes
+			}
+			num_of_cities = 10
+		}
+		modifier = dominion_overlord_trade_company_modifier_10
+	}
+	
+	modifier_overlord = {
+		trigger = {
+			capital_scope = {
+				is_node_in_trade_company_region = yes
+			}
+			num_of_cities = 11
+		}
+		modifier = dominion_overlord_trade_company_modifier_11
+	}
+	
+	modifier_overlord = {
+		trigger = {
+			capital_scope = {
+				is_node_in_trade_company_region = yes
+			}
+			num_of_cities = 12
+		}
+		modifier = dominion_overlord_trade_company_modifier_12
+	}
+	
+	modifier_overlord = {
+		trigger = {
+			capital_scope = {
+				is_node_in_trade_company_region = yes
+			}
+			num_of_cities = 13
+		}
+		modifier = dominion_overlord_trade_company_modifier_13
+	}
+	
+	modifier_overlord = {
+		trigger = {
+			capital_scope = {
+				is_node_in_trade_company_region = yes
+			}
+			num_of_cities = 14
+		}
+		modifier = dominion_overlord_trade_company_modifier_14
+	}
+	
+	modifier_overlord = {
+		trigger = {
+			capital_scope = {
+				is_node_in_trade_company_region = yes
+			}
+			num_of_cities = 15
+		}
+		modifier = dominion_overlord_trade_company_modifier_15
+	}
+	
+	modifier_overlord = {
+		trigger = {
+			capital_scope = {
+				is_node_in_trade_company_region = yes
+			}
+			num_of_cities = 16
+		}
+		modifier = dominion_overlord_trade_company_modifier_16
+	}
+	
+	modifier_overlord = {
+		trigger = {
+			capital_scope = {
+				is_node_in_trade_company_region = yes
+			}
+			num_of_cities = 17
+		}
+		modifier = dominion_overlord_trade_company_modifier_17
+	}
+	
+	modifier_overlord = {
+		trigger = {
+			capital_scope = {
+				is_node_in_trade_company_region = yes
+			}
+			num_of_cities = 18
+		}
+		modifier = dominion_overlord_trade_company_modifier_18
+	}
+	
+	modifier_overlord = {
+		trigger = {
+			capital_scope = {
+				is_node_in_trade_company_region = yes
+			}
+			num_of_cities = 19
+		}
+		modifier = dominion_overlord_trade_company_modifier_19
+	}
+	
+	modifier_overlord = {
+		trigger = {
+			capital_scope = {
+				is_node_in_trade_company_region = yes
+			}
+			num_of_cities = 20
+		}
+		modifier = dominion_overlord_trade_company_modifier_20
+	}
+	
+	modifier_overlord = {
+		trigger = {
+			capital_scope = {
+				is_node_in_trade_company_region = yes
+			}
+			num_of_cities = 21
+		}
+		modifier = dominion_overlord_trade_company_modifier_21
+	}
+	
+	modifier_overlord = {
+		trigger = {
+			capital_scope = {
+				is_node_in_trade_company_region = yes
+			}
+			num_of_cities = 22
+		}
+		modifier = dominion_overlord_trade_company_modifier_22
+	}
+	
+	modifier_overlord = {
+		trigger = {
+			capital_scope = {
+				is_node_in_trade_company_region = yes
+			}
+			num_of_cities = 23
+		}
+		modifier = dominion_overlord_trade_company_modifier_23
+	}
+	
+	modifier_overlord = {
+		trigger = {
+			capital_scope = {
+				is_node_in_trade_company_region = yes
+			}
+			num_of_cities = 24
+		}
+		modifier = dominion_overlord_trade_company_modifier_24
+	}
+	
+	modifier_overlord = {
+		trigger = {
+			capital_scope = {
+				is_node_in_trade_company_region = yes
+			}
+			num_of_cities = 25
+		}
+		modifier = dominion_overlord_trade_company_modifier_25
+	}
+	
+	modifier_overlord = {
+		trigger = {
+			capital_scope = {
+				is_node_in_trade_company_region = yes
+			}
+			num_of_cities = 26
+		}
+		modifier = dominion_overlord_trade_company_modifier_26
+	}
+	
+	modifier_overlord = {
+		trigger = {
+			capital_scope = {
+				is_node_in_trade_company_region = yes
+			}
+			num_of_cities = 27
+		}
+		modifier = dominion_overlord_trade_company_modifier_27
+	}
+	
+	modifier_overlord = {
+		trigger = {
+			capital_scope = {
+				is_node_in_trade_company_region = yes
+			}
+			num_of_cities = 28
+		}
+		modifier = dominion_overlord_trade_company_modifier_28
+	}
+	
+	modifier_overlord = {
+		trigger = {
+			capital_scope = {
+				is_node_in_trade_company_region = yes
+			}
+			num_of_cities = 29
+		}
+		modifier = dominion_overlord_trade_company_modifier_29
+	}
+	
+	modifier_overlord = {
+		trigger = {
+			capital_scope = {
+				is_node_in_trade_company_region = yes
+			}
+			num_of_cities = 30
+		}
+		modifier = dominion_overlord_trade_company_modifier_30
+	}
+	
+	modifier_overlord = {
+		trigger = {
+			capital_scope = {
+				is_node_in_trade_company_region = yes
+			}
+			num_of_cities = 31
+		}
+		modifier = dominion_overlord_trade_company_modifier_31
+	}
+	
+	modifier_overlord = {
+		trigger = {
+			capital_scope = {
+				is_node_in_trade_company_region = yes
+			}
+			num_of_cities = 32
+		}
+		modifier = dominion_overlord_trade_company_modifier_32
+	}
+	
+	modifier_overlord = {
+		trigger = {
+			capital_scope = {
+				is_node_in_trade_company_region = yes
+			}
+			num_of_cities = 33
+		}
+		modifier = dominion_overlord_trade_company_modifier_33
+	}
+	
+	modifier_overlord = {
+		trigger = {
+			capital_scope = {
+				is_node_in_trade_company_region = yes
+			}
+			num_of_cities = 34
+		}
+		modifier = dominion_overlord_trade_company_modifier_34
+	}
+	
+	modifier_overlord = {
+		trigger = {
+			capital_scope = {
+				is_node_in_trade_company_region = yes
+			}
+			num_of_cities = 35
+		}
+		modifier = dominion_overlord_trade_company_modifier_35
+	}
+	
+	modifier_overlord = {
+		trigger = {
+			capital_scope = {
+				is_node_in_trade_company_region = yes
+			}
+			num_of_cities = 36
+		}
+		modifier = dominion_overlord_trade_company_modifier_36
+	}
+	
+	modifier_overlord = {
+		trigger = {
+			capital_scope = {
+				is_node_in_trade_company_region = yes
+			}
+			num_of_cities = 37
+		}
+		modifier = dominion_overlord_trade_company_modifier_37
+	}
+	
+	modifier_overlord = {
+		trigger = {
+			capital_scope = {
+				is_node_in_trade_company_region = yes
+			}
+			num_of_cities = 38
+		}
+		modifier = dominion_overlord_trade_company_modifier_38
+	}
+	
+	modifier_overlord = {
+		trigger = {
+			capital_scope = {
+				is_node_in_trade_company_region = yes
+			}
+			num_of_cities = 39
+		}
+		modifier = dominion_overlord_trade_company_modifier_39
+	}
+	
+	modifier_overlord = {
+		trigger = {
+			capital_scope = {
+				is_node_in_trade_company_region = yes
+			}
+			num_of_cities = 40
+		}
+		modifier = dominion_overlord_trade_company_modifier_40
+	}
+	
+	modifier_overlord = {
+		trigger = {
+			capital_scope = {
+				is_node_in_trade_company_region = yes
+			}
+			num_of_cities = 41
+		}
+		modifier = dominion_overlord_trade_company_modifier_41
+	}
+	
+	modifier_overlord = {
+		trigger = {
+			capital_scope = {
+				is_node_in_trade_company_region = yes
+			}
+			num_of_cities = 42
+		}
+		modifier = dominion_overlord_trade_company_modifier_42
+	}
+	
+	modifier_overlord = {
+		trigger = {
+			capital_scope = {
+				is_node_in_trade_company_region = yes
+			}
+			num_of_cities = 43
+		}
+		modifier = dominion_overlord_trade_company_modifier_43
+	}
+	
+	modifier_overlord = {
+		trigger = {
+			capital_scope = {
+				is_node_in_trade_company_region = yes
+			}
+			num_of_cities = 44
+		}
+		modifier = dominion_overlord_trade_company_modifier_44
+	}
+	
+	modifier_overlord = {
+		trigger = {
+			capital_scope = {
+				is_node_in_trade_company_region = yes
+			}
+			num_of_cities = 45
+		}
+		modifier = dominion_overlord_trade_company_modifier_45
+	}
+	
+	modifier_overlord = {
+		trigger = {
+			capital_scope = {
+				is_node_in_trade_company_region = yes
+			}
+			num_of_cities = 46
+		}
+		modifier = dominion_overlord_trade_company_modifier_46
+	}
+	
+	modifier_overlord = {
+		trigger = {
+			capital_scope = {
+				is_node_in_trade_company_region = yes
+			}
+			num_of_cities = 47
+		}
+		modifier = dominion_overlord_trade_company_modifier_47
+	}
+	
+	modifier_overlord = {
+		trigger = {
+			capital_scope = {
+				is_node_in_trade_company_region = yes
+			}
+			num_of_cities = 48
+		}
+		modifier = dominion_overlord_trade_company_modifier_48
+	}
+	
+	modifier_overlord = {
+		trigger = {
+			capital_scope = {
+				is_node_in_trade_company_region = yes
+			}
+			num_of_cities = 49
+		}
+		modifier = dominion_overlord_trade_company_modifier_49
+	}
+	
+	modifier_overlord = {
+		trigger = {
+			capital_scope = {
+				is_node_in_trade_company_region = yes
+			}
+			num_of_cities = 50
+		}
+		modifier = dominion_overlord_trade_company_modifier_50
+	}
+
+	overlord_opinion_modifier = is_dominion
+	subject_opinion_modifier = is_dominion
+}
+
+autonomous_dominion = {
+	copy_from = dominion
+	count = colony
+	
+	# Graphics:
+	sprite = GFX_icon_autonomous_dominion
+	diplomacy_overlord_sprite = GFX_diplomacy_leadautonomous_dominion
+	diplomacy_subject_sprite = GFX_diplomacy_amautonomous_dominion
+	
+	# Triggers:
+	is_potential_overlord = {
+		OR = {
+			is_year = 1700
+			current_age = age_of_absolutism
+			always = yes #test
+		}
+	}
+
+	# Properties:
+	transfer_trade_power = no
+	overlord_protects_external = yes
+	
+	base_liberty_desire = -20.0
+	liberty_desire_development_ratio = 0.05
+	pays_overlord = 0.0
+
+	max_government_rank = 1
+	cities_required_for_bonuses = 20
+
+	relative_power_class = 0
+	
+	can_fight = {
+		other_overlord = colony
+		other_overlord = dominion
+		other_overlord = autonomous_dominion
+		neighboring_primitives = yes
+		colonial_region_nations = yes
+		independent_nations = yes
+	}
+	can_rival = {
+		other_overlord = colony
+		other_overlord = dominion
+		other_overlord = autonomous_dominion
+		neighboring_primitives = yes
+		colonial_region_nations = yes
+		independent_nations = yes
+	}
+	can_ally = {
+		neighboring_primitives = yes
+	}
+	
+	# Subject Interactions:
+	divert_trade = yes
+	replace_governor = no
+	press_sailors = no
+	
+	# Modifiers:
+	modifier_subject = {
+		trigger = {
 			capital_scope = {
 				is_node_in_trade_company_region = yes
 			}
@@ -360,17 +922,23 @@ autonomous_dominion = {
 		modifier = autonomous_dominion_trade_company_modifier
 	}
 	
+	modifier_overlord = clear
 	modifier_overlord = {
 		modifier = large_colonial_nation
 		trigger = {
-			num_of_cities = 10
+			num_of_cities = 20
+		}
+	}
+	
+	modifier_overlord = {
+		modifier = large_colonial_nation
+		trigger = {
+			num_of_cities = 20
 		}
 	}
 	
 	modifier_overlord = {
 		trigger = {
-			NOT = { has_dlc = "Wealth of Nations" }
-			NOT = { has_dlc = "Dharma" }
 			capital_scope = {
 				is_node_in_trade_company_region = yes
 			}
@@ -381,8 +949,6 @@ autonomous_dominion = {
 	
 	modifier_overlord = {
 		trigger = {
-			NOT = { has_dlc = "Wealth of Nations" }
-			NOT = { has_dlc = "Dharma" }
 			capital_scope = {
 				is_node_in_trade_company_region = yes
 			}
@@ -393,8 +959,6 @@ autonomous_dominion = {
 	
 	modifier_overlord = {
 		trigger = {
-			NOT = { has_dlc = "Wealth of Nations" }
-			NOT = { has_dlc = "Dharma" }
 			capital_scope = {
 				is_node_in_trade_company_region = yes
 			}
@@ -405,8 +969,6 @@ autonomous_dominion = {
 	
 	modifier_overlord = {
 		trigger = {
-			NOT = { has_dlc = "Wealth of Nations" }
-			NOT = { has_dlc = "Dharma" }
 			capital_scope = {
 				is_node_in_trade_company_region = yes
 			}
@@ -417,8 +979,6 @@ autonomous_dominion = {
 	
 	modifier_overlord = {
 		trigger = {
-			NOT = { has_dlc = "Wealth of Nations" }
-			NOT = { has_dlc = "Dharma" }
 			capital_scope = {
 				is_node_in_trade_company_region = yes
 			}
@@ -429,8 +989,6 @@ autonomous_dominion = {
 	
 	modifier_overlord = {
 		trigger = {
-			NOT = { has_dlc = "Wealth of Nations" }
-			NOT = { has_dlc = "Dharma" }
 			capital_scope = {
 				is_node_in_trade_company_region = yes
 			}
@@ -441,8 +999,6 @@ autonomous_dominion = {
 	
 	modifier_overlord = {
 		trigger = {
-			NOT = { has_dlc = "Wealth of Nations" }
-			NOT = { has_dlc = "Dharma" }
 			capital_scope = {
 				is_node_in_trade_company_region = yes
 			}
@@ -453,8 +1009,6 @@ autonomous_dominion = {
 	
 	modifier_overlord = {
 		trigger = {
-			NOT = { has_dlc = "Wealth of Nations" }
-			NOT = { has_dlc = "Dharma" }
 			capital_scope = {
 				is_node_in_trade_company_region = yes
 			}
@@ -465,8 +1019,6 @@ autonomous_dominion = {
 	
 	modifier_overlord = {
 		trigger = {
-			NOT = { has_dlc = "Wealth of Nations" }
-			NOT = { has_dlc = "Dharma" }
 			capital_scope = {
 				is_node_in_trade_company_region = yes
 			}
@@ -477,8 +1029,6 @@ autonomous_dominion = {
 	
 	modifier_overlord = {
 		trigger = {
-			NOT = { has_dlc = "Wealth of Nations" }
-			NOT = { has_dlc = "Dharma" }
 			capital_scope = {
 				is_node_in_trade_company_region = yes
 			}
@@ -489,8 +1039,6 @@ autonomous_dominion = {
 	
 	modifier_overlord = {
 		trigger = {
-			NOT = { has_dlc = "Wealth of Nations" }
-			NOT = { has_dlc = "Dharma" }
 			capital_scope = {
 				is_node_in_trade_company_region = yes
 			}
@@ -501,8 +1049,6 @@ autonomous_dominion = {
 	
 	modifier_overlord = {
 		trigger = {
-			NOT = { has_dlc = "Wealth of Nations" }
-			NOT = { has_dlc = "Dharma" }
 			capital_scope = {
 				is_node_in_trade_company_region = yes
 			}
@@ -513,8 +1059,6 @@ autonomous_dominion = {
 	
 	modifier_overlord = {
 		trigger = {
-			NOT = { has_dlc = "Wealth of Nations" }
-			NOT = { has_dlc = "Dharma" }
 			capital_scope = {
 				is_node_in_trade_company_region = yes
 			}
@@ -525,8 +1069,6 @@ autonomous_dominion = {
 	
 	modifier_overlord = {
 		trigger = {
-			NOT = { has_dlc = "Wealth of Nations" }
-			NOT = { has_dlc = "Dharma" }
 			capital_scope = {
 				is_node_in_trade_company_region = yes
 			}
@@ -537,8 +1079,6 @@ autonomous_dominion = {
 	
 	modifier_overlord = {
 		trigger = {
-			NOT = { has_dlc = "Wealth of Nations" }
-			NOT = { has_dlc = "Dharma" }
 			capital_scope = {
 				is_node_in_trade_company_region = yes
 			}
@@ -549,8 +1089,6 @@ autonomous_dominion = {
 	
 	modifier_overlord = {
 		trigger = {
-			NOT = { has_dlc = "Wealth of Nations" }
-			NOT = { has_dlc = "Dharma" }
 			capital_scope = {
 				is_node_in_trade_company_region = yes
 			}
@@ -561,8 +1099,6 @@ autonomous_dominion = {
 	
 	modifier_overlord = {
 		trigger = {
-			NOT = { has_dlc = "Wealth of Nations" }
-			NOT = { has_dlc = "Dharma" }
 			capital_scope = {
 				is_node_in_trade_company_region = yes
 			}
@@ -573,8 +1109,6 @@ autonomous_dominion = {
 	
 	modifier_overlord = {
 		trigger = {
-			NOT = { has_dlc = "Wealth of Nations" }
-			NOT = { has_dlc = "Dharma" }
 			capital_scope = {
 				is_node_in_trade_company_region = yes
 			}
@@ -585,8 +1119,6 @@ autonomous_dominion = {
 	
 	modifier_overlord = {
 		trigger = {
-			NOT = { has_dlc = "Wealth of Nations" }
-			NOT = { has_dlc = "Dharma" }
 			capital_scope = {
 				is_node_in_trade_company_region = yes
 			}
@@ -597,8 +1129,6 @@ autonomous_dominion = {
 	
 	modifier_overlord = {
 		trigger = {
-			NOT = { has_dlc = "Wealth of Nations" }
-			NOT = { has_dlc = "Dharma" }
 			capital_scope = {
 				is_node_in_trade_company_region = yes
 			}
@@ -609,8 +1139,6 @@ autonomous_dominion = {
 	
 	modifier_overlord = {
 		trigger = {
-			NOT = { has_dlc = "Wealth of Nations" }
-			NOT = { has_dlc = "Dharma" }
 			capital_scope = {
 				is_node_in_trade_company_region = yes
 			}
@@ -621,8 +1149,6 @@ autonomous_dominion = {
 	
 	modifier_overlord = {
 		trigger = {
-			NOT = { has_dlc = "Wealth of Nations" }
-			NOT = { has_dlc = "Dharma" }
 			capital_scope = {
 				is_node_in_trade_company_region = yes
 			}
@@ -633,8 +1159,6 @@ autonomous_dominion = {
 	
 	modifier_overlord = {
 		trigger = {
-			NOT = { has_dlc = "Wealth of Nations" }
-			NOT = { has_dlc = "Dharma" }
 			capital_scope = {
 				is_node_in_trade_company_region = yes
 			}
@@ -645,8 +1169,6 @@ autonomous_dominion = {
 	
 	modifier_overlord = {
 		trigger = {
-			NOT = { has_dlc = "Wealth of Nations" }
-			NOT = { has_dlc = "Dharma" }
 			capital_scope = {
 				is_node_in_trade_company_region = yes
 			}
@@ -657,8 +1179,6 @@ autonomous_dominion = {
 	
 	modifier_overlord = {
 		trigger = {
-			NOT = { has_dlc = "Wealth of Nations" }
-			NOT = { has_dlc = "Dharma" }
 			capital_scope = {
 				is_node_in_trade_company_region = yes
 			}
@@ -669,8 +1189,6 @@ autonomous_dominion = {
 	
 	modifier_overlord = {
 		trigger = {
-			NOT = { has_dlc = "Wealth of Nations" }
-			NOT = { has_dlc = "Dharma" }
 			capital_scope = {
 				is_node_in_trade_company_region = yes
 			}
@@ -681,8 +1199,6 @@ autonomous_dominion = {
 	
 	modifier_overlord = {
 		trigger = {
-			NOT = { has_dlc = "Wealth of Nations" }
-			NOT = { has_dlc = "Dharma" }
 			capital_scope = {
 				is_node_in_trade_company_region = yes
 			}
@@ -693,8 +1209,6 @@ autonomous_dominion = {
 	
 	modifier_overlord = {
 		trigger = {
-			NOT = { has_dlc = "Wealth of Nations" }
-			NOT = { has_dlc = "Dharma" }
 			capital_scope = {
 				is_node_in_trade_company_region = yes
 			}
@@ -705,8 +1219,6 @@ autonomous_dominion = {
 	
 	modifier_overlord = {
 		trigger = {
-			NOT = { has_dlc = "Wealth of Nations" }
-			NOT = { has_dlc = "Dharma" }
 			capital_scope = {
 				is_node_in_trade_company_region = yes
 			}
@@ -717,8 +1229,6 @@ autonomous_dominion = {
 	
 	modifier_overlord = {
 		trigger = {
-			NOT = { has_dlc = "Wealth of Nations" }
-			NOT = { has_dlc = "Dharma" }
 			capital_scope = {
 				is_node_in_trade_company_region = yes
 			}
@@ -729,8 +1239,6 @@ autonomous_dominion = {
 	
 	modifier_overlord = {
 		trigger = {
-			NOT = { has_dlc = "Wealth of Nations" }
-			NOT = { has_dlc = "Dharma" }
 			capital_scope = {
 				is_node_in_trade_company_region = yes
 			}
@@ -741,8 +1249,6 @@ autonomous_dominion = {
 	
 	modifier_overlord = {
 		trigger = {
-			NOT = { has_dlc = "Wealth of Nations" }
-			NOT = { has_dlc = "Dharma" }
 			capital_scope = {
 				is_node_in_trade_company_region = yes
 			}
@@ -753,8 +1259,6 @@ autonomous_dominion = {
 	
 	modifier_overlord = {
 		trigger = {
-			NOT = { has_dlc = "Wealth of Nations" }
-			NOT = { has_dlc = "Dharma" }
 			capital_scope = {
 				is_node_in_trade_company_region = yes
 			}
@@ -765,8 +1269,6 @@ autonomous_dominion = {
 	
 	modifier_overlord = {
 		trigger = {
-			NOT = { has_dlc = "Wealth of Nations" }
-			NOT = { has_dlc = "Dharma" }
 			capital_scope = {
 				is_node_in_trade_company_region = yes
 			}
@@ -777,8 +1279,6 @@ autonomous_dominion = {
 	
 	modifier_overlord = {
 		trigger = {
-			NOT = { has_dlc = "Wealth of Nations" }
-			NOT = { has_dlc = "Dharma" }
 			capital_scope = {
 				is_node_in_trade_company_region = yes
 			}
@@ -789,8 +1289,6 @@ autonomous_dominion = {
 	
 	modifier_overlord = {
 		trigger = {
-			NOT = { has_dlc = "Wealth of Nations" }
-			NOT = { has_dlc = "Dharma" }
 			capital_scope = {
 				is_node_in_trade_company_region = yes
 			}
@@ -801,8 +1299,6 @@ autonomous_dominion = {
 	
 	modifier_overlord = {
 		trigger = {
-			NOT = { has_dlc = "Wealth of Nations" }
-			NOT = { has_dlc = "Dharma" }
 			capital_scope = {
 				is_node_in_trade_company_region = yes
 			}
@@ -813,8 +1309,6 @@ autonomous_dominion = {
 	
 	modifier_overlord = {
 		trigger = {
-			NOT = { has_dlc = "Wealth of Nations" }
-			NOT = { has_dlc = "Dharma" }
 			capital_scope = {
 				is_node_in_trade_company_region = yes
 			}
@@ -825,8 +1319,6 @@ autonomous_dominion = {
 	
 	modifier_overlord = {
 		trigger = {
-			NOT = { has_dlc = "Wealth of Nations" }
-			NOT = { has_dlc = "Dharma" }
 			capital_scope = {
 				is_node_in_trade_company_region = yes
 			}
@@ -837,8 +1329,6 @@ autonomous_dominion = {
 	
 	modifier_overlord = {
 		trigger = {
-			NOT = { has_dlc = "Wealth of Nations" }
-			NOT = { has_dlc = "Dharma" }
 			capital_scope = {
 				is_node_in_trade_company_region = yes
 			}
@@ -849,8 +1339,6 @@ autonomous_dominion = {
 	
 	modifier_overlord = {
 		trigger = {
-			NOT = { has_dlc = "Wealth of Nations" }
-			NOT = { has_dlc = "Dharma" }
 			capital_scope = {
 				is_node_in_trade_company_region = yes
 			}
@@ -861,8 +1349,6 @@ autonomous_dominion = {
 	
 	modifier_overlord = {
 		trigger = {
-			NOT = { has_dlc = "Wealth of Nations" }
-			NOT = { has_dlc = "Dharma" }
 			capital_scope = {
 				is_node_in_trade_company_region = yes
 			}
@@ -873,8 +1359,6 @@ autonomous_dominion = {
 	
 	modifier_overlord = {
 		trigger = {
-			NOT = { has_dlc = "Wealth of Nations" }
-			NOT = { has_dlc = "Dharma" }
 			capital_scope = {
 				is_node_in_trade_company_region = yes
 			}
@@ -885,8 +1369,6 @@ autonomous_dominion = {
 	
 	modifier_overlord = {
 		trigger = {
-			NOT = { has_dlc = "Wealth of Nations" }
-			NOT = { has_dlc = "Dharma" }
 			capital_scope = {
 				is_node_in_trade_company_region = yes
 			}
@@ -897,8 +1379,6 @@ autonomous_dominion = {
 	
 	modifier_overlord = {
 		trigger = {
-			NOT = { has_dlc = "Wealth of Nations" }
-			NOT = { has_dlc = "Dharma" }
 			capital_scope = {
 				is_node_in_trade_company_region = yes
 			}
@@ -909,8 +1389,6 @@ autonomous_dominion = {
 	
 	modifier_overlord = {
 		trigger = {
-			NOT = { has_dlc = "Wealth of Nations" }
-			NOT = { has_dlc = "Dharma" }
 			capital_scope = {
 				is_node_in_trade_company_region = yes
 			}
@@ -921,8 +1399,6 @@ autonomous_dominion = {
 	
 	modifier_overlord = {
 		trigger = {
-			NOT = { has_dlc = "Wealth of Nations" }
-			NOT = { has_dlc = "Dharma" }
 			capital_scope = {
 				is_node_in_trade_company_region = yes
 			}
@@ -933,8 +1409,6 @@ autonomous_dominion = {
 	
 	modifier_overlord = {
 		trigger = {
-			NOT = { has_dlc = "Wealth of Nations" }
-			NOT = { has_dlc = "Dharma" }
 			capital_scope = {
 				is_node_in_trade_company_region = yes
 			}
@@ -945,8 +1419,6 @@ autonomous_dominion = {
 	
 	modifier_overlord = {
 		trigger = {
-			NOT = { has_dlc = "Wealth of Nations" }
-			NOT = { has_dlc = "Dharma" }
 			capital_scope = {
 				is_node_in_trade_company_region = yes
 			}
@@ -957,8 +1429,6 @@ autonomous_dominion = {
 	
 	modifier_overlord = {
 		trigger = {
-			NOT = { has_dlc = "Wealth of Nations" }
-			NOT = { has_dlc = "Dharma" }
 			capital_scope = {
 				is_node_in_trade_company_region = yes
 			}

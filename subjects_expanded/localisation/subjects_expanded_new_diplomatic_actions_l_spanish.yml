@@ -28,13 +28,17 @@
  cancel_puppet_state_tooltip: "Cancel the puppet state status of §Y[From.GetName]§!.\n"
  
  
- establish_autonomous_dominion_title: "Grant More Autonomy"
- establish_autonomous_dominion_desc: "Do you want to make your colonial nation §Y[From.GetName]§! to an §YAutonomous Dominion§!? \nAn Autonomous Dominion behaves like a colonial nation, but has less liberty desire and pays no tarrifs to its overlord."
- establish_autonomous_dominion_tooltip: "Make §Y[From.GetName]§! to a [Root.GetAdjective] §YAutonomous Dominion§!.\n"
+ increase_colonial_autonomy_title: "Increase Colonial Autonomy"
+ increase_colonial_autonomy_desc: "Increase the autonomy of §Y[From.GetName]§!. [From.GetIncreaseColonialAutonomyDesc]"
+ increase_colonial_autonomy_tooltip: "Increase the autonomy of §Y[From.GetName]§!.\n"
  
- lower_development_of_autonomous_development_title: "Reduce Development"
- lower_development_of_autonomous_development_desc: "Their total development increased to above §Y500§!, which increased their liberty desire noticeably. If we reduce their development, their liberty desire will be increased in the short term though, but seen in the long term this might help us. Additional to that we once gain ¤, £icon_manpower£ and £icon_sailors£ and their development cost are increased for §Y10 years§! after the reduction by §G300%§!. \nWe can only reduce the development of an Autonomen Dominion every §Y10 years§!."
- lower_development_of_autonomous_development_tooltip: "Reduce the [From.GetAdjective] total development by §Y200§! and gain one year of income of ¤, £icon_manpower£ and £icon_sailors£ from them. This increases their liberty desire by §R30%§!.\n"
+ demand_manpower_from_autonomous_dominion_title: "Demand Manpower"
+ demand_manpower_from_autonomous_dominion_desc: "Demand men from §Y[From.GetName]§! to fight for [Root.GetName]. This will transfer §Y5,000§! manpower from them to us. \nThis will increase their liberty desire by §R+10%§!."
+ demand_manpower_from_autonomous_dominion_tooltip: "Demand men from §Y[From.GetName]§! to fight for [Root.GetName].\n"
+ 
+ decrease_colonial_autonomy_title: "Decrease Colonial Autonomy"
+ decrease_colonial_autonomy_desc: "Decrease the autonomy of §Y[From.GetName]§!. [From.GetDecreaseColonialAutonomyDesc] \nThis will change their liberty desire by §R+25%§!."
+ decrease_colonial_autonomy_tooltip: "Decrease the autonomy of §Y[From.GetName]§!.\n"
  
  
  establish_roman_client_kingdom_title: "Establish Client Kingdom"

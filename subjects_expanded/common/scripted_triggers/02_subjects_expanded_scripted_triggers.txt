@@ -1,4 +1,4 @@
-is_autonomous_dominion_tag = {
+is_dominion_tag = {
 	OR = {
 		# East African Dominions:
 		tag = DA1
@@ -61,7 +61,7 @@ is_former_autonomous_dominion = {
 		OR = {
 			AND = {
 				NOT = { is_subject_of_type = autonomous_dominion }
-				has_country_flag = was_autonomous_dominion_subject
+				has_country_flag = was_dominion_subject
 			}
 			is_former_colonial_nation = yes
 		}

@@ -1,5 +1,5 @@
 country_decisions = {
-	create_autonomous_dominion_in_india = {
+	create_dominion_in_india = {
 		potential = {
 			OR = {
 				AND = {
@@ -9,8 +9,8 @@ country_decisions = {
 				ai = no
 			}
 			is_subject = no
-			can_be_overlord = autonomous_dominion
-			NOT = { is_autonomous_dominion_tag = yes }
+			can_be_overlord = dominion
+			NOT = { is_dominion_tag = yes }
 			capital_scope = {
 				is_node_in_trade_company_region = no
 			}
@@ -148,7 +148,7 @@ country_decisions = {
 		}
 		effect = {
 			add_treasury = -5000
-			custom_tooltip = ALL_PROVINCES_IN_INDIAN_TRADE_COMPANY_REGIONS_CEDED_TO_AUTONOMOUS_DOMINION
+			custom_tooltip = ALL_PROVINCES_IN_INDIAN_TRADE_COMPANY_REGIONS_CEDED_TO_DOMINION
 			# British India:
 			if = {
 				limit = {
@@ -204,12 +204,12 @@ country_decisions = {
 					
 					create_subject = {
 						subject = DI1
-						subject_type = autonomous_dominion
+						subject_type = dominion
 					}
 					DI1 = {
 						add_treasury = 5000
 						add_truce_with = ROOT
-						country_event = { id = subjects_expanded_autonomous_dominion_events.1 }
+						country_event = { id = subjects_expanded_dominion_events.1 }
 						define_ruler = {
 							culture = ROOT
 							religion = ROOT
@@ -327,12 +327,12 @@ country_decisions = {
 					
 					create_subject = {
 						subject = DI2
-						subject_type = autonomous_dominion
+						subject_type = dominion
 					}
 					DI2 = {
 						add_treasury = 5000
 						add_truce_with = ROOT
-						country_event = { id = subjects_expanded_autonomous_dominion_events.1 }
+						country_event = { id = subjects_expanded_dominion_events.1 }
 						define_ruler = {
 							culture = ROOT
 							religion = ROOT
@@ -452,12 +452,12 @@ country_decisions = {
 					
 					create_subject = {
 						subject = DI3
-						subject_type = autonomous_dominion
+						subject_type = dominion
 					}
 					DI3 = {
 						add_treasury = 5000
 						add_truce_with = ROOT
-						country_event = { id = subjects_expanded_autonomous_dominion_events.1 }
+						country_event = { id = subjects_expanded_dominion_events.1 }
 						define_ruler = {
 							culture = ROOT
 							religion = ROOT
@@ -577,12 +577,12 @@ country_decisions = {
 					
 					create_subject = {
 						subject = DI4
-						subject_type = autonomous_dominion
+						subject_type = dominion
 					}
 					DI4 = {
 						add_treasury = 5000
 						add_truce_with = ROOT
-						country_event = { id = subjects_expanded_autonomous_dominion_events.1 }
+						country_event = { id = subjects_expanded_dominion_events.1 }
 						define_ruler = {
 							culture = ROOT
 							religion = ROOT
@@ -699,12 +699,12 @@ country_decisions = {
 					
 					create_subject = {
 						subject = DI5
-						subject_type = autonomous_dominion
+						subject_type = dominion
 					}
 					DI5 = {
 						add_treasury = 5000
 						add_truce_with = ROOT
-						country_event = { id = subjects_expanded_autonomous_dominion_events.1 }
+						country_event = { id = subjects_expanded_dominion_events.1 }
 						define_ruler = {
 							culture = ROOT
 							religion = ROOT
@@ -818,12 +818,12 @@ country_decisions = {
 					
 					create_subject = {
 						subject = DI6
-						subject_type = autonomous_dominion
+						subject_type = dominion
 					}
 					DI6 = {
 						add_treasury = 5000
 						add_truce_with = ROOT
-						country_event = { id = subjects_expanded_autonomous_dominion_events.1 }
+						country_event = { id = subjects_expanded_dominion_events.1 }
 						define_ruler = {
 							culture = ROOT
 							religion = ROOT
@@ -936,12 +936,12 @@ country_decisions = {
 					
 					create_subject = {
 						subject = DI7
-						subject_type = autonomous_dominion
+						subject_type = dominion
 					}
 					DI7 = {
 						add_treasury = 5000
 						add_truce_with = ROOT
-						country_event = { id = subjects_expanded_autonomous_dominion_events.1 }
+						country_event = { id = subjects_expanded_dominion_events.1 }
 						define_ruler = {
 							culture = ROOT
 							religion = ROOT
@@ -1054,12 +1054,12 @@ country_decisions = {
 					
 					create_subject = {
 						subject = DI8
-						subject_type = autonomous_dominion
+						subject_type = dominion
 					}
 					DI8 = {
 						add_treasury = 5000
 						add_truce_with = ROOT
-						country_event = { id = subjects_expanded_autonomous_dominion_events.1 }
+						country_event = { id = subjects_expanded_dominion_events.1 }
 						define_ruler = {
 							culture = ROOT
 							religion = ROOT
@@ -1172,12 +1172,12 @@ country_decisions = {
 					
 					create_subject = {
 						subject = DI9
-						subject_type = autonomous_dominion
+						subject_type = dominion
 					}
 					DI9 = {
 						add_treasury = 5000
 						add_truce_with = ROOT
-						country_event = { id = subjects_expanded_autonomous_dominion_events.1 }
+						country_event = { id = subjects_expanded_dominion_events.1 }
 						define_ruler = {
 							culture = ROOT
 							religion = ROOT
@@ -1247,20 +1247,6 @@ country_decisions = {
 			modifier = {
 				factor = 5
 				tag = GBR
-			}
-			modifier = {
-				factor = 5
-				unrest = -1
-			}
-			modifier = {
-				factor = 5
-				variable_arithmetic_trigger = {
-					export_to_variable = {
-						which = global_autonomy_var_temp
-						value = modifier:global_autonomy
-					}
-					check_variable = { which = global_autonomy_var_temp value = 0.01 }
-				}
 			}
 			modifier = {
 				factor = 0
@@ -1342,12 +1328,12 @@ country_decisions = {
 			}
 			modifier = {
 				factor = 0.1
-				calc_true_if = { all_subject_country = { is_subject_of_type = autonomous_dominion } amount = 3 }
+				calc_true_if = { all_subject_country = { is_subject_of_type = dominion } amount = 3 }
 			}
 		}
 	}
 	
-	create_autonomous_dominion_in_east_indies = {
+	create_dominion_in_east_indies = {
 		potential = {
 			OR = {
 				AND = {
@@ -1357,8 +1343,8 @@ country_decisions = {
 				ai = no
 			}
 			is_subject = no
-			can_be_overlord = autonomous_dominion
-			NOT = { is_autonomous_dominion_tag = yes }
+			can_be_overlord = dominion
+			NOT = { is_dominion_tag = yes }
 			any_owned_province = {
 				is_node_in_trade_company_region = yes
 			}
@@ -1497,7 +1483,7 @@ country_decisions = {
 		}
 		effect = {
 			add_treasury = -5000
-			custom_tooltip = ALL_PROVINCES_IN_EAST_INDIES_TRADE_COMPANY_REGIONS_CEDED_TO_AUTONOMOUS_DOMINION
+			custom_tooltip = ALL_PROVINCES_IN_EAST_INDIES_TRADE_COMPANY_REGIONS_CEDED_TO_DOMINION
 			# British East Indies:
 			if = {
 				limit = {
@@ -1529,12 +1515,12 @@ country_decisions = {
 					
 					create_subject = {
 						subject = DE1
-						subject_type = autonomous_dominion
+						subject_type = dominion
 					}
 					DE1 = {
 						add_treasury = 5000
 						add_truce_with = ROOT
-						country_event = { id = subjects_expanded_autonomous_dominion_events.1 }
+						country_event = { id = subjects_expanded_dominion_events.1 }
 						define_ruler = {
 							culture = ROOT
 							religion = ROOT
@@ -1618,12 +1604,12 @@ country_decisions = {
 					
 					create_subject = {
 						subject = DE2
-						subject_type = autonomous_dominion
+						subject_type = dominion
 					}
 					DE2 = {
 						add_treasury = 5000
 						add_truce_with = ROOT
-						country_event = { id = subjects_expanded_autonomous_dominion_events.1 }
+						country_event = { id = subjects_expanded_dominion_events.1 }
 						define_ruler = {
 							culture = ROOT
 							religion = ROOT
@@ -1701,12 +1687,12 @@ country_decisions = {
 					
 					create_subject = {
 						subject = DE3
-						subject_type = autonomous_dominion
+						subject_type = dominion
 					}
 					DE3 = {
 						add_treasury = 5000
 						add_truce_with = ROOT
-						country_event = { id = subjects_expanded_autonomous_dominion_events.1 }
+						country_event = { id = subjects_expanded_dominion_events.1 }
 						define_ruler = {
 							culture = ROOT
 							religion = ROOT
@@ -1784,12 +1770,12 @@ country_decisions = {
 					
 					create_subject = {
 						subject = DE4
-						subject_type = autonomous_dominion
+						subject_type = dominion
 					}
 					DE4 = {
 						add_treasury = 5000
 						add_truce_with = ROOT
-						country_event = { id = subjects_expanded_autonomous_dominion_events.1 }
+						country_event = { id = subjects_expanded_dominion_events.1 }
 						define_ruler = {
 							culture = ROOT
 							religion = ROOT
@@ -1872,12 +1858,12 @@ country_decisions = {
 					
 					create_subject = {
 						subject = DE5
-						subject_type = autonomous_dominion
+						subject_type = dominion
 					}
 					DE5 = {
 						add_treasury = 5000
 						add_truce_with = ROOT
-						country_event = { id = subjects_expanded_autonomous_dominion_events.1 }
+						country_event = { id = subjects_expanded_dominion_events.1 }
 						define_ruler = {
 							culture = ROOT
 							religion = ROOT
@@ -1957,12 +1943,12 @@ country_decisions = {
 					
 					create_subject = {
 						subject = DE6
-						subject_type = autonomous_dominion
+						subject_type = dominion
 					}
 					DE6 = {
 						add_treasury = 5000
 						add_truce_with = ROOT
-						country_event = { id = subjects_expanded_autonomous_dominion_events.1 }
+						country_event = { id = subjects_expanded_dominion_events.1 }
 						define_ruler = {
 							culture = ROOT
 							religion = ROOT
@@ -2033,12 +2019,12 @@ country_decisions = {
 					
 					create_subject = {
 						subject = DE7
-						subject_type = autonomous_dominion
+						subject_type = dominion
 					}
 					DE7 = {
 						add_treasury = 5000
 						add_truce_with = ROOT
-						country_event = { id = subjects_expanded_autonomous_dominion_events.1 }
+						country_event = { id = subjects_expanded_dominion_events.1 }
 						define_ruler = {
 							culture = ROOT
 							religion = ROOT
@@ -2109,12 +2095,12 @@ country_decisions = {
 					
 					create_subject = {
 						subject = DE8
-						subject_type = autonomous_dominion
+						subject_type = dominion
 					}
 					DE8 = {
 						add_treasury = 5000
 						add_truce_with = ROOT
-						country_event = { id = subjects_expanded_autonomous_dominion_events.1 }
+						country_event = { id = subjects_expanded_dominion_events.1 }
 						define_ruler = {
 							culture = ROOT
 							religion = ROOT
@@ -2185,12 +2171,12 @@ country_decisions = {
 					
 					create_subject = {
 						subject = DE9
-						subject_type = autonomous_dominion
+						subject_type = dominion
 					}
 					DE9 = {
 						add_treasury = 5000
 						add_truce_with = ROOT
-						country_event = { id = subjects_expanded_autonomous_dominion_events.1 }
+						country_event = { id = subjects_expanded_dominion_events.1 }
 						define_ruler = {
 							culture = ROOT
 							religion = ROOT
@@ -2242,21 +2228,6 @@ country_decisions = {
 			modifier = {
 				factor = 5
 				tag = NED
-			}
-			modifier = {
-				factor = 5
-				unrest = -1
-			}
-			modifier = {
-				factor = 5
-				variable_arithmetic_trigger = {
-					export_to_variable = {
-						which = global_autonomy_var_temp
-						value = modifier:global_autonomy
-					}
-					
-					check_variable = { which = global_autonomy_var_temp value = 0.01 }
-				}
 			}
 			modifier = {
 				factor = 0
@@ -2321,12 +2292,12 @@ country_decisions = {
 			}
 			modifier = {
 				factor = 0.1
-				calc_true_if = { all_subject_country = { is_subject_of_type = autonomous_dominion } amount = 3 }
+				calc_true_if = { all_subject_country = { is_subject_of_type = dominion } amount = 3 }
 			}
 		}
 	}
 	
-	create_autonomous_dominion_in_indochina = {
+	create_dominion_in_indochina = {
 		potential = {
 			OR = {
 				AND = {
@@ -2336,8 +2307,8 @@ country_decisions = {
 				ai = no
 			}
 			is_subject = no
-			can_be_overlord = autonomous_dominion
-			NOT = { is_autonomous_dominion_tag = yes }
+			can_be_overlord = dominion
+			NOT = { is_dominion_tag = yes }
 			any_owned_province = {
 				is_node_in_trade_company_region = yes
 			}
@@ -2429,7 +2400,7 @@ country_decisions = {
 		}
 		effect = {
 			add_treasury = -5000
-			custom_tooltip = ALL_PROVINCES_IN_INDOCHINA_TRADE_COMPANY_REGIONS_CEDED_TO_AUTONOMOUS_DOMINION
+			custom_tooltip = ALL_PROVINCES_IN_INDOCHINA_TRADE_COMPANY_REGIONS_CEDED_TO_DOMINION
 			# British Indochina:
 			if = {
 				limit = {
@@ -2453,12 +2424,12 @@ country_decisions = {
 					
 					create_subject = {
 						subject = DC1
-						subject_type = autonomous_dominion
+						subject_type = dominion
 					}
 					DC1 = {
 						add_treasury = 5000
 						add_truce_with = ROOT
-						country_event = { id = subjects_expanded_autonomous_dominion_events.1 }
+						country_event = { id = subjects_expanded_dominion_events.1 }
 						define_ruler = {
 							culture = ROOT
 							religion = ROOT
@@ -2514,12 +2485,12 @@ country_decisions = {
 					
 					create_subject = {
 						subject = DC2
-						subject_type = autonomous_dominion
+						subject_type = dominion
 					}
 					DC2 = {
 						add_treasury = 5000
 						add_truce_with = ROOT
-						country_event = { id = subjects_expanded_autonomous_dominion_events.1 }
+						country_event = { id = subjects_expanded_dominion_events.1 }
 						define_ruler = {
 							culture = ROOT
 							religion = ROOT
@@ -2577,12 +2548,12 @@ country_decisions = {
 					
 					create_subject = {
 						subject = DC3
-						subject_type = autonomous_dominion
+						subject_type = dominion
 					}
 					DC3 = {
 						add_treasury = 5000
 						add_truce_with = ROOT
-						country_event = { id = subjects_expanded_autonomous_dominion_events.1 }
+						country_event = { id = subjects_expanded_dominion_events.1 }
 						define_ruler = {
 							culture = ROOT
 							religion = ROOT
@@ -2640,12 +2611,12 @@ country_decisions = {
 					
 					create_subject = {
 						subject = DC4
-						subject_type = autonomous_dominion
+						subject_type = dominion
 					}
 					DC4 = {
 						add_treasury = 5000
 						add_truce_with = ROOT
-						country_event = { id = subjects_expanded_autonomous_dominion_events.1 }
+						country_event = { id = subjects_expanded_dominion_events.1 }
 						define_ruler = {
 							culture = ROOT
 							religion = ROOT
@@ -2700,12 +2671,12 @@ country_decisions = {
 					
 					create_subject = {
 						subject = DC5
-						subject_type = autonomous_dominion
+						subject_type = dominion
 					}
 					DC5 = {
 						add_treasury = 5000
 						add_truce_with = ROOT
-						country_event = { id = subjects_expanded_autonomous_dominion_events.1 }
+						country_event = { id = subjects_expanded_dominion_events.1 }
 						define_ruler = {
 							culture = ROOT
 							religion = ROOT
@@ -2757,12 +2728,12 @@ country_decisions = {
 					
 					create_subject = {
 						subject = DC6
-						subject_type = autonomous_dominion
+						subject_type = dominion
 					}
 					DC6 = {
 						add_treasury = 5000
 						add_truce_with = ROOT
-						country_event = { id = subjects_expanded_autonomous_dominion_events.1 }
+						country_event = { id = subjects_expanded_dominion_events.1 }
 						define_ruler = {
 							culture = ROOT
 							religion = ROOT
@@ -2813,12 +2784,12 @@ country_decisions = {
 					
 					create_subject = {
 						subject = DC7
-						subject_type = autonomous_dominion
+						subject_type = dominion
 					}
 					DC7 = {
 						add_treasury = 5000
 						add_truce_with = ROOT
-						country_event = { id = subjects_expanded_autonomous_dominion_events.1 }
+						country_event = { id = subjects_expanded_dominion_events.1 }
 						define_ruler = {
 							culture = ROOT
 							religion = ROOT
@@ -2858,21 +2829,6 @@ country_decisions = {
 			modifier = {
 				factor = 5
 				tag = FRA
-			}
-			modifier = {
-				factor = 5
-				unrest = -1
-			}
-			modifier = {
-				factor = 5
-				variable_arithmetic_trigger = {
-					export_to_variable = {
-						which = global_autonomy_var_temp
-						value = modifier:global_autonomy
-					}
-					
-					check_variable = { which = global_autonomy_var_temp value = 0.01 }
-				}
 			}
 			modifier = {
 				factor = 0
@@ -2922,12 +2878,12 @@ country_decisions = {
 			}
 			modifier = {
 				factor = 0.1
-				calc_true_if = { all_subject_country = { is_subject_of_type = autonomous_dominion } amount = 3 }
+				calc_true_if = { all_subject_country = { is_subject_of_type = dominion } amount = 3 }
 			}
 		}
 	}
 	
-	create_autonomous_dominion_in_west_africa = {
+	create_dominion_in_west_africa = {
 		potential = {
 			OR = {
 				AND = {
@@ -2937,8 +2893,8 @@ country_decisions = {
 				ai = no
 			}
 			is_subject = no
-			can_be_overlord = autonomous_dominion
-			NOT = { is_autonomous_dominion_tag = yes }
+			can_be_overlord = dominion
+			NOT = { is_dominion_tag = yes }
 			any_owned_province = {
 				is_node_in_trade_company_region = yes
 			}
@@ -3036,7 +2992,7 @@ country_decisions = {
 		}
 		effect = {
 			add_treasury = -5000
-			custom_tooltip = ALL_PROVINCES_IN_WEST_AFRICA_TRADE_COMPANY_REGIONS_CEDED_TO_AUTONOMOUS_DOMINION
+			custom_tooltip = ALL_PROVINCES_IN_WEST_AFRICA_TRADE_COMPANY_REGIONS_CEDED_TO_DOMINION
 			# British West Africa:
 			if = {
 				limit = {
@@ -3060,12 +3016,12 @@ country_decisions = {
 					
 					create_subject = {
 						subject = DW1
-						subject_type = autonomous_dominion
+						subject_type = dominion
 					}
 					DW1 = {
 						add_treasury = 5000
 						add_truce_with = ROOT
-						country_event = { id = subjects_expanded_autonomous_dominion_events.1 }
+						country_event = { id = subjects_expanded_dominion_events.1 }
 						define_ruler = {
 							culture = ROOT
 							religion = ROOT
@@ -3121,12 +3077,12 @@ country_decisions = {
 					
 					create_subject = {
 						subject = DW2
-						subject_type = autonomous_dominion
+						subject_type = dominion
 					}
 					DW2 = {
 						add_treasury = 5000
 						add_truce_with = ROOT
-						country_event = { id = subjects_expanded_autonomous_dominion_events.1 }
+						country_event = { id = subjects_expanded_dominion_events.1 }
 						define_ruler = {
 							culture = ROOT
 							religion = ROOT
@@ -3184,12 +3140,12 @@ country_decisions = {
 					
 					create_subject = {
 						subject = DW3
-						subject_type = autonomous_dominion
+						subject_type = dominion
 					}
 					DW3 = {
 						add_treasury = 5000
 						add_truce_with = ROOT
-						country_event = { id = subjects_expanded_autonomous_dominion_events.1 }
+						country_event = { id = subjects_expanded_dominion_events.1 }
 						define_ruler = {
 							culture = ROOT
 							religion = ROOT
@@ -3247,12 +3203,12 @@ country_decisions = {
 					
 					create_subject = {
 						subject = DW4
-						subject_type = autonomous_dominion
+						subject_type = dominion
 					}
 					DW4 = {
 						add_treasury = 5000
 						add_truce_with = ROOT
-						country_event = { id = subjects_expanded_autonomous_dominion_events.1 }
+						country_event = { id = subjects_expanded_dominion_events.1 }
 						define_ruler = {
 							culture = ROOT
 							religion = ROOT
@@ -3307,12 +3263,12 @@ country_decisions = {
 					
 					create_subject = {
 						subject = DW5
-						subject_type = autonomous_dominion
+						subject_type = dominion
 					}
 					DW5 = {
 						add_treasury = 5000
 						add_truce_with = ROOT
-						country_event = { id = subjects_expanded_autonomous_dominion_events.1 }
+						country_event = { id = subjects_expanded_dominion_events.1 }
 						define_ruler = {
 							culture = ROOT
 							religion = ROOT
@@ -3364,12 +3320,12 @@ country_decisions = {
 					
 					create_subject = {
 						subject = DW6
-						subject_type = autonomous_dominion
+						subject_type = dominion
 					}
 					DW6 = {
 						add_treasury = 5000
 						add_truce_with = ROOT
-						country_event = { id = subjects_expanded_autonomous_dominion_events.1 }
+						country_event = { id = subjects_expanded_dominion_events.1 }
 						define_ruler = {
 							culture = ROOT
 							religion = ROOT
@@ -3420,12 +3376,12 @@ country_decisions = {
 					
 					create_subject = {
 						subject = DW7
-						subject_type = autonomous_dominion
+						subject_type = dominion
 					}
 					DW7 = {
 						add_treasury = 5000
 						add_truce_with = ROOT
-						country_event = { id = subjects_expanded_autonomous_dominion_events.1 }
+						country_event = { id = subjects_expanded_dominion_events.1 }
 						define_ruler = {
 							culture = ROOT
 							religion = ROOT
@@ -3465,21 +3421,6 @@ country_decisions = {
 			modifier = {
 				factor = 5
 				tag = FRA
-			}
-			modifier = {
-				factor = 5
-				unrest = -1
-			}
-			modifier = {
-				factor = 5
-				variable_arithmetic_trigger = {
-					export_to_variable = {
-						which = global_autonomy_var_temp
-						value = modifier:global_autonomy
-					}
-					
-					check_variable = { which = global_autonomy_var_temp value = 0.01 }
-				}
 			}
 			modifier = {
 				factor = 0
@@ -3530,12 +3471,12 @@ country_decisions = {
 			}
 			modifier = {
 				factor = 0.1
-				calc_true_if = { all_subject_country = { is_subject_of_type = autonomous_dominion } amount = 3 }
+				calc_true_if = { all_subject_country = { is_subject_of_type = dominion } amount = 3 }
 			}
 		}
 	}
 	
-	create_autonomous_dominion_in_south_africa = {
+	create_dominion_in_south_africa = {
 		potential = {
 			OR = {
 				AND = {
@@ -3545,8 +3486,8 @@ country_decisions = {
 				ai = no
 			}
 			is_subject = no
-			can_be_overlord = autonomous_dominion
-			NOT = { is_autonomous_dominion_tag = yes }
+			can_be_overlord = dominion
+			NOT = { is_dominion_tag = yes }
 			any_owned_province = {
 				is_node_in_trade_company_region = yes
 			}
@@ -3644,7 +3585,7 @@ country_decisions = {
 		}
 		effect = {
 			add_treasury = -5000
-			custom_tooltip = ALL_PROVINCES_IN_SOUTH_AFRICA_TRADE_COMPANY_REGIONS_CEDED_TO_AUTONOMOUS_DOMINION
+			custom_tooltip = ALL_PROVINCES_IN_SOUTH_AFRICA_TRADE_COMPANY_REGIONS_CEDED_TO_DOMINION
 			# British South Africa:
 			if = {
 				limit = {
@@ -3668,12 +3609,12 @@ country_decisions = {
 					
 					create_subject = {
 						subject = DS1
-						subject_type = autonomous_dominion
+						subject_type = dominion
 					}
 					DS1 = {
 						add_treasury = 5000
 						add_truce_with = ROOT
-						country_event = { id = subjects_expanded_autonomous_dominion_events.1 }
+						country_event = { id = subjects_expanded_dominion_events.1 }
 						define_ruler = {
 							culture = ROOT
 							religion = ROOT
@@ -3729,12 +3670,12 @@ country_decisions = {
 					
 					create_subject = {
 						subject = DS2
-						subject_type = autonomous_dominion
+						subject_type = dominion
 					}
 					DS2 = {
 						add_treasury = 5000
 						add_truce_with = ROOT
-						country_event = { id = subjects_expanded_autonomous_dominion_events.1 }
+						country_event = { id = subjects_expanded_dominion_events.1 }
 						define_ruler = {
 							culture = ROOT
 							religion = ROOT
@@ -3792,12 +3733,12 @@ country_decisions = {
 					
 					create_subject = {
 						subject = DS3
-						subject_type = autonomous_dominion
+						subject_type = dominion
 					}
 					DS3 = {
 						add_treasury = 5000
 						add_truce_with = ROOT
-						country_event = { id = subjects_expanded_autonomous_dominion_events.1 }
+						country_event = { id = subjects_expanded_dominion_events.1 }
 						define_ruler = {
 							culture = ROOT
 							religion = ROOT
@@ -3855,12 +3796,12 @@ country_decisions = {
 					
 					create_subject = {
 						subject = DS4
-						subject_type = autonomous_dominion
+						subject_type = dominion
 					}
 					DS4 = {
 						add_treasury = 5000
 						add_truce_with = ROOT
-						country_event = { id = subjects_expanded_autonomous_dominion_events.1 }
+						country_event = { id = subjects_expanded_dominion_events.1 }
 						define_ruler = {
 							culture = ROOT
 							religion = ROOT
@@ -3915,12 +3856,12 @@ country_decisions = {
 					
 					create_subject = {
 						subject = DS5
-						subject_type = autonomous_dominion
+						subject_type = dominion
 					}
 					DS5 = {
 						add_treasury = 5000
 						add_truce_with = ROOT
-						country_event = { id = subjects_expanded_autonomous_dominion_events.1 }
+						country_event = { id = subjects_expanded_dominion_events.1 }
 						define_ruler = {
 							culture = ROOT
 							religion = ROOT
@@ -3972,12 +3913,12 @@ country_decisions = {
 					
 					create_subject = {
 						subject = DS6
-						subject_type = autonomous_dominion
+						subject_type = dominion
 					}
 					DS6 = {
 						add_treasury = 5000
 						add_truce_with = ROOT
-						country_event = { id = subjects_expanded_autonomous_dominion_events.1 }
+						country_event = { id = subjects_expanded_dominion_events.1 }
 						define_ruler = {
 							culture = ROOT
 							religion = ROOT
@@ -4028,12 +3969,12 @@ country_decisions = {
 					
 					create_subject = {
 						subject = DS7
-						subject_type = autonomous_dominion
+						subject_type = dominion
 					}
 					DS7 = {
 						add_treasury = 5000
 						add_truce_with = ROOT
-						country_event = { id = subjects_expanded_autonomous_dominion_events.1 }
+						country_event = { id = subjects_expanded_dominion_events.1 }
 						define_ruler = {
 							culture = ROOT
 							religion = ROOT
@@ -4073,21 +4014,6 @@ country_decisions = {
 			modifier = {
 				factor = 5
 				tag = GBR
-			}
-			modifier = {
-				factor = 5
-				unrest = -1
-			}
-			modifier = {
-				factor = 5
-				variable_arithmetic_trigger = {
-					export_to_variable = {
-						which = global_autonomy_var_temp
-						value = modifier:global_autonomy
-					}
-					
-					check_variable = { which = global_autonomy_var_temp value = 0.01 }
-				}
 			}
 			modifier = {
 				factor = 0
@@ -4134,12 +4060,12 @@ country_decisions = {
 			}
 			modifier = {
 				factor = 0.1
-				calc_true_if = { all_subject_country = { is_subject_of_type = autonomous_dominion } amount = 3 }
+				calc_true_if = { all_subject_country = { is_subject_of_type = dominion } amount = 3 }
 			}
 		}
 	}
 	
-	create_autonomous_dominion_in_east_africa = {
+	create_dominion_in_east_africa = {
 		potential = {
 			OR = {
 				AND = {
@@ -4149,8 +4075,8 @@ country_decisions = {
 				ai = no
 			}
 			is_subject = no
-			can_be_overlord = autonomous_dominion
-			NOT = { is_autonomous_dominion_tag = yes }
+			can_be_overlord = dominion
+			NOT = { is_dominion_tag = yes }
 			any_owned_province = {
 				is_node_in_trade_company_region = yes
 			}
@@ -4248,7 +4174,7 @@ country_decisions = {
 		}
 		effect = {
 			add_treasury = -5000
-			custom_tooltip = ALL_PROVINCES_IN_EAST_AFRICA_TRADE_COMPANY_REGIONS_CEDED_TO_AUTONOMOUS_DOMINION
+			custom_tooltip = ALL_PROVINCES_IN_EAST_AFRICA_TRADE_COMPANY_REGIONS_CEDED_TO_DOMINION
 			# British East Africa:
 			if = {
 				limit = {
@@ -4272,12 +4198,12 @@ country_decisions = {
 					
 					create_subject = {
 						subject = DA1
-						subject_type = autonomous_dominion
+						subject_type = dominion
 					}
 					DA1 = {
 						add_treasury = 5000
 						add_truce_with = ROOT
-						country_event = { id = subjects_expanded_autonomous_dominion_events.1 }
+						country_event = { id = subjects_expanded_dominion_events.1 }
 						define_ruler = {
 							culture = ROOT
 							religion = ROOT
@@ -4333,12 +4259,12 @@ country_decisions = {
 					
 					create_subject = {
 						subject = DA2
-						subject_type = autonomous_dominion
+						subject_type = dominion
 					}
 					DA2 = {
 						add_treasury = 5000
 						add_truce_with = ROOT
-						country_event = { id = subjects_expanded_autonomous_dominion_events.1 }
+						country_event = { id = subjects_expanded_dominion_events.1 }
 						define_ruler = {
 							culture = ROOT
 							religion = ROOT
@@ -4396,12 +4322,12 @@ country_decisions = {
 					
 					create_subject = {
 						subject = DA3
-						subject_type = autonomous_dominion
+						subject_type = dominion
 					}
 					DA3 = {
 						add_treasury = 5000
 						add_truce_with = ROOT
-						country_event = { id = subjects_expanded_autonomous_dominion_events.1 }
+						country_event = { id = subjects_expanded_dominion_events.1 }
 						define_ruler = {
 							culture = ROOT
 							religion = ROOT
@@ -4459,12 +4385,12 @@ country_decisions = {
 					
 					create_subject = {
 						subject = DA4
-						subject_type = autonomous_dominion
+						subject_type = dominion
 					}
 					DA4 = {
 						add_treasury = 5000
 						add_truce_with = ROOT
-						country_event = { id = subjects_expanded_autonomous_dominion_events.1 }
+						country_event = { id = subjects_expanded_dominion_events.1 }
 						define_ruler = {
 							culture = ROOT
 							religion = ROOT
@@ -4519,12 +4445,12 @@ country_decisions = {
 					
 					create_subject = {
 						subject = DA5
-						subject_type = autonomous_dominion
+						subject_type = dominion
 					}
 					DA5 = {
 						add_treasury = 5000
 						add_truce_with = ROOT
-						country_event = { id = subjects_expanded_autonomous_dominion_events.1 }
+						country_event = { id = subjects_expanded_dominion_events.1 }
 						define_ruler = {
 							culture = ROOT
 							religion = ROOT
@@ -4576,12 +4502,12 @@ country_decisions = {
 					
 					create_subject = {
 						subject = DA6
-						subject_type = autonomous_dominion
+						subject_type = dominion
 					}
 					DA6 = {
 						add_treasury = 5000
 						add_truce_with = ROOT
-						country_event = { id = subjects_expanded_autonomous_dominion_events.1 }
+						country_event = { id = subjects_expanded_dominion_events.1 }
 						define_ruler = {
 							culture = ROOT
 							religion = ROOT
@@ -4632,12 +4558,12 @@ country_decisions = {
 					
 					create_subject = {
 						subject = DA7
-						subject_type = autonomous_dominion
+						subject_type = dominion
 					}
 					DA7 = {
 						add_treasury = 5000
 						add_truce_with = ROOT
-						country_event = { id = subjects_expanded_autonomous_dominion_events.1 }
+						country_event = { id = subjects_expanded_dominion_events.1 }
 						define_ruler = {
 							culture = ROOT
 							religion = ROOT
@@ -4677,21 +4603,6 @@ country_decisions = {
 			modifier = {
 				factor = 5
 				tag = GBR
-			}
-			modifier = {
-				factor = 5
-				unrest = -1
-			}
-			modifier = {
-				factor = 5
-				variable_arithmetic_trigger = {
-					export_to_variable = {
-						which = global_autonomy_var_temp
-						value = modifier:global_autonomy
-					}
-					
-					check_variable = { which = global_autonomy_var_temp value = 0.01 }
-				}
 			}
 			modifier = {
 				factor = 0
@@ -4738,7 +4649,7 @@ country_decisions = {
 			}
 			modifier = {
 				factor = 0.1
-				calc_true_if = { all_subject_country = { is_subject_of_type = autonomous_dominion } amount = 3 }
+				calc_true_if = { all_subject_country = { is_subject_of_type = dominion } amount = 3 }
 			}
 		}
 	}

@@ -28,13 +28,17 @@
  cancel_puppet_state_tooltip: "Das Marionettenstaatsverhältnis mit §Y[From.GetName]§! kündigen.\n"
  
  
- establish_autonomous_dominion_title: "Mehr Autonomie zugestehen"
- establish_autonomous_dominion_desc: "Wollt Ihr Eure Kolonialnation §Y[From.GetName]§! zu einem §YAutonomen Herrschaftsgebiet§! machen? \nEin Autonomes Herrschaftsgebiet verhält sich wie eine Kolonialnation, besitzt jedoch ein verringertes Freiheitsstreben und zahlt keine Zollabgaben an seinen Lehnsherrn."
- establish_autonomous_dominion_tooltip: "§Y[From.GetName]§! zu einem [Root.GetAdjective]en §YAutonomen Herrschaftsgebiet§! machen.\n"
+ increase_colonial_autonomy_title: "Koloniale Autonomie erhöhen"
+ increase_colonial_autonomy_desc: "Erhöht die Autonomie von §Y[From.GetName]§!. [From.GetIncreaseColonialAutonomyDesc]"
+ increase_colonial_autonomy_tooltip: "Erhöht die Autonomie von §Y[From.GetName]§!.\n"
  
- lower_development_of_autonomous_development_title: "Entwicklung verringern"
- lower_development_of_autonomous_development_desc: "Ihre Gesamtentwicklung ist auf über §Y500§! gestiegen, was ihr Freiheitsstreben deutlich erhöht hat. Wenn wir ihre Entwicklung verringern, wird dies zwar kurzfristig ihr Freiheitsstreben erhöhen, langfristig gesehen könnte es uns allerdings nutzen. Weiterhin erhalten wir einmalig eine bestimme Menge an ¤, £icon_manpower£ und £icon_sailors£ und ihre Entwicklungskosten sind für §Y10 Jahre§! nach der Verringerung ihrer Entwicklung um §G300%§! erhöht. \nWir können die Entwicklung nur einmal in §Y10 Jahren§! bei einem Autonomen Herrschaftsgebiet verringern."
- lower_development_of_autonomous_development_tooltip: "Verringert die [From.GetAdjective]e Gesamtentwicklung um §Y200§! und erhaltet ein Jahreseinkommen an ¤, £icon_manpower£ und £icon_sailors£ von ihnen. Dies erhöht ihr Freiheitsstreben um §R30%§!.\n"
+ demand_manpower_from_autonomous_dominion_title: "Mannstärke fordern"
+ demand_manpower_from_autonomous_dominion_desc: "Fordert Männer aus §Y[From.GetName]§!, um für [Root.GetName] zu kämpfen. Dies wird §Y5.000§! Mannstärke von ihnen zu uns transferieren. \nDies wird ihr Freiheitsstreben um §R+10%§! ändern."
+ demand_manpower_from_autonomous_dominion_tooltip: "Fordert Männer aus §Y[From.GetName]§!, um für [Root.GetName] zu kämpfen.\n"
+ 
+ decrease_colonial_autonomy_title: "Koloniale Autonomie verringern"
+ decrease_colonial_autonomy_desc: "Verringert die Autonomie von §Y[From.GetName]§!. [From.GetDecreaseColonialAutonomyDesc] \nDies wird ihr Freiheitsstreben um §R+25%§! ändern."
+ decrease_colonial_autonomy_tooltip: "Verringert die Autonomie von §Y[From.GetName]§!.\n"
  
  
  establish_roman_client_kingdom_title: "Klientelkönigtum ernennen"

@@ -12,6 +12,8 @@
  puppet_state_forced: "Forced Puppet State"
  declined_establish_puppet_state_opinion: "Demand of Puppet State declines"
  
+ is_dominion: "Dominion"
+ 
  is_autonomous_dominion: "Autonomous Dominion"
  
  is_roman_client_kingdom: "Roman Client Kingdom"

@@ -12,6 +12,8 @@
  puppet_state_forced: "Marionettenstaat erzwungen"
  declined_establish_puppet_state_opinion: "Forderung nach Marionettenstaat abgelehnt"
  
+ is_dominion: "Herrschaftsgebiet"
+ 
  is_autonomous_dominion: "Autonomes Herrschaftsgebiet"
  
  is_roman_client_kingdom: "Römisches Klientelkönigtum"

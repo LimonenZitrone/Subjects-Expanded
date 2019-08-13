@@ -4,6 +4,12 @@
  
  string_establish_crusader_state_costs_papal_influence: "This will change our papal influence by §R-20§!."
  
+ string_increase_colonial_autonomy_colony: "This will make §Y[From.GetName]§! to a §YDominion§!. A Dominion behaves like a colonial nation, but has less liberty desire and pays no tarrifs to its overlord. They are a little bit less limited than colonial nations in diplomatic actions, but cannot be forced to start colonial wars. \nAutonomous Dominions in trade company regions, can not be individualized, but give a bonus to its overlord's naval forcelimit."
+ string_increase_colonial_autonomy_dominion: "This will make §Y[From.GetName]§! to an §YAutonomous Dominion§!. An Autonomous Dominion behaves like a colonial nation, but has less liberty desire, pays no tarrifs to its overlord and does not join its overlord's wars. They are less limited in diplomatic actions than colonial nations and their overlord can decline helping them in defensive wars. Further more they grant two merchants to its overlord. \nAutonomous Dominions in trade company regions, can not be individualized, but give a bonus to its overlord's naval forcelimit."
+ 
+ string_decrease_colonial_autonomy_dominion: "This will make §Y[From.GetName]§! to a §YColonial Nation§!."
+ string_decrease_colonial_autonomy_autonomous_dominion: "This will make §Y[From.GetName]§! to a §YDominion§!. A Dominion behaves like a colonial nation, but has less liberty desire and pays no tarrifs to its overlord. They are a little bit less limited than colonial nations in diplomatic actions, but cannot be forced to start colonial wars. \nAutonomous Dominions in trade company regions, can not be individualized, but give a bonus to its overlord's naval forcelimit."
+ 
  string_created_ad_name_east_africa_1: "@DA1 §Y[DA1.GetName]§!"
  string_created_ad_name_east_africa_2: "@DA2 §Y[DA2.GetName]§!"
  string_created_ad_name_east_africa_3: "@DA3 §Y[DA3.GetName]§!"
@@ -77,7 +83,7 @@
  
  string_indonesian_trade_company_region: "[Root.GetFirstEastIndiesTradeCompanyRegionWeCedeComma]§YIndonesian Charter§!"
  string_no_indonesian_trade_company_region: ""
-  
+ 
  string_trade_company_list_comma: ", "
  string_trade_company_list_no_comma: ""
  

@@ -34,7 +34,7 @@ Currently [i]Subjects Expanded[/i] adds [b]10[/b] new subject types:
 [/list]
 [*] Crusader State
 [list]
-[*] A Crusader State is a mixture of a vassal and a march. It receives bonuses to discipline, manpower, war score cost against other religions and missionary strength. Further more they increase the papal authority and missionary strength of its overlord and cannot be annexed. They can only be established by the Papal State and Monastic Orders in Europe and a country can only have 2 Crusader States at the same time.
+[*] A Crusader State is a mixture of a vassal and a march. It receives bonuses to discipline, manpower, war score cost against other religions and missionary strength. Further more they increase the papal authority and missionary strength of its overlord and cannot be annexed. They can only be established by the Papal State, Jerusalem and Monastic Orders in Europe and a country can only have 2 Crusader States at the same time.
 [/list]
 [*] Salic Union
 [list]

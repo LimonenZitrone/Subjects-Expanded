@@ -58,6 +58,7 @@ Currently [i]Subjects Expanded[/i] adds [b]10[/b] new subject types:
 [list]
 [*] should be compatible with any DLC
 [*] should be compatible with most mods
+[/list]
 
 [h1]Credits[/h1]
 Some files for a few formable countries (India, Indonesia, Zimbabwe, Ghana, South Africa, Thailand) were taken from the [url=http://steamcommunity.com/sharedfiles/filedetails/?id=217416366]Extended Timeline Mod[/url].

@@ -8,5 +8,5 @@ dependencies={
 	"Missions Expanded"
 	"Extended Timeline"
 }
-picture="subjects_expanded.jpg"
+picture="thumbnail.jpg"
 supported_version="1.28.*.*"

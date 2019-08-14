@@ -63,4 +63,4 @@ Currently [i]Subjects Expanded[/i] adds [b]10[/b] new subject types:
 Some files for a few formable countries (India, Indonesia, Zimbabwe, Ghana, South Africa, Thailand) were taken from the [url=http://steamcommunity.com/sharedfiles/filedetails/?id=217416366]Extended Timeline Mod[/url].
 
 [h1]Other[/h1]
-[b]If you find any bugs or have any suggestions, please let us know in the comments.
+[b]If you find any bugs or have any suggestions, please let us know in the comments or on our [url=https://discord.gg/UEyGV6U]Discord[/url].

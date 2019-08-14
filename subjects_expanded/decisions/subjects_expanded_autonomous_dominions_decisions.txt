@@ -1996,6 +1996,11 @@ country_decisions = {
 			# Dutch East Indies:
 			else_if = {
 				limit = {
+					OR = {
+						tag = NED
+						tag = HOL
+						primary_culture = dutch
+					}
 					NOT = { exists = DE7 }
 				}
 				hidden_effect = {

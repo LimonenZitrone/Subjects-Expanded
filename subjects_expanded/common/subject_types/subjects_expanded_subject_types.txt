@@ -1711,6 +1711,7 @@ crusader_state_vassal = {
 		government = theocracy
 		OR = {
 			tag = PAP
+			tag = KOJ
 			has_reform = monastic_order_reform
 		}
 		religion = catholic

@@ -44,7 +44,7 @@
  crusader_state_vassal_title: "Crusader State"
  crusader_state_vassal_title_plural: "Crusader States"
  crusader_state_vassal_is_our: "§Y$NAME$§! is our Crusader State."
- crusader_state_vassal_long_desc: "A Crusader State is a mixture of a vassal and a march. It receives bonuses to discipline, manpower, war score cost against other religions and missionary strength. Further more they increase the papal authority and missionary strength of its overlord and cannot be annexed. They can only be established by §Y[PAP.GetName]§! and §YMonastic Orders§! in Europe and a country can only have §Y2§! Crusader States at the same time.\n"
+ crusader_state_vassal_long_desc: "A Crusader State is a mixture of a vassal and a march. It receives bonuses to discipline, manpower, war score cost against other religions and missionary strength. Further more they increase the papal authority and missionary strength of its overlord and cannot be annexed. They can only be established by §YPapal State§!, §YJerusalem§! and §YMonastic Orders§! in Europe and a country can only have §Y2§! Crusader States at the same time.\n"
  crusader_state_vassal_no_overlord_dow: "You can not declare war on your own Crusader State."
  
  salic_personal_union_title: "Salic Union"

@@ -83,7 +83,7 @@
  
  
  establish_crusader_state_vassal_title: "Establish Crusader State"
- establish_crusader_state_vassal_desc: "Make your vassal [From.GetName] to a §YCrusader State§!. A Crusader State is a mixture of a vassal and a march. It receives bonuses to discipline, manpower, war score cost against other religions and missionary strength. Further more they increase the papal authority and missionary strength of its overlord and cannot be annexed. They can only be established by §Y[PAP.GetName]§! and §YMonastic Orders§! in Europe and a country can only have §Y2§! Crusader States at the same time. \n[Root.GetIfEstablishCrusaderStateCostsPapalInfluence]"
+ establish_crusader_state_vassal_desc: "Make your vassal [From.GetName] to a §YCrusader State§!. A Crusader State is a mixture of a vassal and a march. It receives bonuses to discipline, manpower, war score cost against other religions and missionary strength. Further more they increase the papal authority and missionary strength of its overlord and cannot be annexed. They can only be established by §YPapal State§!, §YJerusalem§! and §YMonastic Orders§! in Europe and a country can only have §Y2§! Crusader States at the same time. \n[Root.GetIfEstablishCrusaderStateCostsPapalInfluence]"
  establish_crusader_state_vassal_tooltip: "Make your vassal [From.GetName] to a §YCrusader State§!.\n"
  
  send_crusader_knights_to_crusader_state_vassal_title: "Send Crusader Knights"

@@ -19,7 +19,7 @@
  IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_salic_personal_union: "Can be made to a §YSalic Union§!"
  IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_nahuatl_vassal: "Can be made to a §YNahuatl Vassal§!"
  
- THIS_IS_FORMER_AUTONOMOUS_DOMINION: "Is a former §YAutonomous Dominion§! or a former §YColonial Nation§!"
+ THIS_IS_FORMER_AUTONOMOUS_DOMINION: "Is a former §YDominion§! or a former §YColonial Nation§!"
  
  # Diplomatic Actions:
  CANNOT_DECLARE_WAR_ON_OVERLORD_ALLY: "Our overlord §Y[Root.Overlord.GetName]§! will not tolerate wars against their alliances started by us."

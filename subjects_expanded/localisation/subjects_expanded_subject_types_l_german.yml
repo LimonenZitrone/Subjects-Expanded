@@ -32,7 +32,7 @@
  voivodeship_title: "Woiwodschaft"
  voivodeship_title_plural: "Woiwodschaften"
  voivodeship_is_our: "§Y$NAME$§! ist unsere Woiwodschaft."
- voivodeship_long_desc: "Eine Woiwodschaft ist eine Mischen aus Vasall und Mark. Sie erhält einige Boni ähnlich denen einer Mark, kann allerdings nach 10 Jahren unter unserer Herrschaft annektiert werden. Weiterhin besitzt sie höhere Militärausgaben.\n"
+ voivodeship_long_desc: "Eine Woiwodschaft ist eine Mischen aus Vasall und Mark. Sie erhält einige Boni ähnlich denen einer Mark, kann allerdings nach 10 Jahren unter unserer Herrschaft annektiert werden. Weiterhin hat sie erhöhte Militärausgaben und kann nur von §YPolen§! und §YPolen-Litauen§! ernannt werden.\n"
  voivodeship_no_overlord_dow: "Ihr könnt Eurer eigenen Woiwodschaft nicht den Krieg erklären."
  
  fief_subject_title: "Feudalvasall"

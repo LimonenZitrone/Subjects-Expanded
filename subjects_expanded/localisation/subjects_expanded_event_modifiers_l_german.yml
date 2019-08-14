@@ -140,3 +140,6 @@
  nahuatl_vassal_modifier: "Lehnsherr erfüllt nicht die Bedingungen von Nahuatlischen Vasallen"
  nahuatl_vassal_overlord_modifier: "Besitzt Nahuatlische Vasallen"
  
+ peasant_vassal_modifier: "Bäuerlicher Vasall"
+ peasant_vassal_overlord_modifier: "Besitzt Bäuerliche Vasallen"
+ 

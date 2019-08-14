@@ -18,6 +18,7 @@
  IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_crusader_state_vassal: "Can be made to a §YCrusader State§!"
  IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_salic_personal_union: "Can be made to a §YSalic Union§!"
  IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_nahuatl_vassal: "Can be made to a §YNahuatl Vassal§!"
+ IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_peasant_vassal: "Can be made to a §YPeasant Vassal§!"
  
  THIS_IS_FORMER_AUTONOMOUS_DOMINION: "Is a former §YDominion§! or a former §YColonial Nation§!"
  

@@ -100,8 +100,19 @@
  establish_nahuatl_vassal_tooltip: "Ernennt Euren Vasallen [From.GetName] zu einem §YNahuatlischen Vasall§!.\n"
  
  
+ establish_peasant_vassal_title: "Bäuerlicher Vasall fordern"
+ establish_peasant_vassal_desc: "Wollt Ihr §Y[From.GetName]§! vorschlagen, unser Bäuerlicher Vasall zu werden? \nEin Bäuerlicher Vasall ist eine Mischung aus Vasall und Tributstaat. Er tritt den Kriegen seines Lehnsherrn nicht bei, ist nicht sonderlich eingeschränkt in seinen diplomatischen Aktionen, besitzt ein erhöhtes Truppenlimit und gewährt seinem Lehnsherrn ein größeres Truppenlimit als Vasallen. Weiterhin kann sein Lehnsherr Tribut von ihm verlangen und erhält einen Bonus auf aggressive Expansion sowie einen Malus of alle Machtpunktkosten für jeden Bäuerlichen Vasall. Ein Bäuerlicher Vasall besitzt reduzierte Steuereinnahmen, erhält jedoch mehr Produktionseffizienz, Armeemoral und Mannstärke, allerdings zahlt der Lehnsherr ihm Geld und er er besitzt ein leicht erhöhtes Freiheitsstreben aufgrund von Entwicklung als Vasallen."
+ establish_peasant_vassal_tooltip: "Macht §Y[From.GetName]§! zu einem [Root.GetAdjective] §YBäuerlichen Vasall§!.\n"
+ establish_peasant_vassal_alert_tooltip: "Bäuerlicher Vasall fordern"
+ establish_peasant_vassal_dialog: "§Y[This.GetName]§! schlägt uns vor, dass wir ihr §YBäuerlicher Vasall§! werden. Ein Bäuerlicher Vasall ist eine Mischung aus Vasall und Tributstaat. Er tritt den Kriegen seines Lehnsherrn nicht bei, ist nicht sonderlich eingeschränkt in seinen diplomatischen Aktionen, besitzt ein erhöhtes Truppenlimit und gewährt seinem Lehnsherrn ein größeres Truppenlimit als Vasallen. Weiterhin kann sein Lehnsherr Tribut von ihm verlangen und erhält einen Bonus auf aggressive Expansion sowie einen Malus of alle Machtpunktkosten für jeden Bäuerlichen Vasall. Ein Bäuerlicher Vasall besitzt reduzierte Steuereinnahmen, erhält jedoch mehr Produktionseffizienz, Armeemoral und Mannstärke, allerdings zahlt der Lehnsherr ihm Geld und er er besitzt ein leicht erhöhtes Freiheitsstreben aufgrund von Entwicklung als Vasallen. \nFalls wir keine Bauernrepublik sind, werden wir zu einer. \n\nWollt Ihr akzeptieren?"
+ 
+ cancel_peasant_vassal_title: "Bäuerlichen Vasall entlassen"
+ cancel_peasant_vassal_desc: "Beendet das Abhängigkeitsverhältnis von §Y[From.GetName]§! zu uns. Dies wird ihre Meinung über uns um §R-200§! verschlechtern, sofern sie ein Freiheitsstreben unter §Y50%§! besitzen. Außerdem verlieren wir §R-25§! Prestige und erhalten eine §Y5-jährige§! Waffenruhe mit ihnen."
+ cancel_peasant_vassal_tooltip: "Beedet die Vasallisierung von §Y[From.GetName]§! und entlasst sie in die Freiheit.\n"
+ 
+ 
  return_subject_to_vassal_title: "Zum Vasall degradieren"
- return_subject_to_vassal_desc: "Beendet den derzeitigen Status von §Y[From.GetName]§! und macht sie zu einem Vasallen. Dies wird ihre Meinung über uns um §R-100§! verschlechtern. Außerdem verlieren wir §R-10§! Prestige."
+ return_subject_to_vassal_desc: "Beendet den derzeitigen Status von §Y[From.GetName]§! und macht sie zu einem Vasallen. Dies wird ihre Meinung über uns um §R-100§! verschlechtern und ihr Freiheitsstreben um §R+25%§! ändern. Außerdem verlieren wir §R-10§! Prestige."
  return_subject_to_vassal_tooltip: "Macht §Y[From.GetName]§! wieder zu einem Vasall.\n"
  
  # AI Acceptance Reasons:
@@ -131,4 +142,6 @@
  ROOT_OWNS_FROM_CORE_PROVINCES: "Wir besitzen Kernprovinzen von ihnen"
  ROOT_FROM_HAVE_SAME_PRIMARY_CULTURE: "Wir besitzen dieselbe Primärkultur"
  FROM_LIBERTY_DESIRE_TOO_HIGH: "Ihr Freiheitsstreben ist zu hoch"
+ FROM_IS_PEASANTS_REPUBLIC: "Sie sind eine \"Bauernrepublik\""
+ FROM_IS_NOT_PEASANTS_REPUBLIC: "Sie sind KEINE \"Bauernrepublik\""
  

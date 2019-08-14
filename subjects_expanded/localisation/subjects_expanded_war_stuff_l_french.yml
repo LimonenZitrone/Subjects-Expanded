@@ -24,3 +24,7 @@
  CB_ALLOWED_make_salic_personal_union: "Force Salic Union"
  PEACE_make_salic_personal_union: "$TAKERS$ Salic Union"
  
+ make_peasant_vassal_desc: "@[From.GetTag] §Y[From.GetName]§! is made to a Peasant Vassal of @[Root.GetTag] §Y[Root.GetName]§!. If [From.GetName] is not a §YPeasants Republic§!, they will become one."
+ CB_ALLOWED_make_peasant_vassal: "Force Peasant Vassal"
+ PEACE_make_peasant_vassal: "$TAKERS$ Peasant Vassal"
+ 

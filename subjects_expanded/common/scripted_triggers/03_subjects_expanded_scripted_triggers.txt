@@ -14,6 +14,7 @@ is_similar_vassal_subject = {
 		is_subject_of_type = voivodeship
 		is_subject_of_type = fief_subject
 		is_subject_of_type = nahuatl_vassal
+		is_subject_of_type = peasant_vassal
 	}
 }
 

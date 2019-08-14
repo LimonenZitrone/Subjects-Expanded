@@ -875,6 +875,8 @@ autonomous_dominion = {
 	# Properties:
 	transfer_trade_power = no
 	overlord_protects_external = yes
+	uses_military_focus = no
+	can_set_mil_focus = no
 	
 	base_liberty_desire = -20.0
 	liberty_desire_development_ratio = 0.05
@@ -1874,4 +1876,92 @@ nahuatl_vassal = {
 
 	overlord_opinion_modifier = is_nahuatl_vassal
 	subject_opinion_modifier = is_nahuatl_vassal
+}
+
+peasant_vassal = {
+	copy_from = default
+	count = vassal
+	
+	# Graphics:
+	sprite = GFX_icon_vassal
+	diplomacy_overlord_sprite = GFX_diplomacy_leadvassal # The one that the overlord sees
+	diplomacy_subject_sprite = GFX_diplomacy_amvassal	# The one that the subject sees
+
+	# Triggers:
+	is_potential_overlord = {
+		is_subject = no
+		primitives = no
+		has_reform = peasants_republic
+	}
+	
+	# Properties:
+	joins_overlords_wars = no
+	can_send_tribute = yes
+	can_be_integrated = yes
+	uses_military_focus = no
+	overlord_protects_external = yes						# Whether overlord always gets called (declinable) against countries without the same overlord. When this is 'no' overlord will only join if the defender would have been blocked (by its subject type) from attacking the attacker.
+	overlord_enforce_peace_attacking = yes				# Whether the overlord can enforce peace on the subject's enemy even when the subject is the attacker
+	allows_taking_land_without_independence = yes
+	can_transfer_in_peace = yes							# Whether this subject type can be made into a vassal with the "Transfer Subject" Age Ability.
+	can_set_mil_focus = no
+	can_send_missionary_to_subject = yes				# Requires Cradle of Civilization
+	overlord_can_fabricate_for = no
+	
+	max_government_rank = 1								# 0 means no limit
+	
+	base_liberty_desire = 0.0
+	liberty_desire_negative_prestige = 1.0
+	liberty_desire_development_ratio = 0.33
+	liberty_desire_same_dynasty = -5.0
+	pays_overlord = 0.0
+	forcelimit_bonus = 1.5
+	forcelimit_to_overlord = 0.2
+	
+	relative_power_class = 2 							# See description above
+	diplomacy_view_class = 1							# See description above
+
+	can_fight = {
+		independent_nations = yes
+		other_overlord = all
+	}
+	can_rival = {
+		independent_nations = yes
+		other_overlord = all
+	}
+	can_ally = {
+		same_overlord = peasant_vassal
+	}
+	can_marry = {
+	}
+
+	# Subject Interactions:
+	# (continuous)
+	support_loyalists = yes
+	# (immediate)
+	placate_rulers = no
+	enforce_religion = yes
+	replace_governor = yes
+	grant_province = yes
+	enforce_culture = yes
+	siphon_income = yes
+	seize_territory = yes
+	bestow_gifts = yes
+	contribute_to_capital = yes
+
+	# Modifiers:
+	modifier_subject = clear
+	modifier_subject = {
+		modifier = subject_nation
+	}
+	modifier_subject = {
+		modifier = peasant_vassal_modifier
+	}
+	
+	modifier_overlord = clear
+	modifier_overlord = {
+		modifier = peasant_vassal_overlord_modifier
+	}
+
+	overlord_opinion_modifier = is_peasant_vassal
+	subject_opinion_modifier = is_peasant_vassal
 }

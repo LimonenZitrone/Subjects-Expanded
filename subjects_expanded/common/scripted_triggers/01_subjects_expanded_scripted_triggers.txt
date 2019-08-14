@@ -212,6 +212,14 @@ is_possible_subject_of_subject_type_nahuatl_vassal = {
 	}
 }
 
+is_possible_subject_of_subject_type_peasant_vassal = {
+	NOT = { is_subject_of_type = peasant_vassal }
+	is_subject = no
+	primitives = no
+	government = republic
+	same_continent = PREV
+}
+
 can_create_subject_type = {
 	can_be_overlord = $subject_type$
 	$subject$ = {

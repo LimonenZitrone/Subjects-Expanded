@@ -32,3 +32,7 @@
  
  is_nahuatl_vassal: "Nahuatlischer Vasall"
  
+ is_peasant_vassal: "Bäuerlicher Vasall"
+ declined_establish_peasant_vassal_opinion: "Forderung nach Bäuerlichem Vasall abgelehnt"
+ peasant_vassal_forced: "Bäuerlicher Vasall erzwungen"
+ 

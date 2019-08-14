@@ -32,3 +32,7 @@
  
  is_nahuatl_vassal: "Nahuatl Vassal"
  
+ is_peasant_vassal: "Peasant Vassal"
+ declined_establish_peasant_vassal_opinion: "Demand of Peasant Vassal declined"
+ peasant_vassal_forced: "Forced Peasant Vassal"
+ 

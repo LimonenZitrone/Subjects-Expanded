@@ -100,8 +100,19 @@
  establish_nahuatl_vassal_tooltip: "Make your vassal [From.GetName] to a §YNahuatl Vassal§!.\n"
  
  
+ establish_peasant_vassal_title: "Establish Peasant Vassal"
+ establish_peasant_vassal_desc: "Do you want to offer §Y[From.GetName]§! to become our Peasant Vassal? \nA Peasant Vassal is a mixture of a vassal and a tributary. It does not join its overlord's wars, is not very limited in its diplomatic actions, has a higher forcelimit and grants more forcelimit to its overlord than vassals. Further more the overlord can demand tribute from them and receives a bonus to aggressive expansion and a malus to all power cost for each Peasant Vassal. A Peasant Vassal has reduced tax income, but increased production efficiency, army morale and manpower, however the overlord pays it and it has a slighty higher liberty desire from development than vassals."
+ establish_peasant_vassal_tooltip: "Make §Y[From.GetName]§! to a [Root.GetAdjective] §YPeasant Vassal§!.\n"
+ establish_peasant_vassal_alert_tooltip: "Establish Peasant Vassal"
+ establish_peasant_vassal_dialog: "§Y[This.GetName]§! offers us that we become their §YPeasant Vassal§!. A Peasant Vassal is a mixture of a vassal and a tributary. It does not join its overlord's wars, is not very limited in its diplomatic actions, has a higher forcelimit and grants more forcelimit to its overlord than vassals. Further more the overlord can demand tribute from them and receives a bonus to aggressive expansion and a malus to all power cost for each Peasant Vassal. A Peasant Vassal has reduced tax income, but increased production efficiency, army morale and manpower, however the overlord pays it and it has a slighty higher liberty desire from development than vassals. \nIf we aren't a Peasants Republic, we will become one. \n\nDo you want to accept?"
+ 
+ cancel_peasant_vassal_title: "Release Peasant Vassal"
+ cancel_peasant_vassal_desc: "Cancel the dependency of §Y[From.GetName]§! of us. This will decrease their opinion about us by §R-200§!, if their liberty desire is below §Y50%§!. We will also lose §R-25§! prestige and gain a truce with them for §Y5 years§!."
+ cancel_peasant_vassal_tooltip: "Cancel the vassalisation of §Y[From.GetName]§! and grant them independence.\n"
+ 
+ 
  return_subject_to_vassal_title: "Demote to Vassal"
- return_subject_to_vassal_desc: "Cancel the current status §Y[From.GetName]§! has and make them to a vassal. This will decrease their opinion of us by §R-100§!. We will also lose §R-10§! prestige."
+ return_subject_to_vassal_desc: "Cancel the current status §Y[From.GetName]§! has and make them to a vassal. This will decrease their opinion of us by §R-100§! and change their liberty desire by §R+25%§!. We will also lose §R-10§! prestige."
  return_subject_to_vassal_tooltip: "Make §Y[From.GetName]§! to a vassal again.\n"
  
  # AI Acceptance Reasons:
@@ -131,4 +142,6 @@
  ROOT_OWNS_FROM_CORE_PROVINCES: "We own their cores"
  ROOT_FROM_HAVE_SAME_PRIMARY_CULTURE: "We have the same primary culture"
  FROM_LIBERTY_DESIRE_TOO_HIGH: "Their liberty desire is too high"
+ FROM_IS_PEASANTS_REPUBLIC: "They are a \"Peasants Republic\""
+ FROM_IS_NOT_PEASANTS_REPUBLIC: "They are NOT a \"Peasants Republic\""
  

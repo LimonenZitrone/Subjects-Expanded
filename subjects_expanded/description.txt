@@ -2,7 +2,7 @@
 This mod adds new subject types and diplomatic actions related to them to add more variety and depth to the subject system.
 
 [h1]Currently Added[/h1]
-Currently [i]Subjects Expanded[/i] adds [b]10[/b] new subject types:
+Currently [i]Subjects Expanded[/i] adds [b]11[/b] new subject types:
 [list]
 [*] Protectorate
 [list]
@@ -42,7 +42,7 @@ Currently [i]Subjects Expanded[/i] adds [b]10[/b] new subject types:
 [/list]
 [*] Nahuatl Vassal
 [list]
-[*] A Nahuatl Vassal behaves like a vassal, but does not cost a diplomatic relation and has a reduced liberty desire. Further more it gives a bonus for manpower, manpower recovery speed and province war score cost to its overlord. It can only be established by Nahuatl nations, which did not reform their religion, in Mexico, California, Rio Grande and §YCentral America. If an overlord does not fulfill these requirements, the Nahuatl Vassal will get +100% liberty desire. (Requires El Dorado DLC)
+[*] A Nahuatl Vassal behaves like a vassal, but does not cost a diplomatic relation and has a reduced liberty desire. Further more it gives a bonus for manpower, manpower recovery speed and province war score cost to its overlord. It can only be established by Nahuatl nations, which did not reform their religion, in Mexico, California, Rio Grande and Central America. If an overlord does not fulfill these requirements, the Nahuatl Vassal will get +100% liberty desire. (Requires El Dorado DLC)
 [/list]
 [*] Peasant Vassal
 [list]

@@ -388,9 +388,15 @@ country_event = {
 			}
 			is_dominion_tag_in_indochina = yes
 		}
-		trade_company_indochina = {
-			owned_by = ROOT
-			is_in_capital_area = no
+		OR = {
+			trade_company_indochina = {
+				owned_by = ROOT
+				is_in_capital_area = no
+			}
+			trade_company_burma = {
+				owned_by = ROOT
+				is_in_capital_area = no
+			}
 		}
 	}
 	
@@ -400,6 +406,33 @@ country_event = {
 		hidden_effect = {
 			set_variable = { which = num_of_provinces_ceded_to_autonomous_dominion_indochina value = 0 }
 			trade_company_indochina = {
+				limit = {
+					owned_by = ROOT
+					is_in_capital_area = no
+				}
+				ROOT = { change_variable = { which = num_of_provinces_ceded_to_autonomous_dominion_indochina value = 1 } }
+				random_country = {
+					limit = {
+						is_subject_of = ROOT
+						OR = {
+							is_subject_of_type = dominion
+							is_subject_of_type = autonomous_dominion
+						}
+						is_dominion_tag_in_indochina = yes
+					}
+					PREV = {
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = PREV
+						}
+						cede_province = PREV
+					}
+				}
+			}
+			trade_company_burma = {
 				limit = {
 					owned_by = ROOT
 					is_in_capital_area = no

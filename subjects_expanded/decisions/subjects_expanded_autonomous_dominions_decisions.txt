@@ -155,42 +155,67 @@ country_decisions = {
 						limit = {
 							owned_by = ROOT
 						}
-						remove_core = ROOT
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DI1
+						}
 						cede_province = DI1
-						add_core = DI1
 					}
 					trade_company_deccan = {
 						limit = {
 							owned_by = ROOT
 						}
-						remove_core = ROOT
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DI1
+						}
 						cede_province = DI1
-						add_core = DI1
 
 					}
 					trade_company_east_india = {
 						limit = {
 							owned_by = ROOT
 						}
-						remove_core = ROOT
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DI1
+						}
 						cede_province = DI1
-						add_core = DI1
 					}
 					trade_company_coromandel = {
 						limit = {
 							owned_by = ROOT
 						}
-						remove_core = ROOT
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DI1
+						}
 						cede_province = DI1
-						add_core = DI1
 					}
 					trade_company_north_india = {
 						limit = {
 							owned_by = ROOT
 						}
-						remove_core = ROOT
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DI1
+						}
 						cede_province = DI1
-						add_core = DI1
 					}
 					create_subject = {
 						subject = DI1
@@ -277,42 +302,67 @@ country_decisions = {
 						limit = {
 							owned_by = ROOT
 						}
-						remove_core = ROOT
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DI2
+						}
 						cede_province = DI2
-						add_core = DI2
 					}
 					trade_company_deccan = {
 						limit = {
 							owned_by = ROOT
 						}
-						remove_core = ROOT
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DI2
+						}
 						cede_province = DI2
-						add_core = DI2
 
 					}
 					trade_company_east_india = {
 						limit = {
 							owned_by = ROOT
 						}
-						remove_core = ROOT
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DI2
+						}
 						cede_province = DI2
-						add_core = DI2
 					}
 					trade_company_coromandel = {
 						limit = {
 							owned_by = ROOT
 						}
-						remove_core = ROOT
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DI2
+						}
 						cede_province = DI2
-						add_core = DI2
 					}
 					trade_company_north_india = {
 						limit = {
 							owned_by = ROOT
 						}
-						remove_core = ROOT
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DI2
+						}
 						cede_province = DI2
-						add_core = DI2
 					}
 					create_subject = {
 						subject = DI2
@@ -401,42 +451,67 @@ country_decisions = {
 						limit = {
 							owned_by = ROOT
 						}
-						remove_core = ROOT
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DI3
+						}
 						cede_province = DI3
-						add_core = DI3
 					}
 					trade_company_deccan = {
 						limit = {
 							owned_by = ROOT
 						}
-						remove_core = ROOT
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DI3
+						}
 						cede_province = DI3
-						add_core = DI3
 
 					}
 					trade_company_east_india = {
 						limit = {
 							owned_by = ROOT
 						}
-						remove_core = ROOT
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DI3
+						}
 						cede_province = DI3
-						add_core = DI3
 					}
 					trade_company_coromandel = {
 						limit = {
 							owned_by = ROOT
 						}
-						remove_core = ROOT
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DI3
+						}
 						cede_province = DI3
-						add_core = DI3
 					}
 					trade_company_north_india = {
 						limit = {
 							owned_by = ROOT
 						}
-						remove_core = ROOT
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DI3
+						}
 						cede_province = DI3
-						add_core = DI3
 					}
 					create_subject = {
 						subject = DI3
@@ -525,42 +600,67 @@ country_decisions = {
 						limit = {
 							owned_by = ROOT
 						}
-						remove_core = ROOT
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DI4
+						}
 						cede_province = DI4
-						add_core = DI4
 					}
 					trade_company_deccan = {
 						limit = {
 							owned_by = ROOT
 						}
-						remove_core = ROOT
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DI4
+						}
 						cede_province = DI4
-						add_core = DI4
 
 					}
 					trade_company_east_india = {
 						limit = {
 							owned_by = ROOT
 						}
-						remove_core = ROOT
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DI4
+						}
 						cede_province = DI4
-						add_core = DI4
 					}
 					trade_company_coromandel = {
 						limit = {
 							owned_by = ROOT
 						}
-						remove_core = ROOT
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DI4
+						}
 						cede_province = DI4
-						add_core = DI4
 					}
 					trade_company_north_india = {
 						limit = {
 							owned_by = ROOT
 						}
-						remove_core = ROOT
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DI4
+						}
 						cede_province = DI4
-						add_core = DI4
 					}
 					create_subject = {
 						subject = DI4
@@ -646,42 +746,67 @@ country_decisions = {
 						limit = {
 							owned_by = ROOT
 						}
-						remove_core = ROOT
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DI5
+						}
 						cede_province = DI5
-						add_core = DI5
 					}
 					trade_company_deccan = {
 						limit = {
 							owned_by = ROOT
 						}
-						remove_core = ROOT
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DI5
+						}
 						cede_province = DI5
-						add_core = DI5
 
 					}
 					trade_company_east_india = {
 						limit = {
 							owned_by = ROOT
 						}
-						remove_core = ROOT
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DI5
+						}
 						cede_province = DI5
-						add_core = DI5
 					}
 					trade_company_coromandel = {
 						limit = {
 							owned_by = ROOT
 						}
-						remove_core = ROOT
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DI5
+						}
 						cede_province = DI5
-						add_core = DI5
 					}
 					trade_company_north_india = {
 						limit = {
 							owned_by = ROOT
 						}
-						remove_core = ROOT
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DI5
+						}
 						cede_province = DI5
-						add_core = DI5
 					}
 					create_subject = {
 						subject = DI5
@@ -764,42 +889,67 @@ country_decisions = {
 						limit = {
 							owned_by = ROOT
 						}
-						remove_core = ROOT
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DI6
+						}
 						cede_province = DI6
-						add_core = DI6
 					}
 					trade_company_deccan = {
 						limit = {
 							owned_by = ROOT
 						}
-						remove_core = ROOT
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DI6
+						}
 						cede_province = DI6
-						add_core = DI6
 
 					}
 					trade_company_east_india = {
 						limit = {
 							owned_by = ROOT
 						}
-						remove_core = ROOT
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DI6
+						}
 						cede_province = DI6
-						add_core = DI6
 					}
 					trade_company_coromandel = {
 						limit = {
 							owned_by = ROOT
 						}
-						remove_core = ROOT
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DI6
+						}
 						cede_province = DI6
-						add_core = DI6
 					}
 					trade_company_north_india = {
 						limit = {
 							owned_by = ROOT
 						}
-						remove_core = ROOT
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DI6
+						}
 						cede_province = DI6
-						add_core = DI6
 					}
 					create_subject = {
 						subject = DI6
@@ -881,42 +1031,67 @@ country_decisions = {
 						limit = {
 							owned_by = ROOT
 						}
-						remove_core = ROOT
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DI7
+						}
 						cede_province = DI7
-						add_core = DI7
 					}
 					trade_company_deccan = {
 						limit = {
 							owned_by = ROOT
 						}
-						remove_core = ROOT
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DI7
+						}
 						cede_province = DI7
-						add_core = DI7
 
 					}
 					trade_company_east_india = {
 						limit = {
 							owned_by = ROOT
 						}
-						remove_core = ROOT
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DI7
+						}
 						cede_province = DI7
-						add_core = DI7
 					}
 					trade_company_coromandel = {
 						limit = {
 							owned_by = ROOT
 						}
-						remove_core = ROOT
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DI7
+						}
 						cede_province = DI7
-						add_core = DI7
 					}
 					trade_company_north_india = {
 						limit = {
 							owned_by = ROOT
 						}
-						remove_core = ROOT
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DI7
+						}
 						cede_province = DI7
-						add_core = DI7
 					}
 					create_subject = {
 						subject = DI7
@@ -998,42 +1173,67 @@ country_decisions = {
 						limit = {
 							owned_by = ROOT
 						}
-						remove_core = ROOT
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DI8
+						}
 						cede_province = DI8
-						add_core = DI8
 					}
 					trade_company_deccan = {
 						limit = {
 							owned_by = ROOT
 						}
-						remove_core = ROOT
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DI8
+						}
 						cede_province = DI8
-						add_core = DI8
 
 					}
 					trade_company_east_india = {
 						limit = {
 							owned_by = ROOT
 						}
-						remove_core = ROOT
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DI8
+						}
 						cede_province = DI8
-						add_core = DI8
 					}
 					trade_company_coromandel = {
 						limit = {
 							owned_by = ROOT
 						}
-						remove_core = ROOT
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DI8
+						}
 						cede_province = DI8
-						add_core = DI8
 					}
 					trade_company_north_india = {
 						limit = {
 							owned_by = ROOT
 						}
-						remove_core = ROOT
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DI8
+						}
 						cede_province = DI8
-						add_core = DI8
 					}
 					create_subject = {
 						subject = DI8
@@ -1115,42 +1315,66 @@ country_decisions = {
 						limit = {
 							owned_by = ROOT
 						}
-						remove_core = ROOT
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DI9
+						}
 						cede_province = DI9
-						add_core = DI9
 					}
 					trade_company_deccan = {
 						limit = {
 							owned_by = ROOT
 						}
-						remove_core = ROOT
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DI9
+						}
 						cede_province = DI9
-						add_core = DI9
-
 					}
 					trade_company_east_india = {
 						limit = {
 							owned_by = ROOT
 						}
-						remove_core = ROOT
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DI9
+						}
 						cede_province = DI9
-						add_core = DI9
 					}
 					trade_company_coromandel = {
 						limit = {
 							owned_by = ROOT
 						}
-						remove_core = ROOT
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DI9
+						}
 						cede_province = DI9
-						add_core = DI9
 					}
 					trade_company_north_india = {
 						limit = {
 							owned_by = ROOT
 						}
-						remove_core = ROOT
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DI9
+						}
 						cede_province = DI9
-						add_core = DI9
 					}
 					create_subject = {
 						subject = DI9
@@ -1311,7 +1535,15 @@ country_decisions = {
 			}
 			modifier = {
 				factor = 0.1
-				calc_true_if = { all_subject_country = { is_subject_of_type = dominion } amount = 3 }
+				calc_true_if = {
+					all_subject_country = {
+						OR = {
+							is_subject_of_type = dominion
+							is_subject_of_type = autonomous_dominion
+						}
+					}
+					amount = 3
+				}
 			}
 		}
 	}
@@ -1473,17 +1705,27 @@ country_decisions = {
 						limit = {
 							owned_by = ROOT
 						}
-						remove_core = ROOT
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DE1
+						}
 						cede_province = DE1
-						add_core = DE1
 					}
 					trade_company_moluccas = {
 						limit = {
 							owned_by = ROOT
 						}
-						remove_core = ROOT
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DE1
+						}
 						cede_province = DE1
-						add_core = DE1
 					}
 					create_subject = {
 						subject = DE1
@@ -1560,17 +1802,27 @@ country_decisions = {
 						limit = {
 							owned_by = ROOT
 						}
-						remove_core = ROOT
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DE2
+						}
 						cede_province = DE2
-						add_core = DE2
 					}
 					trade_company_moluccas = {
 						limit = {
 							owned_by = ROOT
 						}
-						remove_core = ROOT
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DE2
+						}
 						cede_province = DE2
-						add_core = DE2
 					}
 					create_subject = {
 						subject = DE2
@@ -1641,17 +1893,27 @@ country_decisions = {
 						limit = {
 							owned_by = ROOT
 						}
-						remove_core = ROOT
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DE3
+						}
 						cede_province = DE3
-						add_core = DE3
 					}
 					trade_company_moluccas = {
 						limit = {
 							owned_by = ROOT
 						}
-						remove_core = ROOT
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DE3
+						}
 						cede_province = DE3
-						add_core = DE3
 					}
 					create_subject = {
 						subject = DE3
@@ -1722,17 +1984,27 @@ country_decisions = {
 						limit = {
 							owned_by = ROOT
 						}
-						remove_core = ROOT
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DE4
+						}
 						cede_province = DE4
-						add_core = DE4
 					}
 					trade_company_moluccas = {
 						limit = {
 							owned_by = ROOT
 						}
-						remove_core = ROOT
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DE4
+						}
 						cede_province = DE4
-						add_core = DE4
 					}
 					create_subject = {
 						subject = DE4
@@ -1808,17 +2080,27 @@ country_decisions = {
 						limit = {
 							owned_by = ROOT
 						}
-						remove_core = ROOT
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DE5
+						}
 						cede_province = DE5
-						add_core = DE5
 					}
 					trade_company_moluccas = {
 						limit = {
 							owned_by = ROOT
 						}
-						remove_core = ROOT
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DE5
+						}
 						cede_province = DE5
-						add_core = DE5
 					}
 					create_subject = {
 						subject = DE5
@@ -1891,17 +2173,27 @@ country_decisions = {
 						limit = {
 							owned_by = ROOT
 						}
-						remove_core = ROOT
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DE6
+						}
 						cede_province = DE6
-						add_core = DE6
 					}
 					trade_company_moluccas = {
 						limit = {
 							owned_by = ROOT
 						}
-						remove_core = ROOT
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DE6
+						}
 						cede_province = DE6
-						add_core = DE6
 					}
 					create_subject = {
 						subject = DE6
@@ -1970,17 +2262,27 @@ country_decisions = {
 						limit = {
 							owned_by = ROOT
 						}
-						remove_core = ROOT
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DE7
+						}
 						cede_province = DE7
-						add_core = DE7
 					}
 					trade_company_moluccas = {
 						limit = {
 							owned_by = ROOT
 						}
-						remove_core = ROOT
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DE7
+						}
 						cede_province = DE7
-						add_core = DE7
 					}
 					create_subject = {
 						subject = DE7
@@ -2044,17 +2346,27 @@ country_decisions = {
 						limit = {
 							owned_by = ROOT
 						}
-						remove_core = ROOT
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DE8
+						}
 						cede_province = DE8
-						add_core = DE8
 					}
 					trade_company_moluccas = {
 						limit = {
 							owned_by = ROOT
 						}
-						remove_core = ROOT
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DE8
+						}
 						cede_province = DE8
-						add_core = DE8
 					}
 					create_subject = {
 						subject = DE8
@@ -2118,17 +2430,27 @@ country_decisions = {
 						limit = {
 							owned_by = ROOT
 						}
-						remove_core = ROOT
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DE9
+						}
 						cede_province = DE9
-						add_core = DE9
 					}
 					trade_company_moluccas = {
 						limit = {
 							owned_by = ROOT
 						}
-						remove_core = ROOT
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DE9
+						}
 						cede_province = DE9
-						add_core = DE9
 					}
 					create_subject = {
 						subject = DE9
@@ -2254,7 +2576,15 @@ country_decisions = {
 			}
 			modifier = {
 				factor = 0.1
-				calc_true_if = { all_subject_country = { is_subject_of_type = dominion } amount = 3 }
+				calc_true_if = {
+					all_subject_country = {
+						OR = {
+							is_subject_of_type = dominion
+							is_subject_of_type = autonomous_dominion
+						}
+					}
+					amount = 3
+				}
 			}
 		}
 	}
@@ -2339,6 +2669,13 @@ country_decisions = {
 					is_in_capital_area = no
 				}
 			}
+			trade_company_burma = {
+				type = all
+				OR = {
+					NOT = { owned_by = ROOT }
+					is_in_capital_area = no
+				}
+			}
 		}
 		allow = {
 			treasury = 5000
@@ -2348,8 +2685,13 @@ country_decisions = {
 				has_idea_group = exploration_ideas
 				has_idea_group = trade_ideas
 			}
-			trade_company_indochina = {
-				owned_by = ROOT
+			OR = {
+				trade_company_indochina = {
+					owned_by = ROOT
+				}
+				trade_company_burma = {
+					owned_by = ROOT
+				}
 			}
 		}
 		effect = {
@@ -2371,9 +2713,27 @@ country_decisions = {
 						limit = {
 							owned_by = ROOT
 						}
-						remove_core = ROOT
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DC1
+						}
 						cede_province = DC1
-						add_core = DC1
+					}
+					trade_company_burma = {
+						limit = {
+							owned_by = ROOT
+						}
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DC1
+						}
+						cede_province = DC1
 					}
 					create_subject = {
 						subject = DC1
@@ -2430,9 +2790,27 @@ country_decisions = {
 						limit = {
 							owned_by = ROOT
 						}
-						remove_core = ROOT
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DC2
+						}
 						cede_province = DC2
-						add_core = DC2
+					}
+					trade_company_burma = {
+						limit = {
+							owned_by = ROOT
+						}
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DC2
+						}
+						cede_province = DC2
 					}
 					create_subject = {
 						subject = DC2
@@ -2491,9 +2869,27 @@ country_decisions = {
 						limit = {
 							owned_by = ROOT
 						}
-						remove_core = ROOT
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DC3
+						}
 						cede_province = DC3
-						add_core = DC3
+					}
+					trade_company_burma = {
+						limit = {
+							owned_by = ROOT
+						}
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DC3
+						}
+						cede_province = DC3
 					}
 					create_subject = {
 						subject = DC3
@@ -2552,9 +2948,27 @@ country_decisions = {
 						limit = {
 							owned_by = ROOT
 						}
-						remove_core = ROOT
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DC4
+						}
 						cede_province = DC4
-						add_core = DC4
+					}
+					trade_company_burma = {
+						limit = {
+							owned_by = ROOT
+						}
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DC4
+						}
+						cede_province = DC4
 					}
 					create_subject = {
 						subject = DC4
@@ -2610,9 +3024,27 @@ country_decisions = {
 						limit = {
 							owned_by = ROOT
 						}
-						remove_core = ROOT
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DC5
+						}
 						cede_province = DC5
-						add_core = DC5
+					}
+					trade_company_burma = {
+						limit = {
+							owned_by = ROOT
+						}
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DC5
+						}
+						cede_province = DC5
 					}
 					create_subject = {
 						subject = DC5
@@ -2665,9 +3097,27 @@ country_decisions = {
 						limit = {
 							owned_by = ROOT
 						}
-						remove_core = ROOT
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DC6
+						}
 						cede_province = DC6
-						add_core = DC6
+					}
+					trade_company_burma = {
+						limit = {
+							owned_by = ROOT
+						}
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DC6
+						}
+						cede_province = DC6
 					}
 					create_subject = {
 						subject = DC6
@@ -2719,9 +3169,27 @@ country_decisions = {
 						limit = {
 							owned_by = ROOT
 						}
-						remove_core = ROOT
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DC7
+						}
 						cede_province = DC7
-						add_core = DC7
+					}
+					trade_company_burma = {
+						limit = {
+							owned_by = ROOT
+						}
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DC7
+						}
+						cede_province = DC7
 					}
 					create_subject = {
 						subject = DC7
@@ -2812,15 +3280,30 @@ country_decisions = {
 			}
 			modifier = {
 				factor = 0
-				trade_company_indochina = {
-					type = all
-					owned_by = ROOT
-					is_state = yes
+				OR = {
+					trade_company_indochina = {
+						type = all
+						owned_by = ROOT
+						is_state = yes
+					}
+					trade_company_burma = {
+						type = all
+						owned_by = ROOT
+						is_state = yes
+					}
 				}
 			}
 			modifier = {
 				factor = 0.1
-				calc_true_if = { all_subject_country = { is_subject_of_type = dominion } amount = 3 }
+				calc_true_if = {
+					all_subject_country = {
+						OR = {
+							is_subject_of_type = dominion
+							is_subject_of_type = autonomous_dominion
+						}
+					}
+					amount = 3
+				}
 			}
 		}
 	}
@@ -2943,9 +3426,14 @@ country_decisions = {
 						limit = {
 							owned_by = ROOT
 						}
-						remove_core = ROOT
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DW1
+						}
 						cede_province = DW1
-						add_core = DW1
 					}
 					create_subject = {
 						subject = DW1
@@ -3002,9 +3490,14 @@ country_decisions = {
 						limit = {
 							owned_by = ROOT
 						}
-						remove_core = ROOT
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DW2
+						}
 						cede_province = DW2
-						add_core = DW2
 					}
 					create_subject = {
 						subject = DW2
@@ -3063,9 +3556,14 @@ country_decisions = {
 						limit = {
 							owned_by = ROOT
 						}
-						remove_core = ROOT
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DW3
+						}
 						cede_province = DW3
-						add_core = DW3
 					}
 					create_subject = {
 						subject = DW3
@@ -3124,9 +3622,14 @@ country_decisions = {
 						limit = {
 							owned_by = ROOT
 						}
-						remove_core = ROOT
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DW4
+						}
 						cede_province = DW4
-						add_core = DW4
 					}
 					create_subject = {
 						subject = DW4
@@ -3182,9 +3685,14 @@ country_decisions = {
 						limit = {
 							owned_by = ROOT
 						}
-						remove_core = ROOT
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DW5
+						}
 						cede_province = DW5
-						add_core = DW5
 					}
 					create_subject = {
 						subject = DW5
@@ -3237,9 +3745,14 @@ country_decisions = {
 						limit = {
 							owned_by = ROOT
 						}
-						remove_core = ROOT
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DW6
+						}
 						cede_province = DW6
-						add_core = DW6
 					}
 					create_subject = {
 						subject = DW6
@@ -3291,9 +3804,14 @@ country_decisions = {
 						limit = {
 							owned_by = ROOT
 						}
-						remove_core = ROOT
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DW7
+						}
 						cede_province = DW7
-						add_core = DW7
 					}
 					create_subject = {
 						subject = DW7
@@ -3393,7 +3911,15 @@ country_decisions = {
 			}
 			modifier = {
 				factor = 0.1
-				calc_true_if = { all_subject_country = { is_subject_of_type = dominion } amount = 3 }
+				calc_true_if = {
+					all_subject_country = {
+						OR = {
+							is_subject_of_type = dominion
+							is_subject_of_type = autonomous_dominion
+						}
+					}
+					amount = 3
+				}
 			}
 		}
 	}
@@ -3516,9 +4042,14 @@ country_decisions = {
 						limit = {
 							owned_by = ROOT
 						}
-						remove_core = ROOT
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DS1
+						}
 						cede_province = DS1
-						add_core = DS1
 					}
 					create_subject = {
 						subject = DS1
@@ -3575,9 +4106,14 @@ country_decisions = {
 						limit = {
 							owned_by = ROOT
 						}
-						remove_core = ROOT
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DS2
+						}
 						cede_province = DS2
-						add_core = DS2
 					}
 					create_subject = {
 						subject = DS2
@@ -3636,9 +4172,14 @@ country_decisions = {
 						limit = {
 							owned_by = ROOT
 						}
-						remove_core = ROOT
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DS3
+						}
 						cede_province = DS3
-						add_core = DS3
 					}
 					create_subject = {
 						subject = DS3
@@ -3697,9 +4238,14 @@ country_decisions = {
 						limit = {
 							owned_by = ROOT
 						}
-						remove_core = ROOT
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DS4
+						}
 						cede_province = DS4
-						add_core = DS4
 					}
 					create_subject = {
 						subject = DS4
@@ -3755,9 +4301,14 @@ country_decisions = {
 						limit = {
 							owned_by = ROOT
 						}
-						remove_core = ROOT
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DS5
+						}
 						cede_province = DS5
-						add_core = DS5
 					}
 					create_subject = {
 						subject = DS5
@@ -3810,9 +4361,14 @@ country_decisions = {
 						limit = {
 							owned_by = ROOT
 						}
-						remove_core = ROOT
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DS6
+						}
 						cede_province = DS6
-						add_core = DS6
 					}
 					create_subject = {
 						subject = DS6
@@ -3864,9 +4420,14 @@ country_decisions = {
 						limit = {
 							owned_by = ROOT
 						}
-						remove_core = ROOT
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DS7
+						}
 						cede_province = DS7
-						add_core = DS7
 					}
 					create_subject = {
 						subject = DS7
@@ -3962,7 +4523,15 @@ country_decisions = {
 			}
 			modifier = {
 				factor = 0.1
-				calc_true_if = { all_subject_country = { is_subject_of_type = dominion } amount = 3 }
+				calc_true_if = {
+					all_subject_country = {
+						OR = {
+							is_subject_of_type = dominion
+							is_subject_of_type = autonomous_dominion
+						}
+					}
+					amount = 3
+				}
 			}
 		}
 	}
@@ -4085,9 +4654,14 @@ country_decisions = {
 						limit = {
 							owned_by = ROOT
 						}
-						remove_core = ROOT
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DA1
+						}
 						cede_province = DA1
-						add_core = DA1
 					}
 					create_subject = {
 						subject = DA1
@@ -4144,9 +4718,14 @@ country_decisions = {
 						limit = {
 							owned_by = ROOT
 						}
-						remove_core = ROOT
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DA2
+						}
 						cede_province = DA2
-						add_core = DA2
 					}
 					create_subject = {
 						subject = DA2
@@ -4205,9 +4784,14 @@ country_decisions = {
 						limit = {
 							owned_by = ROOT
 						}
-						remove_core = ROOT
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DA3
+						}
 						cede_province = DA3
-						add_core = DA3
 					}
 					create_subject = {
 						subject = DA3
@@ -4266,9 +4850,14 @@ country_decisions = {
 						limit = {
 							owned_by = ROOT
 						}
-						remove_core = ROOT
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DA4
+						}
 						cede_province = DA4
-						add_core = DA4
 					}
 					create_subject = {
 						subject = DA4
@@ -4324,9 +4913,14 @@ country_decisions = {
 						limit = {
 							owned_by = ROOT
 						}
-						remove_core = ROOT
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DA5
+						}
 						cede_province = DA5
-						add_core = DA5
 					}
 					create_subject = {
 						subject = DA5
@@ -4379,9 +4973,14 @@ country_decisions = {
 						limit = {
 							owned_by = ROOT
 						}
-						remove_core = ROOT
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DA6
+						}
 						cede_province = DA6
-						add_core = DA6
 					}
 					create_subject = {
 						subject = DA6
@@ -4433,9 +5032,14 @@ country_decisions = {
 						limit = {
 							owned_by = ROOT
 						}
-						remove_core = ROOT
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DA7
+						}
 						cede_province = DA7
-						add_core = DA7
 					}
 					create_subject = {
 						subject = DA7
@@ -4531,7 +5135,15 @@ country_decisions = {
 			}
 			modifier = {
 				factor = 0.1
-				calc_true_if = { all_subject_country = { is_subject_of_type = dominion } amount = 3 }
+				calc_true_if = {
+					all_subject_country = {
+						OR = {
+							is_subject_of_type = dominion
+							is_subject_of_type = autonomous_dominion
+						}
+					}
+					amount = 3
+				}
 			}
 		}
 	}
@@ -4681,9 +5293,14 @@ country_decisions = {
 						limit = {
 							owned_by = ROOT
 						}
-						remove_core = ROOT
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DP1
+						}
 						cede_province = DP1
-						add_core = DP1
 					}
 					create_subject = {
 						subject = DP1
@@ -4746,9 +5363,14 @@ country_decisions = {
 						limit = {
 							owned_by = ROOT
 						}
-						remove_core = ROOT
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DP2
+						}
 						cede_province = DP2
-						add_core = DP2
 					}
 					create_subject = {
 						subject = DP2
@@ -4821,9 +5443,14 @@ country_decisions = {
 						limit = {
 							owned_by = ROOT
 						}
-						remove_core = ROOT
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DP3
+						}
 						cede_province = DP3
-						add_core = DP3
 					}
 					create_subject = {
 						subject = DP3
@@ -4888,9 +5515,14 @@ country_decisions = {
 						limit = {
 							owned_by = ROOT
 						}
-						remove_core = ROOT
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DP4
+						}
 						cede_province = DP4
-						add_core = DP4
 					}
 					create_subject = {
 						subject = DP4
@@ -4960,9 +5592,14 @@ country_decisions = {
 						limit = {
 							owned_by = ROOT
 						}
-						remove_core = ROOT
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DP5
+						}
 						cede_province = DP5
-						add_core = DP5
 					}
 					create_subject = {
 						subject = DP5
@@ -5035,9 +5672,14 @@ country_decisions = {
 						limit = {
 							owned_by = ROOT
 						}
-						remove_core = ROOT
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DP6
+						}
 						cede_province = DP6
-						add_core = DP6
 					}
 					create_subject = {
 						subject = DP6
@@ -5100,9 +5742,14 @@ country_decisions = {
 						limit = {
 							owned_by = ROOT
 						}
-						remove_core = ROOT
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DP7
+						}
 						cede_province = DP7
-						add_core = DP7
 					}
 					create_subject = {
 						subject = DP7
@@ -5160,9 +5807,14 @@ country_decisions = {
 						limit = {
 							owned_by = ROOT
 						}
-						remove_core = ROOT
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DP8
+						}
 						cede_province = DP8
-						add_core = DP8
 					}
 					create_subject = {
 						subject = DP8
@@ -5220,9 +5872,14 @@ country_decisions = {
 						limit = {
 							owned_by = ROOT
 						}
-						remove_core = ROOT
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DP9
+						}
 						cede_province = DP9
-						add_core = DP9
 					}
 					create_subject = {
 						subject = DP9
@@ -5331,7 +5988,15 @@ country_decisions = {
 			}
 			modifier = {
 				factor = 0.1
-				calc_true_if = { all_subject_country = { is_subject_of_type = dominion } amount = 3 }
+				calc_true_if = {
+					all_subject_country = {
+						OR = {
+							is_subject_of_type = dominion
+							is_subject_of_type = autonomous_dominion
+						}
+					}
+					amount = 3
+				}
 			}
 		}
 	}

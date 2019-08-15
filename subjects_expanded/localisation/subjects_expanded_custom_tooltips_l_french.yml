@@ -43,7 +43,7 @@
  ALL_PROVINCES_IN_SOUTH_AFRICA_TRADE_COMPANY_REGIONS_CEDED_TO_DOMINION: "\nAll our provinces in the trade company region §YSouth African Charter§! are ceded to our dominion \n[Root.GetCreatedADNameSouthAfrica], which is released there."
  ALL_PROVINCES_IN_WEST_AFRICA_TRADE_COMPANY_REGIONS_CEDED_TO_DOMINION: "\nAll our provinces in the trade company region §YWest African Charter§! are ceded to our dominion \n[Root.GetCreatedADNameWestAfrica], which is released there."
  ALL_PROVINCES_IN_EAST_AFRICA_TRADE_COMPANY_REGIONS_CEDED_TO_DOMINION: "\nAll our provinces in the trade company region §YEast African Charter§! are ceded to our dominion \n[Root.GetCreatedADNameEastAfrica], which is released there."
- ALL_PROVINCES_IN_INDOCHINA_TRADE_COMPANY_REGIONS_CEDED_TO_DOMINION: "\nAll our provinces in the trade company region §YIndochinese Charter§! are ceded to our dominion \n[Root.GetCreatedADNameIndochina], which is released there."
+ ALL_PROVINCES_IN_INDOCHINA_TRADE_COMPANY_REGIONS_CEDED_TO_DOMINION: "\nAll our provinces in [Root.GetIndochinaTradeCompanyRegionsSgPl] [Root.GetFirstIndochinaTradeCompanyRegionWeCede][Root.GetSecondIndochinaTradeCompanyRegionWeCede] are ceded to our dominion \n[Root.GetCreatedADNameIndochina], which is released there."
  ALL_PROVINCES_IN_PHILIPPINES_TRADE_COMPANY_REGIONS_CEDED_TO_DOMINION: "\nAll our provinces in the trade company region §YPhilippine Charter§! are ceded to our dominion \n[Root.GetCreatedADNamePhilippines], which is released there."
  
  # Events:

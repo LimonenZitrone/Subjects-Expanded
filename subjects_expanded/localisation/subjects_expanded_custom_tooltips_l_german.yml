@@ -43,7 +43,7 @@
  ALL_PROVINCES_IN_SOUTH_AFRICA_TRADE_COMPANY_REGIONS_CEDED_TO_DOMINION: "\nAlle unsere Provinzen in der Handelshaus-Region §YSüdafrikanische Handelsregion§! werden an unser dort entlassenes Herrschaftsgebiet \n[Root.GetCreatedADNameSouthAfrica] abgetreten."
  ALL_PROVINCES_IN_WEST_AFRICA_TRADE_COMPANY_REGIONS_CEDED_TO_DOMINION: "\nAlle unsere Provinzen in der Handelshaus-Region §YWestafrikanische Handelsregion§! werden an unser dort entlassenes Herrschaftsgebiet \n[Root.GetCreatedADNameWestAfrica] abgetreten."
  ALL_PROVINCES_IN_EAST_AFRICA_TRADE_COMPANY_REGIONS_CEDED_TO_DOMINION: "\nAlle unsere Provinzen in der Handelshaus-Region §YOstafrikanische Handelsregion§! werden an unser dort entlassenes Herrschaftsgebiet \n[Root.GetCreatedADNameEastAfrica] abgetreten."
- ALL_PROVINCES_IN_INDOCHINA_TRADE_COMPANY_REGIONS_CEDED_TO_DOMINION: "\nAlle unsere Provinzen in der Handelshaus-Region §YIndochinesische Handelsregion§! werden an unser dort entlassenes Herrschaftsgebiet \n[Root.GetCreatedADNameIndochina] abgetreten."
+ ALL_PROVINCES_IN_INDOCHINA_TRADE_COMPANY_REGIONS_CEDED_TO_DOMINION: "\nAlle unsere Provinzen in [Root.GetIndochinaTradeCompanyRegionsSgPl] [Root.GetFirstIndochinaTradeCompanyRegionWeCede][Root.GetSecondIndochinaTradeCompanyRegionWeCede] werden an unser dort entlassenes Herrschaftsgebiet \n[Root.GetCreatedADNameIndochina] abgetreten."
  ALL_PROVINCES_IN_PHILIPPINES_TRADE_COMPANY_REGIONS_CEDED_TO_DOMINION: "\nAlle unsere Provinzen in der Handelshaus-Region §YPhilippinische Handelsregion§! werden an unser dort entlassenes Herrschaftsgebiet \n[Root.GetCreatedADNamePhilippines] abgetreten."
  
  # Events:

@@ -94,6 +94,12 @@
  string_indonesian_trade_company_region: "[Root.GetFirstEastIndiesTradeCompanyRegionWeCedeComma]§YIndonesische Handelsregion§!"
  string_no_indonesian_trade_company_region: ""
  
+ string_indochina_trade_company_region: "§YIndochinesische Handelsregion§!"
+ string_no_indochina_trade_company_region: ""
+ 
+ string_burma_trade_company_region: "[Root.GetFirstIndochinaTradeCompanyRegionWeCedeComma]§YBurmanische Handelsregion§!"
+ string_no_burma_trade_company_region: ""
+ 
  string_trade_company_list_comma: ", "
  string_trade_company_list_no_comma: ""
  

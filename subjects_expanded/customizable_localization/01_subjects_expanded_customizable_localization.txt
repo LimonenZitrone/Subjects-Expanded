@@ -1116,3 +1116,86 @@ defined_text = {
         }
     }
 }
+
+defined_text = {
+    name = GetIndochinaTradeCompanyRegionsSgPl
+	random = no
+
+	text = {
+        localisation_key = string_trade_company_region_pl
+        trigger = {
+			trade_company_indochina = {
+				owned_by = ROOT
+			}
+			trade_company_burma = {
+				owned_by = ROOT
+			}
+        }
+    }
+	text = {
+        localisation_key = string_trade_company_region_sg
+        trigger = {
+			always = yes
+        }
+    }
+}
+
+defined_text = {
+    name = GetFirstIndochinaTradeCompanyRegionWeCede
+	random = no
+
+	text = {
+        localisation_key = string_indochina_trade_company_region
+        trigger = {
+			trade_company_indochina = {
+				owned_by = PREV
+			}
+        }
+    }
+	text = {
+        localisation_key = string_no_indochina_trade_company_region
+        trigger = {
+			always = yes
+        }
+    }
+}
+
+defined_text = {
+    name = GetFirstIndochinaTradeCompanyRegionWeCedeComma
+	random = no
+
+	text = {
+        localisation_key = string_trade_company_list_comma
+        trigger = {
+			trade_company_indochina = {
+				owned_by = PREV
+			}
+        }
+    }
+	text = {
+        localisation_key = string_trade_company_list_no_comma
+        trigger = {
+			always = yes
+        }
+    }
+}
+
+defined_text = {
+    name = GetSecondIndochinaTradeCompanyRegionWeCede
+	random = no
+
+	text = {
+        localisation_key = string_burma_trade_company_region
+        trigger = {
+			trade_company_burma = {
+				owned_by = PREV
+			}
+        }
+    }
+	text = {
+        localisation_key = string_no_burma_trade_company_region
+        trigger = {
+			always = yes
+        }
+    }
+}

@@ -44,6 +44,7 @@
  ALL_PROVINCES_IN_WEST_AFRICA_TRADE_COMPANY_REGIONS_CEDED_TO_DOMINION: "\nAlle unsere Provinzen in der Handelshaus-Region §YWestafrikanische Handelsregion§! werden an unser dort entlassenes Herrschaftsgebiet \n[Root.GetCreatedADNameWestAfrica] abgetreten."
  ALL_PROVINCES_IN_EAST_AFRICA_TRADE_COMPANY_REGIONS_CEDED_TO_DOMINION: "\nAlle unsere Provinzen in der Handelshaus-Region §YOstafrikanische Handelsregion§! werden an unser dort entlassenes Herrschaftsgebiet \n[Root.GetCreatedADNameEastAfrica] abgetreten."
  ALL_PROVINCES_IN_INDOCHINA_TRADE_COMPANY_REGIONS_CEDED_TO_DOMINION: "\nAlle unsere Provinzen in der Handelshaus-Region §YIndochinesische Handelsregion§! werden an unser dort entlassenes Herrschaftsgebiet \n[Root.GetCreatedADNameIndochina] abgetreten."
+ ALL_PROVINCES_IN_PHILIPPINES_TRADE_COMPANY_REGIONS_CEDED_TO_DOMINION: "\nAlle unsere Provinzen in der Handelshaus-Region §YPhilippinische Handelsregion§! werden an unser dort entlassenes Herrschaftsgebiet \n[Root.GetCreatedADNamePhilippines] abgetreten."
  
  # Events:
  ROMAN_CLIENT_KINGDOM_HEIR_ACCEPTED: "§Y[From.Heir.GetName] [From.Heir.Dynasty.GetName]§! (Anspruch: [From.GetHeirClaimText]) \n £adm£ [From.GetHeirAdm] £dip£ [From.GetHeirDip] £mil£ [From.GetHeirMil] \nist von nun an rechtmäßiger Thronfolger von: \n@[From.GetTag] §Y[From.GetName]§!.\n"

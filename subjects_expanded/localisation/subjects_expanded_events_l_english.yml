@@ -15,29 +15,33 @@
  subjects_expanded_dominion_events.EVTDESC2: "Our overlord made use of his right and demanded manpower for his army."
  subjects_expanded_dominion_events2.EVTOPT1: "Was this really necessary?"
  
- subjects_expanded_dominion_events.EVTNAME3: "Autonomous Dominion receives provinces"
- subjects_expanded_dominion_events.EVTDESC3: "Because we own provinces in Indian trade company regions, which are not connected to our capital and we have an autonomous dominion in these regions, we decided to cede those provinces to our autonomous dominion in India. All in all we will give them §R[Root.num_of_provinces_ceded_to_autonomous_dominion_india.GetValue]§! provinces."
+ subjects_expanded_dominion_events.EVTNAME3: "Dominion receives provinces"
+ subjects_expanded_dominion_events.EVTDESC3: "Because we own provinces in Indian trade company regions, which are not connected to our capital and we have a dominion in these regions, we decided to cede those provinces to our dominion in India. All in all we will give them §R[Root.num_of_provinces_ceded_to_autonomous_dominion_india.GetValue]§! provinces."
  subjects_expanded_dominion_events3.EVTOPT1: "All right."
  
- subjects_expanded_dominion_events.EVTNAME4: "Autonomous Dominion receives provinces"
- subjects_expanded_dominion_events.EVTDESC4: "Because we own provinces in East Indian / Indonesian trade company regions, which are not connected to our capital and we have an autonomous dominion in these regions, we decided to cede those provinces to our autonomous dominion in the East Indies / Indonesia. All in all we will give them §R[Root.num_of_provinces_ceded_to_autonomous_dominion_east_indies.GetValue]§! provinces."
+ subjects_expanded_dominion_events.EVTNAME4: "Dominion receives provinces"
+ subjects_expanded_dominion_events.EVTDESC4: "Because we own provinces in East Indian / Indonesian trade company regions, which are not connected to our capital and we have a dominion in these regions, we decided to cede those provinces to our dominion in the East Indies / Indonesia. All in all we will give them §R[Root.num_of_provinces_ceded_to_autonomous_dominion_east_indies.GetValue]§! provinces."
  subjects_expanded_dominion_events4.EVTOPT1: "All right."
  
- subjects_expanded_dominion_events.EVTNAME5: "Autonomous Dominion receives provinces"
- subjects_expanded_dominion_events.EVTDESC5: "Because we own provinces in Indochinese trade company regions, which are not connected to our capital and we have an autonomous dominion in these regions, we decided to cede those provinces to our autonomous dominion in Indochina. All in all we will give them §R[Root.num_of_provinces_ceded_to_autonomous_dominion_indochina.GetValue]§! provinces."
+ subjects_expanded_dominion_events.EVTNAME5: "Dominion receives provinces"
+ subjects_expanded_dominion_events.EVTDESC5: "Because we own provinces in Indochinese trade company regions, which are not connected to our capital and we have a dominion in these regions, we decided to cede those provinces to our dominion in Indochina. All in all we will give them §R[Root.num_of_provinces_ceded_to_autonomous_dominion_indochina.GetValue]§! provinces."
  subjects_expanded_dominion_events5.EVTOPT1: "All right."
  
- subjects_expanded_dominion_events.EVTNAME6: "Autonomous Dominion receives provinces"
- subjects_expanded_dominion_events.EVTDESC6: "Because we own provinces in West African trade company regions, which are not connected to our capital and we have an autonomous dominion in these regions, we decided to cede those provinces to our autonomous dominion in West Africa. All in all we will give them §R[Root.num_of_provinces_ceded_to_autonomous_dominion_west_africa.GetValue]§! provinces."
+ subjects_expanded_dominion_events.EVTNAME6: "Dominion receives provinces"
+ subjects_expanded_dominion_events.EVTDESC6: "Because we own provinces in West African trade company regions, which are not connected to our capital and we have a dominion in these regions, we decided to cede those provinces to our dominion in West Africa. All in all we will give them §R[Root.num_of_provinces_ceded_to_autonomous_dominion_west_africa.GetValue]§! provinces."
  subjects_expanded_dominion_events6.EVTOPT1: "All right."
  
- subjects_expanded_dominion_events.EVTNAME7: "Autonomous Dominion receives provinces"
- subjects_expanded_dominion_events.EVTDESC7: "Because we own provinces in East African trade company regions, which are not connected to our capital and we have an autonomous dominion in these regions, we decided to cede those provinces to our autonomous dominion in East Africa. All in all we will give them §R[Root.num_of_provinces_ceded_to_autonomous_dominion_east_africa.GetValue]§! provinces."
+ subjects_expanded_dominion_events.EVTNAME7: "Dominion receives provinces"
+ subjects_expanded_dominion_events.EVTDESC7: "Because we own provinces in East African trade company regions, which are not connected to our capital and we have a dominion in these regions, we decided to cede those provinces to our dominion in East Africa. All in all we will give them §R[Root.num_of_provinces_ceded_to_autonomous_dominion_east_africa.GetValue]§! provinces."
  subjects_expanded_dominion_events7.EVTOPT1: "All right."
  
- subjects_expanded_dominion_events.EVTNAME8: "Autonomous Dominion receives provinces"
- subjects_expanded_dominion_events.EVTDESC8: "Because we own provinces in South African trade company regions, which are not connected to our capital and we have an autonomous dominion in these regions, we decided to cede those provinces to our autonomous dominion in South Africa. All in all we will give them §R[Root.num_of_provinces_ceded_to_autonomous_dominion_south_africa.GetValue]§! provinces."
+ subjects_expanded_dominion_events.EVTNAME8: "Dominion receives provinces"
+ subjects_expanded_dominion_events.EVTDESC8: "Because we own provinces in South African trade company regions, which are not connected to our capital and we have a dominion in these regions, we decided to cede those provinces to our dominion in South Africa. All in all we will give them §R[Root.num_of_provinces_ceded_to_autonomous_dominion_south_africa.GetValue]§! provinces."
  subjects_expanded_dominion_events8.EVTOPT1: "All right."
+ 
+ subjects_expanded_dominion_events.EVTNAME9: "Dominion receives provinces"
+ subjects_expanded_dominion_events.EVTDESC9: "Because we own provinces in the Philippine trade company regions, which are not connected to our capital and we have a dominion in these regions, we decided to cede those provinces to our dominion in the Philippines. All in all we will give them §R[Root.num_of_provinces_ceded_to_autonomous_dominion_philippines.GetValue]§! provinces."
+ subjects_expanded_dominion_events9.EVTOPT1: "All right."
  
  subjects_expanded_roman_client_kingdom_events.EVTNAME1: "Roman Client Kingdom"
  subjects_expanded_roman_client_kingdom_events.EVTDESC1: "We lost the war against [From.GetName]. They made us to their Roman Client Kingdom and sentenced our ruler [Root.Monarch.GetName] [Root.Monarch.Dynasty.GetName] to death because of his resistance."

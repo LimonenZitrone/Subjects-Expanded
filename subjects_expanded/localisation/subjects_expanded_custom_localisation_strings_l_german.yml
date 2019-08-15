@@ -62,6 +62,16 @@
  string_created_ad_name_west_africa_6: "@DW6 §Y[DW6.GetName]§!"
  string_created_ad_name_west_africa_7: "@DW7 §Y[DW7.GetName]§!"
  
+ string_created_ad_name_philippines_1: "@DP1 §Y[DP1.GetName]§!"
+ string_created_ad_name_philippines_2: "@DP2 §Y[DP2.GetName]§!"
+ string_created_ad_name_philippines_3: "@DP3 §Y[DP3.GetName]§!"
+ string_created_ad_name_philippines_4: "@DP4 §Y[DP4.GetName]§!"
+ string_created_ad_name_philippines_5: "@DP5 §Y[DP5.GetName]§!"
+ string_created_ad_name_philippines_6: "@DP6 §Y[DP6.GetName]§!"
+ string_created_ad_name_philippines_7: "@DP7 §Y[DP7.GetName]§!"
+ string_created_ad_name_philippines_8: "@DP8 §Y[DP8.GetName]§!"
+ string_created_ad_name_philippines_9: "@DP9 §Y[DP9.GetName]§!"
+ 
  
  string_west_indian_trade_company_region: "§YWestindische Handelsregion§!"
  string_no_west_indian_trade_company_region: ""

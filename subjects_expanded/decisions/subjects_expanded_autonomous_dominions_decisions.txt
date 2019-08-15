@@ -71,17 +71,7 @@ country_decisions = {
 			}
 			NOT = {
 				any_subject_country = {
-					OR = {
-						tag = DI1
-						tag = DI2
-						tag = DI3
-						tag = DI4
-						tag = DI5
-						tag = DI6
-						tag = DI7
-						tag = DI8
-						tag = DI9
-					}
+					is_dominion_tag_in_india = yes
 				}
 			}
 			trade_company_west_india = {
@@ -149,6 +139,7 @@ country_decisions = {
 		effect = {
 			add_treasury = -5000
 			custom_tooltip = ALL_PROVINCES_IN_INDIAN_TRADE_COMPANY_REGIONS_CEDED_TO_DOMINION
+			set_country_flag = is_releasing_dominion_in_trade_company_region
 			# British India:
 			if = {
 				limit = {
@@ -201,7 +192,6 @@ country_decisions = {
 						cede_province = DI1
 						add_core = DI1
 					}
-					
 					create_subject = {
 						subject = DI1
 						subject_type = dominion
@@ -324,7 +314,6 @@ country_decisions = {
 						cede_province = DI2
 						add_core = DI2
 					}
-					
 					create_subject = {
 						subject = DI2
 						subject_type = dominion
@@ -449,7 +438,6 @@ country_decisions = {
 						cede_province = DI3
 						add_core = DI3
 					}
-					
 					create_subject = {
 						subject = DI3
 						subject_type = dominion
@@ -574,7 +562,6 @@ country_decisions = {
 						cede_province = DI4
 						add_core = DI4
 					}
-					
 					create_subject = {
 						subject = DI4
 						subject_type = dominion
@@ -696,7 +683,6 @@ country_decisions = {
 						cede_province = DI5
 						add_core = DI5
 					}
-					
 					create_subject = {
 						subject = DI5
 						subject_type = dominion
@@ -815,7 +801,6 @@ country_decisions = {
 						cede_province = DI6
 						add_core = DI6
 					}
-					
 					create_subject = {
 						subject = DI6
 						subject_type = dominion
@@ -933,7 +918,6 @@ country_decisions = {
 						cede_province = DI7
 						add_core = DI7
 					}
-					
 					create_subject = {
 						subject = DI7
 						subject_type = dominion
@@ -1051,7 +1035,6 @@ country_decisions = {
 						cede_province = DI8
 						add_core = DI8
 					}
-					
 					create_subject = {
 						subject = DI8
 						subject_type = dominion
@@ -1169,7 +1152,6 @@ country_decisions = {
 						cede_province = DI9
 						add_core = DI9
 					}
-					
 					create_subject = {
 						subject = DI9
 						subject_type = dominion
@@ -1240,6 +1222,7 @@ country_decisions = {
 					}
 				}
 			}
+			clr_country_flag = is_releasing_dominion_in_trade_company_region
 		}
 		ai_will_do = {
 			factor = 10
@@ -1436,17 +1419,7 @@ country_decisions = {
 			}
 			NOT = {
 				any_subject_country = {
-					OR = {
-						tag = DE1
-						tag = DE2
-						tag = DE3
-						tag = DE4
-						tag = DE5
-						tag = DE6
-						tag = DE7
-						tag = DE8
-						tag = DE9
-					}
+					is_dominion_tag_in_east_indies = yes
 				}
 			}
 			trade_company_indonesia = {
@@ -1484,6 +1457,7 @@ country_decisions = {
 		effect = {
 			add_treasury = -5000
 			custom_tooltip = ALL_PROVINCES_IN_EAST_INDIES_TRADE_COMPANY_REGIONS_CEDED_TO_DOMINION
+			set_country_flag = is_releasing_dominion_in_trade_company_region
 			# British East Indies:
 			if = {
 				limit = {
@@ -1502,7 +1476,6 @@ country_decisions = {
 						remove_core = ROOT
 						cede_province = DE1
 						add_core = DE1
-
 					}
 					trade_company_moluccas = {
 						limit = {
@@ -1512,7 +1485,6 @@ country_decisions = {
 						cede_province = DE1
 						add_core = DE1
 					}
-					
 					create_subject = {
 						subject = DE1
 						subject_type = dominion
@@ -1591,7 +1563,6 @@ country_decisions = {
 						remove_core = ROOT
 						cede_province = DE2
 						add_core = DE2
-
 					}
 					trade_company_moluccas = {
 						limit = {
@@ -1601,7 +1572,6 @@ country_decisions = {
 						cede_province = DE2
 						add_core = DE2
 					}
-					
 					create_subject = {
 						subject = DE2
 						subject_type = dominion
@@ -1674,7 +1644,6 @@ country_decisions = {
 						remove_core = ROOT
 						cede_province = DE3
 						add_core = DE3
-
 					}
 					trade_company_moluccas = {
 						limit = {
@@ -1684,7 +1653,6 @@ country_decisions = {
 						cede_province = DE3
 						add_core = DE3
 					}
-					
 					create_subject = {
 						subject = DE3
 						subject_type = dominion
@@ -1757,7 +1725,6 @@ country_decisions = {
 						remove_core = ROOT
 						cede_province = DE4
 						add_core = DE4
-
 					}
 					trade_company_moluccas = {
 						limit = {
@@ -1767,7 +1734,6 @@ country_decisions = {
 						cede_province = DE4
 						add_core = DE4
 					}
-					
 					create_subject = {
 						subject = DE4
 						subject_type = dominion
@@ -1845,7 +1811,6 @@ country_decisions = {
 						remove_core = ROOT
 						cede_province = DE5
 						add_core = DE5
-
 					}
 					trade_company_moluccas = {
 						limit = {
@@ -1855,7 +1820,6 @@ country_decisions = {
 						cede_province = DE5
 						add_core = DE5
 					}
-					
 					create_subject = {
 						subject = DE5
 						subject_type = dominion
@@ -1930,7 +1894,6 @@ country_decisions = {
 						remove_core = ROOT
 						cede_province = DE6
 						add_core = DE6
-
 					}
 					trade_company_moluccas = {
 						limit = {
@@ -1940,7 +1903,6 @@ country_decisions = {
 						cede_province = DE6
 						add_core = DE6
 					}
-					
 					create_subject = {
 						subject = DE6
 						subject_type = dominion
@@ -2011,7 +1973,6 @@ country_decisions = {
 						remove_core = ROOT
 						cede_province = DE7
 						add_core = DE7
-
 					}
 					trade_company_moluccas = {
 						limit = {
@@ -2021,7 +1982,6 @@ country_decisions = {
 						cede_province = DE7
 						add_core = DE7
 					}
-					
 					create_subject = {
 						subject = DE7
 						subject_type = dominion
@@ -2087,7 +2047,6 @@ country_decisions = {
 						remove_core = ROOT
 						cede_province = DE8
 						add_core = DE8
-
 					}
 					trade_company_moluccas = {
 						limit = {
@@ -2097,7 +2056,6 @@ country_decisions = {
 						cede_province = DE8
 						add_core = DE8
 					}
-					
 					create_subject = {
 						subject = DE8
 						subject_type = dominion
@@ -2163,7 +2121,6 @@ country_decisions = {
 						remove_core = ROOT
 						cede_province = DE9
 						add_core = DE9
-
 					}
 					trade_company_moluccas = {
 						limit = {
@@ -2173,7 +2130,6 @@ country_decisions = {
 						cede_province = DE9
 						add_core = DE9
 					}
-					
 					create_subject = {
 						subject = DE9
 						subject_type = dominion
@@ -2226,6 +2182,7 @@ country_decisions = {
 					}
 				}
 			}
+			clr_country_flag = is_releasing_dominion_in_trade_company_region
 		}
 		ai_will_do = {
 			factor = 10
@@ -2372,15 +2329,7 @@ country_decisions = {
 			}
 			NOT = {
 				any_subject_country = {
-					OR = {
-						tag = DC1
-						tag = DC2
-						tag = DC3
-						tag = DC4
-						tag = DC5
-						tag = DC6
-						tag = DC7
-					}
+					is_dominion_tag_in_indochina = yes
 				}
 			}
 			trade_company_indochina = {
@@ -2406,6 +2355,7 @@ country_decisions = {
 		effect = {
 			add_treasury = -5000
 			custom_tooltip = ALL_PROVINCES_IN_INDOCHINA_TRADE_COMPANY_REGIONS_CEDED_TO_DOMINION
+			set_country_flag = is_releasing_dominion_in_trade_company_region
 			# British Indochina:
 			if = {
 				limit = {
@@ -2424,9 +2374,7 @@ country_decisions = {
 						remove_core = ROOT
 						cede_province = DC1
 						add_core = DC1
-
 					}
-					
 					create_subject = {
 						subject = DC1
 						subject_type = dominion
@@ -2485,9 +2433,7 @@ country_decisions = {
 						remove_core = ROOT
 						cede_province = DC2
 						add_core = DC2
-
 					}
-					
 					create_subject = {
 						subject = DC2
 						subject_type = dominion
@@ -2548,9 +2494,7 @@ country_decisions = {
 						remove_core = ROOT
 						cede_province = DC3
 						add_core = DC3
-
 					}
-					
 					create_subject = {
 						subject = DC3
 						subject_type = dominion
@@ -2611,9 +2555,7 @@ country_decisions = {
 						remove_core = ROOT
 						cede_province = DC4
 						add_core = DC4
-
 					}
-					
 					create_subject = {
 						subject = DC4
 						subject_type = dominion
@@ -2671,9 +2613,7 @@ country_decisions = {
 						remove_core = ROOT
 						cede_province = DC5
 						add_core = DC5
-
 					}
-					
 					create_subject = {
 						subject = DC5
 						subject_type = dominion
@@ -2728,9 +2668,7 @@ country_decisions = {
 						remove_core = ROOT
 						cede_province = DC6
 						add_core = DC6
-
 					}
-					
 					create_subject = {
 						subject = DC6
 						subject_type = dominion
@@ -2784,9 +2722,7 @@ country_decisions = {
 						remove_core = ROOT
 						cede_province = DC7
 						add_core = DC7
-
 					}
-					
 					create_subject = {
 						subject = DC7
 						subject_type = dominion
@@ -2827,6 +2763,7 @@ country_decisions = {
 					}
 				}
 			}
+			clr_country_flag = is_releasing_dominion_in_trade_company_region
 		}
 		ai_will_do = {
 			factor = 10
@@ -2958,15 +2895,7 @@ country_decisions = {
 			}
 			NOT = {
 				any_subject_country = {
-					OR = {
-						tag = DW1
-						tag = DW2
-						tag = DW3
-						tag = DW4
-						tag = DW5
-						tag = DW6
-						tag = DW7
-					}
+					is_dominion_tag_in_west_africa = yes
 				}
 			}
 			trade_company_west_africa = {
@@ -2998,6 +2927,7 @@ country_decisions = {
 		effect = {
 			add_treasury = -5000
 			custom_tooltip = ALL_PROVINCES_IN_WEST_AFRICA_TRADE_COMPANY_REGIONS_CEDED_TO_DOMINION
+			set_country_flag = is_releasing_dominion_in_trade_company_region
 			# British West Africa:
 			if = {
 				limit = {
@@ -3016,9 +2946,7 @@ country_decisions = {
 						remove_core = ROOT
 						cede_province = DW1
 						add_core = DW1
-
 					}
-					
 					create_subject = {
 						subject = DW1
 						subject_type = dominion
@@ -3077,9 +3005,7 @@ country_decisions = {
 						remove_core = ROOT
 						cede_province = DW2
 						add_core = DW2
-
 					}
-					
 					create_subject = {
 						subject = DW2
 						subject_type = dominion
@@ -3140,9 +3066,7 @@ country_decisions = {
 						remove_core = ROOT
 						cede_province = DW3
 						add_core = DW3
-
 					}
-					
 					create_subject = {
 						subject = DW3
 						subject_type = dominion
@@ -3203,9 +3127,7 @@ country_decisions = {
 						remove_core = ROOT
 						cede_province = DW4
 						add_core = DW4
-
 					}
-					
 					create_subject = {
 						subject = DW4
 						subject_type = dominion
@@ -3263,9 +3185,7 @@ country_decisions = {
 						remove_core = ROOT
 						cede_province = DW5
 						add_core = DW5
-
 					}
-					
 					create_subject = {
 						subject = DW5
 						subject_type = dominion
@@ -3320,9 +3240,7 @@ country_decisions = {
 						remove_core = ROOT
 						cede_province = DW6
 						add_core = DW6
-
 					}
-					
 					create_subject = {
 						subject = DW6
 						subject_type = dominion
@@ -3376,9 +3294,7 @@ country_decisions = {
 						remove_core = ROOT
 						cede_province = DW7
 						add_core = DW7
-
 					}
-					
 					create_subject = {
 						subject = DW7
 						subject_type = dominion
@@ -3419,6 +3335,7 @@ country_decisions = {
 					}
 				}
 			}
+			clr_country_flag = is_releasing_dominion_in_trade_company_region
 		}
 		ai_will_do = {
 			factor = 10
@@ -3551,15 +3468,7 @@ country_decisions = {
 			}
 			NOT = {
 				any_subject_country = {
-					OR = {
-						tag = DS1
-						tag = DS2
-						tag = DS3
-						tag = DS4
-						tag = DS5
-						tag = DS6
-						tag = DS7
-					}
+					is_dominion_tag_in_south_africa = yes
 				}
 			}
 			trade_company_south_africa = {
@@ -3591,6 +3500,7 @@ country_decisions = {
 		effect = {
 			add_treasury = -5000
 			custom_tooltip = ALL_PROVINCES_IN_SOUTH_AFRICA_TRADE_COMPANY_REGIONS_CEDED_TO_DOMINION
+			set_country_flag = is_releasing_dominion_in_trade_company_region
 			# British South Africa:
 			if = {
 				limit = {
@@ -3609,9 +3519,7 @@ country_decisions = {
 						remove_core = ROOT
 						cede_province = DS1
 						add_core = DS1
-
 					}
-					
 					create_subject = {
 						subject = DS1
 						subject_type = dominion
@@ -3670,9 +3578,7 @@ country_decisions = {
 						remove_core = ROOT
 						cede_province = DS2
 						add_core = DS2
-
 					}
-					
 					create_subject = {
 						subject = DS2
 						subject_type = dominion
@@ -3733,9 +3639,7 @@ country_decisions = {
 						remove_core = ROOT
 						cede_province = DS3
 						add_core = DS3
-
 					}
-					
 					create_subject = {
 						subject = DS3
 						subject_type = dominion
@@ -3796,9 +3700,7 @@ country_decisions = {
 						remove_core = ROOT
 						cede_province = DS4
 						add_core = DS4
-
 					}
-					
 					create_subject = {
 						subject = DS4
 						subject_type = dominion
@@ -3856,9 +3758,7 @@ country_decisions = {
 						remove_core = ROOT
 						cede_province = DS5
 						add_core = DS5
-
 					}
-					
 					create_subject = {
 						subject = DS5
 						subject_type = dominion
@@ -3913,9 +3813,7 @@ country_decisions = {
 						remove_core = ROOT
 						cede_province = DS6
 						add_core = DS6
-
 					}
-					
 					create_subject = {
 						subject = DS6
 						subject_type = dominion
@@ -3969,9 +3867,7 @@ country_decisions = {
 						remove_core = ROOT
 						cede_province = DS7
 						add_core = DS7
-
 					}
-					
 					create_subject = {
 						subject = DS7
 						subject_type = dominion
@@ -4012,6 +3908,7 @@ country_decisions = {
 					}
 				}
 			}
+			clr_country_flag = is_releasing_dominion_in_trade_company_region
 		}
 		ai_will_do = {
 			factor = 10
@@ -4140,15 +4037,7 @@ country_decisions = {
 			}
 			NOT = {
 				any_subject_country = {
-					OR = {
-						tag = DA1
-						tag = DA2
-						tag = DA3
-						tag = DA4
-						tag = DA5
-						tag = DA6
-						tag = DA7
-					}
+					is_dominion_tag_in_east_africa = yes
 				}
 			}
 			trade_company_east_africa = {
@@ -4180,6 +4069,7 @@ country_decisions = {
 		effect = {
 			add_treasury = -5000
 			custom_tooltip = ALL_PROVINCES_IN_EAST_AFRICA_TRADE_COMPANY_REGIONS_CEDED_TO_DOMINION
+			set_country_flag = is_releasing_dominion_in_trade_company_region
 			# British East Africa:
 			if = {
 				limit = {
@@ -4198,9 +4088,7 @@ country_decisions = {
 						remove_core = ROOT
 						cede_province = DA1
 						add_core = DA1
-
 					}
-					
 					create_subject = {
 						subject = DA1
 						subject_type = dominion
@@ -4259,9 +4147,7 @@ country_decisions = {
 						remove_core = ROOT
 						cede_province = DA2
 						add_core = DA2
-
 					}
-					
 					create_subject = {
 						subject = DA2
 						subject_type = dominion
@@ -4322,9 +4208,7 @@ country_decisions = {
 						remove_core = ROOT
 						cede_province = DA3
 						add_core = DA3
-
 					}
-					
 					create_subject = {
 						subject = DA3
 						subject_type = dominion
@@ -4385,9 +4269,7 @@ country_decisions = {
 						remove_core = ROOT
 						cede_province = DA4
 						add_core = DA4
-
 					}
-					
 					create_subject = {
 						subject = DA4
 						subject_type = dominion
@@ -4445,9 +4327,7 @@ country_decisions = {
 						remove_core = ROOT
 						cede_province = DA5
 						add_core = DA5
-
 					}
-					
 					create_subject = {
 						subject = DA5
 						subject_type = dominion
@@ -4502,9 +4382,7 @@ country_decisions = {
 						remove_core = ROOT
 						cede_province = DA6
 						add_core = DA6
-
 					}
-					
 					create_subject = {
 						subject = DA6
 						subject_type = dominion
@@ -4558,9 +4436,7 @@ country_decisions = {
 						remove_core = ROOT
 						cede_province = DA7
 						add_core = DA7
-
 					}
-					
 					create_subject = {
 						subject = DA7
 						subject_type = dominion
@@ -4601,6 +4477,7 @@ country_decisions = {
 					}
 				}
 			}
+			clr_country_flag = is_releasing_dominion_in_trade_company_region
 		}
 		ai_will_do = {
 			factor = 10
@@ -4647,6 +4524,806 @@ country_decisions = {
 			modifier = {
 				factor = 0
 				trade_company_east_africa = {
+					type = all
+					owned_by = ROOT
+					is_state = yes
+				}
+			}
+			modifier = {
+				factor = 0.1
+				calc_true_if = { all_subject_country = { is_subject_of_type = dominion } amount = 3 }
+			}
+		}
+	}
+	
+	create_dominion_in_philippines = {
+		potential = {
+			OR = {
+				AND = {
+					NOT = { has_dlc = "Wealth of Nations" }
+					NOT = { has_dlc = "Dharma" }
+				}
+				ai = no
+			}
+			is_subject = no
+			can_be_overlord = dominion
+			NOT = { is_dominion_tag = yes }
+			any_owned_province = {
+				is_node_in_trade_company_region = yes
+			}
+			capital_scope = {
+				is_node_in_trade_company_region = no
+			}
+			OR = {
+				AND = {
+					OR = {
+						culture_group = british
+						tag = GBR
+						tag = ENG
+					}
+					NOT = { exists = DP1 }
+				}
+				AND = {
+					OR = {
+						culture_group = germanic
+						tag = GER
+						tag = PRU
+					}
+					NOT = { exists = DP2 }
+				}
+				AND = {
+					OR = {
+						culture_group = iberian
+						tag = SPA
+						tag = POR
+						tag = CAS
+						tag = ARA
+					}
+					OR = {
+						AND = {
+							NOT = { tag = SPA }
+							NOT = { tag = CAS }
+							NOT = { primary_culture = castillian }
+						}
+						exists = DP7
+					}
+					NOT = { exists = DP3 }
+				}
+				AND = {
+					OR = {
+						culture_group = french
+						tag = FRA
+						tag = FR2
+						tag = BRI
+						tag = BUR
+					}
+					NOT = { exists = DP4 }
+				}
+				AND = {
+					OR = {
+						tag = PAP
+						religion_group = christian
+					}
+					OR = {
+						AND = {
+							NOT = { tag = SPA }
+							NOT = { tag = CAS }
+							NOT = { primary_culture = castillian }
+						}
+						exists = DP7
+					}
+					NOT = { exists = DP5 }
+				}
+				AND = {
+					religion_group = muslim
+					OR = {
+						AND = {
+							NOT = { tag = SPA }
+							NOT = { tag = CAS }
+							NOT = { primary_culture = castillian }
+						}
+						exists = DP7
+					}
+					NOT = { exists = DP6 }
+				}
+				AND = {
+					OR = {
+						tag = SPA
+						tag = CAS
+						primary_culture = castillian
+					}
+					NOT = { exists = DP7 }
+				}
+				NOT = { exists = DP8 }
+				NOT = { exists = DP9 }
+			}
+			NOT = {
+				any_subject_country = {
+					is_dominion_tag_in_philippines = yes
+				}
+			}
+			trade_company_philippines = {
+				type = all
+				OR = {
+					NOT = { owned_by = ROOT }
+					is_in_capital_area = no
+				}
+			}
+		}
+		allow = {
+			treasury = 5000
+			is_at_war = no
+			OR = {
+				has_idea_group = expansion_ideas
+				has_idea_group = exploration_ideas
+				has_idea_group = trade_ideas
+			}
+			trade_company_philippines = {
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			add_treasury = -5000
+			custom_tooltip = ALL_PROVINCES_IN_PHILIPPINES_TRADE_COMPANY_REGIONS_CEDED_TO_DOMINION
+			set_country_flag = is_releasing_dominion_in_trade_company_region
+			# British Philippines:
+			if = {
+				limit = {
+					OR = {
+						culture_group = british
+						tag = GBR
+						tag = ENG
+					}
+					NOT = { exists = DP1 }
+				}
+				hidden_effect = {
+					trade_company_philippines = {
+						limit = {
+							owned_by = ROOT
+						}
+						remove_core = ROOT
+						cede_province = DP1
+						add_core = DP1
+					}
+					create_subject = {
+						subject = DP1
+						subject_type = dominion
+					}
+					DP1 = {
+						add_treasury = 5000
+						add_truce_with = ROOT
+						country_event = { id = subjects_expanded_dominion_events.1 }
+						define_ruler = {
+							culture = ROOT
+							religion = ROOT
+						}
+						change_religion = ROOT
+						set_overlord_idea_groups = yes
+						adopt_reform_progress = ROOT
+						if = {
+							limit = {
+								owns = 656
+							}
+							set_capital = 656
+						}
+						if = {
+							limit = {
+								any_owned_province = {
+									dominant_culture = PREV
+								}
+							}
+							random_owned_province = {
+								limit = {
+									dominant_culture = PREV
+								}
+								PREV = { change_primary_culture = PREV }
+							}
+						}
+						else = {
+							change_primary_culture = ROOT
+						}
+						every_province = {
+							limit = {
+								has_discovered = ROOT
+							}
+							discover_country = PREV
+						}
+					}
+				}
+			}
+			# Germanic Philippines:
+			else_if = {
+				limit = {
+					OR = {
+						culture_group = germanic
+						tag = GER
+						tag = PRU
+					}
+					NOT = { exists = DP2 }
+				}
+				hidden_effect = {
+					trade_company_philippines = {
+						limit = {
+							owned_by = ROOT
+						}
+						remove_core = ROOT
+						cede_province = DP2
+						add_core = DP2
+					}
+					create_subject = {
+						subject = DP2
+						subject_type = dominion
+					}
+					DP2 = {
+						add_treasury = 5000
+						add_truce_with = ROOT
+						country_event = { id = subjects_expanded_dominion_events.1 }
+						define_ruler = {
+							culture = ROOT
+							religion = ROOT
+						}
+						change_religion = ROOT
+						set_overlord_idea_groups = yes
+						adopt_reform_progress = ROOT
+						if = {
+							limit = {
+								owns = 656
+							}
+							set_capital = 656
+						}
+						if = {
+							limit = {
+								any_owned_province = {
+									dominant_culture = PREV
+								}
+							}
+							random_owned_province = {
+								limit = {
+									dominant_culture = PREV
+								}
+								PREV = { change_primary_culture = PREV }
+							}
+						}
+						else = {
+							change_primary_culture = ROOT
+						}
+						every_province = {
+							limit = {
+								has_discovered = ROOT
+							}
+							discover_country = PREV
+						}
+					}
+				}
+			}
+			# Iberian Philippines:
+			else_if = {
+				limit = {
+					OR = {
+						culture_group = iberian
+						tag = SPA
+						tag = POR
+						tag = CAS
+						tag = ARA
+					}
+					OR = {
+						AND = {
+							NOT = { tag = SPA }
+							NOT = { tag = CAS }
+							NOT = { primary_culture = castillian }
+						}
+						exists = DP7
+					}
+					NOT = { exists = DP3 }
+				}
+				hidden_effect = {
+					trade_company_philippines = {
+						limit = {
+							owned_by = ROOT
+						}
+						remove_core = ROOT
+						cede_province = DP3
+						add_core = DP3
+					}
+					create_subject = {
+						subject = DP3
+						subject_type = dominion
+					}
+					DP3 = {
+						add_treasury = 5000
+						add_truce_with = ROOT
+						country_event = { id = subjects_expanded_dominion_events.1 }
+						define_ruler = {
+							culture = ROOT
+							religion = ROOT
+						}
+						change_religion = ROOT
+						set_overlord_idea_groups = yes
+						adopt_reform_progress = ROOT
+						if = {
+							limit = {
+								owns = 656
+							}
+							set_capital = 656
+						}
+						if = {
+							limit = {
+								any_owned_province = {
+									dominant_culture = PREV
+								}
+							}
+							random_owned_province = {
+								limit = {
+									dominant_culture = PREV
+								}
+								PREV = { change_primary_culture = PREV }
+							}
+						}
+						else = {
+							change_primary_culture = ROOT
+						}
+						every_province = {
+							limit = {
+								has_discovered = ROOT
+							}
+							discover_country = PREV
+						}
+					}
+				}
+			}
+			# French Philippines:
+			else_if = {
+				limit = {
+					OR = {
+						culture_group = french
+						tag = FRA
+						tag = FR2
+						tag = BRI
+						tag = BUR
+					}
+					NOT = { exists = DP4 }
+				}
+				hidden_effect = {
+					trade_company_philippines = {
+						limit = {
+							owned_by = ROOT
+						}
+						remove_core = ROOT
+						cede_province = DP4
+						add_core = DP4
+					}
+					create_subject = {
+						subject = DP4
+						subject_type = dominion
+					}
+					DP4 = {
+						add_treasury = 5000
+						add_truce_with = ROOT
+						country_event = { id = subjects_expanded_dominion_events.1 }
+						define_ruler = {
+							culture = ROOT
+							religion = ROOT
+						}
+						change_religion = ROOT
+						set_overlord_idea_groups = yes
+						adopt_reform_progress = ROOT
+						if = {
+							limit = {
+								owns = 656
+							}
+							set_capital = 656
+						}
+						if = {
+							limit = {
+								any_owned_province = {
+									dominant_culture = PREV
+								}
+							}
+							random_owned_province = {
+								limit = {
+									dominant_culture = PREV
+								}
+								PREV = { change_primary_culture = PREV }
+							}
+						}
+						else = {
+							change_primary_culture = ROOT
+						}
+						every_province = {
+							limit = {
+								has_discovered = ROOT
+							}
+							discover_country = PREV
+						}
+					}
+				}
+			}
+			# Christian Philippines:
+			else_if = {
+				limit = {
+					OR = {
+						tag = PAP
+						religion_group = christian
+					}
+					OR = {
+						AND = {
+							NOT = { tag = SPA }
+							NOT = { tag = CAS }
+							NOT = { primary_culture = castillian }
+						}
+						exists = DP7
+					}
+					NOT = { exists = DP5 }
+				}
+				hidden_effect = {
+					trade_company_philippines = {
+						limit = {
+							owned_by = ROOT
+						}
+						remove_core = ROOT
+						cede_province = DP5
+						add_core = DP5
+					}
+					create_subject = {
+						subject = DP5
+						subject_type = dominion
+					}
+					DP5 = {
+						add_treasury = 5000
+						add_truce_with = ROOT
+						country_event = { id = subjects_expanded_dominion_events.1 }
+						define_ruler = {
+							culture = ROOT
+							religion = ROOT
+						}
+						change_religion = ROOT
+						set_overlord_idea_groups = yes
+						adopt_reform_progress = ROOT
+						if = {
+							limit = {
+								owns = 656
+							}
+							set_capital = 656
+						}
+						else_if = {
+							limit = {
+								owns = 2413
+							}
+							set_capital = 2413
+						}
+						if = {
+							limit = {
+								any_owned_province = {
+									dominant_culture = PREV
+								}
+							}
+							random_owned_province = {
+								limit = {
+									dominant_culture = PREV
+								}
+								PREV = { change_primary_culture = PREV }
+							}
+						}
+						else = {
+							change_primary_culture = ROOT
+						}
+						every_province = {
+							limit = {
+								has_discovered = ROOT
+							}
+							discover_country = PREV
+						}
+					}
+				}
+			}
+			# Muslim Philippines:
+			else_if = {
+				limit = {
+					religion_group = muslim
+					OR = {
+						AND = {
+							NOT = { tag = SPA }
+							NOT = { tag = CAS }
+							NOT = { primary_culture = castillian }
+						}
+						exists = DP7
+					}
+					NOT = { exists = DP6 }
+				}
+				hidden_effect = {
+					trade_company_philippines = {
+						limit = {
+							owned_by = ROOT
+						}
+						remove_core = ROOT
+						cede_province = DP6
+						add_core = DP6
+					}
+					create_subject = {
+						subject = DP6
+						subject_type = dominion
+					}
+					DP6 = {
+						add_treasury = 5000
+						add_truce_with = ROOT
+						country_event = { id = subjects_expanded_dominion_events.1 }
+						define_ruler = {
+							culture = ROOT
+							religion = ROOT
+						}
+						change_religion = ROOT
+						set_overlord_idea_groups = yes
+						adopt_reform_progress = ROOT
+						if = {
+							limit = {
+								owns = 656
+							}
+							set_capital = 656
+						}
+						if = {
+							limit = {
+								any_owned_province = {
+									dominant_culture = PREV
+								}
+							}
+							random_owned_province = {
+								limit = {
+									dominant_culture = PREV
+								}
+								PREV = { change_primary_culture = PREV }
+							}
+						}
+						else = {
+							change_primary_culture = ROOT
+						}
+						every_province = {
+							limit = {
+								has_discovered = ROOT
+							}
+							discover_country = PREV
+						}
+					}
+				}
+			}
+			# Spanish Philippines:
+			else_if = {
+				limit = {
+					OR = {
+						tag = SPA
+						tag = CAS
+						primary_culture = castillian
+					}
+					NOT = { exists = DP7 }
+				}
+				hidden_effect = {
+					trade_company_philippines = {
+						limit = {
+							owned_by = ROOT
+						}
+						remove_core = ROOT
+						cede_province = DP7
+						add_core = DP7
+					}
+					create_subject = {
+						subject = DP7
+						subject_type = dominion
+					}
+					DP7 = {
+						add_treasury = 5000
+						add_truce_with = ROOT
+						country_event = { id = subjects_expanded_dominion_events.1 }
+						define_ruler = {
+							culture = ROOT
+							religion = ROOT
+						}
+						change_religion = ROOT
+						set_overlord_idea_groups = yes
+						adopt_reform_progress = ROOT
+						if = {
+							limit = {
+								owns = 656
+							}
+							set_capital = 656
+						}
+						if = {
+							limit = {
+								any_owned_province = {
+									dominant_culture = PREV
+								}
+							}
+							random_owned_province = {
+								limit = {
+									dominant_culture = PREV
+								}
+								PREV = { change_primary_culture = PREV }
+							}
+						}
+						else = {
+							change_primary_culture = ROOT
+						}
+						every_province = {
+							limit = {
+								has_discovered = ROOT
+							}
+							discover_country = PREV
+						}
+					}
+				}
+			}
+			# First Dominion of the Philippines:
+			else_if = {
+				limit = {
+					NOT = { exists = DP8 }
+				}
+				hidden_effect = {
+					trade_company_philippines = {
+						limit = {
+							owned_by = ROOT
+						}
+						remove_core = ROOT
+						cede_province = DP8
+						add_core = DP8
+					}
+					create_subject = {
+						subject = DP8
+						subject_type = dominion
+					}
+					DP8 = {
+						add_treasury = 5000
+						add_truce_with = ROOT
+						country_event = { id = subjects_expanded_dominion_events.1 }
+						define_ruler = {
+							culture = ROOT
+							religion = ROOT
+						}
+						change_religion = ROOT
+						set_overlord_idea_groups = yes
+						adopt_reform_progress = ROOT
+						if = {
+							limit = {
+								owns = 656
+							}
+							set_capital = 656
+						}
+						if = {
+							limit = {
+								any_owned_province = {
+									dominant_culture = PREV
+								}
+							}
+							random_owned_province = {
+								limit = {
+									dominant_culture = PREV
+								}
+								PREV = { change_primary_culture = PREV }
+							}
+						}
+						else = {
+							change_primary_culture = ROOT
+						}
+						every_province = {
+							limit = {
+								has_discovered = ROOT
+							}
+							discover_country = PREV
+						}
+					}
+				}
+			}
+			# Second Dominion of Indonesia:
+			else_if = {
+				limit = {
+					NOT = { exists = DP9 }
+				}
+				hidden_effect = {
+					trade_company_philippines = {
+						limit = {
+							owned_by = ROOT
+						}
+						remove_core = ROOT
+						cede_province = DP9
+						add_core = DP9
+					}
+					create_subject = {
+						subject = DP9
+						subject_type = dominion
+					}
+					DP9 = {
+						add_treasury = 5000
+						add_truce_with = ROOT
+						country_event = { id = subjects_expanded_dominion_events.1 }
+						define_ruler = {
+							culture = ROOT
+							religion = ROOT
+						}
+						change_religion = ROOT
+						set_overlord_idea_groups = yes
+						adopt_reform_progress = ROOT
+						if = {
+							limit = {
+								owns = 656
+							}
+							set_capital = 656
+						}
+						if = {
+							limit = {
+								any_owned_province = {
+									dominant_culture = PREV
+								}
+							}
+							random_owned_province = {
+								limit = {
+									dominant_culture = PREV
+								}
+								PREV = { change_primary_culture = PREV }
+							}
+						}
+						else = {
+							change_primary_culture = ROOT
+						}
+						every_province = {
+							limit = {
+								has_discovered = ROOT
+							}
+							discover_country = PREV
+						}
+					}
+				}
+			}
+			clr_country_flag = is_releasing_dominion_in_trade_company_region
+		}
+		ai_will_do = {
+			factor = 10
+			
+			modifier = {
+				factor = 5
+				tag = SPA
+			}
+			modifier = {
+				factor = 0
+				capital_scope = {
+					OR = {
+						continent = asia
+						continent = oceania
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				NOT = {
+					num_of_owned_provinces_with = {
+						value = 5
+						region = moluccas_region
+					}
+				}
+			}
+			modifier = {
+				factor = 0.1
+				NOT = { has_country_flag = trade_company }
+			}
+			modifier = {
+				factor = 0.1
+				any_subject_country = {
+					is_colonial_nation = yes
+					variable_arithmetic_trigger = {
+						export_to_variable = {
+							which = their_total_dev_temp_var
+							value = trigger_value:total_development
+						}
+						export_to_variable = {
+							which = our_total_dev_temp_var
+							value = trigger_value:total_development
+							who = ROOT
+						}
+						divide_variable = { which = their_total_dev_temp_var value = 3 }
+						
+						check_variable = { which = their_total_dev_temp_var which = our_total_dev_temp_var }
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				trade_company_philippines = {
 					type = all
 					owned_by = ROOT
 					is_state = yes

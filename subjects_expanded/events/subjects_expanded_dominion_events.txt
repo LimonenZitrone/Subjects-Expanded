@@ -89,17 +89,7 @@ country_event = {
 				is_subject_of_type = dominion
 				is_subject_of_type = autonomous_dominion
 			}
-			OR = {
-				tag = DI1
-				tag = DI2
-				tag = DI3
-				tag = DI4
-				tag = DI5
-				tag = DI6
-				tag = DI7
-				tag = DI8
-				tag = DI9
-			}
+			is_dominion_tag_in_india = yes
 		}
 		OR = {
 			trade_company_west_india = {
@@ -136,122 +126,25 @@ country_event = {
 					is_in_capital_area = no
 				}
 				ROOT = { change_variable = { which = num_of_provinces_ceded_to_autonomous_dominion_india value = 1 } }
-				if = {
+				random_country = {
 					limit = {
-						ROOT = { overlord_of = DI1 }
-					}
-					if = {
-						limit = {
-							is_core = ROOT
+						is_subject_of = ROOT
+						OR = {
+							is_subject_of_type = dominion
+							is_subject_of_type = autonomous_dominion
 						}
-						remove_core = ROOT
-						add_core = DI1
+						is_dominion_tag_in_india = yes
 					}
-					cede_province = DI1
-				}
-				else_if = {
-					limit = {
-						ROOT = { overlord_of = DI2 }
-					}
-					if = {
-						limit = {
-							is_core = ROOT
+					PREV = {
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = PREV
 						}
-						remove_core = ROOT
-						add_core = DI2
+						cede_province = PREV
 					}
-					cede_province = DI2
-				}
-				else_if = {
-					limit = {
-						ROOT = { overlord_of = DI3 }
-					}
-					if = {
-						limit = {
-							is_core = ROOT
-						}
-						remove_core = ROOT
-						add_core = DI3
-					}
-					cede_province = DI3
-				}
-				else_if = {
-					limit = {
-						ROOT = { overlord_of = DI4 }
-					}
-					if = {
-						limit = {
-							is_core = ROOT
-						}
-						remove_core = ROOT
-						add_core = DI4
-					}
-					cede_province = DI4
-				}
-				else_if = {
-					limit = {
-						ROOT = { overlord_of = DI5 }
-					}
-					if = {
-						limit = {
-							is_core = ROOT
-						}
-						remove_core = ROOT
-						add_core = DI5
-					}
-					cede_province = DI5
-				}
-				else_if = {
-					limit = {
-						ROOT = { overlord_of = DI6 }
-					}
-					if = {
-						limit = {
-							is_core = ROOT
-						}
-						remove_core = ROOT
-						add_core = DI6
-					}
-					cede_province = DI6
-				}
-				else_if = {
-					limit = {
-						ROOT = { overlord_of = DI7 }
-					}
-					if = {
-						limit = {
-							is_core = ROOT
-						}
-						remove_core = ROOT
-						add_core = DI7
-					}
-					cede_province = DI7
-				}
-				else_if = {
-					limit = {
-						ROOT = { overlord_of = DI8 }
-					}
-					if = {
-						limit = {
-							is_core = ROOT
-						}
-						remove_core = ROOT
-						add_core = DI8
-					}
-					cede_province = DI8
-				}
-				else_if = {
-					limit = {
-						ROOT = { overlord_of = DI9 }
-					}
-					if = {
-						limit = {
-							is_core = ROOT
-						}
-						remove_core = ROOT
-						add_core = DI9
-					}
-					cede_province = DI9
 				}
 			}
 			trade_company_deccan = {
@@ -260,122 +153,25 @@ country_event = {
 					is_in_capital_area = no
 				}
 				ROOT = { change_variable = { which = num_of_provinces_ceded_to_autonomous_dominion_india value = 1 } }
-				if = {
+				random_country = {
 					limit = {
-						ROOT = { overlord_of = DI1 }
-					}
-					if = {
-						limit = {
-							is_core = ROOT
+						is_subject_of = ROOT
+						OR = {
+							is_subject_of_type = dominion
+							is_subject_of_type = autonomous_dominion
 						}
-						remove_core = ROOT
-						add_core = DI1
+						is_dominion_tag_in_india = yes
 					}
-					cede_province = DI1
-				}
-				else_if = {
-					limit = {
-						ROOT = { overlord_of = DI2 }
-					}
-					if = {
-						limit = {
-							is_core = ROOT
+					PREV = {
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = PREV
 						}
-						remove_core = ROOT
-						add_core = DI2
+						cede_province = PREV
 					}
-					cede_province = DI2
-				}
-				else_if = {
-					limit = {
-						ROOT = { overlord_of = DI3 }
-					}
-					if = {
-						limit = {
-							is_core = ROOT
-						}
-						remove_core = ROOT
-						add_core = DI3
-					}
-					cede_province = DI3
-				}
-				else_if = {
-					limit = {
-						ROOT = { overlord_of = DI4 }
-					}
-					if = {
-						limit = {
-							is_core = ROOT
-						}
-						remove_core = ROOT
-						add_core = DI4
-					}
-					cede_province = DI4
-				}
-				else_if = {
-					limit = {
-						ROOT = { overlord_of = DI5 }
-					}
-					if = {
-						limit = {
-							is_core = ROOT
-						}
-						remove_core = ROOT
-						add_core = DI5
-					}
-					cede_province = DI5
-				}
-				else_if = {
-					limit = {
-						ROOT = { overlord_of = DI6 }
-					}
-					if = {
-						limit = {
-							is_core = ROOT
-						}
-						remove_core = ROOT
-						add_core = DI6
-					}
-					cede_province = DI6
-				}
-				else_if = {
-					limit = {
-						ROOT = { overlord_of = DI7 }
-					}
-					if = {
-						limit = {
-							is_core = ROOT
-						}
-						remove_core = ROOT
-						add_core = DI7
-					}
-					cede_province = DI7
-				}
-				else_if = {
-					limit = {
-						ROOT = { overlord_of = DI8 }
-					}
-					if = {
-						limit = {
-							is_core = ROOT
-						}
-						remove_core = ROOT
-						add_core = DI8
-					}
-					cede_province = DI8
-				}
-				else_if = {
-					limit = {
-						ROOT = { overlord_of = DI9 }
-					}
-					if = {
-						limit = {
-							is_core = ROOT
-						}
-						remove_core = ROOT
-						add_core = DI9
-					}
-					cede_province = DI9
 				}
 			}
 			trade_company_east_india = {
@@ -384,122 +180,25 @@ country_event = {
 					is_in_capital_area = no
 				}
 				ROOT = { change_variable = { which = num_of_provinces_ceded_to_autonomous_dominion_india value = 1 } }
-				if = {
+				random_country = {
 					limit = {
-						ROOT = { overlord_of = DI1 }
-					}
-					if = {
-						limit = {
-							is_core = ROOT
+						is_subject_of = ROOT
+						OR = {
+							is_subject_of_type = dominion
+							is_subject_of_type = autonomous_dominion
 						}
-						remove_core = ROOT
-						add_core = DI1
+						is_dominion_tag_in_india = yes
 					}
-					cede_province = DI1
-				}
-				else_if = {
-					limit = {
-						ROOT = { overlord_of = DI2 }
-					}
-					if = {
-						limit = {
-							is_core = ROOT
+					PREV = {
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = PREV
 						}
-						remove_core = ROOT
-						add_core = DI2
+						cede_province = PREV
 					}
-					cede_province = DI2
-				}
-				else_if = {
-					limit = {
-						ROOT = { overlord_of = DI3 }
-					}
-					if = {
-						limit = {
-							is_core = ROOT
-						}
-						remove_core = ROOT
-						add_core = DI3
-					}
-					cede_province = DI3
-				}
-				else_if = {
-					limit = {
-						ROOT = { overlord_of = DI4 }
-					}
-					if = {
-						limit = {
-							is_core = ROOT
-						}
-						remove_core = ROOT
-						add_core = DI4
-					}
-					cede_province = DI4
-				}
-				else_if = {
-					limit = {
-						ROOT = { overlord_of = DI5 }
-					}
-					if = {
-						limit = {
-							is_core = ROOT
-						}
-						remove_core = ROOT
-						add_core = DI5
-					}
-					cede_province = DI5
-				}
-				else_if = {
-					limit = {
-						ROOT = { overlord_of = DI6 }
-					}
-					if = {
-						limit = {
-							is_core = ROOT
-						}
-						remove_core = ROOT
-						add_core = DI6
-					}
-					cede_province = DI6
-				}
-				else_if = {
-					limit = {
-						ROOT = { overlord_of = DI7 }
-					}
-					if = {
-						limit = {
-							is_core = ROOT
-						}
-						remove_core = ROOT
-						add_core = DI7
-					}
-					cede_province = DI7
-				}
-				else_if = {
-					limit = {
-						ROOT = { overlord_of = DI8 }
-					}
-					if = {
-						limit = {
-							is_core = ROOT
-						}
-						remove_core = ROOT
-						add_core = DI8
-					}
-					cede_province = DI8
-				}
-				else_if = {
-					limit = {
-						ROOT = { overlord_of = DI9 }
-					}
-					if = {
-						limit = {
-							is_core = ROOT
-						}
-						remove_core = ROOT
-						add_core = DI9
-					}
-					cede_province = DI9
 				}
 			}
 			trade_company_coromandel = {
@@ -508,122 +207,25 @@ country_event = {
 					is_in_capital_area = no
 				}
 				ROOT = { change_variable = { which = num_of_provinces_ceded_to_autonomous_dominion_india value = 1 } }
-				if = {
+				random_country = {
 					limit = {
-						ROOT = { overlord_of = DI1 }
-					}
-					if = {
-						limit = {
-							is_core = ROOT
+						is_subject_of = ROOT
+						OR = {
+							is_subject_of_type = dominion
+							is_subject_of_type = autonomous_dominion
 						}
-						remove_core = ROOT
-						add_core = DI1
+						is_dominion_tag_in_india = yes
 					}
-					cede_province = DI1
-				}
-				else_if = {
-					limit = {
-						ROOT = { overlord_of = DI2 }
-					}
-					if = {
-						limit = {
-							is_core = ROOT
+					PREV = {
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = PREV
 						}
-						remove_core = ROOT
-						add_core = DI2
+						cede_province = PREV
 					}
-					cede_province = DI2
-				}
-				else_if = {
-					limit = {
-						ROOT = { overlord_of = DI3 }
-					}
-					if = {
-						limit = {
-							is_core = ROOT
-						}
-						remove_core = ROOT
-						add_core = DI3
-					}
-					cede_province = DI3
-				}
-				else_if = {
-					limit = {
-						ROOT = { overlord_of = DI4 }
-					}
-					if = {
-						limit = {
-							is_core = ROOT
-						}
-						remove_core = ROOT
-						add_core = DI4
-					}
-					cede_province = DI4
-				}
-				else_if = {
-					limit = {
-						ROOT = { overlord_of = DI5 }
-					}
-					if = {
-						limit = {
-							is_core = ROOT
-						}
-						remove_core = ROOT
-						add_core = DI5
-					}
-					cede_province = DI5
-				}
-				else_if = {
-					limit = {
-						ROOT = { overlord_of = DI6 }
-					}
-					if = {
-						limit = {
-							is_core = ROOT
-						}
-						remove_core = ROOT
-						add_core = DI6
-					}
-					cede_province = DI6
-				}
-				else_if = {
-					limit = {
-						ROOT = { overlord_of = DI7 }
-					}
-					if = {
-						limit = {
-							is_core = ROOT
-						}
-						remove_core = ROOT
-						add_core = DI7
-					}
-					cede_province = DI7
-				}
-				else_if = {
-					limit = {
-						ROOT = { overlord_of = DI8 }
-					}
-					if = {
-						limit = {
-							is_core = ROOT
-						}
-						remove_core = ROOT
-						add_core = DI8
-					}
-					cede_province = DI8
-				}
-				else_if = {
-					limit = {
-						ROOT = { overlord_of = DI9 }
-					}
-					if = {
-						limit = {
-							is_core = ROOT
-						}
-						remove_core = ROOT
-						add_core = DI9
-					}
-					cede_province = DI9
 				}
 			}
 			trade_company_north_india = {
@@ -632,122 +234,25 @@ country_event = {
 					is_in_capital_area = no
 				}
 				ROOT = { change_variable = { which = num_of_provinces_ceded_to_autonomous_dominion_india value = 1 } }
-				if = {
+				random_country = {
 					limit = {
-						ROOT = { overlord_of = DI1 }
-					}
-					if = {
-						limit = {
-							is_core = ROOT
+						is_subject_of = ROOT
+						OR = {
+							is_subject_of_type = dominion
+							is_subject_of_type = autonomous_dominion
 						}
-						remove_core = ROOT
-						add_core = DI1
+						is_dominion_tag_in_india = yes
 					}
-					cede_province = DI1
-				}
-				else_if = {
-					limit = {
-						ROOT = { overlord_of = DI2 }
-					}
-					if = {
-						limit = {
-							is_core = ROOT
+					PREV = {
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = PREV
 						}
-						remove_core = ROOT
-						add_core = DI2
+						cede_province = PREV
 					}
-					cede_province = DI2
-				}
-				else_if = {
-					limit = {
-						ROOT = { overlord_of = DI3 }
-					}
-					if = {
-						limit = {
-							is_core = ROOT
-						}
-						remove_core = ROOT
-						add_core = DI3
-					}
-					cede_province = DI3
-				}
-				else_if = {
-					limit = {
-						ROOT = { overlord_of = DI4 }
-					}
-					if = {
-						limit = {
-							is_core = ROOT
-						}
-						remove_core = ROOT
-						add_core = DI4
-					}
-					cede_province = DI4
-				}
-				else_if = {
-					limit = {
-						ROOT = { overlord_of = DI5 }
-					}
-					if = {
-						limit = {
-							is_core = ROOT
-						}
-						remove_core = ROOT
-						add_core = DI5
-					}
-					cede_province = DI5
-				}
-				else_if = {
-					limit = {
-						ROOT = { overlord_of = DI6 }
-					}
-					if = {
-						limit = {
-							is_core = ROOT
-						}
-						remove_core = ROOT
-						add_core = DI6
-					}
-					cede_province = DI6
-				}
-				else_if = {
-					limit = {
-						ROOT = { overlord_of = DI7 }
-					}
-					if = {
-						limit = {
-							is_core = ROOT
-						}
-						remove_core = ROOT
-						add_core = DI7
-					}
-					cede_province = DI7
-				}
-				else_if = {
-					limit = {
-						ROOT = { overlord_of = DI8 }
-					}
-					if = {
-						limit = {
-							is_core = ROOT
-						}
-						remove_core = ROOT
-						add_core = DI8
-					}
-					cede_province = DI8
-				}
-				else_if = {
-					limit = {
-						ROOT = { overlord_of = DI9 }
-					}
-					if = {
-						limit = {
-							is_core = ROOT
-						}
-						remove_core = ROOT
-						add_core = DI9
-					}
-					cede_province = DI9
 				}
 			}
 		}
@@ -779,17 +284,7 @@ country_event = {
 				is_subject_of_type = dominion
 				is_subject_of_type = autonomous_dominion
 			}
-			OR = {
-				tag = DE1
-				tag = DE2
-				tag = DE3
-				tag = DE4
-				tag = DE5
-				tag = DE6
-				tag = DE7
-				tag = DE8
-				tag = DE9
-			}
+			is_dominion_tag_in_east_indies = yes
 		}
 		OR = {
 			trade_company_indonesia = {
@@ -814,122 +309,25 @@ country_event = {
 					is_in_capital_area = no
 				}
 				ROOT = { change_variable = { which = num_of_provinces_ceded_to_autonomous_dominion_indonesia value = 1 } }
-				if = {
+				random_country = {
 					limit = {
-						ROOT = { overlord_of = DE1 }
-					}
-					if = {
-						limit = {
-							is_core = ROOT
+						is_subject_of = ROOT
+						OR = {
+							is_subject_of_type = dominion
+							is_subject_of_type = autonomous_dominion
 						}
-						remove_core = ROOT
-						add_core = DE1
+						is_dominion_tag_in_east_indies = yes
 					}
-					cede_province = DE1
-				}
-				else_if = {
-					limit = {
-						ROOT = { overlord_of = DE2 }
-					}
-					if = {
-						limit = {
-							is_core = ROOT
+					PREV = {
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = PREV
 						}
-						remove_core = ROOT
-						add_core = DE2
+						cede_province = PREV
 					}
-					cede_province = DE2
-				}
-				else_if = {
-					limit = {
-						ROOT = { overlord_of = DE3 }
-					}
-					if = {
-						limit = {
-							is_core = ROOT
-						}
-						remove_core = ROOT
-						add_core = DE3
-					}
-					cede_province = DE3
-				}
-				else_if = {
-					limit = {
-						ROOT = { overlord_of = DE4 }
-					}
-					if = {
-						limit = {
-							is_core = ROOT
-						}
-						remove_core = ROOT
-						add_core = DE4
-					}
-					cede_province = DE4
-				}
-				else_if = {
-					limit = {
-						ROOT = { overlord_of = DE5 }
-					}
-					if = {
-						limit = {
-							is_core = ROOT
-						}
-						remove_core = ROOT
-						add_core = DE5
-					}
-					cede_province = DE5
-				}
-				else_if = {
-					limit = {
-						ROOT = { overlord_of = DE6 }
-					}
-					if = {
-						limit = {
-							is_core = ROOT
-						}
-						remove_core = ROOT
-						add_core = DE6
-					}
-					cede_province = DE6
-				}
-				else_if = {
-					limit = {
-						ROOT = { overlord_of = DE7 }
-					}
-					if = {
-						limit = {
-							is_core = ROOT
-						}
-						remove_core = ROOT
-						add_core = DE7
-					}
-					cede_province = DE7
-				}
-				else_if = {
-					limit = {
-						ROOT = { overlord_of = DE8 }
-					}
-					if = {
-						limit = {
-							is_core = ROOT
-						}
-						remove_core = ROOT
-						add_core = DE8
-					}
-					cede_province = DE8
-				}
-				else_if = {
-					limit = {
-						ROOT = { overlord_of = DE9 }
-					}
-					if = {
-						limit = {
-							is_core = ROOT
-						}
-						remove_core = ROOT
-						add_core = DE9
-					}
-					cede_province = DE9
 				}
 			}
 			trade_company_moluccas = {
@@ -938,122 +336,25 @@ country_event = {
 					is_in_capital_area = no
 				}
 				ROOT = { change_variable = { which = num_of_provinces_ceded_to_autonomous_dominion_indonesia value = 1 } }
-				if = {
+				random_country = {
 					limit = {
-						ROOT = { overlord_of = DE1 }
-					}
-					if = {
-						limit = {
-							is_core = ROOT
+						is_subject_of = ROOT
+						OR = {
+							is_subject_of_type = dominion
+							is_subject_of_type = autonomous_dominion
 						}
-						remove_core = ROOT
-						add_core = DE1
+						is_dominion_tag_in_east_indies = yes
 					}
-					cede_province = DE1
-				}
-				else_if = {
-					limit = {
-						ROOT = { overlord_of = DE2 }
-					}
-					if = {
-						limit = {
-							is_core = ROOT
+					PREV = {
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = PREV
 						}
-						remove_core = ROOT
-						add_core = DE2
+						cede_province = PREV
 					}
-					cede_province = DE2
-				}
-				else_if = {
-					limit = {
-						ROOT = { overlord_of = DE3 }
-					}
-					if = {
-						limit = {
-							is_core = ROOT
-						}
-						remove_core = ROOT
-						add_core = DE3
-					}
-					cede_province = DE3
-				}
-				else_if = {
-					limit = {
-						ROOT = { overlord_of = DE4 }
-					}
-					if = {
-						limit = {
-							is_core = ROOT
-						}
-						remove_core = ROOT
-						add_core = DE4
-					}
-					cede_province = DE4
-				}
-				else_if = {
-					limit = {
-						ROOT = { overlord_of = DE5 }
-					}
-					if = {
-						limit = {
-							is_core = ROOT
-						}
-						remove_core = ROOT
-						add_core = DE5
-					}
-					cede_province = DE5
-				}
-				else_if = {
-					limit = {
-						ROOT = { overlord_of = DE6 }
-					}
-					if = {
-						limit = {
-							is_core = ROOT
-						}
-						remove_core = ROOT
-						add_core = DE6
-					}
-					cede_province = DE6
-				}
-				else_if = {
-					limit = {
-						ROOT = { overlord_of = DE7 }
-					}
-					if = {
-						limit = {
-							is_core = ROOT
-						}
-						remove_core = ROOT
-						add_core = DE7
-					}
-					cede_province = DE7
-				}
-				else_if = {
-					limit = {
-						ROOT = { overlord_of = DE8 }
-					}
-					if = {
-						limit = {
-							is_core = ROOT
-						}
-						remove_core = ROOT
-						add_core = DE8
-					}
-					cede_province = DE8
-				}
-				else_if = {
-					limit = {
-						ROOT = { overlord_of = DE9 }
-					}
-					if = {
-						limit = {
-							is_core = ROOT
-						}
-						remove_core = ROOT
-						add_core = DE9
-					}
-					cede_province = DE9
 				}
 			}
 		}
@@ -1085,15 +386,7 @@ country_event = {
 				is_subject_of_type = dominion
 				is_subject_of_type = autonomous_dominion
 			}
-			OR = {
-				tag = DC1
-				tag = DC2
-				tag = DC3
-				tag = DC4
-				tag = DC5
-				tag = DC6
-				tag = DC7
-			}
+			is_dominion_tag_in_indochina = yes
 		}
 		trade_company_indochina = {
 			owned_by = ROOT
@@ -1112,96 +405,25 @@ country_event = {
 					is_in_capital_area = no
 				}
 				ROOT = { change_variable = { which = num_of_provinces_ceded_to_autonomous_dominion_indochina value = 1 } }
-				if = {
+				random_country = {
 					limit = {
-						ROOT = { overlord_of = DC1 }
-					}
-					if = {
-						limit = {
-							is_core = ROOT
+						is_subject_of = ROOT
+						OR = {
+							is_subject_of_type = dominion
+							is_subject_of_type = autonomous_dominion
 						}
-						remove_core = ROOT
-						add_core = DC1
+						is_dominion_tag_in_indochina = yes
 					}
-					cede_province = DC1
-				}
-				else_if = {
-					limit = {
-						ROOT = { overlord_of = DC2 }
-					}
-					if = {
-						limit = {
-							is_core = ROOT
+					PREV = {
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = PREV
 						}
-						remove_core = ROOT
-						add_core = DC2
+						cede_province = PREV
 					}
-					cede_province = DC2
-				}
-				else_if = {
-					limit = {
-						ROOT = { overlord_of = DC3 }
-					}
-					if = {
-						limit = {
-							is_core = ROOT
-						}
-						remove_core = ROOT
-						add_core = DC3
-					}
-					cede_province = DC3
-				}
-				else_if = {
-					limit = {
-						ROOT = { overlord_of = DC4 }
-					}
-					if = {
-						limit = {
-							is_core = ROOT
-						}
-						remove_core = ROOT
-						add_core = DC4
-					}
-					cede_province = DC4
-				}
-				else_if = {
-					limit = {
-						ROOT = { overlord_of = DC5 }
-					}
-					if = {
-						limit = {
-							is_core = ROOT
-						}
-						remove_core = ROOT
-						add_core = DC5
-					}
-					cede_province = DC5
-				}
-				else_if = {
-					limit = {
-						ROOT = { overlord_of = DC6 }
-					}
-					if = {
-						limit = {
-							is_core = ROOT
-						}
-						remove_core = ROOT
-						add_core = DC6
-					}
-					cede_province = DC6
-				}
-				else_if = {
-					limit = {
-						ROOT = { overlord_of = DC7 }
-					}
-					if = {
-						limit = {
-							is_core = ROOT
-						}
-						remove_core = ROOT
-						add_core = DC7
-					}
-					cede_province = DC7
 				}
 			}
 		}
@@ -1233,15 +455,7 @@ country_event = {
 				is_subject_of_type = dominion
 				is_subject_of_type = autonomous_dominion
 			}
-			OR = {
-				tag = DW1
-				tag = DW2
-				tag = DW3
-				tag = DW4
-				tag = DW5
-				tag = DW6
-				tag = DW7
-			}
+			is_dominion_tag_in_west_africa = yes
 		}
 		trade_company_west_africa = {
 			owned_by = ROOT
@@ -1265,96 +479,25 @@ country_event = {
 					is_in_capital_area = no
 				}
 				ROOT = { change_variable = { which = num_of_provinces_ceded_to_autonomous_dominion_west_africa value = 1 } }
-				if = {
+				random_country = {
 					limit = {
-						ROOT = { overlord_of = DW1 }
-					}
-					if = {
-						limit = {
-							is_core = ROOT
+						is_subject_of = ROOT
+						OR = {
+							is_subject_of_type = dominion
+							is_subject_of_type = autonomous_dominion
 						}
-						remove_core = ROOT
-						add_core = DW1
+						is_dominion_tag_in_west_africa = yes
 					}
-					cede_province = DW1
-				}
-				else_if = {
-					limit = {
-						ROOT = { overlord_of = DW2 }
-					}
-					if = {
-						limit = {
-							is_core = ROOT
+					PREV = {
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = PREV
 						}
-						remove_core = ROOT
-						add_core = DW2
+						cede_province = PREV
 					}
-					cede_province = DW2
-				}
-				else_if = {
-					limit = {
-						ROOT = { overlord_of = DW3 }
-					}
-					if = {
-						limit = {
-							is_core = ROOT
-						}
-						remove_core = ROOT
-						add_core = DW3
-					}
-					cede_province = DW3
-				}
-				else_if = {
-					limit = {
-						ROOT = { overlord_of = DW4 }
-					}
-					if = {
-						limit = {
-							is_core = ROOT
-						}
-						remove_core = ROOT
-						add_core = DW4
-					}
-					cede_province = DW4
-				}
-				else_if = {
-					limit = {
-						ROOT = { overlord_of = DW5 }
-					}
-					if = {
-						limit = {
-							is_core = ROOT
-						}
-						remove_core = ROOT
-						add_core = DW5
-					}
-					cede_province = DW5
-				}
-				else_if = {
-					limit = {
-						ROOT = { overlord_of = DW6 }
-					}
-					if = {
-						limit = {
-							is_core = ROOT
-						}
-						remove_core = ROOT
-						add_core = DW6
-					}
-					cede_province = DW6
-				}
-				else_if = {
-					limit = {
-						ROOT = { overlord_of = DW7 }
-					}
-					if = {
-						limit = {
-							is_core = ROOT
-						}
-						remove_core = ROOT
-						add_core = DW7
-					}
-					cede_province = DW7
 				}
 			}
 		}
@@ -1386,15 +529,7 @@ country_event = {
 				is_subject_of_type = dominion
 				is_subject_of_type = autonomous_dominion
 			}
-			OR = {
-				tag = DA1
-				tag = DA2
-				tag = DA3
-				tag = DA4
-				tag = DA5
-				tag = DA6
-				tag = DA7
-			}
+			is_dominion_tag_in_east_africa = yes
 		}
 		trade_company_east_africa = {
 			owned_by = ROOT
@@ -1418,96 +553,25 @@ country_event = {
 					is_in_capital_area = no
 				}
 				ROOT = { change_variable = { which = num_of_provinces_ceded_to_autonomous_dominion_east_africa value = 1 } }
-				if = {
+				random_country = {
 					limit = {
-						ROOT = { overlord_of = DA1 }
-					}
-					if = {
-						limit = {
-							is_core = ROOT
+						is_subject_of = ROOT
+						OR = {
+							is_subject_of_type = dominion
+							is_subject_of_type = autonomous_dominion
 						}
-						remove_core = ROOT
-						add_core = DA1
+						is_dominion_tag_in_east_africa = yes
 					}
-					cede_province = DA1
-				}
-				else_if = {
-					limit = {
-						ROOT = { overlord_of = DA2 }
-					}
-					if = {
-						limit = {
-							is_core = ROOT
+					PREV = {
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = PREV
 						}
-						remove_core = ROOT
-						add_core = DA2
+						cede_province = PREV
 					}
-					cede_province = DA2
-				}
-				else_if = {
-					limit = {
-						ROOT = { overlord_of = DA3 }
-					}
-					if = {
-						limit = {
-							is_core = ROOT
-						}
-						remove_core = ROOT
-						add_core = DA3
-					}
-					cede_province = DA3
-				}
-				else_if = {
-					limit = {
-						ROOT = { overlord_of = DA4 }
-					}
-					if = {
-						limit = {
-							is_core = ROOT
-						}
-						remove_core = ROOT
-						add_core = DA4
-					}
-					cede_province = DA4
-				}
-				else_if = {
-					limit = {
-						ROOT = { overlord_of = DA5 }
-					}
-					if = {
-						limit = {
-							is_core = ROOT
-						}
-						remove_core = ROOT
-						add_core = DA5
-					}
-					cede_province = DA5
-				}
-				else_if = {
-					limit = {
-						ROOT = { overlord_of = DA6 }
-					}
-					if = {
-						limit = {
-							is_core = ROOT
-						}
-						remove_core = ROOT
-						add_core = DA6
-					}
-					cede_province = DA6
-				}
-				else_if = {
-					limit = {
-						ROOT = { overlord_of = DA7 }
-					}
-					if = {
-						limit = {
-							is_core = ROOT
-						}
-						remove_core = ROOT
-						add_core = DA7
-					}
-					cede_province = DA7
 				}
 			}
 		}
@@ -1539,15 +603,7 @@ country_event = {
 				is_subject_of_type = dominion
 				is_subject_of_type = autonomous_dominion
 			}
-			OR = {
-				tag = DS1
-				tag = DS2
-				tag = DS3
-				tag = DS4
-				tag = DS5
-				tag = DS6
-				tag = DS7
-			}
+			is_dominion_tag_in_south_africa = yes
 		}
 		trade_company_south_africa = {
 			owned_by = ROOT
@@ -1571,96 +627,25 @@ country_event = {
 					is_in_capital_area = no
 				}
 				ROOT = { change_variable = { which = num_of_provinces_ceded_to_autonomous_dominion_south_africa value = 1 } }
-				if = {
+				random_country = {
 					limit = {
-						ROOT = { overlord_of = DS1 }
-					}
-					if = {
-						limit = {
-							is_core = ROOT
+						is_subject_of = ROOT
+						OR = {
+							is_subject_of_type = dominion
+							is_subject_of_type = autonomous_dominion
 						}
-						remove_core = ROOT
-						add_core = DS1
+						is_dominion_tag_in_south_africa = yes
 					}
-					cede_province = DS1
-				}
-				else_if = {
-					limit = {
-						ROOT = { overlord_of = DS2 }
-					}
-					if = {
-						limit = {
-							is_core = ROOT
+					PREV = {
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = PREV
 						}
-						remove_core = ROOT
-						add_core = DS2
+						cede_province = PREV
 					}
-					cede_province = DS2
-				}
-				else_if = {
-					limit = {
-						ROOT = { overlord_of = DS3 }
-					}
-					if = {
-						limit = {
-							is_core = ROOT
-						}
-						remove_core = ROOT
-						add_core = DS3
-					}
-					cede_province = DS3
-				}
-				else_if = {
-					limit = {
-						ROOT = { overlord_of = DS4 }
-					}
-					if = {
-						limit = {
-							is_core = ROOT
-						}
-						remove_core = ROOT
-						add_core = DS4
-					}
-					cede_province = DS4
-				}
-				else_if = {
-					limit = {
-						ROOT = { overlord_of = DS5 }
-					}
-					if = {
-						limit = {
-							is_core = ROOT
-						}
-						remove_core = ROOT
-						add_core = DS5
-					}
-					cede_province = DS5
-				}
-				else_if = {
-					limit = {
-						ROOT = { overlord_of = DS6 }
-					}
-					if = {
-						limit = {
-							is_core = ROOT
-						}
-						remove_core = ROOT
-						add_core = DS6
-					}
-					cede_province = DS6
-				}
-				else_if = {
-					limit = {
-						ROOT = { overlord_of = DS7 }
-					}
-					if = {
-						limit = {
-							is_core = ROOT
-						}
-						remove_core = ROOT
-						add_core = DS7
-					}
-					cede_province = DS7
 				}
 			}
 		}
@@ -1668,6 +653,75 @@ country_event = {
 	
 	option = {
 		name = subjects_expanded_dominion_events8.EVTOPT1
+		
+		ai_chance = { factor = 100 }
+	}
+}
+
+# Give provinces in Philippines trade company regions to specific autonomous dominion
+country_event = {
+	id = subjects_expanded_dominion_events.9
+	title = subjects_expanded_dominion_events.EVTNAME9
+	desc = subjects_expanded_dominion_events.EVTDESC9
+	picture = DIPLOMACY_eventPicture
+	
+	# hidden = yes
+	
+	trigger = {
+		capital_scope = {
+			is_node_in_trade_company_region = no
+		}
+		NOT = { is_dominion_tag = yes }
+		any_subject_country = {
+			OR = {
+				is_subject_of_type = dominion
+				is_subject_of_type = autonomous_dominion
+			}
+			is_dominion_tag_in_philippines = yes
+		}
+		trade_company_philippines = {
+			owned_by = ROOT
+			is_in_capital_area = no
+		}
+	}
+	
+	mean_time_to_happen = { days = 1 }
+	
+	immediate = {
+		hidden_effect = {
+			set_variable = { which = num_of_provinces_ceded_to_autonomous_dominion_philippines value = 0 }
+			trade_company_philippines = {
+				limit = {
+					owned_by = ROOT
+					is_in_capital_area = no
+				}
+				ROOT = { change_variable = { which = num_of_provinces_ceded_to_autonomous_dominion_philippines value = 1 } }
+				random_country = {
+					limit = {
+						is_subject_of = ROOT
+						OR = {
+							is_subject_of_type = dominion
+							is_subject_of_type = autonomous_dominion
+						}
+						is_dominion_tag_in_philippines = yes
+					}
+					PREV = {
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = PREV
+						}
+						cede_province = PREV
+					}
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = subjects_expanded_dominion_events9.EVTOPT1
 		
 		ai_chance = { factor = 100 }
 	}

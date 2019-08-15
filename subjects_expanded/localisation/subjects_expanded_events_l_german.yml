@@ -15,29 +15,33 @@
  subjects_expanded_dominion_events.EVTDESC2: "Unser LehnshOur hat von seinem Recht Gebrauch gemacht und Mannstärke für seine Armee gefordert."
  subjects_expanded_dominion_events2.EVTOPT1: "War das wirklich nötig?"
  
- subjects_expanded_dominion_events.EVTNAME3: "Autonomes Herrschaftsgebiet erhält Provinzen"
- subjects_expanded_dominion_events.EVTDESC3: "Da wir Provinzen in indischen Handelshaus-Regionen besitzen, die nicht mit unserer Hauptstadt verbunden sind und wir dort ein Autonomes Herrschaftsgebiet besitzen, haben wir diese Provinzen an unser Autonomes Herrschaftsgebiet in Indien abgetreten. Insgesamt handelt es sich dabei um §R[Root.num_of_provinces_ceded_to_autonomous_dominion_india.GetValue]§! Provinzen."
+ subjects_expanded_dominion_events.EVTNAME3: "Herrschaftsgebiet erhält Provinzen"
+ subjects_expanded_dominion_events.EVTDESC3: "Da wir Provinzen in indischen Handelshaus-Regionen besitzen, die nicht mit unserer Hauptstadt verbunden sind und wir dort ein Herrschaftsgebiet besitzen, haben wir diese Provinzen an unser Herrschaftsgebiet in Indien abgetreten. Insgesamt handelt es sich dabei um §R[Root.num_of_provinces_ceded_to_autonomous_dominion_india.GetValue]§! Provinzen."
  subjects_expanded_dominion_events3.EVTOPT1: "In Ordnung."
  
- subjects_expanded_dominion_events.EVTNAME4: "Autonomes Herrschaftsgebiet erhält Provinzen"
- subjects_expanded_dominion_events.EVTDESC4: "Da wir Provinzen in ostindischen / indonesischen Handelshaus-Regionen besitzen, die nicht mit unserer Hauptstadt verbunden sind und wir dort ein Autonomes Herrschaftsgebiet besitzen, haben wir diese Provinzen an unser Autonomes Herrschaftsgebiet in Ostindien / Indonesien abgetreten. Insgesamt handelt es sich dabei um §R[Root.num_of_provinces_ceded_to_autonomous_dominion_east_indies.GetValue]§! Provinzen."
+ subjects_expanded_dominion_events.EVTNAME4: "Herrschaftsgebiet erhält Provinzen"
+ subjects_expanded_dominion_events.EVTDESC4: "Da wir Provinzen in ostindischen / indonesischen Handelshaus-Regionen besitzen, die nicht mit unserer Hauptstadt verbunden sind und wir dort ein Herrschaftsgebiet besitzen, haben wir diese Provinzen an unser Herrschaftsgebiet in Ostindien / Indonesien abgetreten. Insgesamt handelt es sich dabei um §R[Root.num_of_provinces_ceded_to_autonomous_dominion_east_indies.GetValue]§! Provinzen."
  subjects_expanded_dominion_events4.EVTOPT1: "In Ordnung."
  
- subjects_expanded_dominion_events.EVTNAME5: "Autonomes Herrschaftsgebiet erhält Provinzen"
- subjects_expanded_dominion_events.EVTDESC5: "Da wir Provinzen in indochinesischen Handelshaus-Regionen besitzen, die nicht mit unserer Hauptstadt verbunden sind und wir dort ein Autonomes Herrschaftsgebiet besitzen, haben wir diese Provinzen an unser Autonomes Herrschaftsgebiet in Indochina abgetreten. Insgesamt handelt es sich dabei um §R[Root.num_of_provinces_ceded_to_autonomous_dominion_indochina.GetValue]§! Provinzen."
+ subjects_expanded_dominion_events.EVTNAME5: "Herrschaftsgebiet erhält Provinzen"
+ subjects_expanded_dominion_events.EVTDESC5: "Da wir Provinzen in indochinesischen Handelshaus-Regionen besitzen, die nicht mit unserer Hauptstadt verbunden sind und wir dort ein Herrschaftsgebiet besitzen, haben wir diese Provinzen an unser Herrschaftsgebiet in Indochina abgetreten. Insgesamt handelt es sich dabei um §R[Root.num_of_provinces_ceded_to_autonomous_dominion_indochina.GetValue]§! Provinzen."
  subjects_expanded_dominion_events5.EVTOPT1: "In Ordnung."
  
- subjects_expanded_dominion_events.EVTNAME6: "Autonomes Herrschaftsgebiet erhält Provinzen"
- subjects_expanded_dominion_events.EVTDESC6: "Da wir Provinzen in westafrikanischen Handelshaus-Regionen besitzen, die nicht mit unserer Hauptstadt verbunden sind und wir dort ein Autonomes Herrschaftsgebiet besitzen, haben wir diese Provinzen an unser Autonomes Herrschaftsgebiet in Westafrika abgetreten. Insgesamt handelt es sich dabei um §R[Root.num_of_provinces_ceded_to_autonomous_dominion_west_africa.GetValue]§! Provinzen."
+ subjects_expanded_dominion_events.EVTNAME6: "Herrschaftsgebiet erhält Provinzen"
+ subjects_expanded_dominion_events.EVTDESC6: "Da wir Provinzen in westafrikanischen Handelshaus-Regionen besitzen, die nicht mit unserer Hauptstadt verbunden sind und wir dort ein Herrschaftsgebiet besitzen, haben wir diese Provinzen an unser Herrschaftsgebiet in Westafrika abgetreten. Insgesamt handelt es sich dabei um §R[Root.num_of_provinces_ceded_to_autonomous_dominion_west_africa.GetValue]§! Provinzen."
  subjects_expanded_dominion_events6.EVTOPT1: "In Ordnung."
  
- subjects_expanded_dominion_events.EVTNAME7: "Autonomes Herrschaftsgebiet erhält Provinzen"
- subjects_expanded_dominion_events.EVTDESC7: "Da wir Provinzen in ostafrikanischen Handelshaus-Regionen besitzen, die nicht mit unserer Hauptstadt verbunden sind und wir dort ein Autonomes Herrschaftsgebiet besitzen, haben wir diese Provinzen an unser Autonomes Herrschaftsgebiet in Ostafrika abgetreten. Insgesamt handelt es sich dabei um §R[Root.num_of_provinces_ceded_to_autonomous_dominion_east_africa.GetValue]§! Provinzen."
+ subjects_expanded_dominion_events.EVTNAME7: "Herrschaftsgebiet erhält Provinzen"
+ subjects_expanded_dominion_events.EVTDESC7: "Da wir Provinzen in ostafrikanischen Handelshaus-Regionen besitzen, die nicht mit unserer Hauptstadt verbunden sind und wir dort ein Herrschaftsgebiet besitzen, haben wir diese Provinzen an unser Herrschaftsgebiet in Ostafrika abgetreten. Insgesamt handelt es sich dabei um §R[Root.num_of_provinces_ceded_to_autonomous_dominion_east_africa.GetValue]§! Provinzen."
  subjects_expanded_dominion_events7.EVTOPT1: "In Ordnung."
  
- subjects_expanded_dominion_events.EVTNAME8: "Autonomes Herrschaftsgebiet erhält Provinzen"
- subjects_expanded_dominion_events.EVTDESC8: "Da wir Provinzen in südafrikanischen Handelshaus-Regionen besitzen, die nicht mit unserer Hauptstadt verbunden sind und wir dort ein Autonomes Herrschaftsgebiet besitzen, haben wir diese Provinzen an unser Autonomes Herrschaftsgebiet in Südafrika abgetreten. Insgesamt handelt es sich dabei um §R[Root.num_of_provinces_ceded_to_autonomous_dominion_south_africa.GetValue]§! Provinzen."
+ subjects_expanded_dominion_events.EVTNAME8: "Herrschaftsgebiet erhält Provinzen"
+ subjects_expanded_dominion_events.EVTDESC8: "Da wir Provinzen in südafrikanischen Handelshaus-Regionen besitzen, die nicht mit unserer Hauptstadt verbunden sind und wir dort ein Herrschaftsgebiet besitzen, haben wir diese Provinzen an unser Herrschaftsgebiet in Südafrika abgetreten. Insgesamt handelt es sich dabei um §R[Root.num_of_provinces_ceded_to_autonomous_dominion_south_africa.GetValue]§! Provinzen."
  subjects_expanded_dominion_events8.EVTOPT1: "In Ordnung."
+ 
+ subjects_expanded_dominion_events.EVTNAME9: "Herrschaftsgebiet erhält Provinzen"
+ subjects_expanded_dominion_events.EVTDESC9: "Da wir Provinzen in philippinischen Handelshaus-Regionen besitzen, die nicht mit unserer Hauptstadt verbunden sind und wir dort ein Herrschaftsgebiet besitzen, haben wir diese Provinzen an unser Herrschaftsgebiet in Südafrika abgetreten. Insgesamt handelt es sich dabei um §R[Root.num_of_provinces_ceded_to_autonomous_dominion_philippines.GetValue]§! Provinzen."
+ subjects_expanded_dominion_events9.EVTOPT1: "In Ordnung."
  
  subjects_expanded_roman_client_kingdom_events.EVTNAME1: "Römisches Klientelkönigtum"
  subjects_expanded_roman_client_kingdom_events.EVTDESC1: "Wir haben den Krieg gegen [From.GetName] verloren. Sie haben uns zu ihrem Römischen Klientelkönigtum gemacht und unseren Herrscher [Root.Monarch.GetName] [Root.Monarch.Dynasty.GetName] aufgrund seines Widerstandes gegen sie zum Tode verurteilt."

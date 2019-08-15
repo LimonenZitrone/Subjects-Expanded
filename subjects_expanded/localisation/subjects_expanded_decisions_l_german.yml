@@ -17,6 +17,9 @@
  create_dominion_in_east_africa_title: "Herrschaftsgebiet in Ostafrika"
  create_dominion_in_east_africa_desc: "Wir besitzen Provinzen in Ostafrika, jedoch sind diese ziemlich weit von unserer Hauptstadt [Root.Capital.GetName] entfernt, um effizient verwaltet werden zu können. Wir sollten dort deshalb ein Herrschaftsgebiet unter unserer Kontrolle errichten, das von einem Generalgouverneur verwaltet wird. \nEin Herrschaftsgebiet überträgt uns 50% seiner Handelsmacht, gibt uns Boni auf unser Flottenlimit und erhält selbst einige Modifikatoren, die Handel, Institutionsverbreitung und Religiöse Einheit positiv, sowie Steuern, Mannstärke, Missionarsstärke und Seeleute negativ beeinflussen. \nSollten wir anschließend weitere Provinzen in den betreffenden Handelsregionen (§YOstafrikanische Handelsregion§!) erhalten, die nicht mit unserer Hauptstadt verbunden sind, werden diese an unser Herrschaftsgebiet abgetreten."
  
+ create_dominion_in_philippines_title: "Herrschaftsgebiet auf den Philippinen"
+ create_dominion_in_philippines_desc: "Wir besitzen Provinzen auf den Philippinen, jedoch sind diese ziemlich weit von unserer Hauptstadt [Root.Capital.GetName] entfernt, um effizient verwaltet werden zu können. Wir sollten dort deshalb ein Herrschaftsgebiet unter unserer Kontrolle errichten, das von einem Generalgouverneur verwaltet wird. \nEin Herrschaftsgebiet überträgt uns 50% seiner Handelsmacht, gibt uns Boni auf unser Flottenlimit und erhält selbst einige Modifikatoren, die Handel, Institutionsverbreitung und Religiöse Einheit positiv, sowie Steuern, Mannstärke, Missionarsstärke und Seeleute negativ beeinflussen. \nSollten wir anschließend weitere Provinzen in den betreffenden Handelsregionen (§YPhilippinische Handelsregion§!) erhalten, die nicht mit unserer Hauptstadt verbunden sind, werden diese an unser Herrschaftsgebiet abgetreten."
+ 
  
  autonomous_dominion_ghana_nation_title: "Gründet Ghana"
  autonomous_dominion_ghana_nation_desc: "Nachdem wir unabhängig geworden sind, sollten wir uns nicht länger [Root.GetName] nennen und unsere geografische Lage erlaubt es uns, §Y[GHA.GetName]§! zu bilden."
@@ -35,4 +38,7 @@
  
  autonomous_dominion_thailand_nation_title: "Gründet Thailand"
  autonomous_dominion_thailand_nation_desc: "Nachdem wir unabhängig geworden sind, sollten wir uns nicht länger [Root.GetName] nennen und unsere geografische Lage erlaubt es uns, §Y[THL.GetName]§! zu bilden."
+ 
+ autonomous_dominion_philippines_nation_title: "Gründet die Philippinen"
+ autonomous_dominion_philippines_nation_desc: "Nachdem wir unabhängig geworden sind, sollten wir uns nicht länger [Root.GetName] nennen und unsere geografische Lage erlaubt es uns, §Y[PHI.GetName]§! zu bilden."
  

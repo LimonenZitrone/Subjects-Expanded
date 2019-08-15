@@ -588,6 +588,125 @@ defined_text = {
 }
 
 defined_text = {
+    name = GetCreatedADNamePhilippines
+	random = no
+
+	text = {
+        localisation_key = string_created_ad_name_philippines_1
+        trigger = {
+			OR = {
+				culture_group = british
+				tag = GBR
+				tag = ENG
+			}
+			NOT = { exists = DE1 }
+        }
+    }
+	text = {
+        localisation_key = string_created_ad_name_philippines_2
+        trigger = {
+			OR = {
+				culture_group = germanic
+				tag = GER
+				tag = PRU
+			}
+			NOT = { exists = DE2 }
+        }
+    }
+	text = {
+        localisation_key = string_created_ad_name_philippines_3
+        trigger = {
+			OR = {
+				culture_group = iberian
+				tag = SPA
+				tag = POR
+				tag = CAS
+				tag = ARA
+			}
+			OR = {
+				AND = {
+					NOT = { tag = SPA }
+					NOT = { tag = CAS }
+					NOT = { primary_culture = castillian }
+				}
+				exists = DE7
+			}
+			NOT = { exists = DE3 }
+        }
+    }
+	text = {
+        localisation_key = string_created_ad_name_philippines_4
+        trigger = {
+			OR = {
+				culture_group = french
+				tag = FRA
+				tag = FR2
+				tag = BRI
+				tag = BUR
+			}
+			NOT = { exists = DE4 }
+        }
+    }
+	text = {
+        localisation_key = string_created_ad_name_philippines_5
+        trigger = {
+			OR = {
+				tag = PAP
+				religion_group = christian
+			}
+			OR = {
+				AND = {
+					NOT = { tag = SPA }
+					NOT = { tag = CAS }
+					NOT = { primary_culture = castillian }
+				}
+				exists = DE7
+			}
+			NOT = { exists = DE5 }
+        }
+    }
+	text = {
+        localisation_key = string_created_ad_name_philippines_6
+        trigger = {
+			religion_group = muslim
+			OR = {
+				AND = {
+					NOT = { tag = SPA }
+					NOT = { tag = CAS }
+					NOT = { primary_culture = castillian }
+				}
+				exists = DE7
+			}
+			NOT = { exists = DE6 }
+        }
+    }
+	text = {
+        localisation_key = string_created_ad_name_philippines_7
+        trigger = {
+			OR = {
+				tag = SPA
+				tag = CAS
+				primary_culture = castillian
+			}
+			NOT = { exists = DE7 }
+        }
+    }
+	text = {
+        localisation_key = string_created_ad_name_philippines_8
+        trigger = {
+			NOT = { exists = DE8 }
+        }
+    }
+	
+	text = {
+        localisation_key = string_created_ad_name_philippines_9
+        trigger = {
+			NOT = { exists = DE9 }
+        }
+    }
+}
+
+defined_text = {
     name = GetFirstIndianTradeCompanyRegionWeCede
 	random = no
 

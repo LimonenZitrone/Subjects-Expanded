@@ -291,6 +291,7 @@ dominion = {
 					is_node_in_trade_company_region = yes
 				}
 			}
+			has_country_flag = is_releasing_dominion_in_trade_company_region
 		}
 	}
 
@@ -1588,6 +1589,7 @@ voivodeship = {
 	# (continuous)
 	subsidize_armies = yes
 	# (immediate)
+	enforce_culture = yes
 	placate_rulers = yes
 	fortify_march = yes
 	seize_territory = yes

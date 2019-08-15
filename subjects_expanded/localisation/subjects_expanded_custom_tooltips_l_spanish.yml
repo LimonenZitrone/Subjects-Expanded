@@ -44,6 +44,7 @@
  ALL_PROVINCES_IN_WEST_AFRICA_TRADE_COMPANY_REGIONS_CEDED_TO_DOMINION: "\nAll our provinces in the trade company region §YWest African Charter§! are ceded to our dominion \n[Root.GetCreatedADNameWestAfrica], which is released there."
  ALL_PROVINCES_IN_EAST_AFRICA_TRADE_COMPANY_REGIONS_CEDED_TO_DOMINION: "\nAll our provinces in the trade company region §YEast African Charter§! are ceded to our dominion \n[Root.GetCreatedADNameEastAfrica], which is released there."
  ALL_PROVINCES_IN_INDOCHINA_TRADE_COMPANY_REGIONS_CEDED_TO_DOMINION: "\nAll our provinces in the trade company region §YIndochinese Charter§! are ceded to our dominion \n[Root.GetCreatedADNameIndochina], which is released there."
+ ALL_PROVINCES_IN_PHILIPPINES_TRADE_COMPANY_REGIONS_CEDED_TO_DOMINION: "\nAll our provinces in the trade company region §YPhilippine Charter§! are ceded to our dominion \n[Root.GetCreatedADNamePhilippines], which is released there."
  
  # Events:
  ROMAN_CLIENT_KINGDOM_HEIR_ACCEPTED: "§Y[From.Heir.GetName] [From.Heir.Dynasty.GetName]§! (Claim: [From.GetHeirClaimText]) \n £adm£ [From.GetHeirAdm] £dip£ [From.GetHeirDip] £mil£ [From.GetHeirMil] \nis henceforth the heir of: \n@[From.GetTag] §Y[From.GetName]§!.\n"

@@ -12,13 +12,7 @@ country_decisions = {
 				trade_company_indochina = {
 					owned_by = ROOT
 				}
-				tag = DC1
-				tag = DC2
-				tag = DC3
-				tag = DC4
-				tag = DC5
-				tag = DC6
-				tag = DC7
+				is_dominion_tag_in_indochina = yes
 			}
 		}
 		allow = {
@@ -69,15 +63,7 @@ country_decisions = {
 				trade_company_coromandel = {
 					owned_by = ROOT
 				}
-				tag = DI1
-				tag = DI2
-				tag = DI3
-				tag = DI4
-				tag = DI5
-				tag = DI6
-				tag = DI7
-				tag = DI8
-				tag = DI9
+				is_dominion_tag_in_india = yes
 			}
 		}
 		allow = {
@@ -119,15 +105,7 @@ country_decisions = {
 				trade_company_indonesia = {
 					owned_by = ROOT
 				}
-				tag = DE1
-				tag = DE2
-				tag = DE3
-				tag = DE4
-				tag = DE5
-				tag = DE6
-				tag = DE7
-				tag = DE8
-				tag = DE9
+				is_dominion_tag_in_east_indies = yes
 			}
 		}
 		allow = {
@@ -166,13 +144,7 @@ country_decisions = {
 				trade_company_west_africa = {
 					owned_by = ROOT
 				}
-				tag = DW1
-				tag = DW2
-				tag = DW3
-				tag = DW4
-				tag = DW5
-				tag = DW6
-				tag = DW7
+				is_dominion_tag_in_west_africa = yes
 			}
 			NOT = {
 				any_province = {
@@ -216,13 +188,7 @@ country_decisions = {
 				trade_company_east_africa = {
 					owned_by = ROOT
 				}
-				tag = DA1
-				tag = DA2
-				tag = DA3
-				tag = DA4
-				tag = DA5
-				tag = DA6
-				tag = DA7
+				is_dominion_tag_in_east_africa = yes
 			}
 			NOT = {
 				any_province = {
@@ -266,13 +232,7 @@ country_decisions = {
 				trade_company_south_africa = {
 					owned_by = ROOT
 				}
-				tag = DS1
-				tag = DS2
-				tag = DS3
-				tag = DS4
-				tag = DS5
-				tag = DS6
-				tag = DS7
+				is_dominion_tag_in_south_africa = yes
 			}
 			NOT = {
 				any_province = {
@@ -291,6 +251,45 @@ country_decisions = {
 		effect = {
 			add_prestige = 25
 			change_tag = RSA
+			set_country_flag = changed_from_colonial_nation
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			swap_free_idea_group = yes
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	autonomous_dominion_philippines_nation = {
+		major = yes
+		potential = {
+			NOT = { exists = PHI }
+			NOT = { has_country_flag = changed_from_colonial_nation }
+			OR = {
+				is_former_autonomous_dominion = yes
+				is_colonial_nation = yes
+			}
+			OR = {
+				trade_company_philippines = {
+					owned_by = ROOT
+				}
+				is_dominion_tag_in_philippines = yes
+			}
+		}
+		allow = {
+			is_former_autonomous_dominion = yes
+			is_subject = no
+			is_at_war = no
+			capital_scope = {
+				is_node_in_trade_company_region = yes
+			}
+		}
+		effect = {
+			add_prestige = 25
+			change_tag = PHI
 			set_country_flag = changed_from_colonial_nation
 			add_country_modifier = {
 				name = "centralization_modifier"

@@ -162,6 +162,7 @@ is_possible_subject_of_subject_type_voivodeship = {
 	is_subject_of = PREV
 	is_vassal_or_similar_subject = yes
 	is_neighbor_of = PREV
+	culture_group = PREV
 }
 
 is_possible_subject_of_subject_type_fief_subject = {

@@ -1885,9 +1885,9 @@ peasant_vassal = {
 	count = vassal
 	
 	# Graphics:
-	sprite = GFX_icon_vassal
-	diplomacy_overlord_sprite = GFX_diplomacy_leadvassal # The one that the overlord sees
-	diplomacy_subject_sprite = GFX_diplomacy_amvassal	# The one that the subject sees
+	sprite = GFX_icon_peasant_vassal
+	diplomacy_overlord_sprite = GFX_diplomacy_leadpeasant_vassal # The one that the overlord sees
+	diplomacy_subject_sprite = GFX_diplomacy_ampeasant_vassal	# The one that the subject sees
 
 	# Triggers:
 	is_potential_overlord = {

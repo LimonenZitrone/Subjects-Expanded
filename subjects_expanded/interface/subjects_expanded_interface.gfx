@@ -116,4 +116,17 @@ spriteTypes = {
 		name = "GFX_diplomacy_amnahuatl_vassal"
 		texturefile = "gfx//interface//icon_diplomacy_amnahuatl_vassal.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_icon_peasant_vassal"
+		texturefile = "gfx/interface/icon_peasant_vassal.dds"
+	}
+	spriteType = {
+		name = "GFX_diplomacy_leadpeasant_vassal"
+		texturefile = "gfx//interface//icon_diplomacy_leadpeasant_vassal.dds"
+	}
+	spriteType = {
+		name = "GFX_diplomacy_ampeasant_vassal"
+		texturefile = "gfx//interface//icon_diplomacy_ampeasant_vassal.dds"
+	}
 }

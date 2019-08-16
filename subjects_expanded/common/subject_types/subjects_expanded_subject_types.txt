@@ -1707,6 +1707,7 @@ crusader_state_vassal = {
 			tag = PAP
 			tag = KOJ
 			has_reform = monastic_order_reform
+			has_reform = crusader_kingdom
 		}
 		religion = catholic
 		is_excommunicated = no

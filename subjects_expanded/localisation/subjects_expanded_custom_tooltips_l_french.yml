@@ -37,6 +37,10 @@
  
  DID_NOT_DEMAND_MANPOWER_OF_AUTONOMOUS_DOMINION_WITHIN_LAST_5_YEARS: "Was NOT forced to transfer manpower to its overlord within the last §Y5 years§!"
  
+ IS_NOT_IN_THE_CAPITAL_COLONIAL_REGION: "Is NOT in the same colonial region as its owners capital"
+ HAS_NO_OTHER_COLONIAL_NATION_IN_SAME_REGION: "§Y[Root.GetName]§! does NOT have any colonial subject in this colonial region"
+ HAS_OTHER_COLONIAL_NATION_IN_SAME_REGION: "§Y[Root.GetName]§! has a colonial subject in this colonial region"
+ 
  # Decisions:
  ALL_PROVINCES_IN_INDIAN_TRADE_COMPANY_REGIONS_CEDED_TO_DOMINION: "\nAll our provinces in [Root.GetIndianTradeCompanyRegionsSgPl] [Root.GetFirstIndianTradeCompanyRegionWeCede][Root.GetSecondIndianTradeCompanyRegionWeCede][Root.GetThirdIndianTradeCompanyRegionWeCede][Root.GetFourthIndianTradeCompanyRegionWeCede][Root.GetFifthIndianTradeCompanyRegionWeCede] are ceded to our dominion \n[Root.GetCreatedADNameIndia], which is released there."
  ALL_PROVINCES_IN_EAST_INDIES_TRADE_COMPANY_REGIONS_CEDED_TO_DOMINION: "\nAll our provinces in [Root.GetEastIndiesTradeCompanyRegionsSgPl] [Root.GetFirstEastIndiesTradeCompanyRegionWeCede][Root.GetSecondEastIndiesTradeCompanyRegionWeCede] are ceded to our dominion \n[Root.GetCreatedADNameEastIndies], which is released there."

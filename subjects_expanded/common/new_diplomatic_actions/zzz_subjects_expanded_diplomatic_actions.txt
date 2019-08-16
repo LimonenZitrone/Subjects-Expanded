@@ -1,0 +1,77 @@
+return_subject_to_vassal = {
+	category = influence
+
+	require_acceptance = no
+	
+	is_visible = {
+		FROM = {
+			is_subject_of = ROOT
+			OR = {
+				is_similar_vassal_subject = yes
+				is_similar_march_subject = yes
+			}
+		}
+	}
+	
+	is_allowed = {
+		hidden_trigger = {
+			FROM = {
+				is_subject_of = ROOT
+				OR = {
+					is_similar_vassal_subject = yes
+					is_similar_march_subject = yes
+				}
+			}
+		}
+		prestige = 0
+		FROM = {
+			NOT = { liberty_desire = 50 }
+		}
+		FROM = {
+			has_opinion = {
+				who = ROOT
+				value = 100
+			}
+		}
+	}
+	
+	on_accept = {
+		if = {
+			limit = {
+				FROM = {
+					is_subject_of = ROOT
+					OR = {
+						is_similar_vassal_subject = yes
+						is_similar_march_subject = yes
+					}
+				}
+				prestige = 0
+				FROM = {
+					NOT = { liberty_desire = 50 }
+				}
+				FROM = {
+					has_opinion = {
+						who = ROOT
+						value = 100
+					}
+				}
+			}
+			FROM = {
+				add_opinion = {
+					who = ROOT
+					modifier = returned_to_vassal
+				}
+				grant_independence = yes
+			}
+			vassalize = FROM
+			add_prestige = -10
+			FROM = {
+				add_liberty_desire = 25
+			}
+		}
+	}
+	
+	ai_will_do = {
+		always = no
+	}
+}

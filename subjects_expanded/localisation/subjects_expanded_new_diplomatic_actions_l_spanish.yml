@@ -40,6 +40,10 @@
  decrease_colonial_autonomy_desc: "Decrease the autonomy of §Y[From.GetName]§!. [From.GetDecreaseColonialAutonomyDesc] \nThis will change their liberty desire by §R+25%§!."
  decrease_colonial_autonomy_tooltip: "Decrease the autonomy of §Y[From.GetName]§!.\n"
  
+ seize_provinces_in_other_colonial_regions_title: "Seize Provinces"
+ seize_provinces_in_other_colonial_regions_desc: "Seize the provinces of §Y[From.GetName]§! that are not in the same colonial region as their capital (§Y[From.Capital.GetName]§!) and that are either in a colonial region in which you have a Colonial Nation, Dominion or Autonomous Dominion or in a colonial region you have neither of those subjects in. In the latter case, [From.GetName] has to own at least §Y5§! matching provinces in the same colonial region. \nThis will give you ownership over the matching provinces and eventually cede them to one of your matching subjects or create a new one. \nThis will change their liberty desire by §R+15%§!."
+ seize_provinces_in_other_colonial_regions_tooltip: "Seize the provinces of §Y[From.GetName]§! that are not in the same colonial region as their capital (§Y[From.Capital.GetName]§!).\n"
+ 
  
  establish_roman_client_kingdom_title: "Establish Client Kingdom"
  establish_roman_client_kingdom_desc: "Make your vassal [From.GetName] to a §YRoman Client Kingdom§!. \nA Roman Client Kingdom behaves like a vassal, but has less liberty desire and can only be created by the §YRoman Empire§!, §YWest Roman Empire§! and §YByzantine Empire§!. Further more they pay more money to their overlord and are a little less restricted in their diplomatic actions than normal vassals. \nIf they border one of our rivals or enemies, §YRoman Client Kingdoms§! do not cost a diplomatic relation and as long as we do not have any colonists, they increase our core range by §G+5%§! each. \nWhen they receive a new heir, he/she has to be acknowledged by us or he/she will not be accepted as rightful heir."

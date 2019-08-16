@@ -37,6 +37,10 @@
  
  DID_NOT_DEMAND_MANPOWER_OF_AUTONOMOUS_DOMINION_WITHIN_LAST_5_YEARS: "Wurde innerhalb der letzten §Y5 Jahre§! NICHT dazu gezwungen, Mannstärke an ihren Lehnsherrn zu transferieren"
  
+ IS_NOT_IN_THE_CAPITAL_COLONIAL_REGION: "Ist NICHT in derselben Kolonialregion wie die Hauptstadt ihres Besitzers"
+ HAS_NO_OTHER_COLONIAL_NATION_IN_SAME_REGION: "§Y[Root.GetName]§! hat KEINE kolonialen Untertanen in dieser Kolonialregion"
+ HAS_OTHER_COLONIAL_NATION_IN_SAME_REGION: "§Y[Root.GetName]§! hat kolonialen Untertanen in dieser Kolonialregion"
+ 
  # Decisions:
  ALL_PROVINCES_IN_INDIAN_TRADE_COMPANY_REGIONS_CEDED_TO_DOMINION: "\nAlle unsere Provinzen in [Root.GetIndianTradeCompanyRegionsSgPl] [Root.GetFirstIndianTradeCompanyRegionWeCede][Root.GetSecondIndianTradeCompanyRegionWeCede][Root.GetThirdIndianTradeCompanyRegionWeCede][Root.GetFourthIndianTradeCompanyRegionWeCede][Root.GetFifthIndianTradeCompanyRegionWeCede] werden an unser dort entlassenes Herrschaftsgebiet \n[Root.GetCreatedADNameIndia] abgetreten."
  ALL_PROVINCES_IN_EAST_INDIES_TRADE_COMPANY_REGIONS_CEDED_TO_DOMINION: "\nAlle unsere Provinzen in [Root.GetEastIndiesTradeCompanyRegionsSgPl] [Root.GetFirstEastIndiesTradeCompanyRegionWeCede][Root.GetSecondEastIndiesTradeCompanyRegionWeCede] werden an unser dort entlassenes Herrschaftsgebiet \n[Root.GetCreatedADNameEastIndies] abgetreten."

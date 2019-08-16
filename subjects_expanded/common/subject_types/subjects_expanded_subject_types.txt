@@ -1496,7 +1496,6 @@ roman_client_kingdom = {
 		same_overlord = roman_client_kingdom
 	}
 	can_marry = {
-		overlord = yes
 		same_overlord = roman_client_kingdom
 	}
 	
@@ -1605,15 +1604,6 @@ voivodeship = {
 		trigger = {
 			NOT = {
 				development_of_overlord_fraction = 0.33
-			}
-		}
-	}
-	modifier_subject = {
-		modifier = voivodeship_overlord_has_parliament_modifier
-		trigger = {
-			FROM = {
-				government = monarchy
-				has_parliament = yes
 			}
 		}
 	}

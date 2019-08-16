@@ -172,7 +172,7 @@ add_ideas_of_idea_group_innovativeness_ideas = {
 			check_variable = { which = num_of_overlord_ideas value = 1 }
 		}
 		change_variable = { which = num_of_overlord_ideas value = -1 }
-		add_idea = pragmatism
+		add_idea = empiricism
 	}
 	if = {
 		limit = {
@@ -193,7 +193,7 @@ add_ideas_of_idea_group_innovativeness_ideas = {
 			check_variable = { which = num_of_overlord_ideas value = 1 }
 		}
 		change_variable = { which = num_of_overlord_ideas value = -1 }
-		add_idea = resilient_state
+		add_idea = print_culture
 	}
 	if = {
 		limit = {
@@ -290,7 +290,7 @@ add_ideas_of_idea_group_spy_ideas = {
 			check_variable = { which = num_of_overlord_ideas value = 1 }
 		}
 		change_variable = { which = num_of_overlord_ideas value = -1 }
-		add_idea = additional_loyalist_recruitment
+		add_idea = state_propaganda
 	}
 	if = {
 		limit = {
@@ -335,7 +335,7 @@ add_ideas_of_idea_group_diplomatic_ideas = {
 			check_variable = { which = num_of_overlord_ideas value = 1 }
 		}
 		change_variable = { which = num_of_overlord_ideas value = -1 }
-		add_idea = war_cabinet
+		add_idea = grand_banquets
 	}
 	if = {
 		limit = {
@@ -581,14 +581,14 @@ add_ideas_of_idea_group_exploration_ideas = {
 			check_variable = { which = num_of_overlord_ideas value = 1 }
 		}
 		change_variable = { which = num_of_overlord_ideas value = -1 }
-		add_idea = colonial_ventures
+		add_idea = quest_for_the_new_world
 	}
 	if = {
 		limit = {
 			check_variable = { which = num_of_overlord_ideas value = 1 }
 		}
 		change_variable = { which = num_of_overlord_ideas value = -1 }
-		add_idea = quest_for_the_new_world
+		add_idea = colonial_ventures
 	}
 	if = {
 		limit = {
@@ -633,7 +633,7 @@ add_ideas_of_idea_group_maritime_ideas = {
 			check_variable = { which = num_of_overlord_ideas value = 1 }
 		}
 		change_variable = { which = num_of_overlord_ideas value = -1 }
-		add_idea = sea_hawks
+		add_idea = merchant_traditions
 	}
 	if = {
 		limit = {
@@ -668,7 +668,7 @@ add_ideas_of_idea_group_maritime_ideas = {
 			check_variable = { which = num_of_overlord_ideas value = 1 }
 		}
 		change_variable = { which = num_of_overlord_ideas value = -1 }
-		add_idea = excellent_shipwrights
+		add_idea = sea_hawks
 	}
 	if = {
 		limit = {
@@ -765,7 +765,7 @@ add_ideas_of_idea_group_quantity_ideas = {
 			check_variable = { which = num_of_overlord_ideas value = 1 }
 		}
 		change_variable = { which = num_of_overlord_ideas value = -1 }
-		add_idea = mercenary_contracts
+		add_idea = camp_followers
 	}
 	if = {
 		limit = {
@@ -810,7 +810,7 @@ add_ideas_of_idea_group_expansion_ideas = {
 			check_variable = { which = num_of_overlord_ideas value = 1 }
 		}
 		change_variable = { which = num_of_overlord_ideas value = -1 }
-		add_idea = organised_recruiting
+		add_idea = factories
 	}
 	if = {
 		limit = {
@@ -824,7 +824,7 @@ add_ideas_of_idea_group_expansion_ideas = {
 			check_variable = { which = num_of_overlord_ideas value = 1 }
 		}
 		change_variable = { which = num_of_overlord_ideas value = -1 }
-		add_idea = improved_shipyards
+		add_idea = general_colonization_law
 	}
 	if = {
 		limit = {
@@ -952,7 +952,7 @@ add_ideas_of_idea_group_influence_ideas = {
 			check_variable = { which = num_of_overlord_ideas value = 1 }
 		}
 		change_variable = { which = num_of_overlord_ideas value = -1 }
-		add_idea = establish_cadet_branches
+		add_idea = additional_loyalist_recruitment
 	}
 	if = {
 		limit = {
@@ -966,7 +966,7 @@ add_ideas_of_idea_group_influence_ideas = {
 			check_variable = { which = num_of_overlord_ideas value = 1 }
 		}
 		change_variable = { which = num_of_overlord_ideas value = -1 }
-		add_idea = state_propaganda
+		add_idea = buffer_states
 	}
 	if = {
 		limit = {

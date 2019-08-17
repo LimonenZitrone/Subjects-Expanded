@@ -54,6 +54,8 @@ Currently [i]Subjects Expanded[/i] adds [b]12[/b] new subject types:
 [/list]
 [/list]
 
+You can find more details on the new subjects [url=https://steamcommunity.com/workshop/filedetails/discussion/1834079712/3647273545685194210/]here[/url].
+
 [h1]Localisations[/h1]
 [list]
 [*] English localisatsion included

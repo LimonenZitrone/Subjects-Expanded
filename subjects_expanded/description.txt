@@ -2,7 +2,7 @@
 This mod adds new subject types and diplomatic actions related to them to add more variety and depth to the subject system.
 
 [h1]Currently Added[/h1]
-Currently [i]Subjects Expanded[/i] adds [b]11[/b] new subject types:
+Currently [i]Subjects Expanded[/i] adds [b]12[/b] new subject types:
 [list]
 [*] Protectorate
 [list]
@@ -47,6 +47,10 @@ Currently [i]Subjects Expanded[/i] adds [b]11[/b] new subject types:
 [*] Peasant Vassal
 [list]
 [*] A Peasant Vassal is a mixture of a vassal and a tributary. It does not join its overlord's wars, is not very limited in its diplomatic actions, has a higher forcelimit and grants more forcelimit to its overlord than vassals. Further more the overlord can demand tribute from them and receives a bonus to aggressive expansion and a malus to all power cost for each Peasant Vassal. A Peasant Vassal has reduced tax income, but increased production efficiency, army morale and manpower, however the overlord pays it and it has a slighty higher liberty desire from development than vassals.
+[/list]
+[*] Pirate Brotherhood
+[list]
+[*] A Pirate Brotherhood is a mixture of a vassal and a colonial nation. It can only be established by nations with a Pirate government, at least three ports and 20 ships and is locked to Pirate governments itself. It pays tariffs and can have subjects on its own. It has a lower liberty desire than vassals, but is less restricted in its diplomatic actions. It receives a bonus to privateer efficiency, naval forcelimit and naval morale and gives its overlord a bonus to privateer efficiency and naval forcelimit. (Requires Golden Century DLC)
 [/list]
 [/list]
 

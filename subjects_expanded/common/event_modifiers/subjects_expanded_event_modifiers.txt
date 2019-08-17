@@ -52,7 +52,6 @@ protectorate_advanced_mil_liberty_desire_modifier = {
 	liberty_desire = 33
 }
 
-
 # Subject Type: Puppet State
 puppet_state_modifier = {
 	global_manpower_modifier = 0.25

@@ -37,6 +37,21 @@ establish_voivodeship = {
 				subject = FROM
 				subject_type = voivodeship
 			}
+			if = {
+				limit = {
+					NOT = {
+						OR = {
+							culture_group = FROM
+							accepted_culture = FROM
+							FROM = {
+								accepted_culture = ROOT
+							}
+						}
+					}
+				}
+				add_stability = -1
+				add_prestige = -10
+			}
 		}
 	}
 	

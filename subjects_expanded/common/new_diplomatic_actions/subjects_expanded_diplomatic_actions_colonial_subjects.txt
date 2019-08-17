@@ -272,104 +272,6 @@ demand_manpower_from_autonomous_dominion = {
 	}
 }
 
-decrease_colonial_autonomy = {
-	category = influence
-
-	require_acceptance = no
-	
-	is_visible = {
-		num_of_colonists = 1
-		FROM = {
-			is_subject_of = ROOT
-			OR = {
-				AND = {
-					is_subject_of_type = dominion
-					capital_scope = {
-						is_node_in_trade_company_region = no
-					}
-				}
-				is_subject_of_type = autonomous_dominion
-			}
-		}
-	}
-	
-	is_allowed = {
-		hidden_trigger = {
-			num_of_colonists = 1
-			FROM = {
-				is_subject_of = ROOT
-				OR = {
-					AND = {
-						is_subject_of_type = dominion
-						capital_scope = {
-							is_node_in_trade_company_region = no
-						}
-					}
-					is_subject_of_type = autonomous_dominion
-				}
-			}
-		}
-		FROM = {
-			capital_scope = { trade_range = ROOT }
-		}
-		is_at_war = no
-		FROM = { is_at_war = no }
-		FROM = {
-			NOT = { liberty_desire = 50 }
-		}
-	}
-	
-	on_accept = {
-		if = {
-			limit = {
-				num_of_colonists = 1
-				FROM = {
-					is_subject_of = ROOT
-					OR = {
-						AND = {
-							is_subject_of_type = dominion
-							capital_scope = {
-								is_node_in_trade_company_region = no
-							}
-						}
-						is_subject_of_type = autonomous_dominion
-					}
-				}
-				FROM = {
-					capital_scope = { trade_range = ROOT }
-				}
-				is_at_war = no
-				FROM = { is_at_war = no }
-				FROM = {
-					NOT = { liberty_desire = 50 }
-				}
-			}
-			if = {
-				limit = {
-					FROM = { is_subject_of_type = autonomous_dominion }
-				}
-				create_subject = {
-					subject = FROM
-					subject_type = dominion
-				}
-			}
-			else = {
-				create_subject = {
-					subject = FROM
-					subject_type = colony
-				}
-			}
-			FROM = {
-				add_liberty_desire = 25
-			}
-		}
-	}
-	
-	ai_will_do = {
-		always = no
-	}
-}
-
 seize_provinces_in_other_colonial_regions = {
 	category = influence
 
@@ -596,6 +498,104 @@ seize_provinces_in_other_colonial_regions = {
 					}
 					cede_province = ROOT
 				}
+			}
+		}
+	}
+	
+	ai_will_do = {
+		always = no
+	}
+}
+
+decrease_colonial_autonomy = {
+	category = influence
+
+	require_acceptance = no
+	
+	is_visible = {
+		num_of_colonists = 1
+		FROM = {
+			is_subject_of = ROOT
+			OR = {
+				AND = {
+					is_subject_of_type = dominion
+					capital_scope = {
+						is_node_in_trade_company_region = no
+					}
+				}
+				is_subject_of_type = autonomous_dominion
+			}
+		}
+	}
+	
+	is_allowed = {
+		hidden_trigger = {
+			num_of_colonists = 1
+			FROM = {
+				is_subject_of = ROOT
+				OR = {
+					AND = {
+						is_subject_of_type = dominion
+						capital_scope = {
+							is_node_in_trade_company_region = no
+						}
+					}
+					is_subject_of_type = autonomous_dominion
+				}
+			}
+		}
+		FROM = {
+			capital_scope = { trade_range = ROOT }
+		}
+		is_at_war = no
+		FROM = { is_at_war = no }
+		FROM = {
+			NOT = { liberty_desire = 50 }
+		}
+	}
+	
+	on_accept = {
+		if = {
+			limit = {
+				num_of_colonists = 1
+				FROM = {
+					is_subject_of = ROOT
+					OR = {
+						AND = {
+							is_subject_of_type = dominion
+							capital_scope = {
+								is_node_in_trade_company_region = no
+							}
+						}
+						is_subject_of_type = autonomous_dominion
+					}
+				}
+				FROM = {
+					capital_scope = { trade_range = ROOT }
+				}
+				is_at_war = no
+				FROM = { is_at_war = no }
+				FROM = {
+					NOT = { liberty_desire = 50 }
+				}
+			}
+			if = {
+				limit = {
+					FROM = { is_subject_of_type = autonomous_dominion }
+				}
+				create_subject = {
+					subject = FROM
+					subject_type = dominion
+				}
+			}
+			else = {
+				create_subject = {
+					subject = FROM
+					subject_type = colony
+				}
+			}
+			FROM = {
+				add_liberty_desire = 25
 			}
 		}
 	}

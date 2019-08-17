@@ -1,0 +1,328 @@
+[u]Here you can find a list of all subjects in the mod, with description and additional information.[/u]
+
+[h1]Protectorate[/h1]
+[i]A Protectorate gives us some of their trade power in return for technological progress and military protection.[/i]
+
+[b]Conditions (possible overlord):[/b]
+[list]
+[*] is not a subject
+[*] is either in the Western, Eastern, Muslim or Roman technology group
+[/list]
+
+[b]Conditions (possible subject):[/b]
+[list]
+[*] is not a subject
+[*] is neither in the Western, Eastern, Muslim nor Roman technology group
+[*] its capital is not on the same continent as the one of the possible overlord
+[*] is not a nomadic nation
+[*] is at least 9 technologies behind the possible overlord
+[*] its capital is within the trade range of the possible overlord
+[/list]
+
+[b]Additional Information:[/b]
+[list]
+[*] Protectorates can be established diplomatically and by war
+[*] Protectorates don't have a max government rank
+[*] Protectorates receive 12 of each monarch power once per year
+[*] Protectorates have reduced national unrest and institution embracement cost
+[*] if Protectorates are behind their overlord in institutions, they receive a bonus to institution spread
+[*] if Protectorates are behind their overlord in technologies, they receive a bonus to technology cost of the technology they are behind in
+[*] if Protectorates are at the same or a more advanced level of technology compared to their overlord, they receive additional liberty desire
+[/list]
+
+[h1]Puppet State[/h1]
+[i]A Puppet State is a mixture of a vassal and a march. It receives similar bonuses as a march, but can be annexed after 10 years. Further more it increases our reputation at home and in foreign countries.[/i]
+
+[b]Conditions (possible overlord):[/b]
+[list]
+[*] is not a subject
+[*] is not a nomadic nation
+[*] is not a tribal nation
+[*] is not a primitive nation
+[*] has at least 50 legitimacy equivalent
+[*] has at least 300 total development
+[/list]
+
+[b]Conditions (possible subject):[/b]
+[list]
+[*] is either not a subject or a Client Vassal of the possible overlord
+[*] is not a nomadic nation
+[*] is not a tribal nation
+[*] is not a primitive nation
+[*] is not a great power
+[*] is either at war with the possible overlord, the possible overlord's subject or was released by the possible overlord in a war (which means the possible overlord demanded of another country to release the possible subject)
+[*] it's either the year 1700 or later, the Age of Absolutism or the possible overlord has the Imperialism Casus Belli against it
+[*] its capital is within the trade range of the possible overlord
+[/list]
+
+[b]Additional Information:[/b]
+[list]
+[*] Puppet States can be established diplomatically and by war
+[*] Puppet States have a max government rank of 1 (Duchy)
+[*] Puppet States gain the same bonus as Marches
+[*] Puppet States gain additional liberty desire, if their overlord has a parliament
+[*] Puppet States give their overlord a bonus to yearly legitimacy equivalent, yearly prestige and improving relations
+[/list]
+
+[h1]Dominion[/h1]
+[i]A Dominion behaves like a colonial nation, but has less liberty desire and pays no tarrifs to its overlord. They are a little bit less limited than colonial nations in diplomatic actions, but cannot be forced to start colonial wars. Dominions in trade company regions, can not be individualized, but give a bonus to its overlord's naval forcelimit.[/i]
+
+[b]Conditions (possible overlord):[/b]
+[list]
+[*] is not a subject
+[*] it's either the year 1700 or later, the Age of Absolutism or owns a province in a trade company region and does not have its capital in a trade company region
+[/list]
+
+[b]Conditions (possible subject):[/b]
+[list]
+[*] is either a Colonial Nation or an Autonomous Dominion of the possible overlord
+[*] has at least 100 total development
+[*] its capital is within the trade range of the possible overlord
+[/list]
+
+[b]Additional Information:[/b]
+[list]
+[*] Dominions can only be established diplomatically or by decision
+[*] Dominions have a max government rank of 1 (Duchy)
+[*] Dominions can be released in trade company regions by decision
+[*] Dominions in trade company regions gain a bonus on national unrest, institution spread, trade power, religious unity, max amount of states, tolerance of heretics and heathens, min autonomy and amount of accepted cultures
+[*] Dominions in trade company regions receive a malus on missionary strength, tax income, sailors and manpower
+[*] Dominions in trade company regions grant their overlord a bonus on naval forcelimit based on their amount of provinces
+[*] Dominions have a subject interaction (diplomatic action) to seize provinces that are not in their capital's colonial region (also available for Colonial Nations)
+[/list]
+
+[h1]Autonomous Dominion[/h1]
+[i]An Autonomous Dominion behaves like a colonial nation, but has less liberty desire, pays no tarrifs to its overlord and does not join its overlord's wars. They are less limited in diplomatic actions than colonial nations and their overlord can decline helping them in defensive wars. Further more they grant two merchants to its overlord. Autonomous Dominions in trade company regions, can not be individualized, but give a bonus to its overlord's naval forcelimit.[/i]
+
+[b]Conditions (possible overlord):[/b]
+[list]
+[*] is not a subject
+[*] it's either the year 1700 or later or the Age of Absolutism
+[/list]
+
+[b]Conditions (possible subject):[/b]
+[list]
+[*] is a Dominion of the possible overlord
+[*] has at least 300 total development
+[*] its capital is within the trade range of the possible overlord
+[/list]
+
+[b]Additional Information:[/b]
+[list]
+[*] Autonomous Dominions can only be established diplomatically
+[*] Autonomous Dominions have a max government rank of 1 (Duchy)
+[*] Autonomous Dominions grant their overlord 2 merchants
+[*] Autonomous Dominions in trade company regions gain a bonus on national unrest, institution spread, trade power, religious unity, max amount of states, tolerance of heretics and heathens, min autonomy and amount of accepted cultures
+[*] Autonomous Dominions in trade company regions receive a malus on missionary strength, tax income, sailors and manpower
+[*] Autonomous Dominions in trade company regions grant their overlord a bonus on naval forcelimit based on their amount of provinces
+[*] Autonomous Dominions have a subject interaction (diplomatic action) to demand manpower
+[/list]
+
+[h1]Roman Client Kingdom[/h1]
+[i]A Roman Client Kingdom behaves like a vassal, but has less liberty desire and can only be created by the Roman Empire, West Roman Empire and Byzantine Empire. Further more they pay more money to their overlord and are a little less restricted in their diplomatic actions than normal vassals. If they border one of our rivals or enemies, Roman Client Kingdoms do not cost a diplomatic relation and as long as we do not have any colonists, they increase our core range by +5% each. When they receive a new heir, he/she has to be acknowledged by us or he/she will not be accepted as rightful heir.[/i]
+
+[b]Conditions (possible overlord):[/b]
+[list]
+[*] is either Roman Empire, Western Roman Empire or Byzantium
+[*] does not have the "Salic Monarchy" government
+[/list]
+
+[b]Conditions (possible subject):[/b]
+[list]
+[*] is either at war with the possible overlord or is the possible overlord's Vassal and has a monarchy government
+[/list]
+
+[b]Additional Information:[/b]
+[list]
+[*] Roman Client Kingdoms can be established diplomatically and by war
+[*] Roman Client Kingdoms have a max government rank of 2 (Kingdom)
+[*] Roman Client Kingdoms gain a bonus on yearly legitimacy and garrison size
+[*] Roman Client Kingdoms grant an additional bonus to their overlord's army forcelimit
+[*] Roman Client Kingdoms do not cost a diplomatic relation if they neighbor one of their overlord's rivals or enemies
+[*] Roman Client Kingdoms grant their overlord a bonus on coring range as long as the overlord has no colonists
+[*] Roman Client Kingdoms have a subject interaction (diplomatic action) to set a ruler with the overlord's culture and religion on their throne
+[*] Roman Client Kingdoms have a subject interaction (diplomatic action) to demand additional tribute in form of manpower or monarch power
+[/list]
+
+[h1]Voivodeship[/h1]
+[i]A Voivodeship is a mixture of a vassal and a march. It receives similar bonuses as a march, but can be annexed after 10 years. Further more it has increased military expanses and can only be established by Poland and Commonwealth.[/i]
+
+[b]Conditions (possible overlord):[/b]
+[list]
+[*] is either Poland, Commonwealth or has Polish as primary culture
+[*] is not a subject
+[/list]
+
+[b]Conditions (possible subject):[/b]
+[list]
+[*] is a vassal of the possible overlord
+[*] is a neighbor of the possible overlord
+[/list]
+
+[b]Additional Information:[/b]
+[list]
+[*] Voivodeships can only be established diplomatically
+[*] Voivodeships have a max government rank of 1 (Duchy)
+[*] Voivodeships gain the same bonuses as Marches
+[*] establishing a Voivodeship on countries that are neither in the same culture group, don't accept the possible overlord's culture nor of which the possible overlord doesn't accept their culture changes the possible overlord's stability by -1 and prestige by -10
+[*] having Bohemia as a Personal Union while they have Silesia as a Vassal can fire an event to make Silesia to Bohemia's overlord's Voivodeship, if it is a possible overlord
+[/list]
+
+[h1]Fiefdom[/h1]
+[i]A Fiefdom is a vassal of the same primary culture. It behaves similar to normal vassals, but has a slightly lower liberty desire, does not join its overlords wars and can only be integrated. However it pays more money to its overlord and the overlord can demand troops from it. Further more it has increased tax income and decreased culture conversion cost and also affects these modifiers for its overlord. It can only be established when having the Feudal Nobility government.[/i]
+
+[b]Conditions (possible overlord):[/b]
+[list]
+[*] has the "Feudal Nobility" government
+[*] is not a subject
+[/list]
+
+[b]Conditions (possible subject):[/b]
+[list]
+[*] is either not a subject or a vassal of the possible overlord
+[*] has the same primary culture as the possible overlord
+[/list]
+
+[b]Additional Information:[/b]
+[list]
+[*] Fiefdoms can be established diplomatically and by war
+[*] Fiefdoms have a max government rank of 1 (Duchy)
+[*] Fiefdoms gain a bonus on culture conversion cost and tax income
+[*] Fiefdoms grant their overlord a bonus on culture conversion cost and tax income
+[*] Fiefdoms have a subject interaction (diplomatic action) to demand units
+[/list]
+
+[h1]Crusader State[/h1]
+[i]A Crusader State is a mixture of a vassal and a march. It receives bonuses to discipline, manpower, war score cost against other religions and missionary strength. Further more they increase the papal authority and missionary strength of its overlord and cannot be annexed. They can only be established by the Papal State, Jerusalem and Monastic Orders in Europe and a country can only have 2 Crusader States at the same time.[/i]
+
+[b]Conditions (possible overlord):[/b]
+[list]
+[*] has a theocratic government
+[*] is either Papal State or Kingdom of Jerusalem or has the "Monastic Order" or "Crusader Kingdom" government
+[*] is Catholic
+[*] is not excommunicated
+[*] has its capital in Europe or in Jerusalem
+[*] does not have 2 Crusader States already
+[/list]
+
+[b]Conditions (possible subject):[/b]
+[list]
+[*] is a vassal of the possible overlord
+[*] is Catholic
+[*] is not excommunicated
+[*] has its capital in Europe
+[/list]
+
+[b]Additional Information:[/b]
+[list]
+[*] Crusader States can only be established diplomatically
+[*] Crusader States have a max government rank of 2 (Kingdom)
+[*] Crusader Kingdoms gains a bonus on missionary strength, discipline, manpower, manpower recovery speed and war score cost against other religions
+[*] Crusader Kingdoms have a reduced liberty desire, if their overlord is Curia Controller
+[*] Crusader Kingdoms grant their overlord a bonus on papal influence and missionary strength
+[*] Crusader Kingdoms have a subject interaction (diplomatic action) to send them crusader knights
+[*] Crusader Kingdoms have a subject interaction (diplomatic action) to conscript missionaries
+[/list]
+
+[h1]Salic Union[/h1]
+[i]A Salic Union behaves exactly like a Personal Union, but can be annexed after 10 years. It can only be established in a Salic Reunification war. (Requires Extended Timeline)[/i]
+
+[b]Conditions (possible overlord):[/b]
+[list]
+[*] is not a subject
+[*] has the "Salic Monarchy" government
+[/list]
+
+[b]Conditions (possible subject):[/b]
+[list]
+[*] is not a subject
+[*] has the "Salic Monarchy" government
+[*] is leader of the defender side in a Salic Reunification War where the possible overlord is leader of the attacker side or vice versa
+[/list]
+
+[b]Additional Information:[/b]
+[list]
+[*] Salic Unions can only be established by war
+[*] Salic Union don't have a max government rank
+[*] Salic Unions can be annexed after 10 years rather than be integrated after 50 years
+[/list]
+
+[h1]Nahuatl Vassal[/h1]
+[i]A Nahuatl Vassal behaves like a vassal, but does not cost a diplomatic relation and has a reduced liberty desire. Further more it gives a bonus for manpower, manpower recovery speed and province war score cost to its overlord. It can only be established by Nahuatl nations, which did not reform their religion, in Mexico, California, Rio Grande and Central America. If an overlord does not fulfill these requirements, the Nahuatl Vassal will get +100% liberty desire. (Requires El Dorado DLC)[/i]
+
+[b]Conditions (possible overlord):[/b]
+[list]
+[*] is Nahuatl
+[*] has not reformed religion
+[/list]
+
+[b]Conditions (possible subject):[/b]
+[list]
+[*] is a vassal of the possible overlord
+[*] has its capital in one of the following regions: Mexico, California, Rio Grande, Central America
+[/list]
+
+[b]Additional Information:[/b]
+[list]
+[*] Nahuatl Vassals can only be established diplomatically
+[*] Nahuatl Vassals have a max government rank of 1 (Duchy)
+[*] Nahuatl Vassals receive additional liberty desire if their overlord is not Nahuatl anymore or has reformed religion
+[*] Nahuatl Vassals grant their overlord a bonus on manpower, manpower recovery speed and province war score cost, if they have less than 50 liberty desire
+[/list]
+
+[h1]Peasant Vassal[/h1]
+[i]A Peasant Vassal is a mixture of a vassal and a tributary. It does not join its overlord's wars, is not very limited in its diplomatic actions, has a higher forcelimit and grants more forcelimit to its overlord than vassals. Further more the overlord can demand tribute from them and receives a bonus to aggressive expansion and a malus to all power cost for each Peasant Vassal. A Peasant Vassal has reduced tax income, but increased production efficiency, army morale and manpower, however the overlord pays it and it has a slighty higher liberty desire from development than vassals.[/i]
+
+[b]Conditions (possible overlord):[/b]
+[list]
+[*] is not a subject
+[*] is not a primitive nation
+[*] has the "Peasants Republic" government
+[/list]
+
+[b]Conditions (possible subject):[/b]
+[list]
+[*] is not a subject
+[*] is not a primitive nation
+[*] has a republic government
+[*] has its capital on the same continent as the possible overlord
+[/list]
+
+[b]Additional Information:[/b]
+[list]
+[*] Peasant Vassals can be established diplomatically and by war
+[*] Peasant Vassals have a max government rank of 1 (Duchy)
+[*] Peasant Vassals gain +1 yearly tax income, their overlord receives -1 yearly tax income
+[*] Peasant Vassals gain a bonus on production efficiency, manpower and army morale
+[*] Peasant Vassals receive a malus on tax income
+[*] Peasant Vassals grant their overlord a bonus on aggressive expansion
+[*] Peasant Vassals give their overlord a malus on all power costs
+[/list]
+
+[h1]Pirate Brotherhood[/h1]
+[i]A Pirate Brotherhood is a mixture of a vassal and a colonial nation. It can only be established by nations with a Pirate government, at least three ports and 20 ships and is locked to Pirate governments itself. It pays tariffs and can have subjects on its own. It has a lower liberty desire than vassals, but is less restricted in its diplomatic actions. It receives a bonus to privateer efficiency, naval forcelimit and naval morale and gives its overlord a bonus to privateer efficiency and naval forcelimit. (Requires Golden Century DLC)[/i]
+
+[b]Conditions (possible overlord):[/b]
+[list]
+[*] has either the "Pirate Republic", "Pirate Kingdom" or "War Against the World" government
+[*] has at least 3 ports
+[*] has at least 20 ships
+[/list]
+
+[b]Conditions (possible subject):[/b]
+[list]
+[*] has at least 3 ports
+[*] is either a vassal of the possible overlord and has either the "Pirate Republic", "Pirate Kingdom" or "War Against the World" government or is not a subject
+[*] its capital is within the trade range of the possible overlord
+[/list]
+
+[b]Additional Information:[/b]
+[list]
+[*] Pirate Brotherhoods can be established diplomatically and by war
+[*] Pirate Brotherhoods don't have a max government rank
+[*] Pirate Brotherhoods gain a bonus on privateer efficiency, naval forcelimit and naval morale
+[*] Pirate Brotherhoods gain additional liberty desire and a bonus on naval maintenance, if they have a equally large or larger fleet than their overlord or if they have at least 50 ships
+[*] Pirate Brotherhoods grant their overlord a bonus on privateer efficiency and naval forcelimit
+[*] having at least 5 Pirate Brotherhoods grants the overlord a bonus on navy tradition, ship cost and ship durability and lowers the Pirate Brotherhoods' liberty desire
+[*] releasing a Pirate Brotherhood will create an alliance between them and the former overlord
+[/list]

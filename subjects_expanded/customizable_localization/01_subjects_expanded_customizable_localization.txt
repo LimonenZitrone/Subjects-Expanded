@@ -71,6 +71,32 @@ defined_text = {
 }
 
 defined_text = {
+    name = GetIfEstablishVoivodeshipReducesStabilityAndPrestige
+	random = no
+
+	text = {
+        localisation_key = string_establish_voivodeship_reduces_stability_and_prestige
+        trigger = {
+			NOT = {
+				OR = {
+					culture_group = FROM
+					accepted_culture = FROM
+					FROM = {
+						accepted_culture = ROOT
+					}
+				}
+			}
+        }
+    }
+	text = {
+        localisation_key = ""
+        trigger = {
+			always = yes
+        }
+    }
+}
+
+defined_text = {
     name = GetCreatedADNameIndia
 	random = no
 

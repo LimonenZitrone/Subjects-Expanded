@@ -63,7 +63,7 @@
  
  
  establish_voivodeship_title: "Woiwodschaft ernennen"
- establish_voivodeship_desc: "Ernennt Euren Vasallen [From.GetName] zu einer §YWoiwodschaft§!. \nEine Woiwodschaft ist eine Mischung aus Vasall und Mark. Sie erhält ähnliche Boni wie eine Mark, kann aber nach 10 Jahren unter unserer Herrschaft annektiert werden. Weiterhin hat sie erhöhte Militärausgaben und kann nur von §YPolen§! und §YPolen-Litauen§! ernannt werden."
+ establish_voivodeship_desc: "Ernennt Euren Vasallen [From.GetName] zu einer §YWoiwodschaft§!. \nEine Woiwodschaft ist eine Mischung aus Vasall und Mark. Sie erhält ähnliche Boni wie eine Mark, kann aber nach 10 Jahren unter unserer Herrschaft annektiert werden. Weiterhin hat sie erhöhte Militärausgaben und kann nur von §YPolen§! und §YPolen-Litauen§! ernannt werden. \n[Root.GetIfEstablishVoivodeshipReducesStabilityAndPrestige]"
  establish_voivodeship_tooltip: "Ernennt Euren Vasall [From.GetName] zu einer §YWoiwodschaft§!.\n"
  
  cancel_voivodeship_title: "Woiwodschaft entlassen"

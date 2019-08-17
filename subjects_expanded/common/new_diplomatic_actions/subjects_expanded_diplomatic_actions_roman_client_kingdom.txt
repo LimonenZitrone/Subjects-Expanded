@@ -10,7 +10,6 @@ establish_roman_client_kingdom = {
 		}
 		FROM = {
 			is_subject_of = PREV
-			is_vassal_or_similar_subject = yes
 		}
 	}
 	
@@ -21,7 +20,6 @@ establish_roman_client_kingdom = {
 		}
 		FROM = {
 			is_subject_of = PREV
-			is_vassal_or_similar_subject = yes
 		}
 		NOT = { truce_with = FROM }
 		is_at_war = no
@@ -38,7 +36,6 @@ establish_roman_client_kingdom = {
 				}
 				FROM = {
 					is_subject_of = PREV
-					is_vassal_or_similar_subject = yes
 				}
 				NOT = { truce_with = FROM }
 				is_at_war = no

@@ -153,7 +153,11 @@ is_possible_subject_of_subject_type_roman_client_kingdom = {
 	# PREVs in THIS scope refer to possible overlord
 	NOT = { is_subject_of_type = roman_client_kingdom }
 	OR = {
-		government = monarchy
+		AND = {
+			is_subject_of = PREV
+			is_vassal_or_similar_subject = yes
+			government = monarchy
+		}
 		war_with = PREV
 	}
 }
@@ -164,7 +168,6 @@ is_possible_subject_of_subject_type_voivodeship = {
 	is_subject_of = PREV
 	is_vassal_or_similar_subject = yes
 	is_neighbor_of = PREV
-	culture_group = PREV
 }
 
 is_possible_subject_of_subject_type_fief_subject = {
@@ -197,10 +200,17 @@ is_possible_subject_of_subject_type_salic_personal_union = {
 	NOT = { is_subject_of_type = salic_personal_union }
 	is_subject = no
 	has_reform = salic_reform
-	is_in_war = {
-		attacker_leader = PREV
-		defender_leader = THIS
-		casus_belli = cb_salic_reunification
+	OR = {
+		is_in_war = {
+			attacker_leader = PREV
+			defender_leader = THIS
+			casus_belli = cb_salic_reunification
+		}
+		is_in_war = {
+			attacker_leader = THIS
+			defender_leader = PREV
+			casus_belli = cb_salic_reunification
+		}
 	}
 }
 

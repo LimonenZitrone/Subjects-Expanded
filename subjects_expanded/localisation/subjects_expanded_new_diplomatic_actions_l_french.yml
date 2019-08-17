@@ -63,7 +63,7 @@
  
  
  establish_voivodeship_title: "Establish Voivodeship"
- establish_voivodeship_desc: "Make your vassal [From.GetName] to a §YVoivodeship§!. \nA Voivodeship is a mixture of a vassal and a march. It receives similar bonuses as a march, but can be annexed after 10 years. Further more it has increased military expanses and can only be established by §YPoland§! and §YCommonwealth§!."
+ establish_voivodeship_desc: "Make your vassal [From.GetName] to a §YVoivodeship§!. \nA Voivodeship is a mixture of a vassal and a march. It receives similar bonuses as a march, but can be annexed after 10 years. Further more it has increased military expanses and can only be established by §YPoland§! and §YCommonwealth§!. \n[Root.GetIfEstablishVoivodeshipReducesStabilityAndPrestige]"
  establish_voivodeship_tooltip: "Make your vassal [From.GetName] to a §YVoivodeship§!.\n"
  
  cancel_voivodeship_title: "Release Voivodeship"

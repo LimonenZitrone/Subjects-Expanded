@@ -143,3 +143,9 @@
  peasant_vassal_modifier: "Peasant Vassal"
  peasant_vassal_overlord_modifier: "Has Peasant Vassals"
  
+ pirate_brotherhood_vassal_modifier: "Pirate Brotherhood"
+ pirate_brotherhood_vassal_large_navy_modifier: "Large Navy"
+ pirate_brotherhood_vassal_small_large_navy_modifier: "Large Navy"
+ pirate_brotherhood_vassal_overlord_has_many_pirate_brotherhood_vassals_modifier: "Overlord has many Pirate Brotherhoods"
+ pirate_brotherhood_vassal_overlord_modifier: "Has Pirate Brotherhoods"
+ 

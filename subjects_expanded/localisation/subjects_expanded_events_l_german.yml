@@ -72,3 +72,7 @@
  subjects_expanded_fief_subject_events.EVTDESC1: "Unser LehnshOur hat von seinem Recht Gebrauch gemacht und Truppen für seine Armee gefordert."
  subjects_expanded_fief_subject_events1.EVTOPT1: "War das wirklich nötig?"
  
+ subjects_expanded_pirate_brotherhood_vassal_events.EVTNAME2: "Bruderschaften erklären Unabhängigkeit"
+ subjects_expanded_pirate_brotherhood_vassal_events.EVTDESC2: "Wir werden nicht mehr von einer Piratenregierung regiert. Unsere bis jetzt noch loyalen Piratenbruderschaften haben dies als legitimen Grund zur Erklärung ihrer Unabhängigkeit verwendet."
+ subjects_expanded_pirate_brotherhood_vassal_events2.EVTOPT1: "Das ist unglücklich..."
+ 

@@ -26,5 +26,9 @@
  
  make_peasant_vassal_desc: "@[From.GetTag] §Y[From.GetName]§! wird zu einem Bäuerlichen Vasall von @[Root.GetTag] §Y[Root.GetName]§!. Falls [From.GetName] keine §YBauernrepublik§! ist, werdem sie zu einer."
  CB_ALLOWED_make_peasant_vassal: "Bäuerlichen Vasall erzwingen"
- PEACE_make_peasant_vassal: "$TAKERS$ Bäuerlicher Vasall"
+ PEACE_make_peasant_vassal: "$TAKERS$er Bäuerlicher Vasall"
+ 
+ make_pirate_brotherhood_vassal_desc: "@[From.GetTag] §Y[From.GetName]§! wird zu einer Piratenbruderschaft von @[Root.GetTag] §Y[Root.GetName]§!. Falls [From.GetName] keine Piratenregierung hat, erhalten sie eine."
+ CB_ALLOWED_make_pirate_brotherhood_vassal: "Piratenbruderschaft erzwingen"
+ PEACE_make_pirate_brotherhood_vassal: "$TAKERS$e Piratenbruderschaft"
  

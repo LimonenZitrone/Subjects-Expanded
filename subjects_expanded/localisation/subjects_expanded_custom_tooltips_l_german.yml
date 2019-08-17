@@ -19,6 +19,7 @@
  IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_salic_personal_union: "Kann zu einer §YSalischen Union§! gemacht werden"
  IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_nahuatl_vassal: "Kann zu einem §YNahuatlischen Vassal§! gemacht werden"
  IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_peasant_vassal: "Kann zu einem §YBäuerlichen Vasall§! gemacht werden"
+ IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_pirate_brotherhood_vassal: "Kann zu einer §YPiratenbruderschaft§! gemacht werden"
  
  THIS_IS_FORMER_AUTONOMOUS_DOMINION: "Ist ein ehemaliges §YHerrschaftsgebiet§! oder eine ehemalige §YKolonialnation§!"
  

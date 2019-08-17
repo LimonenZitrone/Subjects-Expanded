@@ -36,3 +36,6 @@
  declined_establish_peasant_vassal_opinion: "Demand of Peasant Vassal declined"
  peasant_vassal_forced: "Forced Peasant Vassal"
  
+ is_pirate_brotherhood_vassal: "Pirate Brotherhood"
+ pirate_brotherhood_vassal_forced: "Forced Pirate Brotherhood"
+ 

@@ -150,6 +150,7 @@ is_possible_subject_of_subject_type_autonomous_dominion = {
 }
 
 is_possible_subject_of_subject_type_roman_client_kingdom = {
+	# PREVs in THIS scope refer to possible overlord
 	NOT = { is_subject_of_type = roman_client_kingdom }
 	OR = {
 		government = monarchy
@@ -158,6 +159,7 @@ is_possible_subject_of_subject_type_roman_client_kingdom = {
 }
 
 is_possible_subject_of_subject_type_voivodeship = {
+	# PREVs in THIS scope refer to possible overlord
 	NOT = { is_subject_of_type = voivodeship }
 	is_subject_of = PREV
 	is_vassal_or_similar_subject = yes
@@ -166,6 +168,7 @@ is_possible_subject_of_subject_type_voivodeship = {
 }
 
 is_possible_subject_of_subject_type_fief_subject = {
+	# PREVs in THIS scope refer to possible overlord
 	NOT = { is_subject_of_type = fief_subject }
 	OR = {
 		is_subject = no
@@ -178,6 +181,7 @@ is_possible_subject_of_subject_type_fief_subject = {
 }
 
 is_possible_subject_of_subject_type_crusader_state_vassal = {
+	# PREVs in THIS scope refer to possible overlord
 	NOT = { is_subject_of_type = crusader_state_vassal }
 	is_subject_of = PREV
 	is_vassal_or_similar_subject = yes
@@ -189,6 +193,7 @@ is_possible_subject_of_subject_type_crusader_state_vassal = {
 }
 
 is_possible_subject_of_subject_type_salic_personal_union = {
+	# PREVs in THIS scope refer to possible overlord
 	NOT = { is_subject_of_type = salic_personal_union }
 	is_subject = no
 	has_reform = salic_reform
@@ -200,6 +205,7 @@ is_possible_subject_of_subject_type_salic_personal_union = {
 }
 
 is_possible_subject_of_subject_type_nahuatl_vassal = {
+	# PREVs in THIS scope refer to possible overlord
 	NOT = { is_subject_of_type = nahuatl_vassal }
 	is_subject_of = PREV
 	is_vassal_or_similar_subject = yes
@@ -214,11 +220,31 @@ is_possible_subject_of_subject_type_nahuatl_vassal = {
 }
 
 is_possible_subject_of_subject_type_peasant_vassal = {
+	# PREVs in THIS scope refer to possible overlord
 	NOT = { is_subject_of_type = peasant_vassal }
 	is_subject = no
 	primitives = no
 	government = republic
 	same_continent = PREV
+}
+
+is_possible_subject_of_subject_type_pirate_brotherhood_vassal = {
+	# PREVs in THIS scope refer to possible overlord
+	NOT = { is_subject_of_type = pirate_brotherhood_vassal }
+	num_of_ports = 3
+	OR = {
+		is_subject = no
+		AND = {
+			is_subject_of = ROOT
+			is_vassal_or_similar_subject = yes
+			OR = {
+				has_reform = pirate_republic_reform
+				has_reform = pirate_king_reform
+				has_reform = war_against_the_world_doctrine_reform
+			}
+		}
+	}
+	# Capital in Trade Range of possible Overlord has to be checked additionally
 }
 
 can_create_subject_type = {

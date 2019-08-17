@@ -1,0 +1,33 @@
+increased_tariffs_triggered_modifier = {
+	potential = {
+		OR = {
+			num_of_colonists = 1
+			can_be_overlord = pirate_brotherhood_vassal
+		}
+	}
+	
+	trigger = {
+		always = yes
+	}
+	
+	global_tariffs = 0.5
+}
+
+has_5_pirate_brotherhood_vassals_triggered_modifier = {
+	potential = {
+		can_be_overlord = pirate_brotherhood_vassal
+	}
+	
+	trigger = {
+		calc_true_if = {
+			all_subject_country = {
+				is_subject_of_type = pirate_brotherhood_vassal
+			}
+			amount = 5
+		}
+	}
+	
+	navy_tradition = 0.25
+	global_ship_cost = -0.1
+	ship_durability = 0.1
+}

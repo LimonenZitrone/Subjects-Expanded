@@ -115,6 +115,15 @@
  cancel_peasant_vassal_tooltip: "Beedet die Vasallisierung von §Y[From.GetName]§! und entlasst sie in die Freiheit.\n"
  
  
+ establish_pirate_brotherhood_vassal_title: "Piratenbruderschaft ernennen"
+ establish_pirate_brotherhood_vassal_desc: "Ernennt Euren Vasallen [From.GetName] zu einer §YPiratenbruderschaft§!. Eine Piratenbruderschaft ist eine Mischung aus Vasall und Kolonialnation. Sie kann nur von Nationen mit einer Piratenregierung, mindestens drei Häfen und 20 Schiffen errichtet werden und ist selbst ebenfalls auf Nationen mit Piratenregierung beschränkt. Sie zahlt Zollabgaben und kann selbst Untertanen besitzen. Sie besitzt ein geringeres Freiheitsstreben als Vasallen, ist aber in ihren diplomatischen Aktionen weniger eingeschränkt. Sie erhält Boni auf Effizienz von Freibeutern, Flottenlimit und Flottenmoral und gewährt ihrem Lehnsherrn Boni auf Effizienz von Freibeutern und Flottenlimit."
+ establish_pirate_brotherhood_vassal_tooltip: "Ernennt Euren Vasallen [From.GetName] zu einer §YPiratenbruderschaft§!.\n"
+ 
+ cancel_pirate_brotherhood_vassal_title: "Piratenbruderschaft entlassen"
+ cancel_pirate_brotherhood_vassal_desc: "Beendet das Abhängigkeitsverhältnis von §Y[From.GetName]§! zu uns. Wir werden einen §Y5-jährigen§! Waffenstillstand mit ihnne erhalten und §Y[Root.GetName]§! und §Y[From.GetName]§! werden ein Bündnis eingehen."
+ cancel_pirate_brotherhood_vassal_tooltip: "Beedet die Vasallisierung von §Y[From.GetName]§! und entlasst sie in die Freiheit.\n"
+ 
+ 
  return_subject_to_vassal_title: "Zum Vasall degradieren"
  return_subject_to_vassal_desc: "Beendet den derzeitigen Status von §Y[From.GetName]§! und macht sie zu einem Vasallen. Dies wird ihre Meinung über uns um §R-100§! verschlechtern und ihr Freiheitsstreben um §R+25%§! ändern. Außerdem verlieren wir §R-10§! Prestige."
  return_subject_to_vassal_tooltip: "Macht §Y[From.GetName]§! wieder zu einem Vasall.\n"

@@ -143,3 +143,9 @@
  peasant_vassal_modifier: "Bäuerlicher Vasall"
  peasant_vassal_overlord_modifier: "Besitzt Bäuerliche Vasallen"
  
+ pirate_brotherhood_vassal_modifier: "Piratenbruderschaft"
+ pirate_brotherhood_vassal_large_navy_modifier: "Große Flotte"
+ pirate_brotherhood_vassal_small_large_navy_modifier: "Große Flotte"
+ pirate_brotherhood_vassal_overlord_has_many_pirate_brotherhood_vassals_modifier: "Lehnsherr besitzt viele Piratenbruderschaften"
+ pirate_brotherhood_vassal_overlord_modifier: "Besitzt Piratenbruderschaften"
+ 

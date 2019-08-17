@@ -36,3 +36,6 @@
  declined_establish_peasant_vassal_opinion: "Forderung nach Bäuerlichem Vasall abgelehnt"
  peasant_vassal_forced: "Bäuerlicher Vasall erzwungen"
  
+ is_pirate_brotherhood_vassal: "Piratenbruderschaft"
+ pirate_brotherhood_vassal_forced: "Piratenbruderschaft erzwungen"
+ 

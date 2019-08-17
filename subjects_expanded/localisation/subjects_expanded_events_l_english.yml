@@ -72,3 +72,7 @@
  subjects_expanded_fief_subject_events.EVTDESC1: "Our overlord made use of his right and demanded troops for his army."
  subjects_expanded_fief_subject_events1.EVTOPT1: "Was this really necessary?"
  
+ subjects_expanded_pirate_brotherhood_vassal_events.EVTNAME2: "Brotherhoods declare Independence"
+ subjects_expanded_pirate_brotherhood_vassal_events.EVTDESC2: "We are not lead by a Pirate government anymore. Our Pirate Brotherhoods that were loyal to us until now take this as a valid reason to declare independence."
+ subjects_expanded_pirate_brotherhood_vassal_events2.EVTOPT1: "That's unfortunate..."
+ 

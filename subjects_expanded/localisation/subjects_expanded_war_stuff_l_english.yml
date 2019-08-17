@@ -28,3 +28,7 @@
  CB_ALLOWED_make_peasant_vassal: "Force Peasant Vassal"
  PEACE_make_peasant_vassal: "$TAKERS$ Peasant Vassal"
  
+ make_pirate_brotherhood_vassal_desc: "@[From.GetTag] §Y[From.GetName]§! is made to a Pirate Brotherhood of @[Root.GetTag] §Y[Root.GetName]§!. If [From.GetName] does not have a Pirate government, they will become one."
+ CB_ALLOWED_make_pirate_brotherhood_vassal: "Force Pirate Brotherhood"
+ PEACE_make_pirate_brotherhood_vassal: "$TAKERS$ Pirate Brotherhood"
+ 

@@ -1958,3 +1958,120 @@ peasant_vassal = {
 	overlord_opinion_modifier = is_peasant_vassal
 	subject_opinion_modifier = is_peasant_vassal
 }
+
+pirate_brotherhood_vassal = {
+	copy_from = default
+	count = vassal
+	
+	# Graphics:
+	sprite = GFX_icon_pirate_brotherhood_vassal
+	diplomacy_overlord_sprite = GFX_diplomacy_leadpirate_brotherhood_vassal
+	diplomacy_subject_sprite = GFX_diplomacy_ampirate_brotherhood_vassal
+
+	# Triggers:
+	is_potential_overlord = {
+		has_dlc = "Golden Century"
+		OR = {
+			has_reform = pirate_republic_reform
+			has_reform = pirate_king_reform
+			has_reform = war_against_the_world_doctrine_reform
+		}
+		num_of_ports = 3
+		navy_size = 20
+	}
+	
+	# Properties:
+	uses_tariffs = yes
+	overlord_can_attack = no
+	overlord_can_be_subject = yes
+	can_have_subjects_of_other_types = yes
+	can_be_annexed = yes
+	separatists_become_subjects = yes					# Whether separatist rebels enforcing demands will become subjects of the overlord.
+	
+	max_government_rank = 0								# 0 means no limit
+	cities_required_for_bonuses = 0						# How many cities the subject needs before giving bonuses to overlord
+	trust_on_start = 25									# Overlord and subject will each get this much extra trust with each other at game start
+
+	base_liberty_desire = -20.0
+	liberty_desire_development_ratio = 0.15
+	forcelimit_bonus = 1.0								# 1.0 represents bonus from having a vassal
+	forcelimit_to_overlord = 1.0						# Percent of subject FL to use as base for modifiers
+	military_focus = 1.0								# How much the AI subject should spend etc. on army and forts. 0 should make them spend nothing. Very high values will probably not make a big difference since there will be sanity checks.
+
+	relative_power_class = 1 							# See description above
+	diplomacy_view_class = 1							# See description above
+
+	can_fight = {
+		same_overlord = pirate_brotherhood_vassal
+		other_overlord = pirate_brotherhood_vassal
+		neighboring_primitives = yes
+		colonial_region_nations = yes
+	}
+	can_rival = {
+		same_overlord = pirate_brotherhood_vassal
+		other_overlord = pirate_brotherhood_vassal
+		neighboring_primitives = yes
+		colonial_region_nations = yes
+	}
+	can_ally = {
+		same_overlord = pirate_brotherhood_vassal
+		other_overlord = pirate_brotherhood_vassal
+	}
+	can_marry = {
+		same_overlord = pirate_brotherhood_vassal
+		other_overlord = pirate_brotherhood_vassal
+	}
+
+	# Subject Interactions:
+	# (continuous)
+	subsidize_armies = yes
+	scutage = yes
+	divert_trade = yes
+	# (immediate)
+	enforce_religion = no
+	siphon_income = yes
+	seize_territory = yes
+	increase_tariffs = yes
+	decrease_tariffs = yes
+	takeondebt = no
+	demand_artifacts = yes
+	knowledge_sharing = no
+
+	# Modifiers:
+	modifier_subject = clear
+	modifier_subject = {
+		modifier = subject_nation
+	}
+	modifier_subject = {
+		modifier = pirate_brotherhood_vassal_modifier
+	}
+	modifier_subject = {
+		trigger = {
+			navy_size = FROM
+		}
+		modifier = pirate_brotherhood_vassal_large_navy_modifier
+	}
+	modifier_subject = {
+		trigger = {
+			NOT = { navy_size = FROM }
+			navy_size = 50
+		}
+		modifier = pirate_brotherhood_vassal_small_large_navy_modifier
+	}
+	modifier_subject = {
+		trigger = {
+			FROM = {
+				has_country_modifier = has_5_pirate_brotherhood_vassals_triggered_modifier
+			}
+		}
+		modifier = pirate_brotherhood_vassal_overlord_has_many_pirate_brotherhood_vassals_modifier
+	}
+	
+	modifier_overlord = clear
+	modifier_overlord = {
+		modifier = pirate_brotherhood_vassal_overlord_modifier
+	}
+
+	overlord_opinion_modifier = is_pirate_brotherhood_vassal
+	subject_opinion_modifier = is_pirate_brotherhood_vassal
+}

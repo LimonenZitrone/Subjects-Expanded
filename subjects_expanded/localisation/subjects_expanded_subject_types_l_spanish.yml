@@ -65,3 +65,9 @@
  peasant_vassal_long_desc: "A Peasant Vassal is a mixture of a vassal and a tributary. It does not join its overlord's wars, is not very limited in its diplomatic actions, has a higher forcelimit and grants more forcelimit to its overlord than vassals. Further more the overlord can demand tribute from them and receives a bonus to aggressive expansion and a malus to all power cost for each Peasant Vassal. A Peasant Vassal has reduced tax income, but increased production efficiency, army morale and manpower, however the overlord pays it and it has a slighty higher liberty desire from development than vassals.\n"
  peasant_vassal_no_overlord_dow: "You can not declare war on your own Peasant Vassal."
  
+ pirate_brotherhood_vassal_title: "Pirate Brotherhood"
+ pirate_brotherhood_vassal_title_plural: "Pirate Brotherhoods"
+ pirate_brotherhood_vassal_is_our: "§Y$NAME$§! is our Pirate Brotherhood."
+ pirate_brotherhood_vassal_long_desc: "A Pirate Brotherhood is a mixture of a vassal and a colonial nation. It can only be established by nations with a Pirate government, at least three ports and 20 ships and is locked to Pirate governments itself. It pays tariffs and can have subjects on its own. It has a lower liberty desire than vassals, but is less restricted in its diplomatic actions. It receives a bonus to privateer efficiency, naval forcelimit and naval morale and gives its overlord a bonus to privateer efficiency and naval forcelimit.\n"
+ pirate_brotherhood_vassal_no_overlord_dow: "You can not declare war on your own Pirate Brotherhood."
+ 

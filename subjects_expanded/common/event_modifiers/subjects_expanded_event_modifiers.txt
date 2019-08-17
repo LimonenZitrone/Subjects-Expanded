@@ -602,6 +602,32 @@ peasant_vassal_overlord_modifier = {
 	ae_impact = -0.03
 }
 
+# Subject Type: Pirate Vassal
+pirate_brotherhood_vassal_modifier = {
+	privateer_efficiency = 0.5
+	naval_forcelimit_modifier = 0.1
+	naval_morale = 0.05
+}
+
+pirate_brotherhood_vassal_large_navy_modifier = {
+	naval_maintenance_modifier = -0.1
+	liberty_desire = 30
+}
+
+pirate_brotherhood_vassal_small_large_navy_modifier = {
+	naval_maintenance_modifier = -0.05
+	liberty_desire = 15
+}
+
+pirate_brotherhood_vassal_overlord_has_many_pirate_brotherhood_vassals_modifier = {
+	liberty_desire = -10
+}
+
+pirate_brotherhood_vassal_overlord_modifier = {
+	privateer_efficiency = 0.05
+	naval_forcelimit = 5
+}
+
 # Modifiers that function as timers
 protectorate_got_monarch_power_this_year = {
 }

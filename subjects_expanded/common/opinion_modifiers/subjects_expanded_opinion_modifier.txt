@@ -131,3 +131,13 @@ peasant_vassal_forced = {
 	yearly_decay = 5
 	min = -100
 }
+
+is_pirate_brotherhood_vassal = {
+	opinion = 75
+}
+
+pirate_brotherhood_vassal_forced = {
+	opinion = -100
+	yearly_decay = 5
+	min = -100
+}

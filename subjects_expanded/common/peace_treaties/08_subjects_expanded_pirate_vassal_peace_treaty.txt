@@ -7,11 +7,11 @@
 # Nor do they support setting provinces (like cede province) or third party countries (like annull treaties) as targets.
 
 # Example:
-make_peasant_vassal = {
+make_pirate_brotherhood_vassal = {
 	# The following strings need localization: 
-	#		"make_peasant_vassal_desc" (uses text processing, supporting bracket notation) ("[FROM.GetName] becomes a [THIS.GetName] Dummy")
-	#		"CB_ALLOWED_make_peasant_vassal" (uses plain localization) ("Enforced Dumbness")
-	#		"PEACE_make_peasant_vassal" (uses plain localization, but with support for $TAKER$, $TAKERS$, $GIVER$ and $GIVERS$) ("Become $TAKERS$ Dummy")
+	#		"make_pirate_brotherhood_vassal_desc" (uses text processing, supporting bracket notation) ("[FROM.GetName] becomes a [THIS.GetName] Dummy")
+	#		"CB_ALLOWED_make_pirate_brotherhood_vassal" (uses plain localization) ("Enforced Dumbness")
+	#		"PEACE_make_pirate_brotherhood_vassal" (uses plain localization, but with support for $TAKER$, $TAKERS$, $GIVER$ and $GIVERS$) ("Become $TAKERS$ Dummy")
 
 	# Values default to 0 or "no" unless otherwise stated
 	
@@ -39,23 +39,25 @@ make_peasant_vassal = {
 	is_visible = { # Defaults to equivalent of "always = yes"
 		can_create_subject_type = {
 			subject = FROM
-			subject_type = peasant_vassal
+			subject_type = pirate_brotherhood_vassal
 		}
 	}
 	is_allowed = { # Defaults to equivalent of "always = yes"
-		always = yes
+		FROM = {
+			capital_scope = { trade_range = ROOT }
+		}
 	}
 	effect = { # Defaults to empty effect (which makes error log entry but is safe)
 		reverse_add_opinion = {
 			who = FROM
-			modifier = peasant_vassal_forced
+			modifier = pirate_brotherhood_vassal_forced
 		}
 		create_subject = {
 			subject = FROM
-			subject_type = peasant_vassal
+			subject_type = pirate_brotherhood_vassal
 		}
 		FROM = {
-			country_event = { id = subjects_expanded_peasant_vassal_events.1 }
+			country_event = { id = subjects_expanded_pirate_brotherhood_vassal_events.1 }
 		}
 	}
 	ai_weight = { # Defaults to always evaluate to 0
@@ -64,24 +66,7 @@ make_peasant_vassal = {
 			value = 1
 		}
 		limit = {
-			has_global_modifier_value = {
-				which = global_tax_income
-				value = 2
-			}
-			monthly_income = 5
 			num_of_free_diplomatic_relations = 1
-			FROM = {
-				NOT = { total_development = 100 }
-				NOT = {
-					num_of_owned_provinces_with = {
-						value = 5
-						OR = {
-							is_claim = ROOT
-							is_core = ROOT
-						}
-					}
-				}
-			}
 		}
 	}
 }

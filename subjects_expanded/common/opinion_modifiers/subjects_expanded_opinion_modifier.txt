@@ -151,3 +151,19 @@ imperial_tributary_state_forced = {
 	yearly_decay = 2.5
 	min = -50
 }
+
+is_sister_republic = {
+	opinion = 50
+}
+
+sister_republic_forced = {
+	opinion = -100
+	yearly_decay = 5
+	min = -100
+}
+
+declined_establish_sister_republic_opinion = {
+	opinion = -25
+	yearly_decay = 1
+	min = -100
+}

@@ -637,6 +637,19 @@ imperial_tributary_state_overlord_modifier = {
 	vassal_income = 0.025
 }
 
+# Subject Type: Sister Republic
+sister_republic_modifier = {
+	development_cost = -0.1
+	build_cost = -0.1
+	production_efficiency = 0.15
+}
+
+sister_republic_overlord_modifier = {
+	development_cost = -0.1
+	build_cost = -0.1
+	production_efficiency = 0.15
+}
+
 # Modifiers that function as timers
 protectorate_got_monarch_power_this_year = {
 }

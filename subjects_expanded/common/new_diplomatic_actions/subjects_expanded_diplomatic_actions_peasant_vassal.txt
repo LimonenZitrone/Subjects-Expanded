@@ -674,6 +674,19 @@ establish_peasant_vassal = {
 			}
 			multiply_variable = { which = ai_value value = -1 }
 		}
+		add_entry = {
+			name = FROM_IS_IMPERIAL_CITY
+			limit = {
+				FROM = {
+					has_reform = free_city
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 1000
+			}
+			multiply_variable = { which = ai_value value = -1 }
+		}
 	}
 	
 	ai_will_do = {

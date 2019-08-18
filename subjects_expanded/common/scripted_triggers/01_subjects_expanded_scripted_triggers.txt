@@ -283,6 +283,41 @@ is_possible_subject_of_subject_type_imperial_tributary_state = {
 	# Capital in Trade Range of possible Overlord has to be checked additionally
 }
 
+is_possible_subject_of_subject_type_sister_republic = {
+	# PREVs in THIS scope refer to possible overlord
+	NOT = { is_subject_of_type = sister_republic }
+	OR = {
+		AND = {
+			government = republic
+			PREV = { government = republic }
+		}
+		AND = {
+			government = theocracy
+			PREV = { government = theocracy }
+		}
+	}
+	OR = {
+		religion = PREV
+		AND = {
+			religion_group = PREV
+			PREV = {
+				has_global_modifier_value = {
+					which = tolerance_heretic
+					value = 2
+				}
+			}
+		}
+	}
+	OR = {
+		is_subject = no
+		AND = {
+			is_subject_of = ROOT
+			is_vassal_or_similar_subject = yes
+		}
+	}
+	same_continent = PREV
+}
+
 can_create_subject_type = {
 	can_be_overlord = $subject_type$
 	$subject$ = {

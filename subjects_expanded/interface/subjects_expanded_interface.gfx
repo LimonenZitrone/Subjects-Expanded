@@ -155,4 +155,17 @@ spriteTypes = {
 		name = "GFX_diplomacy_amimperial_tributary_state"
 		texturefile = "gfx//interface//icon_diplomacy_amimperial_tributary_state.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_icon_sister_republic"
+		texturefile = "gfx/interface/icon_sister_republic.dds"
+	}
+	spriteType = {
+		name = "GFX_diplomacy_leadsister_republic"
+		texturefile = "gfx//interface//icon_diplomacy_leadsister_republic.dds"
+	}
+	spriteType = {
+		name = "GFX_diplomacy_amsister_republic"
+		texturefile = "gfx//interface//icon_diplomacy_amsister_republic.dds"
+	}
 }

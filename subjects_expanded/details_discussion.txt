@@ -328,7 +328,7 @@
 [/list]
 
 [h1]Imperial Tributary State[/h1]
-[i]An Imperial Tributary State is a mixture of a tributary state and a vassal. It is not restricted in its diplomatic actions, but it can not declare independence without a war. It pays taxes to its overlord and does not cost a diplomatic relations. It receives a malus on heir chance and army forcelimit and grants its overlord a bonus on vassal income It is locked to monarchy governments and if its ruler dies without a heir or it gets a regency council while the heir is younger than 12 years, it either gets annexed by its overlord or has to declare an independence war. An Imperial Tributary State can only be established by the Roman Empire or any country with the Empire rank and its capital in Europe that has a Dominion or Autonomous Dominion in India on tribal nations or nations in India.[/i]
+[i]An Imperial Tributary State is a mixture of a tributary state and a vassal. It is not restricted in its diplomatic actions, but it cannot declare independence without a war. It pays taxes to its overlord and does not cost a diplomatic relations. It receives a malus on heir chance and army forcelimit and grants its overlord a bonus on vassal income It is locked to monarchy governments and if its ruler dies without a heir or it gets a regency council while the heir is younger than 12 years, it either gets annexed by its overlord or has to declare an independence war. An Imperial Tributary State can only be established by the Roman Empire or any country with the Empire rank and its capital in Europe that has a Dominion or Autonomous Dominion in India on tribal nations or nations in India.[/i]
 
 [b]Conditions (possible overlord):[/b]
 [list]
@@ -350,4 +350,38 @@
 [*] Imperial Tributary States receive a malus on heir chance and army forcelimit
 [*] Imperial Tributary States grant their overlord a bonus on vassal income
 [*] if the ruler of an Imperial Tributary States dies without a heir or they have a regency council with a heir that is younger than 12 years, they get an event to be annexed by their overlord or declare an independence war
+[/list]
+
+[h1]Sister Republic[/h1]
+[i]A Sister Republic behaves similar to a personal union. However, it is far less restricted in its diplomatic actions and cannot break on the ruler's death. It can only be established by republics and theocracies and a country can have only 1 Sister Republic at the same time. If the overlord and the Sister Republic do not have the same government (republic or theocracy) anymore, the Sister Republic will become free and enter an alliance with its former overlord. Both, the overlord and the Sister Republic, gain an equal bonus on development cost, construction cost and production efficiency.[/i]
+
+[b]Conditions (possible overlord):[/b]
+[list]
+[*] is not a subject
+[*] has either a republic or theocratic government
+[*] is not a nomadic nation
+[*] is not a primitive nation
+[*] does not have 1 Sister Republic already
+[/list]
+
+[b]Conditions (possible subject):[/b]
+[list]
+[*] has the same government (republic/theocracy) as the possible overlord
+[*] has either the same religion as the possible overlord or is in the same religion group as the possible overlord and the possible overlord has at least 2 Tolerance of Heretics
+[*] is either not a subject or a vassal of the possible overlord
+[*] has its capital on the same continent as the possible overlord
+[/list]
+
+[b]Additional Information:[/b]
+[list]
+[*] Sister Republics can only be established diplomatically
+[*] Sister Republics don't have a max government rank
+[*] Sister Republics gain a bonus on development cost, construction cost and production efficiency
+[*] Sister Republics grant their overlord a bonus on development cost, construction cost and production efficiency
+[*] a country can have max 1 Sister Republic
+[*] a Sister Republics has the same ruler as its overlord
+[*] Sister Republics have a diplomatic action to mark another, free nation as war target
+[*] Sister Republics have a diplomatic action to ask their overlord to declare a common war on the selected war target
+[*] Sister Republics and their overlord cannot declare war on the other's alliances or guaranteed nations
+[*] Sister Republics and their overlord cannot ally the other's rivals
 [/list]

@@ -42,3 +42,7 @@
  is_imperial_tributary_state: "Kaiserlicher Tributstaat"
  imperial_tributary_state_forced: "Kaiserlichen Tributstaat erzwungen"
  
+ is_sister_republic: "Schwesterrepublik"
+ sister_republic_forced: "Schwesterrepublik erzwungen"
+ declined_establish_sister_republic_opinion: "Forderung nach Schwesterrepublik abgelehnt"
+ 

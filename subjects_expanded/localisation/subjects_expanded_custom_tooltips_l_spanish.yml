@@ -21,12 +21,17 @@
  IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_peasant_vassal: "Can be made to a §YPeasant Vassal§!"
  IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_pirate_brotherhood_vassal: "Can be made to a §YPirate Brotherhood§!"
  IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_imperial_tributary_state: "Can be made to an §YImperial Tributary State§!"
+ IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_sister_republic: "Can be made to a §YSister Republic§!"
  
  THIS_IS_FORMER_AUTONOMOUS_DOMINION: "Is a former §YDominion§! or a former §YColonial Nation§!"
  
  # Diplomatic Actions:
  CANNOT_DECLARE_WAR_ON_OVERLORD_ALLY: "Our overlord §Y[Root.Overlord.GetName]§! will not tolerate wars against their alliances started by us."
- CANNOT_DECLARE_WAR_ON_NEIGHBOR_PUPPET_STATE_OF_RIVAL_WITHOUT_CORE_CLAIM: "You can not declare war on a neighboring puppet state of a rival or enemy without having a core claim in a neighbor province owned by them. Declare war on [From.Overlord.GetName] instead."
+ CANNOT_DECLARE_WAR_ON_SISTER_REPUBLIC_ALLY: "You cannot declare war on the alliance of your Sister Republic."
+ CANNOT_DECLARE_WAR_ON_NEIGHBOR_PUPPET_STATE_OF_RIVAL_WITHOUT_CORE_CLAIM: "You cannot declare war on a neighboring puppet state of a rival or enemy without having a core claim in a neighbor province owned by them. Declare war on [From.Overlord.GetName] instead."
+ 
+ CANNOT_ALLY_OVERLORD_RIVAL: "You cannot ally a rival of your overlord."
+ CANNOT_ALLY_SISTER_REPUBLIC_RIVAL: "You cannot ally a rival of your Sister Republic."
  
  # New Diplomatic Actions:
  DID_NOT_LOWER_DEVELOPMENT_WITHIN_LAST_10_YEARS: "Did NOT reduce the development of an autonomous dominion within the last §Y10 years§!"
@@ -42,6 +47,8 @@
  IS_NOT_IN_THE_CAPITAL_COLONIAL_REGION: "Is NOT in the same colonial region as its owners capital"
  HAS_NO_OTHER_COLONIAL_NATION_IN_SAME_REGION: "§Y[Root.GetName]§! does NOT have any colonial subject in this colonial region"
  HAS_OTHER_COLONIAL_NATION_IN_SAME_REGION: "§Y[Root.GetName]§! has a colonial subject in this colonial region"
+ 
+ HAS_AT_LEAST_ONE_THIRD_OF_PREV_TOTAL_DEVELOPMENT: "Has at least §Y33%§! of the §Y[Prev.GetAdjective]§! development\n"
  
  # Decisions:
  ALL_PROVINCES_IN_INDIAN_TRADE_COMPANY_REGIONS_CEDED_TO_DOMINION: "\nAll our provinces in [Root.GetIndianTradeCompanyRegionsSgPl] [Root.GetFirstIndianTradeCompanyRegionWeCede][Root.GetSecondIndianTradeCompanyRegionWeCede][Root.GetThirdIndianTradeCompanyRegionWeCede][Root.GetFourthIndianTradeCompanyRegionWeCede][Root.GetFifthIndianTradeCompanyRegionWeCede] are ceded to our dominion \n[Root.GetCreatedADNameIndia], which is released there."

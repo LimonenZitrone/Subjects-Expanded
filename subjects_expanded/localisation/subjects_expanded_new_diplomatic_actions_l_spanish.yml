@@ -129,12 +129,33 @@
  
  
  establish_imperial_tributary_state_title: "Establish Imperial Tributary State"
- establish_imperial_tributary_state_desc: "Make your vassal [From.GetName] to an §YImperial Tributary State§!. An Imperial Tributary State is a mixture of a tributary state and a vassal. It is not restricted in its diplomatic actions, but it can not declare independence without a war. It pays taxes to its overlord and does not cost a diplomatic relations. It receives a malus on heir chance and army forcelimit and grants its overlord a bonus on vassal income It is locked to monarchy governments and if its ruler dies without a heir or it gets a regency council while the heir is younger than 12 years, it either gets annexed by its overlord or has to declare an independence war. An Imperial Tributary State can only be established by the §YRoman Empire§! or any country with the Empire rank and its capital in Europe that has a Dominion or Autonomous Dominion in India on tribal nations or nations in India. \nThis will change their liberty desire by §G-25%§!."
+ establish_imperial_tributary_state_desc: "Make your vassal [From.GetName] to an §YImperial Tributary State§!. An Imperial Tributary State is a mixture of a tributary state and a vassal. It is not restricted in its diplomatic actions, but it cannot declare independence without a war. It pays taxes to its overlord and does not cost a diplomatic relations. It receives a malus on heir chance and army forcelimit and grants its overlord a bonus on vassal income It is locked to monarchy governments and if its ruler dies without a heir or it gets a regency council while the heir is younger than 12 years, it either gets annexed by its overlord or has to declare an independence war. An Imperial Tributary State can only be established by the §YRoman Empire§! or any country with the Empire rank and its capital in Europe that has a Dominion or Autonomous Dominion in India on tribal nations or nations in India. \nThis will change their liberty desire by §G-25%§!."
  establish_imperial_tributary_state_tooltip: "Make your vassal [From.GetName] to an §YImperial Tributary State§!.\n"
  
  cancel_imperial_tributary_state_title: "Release Imperial Tributary State"
  cancel_imperial_tributary_state_desc: "Cancel the dependency of §Y[From.GetName]§! of us. This will decrease their opinion about us by §R-200§!, if their liberty desire is below §Y50%§!. We will also lose §R-25§! prestige and gain a truce with them for §Y5 years§!."
  cancel_imperial_tributary_state_tooltip: "Cancel the vassalisation of §Y[From.GetName]§! and grant them independence.\n"
+ 
+ 
+ establish_sister_republic_title: "Establish Sister Republic"
+ establish_sister_republic_desc: "Do you want to offer §Y[From.GetName]§! to become our Sister Republic? \nA Sister Republic behaves similar to a personal union. However, it is far less restricted in its diplomatic actions and cannot break on the ruler's death. It can only be established by republics and theocracies and a country can have only §Y1§! Sister Republic at the same time. If the overlord and the Sister Republic do not have the same government (republic or theocracy) anymore, the Sister Republic will become free and enter an alliance with its former overlord. Both, the overlord and the Sister Republic, gain an equal bonus on development cost, construction cost and production efficiency."
+ establish_sister_republic_tooltip: "Make §Y[From.GetName]§! to a [Root.GetAdjective] §YSister Republic§!.\n"
+ establish_sister_republic_alert_tooltip: "Establish Sister Republic"
+ establish_sister_republic_dialog: "§Y[This.GetName]§! offers us that we become their §YSister Republic§!. \nA Sister Republic behaves similar to a personal union. However, it is far less restricted in its diplomatic actions and cannot break on the ruler's death. It can only be established by republics and theocracies and a country can have only §Y1§! Sister Republic at the same time. If the overlord and the Sister Republic do not have the same government (republic or theocracy) anymore, the Sister Republic will become free and enter an alliance with its former overlord. Both, the overlord and the Sister Republic, gain an equal bonus on development cost, construction cost and production efficiency. \n\nDo you want to accept?"
+ 
+ sister_republic_ask_overlord_to_join_war_title: "Ask for War Support"
+ sister_republic_ask_overlord_to_join_war_desc: "Ask §Y[From.GetName]§! to declare a common war against the country you marked as war target. If they accept, they will declare a common war against the target in which they will be the war leader."
+ sister_republic_ask_overlord_to_join_war_tooltip: "Ask §Y[From.GetName]§! to declare a common war against the country you marked as war target.\n"
+ sister_republic_ask_overlord_to_join_war_alert_tooltip: "Ask for War Support"
+ sister_republic_ask_overlord_to_join_war_dialog: "§Y[From.GetName]§! wants us to declare war on their war target. \nIf we accept, we will declare a common war against the target in which we will be the war leader. \nIf we decline, their liberty desire is changed by §R+10%§!. \n\nDo you want to accept?"
+ 
+ sister_republic_mark_country_as_target_for_war_title: "Mark as War Target"
+ sister_republic_mark_country_as_target_for_war_desc: "Mark §Y[From.GetName]§! as your war target. This will last §Y90 days§! or until you mark another country as war target. This will allow you to ask §Y[Root.Overlord.GetName]§! to declare a common war against [From.GetName], lead by [Root.Overlord.GetName]."
+ sister_republic_mark_country_as_target_for_war_tooltip: "Mark §Y[From.GetName]§! as your war target.\n"
+ 
+ cancel_sister_republic_title: "Release Sister Republic"
+ cancel_sister_republic_desc: "Cancel the dependency of §Y[From.GetName]§! of us. This will decrease their opinion about us by §R-200§!, if their liberty desire is below §Y50%§!. We will also lose §R-25§! prestige and gain a truce with them for §Y5 years§!."
+ cancel_sister_republic_tooltip: "Cancel the vassalisation of §Y[From.GetName]§! and grant them independence.\n"
  
  
  return_subject_to_vassal_title: "Demote to Vassal"
@@ -170,4 +191,17 @@
  FROM_LIBERTY_DESIRE_TOO_HIGH: "Their liberty desire is too high"
  FROM_IS_PEASANTS_REPUBLIC: "They are a \"Peasants Republic\""
  FROM_IS_NOT_PEASANTS_REPUBLIC: "They are NOT a \"Peasants Republic\""
+ FROM_IS_IMPERIAL_CITY: "They are a \"Free City\""
+ FROM_RULER_MIL_SKILL: "Their ruler's military skill"
+ ROOT_ATTITUDE_TOWARDS_FROM: "Our attitude towards them"
+ ROOT_LIBERTY_DESIRE_TOO_HIGH: "Our liberty desire is too high"
+ FROM_ATTITUDE_TOWARDS_COALITION_TARGET: "Their attitude to the target"
+ FROM_IS_ALREADY_FIGHTING_IN_A_WAR: "They are fighting in another war"
+ FROM_ALREADY_PARTICIPANT_IN_WAR_WITH_COALITION_TARGET: "They are already in the same war as the target"
+ FROM_HAS_TRUCE_WITH_COALITION_TARGET: "They have a truce with the target"
+ FROM_ALLIED_TO_COALITION_TARGET: "They are allied to the target"
+ FROM_ALREADY_JOINED_A_WAR_AGAINST_A_COALITION_TARGET_OF_ROOT_WITHIN_LAST_365_DAYS: "They joined one of our offensive wars recently"
+ FROM_WOULD_GET_STABILITY_HIT: "They would get a stability hit"
+ FROM_IS_IN_DEBT: "They are in debt"
+ FROM_WAR_EXHAUSTION: "Their war exhaustion"
  

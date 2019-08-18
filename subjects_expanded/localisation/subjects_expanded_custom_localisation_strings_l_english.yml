@@ -116,7 +116,7 @@
  string_heir_average_claim_text: "§YAverage§!"
  string_heir_weak_claim_text: "§RWeak§!"
  
- string_cannot_receive_additional_tribute: "We can not demand additional tribute, because all values are §Y0§!"
+ string_cannot_receive_additional_tribute: "We cannot demand additional tribute, because all values are §Y0§!"
  string_cancel: "Cancel"
  
  string_monarch_power_value_6: "6"

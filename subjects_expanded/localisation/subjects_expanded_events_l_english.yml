@@ -81,3 +81,11 @@
  subjects_expanded_imperial_tributary_state_events1.EVTOPT1: "They are the legitimate ruler of [Root.GetName]."
  subjects_expanded_imperial_tributary_state_events1.EVTOPT2: "How could this happen? Annexation is no option, war it is!"
  
+ subjects_expanded_sister_republic_events.EVTNAME1: "Sister Republic becomes independent"
+ subjects_expanded_sister_republic_events.EVTDESC1: "The governments of [Root.GetName] and our Sister Republic were drifting apart in the last time and now the time has come to admit that this relationship cannot be kept as close as before."
+ subjects_expanded_sister_republic_events1.EVTOPT1: "We will still stick together in war!"
+ 
+ subjects_expanded_sister_republic_events.EVTNAME3: "Sister Republic chose a war target"
+ subjects_expanded_sister_republic_events.EVTDESC3: "Our Sister Republic, [From.GetName], has marked §R[FROM_marked_THIS_for_war.GetName]§! as their war target. They may ask you to declare a common war on this country within the next 90 days."
+ subjects_expanded_sister_republic_events3.EVTOPT1: "Interesting."
+ 

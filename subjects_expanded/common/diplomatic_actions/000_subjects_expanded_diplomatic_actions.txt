@@ -2,13 +2,31 @@ declarewar = {
 	condition = {
 		tooltip = CANNOT_DECLARE_WAR_ON_OVERLORD_ALLY
 		potential = {
-			is_subject_of_type = protectorate
+			OR = {
+				is_subject_of_type = protectorate
+				is_subject_of_type = sister_republic
+			}
 		}
 		allow = {
 			overlord = {
 				NOT = { alliance_with = FROM }
 				NOT = { has_guaranteed = FROM }
 			}
+		}
+	}
+	condition = {
+		tooltip = CANNOT_DECLARE_WAR_ON_SISTER_REPUBLIC_ALLY
+		potential = {
+			any_subject_country
+				is_subject_of_type = sister_republic
+				OR = {
+					alliance_with = FROM
+					has_guaranteed = FROM
+				}
+			}
+		}
+		allow = {
+			always = no
 		}
 	}
 	condition = {
@@ -53,6 +71,23 @@ declarewar = {
 				country_event = { id = subjects_expanded_protectorate_events.3 days = 70 }
 			}
 		}
+		if = {
+			limit = {
+				FROM = {
+					has_country_flag = marked_for_war_by_@ROOT
+				}
+			}
+			FROM = {
+				clr_country_flag = marked_for_war_by_@ROOT
+			}
+		}
+		if = {
+			limit = {
+				has_country_flag = marked_for_war_by_@FROM
+			}
+			clr_country_flag = marked_for_war_by_@FROM
+		}
+		
 		# Needed for Extended Timeline
 		if = {
 			limit = {
@@ -63,6 +98,32 @@ declarewar = {
 				}
 			}
 			set_country_flag = forcing_government
+		}
+	}
+}
+
+allianceaction = {
+	condition = {
+		tooltip = CANNOT_ALLY_OVERLORD_RIVAL
+		potential = {
+			is_subject_of_type = sister_republic
+		}
+		allow = {
+			overlord = {
+				is_rival = FROM
+			}
+		}
+	}
+	condition = {
+		tooltip = CANNOT_ALLY_SISTER_REPUBLIC_RIVAL
+		potential = {
+			any_subject_country = {
+				is_subject_of_type = sister_republic
+				is_rival = FROM
+			}
+		}
+		allow = {
+			always = no
 		}
 	}
 }

@@ -42,3 +42,7 @@
  is_imperial_tributary_state: "Imperial Tributary State"
  imperial_tributary_state_forced: "Forced Imperial Tributary State"
  
+ is_sister_republic: "Sister Republic"
+ sister_republic_forced: "Forced Sister Republic"
+ declined_establish_sister_republic_opinion: "Demand of Sister Republic declined"
+ 

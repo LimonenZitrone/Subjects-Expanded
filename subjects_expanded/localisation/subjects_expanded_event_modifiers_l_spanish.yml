@@ -152,3 +152,6 @@
  imperial_tributary_state_modifier: "Imperial Tributary State"
  imperial_tributary_state_overlord_modifier: "Has Imperial Tributary States"
  
+ sister_republic_modifier: "Sister Republic"
+ sister_republic_overlord_modifier: "Has Sister Republics"
+ 

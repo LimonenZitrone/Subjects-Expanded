@@ -3,6 +3,9 @@
  cb_force_imperial_tributary_state: "Force Imperial Tributary State"
  cb_force_imperial_tributary_state_desc: "They are a less developed country and we should force them to pay us tribute and make us to their successor."
  
+ cb_sister_republic_offensive_war: "Sister Republics' Offensive War"
+ cb_sister_republic_offensive_war_desc: "We have gathered our troops with our Sister Republic, it's time to beat the enemy with combined forces!"
+ 
  # War Goals:
  take_capital_force_imperial_tributary_state: "Take Capital"
  take_capital_force_imperial_tributary_state_desc: "The war goal is to conquer the target's capital."

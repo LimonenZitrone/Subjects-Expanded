@@ -81,3 +81,11 @@
  subjects_expanded_imperial_tributary_state_events1.EVTOPT1: "Sie sind der rechtmäßige Herrscher über [Root.GetName]."
  subjects_expanded_imperial_tributary_state_events1.EVTOPT2: "Wie konnte das passieren? Annexion ist keine Option, das bedeutet Krieg!"
  
+ subjects_expanded_sister_republic_events.EVTNAME1: "Schwesterrepublik wird unabhängig"
+ subjects_expanded_sister_republic_events.EVTDESC1: "Die Regierungen von [Root.GetName] und unserer Schwesterrepublik sind in letzter Zeit immer weiter auseinandergedriftet und es ist an der Zeit, dass wir uns eingestehen, dass diese Beziehung nicht mehr in dieser Art und Weise geführt werden kann."
+ subjects_expanded_sister_republic_events1.EVTOPT1: "Wir werden weiterhin in Kriegen zueinander stehen!"
+ 
+ subjects_expanded_sister_republic_events.EVTNAME3: "Schwesterrepublik wählt Kriegsziel"
+ subjects_expanded_sister_republic_events.EVTDESC3: "Unsere Schwesterrepublik, [From.GetName], hat §R[FROM_marked_THIS_for_war.GetName]§! als ihr Kriegsziel gewählt. Sie werden Euch eventuell innerhalb der nächsten 90 Tage darum bitten, diesem Land einen gemeinsamen Krieg zu erklären."
+ subjects_expanded_sister_republic_events3.EVTOPT1: "Interessant."
+ 

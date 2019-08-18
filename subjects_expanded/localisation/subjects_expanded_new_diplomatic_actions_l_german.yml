@@ -137,6 +137,27 @@
  cancel_imperial_tributary_state_tooltip: "Beedet die Vasallisierung von §Y[From.GetName]§! und entlasst sie in die Freiheit.\n"
  
  
+ establish_sister_republic_title: "Schwesterrepulik fordern"
+ establish_sister_republic_desc: "Wollt Ihr §Y[From.GetName]§! vorschlagen, unsere Schwesterrepulik zu werden? \nEine Schwesterrepublik verhält sich ähnlich wie eine Personalunion. Allerdings ist sie weit weniger in ihren diplomatischen Aktionen eingeschränkt und kann nicht bei Tod des Herrschers unabhängig werden. Sie kann nur von Republiken und Theokratien errichtet werden und ein Land kann maximal §Y1§! Schwesterrepublik gleichzeitig besitzen. Falls der Lehnsherr und die Schwesterrepublik nicht mehr dieselbe Staatsform (Republik oder Theokratie) besitzen, wird die Schwesterrepublik unabhängig und schließt ein Bündnis mit ihrem ehemaligen Lehnsherrn. Beide, der Lehnsherr und die Schwesterrepublik, erhalten einen gleichhohen Bonus auf Entwicklungskosten, Baukosten und Produktionseffizienz."
+ establish_sister_republic_tooltip: "Macht §Y[From.GetName]§! zu einer [Root.GetAdjective]en §YSchwesterrepulik§!.\n"
+ establish_sister_republic_alert_tooltip: "Establish Sister Republic"
+ establish_sister_republic_dialog: "§Y[This.GetName]§! schlägt uns vor, dass wir ihre §YSchwesterrepulik§! werden. \nEine Schwesterrepublik verhält sich ähnlich wie eine Personalunion. Allerdings ist sie weit weniger in ihren diplomatischen Aktionen eingeschränkt und kann nicht bei Tod des Herrschers unabhängig werden. Sie kann nur von Republiken und Theokratien errichtet werden und ein Land kann maximal §Y1§! Schwesterrepublik gleichzeitig besitzen. Falls der Lehnsherr und die Schwesterrepublik nicht mehr dieselbe Staatsform (Republik oder Theokratie) besitzen, wird die Schwesterrepublik unabhängig und schließt ein Bündnis mit ihrem ehemaligen Lehnsherrn. Beide, der Lehnsherr und die Schwesterrepublik, erhalten einen gleichhohen Bonus auf Entwicklungskosten, Baukosten und Produktionseffizienz. \n\nWollt Ihr akzeptieren?"
+ 
+ sister_republic_ask_overlord_to_join_war_title: "Um Kriegsunterstützung bitten"
+ sister_republic_ask_overlord_to_join_war_desc: "Bittet §Y[From.GetName]§! darum, dem von Euch als Kriegsziel markierten Land einen mit Euch gemeinsam geführten Krieg zu erklären. Wenn sie akzeptieren, erklären wir dem Zielland gemeinsam den Krieg, mit [From.GetName] als kriegsführende Partei."
+ sister_republic_ask_overlord_to_join_war_tooltip: "Bittet §Y[From.GetName]§! darum, dem von Euch als Kriegsziel markierten Land einen mit Euch gemeinsam geführten Krieg zu erklären.\n"
+ sister_republic_ask_overlord_to_join_war_alert_tooltip: "Um Kriegsunterstützung bitten"
+ sister_republic_ask_overlord_to_join_war_dialog: "§Y[From.GetName]§! bittet uns darum, dem von ihnen als Kriegsziel markierten Land den Krieg zu erklären. \nWenn wir akzeptieren, erklären wir dem Zielland gemeinsam den Krieg, mit uns als kriegsführender Partei. \nWenn wir ablehnen, ändert sich ihr Freiheitsstreben um §R+10%§!. \n\nWollt Ihr akzeptieren?"
+ 
+ sister_republic_mark_country_as_target_for_war_title: "Als Kriegsziel markieren"
+ sister_republic_mark_country_as_target_for_war_desc: "Markiert §Y[From.GetName]§! als Eurer Kriegsziel. Dies wird für §Y90 Tage§! oder bis Ihr ein anderes Land als Kriegsziel markiert Bestand haben. Dies wird es Euch erlauben, §Y[Root.Overlord.GetName]§! darum zu bitten, einen gemeinsamen Krieg gegen [From.GetName] zu erklären, der von [Root.Overlord.GetName] angeführt wird."
+ sister_republic_mark_country_as_target_for_war_tooltip: "Markiert §Y[From.GetName]§! als Eurer Kriegsziel.\n"
+ 
+ cancel_sister_republic_title: "Schwesterrepulik entlassen"
+ cancel_sister_republic_desc: "Beendet das Abhängigkeitsverhältnis von §Y[From.GetName]§! zu uns. Dies wird ihre Meinung über uns um §R-200§! verschlechtern, sofern sie ein Freiheitsstreben unter §Y50%§! besitzen. Außerdem verlieren wir §R-25§! Prestige und erhalten eine §Y5-jährige§! Waffenruhe mit ihnen."
+ cancel_sister_republic_tooltip: "Beedet die Vasallisierung von §Y[From.GetName]§! und entlasst sie in die Freiheit.\n"
+ 
+ 
  return_subject_to_vassal_title: "Zum Vasall degradieren"
  return_subject_to_vassal_desc: "Beendet den derzeitigen Status von §Y[From.GetName]§! und macht sie zu einem Vasallen. Dies wird ihre Meinung über uns um §R-100§! verschlechtern und ihr Freiheitsstreben um §R+25%§! ändern. Außerdem verlieren wir §R-10§! Prestige."
  return_subject_to_vassal_tooltip: "Macht §Y[From.GetName]§! wieder zu einem Vasall.\n"
@@ -170,4 +191,17 @@
  FROM_LIBERTY_DESIRE_TOO_HIGH: "Ihr Freiheitsstreben ist zu hoch"
  FROM_IS_PEASANTS_REPUBLIC: "Sie sind eine \"Bauernrepublik\""
  FROM_IS_NOT_PEASANTS_REPUBLIC: "Sie sind KEINE \"Bauernrepublik\""
+ FROM_IS_IMPERIAL_CITY: "Sie sind eine \"Reichsstadt\""
+ FROM_RULER_MIL_SKILL: "Militärische Fähigkeiten ihres Herrschers"
+ ROOT_ATTITUDE_TOWARDS_FROM: "Unsere Haltung ihnen gegenüber"
+ ROOT_LIBERTY_DESIRE_TOO_HIGH: "Unser Freiheitsstreben ist zu hoch"
+ FROM_ATTITUDE_TOWARDS_COALITION_TARGET: "Ihre Haltung dem Zielland gegenüber"
+ FROM_IS_ALREADY_FIGHTING_IN_A_WAR: "Sie kämpfen in einem anderen Krieg"
+ FROM_ALREADY_PARTICIPANT_IN_WAR_WITH_COALITION_TARGET: "Sie sind bereits in demselben Krieg wie das Zielland"
+ FROM_HAS_TRUCE_WITH_COALITION_TARGET: "Sie haben einen Waffenstillstand mit dem Zielland"
+ FROM_ALLIED_TO_COALITION_TARGET: "Sie sind mit dem Zielland verbündet"
+ FROM_ALREADY_JOINED_A_WAR_AGAINST_A_COALITION_TARGET_OF_ROOT_WITHIN_LAST_365_DAYS: "Sie sind kürzlich einem unserer Angriffskriege beigetreten"
+ FROM_WOULD_GET_STABILITY_HIT: "Sie würden Stabilität einbüßen"
+ FROM_IS_IN_DEBT: "Sie haben Schulden"
+ FROM_WAR_EXHAUSTION: "Ihre Kriegsmüdigkeit"
  

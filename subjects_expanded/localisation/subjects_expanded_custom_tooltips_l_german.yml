@@ -21,12 +21,17 @@
  IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_peasant_vassal: "Kann zu einem §YBäuerlichen Vasall§! gemacht werden"
  IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_pirate_brotherhood_vassal: "Kann zu einer §YPiratenbruderschaft§! gemacht werden"
  IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_imperial_tributary_state: "Kann zu einem §YKaiserlichen Tributstaat§! gemacht werden"
+ IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_sister_republic: "Kann zu einer §YSchwesterrepublik§! gemacht werden"
  
  THIS_IS_FORMER_AUTONOMOUS_DOMINION: "Ist ein ehemaliges §YHerrschaftsgebiet§! oder eine ehemalige §YKolonialnation§!"
  
  # Diplomatic Actions:
  CANNOT_DECLARE_WAR_ON_OVERLORD_ALLY: "Unser Lehnsherr §Y[Root.Overlord.GetName]§! wird keine Kriege unsererseits gegen ihre Verbündeten tolerieren."
+ CANNOT_DECLARE_WAR_ON_SISTER_REPUBLIC_ALLY: "Ihr könnt einem Verbündeten Eurer Schwesterrepublik nicht den Krieg erklären."
  CANNOT_DECLARE_WAR_ON_NEIGHBOR_PUPPET_STATE_OF_RIVAL_WITHOUT_CORE_CLAIM: "Ihr könnt einem benachbarten Marionettenstaat eines Rivalen oder Feindes nicht den Krieg erklären, ohne einen Kernprovinzanspruch in einer ihrer Grenzprovinzen zu uns zu besitzen. Erklärt stattdessen [From.Overlord.GetName] den Krieg."
+ 
+ CANNOT_ALLY_OVERLORD_RIVAL: "Ihr könnt kein Bündnis mit einem Rivalen Eures Lehnsherrn schließen."
+ CANNOT_ALLY_SISTER_REPUBLIC_RIVAL: "Ihr könnt kein Bündnis mit einem Rivalen Eurer Schwesterrepublik schließen."
  
  # New Diplomatic Actions:
  DID_NOT_LOWER_DEVELOPMENT_WITHIN_LAST_10_YEARS: "Hat in den letzten §Y10 Jahren§! NICHT die Entwicklung eines Autonomen Herrschaftsgebiets verringert"
@@ -42,6 +47,8 @@
  IS_NOT_IN_THE_CAPITAL_COLONIAL_REGION: "Ist NICHT in derselben Kolonialregion wie die Hauptstadt ihres Besitzers"
  HAS_NO_OTHER_COLONIAL_NATION_IN_SAME_REGION: "§Y[Root.GetName]§! hat KEINE kolonialen Untertanen in dieser Kolonialregion"
  HAS_OTHER_COLONIAL_NATION_IN_SAME_REGION: "§Y[Root.GetName]§! hat kolonialen Untertanen in dieser Kolonialregion"
+ 
+ HAS_AT_LEAST_ONE_THIRD_OF_PREV_TOTAL_DEVELOPMENT: "Besitzt mindestens §Y33%§! der §Y[Prev.GetAdjective]en§! Entwicklung\n"
  
  # Decisions:
  ALL_PROVINCES_IN_INDIAN_TRADE_COMPANY_REGIONS_CEDED_TO_DOMINION: "\nAlle unsere Provinzen in [Root.GetIndianTradeCompanyRegionsSgPl] [Root.GetFirstIndianTradeCompanyRegionWeCede][Root.GetSecondIndianTradeCompanyRegionWeCede][Root.GetThirdIndianTradeCompanyRegionWeCede][Root.GetFourthIndianTradeCompanyRegionWeCede][Root.GetFifthIndianTradeCompanyRegionWeCede] werden an unser dort entlassenes Herrschaftsgebiet \n[Root.GetCreatedADNameIndia] abgetreten."

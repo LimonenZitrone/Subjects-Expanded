@@ -19,3 +19,11 @@ cb_force_imperial_tributary_state = {
 	
 	war_goal = take_capital_force_imperial_tributary_state
 }
+
+cb_sister_republic_offensive_war = {
+	is_triggered_only = yes
+	
+	months = 1
+
+	war_goal = take_capital_claim
+}

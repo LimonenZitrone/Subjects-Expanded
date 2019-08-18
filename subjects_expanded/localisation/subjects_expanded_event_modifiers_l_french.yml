@@ -149,3 +149,6 @@
  pirate_brotherhood_vassal_overlord_has_many_pirate_brotherhood_vassals_modifier: "Overlord has many Pirate Brotherhoods"
  pirate_brotherhood_vassal_overlord_modifier: "Has Pirate Brotherhoods"
  
+ imperial_tributary_state_modifier: "Imperial Tributary State"
+ imperial_tributary_state_overlord_modifier: "Has Imperial Tributary States"
+ 

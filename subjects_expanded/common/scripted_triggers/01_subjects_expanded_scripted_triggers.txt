@@ -257,6 +257,32 @@ is_possible_subject_of_subject_type_pirate_brotherhood_vassal = {
 	# Capital in Trade Range of possible Overlord has to be checked additionally
 }
 
+is_possible_subject_of_subject_type_imperial_tributary_state = {
+	# PREVs in THIS scope refer to possible overlord
+	NOT = { is_subject_of_type = imperial_tributary_state }
+	OR = {
+		is_subject = no
+		AND = {
+			is_subject_of = ROOT
+			is_vassal_or_similar_subject = yes
+			government = monarchy
+		}
+	}
+	OR = {
+		government = tribal
+		capital_scope = {
+			OR = {
+				trade_company_region = trade_company_west_india
+				trade_company_region = trade_company_deccan
+				trade_company_region = trade_company_east_india
+				trade_company_region = trade_company_coromandel
+				trade_company_region = trade_company_north_india
+			}
+		}
+	}
+	# Capital in Trade Range of possible Overlord has to be checked additionally
+}
+
 can_create_subject_type = {
 	can_be_overlord = $subject_type$
 	$subject$ = {

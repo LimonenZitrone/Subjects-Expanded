@@ -1,0 +1,21 @@
+cb_force_imperial_tributary_state = {
+	valid_for_subject = no
+
+	prerequisites = {
+		can_create_subject_type = {
+			subject = FROM
+			subject_type = imperial_tributary_state
+		}
+		FROM = {
+			capital_scope = { trade_range = ROOT }
+		}
+		NOT = { truce_with = FROM }
+	}
+	
+	attacker_disabled_po = {
+		po_demand_provinces
+		po_become_vassal
+	}
+	
+	war_goal = take_capital_force_imperial_tributary_state
+}

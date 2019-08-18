@@ -627,6 +627,16 @@ pirate_brotherhood_vassal_overlord_modifier = {
 	naval_forcelimit = 5
 }
 
+# Subject Type: Imperial Tributary State
+imperial_tributary_state_modifier = {
+	heir_chance = -0.25
+	land_forcelimit_modifier = -0.25
+}
+
+imperial_tributary_state_overlord_modifier = {
+	vassal_income = 0.025
+}
+
 # Modifiers that function as timers
 protectorate_got_monarch_power_this_year = {
 }

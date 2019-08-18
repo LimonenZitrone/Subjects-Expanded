@@ -142,4 +142,17 @@ spriteTypes = {
 		name = "GFX_diplomacy_ampirate_brotherhood_vassal"
 		texturefile = "gfx//interface//icon_diplomacy_ampirate_brotherhood_vassal.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_icon_imperial_tributary_state"
+		texturefile = "gfx/interface/icon_imperial_tributary_state.dds"
+	}
+	spriteType = {
+		name = "GFX_diplomacy_leadimperial_tributary_state"
+		texturefile = "gfx//interface//icon_diplomacy_leadimperial_tributary_state.dds"
+	}
+	spriteType = {
+		name = "GFX_diplomacy_amimperial_tributary_state"
+		texturefile = "gfx//interface//icon_diplomacy_amimperial_tributary_state.dds"
+	}
 }

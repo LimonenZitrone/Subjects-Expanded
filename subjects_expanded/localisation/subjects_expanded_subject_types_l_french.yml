@@ -71,3 +71,9 @@
  pirate_brotherhood_vassal_long_desc: "A Pirate Brotherhood is a mixture of a vassal and a colonial nation. It can only be established by nations with a Pirate government, at least three ports and 20 ships and is locked to Pirate governments itself. It pays tariffs and can have subjects on its own. It has a lower liberty desire than vassals, but is less restricted in its diplomatic actions. It receives a bonus to privateer efficiency, naval forcelimit and naval morale and gives its overlord a bonus to privateer efficiency and naval forcelimit.\n"
  pirate_brotherhood_vassal_no_overlord_dow: "You can not declare war on your own Pirate Brotherhood."
  
+ imperial_tributary_state_title: "Imperial Tributary State"
+ imperial_tributary_state_title_plural: "Imperial Tributary States"
+ imperial_tributary_state_is_our: "§Y$NAME$§! is our Imperial Tributary State."
+ imperial_tributary_state_long_desc: "An Imperial Tributary State is a mixture of a tributary state and a vassal. It is not restricted in its diplomatic actions, but it can not declare independence without a war. It pays taxes to its overlord and does not cost a diplomatic relations. It receives a malus on heir chance and army forcelimit and grants its overlord a bonus on vassal income It is locked to monarchy governments and if its ruler dies without a heir or it gets a regency council while the heir is younger than 12 years, it either gets annexed by its overlord or has to declare an independence war. An Imperial Tributary State can only be established by the §YRoman Empire§! or any country with the Empire rank and its capital in Europe that has a Dominion or Autonomous Dominion in India on tribal nations or nations in India.\n"
+ imperial_tributary_state_no_overlord_dow: "You can not declare war on your own Imperial Tributary State."
+ 

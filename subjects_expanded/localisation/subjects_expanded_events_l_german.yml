@@ -76,3 +76,8 @@
  subjects_expanded_pirate_brotherhood_vassal_events.EVTDESC2: "Wir werden nicht mehr von einer Piratenregierung regiert. Unsere bis jetzt noch loyalen Piratenbruderschaften haben dies als legitimen Grund zur Erklärung ihrer Unabhängigkeit verwendet."
  subjects_expanded_pirate_brotherhood_vassal_events2.EVTOPT1: "Das ist unglücklich..."
  
+ subjects_expanded_imperial_tributary_state_events.EVTNAME1: "[Root.Overlord.GetName] forder Annexion"
+ subjects_expanded_imperial_tributary_state_events.EVTDESC1: "Unsere Nachfolge ist schwach, was unseren Lehnsherrn, [Root.Overlord.GetName], dazu veranlasst hat, unsere Annexion zu fordern. Es ist ihr legitimes Recht, dies zu tun, und wir müssen nachgeben - oder einen Unabhängigkeitskrieg erklären."
+ subjects_expanded_imperial_tributary_state_events1.EVTOPT1: "Sie sind der rechtmäßige Herrscher über [Root.GetName]."
+ subjects_expanded_imperial_tributary_state_events1.EVTOPT2: "Wie konnte das passieren? Annexion ist keine Option, das bedeutet Krieg!"
+ 

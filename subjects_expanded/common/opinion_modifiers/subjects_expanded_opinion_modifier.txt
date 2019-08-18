@@ -141,3 +141,13 @@ pirate_brotherhood_vassal_forced = {
 	yearly_decay = 5
 	min = -100
 }
+
+is_imperial_tributary_state = {
+	opinion = 25
+}
+
+imperial_tributary_state_forced = {
+	opinion = -50
+	yearly_decay = 2.5
+	min = -50
+}

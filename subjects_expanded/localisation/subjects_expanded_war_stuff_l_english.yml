@@ -1,4 +1,12 @@
 ﻿l_english:
+ # CB Types:
+ cb_force_imperial_tributary_state: "Force Imperial Tributary State"
+ cb_force_imperial_tributary_state_desc: "They are a less developed country and we should force them to pay us tribute and make us to their successor."
+ 
+ # War Goals:
+ take_capital_force_imperial_tributary_state: "Take Capital"
+ take_capital_force_imperial_tributary_state_desc: "The war goal is to conquer the target's capital."
+ 
  # Peace Treaties:
  make_protectorate_desc: "@[From.GetTag] §Y[From.GetName]§! is made to a Protectorate of @[Root.GetTag] §Y[Root.GetName]§!."
  CB_ALLOWED_make_protectorate: "Force Protectorate"
@@ -31,4 +39,8 @@
  make_pirate_brotherhood_vassal_desc: "@[From.GetTag] §Y[From.GetName]§! is made to a Pirate Brotherhood of @[Root.GetTag] §Y[Root.GetName]§!. If [From.GetName] does not have a Pirate government, they will become one."
  CB_ALLOWED_make_pirate_brotherhood_vassal: "Force Pirate Brotherhood"
  PEACE_make_pirate_brotherhood_vassal: "$TAKERS$ Pirate Brotherhood"
+ 
+ make_imperial_tributary_state_desc: "@[From.GetTag] §Y[From.GetName]§! is made to an Imperial Tributary State of @[Root.GetTag] §Y[Root.GetName]§!. If [From.GetName] is not a monarchy, they will become one."
+ CB_ALLOWED_make_imperial_tributary_state: "Force Imperial Tributary State"
+ PEACE_make_imperial_tributary_state: "$TAKERS$ Imperial Tributary State"
  

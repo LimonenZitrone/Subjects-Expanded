@@ -76,3 +76,8 @@
  subjects_expanded_pirate_brotherhood_vassal_events.EVTDESC2: "We are not lead by a Pirate government anymore. Our Pirate Brotherhoods that were loyal to us until now take this as a valid reason to declare independence."
  subjects_expanded_pirate_brotherhood_vassal_events2.EVTOPT1: "That's unfortunate..."
  
+ subjects_expanded_imperial_tributary_state_events.EVTNAME1: "[Root.Overlord.GetName] demands Annexation"
+ subjects_expanded_imperial_tributary_state_events.EVTDESC1: "Our succession is weak, which made our overlord, [Root.Overlord.GetName], demand our annexation. It's their legitimate right to do so and we have to give in - or declare an independence war."
+ subjects_expanded_imperial_tributary_state_events1.EVTOPT1: "They are the legitimate ruler of [Root.GetName]."
+ subjects_expanded_imperial_tributary_state_events1.EVTOPT2: "How could this happen? Annexation is no option, war it is!"
+ 

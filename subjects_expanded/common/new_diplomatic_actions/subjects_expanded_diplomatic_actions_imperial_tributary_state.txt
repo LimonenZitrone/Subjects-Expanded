@@ -1,0 +1,137 @@
+establish_imperial_tributary_state = {
+	category = influence
+
+	require_acceptance = no
+	
+	is_visible = {
+		can_create_subject_type = {
+			subject = FROM
+			subject_type = imperial_tributary_state
+		}
+		FROM = {
+			is_subject_of = ROOT
+			capital_scope = { trade_range = ROOT }
+		}
+	}
+	
+	is_allowed = {
+		can_create_subject_type = {
+			subject = FROM
+			subject_type = imperial_tributary_state
+		}
+		hidden_trigger = {
+			FROM = {
+				is_subject_of = ROOT
+				capital_scope = { trade_range = ROOT }
+			}
+		}
+		NOT = { truce_with = FROM }
+		is_at_war = no
+		FROM = { is_at_war = no }
+		FROM = { NOT = { liberty_desire = 50 } }
+	}
+	
+	on_accept = {
+		if = {
+			limit = {
+				can_create_subject_type = {
+					subject = FROM
+					subject_type = imperial_tributary_state
+				}
+				FROM = {
+					is_subject_of = ROOT
+					capital_scope = { trade_range = ROOT }
+				}
+				NOT = { truce_with = FROM }
+				is_at_war = no
+				FROM = { is_at_war = no }
+				FROM = { NOT = { liberty_desire = 50 } }
+			}
+			create_subject = {
+				subject = FROM
+				subject_type = imperial_tributary_state
+			}
+			FROM = {
+				add_liberty_desire = -25
+			}
+		}
+	}
+	
+	ai_will_do = {
+		tag = GBR
+		FROM = {
+			capital_scope = {
+				OR = {
+					trade_company_region = trade_company_west_india
+					trade_company_region = trade_company_deccan
+					trade_company_region = trade_company_east_india
+					trade_company_region = trade_company_coromandel
+					trade_company_region = trade_company_north_india
+				}
+			}
+			NOT = {
+				years_in_vassalage_under = {
+					who = ROOT
+					years = 10
+					all_subject_country = yes
+				}
+			}
+		}
+	}
+}
+
+cancel_imperial_tributary_state = {
+	category = influence
+
+	require_acceptance = no
+	
+	is_visible = {
+		FROM = {
+			is_subject_of = ROOT
+			is_subject_of_type = imperial_tributary_state
+		}
+	}
+	
+	is_allowed = {
+		hidden_trigger = {
+			FROM = {
+				is_subject_of = ROOT
+				is_subject_of_type = imperial_tributary_state
+			}
+		}
+		NOT = { truce_with = FROM }
+		prestige = 0
+	}
+	
+	on_accept = {
+		if = {
+			limit = {
+				FROM = {
+					is_subject_of = ROOT
+					is_subject_of_type = imperial_tributary_state
+				}
+				NOT = { truce_with = FROM }
+				prestige = 0
+			}
+			FROM = {
+				if = {
+					limit = {
+						NOT = { liberty_desire = 50 }
+					}
+					add_opinion = {
+						who = ROOT
+						modifier = vassal_abandoned
+					}
+				}
+				grant_independence = yes
+				add_truce_with = ROOT
+			}
+			add_truce_with = FROM
+			add_prestige = -25
+		}
+	}
+	
+	ai_will_do = {
+		always = no
+	}
+}

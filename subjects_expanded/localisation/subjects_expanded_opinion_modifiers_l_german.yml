@@ -34,8 +34,11 @@
  
  is_peasant_vassal: "Bäuerlicher Vasall"
  declined_establish_peasant_vassal_opinion: "Forderung nach Bäuerlichem Vasall abgelehnt"
- peasant_vassal_forced: "Bäuerlicher Vasall erzwungen"
+ peasant_vassal_forced: "Bäuerlichen Vasall erzwungen"
  
  is_pirate_brotherhood_vassal: "Piratenbruderschaft"
  pirate_brotherhood_vassal_forced: "Piratenbruderschaft erzwungen"
+ 
+ is_imperial_tributary_state: "Kaiserlicher Tributstaat"
+ imperial_tributary_state_forced: "Kaiserlichen Tributstaat erzwungen"
  

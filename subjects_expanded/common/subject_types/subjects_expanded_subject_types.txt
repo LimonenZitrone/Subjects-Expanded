@@ -2076,3 +2076,115 @@ pirate_brotherhood_vassal = {
 	overlord_opinion_modifier = is_pirate_brotherhood_vassal
 	subject_opinion_modifier = is_pirate_brotherhood_vassal
 }
+
+imperial_tributary_state = {
+	copy_from = default
+	count = tributary_state
+	
+	# Graphics:
+	sprite = GFX_icon_imperial_tributary_state
+	diplomacy_overlord_sprite = GFX_diplomacy_leadimperial_tributary_state
+	diplomacy_subject_sprite = GFX_diplomacy_amimperial_tributary_state
+
+	# Triggers:
+	is_potential_overlord = {
+		is_subject = no
+		OR = {
+			tag = ROM
+			AND = {
+				government_rank = 3
+				capital_scope = {
+					continent = europe
+				}
+				any_subject_country = {
+					OR = {
+						is_subject_of_type = dominion
+						is_subject_of_type = autonomous_dominion
+					}
+					OR = {
+						tag = DI1
+						tag = DI2
+						tag = DI3
+						tag = DI4
+						tag = DI5
+						tag = DI6
+						tag = DI7
+						tag = DI8
+						tag = DI9
+					}
+				}
+			}
+		}
+	}
+	
+	# Properties:
+	is_voluntary = yes
+	transfer_trade_if_merchant_republic = yes
+	joins_overlords_wars = yes
+	overlord_can_attack = no
+	can_have_subjects_of_other_types = yes
+	takes_diplo_slot = no
+	overlord_protects_external = yes
+	can_use_claims = no
+	allows_taking_land_without_independence = yes
+	can_send_missionary_to_subject = no
+	overlord_can_fabricate_for = no
+	
+	max_government_rank = 2
+	
+	liberty_desire_negative_prestige = 0.5
+	liberty_desire_development_ratio = 0.175
+	liberty_desire_same_dynasty = -5.0
+	pays_overlord = 0.5
+	forcelimit_bonus = 1.0
+	
+	relative_power_class = 1
+	diplomacy_view_class = 1
+
+	can_fight = {
+		other_overlord = all
+		same_overlord = imperial_tributary_state
+		independent_nations = yes
+	}
+	can_rival = {
+		other_overlord = all
+		same_overlord = imperial_tributary_state
+		independent_nations = yes
+	}
+	can_ally = {
+		other_overlord = all
+		same_overlord = imperial_tributary_state
+		independent_nations = yes
+	}
+	can_marry = {
+		other_overlord = all
+		same_overlord = imperial_tributary_state
+		independent_nations = yes
+	}
+
+	# Subject Interactions:
+	# (continuous)
+	embargo_rivals = no
+	support_loyalists = yes
+	subsidize_armies = yes
+	send_officers = yes
+	# (immediate)
+	enforce_religion = no
+	seize_territory = yes
+	demand_additional_tribute = yes
+	conscript_general = yes
+
+	# Modifiers:
+	modifier_subject = clear
+	modifier_subject = {
+		modifier = imperial_tributary_state_modifier
+	}
+	
+	modifier_overlord = clear
+	modifier_overlord = {
+		modifier = imperial_tributary_state_overlord_modifier
+	}
+
+	overlord_opinion_modifier = is_imperial_tributary_state
+	subject_opinion_modifier = is_imperial_tributary_state
+}

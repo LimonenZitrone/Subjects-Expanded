@@ -39,3 +39,6 @@
  is_pirate_brotherhood_vassal: "Pirate Brotherhood"
  pirate_brotherhood_vassal_forced: "Forced Pirate Brotherhood"
  
+ is_imperial_tributary_state: "Imperial Tributary State"
+ imperial_tributary_state_forced: "Forced Imperial Tributary State"
+ 

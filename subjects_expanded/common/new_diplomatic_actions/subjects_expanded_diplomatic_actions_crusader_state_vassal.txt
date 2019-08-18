@@ -255,3 +255,70 @@ invite_missionars_from_crusader_state_vassal = {
 		NOT = { religious_unity = 0.5 }
 	}
 }
+
+make_crusader_state_vassal_to_theocracy = {
+	category = influence
+
+	require_acceptance = no
+	
+	is_visible = {
+		religion = catholic
+		government = theocracy
+		FROM = {
+			religion = catholic
+			NOT = { government = theocracy }
+			is_subject_of = ROOT
+			is_subject_of_type = crusader_state_vassal
+		}
+	}
+	
+	is_allowed = {
+		hidden_trigger = {
+			religion = catholic
+			government = theocracy
+			FROM = {
+				religion = catholic
+				NOT = { government = theocracy }
+				is_subject_of = ROOT
+				is_subject_of_type = crusader_state_vassal
+			}
+		}
+		is_at_war = no
+		FROM = {
+			is_at_war = no
+		}
+		FROM = { NOT = { liberty_desire = 50 } }
+	}
+	
+	on_accept = {
+		if = {
+			limit = {
+				religion = catholic
+				government = theocracy
+				FROM = {
+					religion = catholic
+					NOT = { government = theocracy }
+					is_subject_of = ROOT
+					is_subject_of_type = crusader_state_vassal
+				}
+				is_at_war = no
+				FROM = {
+					is_at_war = no
+				}
+				FROM = { NOT = { liberty_desire = 50 } }
+			}
+			FROM = {
+				change_government = theocracy
+				add_government_reform = leading_clergy_reform
+				add_liberty_desire = 25
+			}
+		}
+	}
+	
+	ai_will_do = {
+		tag = PAP
+		FROM = {
+			NOT = { liberty_desire = 25 }
+		}
+	}
+}

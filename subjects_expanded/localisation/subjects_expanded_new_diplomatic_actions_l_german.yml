@@ -98,6 +98,10 @@
  invite_missionars_from_crusader_state_vassal_desc: "Zieht Missionare von §Y[From.GetName]§! ein. Dies wird uns, für §Y5 Jahre§!, §G1§! zusätzlichen Missionar geben und unsere Missionarsstärke um §G+1%§! verbessern. \nDies wird uns §R-1000§! Dukaten kosten und ihr Freiheitsstreben um §R+25%§! ändern."
  invite_missionars_from_crusader_state_vassal_tooltip: "Zieht Missionare von §Y[From.GetName]§! ein.\n"
  
+ make_crusader_state_vassal_to_theocracy_title: "Zu Theokratie konvertieren"
+ make_crusader_state_vassal_to_theocracy_desc: "Zwingt §Y[From.GetName]§!, zu einer Theokratie zu werden. \nDies wird ihr Freiheitsstreben um §R+25%§! ändern."
+ make_crusader_state_vassal_to_theocracy_tooltip: "Zwingt §Y[From.GetName]§!, zu einer Theokratie zu werden.\n"
+ 
  
  establish_nahuatl_vassal_title: "Nahuatlischen Vasall ernennen"
  establish_nahuatl_vassal_desc: "Ernennt Euren Vasallen [From.GetName] zu einem §YNahuatlischen Vasall§!. Ein Nahuatlischer Vasall verhält sich wie ein Vasall, kostet jedoch keine diplomatische Beziehung und besitzt ein verringertes Freiheitsstreben. Weiterhin gibt er seinem Lehnsherrn Boni auf Mannstärke, Erholungsgeschwindigkeit der Mannstärke und Kriegspunktkosten von Provizen. Er kann nur von §YNahuatlischen§! Nationen, die ihre Religion noch nicht reformiert haben, in §YMexiko§!, §YKalifornien§!, §YRio Grande§! und §YZentralamerika§! errichtet werden. Falls ein Lehnsherr diese Bedingungen nicht erfüllt, erhält der Nahuatlische Vasall §R+100%§! Freiheitsstreben. \nDies wird unser Verhängnis um §R+10§! verändern."

@@ -326,3 +326,28 @@
 [*] having at least 5 Pirate Brotherhoods grants the overlord a bonus on navy tradition, ship cost and ship durability and lowers the Pirate Brotherhoods' liberty desire
 [*] releasing a Pirate Brotherhood will create an alliance between them and the former overlord
 [/list]
+
+[h1]Imperial Tributary State[/h1]
+[i]An Imperial Tributary State is a mixture of a tributary state and a vassal. It is not restricted in its diplomatic actions, but it can not declare independence without a war. It pays taxes to its overlord and does not cost a diplomatic relations. It receives a malus on heir chance and army forcelimit and grants its overlord a bonus on vassal income It is locked to monarchy governments and if its ruler dies without a heir or it gets a regency council while the heir is younger than 12 years, it either gets annexed by its overlord or has to declare an independence war. An Imperial Tributary State can only be established by the Roman Empire or any country with the Empire rank and its capital in Europe that has a Dominion or Autonomous Dominion in India on tribal nations or nations in India.[/i]
+
+[b]Conditions (possible overlord):[/b]
+[list]
+[*] is not a subject
+[*] is either Roman Empire or is Empire rank, has its capital in Europe and has a Dominion or Autonomous Dominion in India
+[/list]
+
+[b]Conditions (possible subject):[/b]
+[list]
+[*] is either a vassal of the possible overlord and has a monarchy government or not a subject
+[*] has a tribal government or has its capital in an Indian trade company region
+[*] its capital is within the trade range of the possible overlord
+[/list]
+
+[b]Additional Information:[/b]
+[list]
+[*] Imperial Tributary States can be established diplomatically and by war
+[*] Imperial Tributary States have a max government rank of 2 (Kingdom)
+[*] Imperial Tributary States receive a malus on heir chance and army forcelimit
+[*] Imperial Tributary States grant their overlord a bonus on vassal income
+[*] if the ruler of an Imperial Tributary States dies without a heir or they have a regency council with a heir that is younger than 12 years, they get an event to be annexed by their overlord or declare an independence war
+[/list]

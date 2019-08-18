@@ -2,7 +2,7 @@
 This mod adds new subject types and diplomatic actions related to them to add more variety and depth to the subject system.
 
 [h1]Currently Added[/h1]
-Currently [i]Subjects Expanded[/i] adds [b]12[/b] new subject types:
+Currently [i]Subjects Expanded[/i] adds [b]13[/b] new subject types:
 [list]
 [*] Protectorate
 [list]
@@ -51,6 +51,10 @@ Currently [i]Subjects Expanded[/i] adds [b]12[/b] new subject types:
 [*] Pirate Brotherhood
 [list]
 [*] A Pirate Brotherhood is a mixture of a vassal and a colonial nation. It can only be established by nations with a Pirate government, at least three ports and 20 ships and is locked to Pirate governments itself. It pays tariffs and can have subjects on its own. It has a lower liberty desire than vassals, but is less restricted in its diplomatic actions. It receives a bonus to privateer efficiency, naval forcelimit and naval morale and gives its overlord a bonus to privateer efficiency and naval forcelimit. (Requires Golden Century DLC)
+[/list]
+[*] Imperial Tributary State
+[list]
+[*] An Imperial Tributary State is a mixture of a tributary state and a vassal. It is not restricted in its diplomatic actions, but it can not declare independence without a war. It pays taxes to its overlord and does not cost a diplomatic relations. It receives a malus on heir chance and army forcelimit and grants its overlord a bonus on vassal income It is locked to monarchy governments and if its ruler dies without a heir or it gets a regency council while the heir is younger than 12 years, it either gets annexed by its overlord or has to declare an independence war. An Imperial Tributary State can only be established by the Roman Empire or any country with the Empire rank and its capital in Europe that has a Dominion or Autonomous Dominion in India on tribal nations or nations in India.
 [/list]
 [/list]
 

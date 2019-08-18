@@ -31,7 +31,7 @@
 [/list]
 
 [h1]Puppet State[/h1]
-[i]A Puppet State is a mixture of a vassal and a march. It receives similar bonuses as a march, but can be annexed after 10 years. Further more it increases our reputation at home and in foreign countries.[/i]
+[i]A Puppet State is a mixture of a vassal and a march. It receives similar bonuses as a march, but can be annexed after 10 years. Furthermore it increases your reputation at home and in foreign countries.[/i]
 
 [b]Conditions (possible overlord):[/b]
 [list]
@@ -65,7 +65,7 @@
 [/list]
 
 [h1]Dominion[/h1]
-[i]A Dominion behaves like a colonial nation, but has less liberty desire and pays no tarrifs to its overlord. They are a little bit less limited than colonial nations in diplomatic actions, but cannot be forced to start colonial wars. Dominions in trade company regions, can not be individualized, but give a bonus to its overlord's naval forcelimit.[/i]
+[i]A Dominion behaves like a colonial nation, but has less liberty desire and pays no tariffs to its overlord. They are a little bit less limited than colonial nations in diplomatic actions, but cannot be forced to start colonial wars. Dominions in trade company regions, cannot be individualized, but give a bonus to its overlord's naval forcelimit.[/i]
 
 [b]Conditions (possible overlord):[/b]
 [list]
@@ -92,7 +92,7 @@
 [/list]
 
 [h1]Autonomous Dominion[/h1]
-[i]An Autonomous Dominion behaves like a colonial nation, but has less liberty desire, pays no tarrifs to its overlord and does not join its overlord's wars. They are less limited in diplomatic actions than colonial nations and their overlord can decline helping them in defensive wars. Further more they grant two merchants to its overlord. Autonomous Dominions in trade company regions, can not be individualized, but give a bonus to its overlord's naval forcelimit.[/i]
+[i]An Autonomous Dominion behaves like a colonial nation, but has less liberty desire, pays no tariffs to its overlord and does not join its overlord's wars. They are less limited in diplomatic actions than colonial nations and their overlord can decline helping them in defensive wars. Furthermore they grant two merchants to its overlord. Autonomous Dominions in trade company regions cannot be individualized, but give a bonus to its overlord's naval forcelimit.[/i]
 
 [b]Conditions (possible overlord):[/b]
 [list]
@@ -119,7 +119,7 @@
 [/list]
 
 [h1]Roman Client Kingdom[/h1]
-[i]A Roman Client Kingdom behaves like a vassal, but has less liberty desire and can only be created by the Roman Empire, West Roman Empire and Byzantine Empire. Further more they pay more money to their overlord and are a little less restricted in their diplomatic actions than normal vassals. If they border one of our rivals or enemies, Roman Client Kingdoms do not cost a diplomatic relation and as long as we do not have any colonists, they increase our core range by +5% each. When they receive a new heir, he/she has to be acknowledged by us or he/she will not be accepted as rightful heir.[/i]
+[i]A Roman Client Kingdom behaves like a vassal, but has less liberty desire and can only be created by the Roman Empire, Western Roman Empire, and Byzantine Empire. Furthermore, they pay more money to their overlord and are a slightly less restricted in their diplomatic actions than normal vassals. If they border one of our rivals or enemies, Roman Client Kingdoms do not cost a diplomatic relation and as long as you do not have any colonists, they increase your core range by +5% each. When they receive a new heir, he/she has to be acknowledged by you or he/she will not be accepted as rightful heir.[/i]
 
 [b]Conditions (possible overlord):[/b]
 [list]
@@ -145,7 +145,7 @@
 [/list]
 
 [h1]Voivodeship[/h1]
-[i]A Voivodeship is a mixture of a vassal and a march. It receives similar bonuses as a march, but can be annexed after 10 years. Further more it has increased military expanses and can only be established by Poland and Commonwealth.[/i]
+[i]A Voivodeship is a mixture of a vassal and a march. It receives similar bonuses as a march, but can be annexed after 10 years. Further more it has increased military expanses and can only be established by Poland or Commonwealth.[/i]
 
 [b]Conditions (possible overlord):[/b]
 [list]
@@ -169,7 +169,7 @@
 [/list]
 
 [h1]Fiefdom[/h1]
-[i]A Fiefdom is a vassal of the same primary culture. It behaves similar to normal vassals, but has a slightly lower liberty desire, does not join its overlords wars and can only be integrated. However it pays more money to its overlord and the overlord can demand troops from it. Further more it has increased tax income and decreased culture conversion cost and also affects these modifiers for its overlord. It can only be established when having the Feudal Nobility government.[/i]
+[i]A Fiefdom is a vassal of the same primary culture. It behaves similar to normal vassals, but has a slightly lower liberty desire, does not join its overlord's wars, and can only be integrated. However, it pays more money to its overlord and the overlord can demand troops from it. Further more it has increased tax income and decreased culture conversion cost and also affects these modifiers for its overlord. It can only be established when having the "Feudal Nobility" government.[/i]
 
 [b]Conditions (possible overlord):[/b]
 [list]
@@ -193,7 +193,7 @@
 [/list]
 
 [h1]Crusader State[/h1]
-[i]A Crusader State is a mixture of a vassal and a march. It receives bonuses to discipline, manpower, war score cost against other religions and missionary strength. Further more they increase the papal authority and missionary strength of its overlord and cannot be annexed. They can only be established by the Papal State, Jerusalem and Monastic Orders in Europe and a country can only have 2 Crusader States at the same time.[/i]
+[i]A Crusader State is a mixture of a vassal and a march. It receives bonuses to discipline, manpower, war score cost against other religions and missionary strength. Furthermore, they increase your papal authority and missionary strength and cannot be annexed. They can only be established by the Papal State, Jerusalem, Monastic Orders and Crusader Kingdoms in Europe and a country can only have 2 Crusader States at the same time.[/i]
 
 [b]Conditions (possible overlord):[/b]
 [list]
@@ -248,7 +248,7 @@
 [/list]
 
 [h1]Nahuatl Vassal[/h1]
-[i]A Nahuatl Vassal behaves like a vassal, but does not cost a diplomatic relation and has a reduced liberty desire. Further more it gives a bonus for manpower, manpower recovery speed and province war score cost to its overlord. It can only be established by Nahuatl nations, which did not reform their religion, in Mexico, California, Rio Grande and Central America. If an overlord does not fulfill these requirements, the Nahuatl Vassal will get +100% liberty desire. (Requires El Dorado DLC)[/i]
+[i]A Nahuatl Vassal behaves like a vassal, but does not cost a diplomatic relation and has reduced liberty desire. Furthermore, it gives a bonus for manpower, manpower recovery speed, and province war score cost to its overlord. It can only be established by Nahuatl nations, which did not reform their religion, in Mexico, California, Rio Grande and Central America. If an overlord does not fulfill these requirements, the Nahuatl Vassal will get +100% liberty desire. (Requires El Dorado DLC)[/i]
 
 [b]Conditions (possible overlord):[/b]
 [list]
@@ -271,7 +271,7 @@
 [/list]
 
 [h1]Peasant Vassal[/h1]
-[i]A Peasant Vassal is a mixture of a vassal and a tributary. It does not join its overlord's wars, is not very limited in its diplomatic actions, has a higher forcelimit and grants more forcelimit to its overlord than vassals. Further more the overlord can demand tribute from them and receives a bonus to aggressive expansion and a malus to all power cost for each Peasant Vassal. A Peasant Vassal has reduced tax income, but increased production efficiency, army morale and manpower, however the overlord pays it and it has a slighty higher liberty desire from development than vassals.[/i]
+[i]A Peasant Vassal is a mixture of a vassal and a tributary. It does not join its overlord's wars, is not very limited in its diplomatic actions, has a higher forcelimit, and grants more forcelimit to its overlord than vassals. Furthermore, the overlord can demand tribute from them and receives a bonus to aggressive expansion and a malus to all power cost for each Peasant Vassal. A Peasant Vassal has reduced tax income, but increased production efficiency, army morale, and manpower, however the overlord pays it and it has a slightly higher liberty desire from development than vassals.[/i]
 
 [b]Conditions (possible overlord):[/b]
 [list]
@@ -300,7 +300,7 @@
 [/list]
 
 [h1]Pirate Brotherhood[/h1]
-[i]A Pirate Brotherhood is a mixture of a vassal and a colonial nation. It can only be established by nations with a Pirate government, at least three ports and 20 ships and is locked to Pirate governments itself. It pays tariffs and can have subjects on its own. It has a lower liberty desire than vassals, but is less restricted in its diplomatic actions. It receives a bonus to privateer efficiency, naval forcelimit and naval morale and gives its overlord a bonus to privateer efficiency and naval forcelimit. (Requires Golden Century DLC)[/i]
+[i]A Pirate Brotherhood is a mixture of a vassal and a colonial nation. It can only be established by nations with a Pirate government, at least three ports, and 20 ships, and is locked to Pirate governments itself. It pays tariffs and can have subjects on its own. It has a lower liberty desire than vassals, but is less restricted in its diplomatic actions. It receives a bonus to privateer efficiency, naval forcelimit and naval morale and gives its overlord a bonus to privateer efficiency and naval forcelimit. (Requires Golden Century DLC)[/i]
 
 [b]Conditions (possible overlord):[/b]
 [list]

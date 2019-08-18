@@ -38,7 +38,7 @@ Currently [i]Subjects Expanded[/i] adds [b]13[/b] new subject types:
 [/list]
 [*] Salic Union
 [list]
-[*] A Salic Union behaves exactly like a Personal Union, but can be annexed after 10 years. It can only be established in a Salic Reunification war (requires Extended Timeline).
+[*] A Salic Union behaves exactly like a Personal Union, but can be annexed after 10 years. It can only be established in a Salic Reunification war. (Requires Extended Timeline)
 [/list]
 [*] Nahuatl Vassal
 [list]

@@ -1,21 +1,18 @@
 # Audax Validator "!" Ignore_1009
 # Copied from "Extended Timeline"
 
-government = tribal_despotism
-#aristocracy_plutocracy = -2
-#centralization_decentralization = 4
-#innovative_narrowminded = 2
-#mercantilism_freetrade = -4
-mercantilism = 0.1
-#offensive_defensive = 0
-#land_naval = -2
-#quality_quantity = 3
-#serfdom_freesubjects = -3
+government = tribal
+add_government_reform = tribal_despotism
 primary_culture = bambara
 religion = shamanism
 technology_group = sub_saharan
+unlock_cult = yemoja_cult
+unlock_cult = roog_cult
+unlock_cult = nyame_cult
 capital = 2308	# Koumbi Saleh
 
+100.1.1 = { add_government_reform = early_gov_reform_1 }
+230.1.1 = { add_government_reform = early_gov_reform_2 }
 350.1.1 = {
 	monarch = {
 		name = "Kaya Magha"
@@ -26,6 +23,7 @@ capital = 2308	# Koumbi Saleh
 	}
 }
 
+360.1.1 = { add_government_reform = early_gov_reform_3 }
 450.1.1 = {
 	monarch = {
 		name = "(regency council)"
@@ -36,6 +34,9 @@ capital = 2308	# Koumbi Saleh
 	}
 }
 
+490.1.1 = { add_government_reform = early_gov_reform_4 }
+620.1.1 = { add_government_reform = early_gov_reform_5 }
+750.1.1 = { add_government_reform = early_gov_reform_6 }
 790.1.1 = {
 	monarch = {
 		name = "Mayan Dyabe"
@@ -46,6 +47,7 @@ capital = 2308	# Koumbi Saleh
 	}
 }
 
+880.1.1 = { add_government_reform = early_gov_reform_7 }
 890.1.1 = {
 	monarch = {
 		name = "(regency council)"
@@ -66,6 +68,8 @@ capital = 2308	# Koumbi Saleh
 	}
 }
 
+1010.1.1 = { add_government_reform = early_gov_reform_8 }
+1140.1.1 = { add_government_reform = early_gov_reform_9 }
 1147.1.1 = {
 	monarch = {
 		name = "Soumaba"
@@ -76,8 +80,16 @@ capital = 2308	# Koumbi Saleh
 	}
 }
 
+1270.1.1 = { add_government_reform = early_gov_reform_10 }
 1950.1.1 = { 
-	government = constitutional_republic 
+	government = republic
+	add_government_reform = parliamentary_reform
+	add_government_reform = strengthen_executive_powers_reform
+	add_government_reform = single_party_system
+	add_government_reform = democracy_reform
+	add_government_reform = powerful_head_of_state
+	set_legacy_government = constitutional_republic
+ 
 	religion = secularism
 	primary_culture = aka
 	technology_group = muslim

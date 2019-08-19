@@ -17,7 +17,7 @@ declarewar = {
 	condition = {
 		tooltip = CANNOT_DECLARE_WAR_ON_SISTER_REPUBLIC_ALLY
 		potential = {
-			any_subject_country
+			any_subject_country = {
 				is_subject_of_type = sister_republic
 				OR = {
 					alliance_with = FROM

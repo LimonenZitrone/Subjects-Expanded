@@ -167,3 +167,9 @@ declined_establish_sister_republic_opinion = {
 	yearly_decay = 1
 	min = -100
 }
+
+declined_ask_for_sister_republic_opinion = {
+	opinion = -25
+	yearly_decay = 1
+	min = -100
+}

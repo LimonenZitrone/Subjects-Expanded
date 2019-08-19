@@ -50,6 +50,8 @@
  
  HAS_AT_LEAST_ONE_THIRD_OF_PREV_TOTAL_DEVELOPMENT: "Besitzt mindestens §Y33%§! der §Y[Prev.GetAdjective]en§! Entwicklung\n"
  
+ DID_NOT_GED_DENIED_TO_BECOME_IMPERIAL_TRIBUTARY_STATE_WITHIN_LAST_5_YEARS: "Wurde innerhalb der letzten §Y5 Jahre§! NICHT als Kaiserlicher Tributstaat abgelehnt"
+ 
  # Decisions:
  ALL_PROVINCES_IN_INDIAN_TRADE_COMPANY_REGIONS_CEDED_TO_DOMINION: "\nAlle unsere Provinzen in [Root.GetIndianTradeCompanyRegionsSgPl] [Root.GetFirstIndianTradeCompanyRegionWeCede][Root.GetSecondIndianTradeCompanyRegionWeCede][Root.GetThirdIndianTradeCompanyRegionWeCede][Root.GetFourthIndianTradeCompanyRegionWeCede][Root.GetFifthIndianTradeCompanyRegionWeCede] werden an unser dort entlassenes Herrschaftsgebiet \n[Root.GetCreatedADNameIndia] abgetreten."
  ALL_PROVINCES_IN_EAST_INDIES_TRADE_COMPANY_REGIONS_CEDED_TO_DOMINION: "\nAlle unsere Provinzen in [Root.GetEastIndiesTradeCompanyRegionsSgPl] [Root.GetFirstEastIndiesTradeCompanyRegionWeCede][Root.GetSecondEastIndiesTradeCompanyRegionWeCede] werden an unser dort entlassenes Herrschaftsgebiet \n[Root.GetCreatedADNameEastIndies] abgetreten."

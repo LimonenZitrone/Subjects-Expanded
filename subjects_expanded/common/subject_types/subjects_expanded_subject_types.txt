@@ -2152,7 +2152,7 @@ imperial_tributary_state = {
 	liberty_desire_negative_prestige = 0.5
 	liberty_desire_development_ratio = 0.175
 	liberty_desire_same_dynasty = -5.0
-	pays_overlord = 0.5
+	pays_overlord = 1
 	forcelimit_bonus = 1.0
 	
 	relative_power_class = 1

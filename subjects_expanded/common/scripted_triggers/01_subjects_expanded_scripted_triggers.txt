@@ -245,7 +245,7 @@ is_possible_subject_of_subject_type_pirate_brotherhood_vassal = {
 	OR = {
 		is_subject = no
 		AND = {
-			is_subject_of = ROOT
+			is_subject_of = PREV
 			is_vassal_or_similar_subject = yes
 			OR = {
 				has_reform = pirate_republic_reform
@@ -263,7 +263,7 @@ is_possible_subject_of_subject_type_imperial_tributary_state = {
 	OR = {
 		is_subject = no
 		AND = {
-			is_subject_of = ROOT
+			is_subject_of = PREV
 			is_vassal_or_similar_subject = yes
 			government = monarchy
 		}
@@ -311,7 +311,7 @@ is_possible_subject_of_subject_type_sister_republic = {
 	OR = {
 		is_subject = no
 		AND = {
-			is_subject_of = ROOT
+			is_subject_of = PREV
 			is_vassal_or_similar_subject = yes
 		}
 	}

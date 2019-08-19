@@ -856,11 +856,12 @@ establish_sister_republic = {
 	
 	ai_will_do = {
 		FROM = {
+			NOT = { is_subject_of = ROOT }
+			is_neighbor_of = ROOT
 			OR = {
 				NOT = { has_country_flag = declined_establish_sister_republic_@ROOT }
 				had_country_flag = { flag = declined_establish_sister_republic_@ROOT days = 1825 }
 			}
-			NOT = { is_subject_of = ROOT }
 		}
 	}
 }
@@ -1418,6 +1419,13 @@ cancel_sister_republic = {
 	}
 	
 	ai_will_do = {
-		always = no
+		FROM = {
+			liberty_desire = 100
+			years_in_vassalage_under = {
+				who = ROOT
+				years = 90
+				all_subject_country = yes
+			}
+		}
 	}
 }

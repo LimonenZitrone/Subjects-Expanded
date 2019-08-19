@@ -82,19 +82,20 @@ make_roman_client_kingdom = {
 		}
 		limit = {
 			OR = {
-				any_country = {
-					OR = {
-						is_rival = ROOT
-						is_enemy = ROOT
-					}
-					is_neighbor_of = FROM
-				}
-				num_of_free_diplomatic_relations = 1
-			}
-			OR = {
 				tag = ROM
 				tag = ROW
 				tag = BYZ
+			}
+			OR = {
+				num_of_free_diplomatic_relations = 1
+				FROM = {
+					any_neighbor_country = {
+						OR = {
+							is_rival = FROM
+							is_enemy = FROM
+						}
+					}
+				}
 			}
 			OR = {
 				is_neighbor_of = FROM

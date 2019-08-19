@@ -109,6 +109,13 @@ cancel_pirate_brotherhood_vassal = {
 	}
 	
 	ai_will_do = {
-		always = no
+		FROM = {
+			liberty_desire = 100
+			years_in_vassalage_under = {
+				who = ROOT
+				years = 25
+				all_subject_country = yes
+			}
+		}
 	}
 }

@@ -50,9 +50,17 @@ establish_roman_client_kingdom = {
 	}
 	
 	ai_will_do = {
-		NOT = { num_of_diplomatic_relations = 3 }
-		NOT = { num_of_free_diplomatic_relations = 0 }
-		NOT = { calc_true_if = { all_subject_country = { is_subject_of_type = roman_client_kingdom } amount = 5 } }
+		OR = {
+			num_of_free_diplomatic_relations = 1
+			FROM = {
+				any_neighbor_country = {
+					OR = {
+						is_rival = FROM
+						is_enemy = FROM
+					}
+				}
+			}
+		}
 		FROM = {
 			NOT = {
 				years_in_vassalage_under = {
@@ -293,6 +301,13 @@ cancel_roman_client_kingdom = {
 	}
 	
 	ai_will_do = {
-		always = no
+		FROM = {
+			liberty_desire = 100
+			years_in_vassalage_under = {
+				who = ROOT
+				years = 30
+				all_subject_country = yes
+			}
+		}
 	}
 }

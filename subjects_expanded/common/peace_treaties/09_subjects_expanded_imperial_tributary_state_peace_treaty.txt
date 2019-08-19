@@ -66,6 +66,28 @@ make_imperial_tributary_state = {
 			value = 1
 		}
 		limit = {
+			OR = {
+				AND = {
+					tag = GBR
+					FROM = {
+						capital_scope = {
+							OR = {
+								trade_company_region = trade_company_west_india
+								trade_company_region = trade_company_deccan
+								trade_company_region = trade_company_east_india
+								trade_company_region = trade_company_coromandel
+								trade_company_region = trade_company_north_india
+							}
+						}
+					}
+				}
+				AND = {
+					tag = ROM
+					FROM = {
+						government = tribal
+					}
+				}
+			}
 			FROM = {
 				NOT = { total_development = 100 }
 				NOT = {

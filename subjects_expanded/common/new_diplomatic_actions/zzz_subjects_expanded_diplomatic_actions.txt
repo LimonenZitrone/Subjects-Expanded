@@ -72,6 +72,30 @@ return_subject_to_vassal = {
 	}
 	
 	ai_will_do = {
-		always = no
+		OR = {
+			AND = {
+				OR = {
+					is_year = 1700
+					current_age = age_of_absolutism
+					NOT = { religion = catholic }
+				}
+				FROM = {
+					OR = {
+						ROOT = { NOT = { religion = catholic } }
+						NOT = { liberty_desire = 33 }
+					}
+					is_subject_of_type = crusader_state_vassal
+				}
+			}
+			AND = {
+				OR = {
+					NOT = { religion = nahuatl }
+					is_religion_reformed = yes
+				}
+				FROM = {
+					is_subject_of_type = nahuatl_vassal
+				}
+			}
+		}
 	}
 }

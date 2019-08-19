@@ -109,9 +109,7 @@ increase_colonial_autonomy = {
 	}
 	
 	ai_will_do = {
-		FROM = {
-			is_subject_of_type = colony
-		}
+		NOT = { has_age_ability = ab_industrial_british_empire }
 		OR = {
 			AND = {
 				is_random_new_world = no
@@ -123,11 +121,12 @@ increase_colonial_autonomy = {
 				}
 			}
 			AND = {
-				colony = 3
-				NOT = { calc_true_if = { all_subject_country = { is_subject_of_type = autonomous_dominion } amount = 2 } }
 				FROM = {
 					OR = {
-						development_of_overlord_fraction = 0.33
+						AND = {
+							development_of_overlord_fraction = 0.33
+							liberty_desire = 75
+						}
 						liberty_desire = 90
 					}
 				}
@@ -139,62 +138,80 @@ increase_colonial_autonomy = {
 					tag = FR2
 					tag = SPA
 					tag = CAS
+					tag = POR
+					AND = {
+						num_of_colonists = 3
+						calc_true_if = {
+							all_subject_country = {
+								OR = {
+									is_subject_of_type = colony
+									is_subject_of_type = dominion
+									is_subject_of_type = autonomous_dominion
+								}
+							}
+							amount = 5
+						}
+					}
 				}
 				# FROM is not best paying colony of ROOT (if liberty_desire is smaller than 50)
-				any_subject_country = {
-					is_colonial_nation = yes
-					NOT = { is_subject_of_type = autonomous_dominion }
-					NOT = { tag = FROM }
-					variable_arithmetic_trigger = {
-						custom_tooltip = FROM_TARIFF_VALUE
-						# Export Overlord's Global Tariffs
-						export_to_variable = {
-							which = overlord_global_tariffs
-							value = modifier:global_tariffs
-							who = ROOT
-						}
-						# Export FROM's Monthly Income
-						export_to_variable = {
-							which = FROM_cn_tariff_value
-							value = trigger_value:monthly_income
-							who = FROM
-						}
-						# Export FROM's Tariff Percentage
-						export_to_variable = {
-							which = FROM_cn_tariff_percentage
-							value = trigger_value:tariff_value
-							who = FROM
-						}
-						# Calculate Tariff Efficiency
+				OR = {
+					FROM = { is_subject_of_type = dominion }
+					FROM = { liberty_desire = 50 }
+					any_subject_country = {
+						is_subject_of_type = colony
+						NOT = { is_subject_of_type = dominion }
+						NOT = { is_subject_of_type = autonomous_dominion }
+						NOT = { tag = FROM }
 						variable_arithmetic_trigger = {
-							change_variable = { which = overlord_global_tariffs value = 1 }
+							custom_tooltip = FROM_TARIFF_VALUE
+							# Export Overlord's Global Tariffs
+							export_to_variable = {
+								which = overlord_global_tariffs
+								value = modifier:global_tariffs
+								who = ROOT
+							}
+							# Export FROM's Monthly Income
+							export_to_variable = {
+								which = FROM_cn_tariff_value
+								value = trigger_value:monthly_income
+								who = FROM
+							}
+							# Export FROM's Tariff Percentage
+							export_to_variable = {
+								which = FROM_cn_tariff_percentage
+								value = trigger_value:tariff_value
+								who = FROM
+							}
+							# Calculate Tariff Efficiency
+							variable_arithmetic_trigger = {
+								change_variable = { which = overlord_global_tariffs value = 1 }
+							}
+							multiply_variable = { which = FROM_cn_tariff_percentage which = overlord_global_tariffs }
+							# Calculate Payed Money
+							multiply_variable = { which = FROM_cn_tariff_value which = FROM_cn_tariff_percentage }
+							divide_variable = { which = FROM_cn_tariff_value value = 10 }
+							multiply_variable = { which = FROM_cn_tariff_value value = 10 }
+							
+							# Compare to other Colonies
+							export_to_variable = {
+								which = cn_tariff_value
+								value = trigger_value:monthly_income
+							}
+							export_to_variable = {
+								which = cn_tariff_percentage
+								value = trigger_value:tariff_value
+							}
+							multiply_variable = { which = cn_tariff_percentage which = overlord_global_tariffs }
+							multiply_variable = { which = cn_tariff_value which = cn_tariff_percentage }
+							divide_variable = { which = cn_tariff_value value = 10 }
+							multiply_variable = { which = cn_tariff_value value = 10 }									
+							
+							check_variable = { which = cn_tariff_value which = FROM_cn_tariff_value }
 						}
-						multiply_variable = { which = FROM_cn_tariff_percentage which = overlord_global_tariffs }
-						# Calculate Payed Money
-						multiply_variable = { which = FROM_cn_tariff_value which = FROM_cn_tariff_percentage }
-						divide_variable = { which = FROM_cn_tariff_value value = 10 }
-						multiply_variable = { which = FROM_cn_tariff_value value = 10 }
-						
-						# Compare to other Colonies
-						export_to_variable = {
-							which = cn_tariff_value
-							value = trigger_value:monthly_income
-						}
-						export_to_variable = {
-							which = cn_tariff_percentage
-							value = trigger_value:tariff_value
-						}
-						multiply_variable = { which = cn_tariff_percentage which = overlord_global_tariffs }
-						multiply_variable = { which = cn_tariff_value which = cn_tariff_percentage }
-						divide_variable = { which = cn_tariff_value value = 10 }
-						multiply_variable = { which = cn_tariff_value value = 10 }									
-						
-						check_variable = { which = cn_tariff_value which = FROM_cn_tariff_value }
 					}
 				}
 			}
 		}
-		NOT = { has_age_ability = ab_industrial_british_empire }
 	}
 }
 
@@ -601,6 +618,10 @@ decrease_colonial_autonomy = {
 	}
 	
 	ai_will_do = {
-		always = no
+		NOT = { has_country_modifier = established_autonomous_dominion }
+		FROM = {
+			NOT = { liberty_desire = 33 }
+			NOT = { development_of_overlord_fraction = 0.33 }
+		}
 	}
 }

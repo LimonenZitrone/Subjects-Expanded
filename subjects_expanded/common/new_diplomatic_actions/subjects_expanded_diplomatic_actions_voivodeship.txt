@@ -57,7 +57,13 @@ establish_voivodeship = {
 	
 	ai_will_do = {
 		is_emperor = no
-		NOT = { calc_true_if = { all_subject_country = { is_subject_of_type = voivodeship } amount = 5 } }
+		OR = {
+			culture_group = FROM
+			accepted_culture = FROM
+			FROM = {
+				accepted_culture = ROOT
+			}
+		}
 		FROM = {
 			NOT = {
 				years_in_vassalage_under = {
@@ -122,6 +128,13 @@ cancel_voivodeship = {
 	}
 	
 	ai_will_do = {
-		always = no
+		FROM = {
+			liberty_desire = 100
+			years_in_vassalage_under = {
+				who = ROOT
+				years = 25
+				all_subject_country = yes
+			}
+		}
 	}
 }

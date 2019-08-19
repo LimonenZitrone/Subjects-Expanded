@@ -58,17 +58,29 @@ establish_imperial_tributary_state = {
 	}
 	
 	ai_will_do = {
-		tag = GBR
-		FROM = {
-			capital_scope = {
-				OR = {
-					trade_company_region = trade_company_west_india
-					trade_company_region = trade_company_deccan
-					trade_company_region = trade_company_east_india
-					trade_company_region = trade_company_coromandel
-					trade_company_region = trade_company_north_india
+		OR = {
+			AND = {
+				tag = GBR
+				FROM = {
+					capital_scope = {
+						OR = {
+							trade_company_region = trade_company_west_india
+							trade_company_region = trade_company_deccan
+							trade_company_region = trade_company_east_india
+							trade_company_region = trade_company_coromandel
+							trade_company_region = trade_company_north_india
+						}
+					}
 				}
 			}
+			AND = {
+				tag = ROM
+				FROM = {
+					government = tribal
+				}
+			}
+		}
+		FROM = {
 			NOT = {
 				years_in_vassalage_under = {
 					who = ROOT
@@ -132,6 +144,22 @@ cancel_imperial_tributary_state = {
 	}
 	
 	ai_will_do = {
-		always = no
+		FROM = {
+			liberty_desire = 100
+			has_heir = yes
+			years_in_vassalage_under = {
+				who = ROOT
+				years = 30
+				all_subject_country = yes
+			}
+			OR = {
+				is_neighbor_of = ROOT
+				any_country = {
+					is_subject_of = ROOT
+					NOT = { tag = FROM }
+					is_neighbor_of = FROM
+				}
+			}
+		}
 	}
 }

@@ -1083,7 +1083,10 @@ establish_puppet_state = {
 			}
 		}
 		OR = {
-			NOT = { great_power_rank = 4 }
+			AND = {
+				is_great_power = yes
+				NOT = { great_power_rank = 4 }
+			}
 			tag = USA
 			tag = ENG
 			tag = GBR
@@ -1095,7 +1098,6 @@ establish_puppet_state = {
 			has_reform = presidential_despot_reform
 			# Communist Government Type
 			has_reform = peasants_republic
-			has_reform = peasants_republic_legacy
 			has_reform = communist_government
 			# Capitalist Government Type
 			has_reform = administrative_monarchy
@@ -1178,7 +1180,10 @@ cancel_puppet_state = {
 		NOT = {
 			OR = {
 				total_development = 300
-				NOT = { great_power_rank = 4 }
+				AND = {
+					is_great_power = yes
+					NOT = { great_power_rank = 4 }
+				}
 				tag = USA
 				tag = ENG
 				tag = GBR

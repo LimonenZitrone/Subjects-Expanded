@@ -222,6 +222,7 @@
 [*] Crusader Kingdoms grant their overlord a bonus on papal influence and missionary strength
 [*] Crusader Kingdoms have a subject interaction (diplomatic action) to send them crusader knights
 [*] Crusader Kingdoms have a subject interaction (diplomatic action) to conscript missionaries
+[*] Crusader Kingdoms have a subject interaction (diplomatic action) to force them to become a theocracy
 [/list]
 
 [h1]Salic Union[/h1]

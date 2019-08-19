@@ -393,11 +393,11 @@ establish_sister_republic = {
 			name = ROOT_FROM_DIFF_OF_GOV_RANKS
 			export_to_variable = {
 				which = ai_value
-				value = government_rank
+				value = trigger_value:government_rank
 			}
 			export_to_variable = {
 				which = ai_value_2
-				value = government_rank
+				value = trigger_value:government_rank
 				who = FROM
 			}
 			subtract_variable = { which = ai_value which = ai_value_2 }
@@ -1031,10 +1031,10 @@ sister_republic_ask_overlord_to_join_war = {
 			multiply_variable = { which = ai_value value = 2 }
 		}
 		add_entry = {
-			name = OUR_DIPLOMATIC_REPUTATION
+			name = MODIFIER_DIPLO_SKILL
 			export_to_variable = {
 				which = ai_value
-				value = diplomatic_reputation
+				value = modifier:diplomatic_reputation
 			}
 			multiply_variable = { which = ai_value value = 5 }
 		}

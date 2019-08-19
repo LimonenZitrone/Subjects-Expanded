@@ -288,7 +288,7 @@ establish_fief_subject = {
 			}
 			export_to_variable = {
 				which = ai_value
-				value = diplomatic_reputation
+				value = modifier:diplomatic_reputation
 			}
 			multiply_variable = { which = ai_value value = 3 }
 		}
@@ -299,11 +299,11 @@ establish_fief_subject = {
 			}
 			export_to_variable = {
 				which = ai_value
-				value = government_rank
+				value = trigger_value:government_rank
 			}
 			export_to_variable = {
 				which = ai_value_2
-				value = government_rank
+				value = trigger_value:government_rank
 				who = FROM
 			}
 			subtract_variable = { which = ai_value which = ai_value_2 }

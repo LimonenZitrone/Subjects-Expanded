@@ -173,8 +173,8 @@
 
 [b]Conditions (possible overlord):[/b]
 [list]
-[*] has the "Feudal Nobility" government
 [*] is not a subject
+[*] has the "Feudal Nobility" government
 [/list]
 
 [b]Conditions (possible subject):[/b]

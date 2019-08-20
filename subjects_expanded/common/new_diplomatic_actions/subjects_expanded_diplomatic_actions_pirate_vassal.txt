@@ -8,7 +8,9 @@ establish_pirate_brotherhood_vassal = {
 			subject = FROM
 			subject_type = pirate_brotherhood_vassal
 		}
-		is_subject_of = ROOT
+		FROM = {
+			is_subject_of = ROOT
+		}
 	}
 	
 	is_allowed = {
@@ -17,7 +19,9 @@ establish_pirate_brotherhood_vassal = {
 			subject_type = pirate_brotherhood_vassal
 		}
 		hidden_trigger = {
-			is_subject_of = ROOT
+			FROM = {
+				is_subject_of = ROOT
+			}
 		}
 		FROM = {
 			capital_scope = { trade_range = ROOT }
@@ -35,7 +39,9 @@ establish_pirate_brotherhood_vassal = {
 					subject = FROM
 					subject_type = pirate_brotherhood_vassal
 				}
-				is_subject_of = ROOT
+				FROM = {
+					is_subject_of = ROOT
+				}
 				FROM = {
 					capital_scope = { trade_range = ROOT }
 				}

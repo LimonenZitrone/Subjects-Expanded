@@ -1644,8 +1644,8 @@ fief_subject = {
 
 	# Triggers:
 	is_potential_overlord = {
-		has_reform = feudalism_reform
 		is_subject = no
+		has_reform = feudalism_reform
 	}
 	
 	# Properties:

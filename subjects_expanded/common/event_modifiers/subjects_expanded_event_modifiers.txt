@@ -601,7 +601,7 @@ peasant_vassal_overlord_modifier = {
 	ae_impact = -0.03
 }
 
-# Subject Type: Pirate Vassal
+# Subject Type: Pirate Brotherhood
 pirate_brotherhood_vassal_modifier = {
 	privateer_efficiency = 0.5
 	naval_forcelimit_modifier = 0.1
@@ -648,6 +648,24 @@ sister_republic_overlord_modifier = {
 	development_cost = -0.1
 	build_cost = -0.1
 	production_efficiency = 0.15
+}
+
+# Subject Type: Dar al-Sulh Territory
+muslim_tributary_vassal_modifier = {
+	tolerance_heathen = 2
+	garrison_size = 0.1
+	global_unrest = -1
+}
+
+muslim_tributary_vassal_same_religion_modifier = {
+	liberty_desire = 100
+	monthly_piety = -0.1
+}
+
+muslim_tributary_vassal_overlord_modifier = {
+	monthly_piety = 0.01
+	tolerance_heathen = 0.2
+	tolerance_own = -0.2
 }
 
 # Modifiers that function as timers

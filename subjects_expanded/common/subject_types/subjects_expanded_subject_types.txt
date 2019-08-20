@@ -13,6 +13,7 @@ peasant_vassal = { }
 pirate_brotherhood_vassal = { }
 imperial_tributary_state = { }
 sister_republic = { }
+muslim_tributary_vassal = { }
 
 # Subjects
 protectorate = {
@@ -2304,4 +2305,106 @@ sister_republic = {
 
 	overlord_opinion_modifier = is_sister_republic
 	subject_opinion_modifier = is_sister_republic
+}
+
+muslim_tributary_vassal = {
+	copy_from = default
+	count = vassal
+	
+	# Graphics:
+	sprite = GFX_icon_vassal
+	diplomacy_overlord_sprite = GFX_diplomacy_leadvassal
+	diplomacy_subject_sprite = GFX_diplomacy_amvassal
+
+	# Triggers:
+	is_potential_overlord = {
+		religion_group = muslim
+		government_rank = 2
+	}
+	
+	# Properties:
+	transfer_trade_if_merchant_republic = yes
+	overlord_can_attack = no
+	can_send_tribute = yes
+	can_have_subjects_of_other_types = yes
+	takes_diplo_slot = no
+	has_power_projection = no
+	uses_military_focus = no
+	overlord_enforce_peace_attacking = yes				# Whether the overlord can enforce peace on the subject's enemy even when the subject is the attacker
+	can_use_claims = no								# Whether the overlord can use the subject's claims and cores for declaring war
+	share_rebel_popup = no
+	allows_taking_land_without_independence = yes
+	can_set_mil_focus = no
+	can_send_missionary_to_subject = no				# Requires Cradle of Civilization
+	overlord_can_fabricate_for = no
+	
+	max_government_rank = 2								# 0 means no limit
+	cities_required_for_bonuses = 0						# How many cities the subject needs before giving bonuses to overlord
+	trust_on_start = 0									# Overlord and subject will each get this much extra trust with each other at game start
+
+	liberty_desire_development_ratio = 0.175
+	
+	relative_power_class = 1 							# See description above
+	diplomacy_view_class = 1							# See description above
+
+	can_fight = {
+		neighboring_primitives = yes
+		same_overlord = muslim_tributary_vassal
+		same_overlord = tributary_state
+		other_overlord = muslim_tributary_vassal
+		other_overlord = tributary_state
+	}
+	can_rival = {
+		neighboring_primitives = yes
+		same_overlord = muslim_tributary_vassal
+		same_overlord = tributary_state
+		other_overlord = muslim_tributary_vassal
+		other_overlord = tributary_state
+	}
+	can_ally = {
+		same_overlord = muslim_tributary_vassal
+	}
+	can_marry = {
+		neighboring_primitives = yes
+		same_overlord = muslim_tributary_vassal
+		same_overlord = tributary_state
+		other_overlord = muslim_tributary_vassal
+		other_overlord = tributary_state
+	}
+
+	# Subject Interactions:
+	# (continuous)
+	send_officers = yes
+	# (immediate)
+	place_relative_on_throne = yes
+	enforce_religion = no
+	grant_province = yes
+	fortify_march = yes
+	send_additional_troops = yes
+	demand_additional_tribute = yes
+	contribute_to_capital = yes
+	conscript_general = yes
+
+	# Modifiers:
+	modifier_subject = clear
+	modifier_subject = {
+		modifier = subject_nation
+	}
+	modifier_subject = {
+		modifier = muslim_tributary_vassal_modifier
+	}
+	modifier_subject = {
+		trigger = {
+			religion_group = FROM
+		}
+		modifier = muslim_tributary_vassal_same_religion_modifier
+	}
+	
+	modifier_overlord = clear
+	modifier_overlord = {
+		modifier = muslim_tributary_vassal_overlord_modifier
+	}
+
+	overlord_opinion_modifier = is_muslim_tributary_vassal
+	subject_opinion_modifier = is_muslim_tributary_vassal
 }

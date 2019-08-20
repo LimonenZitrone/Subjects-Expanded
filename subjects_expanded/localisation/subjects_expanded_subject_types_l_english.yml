@@ -83,3 +83,9 @@
  sister_republic_long_desc: "A Sister Republic behaves similar to a personal union. However, it is far less restricted in its diplomatic actions and cannot break on the ruler's death. It can only be established by republics and theocracies and a country can have only §Y1§! Sister Republic at the same time. If the overlord and the Sister Republic do not have the same government (republic or theocracy) anymore, the Sister Republic will become free and enter an alliance with its former overlord. Both, the overlord and the Sister Republic, gain an equal bonus on development cost, construction cost and production efficiency.\n"
  sister_republic_no_overlord_dow: "You cannot declare war on your own Sister Republic."
  
+ muslim_tributary_vassal_title: "Dar al-Sulh Territory"
+ muslim_tributary_vassal_title_plural: "Dar al-Sulh Territories"
+ muslim_tributary_vassal_is_our: "§Y$NAME$§! is our Dar al-Sulh Territory."
+ muslim_tributary_vassal_long_desc: "\n"
+ muslim_tributary_vassal_no_overlord_dow: "You cannot declare war on your own Dar al-Sulh Territory."
+ 

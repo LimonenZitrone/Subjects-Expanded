@@ -173,3 +173,13 @@ declined_ask_for_sister_republic_opinion = {
 	yearly_decay = 1
 	min = -100
 }
+
+is_muslim_tributary_vassal = {
+	opinion = 35
+}
+
+muslim_tributary_vassal_forced = {
+	opinion = -75
+	yearly_decay = 4
+	min = -75
+}

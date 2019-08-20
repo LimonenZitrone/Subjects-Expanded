@@ -155,3 +155,7 @@
  sister_republic_modifier: "Schwesterrepublik"
  sister_republic_overlord_modifier: "Besitzt Schwesterrepubliken"
  
+ muslim_tributary_vassal_modifier: "Dar al-Sulh Territorium"
+ muslim_tributary_vassal_same_religion_modifier: "Muslimisches Dar al-Sulh Territorium"
+ muslim_tributary_vassal_overlord_modifier: "Besitzt Dar al-Sulh Territorien"
+ 

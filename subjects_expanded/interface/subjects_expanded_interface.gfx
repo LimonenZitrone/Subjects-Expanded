@@ -168,4 +168,17 @@ spriteTypes = {
 		name = "GFX_diplomacy_amsister_republic"
 		texturefile = "gfx//interface//icon_diplomacy_amsister_republic.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_icon_muslim_tributary_vassal"
+		texturefile = "gfx/interface/icon_muslim_tributary_vassal.dds"
+	}
+	spriteType = {
+		name = "GFX_diplomacy_leadmuslim_tributary_vassal"
+		texturefile = "gfx//interface//icon_diplomacy_leadmuslim_tributary_vassal.dds"
+	}
+	spriteType = {
+		name = "GFX_diplomacy_ammuslim_tributary_vassal"
+		texturefile = "gfx//interface//icon_diplomacy_ammuslim_tributary_vassal.dds"
+	}
 }

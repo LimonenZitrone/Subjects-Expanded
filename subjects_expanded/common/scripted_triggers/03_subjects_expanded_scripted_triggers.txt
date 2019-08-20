@@ -16,6 +16,7 @@ is_similar_vassal_subject = {
 		is_subject_of_type = nahuatl_vassal
 		is_subject_of_type = peasant_vassal
 		is_subject_of_type = pirate_brotherhood_vassal
+		is_subject_of_type = muslim_tributary_vassal
 	}
 }
 

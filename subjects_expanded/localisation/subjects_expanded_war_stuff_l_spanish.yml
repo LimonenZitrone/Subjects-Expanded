@@ -47,3 +47,7 @@
  CB_ALLOWED_make_imperial_tributary_state: "Force Imperial Tributary State"
  PEACE_make_imperial_tributary_state: "$TAKERS$ Imperial Tributary State"
  
+ make_muslim_tributary_vassal_desc: "@[From.GetTag] §Y[From.GetName]§! is made to a Dar al-Sulh Territory of @[Root.GetTag] §Y[Root.GetName]§!. If [From.GetName] is not a monarchy, they will become one."
+ CB_ALLOWED_make_muslim_tributary_vassal: "Force Dar al-Sulh Territory"
+ PEACE_make_muslim_tributary_vassal: "$TAKERS$ Dar al-Sulh Territory"
+ 

@@ -2110,7 +2110,14 @@ imperial_tributary_state = {
 		OR = {
 			tag = ROM
 			AND = {
-				government_rank = 3
+				OR = {
+					government_rank = 3
+					AND = {
+						NOT = { has_dlc = "Common Sense" }
+						total_development = 1000
+						is_part_of_hre = no
+					}
+				}
 				capital_scope = {
 					continent = europe
 				}
@@ -2312,22 +2319,31 @@ muslim_tributary_vassal = {
 	count = vassal
 	
 	# Graphics:
-	sprite = GFX_icon_vassal
-	diplomacy_overlord_sprite = GFX_diplomacy_leadvassal
-	diplomacy_subject_sprite = GFX_diplomacy_amvassal
+	sprite = GFX_icon_muslim_tributary_vassal
+	diplomacy_overlord_sprite = GFX_diplomacy_leadmuslim_tributary_vassal
+	diplomacy_subject_sprite = GFX_diplomacy_ammuslim_tributary_vassal
 
 	# Triggers:
 	is_potential_overlord = {
+		is_subject = no
 		religion_group = muslim
-		government_rank = 2
+		OR = {
+			government_rank = 2
+			AND = {
+				NOT = { has_dlc = "Common Sense" }
+				total_development = 300
+			}
+		}
+		OR = {
+			government = monarchy
+			government = theocracy
+		}
 	}
 	
 	# Properties:
 	transfer_trade_if_merchant_republic = yes
 	overlord_can_attack = no
 	can_send_tribute = yes
-	can_have_subjects_of_other_types = yes
-	takes_diplo_slot = no
 	has_power_projection = no
 	uses_military_focus = no
 	overlord_enforce_peace_attacking = yes				# Whether the overlord can enforce peace on the subject's enemy even when the subject is the attacker
@@ -2375,6 +2391,7 @@ muslim_tributary_vassal = {
 	# Subject Interactions:
 	# (continuous)
 	send_officers = yes
+	divert_trade = yes
 	# (immediate)
 	place_relative_on_throne = yes
 	enforce_religion = no

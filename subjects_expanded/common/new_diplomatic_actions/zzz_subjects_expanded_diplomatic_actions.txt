@@ -96,6 +96,15 @@ return_subject_to_vassal = {
 					is_subject_of_type = nahuatl_vassal
 				}
 			}
+			AND = {
+				europe = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				FROM = {
+					is_subject_of_type = muslim_tributary_vassal
+				}
+			}
 		}
 	}
 }

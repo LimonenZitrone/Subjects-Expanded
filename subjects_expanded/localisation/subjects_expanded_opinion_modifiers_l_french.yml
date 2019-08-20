@@ -49,4 +49,6 @@
  
  is_muslim_tributary_vassal: "Dar al-Sulh Territory"
  muslim_tributary_vassal_forced: "Forced Dar al-Sulh Territory"
+ declined_establish_muslim_tributary_vassal_opinion: "Demand of Dar al-Sulh Territory declined"
+ declined_ask_for_muslim_tributary_vassal_opinion: "Offer for Dar al-Sulh Territory declined"
  

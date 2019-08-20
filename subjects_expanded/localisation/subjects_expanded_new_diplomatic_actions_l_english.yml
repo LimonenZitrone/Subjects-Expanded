@@ -170,6 +170,23 @@
  cancel_sister_republic_tooltip: "Cancel the vassalisation of §Y[From.GetName]§! and grant them independence.\n"
  
  
+ establish_muslim_tributary_vassal_title: "Establish Dar al-Sulh Territory"
+ establish_muslim_tributary_vassal_desc: "Do you want to offer §Y[From.GetName]§! to become our Dar al-Sulh Territory? \nA Dar al-Sulh Territory is a mixture of a vassal and a tributary. In its diplomatic actions it is less restricted than vassals, but more restricted than tributaries. It pays tribute, joins its overlord wars and can only become independent by war, their overlord is not muslim anymore or if the overlord decides it. It can only be established by muslim nations on neighboring non muslim countries. A Dar al-Sulh Territory gains a bonus on tolerance of heathens, national unrest and garrison size. It grants its overlord a bonus on tolerance of heathens, a malus on tolerance of the true faith as well as makes it drift towards legalism. Furthermore, a muslim Dar al-Sulh Territory gains §R+100%§! liberty desire and drifts towards mysticism and its overlord will eventually get an event to either release it or make it to a normal vassal, which increases its liberty desire. \nThis will move us §G+5§! towards legalism."
+ establish_muslim_tributary_vassal_tooltip: "Make §Y[From.GetName]§! to a [Root.GetAdjective] §YDar al-Sulh Territory§!.\n"
+ establish_muslim_tributary_vassal_alert_tooltip: "Establish Dar al-Sulh Territory"
+ establish_muslim_tributary_vassal_dialog: "§Y[This.GetName]§! offers us that we become their §YDar al-Sulh Territory§!. \nA Dar al-Sulh Territory is a mixture of a vassal and a tributary. In its diplomatic actions it is less restricted than vassals, but more restricted than tributaries. It pays tribute, joins its overlord wars and can only become independent by war, their overlord is not muslim anymore or if the overlord decides it. It can only be established by muslim nations on neighboring non muslim countries. A Dar al-Sulh Territory gains a bonus on tolerance of heathens, national unrest and garrison size. It grants its overlord a bonus on tolerance of heathens, a malus on tolerance of the true faith as well as makes it drift towards legalism. Furthermore, a muslim Dar al-Sulh Territory gains §R+100%§! liberty desire and drifts towards mysticism and its overlord will eventually get an event to either release it or make it to a normal vassal, which increases its liberty desire. \n\nDo you want to accept?"
+ 
+ ask_for_muslim_tributary_vassal_title: "Request Dar al-Sulh Territory"
+ ask_for_muslim_tributary_vassal_desc: "Do you want to offer §Y[From.GetName]§! that we become their Dar al-Sulh Territory? \nA Dar al-Sulh Territory is a mixture of a vassal and a tributary. In its diplomatic actions it is less restricted than vassals, but more restricted than tributaries. It pays tribute, joins its overlord wars and can only become independent by war, their overlord is not muslim anymore or if the overlord decides it. It can only be established by muslim nations on neighboring non muslim countries. A Dar al-Sulh Territory gains a bonus on tolerance of heathens, national unrest and garrison size. It grants its overlord a bonus on tolerance of heathens, a malus on tolerance of the true faith as well as makes it drift towards legalism. Furthermore, a muslim Dar al-Sulh Territory gains §R+100%§! liberty desire and drifts towards mysticism and its overlord will eventually get an event to either release it or make it to a normal vassal, which increases its liberty desire."
+ ask_for_muslim_tributary_vassal_tooltip: "Ask §Y[From.GetName]§! to make §Y[Root.GetName]§! to a [From.GetAdjective] §YDar al-Sulh Territory§!.\n"
+ ask_for_muslim_tributary_vassal_alert_tooltip: "Request Dar al-Sulh Territory"
+ ask_for_muslim_tributary_vassal_dialog: "§Y[This.GetName]§! offers us that they become our §YDar al-Sulh Territory§!. \nA Dar al-Sulh Territory is a mixture of a vassal and a tributary. In its diplomatic actions it is less restricted than vassals, but more restricted than tributaries. It pays tribute, joins its overlord wars and can only become independent by war, their overlord is not muslim anymore or if the overlord decides it. It can only be established by muslim nations on neighboring non muslim countries. A Dar al-Sulh Territory gains a bonus on tolerance of heathens, national unrest and garrison size. It grants its overlord a bonus on tolerance of heathens, a malus on tolerance of the true faith as well as makes it drift towards legalism. Furthermore, a muslim Dar al-Sulh Territory gains §R+100%§! liberty desire and drifts towards mysticism and its overlord will eventually get an event to either release it or make it to a normal vassal, which increases its liberty desire. \nThis will move us §G+5§! towards legalism. \n\nDo you want to accept?"
+ 
+ cancel_muslim_tributary_vassal_title: "Release Dar al-Sulh Territory"
+ cancel_muslim_tributary_vassal_desc: "Cancel the dependency of §Y[From.GetName]§! of us. This will decrease their opinion about us by §R-200§!, if their liberty desire is below §Y50%§!. We will also lose §R-25§! prestige and gain a truce with them for §Y5 years§!."
+ cancel_muslim_tributary_vassal_tooltip: "Cancel the vassalisation of §Y[From.GetName]§! and grant them independence.\n"
+ 
+ 
  return_subject_to_vassal_title: "Demote to Vassal"
  return_subject_to_vassal_desc: "Cancel the current status §Y[From.GetName]§! has and make them to a vassal. This will decrease their opinion of us by §R-100§! and change their liberty desire by §R+25%§!. We will also lose §R-10§! prestige."
  return_subject_to_vassal_tooltip: "Make §Y[From.GetName]§! to a vassal again.\n"
@@ -221,4 +238,16 @@
  ROOT_IS_VASSAL_OF_FROM: "We are their vassal"
  ROOT_HAS_MORE_THAN_200_TOTAL_DEVELOPMENT: "We have more than §Y200§! development"
  FROM_IS_A_THEOCRACY: "They are a theocracy"
+ FROM_IS_A_REPUBLIC: "They are a republic"
+ FROM_IS_KINGDOM_RANK: "They are a Kingdom"
+ FROM_IS_EMPIRE_RANK: "They are an Empire"
+ FROM_DEVELOPMENT: "Their development"
+ FROM_IS_EMPEROR: "They are Emperor of the HRE"
+ ROOT_DEVELOPMENT: "Our development"
+ FROM_HAS_STRONG_ALLIES: "They have strong allies"
+ FROM_HAS_SOME_MUSLIM_PROVINCES: "They have Muslim provinces"
+ FROM_HAS_MUSLIM_DOMINANT_FAITH: "Their dominant faith is in the Muslim group"
+ ROOT_FROM_ARE_ALLIED: "We are allied"
+ ROOT_FROM_ARE_HISTORICAL_FRIENDS: "We are historical friends"
+ ROOT_FROM_ARE_HISTORICAL_RIVALS: "We are historical rivals"
  

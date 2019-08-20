@@ -173,7 +173,7 @@ increase_colonial_autonomy = {
 							# Export FROM's Monthly Income
 							export_to_variable = {
 								which = FROM_cn_tariff_value
-								value = trigger_value:monthly_income
+								value = monthly_income
 								who = FROM
 							}
 							# Export FROM's Tariff Percentage
@@ -195,7 +195,7 @@ increase_colonial_autonomy = {
 							# Compare to other Colonies
 							export_to_variable = {
 								which = cn_tariff_value
-								value = trigger_value:monthly_income
+								value = monthly_income
 							}
 							export_to_variable = {
 								which = cn_tariff_percentage

@@ -22,6 +22,7 @@
  IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_pirate_brotherhood_vassal: "Can be made to a §YPirate Brotherhood§!"
  IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_imperial_tributary_state: "Can be made to an §YImperial Tributary State§!"
  IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_sister_republic: "Can be made to a §YSister Republic§!"
+ IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_muslim_tributary_vassal: "Can be made to a §YDar al-Sulh Territory§!"
  
  THIS_IS_FORMER_AUTONOMOUS_DOMINION: "Is a former §YDominion§! or a former §YColonial Nation§!"
  

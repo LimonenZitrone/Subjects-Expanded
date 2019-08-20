@@ -334,7 +334,7 @@
 [b]Conditions (possible overlord):[/b]
 [list]
 [*] is not a subject
-[*] is either Roman Empire or is Empire rank, has its capital in Europe and has a Dominion or Autonomous Dominion in India
+[*] is either Roman Empire or is Empire rank (or Common Sense DLC is not active, has at least 1000 development and is not part of the HRE), has its capital in Europe and has a Dominion or Autonomous Dominion in India
 [/list]
 
 [b]Conditions (possible subject):[/b]
@@ -385,4 +385,34 @@
 [*] Sister Republics have a diplomatic action to ask their overlord to declare a common war on the selected war target
 [*] Sister Republics and their overlord cannot declare war on the other's alliances or guaranteed nations
 [*] Sister Republics and their overlord cannot ally the other's rivals
+[/list]
+
+[h1]Dar al-Sulh Territory[/h1]
+[i]A Dar al-Sulh Territory is a mixture of a vassal and a tributary. In its diplomatic actions it is less restricted than vassals, but more restricted than tributaries. It pays tribute, joins its overlord wars and can only become independent by war, their overlord is not muslim anymore or if the overlord decides it. It can only be established by muslim nations on neighboring non muslim countries. A Dar al-Sulh Territory gains a bonus on tolerance of heathens, national unrest and garrison size. It grants its overlord a bonus on tolerance of heathens, a malus on tolerance of the true faith as well as makes it drift towards legalism. Furthermore, a muslim Dar al-Sulh Territory gains +100% liberty desire and drifts towards mysticism and its overlord will eventually get an event to either release it or make it to a normal vassal, which increases its liberty desire.[/i]
+
+[b]Conditions (possible overlord):[/b]
+[list]
+[*] is not a subject
+[*] is in the muslim religion group
+[*] is at least Kingdom rank (or Common Sense DLC is not active and has at least 300 development)
+[*] has either a monarchy or theocratic government
+[/list]
+
+[b]Conditions (possible subject):[/b]
+[list]
+[*] is not a subject
+[*] is not in the muslim religion group
+[*] is a neighbor of the possible overlord
+[*] has less than 33% of the possible overlord's development
+[/list]
+
+[b]Additional Information:[/b]
+[list]
+[*] Dar al-Sulh Territories can be established diplomatically and by war
+[*] Dar al-Sulh Territories have a max government rank of 2 (Kingdom)
+[*] Dar al-Sulh Territories gain a bonus on tolerance of heathens, national unrest and garrison size
+[*] Dar al-Sulh Territories grant their overlord a bonus on tolerance of heathens
+[*] Dar al-Sulh Territories give their overlord a malus on tolerance of the true faith
+[*] Dar al-Sulh Territories make their overlord drift towards legalism
+[*] Dar al-Sulh Territories may get events to expulse muslims to their overlord, trading province development against religion change
 [/list]

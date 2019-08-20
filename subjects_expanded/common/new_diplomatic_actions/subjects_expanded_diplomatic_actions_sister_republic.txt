@@ -1942,7 +1942,7 @@ sister_republic_ask_overlord_to_join_war = {
 				any_country = {
 					has_country_flag = marked_for_war_by_@ROOT
 					FROM = {
-						ai_attitude = { who = PREV attitude = attitude_rivalry }
+						ai_attitude = { who = PREV attitude = atittude_rivalry }
 					}
 				}
 			}

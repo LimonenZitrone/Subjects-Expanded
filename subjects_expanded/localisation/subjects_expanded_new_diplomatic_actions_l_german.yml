@@ -170,6 +170,23 @@
  cancel_sister_republic_tooltip: "Beedet die Vasallisierung von §Y[From.GetName]§! und entlasst sie in die Freiheit.\n"
  
  
+ establish_muslim_tributary_vassal_title: "Dar al-Sulh Territorium fordern"
+ establish_muslim_tributary_vassal_desc: "Wollt Ihr §Y[From.GetName]§! vorschlagen, unser Dar al-Sulh Territorium zu werden? \nEin Dar al-Sulh Territorium ist eine Mischung aus Vasall und Tributstaat. In seinen diplomatischen Aktionen ist es weniger eingeschränkt als ein Vasall, aber eingeschränkter als Tributstaaten. Es zahlt Tribut, tritt den Kriegen seines Lehnsherrn bei und kann nur durch Krieg, wenn der Lehnsherr nicht mehr muslimisch ist, oder durch Entscheidung des Lehnsherrn unabhängig werden. Es kann nur von muslimischen Nationen in benachbarten nicht-muslimischen Ländern. Ein Dar al-Sulh Territorium erhält einen Bonus auf Toleranz von Ungläubigen, nationale Unruhe und Größe von Garnisonen. Es gewährt seinem Lehnsherrn einen Bonus auf Toleranz von Ungläubigen, einen Malus auf Toleranz des wahren Glaubens und beeinflusst ihn in Richtung Legalismus. Weiterhin erhält ein muslimisches Dar al-Sulh Territorium  §R+100%§! Freiheitsstreben und wird in Richtung Mystizismus beeinflusst und sein Lehnsherr wird zwangsweise ein Ereignis erhalten, um es entweder freizulassen oder zu einem normalen Vasallen zu machen, wodurch sich sein Freiheitsstreben erhöht. \nDies wird uns um §G+5§! in Richtung Legalismus beeinflussen."
+ establish_muslim_tributary_vassal_tooltip: "Macht §Y[From.GetName]§! zu einem [Root.GetAdjective]en §YDar al-Sulh Territorium§!.\n"
+ establish_muslim_tributary_vassal_alert_tooltip: "Dar al-Sulh Territorium fordern"
+ establish_muslim_tributary_vassal_dialog: "§Y[This.GetName]§! schlägt uns vor, dass wir ihr §YDar al-Sulh Territorium§! werden. \nEin Dar al-Sulh Territorium ist eine Mischung aus Vasall und Tributstaat. In seinen diplomatischen Aktionen ist es weniger eingeschränkt als ein Vasall, aber eingeschränkter als Tributstaaten. Es zahlt Tribut, tritt den Kriegen seines Lehnsherrn bei und kann nur durch Krieg, wenn der Lehnsherr nicht mehr muslimisch ist, oder durch Entscheidung des Lehnsherrn unabhängig werden. Es kann nur von muslimischen Nationen in benachbarten nicht-muslimischen Ländern. Ein Dar al-Sulh Territorium erhält einen Bonus auf Toleranz von Ungläubigen, nationale Unruhe und Größe von Garnisonen. Es gewährt seinem Lehnsherrn einen Bonus auf Toleranz von Ungläubigen, einen Malus auf Toleranz des wahren Glaubens und beeinflusst ihn in Richtung Legalismus. Weiterhin erhält ein muslimisches Dar al-Sulh Territorium  §R+100%§! Freiheitsstreben und wird in Richtung Mystizismus beeinflusst und sein Lehnsherr wird zwangsweise ein Ereignis erhalten, um es entweder freizulassen oder zu einem normalen Vasallen zu machen, wodurch sich sein Freiheitsstreben erhöht. \n\nWollt Ihr akzeptieren?"
+ 
+ ask_for_muslim_tributary_vassal_title: "Dar al-Sulh Territorium erbitten"
+ ask_for_muslim_tributary_vassal_desc: "Wollt Ihr §Y[From.GetName]§! vorschlagen, dass wir ihr Dar al-Sulh Territorium werden? \nEin Dar al-Sulh Territorium ist eine Mischung aus Vasall und Tributstaat. In seinen diplomatischen Aktionen ist es weniger eingeschränkt als ein Vasall, aber eingeschränkter als Tributstaaten. Es zahlt Tribut, tritt den Kriegen seines Lehnsherrn bei und kann nur durch Krieg, wenn der Lehnsherr nicht mehr muslimisch ist, oder durch Entscheidung des Lehnsherrn unabhängig werden. Es kann nur von muslimischen Nationen in benachbarten nicht-muslimischen Ländern. Ein Dar al-Sulh Territorium erhält einen Bonus auf Toleranz von Ungläubigen, nationale Unruhe und Größe von Garnisonen. Es gewährt seinem Lehnsherrn einen Bonus auf Toleranz von Ungläubigen, einen Malus auf Toleranz des wahren Glaubens und beeinflusst ihn in Richtung Legalismus. Weiterhin erhält ein muslimisches Dar al-Sulh Territorium  §R+100%§! Freiheitsstreben und wird in Richtung Mystizismus beeinflusst und sein Lehnsherr wird zwangsweise ein Ereignis erhalten, um es entweder freizulassen oder zu einem normalen Vasallen zu machen, wodurch sich sein Freiheitsstreben erhöht."
+ ask_for_muslim_tributary_vassal_tooltip: "§Y[From.GetName]§! bitten, §Y[Root.GetName]§! zu einem [From.GetAdjective]en §YDar al-Sulh Territorium§! zu machen.\n"
+ ask_for_muslim_tributary_vassal_alert_tooltip: "Request Dar al-Sulh Territorium"
+ ask_for_muslim_tributary_vassal_dialog: "§Y[This.GetName]§! schlägt uns vor, dass sie unser §YDar al-Sulh Territorium§! werden. \nEin Dar al-Sulh Territorium ist eine Mischung aus Vasall und Tributstaat. In seinen diplomatischen Aktionen ist es weniger eingeschränkt als ein Vasall, aber eingeschränkter als Tributstaaten. Es zahlt Tribut, tritt den Kriegen seines Lehnsherrn bei und kann nur durch Krieg, wenn der Lehnsherr nicht mehr muslimisch ist, oder durch Entscheidung des Lehnsherrn unabhängig werden. Es kann nur von muslimischen Nationen in benachbarten nicht-muslimischen Ländern. Ein Dar al-Sulh Territorium erhält einen Bonus auf Toleranz von Ungläubigen, nationale Unruhe und Größe von Garnisonen. Es gewährt seinem Lehnsherrn einen Bonus auf Toleranz von Ungläubigen, einen Malus auf Toleranz des wahren Glaubens und beeinflusst ihn in Richtung Legalismus. Weiterhin erhält ein muslimisches Dar al-Sulh Territorium  §R+100%§! Freiheitsstreben und wird in Richtung Mystizismus beeinflusst und sein Lehnsherr wird zwangsweise ein Ereignis erhalten, um es entweder freizulassen oder zu einem normalen Vasallen zu machen, wodurch sich sein Freiheitsstreben erhöht. \nDies wird uns um §G+5§! in Richtung Legalismus beeinflussen. \n\nWollt Ihr akzeptieren?"
+ 
+ cancel_muslim_tributary_vassal_title: "Dar al-Sulh Territorium entlassen"
+ cancel_muslim_tributary_vassal_desc: "Beendet das Abhängigkeitsverhältnis von §Y[From.GetName]§! zu uns. Dies wird ihre Meinung über uns um §R-200§! verschlechtern, sofern sie ein Freiheitsstreben unter §Y50%§! besitzen. Außerdem verlieren wir §R-25§! Prestige und erhalten eine §Y5-jährige§! Waffenruhe mit ihnen."
+ cancel_muslim_tributary_vassal_tooltip: "Beedet die Vasallisierung von §Y[From.GetName]§! und entlasst sie in die Freiheit.\n"
+ 
+ 
  return_subject_to_vassal_title: "Zum Vasall degradieren"
  return_subject_to_vassal_desc: "Beendet den derzeitigen Status von §Y[From.GetName]§! und macht sie zu einem Vasallen. Dies wird ihre Meinung über uns um §R-100§! verschlechtern und ihr Freiheitsstreben um §R+25%§! ändern. Außerdem verlieren wir §R-10§! Prestige."
  return_subject_to_vassal_tooltip: "Macht §Y[From.GetName]§! wieder zu einem Vasall.\n"
@@ -221,4 +238,16 @@
  ROOT_IS_VASSAL_OF_FROM: "Wir sind ihr Vasall"
  ROOT_HAS_MORE_THAN_200_TOTAL_DEVELOPMENT: "Wir haben mehr als §Y200§! Entwicklung"
  FROM_IS_A_THEOCRACY: "Sie sind eine Theokratie"
+ FROM_IS_A_REPUBLIC: "Sie sind eine Republik"
+ FROM_IS_KINGDOM_RANK: "Sie sind ein Königreich"
+ FROM_IS_EMPIRE_RANK: "Sie sind ein Kaiserreich"
+ FROM_DEVELOPMENT: "Ihre Entwicklung"
+ FROM_IS_EMPEROR: "Sie sind Kaiser des HRR"
+ ROOT_DEVELOPMENT: "Unsere Entwicklung"
+ FROM_HAS_STRONG_ALLIES: "Sie haben starke Bündnisse"
+ FROM_HAS_SOME_MUSLIM_PROVINCES: "Sie haben Muslimische Provinzen"
+ FROM_HAS_MUSLIM_DOMINANT_FAITH: "Ihr dominater Glaube ist in der Muslimischen Religionsgruppe"
+ ROOT_FROM_ARE_ALLIED: "Wir sind verbündet"
+ ROOT_FROM_ARE_HISTORICAL_FRIENDS: "Wir sind historische Freunde"
+ ROOT_FROM_ARE_HISTORICAL_RIVALS: "Wir sind historische Rivalen"
  

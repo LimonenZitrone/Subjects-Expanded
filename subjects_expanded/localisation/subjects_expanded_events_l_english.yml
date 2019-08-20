@@ -89,3 +89,13 @@
  subjects_expanded_sister_republic_events.EVTDESC3: "Our Sister Republic, [From.GetName], has marked §R[FROM_marked_THIS_for_war.GetName]§! as their war target. They may ask you to declare a common war on this country within the next 90 days."
  subjects_expanded_sister_republic_events3.EVTOPT1: "Interesting."
  
+ subjects_expanded_muslim_tributary_vassal_events.EVTNAME2: "Trouble with Dar al-Sulh Territories"
+ subjects_expanded_muslim_tributary_vassal_events.EVTDESC2: "Our Dar al-Sulh Territories are making problems. Either at least one of them has come under the muslim law, which makes it an invalid Dar al-Sulh Territory and we should focus on integrating it further into our empire, or we do not follow the muslim law anymore, which makes us an invalid overlord of Dar al-Sulh Territories. The latter would demand us to release all our Dar al-Sulh Territories."
+ subjects_expanded_muslim_tributary_vassal_events2.EVTOPT1: "They have to swear allegiance one more time!"
+ subjects_expanded_muslim_tributary_vassal_events2.EVTOPT2: "It's a shame, but they need to be freed."
+ 
+ subjects_expanded_muslim_tributary_vassal_events.EVTNAME3: "Problems with Religious Minority"
+ subjects_expanded_muslim_tributary_vassal_events.EVTDESC3: "The [Root.Owner.Religion.GetName] minority in [Root.GetName] is making problems and we fear there might be a conflict between them and the [Root.Religion.GetName] majority. We have two options: We could expulse the [Root.Religion.GetName] people to our overlord, [Root.Owner.Overlord.GetName], which would hurt the province's economic and military strength, or we could ignore this issue, but that might cause the minority to start a rebellion."
+ subjects_expanded_muslim_tributary_vassal_events3.EVTOPT1: "Hopefully, [Root.Owner.Overlord.GetName] will welcome the [Root.Religion.GetName] people."
+ subjects_expanded_muslim_tributary_vassal_events3.EVTOPT2: "This is not my problem."
+ 

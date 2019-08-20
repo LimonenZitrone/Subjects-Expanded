@@ -2,7 +2,7 @@
 This mod adds new subject types and diplomatic actions related to them to add more variety and depth to the subject system.
 
 [h1]Currently Added[/h1]
-Currently [i]Subjects Expanded[/i] adds [b]14[/b] new subject types:
+Currently [i]Subjects Expanded[/i] adds [b]15[/b] new subject types:
 [list]
 [*] Protectorate
 [list]
@@ -60,6 +60,10 @@ Currently [i]Subjects Expanded[/i] adds [b]14[/b] new subject types:
 [list]
 [*] A Sister Republic behaves similar to a personal union. However, it is far less restricted in its diplomatic actions and cannot break on the ruler's death. It can only be established by republics and theocracies and a country can have only 1 Sister Republic at the same time. If the overlord and the Sister Republic do not have the same government (republic or theocracy) anymore, the Sister Republic will become free and enter an alliance with its former overlord. Both, the overlord and the Sister Republic, gain an equal bonus on development cost, construction cost and production efficiency.
 [/list]
+[*] Dar al-Sulh Territory
+[list]
+[*] A Dar al-Sulh Territory is a mixture of a vassal and a tributary. In its diplomatic actions it is less restricted than vassals, but more restricted than tributaries. It pays tribute, joins its overlord wars and can only become independent by war, their overlord is not muslim anymore or if the overlord decides it. It can only be established by muslim nations on neighboring non muslim countries. A Dar al-Sulh Territory gains a bonus on tolerance of heathens, national unrest and garrison size. It grants its overlord a bonus on tolerance of heathens, a malus on tolerance of the true faith as well as makes it drift towards legalism. Furthermore, a muslim Dar al-Sulh Territory gains +100% liberty desire and drifts towards mysticism and its overlord will eventually get an event to either release it or make it to a normal vassal, which increases its liberty desire.
+[/list]
 [/list]
 
 You can find more details on the new subjects [url=https://steamcommunity.com/workshop/filedetails/discussion/1834079712/3647273545685194210/]here[/url].
@@ -75,7 +79,7 @@ You can find more details on the new subjects [url=https://steamcommunity.com/wo
 [h1]Compatibility[/h1]
 [list]
 [*] should be compatible with any DLC
-[*] should be compatible with most mods
+[*] should be compatible with most mods (that do not edit the countrydiplomacyview.gui file or the declarewar or allianceaction diplomatic action)
 [/list]
 
 [h1]Credits[/h1]

@@ -183,3 +183,15 @@ muslim_tributary_vassal_forced = {
 	yearly_decay = 4
 	min = -75
 }
+
+declined_establish_muslim_tributary_vassal_opinion = {
+	opinion = -25
+	yearly_decay = 1
+	min = -100
+}
+
+declined_ask_for_muslim_tributary_vassal_opinion = {
+	opinion = -25
+	yearly_decay = 1
+	min = -100
+}

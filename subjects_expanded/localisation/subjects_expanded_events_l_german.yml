@@ -89,3 +89,13 @@
  subjects_expanded_sister_republic_events.EVTDESC3: "Unsere Schwesterrepublik, [From.GetName], hat §R[FROM_marked_THIS_for_war.GetName]§! als ihr Kriegsziel gewählt. Sie werden Euch eventuell innerhalb der nächsten 90 Tage darum bitten, diesem Land einen gemeinsamen Krieg zu erklären."
  subjects_expanded_sister_republic_events3.EVTOPT1: "Interessant."
  
+ subjects_expanded_muslim_tributary_vassal_events.EVTNAME2: "Probleme mit Dar al-Sulh Territorien"
+ subjects_expanded_muslim_tributary_vassal_events.EVTDESC2: "Unsere Dar al-Sulh Territorien machen Probleme. Entweder ist eines von ihnen unter das islamische Gesetz gefallen, wodurch es zu einem irregulären invalid Dar al-Sulh Territorium geworden ist und wir uns darauf konzentrieren sollten, es weiter in unser Reich zu integrieren, oder wir folgen nicht mehr dem islamischen Gesetz, wodurch wir das Recht auf Dar al-Sulh Territorien verloren hätten. Im Falle von letzterem würde das von uns verlangen, alle Dar al-Sulh Territorien freizulassen."
+ subjects_expanded_muslim_tributary_vassal_events2.EVTOPT1: "Sie müssen noch ein weiteres Mal ihre Treue schwören!"
+ subjects_expanded_muslim_tributary_vassal_events2.EVTOPT2: "Es ist ein Jammer, aber sie müssen freigelassen werden."
+ 
+ subjects_expanded_muslim_tributary_vassal_events.EVTNAME3: "Probleme mit religiöser Minderheit"
+ subjects_expanded_muslim_tributary_vassal_events.EVTDESC3: "Die [Root.Owner.Religion.GetName]e Minderheit in [Root.GetName] macht Probleme und wir fürchten, es könnte ein Konflikt zwischen ihnen und der [Root.Religion.GetName]en Mehrheit entstehen. Wir haben zwei Möglichkeiten: Wir könnten die [Root.Religion.GetName]e Bevölkerung ins Gebiet unseres Lehnsherrn, [Root.Owner.Overlord.GetName], ausweisen, was die wirtschaftliche und militärische Stärke der Provinz schwächen würde, oder wir könnten diesen Vorfall ignorieren, aber das könnte dazu führen, dass die Minderheit anfängt zu rebellieren."
+ subjects_expanded_muslim_tributary_vassal_events3.EVTOPT1: "Hoffentlich wird [Root.Owner.Overlord.GetName] die [Root.Religion.GetName]en Menschen freundlich empfangen."
+ subjects_expanded_muslim_tributary_vassal_events3.EVTOPT2: "Das ist nicht mein Problem."
+ 

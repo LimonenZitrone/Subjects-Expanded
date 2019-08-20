@@ -265,12 +265,12 @@ country_decisions = {
 						if = {
 							limit = {
 								any_owned_province = {
-									dominant_culture = PREV
+									PREV = { dominant_culture = PREV }
 								}
 							}
 							random_owned_province = {
 								limit = {
-									dominant_culture = PREV
+									PREV = { dominant_culture = PREV }
 								}
 								PREV = { change_primary_culture = PREV }
 							}
@@ -412,12 +412,12 @@ country_decisions = {
 						if = {
 							limit = {
 								any_owned_province = {
-									dominant_culture = PREV
+									PREV = { dominant_culture = PREV }
 								}
 							}
 							random_owned_province = {
 								limit = {
-									dominant_culture = PREV
+									PREV = { dominant_culture = PREV }
 								}
 								PREV = { change_primary_culture = PREV }
 							}
@@ -561,12 +561,12 @@ country_decisions = {
 						if = {
 							limit = {
 								any_owned_province = {
-									dominant_culture = PREV
+									PREV = { dominant_culture = PREV }
 								}
 							}
 							random_owned_province = {
 								limit = {
-									dominant_culture = PREV
+									PREV = { dominant_culture = PREV }
 								}
 								PREV = { change_primary_culture = PREV }
 							}
@@ -710,12 +710,12 @@ country_decisions = {
 						if = {
 							limit = {
 								any_owned_province = {
-									dominant_culture = PREV
+									PREV = { dominant_culture = PREV }
 								}
 							}
 							random_owned_province = {
 								limit = {
-									dominant_culture = PREV
+									PREV = { dominant_culture = PREV }
 								}
 								PREV = { change_primary_culture = PREV }
 							}
@@ -856,12 +856,12 @@ country_decisions = {
 						if = {
 							limit = {
 								any_owned_province = {
-									dominant_culture = PREV
+									PREV = { dominant_culture = PREV }
 								}
 							}
 							random_owned_province = {
 								limit = {
-									dominant_culture = PREV
+									PREV = { dominant_culture = PREV }
 								}
 								PREV = { change_primary_culture = PREV }
 							}
@@ -999,12 +999,12 @@ country_decisions = {
 						if = {
 							limit = {
 								any_owned_province = {
-									dominant_culture = PREV
+									PREV = { dominant_culture = PREV }
 								}
 							}
 							random_owned_province = {
 								limit = {
-									dominant_culture = PREV
+									PREV = { dominant_culture = PREV }
 								}
 								PREV = { change_primary_culture = PREV }
 							}
@@ -1141,12 +1141,12 @@ country_decisions = {
 						if = {
 							limit = {
 								any_owned_province = {
-									dominant_culture = PREV
+									PREV = { dominant_culture = PREV }
 								}
 							}
 							random_owned_province = {
 								limit = {
-									dominant_culture = PREV
+									PREV = { dominant_culture = PREV }
 								}
 								PREV = { change_primary_culture = PREV }
 							}
@@ -1283,12 +1283,12 @@ country_decisions = {
 						if = {
 							limit = {
 								any_owned_province = {
-									dominant_culture = PREV
+									PREV = { dominant_culture = PREV }
 								}
 							}
 							random_owned_province = {
 								limit = {
-									dominant_culture = PREV
+									PREV = { dominant_culture = PREV }
 								}
 								PREV = { change_primary_culture = PREV }
 							}
@@ -1424,12 +1424,12 @@ country_decisions = {
 						if = {
 							limit = {
 								any_owned_province = {
-									dominant_culture = PREV
+									PREV = { dominant_culture = PREV }
 								}
 							}
 							random_owned_province = {
 								limit = {
-									dominant_culture = PREV
+									PREV = { dominant_culture = PREV }
 								}
 								PREV = { change_primary_culture = PREV }
 							}
@@ -1757,12 +1757,12 @@ country_decisions = {
 						if = {
 							limit = {
 								any_owned_province = {
-									dominant_culture = PREV
+									PREV = { dominant_culture = PREV }
 								}
 							}
 							random_owned_province = {
 								limit = {
-									dominant_culture = PREV
+									PREV = { dominant_culture = PREV }
 								}
 								PREV = { change_primary_culture = PREV }
 							}
@@ -1854,12 +1854,12 @@ country_decisions = {
 						if = {
 							limit = {
 								any_owned_province = {
-									dominant_culture = PREV
+									PREV = { dominant_culture = PREV }
 								}
 							}
 							random_owned_province = {
 								limit = {
-									dominant_culture = PREV
+									PREV = { dominant_culture = PREV }
 								}
 								PREV = { change_primary_culture = PREV }
 							}
@@ -1945,12 +1945,12 @@ country_decisions = {
 						if = {
 							limit = {
 								any_owned_province = {
-									dominant_culture = PREV
+									PREV = { dominant_culture = PREV }
 								}
 							}
 							random_owned_province = {
 								limit = {
-									dominant_culture = PREV
+									PREV = { dominant_culture = PREV }
 								}
 								PREV = { change_primary_culture = PREV }
 							}
@@ -2036,12 +2036,12 @@ country_decisions = {
 						if = {
 							limit = {
 								any_owned_province = {
-									dominant_culture = PREV
+									PREV = { dominant_culture = PREV }
 								}
 							}
 							random_owned_province = {
 								limit = {
-									dominant_culture = PREV
+									PREV = { dominant_culture = PREV }
 								}
 								PREV = { change_primary_culture = PREV }
 							}
@@ -2132,12 +2132,12 @@ country_decisions = {
 						if = {
 							limit = {
 								any_owned_province = {
-									dominant_culture = PREV
+									PREV = { dominant_culture = PREV }
 								}
 							}
 							random_owned_province = {
 								limit = {
-									dominant_culture = PREV
+									PREV = { dominant_culture = PREV }
 								}
 								PREV = { change_primary_culture = PREV }
 							}
@@ -2225,12 +2225,12 @@ country_decisions = {
 						if = {
 							limit = {
 								any_owned_province = {
-									dominant_culture = PREV
+									PREV = { dominant_culture = PREV }
 								}
 							}
 							random_owned_province = {
 								limit = {
-									dominant_culture = PREV
+									PREV = { dominant_culture = PREV }
 								}
 								PREV = { change_primary_culture = PREV }
 							}
@@ -2314,12 +2314,12 @@ country_decisions = {
 						if = {
 							limit = {
 								any_owned_province = {
-									dominant_culture = PREV
+									PREV = { dominant_culture = PREV }
 								}
 							}
 							random_owned_province = {
 								limit = {
-									dominant_culture = PREV
+									PREV = { dominant_culture = PREV }
 								}
 								PREV = { change_primary_culture = PREV }
 							}
@@ -2398,12 +2398,12 @@ country_decisions = {
 						if = {
 							limit = {
 								any_owned_province = {
-									dominant_culture = PREV
+									PREV = { dominant_culture = PREV }
 								}
 							}
 							random_owned_province = {
 								limit = {
-									dominant_culture = PREV
+									PREV = { dominant_culture = PREV }
 								}
 								PREV = { change_primary_culture = PREV }
 							}
@@ -2482,12 +2482,12 @@ country_decisions = {
 						if = {
 							limit = {
 								any_owned_province = {
-									dominant_culture = PREV
+									PREV = { dominant_culture = PREV }
 								}
 							}
 							random_owned_province = {
 								limit = {
-									dominant_culture = PREV
+									PREV = { dominant_culture = PREV }
 								}
 								PREV = { change_primary_culture = PREV }
 							}
@@ -2753,12 +2753,12 @@ country_decisions = {
 						if = {
 							limit = {
 								any_owned_province = {
-									dominant_culture = PREV
+									PREV = { dominant_culture = PREV }
 								}
 							}
 							random_owned_province = {
 								limit = {
-									dominant_culture = PREV
+									PREV = { dominant_culture = PREV }
 								}
 								PREV = { change_primary_culture = PREV }
 							}
@@ -2830,12 +2830,12 @@ country_decisions = {
 						if = {
 							limit = {
 								any_owned_province = {
-									dominant_culture = PREV
+									PREV = { dominant_culture = PREV }
 								}
 							}
 							random_owned_province = {
 								limit = {
-									dominant_culture = PREV
+									PREV = { dominant_culture = PREV }
 								}
 								PREV = { change_primary_culture = PREV }
 							}
@@ -2909,12 +2909,12 @@ country_decisions = {
 						if = {
 							limit = {
 								any_owned_province = {
-									dominant_culture = PREV
+									PREV = { dominant_culture = PREV }
 								}
 							}
 							random_owned_province = {
 								limit = {
-									dominant_culture = PREV
+									PREV = { dominant_culture = PREV }
 								}
 								PREV = { change_primary_culture = PREV }
 							}
@@ -2988,12 +2988,12 @@ country_decisions = {
 						if = {
 							limit = {
 								any_owned_province = {
-									dominant_culture = PREV
+									PREV = { dominant_culture = PREV }
 								}
 							}
 							random_owned_province = {
 								limit = {
-									dominant_culture = PREV
+									PREV = { dominant_culture = PREV }
 								}
 								PREV = { change_primary_culture = PREV }
 							}
@@ -3064,12 +3064,12 @@ country_decisions = {
 						if = {
 							limit = {
 								any_owned_province = {
-									dominant_culture = PREV
+									PREV = { dominant_culture = PREV }
 								}
 							}
 							random_owned_province = {
 								limit = {
-									dominant_culture = PREV
+									PREV = { dominant_culture = PREV }
 								}
 								PREV = { change_primary_culture = PREV }
 							}
@@ -3137,12 +3137,12 @@ country_decisions = {
 						if = {
 							limit = {
 								any_owned_province = {
-									dominant_culture = PREV
+									PREV = { dominant_culture = PREV }
 								}
 							}
 							random_owned_province = {
 								limit = {
-									dominant_culture = PREV
+									PREV = { dominant_culture = PREV }
 								}
 								PREV = { change_primary_culture = PREV }
 							}
@@ -3209,12 +3209,12 @@ country_decisions = {
 						if = {
 							limit = {
 								any_owned_province = {
-									dominant_culture = PREV
+									PREV = { dominant_culture = PREV }
 								}
 							}
 							random_owned_province = {
 								limit = {
-									dominant_culture = PREV
+									PREV = { dominant_culture = PREV }
 								}
 								PREV = { change_primary_culture = PREV }
 							}
@@ -3453,12 +3453,12 @@ country_decisions = {
 						if = {
 							limit = {
 								any_owned_province = {
-									dominant_culture = PREV
+									PREV = { dominant_culture = PREV }
 								}
 							}
 							random_owned_province = {
 								limit = {
-									dominant_culture = PREV
+									PREV = { dominant_culture = PREV }
 								}
 								PREV = { change_primary_culture = PREV }
 							}
@@ -3517,12 +3517,12 @@ country_decisions = {
 						if = {
 							limit = {
 								any_owned_province = {
-									dominant_culture = PREV
+									PREV = { dominant_culture = PREV }
 								}
 							}
 							random_owned_province = {
 								limit = {
-									dominant_culture = PREV
+									PREV = { dominant_culture = PREV }
 								}
 								PREV = { change_primary_culture = PREV }
 							}
@@ -3583,12 +3583,12 @@ country_decisions = {
 						if = {
 							limit = {
 								any_owned_province = {
-									dominant_culture = PREV
+									PREV = { dominant_culture = PREV }
 								}
 							}
 							random_owned_province = {
 								limit = {
-									dominant_culture = PREV
+									PREV = { dominant_culture = PREV }
 								}
 								PREV = { change_primary_culture = PREV }
 							}
@@ -3649,12 +3649,12 @@ country_decisions = {
 						if = {
 							limit = {
 								any_owned_province = {
-									dominant_culture = PREV
+									PREV = { dominant_culture = PREV }
 								}
 							}
 							random_owned_province = {
 								limit = {
-									dominant_culture = PREV
+									PREV = { dominant_culture = PREV }
 								}
 								PREV = { change_primary_culture = PREV }
 							}
@@ -3712,12 +3712,12 @@ country_decisions = {
 						if = {
 							limit = {
 								any_owned_province = {
-									dominant_culture = PREV
+									PREV = { dominant_culture = PREV }
 								}
 							}
 							random_owned_province = {
 								limit = {
-									dominant_culture = PREV
+									PREV = { dominant_culture = PREV }
 								}
 								PREV = { change_primary_culture = PREV }
 							}
@@ -3772,12 +3772,12 @@ country_decisions = {
 						if = {
 							limit = {
 								any_owned_province = {
-									dominant_culture = PREV
+									PREV = { dominant_culture = PREV }
 								}
 							}
 							random_owned_province = {
 								limit = {
-									dominant_culture = PREV
+									PREV = { dominant_culture = PREV }
 								}
 								PREV = { change_primary_culture = PREV }
 							}
@@ -3831,12 +3831,12 @@ country_decisions = {
 						if = {
 							limit = {
 								any_owned_province = {
-									dominant_culture = PREV
+									PREV = { dominant_culture = PREV }
 								}
 							}
 							random_owned_province = {
 								limit = {
-									dominant_culture = PREV
+									PREV = { dominant_culture = PREV }
 								}
 								PREV = { change_primary_culture = PREV }
 							}
@@ -4069,12 +4069,12 @@ country_decisions = {
 						if = {
 							limit = {
 								any_owned_province = {
-									dominant_culture = PREV
+									PREV = { dominant_culture = PREV }
 								}
 							}
 							random_owned_province = {
 								limit = {
-									dominant_culture = PREV
+									PREV = { dominant_culture = PREV }
 								}
 								PREV = { change_primary_culture = PREV }
 							}
@@ -4133,12 +4133,12 @@ country_decisions = {
 						if = {
 							limit = {
 								any_owned_province = {
-									dominant_culture = PREV
+									PREV = { dominant_culture = PREV }
 								}
 							}
 							random_owned_province = {
 								limit = {
-									dominant_culture = PREV
+									PREV = { dominant_culture = PREV }
 								}
 								PREV = { change_primary_culture = PREV }
 							}
@@ -4199,12 +4199,12 @@ country_decisions = {
 						if = {
 							limit = {
 								any_owned_province = {
-									dominant_culture = PREV
+									PREV = { dominant_culture = PREV }
 								}
 							}
 							random_owned_province = {
 								limit = {
-									dominant_culture = PREV
+									PREV = { dominant_culture = PREV }
 								}
 								PREV = { change_primary_culture = PREV }
 							}
@@ -4265,12 +4265,12 @@ country_decisions = {
 						if = {
 							limit = {
 								any_owned_province = {
-									dominant_culture = PREV
+									PREV = { dominant_culture = PREV }
 								}
 							}
 							random_owned_province = {
 								limit = {
-									dominant_culture = PREV
+									PREV = { dominant_culture = PREV }
 								}
 								PREV = { change_primary_culture = PREV }
 							}
@@ -4328,12 +4328,12 @@ country_decisions = {
 						if = {
 							limit = {
 								any_owned_province = {
-									dominant_culture = PREV
+									PREV = { dominant_culture = PREV }
 								}
 							}
 							random_owned_province = {
 								limit = {
-									dominant_culture = PREV
+									PREV = { dominant_culture = PREV }
 								}
 								PREV = { change_primary_culture = PREV }
 							}
@@ -4388,12 +4388,12 @@ country_decisions = {
 						if = {
 							limit = {
 								any_owned_province = {
-									dominant_culture = PREV
+									PREV = { dominant_culture = PREV }
 								}
 							}
 							random_owned_province = {
 								limit = {
-									dominant_culture = PREV
+									PREV = { dominant_culture = PREV }
 								}
 								PREV = { change_primary_culture = PREV }
 							}
@@ -4447,12 +4447,12 @@ country_decisions = {
 						if = {
 							limit = {
 								any_owned_province = {
-									dominant_culture = PREV
+									PREV = { dominant_culture = PREV }
 								}
 							}
 							random_owned_province = {
 								limit = {
-									dominant_culture = PREV
+									PREV = { dominant_culture = PREV }
 								}
 								PREV = { change_primary_culture = PREV }
 							}
@@ -4681,12 +4681,12 @@ country_decisions = {
 						if = {
 							limit = {
 								any_owned_province = {
-									dominant_culture = PREV
+									PREV = { dominant_culture = PREV }
 								}
 							}
 							random_owned_province = {
 								limit = {
-									dominant_culture = PREV
+									PREV = { dominant_culture = PREV }
 								}
 								PREV = { change_primary_culture = PREV }
 							}
@@ -4745,12 +4745,12 @@ country_decisions = {
 						if = {
 							limit = {
 								any_owned_province = {
-									dominant_culture = PREV
+									PREV = { dominant_culture = PREV }
 								}
 							}
 							random_owned_province = {
 								limit = {
-									dominant_culture = PREV
+									PREV = { dominant_culture = PREV }
 								}
 								PREV = { change_primary_culture = PREV }
 							}
@@ -4811,12 +4811,12 @@ country_decisions = {
 						if = {
 							limit = {
 								any_owned_province = {
-									dominant_culture = PREV
+									PREV = { dominant_culture = PREV }
 								}
 							}
 							random_owned_province = {
 								limit = {
-									dominant_culture = PREV
+									PREV = { dominant_culture = PREV }
 								}
 								PREV = { change_primary_culture = PREV }
 							}
@@ -4877,12 +4877,12 @@ country_decisions = {
 						if = {
 							limit = {
 								any_owned_province = {
-									dominant_culture = PREV
+									PREV = { dominant_culture = PREV }
 								}
 							}
 							random_owned_province = {
 								limit = {
-									dominant_culture = PREV
+									PREV = { dominant_culture = PREV }
 								}
 								PREV = { change_primary_culture = PREV }
 							}
@@ -4940,12 +4940,12 @@ country_decisions = {
 						if = {
 							limit = {
 								any_owned_province = {
-									dominant_culture = PREV
+									PREV = { dominant_culture = PREV }
 								}
 							}
 							random_owned_province = {
 								limit = {
-									dominant_culture = PREV
+									PREV = { dominant_culture = PREV }
 								}
 								PREV = { change_primary_culture = PREV }
 							}
@@ -5000,12 +5000,12 @@ country_decisions = {
 						if = {
 							limit = {
 								any_owned_province = {
-									dominant_culture = PREV
+									PREV = { dominant_culture = PREV }
 								}
 							}
 							random_owned_province = {
 								limit = {
-									dominant_culture = PREV
+									PREV = { dominant_culture = PREV }
 								}
 								PREV = { change_primary_culture = PREV }
 							}
@@ -5059,12 +5059,12 @@ country_decisions = {
 						if = {
 							limit = {
 								any_owned_province = {
-									dominant_culture = PREV
+									PREV = { dominant_culture = PREV }
 								}
 							}
 							random_owned_province = {
 								limit = {
-									dominant_culture = PREV
+									PREV = { dominant_culture = PREV }
 								}
 								PREV = { change_primary_culture = PREV }
 							}
@@ -5326,12 +5326,12 @@ country_decisions = {
 						if = {
 							limit = {
 								any_owned_province = {
-									dominant_culture = PREV
+									PREV = { dominant_culture = PREV }
 								}
 							}
 							random_owned_province = {
 								limit = {
-									dominant_culture = PREV
+									PREV = { dominant_culture = PREV }
 								}
 								PREV = { change_primary_culture = PREV }
 							}
@@ -5396,12 +5396,12 @@ country_decisions = {
 						if = {
 							limit = {
 								any_owned_province = {
-									dominant_culture = PREV
+									PREV = { dominant_culture = PREV }
 								}
 							}
 							random_owned_province = {
 								limit = {
-									dominant_culture = PREV
+									PREV = { dominant_culture = PREV }
 								}
 								PREV = { change_primary_culture = PREV }
 							}
@@ -5476,12 +5476,12 @@ country_decisions = {
 						if = {
 							limit = {
 								any_owned_province = {
-									dominant_culture = PREV
+									PREV = { dominant_culture = PREV }
 								}
 							}
 							random_owned_province = {
 								limit = {
-									dominant_culture = PREV
+									PREV = { dominant_culture = PREV }
 								}
 								PREV = { change_primary_culture = PREV }
 							}
@@ -5548,12 +5548,12 @@ country_decisions = {
 						if = {
 							limit = {
 								any_owned_province = {
-									dominant_culture = PREV
+									PREV = { dominant_culture = PREV }
 								}
 							}
 							random_owned_province = {
 								limit = {
-									dominant_culture = PREV
+									PREV = { dominant_culture = PREV }
 								}
 								PREV = { change_primary_culture = PREV }
 							}
@@ -5631,12 +5631,12 @@ country_decisions = {
 						if = {
 							limit = {
 								any_owned_province = {
-									dominant_culture = PREV
+									PREV = { dominant_culture = PREV }
 								}
 							}
 							random_owned_province = {
 								limit = {
-									dominant_culture = PREV
+									PREV = { dominant_culture = PREV }
 								}
 								PREV = { change_primary_culture = PREV }
 							}
@@ -5705,12 +5705,12 @@ country_decisions = {
 						if = {
 							limit = {
 								any_owned_province = {
-									dominant_culture = PREV
+									PREV = { dominant_culture = PREV }
 								}
 							}
 							random_owned_province = {
 								limit = {
-									dominant_culture = PREV
+									PREV = { dominant_culture = PREV }
 								}
 								PREV = { change_primary_culture = PREV }
 							}
@@ -5775,12 +5775,12 @@ country_decisions = {
 						if = {
 							limit = {
 								any_owned_province = {
-									dominant_culture = PREV
+									PREV = { dominant_culture = PREV }
 								}
 							}
 							random_owned_province = {
 								limit = {
-									dominant_culture = PREV
+									PREV = { dominant_culture = PREV }
 								}
 								PREV = { change_primary_culture = PREV }
 							}
@@ -5840,12 +5840,12 @@ country_decisions = {
 						if = {
 							limit = {
 								any_owned_province = {
-									dominant_culture = PREV
+									PREV = { dominant_culture = PREV }
 								}
 							}
 							random_owned_province = {
 								limit = {
-									dominant_culture = PREV
+									PREV = { dominant_culture = PREV }
 								}
 								PREV = { change_primary_culture = PREV }
 							}
@@ -5905,12 +5905,12 @@ country_decisions = {
 						if = {
 							limit = {
 								any_owned_province = {
-									dominant_culture = PREV
+									PREV = { dominant_culture = PREV }
 								}
 							}
 							random_owned_province = {
 								limit = {
-									dominant_culture = PREV
+									PREV = { dominant_culture = PREV }
 								}
 								PREV = { change_primary_culture = PREV }
 							}

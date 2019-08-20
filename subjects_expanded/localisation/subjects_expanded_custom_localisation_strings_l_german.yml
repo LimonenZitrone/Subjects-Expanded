@@ -4,11 +4,11 @@
  
  string_establish_crusader_state_costs_papal_influence: "Dies wird unsere päpstlicher Einfluss um §R-20§! verändern."
  
- string_increase_colonial_autonomy_colony: "Dies wird §Y[From.GetName]§! zu einem §YHerrschaftsgebiet§! machen. Ein Herrschachtsgebiet verhält sich wie eine Kolonialnation, besitzt jedoch ein verringertes Freiheitsstreben und zahlt keine Zollabgaben an seinen Lehnsherrn. Sie sind etwas weniger in ihren diplomatischen Aktionen eingeschränkt als Kolonialnationen, können aber nicht zu Kolonialkriegen gezwungen werden. \nHerrschachtsgebiete in Handelshaus-Regionen können nicht individualisert werden, geben aber einen Bonus auf das Flottenlimit des Lehnsherrn."
- string_increase_colonial_autonomy_dominion: "Dies wird §Y[From.GetName]§! zu einem §YAutonomen Herrschaftsgebiet§! machen. Ein Autonomes Herrschaftsgebiet verhält sich wie eine Kolonialnation, besitzt jedoch ein verringertes Freiheitsstreben, zahlt keine Zollabgaben an seinen Lehnsherrn und tritt den Kriegen seines Lehnsherrn nicht bei. Sie sind weniger in ihren diplomatischen Aktionen eingeschränkt als Kolonialnationen und ihr Lehnsherr kann es ablehnen, ihnen in Verteidigungskriegen zu helfen. Weiterhin geben sie ihrem Lehnsherrn zwei Händler. \nHerrschachtsgebiete in Handelshaus-Regionen können nicht individualisert werden, geben aber einen Bonus auf das Flottenlimit des Lehnsherrn."
+ string_increase_colonial_autonomy_colony: "Dies wird §Y[From.GetName]§! zu einem §YHerrschaftsgebiet§! machen. [dominion_desc]"
+ string_increase_colonial_autonomy_dominion: "Dies wird §Y[From.GetName]§! zu einem §YAutonomen Herrschaftsgebiet§! machen. [autonomous_dominion_desc]"
  
  string_decrease_colonial_autonomy_dominion: "Dies wird §Y[From.GetName]§! zu einer §YKolonialnation§! machen."
- string_decrease_colonial_autonomy_autonomous_dominion: "Dies wird §Y[From.GetName]§! zu einem §YHerrschaftsgebiet§! machen. Ein Herrschachtsgebiet verhält sich wie eine Kolonialnation, besitzt jedoch ein verringertes Freiheitsstreben und zahlt keine Zollabgaben an seinen Lehnsherrn. Sie sind etwas weniger in ihren diplomatischen Aktionen eingeschränkt als Kolonialnationen, können aber nicht zu Kolonialkriegen gezwungen werden. \nHerrschachtsgebiete in Handelshaus-Regionen können nicht individualisert werden, geben aber einen Bonus auf das Flottenlimit des Lehnsherrn."
+ string_decrease_colonial_autonomy_autonomous_dominion: "Dies wird §Y[From.GetName]§! zu einem §YHerrschaftsgebiet§! machen. [dominion_desc]"
  
  string_establish_voivodeship_reduces_stability_and_prestige: "Dies wird unsere Stabilität um §R-1§! und unser Prestige um §R-10§! ändern, weil sie weder einer Kultur §Y[Root.Culture.GetGroupName]en§! Gruppe folgen noch die §Y[Root.Culture.GetName]e§! Kultur akzeptieren und wir die §Y[From.Culture.GetName]e§! Kultur nicht akzeptieren."
  

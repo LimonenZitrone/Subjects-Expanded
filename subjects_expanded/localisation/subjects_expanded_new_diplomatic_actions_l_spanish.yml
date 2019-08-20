@@ -1,16 +1,16 @@
 ﻿l_spanish:
  # New Diplomatic Actions:
  establish_protectorate_title: "Establish Protectorate"
- establish_protectorate_desc: "Do you want to offer §Y[From.GetName]§! to become our Protectorate? \nA Protectorate gives us some of their trade power in return for technological progress and military protection."
+ establish_protectorate_desc: "Do you want to offer §Y[From.GetName]§! to become our Protectorate? \n[protectorate_desc]"
  establish_protectorate_tooltip: "Make §Y[From.GetName]§! to a [Root.GetAdjective] §YProtectorate§!.\n"
  establish_protectorate_alert_tooltip: "Establish Protectorate"
- establish_protectorate_dialog: "§Y[This.GetName]§! offers us that we become their §YProtectorate§!. This means that we have to transfer trade power to them, but in return we gain military protection from them and receive bonuses on technology cost and institution growth. Protectorates are partly restricted in their diplomatic actions. \n\nDo you want to accept?"
+ establish_protectorate_dialog: "§Y[This.GetName]§! offers us that we become their §YProtectorate§!. [protectorate_desc] \nDo you want to accept?"
  
  ask_to_become_protectorate_title: "Ask to become Protectorate"
- ask_to_become_protectorate_desc: "Do you want to offer §Y[From.GetName]§! that we become their Protectorate? \nThis means that we have to transfer trade power to them, but in return we gain military protection from them and receive bonuses on technology cost and institution growth. Protectorates are partly restricted in their diplomatic actions."
+ ask_to_become_protectorate_desc: "Do you want to offer §Y[From.GetName]§! that we become their Protectorate? \n[protectorate_desc]"
  ask_to_become_protectorate_tooltip: "Ask §Y[From.GetName]§! to make §Y[Root.GetName]§! to a [From.GetAdjective] §YProtectorate§!.\n"
  ask_to_become_protectorate_alert_tooltip: "Ask to become Protectorate"
- ask_to_become_protectorate_dialog: "§Y[This.GetName]§! offers us that they become our §YProtectorate§!. \n\nA Protectorate gives us some of their trade power in return for technological progress and military protection. \n\nDo you want to accept?"
+ ask_to_become_protectorate_dialog: "§Y[This.GetName]§! offers us that they become our §YProtectorate§!. \n\n[protectorate_desc] \nDo you want to accept?"
  
  cancel_protectorate_title: "Release Protectorate"
  cancel_protectorate_desc: "Do you want to cancel the §YProtectorate§! and grant §Y[From.GetName]§! independence? \nThis will[Root.GetIfCancelProtectorateGivesStabHit]decrease their opinion about us by §R-200§!."
@@ -18,10 +18,10 @@
  
  
  establish_puppet_state_title: "Establish Puppet State"
- establish_puppet_state_desc: "Do you want to offer §Y[From.GetName]§! to become our Puppet State? \nA Puppet State is a mixture of a vassal and a march. It receives similar bonuses as a march, but can be annexed after 10 years. Furthermore, it increases your reputation at home and in foreign countries."
+ establish_puppet_state_desc: "Do you want to offer §Y[From.GetName]§! to become our Puppet State? \n[puppet_state_desc]"
  establish_puppet_state_tooltip: "Make §Y[From.GetName]§! to a [Root.GetAdjective] §YPuppet State§!.\n"
  establish_puppet_state_alert_tooltip: "Establish Puppet State"
- establish_puppet_state_dialog: "§Y[This.GetName]§! offers us that we become their §YPuppet State§!. A Puppet State is a mixture of a vassal and a march. It receives similar bonuses as a march, but can be annexed after 10 years. Furthermore, it increases your reputation at home and in foreign countries. \n\nIf we accept, our government is changed to §YPuppet State Government§! (Republic). \nAs long as we have less than §Y33%§! of the [This.GetAdjective] total development, we would gain the following bonuses: \nGlobal Manpower Modifier: §G+25.0%§! \nManpower Recovery Speed: §G+20.0%§! \nLand Force Limit: §G+30.0%§! \nYearly Republican Tradition: §G+0.25§! \nLiberty Desire: §G-10.00%§! \n\nDo you want to accept?"
+ establish_puppet_state_dialog: "§Y[This.GetName]§! offers us that we become their §YPuppet State§!. [puppet_state_desc] \nIf we accept, our government is changed to §YPuppet State Government§! (Republic). \nAs long as we have less than §Y33%§! of the [This.GetAdjective] total development, we would gain the following bonuses: \nGlobal Manpower Modifier: §G+25.0%§! \nManpower Recovery Speed: §G+20.0%§! \nLand Force Limit: §G+30.0%§! \nYearly Republican Tradition: §G+0.25§! \nLiberty Desire: §G-10.00%§! \n\nDo you want to accept?"
  
  cancel_puppet_state_title: "Release Puppet State"
  cancel_puppet_state_desc: "Do you want to cancel the §YPuppet State§! and grant §Y[From.GetName]§! independence? \nThis will[Root.GetIfCancelProtectorateGivesStabHit]and decrease their opinion about us by §R-100§!. We also gain a truce with [From.GetName] and our prestige decreases by §R-20§!."
@@ -46,7 +46,7 @@
  
  
  establish_roman_client_kingdom_title: "Establish Client Kingdom"
- establish_roman_client_kingdom_desc: "Make your vassal [From.GetName] to a §YRoman Client Kingdom§!. \nA Roman Client Kingdom behaves like a vassal, but has less liberty desire and can only be created by the §YRoman Empire§!, §YWestern Roman Empire§!, and §YByzantium§!. Furthermore, they pay more money to their overlord and are a slightly less restricted in their diplomatic actions than normal vassals. If they border one of our rivals or enemies, §YRoman Client Kingdoms§! do not cost a diplomatic relation and as long as you do not have any colonists, they increase your core range by §G+5%§! each. When they receive a new heir, he/she has to be acknowledged by you or he/she will not be accepted as rightful heir."
+ establish_roman_client_kingdom_desc: "Make your vassal [From.GetName] to a §YRoman Client Kingdom§!. \n[roman_client_kingdom_desc]"
  establish_roman_client_kingdom_tooltip: "Make your vassal [From.GetName] to a §YRoman Client Kingdom§!.\n"
  
  place_roman_ruler_on_subject_throne_title: "Replace Ruler"
@@ -63,7 +63,7 @@
  
  
  establish_voivodeship_title: "Establish Voivodeship"
- establish_voivodeship_desc: "Make your vassal [From.GetName] to a §YVoivodeship§!. \nA Voivodeship is a mixture of a vassal and a march. It receives similar bonuses as a march, but can be annexed after 10 years. Further more it has increased military expanses and can only be established by §YPoland§! or §YCommonwealth§!. \n[Root.GetIfEstablishVoivodeshipReducesStabilityAndPrestige]"
+ establish_voivodeship_desc: "Make your vassal [From.GetName] to a §YVoivodeship§!. \n[voivodeship_desc] \n[Root.GetIfEstablishVoivodeshipReducesStabilityAndPrestige]"
  establish_voivodeship_tooltip: "Make your vassal [From.GetName] to a §YVoivodeship§!.\n"
  
  cancel_voivodeship_title: "Release Voivodeship"
@@ -72,10 +72,10 @@
  
  
  establish_fief_subject_title: "Establish Fiefdom"
- establish_fief_subject_desc: "Do you want to offer §Y[From.GetName]§! to become our Fiefdom? \nA Fiefdom is a vassal of the same primary culture. It behaves similar to normal vassals, but has a slightly lower liberty desire, does not join its overlord's wars, and can only be integrated. However, it pays more money to its overlord and the overlord can demand troops from it. Further more it has increased tax income and decreased culture conversion cost and also affects these modifiers for its overlord."
+ establish_fief_subject_desc: "Do you want to offer §Y[From.GetName]§! to become our Fiefdom? \n[fief_subject_desc]"
  establish_fief_subject_tooltip: "Make §Y[From.GetName]§! to a [Root.GetAdjective] §YFiefdom§!.\n"
  establish_fief_subject_alert_tooltip: "Establish Fiefdom"
- establish_fief_subject_dialog: "§Y[This.GetName]§! offers us that we become their §YFiefdom§!. A Fiefdom is a vassal of the same primary culture. It behaves similar to normal vassals, but has a slightly lower liberty desire, does not join its overlord's wars, and can only be integrated. However, it pays more money to its overlord and the overlord can demand troops from it. Further more it has increased tax income and decreased culture conversion cost and also affects these modifiers for its overlord. Fiefdoms are restricted in their diplomatic actions. \n\nDo you want to accept?"
+ establish_fief_subject_dialog: "§Y[This.GetName]§! offers us that we become their §YFiefdom§!. [fief_subject_desc] Fiefdoms are restricted in their diplomatic actions. \n\nDo you want to accept?"
  
  demand_troops_from_fief_subject_title: "Demand Troops"
  demand_troops_from_fief_subject_desc: "Demand troops of §Y[From.GetName]§! to fight for [Root.GetName]. This will transfer §Y5§! infantry units of their army to our capital. \nThis will increase their liberty desire by §R+10%§!."
@@ -87,7 +87,7 @@
  
  
  establish_crusader_state_vassal_title: "Establish Crusader State"
- establish_crusader_state_vassal_desc: "Make your vassal [From.GetName] to a §YCrusader State§!. A Crusader State is a mixture of a vassal and a march. It receives bonuses to discipline, manpower, war score cost against other religions and missionary strength. Furthermore, they increase your papal authority and missionary strength and cannot be annexed. They can only be established by the §YPapal State§!, §YJerusalem§!, §YMonastic Orders§! and §YCrusader Kingdoms§! in Europe and a country can only have §Y2§! Crusader States at the same time. \n[Root.GetIfEstablishCrusaderStateCostsPapalInfluence]"
+ establish_crusader_state_vassal_desc: "Make your vassal [From.GetName] to a §YCrusader State§!. [crusader_state_vassal_desc] \n[Root.GetIfEstablishCrusaderStateCostsPapalInfluence]"
  establish_crusader_state_vassal_tooltip: "Make your vassal [From.GetName] to a §YCrusader State§!.\n"
  
  send_crusader_knights_to_crusader_state_vassal_title: "Send Crusader Knights"
@@ -104,15 +104,15 @@
  
  
  establish_nahuatl_vassal_title: "Establish Nahuatl Vassal"
- establish_nahuatl_vassal_desc: "Make your vassal [From.GetName] to a §YNahuatl Vassal§!. A Nahuatl Vassal behaves like a vassal, but does not cost a diplomatic relation and has reduced liberty desire. Furthermore, it gives a bonus for manpower, manpower recovery speed, and province war score cost to its overlord. It can only be established by §YNahuatl§! nations, which did not reform their religion, in §YMexico§!, §YCalifornia§!, §YRio Grande§! and §YCentral America§!. If an overlord does not fulfill these requirements, the Nahuatl Vassal will get §R+100%§! liberty desire. \nThis will change our doom by §R+10§!."
+ establish_nahuatl_vassal_desc: "Make your vassal [From.GetName] to a §YNahuatl Vassal§!. [nahuatl_vassal_desc] \nThis will change our doom by §R+10§!."
  establish_nahuatl_vassal_tooltip: "Make your vassal [From.GetName] to a §YNahuatl Vassal§!.\n"
  
  
  establish_peasant_vassal_title: "Establish Peasant Vassal"
- establish_peasant_vassal_desc: "Do you want to offer §Y[From.GetName]§! to become our Peasant Vassal? \nA Peasant Vassal is a mixture of a vassal and a tributary. It does not join its overlord's wars, is not very limited in its diplomatic actions, has a higher forcelimit, and grants more forcelimit to its overlord than vassals. Furthermore, the overlord can demand tribute from them and receives a bonus to aggressive expansion and a malus to all power cost for each Peasant Vassal. A Peasant Vassal has reduced tax income, but increased production efficiency, army morale, and manpower, however the overlord pays it and it has a slightly higher liberty desire from development than vassals."
+ establish_peasant_vassal_desc: "Do you want to offer §Y[From.GetName]§! to become our Peasant Vassal? \n[peasant_vassal_desc]"
  establish_peasant_vassal_tooltip: "Make §Y[From.GetName]§! to a [Root.GetAdjective] §YPeasant Vassal§!.\n"
  establish_peasant_vassal_alert_tooltip: "Establish Peasant Vassal"
- establish_peasant_vassal_dialog: "§Y[This.GetName]§! offers us that we become their §YPeasant Vassal§!. A Peasant Vassal is a mixture of a vassal and a tributary. It does not join its overlord's wars, is not very limited in its diplomatic actions, has a higher forcelimit, and grants more forcelimit to its overlord than vassals. Furthermore, the overlord can demand tribute from them and receives a bonus to aggressive expansion and a malus to all power cost for each Peasant Vassal. A Peasant Vassal has reduced tax income, but increased production efficiency, army morale, and manpower, however the overlord pays it and it has a slightly higher liberty desire from development than vassals. \nIf we aren't a Peasants Republic, we will become one. \n\nDo you want to accept?"
+ establish_peasant_vassal_dialog: "§Y[This.GetName]§! offers us that we become their §YPeasant Vassal§!. [peasant_vassal_desc] \nIf we aren't a Peasants Republic, we will become one. \n\nDo you want to accept?"
  
  cancel_peasant_vassal_title: "Release Peasant Vassal"
  cancel_peasant_vassal_desc: "Cancel the dependency of §Y[From.GetName]§! of us. This will decrease their opinion about us by §R-200§!, if their liberty desire is below §Y50%§!. We will also lose §R-25§! prestige and gain a truce with them for §Y5 years§!."
@@ -120,7 +120,7 @@
  
  
  establish_pirate_brotherhood_vassal_title: "Establish Pirate Brotherhood"
- establish_pirate_brotherhood_vassal_desc: "Make your vassal [From.GetName] to a §YPirate Brotherhood§!. A Pirate Brotherhood is a mixture of a vassal and a colonial nation. It can only be established by nations with a Pirate government, at least three ports, and 20 ships, and is locked to Pirate governments itself. It pays tariffs and can have subjects on its own. It has a lower liberty desire than vassals, but is less restricted in its diplomatic actions. It receives a bonus to privateer efficiency, naval forcelimit and naval morale and gives its overlord a bonus to privateer efficiency and naval forcelimit."
+ establish_pirate_brotherhood_vassal_desc: "Make your vassal [From.GetName] to a §YPirate Brotherhood§!. [pirate_brotherhood_vassal_desc]"
  establish_pirate_brotherhood_vassal_tooltip: "Make your vassal [From.GetName] to a §YPirate Brotherhood§!.\n"
  
  cancel_pirate_brotherhood_vassal_title: "Release Pirate Brotherhood"
@@ -129,14 +129,14 @@
  
  
  establish_imperial_tributary_state_title: "Establish Imperial Tributary State"
- establish_imperial_tributary_state_desc: "Make your vassal [From.GetName] to an §YImperial Tributary State§!. An Imperial Tributary State is a mixture of a tributary state and a vassal. It is not restricted in its diplomatic actions, but it cannot declare independence without a war. It pays taxes to its overlord and does not cost a diplomatic relations. It receives a malus on heir chance and army forcelimit and grants its overlord a bonus on vassal income It is locked to monarchy governments and if its ruler dies without a heir or it gets a regency council while the heir is younger than 12 years, it either gets annexed by its overlord or has to declare an independence war. An Imperial Tributary State can only be established by the §YRoman Empire§! or any country with the Empire rank and its capital in Europe that has a Dominion or Autonomous Dominion in India on tribal nations or nations in India. \nThis will change their liberty desire by §G-25%§!."
+ establish_imperial_tributary_state_desc: "Make your vassal [From.GetName] to an §YImperial Tributary State§!. [imperial_tributary_state_desc] \nThis will change their liberty desire by §G-25%§!."
  establish_imperial_tributary_state_tooltip: "Make your vassal [From.GetName] to an §YImperial Tributary State§!.\n"
  
  ask_for_imperial_tributary_state_title: "Request Imperial Tributary State"
- ask_for_imperial_tributary_state_desc: "Do you want to offer §Y[From.GetName]§! that we become their Imperial Tributary State? \nAn Imperial Tributary State is a mixture of a tributary state and a vassal. It is not restricted in its diplomatic actions, but it cannot declare independence without a war. It pays taxes to its overlord and does not cost a diplomatic relations. It receives a malus on heir chance and army forcelimit and grants its overlord a bonus on vassal income It is locked to monarchy governments and if its ruler dies without a heir or it gets a regency council while the heir is younger than 12 years, it either gets annexed by its overlord or has to declare an independence war. An Imperial Tributary State can only be established by the §YRoman Empire§! or any country with the Empire rank and its capital in Europe that has a Dominion or Autonomous Dominion in India on tribal nations or nations in India. \nIf they decline, our liberty desire is changed by §G+10%§!. \nIf they accept, our liberty desire is changed by §R-25%§!."
+ ask_for_imperial_tributary_state_desc: "Do you want to offer §Y[From.GetName]§! that we become their Imperial Tributary State? \n[imperial_tributary_state_desc] \nIf they decline, our liberty desire is changed by §G+10%§!. \nIf they accept, our liberty desire is changed by §R-25%§!."
  ask_for_imperial_tributary_state_tooltip: "Ask §Y[From.GetName]§! to make §Y[Root.GetName]§! to a [From.GetAdjective] §YImperial Tributary State§!.\n"
  ask_for_imperial_tributary_state_alert_tooltip: "Request Imperial Tributary State"
- ask_for_imperial_tributary_state_dialog: "§Y[This.GetName]§! offers us that they become our §YImperial Tributary State§!. \n\nAn Imperial Tributary State is a mixture of a tributary state and a vassal. It is not restricted in its diplomatic actions, but it cannot declare independence without a war. It pays taxes to its overlord and does not cost a diplomatic relations. It receives a malus on heir chance and army forcelimit and grants its overlord a bonus on vassal income It is locked to monarchy governments and if its ruler dies without a heir or it gets a regency council while the heir is younger than 12 years, it either gets annexed by its overlord or has to declare an independence war. An Imperial Tributary State can only be established by the §YRoman Empire§! or any country with the Empire rank and its capital in Europe that has a Dominion or Autonomous Dominion in India on tribal nations or nations in India. \nIf we decline, their liberty desire is changed by §R+10%§!. \nIf we accept, their liberty desire is changed by §G-25%§!. \n\nDo you want to accept?"
+ ask_for_imperial_tributary_state_dialog: "§Y[This.GetName]§! offers us that they become our §YImperial Tributary State§!. \n\n[imperial_tributary_state_desc] \nIf we decline, their liberty desire is changed by §R+10%§!. \nIf we accept, their liberty desire is changed by §G-25%§!. \n\nDo you want to accept?"
  
  cancel_imperial_tributary_state_title: "Release Imperial Tributary State"
  cancel_imperial_tributary_state_desc: "Cancel the dependency of §Y[From.GetName]§! of us. This will decrease their opinion about us by §R-200§!, if their liberty desire is below §Y50%§!. We will also lose §R-25§! prestige and gain a truce with them for §Y5 years§!."
@@ -144,16 +144,16 @@
  
  
  establish_sister_republic_title: "Establish Sister Republic"
- establish_sister_republic_desc: "Do you want to offer §Y[From.GetName]§! to become our Sister Republic? \nA Sister Republic behaves similar to a personal union. However, it is far less restricted in its diplomatic actions and cannot break on the ruler's death. It can only be established by republics and theocracies and a country can have only §Y1§! Sister Republic at the same time. If the overlord and the Sister Republic do not have the same government (republic or theocracy) anymore, the Sister Republic will become free and enter an alliance with its former overlord. Both, the overlord and the Sister Republic, gain an equal bonus on development cost, construction cost and production efficiency."
+ establish_sister_republic_desc: "Do you want to offer §Y[From.GetName]§! to become our Sister Republic? \n[sister_republic_desc]"
  establish_sister_republic_tooltip: "Make §Y[From.GetName]§! to a [Root.GetAdjective] §YSister Republic§!.\n"
  establish_sister_republic_alert_tooltip: "Establish Sister Republic"
- establish_sister_republic_dialog: "§Y[This.GetName]§! offers us that we become their §YSister Republic§!. \nA Sister Republic behaves similar to a personal union. However, it is far less restricted in its diplomatic actions and cannot break on the ruler's death. It can only be established by republics and theocracies and a country can have only §Y1§! Sister Republic at the same time. If the overlord and the Sister Republic do not have the same government (republic or theocracy) anymore, the Sister Republic will become free and enter an alliance with its former overlord. Both, the overlord and the Sister Republic, gain an equal bonus on development cost, construction cost and production efficiency. \n\nDo you want to accept?"
+ establish_sister_republic_dialog: "§Y[This.GetName]§! offers us that we become their §YSister Republic§!. \n[sister_republic_desc] \nDo you want to accept?"
  
  ask_for_sister_republic_title: "Request Sister Republic"
- ask_for_sister_republic_desc: "Do you want to offer §Y[From.GetName]§! that we become their Sister Republic? \nA Sister Republic behaves similar to a personal union. However, it is far less restricted in its diplomatic actions and cannot break on the ruler's death. It can only be established by republics and theocracies and a country can have only §Y1§! Sister Republic at the same time. If the overlord and the Sister Republic do not have the same government (republic or theocracy) anymore, the Sister Republic will become free and enter an alliance with its former overlord. Both, the overlord and the Sister Republic, gain an equal bonus on development cost, construction cost and production efficiency."
+ ask_for_sister_republic_desc: "Do you want to offer §Y[From.GetName]§! that we become their Sister Republic? \n[sister_republic_desc]"
  ask_for_sister_republic_tooltip: "Ask §Y[From.GetName]§! to make §Y[Root.GetName]§! to a [From.GetAdjective] §YSister Republic§!.\n"
  ask_for_sister_republic_alert_tooltip: "Request Sister Republic"
- ask_for_sister_republic_dialog: "§Y[This.GetName]§! offers us that they become our §YSister Republic§!. \nA Sister Republic behaves similar to a personal union. However, it is far less restricted in its diplomatic actions and cannot break on the ruler's death. It can only be established by republics and theocracies and a country can have only §Y1§! Sister Republic at the same time. If the overlord and the Sister Republic do not have the same government (republic or theocracy) anymore, the Sister Republic will become free and enter an alliance with its former overlord. Both, the overlord and the Sister Republic, gain an equal bonus on development cost, construction cost and production efficiency. \n\nDo you want to accept?"
+ ask_for_sister_republic_dialog: "§Y[This.GetName]§! offers us that they become our §YSister Republic§!. \n[sister_republic_desc] \nDo you want to accept?"
  
  sister_republic_ask_overlord_to_join_war_title: "Ask for War Support"
  sister_republic_ask_overlord_to_join_war_desc: "Ask §Y[From.GetName]§! to declare a common war against the country you marked as war target. If they accept, they will declare a common war against the target in which they will be the war leader."
@@ -171,16 +171,16 @@
  
  
  establish_muslim_tributary_vassal_title: "Establish Dar al-Sulh Territory"
- establish_muslim_tributary_vassal_desc: "Do you want to offer §Y[From.GetName]§! to become our Dar al-Sulh Territory? \nA Dar al-Sulh Territory is a mixture of a vassal and a tributary. In its diplomatic actions it is less restricted than vassals, but more restricted than tributaries. It pays tribute, joins its overlord wars and can only become independent by war, their overlord is not muslim anymore or if the overlord decides it. It can only be established by muslim nations on neighboring non muslim countries. A Dar al-Sulh Territory gains a bonus on tolerance of heathens, national unrest and garrison size. It grants its overlord a bonus on tolerance of heathens, a malus on tolerance of the true faith as well as makes it drift towards legalism. Furthermore, a muslim Dar al-Sulh Territory gains §R+100%§! liberty desire and drifts towards mysticism and its overlord will eventually get an event to either release it or make it to a normal vassal, which increases its liberty desire. \nThis will move us §G+5§! towards legalism."
+ establish_muslim_tributary_vassal_desc: "Do you want to offer §Y[From.GetName]§! to become our Dar al-Sulh Territory? \n[muslim_tributary_vassal_desc] \nThis will move us §G+5§! towards legalism."
  establish_muslim_tributary_vassal_tooltip: "Make §Y[From.GetName]§! to a [Root.GetAdjective] §YDar al-Sulh Territory§!.\n"
  establish_muslim_tributary_vassal_alert_tooltip: "Establish Dar al-Sulh Territory"
- establish_muslim_tributary_vassal_dialog: "§Y[This.GetName]§! offers us that we become their §YDar al-Sulh Territory§!. \nA Dar al-Sulh Territory is a mixture of a vassal and a tributary. In its diplomatic actions it is less restricted than vassals, but more restricted than tributaries. It pays tribute, joins its overlord wars and can only become independent by war, their overlord is not muslim anymore or if the overlord decides it. It can only be established by muslim nations on neighboring non muslim countries. A Dar al-Sulh Territory gains a bonus on tolerance of heathens, national unrest and garrison size. It grants its overlord a bonus on tolerance of heathens, a malus on tolerance of the true faith as well as makes it drift towards legalism. Furthermore, a muslim Dar al-Sulh Territory gains §R+100%§! liberty desire and drifts towards mysticism and its overlord will eventually get an event to either release it or make it to a normal vassal, which increases its liberty desire. \n\nDo you want to accept?"
+ establish_muslim_tributary_vassal_dialog: "§Y[This.GetName]§! offers us that we become their §YDar al-Sulh Territory§!. \n[muslim_tributary_vassal_desc] \nDo you want to accept?"
  
  ask_for_muslim_tributary_vassal_title: "Request Dar al-Sulh Territory"
- ask_for_muslim_tributary_vassal_desc: "Do you want to offer §Y[From.GetName]§! that we become their Dar al-Sulh Territory? \nA Dar al-Sulh Territory is a mixture of a vassal and a tributary. In its diplomatic actions it is less restricted than vassals, but more restricted than tributaries. It pays tribute, joins its overlord wars and can only become independent by war, their overlord is not muslim anymore or if the overlord decides it. It can only be established by muslim nations on neighboring non muslim countries. A Dar al-Sulh Territory gains a bonus on tolerance of heathens, national unrest and garrison size. It grants its overlord a bonus on tolerance of heathens, a malus on tolerance of the true faith as well as makes it drift towards legalism. Furthermore, a muslim Dar al-Sulh Territory gains §R+100%§! liberty desire and drifts towards mysticism and its overlord will eventually get an event to either release it or make it to a normal vassal, which increases its liberty desire."
+ ask_for_muslim_tributary_vassal_desc: "Do you want to offer §Y[From.GetName]§! that we become their Dar al-Sulh Territory? \n[muslim_tributary_vassal_desc]"
  ask_for_muslim_tributary_vassal_tooltip: "Ask §Y[From.GetName]§! to make §Y[Root.GetName]§! to a [From.GetAdjective] §YDar al-Sulh Territory§!.\n"
  ask_for_muslim_tributary_vassal_alert_tooltip: "Request Dar al-Sulh Territory"
- ask_for_muslim_tributary_vassal_dialog: "§Y[This.GetName]§! offers us that they become our §YDar al-Sulh Territory§!. \nA Dar al-Sulh Territory is a mixture of a vassal and a tributary. In its diplomatic actions it is less restricted than vassals, but more restricted than tributaries. It pays tribute, joins its overlord wars and can only become independent by war, their overlord is not muslim anymore or if the overlord decides it. It can only be established by muslim nations on neighboring non muslim countries. A Dar al-Sulh Territory gains a bonus on tolerance of heathens, national unrest and garrison size. It grants its overlord a bonus on tolerance of heathens, a malus on tolerance of the true faith as well as makes it drift towards legalism. Furthermore, a muslim Dar al-Sulh Territory gains §R+100%§! liberty desire and drifts towards mysticism and its overlord will eventually get an event to either release it or make it to a normal vassal, which increases its liberty desire. \nThis will move us §G+5§! towards legalism. \n\nDo you want to accept?"
+ ask_for_muslim_tributary_vassal_dialog: "§Y[This.GetName]§! offers us that they become our §YDar al-Sulh Territory§!. \n[muslim_tributary_vassal_desc] \nThis will move us §G+5§! towards legalism. \n\nDo you want to accept?"
  
  cancel_muslim_tributary_vassal_title: "Release Dar al-Sulh Territory"
  cancel_muslim_tributary_vassal_desc: "Cancel the dependency of §Y[From.GetName]§! of us. This will decrease their opinion about us by §R-200§!, if their liberty desire is below §Y50%§!. We will also lose §R-25§! prestige and gain a truce with them for §Y5 years§!."

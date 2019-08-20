@@ -8,19 +8,14 @@ country_decisions = {
 				is_former_autonomous_dominion = yes
 				is_colonial_nation = yes
 			}
-			OR = {
-				trade_company_indochina = {
-					owned_by = ROOT
-				}
-				is_dominion_tag_in_indochina = yes
-			}
+			is_dominion_tag_in_indochina = yes
 		}
 		allow = {
 			is_former_autonomous_dominion = yes
 			is_subject = no
 			is_at_war = no
 			capital_scope = {
-				is_node_in_trade_company_region = yes
+				trade_company_region = trade_company_indochina
 			}
 		}
 		effect = {
@@ -47,31 +42,20 @@ country_decisions = {
 				is_former_autonomous_dominion = yes
 				is_colonial_nation = yes
 			}
-			OR = {
-				trade_company_west_india = {
-					owned_by = ROOT
-				}
-				trade_company_east_india = {
-					owned_by = ROOT
-				}
-				trade_company_deccan = {
-					owned_by = ROOT
-				}
-				trade_company_north_india = {
-					owned_by = ROOT
-				}
-				trade_company_coromandel = {
-					owned_by = ROOT
-				}
-				is_dominion_tag_in_india = yes
-			}
+			is_dominion_tag_in_india = yes
 		}
 		allow = {
 			is_former_autonomous_dominion = yes
 			is_subject = no
 			is_at_war = no
 			capital_scope = {
-				is_node_in_trade_company_region = yes
+				OR = {
+					trade_company_region = trade_company_west_india
+					trade_company_region = trade_company_east_india
+					trade_company_region = trade_company_deccan
+					trade_company_region = trade_company_north_india
+					trade_company_region = trade_company_coromandel
+				}
 			}
 		}
 		effect = {
@@ -98,22 +82,17 @@ country_decisions = {
 				is_former_autonomous_dominion = yes
 				is_colonial_nation = yes
 			}
-			OR = {
-				trade_company_moluccas = {
-					owned_by = ROOT
-				}
-				trade_company_indonesia = {
-					owned_by = ROOT
-				}
-				is_dominion_tag_in_east_indies = yes
-			}
+			is_dominion_tag_in_east_indies = yes
 		}
 		allow = {
 			is_former_autonomous_dominion = yes
 			is_subject = no
 			is_at_war = no
 			capital_scope = {
-				is_node_in_trade_company_region = yes
+				OR = {
+					trade_company_region = trade_company_moluccas
+					trade_company_region = trade_company_indonesia
+				}
 			}
 		}
 		effect = {
@@ -140,24 +119,14 @@ country_decisions = {
 				is_former_autonomous_dominion = yes
 				is_colonial_nation = yes
 			}
-			OR = {
-				trade_company_west_africa = {
-					owned_by = ROOT
-				}
-				is_dominion_tag_in_west_africa = yes
-			}
-			NOT = {
-				any_province = {
-					colonial_region = colonial_west_africa
-				}
-			}
+			is_dominion_tag_in_west_africa = yes
 		}
 		allow = {
 			is_former_autonomous_dominion = yes
 			is_subject = no
 			is_at_war = no
 			capital_scope = {
-				is_node_in_trade_company_region = yes
+				trade_company_region = trade_company_west_africa
 			}
 		}
 		effect = {
@@ -184,24 +153,14 @@ country_decisions = {
 				is_former_autonomous_dominion = yes
 				is_colonial_nation = yes
 			}
-			OR = {
-				trade_company_east_africa = {
-					owned_by = ROOT
-				}
-				is_dominion_tag_in_east_africa = yes
-			}
-			NOT = {
-				any_province = {
-					colonial_region = colonial_east_africa
-				}
-			}
+			is_dominion_tag_in_east_africa = yes
 		}
 		allow = {
 			is_former_autonomous_dominion = yes
 			is_subject = no
 			is_at_war = no
 			capital_scope = {
-				is_node_in_trade_company_region = yes
+				trade_company_region = trade_company_east_africa
 			}
 		}
 		effect = {
@@ -228,24 +187,14 @@ country_decisions = {
 				is_former_autonomous_dominion = yes
 				is_colonial_nation = yes
 			}
-			OR = {
-				trade_company_south_africa = {
-					owned_by = ROOT
-				}
-				is_dominion_tag_in_south_africa = yes
-			}
-			NOT = {
-				any_province = {
-					colonial_region = colonial_south_africa
-				}
-			}
+			is_dominion_tag_in_south_africa = yes
 		}
 		allow = {
 			is_former_autonomous_dominion = yes
 			is_subject = no
 			is_at_war = no
 			capital_scope = {
-				is_node_in_trade_company_region = yes
+				trade_company_region = trade_company_south_africa
 			}
 		}
 		effect = {
@@ -272,19 +221,14 @@ country_decisions = {
 				is_former_autonomous_dominion = yes
 				is_colonial_nation = yes
 			}
-			OR = {
-				trade_company_philippines = {
-					owned_by = ROOT
-				}
-				is_dominion_tag_in_philippines = yes
-			}
+			is_dominion_tag_in_philippines = yes
 		}
 		allow = {
 			is_former_autonomous_dominion = yes
 			is_subject = no
 			is_at_war = no
 			capital_scope = {
-				is_node_in_trade_company_region = yes
+				trade_company_region = trade_company_philippines
 			}
 		}
 		effect = {

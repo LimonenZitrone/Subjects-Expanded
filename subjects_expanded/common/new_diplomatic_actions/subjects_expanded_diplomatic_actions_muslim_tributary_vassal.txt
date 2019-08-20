@@ -526,7 +526,7 @@ establish_muslim_tributary_vassal = {
 			}
 			export_to_variable = {
 				which = ai_value
-				value = 30
+				value = 10
 			}
 		}
 		add_entry = {
@@ -538,7 +538,7 @@ establish_muslim_tributary_vassal = {
 			}
 			export_to_variable = {
 				which = ai_value
-				value = 25
+				value = 5
 			}
 		}
 		add_entry = {
@@ -958,7 +958,7 @@ ask_for_muslim_tributary_vassal = {
 			}
 			export_to_variable = {
 				which = ai_value
-				value = 30
+				value = 10
 			}
 		}
 		add_entry = {
@@ -970,7 +970,7 @@ ask_for_muslim_tributary_vassal = {
 			}
 			export_to_variable = {
 				which = ai_value
-				value = 25
+				value = 5
 			}
 		}
 		add_entry = {

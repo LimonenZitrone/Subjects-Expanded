@@ -70,3 +70,6 @@
  
  FIEF_OVERLORD_DEMANDED_TROOPS: "Unser Lehnsherr, §Y[From.GetName]§!, hat uns dazu aufgefordert, ihnen Truppen zu senden. Das bedeutet, dass §Y5§! unserer Infanterieeinheiten in ihre Armee überstellt wurden."
  
+ # Triggered Modifiers:
+ HAS_AT_LEAST_3_DOMINIONS_OR_AUTONOMOUS_DOMINIONS_IN_TRADE_COMPANY_REGIONS: "Besitzt mindestens §Y3§! §YHerrschaftsgebiete§! oder §YAutonome Herrschaftsgebiete§! mit Hauptstadt in einer Handelshaus-Region (errichted durch nationale Entscheidungen)"
+ 

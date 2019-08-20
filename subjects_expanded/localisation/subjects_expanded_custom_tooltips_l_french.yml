@@ -70,3 +70,6 @@
  
  FIEF_OVERLORD_DEMANDED_TROOPS: "Our overlord, §Y[From.GetName]§!, demanded that we send troops. This means, §Y5§! of our infantry units were transfered to their army."
  
+ # Triggered Modifiers:
+ HAS_AT_LEAST_3_DOMINIONS_OR_AUTONOMOUS_DOMINIONS_IN_TRADE_COMPANY_REGIONS: "Has at least §Y3§! §YDominions§! or §YAutonomous Dominions§! with their capital in a trade company region (established via decisions)"
+ 

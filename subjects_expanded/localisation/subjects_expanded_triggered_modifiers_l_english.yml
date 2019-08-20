@@ -4,3 +4,6 @@
  has_5_pirate_brotherhood_vassals_triggered_modifier: "Society of Pirate Brotherhoods"
  desc_has_5_pirate_brotherhood_vassals_triggered_modifier: "We have set up a society of Pirate Brotherhoods under us. This will improve our navy as well as reduce their liberty desire."
  
+ has_3_dominions_in_trade_company_region_triggered_modifier: "Three Charter Dominions"
+ desc_has_3_dominions_in_trade_company_region_triggered_modifier: "Found at least three different Dominions in trade company regions."
+ 

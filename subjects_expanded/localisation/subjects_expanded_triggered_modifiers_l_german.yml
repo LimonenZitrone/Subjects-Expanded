@@ -4,3 +4,6 @@
  has_5_pirate_brotherhood_vassals_triggered_modifier: "Gesellschaft aus Piratenbruderschaften"
  desc_has_5_pirate_brotherhood_vassals_triggered_modifier: "Wir haben eine Gesellschaft aus Piratenbruderschaften unter uns aufgebaut. Dies wird unsere Flotte verbessern und ihr Freiheitsstreben verringern."
  
+ has_3_dominions_in_trade_company_region_triggered_modifier: "Drei Handelshaus-Herrschaftsgebiete"
+ desc_has_3_dominions_in_trade_company_region_triggered_modifier: "Gründe mindestens drei Herrschaftsgebiete in Handelshaus-Regionen."
+ 

@@ -5,65 +5,20 @@ This mod adds new subject types and diplomatic actions related to them to add mo
 Currently [i]Subjects Expanded[/i] adds [b]15[/b] new subject types:
 [list]
 [*] Protectorate
-[list]
-[*] A Protectorate gives us some of their trade power in return for technological progress and military protection.
-[/list]
 [*] Puppet State
-[list]
-[*] A Puppet State is a mixture of a vassal and a march. It receives similar bonuses as a march, but can be annexed after 10 years. Furthermore it increases your reputation at home and in foreign countries.
-[/list]
 [*] Dominion
-[list]
-[*] A Dominion behaves like a colonial nation, but has less liberty desire and pays no tariffs to its overlord. They are a little bit less limited than colonial nations in diplomatic actions, but cannot be forced to start colonial wars. Dominions in trade company regions, cannot be individualized, but give a bonus to its overlord's naval forcelimit.
-[/list]
 [*] Autonomous Dominion
-[list]
-[*] An Autonomous Dominion behaves like a colonial nation, but has less liberty desire, pays no tariffs to its overlord and does not join its overlord's wars. They are less limited in diplomatic actions than colonial nations and their overlord can decline helping them in defensive wars. Furthermore they grant two merchants to its overlord. Autonomous Dominions in trade company regions cannot be individualized, but give a bonus to its overlord's naval forcelimit.
-[/list]
 [*] Roman Client Kingdom
-[list]
-[*] A Roman Client Kingdom behaves like a vassal, but has less liberty desire and can only be created by the Roman Empire, Western Roman Empire, and Byzantine Empire. Furthermore, they pay more money to their overlord and are a slightly less restricted in their diplomatic actions than normal vassals. If they border one of our rivals or enemies, Roman Client Kingdoms do not cost a diplomatic relation and as long as you do not have any colonists, they increase your core range by +5% each. When they receive a new heir, he/she has to be acknowledged by you or he/she will not be accepted as rightful heir.
-[/list]
 [*] Voivodeship
-[list]
-[*] A Voivodeship is a mixture of a vassal and a march. It receives similar bonuses as a march, but can be annexed after 10 years. Further more it has increased military expanses and can only be established by Poland or Commonwealth.
-[/list]
 [*] Fiefdom
-[list]
-[*] A Fiefdom is a vassal of the same primary culture. It behaves similar to normal vassals, but has a slightly lower liberty desire, does not join its overlord's wars, and can only be integrated. However, it pays more money to its overlord and the overlord can demand troops from it. Further more it has increased tax income and decreased culture conversion cost and also affects these modifiers for its overlord. It can only be established when having the "Feudal Nobility" government.
-[/list]
 [*] Crusader State
-[list]
-[*] A Crusader State is a mixture of a vassal and a march. It receives bonuses to discipline, manpower, war score cost against other religions and missionary strength. Furthermore, they increase your papal authority and missionary strength and cannot be annexed. They can only be established by the Papal State, Jerusalem, Monastic Orders and Crusader Kingdoms in Europe and a country can only have 2 Crusader States at the same time.
-[/list]
 [*] Salic Union
-[list]
-[*] A Salic Union behaves exactly like a Personal Union, but can be annexed after 10 years. It can only be established in a Salic Reunification war. (Requires Extended Timeline)
-[/list]
 [*] Nahuatl Vassal
-[list]
-[*] A Nahuatl Vassal behaves like a vassal, but does not cost a diplomatic relation and has reduced liberty desire. Furthermore, it gives a bonus for manpower, manpower recovery speed, and province war score cost to its overlord. It can only be established by Nahuatl nations, which did not reform their religion, in Mexico, California, Rio Grande and Central America. If an overlord does not fulfill these requirements, the Nahuatl Vassal will get +100% liberty desire. (Requires El Dorado DLC)
-[/list]
 [*] Peasant Vassal
-[list]
-[*] A Peasant Vassal is a mixture of a vassal and a tributary. It does not join its overlord's wars, is not very limited in its diplomatic actions, has a higher forcelimit, and grants more forcelimit to its overlord than vassals. Furthermore, the overlord can demand tribute from them and receives a bonus to aggressive expansion and a malus to all power cost for each Peasant Vassal. A Peasant Vassal has reduced tax income, but increased production efficiency, army morale, and manpower, however the overlord pays it and it has a slightly higher liberty desire from development than vassals.
-[/list]
 [*] Pirate Brotherhood
-[list]
-[*] A Pirate Brotherhood is a mixture of a vassal and a colonial nation. It can only be established by nations with a Pirate government, at least three ports, and 20 ships, and is locked to Pirate governments itself. It pays tariffs and can have subjects on its own. It has a lower liberty desire than vassals, but is less restricted in its diplomatic actions. It receives a bonus to privateer efficiency, naval forcelimit and naval morale and gives its overlord a bonus to privateer efficiency and naval forcelimit. (Requires Golden Century DLC)
-[/list]
 [*] Imperial Tributary State
-[list]
-[*] An Imperial Tributary State is a mixture of a tributary state and a vassal. It is not restricted in its diplomatic actions, but it cannot declare independence without a war. It pays taxes to its overlord and does not cost a diplomatic relations. It receives a malus on heir chance and army forcelimit and grants its overlord a bonus on vassal income It is locked to monarchy governments and if its ruler dies without a heir or it gets a regency council while the heir is younger than 12 years, it either gets annexed by its overlord or has to declare an independence war. An Imperial Tributary State can only be established by the Roman Empire or any country with the Empire rank and its capital in Europe that has a Dominion or Autonomous Dominion in India on tribal nations or nations in India.
-[/list]
 [*] Sister Republic
-[list]
-[*] A Sister Republic behaves similar to a personal union. However, it is far less restricted in its diplomatic actions and cannot break on the ruler's death. It can only be established by republics and theocracies and a country can have only 1 Sister Republic at the same time. If the overlord and the Sister Republic do not have the same government (republic or theocracy) anymore, the Sister Republic will become free and enter an alliance with its former overlord. Both, the overlord and the Sister Republic, gain an equal bonus on development cost, construction cost and production efficiency.
-[/list]
 [*] Dar al-Sulh Territory
-[list]
-[*] A Dar al-Sulh Territory is a mixture of a vassal and a tributary. In its diplomatic actions it is less restricted than vassals, but more restricted than tributaries. It pays tribute, joins its overlord wars and can only become independent by war, their overlord is not muslim anymore or if the overlord decides it. It can only be established by muslim nations on neighboring non muslim countries. A Dar al-Sulh Territory gains a bonus on tolerance of heathens, national unrest and garrison size. It grants its overlord a bonus on tolerance of heathens, a malus on tolerance of the true faith as well as makes it drift towards legalism. Furthermore, a muslim Dar al-Sulh Territory gains +100% liberty desire and drifts towards mysticism and its overlord will eventually get an event to either release it or make it to a normal vassal, which increases its liberty desire.
-[/list]
 [/list]
 
 You can find more details on the new subjects [url=https://steamcommunity.com/workshop/filedetails/discussion/1834079712/3647273545685194210/]here[/url].

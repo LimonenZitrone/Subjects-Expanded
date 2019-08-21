@@ -79,7 +79,10 @@ You can find more details on the new subjects [url=https://steamcommunity.com/wo
 [h1]Compatibility[/h1]
 [list]
 [*] should be compatible with any DLC
-[*] should be compatible with most mods (that do not edit the countrydiplomacyview.gui file or the declarewar or allianceaction diplomatic action)
+[*] should be compatible with most mods (that do not edit the declarewar or allianceaction diplomatic action)
+[list]
+[*] compatible with Extended Timeline
+[/list]
 [/list]
 
 [h1]Credits[/h1]

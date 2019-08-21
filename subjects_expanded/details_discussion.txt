@@ -174,7 +174,8 @@
 [b]Conditions (possible overlord):[/b]
 [list]
 [*] is not a subject
-[*] has the "Feudal Nobility" government
+[*] has a monarchy government
+[*] has the "Feudal Nobility" government (or any feudal T1 reform of Governments Expanded)
 [/list]
 
 [b]Conditions (possible subject):[/b]

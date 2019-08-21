@@ -1645,7 +1645,34 @@ fief_subject = {
 	# Triggers:
 	is_potential_overlord = {
 		is_subject = no
-		has_reform = feudalism_reform
+		government = monarchy
+		OR = {
+			has_reform = feudalism_reform
+			# Governments Expanded reforms
+			has_reform = french_feudalism
+			has_reform = ancien_regime_reform
+			has_reform = feudalism_reform
+			has_reform = arch_monarchy_reform
+			has_reform = grand_duchy_reform
+			has_reform = lithuania_warlord_duke
+			has_reform = beylik
+			has_reform = kingdom_of_castille_and_leon
+			has_reform = crown_of_castille
+			has_reform = hispanic_kingdom
+			has_reform = crown_of_aragon
+			has_reform = kingdom_of_portugal
+			has_reform = kingdom_of_portugal_and_azures
+			has_reform = crown_of_saint_wenceslaus_2
+			has_reform = office_of_lord_regent_reform
+			has_reform = arch_king_reform
+			has_reform = arch_duchy_reform
+			has_reform = habsburg_monarchy_reform
+			has_reform = austrian_empire_reform
+			has_reform = granadan_iqta_reform
+			# Extended Timeline reforms
+			has_reform = salic_reform
+			has_reform = imperial_march_reform
+		}
 	}
 	
 	# Properties:

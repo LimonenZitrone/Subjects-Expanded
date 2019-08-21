@@ -136,6 +136,13 @@ is_possible_subject_of_subject_type_dominion = {
 		is_subject_of_type = autonomous_dominion
 	}
 	total_development = 100
+	OR = {
+		capital_scope = {
+			is_node_in_trade_company_region = yes
+		}
+		is_year = 1700
+		current_age = age_of_absolutism
+	}
 	# Capital in Trade Range of possible Overlord has to be checked additionally
 }
 
@@ -145,6 +152,13 @@ is_possible_subject_of_subject_type_autonomous_dominion = {
 	is_subject_of = PREV
 	is_subject_of_type = dominion
 	total_development = 300
+	OR = {
+		capital_scope = {
+			is_node_in_trade_company_region = yes
+		}
+		is_year = 1700
+		current_age = age_of_absolutism
+	}
 	# Capital in Trade Range of possible Overlord has to be checked additionally
 }
 

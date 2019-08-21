@@ -183,9 +183,7 @@ increase_colonial_autonomy = {
 								who = FROM
 							}
 							# Calculate Tariff Efficiency
-							variable_arithmetic_trigger = {
-								change_variable = { which = overlord_global_tariffs value = 1 }
-							}
+							change_variable = { which = overlord_global_tariffs value = 1 }
 							multiply_variable = { which = FROM_cn_tariff_percentage which = overlord_global_tariffs }
 							# Calculate Payed Money
 							multiply_variable = { which = FROM_cn_tariff_value which = FROM_cn_tariff_percentage }

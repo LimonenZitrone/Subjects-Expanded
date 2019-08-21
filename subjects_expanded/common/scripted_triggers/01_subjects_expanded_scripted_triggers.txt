@@ -90,7 +90,6 @@ is_possible_subject_of_subject_type_protectorate = {
 			change_variable = { which = their_total_tech_level which = their_dip_tech_level }
 			change_variable = { which = their_total_tech_level which = their_mil_tech_level }
 			change_variable = { which = their_total_tech_level value = -9 }
-			
 			check_variable = { which = their_total_tech_level which = our_total_tech_level }
 		}
 	}

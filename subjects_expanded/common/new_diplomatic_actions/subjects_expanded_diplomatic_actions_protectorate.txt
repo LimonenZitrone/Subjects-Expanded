@@ -383,17 +383,10 @@ establish_protectorate = {
 					divide_variable = { which = their_army_size value = -10 }
 					change_variable = { which = our_army_size which = their_army_size }
 					multiply_variable = { which = their_mil_tech value = -1 }
-					variable_arithmetic_trigger = {
-						change_variable = { which = our_mil_tech which = their_mil_tech }
-					}
+					change_variable = { which = our_mil_tech which = their_mil_tech }
 					multiply_variable = { which = our_mil_tech value = 3 }
-					variable_arithmetic_trigger = {
-						change_variable = { which = military_power which = our_army_size }
-					}
-					variable_arithmetic_trigger =  {
-						change_variable = { which = military_power which = our_mil_tech }
-					}
-					
+					change_variable = { which = military_power which = our_army_size }
+					change_variable = { which = military_power which = our_mil_tech }
 					NOT = { check_variable = { which = military_power value = -39 } }
 				}
 			}
@@ -433,17 +426,10 @@ establish_protectorate = {
 					divide_variable = { which = their_army_size value = -10 }
 					change_variable = { which = our_army_size which = their_army_size }
 					multiply_variable = { which = their_mil_tech value = -1 }
-					variable_arithmetic_trigger = {
-						change_variable = { which = our_mil_tech which = their_mil_tech }
-					}
+					change_variable = { which = our_mil_tech which = their_mil_tech }
 					multiply_variable = { which = our_mil_tech value = 3 }
-					variable_arithmetic_trigger = {
-						change_variable = { which = military_power which = our_army_size }
-					}
-					variable_arithmetic_trigger =  {
-						change_variable = { which = military_power which = our_mil_tech }
-					}
-					
+					change_variable = { which = military_power which = our_army_size }
+					change_variable = { which = military_power which = our_mil_tech }
 					check_variable = { which = military_power value = -39 }
 					NOT = { check_variable = { which = military_power value = 30 } }
 				}
@@ -509,17 +495,10 @@ establish_protectorate = {
 					divide_variable = { which = their_army_size value = -10 }
 					change_variable = { which = our_army_size which = their_army_size }
 					multiply_variable = { which = their_mil_tech value = -1 }
-					variable_arithmetic_trigger = {
-						change_variable = { which = our_mil_tech which = their_mil_tech }
-					}
+					change_variable = { which = our_mil_tech which = their_mil_tech }
 					multiply_variable = { which = our_mil_tech value = 3 }
-					variable_arithmetic_trigger = {
-						change_variable = { which = military_power which = our_army_size }
-					}
-					variable_arithmetic_trigger =  {
-						change_variable = { which = military_power which = our_mil_tech }
-					}
-					
+					change_variable = { which = military_power which = our_army_size }
+					change_variable = { which = military_power which = our_mil_tech }
 					check_variable = { which = military_power value = 30 }
 				}
 			}
@@ -929,17 +908,10 @@ ask_to_become_protectorate = {
 					divide_variable = { which = their_army_size value = -10 }
 					change_variable = { which = our_army_size which = their_army_size }
 					multiply_variable = { which = their_mil_tech value = -1 }
-					variable_arithmetic_trigger = {
-						change_variable = { which = our_mil_tech which = their_mil_tech }
-					}
+					change_variable = { which = our_mil_tech which = their_mil_tech }
 					multiply_variable = { which = our_mil_tech value = 3 }
-					variable_arithmetic_trigger = {
-						change_variable = { which = military_power which = our_army_size }
-					}
-					variable_arithmetic_trigger =  {
-						change_variable = { which = military_power which = our_mil_tech }
-					}
-					
+					change_variable = { which = military_power which = our_army_size }
+					change_variable = { which = military_power which = our_mil_tech }
 					NOT = { check_variable = { which = military_power value = -349 } }
 				}
 			}
@@ -979,17 +951,10 @@ ask_to_become_protectorate = {
 					divide_variable = { which = their_army_size value = -10 }
 					change_variable = { which = our_army_size which = their_army_size }
 					multiply_variable = { which = their_mil_tech value = -1 }
-					variable_arithmetic_trigger = {
-						change_variable = { which = our_mil_tech which = their_mil_tech }
-					}
+					change_variable = { which = our_mil_tech which = their_mil_tech }
 					multiply_variable = { which = our_mil_tech value = 3 }
-					variable_arithmetic_trigger = {
-						change_variable = { which = military_power which = our_army_size }
-					}
-					variable_arithmetic_trigger =  {
-						change_variable = { which = military_power which = our_mil_tech }
-					}
-					
+					change_variable = { which = military_power which = our_army_size }
+					change_variable = { which = military_power which = our_mil_tech }
 					check_variable = { which = military_power value = -349 }
 					NOT = { check_variable = { which = military_power value = 60 } }
 				}
@@ -1055,17 +1020,10 @@ ask_to_become_protectorate = {
 					divide_variable = { which = their_army_size value = -10 }
 					change_variable = { which = our_army_size which = their_army_size }
 					multiply_variable = { which = their_mil_tech value = -1 }
-					variable_arithmetic_trigger = {
-						change_variable = { which = our_mil_tech which = their_mil_tech }
-					}
+					change_variable = { which = our_mil_tech which = their_mil_tech }
 					multiply_variable = { which = our_mil_tech value = 3 }
-					variable_arithmetic_trigger = {
-						change_variable = { which = military_power which = our_army_size }
-					}
-					variable_arithmetic_trigger =  {
-						change_variable = { which = military_power which = our_mil_tech }
-					}
-					
+					change_variable = { which = military_power which = our_army_size }
+					change_variable = { which = military_power which = our_mil_tech }
 					check_variable = { which = military_power value = 60 }
 				}
 			}

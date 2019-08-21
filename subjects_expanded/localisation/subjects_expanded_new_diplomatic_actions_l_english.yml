@@ -194,7 +194,7 @@
  # AI Acceptance Reasons:
  ROOT_FROM_ECONOMIC_POWER_COMPARED: "Relative Economic Strength"
  ROOT_FROM_MILITARY_POWER_COMPARED: "Relative Military Strength"
- FROM_HAS_SUBJECTS: "They have subjects themselves"
+ FROM_HAS_SUBJECTS: "They have subjects on their own"
  FROM_TOTAL_DEVELOPMENT_OVER_200: "They have more than §Y200§! total development"
  NUM_OF_PROTECTORATES: "We already have protectorates"
  FROM_ATTITUDE_TOWARDS_ROOT: "Attitude towards us"

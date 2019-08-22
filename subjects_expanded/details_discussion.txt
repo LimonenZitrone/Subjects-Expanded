@@ -1,5 +1,5 @@
 [u]Here you can find a list of all subjects in the mod, with description and additional information.[/u]
-[*]If a subject gives an additional merchant, the bonuses it gives to its overlord might also be only unlocked if they reached the required amount of provinces for the merchant.[/i]
+If a subject gives an additional merchant, the bonuses it gives to its overlord might also be only unlocked if they reached the required amount of provinces for the merchant.
 
 [h1]Protectorate[/h1]
 [i]A Protectorate gives us some of their trade power in return for technological progress and military protection.[/i]

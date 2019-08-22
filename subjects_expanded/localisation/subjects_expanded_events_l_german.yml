@@ -99,3 +99,7 @@
  subjects_expanded_muslim_tributary_vassal_events3.EVTOPT1: "Hoffentlich wird [Root.Owner.Overlord.GetName] die [Root.Religion.GetName]en Menschen freundlich empfangen."
  subjects_expanded_muslim_tributary_vassal_events3.EVTOPT2: "Das ist nicht mein Problem."
  
+ subjects_expanded_mandala_trade_vassal_events.EVTNAME1: "Mandala-Vasall zu mächtig"
+ subjects_expanded_mandala_trade_vassal_events.EVTDESC1: "Unser Mandala-Vasall §Y[From.GetName]§! ist zu mächtig geworden. Sie haben ihre Chance genutzt und sich unseren Titel angeeignet. Wir sind nun gezwungen, ihnen als ihr Mandala-Vasall zu dienen!"
+ subjects_expanded_mandala_trade_vassal_events1.EVTOPT1: "Das ist eine Katastrophe!"
+ 

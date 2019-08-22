@@ -1,0 +1,22 @@
+# Audax Validator "!" Ignore_1006
+transfer_subjects_of_type_to = {
+	if = {
+		limit = {
+			any_subject_country = {
+				is_subject_of_type = $type$
+			}
+		}
+		every_subject_country = {
+			limit = {
+				is_subject_of_type = $type$
+			}
+			grant_independence = yes
+			$who$ = {
+				create_subject = {
+					subject = PREV
+					subject_type = $type$
+				}
+			}
+		}
+	}
+}

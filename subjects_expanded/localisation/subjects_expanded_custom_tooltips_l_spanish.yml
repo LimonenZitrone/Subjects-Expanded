@@ -23,6 +23,7 @@
  IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_imperial_tributary_state: "Can be made to an §YImperial Tributary State§!"
  IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_sister_republic: "Can be made to a §YSister Republic§!"
  IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_muslim_tributary_vassal: "Can be made to a §YDar al-Sulh Territory§!"
+ IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_mandala_trade_vassal: "Can be made to a §YMandala Vassal§!"
  
  THIS_IS_FORMER_AUTONOMOUS_DOMINION: "Is a former §YDominion§! or a former §YColonial Nation§!"
  
@@ -70,6 +71,8 @@
  ROMAN_CLIENT_KINGDOM_PAYS_YEARLY_MONARCH_POWER: "§Y[From.GetName]§! gives us §G[From.roman_client_kingdom_yearly_adm_from_ruler_var.GetValue]§! Administrative Power, §G[From.roman_client_kingdom_yearly_dip_from_ruler_var.GetValue]§! Diplomatic Power and §G[From.roman_client_kingdom_yearly_mil_from_ruler_var.GetValue]§! Military Power."
  
  FIEF_OVERLORD_DEMANDED_TROOPS: "Our overlord, §Y[From.GetName]§!, demanded that we send troops. This means, §Y5§! of our infantry units were transfered to their army."
+ 
+ ALL_OUR_MANDALA_TRADE_VASSALS_BECOME_MANDALA_TRADE_VASSALS_OF_NEW_OVERLORD: "All [Root.GetAdjective] §YMandala Vassals§! are transfered to §Y[From.GetName]§!.\n"
  
  # Triggered Modifiers:
  HAS_AT_LEAST_3_DOMINIONS_OR_AUTONOMOUS_DOMINIONS_IN_TRADE_COMPANY_REGIONS: "Has at least §Y3§! §YDominions§! or §YAutonomous Dominions§! with their capital in a trade company region (established via decisions)"

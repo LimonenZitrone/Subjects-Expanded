@@ -52,3 +52,6 @@
  declined_establish_muslim_tributary_vassal_opinion: "Forderung nach Dar al-Sulh Territorium abgelehnt"
  declined_ask_for_muslim_tributary_vassal_opinion: "Bitte nach Dar al-Sulh Territorium abgelehnt"
  
+ is_mandala_trade_vassal: "Mandala-Vasall"
+ mandala_trade_vassal_forced: "Mandala-Vasall erzwungen"
+ 

@@ -6,9 +6,18 @@
  cb_sister_republic_offensive_war: "Sister Republics' Offensive War"
  cb_sister_republic_offensive_war_desc: "We have gathered our troops with our Sister Republic, it's time to beat the enemy with combined forces!"
  
+ cb_force_mandala_trade_vassal: "Force Mandala Vassal"
+ cb_force_mandala_trade_vassal_desc: "They are in our sphere of influence and could be benefitial for our economy. We have to force them to pay us tribute!"
+ 
  # War Goals:
  take_capital_force_imperial_tributary_state: "Take Capital"
  take_capital_force_imperial_tributary_state_desc: "The war goal is to conquer the target's capital."
+ 
+ take_capital_force_mandala_trade_vassal: "Take Capital"
+ take_capital_force_mandala_trade_vassal_desc: "The war goal is to conquer the target's capital."
+ 
+ # War Names:
+ MANDALA_WAR_NAME: "$ORDER$ $FIRST$ War of Mandala Enforcement"
  
  # Peace Treaties:
  make_protectorate_desc: "@[From.GetTag] §Y[From.GetName]§! is made to a Protectorate of @[Root.GetTag] §Y[Root.GetName]§!."
@@ -50,4 +59,8 @@
  make_muslim_tributary_vassal_desc: "@[From.GetTag] §Y[From.GetName]§! is made to a Dar al-Sulh Territory of @[Root.GetTag] §Y[Root.GetName]§!. If [From.GetName] is not a monarchy, they will become one."
  CB_ALLOWED_make_muslim_tributary_vassal: "Force Dar al-Sulh Territory"
  PEACE_make_muslim_tributary_vassal: "$TAKERS$ Dar al-Sulh Territory"
+ 
+ make_mandala_trade_vassal_desc: "@[From.GetTag] §Y[From.GetName]§! is made to a Mandala Vassal of @[Root.GetTag] §Y[Root.GetName]§!. If [From.GetName] has Mandala Vassals themselves, they will keep them. All other subjects are transfered to §Y[Root.GetName]§!."
+ CB_ALLOWED_make_mandala_trade_vassal: "Force Mandala Vassal"
+ PEACE_make_mandala_trade_vassal: "$TAKERS$ Mandala Vassal"
  

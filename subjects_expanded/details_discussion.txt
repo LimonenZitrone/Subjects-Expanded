@@ -1,4 +1,5 @@
 [u]Here you can find a list of all subjects in the mod, with description and additional information.[/u]
+[*]If a subject gives an additional merchant, the bonuses it gives to its overlord might also be only unlocked if they reached the required amount of provinces for the merchant.[/i]
 
 [h1]Protectorate[/h1]
 [i]A Protectorate gives us some of their trade power in return for technological progress and military protection.[/i]
@@ -416,4 +417,34 @@
 [*] Dar al-Sulh Territories give their overlord a malus on tolerance of the true faith
 [*] Dar al-Sulh Territories make their overlord drift towards legalism
 [*] Dar al-Sulh Territories may get events to expulse muslims to their overlord, trading province development against religion change
+[/list]
+
+[h1]Mandala Vassal[/h1]
+[i]A Mandala Vassal is a mixture of a vassal and a tributary. It joins its overlord's wars, costs a diplomatic relation and pays tribute to its overlord. It is not as restricted as a normal vassal in its diplomatic actions and can have Mandala Vassals on its own. When establishing a Mandala Vassal, all its current subjects are transfered to its new overlord. It gains a bonus on tax income, trade power and caravan power and grants its overlord a bonus on trade power, prestige and legitimacy, if it has at least 15 provinces. Furthermore, it gives its overlord an additional merchant, if it has 15 or more provinces and receives an additional merchant itself, if it has 25 or more provinces. If a Mandala Vassal becomes too powerful and reaches 75% liberty desire, it can take over its overlord's title and become the overlord itself. Otherwise it can only be established by countries in the South East Asian and Malay culture groups by war in Asia.[/i]
+
+[b]Conditions (possible overlord):[/b]
+[list]
+[*] is either a Mandala Vassal or not a subject or a tributary and is in the South East Asian or Malaya culture group
+[*] has its capital in Asia
+[/list]
+
+[b]Conditions (possible subject):[/b]
+[list]
+[*] is either not a subject, a tributary or a Mandala Vassal
+[*] is either the overlord of the potential overlord or the potential overlord is not a Mandala Vassal
+[*] has its capital in Asia
+[*] is not a subject of the possible overlord
+[/list]
+
+[b]Additional Information:[/b]
+[list]
+[*] Mandala Vassals can be established diplomatically or by war (diplomatically only by a Mandala Vassal on its overlord)
+[*] Mandala Vassals keep their Mandala Vassals when they are established by war, but cannot create new ones while they are a Mandala Vassals
+[*] Mandala Vassals transfer their vassals, client vassals, marches, client marches, and a few as vassal counting subjects (if they are able to have them) when established to their new overlord
+[*] Mandala Vassals can overthrow their overlord and make them their Mandala Vassal if they have 75% liberty desire
+[*] Mandala Vassals pay tribute
+[*] Mandala Vassals gain a bonus on tax income, trade power and caravan power
+[*] Mandala Vassals grant their overlord a bonus on trade power, prestige and legitimacy
+[*] Mandala Vassals give their overlord a merchant if they have 15 provinces, but gain a merchant themselves as well as liberty desire if they have 25 provinces
+[*] Mandala Vassals also gain liberty desire from having a larger army than their overlord, a larger army than 70 units, more prestige than their overlord, more legitimacy than their overlord, having a Mandate Vassal themselves, being strongest trade power in a node of their overlord and their overlord having less than 50 legitimacy
 [/list]

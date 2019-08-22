@@ -354,6 +354,25 @@ is_possible_subject_of_subject_type_muslim_tributary_vassal = {
 	}
 }
 
+is_possible_subject_of_subject_type_mandala_trade_vassal = {
+	# PREVs in THIS scope refer to possible overlord
+	OR = {
+		is_subject = no
+		is_subject_of_type = tributary_state
+		is_subject_of_type = mandala_trade_vassal
+	}
+	OR = {
+		PREV = {
+			NOT = { is_subject_of_type = mandala_trade_vassal }
+		}
+		overlord_of = PREV
+	}
+	capital_scope = {
+		continent = asia
+	}
+	NOT = { is_subject_of = PREV }
+}
+
 can_create_subject_type = {
 	can_be_overlord = $subject_type$
 	$subject$ = {

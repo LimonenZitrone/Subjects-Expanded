@@ -11,3 +11,17 @@ take_capital_force_imperial_tributary_state = {
 	
 	war_name = TRIBUTARY_MISSION_WAR_NAME
 }
+
+take_capital_force_mandala_trade_vassal = {
+	type = take_capital
+	
+	badboy_factor = 0.5
+	prestige_factor = 1.5
+	peace_cost_factor = 0.5
+	
+	peace_options = {
+		make_mandala_trade_vassal
+	}
+	
+	war_name = MANDALA_WAR_NAME
+}

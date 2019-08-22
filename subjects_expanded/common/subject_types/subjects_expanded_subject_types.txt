@@ -14,6 +14,7 @@ pirate_brotherhood_vassal = { }
 imperial_tributary_state = { }
 sister_republic = { }
 muslim_tributary_vassal = { }
+mandala_trade_vassal = { }
 
 # Subjects
 protectorate = {
@@ -2451,4 +2452,178 @@ muslim_tributary_vassal = {
 
 	overlord_opinion_modifier = is_muslim_tributary_vassal
 	subject_opinion_modifier = is_muslim_tributary_vassal
+}
+
+mandala_trade_vassal = {
+	copy_from = default
+	count = vassal
+	
+	# Graphics:
+	sprite = GFX_icon_mandala_trade_vassal
+	diplomacy_overlord_sprite = GFX_diplomacy_leadmandala_trade_vassal
+	diplomacy_subject_sprite = GFX_diplomacy_ammandala_trade_vassal
+
+	# Triggers:
+	is_potential_overlord = {
+		OR = {
+			AND = {
+				OR = {
+					is_subject = no
+					is_subject_of_type = tributary_state
+				}
+				OR = {
+					culture_group = malay
+					culture_group = southeastasian_group
+				}
+			}
+			is_subject_of_type = mandala_trade_vassal
+		}
+		capital_scope = {
+			continent = asia
+		}
+	}
+	
+	# Properties:
+	can_send_tribute = yes
+	transfer_trade_power = yes
+	overlord_can_be_subject = yes
+	uses_military_focus = no
+	overlord_enforce_peace_attacking = yes
+	allows_taking_land_without_independence = yes
+	can_transfer_in_peace = no
+	can_set_mil_focus = no
+	can_send_missionary_to_subject = no
+	
+	cities_required_for_bonuses = 15
+	trust_on_start = 25
+
+	liberty_desire_negative_prestige = 0.5
+	liberty_desire_development_ratio = 0.2
+	military_focus = 0.66
+
+	relative_power_class = 1
+	diplomacy_view_class = 1
+
+	can_fight = {
+		neighboring_primitives = yes
+		other_overlord = mandala_trade_vassal
+		other_overlord = tributary_state
+		same_overlord = mandala_trade_vassal
+		same_overlord = tributary_state
+	}
+	can_rival = {
+		neighboring_primitives = yes
+		other_overlord = mandala_trade_vassal
+		other_overlord = tributary_state
+		same_overlord = mandala_trade_vassal
+		same_overlord = tributary_state
+	}
+	can_ally = {
+		neighboring_primitives = yes
+		other_overlord = mandala_trade_vassal
+		other_overlord = tributary_state
+		same_overlord = mandala_trade_vassal
+		same_overlord = tributary_state
+	}
+	can_marry = {
+		neighboring_primitives = yes
+		other_overlord = mandala_trade_vassal
+		other_overlord = tributary_state
+		same_overlord = mandala_trade_vassal
+		same_overlord = tributary_state
+	}
+
+	# Subject Interactions:
+	# (continuous)
+	divert_trade = yes
+	# (immediate)
+	enforce_religion = no
+	siphon_income = yes
+	grant_core_claim = no
+	sacrifice_ruler = yes
+	sacrifice_heir = yes
+	takeondebt = no
+	send_additional_troops = yes
+	demand_artifacts = yes
+	demand_additional_tribute = yes
+	conscript_general = yes
+	
+	# Modifiers:
+	modifier_subject = clear
+	modifier_subject = {
+		modifier = subject_nation
+	}
+	modifier_subject = {
+		modifier = mandala_trade_vassal_modifier
+	}
+	modifier_subject = {
+		trigger = {
+			army_size = FROM
+		}
+		modifier = mandala_trade_vassal_large_army_modifier
+	}
+	modifier_subject = {
+		trigger = {
+			army_size = 70
+		}
+		modifier = mandala_trade_vassal_large_army_modifier
+	}
+	modifier_subject = {
+		trigger = {
+			FROM = {
+				any_owned_province = {
+					is_strongest_trade_power = ROOT
+				}
+			}
+		}
+		modifier = mandala_trade_vassal_is_strongest_trade_power_modifier
+	}
+	modifier_subject = {
+		trigger = {
+			any_subject_country = {
+				is_subject_of_type = mandala_trade_vassal
+			}
+		}
+		modifier = mandala_trade_vassal_has_mandalas_on_its_own_modifier
+	}
+	modifier_subject = {
+		trigger = {
+			prestige = FROM
+		}
+		modifier = mandala_trade_vassal_high_prestige_modifier
+	}
+	modifier_subject = {
+		trigger = {
+			legitimacy_equivalent = FROM
+		}
+		modifier = mandala_trade_vassal_high_legitimacy_modifier
+	}
+	modifier_subject = {
+		trigger = {
+			FROM = {
+				NOT = { legitimacy_equivalent = 50 }
+			}
+		}
+		modifier = mandala_trade_vassal_overlord_has_low_legitimacy_modifier
+	}
+	modifier_subject = {
+		trigger = {
+			num_of_cities = 25
+		}
+		modifier = mandala_trade_vassal_large_amount_of_cities_modifier
+	}
+	
+	modifier_overlord = clear
+	modifier_overlord = {
+		modifier = mandala_trade_vassal_overlord_modifier
+	}
+	modifier_overlord = {
+		modifier = large_colonial_nation
+		trigger = {
+			num_of_cities = 20
+		}
+	}
+
+	overlord_opinion_modifier = is_mandala_trade_vassal
+	subject_opinion_modifier = is_mandala_trade_vassal
 }

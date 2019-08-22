@@ -195,3 +195,13 @@ declined_ask_for_muslim_tributary_vassal_opinion = {
 	yearly_decay = 1
 	min = -100
 }
+
+is_mandala_trade_vassal = {
+	opinion = 30
+}
+
+mandala_trade_vassal_forced = {
+	opinion = -50
+	yearly_decay = 3
+	min = -50
+}

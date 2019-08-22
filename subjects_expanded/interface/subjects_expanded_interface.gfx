@@ -181,4 +181,17 @@ spriteTypes = {
 		name = "GFX_diplomacy_ammuslim_tributary_vassal"
 		texturefile = "gfx//interface//icon_diplomacy_ammuslim_tributary_vassal.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_icon_mandala_trade_vassal"
+		texturefile = "gfx/interface/icon_mandala_trade_vassal.dds"
+	}
+	spriteType = {
+		name = "GFX_diplomacy_leadmandala_trade_vassal"
+		texturefile = "gfx//interface//icon_diplomacy_leadmandala_trade_vassal.dds"
+	}
+	spriteType = {
+		name = "GFX_diplomacy_ammandala_trade_vassal"
+		texturefile = "gfx//interface//icon_diplomacy_ammandala_trade_vassal.dds"
+	}
 }

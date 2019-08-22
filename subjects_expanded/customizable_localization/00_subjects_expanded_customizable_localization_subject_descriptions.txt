@@ -162,3 +162,14 @@ defined_text = {
 		localisation_key = muslim_tributary_vassal_long_desc
 	}
 }
+
+defined_text = {
+	name = mandala_trade_vassal_desc
+	
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = mandala_trade_vassal_long_desc
+	}
+}

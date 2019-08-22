@@ -187,6 +187,15 @@
  cancel_muslim_tributary_vassal_tooltip: "Cancel the vassalisation of §Y[From.GetName]§! and grant them independence.\n"
  
  
+ establish_mandala_trade_vassal_title: "Overthrow Overlord"
+ establish_mandala_trade_vassal_desc: "Do you want to overthrow your overlord §Y[From.GetName]§! and upsurp their title, claiming all of their Mandala Vassals as yours and making §Y[From.GetName]§! to your Mandala Vassal as well? \n[mandala_trade_vassal_desc] \nThis will change their prestige by §G-10§! and their stability by §G-1§!. \nThis will give us a truce with §Y[From.GetName]§! for §Y5 years§!."
+ establish_mandala_trade_vassal_tooltip: "Make §Y[From.GetName]§! to a [Root.GetAdjective] §YMandala Vassal§!.\n"
+ 
+ cancel_mandala_trade_vassal_title: "Release Mandala Vassal"
+ cancel_mandala_trade_vassal_desc: "Cancel the dependency of §Y[From.GetName]§! of us. This will decrease their opinion about us by §R-200§!, if their liberty desire is below §Y50%§!. We will also lose §R-25§! prestige and gain a truce with them for §Y5 years§!."
+ cancel_mandala_trade_vassal_tooltip: "Cancel the vassalisation of §Y[From.GetName]§! and grant them independence.\n"
+ 
+ 
  return_subject_to_vassal_title: "Demote to Vassal"
  return_subject_to_vassal_desc: "Cancel the current status §Y[From.GetName]§! has and make them to a vassal. This will decrease their opinion of us by §R-100§! and change their liberty desire by §R+25%§!. We will also lose §R-10§! prestige."
  return_subject_to_vassal_tooltip: "Make §Y[From.GetName]§! to a vassal again.\n"

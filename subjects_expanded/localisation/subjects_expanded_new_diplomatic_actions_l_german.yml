@@ -187,6 +187,15 @@
  cancel_muslim_tributary_vassal_tooltip: "Beedet die Vasallisierung von §Y[From.GetName]§! und entlasst sie in die Freiheit.\n"
  
  
+ establish_mandala_trade_vassal_title: "Lehnsherr stürzen"
+ establish_mandala_trade_vassal_desc: "Wollt Ihr Euren Lehnsherrn §Y[From.GetName]§! stürzen und Euch ihren Titel aneignen, wodurch Ihr alle ihre Mandala-Vasallen als Eure beansprucht und auch §Y[From.GetName]§! zu Eurem Mandala-Vasall wird? \n[mandala_trade_vassal_desc] \nDies wird ihr Prestige um §G-10§! und ihre Stabilität um §G-1§! ändern. \nDies wird uns einen §Y5-jährigen§! Waffenstillstand mit ihnen geben."
+ establish_mandala_trade_vassal_tooltip: "Macht §Y[From.GetName]§! zu einem [Root.GetAdjective]en §YMandala-Vasall§!.\n"
+ 
+ cancel_mandala_trade_vassal_title: "Mandala-Vasall entlassen"
+ cancel_mandala_trade_vassal_desc: "Beendet das Abhängigkeitsverhältnis von §Y[From.GetName]§! zu uns. Dies wird ihre Meinung über uns um §R-200§! verschlechtern, sofern sie ein Freiheitsstreben unter §Y50%§! besitzen. Außerdem verlieren wir §R-25§! Prestige und erhalten eine §Y5-jährige§! Waffenruhe mit ihnen."
+ cancel_mandala_trade_vassal_tooltip: "Beedet die Vasallisierung von §Y[From.GetName]§! und entlasst sie in die Freiheit.\n"
+ 
+ 
  return_subject_to_vassal_title: "Zum Vasall degradieren"
  return_subject_to_vassal_desc: "Beendet den derzeitigen Status von §Y[From.GetName]§! und macht sie zu einem Vasallen. Dies wird ihre Meinung über uns um §R-100§! verschlechtern und ihr Freiheitsstreben um §R+25%§! ändern. Außerdem verlieren wir §R-10§! Prestige."
  return_subject_to_vassal_tooltip: "Macht §Y[From.GetName]§! wieder zu einem Vasall.\n"

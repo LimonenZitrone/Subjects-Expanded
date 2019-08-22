@@ -52,3 +52,6 @@
  declined_establish_muslim_tributary_vassal_opinion: "Demand of Dar al-Sulh Territory declined"
  declined_ask_for_muslim_tributary_vassal_opinion: "Offer for Dar al-Sulh Territory declined"
  
+ is_mandala_trade_vassal: "Mandala Vassal"
+ mandala_trade_vassal_forced: "Forced Mandala Vassal"
+ 

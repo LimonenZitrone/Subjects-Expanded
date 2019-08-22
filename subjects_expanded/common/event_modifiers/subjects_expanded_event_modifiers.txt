@@ -668,6 +668,61 @@ muslim_tributary_vassal_overlord_modifier = {
 	tolerance_own = -0.2
 }
 
+# Subject Type: Mandala Vassal
+mandala_trade_vassal_modifier = {
+	global_tax_income = 6
+	global_trade_power = 0.25
+	caravan_power = 0.1
+}
+
+mandala_trade_vassal_large_army_modifier = {
+	liberty_desire = 10
+	land_maintenance_modifier = -0.1
+}
+
+mandala_trade_vassal_is_strongest_trade_power_modifier = {
+	liberty_desire = 15
+	trade_range_modifier = 0.2
+}
+
+mandala_trade_vassal_has_mandalas_on_its_own_modifier = {
+	liberty_desire = 25
+	prestige = 0.25
+}
+
+mandala_trade_vassal_high_prestige_modifier = {
+	liberty_desire = 5
+	prestige = 0.5
+}
+
+mandala_trade_vassal_high_legitimacy_modifier = {
+	liberty_desire = 10
+	legitimacy = 0.5
+	devotion = 0.5
+	horde_unity = 0.5
+	meritocracy = 0.5
+	republican_tradition = 0.25
+}
+
+mandala_trade_vassal_overlord_has_low_legitimacy_modifier = {
+	liberty_desire = 20
+}
+
+mandala_trade_vassal_large_amount_of_cities_modifier = {
+	liberty_desire = 15
+	merchants = 1
+}
+
+mandala_trade_vassal_overlord_modifier = {
+	global_trade_power = 0.05
+	prestige = 0.05
+	legitimacy = 0.05
+	meritocracy = 0.05
+	horde_unity = 0.05
+	devotion = 0.05
+	republican_tradition = 0.02
+}
+
 # Modifiers that function as timers
 protectorate_got_monarch_power_this_year = {
 }

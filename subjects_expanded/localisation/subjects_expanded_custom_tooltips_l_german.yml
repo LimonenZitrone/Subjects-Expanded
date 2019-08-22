@@ -23,6 +23,7 @@
  IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_imperial_tributary_state: "Kann zu einem §YKaiserlichen Tributstaat§! gemacht werden"
  IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_sister_republic: "Kann zu einer §YSchwesterrepublik§! gemacht werden"
  IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_muslim_tributary_vassal: "Kann zu einem §YDar al-Sulh Territorium§! gemacht werden"
+ IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_mandala_trade_vassal: "Kann zu einem §YMandala-Vasall§! gemacht werden"
  
  THIS_IS_FORMER_AUTONOMOUS_DOMINION: "Ist ein ehemaliges §YHerrschaftsgebiet§! oder eine ehemalige §YKolonialnation§!"
  
@@ -70,6 +71,8 @@
  ROMAN_CLIENT_KINGDOM_PAYS_YEARLY_MONARCH_POWER: "§Y[From.GetName]§! gibt uns §G[From.roman_client_kingdom_yearly_adm_from_ruler_var.GetValue]§! administrative Macht, §G[From.roman_client_kingdom_yearly_dip_from_ruler_var.GetValue]§! diplomatische Macht und §G[From.roman_client_kingdom_yearly_mil_from_ruler_var.GetValue]§! militärische Macht."
  
  FIEF_OVERLORD_DEMANDED_TROOPS: "Unser Lehnsherr, §Y[From.GetName]§!, hat uns dazu aufgefordert, ihnen Truppen zu senden. Das bedeutet, dass §Y5§! unserer Infanterieeinheiten in ihre Armee überstellt wurden."
+ 
+ ALL_OUR_MANDALA_TRADE_VASSALS_BECOME_MANDALA_TRADE_VASSALS_OF_NEW_OVERLORD: "Alle [Root.GetAdjective]en §YMandala-Vasallen§! werden an §Y[From.GetName]§! übergeben.\n"
  
  # Triggered Modifiers:
  HAS_AT_LEAST_3_DOMINIONS_OR_AUTONOMOUS_DOMINIONS_IN_TRADE_COMPANY_REGIONS: "Besitzt mindestens §Y3§! §YHerrschaftsgebiete§! oder §YAutonome Herrschaftsgebiete§! mit Hauptstadt in einer Handelshaus-Region (errichted durch nationale Entscheidungen)"

@@ -159,3 +159,13 @@
  muslim_tributary_vassal_same_religion_modifier: "Muslimisches Dar al-Sulh Territorium"
  muslim_tributary_vassal_overlord_modifier: "Besitzt Dar al-Sulh Territorien"
  
+ mandala_trade_vassal_modifier: "Mandala-Vasall"
+ mandala_trade_vassal_large_army_modifier: "Große Armee"
+ mandala_trade_vassal_is_strongest_trade_power_modifier: "Stärkste Handelsmacht in einem unserer Handelsknoten"
+ mandala_trade_vassal_has_mandalas_on_its_own_modifier: "Besitzt selbst Mandala-Vasallen"
+ mandala_trade_vassal_high_prestige_modifier: "Hohes Prestige"
+ mandala_trade_vassal_high_legitimacy_modifier: "Hohe Legitimität"
+ mandala_trade_vassal_overlord_has_low_legitimacy_modifier: "Illegitimer Lehnsherr"
+ mandala_trade_vassal_large_amount_of_cities_modifier: "Hohe Anzahl an Städten"
+ mandala_trade_vassal_overlord_modifier: "Besitzt Mandala-Vasallen"
+ 

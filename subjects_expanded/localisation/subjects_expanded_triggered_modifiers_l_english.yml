@@ -7,3 +7,14 @@
  has_3_dominions_in_trade_company_region_triggered_modifier: "Three Charter Dominions"
  desc_has_3_dominions_in_trade_company_region_triggered_modifier: "Found at least three different Dominions in trade company regions."
  
+ early_fiefdom_no_dip_cost_1: "Feudalism"
+ desc_early_fiefdom_no_dip_cost_1: "During these ages, we gain §Y1§! additional possible diplomatic relation per §Y2§! Fiefdoms, making one Fiefdom not costing a relation slot effectively. This is capped at §Y10§! Fiefdoms."
+ early_fiefdom_no_dip_cost_2: "Feudalism"
+ desc_early_fiefdom_no_dip_cost_2: "During these ages, we gain §Y1§! additional possible diplomatic relation per §Y2§! Fiefdoms, making one Fiefdom not costing a relation slot effectively. This is capped at §Y10§! Fiefdoms."
+ early_fiefdom_no_dip_cost_3: "Feudalism"
+ desc_early_fiefdom_no_dip_cost_3: "During these ages, we gain §Y1§! additional possible diplomatic relation per §Y2§! Fiefdoms, making one Fiefdom not costing a relation slot effectively. This is capped at §Y10§! Fiefdoms."
+ early_fiefdom_no_dip_cost_4: "Feudalism"
+ desc_early_fiefdom_no_dip_cost_4: "During these ages, we gain §Y1§! additional possible diplomatic relation per §Y2§! Fiefdoms, making one Fiefdom not costing a relation slot effectively. This is capped at §Y10§! Fiefdoms."
+ early_fiefdom_no_dip_cost_5: "Feudalism"
+ desc_early_fiefdom_no_dip_cost_5: "During these ages, we gain §Y1§! additional possible diplomatic relation per §Y2§! Fiefdoms, making one Fiefdom not costing a relation slot effectively. This is capped at §Y10§! Fiefdoms."
+ 

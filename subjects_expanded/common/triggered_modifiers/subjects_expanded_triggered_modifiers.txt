@@ -64,3 +64,195 @@ has_3_dominions_in_trade_company_region_triggered_modifier = {
 	
 	monthly_splendor = 2
 }
+
+early_fiefdom_no_dip_cost_1 = {
+	potential = {
+		OR = {
+			current_age = feudal_age
+			current_age = high_middle_ages
+			current_age = late_middle_ages
+		}
+		calc_true_if = {
+			all_subject_country = {
+				is_subject_of_type = fief_subject
+			}
+			amount = 2
+		}
+		NOT = {
+			calc_true_if = {
+				all_subject_country = {
+					is_subject_of_type = fief_subject
+				}
+				amount = 4
+			}
+		}
+	}
+	
+	trigger = {
+		OR = {
+			current_age = feudal_age
+			current_age = high_middle_ages
+			current_age = late_middle_ages
+		}
+		calc_true_if = {
+			all_subject_country = {
+				is_subject_of_type = fief_subject
+			}
+			amount = 2
+		}
+	}
+	
+	diplomatic_upkeep = 1
+}
+
+early_fiefdom_no_dip_cost_2 = {
+	potential = {
+		OR = {
+			current_age = feudal_age
+			current_age = high_middle_ages
+			current_age = late_middle_ages
+		}
+		calc_true_if = {
+			all_subject_country = {
+				is_subject_of_type = fief_subject
+			}
+			amount = 4
+		}
+		NOT = {
+			calc_true_if = {
+				all_subject_country = {
+					is_subject_of_type = fief_subject
+				}
+				amount = 6
+			}
+		}
+	}
+	
+	trigger = {
+		OR = {
+			current_age = feudal_age
+			current_age = high_middle_ages
+			current_age = late_middle_ages
+		}
+		calc_true_if = {
+			all_subject_country = {
+				is_subject_of_type = fief_subject
+			}
+			amount = 4
+		}
+	}
+	
+	diplomatic_upkeep = 2
+}
+
+early_fiefdom_no_dip_cost_3 = {
+	potential = {
+		OR = {
+			current_age = feudal_age
+			current_age = high_middle_ages
+			current_age = late_middle_ages
+		}
+		calc_true_if = {
+			all_subject_country = {
+				is_subject_of_type = fief_subject
+			}
+			amount = 6
+		}
+		NOT = {
+			calc_true_if = {
+				all_subject_country = {
+					is_subject_of_type = fief_subject
+				}
+				amount = 8
+			}
+		}
+	}
+	
+	trigger = {
+		OR = {
+			current_age = feudal_age
+			current_age = high_middle_ages
+			current_age = late_middle_ages
+		}
+		calc_true_if = {
+			all_subject_country = {
+				is_subject_of_type = fief_subject
+			}
+			amount = 6
+		}
+	}
+	
+	diplomatic_upkeep = 3
+}
+
+early_fiefdom_no_dip_cost_4 = {
+	potential = {
+		OR = {
+			current_age = feudal_age
+			current_age = high_middle_ages
+			current_age = late_middle_ages
+		}
+		calc_true_if = {
+			all_subject_country = {
+				is_subject_of_type = fief_subject
+			}
+			amount = 8
+		}
+		NOT = {
+			calc_true_if = {
+				all_subject_country = {
+					is_subject_of_type = fief_subject
+				}
+				amount = 10
+			}
+		}
+	}
+	
+	trigger = {
+		OR = {
+			current_age = feudal_age
+			current_age = high_middle_ages
+			current_age = late_middle_ages
+		}
+		calc_true_if = {
+			all_subject_country = {
+				is_subject_of_type = fief_subject
+			}
+			amount = 8
+		}
+	}
+	
+	diplomatic_upkeep = 4
+}
+
+early_fiefdom_no_dip_cost_5 = {
+	potential = {
+		OR = {
+			current_age = feudal_age
+			current_age = high_middle_ages
+			current_age = late_middle_ages
+		}
+		calc_true_if = {
+			all_subject_country = {
+				is_subject_of_type = fief_subject
+			}
+			amount = 10
+		}
+	}
+	
+	trigger = {
+		OR = {
+			current_age = feudal_age
+			current_age = high_middle_ages
+			current_age = late_middle_ages
+		}
+		calc_true_if = {
+			all_subject_country = {
+				is_subject_of_type = fief_subject
+			}
+			amount = 10
+		}
+	}
+	
+	diplomatic_upkeep = 5
+}

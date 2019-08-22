@@ -328,6 +328,7 @@ If a subject gives an additional merchant, the bonuses it gives to its overlord 
 [*] Pirate Brotherhoods grant their overlord a bonus on privateer efficiency and naval forcelimit
 [*] having at least 5 Pirate Brotherhoods grants the overlord a bonus on navy tradition, ship cost and ship durability and lowers the Pirate Brotherhoods' liberty desire
 [*] releasing a Pirate Brotherhood will create an alliance between them and the former overlord
+[*] if a Pirate Brotherhood has national rebels be successful, the spawned nation will become a subject of the Pirate Brotherhood's overlord
 [/list]
 
 [h1]Imperial Tributary State[/h1]
@@ -447,4 +448,31 @@ If a subject gives an additional merchant, the bonuses it gives to its overlord 
 [*] Mandala Vassals grant their overlord a bonus on trade power, prestige and legitimacy
 [*] Mandala Vassals give their overlord a merchant if they have 15 provinces, but gain a merchant themselves as well as liberty desire if they have 25 provinces
 [*] Mandala Vassals also gain liberty desire from having a larger army than their overlord, a larger army than 70 units, more prestige than their overlord, more legitimacy than their overlord, having a Mandate Vassal themselves, being strongest trade power in a node of their overlord and their overlord having less than 50 legitimacy
+[/list]
+
+[h1]Integrated Tribe[/h1]
+[i]An Integrated Tribe is a mixture of a vassal and a tributary. It joins its overlord's wars, costs a diplomatic relation and pays tribute to its overlord. It is not as restricted as a normal vassal in its diplomatic actions. If scutage is activated, it pays 10% of its yearly manpower to its overlord, if it doesn't have the same culture as its overlord, otherwise it pays 25%. It can pay an additional tribute to its overlord every 5 years, if it wants to. It has a slightly reduced liberty desire and can only become independent by war. An Integrated Tribe can only be established by tribal nations or by nations in the Caucasia region that are in the Caucasian culture group on other tribals or Caucasian nations in Caucasia.[/i]
+
+[b]Conditions (possible overlord):[/b]
+[list]
+[*] is not a subject
+[*] is either a tribal nation or is in the Caucasian culture group, has its capital in the Caucasia region and it's either the Age of Discovery or an earlier age of the Extended Timeline mod
+[/list]
+
+[b]Conditions (possible subject):[/b]
+[list]
+[*] is a vassal of the possible overlord
+[*] is a tribal nation or is in the caucasian culture group and has its capital in the Caucasia region
+[*] has its capital on the same continent as the potential overlord
+[/list]
+
+[b]Additional Information:[/b]
+[list]
+[*] Integrated Tribes only pay manpower if scutage is enabled
+[*] Integrated Tribes can pay an additional tribute of 10% of their yearly manpower every 5 years
+[*] Integrated Tribes receive a malus on national unrest if they have a different culture than their overlord
+[*] Integrated Tribes gain a bonus on national unrest if they have the same culture as their overlord
+[*] Integrated Tribes pay tribute
+[*] the overlord of Integrated Tribes is always called to arms, if they are attacked, giving him the option to decline
+[*] if an Integrated Tribe has national rebels be successful, the spawned nation will become a subject of the Integrated Tribe's overlord
 [/list]

@@ -1,4 +1,4 @@
-﻿l_french:
+﻿:
  protectorate_modifier: "Protectorate"
  protectorate_institution_modifier_1: "Protectorate"
  protectorate_institution_modifier_2: "Protectorate"
@@ -168,4 +168,7 @@
  mandala_trade_vassal_overlord_has_low_legitimacy_modifier: "Illegitimate Overlord"
  mandala_trade_vassal_large_amount_of_cities_modifier: "Large Amount of Cities"
  mandala_trade_vassal_overlord_modifier: "Has Mandala Vassals"
+ 
+ integrated_tribe_subject_same_culture_modifier: "Integrated Tribe with Overlord's Culture"
+ integrated_tribe_subject_different_culture_modifier: "Integrated Tribe"
  

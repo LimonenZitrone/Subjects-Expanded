@@ -723,6 +723,15 @@ mandala_trade_vassal_overlord_modifier = {
 	republican_tradition = 0.1
 }
 
+# Subject Type: Integrated Tribe
+integrated_tribe_subject_same_culture_modifier = {
+	global_unrest = -2
+}
+
+integrated_tribe_subject_different_culture_modifier = {
+	global_unrest = 5
+}
+
 # Modifiers that function as timers
 protectorate_got_monarch_power_this_year = {
 }
@@ -737,4 +746,10 @@ cooldown_demand_troops_from_fief_subject = {
 }
 
 cooldown_demand_manpower_from_autonomous_dominion = {
+}
+
+cooldown_integrated_tribe_subject_give_additional_tribute_to_overlord = {
+}
+
+cooldown_integrated_tribe_subject_paid_tribute = {
 }

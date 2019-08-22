@@ -24,6 +24,7 @@
  IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_sister_republic: "Can be made to a §YSister Republic§!"
  IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_muslim_tributary_vassal: "Can be made to a §YDar al-Sulh Territory§!"
  IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_mandala_trade_vassal: "Can be made to a §YMandala Vassal§!"
+ IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_integrated_tribe_subject: "Can be made to an §YIntegrated Tribe§!"
  
  THIS_IS_FORMER_AUTONOMOUS_DOMINION: "Is a former §YDominion§! or a former §YColonial Nation§!"
  
@@ -34,6 +35,8 @@
  
  CANNOT_ALLY_OVERLORD_RIVAL: "You cannot ally a rival of your overlord."
  CANNOT_ALLY_SISTER_REPUBLIC_RIVAL: "You cannot ally a rival of your Sister Republic."
+ 
+ CANNOT_DECLARE_WAR_ON_NON_PRIMITIVE_NON_INTEGRATED_TRIBE: "Integrated tribes can only declare war on neighboring primitives and Integrated Tribes of other overlords."
  
  # New Diplomatic Actions:
  DID_NOT_LOWER_DEVELOPMENT_WITHIN_LAST_10_YEARS: "Did NOT reduce the development of an autonomous dominion within the last §Y10 years§!"
@@ -54,6 +57,8 @@
  
  DID_NOT_GED_DENIED_TO_BECOME_IMPERIAL_TRIBUTARY_STATE_WITHIN_LAST_5_YEARS: "Was NOT declined to become an Imperial Tributary State within the last §Y5 years§!"
  
+ INTEGRATED_TRIBE_SUBJECT_DID_NOT_SEND_ADDITIONAL_TRIBUTE_WITHIN_LAST_5_YEARS: "Did NOT send additional tribute within the last §Y5 years§!"
+ 
  # Decisions:
  ALL_PROVINCES_IN_INDIAN_TRADE_COMPANY_REGIONS_CEDED_TO_DOMINION: "\nAll our provinces in [Root.GetIndianTradeCompanyRegionsSgPl] [Root.GetFirstIndianTradeCompanyRegionWeCede][Root.GetSecondIndianTradeCompanyRegionWeCede][Root.GetThirdIndianTradeCompanyRegionWeCede][Root.GetFourthIndianTradeCompanyRegionWeCede][Root.GetFifthIndianTradeCompanyRegionWeCede] are ceded to our dominion \n[Root.GetCreatedADNameIndia], which is released there."
  ALL_PROVINCES_IN_EAST_INDIES_TRADE_COMPANY_REGIONS_CEDED_TO_DOMINION: "\nAll our provinces in [Root.GetEastIndiesTradeCompanyRegionsSgPl] [Root.GetFirstEastIndiesTradeCompanyRegionWeCede][Root.GetSecondEastIndiesTradeCompanyRegionWeCede] are ceded to our dominion \n[Root.GetCreatedADNameEastIndies], which is released there."
@@ -73,6 +78,8 @@
  FIEF_OVERLORD_DEMANDED_TROOPS: "Our overlord, §Y[From.GetName]§!, demanded that we send troops. This means, §Y5§! of our infantry units were transfered to their army."
  
  ALL_OUR_MANDALA_TRADE_VASSALS_BECOME_MANDALA_TRADE_VASSALS_OF_NEW_OVERLORD: "All [Root.GetAdjective] §YMandala Vassals§! are transfered to §Y[From.GetName]§!.\n"
+ 
+ INTEGRATED_TRIBE_SUBJECT_PAYS_YEARLY_MANPOWER: "§Y[From.GetName]§! gives us §G[From.integrated_tribe_subject_yearly_manpower_var.GetValue]§! manpower."
  
  # Triggered Modifiers:
  HAS_AT_LEAST_3_DOMINIONS_OR_AUTONOMOUS_DOMINIONS_IN_TRADE_COMPANY_REGIONS: "Has at least §Y3§! §YDominions§! or §YAutonomous Dominions§! with their capital in a trade company region (established via decisions)"

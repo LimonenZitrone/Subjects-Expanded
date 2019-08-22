@@ -169,3 +169,6 @@
  mandala_trade_vassal_large_amount_of_cities_modifier: "Hohe Anzahl an Städten"
  mandala_trade_vassal_overlord_modifier: "Besitzt Mandala-Vasallen"
  
+ integrated_tribe_subject_same_culture_modifier: "Integrierter Stamm mit Kultur des Lehnsherrn"
+ integrated_tribe_subject_different_culture_modifier: "Integrierter Stamm"
+ 

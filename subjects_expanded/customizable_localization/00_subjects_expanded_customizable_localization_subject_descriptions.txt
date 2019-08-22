@@ -173,3 +173,14 @@ defined_text = {
 		localisation_key = mandala_trade_vassal_long_desc
 	}
 }
+
+defined_text = {
+	name = integrated_tribe_subject_desc
+	
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = integrated_tribe_subject_long_desc
+	}
+}

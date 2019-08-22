@@ -103,3 +103,7 @@
  subjects_expanded_mandala_trade_vassal_events.EVTDESC1: "Our Mandala Vassal §Y[From.GetName]§! has become too powerful. They took their chance and upsurped our title. We will now have to serve them as their Mandala Vassal!"
  subjects_expanded_mandala_trade_vassal_events1.EVTOPT1: "That's a catastrophe!"
  
+ subjects_expanded_integrated_tribe_subject_events.EVTNAME1: "[From.GetName] pays additional tribute"
+ subjects_expanded_integrated_tribe_subject_events.EVTDESC1: "Our loyal Integrated Tribe, [From.GetName], has decided to transfer an additional amount of 10% of their yearly manpower to us."
+ subjects_expanded_integrated_tribe_subject_events1.EVTOPT1: "How generous of them."
+ 

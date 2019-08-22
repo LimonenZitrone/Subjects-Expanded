@@ -55,3 +55,6 @@
  is_mandala_trade_vassal: "Mandala-Vasall"
  mandala_trade_vassal_forced: "Mandala-Vasall erzwungen"
  
+ is_integrated_tribe_subject: "Integrierter Stamm"
+ integrated_tribe_subject_paid_additional_tribute: "Zusätzlichen Tribut gezahlt"
+ 

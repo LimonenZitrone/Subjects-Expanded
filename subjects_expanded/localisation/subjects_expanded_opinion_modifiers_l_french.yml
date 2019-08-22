@@ -55,3 +55,6 @@
  is_mandala_trade_vassal: "Mandala Vassal"
  mandala_trade_vassal_forced: "Forced Mandala Vassal"
  
+ is_integrated_tribe_subject: "Integrated Tribe"
+ integrated_tribe_subject_paid_additional_tribute: "Paid Additional Tribute"
+ 

@@ -15,6 +15,7 @@ imperial_tributary_state = { }
 sister_republic = { }
 muslim_tributary_vassal = { }
 mandala_trade_vassal = { }
+integrated_tribe_subject = { }
 
 # Subjects
 protectorate = {
@@ -2626,4 +2627,116 @@ mandala_trade_vassal = {
 
 	overlord_opinion_modifier = is_mandala_trade_vassal
 	subject_opinion_modifier = is_mandala_trade_vassal
+}
+
+integrated_tribe_subject = {
+	copy_from = default
+	count = vassal
+	
+	# Graphics:
+	sprite = GFX_icon_integrated_tribe_subject
+	diplomacy_overlord_sprite = GFX_diplomacy_leadintegrated_tribe_subject
+	diplomacy_subject_sprite = GFX_diplomacy_amintegrated_tribe_subject
+
+	# Triggers:
+	is_potential_overlord = {
+		is_subject = no
+		OR = {
+			government = tribal
+			AND = {
+				culture_group = caucasian
+				capital_scope = {
+					region = caucasia_region
+				}
+				NOT = { current_age = age_of_reformation }
+				NOT = { current_age = age_of_absolutism }
+				NOT = { current_age = age_of_revolutions }
+				NOT = { current_age = industrial_age }
+				NOT = { current_age = great_war_age }
+				NOT = { current_age = information_age }
+			}
+		}
+	}
+	
+	# Properties:
+	can_send_tribute = yes
+	overlord_can_attack = no
+	uses_military_focus = no
+	can_be_annexed = yes
+	has_power_projection = no
+	overlord_protects_external = yes
+	separatists_become_subjects = yes
+	allows_taking_land_without_independence = yes
+	can_transfer_in_peace = no
+	can_set_mil_focus = no
+	
+	max_government_rank = 1
+	
+	base_liberty_desire = -5.0
+	liberty_desire_development_ratio = 0.25
+	liberty_desire_same_dynasty = -5.0
+	forcelimit_bonus = 1.0
+	forcelimit_to_overlord = 1.0
+	
+	relative_power_class = 2
+	diplomacy_view_class = 1
+
+	can_fight = {
+		neighboring_primitives = yes
+		other_overlord = integrated_tribe_subject
+		# to always trigger call of arms:
+		independent_nations = yes
+		other_overlord = all
+		same_overlord = all
+	}
+	can_rival = {
+		neighboring_primitives = yes
+		other_overlord = integrated_tribe_subject
+	}
+	can_ally = {
+		neighboring_primitives = yes
+		same_overlord = integrated_tribe_subject
+	}
+	can_marry = {
+		neighboring_primitives = yes
+		same_overlord = integrated_tribe_subject
+	}
+
+	# Subject Interactions:
+	# (continuous)
+	embargo_rivals = no
+	scutage = yes
+	subsidize_armies = yes
+	# (immediate)
+	placate_rulers = yes
+	grant_province = no
+	grant_core_claim = yes
+	sacrifice_ruler = yes
+	sacrifice_heir = yes
+	takeondebt = yes
+	demand_additional_tribute = yes
+	knowledge_sharing = no
+
+	# Modifiers:
+	modifier_subject = clear
+	modifier_subject = {
+		modifier = subject_nation
+	}
+	modifier_subject = {
+		trigger = {
+			primary_culture = FROM
+		}
+		modifier = integrated_tribe_subject_same_culture_modifier
+	}
+	modifier_subject = {
+		trigger = {
+			NOT = { primary_culture = FROM }
+		}
+		modifier = integrated_tribe_subject_different_culture_modifier
+	}
+	
+	modifier_overlord = clear
+
+	overlord_opinion_modifier = is_integrated_tribe_subject
+	subject_opinion_modifier = is_integrated_tribe_subject
 }

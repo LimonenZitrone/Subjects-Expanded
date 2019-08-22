@@ -18,6 +18,7 @@ is_similar_vassal_subject = {
 		is_subject_of_type = pirate_brotherhood_vassal
 		is_subject_of_type = muslim_tributary_vassal
 		is_subject_of_type = mandala_trade_vassal
+		is_subject_of_type = integrated_tribe_subject
 	}
 }
 

@@ -57,6 +57,29 @@ declarewar = {
 			}
 		}
 	}
+	condition = {
+		tooltip = CANNOT_DECLARE_WAR_ON_NON_PRIMITIVE_NON_INTEGRATED_TRIBE
+		potential = {
+			is_subject_of_type = integrated_tribe_subject
+		}
+		allow = {
+			is_neighbor_of = FROM
+			FROM = {
+				OR = {
+					AND = {
+						NOT = { is_subject_of_type = integrated_tribe_subject }
+						primitives = yes
+					}
+					AND = {
+						is_subject_of_type = integrated_tribe_subject
+						overlord = {
+							NOT = { overlord_of = ROOT }
+						}
+					}
+				}
+			}
+		}
+	}
 	effect = {
 		if = {
 			limit = {

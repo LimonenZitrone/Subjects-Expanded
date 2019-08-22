@@ -715,12 +715,12 @@ mandala_trade_vassal_large_amount_of_cities_modifier = {
 
 mandala_trade_vassal_overlord_modifier = {
 	global_trade_power = 0.05
-	prestige = 0.05
-	legitimacy = 0.05
-	meritocracy = 0.05
-	horde_unity = 0.05
-	devotion = 0.05
-	republican_tradition = 0.02
+	prestige = 0.2
+	legitimacy = 0.2
+	meritocracy = 0.2
+	horde_unity = 0.2
+	devotion = 0.2
+	republican_tradition = 0.1
 }
 
 # Modifiers that function as timers

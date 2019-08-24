@@ -451,77 +451,73 @@ select_dutch_province_country_to_vote_for = {
 		limit = {
 			NOT = { check_variable = { which = dutch_province_election_variable which = election_value_of_dutch_province_2 } }
 		}
-		set_variable = { which = dutch_province_dutch_province_election_variable_rival which = dutch_province_election_variable }
 		set_variable = { which = dutch_province_election_variable which = election_value_of_dutch_province_2 }
 	}
 	if = {
 		limit = {
 			NOT = { check_variable = { which = dutch_province_election_variable which = election_value_of_dutch_province_3 } }
 		}
-		set_variable = { which = dutch_province_dutch_province_election_variable_rival which = dutch_province_election_variable }
 		set_variable = { which = dutch_province_election_variable which = election_value_of_dutch_province_3 }
 	}
 	if = {
 		limit = {
 			NOT = { check_variable = { which = dutch_province_election_variable which = election_value_of_dutch_province_4 } }
 		}
-		set_variable = { which = dutch_province_dutch_province_election_variable_rival which = dutch_province_election_variable }
 		set_variable = { which = dutch_province_election_variable which = election_value_of_dutch_province_4 }
 	}
 	if = {
 		limit = {
 			NOT = { check_variable = { which = dutch_province_election_variable which = election_value_of_dutch_province_5 } }
 		}
-		set_variable = { which = dutch_province_dutch_province_election_variable_rival which = dutch_province_election_variable }
 		set_variable = { which = dutch_province_election_variable which = election_value_of_dutch_province_5 }
 	}
 	if = {
 		limit = {
 			NOT = { check_variable = { which = dutch_province_election_variable which = election_value_of_dutch_province_6 } }
 		}
-		set_variable = { which = dutch_province_dutch_province_election_variable_rival which = dutch_province_election_variable }
 		set_variable = { which = dutch_province_election_variable which = election_value_of_dutch_province_6 }
 	}
 	
+	set_variable = { which = dutch_province_dutch_province_election_variable_rival value = 0 }
 	if = {
 		limit = {
-			NOT = { check_variable = { which = dutch_province_dutch_province_election_variable_rival which = election_value_of_dutch_province_1 } }
-			NOT = { check_variable = { which = dutch_province_election_variable which = election_value_of_dutch_province_1 } }
+			check_variable = { which = election_value_of_dutch_province_1 which = dutch_province_dutch_province_election_variable_rival }
+			NOT = { is_variable_equal = { which = dutch_province_election_variable which = election_value_of_dutch_province_1 } }
 		}
 		set_variable = { which = dutch_province_dutch_province_election_variable_rival which = election_value_of_dutch_province_1 }
 	}
 	if = {
 		limit = {
-			NOT = { check_variable = { which = dutch_province_dutch_province_election_variable_rival which = election_value_of_dutch_province_2 } }
-			NOT = { check_variable = { which = dutch_province_election_variable which = election_value_of_dutch_province_2 } }
+			check_variable = { which = election_value_of_dutch_province_2 which = dutch_province_dutch_province_election_variable_rival }
+			NOT = { is_variable_equal = { which = dutch_province_election_variable which = election_value_of_dutch_province_2 } }
 		}
 		set_variable = { which = dutch_province_dutch_province_election_variable_rival which = election_value_of_dutch_province_2 }
 	}
 	if = {
 		limit = {
-			NOT = { check_variable = { which = dutch_province_dutch_province_election_variable_rival which = election_value_of_dutch_province_3 } }
-			NOT = { check_variable = { which = dutch_province_election_variable which = election_value_of_dutch_province_3 } }
+			check_variable = { which = election_value_of_dutch_province_3 which = dutch_province_dutch_province_election_variable_rival }
+			NOT = { is_variable_equal = { which = dutch_province_election_variable which = election_value_of_dutch_province_3 } }
 		}
 		set_variable = { which = dutch_province_dutch_province_election_variable_rival which = election_value_of_dutch_province_3 }
 	}
 	if = {
 		limit = {
-			NOT = { check_variable = { which = dutch_province_dutch_province_election_variable_rival which = election_value_of_dutch_province_4 } }
-			NOT = { check_variable = { which = dutch_province_election_variable which = election_value_of_dutch_province_4 } }
+			check_variable = { which = election_value_of_dutch_province_4 which = dutch_province_dutch_province_election_variable_rival }
+			NOT = { is_variable_equal = { which = dutch_province_election_variable which = election_value_of_dutch_province_4 } }
 		}
 		set_variable = { which = dutch_province_dutch_province_election_variable_rival which = election_value_of_dutch_province_4 }
 	}
 	if = {
 		limit = {
-			NOT = { check_variable = { which = dutch_province_dutch_province_election_variable_rival which = election_value_of_dutch_province_5 } }
-			NOT = { check_variable = { which = dutch_province_election_variable which = election_value_of_dutch_province_5 } }
+			check_variable = { which = election_value_of_dutch_province_5 which = dutch_province_dutch_province_election_variable_rival }
+			NOT = { is_variable_equal = { which = dutch_province_election_variable which = election_value_of_dutch_province_5 } }
 		}
 		set_variable = { which = dutch_province_dutch_province_election_variable_rival which = election_value_of_dutch_province_5 }
 	}
 	if = {
 		limit = {
-			NOT = { check_variable = { which = dutch_province_dutch_province_election_variable_rival which = election_value_of_dutch_province_6 } }
-			NOT = { check_variable = { which = dutch_province_election_variable which = election_value_of_dutch_province_6 } }
+			check_variable = { which = election_value_of_dutch_province_6 which = dutch_province_dutch_province_election_variable_rival }
+			NOT = { is_variable_equal = { which = dutch_province_election_variable which = election_value_of_dutch_province_6 } }
 		}
 		set_variable = { which = dutch_province_dutch_province_election_variable_rival which = election_value_of_dutch_province_6 }
 	}

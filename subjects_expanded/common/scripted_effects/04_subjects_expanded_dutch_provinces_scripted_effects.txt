@@ -189,6 +189,8 @@ set_dutch_province_value_for_target = {
 	# Has any Disaster: -100
 	# Opinion: Amount / 4
 	# Is subject and LD over 50: -1000
+	# Is subject and LD under 50: +5
+	# Is overlord themselves: +10
 	
 	set_variable = { which = election_value_of_dutch_province_$target$ value = 0 }
 	every_country = {
@@ -419,6 +421,22 @@ set_dutch_province_value_for_target = {
 					liberty_desire = 50
 				}
 				change_variable = { which = election_value_of_dutch_province_$target$ value = -1000 }
+			}
+			if = {
+				limit = {
+					is_subject_of = PREV
+					NOT = { liberty_desire = 50 }
+				}
+				change_variable = { which = election_value_of_dutch_province_$target$ value = 5 }
+			}
+			if = {
+				limit = {
+					tag = ROOT
+					any_subject_country = {
+						is_subject_of_type = dutch_province_subject
+					}
+				}
+				change_variable = { which = election_value_of_dutch_province_$target$ value = 10 }
 			}
 		}
 	}
@@ -805,5 +823,10 @@ make_new_overlord_of_dutch_provinces = {
 	create_subject = {
 		subject = ROOT
 		subject_type = dutch_province_subject
+	}
+	add_country_modifier = {
+		name = cooldown_dutch_provinces_election
+		duration = 50
+		hidden = yes
 	}
 }

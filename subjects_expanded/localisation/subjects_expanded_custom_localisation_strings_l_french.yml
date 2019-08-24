@@ -127,3 +127,9 @@
  string_monarch_power_value_1: "1"
  string_monarch_power_value_0: "0"
  
+ string_dutch_province_reform_bonus_horde_unity: "Yearly Horde Unity: §G+0.50§!"
+ string_dutch_province_reform_bonus_republican_tradition: "Yearly Republican Tradition: §G+0.25§!"
+ string_dutch_province_reform_bonus_devotion: "Yearly Devotion: §G+0.50§!"
+ string_dutch_province_reform_bonus_meritocracy: "Yearly Meritocracy: §G+0.50§!"
+ string_dutch_province_reform_bonus_legitimacy: "Yearly Legitimacy: §G+0.50§!"
+ 

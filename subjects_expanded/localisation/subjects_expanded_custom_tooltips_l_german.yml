@@ -85,9 +85,9 @@
  AT_LEAST_5_YEARS_AFTER_DUTCH_PROVINCES_REFORM_2: "§YExterne Vrede§! wurde vor mindestens §Y5 Jahren§! verabschiedet"
  AT_LEAST_5_YEARS_AFTER_DUTCH_PROVINCES_REFORM_3: "§YSuccessiewet§! wurde vor mindestens §Y5 Jahren§! verabschiedet"
  
- DUTCH_PROVINCE_SUBJECT_NO_INTERNAL_WAR_TT: "§YNiederländische Provinzen können keine Kriege gegen andere Niederländische Provinzen desselben Lehnsherrn mehr erklären.§!\n"
- DUTCH_PROVINCE_SUBJECT_NO_EXTERNAL_WAR_TT: "§YNiederländische Provinzen können keine Kriege mehr erklären, außer wenn Rittersteuer für sie aktiviert ist.§!\n"
- DUTCH_PROVINCE_SUBJECT_NO_LEADER_ELECTION_TT: "§YDer Lehnsherr wird nicht mehr gewählt, er wird nun immer von [From.GetName] gestellt. \nNiederländische Provinzen können nun ihre Unabhängigkeit durch Kriege erklären.§!\n"
+ DUTCH_PROVINCE_SUBJECT_NO_INTERNAL_WAR_TT: "\nNiederländische Provinzen erhalten folgende Boni: \n   Diplomatische Reputation: §G+1.00§! \nDer Lehnsherr erhält die folgenden Boni: \n   [Root.GetDutchProvinceReformLegitimacyBonus] \n\n§YNiederländische Provinzen können keine Kriege gegen andere Niederländische Provinzen desselben Lehnsherrn mehr erklären.§!\n"
+ DUTCH_PROVINCE_SUBJECT_NO_EXTERNAL_WAR_TT: "\nNiederländische Provinzen erhalten folgende Boni: \n   Entwicklungskosten: §G-10.00%§! \n   Baukosten: §G-10.00%§! \nDer Lehnsherr erhält die folgenden Boni: \n   Aggressive Expansion: §G-10.00%§! \n   Armeeunterhaltskosten: §G-10.00%§! \n\n§YNiederländische Provinzen können keine Kriege mehr erklären, außer wenn Rittersteuer für sie aktiviert ist.§!\n"
+ DUTCH_PROVINCE_SUBJECT_NO_LEADER_ELECTION_TT: "\nNiederländische Provinzen erhalten folgende Boni: \n   Globale Handelsmacht: §G+10.00%§! \nDer Lehnsherr erhält die folgenden Boni: \n   Diplomatische Beziehungen: §G+1.00§! \n   Kulturkonvertierungskosten: §G-10.00%§! \n\n§YDer Lehnsherr wird nicht mehr gewählt, er wird nun immer von [Root.GetName] gestellt. \nNiederländische Provinzen können nun ihre Unabhängigkeit durch Kriege erklären.§!\n"
  
  WE_SUPPORT_THIS_FOR_NEXT_DUTCH_PROVINCE_ELECTION: "Wir stimmen derzeit für §Y[This.GetName]§!."
  
@@ -122,6 +122,10 @@
  
  # Triggered Modifiers:
  HAS_AT_LEAST_3_DOMINIONS_OR_AUTONOMOUS_DOMINIONS_IN_TRADE_COMPANY_REGIONS: "Besitzt mindestens §Y3§! §YHerrschaftsgebiete§! oder §YAutonome Herrschaftsgebiete§! mit Hauptstadt in einer Handelshaus-Region (errichted durch nationale Entscheidungen)"
+ 
+ HAS_DUTCH_PROVINCES_REFORM_1: "§YInterne Vrede§! wurde verabschiedet"
+ HAS_DUTCH_PROVINCES_REFORM_2: "§YExterne Vrede§! wurde verabschiedet"
+ HAS_DUTCH_PROVINCES_REFORM_3: "§YSuccessiewet§! wurde verabschiedet"
  
  # Scripted Effect Tooltips:
  ELECT_THIS_AS_DUTCH_PROVINCE_OVERLORD_TT: "Wir werden §Y[This.GetName]§! als neuen Lehnsherrn der §YNiederländischen Provinzen§! unterstützen.\n"

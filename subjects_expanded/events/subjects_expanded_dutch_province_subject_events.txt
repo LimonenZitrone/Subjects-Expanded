@@ -68,7 +68,7 @@ country_event = {
 	
 	trigger = {
 		NOT = { has_global_flag = dutch_province_subject_no_leader_election }
-		NOT = { is_month = 2 }
+		NOT = { is_month = 1 }
 		NOT = { has_country_modifier = cooldown_dutch_provinces_election }
 		any_subject_country = {
 			is_subject_of_type = dutch_province_subject
@@ -77,6 +77,11 @@ country_event = {
 	
 	immediate = {
 		hidden_effect = {
+			add_country_modifier = {
+				name = cooldown_dutch_provinces_election
+				duration = 50
+				hidden = yes
+			}
 			if = {
 				limit = {
 					ai = yes
@@ -824,6 +829,12 @@ country_event = {
 					ai = yes
 					tag = event_target:election_value_of_dutch_province_1
 				}
+				OR = {
+					tag = event_target:election_value_of_dutch_province_1_rival
+					any_country = {
+						tag = event_target:election_value_of_dutch_province_1_rival
+					}
+				}
 			}
 			custom_tooltip = DUTCH_PROVINCES_OVERLORD_ELECTION_INDIVIDUAL_RESULT_TT_1
 		}
@@ -832,7 +843,6 @@ country_event = {
 				OR = {
 					tag = event_target:election_value_of_dutch_province_1
 					any_country = {
-						ai = no
 						tag = event_target:election_value_of_dutch_province_1
 					}
 				}
@@ -846,6 +856,12 @@ country_event = {
 					ai = yes
 					tag = event_target:election_value_of_dutch_province_2
 				}
+				OR = {
+					tag = event_target:election_value_of_dutch_province_2_rival
+					any_country = {
+						tag = event_target:election_value_of_dutch_province_2_rival
+					}
+				}
 			}
 			custom_tooltip = DUTCH_PROVINCES_OVERLORD_ELECTION_INDIVIDUAL_RESULT_TT_2
 		}
@@ -854,7 +870,6 @@ country_event = {
 				OR = {
 					tag = event_target:election_value_of_dutch_province_2
 					any_country = {
-						ai = no
 						tag = event_target:election_value_of_dutch_province_2
 					}
 				}
@@ -868,6 +883,12 @@ country_event = {
 					ai = yes
 					tag = event_target:election_value_of_dutch_province_3
 				}
+				OR = {
+					tag = event_target:election_value_of_dutch_province_3_rival
+					any_country = {
+						tag = event_target:election_value_of_dutch_province_3_rival
+					}
+				}
 			}
 			custom_tooltip = DUTCH_PROVINCES_OVERLORD_ELECTION_INDIVIDUAL_RESULT_TT_3
 		}
@@ -876,7 +897,6 @@ country_event = {
 				OR = {
 					tag = event_target:election_value_of_dutch_province_3
 					any_country = {
-						ai = no
 						tag = event_target:election_value_of_dutch_province_3
 					}
 				}
@@ -890,6 +910,12 @@ country_event = {
 					ai = yes
 					tag = event_target:election_value_of_dutch_province_4
 				}
+				OR = {
+					tag = event_target:election_value_of_dutch_province_4_rival
+					any_country = {
+						tag = event_target:election_value_of_dutch_province_4_rival
+					}
+				}
 			}
 			custom_tooltip = DUTCH_PROVINCES_OVERLORD_ELECTION_INDIVIDUAL_RESULT_TT_4
 		}
@@ -898,7 +924,6 @@ country_event = {
 				OR = {
 					tag = event_target:election_value_of_dutch_province_4
 					any_country = {
-						ai = no
 						tag = event_target:election_value_of_dutch_province_4
 					}
 				}
@@ -912,6 +937,12 @@ country_event = {
 					ai = yes
 					tag = event_target:election_value_of_dutch_province_5
 				}
+				OR = {
+					tag = event_target:election_value_of_dutch_province_5_rival
+					any_country = {
+						tag = event_target:election_value_of_dutch_province_5_rival
+					}
+				}
 			}
 			custom_tooltip = DUTCH_PROVINCES_OVERLORD_ELECTION_INDIVIDUAL_RESULT_TT_5
 		}
@@ -920,7 +951,6 @@ country_event = {
 				OR = {
 					tag = event_target:election_value_of_dutch_province_5
 					any_country = {
-						ai = no
 						tag = event_target:election_value_of_dutch_province_5
 					}
 				}
@@ -934,6 +964,12 @@ country_event = {
 					ai = yes
 					tag = event_target:election_value_of_dutch_province_6
 				}
+				OR = {
+					tag = event_target:election_value_of_dutch_province_6_rival
+					any_country = {
+						tag = event_target:election_value_of_dutch_province_6_rival
+					}
+				}
 			}
 			custom_tooltip = DUTCH_PROVINCES_OVERLORD_ELECTION_INDIVIDUAL_RESULT_TT_6
 		}
@@ -942,7 +978,6 @@ country_event = {
 				OR = {
 					tag = event_target:election_value_of_dutch_province_6
 					any_country = {
-						ai = no
 						tag = event_target:election_value_of_dutch_province_6
 					}
 				}

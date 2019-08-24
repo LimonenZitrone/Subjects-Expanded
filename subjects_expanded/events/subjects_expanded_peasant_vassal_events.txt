@@ -26,7 +26,6 @@ country_event = {
 				change_government = republic
 				add_government_reform = peasants_republic
 			}
-			clr_country_flag = executing_subjects_expanded_peasant_vassal_events_1
 		}
 	}
 	
@@ -34,5 +33,7 @@ country_event = {
 		name = subjects_expanded_peasant_vassal_events1.EVTOPT1
 		
 		ai_chance = { factor = 100 }
+		
+		clr_country_flag = executing_subjects_expanded_peasant_vassal_events_1
 	}
 }

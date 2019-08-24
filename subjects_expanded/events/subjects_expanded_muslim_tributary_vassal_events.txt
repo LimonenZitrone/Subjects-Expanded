@@ -26,7 +26,6 @@ country_event = {
 				change_government = monarchy
 				add_government_reform = feudalism_reform
 			}
-			clr_country_flag = executing_subjects_expanded_muslim_tributary_vassal_events_1
 		}
 	}
 	
@@ -34,6 +33,8 @@ country_event = {
 		name = subjects_expanded_muslim_tributary_vassal_events1.EVTOPT1
 		
 		ai_chance = { factor = 100 }
+		
+		clr_country_flag = executing_subjects_expanded_muslim_tributary_vassal_events_1
 	}
 }
 

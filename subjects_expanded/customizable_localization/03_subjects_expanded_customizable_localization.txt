@@ -187,3 +187,39 @@ defined_text = {
         }
     }
 }
+
+defined_text = {
+    name = GetDutchProvinceReformLegitimacyBonus
+	random = no
+
+	text = {
+        localisation_key = string_dutch_province_reform_bonus_horde_unity
+        trigger = {
+			is_nomad = yes
+        }
+    }
+	text = {
+        localisation_key = string_dutch_province_reform_bonus_republican_tradition
+        trigger = {
+			government = republic
+        }
+    }
+	text = {
+        localisation_key = string_dutch_province_reform_bonus_devotion
+        trigger = {
+			government = theocracy
+        }
+    }
+	text = {
+        localisation_key = string_dutch_province_reform_bonus_meritocracy
+        trigger = {
+			is_emperor_of_china = yes
+        }
+    }
+	text = {
+        localisation_key = string_dutch_province_reform_bonus_legitimacy
+        trigger = {
+			always = yes
+        }
+    }
+}

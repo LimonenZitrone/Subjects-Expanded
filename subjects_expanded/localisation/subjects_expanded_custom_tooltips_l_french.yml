@@ -85,9 +85,9 @@
  AT_LEAST_5_YEARS_AFTER_DUTCH_PROVINCES_REFORM_2: "§YExterne Vrede§! was enacted at least §Y5 years§! ago"
  AT_LEAST_5_YEARS_AFTER_DUTCH_PROVINCES_REFORM_3: "§YSuccessiewet§! was enacted at least §Y5 years§! ago"
  
- DUTCH_PROVINCE_SUBJECT_NO_INTERNAL_WAR_TT: "§YDutch Provinces cannot declare wars against other Dutch Provinces of the same overlord anymore.§!\n"
- DUTCH_PROVINCE_SUBJECT_NO_EXTERNAL_WAR_TT: "§YDutch Provinces cannot declare wars anymore, unless they have scutage activated.§!\n"
- DUTCH_PROVINCE_SUBJECT_NO_LEADER_ELECTION_TT: "§YThe overlord is not elected anymore, he will always be from [From.GetName]. \nDutch Provinces can now declare independence by war.§!\n"
+ DUTCH_PROVINCE_SUBJECT_NO_INTERNAL_WAR_TT: "\nDutch Provinces will gain the following bonuses: \n   Diplomatic Reputation: §G+1.00§! \nThe overlord will gain the following bonuses: \n   [Root.GetDutchProvinceReformLegitimacyBonus] \n\n§YDutch Provinces cannot declare wars against other Dutch Provinces of the same overlord anymore.§!\n"
+ DUTCH_PROVINCE_SUBJECT_NO_EXTERNAL_WAR_TT: "\nDutch Provinces will gain the following bonuses: \n   Development Cost: §G-10.00%§! \n   Construction Cost: §G-10.00%§! \nThe overlord will gain the following bonuses: \n   Aggressive Expansion: §G-10.00%§! \n   Army Maintenance: §G-10.00%§! \n\n§YDutch Provinces cannot declare wars anymore, unless they have scutage activated.§!\n"
+ DUTCH_PROVINCE_SUBJECT_NO_LEADER_ELECTION_TT: "\nDutch Provinces will gain the following bonuses: \n   Global Trade Power: §G+10.00%§! \nThe overlord will gain the following bonuses: \n   Diplomatic Relations: §G+1.00§! \n   Culture Conversion Cost: §G-10.00%§! \n\n§YThe overlord is not elected anymore, he will always be from [Root.GetName]. \nDutch Provinces can now declare independence by war.§!\n"
  
  WE_SUPPORT_THIS_FOR_NEXT_DUTCH_PROVINCE_ELECTION: "We currently vote for §Y[This.GetName]§!."
  
@@ -122,6 +122,10 @@
  
  # Triggered Modifiers:
  HAS_AT_LEAST_3_DOMINIONS_OR_AUTONOMOUS_DOMINIONS_IN_TRADE_COMPANY_REGIONS: "Has at least §Y3§! §YDominions§! or §YAutonomous Dominions§! with their capital in a trade company region (established via decisions)"
+ 
+ HAS_DUTCH_PROVINCES_REFORM_1: "§YInterne Vrede§! was enacted"
+ HAS_DUTCH_PROVINCES_REFORM_2: "§YExterne Vrede§! was enacted"
+ HAS_DUTCH_PROVINCES_REFORM_3: "§YSuccessiewet§! was enacted"
  
  # Scripted Effect Tooltips:
  ELECT_THIS_AS_DUTCH_PROVINCE_OVERLORD_TT: "We will support §Y[This.GetName]§! as the new overlord of the §YDutch Provinces§!.\n"

@@ -18,3 +18,10 @@
  early_fiefdom_no_dip_cost_5: "Feudalism"
  desc_early_fiefdom_no_dip_cost_5: "During these ages, we gain §Y1§! additional possible diplomatic relation per §Y2§! Fiefdoms, making one Fiefdom not costing a relation slot effectively. This is capped at §Y10§! Fiefdoms."
  
+ dutch_provinces_reform_1_overlord: "Interne Vrede"
+ dutch_provinces_reform_1_subject: "Interne Vrede"
+ dutch_provinces_reform_2_overlord: "Externe Vrede"
+ dutch_provinces_reform_2_subject: "Externe Vrede"
+ dutch_provinces_reform_3_overlord: "Successiewet"
+ dutch_provinces_reform_3_subject: "Successiewet"
+ 

@@ -250,3 +250,115 @@ early_fiefdom_no_dip_cost_5 = {
 	
 	diplomatic_upkeep = 5
 }
+
+dutch_provinces_reform_1_overlord = {
+	potential = {
+		OR = {
+			has_country_flag = united_the_dutch_provinces
+			any_subject_country = {
+				is_subject_of_type = dutch_province_subject
+			}
+		}
+	}
+	
+	trigger = {
+		custom_trigger_tooltip = {
+			tooltip = HAS_DUTCH_PROVINCES_REFORM_1
+			has_global_flag = dutch_province_subject_no_internal_war
+		}
+	}
+	
+	legitimacy = 0.5
+	devotion = 0.5
+	horde_unity = 0.5
+	meritocracy = 0.5
+	republican_tradition = 0.25
+}
+
+dutch_provinces_reform_1_subject = {
+	potential = {
+		is_subject_of_type = dutch_province_subject
+	}
+	
+	trigger = {
+		custom_trigger_tooltip = {
+			tooltip = HAS_DUTCH_PROVINCES_REFORM_1
+			has_global_flag = dutch_province_subject_no_internal_war
+		}
+	}
+	
+	diplomatic_reputation = 1
+}
+
+dutch_provinces_reform_2_overlord = {
+	potential = {
+		OR = {
+			has_country_flag = united_the_dutch_provinces
+			any_subject_country = {
+				is_subject_of_type = dutch_province_subject
+			}
+		}
+	}
+	
+	trigger = {
+		custom_trigger_tooltip = {
+			tooltip = HAS_DUTCH_PROVINCES_REFORM_2
+			has_global_flag = dutch_province_subject_no_external_war
+		}
+	}
+	
+	ae_impact = -0.1
+	land_maintenance_modifier = -0.1
+}
+
+dutch_provinces_reform_2_subject = {
+	potential = {
+		is_subject_of_type = dutch_province_subject
+	}
+	
+	trigger = {
+		custom_trigger_tooltip = {
+			tooltip = HAS_DUTCH_PROVINCES_REFORM_2
+			has_global_flag = dutch_province_subject_no_external_war
+		}
+	}
+	
+	development_cost = -0.1
+	build_cost = -0.1
+}
+
+dutch_provinces_reform_3_overlord = {
+	potential = {
+		OR = {
+			has_country_flag = united_the_dutch_provinces
+			any_subject_country = {
+				is_subject_of_type = dutch_province_subject
+			}
+		}
+	}
+	
+	trigger = {
+		custom_trigger_tooltip = {
+			tooltip = HAS_DUTCH_PROVINCES_REFORM_3
+			has_global_flag = dutch_province_subject_no_leader_election
+		}
+	}
+	
+	diplomatic_upkeep = 1
+	culture_conversion_cost = -0.1
+}
+
+dutch_provinces_reform_3_subject = {
+	potential = {
+		is_subject_of_type = dutch_province_subject
+	}
+	
+	trigger = {
+		custom_trigger_tooltip = {
+			tooltip = HAS_DUTCH_PROVINCES_REFORM_3
+			has_global_flag = dutch_province_subject_no_leader_election
+		}
+	}
+	
+	global_trade_power = 0.1
+}

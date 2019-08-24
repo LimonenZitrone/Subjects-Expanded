@@ -65,7 +65,12 @@ country_event = {
 		is_subject_of_type = protectorate
 		war_with = FROM
 		overlord = {
-			NOT = { war_with = FROM }
+			NOT = {
+				is_in_war = {
+					participants = FROM
+					participants = THIS
+				}
+			}
 		}
 		liberty_desire = 50
 		overlord = {

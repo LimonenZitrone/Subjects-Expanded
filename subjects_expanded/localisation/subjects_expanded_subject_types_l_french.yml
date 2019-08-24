@@ -38,7 +38,7 @@
  fief_subject_title: "Fiefdom"
  fief_subject_title_plural: "Fiefdoms"
  fief_subject_is_our: "§Y$NAME$§! is our Fiefdom."
- fief_subject_long_desc: "A Fiefdom is a vassal of the same primary culture. It behaves similar to normal vassals, but has a slightly lower liberty desire, does not join its overlord's wars, and can only be integrated. However, it pays more money to its overlord and the overlord can demand troops from it. Further more it has increased tax income and decreased culture conversion cost and also affects these modifiers for its overlord.\n"
+ fief_subject_long_desc: "A Fiefdom is a vassal of the same primary culture. It behaves similar as normal vassals, but has a slightly lower liberty desire, does not join its overlord's wars, and can only be integrated. However, it pays more money to its overlord and the overlord can demand troops from it. Further more it has increased tax income and decreased culture conversion cost and also affects these modifiers for its overlord.\n"
  fief_subject_no_overlord_dow: "You cannot declare war on your own Fiefdom."
  
  crusader_state_vassal_title: "Crusader State"
@@ -80,7 +80,7 @@
  sister_republic_title: "Sister Republic"
  sister_republic_title_plural: "Sister Republics"
  sister_republic_is_our: "§Y$NAME$§! is our Sister Republic."
- sister_republic_long_desc: "A Sister Republic behaves similar to a personal union. However, it is far less restricted in its diplomatic actions and cannot break on the ruler's death. It can only be established by republics and theocracies and a country can have only §Y1§! Sister Republic at the same time. If the overlord and the Sister Republic do not have the same government (republic or theocracy) anymore, the Sister Republic will become free and enter an alliance with its former overlord. Both, the overlord and the Sister Republic, gain an equal bonus on development cost, construction cost and production efficiency.\n"
+ sister_republic_long_desc: "A Sister Republic behaves similar as a personal union. However, it is far less restricted in its diplomatic actions and cannot break on the ruler's death. It can only be established by republics and theocracies and a country can have only §Y1§! Sister Republic at the same time. If the overlord and the Sister Republic do not have the same government (republic or theocracy) anymore, the Sister Republic will become free and enter an alliance with its former overlord. Both, the overlord and the Sister Republic, gain an equal bonus on development cost, construction cost and production efficiency.\n"
  sister_republic_no_overlord_dow: "You cannot declare war on your own Sister Republic."
  
  muslim_tributary_vassal_title: "Dar al-Sulh Territory"
@@ -100,4 +100,10 @@
  integrated_tribe_subject_is_our: "§Y$NAME$§! is our Integrated Tribe."
  integrated_tribe_subject_long_desc: "An Integrated Tribe is a mixture of a vassal and a tributary. It joins its overlord's wars, costs a diplomatic relation and pays tribute to its overlord. It is not as restricted as a normal vassal in its diplomatic actions. If scutage is activated, it pays §Y10%§! of its yearly manpower to its overlord, if it doesn't have the same culture as its overlord, otherwise it pays §Y25%§!. It can pay an additional tribute to its overlord every 5 years, if it wants to. It has a slightly reduced liberty desire and can only become independent by war. An Integrated Tribe can only be established by tribal nations or by nations in the §YCaucasia§! region that are in the Caucasian culture group on other tribals or Caucasian nations in §YCaucasia§!.\n"
  integrated_tribe_subject_no_overlord_dow: "You cannot declare war on your own Integrated Tribe."
+ 
+ dutch_province_subject_title: "Dutch Province"
+ dutch_province_subject_title_plural: "Dutch Provinces"
+ dutch_province_subject_is_our: "§Y$NAME$§! is our Dutch Province."
+ dutch_province_subject_long_desc: "A Dutch Province behaves similar as a normal vassal and joins its overlord wars, but has a slightly reduced base liberty desire and slightly increased liberty desire from development, is not restricted in its diplomatic actions and costs no diplomatic relation. It gains a bonus on trade efficiency and diplomatic reputation and grants its overlord a bonus on diplomatic reputation. It can only be established by §YDutch§! or §YFlemish§! countries in the §YLow Countries§! region on §YDutch§! or §YFlemish§! countries in the §YLow Countries§! region. Only one country can have Dutch Provinces at the same time and it can only have §Y5§! at most. The overlord can enact up to three reforms - to disallow Dutch Provinces to declare war on each other, to disallow Dutch Provinces to declare wars in general (activating scutage allows them to declare war again) and to disable §YDutch Provinces Elections§!. Unless the third reform was enacted, each January the current overlord and all Dutch Provinces elect the next overlord. If a different country than the current overlord wins, all Dutch Provinces are transfered to that country and the current overlord becomes a Dutch Province himself. The third reform also allows Dutch Provinces to declare independence wars, before they can only diplomatically request independence. \nAfter all three reforms were enacted, the current overlord receives a special decision to form the §YNetherlands§! with the help of the Dutch Provinces.\n"
+ dutch_province_subject_no_overlord_dow: "You cannot declare war on your own Dutch Province."
  

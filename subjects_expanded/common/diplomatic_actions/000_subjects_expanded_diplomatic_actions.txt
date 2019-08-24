@@ -80,13 +80,60 @@ declarewar = {
 			}
 		}
 	}
+	condition = {
+		tooltip = CANNOT_DECLARE_WAR_ON_DUTCH_PROVINCE_OF_SAME_OVERLORD
+		potential = {
+			is_subject_of_type = dutch_province_subject
+			has_global_flag = dutch_province_subject_no_internal_war
+		}
+		allow = {
+			FROM = {
+				OR = {
+					NOT = { is_subject_of_type = dutch_province_subject }
+					overlord = {
+						NOT = { overlord_of = ROOT }
+					}
+				}
+			}
+		}
+	}
+	condition = {
+		tooltip = CANNOT_DECLARE_WAR_WITHOUT_SCUTAGE_WHEN_DUTCH_PROVINCES_EXTERNAL_WAR_WAS_DISALLOWED
+		potential = {
+			is_subject_of_type = dutch_province_subject
+		}
+		allow = {
+			OR = {
+				NOT = { has_global_flag = dutch_province_subject_no_external_war }
+				AND = {
+					has_global_flag = dutch_province_subject_no_external_war
+					has_scutage = yes
+				}
+			}
+		}
+	}
+	condition = {
+		tooltip = CANNOT_DECLARE_WAR_ON_OVERLORD_BEFORE_THIRD_DUTCH_PROVINCES_REFORM
+		potential = {
+			is_subject_of_type = dutch_province_subject
+			is_subject_of = FROM
+		}
+		allow = {
+			has_global_flag = dutch_province_subject_no_leader_election
+		}
+	}
 	effect = {
 		if = {
 			limit = {
 				FROM = {
 					is_subject_of_type = protectorate
 					overlord = {
-						NOT = { war_with = ROOT }
+						NOT = {
+							is_in_war = {
+								participants = ROOT
+								participants = THIS
+							}
+						}
 					}
 				}
 			}

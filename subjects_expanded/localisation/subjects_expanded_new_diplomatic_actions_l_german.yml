@@ -205,6 +205,29 @@
  integrated_tribe_subject_give_additional_tribute_to_overlord_tooltip: "Schickt zusätzliche §Y10%§! Eurer jährlichen Rekrutenreserve an §Y[From.GetName]§!.\n"
  
  
+ establish_dutch_province_subject_title: "Niederländische Provinz fordern"
+ establish_dutch_province_subject_desc: "Wollt Ihr §Y[From.GetName]§! vorschlagen, unsere Niederländische Provinz zu werden? \n[dutch_province_subject_desc]"
+ establish_dutch_province_subject_tooltip: "Macht §Y[From.GetName]§! zu einer [Root.GetAdjective] §YNiederländischen Provinz§!.\n"
+ establish_dutch_province_subject_alert_tooltip: "Niederländische Provinz fordern"
+ establish_dutch_province_subject_dialog: "§Y[This.GetName]§! schlägt uns vor, dass wir ihre §YNiederländische Provinz§! werden. \n[dutch_province_subject_desc] \nWollt Ihr aktzeptieren?"
+ 
+ ask_for_dutch_province_subject_title: "Niederländische Provinz erbitten"
+ ask_for_dutch_province_subject_desc: "Wollt Ihr §Y[From.GetName]§! vorschlagen, dass wir ihre Niederländische Provinz werden? \n[dutch_province_subject_desc]"
+ ask_for_dutch_province_subject_tooltip: "§Y[From.GetName]§! bitten, §Y[Root.GetName]§! zu einer [From.GetAdjective] §YNiederländische Provinz§! zu machen.\n"
+ ask_for_dutch_province_subject_alert_tooltip: "Niederländische Provinz erbitten"
+ ask_for_dutch_province_subject_dialog: "§Y[This.GetName]§! schlägt uns vor, dass sie unsere §YNiederländische Provinz§! werden. \n[dutch_province_subject_desc] \nWollt Ihr aktzeptieren?"
+ 
+ dutch_province_subject_ask_for_independence_title: "Unabhängigkeit fordern"
+ dutch_province_subject_ask_for_independence_desc: "Fordert Euren Lehnsherrn §Y[From.GetName]§! dazu auf, Euch Unabhängigkeit zu gewähren. \nWenn sie aktzeptieren, werden wir unabhängig. \nWenn sie ablehnen, erhalten wir §G+50%§! Freiheitsstreben und unsere Meinung über sie verändert sich um §R-100§!."
+ dutch_province_subject_ask_for_independence_tooltip: "Fordert Euren Lehnsherrn §Y[From.GetName]§! dazu auf, Euch Unabhängigkeit zu gewähren.\n"
+ dutch_province_subject_ask_for_independence_alert_tooltip: "Unabhängigkeit fordern"
+ dutch_province_subject_ask_for_independence_dialog: "§Y[This.GetName]§! verlangt, dass wir ihnen Unabhängigkeit gewähren! \nWenn wir aktzeptieren, werden sie unabhängig. \nWenn wir ablehnen, erhalten sie §R+50%§! Freiheitsstreben und ihre Meinung über uns verändert sich um §R-100§!. \n\nWollt Ihr aktzeptieren?"
+ 
+ cancel_dutch_province_subject_title: "Niederländische Provinz entlassen"
+ cancel_dutch_province_subject_desc: "Beendet das Abhängigkeitsverhältnis von §Y[From.GetName]§! zu uns. Dies wird ihre Meinung über uns um §R-200§! verschlechtern, sofern sie ein Freiheitsstreben unter §Y50%§! besitzen. Außerdem verlieren wir §R-25§! Prestige und erhalten eine §Y5-jährige§! Waffenruhe mit ihnen."
+ cancel_dutch_province_subject_tooltip: "Beedet die Vasallisierung von §Y[From.GetName]§! und entlasst sie in die Freiheit.\n"
+ 
+ 
  return_subject_to_vassal_title: "Zum Vasall degradieren"
  return_subject_to_vassal_desc: "Beendet den derzeitigen Status von §Y[From.GetName]§! und macht sie zu einem Vasallen. Dies wird ihre Meinung über uns um §R-100§! verschlechtern und ihr Freiheitsstreben um §R+25%§! ändern. Außerdem verlieren wir §R-10§! Prestige."
  return_subject_to_vassal_tooltip: "Macht §Y[From.GetName]§! wieder zu einem Vasall.\n"
@@ -268,4 +291,12 @@
  ROOT_FROM_ARE_ALLIED: "Wir sind verbündet"
  ROOT_FROM_ARE_HISTORICAL_FRIENDS: "Wir sind historische Freunde"
  ROOT_FROM_ARE_HISTORICAL_RIVALS: "Wir sind historische Rivalen"
+ FROM_NUM_OF_PROVINCES: "Ihre Anzahl an Provinzen"
+ ROOT_NUM_OF_PROVINCES: "Unsere Anzahl an Provinzen"
+ ROOT_AMOUNT_OF_ALLIANCES: "Unsere Anzahl an Verbündeten"
+ ROOT_HAS_NO_ALLIANCES: "Wir haben keine Verbündeten"
+ ROOT_LIBERTY_DESIRE_TOO_LOW: "Unser Freiheitsstreben ist zu gering"
+ FROM_AMOUNT_OF_ALLIANCES: "Ihre Anzahl an Verbündeten"
+ FROM_COULD_PERHAPS_ENACT_A_REFORM: "Sie könnten bald vielleicht eine Reform verabschieden"
+ NUM_OF_DUTCH_PROVINCES_REFORMS_PASSED: "Hat bereits Reformen verabschiedet"
  

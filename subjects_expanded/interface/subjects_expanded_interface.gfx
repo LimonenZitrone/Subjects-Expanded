@@ -207,4 +207,17 @@ spriteTypes = {
 		name = "GFX_diplomacy_amintegrated_tribe_subject"
 		texturefile = "gfx//interface//icon_diplomacy_amintegrated_tribe_subject.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_icon_dutch_province_subject"
+		texturefile = "gfx/interface/icon_dutch_province_subject.dds"
+	}
+	spriteType = {
+		name = "GFX_diplomacy_leaddutch_province_subject"
+		texturefile = "gfx//interface//icon_diplomacy_leaddutch_province_subject.dds"
+	}
+	spriteType = {
+		name = "GFX_diplomacy_amdutch_province_subject"
+		texturefile = "gfx//interface//icon_diplomacy_amdutch_province_subject.dds"
+	}
 }

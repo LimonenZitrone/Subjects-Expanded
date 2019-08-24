@@ -215,3 +215,24 @@ integrated_tribe_subject_paid_additional_tribute = {
 	yearly_decay = 1
 	max = 100
 }
+
+is_dutch_province_subject = {
+	opinion = 25
+}
+
+declined_establish_dutch_province_subject_opinion = {
+	opinion = -25
+	yearly_decay = 1
+	min = -100
+}
+
+declined_ask_for_dutch_province_subject_opinion = {
+	opinion = -25
+	yearly_decay = 1
+	min = -100
+}
+
+dutch_province_subject_declined_freedom = {
+	opinion = -100
+	yearly_decay = 3
+}

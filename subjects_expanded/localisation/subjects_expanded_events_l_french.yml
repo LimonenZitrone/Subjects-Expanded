@@ -107,3 +107,33 @@
  subjects_expanded_integrated_tribe_subject_events.EVTDESC1: "Our loyal Integrated Tribe, [From.GetName], has decided to transfer an additional amount of 10% of their yearly manpower to us."
  subjects_expanded_integrated_tribe_subject_events1.EVTOPT1: "How generous of them."
  
+ subjects_expanded_dutch_province_subject_events.EVTNAME1: "Interne Vrede Enacted"
+ subjects_expanded_dutch_province_subject_events.EVTDESC1: "The ruler of the Dutch Provinces has enacted the first reform: Interne Vrede. This reform forbids wars between Dutch Provinces."
+ subjects_expanded_dutch_province_subject_events1.EVTOPT1: "Very good."
+ 
+ subjects_expanded_dutch_province_subject_events.EVTNAME2: "Externe Vrede Enacted"
+ subjects_expanded_dutch_province_subject_events.EVTDESC2: "The ruler of the Dutch Provinces has enacted the second reform: Externe Vrede. This reform forbids Dutch Provinces to declare wars, unless they have scutage activated."
+ subjects_expanded_dutch_province_subject_events2.EVTOPT1: "Very good."
+ 
+ subjects_expanded_dutch_province_subject_events.EVTNAME3: "Successiewet Enacted"
+ subjects_expanded_dutch_province_subject_events.EVTDESC3: "The ruler of the Dutch Provinces has enacted the third reform: Successiewet. This reform disables Dutch Provinces Elections and makes the overlord always come from the same country."
+ subjects_expanded_dutch_province_subject_events3.EVTOPT1: "Very good."
+ 
+ subjects_expanded_dutch_province_subject_events.EVTNAME7: "Dutch Provinces Election"
+ subjects_expanded_dutch_province_subject_events.EVTDESC7: "A year has past, a new election is due! All Dutch Provinces have voted, who shall be the new overlord?"
+ subjects_expanded_dutch_province_subject_events7.EVTOPT1: "Result."
+ 
+ subjects_expanded_dutch_province_subject_events.EVTNAME8: "Dutch Provinces Election Results"
+ subjects_expanded_dutch_province_subject_events.EVTDESC8: "The Dutch Provinces Election is over. Here you can see who voted for whom."
+ subjects_expanded_dutch_province_subject_events8.EVTOPT1: "OK."
+ 
+ subjects_expanded_dutch_province_subject_events.EVTNAME9: "Select Election Target"
+ subjects_expanded_dutch_province_subject_events.EVTDESC9: "Here you can select the country that you want to support as the new overlord of the Dutch Provinces. \nElections will happen each year in January, until the third reform was passed."
+ subjects_expanded_dutch_province_subject_events9.EVTOPT1: "Support §Y[possible_country_to_elect_for_dutch_provinces_overlord_1.GetName]§!."
+ subjects_expanded_dutch_province_subject_events9.EVTOPT2: "Support §Y[possible_country_to_elect_for_dutch_provinces_overlord_2.GetName]§!."
+ subjects_expanded_dutch_province_subject_events9.EVTOPT3: "Support §Y[possible_country_to_elect_for_dutch_provinces_overlord_3.GetName]§!."
+ subjects_expanded_dutch_province_subject_events9.EVTOPT4: "Support §Y[possible_country_to_elect_for_dutch_provinces_overlord_4.GetName]§!."
+ subjects_expanded_dutch_province_subject_events9.EVTOPT5: "Support §Y[possible_country_to_elect_for_dutch_provinces_overlord_5.GetName]§!."
+ subjects_expanded_dutch_province_subject_events9.EVTOPT6: "Support §Y[possible_country_to_elect_for_dutch_provinces_overlord_6.GetName]§!."
+ subjects_expanded_dutch_province_subject_events9.EVTOPT7: "Cancel."
+ 

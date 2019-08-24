@@ -184,3 +184,14 @@ defined_text = {
 		localisation_key = integrated_tribe_subject_long_desc
 	}
 }
+
+defined_text = {
+	name = dutch_province_subject_desc
+	
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = dutch_province_subject_long_desc
+	}
+}

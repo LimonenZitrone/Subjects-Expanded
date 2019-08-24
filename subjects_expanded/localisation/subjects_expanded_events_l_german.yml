@@ -107,3 +107,33 @@
  subjects_expanded_integrated_tribe_subject_events.EVTDESC1: "Unser loyaler Integrierter Stamm, [From.GetName], hat sich dazu entschlossen, uns zusätzlich 10% ihrer Rekrutenreserve zu überstellen."
  subjects_expanded_integrated_tribe_subject_events1.EVTOPT1: "Wie großzügig von ihnen."
  
+ subjects_expanded_dutch_province_subject_events.EVTNAME1: "Interne Vrede verabschiedet"
+ subjects_expanded_dutch_province_subject_events.EVTDESC1: "Der Herrscher der Niederländischen Provinzen hat die erste Reform verabschiedet: Interne Vrede. Diese Reform verbietet Kriege zwischen den Niederländischen Provinzen."
+ subjects_expanded_dutch_province_subject_events1.EVTOPT1: "Sehr gut."
+ 
+ subjects_expanded_dutch_province_subject_events.EVTNAME2: "Externe Vrede verabschiedet"
+ subjects_expanded_dutch_province_subject_events.EVTDESC2: "Der Herrscher der Niederländischen Provinzen hat die zweite Reform verabschiedet: Externe Vrede. Diese Reform verbietet es Niederländischen Provinzen, Kriege zu erklären, außer sie haben Rittersteuer aktiviert."
+ subjects_expanded_dutch_province_subject_events2.EVTOPT1: "Sehr gut."
+ 
+ subjects_expanded_dutch_province_subject_events.EVTNAME3: "Successiewet verabschiedet"
+ subjects_expanded_dutch_province_subject_events.EVTDESC3: "Der Herrscher der Niederländischen Provinzen hat die dritte Reform verabschiedet: Successiewet. Diese Reform schafft die Wahlen der Niederländischen Provinzen ab und sorgt dafür, dass der Lehnsherr imme raus demselben Land stammt."
+ subjects_expanded_dutch_province_subject_events3.EVTOPT1: "Sehr gut."
+ 
+ subjects_expanded_dutch_province_subject_events.EVTNAME7: "Wahl der Niederländischen Provinzen"
+ subjects_expanded_dutch_province_subject_events.EVTDESC7: "Ein Jahr ist vergangen, eine neue Wahl steht an! Alle Niederländischen Provinzen haben abgestimmt, wer wird der nächste Lehnsherr sein?"
+ subjects_expanded_dutch_province_subject_events7.EVTOPT1: "Ergebnis."
+ 
+ subjects_expanded_dutch_province_subject_events.EVTNAME8: "Wahl der Niederländischen Provinzen (Ergebnis)"
+ subjects_expanded_dutch_province_subject_events.EVTDESC8: "Die Wahl der Niederländischen Provinzen ist vorbei. Hier könnt Ihr sehen, wer für wen gestimmt hat."
+ subjects_expanded_dutch_province_subject_events8.EVTOPT1: "OK."
+ 
+ subjects_expanded_dutch_province_subject_events.EVTNAME9: "Zielland der Wahl auswählen"
+ subjects_expanded_dutch_province_subject_events.EVTDESC9: "Hier könnt Ihr wählen, für welches Land ihr bei der Wahl des Lehnsherrn der Niederländischen Provinzen stimmen wollt. \nWahlen werden jährlich im Janur abgehalten, bis die dritte Reform verabschiedet wurde."
+ subjects_expanded_dutch_province_subject_events9.EVTOPT1: "Unterstützt §Y[possible_country_to_elect_for_dutch_provinces_overlord_1.GetName]§!."
+ subjects_expanded_dutch_province_subject_events9.EVTOPT2: "Unterstützt §Y[possible_country_to_elect_for_dutch_provinces_overlord_2.GetName]§!."
+ subjects_expanded_dutch_province_subject_events9.EVTOPT3: "Unterstützt §Y[possible_country_to_elect_for_dutch_provinces_overlord_3.GetName]§!."
+ subjects_expanded_dutch_province_subject_events9.EVTOPT4: "Unterstützt §Y[possible_country_to_elect_for_dutch_provinces_overlord_4.GetName]§!."
+ subjects_expanded_dutch_province_subject_events9.EVTOPT5: "Unterstützt §Y[possible_country_to_elect_for_dutch_provinces_overlord_5.GetName]§!."
+ subjects_expanded_dutch_province_subject_events9.EVTOPT6: "Unterstützt §Y[possible_country_to_elect_for_dutch_provinces_overlord_6.GetName]§!."
+ subjects_expanded_dutch_province_subject_events9.EVTOPT7: "Abbrechen."
+ 

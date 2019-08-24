@@ -42,3 +42,19 @@
  autonomous_dominion_philippines_nation_title: "Gründet die Philippinen"
  autonomous_dominion_philippines_nation_desc: "Nachdem wir unabhängig geworden sind, sollten wir uns nicht länger [Root.GetName] nennen und unsere geografische Lage erlaubt es uns, §Y[PHI.GetName]§! zu bilden."
  
+ 
+ dutch_provinces_reform_1_title: "Interne Vrede verabschieden"
+ dutch_provinces_reform_1_desc: "Ein interner Friede zwischen allen Niederländischen Provinzen ist wichtig, um sich auf die Verbesserung der Zusammenarbeit zwischen unseren Untertanen konzentrieren zu können. Dies wird der Gründung der §Y[NED.GetName]§! uns einen Schritt näher bringen."
+ 
+ dutch_provinces_reform_2_title: "Externe Vrede verabschieden"
+ dutch_provinces_reform_2_desc: "Einen externen Friede von unseren Niederländischen Provinzen zu verlangen ist wichtig, um das Risiko zu verringern, dass sie in große Kriege verwickelt und annektiert werden, was die niederländische Region schwächen würde. Dies wird der Gründung der §Y[NED.GetName]§! uns einen Schritt näher bringen."
+ 
+ dutch_provinces_reform_3_title: "Successiewet verabschieden"
+ dutch_provinces_reform_3_desc: "All diese Wahlen erschweren eine funktionierende Adminsitration oder machen diese sogar unmöglich. Ein Gesetz zu verabschieden, welches dafür sorgt, dass der Herrscher der Niederländischen Provinzen immer aus demselben Land stammen muss, wird in dieser Situation hilfreich sein. Dies wird der Gründung der §Y[NED.GetName]§! uns einen Schritt näher bringen."
+ 
+ dutch_provinces_overlord_form_netherlands_title: "Vereint die Niederländischen Provinzen"
+ dutch_provinces_overlord_form_netherlands_desc: "Wir haben bereits die Vorarbeit geleistet, indem wir alle Niederländischen Provinzen unter unserer Herrschaft versammelt haben, nun ist es an der Zeit, die niederländische Bevölkerung in einer Nation zu vereinen! \nHolland mausert sich zu einem der fähigsten See- und Kolonialmächte Europas. Lukrative Handelsgelegenheiten zuhause wie in Übersee haben zu einer schnellen Evolution des Landes zu einem der ersten kapitalistischen Staaten der Welt geführt."
+ 
+ dutch_provinces_player_election_title: "§YZielland der Wahl auswählen§!"
+ dutch_provinces_player_election_desc: "Verwendet diese Entscheidung, um das Land auszuwählen, dass Ihr bei der nächsten Wahl des Lehnsherrn der §YNiederländischen Provinzen§! unterstützen wollt. \nWahlen werden jährlich im Januar abgehalten, bis die dritte Reform verabschiedet wurde."
+ 

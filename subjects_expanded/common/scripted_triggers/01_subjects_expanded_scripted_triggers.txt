@@ -390,6 +390,26 @@ is_possible_subject_of_subject_type_integrated_tribe_subject = {
 	same_continent = PREV
 }
 
+is_possible_subject_of_subject_type_dutch_province_subject = {
+	# PREVs in THIS scope refer to possible overlord
+	NOT = { is_subject_of_type = dutch_province_subject }
+	NOT = { has_global_flag = dutch_province_subject_no_leader_election }
+	OR = {
+		is_subject = no
+		AND = {
+			is_subject_of = ROOT
+			is_vassal_or_similar_subject = yes
+		}
+	}
+	OR = {
+		primary_culture = dutch
+		primary_culture = flemish
+	}
+	capital_scope = {
+		region = low_countries_region
+	}
+}
+
 can_create_subject_type = {
 	can_be_overlord = $subject_type$
 	$subject$ = {

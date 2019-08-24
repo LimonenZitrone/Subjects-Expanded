@@ -205,6 +205,29 @@
  integrated_tribe_subject_give_additional_tribute_to_overlord_tooltip: "Send an additional amount of §Y10%§! of your yearly manpower to §Y[From.GetName]§!.\n"
  
  
+ establish_dutch_province_subject_title: "Establish Dutch Province"
+ establish_dutch_province_subject_desc: "Do you want to offer §Y[From.GetName]§! to become our Dutch Province? \n[dutch_province_subject_desc]"
+ establish_dutch_province_subject_tooltip: "Make §Y[From.GetName]§! to a [Root.GetAdjective] §YDutch Province§!.\n"
+ establish_dutch_province_subject_alert_tooltip: "Establish Dutch Province"
+ establish_dutch_province_subject_dialog: "§Y[This.GetName]§! offers us that we become their §YDutch Province§!. \n[dutch_province_subject_desc] \nDo you want to accept?"
+ 
+ ask_for_dutch_province_subject_title: "Request Dutch Province"
+ ask_for_dutch_province_subject_desc: "Do you want to offer §Y[From.GetName]§! that we become their Dutch Province? \n[dutch_province_subject_desc]"
+ ask_for_dutch_province_subject_tooltip: "Ask §Y[From.GetName]§! to make §Y[Root.GetName]§! to a [From.GetAdjective] §YDutch Province§!.\n"
+ ask_for_dutch_province_subject_alert_tooltip: "Request Dutch Province"
+ ask_for_dutch_province_subject_dialog: "§Y[This.GetName]§! offers us that they become our §YDutch Province§!. \n[dutch_province_subject_desc] \nDo you want to accept?"
+ 
+ dutch_province_subject_ask_for_independence_title: "Demand Independence"
+ dutch_province_subject_ask_for_independence_desc: "Request independence from your overlord §Y[From.GetName]§!. \nIf they accept, they will grant us independence. \nIf they decline, we will gain §G+50%§! liberty desire and our opinion of them is changed by §R-100§!."
+ dutch_province_subject_ask_for_independence_tooltip: "Request independence from your overlord §Y[From.GetName]§!.\n"
+ dutch_province_subject_ask_for_independence_alert_tooltip: "Demand Independence"
+ dutch_province_subject_ask_for_independence_dialog: "§Y[This.GetName]§! demands that we grant them independence! \nIf we accept, we will grant them independence. \nIf we decline, they will gain §R+50%§! liberty desire and their opinion of us is changed by §R-100§!. \n\nDo you want to accept?"
+ 
+ cancel_dutch_province_subject_title: "Release Dutch Province"
+ cancel_dutch_province_subject_desc: "Cancel the dependency of §Y[From.GetName]§! of us. This will decrease their opinion about us by §R-200§!, if their liberty desire is below §Y50%§!. We will also lose §R-25§! prestige and gain a truce with them for §Y5 years§!."
+ cancel_dutch_province_subject_tooltip: "Cancel the vassalisation of §Y[From.GetName]§! and grant them independence.\n"
+ 
+ 
  return_subject_to_vassal_title: "Demote to Vassal"
  return_subject_to_vassal_desc: "Cancel the current status §Y[From.GetName]§! has and make them to a vassal. This will decrease their opinion of us by §R-100§! and change their liberty desire by §R+25%§!. We will also lose §R-10§! prestige."
  return_subject_to_vassal_tooltip: "Make §Y[From.GetName]§! to a vassal again.\n"
@@ -268,4 +291,12 @@
  ROOT_FROM_ARE_ALLIED: "We are allied"
  ROOT_FROM_ARE_HISTORICAL_FRIENDS: "We are historical friends"
  ROOT_FROM_ARE_HISTORICAL_RIVALS: "We are historical rivals"
+ FROM_NUM_OF_PROVINCES: "Their amount of provinces"
+ ROOT_NUM_OF_PROVINCES: "Our amount of provinces"
+ ROOT_AMOUNT_OF_ALLIANCES: "Our number of allies"
+ ROOT_HAS_NO_ALLIANCES: "We have no allies"
+ ROOT_LIBERTY_DESIRE_TOO_LOW: "Our liberty desire is too low"
+ FROM_AMOUNT_OF_ALLIANCES: "Their amount of allies"
+ FROM_COULD_PERHAPS_ENACT_A_REFORM: "They might be able to enact a reform soon"
+ NUM_OF_DUTCH_PROVINCES_REFORMS_PASSED: "Already passed reforms"
  

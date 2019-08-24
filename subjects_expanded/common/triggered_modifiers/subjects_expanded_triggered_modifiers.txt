@@ -72,12 +72,6 @@ early_fiefdom_no_dip_cost_1 = {
 			current_age = high_middle_ages
 			current_age = late_middle_ages
 		}
-		calc_true_if = {
-			all_subject_country = {
-				is_subject_of_type = fief_subject
-			}
-			amount = 2
-		}
 		NOT = {
 			calc_true_if = {
 				all_subject_country = {

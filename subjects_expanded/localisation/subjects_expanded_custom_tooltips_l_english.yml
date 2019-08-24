@@ -25,6 +25,7 @@
  IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_muslim_tributary_vassal: "Can be made to a §YDar al-Sulh Territory§!"
  IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_mandala_trade_vassal: "Can be made to a §YMandala Vassal§!"
  IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_integrated_tribe_subject: "Can be made to an §YIntegrated Tribe§!"
+ IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_dutch_province_subject: "Can be made to a §YDutch Province§!"
  
  THIS_IS_FORMER_AUTONOMOUS_DOMINION: "Is a former §YDominion§! or a former §YColonial Nation§!"
  
@@ -37,6 +38,10 @@
  CANNOT_ALLY_SISTER_REPUBLIC_RIVAL: "You cannot ally a rival of your Sister Republic."
  
  CANNOT_DECLARE_WAR_ON_NON_PRIMITIVE_NON_INTEGRATED_TRIBE: "Integrated tribes can only declare war on neighboring primitives and Integrated Tribes of other overlords."
+ 
+ CANNOT_DECLARE_WAR_ON_DUTCH_PROVINCE_OF_SAME_OVERLORD: "Wars between Dutch Provinces of the same overlord were forbidden."
+ CANNOT_DECLARE_WAR_WITHOUT_SCUTAGE_WHEN_DUTCH_PROVINCES_EXTERNAL_WAR_WAS_DISALLOWED: "After declaring external wars was forbidden for Dutch Provinces, you can only do this when your overlord has enabled scutage."
+ CANNOT_DECLARE_WAR_ON_OVERLORD_BEFORE_THIRD_DUTCH_PROVINCES_REFORM: "You cannot declare war on your overlord before he has enacted the §YSuccessiewet§! reform."
  
  # New Diplomatic Actions:
  DID_NOT_LOWER_DEVELOPMENT_WITHIN_LAST_10_YEARS: "Did NOT reduce the development of an autonomous dominion within the last §Y10 years§!"
@@ -59,6 +64,8 @@
  
  INTEGRATED_TRIBE_SUBJECT_DID_NOT_SEND_ADDITIONAL_TRIBUTE_WITHIN_LAST_5_YEARS: "Did NOT send additional tribute within the last §Y5 years§!"
  
+ DID_NOT_ASK_FOR_INDEPENDENCE_WITHIN_LAST_6_MONTHS: "Did NOT ask for independence within the last §Y183 days§!"
+ 
  # Decisions:
  ALL_PROVINCES_IN_INDIAN_TRADE_COMPANY_REGIONS_CEDED_TO_DOMINION: "\nAll our provinces in [Root.GetIndianTradeCompanyRegionsSgPl] [Root.GetFirstIndianTradeCompanyRegionWeCede][Root.GetSecondIndianTradeCompanyRegionWeCede][Root.GetThirdIndianTradeCompanyRegionWeCede][Root.GetFourthIndianTradeCompanyRegionWeCede][Root.GetFifthIndianTradeCompanyRegionWeCede] are ceded to our dominion \n[Root.GetCreatedADNameIndia], which is released there."
  ALL_PROVINCES_IN_EAST_INDIES_TRADE_COMPANY_REGIONS_CEDED_TO_DOMINION: "\nAll our provinces in [Root.GetEastIndiesTradeCompanyRegionsSgPl] [Root.GetFirstEastIndiesTradeCompanyRegionWeCede][Root.GetSecondEastIndiesTradeCompanyRegionWeCede] are ceded to our dominion \n[Root.GetCreatedADNameEastIndies], which is released there."
@@ -67,6 +74,22 @@
  ALL_PROVINCES_IN_EAST_AFRICA_TRADE_COMPANY_REGIONS_CEDED_TO_DOMINION: "\nAll our provinces in the trade company region §YEast African Charter§! are ceded to our dominion \n[Root.GetCreatedADNameEastAfrica], which is released there."
  ALL_PROVINCES_IN_INDOCHINA_TRADE_COMPANY_REGIONS_CEDED_TO_DOMINION: "\nAll our provinces in [Root.GetIndochinaTradeCompanyRegionsSgPl] [Root.GetFirstIndochinaTradeCompanyRegionWeCede][Root.GetSecondIndochinaTradeCompanyRegionWeCede] are ceded to our dominion \n[Root.GetCreatedADNameIndochina], which is released there."
  ALL_PROVINCES_IN_PHILIPPINES_TRADE_COMPANY_REGIONS_CEDED_TO_DOMINION: "\nAll our provinces in the trade company region §YPhilippine Charter§! are ceded to our dominion \n[Root.GetCreatedADNamePhilippines], which is released there."
+ 
+ HAS_AT_LEAST_2_DUTCH_PROVINCE_SUBJECTS: "Has at least §Y2 Dutch Provinces§!"
+ HAS_ANY_DUTCH_PROVINCE_SUBJECTS_FOR_AT_LEAST_2_YEARS: "Any §YDutch Province§! is a [Root.GetAdjective] subject for at least §Y2 years§!"
+ HAS_ALL_DUTCH_PROVINCE_SUBJECTS_FOR_AT_LEAST_1_YEAR: "All §YDutch Provinces§! are a [Root.GetAdjective] subject for at least §Y1 year§!"
+ ALL_DUTCH_PROVINCE_SUBJECTS_HAVE_LESS_THAN_50_LIBERTY_DESIRE: "All §YDutch Provinces§! have less than §Y50%§! liberty desire"
+ PROVINCE_OWNED_BY_DUTCH_PROVINCE_AND_IS_CORE: "Is core of its owner and owned by one of our §YDutch Provinces§!"
+ 
+ AT_LEAST_5_YEARS_AFTER_DUTCH_PROVINCES_REFORM_1: "§YInterne Vrede§! was enacted at least §Y5 years§! ago"
+ AT_LEAST_5_YEARS_AFTER_DUTCH_PROVINCES_REFORM_2: "§YExterne Vrede§! was enacted at least §Y5 years§! ago"
+ AT_LEAST_5_YEARS_AFTER_DUTCH_PROVINCES_REFORM_3: "§YSuccessiewet§! was enacted at least §Y5 years§! ago"
+ 
+ DUTCH_PROVINCE_SUBJECT_NO_INTERNAL_WAR_TT: "§YDutch Provinces cannot declare wars against other Dutch Provinces of the same overlord anymore.§!\n"
+ DUTCH_PROVINCE_SUBJECT_NO_EXTERNAL_WAR_TT: "§YDutch Provinces cannot declare wars anymore, unless they have scutage activated.§!\n"
+ DUTCH_PROVINCE_SUBJECT_NO_LEADER_ELECTION_TT: "§YThe overlord is not elected anymore, he will always be from [From.GetName]. \nDutch Provinces can now declare independence by war.§!\n"
+ 
+ WE_SUPPORT_THIS_FOR_NEXT_DUTCH_PROVINCE_ELECTION: "We currently vote for §Y[This.GetName]§!."
  
  # Events:
  ROMAN_CLIENT_KINGDOM_HEIR_ACCEPTED: "§Y[From.Heir.GetName] [From.Heir.Dynasty.GetName]§! (Claim: [From.GetHeirClaimText]) \n £adm£ [From.GetHeirAdm] £dip£ [From.GetHeirDip] £mil£ [From.GetHeirMil] \nis henceforth the heir of: \n@[From.GetTag] §Y[From.GetName]§!.\n"
@@ -81,6 +104,25 @@
  
  INTEGRATED_TRIBE_SUBJECT_PAYS_YEARLY_MANPOWER: "§Y[From.GetName]§! gives us §G[From.integrated_tribe_subject_yearly_manpower_var.GetValue]§! manpower."
  
+ THIS_IS_NEW_OVERLORD_OF_DUTCH_PROVINCES: "@[This.GetTag] §Y[This.GetName]§! is the new overlord over the §YDutch Provinces§!.\n"
+ 
+ DUTCH_PROVINCES_OVERLORD_ELECTION_INDIVIDUAL_RESULT_TT_1: "§Y[election_value_of_dutch_province_1.GetName]§! voted in the election for §G[election_value_of_dutch_province_1_target.GetName]§!. Their closest rival was §R[election_value_of_dutch_province_1_rival.GetName]§!. Countries that have others vote for them, will always elect themselves.\n"
+ DUTCH_PROVINCES_OVERLORD_ELECTION_INDIVIDUAL_RESULT_TT_2: "§Y[election_value_of_dutch_province_2.GetName]§! voted in the election for §G[election_value_of_dutch_province_2_target.GetName]§!. Their closest rival was §R[election_value_of_dutch_province_2_rival.GetName]§!. Countries that have others vote for them, will always elect themselves.\n"
+ DUTCH_PROVINCES_OVERLORD_ELECTION_INDIVIDUAL_RESULT_TT_3: "§Y[election_value_of_dutch_province_3.GetName]§! voted in the election for §G[election_value_of_dutch_province_3_target.GetName]§!. Their closest rival was §R[election_value_of_dutch_province_3_rival.GetName]§!. Countries that have others vote for them, will always elect themselves.\n"
+ DUTCH_PROVINCES_OVERLORD_ELECTION_INDIVIDUAL_RESULT_TT_4: "§Y[election_value_of_dutch_province_4.GetName]§! voted in the election for §G[election_value_of_dutch_province_4_target.GetName]§!. Their closest rival was §R[election_value_of_dutch_province_4_rival.GetName]§!. Countries that have others vote for them, will always elect themselves.\n"
+ DUTCH_PROVINCES_OVERLORD_ELECTION_INDIVIDUAL_RESULT_TT_5: "§Y[election_value_of_dutch_province_5.GetName]§! voted in the election for §G[election_value_of_dutch_province_5_target.GetName]§!. Their closest rival was §R[election_value_of_dutch_province_5_rival.GetName]§!. Countries that have others vote for them, will always elect themselves.\n"
+ DUTCH_PROVINCES_OVERLORD_ELECTION_INDIVIDUAL_RESULT_TT_6: "§Y[election_value_of_dutch_province_6.GetName]§! voted in the election for §G[election_value_of_dutch_province_6_target.GetName]§!. Their closest rival was §R[election_value_of_dutch_province_6_rival.GetName]§!. Countries that have others vote for them, will always elect themselves.\n"
+ 
+ DUTCH_PROVINCES_OVERLORD_ELECTION_INDIVIDUAL_RESULT_TT_1_NO_RIVAL: "§Y[election_value_of_dutch_province_1.GetName]§! voted in the election for §G[election_value_of_dutch_province_1_target.GetName]§!. Countries that have others vote for them, will always elect themselves.\n"
+ DUTCH_PROVINCES_OVERLORD_ELECTION_INDIVIDUAL_RESULT_TT_2_NO_RIVAL: "§Y[election_value_of_dutch_province_2.GetName]§! voted in the election for §G[election_value_of_dutch_province_2_target.GetName]§!. Countries that have others vote for them, will always elect themselves.\n"
+ DUTCH_PROVINCES_OVERLORD_ELECTION_INDIVIDUAL_RESULT_TT_3_NO_RIVAL: "§Y[election_value_of_dutch_province_3.GetName]§! voted in the election for §G[election_value_of_dutch_province_3_target.GetName]§!. Countries that have others vote for them, will always elect themselves.\n"
+ DUTCH_PROVINCES_OVERLORD_ELECTION_INDIVIDUAL_RESULT_TT_4_NO_RIVAL: "§Y[election_value_of_dutch_province_4.GetName]§! voted in the election for §G[election_value_of_dutch_province_4_target.GetName]§!. Countries that have others vote for them, will always elect themselves.\n"
+ DUTCH_PROVINCES_OVERLORD_ELECTION_INDIVIDUAL_RESULT_TT_5_NO_RIVAL: "§Y[election_value_of_dutch_province_5.GetName]§! voted in the election for §G[election_value_of_dutch_province_5_target.GetName]§!. Countries that have others vote for them, will always elect themselves.\n"
+ DUTCH_PROVINCES_OVERLORD_ELECTION_INDIVIDUAL_RESULT_TT_6_NO_RIVAL: "§Y[election_value_of_dutch_province_6.GetName]§! voted in the election for §G[election_value_of_dutch_province_6_target.GetName]§!. Countries that have others vote for them, will always elect themselves.\n"
+ 
  # Triggered Modifiers:
  HAS_AT_LEAST_3_DOMINIONS_OR_AUTONOMOUS_DOMINIONS_IN_TRADE_COMPANY_REGIONS: "Has at least §Y3§! §YDominions§! or §YAutonomous Dominions§! with their capital in a trade company region (established via decisions)"
+ 
+ # Scripted Effect Tooltips:
+ ELECT_THIS_AS_DUTCH_PROVINCE_OVERLORD_TT: "We will support §Y[This.GetName]§! as the new overlord of the §YDutch Provinces§!.\n"
  

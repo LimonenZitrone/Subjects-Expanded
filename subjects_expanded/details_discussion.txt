@@ -29,6 +29,7 @@ If a subject gives an additional merchant, the bonuses it gives to its overlord 
 [*] if Protectorates are behind their overlord in institutions, they receive a bonus to institution spread
 [*] if Protectorates are behind their overlord in technologies, they receive a bonus to technology cost of the technology they are behind in
 [*] if Protectorates are at the same or a more advanced level of technology compared to their overlord, they receive additional liberty desire
+[*] if a Protectorate is attacked and the overlord declines the call to arms, the Protectorate will become free after some days
 [/list]
 
 [h1]Puppet State[/h1]
@@ -468,6 +469,7 @@ If a subject gives an additional merchant, the bonuses it gives to its overlord 
 
 [b]Additional Information:[/b]
 [list]
+[*] Integrated Tribes can only be established diplomatically
 [*] Integrated Tribes only pay manpower if scutage is enabled
 [*] Integrated Tribes can pay an additional tribute of 10% of their yearly manpower every 5 years
 [*] Integrated Tribes receive a malus on national unrest if they have a different culture than their overlord
@@ -475,4 +477,37 @@ If a subject gives an additional merchant, the bonuses it gives to its overlord 
 [*] Integrated Tribes pay tribute
 [*] the overlord of Integrated Tribes is always called to arms, if they are attacked, giving him the option to decline
 [*] if an Integrated Tribe has national rebels be successful, the spawned nation will become a subject of the Integrated Tribe's overlord
+[/list]
+
+[h1]Dutch Province[/h1]
+[i]A Dutch Province behaves similar as a normal vassal and joins its overlord wars, but has a slightly reduced base liberty desire and slightly increased liberty desire from development, is not restricted in its diplomatic actions and costs no diplomatic relation. It gains a bonus on trade efficiency and diplomatic reputation and grants its overlord a bonus on diplomatic reputation. It can only be established by Dutch or Flemish countries in the Low Countries region on Dutch or Flemish countries in the Low Countries region. Only one country can have Dutch Provinces at the same time and it can only have 5 at most. The overlord can enact up to three reforms - to disallow Dutch Provinces to declare war on each other, to disallow Dutch Provinces to declare wars in general (activating scutage allows them to declare war again) and to disable Dutch Provinces Elections. Unless the third reform was enacted, each January the current overlord and all Dutch Provinces elect the next overlord. If a different country than the current overlord wins, all Dutch Provinces are transfered to that country and the current overlord becomes a Dutch Province himself. The third reform also allows Dutch Provinces to declare independence wars, before they can only diplomatically request independence. \nAfter all three reforms were enacted, the current overlord receives a special decision to form the Netherlands with the help of the Dutch Provinces.[/i]
+
+[b]Conditions (possible overlord):[/b]
+[list]
+[*] Netherlands does not exist
+[*] is not a subject
+[*] has either Dutch or Flemish primary culture
+[*] has its capital in the Low Countries region
+[*] no other country has Dutch Provinces as subjects
+[*] has less than 5 Dutch Provinces as subjects
+[/list]
+
+[b]Conditions (possible subject):[/b]
+[list]
+[*] the third reform was not enacted yet
+[*] is either not a subject or a vassal of the possible overlord
+[*] has either Dutch or Flemish primary culture
+[*] has its capital in the Low Countries region
+[/list]
+
+[b]Additional Information:[/b]
+[list]
+[*] Dutch Provinces can only be established diplomatically
+[*] Dutch Provinces have elections for their overlord each year, the third reform abolishes elections
+[*] the overlord of Dutch Provinces has three reforms to enact, the first disallowing Dutch Provinces to declare war between each other, the second disallowing Dutch Provinces to declare war in general (unless they have scutage enabled) and the third to abolish elections
+[*] Dutch Provinces can only request their independence diplomatically until the third reform is enacted, then they can only become free by war
+[*] Dutch Provinces gain a bonus on trade efficiency and diplomatic reputation
+[*] Dutch Provinces grant their overlord a bonus on diplomatic reputation
+[*] after enacting all three reforms, there is a new decision to form the Netherlands with the help of the Dutch Provinces
+[*] the overlord of Dutch Provinces gets call to arms from the Dutch Provinces if they get attacked, allowing him to decline
 [/list]

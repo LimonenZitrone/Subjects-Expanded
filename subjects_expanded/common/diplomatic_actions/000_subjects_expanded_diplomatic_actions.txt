@@ -109,6 +109,7 @@ declarewar = {
 					has_global_flag = dutch_province_subject_no_external_war
 					has_scutage = yes
 				}
+				is_subject_of = FROM
 			}
 		}
 	}

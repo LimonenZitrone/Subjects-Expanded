@@ -308,15 +308,7 @@ country_decisions = {
 			}
 		}
 		provinces_to_highlight = {
-			OR = {
-				province_id = 95
-				province_id = 96
-				province_id = 97
-				province_id = 98
-				province_id = 99
-				province_id = 100
-				province_id = 4383
-			}
+			region = low_countries_region
 			OR = {
 				AND = {
 					NOT = { owned_by = ROOT }
@@ -338,87 +330,13 @@ country_decisions = {
 			adm_power = 200
 			dip_power = 200
 			mil_power = 200
-			OR = {
-				owns_core_province = 95
-				95 = {
-					custom_trigger_tooltip = {
-						tooltip = PROVINCE_OWNED_BY_DUTCH_PROVINCE_AND_IS_CORE
-						owner = {
-							is_subject_of = ROOT
-							is_subject_of_type = dutch_province_subject
-						}
-						is_core = owner
+			low_countries_region = {
+				type = all
+				OR = {
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
 					}
-				}
-			}
-			OR = {
-				owns_core_province = 96
-				96 = {
-					custom_trigger_tooltip = {
-						tooltip = PROVINCE_OWNED_BY_DUTCH_PROVINCE_AND_IS_CORE
-						owner = {
-							is_subject_of = ROOT
-							is_subject_of_type = dutch_province_subject
-						}
-						is_core = owner
-					}
-				}
-			}
-			OR = {
-				owns_core_province = 97
-				97 = {
-					custom_trigger_tooltip = {
-						tooltip = PROVINCE_OWNED_BY_DUTCH_PROVINCE_AND_IS_CORE
-						owner = {
-							is_subject_of = ROOT
-							is_subject_of_type = dutch_province_subject
-						}
-						is_core = owner
-					}
-				}
-			}
-			OR = {
-				owns_core_province = 98
-				98 = {
-					custom_trigger_tooltip = {
-						tooltip = PROVINCE_OWNED_BY_DUTCH_PROVINCE_AND_IS_CORE
-						owner = {
-							is_subject_of = ROOT
-							is_subject_of_type = dutch_province_subject
-						}
-						is_core = owner
-					}
-				}
-			}
-			OR = {
-				owns_core_province = 99
-				99 = {
-					custom_trigger_tooltip = {
-						tooltip = PROVINCE_OWNED_BY_DUTCH_PROVINCE_AND_IS_CORE
-						owner = {
-							is_subject_of = ROOT
-							is_subject_of_type = dutch_province_subject
-						}
-						is_core = owner
-					}
-				}
-			}
-			OR = {
-				owns_core_province = 100
-				100 = {
-					custom_trigger_tooltip = {
-						tooltip = PROVINCE_OWNED_BY_DUTCH_PROVINCE_AND_IS_CORE
-						owner = {
-							is_subject_of = ROOT
-							is_subject_of_type = dutch_province_subject
-						}
-						is_core = owner
-					}
-				}
-			}
-			OR = {
-				owns_core_province = 4383
-				4383 = {
 					custom_trigger_tooltip = {
 						tooltip = PROVINCE_OWNED_BY_DUTCH_PROVINCE_AND_IS_CORE
 						owner = {
@@ -497,17 +415,23 @@ country_decisions = {
 					is_elector = no
 					is_emperor = no
 				}
-				every_owned_province = {
-					limit = {
-						is_part_of_hre = yes
-					}
+				tooltip = {
 					set_in_empire = no
+				}
+				hidden_effect = {
+					every_owned_province = {
+						limit = {
+							is_part_of_hre = yes
+						}
+						set_in_empire = no
+					}
 				}
 			}
 			if = {
 				limit = {
 					government = theocracy
 					religion = catholic
+					exists = PAP
 				}
 				PAP = {
 					add_opinion = {
@@ -520,14 +444,6 @@ country_decisions = {
 			swap_non_generic_missions = yes
 			change_government = republic
 			add_government_reform = dutch_republic
-			low_countries_region = {
-				limit = {
-					NOT = { owned_by = ROOT }
-					NOT = { province_id = 87 }
-					NOT = { province_id = 181 }
-				}
-				add_permanent_claim = NED
-			}
 			wallonia_area = {
 				limit = {
 					NOT = { owned_by = ROOT }

@@ -37,7 +37,7 @@ You can find more details on the new subjects [url=https://steamcommunity.com/wo
 [h1]Compatibility[/h1]
 [list]
 [*] should be compatible with any DLC
-[*] should be compatible with most mods (that do not edit the declarewar or allianceaction diplomatic action)
+[*] should be compatible with most mods (that do not edit the declarewar, allianceaction or callaction diplomatic action)
 [list]
 [*] compatible with Extended Timeline
 [/list]

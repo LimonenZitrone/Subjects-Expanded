@@ -43,6 +43,8 @@
  CANNOT_DECLARE_WAR_WITHOUT_SCUTAGE_WHEN_DUTCH_PROVINCES_EXTERNAL_WAR_WAS_DISALLOWED: "After declaring external wars was forbidden for Dutch Provinces, you can only do this when your overlord has enabled scutage."
  CANNOT_DECLARE_WAR_ON_OVERLORD_BEFORE_THIRD_DUTCH_PROVINCES_REFORM: "You cannot declare war on your overlord before he has enacted the §YSuccessiewet§! reform."
  
+ CANNOT_CALL_DUTCH_PROVINCE_AGAINST_ITS_OVERLORD: "You cannot call a Dutch Province to arms against its overlord."
+ 
  # New Diplomatic Actions:
  DID_NOT_LOWER_DEVELOPMENT_WITHIN_LAST_10_YEARS: "Did NOT reduce the development of an autonomous dominion within the last §Y10 years§!"
  DID_NOT_REPLACE_CURRENT_RULER: "We did NOT help §Y[From.Monarch.GetName]§! to ascend the throne"

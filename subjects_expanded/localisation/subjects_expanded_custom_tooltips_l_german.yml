@@ -43,6 +43,8 @@
  CANNOT_DECLARE_WAR_WITHOUT_SCUTAGE_WHEN_DUTCH_PROVINCES_EXTERNAL_WAR_WAS_DISALLOWED: "Nachdem das Erklären von externen Kriegen für Niederländische Provinzen verboten wurde, könnt Ihr dies nur tun, wenn Eurer Lehnsherr Rittersteuern aktiviert hat."
  CANNOT_DECLARE_WAR_ON_OVERLORD_BEFORE_THIRD_DUTCH_PROVINCES_REFORM: "Ihr könnt Eurem Lehnsherrn nicht den Krieg erklären, bevor er die §YSuccessiewet§!-Reform verabschiedet hat."
  
+ CANNOT_CALL_DUTCH_PROVINCE_AGAINST_ITS_OVERLORD: "Ihr könnt eine Niederländische Provinz nicht gegen ihren Lehnsherrn zu den Waffen rufen."
+ 
  # New Diplomatic Actions:
  DID_NOT_LOWER_DEVELOPMENT_WITHIN_LAST_10_YEARS: "Hat in den letzten §Y10 Jahren§! NICHT die Entwicklung eines Autonomen Herrschaftsgebiets verringert"
  DID_NOT_REPLACE_CURRENT_RULER: "Wir haben §Y[From.Monarch.GetName]§! NICHT auf den Thron verholfen"

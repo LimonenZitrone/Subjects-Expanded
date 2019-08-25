@@ -198,3 +198,21 @@ allianceaction = {
 		}
 	}
 }
+
+callaction = {
+	condition = {
+		tooltip = CANNOT_CALL_DUTCH_PROVINCE_AGAINST_ITS_OVERLORD
+		potential = {
+			FROM = {
+				is_subject_of_type = dutch_province_subject
+			}
+		}
+		allow = {
+			FROM = {
+				overlord = {
+					NOT = { war_with = ROOT }
+				}
+			}
+		}
+	}
+}

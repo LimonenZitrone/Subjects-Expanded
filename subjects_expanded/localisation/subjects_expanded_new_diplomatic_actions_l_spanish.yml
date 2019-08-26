@@ -223,6 +223,12 @@
  dutch_province_subject_ask_for_independence_alert_tooltip: "Demand Independence"
  dutch_province_subject_ask_for_independence_dialog: "§Y[This.GetName]§! demands that we grant them independence! \nIf we accept, we will grant them independence. \nIf we decline, they will gain §R+50%§! liberty desire and their opinion of us is changed by §R-100§!. \n\nDo you want to accept?"
  
+ dutch_province_subject_force_white_peace_title: "Enforce Peace"
+ dutch_province_subject_force_white_peace_desc: "Force §Y[From.GetName]§! to sign a white peace in all wars they are not the war leader. If they accept, this will change their liberty desire by §R+50%§!, if they decline by §R+25%§!. \nIf they accept, enemies will gain claims on all [From.GetAdjective] provinces they control."
+ dutch_province_subject_force_white_peace_tooltip: "Force §Y[From.GetName]§! to sign a white peace in all wars they are not the war leader.\n"
+ dutch_province_subject_force_white_peace_alert_tooltip: "Enforce Peace"
+ dutch_province_subject_force_white_peace_dialog: "§Y[This.GetName]§! demands that we sign a white peace in all wars we are not the war leader. \nIf we accept, that will change our liberty desire by §G+50%§!, if we decline by §G+25%§!. \n\nDo you want to accept?"
+ 
  cancel_dutch_province_subject_title: "Release Dutch Province"
  cancel_dutch_province_subject_desc: "Cancel the dependency of §Y[From.GetName]§! of us. This will decrease their opinion about us by §R-200§!, if their liberty desire is below §Y50%§!. We will also lose §R-25§! prestige and gain a truce with them for §Y5 years§!."
  cancel_dutch_province_subject_tooltip: "Cancel the vassalisation of §Y[From.GetName]§! and grant them independence.\n"
@@ -299,4 +305,10 @@
  FROM_AMOUNT_OF_ALLIANCES: "Their amount of allies"
  FROM_COULD_PERHAPS_ENACT_A_REFORM: "They might be able to enact a reform soon"
  NUM_OF_DUTCH_PROVINCES_REFORMS_PASSED: "Already passed reforms"
+ FROM_HAS_ENEMY_CONTROLLED_PROVINCES: "Their provinces are controlled by an enemy"
+ FROM_HAS_OWN_CONTROLLED_PROVINCES: "They control enemy provinces"
+ FROM_CAPITAL_CONTROLLED_BY_ENEMY: "Their capital is controlled by an enemy"
+ FROM_ENEMY_ARMIES_ON_CORE_TERRITORY: "Their enemies have units on their core territory"
+ FROM_ARMY_SIZE: "Their army size"
+ FROM_LIBERTY_DESIRE: "Their liberty desire"
  

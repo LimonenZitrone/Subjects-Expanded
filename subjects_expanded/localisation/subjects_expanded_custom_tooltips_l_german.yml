@@ -68,6 +68,10 @@
  
  DID_NOT_ASK_FOR_INDEPENDENCE_WITHIN_LAST_6_MONTHS: "Hat innerhalb der letzten §Y183 Tage§! NICHT um Unabhängigkeit gebeten"
  
+ WAS_NOT_FORCED_TO_DO_WHITE_PEACE_WITHIN_LAST_YEAR: "Der Lehnsherr hat innerhalb der letzten §Y365 Tage§! NICHT versucht, §Y[This.GetName]§! zum Frieden zu zwingen"
+ IS_AT_LEAST_IN_ONE_WAR_WHERE_THEY_ARE_NOT_WARLEADER: "Ist mindestens in §Y1§! Krieg NICHT kriegsführende Partei"
+ HAS_LARGER_ARMY_SIZE_THAN_ALL_WAR_LEADERS_AGAINST_FROM: "Besitzt eine größere Armee als alle kriegsführenden Länder, die gegen §Y[From.GetName]§! kämpfen"
+ 
  # Decisions:
  ALL_PROVINCES_IN_INDIAN_TRADE_COMPANY_REGIONS_CEDED_TO_DOMINION: "\nAlle unsere Provinzen in [Root.GetIndianTradeCompanyRegionsSgPl] [Root.GetFirstIndianTradeCompanyRegionWeCede][Root.GetSecondIndianTradeCompanyRegionWeCede][Root.GetThirdIndianTradeCompanyRegionWeCede][Root.GetFourthIndianTradeCompanyRegionWeCede][Root.GetFifthIndianTradeCompanyRegionWeCede] werden an unser dort entlassenes Herrschaftsgebiet \n[Root.GetCreatedADNameIndia] abgetreten."
  ALL_PROVINCES_IN_EAST_INDIES_TRADE_COMPANY_REGIONS_CEDED_TO_DOMINION: "\nAlle unsere Provinzen in [Root.GetEastIndiesTradeCompanyRegionsSgPl] [Root.GetFirstEastIndiesTradeCompanyRegionWeCede][Root.GetSecondEastIndiesTradeCompanyRegionWeCede] werden an unser dort entlassenes Herrschaftsgebiet \n[Root.GetCreatedADNameEastIndies] abgetreten."

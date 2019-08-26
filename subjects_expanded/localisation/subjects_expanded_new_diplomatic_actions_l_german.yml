@@ -223,6 +223,12 @@
  dutch_province_subject_ask_for_independence_alert_tooltip: "Unabhängigkeit fordern"
  dutch_province_subject_ask_for_independence_dialog: "§Y[This.GetName]§! verlangt, dass wir ihnen Unabhängigkeit gewähren! \nWenn wir aktzeptieren, werden sie unabhängig. \nWenn wir ablehnen, erhalten sie §R+50%§! Freiheitsstreben und ihre Meinung über uns verändert sich um §R-100§!. \n\nWollt Ihr aktzeptieren?"
  
+ dutch_province_subject_force_white_peace_title: "Frieden erzwingen"
+ dutch_province_subject_force_white_peace_desc: "Zwingt §Y[From.GetName]§! dazu, einen weißen Frieden in allen Kriegen zu unterzeichnen, in denen sie nicht kriegsführende Partei sind. Wenn sie akzeptieren, ändert sich ihr Freiheitsstreben um §R+50%§!, wenn sie ablehnen um §R+25%§!. \nWenn sie aktzeptieren, erhalten Feinde einen Anspruch auf alle [From.GetAdjective]en Provinzen, die sie kontrollieren."
+ dutch_province_subject_force_white_peace_tooltip: "Zwingt §Y[From.GetName]§! dazu, einen weißen Frieden in allen Kriegen zu unterzeichnen, in denen sie nicht kriegsführende Partei sind.\n"
+ dutch_province_subject_force_white_peace_alert_tooltip: "Frieden erzwingen"
+ dutch_province_subject_force_white_peace_dialog: "§Y[This.GetName]§! verlangt, dass wir einen weißen Frieden in allen Kriegen unterzeichnen, in denen wir nicht kriegsführende Partei sind. \nWenn wir aktzeptieren ändert sich unser Freiheitsstreben um §G+50%§!, wenn wir ablehnen um §G+25%§!. \n\nWollt Ihr akzeptieren?"
+ 
  cancel_dutch_province_subject_title: "Niederländische Provinz entlassen"
  cancel_dutch_province_subject_desc: "Beendet das Abhängigkeitsverhältnis von §Y[From.GetName]§! zu uns. Dies wird ihre Meinung über uns um §R-200§! verschlechtern, sofern sie ein Freiheitsstreben unter §Y50%§! besitzen. Außerdem verlieren wir §R-25§! Prestige und erhalten eine §Y5-jährige§! Waffenruhe mit ihnen."
  cancel_dutch_province_subject_tooltip: "Beedet die Vasallisierung von §Y[From.GetName]§! und entlasst sie in die Freiheit.\n"
@@ -299,4 +305,10 @@
  FROM_AMOUNT_OF_ALLIANCES: "Ihre Anzahl an Verbündeten"
  FROM_COULD_PERHAPS_ENACT_A_REFORM: "Sie könnten bald vielleicht eine Reform verabschieden"
  NUM_OF_DUTCH_PROVINCES_REFORMS_PASSED: "Hat bereits Reformen verabschiedet"
+ FROM_HAS_ENEMY_CONTROLLED_PROVINCES: "Ihre Provinzen werden von Feinden kontrolliert"
+ FROM_HAS_OWN_CONTROLLED_PROVINCES: "Sie kontrollieren feindliche Provinzen"
+ FROM_CAPITAL_CONTROLLED_BY_ENEMY: "Ihre Hauptstadt ist von Feinden besetzt"
+ FROM_ENEMY_ARMIES_ON_CORE_TERRITORY: "Sie haben feindliche Einheiten auf ihren Kerngebiet"
+ FROM_ARMY_SIZE: "Ihre Armeegröße"
+ FROM_LIBERTY_DESIRE: "Ihr Freiheitsstreben"
  

@@ -1280,6 +1280,670 @@ dutch_province_subject_ask_for_independence = {
 	}
 }
 
+dutch_province_subject_force_white_peace = {
+	category = influence
+	
+	alert_index = 2
+	alert_tooltip = dutch_province_subject_force_white_peace_alert_tooltip
+	
+	require_acceptance = yes
+	
+	is_visible = {
+		has_global_flag = dutch_province_subject_no_leader_election
+		FROM = {
+			is_subject_of = ROOT
+			is_subject_of_type = dutch_province_subject
+		}
+	}
+	
+	is_allowed = {
+		hidden_trigger = {
+			has_global_flag = dutch_province_subject_no_leader_election
+			FROM = {
+				is_subject_of = ROOT
+				is_subject_of_type = dutch_province_subject
+			}
+		}
+		is_at_war = no
+		FROM = {
+			NOT = { liberty_desire = 50 }
+		}
+		FROM = {
+			custom_trigger_tooltip = {
+				tooltip = WAS_NOT_FORCED_TO_DO_WHITE_PEACE_WITHIN_LAST_YEAR
+				NOT = { has_country_modifier = cooldown_dutch_province_subject_force_white_peace }
+			}
+		}
+		FROM = {
+			is_at_war = yes
+			custom_trigger_tooltip = {
+				tooltip = IS_AT_LEAST_IN_ONE_WAR_WHERE_THEY_ARE_NOT_WARLEADER
+				any_country = {
+					war_with = FROM
+					NOT = {
+						is_in_war = {
+							participants = THIS
+							participants = FROM
+							attacker_leader = FROM
+						}
+					}
+					NOT = {
+						is_in_war = {
+							participants = THIS
+							participants = FROM
+							defender_leader = FROM
+						}
+					}
+				}
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = HAS_LARGER_ARMY_SIZE_THAN_ALL_WAR_LEADERS_AGAINST_FROM
+			all_country = {
+				OR = {
+					NOT = { war_with = FROM }
+					NOT = {
+						OR = {
+							is_in_war = {
+								participants = THIS
+								participants = FROM
+								attacker_leader = THIS
+							}
+							is_in_war = {
+								participants = THIS
+								participants = FROM
+								defender_leader = THIS
+							}
+						}
+					}
+					ROOT = { army_size = PREV }
+				}
+			}
+		}
+	}
+	
+	on_accept = {
+		if = {
+			limit = {
+				has_global_flag = dutch_province_subject_no_leader_election
+				FROM = {
+					is_subject_of = ROOT
+					is_subject_of_type = dutch_province_subject
+				}
+				is_at_war = no
+				FROM = {
+					NOT = { liberty_desire = 50 }
+				}
+				FROM = {
+					NOT = { has_country_modifier = cooldown_dutch_province_subject_force_white_peace }
+				}
+				FROM = {
+					is_at_war = yes
+					custom_trigger_tooltip = {
+						tooltip = IS_AT_LEAST_IN_ONE_WAR_WHERE_THEY_ARE_NOT_WARLEADER
+						any_country = {
+							war_with = PREV
+							NOT = {
+								is_in_war = {
+									participants = THIS
+									participants = PREV
+									attacker_leader = PREV
+								}
+							}
+							NOT = {
+								is_in_war = {
+									participants = THIS
+									participants = PREV
+									defender_leader = PREV
+								}
+							}
+						}
+					}
+				}
+				all_country = {
+					OR = {
+						NOT = { war_with = FROM }
+						NOT = {
+							OR = {
+								is_in_war = {
+									participants = THIS
+									participants = FROM
+									attacker_leader = THIS
+								}
+								is_in_war = {
+									participants = THIS
+									participants = FROM
+									defender_leader = THIS
+								}
+							}
+						}
+						ROOT = { army_size = PREV }
+					}
+				}
+			}
+			FROM = {
+				add_liberty_desire = 50
+				add_country_modifier = {
+					name = cooldown_dutch_province_subject_force_white_peace
+					duration = 365
+					hidden = yes
+				}
+				every_owned_province = {
+					limit = {
+						NOT = { controlled_by = PREV }
+						NOT = { controlled_by = REB }
+						NOT = { is_permanent_claim = controller }
+						NOT = { is_core = controller }
+					}
+					controller = {
+						add_claim = PREV
+					}
+				}
+				every_country = {
+					limit = {
+						war_with = PREV
+						NOT = {
+							is_in_war = {
+								participants = THIS
+								participants = PREV
+								attacker_leader = PREV
+							}
+						}
+						NOT = {
+							is_in_war = {
+								participants = THIS
+								participants = PREV
+								defender_leader = PREV
+							}
+						}
+					}
+					white_peace = PREV
+				}
+			}
+		}
+	}
+	
+	on_decline = {
+		if = {
+			limit = {
+				has_global_flag = dutch_province_subject_no_leader_election
+				FROM = {
+					is_subject_of = ROOT
+					is_subject_of_type = dutch_province_subject
+				}
+				is_at_war = no
+				FROM = {
+					NOT = { liberty_desire = 50 }
+				}
+				FROM = {
+					NOT = { has_country_modifier = cooldown_dutch_province_subject_force_white_peace }
+				}
+				FROM = {
+					is_at_war = yes
+					custom_trigger_tooltip = {
+						tooltip = IS_AT_LEAST_IN_ONE_WAR_WHERE_THEY_ARE_NOT_WARLEADER
+						any_country = {
+							war_with = PREV
+							NOT = {
+								is_in_war = {
+									participants = THIS
+									participants = PREV
+									attacker_leader = PREV
+								}
+							}
+							NOT = {
+								is_in_war = {
+									participants = THIS
+									participants = PREV
+									defender_leader = PREV
+								}
+							}
+						}
+					}
+				}
+				all_country = {
+					OR = {
+						NOT = { war_with = FROM }
+						NOT = {
+							OR = {
+								is_in_war = {
+									participants = THIS
+									participants = FROM
+									attacker_leader = THIS
+								}
+								is_in_war = {
+									participants = THIS
+									participants = FROM
+									defender_leader = THIS
+								}
+							}
+						}
+						ROOT = { army_size = PREV }
+					}
+				}
+			}
+			FROM = {
+				add_liberty_desire = 25
+				add_country_modifier = {
+					name = cooldown_dutch_province_subject_force_white_peace
+					duration = 365
+					hidden = yes
+				}
+			}
+		}
+	}
+	
+	ai_acceptance = {
+		add_entry = {
+			name = base_values
+			export_to_variable = {
+				which = ai_value
+				value = 10
+			}
+			multiply_variable = { which = ai_value value = -1 }
+		}
+		add_entry = {
+			name = FROM_HAS_ENEMY_CONTROLLED_PROVINCES
+			limit = {
+				FROM = {
+					any_owned_province = {
+						NOT = { controlled_by = PREV }
+						NOT = { controlled_by = REB }
+					}
+					NOT = {
+						calc_true_if = {
+							all_owned_province = {
+								NOT = { controlled_by = PREV }
+								NOT = { controlled_by = REB }
+							}
+							amount = 2
+						}
+					}
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 10
+			}
+		}
+		add_entry = {
+			name = FROM_HAS_ENEMY_CONTROLLED_PROVINCES
+			limit = {
+				FROM = {
+					calc_true_if = {
+						all_owned_province = {
+							NOT = { controlled_by = PREV }
+							NOT = { controlled_by = REB }
+						}
+						amount = 2
+					}
+					NOT = {
+						calc_true_if = {
+							all_owned_province = {
+								NOT = { controlled_by = PREV }
+								NOT = { controlled_by = REB }
+							}
+							amount = 4
+						}
+					}
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 20
+			}
+		}
+		add_entry = {
+			name = FROM_HAS_ENEMY_CONTROLLED_PROVINCES
+			limit = {
+				FROM = {
+					calc_true_if = {
+						all_owned_province = {
+							NOT = { controlled_by = PREV }
+							NOT = { controlled_by = REB }
+						}
+						amount = 4
+					}
+					NOT = {
+						calc_true_if = {
+							all_owned_province = {
+								NOT = { controlled_by = PREV }
+								NOT = { controlled_by = REB }
+							}
+							amount = 6
+						}
+					}
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 30
+			}
+		}
+		add_entry = {
+			name = FROM_HAS_ENEMY_CONTROLLED_PROVINCES
+			limit = {
+				FROM = {
+					calc_true_if = {
+						all_owned_province = {
+							NOT = { controlled_by = PREV }
+							NOT = { controlled_by = REB }
+						}
+						amount = 6
+					}
+					NOT = {
+						calc_true_if = {
+							all_owned_province = {
+								NOT = { controlled_by = PREV }
+								NOT = { controlled_by = REB }
+							}
+							amount = 8
+						}
+					}
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 40
+			}
+		}
+		add_entry = {
+			name = FROM_HAS_ENEMY_CONTROLLED_PROVINCES
+			limit = {
+				FROM = {
+					calc_true_if = {
+						all_owned_province = {
+							NOT = { controlled_by = PREV }
+							NOT = { controlled_by = REB }
+						}
+						amount = 8
+					}
+					NOT = {
+						calc_true_if = {
+							all_owned_province = {
+								NOT = { controlled_by = PREV }
+								NOT = { controlled_by = REB }
+							}
+							amount = 10
+						}
+					}
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 50
+			}
+		}
+		add_entry = {
+			name = FROM_HAS_ENEMY_CONTROLLED_PROVINCES
+			limit = {
+				FROM = {
+					calc_true_if = {
+						all_owned_province = {
+							NOT = { controlled_by = PREV }
+							NOT = { controlled_by = REB }
+						}
+						amount = 10
+					}
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 75
+			}
+		}
+		add_entry = {
+			name = FROM_NUM_OF_PROVINCES
+			export_to_variable = {
+				which = ai_value
+				value = trigger_value:num_of_cities
+				who = FROM
+			}
+			subtract_variable = { which = ai_value value = 1 }
+			divide_variable = { which = ai_value value = -3 }
+		}
+		add_entry = {
+			name = FROM_HAS_OWN_CONTROLLED_PROVINCES
+			limit = {
+				any_province = {
+					NOT = { owned_by = FROM }
+					controlled_by = FROM
+				}
+				NOT = {
+					calc_true_if = {
+						all_province = {
+							NOT = { owned_by = FROM }
+							controlled_by = FROM
+						}
+						amount = 2
+					}
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 10
+			}
+			multiply_variable = { which = ai_value value = -1 }
+		}
+		add_entry = {
+			name = FROM_HAS_OWN_CONTROLLED_PROVINCES
+			limit = {
+				calc_true_if = {
+					all_province = {
+						NOT = { owned_by = FROM }
+						controlled_by = FROM
+					}
+					amount = 2
+				}
+				NOT = {
+					calc_true_if = {
+						all_province = {
+							NOT = { owned_by = FROM }
+							controlled_by = FROM
+						}
+						amount = 4
+					}
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 20
+			}
+			multiply_variable = { which = ai_value value = -1 }
+		}
+		add_entry = {
+			name = FROM_HAS_OWN_CONTROLLED_PROVINCES
+			limit = {
+				calc_true_if = {
+					all_province = {
+						NOT = { owned_by = FROM }
+						controlled_by = FROM
+					}
+					amount = 4
+				}
+				NOT = {
+					calc_true_if = {
+						all_province = {
+							NOT = { owned_by = FROM }
+							controlled_by = FROM
+						}
+						amount = 6
+					}
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 30
+			}
+			multiply_variable = { which = ai_value value = -1 }
+		}
+		add_entry = {
+			name = FROM_HAS_OWN_CONTROLLED_PROVINCES
+			limit = {
+				calc_true_if = {
+					all_province = {
+						NOT = { owned_by = FROM }
+						controlled_by = FROM
+					}
+					amount = 6
+				}
+				NOT = {
+					calc_true_if = {
+						all_province = {
+							NOT = { owned_by = FROM }
+							controlled_by = FROM
+						}
+						amount = 8
+					}
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 40
+			}
+			multiply_variable = { which = ai_value value = -1 }
+		}
+		add_entry = {
+			name = FROM_HAS_OWN_CONTROLLED_PROVINCES
+			limit = {
+				calc_true_if = {
+					all_province = {
+						NOT = { owned_by = FROM }
+						controlled_by = FROM
+					}
+					amount = 8
+				}
+				NOT = {
+					calc_true_if = {
+						all_province = {
+							NOT = { owned_by = FROM }
+							controlled_by = FROM
+						}
+						amount = 10
+					}
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 50
+			}
+			multiply_variable = { which = ai_value value = -1 }
+		}
+		add_entry = {
+			name = FROM_HAS_OWN_CONTROLLED_PROVINCES
+			limit = {
+				calc_true_if = {
+					all_province = {
+						NOT = { owned_by = FROM }
+						controlled_by = FROM
+					}
+					amount = 10
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 100
+			}
+			multiply_variable = { which = ai_value value = -1 }
+		}
+		add_entry = {
+			name = FROM_CAPITAL_CONTROLLED_BY_ENEMY
+			limit = {
+				FROM = {
+					capital_scope = {
+						NOT = { controlled_by = PREV }
+						NOT = { controlled_by = REB }
+					}
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 25
+			}
+		}
+		add_entry = {
+			name = FROM_ENEMY_ARMIES_ON_CORE_TERRITORY
+			limit = {
+				FROM = {
+					any_owned_province = {
+						is_core = PREV
+						any_country = {
+							war_with = FROM
+							NOT = {
+								is_in_war = {
+									participants = THIS
+									participants = FROM
+									attacker_leader = FROM
+								}
+							}
+							NOT = {
+								is_in_war = {
+									participants = THIS
+									participants = FROM
+									defender_leader = FROM
+								}
+							}
+							PREV = {
+								num_of_units_in_province = {
+									who = PREV
+									amount = 5
+								}
+							}
+						}
+					}
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 10
+			}
+		}
+		add_entry = {
+			name = FROM_ARMY_SIZE
+			export_to_variable = {
+				which = ai_value
+				value = trigger_value:army_size
+				who = FROM
+			}
+			subtract_variable = { which = ai_value value = 1 }
+			divide_variable = { which = ai_value value = -2 }
+		}
+		add_entry = {
+			name = FROM_LIBERTY_DESIRE
+			export_to_variable = {
+				which = ai_value
+				value = trigger_value:liberty_desire
+				who = FROM
+			}
+			subtract_variable = { which = ai_value value = 1 }
+			divide_variable = { which = ai_value value = -2 }
+		}
+	}
+	
+	ai_will_do = {
+		calc_true_if = {
+			all_subject_country = {
+				is_subject_of_type = dutch_province_subject
+			}
+			amount = 2
+		}
+		NOT = {
+			calc_true_if = {
+				all_subject_country = {
+					is_subject_of_type = dutch_province_subject
+				}
+				amount = 3
+			}
+		}
+		FROM = {
+			any_owned_province = {
+				NOT = { controlled_by = PREV }
+				NOT = { controlled_by = REB }
+			}
+		}
+	}
+}
+
 cancel_dutch_province_subject = {
 	category = influence
 

@@ -770,3 +770,6 @@ cooldown_dutch_provinces_election = {
 
 cooldown_dutch_province_subject_ask_for_independence = {
 }
+
+cooldown_dutch_province_subject_force_white_peace = {
+}

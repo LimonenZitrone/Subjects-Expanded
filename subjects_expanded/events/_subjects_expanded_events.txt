@@ -29,3 +29,64 @@ country_event = {
 		ai_chance = { factor = 100 }
 	}
 }
+
+country_event = {
+	id = subjects_expanded_events.2
+	title = subjects_expanded_events.EVTNAME2
+	desc = subjects_expanded_events.EVTDESC2
+	picture = INVENTION_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		always = no # only via console
+	}
+	
+	immediate = {
+		hidden_effect = {
+			count_num_of_subjects_of_type = { type = protectorate }
+			count_num_of_subjects_of_type = { type = puppet_state }
+			count_num_of_subjects_of_type = { type = dominion }
+			count_num_of_subjects_of_type = { type = autonomous_dominion }
+			count_num_of_subjects_of_type = { type = roman_client_kingdom }
+			count_num_of_subjects_of_type = { type = voivodeship }
+			count_num_of_subjects_of_type = { type = fief_subject }
+			count_num_of_subjects_of_type = { type = crusader_state_vassal }
+			count_num_of_subjects_of_type = { type = salic_personal_union }
+			count_num_of_subjects_of_type = { type = nahuatl_vassal }
+			count_num_of_subjects_of_type = { type = peasant_vassal }
+			count_num_of_subjects_of_type = { type = pirate_brotherhood_vassal }
+			count_num_of_subjects_of_type = { type = imperial_tributary_state }
+			count_num_of_subjects_of_type = { type = sister_republic }
+			count_num_of_subjects_of_type = { type = muslim_tributary_vassal }
+			count_num_of_subjects_of_type = { type = mandala_trade_vassal }
+			count_num_of_subjects_of_type = { type = integrated_tribe_subject }
+			count_num_of_subjects_of_type = { type = dutch_province_subject }
+		}
+	}
+	
+	option = {
+		name = subjects_expanded_events2.EVTOPT1
+		
+		ai_chance = { factor = 100 }
+		
+		display_subjects_of_type = { type = protectorate }
+		display_subjects_of_type = { type = puppet_state }
+		display_subjects_of_type = { type = dominion }
+		display_subjects_of_type = { type = autonomous_dominion }
+		display_subjects_of_type = { type = roman_client_kingdom }
+		display_subjects_of_type = { type = voivodeship }
+		display_subjects_of_type = { type = fief_subject }
+		display_subjects_of_type = { type = crusader_state_vassal }
+		display_subjects_of_type = { type = salic_personal_union }
+		display_subjects_of_type = { type = nahuatl_vassal }
+		display_subjects_of_type = { type = peasant_vassal }
+		display_subjects_of_type = { type = pirate_brotherhood_vassal }
+		display_subjects_of_type = { type = imperial_tributary_state }
+		display_subjects_of_type = { type = sister_republic }
+		display_subjects_of_type = { type = muslim_tributary_vassal }
+		display_subjects_of_type = { type = mandala_trade_vassal }
+		display_subjects_of_type = { type = integrated_tribe_subject }
+		display_subjects_of_type = { type = dutch_province_subject }
+	}
+}

@@ -16,6 +16,7 @@ sister_republic = { }
 muslim_tributary_vassal = { }
 mandala_trade_vassal = { }
 integrated_tribe_subject = { }
+dutch_province_subject = { }
 
 # Subjects
 protectorate = {

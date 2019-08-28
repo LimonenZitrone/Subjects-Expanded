@@ -308,7 +308,7 @@
  FROM_HAS_ENEMY_CONTROLLED_PROVINCES: "Ihre Provinzen werden von Feinden kontrolliert"
  FROM_HAS_OWN_CONTROLLED_PROVINCES: "Sie kontrollieren feindliche Provinzen"
  FROM_CAPITAL_CONTROLLED_BY_ENEMY: "Ihre Hauptstadt ist von Feinden besetzt"
- FROM_ENEMY_ARMIES_ON_CORE_TERRITORY: "Sie haben feindliche Einheiten auf ihren Kerngebiet"
+ FROM_ENEMY_ARMIES_ON_CORE_TERRITORY: "Sie haben feindliche Einheiten auf ihrem Kerngebiet"
  FROM_ARMY_SIZE: "Ihre Armeegröße"
  FROM_LIBERTY_DESIRE: "Ihr Freiheitsstreben"
  

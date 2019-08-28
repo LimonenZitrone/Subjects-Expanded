@@ -1,0 +1,366 @@
+defined_text = {
+	name = GetSubjectType
+	random = no
+	
+	text = {
+		trigger = {
+			is_subject_of_type = vassal
+		}
+		localisation_key = vassal_title
+	}
+	text = {
+		trigger = {
+			is_subject_of_type = march
+		}
+		localisation_key = march_title
+	}
+	text = {
+		trigger = {
+			is_subject_of_type = daimyo_vassal
+		}
+		localisation_key = daimyo_vassal_title
+	}
+	text = {
+		trigger = {
+			is_subject_of_type = personal_union
+		}
+		localisation_key = personal_union_title
+	}
+	text = {
+		trigger = {
+			is_subject_of_type = client_vassal
+		}
+		localisation_key = client_vassal_title
+	}
+	text = {
+		trigger = {
+			is_subject_of_type = client_march
+		}
+		localisation_key = client_march_title
+	}
+	text = {
+		trigger = {
+			is_subject_of_type = colony
+		}
+		localisation_key = colony_title
+	}
+	text = {
+		trigger = {
+			is_subject_of_type = tributary_state
+		}
+		localisation_key = tributary_state_title
+	}
+	text = {
+		trigger = {
+			is_subject_of_type = protectorate
+		}
+		localisation_key = protectorate_title
+	}
+	text = {
+		trigger = {
+			is_subject_of_type = puppet_state
+		}
+		localisation_key = puppet_state_title
+	}
+	text = {
+		trigger = {
+			is_subject_of_type = dominion
+		}
+		localisation_key = dominion_title
+	}
+	text = {
+		trigger = {
+			is_subject_of_type = autonomous_dominion
+		}
+		localisation_key = autonomous_dominion_title
+	}
+	text = {
+		trigger = {
+			is_subject_of_type = roman_client_kingdom
+		}
+		localisation_key = roman_client_kingdom_title
+	}
+	text = {
+		trigger = {
+			is_subject_of_type = voivodeship
+		}
+		localisation_key = voivodeship_title
+	}
+	text = {
+		trigger = {
+			is_subject_of_type = fief_subject
+		}
+		localisation_key = fief_subject_title
+	}
+	text = {
+		trigger = {
+			is_subject_of_type = crusader_state_vassal
+		}
+		localisation_key = crusader_state_vassal_title
+	}
+	text = {
+		trigger = {
+			is_subject_of_type = salic_personal_union
+		}
+		localisation_key = salic_personal_union_title
+	}
+	text = {
+		trigger = {
+			is_subject_of_type = nahuatl_vassal
+		}
+		localisation_key = nahuatl_vassal_title
+	}
+	text = {
+		trigger = {
+			is_subject_of_type = peasant_vassal
+		}
+		localisation_key = peasant_vassal_title
+	}
+	text = {
+		trigger = {
+			is_subject_of_type = pirate_brotherhood_vassal
+		}
+		localisation_key = pirate_brotherhood_vassal_title
+	}
+	text = {
+		trigger = {
+			is_subject_of_type = imperial_tributary_state
+		}
+		localisation_key = imperial_tributary_state_title
+	}
+	text = {
+		trigger = {
+			is_subject_of_type = sister_republic
+		}
+		localisation_key = sister_republic_title
+	}
+	text = {
+		trigger = {
+			is_subject_of_type = muslim_tributary_vassal
+		}
+		localisation_key = muslim_tributary_vassal_title
+	}
+	text = {
+		trigger = {
+			is_subject_of_type = mandala_trade_vassal
+		}
+		localisation_key = mandala_trade_vassal_title
+	}
+	text = {
+		trigger = {
+			is_subject_of_type = integrated_tribe_subject
+		}
+		localisation_key = integrated_tribe_subject_title
+	}
+	text = {
+		trigger = {
+			is_subject_of_type = dutch_province_subject
+		}
+		localisation_key = dutch_province_subject_title
+	}
+	
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = "???"
+	}
+}
+
+defined_text = {
+	name = protectorate_desc
+	
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = protectorate_long_desc
+	}
+}
+
+defined_text = {
+	name = puppet_state_desc
+	
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = puppet_state_long_desc
+	}
+}
+
+defined_text = {
+	name = dominion_desc
+	
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = dominion_long_desc
+	}
+}
+
+defined_text = {
+	name = autonomous_dominion_desc
+	
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = autonomous_dominion_long_desc
+	}
+}
+
+defined_text = {
+	name = roman_client_kingdom_desc
+	
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = roman_client_kingdom_long_desc
+	}
+}
+
+defined_text = {
+	name = voivodeship_desc
+	
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = voivodeship_long_desc
+	}
+}
+
+defined_text = {
+	name = fief_subject_desc
+	
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = fief_subject_long_desc
+	}
+}
+
+defined_text = {
+	name = crusader_state_vassal_desc
+	
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = crusader_state_vassal_long_desc
+	}
+}
+
+defined_text = {
+	name = salic_personal_union_desc
+	
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = salic_personal_union_long_desc
+	}
+}
+
+defined_text = {
+	name = nahuatl_vassal_desc
+	
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = nahuatl_vassal_long_desc
+	}
+}
+
+defined_text = {
+	name = peasant_vassal_desc
+	
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = peasant_vassal_long_desc
+	}
+}
+
+defined_text = {
+	name = pirate_brotherhood_vassal_desc
+	
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = pirate_brotherhood_vassal_long_desc
+	}
+}
+
+defined_text = {
+	name = imperial_tributary_state_desc
+	
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = imperial_tributary_state_long_desc
+	}
+}
+
+defined_text = {
+	name = sister_republic_desc
+	
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = sister_republic_long_desc
+	}
+}
+
+defined_text = {
+	name = muslim_tributary_vassal_desc
+	
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = muslim_tributary_vassal_long_desc
+	}
+}
+
+defined_text = {
+	name = mandala_trade_vassal_desc
+	
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = mandala_trade_vassal_long_desc
+	}
+}
+
+defined_text = {
+	name = integrated_tribe_subject_desc
+	
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = integrated_tribe_subject_long_desc
+	}
+}
+
+defined_text = {
+	name = dutch_province_subject_desc
+	
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = dutch_province_subject_long_desc
+	}
+}

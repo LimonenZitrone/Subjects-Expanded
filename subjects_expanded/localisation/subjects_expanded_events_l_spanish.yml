@@ -1,4 +1,8 @@
 ﻿l_spanish:
+ subjects_expanded_events.EVTNAME2: "Subjects Expanded Subjects in the World"
+ subjects_expanded_events.EVTDESC2: "This event shows how many of the new subjects introduced by Subjects Expanded currently exist in the world. If a country is a subject of one of the new types, it is listed as well."
+ subjects_expanded_events2.EVTOPT1: "OK."
+ 
  subjects_expanded_protectorate_events.EVTNAME2: "Independence granted!"
  subjects_expanded_protectorate_events.EVTDESC2: "Our former overlord [From.GetName] decided to grant us independence. But this also means that they could attack as again..."
  subjects_expanded_protectorate_events2.EVTOPT1: "All right."

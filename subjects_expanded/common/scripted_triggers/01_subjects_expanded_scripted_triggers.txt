@@ -13,6 +13,7 @@ is_possible_subject_of_subject_type_daimyo_vassal = {
 }
 
 is_possible_subject_of_subject_type_personal_union = {
+	NOT = { is_subject_of_type = personal_union }
 	is_subject = no
 }
 

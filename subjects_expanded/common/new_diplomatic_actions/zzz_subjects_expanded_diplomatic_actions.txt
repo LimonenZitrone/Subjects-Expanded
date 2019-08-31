@@ -24,8 +24,24 @@ return_subject_to_vassal = {
 			}
 		}
 		prestige = 0
-		FROM = {
-			NOT = { liberty_desire = 50 }
+		if = {
+			limit = {
+				OR = {
+					NOT = { religion = nahuatl }
+					is_religion_reformed = yes
+				}
+				FROM = {
+					is_subject_of_type = nahuatl_vassal
+				}
+			}
+			FROM = {
+				NOT = { liberty_desire = 90 }
+			}
+		}
+		else = {
+			FROM = {
+				NOT = { liberty_desire = 50 }
+			}
 		}
 		FROM = {
 			has_opinion = {

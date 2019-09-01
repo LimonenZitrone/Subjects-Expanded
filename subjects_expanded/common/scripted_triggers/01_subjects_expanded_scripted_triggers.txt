@@ -411,6 +411,17 @@ is_possible_subject_of_subject_type_dutch_province_subject = {
 	}
 }
 
+is_possible_subject_of_subject_type_revolution_subject = {
+	# PREVs in THIS scope refer to possible overlord
+	NOT = { is_subject_of_type = revolution_subject  }
+	is_subject = no
+	same_continent = PREV
+	OR = {
+		government = monarchy
+		government = republic
+	}
+}
+
 can_create_subject_type = {
 	can_be_overlord = $subject_type$
 	$subject$ = {

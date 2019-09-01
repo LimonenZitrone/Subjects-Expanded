@@ -17,6 +17,7 @@ muslim_tributary_vassal = { }
 mandala_trade_vassal = { }
 integrated_tribe_subject = { }
 dutch_province_subject = { }
+revolution_subject = { }
 
 # Subjects
 protectorate = {
@@ -2849,4 +2850,112 @@ dutch_province_subject = {
 
 	overlord_opinion_modifier = is_dutch_province_subject
 	subject_opinion_modifier = is_dutch_province_subject
+}
+
+revolution_subject = {
+	copy_from = default
+	count = vassal
+	
+	# Graphics:
+	sprite = GFX_icon_revolution_subject
+	diplomacy_overlord_sprite = GFX_diplomacy_leadrevolution_subject
+	diplomacy_subject_sprite = GFX_diplomacy_amrevolution_subject
+
+	# Triggers:
+	is_potential_overlord = {
+		is_revolution_target = yes
+	}
+	
+	# Properties:
+	has_overlords_ruler = yes
+	overlord_can_attack = no
+	overlord_can_be_subject = yes
+	can_be_annexed = yes
+	has_power_projection = no
+	gives_daimyo_bonuses = yes
+	gets_help_with_rebels = yes
+	separatists_become_subjects = yes
+	can_transfer_in_peace = no
+	
+	trust_on_start = 10
+
+	base_liberty_desire = -20.0
+	liberty_desire_negative_prestige = 1.0
+	liberty_desire_development_ratio = 0.15
+	pays_overlord = 1.0
+	forcelimit_bonus = 1.0
+	forcelimit_to_overlord = 1.0
+	
+	relative_power_class = 3
+	diplomacy_view_class = 1
+
+	can_fight = {
+	}
+	can_rival = {
+		independent_nations = yes
+		same_overlord = revolution_subject
+	}
+	can_ally = {
+		same_overlord = revolution_subject
+	}
+	can_marry = {
+		same_overlord = all
+	}
+
+	# Subject Interactions:
+	# (continuous)
+	support_loyalists = yes
+	subsidize_armies = yes
+	divert_trade = yes
+	# (immediate)
+	placate_rulers = no
+	enforce_culture = yes
+	fortify_march = yes
+	grant_core_claim = no
+	conscript_general = yes
+
+	# Modifiers:
+	modifier_subject = clear
+	modifier_subject = {
+		modifier = subject_nation
+	}
+	modifier_subject = {
+		modifier = revolution_subject_modifier
+	}
+	modifier_subject = {
+		trigger = {
+			FROM = {
+				is_revolution_target = no
+			}
+		}
+		modifier = revolution_subject_overlord_no_revolution_target_modifier
+	}
+	
+	modifier_overlord = clear
+	modifier_overlord = {
+		modifier = revolution_subject_overlord_modifier
+	}
+	modifier_overlord = {
+		trigger = {
+			FROM = {
+				is_revolution_target = yes
+			}
+			OR = {
+				is_neighbor_of = FROM
+				any_neighbor_country = {
+					NOT = { tag = ROOT }
+					is_subject_of = FROM
+					is_subject_of_type = revolution_subject
+				}
+			}
+			any_neighbor_country = {
+				is_revolution_target = no
+				NOT = { is_subject_of_type = revolution_subject }
+			}
+		}
+		modifier = revolution_subject_overlord_no_diplomatic_relation_slot_modifier
+	}
+
+	overlord_opinion_modifier = is_revolution_subject
+	subject_opinion_modifier = is_revolution_subject
 }

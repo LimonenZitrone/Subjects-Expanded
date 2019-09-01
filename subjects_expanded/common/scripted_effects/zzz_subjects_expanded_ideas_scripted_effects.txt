@@ -210,6 +210,7 @@ set_overlord_idea_groups = {
 	if = {
 		limit = {
 			NOT = { has_global_flag = idea_variation_voting_started }
+			NOT = { has_global_flag = idea_changing_mod_active }
 		}
 		# Idea Groups
 		set_variable = { which = num_of_overlord_ideas value = 0 }

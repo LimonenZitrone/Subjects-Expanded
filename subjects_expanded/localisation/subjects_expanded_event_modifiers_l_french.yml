@@ -175,3 +175,8 @@
  dutch_province_subject_modifier: "Dutch Province"
  dutch_province_subject_overlord_modifier: "Has Dutch Provinces"
  
+ revolution_subject_modifier: "Revolutionary Confederation"
+ revolution_subject_overlord_no_revolution_target_modifier: "Overlord is not the Revolution Target"
+ revolution_subject_overlord_modifier: "Has Revolutionary Confederations"
+ revolution_subject_overlord_no_diplomatic_relation_slot_modifier: "Revolutionary Confederation neighbors Enemies of the Revolution"
+ 

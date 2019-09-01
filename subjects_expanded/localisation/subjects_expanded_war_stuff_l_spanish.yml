@@ -64,3 +64,7 @@
  CB_ALLOWED_make_mandala_trade_vassal: "Force Mandala Vassal"
  PEACE_make_mandala_trade_vassal: "$TAKERS$ Mandala Vassal"
  
+ make_revolution_subject_desc: "@[From.GetTag] §Y[From.GetName]§! is made to a Revolutionary Confederation of @[Root.GetTag] §Y[Root.GetName]§!."
+ CB_ALLOWED_make_revolution_subject: "Force Revolutionary Confederation"
+ PEACE_make_revolution_subject: "$TAKERS$ Revolutionary Confederation"
+ 

@@ -3,6 +3,11 @@
  subjects_expanded_events.EVTDESC2: "Dieses Ereignis zeigt an, wie viele der neuen Untertantypen, die von Subjects Expanded hinzugefügt werden, derzeit auf der Welt existieren. Wenn ein Land ein Untertan eines neuen Typen ist, wird es ebenfalls angezeigt."
  subjects_expanded_events2.EVTOPT1: "OK."
  
+ subjects_expanded_events.EVTNAME3: "Ideen-Mods?"
+ subjects_expanded_events.EVTDESC3: "Herrschaftsgebiete per Entscheidung zu errichten gibt ihnen Ideengruppen abhängig von Euren. Falls Ihr eine Mod benutzt, die die Vanilla-Ideengruppen verändert, könnte dies das Spiel zum §RAbsturz§! bringen. Deshalb solltet Ihr hier die passende Option auswählen, um dies zu verhindern!"
+ subjects_expanded_events3.EVTOPT1: "Eine Mod, die die §YVanilla-Ideengruppen verändert§!, ist §Gaktiv§!."
+ subjects_expanded_events3.EVTOPT2: "Eine Mod, die die §YVanilla-Ideengruppen verändert§!, ist §RNICHT aktiv§!."
+ 
  subjects_expanded_protectorate_events.EVTNAME2: "Unabhängigkeit gewährt!"
  subjects_expanded_protectorate_events.EVTDESC2: "Unser ehemaliger Lehnsherr [From.GetName] hat sich dazu entschlossen, uns Unabhängigkeit zu gewähren. Das bedeutet allerdings auch, dass sie uns jetzt wieder den Krieg erklären könnten..."
  subjects_expanded_protectorate_events2.EVTOPT1: "In Ordnung."

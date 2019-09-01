@@ -62,6 +62,7 @@ country_event = {
 			count_num_of_subjects_of_type = { type = mandala_trade_vassal }
 			count_num_of_subjects_of_type = { type = integrated_tribe_subject }
 			count_num_of_subjects_of_type = { type = dutch_province_subject }
+			count_num_of_subjects_of_type = { type = revolution_subject }
 		}
 	}
 	
@@ -88,5 +89,41 @@ country_event = {
 		display_subjects_of_type = { type = mandala_trade_vassal }
 		display_subjects_of_type = { type = integrated_tribe_subject }
 		display_subjects_of_type = { type = dutch_province_subject }
+		display_subjects_of_type = { type = revolution_subject }
+	}
+}
+
+country_event = {
+	id = subjects_expanded_events.3
+	title = subjects_expanded_events.EVTNAME3
+	desc = subjects_expanded_events.EVTDESC3
+	picture = INVENTION_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		ai = no
+		NOT = { has_global_flag = idea_variation_voting_started }
+		NOT = { has_global_flag = idea_changing_mod_active }
+	}
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = subjects_expanded_events3.EVTOPT1
+		
+		ai_chance = { factor = 0 }
+		
+		custom_tooltip = SE_IDEA_CHANGING_MOD_ACTIVE_TT
+		set_global_flag = idea_changing_mod_active
+	}
+	
+	option = {
+		name = subjects_expanded_events3.EVTOPT2
+		
+		ai_chance = { factor = 100 }
+		
+		custom_tooltip = SE_NO_IDEA_CHANGING_MOD_ACTIVE_TT
+		clr_global_flag = idea_changing_mod_active
 	}
 }

@@ -63,3 +63,6 @@
  declined_ask_for_dutch_province_subject_opinion: "Offer for Dutch Province declined"
  dutch_province_subject_declined_freedom: "Declined Independence"
  
+ is_revolution_subject: "Revolutionary Confederation"
+ revolution_subject_forced: "Forced Revolutionary Confederation"
+ 

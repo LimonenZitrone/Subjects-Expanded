@@ -236,3 +236,13 @@ dutch_province_subject_declined_freedom = {
 	opinion = -100
 	yearly_decay = 3
 }
+
+is_revolution_subject = {
+	opinion = 55
+}
+
+revolution_subject_forced = {
+	opinion = -75
+	yearly_decay = 3
+	min = -75
+}

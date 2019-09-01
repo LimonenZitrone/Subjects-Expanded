@@ -1,4 +1,5 @@
 ﻿l_german:
+ CAN_HAVE_SUBJECTS:1 "Kann §Y$SUBJECTS$§! haben\n"
  TAG_IS_LESSER_SUBJECT:0 "$SUBJECT$ ist ein(e) $SUBJECTTYPE$ von $OVERLORD$."
  WEAKSUBJECTSLIST:0 "Ist ein(e) $SUBJECTTYPE$ unter $LIST$."
  IS_SUBJECT_TYPE:0 "Ist ein(e) $SUBJECTTYPE$.\n"

@@ -175,3 +175,8 @@
  dutch_province_subject_modifier: "Niederländische Provinz"
  dutch_province_subject_overlord_modifier: "Besitzt Niederländische Provinzen"
  
+ revolution_subject_modifier: "Revolutionäre Konföderation"
+ revolution_subject_overlord_no_revolution_target_modifier: "Lehnsherr ist nicht das Revolutionsziel"
+ revolution_subject_overlord_modifier: "Besitzt Revolutionäre Konföderationen"
+ revolution_subject_overlord_no_diplomatic_relation_slot_modifier: "Revolutionäre Konföderation grenzt and Feinde der Revolution"
+ 

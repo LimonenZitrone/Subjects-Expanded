@@ -158,6 +158,12 @@ defined_text = {
 		}
 		localisation_key = dutch_province_subject_title
 	}
+	text = {
+		trigger = {
+			is_subject_of_type = revolution_subject
+		}
+		localisation_key = revolution_subject_title
+	}
 	
 	text = {
 		trigger = {
@@ -362,5 +368,16 @@ defined_text = {
 			always = yes
 		}
 		localisation_key = dutch_province_subject_long_desc
+	}
+}
+
+defined_text = {
+	name = revolution_subject_desc
+	
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = revolution_subject_long_desc
 	}
 }

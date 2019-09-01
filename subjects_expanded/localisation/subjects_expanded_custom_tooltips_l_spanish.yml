@@ -26,6 +26,7 @@
  IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_mandala_trade_vassal: "Can be made to a §YMandala Vassal§!"
  IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_integrated_tribe_subject: "Can be made to an §YIntegrated Tribe§!"
  IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_dutch_province_subject: "Can be made to a §YDutch Province§!"
+ IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_revolution_subject: "Can be made to a §YRevolutionary Confederation§!"
  
  THIS_IS_FORMER_AUTONOMOUS_DOMINION: "Is a former §YDominion§! or a former §YColonial Nation§!"
  
@@ -98,6 +99,9 @@
  WE_SUPPORT_THIS_FOR_NEXT_DUTCH_PROVINCE_ELECTION: "We currently vote for §Y[This.GetName]§!."
  
  # Events:
+ SE_IDEA_CHANGING_MOD_ACTIVE_TT: "Creating Dominions via decision §Rwill NOT§! give them idea groups."
+ SE_NO_IDEA_CHANGING_MOD_ACTIVE_TT: "Creating Dominions via decision §Gwill§! give them specific idea groups depending on their overlord's selected idea groups."
+ 
  ROMAN_CLIENT_KINGDOM_HEIR_ACCEPTED: "§Y[From.Heir.GetName] [From.Heir.Dynasty.GetName]§! (Claim: [From.GetHeirClaimText]) \n £adm£ [From.GetHeirAdm] £dip£ [From.GetHeirDip] £mil£ [From.GetHeirMil] \nis henceforth the heir of: \n@[From.GetTag] §Y[From.GetName]§!.\n"
  
  ROMAN_CLIENT_KINGDOM_PAYS_ONE_YEAR_OF_INCOME: "§Y[From.GetName]§! pays us §G[From.roman_client_kingdom_yearly_years_of_income_var.GetValue]§! ducats."
@@ -157,6 +161,7 @@
  DISPLAY_SUBJECTS_OF_TYPE_TT_EXIST_mandala_trade_vassal: "There currently are §G[REB.num_of_subjects_of_type_mandala_trade_vassal.GetValue]§! §YMandala Vassals§! in the world:"
  DISPLAY_SUBJECTS_OF_TYPE_TT_EXIST_integrated_tribe_subject: "There currently are §G[REB.num_of_subjects_of_type_integrated_tribe_subject.GetValue]§! §YIntegrated Tribes§! in the world:"
  DISPLAY_SUBJECTS_OF_TYPE_TT_EXIST_dutch_province_subject: "There currently are §G[REB.num_of_subjects_of_type_dutch_province_subject.GetValue]§! §YDutch Provinces§! in the world:"
+ DISPLAY_SUBJECTS_OF_TYPE_TT_EXIST_revolution_subject: "There currently are §G[REB.num_of_subjects_of_type_revolution_subject.GetValue]§! §YRevolutionary Confederations§! in the world:"
  
  DISPLAY_SUBJECTS_OF_TYPE_TT_NOT_EXIST_protectorate: "There currently are §R0§! §YProtectorates§! in the world."
  DISPLAY_SUBJECTS_OF_TYPE_TT_NOT_EXIST_puppet_state: "There currently are §R0§! §YPuppet States§! in the world."
@@ -176,4 +181,5 @@
  DISPLAY_SUBJECTS_OF_TYPE_TT_NOT_EXIST_mandala_trade_vassal: "There currently are §R0§! §YMandala Vassals§! in the world."
  DISPLAY_SUBJECTS_OF_TYPE_TT_NOT_EXIST_integrated_tribe_subject: "There currently are §R0§! §YIntegrated Tribes§! in the world."
  DISPLAY_SUBJECTS_OF_TYPE_TT_NOT_EXIST_dutch_province_subject: "There currently are §R0§! §YDutch Provinces§! in the world."
+ DISPLAY_SUBJECTS_OF_TYPE_TT_NOT_EXIST_revolution_subject: "There currently are §R0§! §YRevolutionary Confederations§! in the world."
  

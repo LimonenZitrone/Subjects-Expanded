@@ -3,6 +3,11 @@
  subjects_expanded_events.EVTDESC2: "This event shows how many of the new subjects introduced by Subjects Expanded currently exist in the world. If a country is a subject of one of the new types, it is listed as well."
  subjects_expanded_events2.EVTOPT1: "OK."
  
+ subjects_expanded_events.EVTNAME3: "Idea Mods?"
+ subjects_expanded_events.EVTDESC3: "Spawning Dominions via decisions sets their idea groups depending on the ones you chose. If you are using a mod that alters the vanilla idea groups in any way, this might §Rcrash§! the game. So select the matching option below to prevent that from happening!"
+ subjects_expanded_events3.EVTOPT1: "A mod that §Ychanges vanilla idea groups§! is §Gactive§!."
+ subjects_expanded_events3.EVTOPT2: "A mod that §Ychanges vanilla idea groups§! is §RNOT active§!."
+ 
  subjects_expanded_protectorate_events.EVTNAME2: "Independence granted!"
  subjects_expanded_protectorate_events.EVTDESC2: "Our former overlord [From.GetName] decided to grant us independence. But this also means that they could attack as again..."
  subjects_expanded_protectorate_events2.EVTOPT1: "All right."

@@ -63,4 +63,8 @@
  make_mandala_trade_vassal_desc: "@[From.GetTag] §Y[From.GetName]§! is made to a Mandala Vassal of @[Root.GetTag] §Y[Root.GetName]§!. If [From.GetName] has Mandala Vassals themselves, they will keep them. All other subjects are transfered to §Y[Root.GetName]§!."
  CB_ALLOWED_make_mandala_trade_vassal: "Force Mandala Vassal"
  PEACE_make_mandala_trade_vassal: "$TAKERS$ Mandala Vassal"
+
+ make_revolution_subject_desc: "@[From.GetTag] §Y[From.GetName]§! is made to a Revolutionary Confederation of @[Root.GetTag] §Y[Root.GetName]§!."
+ CB_ALLOWED_make_revolution_subject: "Force Revolutionary Confederation"
+ PEACE_make_revolution_subject: "$TAKERS$ Revolutionary Confederation"
  

@@ -39,10 +39,18 @@ display_subjects_of_type = {
 	if = {
 		limit = {
 			REB = {
+				NOT = { check_variable = { which = num_of_subjects_of_type_$type$ value = 10 } }
+			}
+		}
+		custom_tooltip = display_$type$_title_tt
+		custom_tooltip = display_$type$_desc_tt
+	}
+	if = {
+		limit = {
+			REB = {
 				check_variable = { which = num_of_subjects_of_type_$type$ value = 1 }
 			}
 		}
-		custom_tooltip = DISPLAY_SUBJECTS_OF_TYPE_TT_EXIST_$type$
 		every_province = {
 			limit = {
 				is_capital = yes
@@ -53,8 +61,5 @@ display_subjects_of_type = {
 			custom_tooltip = DISPLAY_SUBJECTS_OF_TYPE_TT_OWNER_IS_SUBJECT_OF_TYPE
 		}
 		custom_tooltip = " "
-	}
-	else = {
-		custom_tooltip = DISPLAY_SUBJECTS_OF_TYPE_TT_NOT_EXIST_$type$
 	}
 }

@@ -6,163 +6,163 @@ defined_text = {
 		trigger = {
 			is_subject_of_type = vassal
 		}
-		localisation_key = vassal_title
+		localisation_key = "[vassal]"
 	}
 	text = {
 		trigger = {
 			is_subject_of_type = march
 		}
-		localisation_key = march_title
+		localisation_key = "[march]"
 	}
 	text = {
 		trigger = {
 			is_subject_of_type = daimyo_vassal
 		}
-		localisation_key = daimyo_vassal_title
+		localisation_key = "[daimyo_vassal]"
 	}
 	text = {
 		trigger = {
 			is_subject_of_type = personal_union
 		}
-		localisation_key = personal_union_title
+		localisation_key = "[personal_union]"
 	}
 	text = {
 		trigger = {
 			is_subject_of_type = client_vassal
 		}
-		localisation_key = client_vassal_title
+		localisation_key = "[client_vassal]"
 	}
 	text = {
 		trigger = {
 			is_subject_of_type = client_march
 		}
-		localisation_key = client_march_title
+		localisation_key = "[client_march]"
 	}
 	text = {
 		trigger = {
 			is_subject_of_type = colony
 		}
-		localisation_key = colony_title
+		localisation_key = "[colony]"
 	}
 	text = {
 		trigger = {
 			is_subject_of_type = tributary_state
 		}
-		localisation_key = tributary_state_title
+		localisation_key = "[tributary_state]"
 	}
 	text = {
 		trigger = {
 			is_subject_of_type = protectorate
 		}
-		localisation_key = protectorate_title
+		localisation_key = "[protectorate]"
 	}
 	text = {
 		trigger = {
 			is_subject_of_type = puppet_state
 		}
-		localisation_key = puppet_state_title
+		localisation_key = "[puppet_state]"
 	}
 	text = {
 		trigger = {
 			is_subject_of_type = dominion
 		}
-		localisation_key = dominion_title
+		localisation_key = "[dominion]"
 	}
 	text = {
 		trigger = {
 			is_subject_of_type = autonomous_dominion
 		}
-		localisation_key = autonomous_dominion_title
+		localisation_key = "[autonomous_dominion]"
 	}
 	text = {
 		trigger = {
 			is_subject_of_type = roman_client_kingdom
 		}
-		localisation_key = roman_client_kingdom_title
+		localisation_key = "[roman_client_kingdom]"
 	}
 	text = {
 		trigger = {
 			is_subject_of_type = voivodeship
 		}
-		localisation_key = voivodeship_title
+		localisation_key = "[voivodeship]"
 	}
 	text = {
 		trigger = {
 			is_subject_of_type = fief_subject
 		}
-		localisation_key = fief_subject_title
+		localisation_key = "[fief_subject]"
 	}
 	text = {
 		trigger = {
 			is_subject_of_type = crusader_state_vassal
 		}
-		localisation_key = crusader_state_vassal_title
+		localisation_key = "[crusader_state_vassal]"
 	}
 	text = {
 		trigger = {
 			is_subject_of_type = salic_personal_union
 		}
-		localisation_key = salic_personal_union_title
+		localisation_key = "[salic_personal_union]"
 	}
 	text = {
 		trigger = {
 			is_subject_of_type = nahuatl_vassal
 		}
-		localisation_key = nahuatl_vassal_title
+		localisation_key = "[nahuatl_vassal]"
 	}
 	text = {
 		trigger = {
 			is_subject_of_type = peasant_vassal
 		}
-		localisation_key = peasant_vassal_title
+		localisation_key = "[peasant_vassal]"
 	}
 	text = {
 		trigger = {
 			is_subject_of_type = pirate_brotherhood_vassal
 		}
-		localisation_key = pirate_brotherhood_vassal_title
+		localisation_key = "[pirate_brotherhood_vassal]"
 	}
 	text = {
 		trigger = {
 			is_subject_of_type = imperial_tributary_state
 		}
-		localisation_key = imperial_tributary_state_title
+		localisation_key = "[imperial_tributary_state]"
 	}
 	text = {
 		trigger = {
 			is_subject_of_type = sister_republic
 		}
-		localisation_key = sister_republic_title
+		localisation_key = "[sister_republic]"
 	}
 	text = {
 		trigger = {
 			is_subject_of_type = muslim_tributary_vassal
 		}
-		localisation_key = muslim_tributary_vassal_title
+		localisation_key = "[muslim_tributary_vassal]"
 	}
 	text = {
 		trigger = {
 			is_subject_of_type = mandala_trade_vassal
 		}
-		localisation_key = mandala_trade_vassal_title
+		localisation_key = "[mandala_trade_vassal]"
 	}
 	text = {
 		trigger = {
 			is_subject_of_type = integrated_tribe_subject
 		}
-		localisation_key = integrated_tribe_subject_title
+		localisation_key = "[integrated_tribe_subject]"
 	}
 	text = {
 		trigger = {
 			is_subject_of_type = dutch_province_subject
 		}
-		localisation_key = dutch_province_subject_title
+		localisation_key = "[dutch_province_subject]"
 	}
 	text = {
 		trigger = {
 			is_subject_of_type = revolution_subject
 		}
-		localisation_key = revolution_subject_title
+		localisation_key = "[revolution_subject]"
 	}
 	
 	text = {
@@ -170,6 +170,195 @@ defined_text = {
 			always = yes
 		}
 		localisation_key = "???"
+	}
+}
+
+# Vanilla Subjects Names & Descs
+defined_text = {
+	name = vassal
+	
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = vassal_title
+	}
+}
+
+defined_text = {
+	name = vassal_desc
+	
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = vassal_long_desc
+	}
+}
+
+defined_text = {
+	name = march
+	
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = march_title
+	}
+}
+
+defined_text = {
+	name = march_desc
+	
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = march_long_desc
+	}
+}
+
+defined_text = {
+	name = daimyo_vassal
+	
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = daimyo_vassal_title
+	}
+}
+
+defined_text = {
+	name = daimyo_vassal_desc
+	
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = daimyo_vassal_long_desc
+	}
+}
+
+defined_text = {
+	name = personal_union
+	
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = personal_union_title
+	}
+}
+
+defined_text = {
+	name = personal_union_desc
+	
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = personal_union_long_desc
+	}
+}
+
+defined_text = {
+	name = client_vassal
+	
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = client_vassal_title
+	}
+}
+
+defined_text = {
+	name = client_vassal_desc
+	
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = client_vassal_long_desc
+	}
+}
+
+defined_text = {
+	name = client_march
+	
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = client_march_title
+	}
+}
+
+defined_text = {
+	name = client_march_desc
+	
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = client_march_long_desc
+	}
+}
+
+defined_text = {
+	name = colony
+	
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = colony_title
+	}
+}
+
+defined_text = {
+	name = colony_desc
+	
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = colony_long_desc
+	}
+}
+
+defined_text = {
+	name = tributary_state
+	
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = tributary_state_title
+	}
+}
+
+defined_text = {
+	name = tributary_state_desc
+	
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = tributary_state_long_desc
+	}
+}
+
+# SE Subjects Names & Descs
+defined_text = {
+	name = protectorate
+	
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = protectorate_title
 	}
 }
 
@@ -185,6 +374,17 @@ defined_text = {
 }
 
 defined_text = {
+	name = puppet_state
+	
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = puppet_state_title
+	}
+}
+
+defined_text = {
 	name = puppet_state_desc
 	
 	text = {
@@ -192,6 +392,17 @@ defined_text = {
 			always = yes
 		}
 		localisation_key = puppet_state_long_desc
+	}
+}
+
+defined_text = {
+	name = dominion
+	
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = dominion_title
 	}
 }
 
@@ -207,6 +418,17 @@ defined_text = {
 }
 
 defined_text = {
+	name = autonomous_dominion
+	
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = autonomous_dominion_title
+	}
+}
+
+defined_text = {
 	name = autonomous_dominion_desc
 	
 	text = {
@@ -214,6 +436,17 @@ defined_text = {
 			always = yes
 		}
 		localisation_key = autonomous_dominion_long_desc
+	}
+}
+
+defined_text = {
+	name = roman_client_kingdom
+	
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = roman_client_kingdom_title
 	}
 }
 
@@ -229,6 +462,17 @@ defined_text = {
 }
 
 defined_text = {
+	name = voivodeship
+	
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = voivodeship_title
+	}
+}
+
+defined_text = {
 	name = voivodeship_desc
 	
 	text = {
@@ -236,6 +480,17 @@ defined_text = {
 			always = yes
 		}
 		localisation_key = voivodeship_long_desc
+	}
+}
+
+defined_text = {
+	name = fief_subject
+	
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = fief_subject_title
 	}
 }
 
@@ -251,6 +506,17 @@ defined_text = {
 }
 
 defined_text = {
+	name = crusader_state_vassal
+	
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = crusader_state_vassal_title
+	}
+}
+
+defined_text = {
 	name = crusader_state_vassal_desc
 	
 	text = {
@@ -258,6 +524,17 @@ defined_text = {
 			always = yes
 		}
 		localisation_key = crusader_state_vassal_long_desc
+	}
+}
+
+defined_text = {
+	name = salic_personal_union
+	
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = salic_personal_union_title
 	}
 }
 
@@ -273,6 +550,17 @@ defined_text = {
 }
 
 defined_text = {
+	name = nahuatl_vassal
+	
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = nahuatl_vassal_title
+	}
+}
+
+defined_text = {
 	name = nahuatl_vassal_desc
 	
 	text = {
@@ -280,6 +568,17 @@ defined_text = {
 			always = yes
 		}
 		localisation_key = nahuatl_vassal_long_desc
+	}
+}
+
+defined_text = {
+	name = peasant_vassal
+	
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = peasant_vassal_title
 	}
 }
 
@@ -295,6 +594,17 @@ defined_text = {
 }
 
 defined_text = {
+	name = pirate_brotherhood_vassal
+	
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = pirate_brotherhood_vassal_title
+	}
+}
+
+defined_text = {
 	name = pirate_brotherhood_vassal_desc
 	
 	text = {
@@ -302,6 +612,17 @@ defined_text = {
 			always = yes
 		}
 		localisation_key = pirate_brotherhood_vassal_long_desc
+	}
+}
+
+defined_text = {
+	name = imperial_tributary_state
+	
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = imperial_tributary_state_title
 	}
 }
 
@@ -317,6 +638,17 @@ defined_text = {
 }
 
 defined_text = {
+	name = sister_republic
+	
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = sister_republic_title
+	}
+}
+
+defined_text = {
 	name = sister_republic_desc
 	
 	text = {
@@ -324,6 +656,17 @@ defined_text = {
 			always = yes
 		}
 		localisation_key = sister_republic_long_desc
+	}
+}
+
+defined_text = {
+	name = muslim_tributary_vassal
+	
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = muslim_tributary_vassal_title
 	}
 }
 
@@ -339,6 +682,17 @@ defined_text = {
 }
 
 defined_text = {
+	name = mandala_trade_vassal
+	
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = mandala_trade_vassal_title
+	}
+}
+
+defined_text = {
 	name = mandala_trade_vassal_desc
 	
 	text = {
@@ -346,6 +700,17 @@ defined_text = {
 			always = yes
 		}
 		localisation_key = mandala_trade_vassal_long_desc
+	}
+}
+
+defined_text = {
+	name = integrated_tribe_subject
+	
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = integrated_tribe_subject_title
 	}
 }
 
@@ -361,6 +726,17 @@ defined_text = {
 }
 
 defined_text = {
+	name = dutch_province_subject
+	
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = dutch_province_subject_title
+	}
+}
+
+defined_text = {
 	name = dutch_province_subject_desc
 	
 	text = {
@@ -368,6 +744,17 @@ defined_text = {
 			always = yes
 		}
 		localisation_key = dutch_province_subject_long_desc
+	}
+}
+
+defined_text = {
+	name = revolution_subject
+	
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = revolution_subject_title
 	}
 }
 

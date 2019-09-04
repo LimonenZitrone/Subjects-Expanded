@@ -72,23 +72,149 @@ country_event = {
 		ai_chance = { factor = 100 }
 		
 		display_subjects_of_type = { type = protectorate }
+	}
+	
+	option = {
+		name = subjects_expanded_events2.EVTOPT2
+		
+		ai_chance = { factor = 100 }
+		
 		display_subjects_of_type = { type = puppet_state }
+	}
+	
+	option = {
+		name = subjects_expanded_events2.EVTOPT3
+		
+		ai_chance = { factor = 100 }
+		
 		display_subjects_of_type = { type = dominion }
+	}
+	
+	option = {
+		name = subjects_expanded_events2.EVTOPT4
+		
+		ai_chance = { factor = 100 }
+		
 		display_subjects_of_type = { type = autonomous_dominion }
+	}
+	
+	option = {
+		name = subjects_expanded_events2.EVTOPT5
+		
+		ai_chance = { factor = 100 }
+		
 		display_subjects_of_type = { type = roman_client_kingdom }
+	}
+	
+	option = {
+		name = subjects_expanded_events2.EVTOPT6
+		
+		ai_chance = { factor = 100 }
+		
 		display_subjects_of_type = { type = voivodeship }
+	}
+	
+	option = {
+		name = subjects_expanded_events2.EVTOPT7
+		
+		ai_chance = { factor = 100 }
+		
 		display_subjects_of_type = { type = fief_subject }
+	}
+	
+	option = {
+		name = subjects_expanded_events2.EVTOPT8
+		
+		ai_chance = { factor = 100 }
+		
 		display_subjects_of_type = { type = crusader_state_vassal }
+	}
+	
+	option = {
+		name = subjects_expanded_events2.EVTOPT9
+		
+		ai_chance = { factor = 100 }
+		
 		display_subjects_of_type = { type = salic_personal_union }
+	}
+	
+	option = {
+		name = subjects_expanded_events2.EVTOPT10
+		
+		ai_chance = { factor = 100 }
+		
 		display_subjects_of_type = { type = nahuatl_vassal }
+	}
+	
+	option = {
+		name = subjects_expanded_events2.EVTOPT11
+		
+		ai_chance = { factor = 100 }
+		
 		display_subjects_of_type = { type = peasant_vassal }
+	}
+	
+	option = {
+		name = subjects_expanded_events2.EVTOPT12
+		
+		ai_chance = { factor = 100 }
+		
 		display_subjects_of_type = { type = pirate_brotherhood_vassal }
+	}
+	
+	option = {
+		name = subjects_expanded_events2.EVTOPT13
+		
+		ai_chance = { factor = 100 }
+		
 		display_subjects_of_type = { type = imperial_tributary_state }
+	}
+	
+	option = {
+		name = subjects_expanded_events2.EVTOPT14
+		
+		ai_chance = { factor = 100 }
+		
 		display_subjects_of_type = { type = sister_republic }
+	}
+	
+	option = {
+		name = subjects_expanded_events2.EVTOPT15
+		
+		ai_chance = { factor = 100 }
+		
 		display_subjects_of_type = { type = muslim_tributary_vassal }
+	}
+	
+	option = {
+		name = subjects_expanded_events2.EVTOPT16
+		
+		ai_chance = { factor = 100 }
+		
 		display_subjects_of_type = { type = mandala_trade_vassal }
+	}
+	
+	option = {
+		name = subjects_expanded_events2.EVTOPT17
+		
+		ai_chance = { factor = 100 }
+		
 		display_subjects_of_type = { type = integrated_tribe_subject }
+	}
+	
+	option = {
+		name = subjects_expanded_events2.EVTOPT18
+		
+		ai_chance = { factor = 100 }
+		
 		display_subjects_of_type = { type = dutch_province_subject }
+	}
+	
+	option = {
+		name = subjects_expanded_events2.EVTOPT19
+		
+		ai_chance = { factor = 100 }
+		
 		display_subjects_of_type = { type = revolution_subject }
 	}
 }

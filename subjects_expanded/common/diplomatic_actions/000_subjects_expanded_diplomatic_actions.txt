@@ -215,4 +215,20 @@ callaction = {
 			}
 		}
 	}
+	condition = {
+		tooltip = CANNOT_CALL_PERSIAN_SATRAPY_INTO_OFFENSIVE_WAR
+		potential = {
+			FROM = {
+				is_subject_of = ROOT
+				is_subject_of_type = persian_satrapy
+			}
+		}
+		allow = {
+			NOT = {
+				is_in_war = {
+					attacker_leader = ROOT
+				}
+			}
+		}
+	}
 }

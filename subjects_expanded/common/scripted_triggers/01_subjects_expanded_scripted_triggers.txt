@@ -398,7 +398,7 @@ is_possible_subject_of_subject_type_dutch_province_subject = {
 	OR = {
 		is_subject = no
 		AND = {
-			is_subject_of = ROOT
+			is_subject_of = PREV
 			is_vassal_or_similar_subject = yes
 		}
 	}
@@ -419,6 +419,19 @@ is_possible_subject_of_subject_type_revolution_subject = {
 	OR = {
 		government = monarchy
 		government = republic
+	}
+}
+
+is_possible_subject_of_subject_type_persian_satrapy = {
+	# PREVs in THIS scope refer to possible overlord
+	NOT = { is_subject_of_type = persian_satrapy  }
+	is_neighbor_of = PREV
+	OR = {
+		is_subject = no
+		AND = {
+			is_subject_of = PREV
+			is_vassal_or_similar_subject = yes
+		}
 	}
 }
 

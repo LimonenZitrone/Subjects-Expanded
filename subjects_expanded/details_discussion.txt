@@ -441,6 +441,7 @@ If a subject gives an additional merchant, the bonuses it gives to its overlord 
 [b]Additional Information:[/b]
 [list]
 [*] Mandala Vassals can be established diplomatically or by war (diplomatically only by a Mandala Vassal on its overlord)
+[*] Mandala Vassals don't have a max government rank
 [*] Mandala Vassals keep their Mandala Vassals when they are established by war, but cannot create new ones while they are a Mandala Vassals
 [*] Mandala Vassals transfer their vassals, client vassals, marches, client marches, and a few as vassal counting subjects (if they are able to have them) when established to their new overlord
 [*] Mandala Vassals can overthrow their overlord and make them their Mandala Vassal if they have 75% liberty desire
@@ -470,6 +471,7 @@ If a subject gives an additional merchant, the bonuses it gives to its overlord 
 [b]Additional Information:[/b]
 [list]
 [*] Integrated Tribes can only be established diplomatically
+[*] Integrated Tribes have a max government rank of 1 (Duchy)
 [*] Integrated Tribes only pay manpower if scutage is enabled
 [*] Integrated Tribes can pay an additional tribute of 10% of their yearly manpower every 5 years
 [*] Integrated Tribes receive a malus on national unrest if they have a different culture than their overlord
@@ -503,6 +505,7 @@ If a subject gives an additional merchant, the bonuses it gives to its overlord 
 [b]Additional Information:[/b]
 [list]
 [*] Dutch Provinces can only be established diplomatically
+[*] Dutch Provinces don't have a max government rank
 [*] Dutch Provinces have elections for their overlord each year, the third reform abolishes elections
 [*] the overlord of Dutch Provinces has three reforms to enact, the first disallowing Dutch Provinces to declare war between each other, the second disallowing Dutch Provinces to declare war in general (unless they have scutage enabled) and the third to abolish elections
 [*] Dutch Provinces can only request their independence diplomatically until the third reform is enacted, then they can only become free by war
@@ -530,8 +533,39 @@ If a subject gives an additional merchant, the bonuses it gives to its overlord 
 [b]Additional Information:[/b]
 [list]
 [*] Revolutionary Confederations can only be established by war (with the 'Spread the Revolution' or 'Crush the Revolution' Casus Belli)
+[*] Revolutionary Confederations don't have a max government rank
 [*] Revolutionary Confederations have the same ruler as their overlord
 [*] Revolutionary Confederations gain half of the bonuses the revolution target gets
 [*] Revolutionary Confederations give their overlord a bonus on the military skill of future rulers and legitimacy, if the overlord is a monarchy, a bonus to republican tradition and influence of the Girondists faction, if the overlord is a republic, as well as a bonus on aggressive expansion
 [*] Revolutionary Confederations do not cost a diplomatic relation, if they border their overlord or a Revolutionary Confederation of the same overlord as well as border a nation that is neither the Revolution Target nor a Revolutionary Confederation
+[/list]
+
+[h1]Satrapy[/h1]
+[i]A Satrapy is a mixture of a vassal and a colonial nation. It behaves like a vassal, but is a little bit less restricted in its diplomatic actions and has a reduced liberty desire, and pays tariffs like a colonial nation. It only joins its overlord's defensive wars, but the overlord can conscript troops from all Satrapies, which works similar to the Daimyo's Sword Hunt. A Satrapy will automatically switch to a Republican Dictatorship. It can only be established by monarchies that are either Persia or a nation with the primary culture Persian, with a primary culture in the Iranian group that is also their dominant culture, with a primary culture not in the Iranian group but with any of them being the dominant culture as well as an accepted culture or with Persian as the accepted culture and at least 10 Persian provinces on neighboring countries. A Satrapy does not cost a diplomatic relation, if it has it's capital in the same region as its overlord. A Satrapy gains a bonus on culture conversion cost and primary culture advisor cost and gives its overlord a bonus on possible advisors and minimum autonomy in territories.[/i]
+
+[b]Conditions (possible overlord):[/b]
+[list]
+[*] is not  a subject
+[*] has a monarchy government
+[*] is either Persia or primary culture is Persian or primary culture is in Iranian group and dominant culture or primary culture is not in the Iranian group and dominent culture is in the Iranian group and accepted or Persian culture is accepted and country owns at least 10 Persian provinces
+[/list]
+
+[b]Conditions (possible subject):[/b]
+[list]
+[*] is a neighbor of the possible overlord
+[*] is not a subject or a vassal of the possible overlord
+[/list]
+
+[b]Additional Information:[/b]
+[list]
+[*] Satrapies can be established diplomatically and by war
+[*] Satrapies have a max government rank of 2 (Kingdom)
+[*] Satrapies do not cost a relation slot, if their capital is in the same region as their overlord's
+[*] Satrapies pay tariffs
+[*] Satrapies do not join offensive wars of their overlord
+[*] Satrapies gain a bonus on culture conversion cost and primary culture advisor cost
+[*] Satrapies give their overlord a bonus on possible advisors and minimum autonomy in territories
+[*] Satrapies have an increased liberty desire, if the overlord has less than 50 legitimacy equivalent
+[*] Satrapies are locked to have Republican Dictatorships
+[*] the overlord of Satrapies has a decision with similar effects like the Sword Hunt interaction for Daimyos
 [/list]

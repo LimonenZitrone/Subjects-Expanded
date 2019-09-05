@@ -20,6 +20,7 @@
  subjects_expanded_events2.EVTOPT17: "Derzeit gibt es §G[REB.num_of_subjects_of_type_integrated_tribe_subject.GetValue]§! §YIntegrierten Stämme§! auf der Welt."
  subjects_expanded_events2.EVTOPT18: "Derzeit gibt es §G[REB.num_of_subjects_of_type_dutch_province_subject.GetValue]§! §YNiederländische Provinzen§! auf der Welt."
  subjects_expanded_events2.EVTOPT19: "Derzeit gibt es §G[REB.num_of_subjects_of_type_revolution_subject.GetValue]§! §YRevolutionäre Konföderationen§! auf der Welt."
+ subjects_expanded_events2.EVTOPT20: "Derzeit gibt es §G[REB.num_of_subjects_of_type_persian_satrapy.GetValue]§! §YSatrapien§! auf der Welt."
  
  subjects_expanded_events.EVTNAME3: "Ideen-Mods?"
  subjects_expanded_events.EVTDESC3: "Herrschaftsgebiete per Entscheidung zu errichten gibt ihnen Ideengruppen abhängig von Euren. Falls Ihr eine Mod benutzt, die die Vanilla-Ideengruppen verändert, könnte dies das Spiel zum §RAbsturz§! bringen. Deshalb solltet Ihr hier die passende Option auswählen, um dies zu verhindern!"
@@ -163,4 +164,12 @@
  subjects_expanded_dutch_province_subject_events9.EVTOPT5: "Unterstützt §Y[possible_country_to_elect_for_dutch_provinces_overlord_5.GetName]§!."
  subjects_expanded_dutch_province_subject_events9.EVTOPT6: "Unterstützt §Y[possible_country_to_elect_for_dutch_provinces_overlord_6.GetName]§!."
  subjects_expanded_dutch_province_subject_events9.EVTOPT7: "Abbrechen."
+ 
+ subjects_expanded_persian_satrapy_events.EVTNAME3: "[From.GetName] rekrutiert Truppen"
+ subjects_expanded_persian_satrapy_events.EVTDESC3: "Unser Lehnsherr hat Truppen aus allen seinen Satrapien rekrutiert.. [From.GetName] wird nun einen militärischen Bonus erhalten, während wir einen Malus erhalten."
+ subjects_expanded_persian_satrapy_events3.EVTOPT1: "Ich vermute, das ist sein Recht."
+ 
+ subjects_expanded_persian_satrapy_events.EVTNAME4: "Recht auf Satrapien verloren"
+ subjects_expanded_persian_satrapy_events.EVTDESC4: "Wir haben das Recht verloren, Satrapien haben zu können, wir erfüllen nicht mehr die notwendigen Bedingungen. Alle unsere Satrapien werden zu Vasallen umgewandelt und erhalten zusätzliches Freiheitsstreben."
+ subjects_expanded_persian_satrapy_events4.EVTOPT1: "Das ist ein Problem."
  

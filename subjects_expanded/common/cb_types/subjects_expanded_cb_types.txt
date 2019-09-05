@@ -50,3 +50,23 @@ cb_force_mandala_trade_vassal = {
 	
 	war_goal = take_capital_force_mandala_trade_vassal
 }
+
+cb_force_persian_satrapy_triggered_only = {
+	valid_for_subject = no
+	
+	is_triggered_only = yes
+	months = 120
+
+	prerequisites = {
+		can_create_subject_type = {
+			subject = FROM
+			subject_type = persian_satrapy
+		}
+		NOT = { truce_with = FROM }
+		FROM = {
+			is_subject = no
+		}
+	}
+	
+	war_goal = take_capital_force_persian_satrapy
+}

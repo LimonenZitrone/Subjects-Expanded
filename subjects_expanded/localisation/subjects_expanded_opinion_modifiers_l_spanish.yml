@@ -66,3 +66,6 @@
  is_revolution_subject: "Revolutionary Confederation"
  revolution_subject_forced: "Forced Revolutionary Confederation"
  
+ is_persian_satrapy: "Satrapy"
+ persian_satrapy_forced: "Forced Satrapy"
+ 

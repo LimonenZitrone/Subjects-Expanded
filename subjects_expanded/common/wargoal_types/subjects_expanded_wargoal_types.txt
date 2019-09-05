@@ -25,3 +25,17 @@ take_capital_force_mandala_trade_vassal = {
 	
 	war_name = MANDALA_WAR_NAME
 }
+
+take_capital_force_persian_satrapy = {
+	type = take_capital
+	
+	badboy_factor = 0.5
+	prestige_factor = 1.25
+	peace_cost_factor = 0.5
+	
+	peace_options = {
+		make_persian_satrapy
+	}
+	
+	war_name = SATRAPY_WAR_NAME
+}

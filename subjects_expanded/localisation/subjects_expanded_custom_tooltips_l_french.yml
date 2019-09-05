@@ -27,6 +27,7 @@
  IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_integrated_tribe_subject: "Can be made to an §YIntegrated Tribe§!"
  IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_dutch_province_subject: "Can be made to a §YDutch Province§!"
  IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_revolution_subject: "Can be made to a §YRevolutionary Confederation§!"
+ IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_persian_satrapy: "Can be made to a §YSatrapy§!"
  
  THIS_IS_FORMER_AUTONOMOUS_DOMINION: "Is a former §YDominion§! or a former §YColonial Nation§!"
  
@@ -45,6 +46,8 @@
  CANNOT_DECLARE_WAR_ON_OVERLORD_BEFORE_THIRD_DUTCH_PROVINCES_REFORM: "You cannot declare war on your overlord before he has enacted the §YSuccessiewet§! reform."
  
  CANNOT_CALL_DUTCH_PROVINCE_AGAINST_ITS_OVERLORD: "You cannot call a Dutch Province to arms against its overlord."
+ 
+ CANNOT_CALL_PERSIAN_SATRAPY_INTO_OFFENSIVE_WAR: "You cannot call a Satrapy into offensive wars."
  
  # New Diplomatic Actions:
  DID_NOT_LOWER_DEVELOPMENT_WITHIN_LAST_10_YEARS: "Did NOT reduce the development of an autonomous dominion within the last §Y10 years§!"
@@ -97,6 +100,9 @@
  DUTCH_PROVINCE_SUBJECT_NO_LEADER_ELECTION_TT: "\nDutch Provinces will gain the following bonuses: \n   Global Trade Power: §G+10.00%§! \nThe overlord will gain the following bonuses: \n   Diplomatic Relations: §G+1.00§! \n   Culture Conversion Cost: §G-10.00%§! \n\n§YThe overlord is not elected anymore, he will always be from [Root.GetName]. \nDutch Provinces can now declare independence by war.§!\n"
  
  WE_SUPPORT_THIS_FOR_NEXT_DUTCH_PROVINCE_ELECTION: "We currently vote for §Y[This.GetName]§!."
+ 
+ HAS_NOT_USED_PERSIAN_SATRAPY_SWORD_HUNT_LAST_10_YEARS: "Has NOT used '§YConscript Troops from Satrapies§!' within the last §Y10 years§!"
+ PERSIAN_SATRAPY_SWORD_HUNT_EFFECTS: "§Y[Root.GetName]§! gains the following bonuses per §YSatrapy§! it has for §Y10 years§!: \n   Land Force Limit: §G+5.00§! \n   Manpower Increase: §G+2500§! \n\nEach Satrapy receives the following maluses for §Y10 years§!: \n   Land Force Limit: §R-10.00§! \n   Manpower Increase: §R-5000§!"
  
  # Events:
  SE_IDEA_CHANGING_MOD_ACTIVE_TT: "Creating Dominions via decision §Rwill NOT§! give them idea groups."
@@ -181,4 +187,6 @@
  display_dutch_province_subject_desc_tt: "§g[dutch_province_subject_desc]§W"
  display_revolution_subject_title_tt: "§Y[revolution_subject]§!"
  display_revolution_subject_desc_tt: "§g[revolution_subject_desc]§W"
+ display_persian_satrapy_title_tt: "§Y[persian_satrapy]§!"
+ display_persian_satrapy_desc_tt: "§g[persian_satrapy_desc]§W"
  

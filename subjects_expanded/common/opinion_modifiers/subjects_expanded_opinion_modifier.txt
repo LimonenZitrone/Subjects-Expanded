@@ -246,3 +246,13 @@ revolution_subject_forced = {
 	yearly_decay = 3
 	min = -75
 }
+
+is_persian_satrapy = {
+	opinion = 35
+}
+
+persian_satrapy_forced = {
+	opinion = -100
+	yearly_decay = 4
+	min = -100
+}

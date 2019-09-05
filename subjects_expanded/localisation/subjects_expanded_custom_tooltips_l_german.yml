@@ -27,6 +27,7 @@
  IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_integrated_tribe_subject: "Kann zu einem §YIntegrierten Stamm§! gemacht werden"
  IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_dutch_province_subject: "Kann zu einer §YNiederländischen Provinz§! gemacht werden"
  IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_revolution_subject: "Kann zu einer §YRevolutionären Konföderation§! gemacht werden"
+ IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_persian_satrapy: "Kann zu einer §YSatrapie§! gemacht werden"
  
  THIS_IS_FORMER_AUTONOMOUS_DOMINION: "Ist ein ehemaliges §YHerrschaftsgebiet§! oder eine ehemalige §YKolonialnation§!"
  
@@ -45,6 +46,8 @@
  CANNOT_DECLARE_WAR_ON_OVERLORD_BEFORE_THIRD_DUTCH_PROVINCES_REFORM: "Ihr könnt Eurem Lehnsherrn nicht den Krieg erklären, bevor er die §YSuccessiewet§!-Reform verabschiedet hat."
  
  CANNOT_CALL_DUTCH_PROVINCE_AGAINST_ITS_OVERLORD: "Ihr könnt eine Niederländische Provinz nicht gegen ihren Lehnsherrn zu den Waffen rufen."
+ 
+ CANNOT_CALL_PERSIAN_SATRAPY_INTO_OFFENSIVE_WAR: "Ihr könnt eine Satrapie in Angriffskriegen nicht zu den Waffen rufen."
  
  # New Diplomatic Actions:
  DID_NOT_LOWER_DEVELOPMENT_WITHIN_LAST_10_YEARS: "Hat in den letzten §Y10 Jahren§! NICHT die Entwicklung eines Autonomen Herrschaftsgebiets verringert"
@@ -97,6 +100,9 @@
  DUTCH_PROVINCE_SUBJECT_NO_LEADER_ELECTION_TT: "\nNiederländische Provinzen erhalten folgende Boni: \n   Globale Handelsmacht: §G+10.00%§! \nDer Lehnsherr erhält die folgenden Boni: \n   Diplomatische Beziehungen: §G+1.00§! \n   Kulturkonvertierungskosten: §G-10.00%§! \n\n§YDer Lehnsherr wird nicht mehr gewählt, er wird nun immer von [Root.GetName] gestellt. \nNiederländische Provinzen können nun ihre Unabhängigkeit durch Kriege erklären.§!\n"
  
  WE_SUPPORT_THIS_FOR_NEXT_DUTCH_PROVINCE_ELECTION: "Wir stimmen derzeit für §Y[This.GetName]§!."
+ 
+ HAS_NOT_USED_PERSIAN_SATRAPY_SWORD_HUNT_LAST_10_YEARS: "Hat '§YRekrutiert Truppen aus den Satrapien§!' innerhalb der letzten §Y10 Jahre§! NICHT benutzt"
+ PERSIAN_SATRAPY_SWORD_HUNT_EFFECTS: "§Y[Root.GetName]§! erhält die folgenden Boni pro eigener §YSatrapie§! für §Y10 Jahre§!: \n   Einheitenlimit (Armee): §G+5.00§! \n   Rekrutenreserve: §G+2500§! \n\nJede Satrapie erhält die folgenden Mali für §Y10 Jahre§!: \n   Einheitenlimit (Armee): §R-10.00§! \n   Rekrutenreserve: §R-5000§!"
  
  # Events:
  SE_IDEA_CHANGING_MOD_ACTIVE_TT: "Wenn Herrschaftsgebiete per Entscheidung errichtet werden, §Rerhalten§! sie §RKEINE§! Ideengruppen."
@@ -181,4 +187,6 @@
  display_dutch_province_subject_desc_tt: "§g[dutch_province_subject_desc]§W"
  display_revolution_subject_title_tt: "§Y[revolution_subject]§!"
  display_revolution_subject_desc_tt: "§g[revolution_subject_desc]§W"
+ display_persian_satrapy_title_tt: "§Y[persian_satrapy]§!"
+ display_persian_satrapy_desc_tt: "§g[persian_satrapy_desc]§W"
  

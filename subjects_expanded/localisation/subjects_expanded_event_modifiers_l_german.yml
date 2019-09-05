@@ -180,3 +180,10 @@
  revolution_subject_overlord_modifier: "Besitzt Revolutionäre Konföderationen"
  revolution_subject_overlord_no_diplomatic_relation_slot_modifier: "Revolutionäre Konföderation grenzt and Feinde der Revolution"
  
+ persian_satrapy_modifier: "Satrapie"
+ persian_satrapy_overlord_has_low_legitimacy_modifier: "Overlord has low Legitimacy"
+ persian_satrapy_sword_hunt_modifier: "Lehnsherr hat Truppen rekrutiert"
+ persian_satrapy_overlord_modifier: "Besitzt Satrapien"
+ persian_satrapy_overlord_no_dip_relation_cost_modifier: "Besitzt Satrapien in Hauptstadtregion"
+ persian_satrapy_overlord_sword_hunt_modifier: "Truppen von Satrapie rekrutiert"
+ 

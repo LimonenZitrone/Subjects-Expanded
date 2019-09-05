@@ -164,6 +164,12 @@ defined_text = {
 		}
 		localisation_key = "[revolution_subject]"
 	}
+	text = {
+		trigger = {
+			is_subject_of_type = persian_satrapy
+		}
+		localisation_key = "[persian_satrapy]"
+	}
 	
 	text = {
 		trigger = {
@@ -766,5 +772,27 @@ defined_text = {
 			always = yes
 		}
 		localisation_key = revolution_subject_long_desc
+	}
+}
+
+defined_text = {
+	name = persian_satrapy
+	
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = persian_satrapy_title
+	}
+}
+
+defined_text = {
+	name = persian_satrapy_desc
+	
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = persian_satrapy_long_desc
 	}
 }

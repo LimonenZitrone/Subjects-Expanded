@@ -180,3 +180,10 @@
  revolution_subject_overlord_modifier: "Has Revolutionary Confederations"
  revolution_subject_overlord_no_diplomatic_relation_slot_modifier: "Revolutionary Confederation neighbors Enemies of the Revolution"
  
+ persian_satrapy_modifier: "Satrapy"
+ persian_satrapy_overlord_has_low_legitimacy_modifier: "Overlord has low Legitimacy"
+ persian_satrapy_sword_hunt_modifier: "Overlord conscripted Troops"
+ persian_satrapy_overlord_modifier: "Has Satrapies"
+ persian_satrapy_overlord_no_dip_relation_cost_modifier: "Has Satrapies in Capital Region"
+ persian_satrapy_overlord_sword_hunt_modifier: "Conscripted Troops from Satrapy"
+ 

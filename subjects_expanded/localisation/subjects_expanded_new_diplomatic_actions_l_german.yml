@@ -239,6 +239,10 @@
  cancel_revolution_subject_tooltip: "Beedet die Vasallisierung von §Y[From.GetName]§! und entlasst sie in die Freiheit.\n"
  
  
+ establish_persian_satrapy_title: "Satrapie ernennen"
+ establish_persian_satrapy_desc: "Ernennt Euren Vasallen [From.GetName] zu einer §YSatrapie§!. \n[persian_satrapy_desc]"
+ establish_persian_satrapy_tooltip: "Ernennt Euren Vasallen [From.GetName] zu einer §YSatrapie§!.\n"
+ 
  return_subject_to_vassal_title: "Zum Vasall degradieren"
  return_subject_to_vassal_desc: "Beendet den derzeitigen Status von §Y[From.GetName]§! und macht sie zu einem Vasallen. Dies wird ihre Meinung über uns um §R-100§! verschlechtern und ihr Freiheitsstreben um §R+25%§! ändern. Außerdem verlieren wir §R-10§! Prestige."
  return_subject_to_vassal_tooltip: "Macht §Y[From.GetName]§! wieder zu einem Vasall.\n"

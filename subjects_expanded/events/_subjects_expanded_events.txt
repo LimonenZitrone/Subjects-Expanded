@@ -63,6 +63,7 @@ country_event = {
 			count_num_of_subjects_of_type = { type = integrated_tribe_subject }
 			count_num_of_subjects_of_type = { type = dutch_province_subject }
 			count_num_of_subjects_of_type = { type = revolution_subject }
+			count_num_of_subjects_of_type = { type = persian_satrapy }
 		}
 	}
 	
@@ -216,6 +217,14 @@ country_event = {
 		ai_chance = { factor = 100 }
 		
 		display_subjects_of_type = { type = revolution_subject }
+	}
+	
+	option = {
+		name = subjects_expanded_events2.EVTOPT20
+		
+		ai_chance = { factor = 100 }
+		
+		display_subjects_of_type = { type = persian_satrapy }
 	}
 }
 

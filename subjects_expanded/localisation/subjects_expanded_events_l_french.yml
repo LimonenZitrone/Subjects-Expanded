@@ -20,6 +20,7 @@
  subjects_expanded_events2.EVTOPT17: "There currently are §G[REB.num_of_subjects_of_type_integrated_tribe_subject.GetValue]§! §YIntegrated Tribes§! in the world."
  subjects_expanded_events2.EVTOPT18: "There currently are §G[REB.num_of_subjects_of_type_dutch_province_subject.GetValue]§! §YDutch Provinces§! in the world."
  subjects_expanded_events2.EVTOPT19: "There currently are §G[REB.num_of_subjects_of_type_revolution_subject.GetValue]§! §YRevolutionary Confederations§! in the world."
+ subjects_expanded_events2.EVTOPT20: "There currently are §G[REB.num_of_subjects_of_type_persian_satrapy.GetValue]§! §YSatrapies§! in the world."
  
  subjects_expanded_events.EVTNAME3: "Idea Mods?"
  subjects_expanded_events.EVTDESC3: "Spawning Dominions via decisions sets their idea groups depending on the ones you chose. If you are using a mod that alters the vanilla idea groups in any way, this might §Rcrash§! the game. So select the matching option below to prevent that from happening!"
@@ -163,4 +164,12 @@
  subjects_expanded_dutch_province_subject_events9.EVTOPT5: "Support §Y[possible_country_to_elect_for_dutch_provinces_overlord_5.GetName]§!."
  subjects_expanded_dutch_province_subject_events9.EVTOPT6: "Support §Y[possible_country_to_elect_for_dutch_provinces_overlord_6.GetName]§!."
  subjects_expanded_dutch_province_subject_events9.EVTOPT7: "Cancel."
+ 
+ subjects_expanded_persian_satrapy_events.EVTNAME3: "[From.GetName] conscripted troops"
+ subjects_expanded_persian_satrapy_events.EVTDESC3: "Our overlord has conscripted troops of all his Satrapies. [From.GetName] will now get a military bonus, while we receive a malus."
+ subjects_expanded_persian_satrapy_events3.EVTOPT1: "I suppose that's his right."
+ 
+ subjects_expanded_persian_satrapy_events.EVTNAME4: "Lost the right for Satrapies"
+ subjects_expanded_persian_satrapy_events.EVTDESC4: "We've lost the right to have Satrapies, we do not fulfill the requirements anymore. All our Satrapies will be converted to vassals and receive additional liberty desire."
+ subjects_expanded_persian_satrapy_events4.EVTOPT1: "That's a problem."
  

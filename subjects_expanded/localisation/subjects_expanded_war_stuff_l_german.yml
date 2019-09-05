@@ -9,6 +9,9 @@
  cb_force_mandala_trade_vassal: "Mandala-Vasall erzwingen"
  cb_force_mandala_trade_vassal_desc: "Sie sind in unserem Einflussbereich und könnten nützlich für unsere Wirtschaft sein. Wir müssen sie dazu zwingen, uns Tribut zu zahlen!"
  
+ cb_force_persian_satrapy_triggered_only: "Satrapie erzwingen"
+ cb_force_persian_satrapy_triggered_only_desc: "Wir sollten sie dazu zwingen, etwas zu werden, was sie schon lange sein sollten: Unsere Satrapie!"
+ 
  # War Goals:
  take_capital_force_imperial_tributary_state: "Hauptstadt erobern"
  take_capital_force_imperial_tributary_state_desc: "Das Kriegsziel ist es, die Hauptstadt des Ziellandes zu erobern."
@@ -16,8 +19,12 @@
  take_capital_force_mandala_trade_vassal: "Hauptstadt erobern"
  take_capital_force_mandala_trade_vassal_desc: "Das Kriegsziel ist es, die Hauptstadt des Ziellandes zu erobern."
  
+ take_capital_force_persian_satrapy: "Hauptstadt erobern"
+ take_capital_force_persian_satrapy_desc: "Das Kriegsziel ist es, die Hauptstadt des Ziellandes zu erobern."
+ 
  # War Names:
  MANDALA_WAR_NAME: "$ORDER$ $FIRST$er Krieg der Mandala-Erzwingung"
+ SATRAPY_WAR_NAME: "$ORDER$ $FIRST$er Krieg der persischen Hegemonie"
  
  # Peace Treaties:
  make_protectorate_desc: "@[From.GetTag] §Y[From.GetName]§! wird zu einem Protektorat von @[Root.GetTag] §Y[Root.GetName]§!."
@@ -67,4 +74,8 @@
  make_revolution_subject_desc: "@[From.GetTag] §Y[From.GetName]§! wird zu einer Revolutionären Konföderation von @[Root.GetTag] §Y[Root.GetName]§!."
  CB_ALLOWED_make_revolution_subject: "Revolutionäre Konföderation erzwingen"
  PEACE_make_revolution_subject: "$TAKERS$e Revolutionäre Konföderation"
+ 
+ make_persian_satrapy_desc: "@[From.GetTag] §Y[From.GetName]§! wird zu einer Satrapie von @[Root.GetTag] §Y[Root.GetName]§!. Falls [From.GetName] keine Republikanische Diktatur ist, werden sie zu einer."
+ CB_ALLOWED_make_persian_satrapy: "Satrapie erzwingen"
+ PEACE_make_persian_satrapy: "$TAKERS$e Satrapie"
  

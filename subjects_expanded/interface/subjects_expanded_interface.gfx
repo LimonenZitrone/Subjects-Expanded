@@ -233,4 +233,17 @@ spriteTypes = {
 		name = "GFX_diplomacy_amrevolution_subject"
 		texturefile = "gfx//interface//icon_diplomacy_amrevolution_subject.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_icon_persian_satrapy"
+		texturefile = "gfx/interface/icon_persian_satrapy.dds"
+	}
+	spriteType = {
+		name = "GFX_diplomacy_leadpersian_satrapy"
+		texturefile = "gfx//interface//icon_diplomacy_leadpersian_satrapy.dds"
+	}
+	spriteType = {
+		name = "GFX_diplomacy_ampersian_satrapy"
+		texturefile = "gfx//interface//icon_diplomacy_ampersian_satrapy.dds"
+	}
 }

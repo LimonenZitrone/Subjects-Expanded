@@ -1,13 +1,31 @@
 increased_tariffs_triggered_modifier = {
 	potential = {
-		OR = {
-			num_of_colonists = 1
-			can_be_overlord = pirate_brotherhood_vassal
-		}
+		always = yes
 	}
 	
 	trigger = {
-		always = yes
+		OR = {
+			num_of_colonists = 1
+			can_be_overlord = pirate_brotherhood_vassal
+			can_be_overlord = persian_satrapy
+		}
+	}
+	
+	global_tariffs = 0.5
+}
+
+persian_satrapies_increased_tariffs_triggered_modifier = {
+	potential = {
+		can_be_overlord = persian_satrapy
+		NOT = { colony = 1 }
+	}
+	
+	trigger = {
+		NOT = { num_of_colonists = 1 }
+		NOT = { colony = 1 }
+		any_subject_country = {
+			is_subject_of_type = persian_satrapy
+		}
 	}
 	
 	global_tariffs = 0.5

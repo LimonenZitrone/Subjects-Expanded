@@ -559,7 +559,7 @@ If a subject gives an additional merchant, the bonuses it gives to its overlord 
 [b]Additional Information:[/b]
 [list]
 [*] Satrapies can be established diplomatically and by war
-[*] Satrapies have a max government rank of 2 (Kingdom)
+[*] Satrapies have a max government rank of 1 (Duchy)
 [*] Satrapies do not cost a relation slot, if their capital is in the same region as their overlord's
 [*] Satrapies pay tariffs
 [*] Satrapies do not join offensive wars of their overlord

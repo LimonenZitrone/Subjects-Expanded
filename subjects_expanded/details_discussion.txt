@@ -193,6 +193,7 @@ If a subject gives an additional merchant, the bonuses it gives to its overlord 
 [*] Fiefdoms gain a bonus on culture conversion cost and tax income
 [*] Fiefdoms grant their overlord a bonus on culture conversion cost and tax income
 [*] Fiefdoms have a subject interaction (diplomatic action) to demand units
+[*] in the Feudal Age, High Middle Ages and Late Middle Ages (ages added by the Extended Timeline mod) Fiefdoms only cost halfed diplomatic relations, that means if a country has two Fiefdoms, they only cost one slot, four Fiefdoms only cost two slots, etc. (capped for 10 Fiefdoms)
 [/list]
 
 [h1]Crusader State[/h1]

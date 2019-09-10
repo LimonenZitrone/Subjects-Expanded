@@ -2625,7 +2625,7 @@ mandala_trade_vassal = {
 	modifier_overlord = {
 		modifier = large_colonial_nation
 		trigger = {
-			num_of_cities = 20
+			num_of_cities = 15
 		}
 	}
 

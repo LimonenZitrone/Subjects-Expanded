@@ -187,3 +187,6 @@
  persian_satrapy_overlord_no_dip_relation_cost_modifier: "Besitzt Satrapien in Hauptstadtregion"
  persian_satrapy_overlord_sword_hunt_modifier: "Truppen von Satrapie rekrutiert"
  
+ naval_march_low_dev_modifier: "Marine-Mark"
+ naval_march_low_dev_overlord_modifier: "Besitzt Marine-Marken"
+ 

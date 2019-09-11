@@ -69,3 +69,6 @@
  is_persian_satrapy: "Satrapie"
  persian_satrapy_forced: "Satrapie erzwungen"
  
+ is_naval_march: "Marine-Mark"
+ declined_ask_to_become_naval_march: "Bitte nach Marine-Mark abgelehnt"
+ 

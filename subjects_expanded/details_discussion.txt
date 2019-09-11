@@ -570,3 +570,27 @@ If a subject gives an additional merchant, the bonuses it gives to its overlord 
 [*] Satrapies are locked to have Republican Dictatorships
 [*] the overlord of Satrapies has a decision with similar effects like the Sword Hunt interaction for Daimyos
 [/list]
+
+[h1]Naval March[/h1]
+[i]A Naval March behaves like a normal march, but receives naval bonuses instead of army related bonuses. Furthermore, it gives its overlord a bonus on naval force limit. It can only be established by countries that have at least 5 ports and at least 10 ships in their vassals with at least 1 port.[/i]
+
+[b]Conditions (possible overlord):[/b]
+[list]
+[*] is not  a subject
+[*] has at least 5 ports
+[*] has at least 10 ships
+[/list]
+
+[b]Conditions (possible subject):[/b]
+[list]
+[*] is a vassal of the possible overlord
+[*] has at least 1 port
+[/list]
+
+[b]Additional Information:[/b]
+[list]
+[*] Naval Marches can only be established diplomatically
+[*] Naval Marches have a max government rank of 1 (Duchy)
+[*] Naval Marches gain a bonus on morale of navies, sailors, sailor recovery speed, naval forcelimit, navy maintenance, blockade efficiency, shipbuilding time and ship duratbility as long as they have less than 25% of their overlord's total development
+[*] Naval Marches give their overlord a bonus on naval forcelimit as long as they have less than 25% of their overlord's total development
+[/list]

@@ -49,10 +49,15 @@ establish_mandala_trade_vassal = {
 				transfer_subjects_of_type_to = { type = client_vassal who = ROOT }
 				transfer_subjects_of_type_to = { type = march who = ROOT }
 				transfer_subjects_of_type_to = { type = client_march who = ROOT }
+				transfer_subjects_of_type_to = { type = roman_client_kingdom who = ROOT }
 				transfer_subjects_of_type_to = { type = voivodeship who = ROOT }
 				transfer_subjects_of_type_to = { type = fief_subject who = ROOT }
 				transfer_subjects_of_type_to = { type = crusader_state_vassal who = ROOT }
 				transfer_subjects_of_type_to = { type = nahuatl_vassal who = ROOT }
+				transfer_subjects_of_type_to = { type = peasant_vassal who = ROOT }
+				transfer_subjects_of_type_to = { type = muslim_tributary_vassal who = ROOT }
+				transfer_subjects_of_type_to = { type = integrated_tribe_subject who = ROOT }
+				transfer_subjects_of_type_to = { type = naval_march who = ROOT }
 				if = {
 					limit = {
 						any_subject_country = {

@@ -21,6 +21,7 @@
  subjects_expanded_events2.EVTOPT18: "Derzeit gibt es §G[REB.num_of_subjects_of_type_dutch_province_subject.GetValue]§! §YNiederländische Provinzen§! auf der Welt."
  subjects_expanded_events2.EVTOPT19: "Derzeit gibt es §G[REB.num_of_subjects_of_type_revolution_subject.GetValue]§! §YRevolutionäre Konföderationen§! auf der Welt."
  subjects_expanded_events2.EVTOPT20: "Derzeit gibt es §G[REB.num_of_subjects_of_type_persian_satrapy.GetValue]§! §YSatrapien§! auf der Welt."
+ subjects_expanded_events2.EVTOPT21: "Derzeit gibt es §G[REB.num_of_subjects_of_type_naval_march.GetValue]§! §YMarine-Marken§! auf der Welt."
  
  subjects_expanded_events.EVTNAME3: "Ideen-Mods?"
  subjects_expanded_events.EVTDESC3: "Herrschaftsgebiete per Entscheidung zu errichten gibt ihnen Ideengruppen abhängig von Euren. Falls Ihr eine Mod benutzt, die die Vanilla-Ideengruppen verändert, könnte dies das Spiel zum §RAbsturz§! bringen. Deshalb solltet Ihr hier die passende Option auswählen, um dies zu verhindern!"

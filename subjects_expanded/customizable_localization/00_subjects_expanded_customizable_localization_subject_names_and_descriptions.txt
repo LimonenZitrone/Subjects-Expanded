@@ -170,6 +170,12 @@ defined_text = {
 		}
 		localisation_key = "[persian_satrapy]"
 	}
+	text = {
+		trigger = {
+			is_subject_of_type = naval_march
+		}
+		localisation_key = "[naval_march]"
+	}
 	
 	text = {
 		trigger = {
@@ -794,5 +800,27 @@ defined_text = {
 			always = yes
 		}
 		localisation_key = persian_satrapy_long_desc
+	}
+}
+
+defined_text = {
+	name = naval_march
+	
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = naval_march_title
+	}
+}
+
+defined_text = {
+	name = naval_march_desc
+	
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = naval_march_long_desc
 	}
 }

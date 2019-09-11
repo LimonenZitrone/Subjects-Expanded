@@ -19,6 +19,7 @@ integrated_tribe_subject = { }
 dutch_province_subject = { }
 revolution_subject = { }
 persian_satrapy = { }
+naval_march = { }
 
 # Subjects
 protectorate = {
@@ -3129,4 +3130,52 @@ persian_satrapy = {
 	
 	overlord_opinion_modifier = is_persian_satrapy
 	subject_opinion_modifier = is_persian_satrapy
+}
+
+naval_march = {
+	copy_from = march
+	count = march
+	
+	# Triggers:
+	is_potential_overlord = {
+		is_subject = no
+		num_of_ports = 5
+		navy_size = 10
+	}
+	
+	# Graphics:
+	sprite = GFX_icon_naval_march
+	diplomacy_overlord_sprite = GFX_diplomacy_leadnaval_march
+	diplomacy_subject_sprite = GFX_diplomacy_amnaval_march
+	
+	# Properties:
+	press_sailors = yes
+	
+	# Modifiers:
+	modifier_subject = clear
+	modifier_subject = {
+		modifier = subject_nation
+	}
+	modifier_subject = {
+		modifier = naval_march_low_dev_modifier
+		trigger = {
+			NOT = { development_of_overlord_fraction = 0.25 }
+		}
+		expiration_message_overlord = MARCHTOOLARGE
+		expiration_message_subject = MARCHTOOLARGEUS
+	}
+	
+	modifier_overlord = clear
+	modifier_overlord = {
+		modifier = march_subject
+	}
+	modifier_overlord = {
+		modifier = naval_march_low_dev_overlord_modifier
+		trigger = {
+			NOT = { development_of_overlord_fraction = 0.25 }
+		}
+	}
+	
+	overlord_opinion_modifier = is_naval_march
+	subject_opinion_modifier = is_naval_march
 }

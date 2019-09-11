@@ -803,6 +803,22 @@ persian_satrapy_overlord_sword_hunt_modifier = {
 	global_manpower = 2.5
 }
 
+# Subject Type: Naval March
+naval_march_low_dev_modifier = {
+	global_sailors_modifier = 0.25
+	naval_forcelimit_modifier = 0.50
+	ship_durability = 0.1
+	naval_maintenance_modifier = -0.30
+	sailors_recovery_speed = 0.20
+	blockade_efficiency = 0.1
+	global_ship_recruit_speed = -0.1
+	naval_morale = 0.1
+}
+
+naval_march_low_dev_overlord_modifier = {
+	naval_forcelimit = 25
+}
+
 # Modifiers that function as timers
 protectorate_got_monarch_power_this_year = {
 }

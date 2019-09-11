@@ -28,6 +28,7 @@
  IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_dutch_province_subject: "Kann zu einer §YNiederländischen Provinz§! gemacht werden"
  IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_revolution_subject: "Kann zu einer §YRevolutionären Konföderation§! gemacht werden"
  IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_persian_satrapy: "Kann zu einer §YSatrapie§! gemacht werden"
+ IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_naval_march: "Kann zu einer §YMarine-Mark§! gemacht werden"
  
  THIS_IS_FORMER_AUTONOMOUS_DOMINION: "Ist ein ehemaliges §YHerrschaftsgebiet§! oder eine ehemalige §YKolonialnation§!"
  
@@ -189,4 +190,6 @@
  display_revolution_subject_desc_tt: "§g[revolution_subject_desc]§W"
  display_persian_satrapy_title_tt: "§Y[persian_satrapy]§!"
  display_persian_satrapy_desc_tt: "§g[persian_satrapy_desc]§W"
+ display_naval_march_title_tt: "§Y[naval_march]§!"
+ display_naval_march_desc_tt: "§g[naval_march_desc]§W"
  

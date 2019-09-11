@@ -187,3 +187,6 @@
  persian_satrapy_overlord_no_dip_relation_cost_modifier: "Has Satrapies in Capital Region"
  persian_satrapy_overlord_sword_hunt_modifier: "Conscripted Troops from Satrapy"
  
+ naval_march_low_dev_modifier: "Naval March"
+ naval_march_low_dev_overlord_modifier: "Has Naval Marches"
+ 

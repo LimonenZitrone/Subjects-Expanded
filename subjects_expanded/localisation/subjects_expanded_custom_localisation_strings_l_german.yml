@@ -12,6 +12,8 @@
  
  string_establish_voivodeship_reduces_stability_and_prestige: "Dies wird unsere Stabilität um §R-1§! und unser Prestige um §R-10§! ändern, weil sie weder einer Kultur §Y[Root.Culture.GetGroupName]en§! Gruppe folgen noch die §Y[Root.Culture.GetName]e§! Kultur akzeptieren und wir die §Y[From.Culture.GetName]e§! Kultur nicht akzeptieren."
  
+ string_demote_to_vassal_stab_hit: " und §R-1§! Stabilität"
+ 
  string_created_ad_name_east_africa_1: "@DA1 §Y[DA1.GetName]§!"
  string_created_ad_name_east_africa_2: "@DA2 §Y[DA2.GetName]§!"
  string_created_ad_name_east_africa_3: "@DA3 §Y[DA3.GetName]§!"

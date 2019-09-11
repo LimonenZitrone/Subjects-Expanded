@@ -97,6 +97,27 @@ defined_text = {
 }
 
 defined_text = {
+    name = GetIfDemoteToVassalGivesStabHit
+	random = no
+
+	text = {
+        localisation_key = string_demote_to_vassal_stab_hit
+        trigger = {
+			NOT = { full_idea_group = diplomatic_ideas }
+			FROM = {
+				is_subject_of_type = naval_march
+			}
+        }
+    }
+	text = {
+        localisation_key = ""
+        trigger = {
+			always = yes
+        }
+    }
+}
+
+defined_text = {
     name = GetCreatedADNameIndia
 	random = no
 

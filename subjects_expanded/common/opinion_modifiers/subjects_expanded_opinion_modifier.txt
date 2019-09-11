@@ -256,3 +256,13 @@ persian_satrapy_forced = {
 	yearly_decay = 4
 	min = -100
 }
+
+is_naval_march = {
+	opinion = 50
+}
+
+declined_ask_to_become_naval_march = {
+	opinion = -25
+	yearly_decay = 1
+	min = -100
+}

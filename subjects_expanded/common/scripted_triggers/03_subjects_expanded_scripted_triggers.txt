@@ -32,5 +32,19 @@ is_march_or_similar_subject = {
 }
 
 is_similar_march_subject = {
-	is_subject_of_type = crusader_state_vassal
+	OR = {
+		is_subject_of_type = crusader_state_vassal
+		is_subject_of_type = naval_march
+	}
+}
+
+is_tributary_or_similar_subject = {
+	OR = {
+		is_subject_of_type = tributary_state
+		is_similar_tributary_subject = yes
+	}
+}
+
+is_similar_tributary_subject = {
+	is_subject_of_type = imperial_tributary_state
 }

@@ -69,3 +69,6 @@
  is_persian_satrapy: "Satrapy"
  persian_satrapy_forced: "Forced Satrapy"
  
+ is_naval_march: "Naval March"
+ declined_ask_to_become_naval_march: "Offer for Naval March declined"
+ 

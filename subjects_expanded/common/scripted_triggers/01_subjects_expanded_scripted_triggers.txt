@@ -456,6 +456,13 @@ is_possible_subject_of_subject_type_persian_satrapy = {
 	}
 }
 
+is_possible_subject_of_subject_type_naval_march = {
+	# PREVs in THIS scope refer to possible overlord
+	NOT = { is_subject_of_type = naval_march  }
+	vassal_of = PREV
+	num_of_ports = 1
+}
+
 can_create_subject_type = {
 	can_be_overlord = $subject_type$
 	$subject$ = {

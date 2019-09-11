@@ -5,7 +5,7 @@ defined_text = {
 		trigger = {
 			always = yes
 		}
-		localisation_key = GLOBAL_MANPOWER
+		localisation_key = GLOBAL_SAILORS
 	}
 }
 

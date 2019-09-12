@@ -122,6 +122,6 @@
  naval_march_title: "Marine-Mark"
  naval_march_title_plural: "Marine-Marken"
  naval_march_is_our: "§Y$NAME$§! ist unsere Marine-Mark."
- naval_march_long_desc: "Eine Marine-Mark verhält sich wie eine normale Mark, erhält aber Marineboni anstatt Armeeboni. Weiterhin gibt sie ihrem Lehnsherrn einen Bonus auf Flottenlimit. Sie kann nur von Ländern, die mindestens §Y5§! Häfen und §Y10§! Schiffe besitzen, in ihren Vasallen, die mindestens §1§! Hafen haben, errichtet werden.\n"
+ naval_march_long_desc: "Eine Marine-Mark verhält sich wie eine normale Mark, erhält aber Marineboni anstatt Armeeboni. Weiterhin gibt sie ihrem Lehnsherrn einen Bonus auf Flottenlimit. Sie kann nur von Ländern, die mindestens §Y5§! Häfen und §Y10§! Schiffe besitzen, in ihren Vasallen, die mindestens §Y1§! Hafen haben, errichtet werden.\n"
  naval_march_no_overlord_dow: "Ihr könnt Eurer eigenen Marine-Mark nicht den Krieg erklären."
  

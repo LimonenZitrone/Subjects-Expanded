@@ -13,6 +13,15 @@ country_event = {
 		OR = {
 			NOT = { has_reform = colonial_government }
 			NOT = { has_country_flag = was_dominion_subject }
+			AND = {
+				capital_scope = {
+					is_node_in_trade_company_region = yes
+				}
+				OR = {
+					is_subject_of_type = dominion
+					is_subject_of_type = autonomous_dominion
+				}
+			}
 		}
 	}
 	
@@ -32,6 +41,39 @@ country_event = {
 					NOT = { has_country_flag = was_dominion_subject }
 				}
 				set_country_flag = was_dominion_subject
+			}
+			if = {
+				limit = {
+					capital_scope = {
+						is_node_in_trade_company_region = yes
+					}
+				}
+				if = {
+					limit = {
+						is_subject_of_type = dominion
+					}
+					overlord = {
+						set_country_flag = is_releasing_dominion_in_trade_company_region
+						create_subject = {
+							subject = ROOT
+							subject_type = dominion_tc
+						}
+						clr_country_flag = is_releasing_dominion_in_trade_company_region
+					}
+				}
+				else_if = {
+					limit = {
+						is_subject_of_type = autonomous_dominion
+					}
+					overlord = {
+						set_country_flag = is_releasing_dominion_in_trade_company_region
+						create_subject = {
+							subject = ROOT
+							subject_type = autonomous_dominion_tc
+						}
+						clr_country_flag = is_releasing_dominion_in_trade_company_region
+					}
+				}
 			}
 		}
 	}

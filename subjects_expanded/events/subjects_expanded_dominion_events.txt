@@ -90,26 +90,15 @@ country_event = {
 			}
 			is_dominion_tag_in_india = yes
 		}
-		OR = {
-			trade_company_west_india = {
-				owned_by = ROOT
-				is_in_capital_area = no
-			}
-			trade_company_deccan = {
-				owned_by = ROOT
-				is_in_capital_area = no
-			}
-			trade_company_east_india = {
-				owned_by = ROOT
-				is_in_capital_area = no
-			}
-			trade_company_coromandel = {
-				owned_by = ROOT
-				is_in_capital_area = no
-			}
-			trade_company_north_india = {
-				owned_by = ROOT
-				is_in_capital_area = no
+		any_owned_province = {
+			is_in_capital_area = no
+			is_city = yes
+			OR = {
+				trade_company_region = trade_company_west_india
+				trade_company_region = trade_company_deccan
+				trade_company_region = trade_company_east_india
+				trade_company_region = trade_company_coromandel
+				trade_company_region = trade_company_north_india
 			}
 		}
 	}
@@ -123,6 +112,7 @@ country_event = {
 				limit = {
 					owned_by = ROOT
 					is_in_capital_area = no
+					is_city = yes
 				}
 				ROOT = { change_variable = { which = num_of_provinces_ceded_to_autonomous_dominion_india value = 1 } }
 				random_country = {
@@ -150,6 +140,7 @@ country_event = {
 				limit = {
 					owned_by = ROOT
 					is_in_capital_area = no
+					is_city = yes
 				}
 				ROOT = { change_variable = { which = num_of_provinces_ceded_to_autonomous_dominion_india value = 1 } }
 				random_country = {
@@ -177,6 +168,7 @@ country_event = {
 				limit = {
 					owned_by = ROOT
 					is_in_capital_area = no
+					is_city = yes
 				}
 				ROOT = { change_variable = { which = num_of_provinces_ceded_to_autonomous_dominion_india value = 1 } }
 				random_country = {
@@ -204,6 +196,7 @@ country_event = {
 				limit = {
 					owned_by = ROOT
 					is_in_capital_area = no
+					is_city = yes
 				}
 				ROOT = { change_variable = { which = num_of_provinces_ceded_to_autonomous_dominion_india value = 1 } }
 				random_country = {
@@ -231,6 +224,7 @@ country_event = {
 				limit = {
 					owned_by = ROOT
 					is_in_capital_area = no
+					is_city = yes
 				}
 				ROOT = { change_variable = { which = num_of_provinces_ceded_to_autonomous_dominion_india value = 1 } }
 				random_country = {
@@ -285,14 +279,12 @@ country_event = {
 			}
 			is_dominion_tag_in_east_indies = yes
 		}
-		OR = {
-			trade_company_indonesia = {
-				owned_by = ROOT
-				is_in_capital_area = no
-			}
-			trade_company_moluccas = {
-				owned_by = ROOT
-				is_in_capital_area = no
+		any_owned_province = {
+			is_in_capital_area = no
+			is_city = yes
+			OR = {
+				trade_company_region = trade_company_indonesia
+				trade_company_region = trade_company_moluccas
 			}
 		}
 	}
@@ -306,6 +298,7 @@ country_event = {
 				limit = {
 					owned_by = ROOT
 					is_in_capital_area = no
+					is_city = yes
 				}
 				ROOT = { change_variable = { which = num_of_provinces_ceded_to_autonomous_dominion_indonesia value = 1 } }
 				random_country = {
@@ -333,6 +326,7 @@ country_event = {
 				limit = {
 					owned_by = ROOT
 					is_in_capital_area = no
+					is_city = yes
 				}
 				ROOT = { change_variable = { which = num_of_provinces_ceded_to_autonomous_dominion_indonesia value = 1 } }
 				random_country = {
@@ -387,14 +381,12 @@ country_event = {
 			}
 			is_dominion_tag_in_indochina = yes
 		}
-		OR = {
-			trade_company_indochina = {
-				owned_by = ROOT
-				is_in_capital_area = no
-			}
-			trade_company_burma = {
-				owned_by = ROOT
-				is_in_capital_area = no
+		any_owned_province = {
+			is_in_capital_area = no
+			is_city = yes
+			OR = {
+				trade_company_region = trade_company_indochina
+				trade_company_region = trade_company_burma
 			}
 		}
 	}
@@ -408,6 +400,7 @@ country_event = {
 				limit = {
 					owned_by = ROOT
 					is_in_capital_area = no
+					is_city = yes
 				}
 				ROOT = { change_variable = { which = num_of_provinces_ceded_to_autonomous_dominion_indochina value = 1 } }
 				random_country = {
@@ -435,6 +428,7 @@ country_event = {
 				limit = {
 					owned_by = ROOT
 					is_in_capital_area = no
+					is_city = yes
 				}
 				ROOT = { change_variable = { which = num_of_provinces_ceded_to_autonomous_dominion_indochina value = 1 } }
 				random_country = {
@@ -489,14 +483,10 @@ country_event = {
 			}
 			is_dominion_tag_in_west_africa = yes
 		}
-		trade_company_west_africa = {
-			owned_by = ROOT
+		any_owned_province = {
 			is_in_capital_area = no
-		}
-		NOT = {
-			any_province = {
-				colonial_region = colonial_west_africa
-			}
+			is_city = yes
+			trade_company_region = trade_company_west_africa
 		}
 	}
 	
@@ -509,6 +499,7 @@ country_event = {
 				limit = {
 					owned_by = ROOT
 					is_in_capital_area = no
+					is_city = yes
 				}
 				ROOT = { change_variable = { which = num_of_provinces_ceded_to_autonomous_dominion_west_africa value = 1 } }
 				random_country = {
@@ -563,14 +554,10 @@ country_event = {
 			}
 			is_dominion_tag_in_east_africa = yes
 		}
-		trade_company_east_africa = {
-			owned_by = ROOT
+		any_owned_province = {
 			is_in_capital_area = no
-		}
-		NOT = {
-			any_province = {
-				colonial_region = colonial_east_africa
-			}
+			is_city = yes
+			trade_company_region = trade_company_east_africa
 		}
 	}
 	
@@ -583,6 +570,7 @@ country_event = {
 				limit = {
 					owned_by = ROOT
 					is_in_capital_area = no
+					is_city = yes
 				}
 				ROOT = { change_variable = { which = num_of_provinces_ceded_to_autonomous_dominion_east_africa value = 1 } }
 				random_country = {
@@ -637,14 +625,10 @@ country_event = {
 			}
 			is_dominion_tag_in_south_africa = yes
 		}
-		trade_company_south_africa = {
-			owned_by = ROOT
+		any_owned_province = {
 			is_in_capital_area = no
-		}
-		NOT = {
-			any_province = {
-				colonial_region = colonial_south_africa
-			}
+			is_city = yes
+			trade_company_region = trade_company_south_africa
 		}
 	}
 	
@@ -657,6 +641,7 @@ country_event = {
 				limit = {
 					owned_by = ROOT
 					is_in_capital_area = no
+					is_city = yes
 				}
 				ROOT = { change_variable = { which = num_of_provinces_ceded_to_autonomous_dominion_south_africa value = 1 } }
 				random_country = {
@@ -711,9 +696,10 @@ country_event = {
 			}
 			is_dominion_tag_in_philippines = yes
 		}
-		trade_company_philippines = {
-			owned_by = ROOT
+		any_owned_province = {
 			is_in_capital_area = no
+			is_city = yes
+			trade_company_region = trade_company_philippines
 		}
 	}
 	
@@ -726,6 +712,7 @@ country_event = {
 				limit = {
 					owned_by = ROOT
 					is_in_capital_area = no
+					is_city = yes
 				}
 				ROOT = { change_variable = { which = num_of_provinces_ceded_to_autonomous_dominion_philippines value = 1 } }
 				random_country = {

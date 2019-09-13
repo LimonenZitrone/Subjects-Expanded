@@ -41,7 +41,7 @@ defined_text = {
 	text = {
         localisation_key = string_decrease_colonial_autonomy_dominion
         trigger = {
-			is_subject_of_type = dominion
+			is_dominion_or_similar_subject = yes
         }
     }
 	text = {

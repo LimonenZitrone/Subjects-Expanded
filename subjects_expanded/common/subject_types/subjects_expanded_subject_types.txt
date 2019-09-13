@@ -2,7 +2,9 @@
 protectorate = { }
 puppet_state = { }
 dominion = { }
+dominion_tc = { }
 autonomous_dominion = { }
+autonomous_dominion_tc = { }
 roman_client_kingdom = { }
 voivodeship = { }
 fief_subject = { }
@@ -27,8 +29,8 @@ protectorate = {
 	
 	# Graphics:
 	sprite = GFX_icon_protectorate
-	diplomacy_overlord_sprite = GFX_diplomacy_leadprotectorate # The one that the overlord sees
-	diplomacy_subject_sprite = GFX_diplomacy_amprotectorate	# The one that the subject sees
+	diplomacy_overlord_sprite = GFX_diplomacy_leadprotectorate
+	diplomacy_subject_sprite = GFX_diplomacy_amprotectorate
 	
 	# Triggers:
 	is_potential_overlord = {
@@ -50,22 +52,22 @@ protectorate = {
 	takes_diplo_slot = no
 	uses_military_focus = no
 	overlord_protects_external = yes
-	counts_for_borders = no							# Whether distance between borders counts this subject type as part of its overlord's borders.
-	can_use_claims = no								# Whether the overlord can use the subject's claims and cores for declaring war
-	share_rebel_popup = no								# Whether the Overlord gets popups about Subject's rebels and sees them in Stability View.
+	counts_for_borders = no
+	can_use_claims = no
+	share_rebel_popup = no
 	allows_taking_land_without_independence = yes
-	can_transfer_in_peace = no							# Whether this subject type can be made into a vassal with the "Transfer Subject" Age Ability.
+	can_transfer_in_peace = no
 	can_set_mil_focus = no
-	can_send_missionary_to_subject = no				# Requires Cradle of Civilization
+	can_send_missionary_to_subject = no
 	
-	cities_required_for_bonuses = 25						# How many cities the subject needs before giving bonuses to overlord
-	trust_on_start = 5									# Overlord and subject will each get this much extra trust with each other at game start
+	cities_required_for_bonuses = 25
+	trust_on_start = 5
 
 	liberty_desire_development_ratio = 0.1
-	military_focus = 0.5								# How much the AI subject should spend etc. on army and forts. 0 should make them spend nothing. Very high values will probably not make a big difference since there will be sanity checks.
+	military_focus = 0.5
 
-	relative_power_class = 0 							# See description above
-	diplomacy_view_class = 1							# See description above
+	relative_power_class = 0
+	diplomacy_view_class = 1
 
 	can_fight = {
 		independent_nations = yes
@@ -197,7 +199,7 @@ protectorate = {
 		}
 	}
 
-	overlord_opinion_modifier = is_protectorate # If not "null" it will look for a modifier with that name in 00_opinion_modifiers.txt and other files in that directory.
+	overlord_opinion_modifier = is_protectorate
 	subject_opinion_modifier = is_protectorate
 }
 
@@ -207,8 +209,8 @@ puppet_state = {
 	
 	# Graphics:
 	sprite = GFX_icon_puppet
-	diplomacy_overlord_sprite = GFX_diplomacy_leadpuppet # The one that the overlord sees
-	diplomacy_subject_sprite = GFX_diplomacy_ampuppet	# The one that the subject sees
+	diplomacy_overlord_sprite = GFX_diplomacy_leadpuppet
+	diplomacy_subject_sprite = GFX_diplomacy_ampuppet
 
 	# Triggers:
 	is_potential_overlord = {
@@ -224,19 +226,19 @@ puppet_state = {
 	can_be_annexed = yes
 	forcelimit_to_overlord = 0.2
 	has_power_projection = no
-	can_transfer_in_peace = no							# Whether this subject type can be made into a vassal with the "Transfer Subject" Age Ability.
+	can_transfer_in_peace = no
 	
-	max_government_rank = 1								# 0 means no limit
-	cities_required_for_bonuses = 0						# How many cities the subject needs before giving bonuses to overlord
-	trust_on_start = 35									# Overlord and subject will each get this much extra trust with each other at game start
+	max_government_rank = 1
+	cities_required_for_bonuses = 0
+	trust_on_start = 35
 
 	base_liberty_desire = -15.0
 	liberty_desire_development_ratio = 0.2
-	forcelimit_bonus = 1.0								# 1.0 represents bonus from having a vassal
-	military_focus = 1.0								# How much the AI subject should spend etc. on army and forts. 0 should make them spend nothing. Very high values will probably not make a big difference since there will be sanity checks.
+	forcelimit_bonus = 1.0
+	military_focus = 1.0
 
-	relative_power_class = 2 							# See description above
-	diplomacy_view_class = 1							# See description above
+	relative_power_class = 2
+	diplomacy_view_class = 1
 
 	can_rival = {
 		other_overlord = puppet_state
@@ -281,7 +283,7 @@ puppet_state = {
 		modifier = puppet_state_overlord_modifier
 	}
 
-	overlord_opinion_modifier = is_puppet_state # If not "null" it will look for a modifier with that name in 00_opinion_modifiers.txt and other files in that directory.
+	overlord_opinion_modifier = is_puppet_state
 	subject_opinion_modifier = is_puppet_state
 }
 
@@ -300,25 +302,9 @@ dominion = {
 		OR = {
 			is_year = 1700
 			current_age = age_of_absolutism
-			AND = {
-				OR = {
-					ai = no
-					AND = {
-						NOT = { has_dlc = "Wealth of Nations" }
-						NOT = { has_dlc = "Dharma" }
-					}
-				}
-				capital_scope = {
-					is_node_in_trade_company_region = no
-				}
-				any_owned_province = {
-					is_node_in_trade_company_region = yes
-				}
-			}
-			has_country_flag = is_releasing_dominion_in_trade_company_region
 		}
 	}
-
+	
 	# Properties:
 	uses_tariffs = no
 	can_release_in_peace = yes
@@ -359,6 +345,93 @@ dominion = {
 	modifier_subject = {
 		modifier = subject_nation
 	}
+	
+	modifier_overlord = clear
+	modifier_overlord = {
+		modifier = large_colonial_nation
+		trigger = {
+			num_of_cities = 15
+		}
+	}
+
+	overlord_opinion_modifier = is_dominion
+	subject_opinion_modifier = is_dominion
+}
+
+dominion_tc = {
+	copy_from = colony
+	count = colony
+	
+	# Graphics:
+	sprite = GFX_icon_dominion
+	diplomacy_overlord_sprite = GFX_diplomacy_leaddominion
+	diplomacy_subject_sprite = GFX_diplomacy_amdominion
+	
+	# Triggers:
+	is_potential_overlord = {
+		is_subject = no
+		OR = {
+			AND = {
+				OR = {
+					ai = no
+					AND = {
+						NOT = { has_dlc = "Wealth of Nations" }
+						NOT = { has_dlc = "Dharma" }
+					}
+				}
+				capital_scope = {
+					is_node_in_trade_company_region = no
+				}
+				any_owned_province = {
+					is_node_in_trade_company_region = yes
+				}
+			}
+			has_country_flag = is_releasing_dominion_in_trade_company_region
+		}
+	}
+	
+	# Properties:
+	uses_tariffs = no
+	can_release_in_peace = yes
+	eats_overlords_colonies = no
+	
+	base_liberty_desire = -10.0
+	liberty_desire_development_ratio = 0.075
+	pays_overlord = 2.0
+
+	max_government_rank = 1
+	cities_required_for_bonuses = 15
+
+	relative_power_class = 0
+	
+	can_fight = {
+		other_overlord = colony
+		other_overlord = dominion
+		neighboring_primitives = yes
+		colonial_region_nations = yes
+	}
+	can_rival = {
+		other_overlord = colony
+		other_overlord = dominion
+		neighboring_primitives = yes
+		colonial_region_nations = yes
+	}
+	can_ally = {
+		neighboring_primitives = yes
+	}
+	
+	# Subject Interactions:
+	customize_subject = no
+	divert_trade = yes
+	start_colonial_war = no
+	increase_tariffs = no
+	decrease_tariffs = no
+	
+	# Modifiers:
+	modifier_subject = clear
+	modifier_subject = {
+		modifier = subject_nation
+	}
 	modifier_subject = {
 		trigger = {
 			capital_scope = {
@@ -375,7 +448,6 @@ dominion = {
 			num_of_cities = 15
 		}
 	}
-	
 	modifier_overlord = {
 		trigger = {
 			capital_scope = {
@@ -385,7 +457,6 @@ dominion = {
 		}
 		modifier = dominion_overlord_trade_company_modifier_1
 	}
-	
 	modifier_overlord = {
 		trigger = {
 			capital_scope = {
@@ -395,7 +466,6 @@ dominion = {
 		}
 		modifier = dominion_overlord_trade_company_modifier_2
 	}
-	
 	modifier_overlord = {
 		trigger = {
 			capital_scope = {
@@ -405,7 +475,6 @@ dominion = {
 		}
 		modifier = dominion_overlord_trade_company_modifier_3
 	}
-	
 	modifier_overlord = {
 		trigger = {
 			capital_scope = {
@@ -415,7 +484,6 @@ dominion = {
 		}
 		modifier = dominion_overlord_trade_company_modifier_4
 	}
-	
 	modifier_overlord = {
 		trigger = {
 			capital_scope = {
@@ -425,7 +493,6 @@ dominion = {
 		}
 		modifier = dominion_overlord_trade_company_modifier_5
 	}
-	
 	modifier_overlord = {
 		trigger = {
 			capital_scope = {
@@ -435,7 +502,6 @@ dominion = {
 		}
 		modifier = dominion_overlord_trade_company_modifier_6
 	}
-	
 	modifier_overlord = {
 		trigger = {
 			capital_scope = {
@@ -445,7 +511,6 @@ dominion = {
 		}
 		modifier = dominion_overlord_trade_company_modifier_7
 	}
-	
 	modifier_overlord = {
 		trigger = {
 			capital_scope = {
@@ -455,7 +520,6 @@ dominion = {
 		}
 		modifier = dominion_overlord_trade_company_modifier_8
 	}
-	
 	modifier_overlord = {
 		trigger = {
 			capital_scope = {
@@ -465,7 +529,6 @@ dominion = {
 		}
 		modifier = dominion_overlord_trade_company_modifier_9
 	}
-	
 	modifier_overlord = {
 		trigger = {
 			capital_scope = {
@@ -475,7 +538,6 @@ dominion = {
 		}
 		modifier = dominion_overlord_trade_company_modifier_10
 	}
-	
 	modifier_overlord = {
 		trigger = {
 			capital_scope = {
@@ -485,7 +547,6 @@ dominion = {
 		}
 		modifier = dominion_overlord_trade_company_modifier_11
 	}
-	
 	modifier_overlord = {
 		trigger = {
 			capital_scope = {
@@ -495,7 +556,6 @@ dominion = {
 		}
 		modifier = dominion_overlord_trade_company_modifier_12
 	}
-	
 	modifier_overlord = {
 		trigger = {
 			capital_scope = {
@@ -505,7 +565,6 @@ dominion = {
 		}
 		modifier = dominion_overlord_trade_company_modifier_13
 	}
-	
 	modifier_overlord = {
 		trigger = {
 			capital_scope = {
@@ -515,7 +574,6 @@ dominion = {
 		}
 		modifier = dominion_overlord_trade_company_modifier_14
 	}
-	
 	modifier_overlord = {
 		trigger = {
 			capital_scope = {
@@ -525,7 +583,6 @@ dominion = {
 		}
 		modifier = dominion_overlord_trade_company_modifier_15
 	}
-	
 	modifier_overlord = {
 		trigger = {
 			capital_scope = {
@@ -535,7 +592,6 @@ dominion = {
 		}
 		modifier = dominion_overlord_trade_company_modifier_16
 	}
-	
 	modifier_overlord = {
 		trigger = {
 			capital_scope = {
@@ -545,7 +601,6 @@ dominion = {
 		}
 		modifier = dominion_overlord_trade_company_modifier_17
 	}
-	
 	modifier_overlord = {
 		trigger = {
 			capital_scope = {
@@ -555,7 +610,6 @@ dominion = {
 		}
 		modifier = dominion_overlord_trade_company_modifier_18
 	}
-	
 	modifier_overlord = {
 		trigger = {
 			capital_scope = {
@@ -565,7 +619,6 @@ dominion = {
 		}
 		modifier = dominion_overlord_trade_company_modifier_19
 	}
-	
 	modifier_overlord = {
 		trigger = {
 			capital_scope = {
@@ -575,7 +628,6 @@ dominion = {
 		}
 		modifier = dominion_overlord_trade_company_modifier_20
 	}
-	
 	modifier_overlord = {
 		trigger = {
 			capital_scope = {
@@ -585,7 +637,6 @@ dominion = {
 		}
 		modifier = dominion_overlord_trade_company_modifier_21
 	}
-	
 	modifier_overlord = {
 		trigger = {
 			capital_scope = {
@@ -595,7 +646,6 @@ dominion = {
 		}
 		modifier = dominion_overlord_trade_company_modifier_22
 	}
-	
 	modifier_overlord = {
 		trigger = {
 			capital_scope = {
@@ -605,7 +655,6 @@ dominion = {
 		}
 		modifier = dominion_overlord_trade_company_modifier_23
 	}
-	
 	modifier_overlord = {
 		trigger = {
 			capital_scope = {
@@ -615,7 +664,6 @@ dominion = {
 		}
 		modifier = dominion_overlord_trade_company_modifier_24
 	}
-	
 	modifier_overlord = {
 		trigger = {
 			capital_scope = {
@@ -625,7 +673,6 @@ dominion = {
 		}
 		modifier = dominion_overlord_trade_company_modifier_25
 	}
-	
 	modifier_overlord = {
 		trigger = {
 			capital_scope = {
@@ -635,7 +682,6 @@ dominion = {
 		}
 		modifier = dominion_overlord_trade_company_modifier_26
 	}
-	
 	modifier_overlord = {
 		trigger = {
 			capital_scope = {
@@ -645,7 +691,6 @@ dominion = {
 		}
 		modifier = dominion_overlord_trade_company_modifier_27
 	}
-	
 	modifier_overlord = {
 		trigger = {
 			capital_scope = {
@@ -655,7 +700,6 @@ dominion = {
 		}
 		modifier = dominion_overlord_trade_company_modifier_28
 	}
-	
 	modifier_overlord = {
 		trigger = {
 			capital_scope = {
@@ -665,7 +709,6 @@ dominion = {
 		}
 		modifier = dominion_overlord_trade_company_modifier_29
 	}
-	
 	modifier_overlord = {
 		trigger = {
 			capital_scope = {
@@ -675,7 +718,6 @@ dominion = {
 		}
 		modifier = dominion_overlord_trade_company_modifier_30
 	}
-	
 	modifier_overlord = {
 		trigger = {
 			capital_scope = {
@@ -685,7 +727,6 @@ dominion = {
 		}
 		modifier = dominion_overlord_trade_company_modifier_31
 	}
-	
 	modifier_overlord = {
 		trigger = {
 			capital_scope = {
@@ -695,7 +736,6 @@ dominion = {
 		}
 		modifier = dominion_overlord_trade_company_modifier_32
 	}
-	
 	modifier_overlord = {
 		trigger = {
 			capital_scope = {
@@ -705,7 +745,6 @@ dominion = {
 		}
 		modifier = dominion_overlord_trade_company_modifier_33
 	}
-	
 	modifier_overlord = {
 		trigger = {
 			capital_scope = {
@@ -715,7 +754,6 @@ dominion = {
 		}
 		modifier = dominion_overlord_trade_company_modifier_34
 	}
-	
 	modifier_overlord = {
 		trigger = {
 			capital_scope = {
@@ -725,7 +763,6 @@ dominion = {
 		}
 		modifier = dominion_overlord_trade_company_modifier_35
 	}
-	
 	modifier_overlord = {
 		trigger = {
 			capital_scope = {
@@ -735,7 +772,6 @@ dominion = {
 		}
 		modifier = dominion_overlord_trade_company_modifier_36
 	}
-	
 	modifier_overlord = {
 		trigger = {
 			capital_scope = {
@@ -745,7 +781,6 @@ dominion = {
 		}
 		modifier = dominion_overlord_trade_company_modifier_37
 	}
-	
 	modifier_overlord = {
 		trigger = {
 			capital_scope = {
@@ -755,7 +790,6 @@ dominion = {
 		}
 		modifier = dominion_overlord_trade_company_modifier_38
 	}
-	
 	modifier_overlord = {
 		trigger = {
 			capital_scope = {
@@ -765,7 +799,6 @@ dominion = {
 		}
 		modifier = dominion_overlord_trade_company_modifier_39
 	}
-	
 	modifier_overlord = {
 		trigger = {
 			capital_scope = {
@@ -775,7 +808,6 @@ dominion = {
 		}
 		modifier = dominion_overlord_trade_company_modifier_40
 	}
-	
 	modifier_overlord = {
 		trigger = {
 			capital_scope = {
@@ -785,7 +817,6 @@ dominion = {
 		}
 		modifier = dominion_overlord_trade_company_modifier_41
 	}
-	
 	modifier_overlord = {
 		trigger = {
 			capital_scope = {
@@ -795,7 +826,6 @@ dominion = {
 		}
 		modifier = dominion_overlord_trade_company_modifier_42
 	}
-	
 	modifier_overlord = {
 		trigger = {
 			capital_scope = {
@@ -805,7 +835,6 @@ dominion = {
 		}
 		modifier = dominion_overlord_trade_company_modifier_43
 	}
-	
 	modifier_overlord = {
 		trigger = {
 			capital_scope = {
@@ -815,7 +844,6 @@ dominion = {
 		}
 		modifier = dominion_overlord_trade_company_modifier_44
 	}
-	
 	modifier_overlord = {
 		trigger = {
 			capital_scope = {
@@ -825,7 +853,6 @@ dominion = {
 		}
 		modifier = dominion_overlord_trade_company_modifier_45
 	}
-	
 	modifier_overlord = {
 		trigger = {
 			capital_scope = {
@@ -835,7 +862,6 @@ dominion = {
 		}
 		modifier = dominion_overlord_trade_company_modifier_46
 	}
-	
 	modifier_overlord = {
 		trigger = {
 			capital_scope = {
@@ -845,7 +871,6 @@ dominion = {
 		}
 		modifier = dominion_overlord_trade_company_modifier_47
 	}
-	
 	modifier_overlord = {
 		trigger = {
 			capital_scope = {
@@ -855,7 +880,6 @@ dominion = {
 		}
 		modifier = dominion_overlord_trade_company_modifier_48
 	}
-	
 	modifier_overlord = {
 		trigger = {
 			capital_scope = {
@@ -865,7 +889,6 @@ dominion = {
 		}
 		modifier = dominion_overlord_trade_company_modifier_49
 	}
-	
 	modifier_overlord = {
 		trigger = {
 			capital_scope = {
@@ -942,6 +965,87 @@ autonomous_dominion = {
 	modifier_subject = {
 		modifier = subject_nation
 	}
+	
+	modifier_overlord = clear
+	modifier_overlord = {
+		modifier = large_colonial_nation
+		trigger = {
+			num_of_cities = 20
+		}
+	}
+	modifier_overlord = {
+		modifier = large_colonial_nation
+		trigger = {
+			num_of_cities = 20
+		}
+	}
+	
+	overlord_opinion_modifier = is_autonomous_dominion
+	subject_opinion_modifier = is_autonomous_dominion
+}
+
+autonomous_dominion_tc = {
+	copy_from = dominion_tc
+	count = colony
+	
+	# Graphics:
+	sprite = GFX_icon_autonomous_dominion
+	diplomacy_overlord_sprite = GFX_diplomacy_leadautonomous_dominion
+	diplomacy_subject_sprite = GFX_diplomacy_amautonomous_dominion
+	
+	# Triggers:
+	is_potential_overlord = {
+		OR = {
+			is_year = 1700
+			current_age = age_of_absolutism
+		}
+	}
+
+	# Properties:
+	transfer_trade_power = no
+	overlord_protects_external = yes
+	uses_military_focus = no
+	can_set_mil_focus = no
+	
+	base_liberty_desire = -20.0
+	liberty_desire_development_ratio = 0.05
+	pays_overlord = 0.0
+
+	max_government_rank = 1
+	cities_required_for_bonuses = 20
+
+	relative_power_class = 0
+	
+	can_fight = {
+		other_overlord = colony
+		other_overlord = dominion
+		other_overlord = autonomous_dominion
+		neighboring_primitives = yes
+		colonial_region_nations = yes
+		independent_nations = yes
+	}
+	can_rival = {
+		other_overlord = colony
+		other_overlord = dominion
+		other_overlord = autonomous_dominion
+		neighboring_primitives = yes
+		colonial_region_nations = yes
+		independent_nations = yes
+	}
+	can_ally = {
+		neighboring_primitives = yes
+	}
+	
+	# Subject Interactions:
+	divert_trade = yes
+	replace_governor = no
+	press_sailors = no
+	
+	# Modifiers:
+	modifier_subject = clear
+	modifier_subject = {
+		modifier = subject_nation
+	}
 	modifier_subject = {
 		trigger = {
 			capital_scope = {
@@ -958,14 +1062,12 @@ autonomous_dominion = {
 			num_of_cities = 20
 		}
 	}
-	
 	modifier_overlord = {
 		modifier = large_colonial_nation
 		trigger = {
 			num_of_cities = 20
 		}
 	}
-	
 	modifier_overlord = {
 		trigger = {
 			capital_scope = {
@@ -975,7 +1077,6 @@ autonomous_dominion = {
 		}
 		modifier = autonomous_dominion_overlord_trade_company_modifier_1
 	}
-	
 	modifier_overlord = {
 		trigger = {
 			capital_scope = {
@@ -985,7 +1086,6 @@ autonomous_dominion = {
 		}
 		modifier = autonomous_dominion_overlord_trade_company_modifier_2
 	}
-	
 	modifier_overlord = {
 		trigger = {
 			capital_scope = {
@@ -995,7 +1095,6 @@ autonomous_dominion = {
 		}
 		modifier = autonomous_dominion_overlord_trade_company_modifier_3
 	}
-	
 	modifier_overlord = {
 		trigger = {
 			capital_scope = {
@@ -1005,7 +1104,6 @@ autonomous_dominion = {
 		}
 		modifier = autonomous_dominion_overlord_trade_company_modifier_4
 	}
-	
 	modifier_overlord = {
 		trigger = {
 			capital_scope = {
@@ -1015,7 +1113,6 @@ autonomous_dominion = {
 		}
 		modifier = autonomous_dominion_overlord_trade_company_modifier_5
 	}
-	
 	modifier_overlord = {
 		trigger = {
 			capital_scope = {
@@ -1025,7 +1122,6 @@ autonomous_dominion = {
 		}
 		modifier = autonomous_dominion_overlord_trade_company_modifier_6
 	}
-	
 	modifier_overlord = {
 		trigger = {
 			capital_scope = {
@@ -1035,7 +1131,6 @@ autonomous_dominion = {
 		}
 		modifier = autonomous_dominion_overlord_trade_company_modifier_7
 	}
-	
 	modifier_overlord = {
 		trigger = {
 			capital_scope = {
@@ -1045,7 +1140,6 @@ autonomous_dominion = {
 		}
 		modifier = autonomous_dominion_overlord_trade_company_modifier_8
 	}
-	
 	modifier_overlord = {
 		trigger = {
 			capital_scope = {
@@ -1055,7 +1149,6 @@ autonomous_dominion = {
 		}
 		modifier = autonomous_dominion_overlord_trade_company_modifier_9
 	}
-	
 	modifier_overlord = {
 		trigger = {
 			capital_scope = {
@@ -1065,7 +1158,6 @@ autonomous_dominion = {
 		}
 		modifier = autonomous_dominion_overlord_trade_company_modifier_10
 	}
-	
 	modifier_overlord = {
 		trigger = {
 			capital_scope = {
@@ -1075,7 +1167,6 @@ autonomous_dominion = {
 		}
 		modifier = autonomous_dominion_overlord_trade_company_modifier_11
 	}
-	
 	modifier_overlord = {
 		trigger = {
 			capital_scope = {
@@ -1085,7 +1176,6 @@ autonomous_dominion = {
 		}
 		modifier = autonomous_dominion_overlord_trade_company_modifier_12
 	}
-	
 	modifier_overlord = {
 		trigger = {
 			capital_scope = {
@@ -1095,7 +1185,6 @@ autonomous_dominion = {
 		}
 		modifier = autonomous_dominion_overlord_trade_company_modifier_13
 	}
-	
 	modifier_overlord = {
 		trigger = {
 			capital_scope = {
@@ -1105,7 +1194,6 @@ autonomous_dominion = {
 		}
 		modifier = autonomous_dominion_overlord_trade_company_modifier_14
 	}
-	
 	modifier_overlord = {
 		trigger = {
 			capital_scope = {
@@ -1115,7 +1203,6 @@ autonomous_dominion = {
 		}
 		modifier = autonomous_dominion_overlord_trade_company_modifier_15
 	}
-	
 	modifier_overlord = {
 		trigger = {
 			capital_scope = {
@@ -1125,7 +1212,6 @@ autonomous_dominion = {
 		}
 		modifier = autonomous_dominion_overlord_trade_company_modifier_16
 	}
-	
 	modifier_overlord = {
 		trigger = {
 			capital_scope = {
@@ -1135,7 +1221,6 @@ autonomous_dominion = {
 		}
 		modifier = autonomous_dominion_overlord_trade_company_modifier_17
 	}
-	
 	modifier_overlord = {
 		trigger = {
 			capital_scope = {
@@ -1145,7 +1230,6 @@ autonomous_dominion = {
 		}
 		modifier = autonomous_dominion_overlord_trade_company_modifier_18
 	}
-	
 	modifier_overlord = {
 		trigger = {
 			capital_scope = {
@@ -1155,7 +1239,6 @@ autonomous_dominion = {
 		}
 		modifier = autonomous_dominion_overlord_trade_company_modifier_19
 	}
-	
 	modifier_overlord = {
 		trigger = {
 			capital_scope = {
@@ -1165,7 +1248,6 @@ autonomous_dominion = {
 		}
 		modifier = autonomous_dominion_overlord_trade_company_modifier_20
 	}
-	
 	modifier_overlord = {
 		trigger = {
 			capital_scope = {
@@ -1175,7 +1257,6 @@ autonomous_dominion = {
 		}
 		modifier = autonomous_dominion_overlord_trade_company_modifier_21
 	}
-	
 	modifier_overlord = {
 		trigger = {
 			capital_scope = {
@@ -1185,7 +1266,6 @@ autonomous_dominion = {
 		}
 		modifier = autonomous_dominion_overlord_trade_company_modifier_22
 	}
-	
 	modifier_overlord = {
 		trigger = {
 			capital_scope = {
@@ -1195,7 +1275,6 @@ autonomous_dominion = {
 		}
 		modifier = autonomous_dominion_overlord_trade_company_modifier_23
 	}
-	
 	modifier_overlord = {
 		trigger = {
 			capital_scope = {
@@ -1205,7 +1284,6 @@ autonomous_dominion = {
 		}
 		modifier = autonomous_dominion_overlord_trade_company_modifier_24
 	}
-	
 	modifier_overlord = {
 		trigger = {
 			capital_scope = {
@@ -1215,7 +1293,6 @@ autonomous_dominion = {
 		}
 		modifier = autonomous_dominion_overlord_trade_company_modifier_25
 	}
-	
 	modifier_overlord = {
 		trigger = {
 			capital_scope = {
@@ -1225,7 +1302,6 @@ autonomous_dominion = {
 		}
 		modifier = autonomous_dominion_overlord_trade_company_modifier_26
 	}
-	
 	modifier_overlord = {
 		trigger = {
 			capital_scope = {
@@ -1235,7 +1311,6 @@ autonomous_dominion = {
 		}
 		modifier = autonomous_dominion_overlord_trade_company_modifier_27
 	}
-	
 	modifier_overlord = {
 		trigger = {
 			capital_scope = {
@@ -1245,7 +1320,6 @@ autonomous_dominion = {
 		}
 		modifier = autonomous_dominion_overlord_trade_company_modifier_28
 	}
-	
 	modifier_overlord = {
 		trigger = {
 			capital_scope = {
@@ -1255,7 +1329,6 @@ autonomous_dominion = {
 		}
 		modifier = autonomous_dominion_overlord_trade_company_modifier_29
 	}
-	
 	modifier_overlord = {
 		trigger = {
 			capital_scope = {
@@ -1265,7 +1338,6 @@ autonomous_dominion = {
 		}
 		modifier = autonomous_dominion_overlord_trade_company_modifier_30
 	}
-	
 	modifier_overlord = {
 		trigger = {
 			capital_scope = {
@@ -1275,7 +1347,6 @@ autonomous_dominion = {
 		}
 		modifier = autonomous_dominion_overlord_trade_company_modifier_31
 	}
-	
 	modifier_overlord = {
 		trigger = {
 			capital_scope = {
@@ -1285,7 +1356,6 @@ autonomous_dominion = {
 		}
 		modifier = autonomous_dominion_overlord_trade_company_modifier_32
 	}
-	
 	modifier_overlord = {
 		trigger = {
 			capital_scope = {
@@ -1295,7 +1365,6 @@ autonomous_dominion = {
 		}
 		modifier = autonomous_dominion_overlord_trade_company_modifier_33
 	}
-	
 	modifier_overlord = {
 		trigger = {
 			capital_scope = {
@@ -1305,7 +1374,6 @@ autonomous_dominion = {
 		}
 		modifier = autonomous_dominion_overlord_trade_company_modifier_34
 	}
-	
 	modifier_overlord = {
 		trigger = {
 			capital_scope = {
@@ -1315,7 +1383,6 @@ autonomous_dominion = {
 		}
 		modifier = autonomous_dominion_overlord_trade_company_modifier_35
 	}
-	
 	modifier_overlord = {
 		trigger = {
 			capital_scope = {
@@ -1325,7 +1392,6 @@ autonomous_dominion = {
 		}
 		modifier = autonomous_dominion_overlord_trade_company_modifier_36
 	}
-	
 	modifier_overlord = {
 		trigger = {
 			capital_scope = {
@@ -1335,7 +1401,6 @@ autonomous_dominion = {
 		}
 		modifier = autonomous_dominion_overlord_trade_company_modifier_37
 	}
-	
 	modifier_overlord = {
 		trigger = {
 			capital_scope = {
@@ -1345,7 +1410,6 @@ autonomous_dominion = {
 		}
 		modifier = autonomous_dominion_overlord_trade_company_modifier_38
 	}
-	
 	modifier_overlord = {
 		trigger = {
 			capital_scope = {
@@ -1355,7 +1419,6 @@ autonomous_dominion = {
 		}
 		modifier = autonomous_dominion_overlord_trade_company_modifier_39
 	}
-	
 	modifier_overlord = {
 		trigger = {
 			capital_scope = {
@@ -1365,7 +1428,6 @@ autonomous_dominion = {
 		}
 		modifier = autonomous_dominion_overlord_trade_company_modifier_40
 	}
-	
 	modifier_overlord = {
 		trigger = {
 			capital_scope = {
@@ -1375,7 +1437,6 @@ autonomous_dominion = {
 		}
 		modifier = autonomous_dominion_overlord_trade_company_modifier_41
 	}
-	
 	modifier_overlord = {
 		trigger = {
 			capital_scope = {
@@ -1385,7 +1446,6 @@ autonomous_dominion = {
 		}
 		modifier = autonomous_dominion_overlord_trade_company_modifier_42
 	}
-	
 	modifier_overlord = {
 		trigger = {
 			capital_scope = {
@@ -1395,7 +1455,6 @@ autonomous_dominion = {
 		}
 		modifier = autonomous_dominion_overlord_trade_company_modifier_43
 	}
-	
 	modifier_overlord = {
 		trigger = {
 			capital_scope = {
@@ -1405,7 +1464,6 @@ autonomous_dominion = {
 		}
 		modifier = autonomous_dominion_overlord_trade_company_modifier_44
 	}
-	
 	modifier_overlord = {
 		trigger = {
 			capital_scope = {
@@ -1415,7 +1473,6 @@ autonomous_dominion = {
 		}
 		modifier = autonomous_dominion_overlord_trade_company_modifier_45
 	}
-	
 	modifier_overlord = {
 		trigger = {
 			capital_scope = {
@@ -1425,7 +1482,6 @@ autonomous_dominion = {
 		}
 		modifier = autonomous_dominion_overlord_trade_company_modifier_46
 	}
-	
 	modifier_overlord = {
 		trigger = {
 			capital_scope = {
@@ -1435,7 +1491,6 @@ autonomous_dominion = {
 		}
 		modifier = autonomous_dominion_overlord_trade_company_modifier_47
 	}
-	
 	modifier_overlord = {
 		trigger = {
 			capital_scope = {
@@ -1445,7 +1500,6 @@ autonomous_dominion = {
 		}
 		modifier = autonomous_dominion_overlord_trade_company_modifier_48
 	}
-	
 	modifier_overlord = {
 		trigger = {
 			capital_scope = {
@@ -1455,7 +1509,6 @@ autonomous_dominion = {
 		}
 		modifier = autonomous_dominion_overlord_trade_company_modifier_49
 	}
-	
 	modifier_overlord = {
 		trigger = {
 			capital_scope = {
@@ -1476,8 +1529,8 @@ roman_client_kingdom = {
 	
 	# Graphics:
 	sprite = GFX_icon_roman_client_kingdom
-	diplomacy_overlord_sprite = GFX_diplomacy_leadroman_client_kingdom # The one that the overlord sees
-	diplomacy_subject_sprite = GFX_diplomacy_amroman_client_kingdom	# The one that the subject sees
+	diplomacy_overlord_sprite = GFX_diplomacy_leadroman_client_kingdom
+	diplomacy_subject_sprite = GFX_diplomacy_amroman_client_kingdom
 
 	# Triggers:
 	is_potential_overlord = {
@@ -1492,21 +1545,21 @@ roman_client_kingdom = {
 	# Properties:
 	can_be_annexed = yes
 	takes_diplo_slot = yes
-	overlord_enforce_peace_attacking = yes				# Whether the overlord can enforce peace on the subject's enemy even when the subject is the attacker
-	gets_help_with_rebels = yes							# Only for AI. Bidirectional.
+	overlord_enforce_peace_attacking = yes
+	gets_help_with_rebels = yes
 	allows_taking_land_without_independence = no
 	
-	max_government_rank = 2								# 0 means no limit
+	max_government_rank = 2
 	
 	base_liberty_desire = -10.0
 	liberty_desire_development_ratio = 0.25
 	liberty_desire_same_dynasty = -5.0
-	pays_overlord = 2.0									# 1.0 represents the amount payed by vassals
-	forcelimit_bonus = 1.0								# 1.0 represents bonus from having a vassal
-	military_focus = 1.0								# How much the AI subject should spend etc. on army and forts. 0 should make them spend nothing. Very high values will probably not make a big difference since there will be sanity checks.
+	pays_overlord = 2.0
+	forcelimit_bonus = 1.0
+	military_focus = 1.0
 
-	relative_power_class = 2 							# See description above
-	diplomacy_view_class = 1							# See description above
+	relative_power_class = 2
+	diplomacy_view_class = 1
 
 	can_fight = {
 		neighboring_primitives = yes
@@ -1565,7 +1618,7 @@ roman_client_kingdom = {
 		modifier = roman_client_kingdom_extra_range_modifier
 	}
 
-	overlord_opinion_modifier = is_roman_client_kingdom # If not "null" it will look for a modifier with that name in 00_opinion_modifiers.txt and other files in that directory.
+	overlord_opinion_modifier = is_roman_client_kingdom
 	subject_opinion_modifier = is_roman_client_kingdom
 }
 
@@ -1575,8 +1628,8 @@ voivodeship = {
 	
 	# Graphics:
 	sprite = GFX_icon_voivodeship
-	diplomacy_overlord_sprite = GFX_diplomacy_leadvoivodeship # The one that the overlord sees
-	diplomacy_subject_sprite = GFX_diplomacy_amvoivodeship	# The one that the subject sees
+	diplomacy_overlord_sprite = GFX_diplomacy_leadvoivodeship
+	diplomacy_subject_sprite = GFX_diplomacy_amvoivodeship
 
 	# Triggers:
 	is_potential_overlord = {
@@ -1592,20 +1645,20 @@ voivodeship = {
 	can_be_annexed = yes
 	forcelimit_to_overlord = 0.2
 	has_power_projection = no
-	can_transfer_in_peace = no							# Whether this subject type can be made into a vassal with the "Transfer Subject" Age Ability.
+	can_transfer_in_peace = no
 	
-	max_government_rank = 1								# 0 means no limit
-	cities_required_for_bonuses = 0						# How many cities the subject needs before giving bonuses to overlord
-	trust_on_start = 35									# Overlord and subject will each get this much extra trust with each other at game start
+	max_government_rank = 1
+	cities_required_for_bonuses = 0
+	trust_on_start = 35
 
 	base_liberty_desire = -15.0
 	liberty_desire_development_ratio = 0.25
 	liberty_desire_same_dynasty = -5.0
-	forcelimit_bonus = 1.5								# 1.0 represents bonus from having a vassal
-	military_focus = 1.5								# How much the AI subject should spend etc. on army and forts. 0 should make them spend nothing. Very high values will probably not make a big difference since there will be sanity checks.
+	forcelimit_bonus = 1.5
+	military_focus = 1.5
 
-	relative_power_class = 2 							# See description above
-	diplomacy_view_class = 1							# See description above
+	relative_power_class = 2
+	diplomacy_view_class = 1
 
 	restoration_cb = cb_disloyal_vassal
 	
@@ -1635,7 +1688,7 @@ voivodeship = {
 	
 	modifier_overlord = clear
 
-	overlord_opinion_modifier = is_voivodeship # If not "null" it will look for a modifier with that name in 00_opinion_modifiers.txt and other files in that directory.
+	overlord_opinion_modifier = is_voivodeship
 	subject_opinion_modifier = is_voivodeship
 }
 
@@ -1693,8 +1746,8 @@ fief_subject = {
 	gets_help_with_rebels = yes
 
 	max_government_rank = 1
-	cities_required_for_bonuses = 0						# How many cities the subject needs before giving bonuses to overlord
-	trust_on_start = 50									# Overlord and subject will each get this much extra trust with each other at game start
+	cities_required_for_bonuses = 0
+	trust_on_start = 50
 
 	base_liberty_desire = -5.0
 	liberty_desire_negative_prestige = 1.0
@@ -1704,8 +1757,8 @@ fief_subject = {
 	forcelimit_bonus = 1.0
 	forcelimit_to_overlord = 0.1
 
-	relative_power_class = 2 							# See description above
-	diplomacy_view_class = 1							# See description above
+	relative_power_class = 2
+	diplomacy_view_class = 1
 	
 	restoration_cb = cb_disloyal_vassal
 
@@ -1749,12 +1802,11 @@ crusader_state_vassal = {
 	
 	# Graphics:
 	sprite = GFX_icon_crusader_state_vassal
-	diplomacy_overlord_sprite = GFX_diplomacy_leadcrusader_state_vassal # The one that the overlord sees
-	diplomacy_subject_sprite = GFX_diplomacy_amcrusader_state_vassal	# The one that the subject sees
+	diplomacy_overlord_sprite = GFX_diplomacy_leadcrusader_state_vassal
+	diplomacy_subject_sprite = GFX_diplomacy_amcrusader_state_vassal
 
 	# Triggers:
 	is_potential_overlord = {
-		government = theocracy
 		OR = {
 			tag = PAP
 			tag = KOJ
@@ -1783,14 +1835,14 @@ crusader_state_vassal = {
 	transfer_trade_if_merchant_republic = yes
 	overlord_can_attack = no
 	has_power_projection = no
-	gets_help_with_rebels = yes							# Only for AI. Bidirectional.
-	can_transfer_in_peace = no							# Whether this subject type can be made into a vassal with the "Transfer Subject" Age Ability.
+	gets_help_with_rebels = yes
+	can_transfer_in_peace = no
 	can_set_mil_focus = yes
-	can_send_missionary_to_subject = yes				# Requires Cradle of Civilization
+	can_send_missionary_to_subject = yes
 	
-	max_government_rank = 2								# 0 means no limit
-	cities_required_for_bonuses = 0						# How many cities the subject needs before giving bonuses to overlord
-	trust_on_start = 50									# Overlord and subject will each get this much extra trust with each other at game start
+	max_government_rank = 2
+	cities_required_for_bonuses = 0
+	trust_on_start = 50
 
 	base_liberty_desire = -15.0
 	liberty_desire_development_ratio = 0.25
@@ -1798,10 +1850,10 @@ crusader_state_vassal = {
 	pays_overlord = 0.5
 	forcelimit_bonus = 1.0
 	forcelimit_to_overlord = 0.1
-	military_focus = 1.25								# How much the AI subject should spend etc. on army and forts. 0 should make them spend nothing. Very high values will probably not make a big difference since there will be sanity checks.
+	military_focus = 1.25
 
-	relative_power_class = 2 							# See description above
-	diplomacy_view_class = 1							# See description above
+	relative_power_class = 2
+	diplomacy_view_class = 1
 
 	can_rival = {
 		other_overlord = all
@@ -1929,8 +1981,8 @@ peasant_vassal = {
 	
 	# Graphics:
 	sprite = GFX_icon_peasant_vassal
-	diplomacy_overlord_sprite = GFX_diplomacy_leadpeasant_vassal # The one that the overlord sees
-	diplomacy_subject_sprite = GFX_diplomacy_ampeasant_vassal	# The one that the subject sees
+	diplomacy_overlord_sprite = GFX_diplomacy_leadpeasant_vassal
+	diplomacy_subject_sprite = GFX_diplomacy_ampeasant_vassal
 
 	# Triggers:
 	is_potential_overlord = {
@@ -1944,15 +1996,15 @@ peasant_vassal = {
 	can_send_tribute = yes
 	can_be_integrated = yes
 	uses_military_focus = no
-	overlord_protects_external = yes						# Whether overlord always gets called (declinable) against countries without the same overlord. When this is 'no' overlord will only join if the defender would have been blocked (by its subject type) from attacking the attacker.
-	overlord_enforce_peace_attacking = yes				# Whether the overlord can enforce peace on the subject's enemy even when the subject is the attacker
+	overlord_protects_external = yes
+	overlord_enforce_peace_attacking = yes
 	allows_taking_land_without_independence = yes
-	can_transfer_in_peace = yes							# Whether this subject type can be made into a vassal with the "Transfer Subject" Age Ability.
+	can_transfer_in_peace = yes
 	can_set_mil_focus = no
-	can_send_missionary_to_subject = yes				# Requires Cradle of Civilization
+	can_send_missionary_to_subject = yes
 	overlord_can_fabricate_for = no
 	
-	max_government_rank = 1								# 0 means no limit
+	max_government_rank = 1
 	
 	base_liberty_desire = 0.0
 	liberty_desire_negative_prestige = 1.0
@@ -1962,8 +2014,8 @@ peasant_vassal = {
 	forcelimit_bonus = 1.5
 	forcelimit_to_overlord = 0.2
 	
-	relative_power_class = 2 							# See description above
-	diplomacy_view_class = 1							# See description above
+	relative_power_class = 2
+	diplomacy_view_class = 1
 
 	can_fight = {
 		independent_nations = yes
@@ -2038,20 +2090,20 @@ pirate_brotherhood_vassal = {
 	overlord_can_be_subject = yes
 	can_have_subjects_of_other_types = yes
 	can_be_annexed = yes
-	separatists_become_subjects = yes					# Whether separatist rebels enforcing demands will become subjects of the overlord.
+	separatists_become_subjects = yes
 	
-	max_government_rank = 0								# 0 means no limit
-	cities_required_for_bonuses = 0						# How many cities the subject needs before giving bonuses to overlord
-	trust_on_start = 25									# Overlord and subject will each get this much extra trust with each other at game start
+	max_government_rank = 0
+	cities_required_for_bonuses = 0
+	trust_on_start = 25
 
 	base_liberty_desire = -20.0
 	liberty_desire_development_ratio = 0.15
-	forcelimit_bonus = 1.0								# 1.0 represents bonus from having a vassal
-	forcelimit_to_overlord = 1.0						# Percent of subject FL to use as base for modifiers
-	military_focus = 1.0								# How much the AI subject should spend etc. on army and forts. 0 should make them spend nothing. Very high values will probably not make a big difference since there will be sanity checks.
+	forcelimit_bonus = 1.0
+	forcelimit_to_overlord = 1.0
+	military_focus = 1.0
 
-	relative_power_class = 1 							# See description above
-	diplomacy_view_class = 1							# See description above
+	relative_power_class = 1
+	diplomacy_view_class = 1
 
 	can_fight = {
 		same_overlord = pirate_brotherhood_vassal
@@ -2157,7 +2209,9 @@ imperial_tributary_state = {
 				any_subject_country = {
 					OR = {
 						is_subject_of_type = dominion
+						is_subject_of_type = dominion_tc
 						is_subject_of_type = autonomous_dominion
+						is_subject_of_type = autonomous_dominion_tc
 					}
 					OR = {
 						tag = DI1
@@ -2279,11 +2333,11 @@ sister_republic = {
 	can_have_subjects_of_other_types = yes
 	takes_diplo_slot = no
 	overlord_protects_external = yes
-	gets_help_with_rebels = yes							# Only for AI. Bidirectional.
+	gets_help_with_rebels = yes
 	allows_taking_land_without_independence = yes
-	can_transfer_in_peace = no							# Whether this subject type can be made into a vassal with the "Transfer Subject" Age Ability.
+	can_transfer_in_peace = no
 	
-	trust_on_start = 60									# Overlord and subject will each get this much extra trust with each other at game start
+	trust_on_start = 60
 
 	base_liberty_desire = -5.0
 	liberty_desire_negative_prestige = 1.5
@@ -2379,22 +2433,22 @@ muslim_tributary_vassal = {
 	can_send_tribute = yes
 	has_power_projection = no
 	uses_military_focus = no
-	overlord_enforce_peace_attacking = yes				# Whether the overlord can enforce peace on the subject's enemy even when the subject is the attacker
-	can_use_claims = no								# Whether the overlord can use the subject's claims and cores for declaring war
+	overlord_enforce_peace_attacking = yes
+	can_use_claims = no
 	share_rebel_popup = no
 	allows_taking_land_without_independence = yes
 	can_set_mil_focus = no
-	can_send_missionary_to_subject = no				# Requires Cradle of Civilization
+	can_send_missionary_to_subject = no
 	overlord_can_fabricate_for = no
 	
-	max_government_rank = 2								# 0 means no limit
-	cities_required_for_bonuses = 0						# How many cities the subject needs before giving bonuses to overlord
-	trust_on_start = 0									# Overlord and subject will each get this much extra trust with each other at game start
+	max_government_rank = 2
+	cities_required_for_bonuses = 0
+	trust_on_start = 0
 
 	liberty_desire_development_ratio = 0.175
 	
-	relative_power_class = 1 							# See description above
-	diplomacy_view_class = 1							# See description above
+	relative_power_class = 1
+	diplomacy_view_class = 1
 
 	can_fight = {
 		neighboring_primitives = yes
@@ -3031,7 +3085,7 @@ persian_satrapy = {
 	# Properties:
 	transfer_trade_if_merchant_republic = yes
 	uses_tariffs = yes
-	dynamically_created_during_history = yes				# If the country is automatically created. ( Makes for special checks during history )
+	dynamically_created_during_history = yes
 	has_power_projection = no
 	overlord_protects_external = yes
 	overlord_enforce_peace_attacking = yes

@@ -64,13 +64,13 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			is_subject_of_type = dominion
+			is_dominion_or_similar_subject = yes
 		}
 		localisation_key = "[dominion]"
 	}
 	text = {
 		trigger = {
-			is_subject_of_type = autonomous_dominion
+			is_autonomous_dominion_or_similar_subject = yes
 		}
 		localisation_key = "[autonomous_dominion]"
 	}

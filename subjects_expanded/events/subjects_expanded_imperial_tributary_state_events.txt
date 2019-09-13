@@ -42,10 +42,7 @@ country_event = {
 			}
 			overlord = {
 				any_subject_country = {
-					OR = {
-						is_subject_of_type = dominion
-						is_subject_of_type = autonomous_dominion
-					}
+					is_any_dominion_subject = yes
 					is_dominion_tag_in_india = yes
 				}
 			}
@@ -54,10 +51,7 @@ country_event = {
 		overlord = {
 			random_subject_country = {
 				limit = {
-					OR = {
-						is_subject_of_type = dominion
-						is_subject_of_type = autonomous_dominion
-					}
+					is_any_dominion_subject = yes
 					is_dominion_tag_in_india = yes
 				}
 				inherit = ROOT
@@ -83,10 +77,7 @@ country_event = {
 				}
 				overlord = {
 					any_subject_country = {
-						OR = {
-							is_subject_of_type = dominion
-							is_subject_of_type = autonomous_dominion
-						}
+						is_any_dominion_subject = yes
 						is_dominion_tag_in_india = yes
 					}
 				}

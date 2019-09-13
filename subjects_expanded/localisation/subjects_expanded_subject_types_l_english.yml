@@ -17,11 +17,23 @@
  dominion_long_desc: "A Dominion behaves like a colonial nation, but has less liberty desire and pays no tariffs to its overlord. They are a little bit less limited than colonial nations in diplomatic actions, but cannot be forced to start colonial wars. \nDominions in trade company regions, cannot be individualized, but give a bonus to its overlord's naval forcelimit.\n"
  dominion_no_overlord_dow: "You cannot declare war on your own Dominion."
  
+ dominion_tc_title: "Dominion"
+ dominion_tc_title_plural: "Dominions"
+ dominion_tc_is_our: "§Y$NAME$§! is our Dominion."
+ dominion_tc_long_desc: "A Dominion behaves like a colonial nation, but has less liberty desire and pays no tariffs to its overlord. They are a little bit less limited than colonial nations in diplomatic actions, but cannot be forced to start colonial wars. \nDominions in trade company regions, cannot be individualized, but give a bonus to its overlord's naval forcelimit.\n"
+ dominion_tc_no_overlord_dow: "You cannot declare war on your own Dominion."
+ 
  autonomous_dominion_title: "Autonomous Dominion"
  autonomous_dominion_title_plural: "Autonomous Dominions"
  autonomous_dominion_is_our: "§Y$NAME$§! is our Autonomous Dominion."
  autonomous_dominion_long_desc: "An Autonomous Dominion behaves like a colonial nation, but has less liberty desire, pays no tariffs to its overlord and does not join its overlord's wars. They are less limited in diplomatic actions than colonial nations and their overlord can decline helping them in defensive wars. Furthermore they grant two merchants to its overlord. \nAutonomous Dominions in trade company regions cannot be individualized, but give a bonus to its overlord's naval forcelimit.\n"
  autonomous_dominion_no_overlord_dow: "You cannot declare war on your own Autonomous Dominion."
+ 
+ autonomous_dominion_tc_title: "Autonomous Dominion"
+ autonomous_dominion_tc_title_plural: "Autonomous Dominions"
+ autonomous_dominion_tc_is_our: "§Y$NAME$§! is our Autonomous Dominion."
+ autonomous_dominion_tc_long_desc: "An Autonomous Dominion behaves like a colonial nation, but has less liberty desire, pays no tariffs to its overlord and does not join its overlord's wars. They are less limited in diplomatic actions than colonial nations and their overlord can decline helping them in defensive wars. Furthermore they grant two merchants to its overlord. \nAutonomous Dominions in trade company regions cannot be individualized, but give a bonus to its overlord's naval forcelimit.\n"
+ autonomous_dominion_tc_no_overlord_dow: "You cannot declare war on your own Autonomous Dominion."
  
  roman_client_kingdom_title: "Roman Client Kingdom"
  roman_client_kingdom_title_plural: "Roman Client Kingdoms"

@@ -130,35 +130,56 @@ is_possible_subject_of_subject_type_puppet_state = {
 
 is_possible_subject_of_subject_type_dominion = {
 	# PREVs in THIS scope refer to possible overlord
-	NOT = { is_subject_of_type = dominion }
+	NOT = { is_dominion_or_similar_subject = yes }
 	is_subject_of = PREV
 	OR = {
 		is_subject_of_type = colony
-		is_subject_of_type = autonomous_dominion
+		is_autonomous_dominion_or_similar_subject = yes
 	}
 	total_development = 100
 	OR = {
-		capital_scope = {
-			is_node_in_trade_company_region = yes
-		}
 		is_year = 1700
 		current_age = age_of_absolutism
 	}
 	# Capital in Trade Range of possible Overlord has to be checked additionally
 }
 
+is_possible_subject_of_subject_type_dominion_tc = {
+	# PREVs in THIS scope refer to possible overlord
+	NOT = { is_dominion_or_similar_subject = yes }
+	is_subject_of = PREV
+	OR = {
+		is_subject_of_type = colony
+		is_autonomous_dominion_or_similar_subject = yes
+	}
+	total_development = 100
+	capital_scope = {
+		is_node_in_trade_company_region = yes
+	}
+	# Capital in Trade Range of possible Overlord has to be checked additionally
+}
+
 is_possible_subject_of_subject_type_autonomous_dominion = {
 	# PREVs in THIS scope refer to possible overlord
-	NOT = { is_subject_of_type = autonomous_dominion }
+	NOT = { is_autonomous_dominion_or_similar_subject = yes }
 	is_subject_of = PREV
-	is_subject_of_type = dominion
+	is_dominion_or_similar_subject = yes
 	total_development = 300
 	OR = {
-		capital_scope = {
-			is_node_in_trade_company_region = yes
-		}
 		is_year = 1700
 		current_age = age_of_absolutism
+	}
+	# Capital in Trade Range of possible Overlord has to be checked additionally
+}
+
+is_possible_subject_of_subject_type_autonomous_dominion_tc = {
+	# PREVs in THIS scope refer to possible overlord
+	NOT = { is_autonomous_dominion_or_similar_subject = yes }
+	is_subject_of = PREV
+	is_dominion_or_similar_subject = yes
+	total_development = 300
+	capital_scope = {
+		is_node_in_trade_company_region = yes
 	}
 	# Capital in Trade Range of possible Overlord has to be checked additionally
 }

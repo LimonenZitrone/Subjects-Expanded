@@ -9,10 +9,7 @@ country_event = {
 	hidden = yes
 	
 	trigger = {
-		OR = {
-			is_subject_of_type = dominion
-			is_subject_of_type = autonomous_dominion
-		}
+		is_any_dominion_subject = yes
 		OR = {
 			NOT = { has_reform = colonial_government }
 			NOT = { has_country_flag = was_dominion_subject }
@@ -84,10 +81,7 @@ country_event = {
 		}
 		NOT = { is_dominion_tag = yes }
 		any_subject_country = {
-			OR = {
-				is_subject_of_type = dominion
-				is_subject_of_type = autonomous_dominion
-			}
+			is_any_dominion_subject = yes
 			is_dominion_tag_in_india = yes
 		}
 		any_owned_province = {
@@ -118,10 +112,7 @@ country_event = {
 				random_country = {
 					limit = {
 						is_subject_of = ROOT
-						OR = {
-							is_subject_of_type = dominion
-							is_subject_of_type = autonomous_dominion
-						}
+						is_any_dominion_subject = yes
 						is_dominion_tag_in_india = yes
 					}
 					PREV = {
@@ -146,10 +137,7 @@ country_event = {
 				random_country = {
 					limit = {
 						is_subject_of = ROOT
-						OR = {
-							is_subject_of_type = dominion
-							is_subject_of_type = autonomous_dominion
-						}
+						is_any_dominion_subject = yes
 						is_dominion_tag_in_india = yes
 					}
 					PREV = {
@@ -174,10 +162,7 @@ country_event = {
 				random_country = {
 					limit = {
 						is_subject_of = ROOT
-						OR = {
-							is_subject_of_type = dominion
-							is_subject_of_type = autonomous_dominion
-						}
+						is_any_dominion_subject = yes
 						is_dominion_tag_in_india = yes
 					}
 					PREV = {
@@ -202,10 +187,7 @@ country_event = {
 				random_country = {
 					limit = {
 						is_subject_of = ROOT
-						OR = {
-							is_subject_of_type = dominion
-							is_subject_of_type = autonomous_dominion
-						}
+						is_any_dominion_subject = yes
 						is_dominion_tag_in_india = yes
 					}
 					PREV = {
@@ -230,10 +212,7 @@ country_event = {
 				random_country = {
 					limit = {
 						is_subject_of = ROOT
-						OR = {
-							is_subject_of_type = dominion
-							is_subject_of_type = autonomous_dominion
-						}
+						is_any_dominion_subject = yes
 						is_dominion_tag_in_india = yes
 					}
 					PREV = {
@@ -273,10 +252,7 @@ country_event = {
 		}
 		NOT = { is_dominion_tag = yes }
 		any_subject_country = {
-			OR = {
-				is_subject_of_type = dominion
-				is_subject_of_type = autonomous_dominion
-			}
+			is_any_dominion_subject = yes
 			is_dominion_tag_in_east_indies = yes
 		}
 		any_owned_province = {
@@ -304,10 +280,7 @@ country_event = {
 				random_country = {
 					limit = {
 						is_subject_of = ROOT
-						OR = {
-							is_subject_of_type = dominion
-							is_subject_of_type = autonomous_dominion
-						}
+						is_any_dominion_subject = yes
 						is_dominion_tag_in_east_indies = yes
 					}
 					PREV = {
@@ -332,10 +305,7 @@ country_event = {
 				random_country = {
 					limit = {
 						is_subject_of = ROOT
-						OR = {
-							is_subject_of_type = dominion
-							is_subject_of_type = autonomous_dominion
-						}
+						is_any_dominion_subject = yes
 						is_dominion_tag_in_east_indies = yes
 					}
 					PREV = {
@@ -375,10 +345,7 @@ country_event = {
 		}
 		NOT = { is_dominion_tag = yes }
 		any_subject_country = {
-			OR = {
-				is_subject_of_type = dominion
-				is_subject_of_type = autonomous_dominion
-			}
+			is_any_dominion_subject = yes
 			is_dominion_tag_in_indochina = yes
 		}
 		any_owned_province = {
@@ -406,10 +373,7 @@ country_event = {
 				random_country = {
 					limit = {
 						is_subject_of = ROOT
-						OR = {
-							is_subject_of_type = dominion
-							is_subject_of_type = autonomous_dominion
-						}
+						is_any_dominion_subject = yes
 						is_dominion_tag_in_indochina = yes
 					}
 					PREV = {
@@ -434,10 +398,7 @@ country_event = {
 				random_country = {
 					limit = {
 						is_subject_of = ROOT
-						OR = {
-							is_subject_of_type = dominion
-							is_subject_of_type = autonomous_dominion
-						}
+						is_any_dominion_subject = yes
 						is_dominion_tag_in_indochina = yes
 					}
 					PREV = {
@@ -477,10 +438,7 @@ country_event = {
 		}
 		NOT = { is_dominion_tag = yes }
 		any_subject_country = {
-			OR = {
-				is_subject_of_type = dominion
-				is_subject_of_type = autonomous_dominion
-			}
+			is_any_dominion_subject = yes
 			is_dominion_tag_in_west_africa = yes
 		}
 		any_owned_province = {
@@ -505,10 +463,7 @@ country_event = {
 				random_country = {
 					limit = {
 						is_subject_of = ROOT
-						OR = {
-							is_subject_of_type = dominion
-							is_subject_of_type = autonomous_dominion
-						}
+						is_any_dominion_subject = yes
 						is_dominion_tag_in_west_africa = yes
 					}
 					PREV = {
@@ -548,10 +503,7 @@ country_event = {
 		}
 		NOT = { is_dominion_tag = yes }
 		any_subject_country = {
-			OR = {
-				is_subject_of_type = dominion
-				is_subject_of_type = autonomous_dominion
-			}
+			is_any_dominion_subject = yes
 			is_dominion_tag_in_east_africa = yes
 		}
 		any_owned_province = {
@@ -576,10 +528,7 @@ country_event = {
 				random_country = {
 					limit = {
 						is_subject_of = ROOT
-						OR = {
-							is_subject_of_type = dominion
-							is_subject_of_type = autonomous_dominion
-						}
+						is_any_dominion_subject = yes
 						is_dominion_tag_in_east_africa = yes
 					}
 					PREV = {
@@ -619,10 +568,7 @@ country_event = {
 		}
 		NOT = { is_dominion_tag = yes }
 		any_subject_country = {
-			OR = {
-				is_subject_of_type = dominion
-				is_subject_of_type = autonomous_dominion
-			}
+			is_any_dominion_subject = yes
 			is_dominion_tag_in_south_africa = yes
 		}
 		any_owned_province = {
@@ -647,10 +593,7 @@ country_event = {
 				random_country = {
 					limit = {
 						is_subject_of = ROOT
-						OR = {
-							is_subject_of_type = dominion
-							is_subject_of_type = autonomous_dominion
-						}
+						is_any_dominion_subject = yes
 						is_dominion_tag_in_south_africa = yes
 					}
 					PREV = {
@@ -690,10 +633,7 @@ country_event = {
 		}
 		NOT = { is_dominion_tag = yes }
 		any_subject_country = {
-			OR = {
-				is_subject_of_type = dominion
-				is_subject_of_type = autonomous_dominion
-			}
+			is_any_dominion_subject = yes
 			is_dominion_tag_in_philippines = yes
 		}
 		any_owned_province = {
@@ -718,10 +658,7 @@ country_event = {
 				random_country = {
 					limit = {
 						is_subject_of = ROOT
-						OR = {
-							is_subject_of_type = dominion
-							is_subject_of_type = autonomous_dominion
-						}
+						is_any_dominion_subject = yes
 						is_dominion_tag_in_philippines = yes
 					}
 					PREV = {

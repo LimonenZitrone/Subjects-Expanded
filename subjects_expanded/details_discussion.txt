@@ -201,7 +201,6 @@ If a subject gives an additional merchant, the bonuses it gives to its overlord 
 
 [b]Conditions (possible overlord):[/b]
 [list]
-[*] has a theocratic government
 [*] is either Papal State or Kingdom of Jerusalem or has the "Monastic Order" or "Crusader Kingdom" government
 [*] is Catholic
 [*] is not excommunicated

@@ -219,7 +219,7 @@ country_decisions = {
 					}
 					create_subject = {
 						subject = DI1
-						subject_type = dominion
+						subject_type = dominion_tc
 					}
 					DI1 = {
 						add_treasury = 3000
@@ -366,7 +366,7 @@ country_decisions = {
 					}
 					create_subject = {
 						subject = DI2
-						subject_type = dominion
+						subject_type = dominion_tc
 					}
 					DI2 = {
 						add_treasury = 3000
@@ -515,7 +515,7 @@ country_decisions = {
 					}
 					create_subject = {
 						subject = DI3
-						subject_type = dominion
+						subject_type = dominion_tc
 					}
 					DI3 = {
 						add_treasury = 3000
@@ -664,7 +664,7 @@ country_decisions = {
 					}
 					create_subject = {
 						subject = DI4
-						subject_type = dominion
+						subject_type = dominion_tc
 					}
 					DI4 = {
 						add_treasury = 3000
@@ -810,7 +810,7 @@ country_decisions = {
 					}
 					create_subject = {
 						subject = DI5
-						subject_type = dominion
+						subject_type = dominion_tc
 					}
 					DI5 = {
 						add_treasury = 3000
@@ -953,7 +953,7 @@ country_decisions = {
 					}
 					create_subject = {
 						subject = DI6
-						subject_type = dominion
+						subject_type = dominion_tc
 					}
 					DI6 = {
 						add_treasury = 3000
@@ -1095,7 +1095,7 @@ country_decisions = {
 					}
 					create_subject = {
 						subject = DI7
-						subject_type = dominion
+						subject_type = dominion_tc
 					}
 					DI7 = {
 						add_treasury = 3000
@@ -1237,7 +1237,7 @@ country_decisions = {
 					}
 					create_subject = {
 						subject = DI8
-						subject_type = dominion
+						subject_type = dominion_tc
 					}
 					DI8 = {
 						add_treasury = 3000
@@ -1378,7 +1378,7 @@ country_decisions = {
 					}
 					create_subject = {
 						subject = DI9
-						subject_type = dominion
+						subject_type = dominion_tc
 					}
 					DI9 = {
 						add_treasury = 3000
@@ -1537,10 +1537,7 @@ country_decisions = {
 				factor = 0.1
 				calc_true_if = {
 					all_subject_country = {
-						OR = {
-							is_subject_of_type = dominion
-							is_subject_of_type = autonomous_dominion
-						}
+						is_any_dominion_subject = yes
 					}
 					amount = 3
 				}
@@ -1729,7 +1726,7 @@ country_decisions = {
 					}
 					create_subject = {
 						subject = DE1
-						subject_type = dominion
+						subject_type = dominion_tc
 					}
 					DE1 = {
 						add_treasury = 3000
@@ -1826,7 +1823,7 @@ country_decisions = {
 					}
 					create_subject = {
 						subject = DE2
-						subject_type = dominion
+						subject_type = dominion_tc
 					}
 					DE2 = {
 						add_treasury = 3000
@@ -1917,7 +1914,7 @@ country_decisions = {
 					}
 					create_subject = {
 						subject = DE3
-						subject_type = dominion
+						subject_type = dominion_tc
 					}
 					DE3 = {
 						add_treasury = 3000
@@ -2008,7 +2005,7 @@ country_decisions = {
 					}
 					create_subject = {
 						subject = DE4
-						subject_type = dominion
+						subject_type = dominion_tc
 					}
 					DE4 = {
 						add_treasury = 3000
@@ -2104,7 +2101,7 @@ country_decisions = {
 					}
 					create_subject = {
 						subject = DE5
-						subject_type = dominion
+						subject_type = dominion_tc
 					}
 					DE5 = {
 						add_treasury = 3000
@@ -2197,7 +2194,7 @@ country_decisions = {
 					}
 					create_subject = {
 						subject = DE6
-						subject_type = dominion
+						subject_type = dominion_tc
 					}
 					DE6 = {
 						add_treasury = 3000
@@ -2286,7 +2283,7 @@ country_decisions = {
 					}
 					create_subject = {
 						subject = DE7
-						subject_type = dominion
+						subject_type = dominion_tc
 					}
 					DE7 = {
 						add_treasury = 3000
@@ -2370,7 +2367,7 @@ country_decisions = {
 					}
 					create_subject = {
 						subject = DE8
-						subject_type = dominion
+						subject_type = dominion_tc
 					}
 					DE8 = {
 						add_treasury = 3000
@@ -2454,7 +2451,7 @@ country_decisions = {
 					}
 					create_subject = {
 						subject = DE9
-						subject_type = dominion
+						subject_type = dominion_tc
 					}
 					DE9 = {
 						add_treasury = 3000
@@ -2578,10 +2575,7 @@ country_decisions = {
 				factor = 0.1
 				calc_true_if = {
 					all_subject_country = {
-						OR = {
-							is_subject_of_type = dominion
-							is_subject_of_type = autonomous_dominion
-						}
+						is_any_dominion_subject = yes
 					}
 					amount = 3
 				}
@@ -2737,7 +2731,7 @@ country_decisions = {
 					}
 					create_subject = {
 						subject = DC1
-						subject_type = dominion
+						subject_type = dominion_tc
 					}
 					DC1 = {
 						add_treasury = 3000
@@ -2814,7 +2808,7 @@ country_decisions = {
 					}
 					create_subject = {
 						subject = DC2
-						subject_type = dominion
+						subject_type = dominion_tc
 					}
 					DC2 = {
 						add_treasury = 3000
@@ -2893,7 +2887,7 @@ country_decisions = {
 					}
 					create_subject = {
 						subject = DC3
-						subject_type = dominion
+						subject_type = dominion_tc
 					}
 					DC3 = {
 						add_treasury = 3000
@@ -2972,7 +2966,7 @@ country_decisions = {
 					}
 					create_subject = {
 						subject = DC4
-						subject_type = dominion
+						subject_type = dominion_tc
 					}
 					DC4 = {
 						add_treasury = 3000
@@ -3048,7 +3042,7 @@ country_decisions = {
 					}
 					create_subject = {
 						subject = DC5
-						subject_type = dominion
+						subject_type = dominion_tc
 					}
 					DC5 = {
 						add_treasury = 3000
@@ -3121,7 +3115,7 @@ country_decisions = {
 					}
 					create_subject = {
 						subject = DC6
-						subject_type = dominion
+						subject_type = dominion_tc
 					}
 					DC6 = {
 						add_treasury = 3000
@@ -3193,7 +3187,7 @@ country_decisions = {
 					}
 					create_subject = {
 						subject = DC7
-						subject_type = dominion
+						subject_type = dominion_tc
 					}
 					DC7 = {
 						add_treasury = 3000
@@ -3297,10 +3291,7 @@ country_decisions = {
 				factor = 0.1
 				calc_true_if = {
 					all_subject_country = {
-						OR = {
-							is_subject_of_type = dominion
-							is_subject_of_type = autonomous_dominion
-						}
+						is_any_dominion_subject = yes
 					}
 					amount = 3
 				}
@@ -3437,7 +3428,7 @@ country_decisions = {
 					}
 					create_subject = {
 						subject = DW1
-						subject_type = dominion
+						subject_type = dominion_tc
 					}
 					DW1 = {
 						add_treasury = 3000
@@ -3501,7 +3492,7 @@ country_decisions = {
 					}
 					create_subject = {
 						subject = DW2
-						subject_type = dominion
+						subject_type = dominion_tc
 					}
 					DW2 = {
 						add_treasury = 3000
@@ -3567,7 +3558,7 @@ country_decisions = {
 					}
 					create_subject = {
 						subject = DW3
-						subject_type = dominion
+						subject_type = dominion_tc
 					}
 					DW3 = {
 						add_treasury = 3000
@@ -3633,7 +3624,7 @@ country_decisions = {
 					}
 					create_subject = {
 						subject = DW4
-						subject_type = dominion
+						subject_type = dominion_tc
 					}
 					DW4 = {
 						add_treasury = 3000
@@ -3696,7 +3687,7 @@ country_decisions = {
 					}
 					create_subject = {
 						subject = DW5
-						subject_type = dominion
+						subject_type = dominion_tc
 					}
 					DW5 = {
 						add_treasury = 3000
@@ -3756,7 +3747,7 @@ country_decisions = {
 					}
 					create_subject = {
 						subject = DW6
-						subject_type = dominion
+						subject_type = dominion_tc
 					}
 					DW6 = {
 						add_treasury = 3000
@@ -3815,7 +3806,7 @@ country_decisions = {
 					}
 					create_subject = {
 						subject = DW7
-						subject_type = dominion
+						subject_type = dominion_tc
 					}
 					DW7 = {
 						add_treasury = 3000
@@ -3913,10 +3904,7 @@ country_decisions = {
 				factor = 0.1
 				calc_true_if = {
 					all_subject_country = {
-						OR = {
-							is_subject_of_type = dominion
-							is_subject_of_type = autonomous_dominion
-						}
+						is_any_dominion_subject = yes
 					}
 					amount = 3
 				}
@@ -4053,7 +4041,7 @@ country_decisions = {
 					}
 					create_subject = {
 						subject = DS1
-						subject_type = dominion
+						subject_type = dominion_tc
 					}
 					DS1 = {
 						add_treasury = 3000
@@ -4117,7 +4105,7 @@ country_decisions = {
 					}
 					create_subject = {
 						subject = DS2
-						subject_type = dominion
+						subject_type = dominion_tc
 					}
 					DS2 = {
 						add_treasury = 3000
@@ -4183,7 +4171,7 @@ country_decisions = {
 					}
 					create_subject = {
 						subject = DS3
-						subject_type = dominion
+						subject_type = dominion_tc
 					}
 					DS3 = {
 						add_treasury = 3000
@@ -4249,7 +4237,7 @@ country_decisions = {
 					}
 					create_subject = {
 						subject = DS4
-						subject_type = dominion
+						subject_type = dominion_tc
 					}
 					DS4 = {
 						add_treasury = 3000
@@ -4312,7 +4300,7 @@ country_decisions = {
 					}
 					create_subject = {
 						subject = DS5
-						subject_type = dominion
+						subject_type = dominion_tc
 					}
 					DS5 = {
 						add_treasury = 3000
@@ -4372,7 +4360,7 @@ country_decisions = {
 					}
 					create_subject = {
 						subject = DS6
-						subject_type = dominion
+						subject_type = dominion_tc
 					}
 					DS6 = {
 						add_treasury = 3000
@@ -4431,7 +4419,7 @@ country_decisions = {
 					}
 					create_subject = {
 						subject = DS7
-						subject_type = dominion
+						subject_type = dominion_tc
 					}
 					DS7 = {
 						add_treasury = 3000
@@ -4525,10 +4513,7 @@ country_decisions = {
 				factor = 0.1
 				calc_true_if = {
 					all_subject_country = {
-						OR = {
-							is_subject_of_type = dominion
-							is_subject_of_type = autonomous_dominion
-						}
+						is_any_dominion_subject = yes
 					}
 					amount = 3
 				}
@@ -4665,7 +4650,7 @@ country_decisions = {
 					}
 					create_subject = {
 						subject = DA1
-						subject_type = dominion
+						subject_type = dominion_tc
 					}
 					DA1 = {
 						add_treasury = 3000
@@ -4729,7 +4714,7 @@ country_decisions = {
 					}
 					create_subject = {
 						subject = DA2
-						subject_type = dominion
+						subject_type = dominion_tc
 					}
 					DA2 = {
 						add_treasury = 3000
@@ -4795,7 +4780,7 @@ country_decisions = {
 					}
 					create_subject = {
 						subject = DA3
-						subject_type = dominion
+						subject_type = dominion_tc
 					}
 					DA3 = {
 						add_treasury = 3000
@@ -4861,7 +4846,7 @@ country_decisions = {
 					}
 					create_subject = {
 						subject = DA4
-						subject_type = dominion
+						subject_type = dominion_tc
 					}
 					DA4 = {
 						add_treasury = 3000
@@ -4924,7 +4909,7 @@ country_decisions = {
 					}
 					create_subject = {
 						subject = DA5
-						subject_type = dominion
+						subject_type = dominion_tc
 					}
 					DA5 = {
 						add_treasury = 3000
@@ -4984,7 +4969,7 @@ country_decisions = {
 					}
 					create_subject = {
 						subject = DA6
-						subject_type = dominion
+						subject_type = dominion_tc
 					}
 					DA6 = {
 						add_treasury = 3000
@@ -5043,7 +5028,7 @@ country_decisions = {
 					}
 					create_subject = {
 						subject = DA7
-						subject_type = dominion
+						subject_type = dominion_tc
 					}
 					DA7 = {
 						add_treasury = 3000
@@ -5137,10 +5122,7 @@ country_decisions = {
 				factor = 0.1
 				calc_true_if = {
 					all_subject_country = {
-						OR = {
-							is_subject_of_type = dominion
-							is_subject_of_type = autonomous_dominion
-						}
+						is_any_dominion_subject = yes
 					}
 					amount = 3
 				}
@@ -5304,7 +5286,7 @@ country_decisions = {
 					}
 					create_subject = {
 						subject = DP1
-						subject_type = dominion
+						subject_type = dominion_tc
 					}
 					DP1 = {
 						add_treasury = 3000
@@ -5374,7 +5356,7 @@ country_decisions = {
 					}
 					create_subject = {
 						subject = DP2
-						subject_type = dominion
+						subject_type = dominion_tc
 					}
 					DP2 = {
 						add_treasury = 3000
@@ -5454,7 +5436,7 @@ country_decisions = {
 					}
 					create_subject = {
 						subject = DP3
-						subject_type = dominion
+						subject_type = dominion_tc
 					}
 					DP3 = {
 						add_treasury = 3000
@@ -5526,7 +5508,7 @@ country_decisions = {
 					}
 					create_subject = {
 						subject = DP4
-						subject_type = dominion
+						subject_type = dominion_tc
 					}
 					DP4 = {
 						add_treasury = 3000
@@ -5603,7 +5585,7 @@ country_decisions = {
 					}
 					create_subject = {
 						subject = DP5
-						subject_type = dominion
+						subject_type = dominion_tc
 					}
 					DP5 = {
 						add_treasury = 3000
@@ -5683,7 +5665,7 @@ country_decisions = {
 					}
 					create_subject = {
 						subject = DP6
-						subject_type = dominion
+						subject_type = dominion_tc
 					}
 					DP6 = {
 						add_treasury = 3000
@@ -5753,7 +5735,7 @@ country_decisions = {
 					}
 					create_subject = {
 						subject = DP7
-						subject_type = dominion
+						subject_type = dominion_tc
 					}
 					DP7 = {
 						add_treasury = 3000
@@ -5818,7 +5800,7 @@ country_decisions = {
 					}
 					create_subject = {
 						subject = DP8
-						subject_type = dominion
+						subject_type = dominion_tc
 					}
 					DP8 = {
 						add_treasury = 3000
@@ -5883,7 +5865,7 @@ country_decisions = {
 					}
 					create_subject = {
 						subject = DP9
-						subject_type = dominion
+						subject_type = dominion_tc
 					}
 					DP9 = {
 						add_treasury = 3000
@@ -5990,10 +5972,7 @@ country_decisions = {
 				factor = 0.1
 				calc_true_if = {
 					all_subject_country = {
-						OR = {
-							is_subject_of_type = dominion
-							is_subject_of_type = autonomous_dominion
-						}
+						is_any_dominion_subject = yes
 					}
 					amount = 3
 				}

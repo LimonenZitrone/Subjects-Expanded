@@ -69,10 +69,7 @@ has_3_dominions_in_trade_company_region_triggered_modifier = {
 			tooltip = HAS_AT_LEAST_3_DOMINIONS_OR_AUTONOMOUS_DOMINIONS_IN_TRADE_COMPANY_REGIONS
 			calc_true_if = {
 				all_subject_country = {
-					OR = {
-						is_subject_of_type = dominion
-						is_subject_of_type = autonomous_dominion
-					}
+					is_any_dominion_subject = yes
 					is_dominion_tag = yes
 				}
 				amount = 3

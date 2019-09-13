@@ -195,10 +195,7 @@ default_autonomous_dominion = {
 	}
 	
 	trigger = {
-		OR = {
-			is_subject_of_type = dominion
-			is_subject_of_type = autonomous_dominion
-		}
+		is_any_dominion_subject = yes
 	}
 }
 

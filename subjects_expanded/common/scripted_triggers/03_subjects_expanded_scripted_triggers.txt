@@ -48,3 +48,24 @@ is_tributary_or_similar_subject = {
 is_similar_tributary_subject = {
 	is_subject_of_type = imperial_tributary_state
 }
+
+is_any_dominion_subject = {
+	OR = {
+		is_dominion_or_similar_subject = yes
+		is_autonomous_dominion_or_similar_subject = yes
+	}
+}
+
+is_dominion_or_similar_subject = {
+	OR = {
+		is_subject_of_type = dominion
+		is_subject_of_type = dominion_tc
+	}
+}
+
+is_autonomous_dominion_or_similar_subject = {
+	OR = {
+		is_subject_of_type = autonomous_dominion
+		is_subject_of_type = autonomous_dominion_tc
+	}
+}

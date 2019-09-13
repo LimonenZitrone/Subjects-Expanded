@@ -8,16 +8,30 @@ increase_colonial_autonomy = {
 		OR = {
 			AND = {
 				FROM = { is_subject_of_type = colony }
-				can_create_subject_type = {
-					subject = FROM
-					subject_type = dominion
+				OR = {
+					can_create_subject_type = {
+						subject = FROM
+						subject_type = dominion
+					}
+					can_create_subject_type = {
+						subject = FROM
+						subject_type = dominion_tc
+					}
 				}
 			}
 			AND = {
-				FROM = { is_subject_of_type = dominion }
-				can_create_subject_type = {
-					subject = FROM
-					subject_type = autonomous_dominion
+				FROM = {
+					is_dominion_or_similar_subject = yes
+				}
+				OR = {
+					can_create_subject_type = {
+						subject = FROM
+						subject_type = autonomous_dominion
+					}
+					can_create_subject_type = {
+						subject = FROM
+						subject_type = autonomous_dominion_tc
+					}
 				}
 			}
 		}
@@ -25,20 +39,34 @@ increase_colonial_autonomy = {
 	
 	is_allowed = {
 		hidden_trigger = {
-		num_of_colonists = 1
+			num_of_colonists = 1
 			OR = {
 				AND = {
 					FROM = { is_subject_of_type = colony }
-					can_create_subject_type = {
-						subject = FROM
-						subject_type = dominion
+					OR = {
+						can_create_subject_type = {
+							subject = FROM
+							subject_type = dominion
+						}
+						can_create_subject_type = {
+							subject = FROM
+							subject_type = dominion_tc
+						}
 					}
 				}
 				AND = {
-					FROM = { is_subject_of_type = dominion }
-					can_create_subject_type = {
-						subject = FROM
-						subject_type = autonomous_dominion
+					FROM = {
+						is_dominion_or_similar_subject = yes
+					}
+					OR = {
+						can_create_subject_type = {
+							subject = FROM
+							subject_type = autonomous_dominion
+						}
+						can_create_subject_type = {
+							subject = FROM
+							subject_type = autonomous_dominion_tc
+						}
 					}
 				}
 			}
@@ -60,16 +88,30 @@ increase_colonial_autonomy = {
 				OR = {
 					AND = {
 						FROM = { is_subject_of_type = colony }
-						can_create_subject_type = {
-							subject = FROM
-							subject_type = dominion
+						OR = {
+							can_create_subject_type = {
+								subject = FROM
+								subject_type = dominion
+							}
+							can_create_subject_type = {
+								subject = FROM
+								subject_type = dominion_tc
+							}
 						}
 					}
 					AND = {
-						FROM = { is_subject_of_type = dominion }
-						can_create_subject_type = {
-							subject = FROM
-							subject_type = autonomous_dominion
+						FROM = {
+							is_dominion_or_similar_subject = yes
+						}
+						OR = {
+							can_create_subject_type = {
+								subject = FROM
+								subject_type = autonomous_dominion
+							}
+							can_create_subject_type = {
+								subject = FROM
+								subject_type = autonomous_dominion_tc
+							}
 						}
 					}
 				}
@@ -86,9 +128,24 @@ increase_colonial_autonomy = {
 				limit = {
 					FROM = { is_subject_of_type = colony }
 				}
-				create_subject = {
-					subject = FROM
-					subject_type = dominion
+				if = {
+					limit = {
+						FROM = {
+							capital_scope = {
+								is_node_in_trade_company_region = yes
+							}
+						}
+					}
+					create_subject = {
+						subject = FROM
+						subject_type = dominion_tc
+					}
+				}
+				else = {
+					create_subject = {
+						subject = FROM
+						subject_type = dominion
+					}
 				}
 			}
 			else = {
@@ -145,8 +202,7 @@ increase_colonial_autonomy = {
 							all_subject_country = {
 								OR = {
 									is_subject_of_type = colony
-									is_subject_of_type = dominion
-									is_subject_of_type = autonomous_dominion
+									is_any_dominion_subject = yes
 								}
 							}
 							amount = 5
@@ -155,12 +211,11 @@ increase_colonial_autonomy = {
 				}
 				# FROM is not best paying colony of ROOT (if liberty_desire is smaller than 50)
 				OR = {
-					FROM = { is_subject_of_type = dominion }
+					FROM = { is_dominion_or_similar_subject = yes }
 					FROM = { liberty_desire = 50 }
 					any_subject_country = {
 						is_subject_of_type = colony
-						NOT = { is_subject_of_type = dominion }
-						NOT = { is_subject_of_type = autonomous_dominion }
+						NOT = { is_any_dominion_subject = yes }
 						NOT = { tag = FROM }
 						variable_arithmetic_trigger = {
 							custom_tooltip = FROM_TARIFF_VALUE
@@ -221,7 +276,7 @@ demand_manpower_from_autonomous_dominion = {
 	is_visible = {
 		FROM = {
 			is_subject_of = ROOT
-			is_subject_of_type = autonomous_dominion
+			is_autonomous_dominion_or_similar_subject = yes
 		}
 	}
 	
@@ -229,7 +284,7 @@ demand_manpower_from_autonomous_dominion = {
 		hidden_trigger = {
 			FROM = {
 				is_subject_of = ROOT
-				is_subject_of_type = autonomous_dominion
+				is_autonomous_dominion_or_similar_subject = yes
 			}
 		}
 		is_at_war = yes
@@ -253,7 +308,7 @@ demand_manpower_from_autonomous_dominion = {
 			limit = {
 				FROM = {
 					is_subject_of = ROOT
-					is_subject_of_type = autonomous_dominion
+					is_autonomous_dominion_or_similar_subject = yes
 				}
 				is_at_war = yes
 				FROM = { is_at_war = no }
@@ -299,7 +354,7 @@ seize_provinces_in_other_colonial_regions = {
 			is_subject_of = ROOT
 			OR = {
 				is_subject_of_type = colony
-				is_subject_of_type = dominion
+				is_dominion_or_similar_subject = yes
 			}
 			any_owned_province = {
 				NOT = { colonial_region = CAPITAL }
@@ -315,7 +370,7 @@ seize_provinces_in_other_colonial_regions = {
 				is_subject_of = ROOT
 				OR = {
 					is_subject_of_type = colony
-					is_subject_of_type = dominion
+					is_dominion_or_similar_subject = yes
 				}
 				any_owned_province = {
 					NOT = { colonial_region = CAPITAL }
@@ -346,8 +401,7 @@ seize_provinces_in_other_colonial_regions = {
 									is_subject_of = ROOT
 									OR = {
 										is_subject_of_type = colony
-										is_subject_of_type = dominion
-										is_subject_of_type = autonomous_dominion
+										is_any_dominion_subject = yes
 									}
 								}
 							}
@@ -369,8 +423,7 @@ seize_provinces_in_other_colonial_regions = {
 								is_subject_of = ROOT
 								OR = {
 									is_subject_of_type = colony
-									is_subject_of_type = dominion
-									is_subject_of_type = autonomous_dominion
+									is_any_dominion_subject = yes
 								}
 							}
 						}
@@ -383,12 +436,13 @@ seize_provinces_in_other_colonial_regions = {
 	on_accept = {
 		if = {
 			limit = {
+				ai = no
 				num_of_colonists = 1
 				FROM = {
 					is_subject_of = ROOT
 					OR = {
 						is_subject_of_type = colony
-						is_subject_of_type = dominion
+						is_dominion_or_similar_subject = yes
 					}
 					any_owned_province = {
 						NOT = { colonial_region = CAPITAL }
@@ -403,8 +457,35 @@ seize_provinces_in_other_colonial_regions = {
 					OR = {
 						num_of_owned_provinces_with = {
 							value = 5
-							NOT = { colonial_region = CAPITAL }
-							NOT = {
+							custom_trigger_tooltip = {
+								tooltip = IS_NOT_IN_THE_CAPITAL_COLONIAL_REGION
+								NOT = { colonial_region = CAPITAL }
+							}
+							custom_trigger_tooltip = {
+								tooltip = HAS_NO_OTHER_COLONIAL_NATION_IN_SAME_REGION
+								NOT = {
+									any_province = {
+										colonial_region = PREV
+										colonial_region = CAPITAL
+										owner = {
+											NOT = { tag = FROM }
+											is_subject_of = ROOT
+											OR = {
+												is_subject_of_type = colony
+												is_any_dominion_subject = yes
+											}
+										}
+									}
+								}
+							}
+						}
+						any_owned_province = {
+							custom_trigger_tooltip = {
+								tooltip = IS_NOT_IN_THE_CAPITAL_COLONIAL_REGION
+								NOT = { colonial_region = CAPITAL }
+							}
+							custom_trigger_tooltip = {
+								tooltip = HAS_OTHER_COLONIAL_NATION_IN_SAME_REGION
 								any_province = {
 									colonial_region = PREV
 									colonial_region = CAPITAL
@@ -413,25 +494,8 @@ seize_provinces_in_other_colonial_regions = {
 										is_subject_of = ROOT
 										OR = {
 											is_subject_of_type = colony
-											is_subject_of_type = dominion
-											is_subject_of_type = autonomous_dominion
+											is_any_dominion_subject = yes
 										}
-									}
-								}
-							}
-						}
-						any_owned_province = {
-							NOT = { colonial_region = CAPITAL }
-							any_province = {
-								colonial_region = PREV
-								colonial_region = CAPITAL
-								owner = {
-									NOT = { tag = FROM }
-									is_subject_of = ROOT
-									OR = {
-										is_subject_of_type = colony
-										is_subject_of_type = dominion
-										is_subject_of_type = autonomous_dominion
 									}
 								}
 							}
@@ -455,8 +519,7 @@ seize_provinces_in_other_colonial_regions = {
 											is_subject_of = ROOT
 											OR = {
 												is_subject_of_type = colony
-												is_subject_of_type = dominion
-												is_subject_of_type = autonomous_dominion
+												is_any_dominion_subject = yes
 											}
 										}
 									}
@@ -476,8 +539,7 @@ seize_provinces_in_other_colonial_regions = {
 													is_subject_of = ROOT
 													OR = {
 														is_subject_of_type = colony
-														is_subject_of_type = dominion
-														is_subject_of_type = autonomous_dominion
+														is_any_dominion_subject = yes
 													}
 												}
 											}
@@ -496,8 +558,7 @@ seize_provinces_in_other_colonial_regions = {
 										is_subject_of = ROOT
 										OR = {
 											is_subject_of_type = colony
-											is_subject_of_type = dominion
-											is_subject_of_type = autonomous_dominion
+											is_any_dominion_subject = yes
 										}
 									}
 								}
@@ -533,12 +594,12 @@ decrease_colonial_autonomy = {
 			is_subject_of = ROOT
 			OR = {
 				AND = {
-					is_subject_of_type = dominion
+					is_dominion_or_similar_subject = yes
 					capital_scope = {
 						is_node_in_trade_company_region = no
 					}
 				}
-				is_subject_of_type = autonomous_dominion
+				is_autonomous_dominion_or_similar_subject = yes
 			}
 		}
 	}
@@ -550,12 +611,12 @@ decrease_colonial_autonomy = {
 				is_subject_of = ROOT
 				OR = {
 					AND = {
-						is_subject_of_type = dominion
+						is_dominion_or_similar_subject = yes
 						capital_scope = {
 							is_node_in_trade_company_region = no
 						}
 					}
-					is_subject_of_type = autonomous_dominion
+					is_autonomous_dominion_or_similar_subject = yes
 				}
 			}
 		}
@@ -577,12 +638,12 @@ decrease_colonial_autonomy = {
 					is_subject_of = ROOT
 					OR = {
 						AND = {
-							is_subject_of_type = dominion
+							is_dominion_or_similar_subject = yes
 							capital_scope = {
 								is_node_in_trade_company_region = no
 							}
 						}
-						is_subject_of_type = autonomous_dominion
+						is_autonomous_dominion_or_similar_subject = yes
 					}
 				}
 				FROM = {
@@ -596,11 +657,26 @@ decrease_colonial_autonomy = {
 			}
 			if = {
 				limit = {
-					FROM = { is_subject_of_type = autonomous_dominion }
+					FROM = { is_autonomous_dominion_or_similar_subject = yes }
 				}
-				create_subject = {
-					subject = FROM
-					subject_type = dominion
+				if = {
+					limit = {
+						FROM = {
+							capital_scope = {
+								is_node_in_trade_company_region = yes
+							}
+						}
+					}
+					create_subject = {
+						subject = FROM
+						subject_type = dominion_tc
+					}
+				}
+				else = {
+					create_subject = {
+						subject = FROM
+						subject_type = dominion
+					}
 				}
 			}
 			else = {

@@ -9,7 +9,7 @@ country_decisions = {
 				ai = no
 			}
 			is_subject = no
-			can_be_overlord = dominion
+			can_be_overlord = dominion_tc
 			NOT = { is_dominion_tag = yes }
 			capital_scope = {
 				is_node_in_trade_company_region = no
@@ -1555,7 +1555,7 @@ country_decisions = {
 				ai = no
 			}
 			is_subject = no
-			can_be_overlord = dominion
+			can_be_overlord = dominion_tc
 			NOT = { is_dominion_tag = yes }
 			any_owned_province = {
 				is_node_in_trade_company_region = yes
@@ -2593,7 +2593,7 @@ country_decisions = {
 				ai = no
 			}
 			is_subject = no
-			can_be_overlord = dominion
+			can_be_overlord = dominion_tc
 			NOT = { is_dominion_tag = yes }
 			any_owned_province = {
 				is_node_in_trade_company_region = yes
@@ -3309,7 +3309,7 @@ country_decisions = {
 				ai = no
 			}
 			is_subject = no
-			can_be_overlord = dominion
+			can_be_overlord = dominion_tc
 			NOT = { is_dominion_tag = yes }
 			any_owned_province = {
 				is_node_in_trade_company_region = yes
@@ -3922,7 +3922,7 @@ country_decisions = {
 				ai = no
 			}
 			is_subject = no
-			can_be_overlord = dominion
+			can_be_overlord = dominion_tc
 			NOT = { is_dominion_tag = yes }
 			any_owned_province = {
 				is_node_in_trade_company_region = yes
@@ -4531,7 +4531,7 @@ country_decisions = {
 				ai = no
 			}
 			is_subject = no
-			can_be_overlord = dominion
+			can_be_overlord = dominion_tc
 			NOT = { is_dominion_tag = yes }
 			any_owned_province = {
 				is_node_in_trade_company_region = yes
@@ -5140,7 +5140,7 @@ country_decisions = {
 				ai = no
 			}
 			is_subject = no
-			can_be_overlord = dominion
+			can_be_overlord = dominion_tc
 			NOT = { is_dominion_tag = yes }
 			any_owned_province = {
 				is_node_in_trade_company_region = yes

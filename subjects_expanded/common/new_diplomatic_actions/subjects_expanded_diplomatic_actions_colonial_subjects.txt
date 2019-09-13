@@ -149,9 +149,24 @@ increase_colonial_autonomy = {
 				}
 			}
 			else = {
-				create_subject = {
-					subject = FROM
-					subject_type = autonomous_dominion
+				if = {
+					limit = {
+						FROM = {
+							capital_scope = {
+								is_node_in_trade_company_region = yes
+							}
+						}
+					}
+					create_subject = {
+						subject = FROM
+						subject_type = autonomous_dominion_tc
+					}
+				}
+				else = {
+					create_subject = {
+						subject = FROM
+						subject_type = autonomous_dominion
+					}
 				}
 			}
 			FROM = {

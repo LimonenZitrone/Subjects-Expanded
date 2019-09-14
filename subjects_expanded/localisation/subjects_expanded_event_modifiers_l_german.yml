@@ -190,3 +190,8 @@
  naval_march_low_dev_modifier: "Marine-Mark"
  naval_march_low_dev_overlord_modifier: "Besitzt Marine-Marken"
  
+ trade_outpost_modifier: "Handelsaußenposten"
+ improved_trade_outpost_modifier: "Handelsaußenposten-Infrastruktur verbessert"
+ trade_outpost_overlord_modifier: "Besitzt Handelsaußenposten"
+ improved_trade_outpost_overlord_modifier: "Handelsaußenposten-Infrastruktur verbessert"
+ 

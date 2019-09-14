@@ -62,3 +62,19 @@
  overlord_persian_satrapy_use_sword_hunt_title: "Conscript Troops from Satrapies"
  overlord_persian_satrapy_use_sword_hunt_desc: "Our Satrapies will not help us in our offensive wars, but that doesn't mean we can't conscript some of their troops to fight for us. With enough preparation time, we will surely find willing soldiers."
  
+ 
+ release_trade_outpost_in_south_china_title: "Establish a Trade Outpost in South China"
+ release_trade_outpost_in_south_china_desc: "We own coastal provinces in South China, we could establish a Trade Outpost there to improve our trade in that node. \n[trade_outpost_desc]"
+ 
+ release_trade_outpost_in_north_china_title: "Establish a Trade Outpost in North China"
+ release_trade_outpost_in_north_china_desc: "We own coastal provinces in North China, we could establish a Trade Outpost there to improve our trade in that node. \n[trade_outpost_desc]"
+ 
+ release_trade_outpost_in_korea_title: "Establish a Trade Outpost in Korea"
+ release_trade_outpost_in_korea_desc: "We own coastal provinces in Korea, we could establish a Trade Outpost there to improve our trade in that node. \n[trade_outpost_desc]"
+ 
+ release_trade_outpost_in_japan_title: "Establish a Trade Outpost in Japan"
+ release_trade_outpost_in_japan_desc: "We own coastal provinces in Japan, we could establish a Trade Outpost there to improve our trade in that node. \n[trade_outpost_desc]"
+ 
+ release_trade_outpost_in_liaoning_title: "Establish a Trade Outpost in Liaoning"
+ release_trade_outpost_in_liaoning_desc: "We own coastal provinces in Liaoning, we could establish a Trade Outpost there to improve our trade in that node. \n[trade_outpost_desc]"
+ 

@@ -72,3 +72,8 @@
  is_naval_march: "Naval March"
  declined_ask_to_become_naval_march: "Offer for Naval March declined"
  
+ is_trade_outpost: "Trade Outpost"
+ trade_outpost_forced: "Forced Trade Outpost"
+ declined_establish_trade_outpost_opinion: "Demand for Trade Outpost declined"
+ declined_ask_to_become_trade_outpost: "Offer for Trade Outpost declined"
+ 

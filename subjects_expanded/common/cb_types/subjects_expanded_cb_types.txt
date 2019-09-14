@@ -70,3 +70,26 @@ cb_force_persian_satrapy_triggered_only = {
 	
 	war_goal = take_capital_force_persian_satrapy
 }
+
+cb_force_trade_outpost = {
+	valid_for_subject = no
+
+	prerequisites = {
+		can_create_subject_type = {
+			subject = FROM
+			subject_type = trade_outpost
+		}
+		FROM = {
+			capital_scope = { trade_range = ROOT }
+		}
+		NOT = { truce_with = FROM }
+		NOT = { overlord_of = FROM }
+	}
+	
+	attacker_disabled_po = {
+		po_demand_provinces
+		po_become_vassal
+	}
+	
+	war_goal = take_capital_force_trade_outpost
+}

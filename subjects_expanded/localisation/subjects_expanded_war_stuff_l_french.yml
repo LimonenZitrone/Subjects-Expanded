@@ -12,6 +12,9 @@
  cb_force_persian_satrapy_triggered_only: "Force Satrapy"
  cb_force_persian_satrapy_triggered_only_desc: "We should force them to become what they should already be: Our Satrapy!"
  
+ cb_force_trade_outpost: "Force Trade Outpost"
+ cb_force_trade_outpost_desc: "They can be benefitial for us as a trade outpost in their trade node. If they don't want to become one voluntarily, we have to force them."
+ 
  # War Goals:
  take_capital_force_imperial_tributary_state: "Take Capital"
  take_capital_force_imperial_tributary_state_desc: "The war goal is to conquer the target's capital."
@@ -22,9 +25,13 @@
  take_capital_force_persian_satrapy: "Take Capital"
  take_capital_force_persian_satrapy_desc: "The war goal is to conquer the target's capital."
  
+ take_capital_force_trade_outpost: "Take Capital"
+ take_capital_force_trade_outpost_desc: "The war goal is to conquer the target's capital."
+ 
  # War Names:
  MANDALA_WAR_NAME: "$ORDER$ $FIRST$ War of Mandala Enforcement"
  SATRAPY_WAR_NAME: "$ORDER$ $FIRST$ War of Persian Hegemony"
+ TRADE_OUTPOST_WAR_NAME: "$ORDER$ $FIRST$ Creation of a Trade Outpost in $SECOND_NAME$"
  
  # Peace Treaties:
  make_protectorate_desc: "@[From.GetTag] §Y[From.GetName]§! is made to a Protectorate of @[Root.GetTag] §Y[Root.GetName]§!."
@@ -78,4 +85,8 @@
  make_persian_satrapy_desc: "@[From.GetTag] §Y[From.GetName]§! is made to a Satrapy of @[Root.GetTag] §Y[Root.GetName]§!. If [From.GetName] is not a Republican Dictatorship, they will become one."
  CB_ALLOWED_make_persian_satrapy: "Force Satrapy"
  PEACE_make_persian_satrapy: "$TAKERS$ Satrapy"
+ 
+ make_trade_outpost_desc: "@[From.GetTag] §Y[From.GetName]§! is made to a Trade Outpost of @[Root.GetTag] §Y[Root.GetName]§!."
+ CB_ALLOWED_make_trade_outpost: "Force Trade Outpost"
+ PEACE_make_trade_outpost: "$TAKERS$ Trade Outpost"
  

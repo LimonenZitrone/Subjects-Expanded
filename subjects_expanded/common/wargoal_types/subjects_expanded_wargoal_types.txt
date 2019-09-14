@@ -39,3 +39,17 @@ take_capital_force_persian_satrapy = {
 	
 	war_name = SATRAPY_WAR_NAME
 }
+
+take_capital_force_trade_outpost = {
+	type = take_capital
+	
+	badboy_factor = 0.5
+	prestige_factor = 2
+	peace_cost_factor = 0.5
+	
+	peace_options = {
+		make_trade_outpost
+	}
+	
+	war_name = TRADE_OUTPOST_WAR_NAME
+}

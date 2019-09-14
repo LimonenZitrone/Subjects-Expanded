@@ -176,6 +176,12 @@ defined_text = {
 		}
 		localisation_key = "[naval_march]"
 	}
+	text = {
+		trigger = {
+			is_subject_of_type = trade_outpost
+		}
+		localisation_key = "[trade_outpost]"
+	}
 	
 	text = {
 		trigger = {
@@ -822,5 +828,27 @@ defined_text = {
 			always = yes
 		}
 		localisation_key = naval_march_long_desc
+	}
+}
+
+defined_text = {
+	name = trade_outpost
+	
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = trade_outpost_title
+	}
+}
+
+defined_text = {
+	name = trade_outpost_desc
+	
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = trade_outpost_long_desc
 	}
 }

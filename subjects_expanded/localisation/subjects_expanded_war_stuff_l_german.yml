@@ -12,6 +12,9 @@
  cb_force_persian_satrapy_triggered_only: "Satrapie erzwingen"
  cb_force_persian_satrapy_triggered_only_desc: "Wir sollten sie dazu zwingen, etwas zu werden, was sie schon lange sein sollten: Unsere Satrapie!"
  
+ cb_force_trade_outpost: "Handelsaußenposten erzwingen"
+ cb_force_trade_outpost_desc: "Sie könnten nützlich für unseren Handel sein, als Handelsaußenposten in ihrer Handelsregion. Wenn sie dies freiwillig nicht tun, dann müssen wir sie eben zwingen."
+ 
  # War Goals:
  take_capital_force_imperial_tributary_state: "Hauptstadt erobern"
  take_capital_force_imperial_tributary_state_desc: "Das Kriegsziel ist es, die Hauptstadt des Ziellandes zu erobern."
@@ -22,9 +25,13 @@
  take_capital_force_persian_satrapy: "Hauptstadt erobern"
  take_capital_force_persian_satrapy_desc: "Das Kriegsziel ist es, die Hauptstadt des Ziellandes zu erobern."
  
+ take_capital_force_trade_outpost: "Hauptstadt erobern"
+ take_capital_force_trade_outpost_desc: "Das Kriegsziel ist es, die Hauptstadt des Ziellandes zu erobern."
+ 
  # War Names:
  MANDALA_WAR_NAME: "$ORDER$ $FIRST$er Krieg der Mandala-Erzwingung"
  SATRAPY_WAR_NAME: "$ORDER$ $FIRST$er Krieg der persischen Hegemonie"
+ TRADE_OUTPOST_WAR_NAME: "$ORDER$ $FIRST$er Errichtung eines Handelsaußenpostens in $SECOND_NAME$"
  
  # Peace Treaties:
  make_protectorate_desc: "@[From.GetTag] §Y[From.GetName]§! wird zu einem Protektorat von @[Root.GetTag] §Y[Root.GetName]§!."
@@ -78,4 +85,8 @@
  make_persian_satrapy_desc: "@[From.GetTag] §Y[From.GetName]§! wird zu einer Satrapie von @[Root.GetTag] §Y[Root.GetName]§!. Falls [From.GetName] keine Republikanische Diktatur ist, werden sie zu einer."
  CB_ALLOWED_make_persian_satrapy: "Satrapie erzwingen"
  PEACE_make_persian_satrapy: "$TAKERS$e Satrapie"
+ 
+ make_trade_outpost_desc: "@[From.GetTag] §Y[From.GetName]§! wird zu einem Handelsaußenposten von @[Root.GetTag] §Y[Root.GetName]§!."
+ CB_ALLOWED_make_trade_outpost: "Handelsaußenposten erzwingen"
+ PEACE_make_trade_outpost: "$TAKERS$er Handelsaußenposten"
  

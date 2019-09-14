@@ -62,3 +62,19 @@
  overlord_persian_satrapy_use_sword_hunt_title: "Rekrutiert Truppen aus den Satrapien"
  overlord_persian_satrapy_use_sword_hunt_desc: "Unsere Satrapien werden uns nicht in unseren Angriffskriegen helfen, aber das heißt nicht, dass wir nicht einige ihrer Truppen rekrutieren können, die dann für uns kämpfen. Mit genügend Vorbereitungszeit werden wir sicherlich einige gewillte Soldaten finden."
  
+ 
+ release_trade_outpost_in_south_china_title: "Errichtet einen Handelsaußenposten in Südchina"
+ release_trade_outpost_in_south_china_desc: "Wir besitzen Küstenprovinzen in Südchina, wir könnten dort einen Handelsaußenposten errichten, um unseren Handel in dieser Region zu verbessern. \n[trade_outpost_desc]"
+ 
+ release_trade_outpost_in_north_china_title: "Errichtet einen Handelsaußenposten in Nordchina"
+ release_trade_outpost_in_north_china_desc: "Wir besitzen Küstenprovinzen in Nordchina, wir könnten dort einen Handelsaußenposten errichten, um unseren Handel in dieser Region zu verbessern. \n[trade_outpost_desc]"
+ 
+ release_trade_outpost_in_korea_title: "Errichtet einen Handelsaußenposten in Korea"
+ release_trade_outpost_in_korea_desc: "Wir besitzen Küstenprovinzen in Korea, wir könnten dort einen Handelsaußenposten errichten, um unseren Handel in dieser Region zu verbessern. \n[trade_outpost_desc]"
+ 
+ release_trade_outpost_in_japan_title: "Errichtet einen Handelsaußenposten in Japan"
+ release_trade_outpost_in_japan_desc: "Wir besitzen Küstenprovinzen in Japan, wir könnten dort einen Handelsaußenposten errichten, um unseren Handel in dieser Region zu verbessern. \n[trade_outpost_desc]"
+ 
+ release_trade_outpost_in_liaoning_title: "Errichtet einen Handelsaußenposten in Liaoning"
+ release_trade_outpost_in_liaoning_desc: "Wir besitzen Küstenprovinzen in Liaoning, wir könnten dort einen Handelsaußenposten errichten, um unseren Handel in dieser Region zu verbessern. \n[trade_outpost_desc]"
+ 

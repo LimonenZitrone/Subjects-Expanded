@@ -137,3 +137,9 @@
  naval_march_long_desc: "Eine Marine-Mark verhält sich wie eine normale Mark, erhält aber Marineboni anstatt Armeeboni. Weiterhin gibt sie ihrem Lehnsherrn einen Bonus auf Flottenlimit. Sie kann nur von Ländern, die mindestens §Y5§! Häfen und §Y10§! Schiffe besitzen, in ihren Vasallen, die mindestens §Y1§! Hafen haben, errichtet werden.\n"
  naval_march_no_overlord_dow: "Ihr könnt Eurer eigenen Marine-Mark nicht den Krieg erklären."
  
+ trade_outpost_title: "Handelsaußenposten"
+ trade_outpost_title_plural: "Handelsaußenposten"
+ trade_outpost_is_our: "§Y$NAME$§! ist unser Handelsaußenposten."
+ trade_outpost_long_desc: "Ein Handelsaußenposten zahlt Steuern an seinen Lehnsherrn, tritt dessen Kriegen aber nicht bei und kann selbst keine Kriege erklären. Weiterhin kostet er keine diplomatische Beziehung und kann maximal §Y1§! Provinz besitzen. Wenn ein Land mindestens einen Handelsaußenposten in einer Handelsregion besitzt, erhält es §G+25§! Handelsmacht in dieser Handelsregion. Ein Handelsaußenposten erhält einen Bonus auf Provinzhandelsmacht, produzierte Handelsgüter, Handelssteuerung und Handelseffizienz und gewährt seinem Lehnsherrn einen Bonus auf Handelszentrumsaufwertungskosten, Handelsmacht im Ausland und Handelshausinvestmentkosten. Zusätzlich gibt er seinem Lehnsherrn §Y1§! Händler. Er kann nur von unabhängigen Ländern, die ihre Hauptstadt in Europa besitzen und entweder §Y1§! Kolonisten haben oder eine §YKaufmannsrepublik§! sind.. Ein Handelsaußenposten kann in §YSüdchina§!, §YNordchina§!, §YKorea§!, §YJapan§! und §YLiaoning§! per nationaler Entscheidung oder durch diplomatische Anfragen an ein Land oder durch Zwang durch Krieg errichtet werden. Handelsaußenposten sind freiwillige Untertanen, das bedeutet, dass sie selbst entscheiden können, ob sie unabhängig werden wollen, ohne einen Unabhängigkeitskrieg führen zu müssen.\n"
+ trade_outpost_no_overlord_dow: "Ihr könnt Eurem eigenen Handelsaußenposten nicht den Krieg erklären."
+ 

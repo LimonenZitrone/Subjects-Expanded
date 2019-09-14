@@ -22,6 +22,7 @@
  subjects_expanded_events2.EVTOPT19: "There currently are §G[REB.num_of_subjects_of_type_revolution_subject.GetValue]§! §YRevolutionary Confederations§! in the world."
  subjects_expanded_events2.EVTOPT20: "There currently are §G[REB.num_of_subjects_of_type_persian_satrapy.GetValue]§! §YSatrapies§! in the world."
  subjects_expanded_events2.EVTOPT21: "There currently are §G[REB.num_of_subjects_of_type_naval_march.GetValue]§! §YNaval Marches§! in the world."
+ subjects_expanded_events2.EVTOPT22: "There currently are §G[REB.num_of_subjects_of_type_trade_outpost.GetValue]§! §YTrade Outposts§! in the world."
  
  subjects_expanded_events.EVTNAME3: "Idea Mods?"
  subjects_expanded_events.EVTDESC3: "Spawning Dominions via decisions sets their idea groups depending on the ones you chose. If you are using a mod that alters the vanilla idea groups in any way, this might §Rcrash§! the game. So select the matching option below to prevent that from happening!"
@@ -173,4 +174,22 @@
  subjects_expanded_persian_satrapy_events.EVTNAME4: "Lost the right for Satrapies"
  subjects_expanded_persian_satrapy_events.EVTDESC4: "We've lost the right to have Satrapies, we do not fulfill the requirements anymore. All our Satrapies will be converted to vassals and receive additional liberty desire."
  subjects_expanded_persian_satrapy_events4.EVTOPT1: "That's a problem."
+ 
+ subjects_expanded_trade_outpost_events.EVTNAME1: "Establish a Trade Outpost"
+ subjects_expanded_trade_outpost_events.EVTDESC1: "Here you can see a list of all possible provinces in the selected region/area in which you can release a Trade Outpost. If the desired province is not in the list, but valid, you can use the penultimate option to show more provinces."
+ subjects_expanded_trade_outpost_events1.EVTOPT1: "Establish a Trade Outpost in §Y[trade_outpost_province_1.GetName]§!."
+ subjects_expanded_trade_outpost_events1.EVTOPT2: "Establish a Trade Outpost in §Y[trade_outpost_province_2.GetName]§!."
+ subjects_expanded_trade_outpost_events1.EVTOPT3: "Establish a Trade Outpost in §Y[trade_outpost_province_3.GetName]§!."
+ subjects_expanded_trade_outpost_events1.EVTOPT4: "Establish a Trade Outpost in §Y[trade_outpost_province_4.GetName]§!."
+ subjects_expanded_trade_outpost_events1.EVTOPT5: "Establish a Trade Outpost in §Y[trade_outpost_province_5.GetName]§!."
+ subjects_expanded_trade_outpost_events1.EVTOPT6: "Show other provinces."
+ subjects_expanded_trade_outpost_events1.EVTOPT7: "Cancel."
+ 
+ subjects_expanded_trade_outpost_events.EVTNAME3: "Trade Outpost becomes Independent"
+ subjects_expanded_trade_outpost_events.EVTDESC3: "§Y[Root.GetName]§!, the Trade Outpost of §Y[Root.Overlord.GetName]§!, has received access to more than one province. This has lead to them not being a valid Trade Outpost anymore and thus to their independence."
+ subjects_expanded_trade_outpost_events3.EVTOPT1: "We are independent now!"
+ 
+ subjects_expanded_trade_outpost_events.EVTNAME4: "[From.GetName] becomes Independent"
+ subjects_expanded_trade_outpost_events.EVTDESC4: "Our Trade Outpost [From.GetName] has decided to no longer be our subjects. They become independent."
+ subjects_expanded_trade_outpost_events4.EVTOPT1: "What?!"
  

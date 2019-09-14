@@ -455,7 +455,7 @@ is_possible_subject_of_subject_type_dutch_province_subject = {
 
 is_possible_subject_of_subject_type_revolution_subject = {
 	# PREVs in THIS scope refer to possible overlord
-	NOT = { is_subject_of_type = revolution_subject  }
+	NOT = { is_subject_of_type = revolution_subject }
 	is_subject = no
 	same_continent = PREV
 	OR = {
@@ -466,7 +466,7 @@ is_possible_subject_of_subject_type_revolution_subject = {
 
 is_possible_subject_of_subject_type_persian_satrapy = {
 	# PREVs in THIS scope refer to possible overlord
-	NOT = { is_subject_of_type = persian_satrapy  }
+	NOT = { is_subject_of_type = persian_satrapy }
 	is_neighbor_of = PREV
 	OR = {
 		is_subject = no
@@ -479,9 +479,34 @@ is_possible_subject_of_subject_type_persian_satrapy = {
 
 is_possible_subject_of_subject_type_naval_march = {
 	# PREVs in THIS scope refer to possible overlord
-	NOT = { is_subject_of_type = naval_march  }
+	NOT = { is_subject_of_type = naval_march }
 	vassal_of = PREV
 	num_of_ports = 1
+}
+
+is_possible_subject_of_subject_type_trade_outpost = {
+	# PREVs in THIS scope refer to possible overlord
+	NOT = { is_subject_of_type = trade_outpost }
+	OR = {
+		is_subject = no
+		AND = {
+			is_subject_of = PREV
+			is_vassal_or_similar_subject = yes
+		}
+	}
+	NOT = { num_of_cities = 2 }
+	capital_scope = {
+		has_port = yes
+		development = 30
+		OR = {
+			region = south_china_region
+			region = north_china_region
+			region = korea_region
+			region = japan_region
+			area = liaoning_area
+		}
+	}
+	# Capital in Trade Range of possible Overlord has to be checked additionally
 }
 
 can_create_subject_type = {

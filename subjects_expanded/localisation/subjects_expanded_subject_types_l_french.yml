@@ -137,3 +137,9 @@
  naval_march_long_desc: "A Naval March behaves like a normal march, but receives naval bonuses instead of army related bonuses. Furthermore, it gives its overlord a bonus on naval force limit. It can only be established by countries that have at least §Y5§! ports and at least §Y10§! ships in their vassals with at least §Y1§! port.\n"
  naval_march_no_overlord_dow: "You cannot declare war on your own Naval March."
  
+ trade_outpost_title: "Trade Outpost"
+ trade_outpost_title_plural: "Trade Outposts"
+ trade_outpost_is_our: "§Y$NAME$§! is our Trade Outpost."
+ trade_outpost_long_desc: "A Trade Outpost pays taxes to its overlord, but does not join its overlord's wars and cannot declare its own wars. Furthermore, it does not cost a relation slot and can only own §Y1§! province. If a country has at least one Trade Outpost in a trade node, it gains §G+35§! trade power in that node. A Trade Outpost gains a bonus on province trade power, produced trade goods, trade steering and trade efficiency and gives its overlord a bonus on center of trade upgrade cost, foreign trade power and trade company investment cost. Additionally it gives its overlord §Y1§! merchant. It can only be established by independent nations with their capital in Europe that either have at least §Y1§! colonist or are a §YMerchant Republic§!. A Trade Outpost can be created in §YSouth China§!, §YNorth China§!, §YKorea§!, §YJapan§! and §YLiaoning§! via decision or by asking nations diplomatically or forcing nations by war. Trade Outposts are voluntary subjects, which means they can decide to become independent without an independence war.\n"
+ trade_outpost_no_overlord_dow: "You cannot declare war on your own Trade Outpost."
+ 

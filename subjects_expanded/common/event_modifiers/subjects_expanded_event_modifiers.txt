@@ -819,6 +819,30 @@ naval_march_low_dev_overlord_modifier = {
 	naval_forcelimit = 25
 }
 
+# Subject Type: Trade Outpost
+trade_outpost_modifier = {
+	global_prov_trade_power_modifier = 0.5
+	global_trade_goods_size_modifier = 1
+	trade_steering = 0.25
+	trade_efficiency = 0.25
+}
+
+improved_trade_outpost_modifier = {
+	development_cost = -0.1
+	build_cost = -0.1
+}
+
+trade_outpost_overlord_modifier = {
+	merchants = 1
+	center_of_trade_upgrade_cost = -0.05
+	global_foreign_trade_power = 0.05
+	trade_company_investment_cost = -0.05
+}
+
+improved_trade_outpost_overlord_modifier = {
+	trade_company_investment_cost = -0.1
+}
+
 # Modifiers that function as timers
 protectorate_got_monarch_power_this_year = {
 }

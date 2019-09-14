@@ -11,7 +11,7 @@
  IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_protectorate: "Can be made to a §YProtectorate§!"
  IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_puppet_state: "Can be made to a §YPuppet State§!"
  IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_dominion: "Can be made to a §YDominion§!"
- IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_dominion_tc: "Can be made to a §YDominion§!"
+ IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_dominion_t: "Can be made to a §YDominion§!"
  IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_autonomous_dominion: "Can be made to an §YAutonomous Dominion§!"
  IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_autonomous_dominion_tc: "Can be made to an §YAutonomous Dominion§!"
  IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_roman_client_kingdom: "Can be made to a §YRoman Client Kingdom§!"
@@ -31,6 +31,7 @@
  IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_revolution_subject: "Can be made to a §YRevolutionary Confederation§!"
  IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_persian_satrapy: "Can be made to a §YSatrapy§!"
  IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_naval_march: "Can be made to a §YNaval March§!"
+ IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_trade_outpost: "Can be made to a §YTrade Outpost§!"
  
  THIS_IS_FORMER_AUTONOMOUS_DOMINION: "Is a former §YDominion§! or a former §YColonial Nation§!"
  
@@ -78,6 +79,8 @@
  WAS_NOT_FORCED_TO_DO_WHITE_PEACE_WITHIN_LAST_YEAR: "Overlord did NOT try to enforce peace on §Y[This.GetName]§! within the last §Y365 days§!"
  IS_AT_LEAST_IN_ONE_WAR_WHERE_THEY_ARE_NOT_WARLEADER: "Is at least in §Y1§! war NOT the war leader"
  HAS_LARGER_ARMY_SIZE_THAN_ALL_WAR_LEADERS_AGAINST_FROM: "Has a larger army than all war leaders that fight against §Y[From.GetName]§!"
+ 
+ DID_NOT_IMPROVE_TRADE_OUTPOST_WITHIN_LAST_5_YEARS: "Did NOT improve infrastructure in §Y[This.GetName]§! within the last §Y5 years§!"
  
  # Decisions:
  ALL_PROVINCES_IN_INDIAN_TRADE_COMPANY_REGIONS_CEDED_TO_DOMINION: "\nAll our provinces in [Root.GetIndianTradeCompanyRegionsSgPl] [Root.GetFirstIndianTradeCompanyRegionWeCede][Root.GetSecondIndianTradeCompanyRegionWeCede][Root.GetThirdIndianTradeCompanyRegionWeCede][Root.GetFourthIndianTradeCompanyRegionWeCede][Root.GetFifthIndianTradeCompanyRegionWeCede] are ceded to our dominion \n[Root.GetCreatedADNameIndia], which is released there."
@@ -139,6 +142,8 @@
  DUTCH_PROVINCES_OVERLORD_ELECTION_INDIVIDUAL_RESULT_TT_5_NO_RIVAL: "§Y[election_value_of_dutch_province_5.GetName]§! voted in the election for §G[election_value_of_dutch_province_5_target.GetName]§!. Countries that have others vote for them, will always elect themselves.\n"
  DUTCH_PROVINCES_OVERLORD_ELECTION_INDIVIDUAL_RESULT_TT_6_NO_RIVAL: "§Y[election_value_of_dutch_province_6.GetName]§! voted in the election for §G[election_value_of_dutch_province_6_target.GetName]§!. Countries that have others vote for them, will always elect themselves.\n"
  
+ RELEASE_TRADE_OUTPOST_IN_THIS_PROVINCE: "A @[Root.GetTag] §Y[Root.GetAdjective]§! Trade Outpost is created in §Y[This.GetName]§!.\n"
+ 
  # Triggered Modifiers:
  HAS_AT_LEAST_3_DOMINIONS_OR_AUTONOMOUS_DOMINIONS_IN_TRADE_COMPANY_REGIONS: "Has at least §Y3§! §YDominions§! or §YAutonomous Dominions§! with their capital in a trade company region (established via decisions)"
  
@@ -194,4 +199,6 @@
  display_persian_satrapy_desc_tt: "§g[persian_satrapy_desc]§W"
  display_naval_march_title_tt: "§Y[naval_march]§!"
  display_naval_march_desc_tt: "§g[naval_march_desc]§W"
+ display_trade_outpost_title_tt: "§Y[trade_outpost]§!"
+ display_trade_outpost_desc_tt: "§g[trade_outpost_desc]§W"
  

@@ -31,6 +31,7 @@
  IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_revolution_subject: "Kann zu einer §YRevolutionären Konföderation§! gemacht werden"
  IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_persian_satrapy: "Kann zu einer §YSatrapie§! gemacht werden"
  IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_naval_march: "Kann zu einer §YMarine-Mark§! gemacht werden"
+ IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_trade_outpost: "Kann zu einem §YHandelsaußenposten§! gemacht werden"
  
  THIS_IS_FORMER_AUTONOMOUS_DOMINION: "Ist ein ehemaliges §YHerrschaftsgebiet§! oder eine ehemalige §YKolonialnation§!"
  
@@ -78,6 +79,8 @@
  WAS_NOT_FORCED_TO_DO_WHITE_PEACE_WITHIN_LAST_YEAR: "Der Lehnsherr hat innerhalb der letzten §Y365 Tage§! NICHT versucht, §Y[This.GetName]§! zum Frieden zu zwingen"
  IS_AT_LEAST_IN_ONE_WAR_WHERE_THEY_ARE_NOT_WARLEADER: "Ist mindestens in §Y1§! Krieg NICHT kriegsführende Partei"
  HAS_LARGER_ARMY_SIZE_THAN_ALL_WAR_LEADERS_AGAINST_FROM: "Besitzt eine größere Armee als alle kriegsführenden Länder, die gegen §Y[From.GetName]§! kämpfen"
+ 
+ DID_NOT_IMPROVE_TRADE_OUTPOST_WITHIN_LAST_5_YEARS: "Hat innerhalb der letzten §Y5 Jahre§! NICHT die Infrastruktur in §Y[This.GetName]§! verbessert"
  
  # Decisions:
  ALL_PROVINCES_IN_INDIAN_TRADE_COMPANY_REGIONS_CEDED_TO_DOMINION: "\nAlle unsere Provinzen in [Root.GetIndianTradeCompanyRegionsSgPl] [Root.GetFirstIndianTradeCompanyRegionWeCede][Root.GetSecondIndianTradeCompanyRegionWeCede][Root.GetThirdIndianTradeCompanyRegionWeCede][Root.GetFourthIndianTradeCompanyRegionWeCede][Root.GetFifthIndianTradeCompanyRegionWeCede] werden an unser dort entlassenes Herrschaftsgebiet \n[Root.GetCreatedADNameIndia] abgetreten."
@@ -139,6 +142,8 @@
  DUTCH_PROVINCES_OVERLORD_ELECTION_INDIVIDUAL_RESULT_TT_5_NO_RIVAL: "§Y[election_value_of_dutch_province_5.GetName]§! hat bei der Wahl für §G[election_value_of_dutch_province_5_target.GetName]§! abgestimmt. Länder, die die Stimme eines anderen Landes haben, stimmen immer für sich selbst.\n"
  DUTCH_PROVINCES_OVERLORD_ELECTION_INDIVIDUAL_RESULT_TT_6_NO_RIVAL: "§Y[election_value_of_dutch_province_6.GetName]§! hat bei der Wahl für §G[election_value_of_dutch_province_6_target.GetName]§! abgestimmt. Länder, die die Stimme eines anderen Landes haben, stimmen immer für sich selbst.\n"
  
+ RELEASE_TRADE_OUTPOST_IN_THIS_PROVINCE: "Ein @[Root.GetTag] §Y[Root.GetAdjective]er§! Handelsaußenposten wird in §Y[This.GetName]§! errichtet.\n"
+ 
  # Triggered Modifiers:
  HAS_AT_LEAST_3_DOMINIONS_OR_AUTONOMOUS_DOMINIONS_IN_TRADE_COMPANY_REGIONS: "Besitzt mindestens §Y3§! §YHerrschaftsgebiete§! oder §YAutonome Herrschaftsgebiete§! mit Hauptstadt in einer Handelshaus-Region (errichted durch nationale Entscheidungen)"
  
@@ -194,4 +199,6 @@
  display_persian_satrapy_desc_tt: "§g[persian_satrapy_desc]§W"
  display_naval_march_title_tt: "§Y[naval_march]§!"
  display_naval_march_desc_tt: "§g[naval_march_desc]§W"
+ display_trade_outpost_title_tt: "§Y[trade_outpost]§!"
+ display_trade_outpost_desc_tt: "§g[trade_outpost_desc]§W"
  

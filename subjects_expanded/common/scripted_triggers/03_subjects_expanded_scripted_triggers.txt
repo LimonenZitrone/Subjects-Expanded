@@ -46,7 +46,10 @@ is_tributary_or_similar_subject = {
 }
 
 is_similar_tributary_subject = {
-	is_subject_of_type = imperial_tributary_state
+	OR = {
+		is_subject_of_type = imperial_tributary_state
+		is_subject_of_type = trade_outpost
+	}
 }
 
 is_any_dominion_subject = {

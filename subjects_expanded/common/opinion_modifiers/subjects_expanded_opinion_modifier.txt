@@ -266,3 +266,25 @@ declined_ask_to_become_naval_march = {
 	yearly_decay = 1
 	min = -100
 }
+
+is_trade_outpost = {
+	opinion = 100
+}
+
+trade_outpost_forced = {
+	opinion = -100
+	yearly_decay = 3
+	min = -100
+}
+
+declined_establish_trade_outpost_opinion = {
+	opinion = -25
+	yearly_decay = 1
+	min = -100
+}
+
+declined_ask_to_become_trade_outpost = {
+	opinion = -25
+	yearly_decay = 1
+	min = -100
+}

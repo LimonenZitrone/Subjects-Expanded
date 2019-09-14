@@ -72,3 +72,8 @@
  is_naval_march: "Marine-Mark"
  declined_ask_to_become_naval_march: "Bitte nach Marine-Mark abgelehnt"
  
+ is_trade_outpost: "Handelsaußenposten"
+ trade_outpost_forced: "Handelsaußenposten erzwungen"
+ declined_establish_trade_outpost_opinion: "Forderung nach Handelsaußenposten abgelehnt"
+ declined_ask_to_become_trade_outpost: "Bitte nach Handelsaußenposten abgelehnt"
+ 

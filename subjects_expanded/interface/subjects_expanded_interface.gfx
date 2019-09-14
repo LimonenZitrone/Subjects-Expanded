@@ -259,4 +259,17 @@ spriteTypes = {
 		name = "GFX_diplomacy_amnaval_march"
 		texturefile = "gfx//interface//icon_diplomacy_amnaval_march.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_icon_trade_outpost"
+		texturefile = "gfx/interface/icon_trade_outpost.dds"
+	}
+	spriteType = {
+		name = "GFX_diplomacy_leadtrade_outpost"
+		texturefile = "gfx//interface//icon_diplomacy_leadtrade_outpost.dds"
+	}
+	spriteType = {
+		name = "GFX_diplomacy_amtrade_outpost"
+		texturefile = "gfx//interface//icon_diplomacy_amtrade_outpost.dds"
+	}
 }

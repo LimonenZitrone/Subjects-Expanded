@@ -255,6 +255,31 @@
  ask_to_become_naval_march_dialog: "§Y[This.GetName]§! offers us that they become our §YNaval March§!. \n[naval_march_desc]  \nIf the total development of the Naval March is not more than §Y25%§! of its overlord, they will get the following bonuses: \n   [global_sailors_modifier]: §G+25.0%§! \n   [naval_forcelimit_modifier]: §G+50.0%§! \n   [ship_durability]: §G+10.0%§! \n   [naval_maintenance_modifier]: §G-30.0%§! \n   [sailors_recovery_speed]: §G+20.0%§! \n   [blockade_efficiency]: §G+10.0%§! \n   [global_ship_recruit_speed]: §G-10.0%§! \n   [naval_morale]: §G+10.0%§! \n\nAnd the overlord will gain the following bonus: \n   [naval_forcelimit]: §G+25§! \n\nDo you want to accept?"
  
  
+ establish_trade_outpost_title: "Establish Trade Outpost"
+ establish_trade_outpost_desc: "Do you want to offer §Y[From.GetName]§! to become our Trade Outpost? \n[trade_outpost_desc]"
+ establish_trade_outpost_tooltip: "Make §Y[From.GetName]§! to a [Root.GetAdjective] §YTrade Outpost§!.\n"
+ establish_trade_outpost_alert_tooltip: "Establish Trade Outpost"
+ establish_trade_outpost_dialog: "§Y[This.GetName]§! offers us that we become their §YTrade Outpost§!. \n[trade_outpost_desc] \nDo you want to accept?"
+ 
+ ask_to_become_trade_outpost_title: "Request Trade Outpost"
+ ask_to_become_trade_outpost_desc: "Do you want to offer §Y[From.GetName]§! that we become their Trade Outpost? \n[trade_outpost_desc]"
+ ask_to_become_trade_outpost_tooltip: "Ask §Y[From.GetName]§! to make §Y[Root.GetName]§! to a [From.GetAdjective] §YTrade Outpost§!.\n"
+ ask_to_become_trade_outpost_alert_tooltip: "Request Trade Outpost"
+ ask_to_become_trade_outpost_dialog: "§Y[This.GetName]§! offers us that they become our §YTrade Outpost§!. \n[trade_outpost_desc] \nDo you want to accept?"
+ 
+ improve_trade_outpost_title: "Improve Infrastructure"
+ improve_trade_outpost_desc: "Improve the infrastructure in your Trade Outpost §Y[From.GetName]§!. \nThis will change the base tax, base production and base manpower of §Y[From.Capital.GetName]§! by §Y+2§! each. §Y[From.GetName]'s§! liberty desire is changed by §G-10§! and they get a small bonus on development cost and building cost for §Y2 years§!. We gain §G+10§! trade power in their trade node and a bonus on trade company investment cost for §Y2 years§!. \n\nThis costs us §R25§! £adm£, §R25§! £dip£, §R25§! £mil£ and §R500§! ¤."
+ improve_trade_outpost_tooltip: "Improve the infrastructure in your Trade Outpost §Y[From.GetName]§!.\n"
+ 
+ end_trade_outpost_title: "Cancel Trade Outpost"
+ end_trade_outpost_desc: "Cancel our dependency of §Y[From.GetName]§!. This will change our stability by §R-1§!."
+ end_trade_outpost_tooltip: "Cancel our dependency of §Y[From.GetName]§!.\n"
+ 
+ cancel_trade_outpost_title: "Release Trade Outpost"
+ cancel_trade_outpost_desc: "Cancel the dependency of §Y[From.GetName]§! of us. This will decrease their opinion about us by §R-200§!, if their liberty desire is below §Y50%§!. We will also lose §R-25§! prestige and gain a truce with them for §Y5 years§!."
+ cancel_trade_outpost_tooltip: "Cancel the vassalisation of §Y[From.GetName]§! and grant them independence.\n"
+ 
+ 
  return_subject_to_vassal_title: "Demote to Vassal"
  return_subject_to_vassal_desc: "Cancel the current status §Y[From.GetName]§! has and make them to a vassal. This will decrease their opinion of us by §R-100§! and change their liberty desire by §R+25%§!. We will also lose §R-10§! prestige[Root.GetIfDemoteToVassalGivesStabHit]."
  return_subject_to_vassal_tooltip: "Make §Y[From.GetName]§! to a vassal again.\n"
@@ -336,4 +361,7 @@
  ROOT_IS_VASSAL_FOR_AT_LEAST_10_YEARS: "They could already annex us"
  ROOT_IS_NOT_A_NEIGHBOR_OF_FROMS_RIVALS: "We are not bordering any of their rivals or enemies"
  ROOT_HAS_MORE_THAN_25_PERCENT_OF_OVERLORD_DEVELOPMENT: "We have at least §Y25%§! of their total development"
+ NUM_OF_TRADE_OUTPOSTS: "Our amount of Trade Outposts"
+ FROM_AI_PERSONALITY: "Their ruler's personality"
+ FROM_HAS_NO_MERCHANT_IN_OUR_HOME_TRADE_NODE: "They do not have a merchant in our home trade node"
  

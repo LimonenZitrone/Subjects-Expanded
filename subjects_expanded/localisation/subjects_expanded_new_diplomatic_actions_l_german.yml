@@ -252,7 +252,32 @@
  ask_to_become_naval_march_desc: "Wollt Ihr §Y[From.GetName]§! vorschlagen, dass wir ihre Marine-Mark werden? \n[naval_march_desc]  \nWenn die Gesamtentwicklung der Marine-Mark nicht mehr als §Y25%§! von der ihres Lehnsherrn beträgt, erhalten wir die folgenden Boni: \n   [global_sailors_modifier]: §G+25.0%§! \n   [naval_forcelimit_modifier]: §G+50.0%§! \n   [ship_durability]: §G+10.0%§! \n   [naval_maintenance_modifier]: §G-30.0%§! \n   [sailors_recovery_speed]: §G+20.0%§! \n   [blockade_efficiency]: §G+10.0%§! \n   [global_ship_recruit_speed]: §G-10.0%§! \n   [naval_morale]: §G+10.0%§! \n\nUnd der Lehnsherr erhält den folgenden Bonus: \n   [naval_forcelimit]: §G+25§!"
  ask_to_become_naval_march_tooltip: "§Y[From.GetName]§! bitten, §Y[Root.GetName]§! zu einer [From.GetAdjective] §YMarine-Mark§! zu machen.\n"
  ask_to_become_naval_march_alert_tooltip: "Marine-Mark erbitten"
- ask_to_become_naval_march_dialog: "§Y[This.GetName]§! schlägt uns vor, dass sie unsere §YMarine-Mark§! werden. \n[naval_march_desc]  \nWenn die Gesamtentwicklung der Marine-Mark nicht mehr als §Y25%§! von der ihres Lehnsherrn beträgt, erhalten sie die folgenden Boni: \n   [global_sailors_modifier]: §G+25.0%§! \n   [naval_forcelimit_modifier]: §G+50.0%§! \n   [ship_durability]: §G+10.0%§! \n   [naval_maintenance_modifier]: §G-30.0%§! \n   [sailors_recovery_speed]: §G+20.0%§! \n   [blockade_efficiency]: §G+10.0%§! \n   [global_ship_recruit_speed]: §G-10.0%§! \n   [naval_morale]: §G+10.0%§! \n\nUnd der Lehnsherr erhält den folgenden Bonus: \n   [naval_forcelimit]: §G+25§! \n\nDo you want to accept?"
+ ask_to_become_naval_march_dialog: "§Y[This.GetName]§! schlägt uns vor, dass sie unsere §YMarine-Mark§! werden. \n[naval_march_desc]  \nWenn die Gesamtentwicklung der Marine-Mark nicht mehr als §Y25%§! von der ihres Lehnsherrn beträgt, erhalten sie die folgenden Boni: \n   [global_sailors_modifier]: §G+25.0%§! \n   [naval_forcelimit_modifier]: §G+50.0%§! \n   [ship_durability]: §G+10.0%§! \n   [naval_maintenance_modifier]: §G-30.0%§! \n   [sailors_recovery_speed]: §G+20.0%§! \n   [blockade_efficiency]: §G+10.0%§! \n   [global_ship_recruit_speed]: §G-10.0%§! \n   [naval_morale]: §G+10.0%§! \n\nUnd der Lehnsherr erhält den folgenden Bonus: \n   [naval_forcelimit]: §G+25§! \n\nWollt Ihr akzeptieren?"
+ 
+ 
+ establish_trade_outpost_title: "Handelsaußenposten errichten"
+ establish_trade_outpost_desc: "Wollt Ihr §Y[From.GetName]§! anbieten, unser Handelsaußenposten zu werden? \n[trade_outpost_desc]"
+ establish_trade_outpost_tooltip: "Macht §Y[From.GetName]§! zu einem [Root.GetAdjective]en §YHandelsaußenposten§!.\n"
+ establish_trade_outpost_alert_tooltip: "Handelsaußenposten errichten"
+ establish_trade_outpost_dialog: "§Y[This.GetName]§! bietet uns an, dass wir ihr §YHandelsaußenposten§! werden. \n[trade_outpost_desc] \nWollt Ihr akzeptieren?"
+ 
+ ask_to_become_trade_outpost_title: "Handelsaußenposten erbitten"
+ ask_to_become_trade_outpost_desc: "Wollt Ihr §Y[From.GetName]§! fragen, ob sie uns zu ihrem Handelsaußenposten machen? \n[trade_outpost_desc]"
+ ask_to_become_trade_outpost_tooltip: "§Y[From.GetName]§! bitten, §Y[Root.GetName]§! zu einem [From.GetAdjective]en §YHandelsaußenposten§! zu machen.\n"
+ ask_to_become_trade_outpost_alert_tooltip: "Request Trade Outpost"
+ ask_to_become_trade_outpost_dialog: "§Y[This.GetName]§! bietet uns an, dass sie unser §YHandelsaußenposten§! werden. \n[trade_outpost_desc] \nWollt Ihr akzeptieren?"
+ 
+ improve_trade_outpost_title: "Infrastruktur verbessern"
+ improve_trade_outpost_desc: "Verbessert die Infrastruktur in Eurem Handelsaußenposten §Y[From.GetName]§!. \nDies wird die Grundsteuer, Grundproduktion und Grundmannstärke von §Y[From.Capital.GetName]§! jeweils um §Y+2§! verändern. §Y[From.GetName]s§! Freiheitsstreben wird sich um §G-10§! verändern und sie erhalten einen kleinen Bonus auf Entwicklungskosten und Baukosten für §Y2 Jahre§!. Wir erhalten §G+10§! Handelsmacht in ihrer Handelsregion und einen Bonus auf Handelshausinvestmentkosten für §Y2 Jahre§!. \n\nDies kostet uns §R25§! £adm£, §R25§! £dip£, §R25§! £mil£ und §R500§! ¤."
+ improve_trade_outpost_tooltip: "Verbessert die Infrastruktur in Eurem Handelsaußenposten §Y[From.GetName]§!.\n"
+ 
+ end_trade_outpost_title: "Handelsaußenposten widerrufen"
+ end_trade_outpost_desc: "Beendet unser Abhängigkeitsverhältnis zu §Y[From.GetName]§!. Dies wird unsere Stabilität um §R-1§! verändern."
+ end_trade_outpost_tooltip: "Beendet unser Abhängigkeitsverhältnis zu §Y[From.GetName]§!.\n"
+ 
+ cancel_trade_outpost_title: "Handelsaußenposten entlassen"
+ cancel_trade_outpost_desc: "Beendet das Abhängigkeitsverhältnis von §Y[From.GetName]§! zu uns. Dies wird ihre Meinung über uns um §R-200§! verschlechtern, sofern sie ein Freiheitsstreben unter §Y50%§! besitzen. Außerdem verlieren wir §R-25§! Prestige und erhalten eine §Y5-jährige§! Waffenruhe mit ihnen."
+ cancel_trade_outpost_tooltip: "Beedet die Vasallisierung von §Y[From.GetName]§! und entlasst sie in die Freiheit.\n"
  
  
  return_subject_to_vassal_title: "Zum Vasall degradieren"
@@ -336,4 +361,7 @@
  ROOT_IS_VASSAL_FOR_AT_LEAST_10_YEARS: "Sie könnten uns bereits annektieren"
  ROOT_IS_NOT_A_NEIGHBOR_OF_FROMS_RIVALS: "Wir grenzen an keinen ihrer Rivalen oder Feinde"
  ROOT_HAS_MORE_THAN_25_PERCENT_OF_OVERLORD_DEVELOPMENT: "Wir haben mindestens §Y25%§! ihrer Gesamtentwicklung"
+ NUM_OF_TRADE_OUTPOSTS: "Unsere Anzahl an Handelsaußenposten"
+ FROM_AI_PERSONALITY: "Persönlichkeit ihres Herrschers"
+ FROM_HAS_NO_MERCHANT_IN_OUR_HOME_TRADE_NODE: "Sie haben keinen Händler in unserer Handelsregion"
  

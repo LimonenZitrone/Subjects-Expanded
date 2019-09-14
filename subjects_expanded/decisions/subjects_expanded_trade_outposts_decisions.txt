@@ -14,10 +14,23 @@ country_decisions = {
 				range = ROOT
 			}
 			NOT = { has_any_trade_outpost_region_or_area_selected = yes }
+			OR = {
+				REB = {
+					NOT = { check_variable = { which = num_of_autonomy_civil_wars value = 100 } }
+				}
+				south_china_region = {
+					owned_by = ROOT
+					has_port = yes
+					development = 30
+					any_core_country = {
+						exists = no
+					}
+				}
+			}
 		}
 		allow = {
 			is_at_war = no
-			treasury = 1000
+			treasury = 3000
 			south_china_region = {
 				owned_by = ROOT
 				has_port = yes
@@ -105,6 +118,9 @@ country_decisions = {
 						}
 					}
 					clr_country_flag = is_releasing_trade_outpost
+					REB = {
+						change_variable = { which = num_of_autonomy_civil_wars value = 1 }
+					}
 				}
 			}
 		}
@@ -138,10 +154,23 @@ country_decisions = {
 				range = ROOT
 			}
 			NOT = { has_any_trade_outpost_region_or_area_selected = yes }
+			OR = {
+				REB = {
+					NOT = { check_variable = { which = num_of_autonomy_civil_wars value = 100 } }
+				}
+				north_china_region = {
+					owned_by = ROOT
+					has_port = yes
+					development = 30
+					any_core_country = {
+						exists = no
+					}
+				}
+			}
 		}
 		allow = {
 			is_at_war = no
-			treasury = 1000
+			treasury = 3000
 			north_china_region = {
 				owned_by = ROOT
 				has_port = yes
@@ -229,6 +258,9 @@ country_decisions = {
 						}
 					}
 					clr_country_flag = is_releasing_trade_outpost
+					REB = {
+						change_variable = { which = num_of_autonomy_civil_wars value = 1 }
+					}
 				}
 			}
 		}
@@ -255,10 +287,23 @@ country_decisions = {
 				range = ROOT
 			}
 			NOT = { has_any_trade_outpost_region_or_area_selected = yes }
+			OR = {
+				REB = {
+					NOT = { check_variable = { which = num_of_autonomy_civil_wars value = 100 } }
+				}
+				korea_region = {
+					owned_by = ROOT
+					has_port = yes
+					development = 30
+					any_core_country = {
+						exists = no
+					}
+				}
+			}
 		}
 		allow = {
 			is_at_war = no
-			treasury = 1000
+			treasury = 3000
 			korea_region = {
 				owned_by = ROOT
 				has_port = yes
@@ -346,6 +391,9 @@ country_decisions = {
 						}
 					}
 					clr_country_flag = is_releasing_trade_outpost
+					REB = {
+						change_variable = { which = num_of_autonomy_civil_wars value = 1 }
+					}
 				}
 			}
 		}
@@ -372,10 +420,23 @@ country_decisions = {
 				range = ROOT
 			}
 			NOT = { has_any_trade_outpost_region_or_area_selected = yes }
+			OR = {
+				REB = {
+					NOT = { check_variable = { which = num_of_autonomy_civil_wars value = 100 } }
+				}
+				japan_region = {
+					owned_by = ROOT
+					has_port = yes
+					development = 30
+					any_core_country = {
+						exists = no
+					}
+				}
+			}
 		}
 		allow = {
 			is_at_war = no
-			treasury = 1000
+			treasury = 3000
 			japan_region = {
 				owned_by = ROOT
 				has_port = yes
@@ -463,6 +524,9 @@ country_decisions = {
 						}
 					}
 					clr_country_flag = is_releasing_trade_outpost
+					REB = {
+						change_variable = { which = num_of_autonomy_civil_wars value = 1 }
+					}
 				}
 			}
 		}
@@ -496,10 +560,23 @@ country_decisions = {
 				range = ROOT
 			}
 			NOT = { has_any_trade_outpost_region_or_area_selected = yes }
+			OR = {
+				REB = {
+					NOT = { check_variable = { which = num_of_autonomy_civil_wars value = 100 } }
+				}
+				liaoning_area = {
+					owned_by = ROOT
+					has_port = yes
+					development = 30
+					any_core_country = {
+						exists = no
+					}
+				}
+			}
 		}
 		allow = {
 			is_at_war = no
-			treasury = 1000
+			treasury = 3000
 			liaoning_area = {
 				owned_by = ROOT
 				has_port = yes
@@ -587,6 +664,9 @@ country_decisions = {
 						}
 					}
 					clr_country_flag = is_releasing_trade_outpost
+					REB = {
+						change_variable = { which = num_of_autonomy_civil_wars value = 1 }
+					}
 				}
 			}
 		}

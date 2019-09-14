@@ -268,7 +268,7 @@
  ask_to_become_trade_outpost_dialog: "§Y[This.GetName]§! bietet uns an, dass sie unser §YHandelsaußenposten§! werden. \n[trade_outpost_desc] \nWollt Ihr akzeptieren?"
  
  improve_trade_outpost_title: "Infrastruktur verbessern"
- improve_trade_outpost_desc: "Verbessert die Infrastruktur in Eurem Handelsaußenposten §Y[From.GetName]§!. \nDies wird die Grundsteuer, Grundproduktion und Grundmannstärke von §Y[From.Capital.GetName]§! jeweils um §Y+2§! verändern. §Y[From.GetName]s§! Freiheitsstreben wird sich um §G-10§! verändern und sie erhalten einen kleinen Bonus auf Entwicklungskosten und Baukosten für §Y2 Jahre§!. Wir erhalten §G+10§! Handelsmacht in ihrer Handelsregion und einen Bonus auf Handelshausinvestmentkosten für §Y2 Jahre§!. \n\nDies kostet uns §R25§! £adm£, §R25§! £dip£, §R25§! £mil£ und §R500§! ¤."
+ improve_trade_outpost_desc: "Verbessert die Infrastruktur in Eurem Handelsaußenposten §Y[From.GetName]§!. \nDies wird §Y[From.Capital.GetName]s§! Grundsteuer um §G+2§! und Grundproduktion um §G+4§! verändern. §Y[From.GetName]s§! Freiheitsstreben wird sich um §G-10§! verändern und sie erhalten einen kleinen Bonus auf Entwicklungskosten und Baukosten für §Y2 Jahre§!. Wir erhalten §G+10§! Handelsmacht in ihrer Handelsregion und einen Bonus auf Handelshausinvestmentkosten für §Y2 Jahre§!. \n\nDies kostet uns §R25§! £adm£, §R50§! £dip£ und §R500§! ¤."
  improve_trade_outpost_tooltip: "Verbessert die Infrastruktur in Eurem Handelsaußenposten §Y[From.GetName]§!.\n"
  
  end_trade_outpost_title: "Handelsaußenposten widerrufen"

@@ -602,6 +602,7 @@ If a subject gives an additional merchant, the bonuses it gives to its overlord 
 [*] is not  a subject
 [*] either has a colonist or is a merchant republic
 [*] has its capital in Europe
+[*] has less than 10 Trade Outposts
 [/list]
 
 [b]Conditions (possible subject):[/b]

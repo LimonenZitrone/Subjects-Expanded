@@ -268,7 +268,7 @@
  ask_to_become_trade_outpost_dialog: "§Y[This.GetName]§! offers us that they become our §YTrade Outpost§!. \n[trade_outpost_desc] \nDo you want to accept?"
  
  improve_trade_outpost_title: "Improve Infrastructure"
- improve_trade_outpost_desc: "Improve the infrastructure in your Trade Outpost §Y[From.GetName]§!. \nThis will change the base tax, base production and base manpower of §Y[From.Capital.GetName]§! by §Y+2§! each. §Y[From.GetName]'s§! liberty desire is changed by §G-10§! and they get a small bonus on development cost and building cost for §Y2 years§!. We gain §G+10§! trade power in their trade node and a bonus on trade company investment cost for §Y2 years§!. \n\nThis costs us §R25§! £adm£, §R25§! £dip£, §R25§! £mil£ and §R500§! ¤."
+ improve_trade_outpost_desc: "Improve the infrastructure in your Trade Outpost §Y[From.GetName]§!. \nThis will change §Y[From.Capital.GetName]'s§! base tax by §G+2§! and base production by §G+4§!. §Y[From.GetName]'s§! liberty desire is changed by §G-10§! and they get a small bonus on development cost and building cost for §Y2 years§!. We gain §G+10§! trade power in their trade node and a bonus on trade company investment cost for §Y2 years§!. \n\nThis costs us §R25§! £adm£, §R50§! £dip£ and §R500§! ¤."
  improve_trade_outpost_tooltip: "Improve the infrastructure in your Trade Outpost §Y[From.GetName]§!.\n"
  
  end_trade_outpost_title: "Cancel Trade Outpost"

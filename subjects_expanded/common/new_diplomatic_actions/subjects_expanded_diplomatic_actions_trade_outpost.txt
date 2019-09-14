@@ -141,11 +141,232 @@ establish_trade_outpost = {
 		}
 		add_entry = {
 			name = NUM_OF_TRADE_OUTPOSTS
+			limit = {
+				any_subject_country = {
+					is_subject_of_type = trade_outpost
+				}
+				NOT = {
+					calc_true_if = {
+						all_subject_country = {
+							is_subject_of_type = trade_outpost
+						}
+						amount = 2
+					}
+				}
+			}
 			export_to_variable = {
 				which = ai_value
-				value = trigger_value:trade_outpost
+				value = 10
 			}
-			multiply_variable = { which = ai_value value = -10 }
+			multiply_variable = { which = ai_value value = -1 }
+		}
+		add_entry = {
+			name = NUM_OF_TRADE_OUTPOSTS
+			limit = {
+				calc_true_if = {
+					all_subject_country = {
+						is_subject_of_type = trade_outpost
+					}
+					amount = 2
+				}
+				NOT = {
+					calc_true_if = {
+						all_subject_country = {
+							is_subject_of_type = trade_outpost
+						}
+						amount = 3
+					}
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 20
+			}
+			multiply_variable = { which = ai_value value = -1 }
+		}
+		add_entry = {
+			name = NUM_OF_TRADE_OUTPOSTS
+			limit = {
+				calc_true_if = {
+					all_subject_country = {
+						is_subject_of_type = trade_outpost
+					}
+					amount = 3
+				}
+				NOT = {
+					calc_true_if = {
+						all_subject_country = {
+							is_subject_of_type = trade_outpost
+						}
+						amount = 4
+					}
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 30
+			}
+			multiply_variable = { which = ai_value value = -1 }
+		}
+		add_entry = {
+			name = NUM_OF_TRADE_OUTPOSTS
+			limit = {
+				calc_true_if = {
+					all_subject_country = {
+						is_subject_of_type = trade_outpost
+					}
+					amount = 4
+				}
+				NOT = {
+					calc_true_if = {
+						all_subject_country = {
+							is_subject_of_type = trade_outpost
+						}
+						amount = 5
+					}
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 40
+			}
+			multiply_variable = { which = ai_value value = -1 }
+		}
+		add_entry = {
+			name = NUM_OF_TRADE_OUTPOSTS
+			limit = {
+				calc_true_if = {
+					all_subject_country = {
+						is_subject_of_type = trade_outpost
+					}
+					amount = 5
+				}
+				NOT = {
+					calc_true_if = {
+						all_subject_country = {
+							is_subject_of_type = trade_outpost
+						}
+						amount = 6
+					}
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 50
+			}
+			multiply_variable = { which = ai_value value = -1 }
+		}
+		add_entry = {
+			name = NUM_OF_TRADE_OUTPOSTS
+			limit = {
+				calc_true_if = {
+					all_subject_country = {
+						is_subject_of_type = trade_outpost
+					}
+					amount = 6
+				}
+				NOT = {
+					calc_true_if = {
+						all_subject_country = {
+							is_subject_of_type = trade_outpost
+						}
+						amount = 7
+					}
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 60
+			}
+			multiply_variable = { which = ai_value value = -1 }
+		}
+		add_entry = {
+			name = NUM_OF_TRADE_OUTPOSTS
+			limit = {
+				calc_true_if = {
+					all_subject_country = {
+						is_subject_of_type = trade_outpost
+					}
+					amount = 7
+				}
+				NOT = {
+					calc_true_if = {
+						all_subject_country = {
+							is_subject_of_type = trade_outpost
+						}
+						amount = 8
+					}
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 70
+			}
+			multiply_variable = { which = ai_value value = -1 }
+		}
+		add_entry = {
+			name = NUM_OF_TRADE_OUTPOSTS
+			limit = {
+				calc_true_if = {
+					all_subject_country = {
+						is_subject_of_type = trade_outpost
+					}
+					amount = 8
+				}
+				NOT = {
+					calc_true_if = {
+						all_subject_country = {
+							is_subject_of_type = trade_outpost
+						}
+						amount = 9
+					}
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 80
+			}
+			multiply_variable = { which = ai_value value = -1 }
+		}
+		add_entry = {
+			name = NUM_OF_TRADE_OUTPOSTS
+			limit = {
+				calc_true_if = {
+					all_subject_country = {
+						is_subject_of_type = trade_outpost
+					}
+					amount = 9
+				}
+				NOT = {
+					calc_true_if = {
+						all_subject_country = {
+							is_subject_of_type = trade_outpost
+						}
+						amount = 10
+					}
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 90
+			}
+			multiply_variable = { which = ai_value value = -1 }
+		}
+		add_entry = {
+			name = NUM_OF_TRADE_OUTPOSTS
+			limit = {
+				calc_true_if = {
+					all_subject_country = {
+						is_subject_of_type = trade_outpost
+					}
+					amount = 10
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 1000
+			}
+			multiply_variable = { which = ai_value value = -1 }
 		}
 		add_entry = {
 			name = ROOT_IS_MERCHANT_REPUBLIC
@@ -739,8 +960,7 @@ improve_trade_outpost = {
 		is_at_war = no
 		treasury = 500
 		adm_power = 25
-		dip_power = 25
-		mil_power = 25
+		dip_power = 50
 		FROM = { is_at_war = no }
 		FROM = {
 			NOT = { liberty_desire = 75 }
@@ -766,8 +986,7 @@ improve_trade_outpost = {
 				is_at_war = no
 				treasury = 500
 				adm_power = 25
-				dip_power = 25
-				mil_power = 25
+				dip_power = 50
 				FROM = { is_at_war = no }
 				FROM = {
 					NOT = { liberty_desire = 75 }
@@ -781,8 +1000,7 @@ improve_trade_outpost = {
 			}
 			add_treasury = -500
 			add_adm_power = -25
-			add_dip_power = -25
-			add_mil_power = -25
+			add_dip_power = -50
 			FROM = {
 				add_liberty_desire = -10
 				add_country_modifier = {
@@ -791,8 +1009,7 @@ improve_trade_outpost = {
 				}
 				capital_scope = {
 					add_base_tax = 2
-					add_base_production = 2
-					add_base_manpower = 2
+					add_base_production = 4
 					add_trade_modifier = {
 						who = ROOT
 						power = 10
@@ -810,7 +1027,6 @@ improve_trade_outpost = {
 		treasury = 2000
 		adm_power = 100
 		dip_power = 100
-		mil_power = 100
 		FROM = {
 			NOT = { liberty_desire = 40 }
 			capital_scope = {

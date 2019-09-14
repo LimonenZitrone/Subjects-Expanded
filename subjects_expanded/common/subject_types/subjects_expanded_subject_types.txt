@@ -3254,6 +3254,14 @@ trade_outpost = {
 		capital_scope = {
 			continent = europe
 		}
+		NOT = {
+			calc_true_if = {
+				all_subject_country = {
+					is_subject_of_type = trade_outpost
+				}
+				amount = 10
+			}
+		}
 	}
 	
 	# Properties:

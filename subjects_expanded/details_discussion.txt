@@ -593,3 +593,38 @@ If a subject gives an additional merchant, the bonuses it gives to its overlord 
 [*] Naval Marches gain a bonus on morale of navies, sailors, sailor recovery speed, naval forcelimit, navy maintenance, blockade efficiency, shipbuilding time and ship duratbility as long as they have less than 25% of their overlord's total development
 [*] Naval Marches give their overlord a bonus on naval forcelimit as long as they have less than 25% of their overlord's total development
 [/list]
+
+[h1]Trade Outpost[/h1]
+[i]A Trade Outpost pays taxes to its overlord, but does not join its overlord's wars and cannot declare its own wars. Furthermore, it does not cost a relation slot and can only own 1 province. If a country has at least one Trade Outpost in a trade node, it gains +35 trade power in that node. A Trade Outpost gains a bonus on province trade power, produced trade goods, trade steering and trade efficiency and gives its overlord a bonus on center of trade upgrade cost, foreign trade power and trade company investment cost. Additionally it gives its overlord 1 merchant. It can only be established by independent nations with their capital in Europe that either have at least 1 colonist or are a Merchant Republic. A Trade Outpost can be created in South China, North China, Korea, Japan and Liaoning via decision or by asking nations diplomatically or forcing nations by war. Trade Outposts are voluntary subjects, which means they can decide to become independent without an independence war.[/i]
+
+[b]Conditions (possible overlord):[/b]
+[list]
+[*] is not  a subject
+[*] either has a colonist or is a merchant republic
+[*] has its capital in Europe
+[/list]
+
+[b]Conditions (possible subject):[/b]
+[list]
+[*] is not a subject or a vassal of the possible overlord
+[*] has only 1 province
+[*] capital has a port
+[*] capital has at least 30 development
+[*] capital is either in the North China region, South China region, Korea region, Japan region or Liaoning area
+[*] is in the trade range of the possible overlord
+[/list]
+
+[b]Additional Information:[/b]
+[list]
+[*] Trade Outposts can be established diplomatically and by war
+[*] Trade Outposts can be released via decision
+[*] Trade Outposts don't have a max government rank
+[*] Trade Outposts gain a bonus on province trade power, produced trade goods, trade steering and trade efficiency
+[*] Trade Outposts give their overlord a bonus on center of trade upgrade cost, foreign trade power and trade company investment cost
+[*] Trade Outposts give their overlord an additional merchant
+[*] having at least one Trade Outpost grants +35 trade power in the Trade Outposts home trade node
+[*] Trade Outposts do not join their overlord's wars
+[*] Trade Outposts cannot declare their own wars
+[*] Trade Outposts can leave the relationship without independence war
+[*] the overlord of Trade Outposts has a subject interaction (diplomatic action) to give the Trade Outpost bonuses on development, development cost and build cost and gain a trade power bonus as well as a bonus on trade company investment cost for 2 years
+[/list]

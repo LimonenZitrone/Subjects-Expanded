@@ -171,6 +171,7 @@ increase_colonial_autonomy = {
 			}
 			FROM = {
 				country_event = { id = subjects_expanded_dominion_events.1 }
+				swap_free_idea_group = yes
 			}
 			add_country_modifier = {
 				name = established_autonomous_dominion
@@ -702,6 +703,7 @@ decrease_colonial_autonomy = {
 			}
 			FROM = {
 				add_liberty_desire = 25
+				swap_free_idea_group = yes
 			}
 		}
 	}

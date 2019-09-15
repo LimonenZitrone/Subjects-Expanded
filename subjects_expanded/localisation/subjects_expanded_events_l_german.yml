@@ -70,7 +70,7 @@
  subjects_expanded_dominion_events8.EVTOPT1: "In Ordnung."
  
  subjects_expanded_dominion_events.EVTNAME9: "Herrschaftsgebiet erhält Provinzen"
- subjects_expanded_dominion_events.EVTDESC9: "Da wir Provinzen in philippinischen Handelshaus-Regionen besitzen, die nicht mit unserer Hauptstadt verbunden sind und wir dort ein Herrschaftsgebiet besitzen, haben wir diese Provinzen an unser Herrschaftsgebiet in Südafrika abgetreten. Insgesamt handelt es sich dabei um §R[Root.num_of_provinces_ceded_to_autonomous_dominion_philippines.GetValue]§! Provinzen."
+ subjects_expanded_dominion_events.EVTDESC9: "Da wir Provinzen in philippinischen Handelshaus-Regionen besitzen, die nicht mit unserer Hauptstadt verbunden sind und wir dort ein Herrschaftsgebiet besitzen, haben wir diese Provinzen an unser Herrschaftsgebiet auf den Philippinen abgetreten. Insgesamt handelt es sich dabei um §R[Root.num_of_provinces_ceded_to_autonomous_dominion_philippines.GetValue]§! Provinzen."
  subjects_expanded_dominion_events9.EVTOPT1: "In Ordnung."
  
  subjects_expanded_roman_client_kingdom_events.EVTNAME1: "Römisches Klientelkönigtum"

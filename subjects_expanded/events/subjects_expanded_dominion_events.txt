@@ -311,14 +311,14 @@ country_event = {
 	
 	immediate = {
 		hidden_effect = {
-			set_variable = { which = num_of_provinces_ceded_to_autonomous_dominion_indonesia value = 0 }
+			set_variable = { which = num_of_provinces_ceded_to_autonomous_dominion_east_indies value = 0 }
 			trade_company_indonesia = {
 				limit = {
 					owned_by = ROOT
 					is_in_capital_area = no
 					is_city = yes
 				}
-				ROOT = { change_variable = { which = num_of_provinces_ceded_to_autonomous_dominion_indonesia value = 1 } }
+				ROOT = { change_variable = { which = num_of_provinces_ceded_to_autonomous_dominion_east_indies value = 1 } }
 				random_country = {
 					limit = {
 						is_subject_of = ROOT
@@ -343,7 +343,7 @@ country_event = {
 					is_in_capital_area = no
 					is_city = yes
 				}
-				ROOT = { change_variable = { which = num_of_provinces_ceded_to_autonomous_dominion_indonesia value = 1 } }
+				ROOT = { change_variable = { which = num_of_provinces_ceded_to_autonomous_dominion_east_indies value = 1 } }
 				random_country = {
 					limit = {
 						is_subject_of = ROOT

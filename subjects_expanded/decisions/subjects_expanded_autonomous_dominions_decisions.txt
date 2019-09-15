@@ -121,18 +121,23 @@ country_decisions = {
 			OR = {
 				trade_company_west_india = {
 					owned_by = ROOT
+					is_city = yes
 				}
 				trade_company_deccan = {
 					owned_by = ROOT
+					is_city = yes
 				}
 				trade_company_east_india = {
 					owned_by = ROOT
+					is_city = yes
 				}
 				trade_company_coromandel = {
 					owned_by = ROOT
+					is_city = yes
 				}
 				trade_company_north_india = {
 					owned_by = ROOT
+					is_city = yes
 				}
 			}
 		}
@@ -154,6 +159,7 @@ country_decisions = {
 					trade_company_west_india = {
 						limit = {
 							owned_by = ROOT
+							is_city = yes
 						}
 						if = {
 							limit = {
@@ -167,6 +173,7 @@ country_decisions = {
 					trade_company_deccan = {
 						limit = {
 							owned_by = ROOT
+							is_city = yes
 						}
 						if = {
 							limit = {
@@ -181,6 +188,7 @@ country_decisions = {
 					trade_company_east_india = {
 						limit = {
 							owned_by = ROOT
+							is_city = yes
 						}
 						if = {
 							limit = {
@@ -194,6 +202,7 @@ country_decisions = {
 					trade_company_coromandel = {
 						limit = {
 							owned_by = ROOT
+							is_city = yes
 						}
 						if = {
 							limit = {
@@ -207,6 +216,7 @@ country_decisions = {
 					trade_company_north_india = {
 						limit = {
 							owned_by = ROOT
+							is_city = yes
 						}
 						if = {
 							limit = {
@@ -301,6 +311,7 @@ country_decisions = {
 					trade_company_west_india = {
 						limit = {
 							owned_by = ROOT
+							is_city = yes
 						}
 						if = {
 							limit = {
@@ -314,6 +325,7 @@ country_decisions = {
 					trade_company_deccan = {
 						limit = {
 							owned_by = ROOT
+							is_city = yes
 						}
 						if = {
 							limit = {
@@ -328,6 +340,7 @@ country_decisions = {
 					trade_company_east_india = {
 						limit = {
 							owned_by = ROOT
+							is_city = yes
 						}
 						if = {
 							limit = {
@@ -341,6 +354,7 @@ country_decisions = {
 					trade_company_coromandel = {
 						limit = {
 							owned_by = ROOT
+							is_city = yes
 						}
 						if = {
 							limit = {
@@ -354,6 +368,7 @@ country_decisions = {
 					trade_company_north_india = {
 						limit = {
 							owned_by = ROOT
+							is_city = yes
 						}
 						if = {
 							limit = {
@@ -450,6 +465,7 @@ country_decisions = {
 					trade_company_west_india = {
 						limit = {
 							owned_by = ROOT
+							is_city = yes
 						}
 						if = {
 							limit = {
@@ -463,6 +479,7 @@ country_decisions = {
 					trade_company_deccan = {
 						limit = {
 							owned_by = ROOT
+							is_city = yes
 						}
 						if = {
 							limit = {
@@ -477,6 +494,7 @@ country_decisions = {
 					trade_company_east_india = {
 						limit = {
 							owned_by = ROOT
+							is_city = yes
 						}
 						if = {
 							limit = {
@@ -490,6 +508,7 @@ country_decisions = {
 					trade_company_coromandel = {
 						limit = {
 							owned_by = ROOT
+							is_city = yes
 						}
 						if = {
 							limit = {
@@ -503,6 +522,7 @@ country_decisions = {
 					trade_company_north_india = {
 						limit = {
 							owned_by = ROOT
+							is_city = yes
 						}
 						if = {
 							limit = {
@@ -599,6 +619,7 @@ country_decisions = {
 					trade_company_west_india = {
 						limit = {
 							owned_by = ROOT
+							is_city = yes
 						}
 						if = {
 							limit = {
@@ -612,6 +633,7 @@ country_decisions = {
 					trade_company_deccan = {
 						limit = {
 							owned_by = ROOT
+							is_city = yes
 						}
 						if = {
 							limit = {
@@ -626,6 +648,7 @@ country_decisions = {
 					trade_company_east_india = {
 						limit = {
 							owned_by = ROOT
+							is_city = yes
 						}
 						if = {
 							limit = {
@@ -639,6 +662,7 @@ country_decisions = {
 					trade_company_coromandel = {
 						limit = {
 							owned_by = ROOT
+							is_city = yes
 						}
 						if = {
 							limit = {
@@ -652,6 +676,7 @@ country_decisions = {
 					trade_company_north_india = {
 						limit = {
 							owned_by = ROOT
+							is_city = yes
 						}
 						if = {
 							limit = {
@@ -745,6 +770,7 @@ country_decisions = {
 					trade_company_west_india = {
 						limit = {
 							owned_by = ROOT
+							is_city = yes
 						}
 						if = {
 							limit = {
@@ -758,6 +784,7 @@ country_decisions = {
 					trade_company_deccan = {
 						limit = {
 							owned_by = ROOT
+							is_city = yes
 						}
 						if = {
 							limit = {
@@ -772,6 +799,7 @@ country_decisions = {
 					trade_company_east_india = {
 						limit = {
 							owned_by = ROOT
+							is_city = yes
 						}
 						if = {
 							limit = {
@@ -785,6 +813,7 @@ country_decisions = {
 					trade_company_coromandel = {
 						limit = {
 							owned_by = ROOT
+							is_city = yes
 						}
 						if = {
 							limit = {
@@ -798,6 +827,7 @@ country_decisions = {
 					trade_company_north_india = {
 						limit = {
 							owned_by = ROOT
+							is_city = yes
 						}
 						if = {
 							limit = {
@@ -888,6 +918,7 @@ country_decisions = {
 					trade_company_west_india = {
 						limit = {
 							owned_by = ROOT
+							is_city = yes
 						}
 						if = {
 							limit = {
@@ -901,6 +932,7 @@ country_decisions = {
 					trade_company_deccan = {
 						limit = {
 							owned_by = ROOT
+							is_city = yes
 						}
 						if = {
 							limit = {
@@ -915,6 +947,7 @@ country_decisions = {
 					trade_company_east_india = {
 						limit = {
 							owned_by = ROOT
+							is_city = yes
 						}
 						if = {
 							limit = {
@@ -928,6 +961,7 @@ country_decisions = {
 					trade_company_coromandel = {
 						limit = {
 							owned_by = ROOT
+							is_city = yes
 						}
 						if = {
 							limit = {
@@ -941,6 +975,7 @@ country_decisions = {
 					trade_company_north_india = {
 						limit = {
 							owned_by = ROOT
+							is_city = yes
 						}
 						if = {
 							limit = {
@@ -1030,6 +1065,7 @@ country_decisions = {
 					trade_company_west_india = {
 						limit = {
 							owned_by = ROOT
+							is_city = yes
 						}
 						if = {
 							limit = {
@@ -1043,6 +1079,7 @@ country_decisions = {
 					trade_company_deccan = {
 						limit = {
 							owned_by = ROOT
+							is_city = yes
 						}
 						if = {
 							limit = {
@@ -1057,6 +1094,7 @@ country_decisions = {
 					trade_company_east_india = {
 						limit = {
 							owned_by = ROOT
+							is_city = yes
 						}
 						if = {
 							limit = {
@@ -1070,6 +1108,7 @@ country_decisions = {
 					trade_company_coromandel = {
 						limit = {
 							owned_by = ROOT
+							is_city = yes
 						}
 						if = {
 							limit = {
@@ -1083,6 +1122,7 @@ country_decisions = {
 					trade_company_north_india = {
 						limit = {
 							owned_by = ROOT
+							is_city = yes
 						}
 						if = {
 							limit = {
@@ -1172,6 +1212,7 @@ country_decisions = {
 					trade_company_west_india = {
 						limit = {
 							owned_by = ROOT
+							is_city = yes
 						}
 						if = {
 							limit = {
@@ -1185,6 +1226,7 @@ country_decisions = {
 					trade_company_deccan = {
 						limit = {
 							owned_by = ROOT
+							is_city = yes
 						}
 						if = {
 							limit = {
@@ -1199,6 +1241,7 @@ country_decisions = {
 					trade_company_east_india = {
 						limit = {
 							owned_by = ROOT
+							is_city = yes
 						}
 						if = {
 							limit = {
@@ -1212,6 +1255,7 @@ country_decisions = {
 					trade_company_coromandel = {
 						limit = {
 							owned_by = ROOT
+							is_city = yes
 						}
 						if = {
 							limit = {
@@ -1225,6 +1269,7 @@ country_decisions = {
 					trade_company_north_india = {
 						limit = {
 							owned_by = ROOT
+							is_city = yes
 						}
 						if = {
 							limit = {
@@ -1314,6 +1359,7 @@ country_decisions = {
 					trade_company_west_india = {
 						limit = {
 							owned_by = ROOT
+							is_city = yes
 						}
 						if = {
 							limit = {
@@ -1327,6 +1373,7 @@ country_decisions = {
 					trade_company_deccan = {
 						limit = {
 							owned_by = ROOT
+							is_city = yes
 						}
 						if = {
 							limit = {
@@ -1340,6 +1387,7 @@ country_decisions = {
 					trade_company_east_india = {
 						limit = {
 							owned_by = ROOT
+							is_city = yes
 						}
 						if = {
 							limit = {
@@ -1353,6 +1401,7 @@ country_decisions = {
 					trade_company_coromandel = {
 						limit = {
 							owned_by = ROOT
+							is_city = yes
 						}
 						if = {
 							limit = {
@@ -1366,6 +1415,7 @@ country_decisions = {
 					trade_company_north_india = {
 						limit = {
 							owned_by = ROOT
+							is_city = yes
 						}
 						if = {
 							limit = {
@@ -1509,26 +1559,31 @@ country_decisions = {
 					trade_company_west_india = {
 						type = all
 						owned_by = ROOT
+						is_city = yes
 						is_state = yes
 					}
 					trade_company_deccan = {
 						type = all
 						owned_by = ROOT
+						is_city = yes
 						is_state = yes
 					}
 					trade_company_east_india = {
 						type = all
 						owned_by = ROOT
+						is_city = yes
 						is_state = yes
 					}
 					trade_company_coromandel = {
 						type = all
 						owned_by = ROOT
+						is_city = yes
 						is_state = yes
 					}
 					trade_company_north_india = {
 						type = all
 						owned_by = ROOT
+						is_city = yes
 						is_state = yes
 					}
 				}
@@ -1677,9 +1732,11 @@ country_decisions = {
 			OR = {
 				trade_company_indonesia = {
 					owned_by = ROOT
+					is_city = yes
 				}
 				trade_company_moluccas = {
 					owned_by = ROOT
+					is_city = yes
 				}
 			}
 		}
@@ -1701,6 +1758,7 @@ country_decisions = {
 					trade_company_indonesia = {
 						limit = {
 							owned_by = ROOT
+							is_city = yes
 						}
 						if = {
 							limit = {
@@ -1714,6 +1772,7 @@ country_decisions = {
 					trade_company_moluccas = {
 						limit = {
 							owned_by = ROOT
+							is_city = yes
 						}
 						if = {
 							limit = {
@@ -1798,6 +1857,7 @@ country_decisions = {
 					trade_company_indonesia = {
 						limit = {
 							owned_by = ROOT
+							is_city = yes
 						}
 						if = {
 							limit = {
@@ -1811,6 +1871,7 @@ country_decisions = {
 					trade_company_moluccas = {
 						limit = {
 							owned_by = ROOT
+							is_city = yes
 						}
 						if = {
 							limit = {
@@ -1889,6 +1950,7 @@ country_decisions = {
 					trade_company_indonesia = {
 						limit = {
 							owned_by = ROOT
+							is_city = yes
 						}
 						if = {
 							limit = {
@@ -1902,6 +1964,7 @@ country_decisions = {
 					trade_company_moluccas = {
 						limit = {
 							owned_by = ROOT
+							is_city = yes
 						}
 						if = {
 							limit = {
@@ -1980,6 +2043,7 @@ country_decisions = {
 					trade_company_indonesia = {
 						limit = {
 							owned_by = ROOT
+							is_city = yes
 						}
 						if = {
 							limit = {
@@ -1993,6 +2057,7 @@ country_decisions = {
 					trade_company_moluccas = {
 						limit = {
 							owned_by = ROOT
+							is_city = yes
 						}
 						if = {
 							limit = {
@@ -2076,6 +2141,7 @@ country_decisions = {
 					trade_company_indonesia = {
 						limit = {
 							owned_by = ROOT
+							is_city = yes
 						}
 						if = {
 							limit = {
@@ -2089,6 +2155,7 @@ country_decisions = {
 					trade_company_moluccas = {
 						limit = {
 							owned_by = ROOT
+							is_city = yes
 						}
 						if = {
 							limit = {
@@ -2169,6 +2236,7 @@ country_decisions = {
 					trade_company_indonesia = {
 						limit = {
 							owned_by = ROOT
+							is_city = yes
 						}
 						if = {
 							limit = {
@@ -2182,6 +2250,7 @@ country_decisions = {
 					trade_company_moluccas = {
 						limit = {
 							owned_by = ROOT
+							is_city = yes
 						}
 						if = {
 							limit = {
@@ -2258,6 +2327,7 @@ country_decisions = {
 					trade_company_indonesia = {
 						limit = {
 							owned_by = ROOT
+							is_city = yes
 						}
 						if = {
 							limit = {
@@ -2271,6 +2341,7 @@ country_decisions = {
 					trade_company_moluccas = {
 						limit = {
 							owned_by = ROOT
+							is_city = yes
 						}
 						if = {
 							limit = {
@@ -2342,6 +2413,7 @@ country_decisions = {
 					trade_company_indonesia = {
 						limit = {
 							owned_by = ROOT
+							is_city = yes
 						}
 						if = {
 							limit = {
@@ -2355,6 +2427,7 @@ country_decisions = {
 					trade_company_moluccas = {
 						limit = {
 							owned_by = ROOT
+							is_city = yes
 						}
 						if = {
 							limit = {
@@ -2426,6 +2499,7 @@ country_decisions = {
 					trade_company_indonesia = {
 						limit = {
 							owned_by = ROOT
+							is_city = yes
 						}
 						if = {
 							limit = {
@@ -2439,6 +2513,7 @@ country_decisions = {
 					trade_company_moluccas = {
 						limit = {
 							owned_by = ROOT
+							is_city = yes
 						}
 						if = {
 							limit = {
@@ -2562,11 +2637,13 @@ country_decisions = {
 					trade_company_indonesia = {
 						type = all
 						owned_by = ROOT
+						is_city = yes
 						is_state = yes
 					}
 					trade_company_moluccas = {
 						type = all
 						owned_by = ROOT
+						is_city = yes
 						is_state = yes
 					}
 				}
@@ -2682,9 +2759,11 @@ country_decisions = {
 			OR = {
 				trade_company_indochina = {
 					owned_by = ROOT
+					is_city = yes
 				}
 				trade_company_burma = {
 					owned_by = ROOT
+					is_city = yes
 				}
 			}
 		}
@@ -2706,6 +2785,7 @@ country_decisions = {
 					trade_company_indochina = {
 						limit = {
 							owned_by = ROOT
+							is_city = yes
 						}
 						if = {
 							limit = {
@@ -2719,6 +2799,7 @@ country_decisions = {
 					trade_company_burma = {
 						limit = {
 							owned_by = ROOT
+							is_city = yes
 						}
 						if = {
 							limit = {
@@ -2783,6 +2864,7 @@ country_decisions = {
 					trade_company_indochina = {
 						limit = {
 							owned_by = ROOT
+							is_city = yes
 						}
 						if = {
 							limit = {
@@ -2796,6 +2878,7 @@ country_decisions = {
 					trade_company_burma = {
 						limit = {
 							owned_by = ROOT
+							is_city = yes
 						}
 						if = {
 							limit = {
@@ -2862,6 +2945,7 @@ country_decisions = {
 					trade_company_indochina = {
 						limit = {
 							owned_by = ROOT
+							is_city = yes
 						}
 						if = {
 							limit = {
@@ -2875,6 +2959,7 @@ country_decisions = {
 					trade_company_burma = {
 						limit = {
 							owned_by = ROOT
+							is_city = yes
 						}
 						if = {
 							limit = {
@@ -2941,6 +3026,7 @@ country_decisions = {
 					trade_company_indochina = {
 						limit = {
 							owned_by = ROOT
+							is_city = yes
 						}
 						if = {
 							limit = {
@@ -2954,6 +3040,7 @@ country_decisions = {
 					trade_company_burma = {
 						limit = {
 							owned_by = ROOT
+							is_city = yes
 						}
 						if = {
 							limit = {
@@ -3017,6 +3104,7 @@ country_decisions = {
 					trade_company_indochina = {
 						limit = {
 							owned_by = ROOT
+							is_city = yes
 						}
 						if = {
 							limit = {
@@ -3030,6 +3118,7 @@ country_decisions = {
 					trade_company_burma = {
 						limit = {
 							owned_by = ROOT
+							is_city = yes
 						}
 						if = {
 							limit = {
@@ -3090,6 +3179,7 @@ country_decisions = {
 					trade_company_indochina = {
 						limit = {
 							owned_by = ROOT
+							is_city = yes
 						}
 						if = {
 							limit = {
@@ -3103,6 +3193,7 @@ country_decisions = {
 					trade_company_burma = {
 						limit = {
 							owned_by = ROOT
+							is_city = yes
 						}
 						if = {
 							limit = {
@@ -3162,6 +3253,7 @@ country_decisions = {
 					trade_company_indochina = {
 						limit = {
 							owned_by = ROOT
+							is_city = yes
 						}
 						if = {
 							limit = {
@@ -3175,6 +3267,7 @@ country_decisions = {
 					trade_company_burma = {
 						limit = {
 							owned_by = ROOT
+							is_city = yes
 						}
 						if = {
 							limit = {
@@ -3278,11 +3371,13 @@ country_decisions = {
 					trade_company_indochina = {
 						type = all
 						owned_by = ROOT
+						is_city = yes
 						is_state = yes
 					}
 					trade_company_burma = {
 						type = all
 						owned_by = ROOT
+						is_city = yes
 						is_state = yes
 					}
 				}
@@ -3396,6 +3491,7 @@ country_decisions = {
 			}
 			trade_company_west_africa = {
 				owned_by = ROOT
+				is_city = yes
 			}
 		}
 		effect = {
@@ -3416,6 +3512,7 @@ country_decisions = {
 					trade_company_west_africa = {
 						limit = {
 							owned_by = ROOT
+							is_city = yes
 						}
 						if = {
 							limit = {
@@ -3480,6 +3577,7 @@ country_decisions = {
 					trade_company_west_africa = {
 						limit = {
 							owned_by = ROOT
+							is_city = yes
 						}
 						if = {
 							limit = {
@@ -3546,6 +3644,7 @@ country_decisions = {
 					trade_company_west_africa = {
 						limit = {
 							owned_by = ROOT
+							is_city = yes
 						}
 						if = {
 							limit = {
@@ -3612,6 +3711,7 @@ country_decisions = {
 					trade_company_west_africa = {
 						limit = {
 							owned_by = ROOT
+							is_city = yes
 						}
 						if = {
 							limit = {
@@ -3675,6 +3775,7 @@ country_decisions = {
 					trade_company_west_africa = {
 						limit = {
 							owned_by = ROOT
+							is_city = yes
 						}
 						if = {
 							limit = {
@@ -3735,6 +3836,7 @@ country_decisions = {
 					trade_company_west_africa = {
 						limit = {
 							owned_by = ROOT
+							is_city = yes
 						}
 						if = {
 							limit = {
@@ -3794,6 +3896,7 @@ country_decisions = {
 					trade_company_west_africa = {
 						limit = {
 							owned_by = ROOT
+							is_city = yes
 						}
 						if = {
 							limit = {
@@ -3897,6 +4000,7 @@ country_decisions = {
 				trade_company_west_africa = {
 					type = all
 					owned_by = ROOT
+					is_city = yes
 					is_state = yes
 				}
 			}
@@ -4009,6 +4113,7 @@ country_decisions = {
 			}
 			trade_company_south_africa = {
 				owned_by = ROOT
+				is_city = yes
 			}
 		}
 		effect = {
@@ -4029,6 +4134,7 @@ country_decisions = {
 					trade_company_south_africa = {
 						limit = {
 							owned_by = ROOT
+							is_city = yes
 						}
 						if = {
 							limit = {
@@ -4093,6 +4199,7 @@ country_decisions = {
 					trade_company_south_africa = {
 						limit = {
 							owned_by = ROOT
+							is_city = yes
 						}
 						if = {
 							limit = {
@@ -4159,6 +4266,7 @@ country_decisions = {
 					trade_company_south_africa = {
 						limit = {
 							owned_by = ROOT
+							is_city = yes
 						}
 						if = {
 							limit = {
@@ -4225,6 +4333,7 @@ country_decisions = {
 					trade_company_south_africa = {
 						limit = {
 							owned_by = ROOT
+							is_city = yes
 						}
 						if = {
 							limit = {
@@ -4288,6 +4397,7 @@ country_decisions = {
 					trade_company_south_africa = {
 						limit = {
 							owned_by = ROOT
+							is_city = yes
 						}
 						if = {
 							limit = {
@@ -4348,6 +4458,7 @@ country_decisions = {
 					trade_company_south_africa = {
 						limit = {
 							owned_by = ROOT
+							is_city = yes
 						}
 						if = {
 							limit = {
@@ -4407,6 +4518,7 @@ country_decisions = {
 					trade_company_south_africa = {
 						limit = {
 							owned_by = ROOT
+							is_city = yes
 						}
 						if = {
 							limit = {
@@ -4506,6 +4618,7 @@ country_decisions = {
 				trade_company_south_africa = {
 					type = all
 					owned_by = ROOT
+					is_city = yes
 					is_state = yes
 				}
 			}
@@ -4618,6 +4731,7 @@ country_decisions = {
 			}
 			trade_company_east_africa = {
 				owned_by = ROOT
+				is_city = yes
 			}
 		}
 		effect = {
@@ -4638,6 +4752,7 @@ country_decisions = {
 					trade_company_east_africa = {
 						limit = {
 							owned_by = ROOT
+							is_city = yes
 						}
 						if = {
 							limit = {
@@ -4702,6 +4817,7 @@ country_decisions = {
 					trade_company_east_africa = {
 						limit = {
 							owned_by = ROOT
+							is_city = yes
 						}
 						if = {
 							limit = {
@@ -4768,6 +4884,7 @@ country_decisions = {
 					trade_company_east_africa = {
 						limit = {
 							owned_by = ROOT
+							is_city = yes
 						}
 						if = {
 							limit = {
@@ -4834,6 +4951,7 @@ country_decisions = {
 					trade_company_east_africa = {
 						limit = {
 							owned_by = ROOT
+							is_city = yes
 						}
 						if = {
 							limit = {
@@ -4897,6 +5015,7 @@ country_decisions = {
 					trade_company_east_africa = {
 						limit = {
 							owned_by = ROOT
+							is_city = yes
 						}
 						if = {
 							limit = {
@@ -4957,6 +5076,7 @@ country_decisions = {
 					trade_company_east_africa = {
 						limit = {
 							owned_by = ROOT
+							is_city = yes
 						}
 						if = {
 							limit = {
@@ -5016,6 +5136,7 @@ country_decisions = {
 					trade_company_east_africa = {
 						limit = {
 							owned_by = ROOT
+							is_city = yes
 						}
 						if = {
 							limit = {
@@ -5115,6 +5236,7 @@ country_decisions = {
 				trade_company_east_africa = {
 					type = all
 					owned_by = ROOT
+					is_city = yes
 					is_state = yes
 				}
 			}
@@ -5254,6 +5376,7 @@ country_decisions = {
 			}
 			trade_company_philippines = {
 				owned_by = ROOT
+				is_city = yes
 			}
 		}
 		effect = {
@@ -5274,6 +5397,7 @@ country_decisions = {
 					trade_company_philippines = {
 						limit = {
 							owned_by = ROOT
+							is_city = yes
 						}
 						if = {
 							limit = {
@@ -5344,6 +5468,7 @@ country_decisions = {
 					trade_company_philippines = {
 						limit = {
 							owned_by = ROOT
+							is_city = yes
 						}
 						if = {
 							limit = {
@@ -5424,6 +5549,7 @@ country_decisions = {
 					trade_company_philippines = {
 						limit = {
 							owned_by = ROOT
+							is_city = yes
 						}
 						if = {
 							limit = {
@@ -5496,6 +5622,7 @@ country_decisions = {
 					trade_company_philippines = {
 						limit = {
 							owned_by = ROOT
+							is_city = yes
 						}
 						if = {
 							limit = {
@@ -5573,6 +5700,7 @@ country_decisions = {
 					trade_company_philippines = {
 						limit = {
 							owned_by = ROOT
+							is_city = yes
 						}
 						if = {
 							limit = {
@@ -5653,6 +5781,7 @@ country_decisions = {
 					trade_company_philippines = {
 						limit = {
 							owned_by = ROOT
+							is_city = yes
 						}
 						if = {
 							limit = {
@@ -5723,6 +5852,7 @@ country_decisions = {
 					trade_company_philippines = {
 						limit = {
 							owned_by = ROOT
+							is_city = yes
 						}
 						if = {
 							limit = {
@@ -5788,6 +5918,7 @@ country_decisions = {
 					trade_company_philippines = {
 						limit = {
 							owned_by = ROOT
+							is_city = yes
 						}
 						if = {
 							limit = {
@@ -5853,6 +5984,7 @@ country_decisions = {
 					trade_company_philippines = {
 						limit = {
 							owned_by = ROOT
+							is_city = yes
 						}
 						if = {
 							limit = {
@@ -5965,6 +6097,7 @@ country_decisions = {
 				trade_company_philippines = {
 					type = all
 					owned_by = ROOT
+					is_city = yes
 					is_state = yes
 				}
 			}

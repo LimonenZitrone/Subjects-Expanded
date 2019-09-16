@@ -825,11 +825,17 @@ trade_outpost_modifier = {
 	global_trade_goods_size_modifier = 1
 	trade_steering = 0.25
 	trade_efficiency = 0.25
+	interest = -3
+	inflation_reduction = 0.05
 }
 
 improved_trade_outpost_modifier = {
 	development_cost = -0.1
 	build_cost = -0.1
+}
+
+trade_outpost_bankrupt_modifier = {
+	liberty_desire = 100
 }
 
 trade_outpost_overlord_modifier = {

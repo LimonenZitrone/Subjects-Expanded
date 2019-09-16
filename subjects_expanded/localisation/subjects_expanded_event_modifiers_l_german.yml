@@ -192,6 +192,7 @@
  
  trade_outpost_modifier: "Handelsaußenposten"
  improved_trade_outpost_modifier: "Handelsaußenposten-Infrastruktur verbessert"
+ trade_outpost_bankrupt_modifier: "Handelsaußenposten ist bankrott"
  trade_outpost_overlord_modifier: "Besitzt Handelsaußenposten"
  improved_trade_outpost_overlord_modifier: "Handelsaußenposten-Infrastruktur verbessert"
  

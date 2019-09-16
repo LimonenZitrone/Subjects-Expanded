@@ -620,7 +620,7 @@ If a subject gives an additional merchant, the bonuses it gives to its overlord 
 [*] Trade Outposts can be established diplomatically and by war
 [*] Trade Outposts can be released via decision
 [*] Trade Outposts don't have a max government rank
-[*] Trade Outposts gain a bonus on province trade power, produced trade goods, trade steering and trade efficiency
+[*] Trade Outposts gain a bonus on province trade power, produced trade goods, trade steering, trade efficiency, interest and inflation reduction
 [*] Trade Outposts give their overlord a bonus on center of trade upgrade cost, foreign trade power and trade company investment cost
 [*] Trade Outposts give their overlord an additional merchant
 [*] having at least one Trade Outpost grants +35 trade power in the Trade Outposts home trade node

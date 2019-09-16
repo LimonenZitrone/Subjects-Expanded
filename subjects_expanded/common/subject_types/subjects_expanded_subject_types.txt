@@ -3283,7 +3283,7 @@ trade_outpost = {
 	cities_required_for_bonuses = 1
 
 	liberty_desire_development_ratio = 0.5
-	pays_overlord = 3.0
+	pays_overlord = 2.5
 
 	relative_power_class = 4
 	diplomacy_view_class = 1
@@ -3317,6 +3317,12 @@ trade_outpost = {
 	modifier_subject = clear
 	modifier_subject = {
 		modifier = trade_outpost_modifier
+	}
+	modifier_subject = {
+		trigger = {
+			is_bankrupt = yes
+		}
+		modifier = trade_outpost_bankrupt_modifier
 	}
 	
 	modifier_overlord = clear

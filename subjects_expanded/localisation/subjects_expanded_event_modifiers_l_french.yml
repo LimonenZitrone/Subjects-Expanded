@@ -192,6 +192,7 @@
  
  trade_outpost_modifier: "Trade Outpost"
  improved_trade_outpost_modifier: "Improved Trade Outpost Infrastructure"
+ trade_outpost_bankrupt_modifier: "Trade Outpost is bankrupt"
  trade_outpost_overlord_modifier: "Has Trade Outposts"
  improved_trade_outpost_overlord_modifier: "Improved Trade Outpost Infrastructure"
  

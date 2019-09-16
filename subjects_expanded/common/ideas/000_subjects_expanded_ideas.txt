@@ -15,7 +15,8 @@ se_dominion_ideas = {
     free = yes
 	
     se_dominion_ideas_1 = {
-        development_cost = -0.10
+		build_cost = -0.10
+		build_time = -0.10
     }
     se_dominion_ideas_2 = {
         global_unrest = -1

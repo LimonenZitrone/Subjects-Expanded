@@ -66,6 +66,7 @@ country_event = {
 			count_num_of_subjects_of_type = { type = persian_satrapy }
 			count_num_of_subjects_of_type = { type = naval_march }
 			count_num_of_subjects_of_type = { type = trade_outpost }
+			count_num_of_subjects_of_type = { type = integrated_personal_union }
 		}
 	}
 	
@@ -243,6 +244,14 @@ country_event = {
 		ai_chance = { factor = 100 }
 		
 		display_subjects_of_type = { type = trade_outpost }
+	}
+	
+	option = {
+		name = subjects_expanded_events2.EVTOPT23
+		
+		ai_chance = { factor = 100 }
+		
+		display_subjects_of_type = { type = integrated_personal_union }
 	}
 }
 

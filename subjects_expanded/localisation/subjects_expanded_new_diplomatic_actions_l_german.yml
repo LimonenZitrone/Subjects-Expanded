@@ -280,6 +280,19 @@
  cancel_trade_outpost_tooltip: "Beedet die Vasallisierung von §Y[From.GetName]§! und entlasst sie in die Freiheit.\n"
  
  
+ establish_integrated_personal_union_title: "Integrierte Personalunion ernennen"
+ establish_integrated_personal_union_desc: "Ernennt Eure Personalunion [From.GetName] zu einer §YIntegrierten Personalunion§!. \n[integrated_personal_union_desc]"
+ establish_integrated_personal_union_tooltip: "Ernennt Eure Personalunion [From.GetName] zu einer §YIntegrierten Personalunion§!.\n"
+ 
+ return_integrated_personal_union_to_personal_union_title: "Zu Personalunion degradieren"
+ return_integrated_personal_union_to_personal_union_desc: "Beendet den Status der Integrierten Personalunion, den §Y[From.GetName]§! derzeit besitzt, und macht sie zu einer Personalunion. Dies wird ihre Meinung über uns um §R-100§! verschlechtern und ihr Freiheitsstreben um §R+25%§! ändern. Außerdem verlieren wir §R-10§! Prestige."
+ return_integrated_personal_union_to_personal_union_tooltip: "Macht §Y[From.GetName]§! wieder zu einer Personalunion.\n"
+ 
+ cancel_integrated_personal_union_title: "Integrierte Personalunion entlassen"
+ cancel_integrated_personal_union_desc: "Beendet das Abhängigkeitsverhältnis von §Y[From.GetName]§! zu uns. Dies wird ihre Meinung über uns um §R-200§! verschlechtern, sofern sie ein Freiheitsstreben unter §Y50%§! besitzen. Außerdem verlieren wir §R-25§! Prestige und erhalten eine §Y5-jährige§! Waffenruhe mit ihnen."
+ cancel_integrated_personal_union_tooltip: "Beedet die Vasallisierung von §Y[From.GetName]§! und entlasst sie in die Freiheit.\n"
+ 
+ 
  return_subject_to_vassal_title: "Zum Vasall degradieren"
  return_subject_to_vassal_desc: "Beendet den derzeitigen Status von §Y[From.GetName]§! und macht sie zu einem Vasallen. Dies wird ihre Meinung über uns um §R-100§! verschlechtern und ihr Freiheitsstreben um §R+25%§! ändern. Außerdem verlieren wir §R-10§! Prestige[Root.GetIfDemoteToVassalGivesStabHit]."
  return_subject_to_vassal_tooltip: "Macht §Y[From.GetName]§! wieder zu einem Vasall.\n"

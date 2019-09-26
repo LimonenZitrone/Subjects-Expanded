@@ -1,0 +1,99 @@
+namespace = subjects_expanded_integrated_personal_union_events
+
+country_event = {
+	id = subjects_expanded_integrated_personal_union_events.1
+	title = subjects_expanded_integrated_personal_union_events.EVTNAME1
+	desc = subjects_expanded_integrated_personal_union_events.EVTDESC1
+	picture = DIPLOMACY_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+		is_subject_of_type = integrated_personal_union
+		NOT = { liberty_desire = 50 }
+		is_at_war = no
+		overlord = {
+			is_at_war = no
+			ROOT = {
+				years_in_vassalage_under = {
+					who = PREV
+					years = 5
+					all_subject_country = yes
+				}
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 60
+	}
+	
+	immediate = {
+		hidden_effect = {
+			random_list = {
+				10 = {
+					overlord = {
+						country_event = { id = subjects_expanded_integrated_personal_union_events.2 }
+					}
+				}
+				90 = {
+					# no effect
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = subjects_expanded_integrated_personal_union_events1.EVTOPT1
+		
+		ai_chance = { factor = 100 }
+	}
+}
+
+country_event = {
+	id = subjects_expanded_integrated_personal_union_events.2
+	title = subjects_expanded_integrated_personal_union_events.EVTNAME2
+	desc = subjects_expanded_integrated_personal_union_events.EVTDESC2
+	picture = GOOD_WITH_MONARCH_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = subjects_expanded_integrated_personal_union_events2.EVTOPT1
+		
+		ai_chance = { factor = 100 }
+		
+		inherit = FROM
+		add_dip_power = -100
+		hidden_effect = {
+			remove_country_modifier = annexers_legacy
+		}
+		add_country_modifier = {
+			name = annexers_legacy
+			duration = 3650
+		}
+		every_subject_country = {
+			limit = {
+				NOT = { tag = FROM }
+				OR = {
+					is_subject_of_type = personal_union
+					is_subject_of_type = integrated_personal_union
+				}
+			}
+			add_opinion = {
+				who = ROOT
+				modifier = opinion_annex_vassal
+			}
+		}
+	}
+	
+	option = {
+		name = subjects_expanded_integrated_personal_union_events2.EVTOPT2
+		
+		ai_chance = { factor = 0 }
+		
+		FROM = {
+			add_liberty_desire = -25
+		}
+	}
+}

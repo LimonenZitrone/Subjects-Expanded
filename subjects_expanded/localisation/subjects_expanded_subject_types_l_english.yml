@@ -143,3 +143,9 @@
  trade_outpost_long_desc: "A Trade Outpost pays taxes to its overlord, but does not join its overlord's wars and cannot declare its own wars. Furthermore, it does not cost a relation slot and can only own §Y1§! province. If a country has at least one Trade Outpost in a trade node, it gains §G+35§! trade power in that node. A Trade Outpost gains a bonus on province trade power, produced trade goods, trade steering and trade efficiency and gives its overlord a bonus on center of trade upgrade cost, foreign trade power and trade company investment cost. Additionally it gives its overlord §Y1§! merchant. It can only be established by independent nations with their capital in Europe that either have at least §Y1§! colonist or are a §YMerchant Republic§!. A Trade Outpost can be created in §YSouth China§!, §YNorth China§!, §YKorea§!, §YJapan§! and §YLiaoning§! via decision or by asking nations diplomatically or forcing nations by war. Trade Outposts are voluntary subjects, which means they can decide to become independent without an independence war.\n"
  trade_outpost_no_overlord_dow: "You cannot declare war on your own Trade Outpost."
  
+ integrated_personal_union_title: "Integrated Personal Union"
+ integrated_personal_union_title_plural: "Integrated Personal Unions"
+ integrated_personal_union_is_our: "§Y$NAME$§! is the junior partner in an Integrated Personal Union under us."
+ integrated_personal_union_long_desc: "An Integrated Personal Union behaves like a normal personal union, but cannot be integrated and its development affects its liberty desire. However there's a §Y10%§! chance every §Y5 years§! that it is integrated automatically for a cost of §Y100§! £dip£, if its liberty desire is below §Y50%§!.\n"
+ integrated_personal_union_no_overlord_dow: "You cannot declare war on your own Integrated Personal Union."
+ 

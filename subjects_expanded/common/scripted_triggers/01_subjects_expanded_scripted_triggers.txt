@@ -509,6 +509,17 @@ is_possible_subject_of_subject_type_trade_outpost = {
 	# Capital in Trade Range of possible Overlord has to be checked additionally
 }
 
+is_possible_subject_of_subject_type_integrated_personal_union = {
+	# PREVs in THIS scope refer to possible overlord
+	NOT = { is_subject_of_type = integrated_personal_union }
+	is_subject_of = PREV
+	is_subject_of_type = personal_union
+	years_in_union_under = {
+		who = PREV
+		years = 50
+	}
+}
+
 can_create_subject_type = {
 	can_be_overlord = $subject_type$
 	$subject$ = {

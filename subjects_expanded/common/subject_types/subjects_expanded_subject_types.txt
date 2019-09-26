@@ -23,6 +23,7 @@ revolution_subject = { }
 persian_satrapy = { }
 naval_march = { }
 trade_outpost = { }
+integrated_personal_union = { }
 
 # Subjects
 protectorate = {
@@ -3338,4 +3339,32 @@ trade_outpost = {
 
 	overlord_opinion_modifier = is_trade_outpost
 	subject_opinion_modifier = is_trade_outpost
+}
+
+integrated_personal_union = {
+	copy_from = personal_union
+	count = personal_union
+	
+	# Triggers:
+	is_potential_overlord = {
+		is_subject = no
+		personal_union = 1
+	}
+	
+	# Graphics:
+	sprite = GFX_icon_integrated_personal_union
+	diplomacy_overlord_sprite = GFX_diplomacy_leadintegrated_personal_union
+	diplomacy_subject_sprite = GFX_diplomacy_amintegrated_personal_union
+
+	# Properties:
+	can_be_integrated = no
+	
+	liberty_desire_negative_prestige = 1.0
+	liberty_desire_development_ratio = 0.05
+	military_focus = 0.66
+
+	relative_power_class = 1
+	diplomacy_view_class = 1
+
+	restoration_cb = cb_restore_personal_union
 }

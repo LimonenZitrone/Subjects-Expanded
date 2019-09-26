@@ -280,6 +280,19 @@
  cancel_trade_outpost_tooltip: "Cancel the vassalisation of §Y[From.GetName]§! and grant them independence.\n"
  
  
+ establish_integrated_personal_union_title: "Establish Integrated Personal Union"
+ establish_integrated_personal_union_desc: "Make your personal union [From.GetName] to an §YIntegrated Personal Union§!. \n[integrated_personal_union_desc]"
+ establish_integrated_personal_union_tooltip: "Make your personal union [From.GetName] to an §YIntegrated Personal Union§!.\n"
+ 
+ return_integrated_personal_union_to_personal_union_title: "Demote to Personal Union"
+ return_integrated_personal_union_to_personal_union_desc: "Cancel the Integrated Personal Union status of §Y[From.GetName]§! and make them to a personal union. This will decrease their opinion of us by §R-100§! and change their liberty desire by §R+25%§!. We will also lose §R-10§! prestige."
+ return_integrated_personal_union_to_personal_union_tooltip: "Make §Y[From.GetName]§! to a personal union again.\n"
+ 
+ cancel_integrated_personal_union_title: "Release Integrated Personal Union"
+ cancel_integrated_personal_union_desc: "Cancel the dependency of §Y[From.GetName]§! of us. This will decrease their opinion about us by §R-200§!, if their liberty desire is below §Y50%§!. We will also lose §R-25§! prestige and gain a truce with them for §Y5 years§!."
+ cancel_integrated_personal_union_tooltip: "Cancel the vassalisation of §Y[From.GetName]§! and grant them independence.\n"
+ 
+ 
  return_subject_to_vassal_title: "Demote to Vassal"
  return_subject_to_vassal_desc: "Cancel the current status §Y[From.GetName]§! has and make them to a vassal. This will decrease their opinion of us by §R-100§! and change their liberty desire by §R+25%§!. We will also lose §R-10§! prestige[Root.GetIfDemoteToVassalGivesStabHit]."
  return_subject_to_vassal_tooltip: "Make §Y[From.GetName]§! to a vassal again.\n"

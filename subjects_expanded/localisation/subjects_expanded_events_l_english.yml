@@ -23,6 +23,7 @@
  subjects_expanded_events2.EVTOPT20: "There currently are §G[REB.num_of_subjects_of_type_persian_satrapy.GetValue]§! §YSatrapies§! in the world."
  subjects_expanded_events2.EVTOPT21: "There currently are §G[REB.num_of_subjects_of_type_naval_march.GetValue]§! §YNaval Marches§! in the world."
  subjects_expanded_events2.EVTOPT22: "There currently are §G[REB.num_of_subjects_of_type_trade_outpost.GetValue]§! §YTrade Outposts§! in the world."
+ subjects_expanded_events2.EVTOPT23: "There currently are §G[REB.num_of_subjects_of_type_integrated_personal_union.GetValue]§! §YIntegrated Personal Unions§! in the world."
  
  subjects_expanded_events.EVTNAME3: "Idea Mods?"
  subjects_expanded_events.EVTDESC3: "Spawning Dominions via decisions sets their idea groups depending on the ones you chose. If you are using a mod that alters the vanilla idea groups in any way, this might §Rcrash§! the game. So select the matching option below to prevent that from happening!"
@@ -192,4 +193,9 @@
  subjects_expanded_trade_outpost_events.EVTNAME4: "[From.GetName] becomes Independent"
  subjects_expanded_trade_outpost_events.EVTDESC4: "Our Trade Outpost [From.GetName] has decided to no longer be our subjects. They become independent."
  subjects_expanded_trade_outpost_events4.EVTOPT1: "What?!"
+ 
+ subjects_expanded_integrated_personal_union_events.EVTNAME2: "Integration of [From.GetName]"
+ subjects_expanded_integrated_personal_union_events.EVTDESC2: "Our Integrated Personal Union [From.GetName] was more and more integrated into our nation over time. Now the time has finally come that the [From.GetAdjective] people also agree to a formal integration."
+ subjects_expanded_integrated_personal_union_events2.EVTOPT1: "That's wonderful, we should integrate §Y[From.GetName]§! now!"
+ subjects_expanded_integrated_personal_union_events2.EVTOPT2: "Great to hear, but perhaps we should still wait with the formal integration."
  

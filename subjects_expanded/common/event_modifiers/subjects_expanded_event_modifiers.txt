@@ -74,7 +74,7 @@ puppet_state_overlord_has_parliament_modifier = {
 	liberty_desire = 10
 }
 
-# Subject Type Autonomous Dominion:
+# Subject Type: Dominion
 dominion_trade_company_modifier = {
 	global_unrest = -1
 	global_institution_spread = 0.05
@@ -292,7 +292,7 @@ dominion_overlord_trade_company_modifier_50 = {
 	naval_forcelimit = 0.25
 }
 
-# Subject Type Autonomous Dominion:
+# Subject Type: Autonomous Dominion
 autonomous_dominion_trade_company_modifier = {
 	global_unrest = -1
 	global_institution_spread = 0.05

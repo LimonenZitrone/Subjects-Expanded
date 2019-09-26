@@ -23,6 +23,7 @@
  subjects_expanded_events2.EVTOPT20: "Derzeit gibt es §G[REB.num_of_subjects_of_type_persian_satrapy.GetValue]§! §YSatrapien§! auf der Welt."
  subjects_expanded_events2.EVTOPT21: "Derzeit gibt es §G[REB.num_of_subjects_of_type_naval_march.GetValue]§! §YMarine-Marken§! auf der Welt."
  subjects_expanded_events2.EVTOPT22: "Derzeit gibt es §G[REB.num_of_subjects_of_type_trade_outpost.GetValue]§! §YHandelsaußenposten§! auf der Welt."
+ subjects_expanded_events2.EVTOPT23: "Derzeit gibt es §G[REB.num_of_subjects_of_type_integrated_personal_union.GetValue]§! §YIntegrierte Personalunionen§! auf der Welt."
  
  subjects_expanded_events.EVTNAME3: "Ideen-Mods?"
  subjects_expanded_events.EVTDESC3: "Herrschaftsgebiete per Entscheidung zu errichten gibt ihnen Ideengruppen abhängig von Euren. Falls Ihr eine Mod benutzt, die die Vanilla-Ideengruppen verändert, könnte dies das Spiel zum §RAbsturz§! bringen. Deshalb solltet Ihr hier die passende Option auswählen, um dies zu verhindern!"
@@ -192,4 +193,9 @@
  subjects_expanded_trade_outpost_events.EVTNAME4: "[From.GetName] wird unabhängig"
  subjects_expanded_trade_outpost_events.EVTDESC4: "Unser Handelsaußenposten [From.GetName] hat beschlossen, nicht länger unser Untertan sein zu wollen. Sie werden unabhängig."
  subjects_expanded_trade_outpost_events4.EVTOPT1: "Was?!"
+ 
+ subjects_expanded_integrated_personal_union_events.EVTNAME2: "Integration von [From.GetName]"
+ subjects_expanded_integrated_personal_union_events.EVTDESC2: "Unsere Integrierte Personalunion [From.GetName] wurde mit der Zeit mehr und mehr in unsere Nation integriert. Nun ist endlich die Zeit gekommen, in der die [From.GetAdjective]e Bevölkerung einer vollständigen, formellen Integration zustimmen würde."
+ subjects_expanded_integrated_personal_union_events2.EVTOPT1: "Das ist wunderbar, wir sollten §Y[From.GetName]§! nun integrieren!"
+ subjects_expanded_integrated_personal_union_events2.EVTOPT2: "Schön zu hören, aber eventuell sollten wir noch ein wenig mit der formellen Integration warten."
  

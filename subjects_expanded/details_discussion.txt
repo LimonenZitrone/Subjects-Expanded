@@ -629,3 +629,26 @@ If a subject gives an additional merchant, the bonuses it gives to its overlord 
 [*] Trade Outposts can leave the relationship without independence war
 [*] the overlord of Trade Outposts has a subject interaction (diplomatic action) to give the Trade Outpost bonuses on development, development cost and build cost and gain a trade power bonus as well as a bonus on trade company investment cost for 2 years
 [/list]
+
+[h1]Integrated Personal Union[/h1]
+[i]An Integrated Personal Union behaves like a normal personal union, but cannot be integrated and its development affects its liberty desire. However there's a 10% chance every 5 years that it is integrated automatically for a cost of 100 diplomatic power, if its liberty desire is below 50%.[/i]
+
+[b]Conditions (possible overlord):[/b]
+[list]
+[*] is not  a subject
+[*] has at least 1 personal union
+[/list]
+
+[b]Conditions (possible subject):[/b]
+[list]
+[*] is a personal union of the possible overlord
+[*] is a personal union under the possible overlord for at least 50 years
+[/list]
+
+[b]Additional Information:[/b]
+[list]
+[*] Integrated Personal Unions can only be established diplomatically
+[*] Integrated Personal Unions don't have a max government rank
+[*] Integrated Personal Unions gain liberty desire from their total development
+[*] Integrated Personal Unions cannot be annexed or integrated normally, but have a 10% chance to fire an event for their overlord every 5 years to be integrated instantly for 100 diplomatic power
+[/list]

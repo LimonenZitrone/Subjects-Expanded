@@ -182,6 +182,12 @@ defined_text = {
 		}
 		localisation_key = "[trade_outpost]"
 	}
+	text = {
+		trigger = {
+			is_subject_of_type = integrated_personal_union
+		}
+		localisation_key = "[integrated_personal_union]"
+	}
 	
 	text = {
 		trigger = {
@@ -850,5 +856,27 @@ defined_text = {
 			always = yes
 		}
 		localisation_key = trade_outpost_long_desc
+	}
+}
+
+defined_text = {
+	name = integrated_personal_union
+	
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = integrated_personal_union_title
+	}
+}
+
+defined_text = {
+	name = integrated_personal_union_desc
+	
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = integrated_personal_union_long_desc
 	}
 }

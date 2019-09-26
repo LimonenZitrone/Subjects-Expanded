@@ -1,0 +1,202 @@
+establish_integrated_personal_union = {
+	category = influence
+
+	require_acceptance = no
+	
+	is_visible = {
+		can_create_subject_type = {
+			subject = FROM
+			subject_type = integrated_personal_union
+		}
+	}
+	
+	is_allowed = {
+		can_create_subject_type = {
+			subject = FROM
+			subject_type = integrated_personal_union
+		}
+		NOT = { truce_with = FROM }
+		is_at_war = no
+		FROM = { is_at_war = no }
+		FROM = { NOT = { liberty_desire = 50 } }
+	}
+	
+	on_accept = {
+		if = {
+			limit = {
+				can_create_subject_type = {
+					subject = FROM
+					subject_type = integrated_personal_union
+				}
+				NOT = { truce_with = FROM }
+				is_at_war = no
+				FROM = { is_at_war = no }
+				FROM = { NOT = { liberty_desire = 50 } }
+			}
+			create_subject = {
+				subject = FROM
+				subject_type = integrated_personal_union
+			}
+		}
+	}
+	
+	ai_will_do = {
+		FROM = {
+			NOT = { has_country_flag = integrated_personal_union_was_made_to_personal_union_again }
+			NOT = { liberty_desire = 40 }
+			total_development = 100
+			NOT = { total_development = 300 }
+			years_in_vassalage_under = {
+				who = ROOT
+				years = 70
+				all_subject_country = yes
+			}
+		}
+	}
+}
+
+return_integrated_personal_union_to_personal_union = {
+	category = influence
+
+	require_acceptance = no
+	
+	is_visible = {
+		FROM = {
+			is_subject_of = ROOT
+			is_subject_of_type = integrated_personal_union
+		}
+	}
+	
+	is_allowed = {
+		hidden_trigger = {
+			FROM = {
+				is_subject_of = ROOT
+				is_subject_of_type = integrated_personal_union
+			}
+		}
+		is_at_war = no
+		FROM = {
+			is_at_war = no
+		}
+		FROM = {
+			years_in_vassalage_under = {
+				who = ROOT
+				years = 10
+				all_subject_country = yes
+			}
+		}
+	}
+	
+	on_accept = {
+		if = {
+			limit = {
+				hidden_trigger = {
+					FROM = {
+						is_subject_of = ROOT
+						is_subject_of_type = integrated_personal_union
+					}
+				}
+				is_at_war = no
+				FROM = {
+					is_at_war = no
+				}
+				FROM = {
+					years_in_vassalage_under = {
+						who = ROOT
+						years = 10
+						all_subject_country = yes
+					}
+				}
+			}
+			FROM = {
+				set_country_flag = integrated_personal_union_was_made_to_personal_union_again
+				add_opinion = {
+					who = ROOT
+					modifier = returned_to_vassal
+				}
+				grant_independence = yes
+			}
+			create_union = FROM
+			add_prestige = -10
+			FROM = {
+				add_liberty_desire = 25
+			}
+		}
+	}
+	
+	ai_will_do = {
+		FROM = {
+			OR = {
+				liberty_desire = 90
+				AND = {
+					liberty_desire = 60
+					has_support_loyalists = yes
+				}
+			}
+			years_in_vassalage_under = {
+				who = ROOT
+				years = 25
+				all_subject_country = yes
+			}
+		}
+	}
+}
+
+cancel_integrated_personal_union = {
+	category = influence
+
+	require_acceptance = no
+	
+	is_visible = {
+		NOT = { has_dlc = "Rights of Man" }
+		FROM = {
+			is_subject_of = ROOT
+			is_subject_of_type = integrated_personal_union
+		}
+	}
+	
+	is_allowed = {
+		hidden_trigger = {
+			NOT = { has_dlc = "Rights of Man" }
+			FROM = {
+				is_subject_of = ROOT
+				is_subject_of_type = integrated_personal_union
+			}
+		}
+		NOT = { truce_with = FROM }
+		prestige = 0
+	}
+	
+	on_accept = {
+		if = {
+			limit = {
+				NOT = { has_dlc = "Rights of Man" }
+				FROM = {
+					is_subject_of = ROOT
+					is_subject_of_type = integrated_personal_union
+				}
+				NOT = { truce_with = FROM }
+				prestige = 0
+			}
+			FROM = {
+				if = {
+					limit = {
+						NOT = { liberty_desire = 50 }
+					}
+					add_opinion = {
+						who = ROOT
+						modifier = vassal_abandoned
+					}
+				}
+				grant_independence = yes
+				add_truce_with = ROOT
+			}
+			add_truce_with = FROM
+			add_prestige = -25
+		}
+	}
+	
+	ai_will_do = {
+		always = no
+	}
+}

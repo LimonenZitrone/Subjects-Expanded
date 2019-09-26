@@ -32,6 +32,7 @@
  IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_persian_satrapy: "Kann zu einer §YSatrapie§! gemacht werden"
  IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_naval_march: "Kann zu einer §YMarine-Mark§! gemacht werden"
  IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_trade_outpost: "Kann zu einem §YHandelsaußenposten§! gemacht werden"
+ IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_integrated_personal_union: "Kann zu einer §YIntegrierten Personalunion§! gemacht werden"
  
  THIS_IS_FORMER_AUTONOMOUS_DOMINION: "Ist ein ehemaliges §YHerrschaftsgebiet§! oder eine ehemalige §YKolonialnation§!"
  
@@ -201,4 +202,6 @@
  display_naval_march_desc_tt: "§g[naval_march_desc]§W"
  display_trade_outpost_title_tt: "§Y[trade_outpost]§!"
  display_trade_outpost_desc_tt: "§g[trade_outpost_desc]§W"
+ display_integrated_personal_union_title_tt: "§Y[integrated_personal_union]§!"
+ display_integrated_personal_union_desc_tt: "§g[integrated_personal_union_desc]§W"
  

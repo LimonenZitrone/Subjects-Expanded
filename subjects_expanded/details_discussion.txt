@@ -631,7 +631,7 @@ If a subject gives an additional merchant, the bonuses it gives to its overlord 
 [/list]
 
 [h1]Integrated Personal Union[/h1]
-[i]An Integrated Personal Union behaves like a normal personal union, but cannot be integrated and its development affects its liberty desire. However there's a 10% chance every 5 years that it is integrated automatically for a cost of 100 diplomatic power, if its liberty desire is below 50%.[/i]
+[i]An Integrated Personal Union behaves like a normal personal union, but cannot be integrated and its development affects its liberty desire. However there's a 5% chance every 10 years that it is integrated automatically for a cost of 100 diplomatic power, if its liberty desire is below 50%.[/i]
 
 [b]Conditions (possible overlord):[/b]
 [list]
@@ -650,5 +650,5 @@ If a subject gives an additional merchant, the bonuses it gives to its overlord 
 [*] Integrated Personal Unions can only be established diplomatically
 [*] Integrated Personal Unions don't have a max government rank
 [*] Integrated Personal Unions gain liberty desire from their total development
-[*] Integrated Personal Unions cannot be annexed or integrated normally, but have a 10% chance to fire an event for their overlord every 5 years to be integrated instantly for 100 diplomatic power
+[*] Integrated Personal Unions cannot be annexed or integrated normally, but have a 5% chance to fire an event for their overlord every 10 years to be integrated instantly for 100 diplomatic power
 [/list]

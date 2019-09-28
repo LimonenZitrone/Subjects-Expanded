@@ -319,6 +319,7 @@ dominion = {
 	cities_required_for_bonuses = 15
 
 	relative_power_class = 0
+	diplomacy_view_class = 2
 	
 	can_fight = {
 		other_overlord = colony
@@ -405,6 +406,7 @@ dominion_tc = {
 	cities_required_for_bonuses = 15
 
 	relative_power_class = 0
+	diplomacy_view_class = 2
 	
 	can_fight = {
 		other_overlord = colony
@@ -936,6 +938,7 @@ autonomous_dominion = {
 	cities_required_for_bonuses = 20
 
 	relative_power_class = 0
+	diplomacy_view_class = 2
 	
 	can_fight = {
 		other_overlord = colony
@@ -1017,6 +1020,7 @@ autonomous_dominion_tc = {
 	cities_required_for_bonuses = 20
 
 	relative_power_class = 0
+	diplomacy_view_class = 2
 	
 	can_fight = {
 		other_overlord = colony
@@ -3360,7 +3364,7 @@ integrated_personal_union = {
 	can_be_integrated = no
 	
 	liberty_desire_negative_prestige = 1.0
-	liberty_desire_development_ratio = 0.05
+	liberty_desire_development_ratio = 0.1
 	military_focus = 0.66
 
 	relative_power_class = 1

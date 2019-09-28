@@ -10,10 +10,7 @@ country_event = {
 	
 	trigger = {
 		is_subject_of_type = integrated_personal_union
-		NOT = { liberty_desire = 50 }
-		is_at_war = no
 		overlord = {
-			is_at_war = no
 			ROOT = {
 				years_in_vassalage_under = {
 					who = PREV
@@ -30,13 +27,18 @@ country_event = {
 	
 	immediate = {
 		hidden_effect = {
-			random_list = {
-				95 = {
-					# No Effects
+			if = {
+				limit = {
+					NOT = { liberty_desire = 50 }
 				}
-				5 = {
-					overlord = {
-						country_event = { id = subjects_expanded_integrated_personal_union_events.2 }
+				random_list = {
+					90 = {
+						# No Effects
+					}
+					10 = {
+						overlord = {
+							country_event = { id = subjects_expanded_integrated_personal_union_events.2 }
+						}
 					}
 				}
 			}

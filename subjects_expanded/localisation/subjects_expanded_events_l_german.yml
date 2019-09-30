@@ -24,6 +24,7 @@
  subjects_expanded_events2.EVTOPT21: "Derzeit gibt es §G[REB.num_of_subjects_of_type_naval_march.GetValue]§! §YMarine-Marken§! auf der Welt."
  subjects_expanded_events2.EVTOPT22: "Derzeit gibt es §G[REB.num_of_subjects_of_type_trade_outpost.GetValue]§! §YHandelsaußenposten§! auf der Welt."
  subjects_expanded_events2.EVTOPT23: "Derzeit gibt es §G[REB.num_of_subjects_of_type_integrated_personal_union.GetValue]§! §YIntegrierte Personalunionen§! auf der Welt."
+ subjects_expanded_events2.EVTOPT24: "Derzeit gibt es §G[REB.num_of_subjects_of_type_brother_kingdom.GetValue]§! §YBruderkönigreiche§! auf der Welt."
  
  subjects_expanded_events.EVTNAME3: "Ideen-Mods?"
  subjects_expanded_events.EVTDESC3: "Herrschaftsgebiete per Entscheidung zu errichten gibt ihnen Ideengruppen abhängig von Euren. Falls Ihr eine Mod benutzt, die die Vanilla-Ideengruppen verändert, könnte dies das Spiel zum §RAbsturz§! bringen. Deshalb solltet Ihr hier die passende Option auswählen, um dies zu verhindern!"
@@ -198,4 +199,14 @@
  subjects_expanded_integrated_personal_union_events.EVTDESC2: "Unsere Integrierte Personalunion [From.GetName] wurde mit der Zeit mehr und mehr in unsere Nation integriert. Nun ist endlich die Zeit gekommen, in der die [From.GetAdjective]e Bevölkerung einer vollständigen, formellen Integration zustimmen würde."
  subjects_expanded_integrated_personal_union_events2.EVTOPT1: "Das ist wunderbar, wir sollten §Y[From.GetName]§! nun integrieren!"
  subjects_expanded_integrated_personal_union_events2.EVTOPT2: "Schön zu hören, aber eventuell sollten wir noch ein wenig mit der formellen Integration warten."
+ 
+ subjects_expanded_brother_kingdom_events.EVTNAME1: "Aufstieg der [invalid_brother_kingdom.Monarch.Dynasty.GetName]"
+ subjects_expanded_brother_kingdom_events.EVTDESC1: "Die Mitglieder unserer Dynastie, die [invalid_brother_kingdom.GetName] regiert haben, haben ihre Macht verloren. Eine rivalisierende Familie hat die Macht übernommen, [invalid_brother_kingdom.Monarch.Dynasty.GetName]. Wir können diese Feindseligkeit in dem Gebiet unseres Bruderkönigreichs nicht tolerieren."
+ subjects_expanded_brother_kingdom_events1.EVTOPT1: "Sie sind die rechtmäßigen Herrscher von §Y[From.GetName]§!. Wir können das Bruderkönigreich nicht länger aufrechterhalten."
+ subjects_expanded_brother_kingdom_events1.EVTOPT2: "Das ist inakzeptabel, stellt die Herrschaft der §Y[Root.Monarch.Dynasty.GetName]§! in §Y[invalid_brother_kingdom.GetName]§! wieder her!"
+ 
+ subjects_expanded_brother_kingdom_events.EVTNAME2: "[From.GetName] erklärt Unabhängigkeit"
+ subjects_expanded_brother_kingdom_events.EVTDESC2: "Unser Bruderkönigreich §Y[From.GetName]§! hat seine Unabhängigkeit erklärt! Wir können dies akzeptieren und ihnen Unabhängigkeit gewähren. Andernfalls wird dies zu einem §RUnabhängigkeitskrieg§! eskalieren."
+ subjects_expanded_brother_kingdom_events2.EVTOPT1: "Sie haben sich ihre Freiheit verdient."
+ subjects_expanded_brother_kingdom_events2.EVTOPT2: "Nur über meine Leiche!"
  

@@ -196,3 +196,10 @@
  trade_outpost_overlord_modifier: "Besitzt Handelsaußenposten"
  improved_trade_outpost_overlord_modifier: "Handelsaußenposten-Infrastruktur verbessert"
  
+ increase_chance_to_integrate_integrated_personal_union_modifier: "Integrationsunterstützung"
+ 
+ brother_kingdom_modifier: "Bruderkönigreich"
+ brother_kingdom_other_religion_modifier: "Folgt nicht dem wahren Glauben"
+ brother_kingdom_other_culture_group_modifier: "Ist nicht in derselben Kulturgruppe"
+ brother_kingdom_overlord_modifier: "Besitzt Bruderkönigreiche"
+ 

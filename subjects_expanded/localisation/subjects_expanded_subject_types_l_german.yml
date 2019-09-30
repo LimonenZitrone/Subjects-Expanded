@@ -149,3 +149,9 @@
  integrated_personal_union_long_desc: "Eine Integrierte Personalunion verhält sich wie eine normale Personalunion, sie kann jedoch nicht integriert werden und ihre Entwicklung beeinflusst ihr Freiheitsstreben. Allerdings besteht eine §Y10%§! Chance alle §Y10 Jahre§!, dass sie automatisch für §Y100§! £dip£ integriert wird, wenn ihr Freiheitsstreben unter §Y50%§! liegt.\n"
  integrated_personal_union_no_overlord_dow: "Ihr könnt Eurer eigenen Integrierten Personalunion nicht den Krieg erklären."
  
+ brother_kingdom_title: "Bruderkönigreich"
+ brother_kingdom_title_plural: "Bruderkönigreiche"
+ brother_kingdom_is_our: "§Y$NAME$§! ist unser Bruderkönigreich."
+ brother_kingdom_long_desc: "Ein Bruderkönigreich muss dieselbe Dynastie wie sein Lehnsherr besitzen und kann nach §Y25 Jahren§! in eine Personalunion umgewandelt werden. Es tritt den Kriegen seines Lehnsherrn bei, ist aber selbst kaum in seinen eigenen diplomatischen Aktionen eingeschränkt. Es erhält einen Bonus auf die Fähigkeiten zunünftiger Herrscher in allen Kategorien und gewährt seinem Lehnsherrn einen Bonus auf Legitimität, Nachfolgerchance und Erholungsgeschwindigkeit der Mannstärke. Ein Bruderkönigreich kann seine Unabhängigkeit diplomatisch erklären, allerdings kann der Lehnsherr dies ablehnen, was zu einem Unabhängigkeitskrieg führt. Es kann nur von unabhängigen Nationen in anderen unabhängigen Ländern oder Vasallen mit derselben herrschenden Dynastie errichtet werden.\n"
+ brother_kingdom_no_overlord_dow: "Ihr könnt Eurem eigenen Bruderkönigreich nicht den Krieg erklären."
+ 

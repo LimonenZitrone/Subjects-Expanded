@@ -285,4 +285,17 @@ spriteTypes = {
 		name = "GFX_diplomacy_amintegrated_personal_union"
 		texturefile = "gfx//interface//icon_diplomacy_amintegrated_personal_union.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_icon_brother_kingdom"
+		texturefile = "gfx/interface/icon_brother_kingdom.dds"
+	}
+	spriteType = {
+		name = "GFX_diplomacy_leadbrother_kingdom"
+		texturefile = "gfx//interface//icon_diplomacy_leadbrother_kingdom.dds"
+	}
+	spriteType = {
+		name = "GFX_diplomacy_ambrother_kingdom"
+		texturefile = "gfx//interface//icon_diplomacy_ambrother_kingdom.dds"
+	}
 }

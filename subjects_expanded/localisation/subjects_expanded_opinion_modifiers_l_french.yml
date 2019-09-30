@@ -77,3 +77,6 @@
  declined_establish_trade_outpost_opinion: "Demand for Trade Outpost declined"
  declined_ask_to_become_trade_outpost: "Offer for Trade Outpost declined"
  
+ is_brother_kingdom: "Brother Kingdom"
+ declined_establish_brother_kingdom_opinion: "Demand for Brother Kingdom declined"
+ 

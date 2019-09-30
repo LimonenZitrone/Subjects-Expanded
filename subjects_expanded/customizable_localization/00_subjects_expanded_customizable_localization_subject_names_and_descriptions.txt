@@ -188,6 +188,12 @@ defined_text = {
 		}
 		localisation_key = "[integrated_personal_union]"
 	}
+	text = {
+		trigger = {
+			is_subject_of_type = brother_kingdom
+		}
+		localisation_key = "[brother_kingdom]"
+	}
 	
 	text = {
 		trigger = {
@@ -878,5 +884,27 @@ defined_text = {
 			always = yes
 		}
 		localisation_key = integrated_personal_union_long_desc
+	}
+}
+
+defined_text = {
+	name = brother_kingdom
+	
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = brother_kingdom_title
+	}
+}
+
+defined_text = {
+	name = brother_kingdom_desc
+	
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = brother_kingdom_long_desc
 	}
 }

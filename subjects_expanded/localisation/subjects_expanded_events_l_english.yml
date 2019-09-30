@@ -24,6 +24,7 @@
  subjects_expanded_events2.EVTOPT21: "There currently are §G[REB.num_of_subjects_of_type_naval_march.GetValue]§! §YNaval Marches§! in the world."
  subjects_expanded_events2.EVTOPT22: "There currently are §G[REB.num_of_subjects_of_type_trade_outpost.GetValue]§! §YTrade Outposts§! in the world."
  subjects_expanded_events2.EVTOPT23: "There currently are §G[REB.num_of_subjects_of_type_integrated_personal_union.GetValue]§! §YIntegrated Personal Unions§! in the world."
+ subjects_expanded_events2.EVTOPT24: "There currently are §G[REB.num_of_subjects_of_type_brother_kingdom.GetValue]§! §YBrother Kingdoms§! in the world."
  
  subjects_expanded_events.EVTNAME3: "Idea Mods?"
  subjects_expanded_events.EVTDESC3: "Spawning Dominions via decisions sets their idea groups depending on the ones you chose. If you are using a mod that alters the vanilla idea groups in any way, this might §Rcrash§! the game. So select the matching option below to prevent that from happening!"
@@ -198,4 +199,14 @@
  subjects_expanded_integrated_personal_union_events.EVTDESC2: "Our Integrated Personal Union [From.GetName] was more and more integrated into our nation over time. Now the time has finally come that the [From.GetAdjective] people also agree to a formal integration."
  subjects_expanded_integrated_personal_union_events2.EVTOPT1: "That's wonderful, we should integrate §Y[From.GetName]§! now!"
  subjects_expanded_integrated_personal_union_events2.EVTOPT2: "Great to hear, but perhaps we should still wait with the formal integration."
+ 
+ subjects_expanded_brother_kingdom_events.EVTNAME1: "[invalid_brother_kingdom.Monarch.Dynasty.GetName] rise to power"
+ subjects_expanded_brother_kingdom_events.EVTDESC1: "The members of our dynasty ruling over [invalid_brother_kingdom.GetName] lost the power. A rival family took over, [invalid_brother_kingdom.Monarch.Dynasty.GetName]. We cannot tolerate this hostileness in our Brother Kingdom's land."
+ subjects_expanded_brother_kingdom_events1.EVTOPT1: "They are the rightful rulers of §Y[From.GetName]§!. We cannot longer keep the Brother Kingdom."
+ subjects_expanded_brother_kingdom_events1.EVTOPT2: "This is not acceptable, reconstitute the §Y[Root.Monarch.Dynasty.GetName]§! rule in §Y[invalid_brother_kingdom.GetName]§!!"
+ 
+ subjects_expanded_brother_kingdom_events.EVTNAME2: "[From.GetName] declares independence"
+ subjects_expanded_brother_kingdom_events.EVTDESC2: "Our Brother Kingdom §Y[From.GetName]§! has declared itself independent! We can accept that and grant them independence. Otherwise this will escalate into an §RIndependence War§!."
+ subjects_expanded_brother_kingdom_events2.EVTOPT1: "They earned their freedom."
+ subjects_expanded_brother_kingdom_events2.EVTOPT2: "Over my dead body!"
  

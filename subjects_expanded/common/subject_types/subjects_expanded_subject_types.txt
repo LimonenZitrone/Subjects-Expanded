@@ -24,6 +24,7 @@ persian_satrapy = { }
 naval_march = { }
 trade_outpost = { }
 integrated_personal_union = { }
+brother_kingdom = { }
 
 # Subjects
 protectorate = {
@@ -95,6 +96,7 @@ protectorate = {
 	# (immediate)
 	siphon_income = yes
 	bestow_gifts = yes
+	seize_territory = yes
 
 	# Modifiers:
 	modifier_subject = clear
@@ -1767,7 +1769,14 @@ fief_subject = {
 	diplomacy_view_class = 1
 	
 	restoration_cb = cb_disloyal_vassal
-
+	
+	can_ally = {
+		same_overlord = brother_kingdom
+	}
+	can_marry = {
+		same_overlord = brother_kingdom
+	}
+	
 	# Subject Interactions:
 	divert_trade = no
 	place_relative_on_throne = yes
@@ -2741,7 +2750,7 @@ integrated_tribe_subject = {
 	liberty_desire_development_ratio = 0.25
 	liberty_desire_same_dynasty = -5.0
 	forcelimit_bonus = 1.0
-	forcelimit_to_overlord = 1.0
+	forcelimit_to_overlord = 0.5
 	
 	relative_power_class = 2
 	diplomacy_view_class = 1
@@ -2860,7 +2869,7 @@ dutch_province_subject = {
 	liberty_desire_development_ratio = 0.33
 	pays_overlord = 1.0
 	forcelimit_bonus = 0.5
-	forcelimit_to_overlord = 1.0
+	forcelimit_to_overlord = 0.25
 	
 	relative_power_class = 1
 	diplomacy_view_class = 1
@@ -3108,7 +3117,7 @@ persian_satrapy = {
 	liberty_desire_development_ratio = 0.25
 	liberty_desire_same_dynasty = -10.0
 	forcelimit_bonus = 1.0
-	forcelimit_to_overlord = 1.0
+	forcelimit_to_overlord = 0.2
 	
 	relative_power_class = 4
 	diplomacy_view_class = 1
@@ -3290,7 +3299,7 @@ trade_outpost = {
 	liberty_desire_development_ratio = 0.5
 	pays_overlord = 2.5
 
-	relative_power_class = 4
+	relative_power_class = 5
 	diplomacy_view_class = 1
 
 	can_fight = {
@@ -3349,17 +3358,17 @@ integrated_personal_union = {
 	copy_from = personal_union
 	count = personal_union
 	
+	# Graphics:
+	sprite = GFX_icon_integrated_personal_union
+	diplomacy_overlord_sprite = GFX_diplomacy_leadintegrated_personal_union
+	diplomacy_subject_sprite = GFX_diplomacy_amintegrated_personal_union
+	
 	# Triggers:
 	is_potential_overlord = {
 		is_subject = no
 		personal_union = 1
 	}
 	
-	# Graphics:
-	sprite = GFX_icon_integrated_personal_union
-	diplomacy_overlord_sprite = GFX_diplomacy_leadintegrated_personal_union
-	diplomacy_subject_sprite = GFX_diplomacy_amintegrated_personal_union
-
 	# Properties:
 	can_be_integrated = no
 	
@@ -3371,4 +3380,95 @@ integrated_personal_union = {
 	diplomacy_view_class = 1
 
 	restoration_cb = cb_restore_personal_union
+}
+
+brother_kingdom = {
+	copy_from = default
+	count = personal_union
+	
+	# Graphics:
+	sprite = GFX_icon_brother_kingdom
+	diplomacy_overlord_sprite = GFX_diplomacy_leadbrother_kingdom
+	diplomacy_subject_sprite = GFX_diplomacy_ambrother_kingdom
+	
+	# Triggers:
+	is_potential_overlord = {
+		is_subject = no
+		religion_group = christian
+		has_regency = no
+	}
+	
+	# Properties:
+	overlord_can_attack = no
+	can_have_subjects_of_other_types = yes
+	overlord_protects_external = yes
+	gets_help_with_rebels = yes
+	allows_taking_land_without_independence = yes
+	
+	max_government_rank = 2
+	
+	liberty_desire_negative_prestige = 0.5
+	forcelimit_bonus = 1.0
+	forcelimit_to_overlord = 0.1
+	military_focus = 0.66
+
+	relative_power_class = 1
+	diplomacy_view_class = 1
+
+	can_fight = {
+		independent_nations = yes
+		other_overlord = all
+	}
+	can_rival = {
+		independent_nations = yes
+		other_overlord = all
+	}
+	can_ally = {
+		same_overlord = vassal
+		same_overlord = fief_subject
+		same_overlord = brother_kingdom
+	}
+	can_marry = {
+		same_overlord = vassal
+		same_overlord = fief_subject
+		same_overlord = brother_kingdom
+	}
+
+	# Subject Interactions:
+	# (continuous)
+	send_officers = yes
+	divert_trade = yes
+	# (immediate)
+	enforce_culture = yes
+	siphon_income = yes
+	grant_core_claim = no
+	send_additional_troops = yes
+	contribute_to_capital = yes
+	conscript_general = yes
+	
+	# Modifiers:
+	modifier_subject = clear
+	modifier_subject = {
+		modifier = brother_kingdom_modifier
+	}
+	modifier_subject = {
+		trigger = {
+			NOT = { religion = FROM }
+		}
+		modifier = brother_kingdom_other_religion_modifier
+	}
+	modifier_subject = {
+		trigger = {
+			NOT = { culture_group = FROM }
+		}
+		modifier = brother_kingdom_other_culture_group_modifier
+	}
+	
+	modifier_overlord = clear
+	modifier_overlord = {
+		modifier = brother_kingdom_overlord_modifier
+	}
+
+	overlord_opinion_modifier = is_brother_kingdom
+	subject_opinion_modifier = is_brother_kingdom
 }

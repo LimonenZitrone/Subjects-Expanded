@@ -284,6 +284,10 @@
  establish_integrated_personal_union_desc: "Ernennt Eure Personalunion [From.GetName] zu einer §YIntegrierten Personalunion§!. \n[integrated_personal_union_desc]"
  establish_integrated_personal_union_tooltip: "Ernennt Eure Personalunion [From.GetName] zu einer §YIntegrierten Personalunion§!.\n"
  
+ increase_chance_to_integrate_integrated_personal_union_title: "Integration unterstützen"
+ increase_chance_to_integrate_integrated_personal_union_desc: "Helft §Y[From.GetName]§! dabei, sich besser in die [Root.GetAdjective]e Nation zu integrieren. Für die nächsten §Y25 Jahre§! wird dies ihre Entwicklungskosten um §R-15%§! sowie unsere Chances, sie zu annektieren, um §G10%§! verändern. Aufgrund ihrer derzeitigen Entwicklung kostet uns dies §R[From.GetIntegratedPersonalUnionDiploPowerCostForIncreasedAnnexChance]§! £dip£."
+ increase_chance_to_integrate_integrated_personal_union_tooltip: "Erhöht die Chancen, §Y[From.GetName]§! zu annektieren.\n"
+ 
  return_integrated_personal_union_to_personal_union_title: "Zu Personalunion degradieren"
  return_integrated_personal_union_to_personal_union_desc: "Beendet den Status der Integrierten Personalunion, den §Y[From.GetName]§! derzeit besitzt, und macht sie zu einer Personalunion. Dies wird ihre Meinung über uns um §R-100§! verschlechtern und ihr Freiheitsstreben um §R+25%§! ändern. Außerdem verlieren wir §R-10§! Prestige."
  return_integrated_personal_union_to_personal_union_tooltip: "Macht §Y[From.GetName]§! wieder zu einer Personalunion.\n"
@@ -291,6 +295,27 @@
  cancel_integrated_personal_union_title: "Integrierte Personalunion entlassen"
  cancel_integrated_personal_union_desc: "Beendet das Abhängigkeitsverhältnis von §Y[From.GetName]§! zu uns. Dies wird ihre Meinung über uns um §R-200§! verschlechtern, sofern sie ein Freiheitsstreben unter §Y50%§! besitzen. Außerdem verlieren wir §R-25§! Prestige und erhalten eine §Y5-jährige§! Waffenruhe mit ihnen."
  cancel_integrated_personal_union_tooltip: "Beedet die Vasallisierung von §Y[From.GetName]§! und entlasst sie in die Freiheit.\n"
+ 
+ 
+ establish_brother_kingdom_title: "Bruderkönigreich fordern"
+ establish_brother_kingdom_desc: "Wollt Ihr §Y[From.GetName]§! vorschlagen, unser Bruderkönigreich zu werden? \n[brother_kingdom_desc]"
+ establish_brother_kingdom_tooltip: "Macht §Y[From.GetName]§! zu einem [Root.GetAdjective]en §YBruderkönigreich§!.\n"
+ establish_brother_kingdom_alert_tooltip: "Bruderkönigreich fordern"
+ establish_brother_kingdom_dialog: "§Y[This.GetName]§! schlägt uns vor, dass wir ihr §YBruderkönigreich§! werden. \n[brother_kingdom_desc] \nWollt Ihr akzeptieren?"
+ 
+ make_brother_kingdom_to_personal_union_title: "In Personalunion umwandeln"
+ make_brother_kingdom_to_personal_union_desc: "Wollt Ihr von §Y[From.GetName]§! verlangen, unsere Personalunion zu werden? \n[personal_union_desc]"
+ make_brother_kingdom_to_personal_union_tooltip: "Macht Euer Bruderkönigreich §Y[From.GetName]§! zu einer §YPersonalunion§!.\n"
+ make_brother_kingdom_to_personal_union_alert_tooltip: "In Personalunion umwandeln"
+ make_brother_kingdom_to_personal_union_dialog: "§Y[This.GetName]§! verlangt, dass wir ihre §YPersonalunion§! werden. \n[personal_union_desc] \nWollt Ihr akzeptieren?"
+ 
+ brother_kingdom_become_independent_title: "Unabhängigkeit erklären"
+ brother_kingdom_become_independent_desc: "Erklärt Eure Unabhängigkeit von Eurem Lehnsherrn §Y[From.GetName]§!. Sie können Euch Unabhängigkeit gewähren oder diese Forderung ablehnen. Im Fall von Letzterem führt dies zu einem §RKRIEG§! mit §Y[From.GetName]§!. \nAußerdem verändert sich unsere Stabilität um §R-1§!."
+ brother_kingdom_become_independent_tooltip: "Erklärt Eure Unabhängigkeit von Eurem Lehnsherrn §Y[From.GetName]§!.\n"
+ 
+ cancel_brother_kingdom_title: "Bruderkönigreich entlassen"
+ cancel_brother_kingdom_desc: "Beendet das Abhängigkeitsverhältnis von §Y[From.GetName]§! zu uns. Dies wird ihre Meinung über uns um §R-200§! verschlechtern, sofern sie ein Freiheitsstreben unter §Y50%§! besitzen. Außerdem verlieren wir §R-25§! Prestige und erhalten eine §Y5-jährige§! Waffenruhe mit ihnen."
+ cancel_brother_kingdom_tooltip: "Beedet die Vasallisierung von §Y[From.GetName]§! und entlasst sie in die Freiheit.\n"
  
  
  return_subject_to_vassal_title: "Zum Vasall degradieren"
@@ -377,4 +402,12 @@
  NUM_OF_TRADE_OUTPOSTS: "Unsere Anzahl an Handelsaußenposten"
  FROM_AI_PERSONALITY: "Persönlichkeit ihres Herrschers"
  FROM_HAS_NO_MERCHANT_IN_OUR_HOME_TRADE_NODE: "Sie haben keinen Händler in unserer Handelsregion"
+ FROM_IS_CURIA_CONTROLLER: "Sie kontrollieren die Kurie"
+ ROOT_FROM_RULER_STATS_COMPARED: "Fähigkeiten ihres Herrschers im Vergleich zu denen unseres Herrschers"
+ FROM_RULER_IS_OLDER: "Ihr Herrscher ist älter"
+ ROOT_FROM_LEGITIMACY_COMPARED: "Ihre Legitimität im Vergleich zu unserer"
+ FROM_ROOT_ARE_RIVALS: "Wir sind Rivalen"
+ FROM_HAS_A_HEIR: "Sie haben einen Nachfolger"
+ ROOT_HAS_HEIR_FROM_HAS_NO_HEIR: "Wir haben einen Nachfolger und sie nicht"
+ FROM_HAS_REGENCY: "Sie haben einen Regentschaftsrat"
  

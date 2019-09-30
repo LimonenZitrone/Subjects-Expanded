@@ -377,3 +377,15 @@ dutch_provinces_reform_3_subject = {
 	
 	global_trade_power = 0.1
 }
+
+is_tributary_state_triggered_modifier = {
+	potential = {
+		is_subject_of_type = tributary_state
+	}
+	
+	trigger = {
+		is_subject_of_type = tributary_state
+	}
+	
+	trade_efficiency = 0.15
+}

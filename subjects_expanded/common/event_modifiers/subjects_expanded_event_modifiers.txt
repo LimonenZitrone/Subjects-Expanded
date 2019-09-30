@@ -849,6 +849,32 @@ improved_trade_outpost_overlord_modifier = {
 	trade_company_investment_cost = -0.1
 }
 
+# Subject Type: Integrated Personal Union
+increase_chance_to_integrate_integrated_personal_union_modifier = {
+	development_cost = -0.15
+}
+
+# Subject Type: Brother Kingdom
+brother_kingdom_modifier = {
+	monarch_admin_power = 1
+	monarch_diplomatic_power = 1
+	monarch_military_power = 1
+}
+
+brother_kingdom_other_religion_modifier = {
+	liberty_desire = 25
+}
+
+brother_kingdom_other_culture_group_modifier = {
+	liberty_desire = 10
+}
+
+brother_kingdom_overlord_modifier = {
+	legitimacy = 0.1
+	heir_chance = 0.1
+	manpower_recovery_speed = 0.05
+}
+
 # Modifiers that function as timers
 protectorate_got_monarch_power_this_year = {
 }

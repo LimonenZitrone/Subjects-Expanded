@@ -27,3 +27,5 @@
  dutch_provinces_reform_3_overlord: "Successiewet"
  dutch_provinces_reform_3_subject: "Successiewet"
  
+ is_tributary_state_triggered_modifier: "Tributary State"
+ 

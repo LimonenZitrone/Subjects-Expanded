@@ -33,6 +33,7 @@
  IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_naval_march: "Can be made to a §YNaval March§!"
  IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_trade_outpost: "Can be made to a §YTrade Outpost§!"
  IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_integrated_personal_union: "Can be made to an §YIntegrated Personal Union§!"
+ IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_brother_kingdom: "Can be made to a §YBrother Kingdom§!"
  
  THIS_IS_FORMER_AUTONOMOUS_DOMINION: "Is a former §YDominion§! or a former §YColonial Nation§!"
  
@@ -204,4 +205,6 @@
  display_trade_outpost_desc_tt: "§g[trade_outpost_desc]§W"
  display_integrated_personal_union_title_tt: "§Y[integrated_personal_union]§!"
  display_integrated_personal_union_desc_tt: "§g[integrated_personal_union_desc]§W"
+ display_brother_kingdom_title_tt: "§Y[brother_kingdom]§!"
+ display_brother_kingdom_desc_tt: "§g[brother_kingdom_desc]§W"
  

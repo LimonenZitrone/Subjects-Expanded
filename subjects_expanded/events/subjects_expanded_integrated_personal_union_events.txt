@@ -31,13 +31,30 @@ country_event = {
 				limit = {
 					NOT = { liberty_desire = 50 }
 				}
-				random_list = {
-					90 = {
-						# No Effects
+				if = {
+					limit = {
+						has_country_modifier = increase_chance_to_integrate_integrated_personal_union_modifier
 					}
-					10 = {
-						overlord = {
-							country_event = { id = subjects_expanded_integrated_personal_union_events.2 }
+					random_list = {
+						80 = {
+							# No Effects
+						}
+						20 = {
+							overlord = {
+								country_event = { id = subjects_expanded_integrated_personal_union_events.2 }
+							}
+						}
+					}
+				}
+				else = {
+					random_list = {
+						90 = {
+							# No Effects
+						}
+						10 = {
+							overlord = {
+								country_event = { id = subjects_expanded_integrated_personal_union_events.2 }
+							}
 						}
 					}
 				}

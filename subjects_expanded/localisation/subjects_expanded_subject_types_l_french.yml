@@ -149,3 +149,9 @@
  integrated_personal_union_long_desc: "An Integrated Personal Union behaves like a normal personal union, but cannot be integrated and its development affects its liberty desire. However there's a §Y10%§! chance every §Y10 years§! that it is integrated automatically for a cost of §Y100§! £dip£, if its liberty desire is below §Y50%§!.\n"
  integrated_personal_union_no_overlord_dow: "You cannot declare war on your own Integrated Personal Union."
  
+ brother_kingdom_title: "Brother Kingdom"
+ brother_kingdom_title_plural: "Brother Kingdoms"
+ brother_kingdom_is_our: "§Y$NAME$§! is our Brother Kingdom."
+ brother_kingdom_long_desc: "A Brother Kingdom must have the same dynasty as its overlord and can be converted into a personal union after §Y25 years§!. It joins its overlord's wars, but is barely restricted in its own diplomacy. It gains a bonus on future ruler skill in all categories and grants its overlord a bonus on legitimacy, heir chance and manpower recovery speed. A Brother Kingdom can declare its independence diplomatically, however the overlord can decline it, which leads to an independence war. It can only be established by independent nations in other independent nations or vassals with the same dynasty.\n"
+ brother_kingdom_no_overlord_dow: "You cannot declare war on your own Brother Kingdom."
+ 

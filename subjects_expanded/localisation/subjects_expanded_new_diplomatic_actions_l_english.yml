@@ -284,6 +284,10 @@
  establish_integrated_personal_union_desc: "Make your personal union [From.GetName] to an §YIntegrated Personal Union§!. \n[integrated_personal_union_desc]"
  establish_integrated_personal_union_tooltip: "Make your personal union [From.GetName] to an §YIntegrated Personal Union§!.\n"
  
+ increase_chance_to_integrate_integrated_personal_union_title: "Grant Integration Support"
+ increase_chance_to_integrate_integrated_personal_union_desc: "Help §Y[From.GetName]§! to better integrate into the [Root.GetAdjective] nation. This will change their development cost by §R-15%§! as well as our chances to integrate them by §G10%§! for the next §Y25 years§!. Because of their current development, this will cost us §R[From.GetIntegratedPersonalUnionDiploPowerCostForIncreasedAnnexChance]§! £dip£."
+ increase_chance_to_integrate_integrated_personal_union_tooltip: "Increase the chance to annex §Y[From.GetName]§!.\n"
+ 
  return_integrated_personal_union_to_personal_union_title: "Demote to Personal Union"
  return_integrated_personal_union_to_personal_union_desc: "Cancel the Integrated Personal Union status of §Y[From.GetName]§! and make them to a personal union. This will decrease their opinion of us by §R-100§! and change their liberty desire by §R+25%§!. We will also lose §R-10§! prestige."
  return_integrated_personal_union_to_personal_union_tooltip: "Make §Y[From.GetName]§! to a personal union again.\n"
@@ -291,6 +295,27 @@
  cancel_integrated_personal_union_title: "Release Integrated Personal Union"
  cancel_integrated_personal_union_desc: "Cancel the dependency of §Y[From.GetName]§! of us. This will decrease their opinion about us by §R-200§!, if their liberty desire is below §Y50%§!. We will also lose §R-25§! prestige and gain a truce with them for §Y5 years§!."
  cancel_integrated_personal_union_tooltip: "Cancel the vassalisation of §Y[From.GetName]§! and grant them independence.\n"
+ 
+ 
+ establish_brother_kingdom_title: "Establish Brother Kingdom"
+ establish_brother_kingdom_desc: "Do you want to offer §Y[From.GetName]§! to become our Brother Kingdom? \n[brother_kingdom_desc]"
+ establish_brother_kingdom_tooltip: "Make §Y[From.GetName]§! to a [Root.GetAdjective] §YBrother Kingdom§!.\n"
+ establish_brother_kingdom_alert_tooltip: "Establish Brother Kingdom"
+ establish_brother_kingdom_dialog: "§Y[This.GetName]§! offers us that we become their §YBrother Kingdom§!. \n[brother_kingdom_desc] \nDo you want to accept?"
+ 
+ make_brother_kingdom_to_personal_union_title: "Convert to Personal Union"
+ make_brother_kingdom_to_personal_union_desc: "Do you want to demand from §Y[From.GetName]§! to become our Personal Union? \n[personal_union_desc]"
+ make_brother_kingdom_to_personal_union_tooltip: "Make your Brother Kingdom §Y[From.GetName]§! to a §YPersonal Union§!.\n"
+ make_brother_kingdom_to_personal_union_alert_tooltip: "Convert to Personal Union"
+ make_brother_kingdom_to_personal_union_dialog: "§Y[This.GetName]§! demands that we become their §YPersonal Union§!. \n[personal_union_desc] \nDo you want to accept?"
+ 
+ brother_kingdom_become_independent_title: "Declare Independence"
+ brother_kingdom_become_independent_desc: "Declare independent from your overlord §Y[From.GetName]§!. They can grant you independence or oppose that demand. The latter will lead to §RWAR§! with §Y[From.GetName]§!. \nFurthermore, this will change our stability by §R-1§!."
+ brother_kingdom_become_independent_tooltip: "Declare independent from your overlord §Y[From.GetName]§!.\n"
+ 
+ cancel_brother_kingdom_title: "Release Brother Kingdom"
+ cancel_brother_kingdom_desc: "Cancel the dependency of §Y[From.GetName]§! of us. This will decrease their opinion about us by §R-200§!, if their liberty desire is below §Y50%§!. We will also lose §R-25§! prestige and gain a truce with them for §Y5 years§!."
+ cancel_brother_kingdom_tooltip: "Cancel the vassalisation of §Y[From.GetName]§! and grant them independence.\n"
  
  
  return_subject_to_vassal_title: "Demote to Vassal"
@@ -377,4 +402,12 @@
  NUM_OF_TRADE_OUTPOSTS: "Our amount of Trade Outposts"
  FROM_AI_PERSONALITY: "Their ruler's personality"
  FROM_HAS_NO_MERCHANT_IN_OUR_HOME_TRADE_NODE: "They do not have a merchant in our home trade node"
+ FROM_IS_CURIA_CONTROLLER: "They control the Curia"
+ ROOT_FROM_RULER_STATS_COMPARED: "Their ruler's skills compared to ours"
+ FROM_RULER_IS_OLDER: "Their ruler is older"
+ ROOT_FROM_LEGITIMACY_COMPARED: "Their legitimacy compared to ours"
+ FROM_ROOT_ARE_RIVALS: "We are rivals"
+ FROM_HAS_A_HEIR: "They have a heir"
+ ROOT_HAS_HEIR_FROM_HAS_NO_HEIR: "We have a heir and they do not"
+ FROM_HAS_REGENCY: "They have a regency council"
  

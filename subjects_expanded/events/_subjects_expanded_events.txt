@@ -67,6 +67,7 @@ country_event = {
 			count_num_of_subjects_of_type = { type = naval_march }
 			count_num_of_subjects_of_type = { type = trade_outpost }
 			count_num_of_subjects_of_type = { type = integrated_personal_union }
+			count_num_of_subjects_of_type = { type = brother_kingdom }
 		}
 	}
 	
@@ -252,6 +253,14 @@ country_event = {
 		ai_chance = { factor = 100 }
 		
 		display_subjects_of_type = { type = integrated_personal_union }
+	}
+	
+	option = {
+		name = subjects_expanded_events2.EVTOPT24
+		
+		ai_chance = { factor = 100 }
+		
+		display_subjects_of_type = { type = brother_kingdom }
 	}
 }
 

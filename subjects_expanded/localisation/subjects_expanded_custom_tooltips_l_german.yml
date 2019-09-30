@@ -33,6 +33,7 @@
  IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_naval_march: "Kann zu einer §YMarine-Mark§! gemacht werden"
  IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_trade_outpost: "Kann zu einem §YHandelsaußenposten§! gemacht werden"
  IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_integrated_personal_union: "Kann zu einer §YIntegrierten Personalunion§! gemacht werden"
+ IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_brother_kingdom: "Kann zu einem §YBruderkönigreich§! gemacht werden"
  
  THIS_IS_FORMER_AUTONOMOUS_DOMINION: "Ist ein ehemaliges §YHerrschaftsgebiet§! oder eine ehemalige §YKolonialnation§!"
  
@@ -204,4 +205,6 @@
  display_trade_outpost_desc_tt: "§g[trade_outpost_desc]§W"
  display_integrated_personal_union_title_tt: "§Y[integrated_personal_union]§!"
  display_integrated_personal_union_desc_tt: "§g[integrated_personal_union_desc]§W"
+ display_brother_kingdom_title_tt: "§Y[brother_kingdom]§!"
+ display_brother_kingdom_desc_tt: "§g[brother_kingdom_desc]§W"
  

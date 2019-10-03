@@ -987,8 +987,24 @@ ask_for_muslim_tributary_vassal = {
 		NOT = { ai_attitude = { who = FROM attitude = atittude_rivalry } }
 		NOT = { coalition_target = FROM }
 		FROM = {
-			tag = TUR
-			religion = sunni
+			OR = {
+				tag = TUR
+				AND = {
+					OR = {
+						ai = no
+						NOT = { exists = TUR }
+					}
+					is_defender_of_faith = yes
+					government_rank = 3
+				}
+			}
+			OR = {
+				religion = sunni
+				AND = {
+					ai = no
+					religion_group = muslim
+				}
+			}
 			NOT = { truce_with = ROOT }
 			has_casus_belli_against = ROOT
 			NOT = { coalition_target = ROOT }

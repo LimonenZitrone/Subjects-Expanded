@@ -322,6 +322,14 @@
  establish_iqta_vassal_desc: "Make your vassal [From.GetName] to an §YIqta§!. \n[iqta_vassal_desc]"
  establish_iqta_vassal_tooltip: "Make your vassal [From.GetName] to an §YIqta§!.\n"
  
+ allow_annex_iqta_vassal_title: "Prepare Annexation"
+ allow_annex_iqta_vassal_desc: "Prepare the annexation of §Y[From.GetName]§!. This allows us to annex §Y[From.GetName]§! diplomatically, however it will also give them some maluses and change their liberty desire by §R+20%§!. Additionally they will not gain any bonuses from scutage anymore."
+ allow_annex_iqta_vassal_tooltip: "Prepare the annexation of §Y[From.GetName]§!.\n"
+ 
+ cancel_allow_annex_iqta_vassal_title: "Cancel Annexation Preparation"
+ cancel_allow_annex_iqta_vassal_desc: "Cancel the preparation we did to annex §Y[From.GetName]§!. This will disallow us to annex §Y[From.GetName]§!, but also remove the maluses and the additional liberty desire they got from the preparation. \nWe cannot do this, if we already started to integrate them once."
+ cancel_allow_annex_iqta_vassal_tooltip: "Cancel the preparation we did to annex §Y[From.GetName]§!.\n"
+ 
  
  return_subject_to_vassal_title: "Demote to Vassal"
  return_subject_to_vassal_desc: "Cancel the current status §Y[From.GetName]§! has and make them to a vassal. This will decrease their opinion of us by §R-100§! and change their liberty desire by §R+25%§!. We will also lose §R-10§! prestige[Root.GetIfDemoteToVassalGivesStabHit]."

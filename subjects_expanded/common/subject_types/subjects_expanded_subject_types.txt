@@ -3517,7 +3517,7 @@ iqta_vassal = {
 				all_subject_country = {
 					is_subject_of_type = iqta_vassal
 				}
-				amount = 5
+				amount = 2
 			}
 		}
 	}
@@ -3529,6 +3529,7 @@ iqta_vassal = {
 	has_power_projection = no
 	overlord_enforce_peace_attacking = yes
 	allows_taking_land_without_independence = yes
+	pays_overlord = 0.25
 	
 	max_government_rank = 1
 	
@@ -3597,6 +3598,7 @@ iqta_vassal = {
 	modifier_subject = {
 		trigger = {
 			has_scutage = yes
+			NOT = { has_country_modifier = iqta_vassal_allow_annex_modifier }
 		}
 		modifier = iqta_vassal_scutage_modifier
 	}
@@ -3608,7 +3610,7 @@ iqta_vassal = {
 	modifier_overlord = {
 		trigger = {
 			religion = FROM
-			religious_unity = 1
+			religious_unity = 0.75
 		}
 		modifier = iqta_vassal_same_religion_overlord_modifier
 	}

@@ -877,21 +877,18 @@ brother_kingdom_overlord_modifier = {
 
 # Subject Type: Iqta
 iqta_vassal_modifier = {
-	missionaries = 1
-	missionary_maintenance_cost = -0.1
 	global_tax_income = 0.1
+	merc_maintenance_modifier = -0.1
+	land_maintenance_modifier = -0.1
 	monthly_piety = -0.01
 }
 
 iqta_vassal_wrong_religion_group_modifier = {
 	liberty_desire = 50
-	missionaries = -1
-	global_missionary_strength = -0.03
 	missionary_maintenance_cost = 0.2
 }
 
 iqta_vassal_wrong_religion_modifier = {
-	liberty_desire = -10
 	monthly_piety = 0.02
 }
 
@@ -901,13 +898,20 @@ iqta_vassal_low_religious_unity_modifier = {
 }
 
 iqta_vassal_scutage_modifier = {
-	missionaries = 1
-	global_missionary_strength = 0.03
+	liberty_desire = -10
+}
+
+iqta_vassal_allow_annex_modifier = {
+	liberty_desire = 20
+	global_tax_income = -0.05
+	merc_maintenance_modifier = 0.05
+	land_maintenance_modifier = 0.05
+	monthly_piety = 0.01
 }
 
 iqta_vassal_overlord_modifier = {
-	missionary_maintenance_cost = -0.05
-	global_tax_income = 0.05
+	missionary_maintenance_cost = -0.1
+	global_missionary_strength = 0.025
 }
 
 iqta_vassal_same_religion_overlord_modifier = {
@@ -943,4 +947,10 @@ cooldown_dutch_province_subject_ask_for_independence = {
 }
 
 cooldown_dutch_province_subject_force_white_peace = {
+}
+
+iqta_vassal_allow_annex_modifier = {
+}
+
+iqta_vassal_is_getting_annexed_modifier = {
 }

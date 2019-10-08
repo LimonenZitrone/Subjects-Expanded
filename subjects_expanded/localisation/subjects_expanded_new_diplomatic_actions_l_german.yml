@@ -322,6 +322,14 @@
  establish_iqta_vassal_desc: "Ernennt Euren Vasallen [From.GetName] zu einer §YIqta§!. \n[iqta_vassal_desc]"
  establish_iqta_vassal_tooltip: "Ernennt Euren Vasallen [From.GetName] zu einer §YIqta§!.\n"
  
+ allow_annex_iqta_vassal_title: "Annexion vorbereiten"
+ allow_annex_iqta_vassal_desc: "Bereitet die Annexion von §Y[From.GetName]§! vor. Dies erlaubt es uns, §Y[From.GetName]§! diplomatisch zu annektieren, jedoch gibt es ihnen auch einige Mali und verändert ihr Freiheitsstreben um §R+20%§!. Zusätzlich erhalten sie keine Boni mehr, wenn Rittersteuer aktiviert ist."
+ allow_annex_iqta_vassal_tooltip: "Bereitet die Annexion von §Y[From.GetName]§! vor.\n"
+ 
+ cancel_allow_annex_iqta_vassal_title: "Annexionsvorbereitungen abbrechen"
+ cancel_allow_annex_iqta_vassal_desc: "Brecht die Vorbereitungen für die Annexion von §Y[From.GetName]§! ab. Dies wird es uns nicht mehr erlauben, §Y[From.GetName]§! zu annektieren, aber alle Mali und Freiheitsstreben entfernen, die sie durch unsere Vorbereitungen erhalten haben. \nWir könnnen dies nicht mehr tun, wenn wir die Annextion von ihnen bereits einmal begonnen haben."
+ cancel_allow_annex_iqta_vassal_tooltip: "Brecht die Vorbereitungen für die Annexion von §Y[From.GetName]§! ab.\n"
+ 
  
  return_subject_to_vassal_title: "Zum Vasall degradieren"
  return_subject_to_vassal_desc: "Beendet den derzeitigen Status von §Y[From.GetName]§! und macht sie zu einem Vasallen. Dies wird ihre Meinung über uns um §R-100§! verschlechtern und ihr Freiheitsstreben um §R+25%§! ändern. Außerdem verlieren wir §R-10§! Prestige[Root.GetIfDemoteToVassalGivesStabHit]."

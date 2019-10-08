@@ -251,6 +251,20 @@ annexationaction = {
 		}
 	}
 	condition = {
+		tooltip = CANNOT_ANNEX_IQTA_VASSAL_IF_NOT_PREPARED_ANNEXATION
+		potential = {
+			FROM = {
+				is_subject_of = ROOT
+				is_subject_of_type = iqta_vassal
+			}
+		}
+		allow = {
+			FROM = {
+				has_country_modifier = iqta_vassal_allow_annex_modifier
+			}
+		}
+	}
+	condition = {
 		tooltip = CANNOT_ANNEX_IQTA_VASSAL_OF_OTHER_RELIGION
 		potential = {
 			FROM = {
@@ -274,7 +288,22 @@ annexationaction = {
 		}
 		allow = {
 			FROM = {
-				religious_unity = 0.75
+				religious_unity = 0.25
+			}
+		}
+	}
+	effect = {
+		FROM = {
+			if = {
+				limit = {
+					is_subject_of = ROOT
+					is_subject_of_type = iqta_vassal
+				}
+				add_country_modifier = {
+					name = iqta_vassal_is_getting_annexed_modifier
+					duration = -1
+					hidden = yes
+				}
 			}
 		}
 	}

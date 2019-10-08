@@ -28,7 +28,9 @@ establish_iqta_vassal = {
 		FROM = {
 			is_at_war = no
 		}
-		NOT = { liberty_desire = 50 }
+		FROM = {
+			NOT = { liberty_desire = 50 }
+		}
 	}
 	
 	on_accept = {
@@ -46,7 +48,9 @@ establish_iqta_vassal = {
 				FROM = {
 					is_at_war = no
 				}
-				NOT = { liberty_desire = 50 }
+				FROM = {
+					NOT = { liberty_desire = 50 }
+				}
 			}
 			create_subject = {
 				subject = FROM
@@ -90,5 +94,150 @@ establish_iqta_vassal = {
 				}
 			}
 		}
+	}
+}
+
+allow_annex_iqta_vassal = {
+	category = influence
+	
+	require_acceptance = no
+	
+	is_visible = {
+		FROM = {
+			is_subject_of = ROOT
+			is_subject_of_type = iqta_vassal
+			NOT = { has_country_modifier = iqta_vassal_allow_annex_modifier }
+		}
+	}
+	
+	is_allowed = {
+		hidden_trigger = {
+			FROM = {
+				is_subject_of = ROOT
+				is_subject_of_type = iqta_vassal
+				NOT = { has_country_modifier = iqta_vassal_allow_annex_modifier }
+			}
+		}
+		is_at_war = no
+		FROM = {
+			is_at_war = no
+			NOT = { liberty_desire = 50 }
+		}
+		FROM = {
+			years_in_vassalage_under = {
+				who = ROOT
+				years = 10
+				all_subject_country = yes
+			}
+		}
+		FROM = {
+			religion = ROOT
+		}
+		FROM = {
+			religious_unity = 0.25
+		}
+	}
+	
+	on_accept = {
+		if = {
+			limit = {
+				FROM = {
+					is_subject_of = ROOT
+					is_subject_of_type = iqta_vassal
+					NOT = { has_country_modifier = iqta_vassal_allow_annex_modifier }
+				}
+				is_at_war = no
+				FROM = {
+					is_at_war = no
+					NOT = { liberty_desire = 50 }
+				}
+				FROM = {
+					years_in_vassalage_under = {
+						who = ROOT
+						years = 10
+						all_subject_country = yes
+					}
+				}
+				FROM = {
+					religion = ROOT
+				}
+				FROM = {
+					religious_unity = 0.25
+				}
+			}
+			FROM = {
+				add_country_modifier = {
+					name = iqta_vassal_allow_annex_modifier
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
+	}
+	
+	ai_will_do = {
+		FROM = {
+			OR = {
+				NOT = { liberty_desire = 20 }
+				AND = {
+					has_scutage = no
+					NOT = { liberty_desire = 30 }
+				}
+			}
+		}
+	}
+}
+
+cancel_allow_annex_iqta_vassal = {
+	category = influence
+	
+	require_acceptance = no
+	
+	is_visible = {
+		FROM = {
+			is_subject_of = ROOT
+			is_subject_of_type = iqta_vassal
+			has_country_modifier = iqta_vassal_allow_annex_modifier
+			NOT = { has_country_modifier = iqta_vassal_is_getting_annexed_modifier }
+		}
+	}
+	
+	is_allowed = {
+		hidden_trigger = {
+			FROM = {
+				is_subject_of = ROOT
+				is_subject_of_type = iqta_vassal
+				has_country_modifier = iqta_vassal_allow_annex_modifier
+				NOT = { has_country_modifier = iqta_vassal_is_getting_annexed_modifier }
+			}
+		}
+		is_at_war = no
+		FROM = {
+			is_at_war = no
+		}
+	}
+	
+	on_accept = {
+		if = {
+			limit = {
+				FROM = {
+					is_subject_of = ROOT
+					is_subject_of_type = iqta_vassal
+					has_country_modifier = iqta_vassal_allow_annex_modifier
+					NOT = { has_country_modifier = iqta_vassal_is_getting_annexed_modifier }
+				}
+				is_at_war = no
+				FROM = {
+					is_at_war = no
+				}
+			}
+			FROM = {
+				remove_country_modifier = iqta_vassal_allow_annex_modifier
+			}
+		}
+	}
+	
+	ai_will_do = {
+		always = no
 	}
 }

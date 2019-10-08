@@ -204,10 +204,11 @@
  brother_kingdom_overlord_modifier: "Has Brother Kingdoms"
  
  iqta_vassal_modifier: "Iqta"
- iqta_vassal_wrong_religion_group_modifier: "They are not Muslim"
- iqta_vassal_wrong_religion_modifier: "They do not follow the True Faith"
- iqta_vassal_low_religious_unity_modifier: "They have low religious unity"
+ iqta_vassal_wrong_religion_group_modifier: "Is not Muslim"
+ iqta_vassal_wrong_religion_modifier: "Does not follow the True Faith"
+ iqta_vassal_low_religious_unity_modifier: "Has low religious unity"
  iqta_vassal_scutage_modifier: "Scutage"
+ iqta_vassal_allow_annex_modifier: "Could get annexed"
  iqta_vassal_overlord_modifier: "Has Iqtas"
  iqta_vassal_same_religion_overlord_modifier: "Iqtas are following the True Faith"
  

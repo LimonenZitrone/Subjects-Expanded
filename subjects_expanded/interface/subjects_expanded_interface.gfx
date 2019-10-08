@@ -298,4 +298,17 @@ spriteTypes = {
 		name = "GFX_diplomacy_ambrother_kingdom"
 		texturefile = "gfx//interface//icon_diplomacy_ambrother_kingdom.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_icon_iqta_vassal"
+		texturefile = "gfx/interface/icon_iqta_vassal.dds"
+	}
+	spriteType = {
+		name = "GFX_diplomacy_leadiqta_vassal"
+		texturefile = "gfx//interface//icon_diplomacy_leadiqta_vassal.dds"
+	}
+	spriteType = {
+		name = "GFX_diplomacy_amiqta_vassal"
+		texturefile = "gfx//interface//icon_diplomacy_amiqta_vassal.dds"
+	}
 }

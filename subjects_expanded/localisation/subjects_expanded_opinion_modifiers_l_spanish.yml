@@ -80,3 +80,6 @@
  is_brother_kingdom: "Brother Kingdom"
  declined_establish_brother_kingdom_opinion: "Demand for Brother Kingdom declined"
  
+ is_iqta_vassal: "Iqta"
+ iqta_vassal_forced: "Forced Iqta"
+ 

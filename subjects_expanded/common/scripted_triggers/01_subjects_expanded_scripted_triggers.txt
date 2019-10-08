@@ -538,6 +538,24 @@ is_possible_subject_of_subject_type_brother_kingdom = {
 	religion_group = christian
 }
 
+is_possible_subject_of_subject_type_iqta_vassal = {
+	# PREVs in THIS scope refer to possible overlord
+	NOT = { is_subject_of_type = iqta_vassal }
+	religion_group = muslim
+	is_neighbor_of = PREV
+	OR = {
+		is_subject = no
+		AND = {
+			is_subject_of = PREV
+			is_vassal_or_similar_subject = yes
+			religion = PREV
+			PREV = {
+				is_defender_of_faith = yes
+			}
+		}
+	}
+}
+
 can_create_subject_type = {
 	can_be_overlord = $subject_type$
 	$subject$ = {

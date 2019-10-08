@@ -25,6 +25,7 @@
  subjects_expanded_events2.EVTOPT22: "There currently are §G[REB.num_of_subjects_of_type_trade_outpost.GetValue]§! §YTrade Outposts§! in the world."
  subjects_expanded_events2.EVTOPT23: "There currently are §G[REB.num_of_subjects_of_type_integrated_personal_union.GetValue]§! §YIntegrated Personal Unions§! in the world."
  subjects_expanded_events2.EVTOPT24: "There currently are §G[REB.num_of_subjects_of_type_brother_kingdom.GetValue]§! §YBrother Kingdoms§! in the world."
+ subjects_expanded_events2.EVTOPT25: "There currently are §G[REB.num_of_subjects_of_type_iqta_vassal.GetValue]§! §YIqtas§! in the world."
  
  subjects_expanded_events.EVTNAME3: "Idea Mods?"
  subjects_expanded_events.EVTDESC3: "Spawning Dominions via decisions sets their idea groups depending on the ones you chose. If you are using a mod that alters the vanilla idea groups in any way, this might §Rcrash§! the game. So select the matching option below to prevent that from happening!"
@@ -209,4 +210,13 @@
  subjects_expanded_brother_kingdom_events.EVTDESC2: "Our Brother Kingdom §Y[From.GetName]§! has declared itself independent! We can accept that and grant them independence. Otherwise this will escalate into an §RIndependence War§!."
  subjects_expanded_brother_kingdom_events2.EVTOPT1: "They earned their freedom."
  subjects_expanded_brother_kingdom_events2.EVTOPT2: "Over my dead body!"
+ 
+ subjects_expanded_iqta_vassal_events.EVTNAME1: "Islamic Law Invalidated"
+ subjects_expanded_iqta_vassal_events.EVTDESC1: "The Islamic Law in our country has been invalidated. We cannot remain to be an Iqta without following the Islamic Law. We either have to adopt the [Root.Overlord.Religion.GetName] faith or declare our independence."
+ subjects_expanded_iqta_vassal_events1.EVTOPT1: "We will follow the Islamic Law again."
+ subjects_expanded_iqta_vassal_events1.EVTOPT2: "Freedom for us it shall be!"
+ 
+ subjects_expanded_iqta_vassal_events.EVTNAME2: "Islamic Law Invalidated"
+ subjects_expanded_iqta_vassal_events.EVTDESC2: "The Islamic Law in our country has been invalidated. We cannot have Iqtas without following a Muslim religion."
+ subjects_expanded_iqta_vassal_events2.EVTOPT1: "They will become our Vassals."
  

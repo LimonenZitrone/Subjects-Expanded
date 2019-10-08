@@ -80,3 +80,6 @@
  is_brother_kingdom: "Bruderkönigreich"
  declined_establish_brother_kingdom_opinion: "Forderung nach Bruderkönigreich abgelehnt"
  
+ is_iqta_vassal: "Iqta"
+ iqta_vassal_forced: "Iqta erzwungen"
+ 

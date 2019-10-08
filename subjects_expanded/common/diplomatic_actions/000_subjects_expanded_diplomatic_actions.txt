@@ -232,3 +232,50 @@ callaction = {
 		}
 	}
 }
+
+annexationaction = {
+	condition = {
+		tooltip = ANNEX_TOO_LOW
+		potential = {
+			FROM = {
+				vassal_of = ROOT
+			}
+		}
+		allow = {
+			FROM = {
+				has_opinion = {
+					who = ROOT
+					value = 190
+				}
+			}
+		}
+	}
+	condition = {
+		tooltip = CANNOT_ANNEX_IQTA_VASSAL_OF_OTHER_RELIGION
+		potential = {
+			FROM = {
+				is_subject_of = ROOT
+				is_subject_of_type = iqta_vassal
+			}
+		}
+		allow = {
+			FROM = {
+				religion = ROOT
+			}
+		}
+	}
+	condition = {
+		tooltip = CANNOT_ANNEX_IQTA_VASSAL_WITH_LOW_RELIGIOUS_UNITY
+		potential = {
+			FROM = {
+				is_subject_of = ROOT
+				is_subject_of_type = iqta_vassal
+			}
+		}
+		allow = {
+			FROM = {
+				religious_unity = 0.75
+			}
+		}
+	}
+}

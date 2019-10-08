@@ -34,6 +34,7 @@
  IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_trade_outpost: "Can be made to a §YTrade Outpost§!"
  IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_integrated_personal_union: "Can be made to an §YIntegrated Personal Union§!"
  IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_brother_kingdom: "Can be made to a §YBrother Kingdom§!"
+ IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_iqta_vassal: "Can be made to an §YIqta§!"
  
  THIS_IS_FORMER_AUTONOMOUS_DOMINION: "Is a former §YDominion§! or a former §YColonial Nation§!"
  
@@ -54,6 +55,9 @@
  CANNOT_CALL_DUTCH_PROVINCE_AGAINST_ITS_OVERLORD: "You cannot call a Dutch Province to arms against its overlord."
  
  CANNOT_CALL_PERSIAN_SATRAPY_INTO_OFFENSIVE_WAR: "You cannot call a Satrapy into offensive wars."
+ 
+ CANNOT_ANNEX_IQTA_VASSAL_OF_OTHER_RELIGION: "You cannot annex an Iqta that doesn't follow your religion (§Y[Root.Religion.GetName]§!)."
+ CANNOT_ANNEX_IQTA_VASSAL_WITH_LOW_RELIGIOUS_UNITY: "[From.GetName] needs to have at least §Y75%§! religious unity."
  
  # New Diplomatic Actions:
  DID_NOT_LOWER_DEVELOPMENT_WITHIN_LAST_10_YEARS: "Did NOT reduce the development of an autonomous dominion within the last §Y10 years§!"
@@ -207,4 +211,6 @@
  display_integrated_personal_union_desc_tt: "§g[integrated_personal_union_desc]§W"
  display_brother_kingdom_title_tt: "§Y[brother_kingdom]§!"
  display_brother_kingdom_desc_tt: "§g[brother_kingdom_desc]§W"
+ display_iqta_vassal_title_tt: "§Y[iqta_vassal]§!"
+ display_iqta_vassal_desc_tt: "§g[iqta_vassal_desc]§W"
  

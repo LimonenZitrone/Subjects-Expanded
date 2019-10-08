@@ -318,6 +318,11 @@
  cancel_brother_kingdom_tooltip: "Cancel the vassalisation of §Y[From.GetName]§! and grant them independence.\n"
  
  
+ establish_iqta_vassal_title: "Establish Iqta"
+ establish_iqta_vassal_desc: "Make your vassal [From.GetName] to an §YIqta§!. \n[iqta_vassal_desc]"
+ establish_iqta_vassal_tooltip: "Make your vassal [From.GetName] to an §YIqta§!.\n"
+ 
+ 
  return_subject_to_vassal_title: "Demote to Vassal"
  return_subject_to_vassal_desc: "Cancel the current status §Y[From.GetName]§! has and make them to a vassal. This will decrease their opinion of us by §R-100§! and change their liberty desire by §R+25%§!. We will also lose §R-10§! prestige[Root.GetIfDemoteToVassalGivesStabHit]."
  return_subject_to_vassal_tooltip: "Make §Y[From.GetName]§! to a vassal again.\n"

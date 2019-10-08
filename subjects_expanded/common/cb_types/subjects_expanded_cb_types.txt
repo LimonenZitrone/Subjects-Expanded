@@ -93,3 +93,33 @@ cb_force_trade_outpost = {
 	
 	war_goal = take_capital_force_trade_outpost
 }
+
+cb_convert_heathen_for_iqta = {
+	valid_for_subject = no
+
+	prerequisites = {
+		can_be_overlord = iqta_vassal
+		cb_on_religious_enemies = yes
+		is_revolution_target = no
+		NOT = { religion_group = FROM }
+		NOT = { truce_with = FROM }
+		NOT = { alliance_with = FROM }
+		FROM = {
+			any_neighbor_country = {
+				OR = {
+					tag = ROOT
+					AND = {
+						is_subject_of = ROOT
+						is_subject_of_type = iqta_vassal
+					}
+				}
+			}
+		}
+	}
+	
+	attacker_disabled_po = {
+		po_become_vassal
+	}
+
+	war_goal = superiority_convert_heathen_for_iqta
+}

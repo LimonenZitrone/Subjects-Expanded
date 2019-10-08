@@ -68,6 +68,7 @@ country_event = {
 			count_num_of_subjects_of_type = { type = trade_outpost }
 			count_num_of_subjects_of_type = { type = integrated_personal_union }
 			count_num_of_subjects_of_type = { type = brother_kingdom }
+			count_num_of_subjects_of_type = { type = iqta_vassal }
 		}
 	}
 	
@@ -261,6 +262,14 @@ country_event = {
 		ai_chance = { factor = 100 }
 		
 		display_subjects_of_type = { type = brother_kingdom }
+	}
+	
+	option = {
+		name = subjects_expanded_events2.EVTOPT25
+		
+		ai_chance = { factor = 100 }
+		
+		display_subjects_of_type = { type = iqta_vassal }
 	}
 }
 

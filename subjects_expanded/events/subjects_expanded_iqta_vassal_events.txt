@@ -1,0 +1,121 @@
+namespace = subjects_expanded_iqta_vassal_events
+
+country_event = {
+	id = subjects_expanded_iqta_vassal_events.1
+	title = subjects_expanded_iqta_vassal_events.EVTNAME1
+	desc = subjects_expanded_iqta_vassal_events.EVTDESC1
+	picture = RELIGIOUS_eventPicture
+	
+	trigger = {
+		is_subject_of_type = iqta_vassal
+		NOT = { religion_group = muslim }
+		overlord = {
+			religion_group = muslim
+		}
+	}
+	
+	mean_time_to_happen = { months = 1 }
+	
+	option = {
+		name = subjects_expanded_iqta_vassal_events1.EVTOPT1
+		
+		ai_chance = { factor = 100 }
+		
+		overlord = {
+			ROOT = {
+				change_religion = PREV
+			}
+		}
+	}
+	
+	option = {
+		name = subjects_expanded_iqta_vassal_events1.EVTOPT2
+		
+		ai_chance = { factor = 0 }
+		
+		overlord = {
+			ROOT = {
+				hidden_effect = {
+					add_casus_belli = {
+						target = PREV
+						type = cb_independence_war
+					}
+				}
+				declare_war_with_cb = {
+					who = PREV
+					casus_belli = cb_independence_war
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = subjects_expanded_iqta_vassal_events.2
+	title = subjects_expanded_iqta_vassal_events.EVTNAME2
+	desc = subjects_expanded_iqta_vassal_events.EVTDESC2
+	picture = RELIGIOUS_eventPicture
+	
+	trigger = {
+		NOT = { religion_group = muslim }
+		any_subject_country = {
+			is_subject_of_type = iqta_vassal
+		}
+	}
+	
+	mean_time_to_happen = { months = 1 }
+	
+	option = {
+		name = subjects_expanded_iqta_vassal_events2.EVTOPT1
+		
+		ai_chance = { factor = 100 }
+		
+		every_subject_country = {
+			limit = {
+				is_subject_of_type = iqta_vassal
+			}
+			ROOT = {
+				vassalize = PREV
+			}
+			add_liberty_desire = 10
+		}
+	}
+}
+
+country_event = {
+	id = subjects_expanded_iqta_vassal_events.3
+	title = subjects_expanded_iqta_vassal_events.EVTNAME1
+	desc = subjects_expanded_iqta_vassal_events.EVTDESC1
+	picture = DIPLOMACY_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+		is_subject_of_type = iqta_vassal
+		NOT = { government = monarchy }
+		NOT = { has_country_flag = executing_subjects_expanded_iqta_vassal_events_3 }
+	}
+	
+	mean_time_to_happen = { days = 1 }
+	
+	immediate = {
+		hidden_effect = {
+			set_country_flag = executing_subjects_expanded_iqta_vassal_events_3
+			if = {
+				limit = {
+					NOT = { government = monarchy }
+				}
+				change_government = monarchy
+				add_government_reform = feudalism_reform
+			}
+		}
+	}
+	
+	option = {
+		name = subjects_expanded_iqta_vassal_events3.EVTOPT1
+		
+		ai_chance = { factor = 100 }
+		
+		clr_country_flag = executing_subjects_expanded_iqta_vassal_events_3
+	}
+}

@@ -298,3 +298,13 @@ declined_establish_brother_kingdom_opinion = {
 	yearly_decay = 1
 	min = -100
 }
+
+is_iqta_vassal = {
+	opinion = 25
+}
+
+iqta_vassal_forced = {
+	opinion = -100
+	yearly_decay = 3
+	min = -100
+}

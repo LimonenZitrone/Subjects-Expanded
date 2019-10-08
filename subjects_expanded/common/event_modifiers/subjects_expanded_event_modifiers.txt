@@ -875,6 +875,45 @@ brother_kingdom_overlord_modifier = {
 	manpower_recovery_speed = 0.05
 }
 
+# Subject Type: Iqta
+iqta_vassal_modifier = {
+	missionaries = 1
+	missionary_maintenance_cost = -0.1
+	global_tax_income = 0.1
+	monthly_piety = -0.01
+}
+
+iqta_vassal_wrong_religion_group_modifier = {
+	liberty_desire = 50
+	missionaries = -1
+	global_missionary_strength = -0.03
+	missionary_maintenance_cost = 0.2
+}
+
+iqta_vassal_wrong_religion_modifier = {
+	liberty_desire = -10
+	monthly_piety = 0.02
+}
+
+iqta_vassal_low_religious_unity_modifier = {
+	liberty_desire = 25
+	global_unrest = -1
+}
+
+iqta_vassal_scutage_modifier = {
+	missionaries = 1
+	global_missionary_strength = 0.03
+}
+
+iqta_vassal_overlord_modifier = {
+	missionary_maintenance_cost = -0.05
+	global_tax_income = 0.05
+}
+
+iqta_vassal_same_religion_overlord_modifier = {
+	diplomatic_upkeep = 1
+}
+
 # Modifiers that function as timers
 protectorate_got_monarch_power_this_year = {
 }

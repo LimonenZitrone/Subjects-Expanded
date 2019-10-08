@@ -203,3 +203,11 @@
  brother_kingdom_other_culture_group_modifier: "Ist nicht in derselben Kulturgruppe"
  brother_kingdom_overlord_modifier: "Besitzt Bruderkönigreiche"
  
+ iqta_vassal_modifier: "Iqta"
+ iqta_vassal_wrong_religion_group_modifier: "Sie sind nicht muslimisch"
+ iqta_vassal_wrong_religion_modifier: "Sie folgen nicht dem Wahren Glauben"
+ iqta_vassal_low_religious_unity_modifier: "Sie besitzen eine geringe religiöse Einheit"
+ iqta_vassal_scutage_modifier: "Rittersteuer"
+ iqta_vassal_overlord_modifier: "Besitzt Iqtas"
+ iqta_vassal_same_religion_overlord_modifier: "Iqtas folgen dem Wahren Glauben"
+ 

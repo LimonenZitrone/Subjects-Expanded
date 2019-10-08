@@ -49,6 +49,10 @@ return_subject_to_vassal = {
 				value = 100
 			}
 		}
+		is_at_war = no
+		FROM = {
+			is_at_war = no
+		}
 	}
 	
 	on_accept = {
@@ -97,6 +101,7 @@ return_subject_to_vassal = {
 	}
 	
 	ai_will_do = {
+		NOT = { truce_with = FROM }
 		OR = {
 			AND = {
 				OR = {

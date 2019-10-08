@@ -15,6 +15,9 @@
  cb_force_trade_outpost: "Force Trade Outpost"
  cb_force_trade_outpost_desc: "They can be benefitial for us as a trade outpost in their trade node. If they don't want to become one voluntarily, we have to force them."
  
+ cb_convert_heathen_for_iqta: "Force Islamic Law"
+ cb_convert_heathen_for_iqta_desc: "They are infidels and have to be converted to the True Faith!"
+ 
  # War Goals:
  take_capital_force_imperial_tributary_state: "Take Capital"
  take_capital_force_imperial_tributary_state_desc: "The war goal is to conquer the target's capital."
@@ -27,6 +30,9 @@
  
  take_capital_force_trade_outpost: "Take Capital"
  take_capital_force_trade_outpost_desc: "The war goal is to conquer the target's capital."
+ 
+ superiority_convert_heathen_for_iqta: "Show Superiority"
+ superiority_convert_heathen_for_iqta_desc: "The war goal is to show our superiority in battles."
  
  # War Names:
  MANDALA_WAR_NAME: "$ORDER$ $FIRST$ War of Mandala Enforcement"
@@ -89,4 +95,8 @@
  make_trade_outpost_desc: "@[From.GetTag] §Y[From.GetName]§! is made to a Trade Outpost of @[Root.GetTag] §Y[Root.GetName]§!."
  CB_ALLOWED_make_trade_outpost: "Force Trade Outpost"
  PEACE_make_trade_outpost: "$TAKERS$ Trade Outpost"
+ 
+ make_iqta_vassal_desc: "@[From.GetTag] §Y[From.GetName]§! is made to an Iqta of @[Root.GetTag] §Y[Root.GetName]§!. If [From.GetName] is not a monarchy, they will become one."
+ CB_ALLOWED_make_iqta_vassal: "Force Iqta"
+ PEACE_make_iqta_vassal: "$TAKERS$ Iqta"
  

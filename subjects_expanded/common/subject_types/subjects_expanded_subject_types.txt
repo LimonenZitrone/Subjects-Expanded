@@ -25,6 +25,7 @@ naval_march = { }
 trade_outpost = { }
 integrated_personal_union = { }
 brother_kingdom = { }
+iqta_vassal = { }
 
 # Subjects
 protectorate = {
@@ -2471,6 +2472,7 @@ muslim_tributary_vassal = {
 		same_overlord = tributary_state
 		other_overlord = muslim_tributary_vassal
 		other_overlord = tributary_state
+		other_overlord = iqta_vassal
 	}
 	can_rival = {
 		neighboring_primitives = yes
@@ -2478,6 +2480,7 @@ muslim_tributary_vassal = {
 		same_overlord = tributary_state
 		other_overlord = muslim_tributary_vassal
 		other_overlord = tributary_state
+		other_overlord = iqta_vassal
 	}
 	can_ally = {
 		same_overlord = muslim_tributary_vassal
@@ -3471,4 +3474,145 @@ brother_kingdom = {
 
 	overlord_opinion_modifier = is_brother_kingdom
 	subject_opinion_modifier = is_brother_kingdom
+}
+
+iqta_vassal = {
+	copy_from = default
+	count = vassal
+	
+	# Graphics:
+	sprite = GFX_icon_iqta_vassal
+	diplomacy_overlord_sprite = GFX_diplomacy_leadiqta_vassal
+	diplomacy_subject_sprite = GFX_diplomacy_amiqta_vassal
+
+	# Triggers:
+	is_potential_overlord = {
+		religion_group = muslim
+		OR = {
+			is_defender_of_faith = yes
+			government_rank = 3
+			AND = {
+				NOT = { has_dlc = "Common Sense" }
+				total_development = 1000
+			}
+			# Missions Expanded reforms
+			has_reform = caliphate_reform_sunni
+			AND = {
+				OR = {
+					government_rank = 2
+					AND = {
+						NOT = { has_dlc = "Common Sense" }
+						total_development = 300
+					}
+				}
+				OR = {
+					has_reform = iqta
+					# Extended Timeline reforms
+					has_reform = caliphate_reform
+				}
+			}
+		}
+		NOT = {
+			calc_true_if = {
+				all_subject_country = {
+					is_subject_of_type = iqta_vassal
+				}
+				amount = 5
+			}
+		}
+	}
+	
+	# Properties:
+	transfer_trade_if_merchant_republic = yes
+	can_be_annexed = yes
+	takes_diplo_slot = yes
+	has_power_projection = no
+	overlord_enforce_peace_attacking = yes
+	allows_taking_land_without_independence = yes
+	
+	max_government_rank = 1
+	
+	liberty_desire_development_ratio = 0.2
+	liberty_desire_same_dynasty = 5.0
+	forcelimit_bonus = 1.0
+	forcelimit_to_overlord = 0.1
+	
+	relative_power_class = 1
+	diplomacy_view_class = 1
+
+	can_fight = {
+		other_overlord = muslim_tributary_vassal
+	}
+	can_rival = {
+		other_overlord = muslim_tributary_vassal
+		other_overlord = iqta_vassal
+	}
+	can_ally = {
+		same_overlord = muslim_tributary_vassal
+		same_overlord = iqta_vassal
+	}
+	can_marry = {
+		same_overlord = muslim_tributary_vassal
+		same_overlord = iqta_vassal
+	}
+
+	# Subject Interactions:
+	# (continuous)
+	scutage = yes
+	# (immediate)
+	place_relative_on_throne = yes
+	enforce_culture = yes
+	seize_territory = yes
+	
+	# Modifiers:
+	modifier_subject = clear
+	modifier_subject = {
+		modifier = subject_nation
+	}
+	modifier_subject = {
+		modifier = vassal_nation
+	}
+	modifier_subject = {
+		modifier = iqta_vassal_modifier
+	}
+	modifier_subject = {
+		trigger = {
+			NOT = { religion_group = FROM }
+		}
+		modifier = iqta_vassal_wrong_religion_group_modifier
+	}
+	modifier_subject = {
+		trigger = {
+			religion_group = FROM
+			NOT = { religion = FROM }
+		}
+		modifier = iqta_vassal_wrong_religion_modifier
+	}
+	modifier_subject = {
+		trigger = {
+			NOT = { religious_unity = 0.5 }
+		}
+		modifier = iqta_vassal_low_religious_unity_modifier
+	}
+	modifier_subject = {
+		trigger = {
+			has_scutage = yes
+		}
+		modifier = iqta_vassal_scutage_modifier
+	}
+	
+	modifier_overlord = clear
+	modifier_overlord = {
+		modifier = iqta_vassal_overlord_modifier
+	}
+	modifier_overlord = {
+		trigger = {
+			religion = FROM
+			religious_unity = 1
+		}
+		modifier = iqta_vassal_same_religion_overlord_modifier
+	}
+
+	overlord_opinion_modifier = is_iqta_vassal
+	subject_opinion_modifier = is_iqta_vassal
 }

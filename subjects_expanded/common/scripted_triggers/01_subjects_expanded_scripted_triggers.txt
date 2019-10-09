@@ -247,7 +247,10 @@ is_possible_subject_of_subject_type_crusader_state_vassal = {
 	is_excommunicated = no
 	religion = catholic
 	capital_scope = {
-		continent = europe
+		OR = {
+			continent = europe
+			province_id = 379
+		}
 	}
 }
 

@@ -197,7 +197,7 @@ If a subject gives an additional merchant, the bonuses it gives to its overlord 
 [/list]
 
 [h1]Crusader State[/h1]
-[i]A Crusader State is a mixture of a vassal and a march. It receives bonuses to discipline, manpower, war score cost against other religions and missionary strength. Furthermore, they increase your papal authority and missionary strength and cannot be annexed. They can only be established by the Papal State, Jerusalem, Monastic Orders and Crusader Kingdoms in Europe and a country can only have 2 Crusader States at the same time.[/i]
+[i]A Crusader State is a mixture of a vassal and a march. It receives bonuses to discipline, manpower, war score cost against other religions and missionary strength. Furthermore, they increase your papal authority and missionary strength and cannot be annexed. They can only be established by the Papal State, Jerusalem, Monastic Orders and Crusader Kingdoms in Europe and Jerusalem and a country can only have 2 Crusader States at the same time.[/i]
 
 [b]Conditions (possible overlord):[/b]
 [list]

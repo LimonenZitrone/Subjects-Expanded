@@ -682,3 +682,34 @@ If a subject gives an additional merchant, the bonuses it gives to its overlord 
 [*] Brother Kingdoms can declare their own wars
 [*] overlords of Brother Kingdoms that get a new dynasty will get an event to either release them or put a ruler with low claim and skills with their dynasty on the Brother Kingdom's throne again, which will cost legitimacy and increase their liberty desire
 [/list]
+
+[h1]Iqta[/h1]
+[i]An Iqta behaves similar as a normal vassal, but is a little bit less restricted in its diplomatic actions, has a slightly reduced liberty desire and pays less money to its overlord, and is locked to be a monarchy. It joins its overlord's wars and doesn't cost a relation slot, if it has its overlord's religion and at least 75% religious unity. It has to have its overlord's religion for him to prepare the annexation, which is needed to be able to annex it. This preparation increases its liberty desire and gives it maluses that effectively half the bonuses it gets from being an Iqta. It gains bonuses on tax income, mercenacy cost and army maintenance cost and grants its overlord a bonus on missionary strength and missionary maintenance cost. Furthermore, an Iqta is influenced towards Mysticism, if it follows its overlord's religion, and towards Legalism, if it doesn't. Enabling scutage will change the liberty desire of an Iqta by -10% as long as the annexation was not prepared. It can only be established by Muslim nations in other, neighboring Muslim nations, and a country can have at most 2 Iqtas. If an Iqta switches to another religion group, it is forced to either switch to its overlord's religion or declare an independence war. A Muslim Iqta can get events that the spread its overlord's religion in its provinces.[/i]
+
+[b]Conditions (possible overlord):[/b]
+[list]
+[*] is not  a subject
+[*] is in the muslim religion group
+[*] is the defender of faith or has Empire rank (or Common Sense DLC is disabled and has at least 1000 development) or has the Caliphate government (Missions Expanded) or has Kingdom rank (or Common Sense DLC is disabled and has at least 300 development) and has Iqta or Caliphate (Extended Timeline) government
+[*] does not have 2 Iqtas already
+[/list]
+
+[b]Conditions (possible subject):[/b]
+[list]
+[*] is in the muslim religion group
+[*] is a neighbor of the possible overlord
+[*] is either not a subject or a vassal of the possible overlord and has the same religion and the possible overlord is defender of faith
+[/list]
+
+[b]Additional Information:[/b]
+[list]
+[*] Iqtas can be established diplomatically and by war
+[*] Iqtas have a max government rank of 1 (Duchy)
+[*] Iqtas gain a bonus on tax income, mercenacy maintenance cost and army maintenance cost and drift towards mysticism
+[*] Iqtas grant their overlord a bonus on missionary maintenance cost and missionary strength
+[*] Iqtas cannot be annexed unless the annexation was prepared, that can only be done if they have the same religion as their overlord and at least 25% religious unity
+[*] Iqtas that have scutage enabled have 10% less liberty desire
+[*] Iqtas that have the same religion as their overlord and at least 75% religious unity don't cost a diplomatic relation
+[*] Iqtas can get events that convert their provinces to the religion of their overlord
+[*] Iqtas that are not muslim will either switch religion or declare an independence war
+[/list]

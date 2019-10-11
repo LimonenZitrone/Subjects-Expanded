@@ -3487,6 +3487,7 @@ iqta_vassal = {
 
 	# Triggers:
 	is_potential_overlord = {
+		is_subject = no
 		religion_group = muslim
 		OR = {
 			is_defender_of_faith = yes
@@ -3534,7 +3535,7 @@ iqta_vassal = {
 	max_government_rank = 1
 	
 	liberty_desire_development_ratio = 0.2
-	liberty_desire_same_dynasty = 5.0
+	liberty_desire_same_dynasty = -5.0
 	forcelimit_bonus = 1.0
 	forcelimit_to_overlord = 0.1
 	

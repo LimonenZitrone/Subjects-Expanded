@@ -18,6 +18,9 @@
  cb_convert_heathen_for_iqta: "Islamisches Gesetz erzwingen"
  cb_convert_heathen_for_iqta_desc: "Sie sind Ungläubige und müssen zum Wahren Glauben konvertiert werden!"
  
+ cb_vassalize_papal_sanctuary_subject: "Unterwerfung"
+ cb_vassalize_papal_sanctuary_subject_desc: "Wir wurden mit ihrer Vasallisierung beauftragt."
+ 
  # War Goals:
  take_capital_force_imperial_tributary_state: "Hauptstadt erobern"
  take_capital_force_imperial_tributary_state_desc: "Das Kriegsziel ist es, die Hauptstadt des Ziellandes zu erobern."
@@ -33,6 +36,9 @@
  
  superiority_convert_heathen_for_iqta: "Überlegenheit zeigen"
  superiority_convert_heathen_for_iqta_desc: "Das Kriegsziel ist es, unsere Überlegenheit in Schlachten zu zeigen."
+ 
+ take_capital_vassalize_papal_sanctuary_subject: "Hauptstadt erobern"
+ take_capital_vassalize_papal_sanctuary_subject_desc: "Das Kriegsziel ist es, die Hauptstadt des Ziellandes zu erobern."
  
  # War Names:
  MANDALA_WAR_NAME: "$ORDER$ $FIRST$er Krieg der Mandala-Erzwingung"

@@ -212,3 +212,9 @@
  iqta_vassal_overlord_modifier: "Has Iqtas"
  iqta_vassal_same_religion_overlord_modifier: "Iqtas are following the True Faith"
  
+ papal_sanctuary_subject_modifier: "Papal Sanctuary"
+ papal_sanctuary_subject_overlord_is_papal_controller_modifier: "Overlord is Curia Controller"
+ papal_sanctuary_subject_converted_to_theocracy_modifier: "Was converted to a Theocracy"
+ papal_sanctuary_subject_overlord_modifier: "Has Papal Sanctuaries"
+ papal_sanctuary_subject_no_diplo_cost_overlord_modifier: "Papal Sanctuary is a Theocracy, Defender of Faith, Curia Controller or a Neighbor of the Crusade Target"
+ 

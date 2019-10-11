@@ -26,11 +26,12 @@
  subjects_expanded_events2.EVTOPT23: "Derzeit gibt es §G[REB.num_of_subjects_of_type_integrated_personal_union.GetValue]§! §YIntegrierte Personalunionen§! auf der Welt."
  subjects_expanded_events2.EVTOPT24: "Derzeit gibt es §G[REB.num_of_subjects_of_type_brother_kingdom.GetValue]§! §YBruderkönigreiche§! auf der Welt."
  subjects_expanded_events2.EVTOPT25: "Derzeit gibt es §G[REB.num_of_subjects_of_type_iqta_vassal.GetValue]§! §YIqtas§! auf der Welt."
+ subjects_expanded_events2.EVTOPT26: "Derzeit gibt es §G[REB.num_of_subjects_of_type_papal_sanctuary_subject.GetValue]§! §YPäpstliche Schutzgebiete§! auf der Welt."
  
  subjects_expanded_events.EVTNAME3: "Ideen-Mods?"
  subjects_expanded_events.EVTDESC3: "Herrschaftsgebiete per Entscheidung zu errichten gibt ihnen Ideengruppen abhängig von Euren. Falls Ihr eine Mod benutzt, die die Vanilla-Ideengruppen verändert, könnte dies das Spiel zum §RAbsturz§! bringen. Deshalb solltet Ihr hier die passende Option auswählen, um dies zu verhindern!"
- subjects_expanded_events3.EVTOPT1: "Eine Mod, die die §YVanilla-Ideengruppen verändert§!, ist §Gaktiv§!."
- subjects_expanded_events3.EVTOPT2: "Eine Mod, die die §YVanilla-Ideengruppen verändert§!, ist §RNICHT aktiv§!."
+ subjects_expanded_events3.EVTOPT1: "Eine Mod, die die §YVanilla-Ideengruppen verändert§!, ist §Raktiv§!."
+ subjects_expanded_events3.EVTOPT2: "Eine Mod, die die §YVanilla-Ideengruppen verändert§!, ist §GNICHT aktiv§!."
  
  subjects_expanded_protectorate_events.EVTNAME2: "Unabhängigkeit gewährt!"
  subjects_expanded_protectorate_events.EVTDESC2: "Unser ehemaliger Lehnsherr [From.GetName] hat sich dazu entschlossen, uns Unabhängigkeit zu gewähren. Das bedeutet allerdings auch, dass sie uns jetzt wieder den Krieg erklären könnten..."
@@ -219,4 +220,8 @@
  subjects_expanded_iqta_vassal_events.EVTNAME2: "Islamisches Gesetz außer Kraft gesetzt"
  subjects_expanded_iqta_vassal_events.EVTDESC2: "Das Islamische Gesetz wurde in unserem Land außer Kraft gesetzt. Wir können keine Iqtas haben, wenn wir keiner muslimischen Religion folgen."
  subjects_expanded_iqta_vassal_events2.EVTOPT1: "Sie werden unsere Vasallen werden."
+ 
+ subjects_expanded_papal_sanctuary_subject_events.EVTNAME1: "[From.GetName] erklärt Unabhängigkeit"
+ subjects_expanded_papal_sanctuary_subject_events.EVTDESC1: "Unser Päpstliches Schutzgebiet [From.GetName] hat seine Unabhängigkeit erklärt. Es erscheint so, als ob sie nicht länger unseren Schutz benötigen und das Wort des Herrn ignonieren!"
+ subjects_expanded_papal_sanctuary_subject_events1.EVTOPT1: "Das ist beinahe... ketzerisch."
  

@@ -72,3 +72,17 @@ superiority_convert_heathen_for_iqta = {
 	
 	war_name = RELIGIOUS_WAR_NAME	
 }
+
+take_capital_vassalize_papal_sanctuary_subject = {
+	type = take_capital
+	
+	badboy_factor = 0.5
+	prestige_factor = 0.75
+	peace_cost_factor = 0.25
+	
+	peace_options = {
+		po_become_vassal
+	}
+	
+	war_name = VASSAL_MISSION_WAR_NAME
+}

@@ -69,6 +69,7 @@ country_event = {
 			count_num_of_subjects_of_type = { type = integrated_personal_union }
 			count_num_of_subjects_of_type = { type = brother_kingdom }
 			count_num_of_subjects_of_type = { type = iqta_vassal }
+			count_num_of_subjects_of_type = { type = papal_sanctuary_subject }
 		}
 	}
 	
@@ -271,6 +272,14 @@ country_event = {
 		
 		display_subjects_of_type = { type = iqta_vassal }
 	}
+	
+	option = {
+		name = subjects_expanded_events2.EVTOPT26
+		
+		ai_chance = { factor = 100 }
+		
+		display_subjects_of_type = { type = papal_sanctuary_subject }
+	}
 }
 
 country_event = {
@@ -285,6 +294,7 @@ country_event = {
 		ai = no
 		NOT = { has_global_flag = idea_variation_voting_started }
 		NOT = { has_global_flag = idea_changing_mod_active }
+		NOT = { is_expanded_mod_active = { mod = idea_groups } }
 	}
 	
 	mean_time_to_happen = { days = 1 }

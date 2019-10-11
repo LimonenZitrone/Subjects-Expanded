@@ -83,3 +83,6 @@
  is_iqta_vassal: "Iqta"
  iqta_vassal_forced: "Iqta erzwungen"
  
+ is_papal_sanctuary_subject: "Päpstliches Schutzgebiet"
+ declined_establish_papal_sanctuary_subject_opinion: "Forderung nach Päpstliches Schutzgebiet abgelehnt"
+ 

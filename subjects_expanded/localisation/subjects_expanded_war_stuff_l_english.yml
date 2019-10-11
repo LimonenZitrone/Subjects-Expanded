@@ -18,6 +18,9 @@
  cb_convert_heathen_for_iqta: "Force Islamic Law"
  cb_convert_heathen_for_iqta_desc: "They are infidels and have to be converted to the True Faith!"
  
+ cb_vassalize_papal_sanctuary_subject: "Subjugation"
+ cb_vassalize_papal_sanctuary_subject_desc: "We have been tasked with their vassalization."
+ 
  # War Goals:
  take_capital_force_imperial_tributary_state: "Take Capital"
  take_capital_force_imperial_tributary_state_desc: "The war goal is to conquer the target's capital."
@@ -33,6 +36,9 @@
  
  superiority_convert_heathen_for_iqta: "Show Superiority"
  superiority_convert_heathen_for_iqta_desc: "The war goal is to show our superiority in battles."
+ 
+ take_capital_vassalize_papal_sanctuary_subject: "Take Capital"
+ take_capital_vassalize_papal_sanctuary_subject_desc: "The war goal is to conquer the target's capital."
  
  # War Names:
  MANDALA_WAR_NAME: "$ORDER$ $FIRST$ War of Mandala Enforcement"

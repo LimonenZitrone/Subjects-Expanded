@@ -200,6 +200,12 @@ defined_text = {
 		}
 		localisation_key = "[iqta_vassal]"
 	}
+	text = {
+		trigger = {
+			is_subject_of_type = papal_sanctuary_subject
+		}
+		localisation_key = "[papal_sanctuary_subject]"
+	}
 	
 	text = {
 		trigger = {
@@ -934,5 +940,27 @@ defined_text = {
 			always = yes
 		}
 		localisation_key = iqta_vassal_long_desc
+	}
+}
+
+defined_text = {
+	name = papal_sanctuary_subject
+	
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = papal_sanctuary_subject_title
+	}
+}
+
+defined_text = {
+	name = papal_sanctuary_subject_desc
+	
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = papal_sanctuary_subject_long_desc
 	}
 }

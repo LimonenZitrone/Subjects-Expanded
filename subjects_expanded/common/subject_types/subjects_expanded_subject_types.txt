@@ -26,6 +26,7 @@ trade_outpost = { }
 integrated_personal_union = { }
 brother_kingdom = { }
 iqta_vassal = { }
+papal_sanctuary_subject = { }
 
 # Subjects
 protectorate = {
@@ -3168,7 +3169,7 @@ persian_satrapy = {
 		modifier = subject_nation
 	}
 	modifier_subject = {
-		name = persian_satrapy_modifier
+		modifier = persian_satrapy_modifier
 	}
 	modifier_subject = {
 		trigger = {
@@ -3176,7 +3177,7 @@ persian_satrapy = {
 				NOT = { legitimacy_equivalent = 50 }
 			}
 		}
-		name = persian_satrapy_overlord_has_low_legitimacy_modifier
+		modifier = persian_satrapy_overlord_has_low_legitimacy_modifier
 	}
 	
 	modifier_overlord = clear
@@ -3618,4 +3619,191 @@ iqta_vassal = {
 
 	overlord_opinion_modifier = is_iqta_vassal
 	subject_opinion_modifier = is_iqta_vassal
+}
+
+papal_sanctuary_subject = {
+	copy_from = default
+	
+	# Graphics:
+	sprite = GFX_icon_papal_sanctuary_subject
+	diplomacy_overlord_sprite = GFX_diplomacy_leadpapal_sanctuary_subject
+	diplomacy_subject_sprite = GFX_diplomacy_ampapal_sanctuary_subject
+
+	# Triggers:
+	is_potential_overlord = {
+		OR = {
+			tag = PAP
+			AND = {
+				OR = {
+					has_reform = papacy_reform
+					has_country_modifier = kingdom_of_god
+				}
+				NOT = { exists = PAP }
+			}
+		}
+		religion = catholic
+	}
+	
+	# Properties:
+	is_voluntary = yes
+	overlord_can_be_subject = yes
+	can_have_subjects_of_other_types = yes
+	uses_military_focus = no
+	overlord_protects_external = yes
+	counts_for_borders = no
+	can_use_claims = no
+	allows_taking_land_without_independence = yes
+	can_transfer_in_peace = no
+	can_set_mil_focus = no
+	overlord_can_fabricate_for = no
+	
+	trust_on_start = 50
+
+	liberty_desire_development_ratio = 0.25
+	pays_overlord = 0.1
+	
+	relative_power_class = 1
+	diplomacy_view_class = 1
+
+	can_fight = {
+		independent_nations = yes
+		other_overlord = all
+		same_overlord = tributary_state
+		same_overlord = protectorate
+		same_overlord = autonomous_dominion
+		same_overlord = autonomous_dominion_tc
+		same_overlord = peasant_vassal
+		same_overlord = imperial_tributary_state
+		same_overlord = sister_republic
+		same_overlord = integrated_tribe_subject
+		same_overlord = dutch_province_subject
+		same_overlord = persian_satrapy
+		same_overlord = brother_kingdom
+		same_overlord = papal_sanctuary_subject
+	}
+	can_rival = {
+		independent_nations = yes
+		other_overlord = tributary_state
+		other_overlord = protectorate
+		other_overlord = autonomous_dominion
+		other_overlord = autonomous_dominion_tc
+		other_overlord = peasant_vassal
+		other_overlord = imperial_tributary_state
+		other_overlord = sister_republic
+		other_overlord = integrated_tribe_subject
+		other_overlord = dutch_province_subject
+		other_overlord = persian_satrapy
+		other_overlord = brother_kingdom
+		other_overlord = papal_sanctuary_subject
+		same_overlord = tributary_state
+		same_overlord = protectorate
+		same_overlord = autonomous_dominion
+		same_overlord = autonomous_dominion_tc
+		same_overlord = peasant_vassal
+		same_overlord = imperial_tributary_state
+		same_overlord = sister_republic
+		same_overlord = integrated_tribe_subject
+		same_overlord = dutch_province_subject
+		same_overlord = persian_satrapy
+		same_overlord = brother_kingdom
+		same_overlord = papal_sanctuary_subject
+	}
+	can_ally = {
+		independent_nations = yes
+		other_overlord = tributary_state
+		other_overlord = protectorate
+		other_overlord = autonomous_dominion
+		other_overlord = autonomous_dominion_tc
+		other_overlord = peasant_vassal
+		other_overlord = imperial_tributary_state
+		other_overlord = sister_republic
+		other_overlord = integrated_tribe_subject
+		other_overlord = dutch_province_subject
+		other_overlord = persian_satrapy
+		other_overlord = brother_kingdom
+		other_overlord = papal_sanctuary_subject
+		same_overlord = tributary_state
+		same_overlord = protectorate
+		same_overlord = autonomous_dominion
+		same_overlord = autonomous_dominion_tc
+		same_overlord = peasant_vassal
+		same_overlord = imperial_tributary_state
+		same_overlord = sister_republic
+		same_overlord = integrated_tribe_subject
+		same_overlord = dutch_province_subject
+		same_overlord = persian_satrapy
+		same_overlord = brother_kingdom
+		same_overlord = papal_sanctuary_subject
+	}
+	can_marry = {
+		independent_nations = yes
+		other_overlord = tributary_state
+		other_overlord = protectorate
+		other_overlord = autonomous_dominion
+		other_overlord = autonomous_dominion_tc
+		other_overlord = peasant_vassal
+		other_overlord = imperial_tributary_state
+		other_overlord = sister_republic
+		other_overlord = integrated_tribe_subject
+		other_overlord = dutch_province_subject
+		other_overlord = persian_satrapy
+		other_overlord = brother_kingdom
+		other_overlord = papal_sanctuary_subject
+		same_overlord = tributary_state
+		same_overlord = protectorate
+		same_overlord = autonomous_dominion
+		same_overlord = autonomous_dominion_tc
+		same_overlord = peasant_vassal
+		same_overlord = imperial_tributary_state
+		same_overlord = sister_republic
+		same_overlord = integrated_tribe_subject
+		same_overlord = dutch_province_subject
+		same_overlord = persian_satrapy
+		same_overlord = brother_kingdom
+		same_overlord = papal_sanctuary_subject
+	}
+
+	# Subject Interactions:
+	# (continuous)
+	scutage = yes
+	# (immediate)
+	enforce_religion = no
+	siphon_income = yes
+	send_additional_troops = yes
+	
+	# Modifiers:
+	modifier_subject = clear
+	modifier_subject = {
+		modifier = papal_sanctuary_subject_modifier
+	}
+	modifier_subject = {
+		trigger = {
+			FROM = {
+				is_papal_controller = yes
+			}
+		}
+		modifier = papal_sanctuary_subject_overlord_is_papal_controller_modifier
+	}
+	
+	modifier_overlord = clear
+	modifier_overlord = {
+		modifier = papal_sanctuary_subject_overlord_modifier
+	}
+	modifier_overlord = {
+		trigger = {
+			religion = FROM
+			OR = {
+				government = theocracy
+				is_papal_controller = yes
+				is_defender_of_faith = yes
+				crusade_target = {
+					is_neighbor_of = PREV
+				}
+			}
+		}
+		modifier = papal_sanctuary_subject_no_diplo_cost_overlord_modifier
+	}
+	
+	overlord_opinion_modifier = is_papal_sanctuary_subject
+	subject_opinion_modifier = is_papal_sanctuary_subject
 }

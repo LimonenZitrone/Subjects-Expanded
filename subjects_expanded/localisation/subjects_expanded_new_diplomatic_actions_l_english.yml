@@ -331,6 +331,33 @@
  cancel_allow_annex_iqta_vassal_tooltip: "Cancel the preparation we did to annex §Y[From.GetName]§!.\n"
  
  
+ establish_papal_sanctuary_subject_title: "Establish Papal Sanctuary"
+ establish_papal_sanctuary_subject_desc: "Do you want to offer §Y[From.GetName]§! to become our Papal Sanctuary? \n[papal_sanctuary_subject_desc]"
+ establish_papal_sanctuary_subject_tooltip: "Make §Y[From.GetName]§! to a [Root.GetAdjective] §YPapal Sanctuary§!.\n"
+ establish_papal_sanctuary_subject_alert_tooltip: "Establish Papal Sanctuary"
+ establish_papal_sanctuary_subject_dialog: "§Y[This.GetName]§! offers us that we become their §YPapal Sanctuary§!. \n[papal_sanctuary_subject_desc] \nDo you want to accept?"
+ 
+ make_papal_sanctuary_subject_to_theocracy_title: "Convert to Theocracy"
+ make_papal_sanctuary_subject_to_theocracy_desc: "Ask §Y[From.GetName]§! to change to a theocratic government form. If they accept, this will cost them §R-10§! papal influence and this will change their liberty desire by §R+25%§! and their yearly devotion by §G+1.00§! for §Y5 years§!. If they decline, we will lose §R-10§! prestige."
+ make_papal_sanctuary_subject_to_theocracy_tooltip: "Ask §Y[From.GetName]§! to change to a theocratic government form.\n"
+ make_papal_sanctuary_subject_to_theocracy_alert_tooltip: "Convert to Theocracy"
+ make_papal_sanctuary_subject_to_theocracy_dialog: "§Y[This.GetName]§! demands from us that we change our government form to a Theocracy. \nIf we accept, this will cost us §R-10§! papal influence and this will change our liberty desire by §G+25%§! and our yearly devotion by §G+1.00§! for §Y5 years§!. If we decline, they will lose §R-10§! prestige. \nDo you want to accept?"
+ 
+ make_papal_sanctuary_subject_to_vassal_title: "Convert to Vassal"
+ make_papal_sanctuary_subject_to_vassal_desc: "Offer §Y[From.GetName]§! to become our direct vassal. \n[vassal_desc] \nIf they accept, this will cost them §R-10§! papal influence. If they decline, we will lose §R-10§! prestige and gain a casus belli against them."
+ make_papal_sanctuary_subject_to_vassal_tooltip: "Make §Y[From.GetName]§! to a [Root.GetAdjective] §YVassal§!.\n"
+ make_papal_sanctuary_subject_to_vassal_alert_tooltip: "Convert to Vassal"
+ make_papal_sanctuary_subject_to_vassal_dialog: "§Y[This.GetName]§! offers us that we become their §YVassal§!. \n[vassal_desc] \nIf we accept, this will cost us §R-10§! papal influence. If we decline, they will lose §R-10§! prestige and gain a casus belli against us. \nDo you want to accept?"
+ 
+ papal_sanctuary_subject_become_independent_title: "Declare Independence"
+ papal_sanctuary_subject_become_independent_desc: "Declare your independence from your overlord §Y[From.GetName]§!. This will give us a truce with them for §Y5 years§! and it will excommunicate our current ruler."
+ papal_sanctuary_subject_become_independent_tooltip: "Declare your independence from your overlord §Y[From.GetName]§!.\n"
+ 
+ cancel_papal_sanctuary_subject_title: "Release Papal Sanctuary"
+ cancel_papal_sanctuary_subject_desc: "Cancel the dependency of §Y[From.GetName]§! of us. This will decrease their opinion about us by §R-200§!, if their liberty desire is below §Y50%§!. We will also lose §R-25§! prestige and gain a truce with them for §Y5 years§!."
+ cancel_papal_sanctuary_subject_tooltip: "Cancel the vassalisation of §Y[From.GetName]§! and grant them independence.\n"
+ 
+ 
  return_subject_to_vassal_title: "Demote to Vassal"
  return_subject_to_vassal_desc: "Cancel the current status §Y[From.GetName]§! has and make them to a vassal. This will decrease their opinion of us by §R-100§! and change their liberty desire by §R+25%§!. We will also lose §R-10§! prestige[Root.GetIfDemoteToVassalGivesStabHit]."
  return_subject_to_vassal_tooltip: "Make §Y[From.GetName]§! to a vassal again.\n"
@@ -423,4 +450,16 @@
  FROM_HAS_A_HEIR: "They have a heir"
  ROOT_HAS_HEIR_FROM_HAS_NO_HEIR: "We have a heir and they do not"
  FROM_HAS_REGENCY: "They have a regency council"
+ FROM_AMOUNT_OF_INVESTED_PAPAL_INFLUENCE: "They invested in the next papal election"
+ ROOT_IS_CURIA_CONTROLLER: "We are curia controller"
+ ROOT_RULER_IS_RELIGIOUS: "Our ruler has a religious personality"
+ ROOT_RULER_IS_SINNER: "Our ruler is a sinner"
+ FROM_RULER_IS_RELIGIOUS: "Their ruler has a religious personality"
+ FROM_RULER_IS_SINNER: "Their ruler is a sinner"
+ ROOT_IS_SUBJECT: "We are a subject"
+ ROOT_IS_DEFENDER_OF_FAITH: "We are the Defender of Faith"
+ ROOT_HAS_ESTABLISHED_THE_KINGDOM_OF_GOD: "We established the Kingdom of God"
+ FROM_HAS_NO_HEIR: "They have no heir"
+ FROM_WAS_RECENTLY_ASKED_TO_BECOME_THEOCRACY: "We recently asked them to convert to a theocracy"
+ FROM_WAS_RECENTLY_ASKED_TO_BECOME_A_VASSAL: "We recently asked them to become our vassal"
  

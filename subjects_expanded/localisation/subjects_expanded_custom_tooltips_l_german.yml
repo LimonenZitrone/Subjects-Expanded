@@ -35,6 +35,7 @@
  IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_integrated_personal_union: "Kann zu einer §YIntegrierten Personalunion§! gemacht werden"
  IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_brother_kingdom: "Kann zu einem §YBruderkönigreich§! gemacht werden"
  IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_iqta_vassal: "Kann zu einer §YIqta§! gemacht werden"
+ IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_papal_sanctuary_subject: "Kann zu einem §YPäpstlichen Schutzgebiet§! gemacht werden"
  
  THIS_IS_FORMER_AUTONOMOUS_DOMINION: "Ist ein ehemaliges §YHerrschaftsgebiet§! oder eine ehemalige §YKolonialnation§!"
  
@@ -151,6 +152,8 @@
  
  RELEASE_TRADE_OUTPOST_IN_THIS_PROVINCE: "Ein @[Root.GetTag] §Y[Root.GetAdjective]er§! Handelsaußenposten wird in §Y[This.GetName]§! errichtet.\n"
  
+ FORMER_PAPAL_SANCTUARY_SUBJECT_GETS_EXCOMMUNICATED: "§Y[This.GetName]§! wird exkommuniziert."
+ 
  # Triggered Modifiers:
  HAS_AT_LEAST_3_DOMINIONS_OR_AUTONOMOUS_DOMINIONS_IN_TRADE_COMPANY_REGIONS: "Besitzt mindestens §Y3§! §YHerrschaftsgebiete§! oder §YAutonome Herrschaftsgebiete§! mit Hauptstadt in einer Handelshaus-Region (errichted durch nationale Entscheidungen)"
  
@@ -214,4 +217,6 @@
  display_brother_kingdom_desc_tt: "§g[brother_kingdom_desc]§W"
  display_iqta_vassal_title_tt: "§Y[iqta_vassal]§!"
  display_iqta_vassal_desc_tt: "§g[iqta_vassal_desc]§W"
+ display_papal_sanctuary_subject_title_tt: "§Y[papal_sanctuary_subject]§!"
+ display_papal_sanctuary_subject_desc_tt: "§g[papal_sanctuary_subject_desc]§W"
  

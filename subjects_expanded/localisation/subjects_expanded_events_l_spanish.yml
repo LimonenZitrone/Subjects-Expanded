@@ -26,11 +26,12 @@
  subjects_expanded_events2.EVTOPT23: "There currently are §G[REB.num_of_subjects_of_type_integrated_personal_union.GetValue]§! §YIntegrated Personal Unions§! in the world."
  subjects_expanded_events2.EVTOPT24: "There currently are §G[REB.num_of_subjects_of_type_brother_kingdom.GetValue]§! §YBrother Kingdoms§! in the world."
  subjects_expanded_events2.EVTOPT25: "There currently are §G[REB.num_of_subjects_of_type_iqta_vassal.GetValue]§! §YIqtas§! in the world."
+ subjects_expanded_events2.EVTOPT26: "There currently are §G[REB.num_of_subjects_of_type_papal_sanctuary_subject.GetValue]§! §YPapal Sanctuaries§! in the world."
  
  subjects_expanded_events.EVTNAME3: "Idea Mods?"
  subjects_expanded_events.EVTDESC3: "Spawning Dominions via decisions sets their idea groups depending on the ones you chose. If you are using a mod that alters the vanilla idea groups in any way, this might §Rcrash§! the game. So select the matching option below to prevent that from happening!"
- subjects_expanded_events3.EVTOPT1: "A mod that §Ychanges vanilla idea groups§! is §Gactive§!."
- subjects_expanded_events3.EVTOPT2: "A mod that §Ychanges vanilla idea groups§! is §RNOT active§!."
+ subjects_expanded_events3.EVTOPT1: "A mod that §Ychanges vanilla idea groups§! is §Ractive§!."
+ subjects_expanded_events3.EVTOPT2: "A mod that §Ychanges vanilla idea groups§! is §GNOT active§!."
  
  subjects_expanded_protectorate_events.EVTNAME2: "Independence granted!"
  subjects_expanded_protectorate_events.EVTDESC2: "Our former overlord [From.GetName] decided to grant us independence. But this also means that they could attack as again..."
@@ -219,4 +220,8 @@
  subjects_expanded_iqta_vassal_events.EVTNAME2: "Islamic Law Invalidated"
  subjects_expanded_iqta_vassal_events.EVTDESC2: "The Islamic Law in our country has been invalidated. We cannot have Iqtas without following a Muslim religion."
  subjects_expanded_iqta_vassal_events2.EVTOPT1: "They will become our Vassals."
+ 
+ subjects_expanded_papal_sanctuary_subject_events.EVTNAME1: "[From.GetName] declares Independence"
+ subjects_expanded_papal_sanctuary_subject_events.EVTDESC1: "Our Papal Sanctuary [From.GetName] declared its independence. It seems like they don't need our protection anymore and ignore the word of the Lord!"
+ subjects_expanded_papal_sanctuary_subject_events1.EVTOPT1: "That's almost... heretical."
  

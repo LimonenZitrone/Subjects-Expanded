@@ -126,3 +126,23 @@ cb_convert_heathen_for_iqta = {
 
 	war_goal = superiority_convert_heathen_for_iqta
 }
+
+cb_vassalize_papal_sanctuary_subject = {
+	valid_for_subject = no
+	
+	is_triggered_only = yes
+	months = 12
+
+	prerequisites = {
+		FROM = {
+			is_subject_of = ROOT
+			is_subject_of_type = papal_sanctuary_subject
+		}
+	}
+	
+	attacker_disabled_po = {
+		po_demand_provinces
+	}
+	
+	war_goal = take_capital_vassalize_papal_sanctuary_subject
+}

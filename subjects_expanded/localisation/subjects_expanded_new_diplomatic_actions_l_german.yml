@@ -331,6 +331,33 @@
  cancel_allow_annex_iqta_vassal_tooltip: "Brecht die Vorbereitungen für die Annexion von §Y[From.GetName]§! ab.\n"
  
  
+ establish_papal_sanctuary_subject_title: "Päpstliches Schutzgebiet erbitten"
+ establish_papal_sanctuary_subject_desc: "Wollt Ihr §Y[From.GetName]§! vorschlagen, unser Päpstliches Schutzgebiet zu werden? \n[papal_sanctuary_subject_desc]"
+ establish_papal_sanctuary_subject_tooltip: "Macht §Y[From.GetName]§! zu einem [Root.GetAdjective]en §YPäpstlichen Schutzgebiet§!.\n"
+ establish_papal_sanctuary_subject_alert_tooltip: "Päpstliches Schutzgebiet erbitten"
+ establish_papal_sanctuary_subject_dialog: "§Y[This.GetName]§! schlägt uns vor, dass wir ihr §YPäpstliches Schutzgebiet§! werden. \n[papal_sanctuary_subject_desc] \nWollt Ihr akzeptieren?"
+ 
+ make_papal_sanctuary_subject_to_theocracy_title: "Zu Theokratie konvertieren"
+ make_papal_sanctuary_subject_to_theocracy_desc: "Bittet §Y[From.GetName]§! darum, zu einer theokratischen Regierungsform zu wechseln. Wenn sie akzeptieren, wird sie das §R-10§! päpstlichen Einfluss kosten und für §Y5 Jahre§! werden sich ihr Freiheitsstreben um §R+25%§! und ihre jährliche Hingabe um §G+1.00§! verändern. Wenn sie ablehnen, verlieren wir §R-10§! Prestige."
+ make_papal_sanctuary_subject_to_theocracy_tooltip: "Bittet §Y[From.GetName]§! darum, zu einer theokratischen Regierungsform zu wechseln.\n"
+ make_papal_sanctuary_subject_to_theocracy_alert_tooltip: "Zu Theokratie konvertieren"
+ make_papal_sanctuary_subject_to_theocracy_dialog: "§Y[This.GetName]§! verlangt von uns, dass wir unsere Regierungsform zu einer Theokratie ändern. \nWenn wir akzeptieren, wird uns das §R-10§! päpstlichen Einfluss kosten und für §Y5 Jahre§! werden sich unser Freiheitsstreben um §R+25%§! und unsere jährliche Hingabe um §G+1.00§! verändern. Wenn wir ablehnen, verlieren sie §R-10§! Prestige. \nWollt Ihr akzeptieren?"
+ 
+ make_papal_sanctuary_subject_to_vassal_title: "Zu Vasall konvertieren"
+ make_papal_sanctuary_subject_to_vassal_desc: "Schlagt §Y[From.GetName]§! vor, unser direkter Vasall zu werden. \n[vassal_desc] \nWenn sie akzeptieren, kostet sie dies §R-10§! päpstlichen Einfluss. Wenn sie ablehnen, verlieren wir §R-10§! Prestige und erhalten einen Kriegsgrund gegen sie."
+ make_papal_sanctuary_subject_to_vassal_tooltip: "Macht §Y[From.GetName]§! zu einem [Root.GetAdjective]en §YVasall§!.\n"
+ make_papal_sanctuary_subject_to_vassal_alert_tooltip: "Zu Vasall konvertieren"
+ make_papal_sanctuary_subject_to_vassal_dialog: "§Y[This.GetName]§! schlägt uns vor, dass wir ihr §YVasall§! werden. \n[vassal_desc] \nWenn wir akzeptieren, kostet uns dies §R-10§! päpstlichen Einfluss. Wenn wir ablehnen, verlieren sie §R-10§! Prestige und erhalten einen Kriegsgrund gegen uns. \nWollt Ihr akzeptieren?"
+ 
+ papal_sanctuary_subject_become_independent_title: "Unabhängigkeit erklären"
+ papal_sanctuary_subject_become_independent_desc: "Erklärt Eure Unabhängigkeit von Eurem Lehnsherrn §Y[From.GetName]§!. Dies wird uns einen §Y5-jährigen§! Waffenstillstand mit ihnen geben und unseren derzeitigen Herrscher exkommunizieren."
+ papal_sanctuary_subject_become_independent_tooltip: "Erklärt Eure Unabhängigkeit von Eurem Lehnsherrn §Y[From.GetName]§!.\n"
+ 
+ cancel_papal_sanctuary_subject_title: "Päpstliches Schutzgebiet entlassen"
+ cancel_papal_sanctuary_subject_desc: "Beendet das Abhängigkeitsverhältnis von §Y[From.GetName]§! zu uns. Dies wird ihre Meinung über uns um §R-200§! verschlechtern, sofern sie ein Freiheitsstreben unter §Y50%§! besitzen. Außerdem verlieren wir §R-25§! Prestige und erhalten eine §Y5-jährige§! Waffenruhe mit ihnen."
+ cancel_papal_sanctuary_subject_tooltip: "Beedet die Vasallisierung von §Y[From.GetName]§! und entlasst sie in die Freiheit.\n"
+ 
+ 
  return_subject_to_vassal_title: "Zum Vasall degradieren"
  return_subject_to_vassal_desc: "Beendet den derzeitigen Status von §Y[From.GetName]§! und macht sie zu einem Vasallen. Dies wird ihre Meinung über uns um §R-100§! verschlechtern und ihr Freiheitsstreben um §R+25%§! ändern. Außerdem verlieren wir §R-10§! Prestige[Root.GetIfDemoteToVassalGivesStabHit]."
  return_subject_to_vassal_tooltip: "Macht §Y[From.GetName]§! wieder zu einem Vasall.\n"
@@ -423,4 +450,16 @@
  FROM_HAS_A_HEIR: "Sie haben einen Nachfolger"
  ROOT_HAS_HEIR_FROM_HAS_NO_HEIR: "Wir haben einen Nachfolger und sie nicht"
  FROM_HAS_REGENCY: "Sie haben einen Regentschaftsrat"
+ FROM_AMOUNT_OF_INVESTED_PAPAL_INFLUENCE: "Sie haben päpstlichen Einfluss investiert"
+ ROOT_IS_CURIA_CONTROLLER: "Wir sind Kontrolleur der Kurie"
+ ROOT_RULER_IS_RELIGIOUS: "Unser Herrscher hat eine religiöse Persönlichkeit"
+ ROOT_RULER_IS_SINNER: "Unser Herrscher ist ein Sünder"
+ FROM_RULER_IS_RELIGIOUS: "Ihr Herrscher hat eine religiöse Persönlichkeit"
+ FROM_RULER_IS_SINNER: "Ihr Herrscher ist ein Sünder"
+ ROOT_IS_SUBJECT: "Wir sind ein Untertan"
+ ROOT_IS_DEFENDER_OF_FAITH: "Wir sind Verteidiger des Glaubens"
+ ROOT_HAS_ESTABLISHED_THE_KINGDOM_OF_GOD: "Wir haben das Königreich Gottes erschaffen"
+ FROM_HAS_NO_HEIR: "Sie haben keinen Nachfolger"
+ FROM_WAS_RECENTLY_ASKED_TO_BECOME_THEOCRACY: "Wir haben sie kürzlich darum gebeten, eine Theokratie zu werden"
+ FROM_WAS_RECENTLY_ASKED_TO_BECOME_A_VASSAL: "Wir haben sie kürzlich darum gebeten, unser Vasall zu werden"
  

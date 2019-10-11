@@ -311,4 +311,17 @@ spriteTypes = {
 		name = "GFX_diplomacy_amiqta_vassal"
 		texturefile = "gfx//interface//icon_diplomacy_amiqta_vassal.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_icon_papal_sanctuary_subject"
+		texturefile = "gfx/interface/icon_papal_sanctuary_subject.dds"
+	}
+	spriteType = {
+		name = "GFX_diplomacy_leadpapal_sanctuary_subject"
+		texturefile = "gfx//interface//icon_diplomacy_leadpapal_sanctuary_subject.dds"
+	}
+	spriteType = {
+		name = "GFX_diplomacy_ampapal_sanctuary_subject"
+		texturefile = "gfx//interface//icon_diplomacy_ampapal_sanctuary_subject.dds"
+	}
 }

@@ -212,3 +212,9 @@
  iqta_vassal_overlord_modifier: "Besitzt Iqtas"
  iqta_vassal_same_religion_overlord_modifier: "Iqtas folgen dem Wahren Glauben"
  
+ papal_sanctuary_subject_modifier: "Päpstliches Schutzgebiet"
+ papal_sanctuary_subject_overlord_is_papal_controller_modifier: "Lehnsherr ist Kontrolleur der Kurie"
+ papal_sanctuary_subject_converted_to_theocracy_modifier: "Wurde zu einer Theokratie konvertiert"
+ papal_sanctuary_subject_overlord_modifier: "Besitzt Päpstliche Schutzgebiete"
+ papal_sanctuary_subject_no_diplo_cost_overlord_modifier: "Päpstliches Schutzgebiet ist eine Theokratie, Verteidiger des Glaubens, Kontrolleur der Kurie oder ein Nachbar des Kreuzzugziels"
+ 

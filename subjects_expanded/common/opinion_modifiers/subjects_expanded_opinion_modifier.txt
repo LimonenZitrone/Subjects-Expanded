@@ -308,3 +308,13 @@ iqta_vassal_forced = {
 	yearly_decay = 3
 	min = -100
 }
+
+is_papal_sanctuary_subject = {
+	opinion = 30
+}
+
+declined_establish_papal_sanctuary_subject_opinion = {
+	opinion = -25
+	yearly_decay = 1
+	min = -100
+}

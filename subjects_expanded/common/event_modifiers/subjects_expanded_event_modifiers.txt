@@ -918,6 +918,37 @@ iqta_vassal_same_religion_overlord_modifier = {
 	diplomatic_upkeep = 1
 }
 
+# Subject Type: Papal Sanctuary
+papal_sanctuary_subject_modifier = {
+	global_tax_income = 0.2
+	papal_influence = 2
+	religious_unity = 0.1
+	legitimacy = 0.1
+	republican_tradition = 0.1
+	devotion = 0.1
+	horde_unity = 0.1
+	meritocracy = 0.1
+}
+
+papal_sanctuary_subject_overlord_is_papal_controller_modifier = {
+	liberty_desire = -10
+}
+
+papal_sanctuary_subject_converted_to_theocracy_modifier = {
+	liberty_desire = 25
+	devotion = 1
+}
+
+papal_sanctuary_subject_overlord_modifier = {
+	devotion = 0.5
+	diplomatic_reputation = 0.5
+	global_tax_income = 0.05
+}
+
+papal_sanctuary_subject_no_diplo_cost_overlord_modifier = {
+	diplomatic_upkeep = 1
+}
+
 # Modifiers that function as timers
 protectorate_got_monarch_power_this_year = {
 }
@@ -953,4 +984,7 @@ iqta_vassal_allow_annex_modifier = {
 }
 
 iqta_vassal_is_getting_annexed_modifier = {
+}
+
+cooldown_papal_sanctuary_subject_converted_to_theocracy_modifier = {
 }

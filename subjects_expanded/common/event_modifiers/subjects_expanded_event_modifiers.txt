@@ -940,7 +940,7 @@ papal_sanctuary_subject_converted_to_theocracy_modifier = {
 }
 
 papal_sanctuary_subject_overlord_modifier = {
-	devotion = 0.5
+	devotion = 0.25
 	diplomatic_reputation = 0.5
 	global_tax_income = 0.05
 }

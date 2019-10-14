@@ -153,6 +153,7 @@
  imperial_tributary_state_overlord_modifier: "Has Imperial Tributary States"
  
  sister_republic_modifier: "Sister Republic"
+ sister_republic_low_dev_modifier: "Has less than §Y25%§! of its overlord's development"
  sister_republic_overlord_modifier: "Has Sister Republics"
  
  muslim_tributary_vassal_modifier: "Dar al-Sulh Territory"

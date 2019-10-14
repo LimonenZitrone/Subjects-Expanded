@@ -2405,6 +2405,12 @@ sister_republic = {
 		}
 		modifier = sister_republic_modifier
 	}
+	modifier_subject = {
+		trigger = {
+			NOT = { development_of_overlord_fraction = 0.25 }
+		}
+		modifier = sister_republic_low_dev_modifier
+	}
 	
 	modifier_overlord = clear
 	modifier_overlord = {

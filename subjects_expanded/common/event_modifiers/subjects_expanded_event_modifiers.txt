@@ -645,6 +645,10 @@ sister_republic_modifier = {
 	election_cycle = 10000
 }
 
+sister_republic_low_dev_modifier = {
+	liberty_desire = 25
+}
+
 sister_republic_overlord_modifier = {
 	development_cost = -0.1
 	build_cost = -0.1

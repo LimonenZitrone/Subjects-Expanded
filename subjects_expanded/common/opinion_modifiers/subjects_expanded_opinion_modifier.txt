@@ -318,3 +318,9 @@ declined_establish_papal_sanctuary_subject_opinion = {
 	yearly_decay = 1
 	min = -100
 }
+
+declined_ask_for_papal_sanctuary_subject_opinion = {
+	opinion = -25
+	yearly_decay = 1
+	min = -100
+}

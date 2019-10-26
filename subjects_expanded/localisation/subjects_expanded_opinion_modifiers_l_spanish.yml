@@ -85,4 +85,5 @@
  
  is_papal_sanctuary_subject: "Papal Sanctuary"
  declined_establish_papal_sanctuary_subject_opinion: "Demand for Papal Sanctuary declined"
+ declined_ask_for_papal_sanctuary_subject_opinion: "Offer for Papal Sanctuary declined"
  

@@ -23,6 +23,9 @@ is_possible_subject_of_subject_type_client_vassal = {
 
 is_possible_subject_of_subject_type_client_march = {
 	NOT = { is_subject_of_type = client_march }
+	is_subject_of = PREV
+	is_subject_of_type = client_vassal
+	primitives = no
 }
 
 is_possible_subject_of_subject_type_colony = {
@@ -485,6 +488,7 @@ is_possible_subject_of_subject_type_naval_march = {
 	NOT = { is_subject_of_type = naval_march }
 	vassal_of = PREV
 	num_of_ports = 1
+	primitives = no
 }
 
 is_possible_subject_of_subject_type_trade_outpost = {

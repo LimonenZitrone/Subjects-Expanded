@@ -337,6 +337,12 @@
  establish_papal_sanctuary_subject_alert_tooltip: "Establish Papal Sanctuary"
  establish_papal_sanctuary_subject_dialog: "§Y[This.GetName]§! offers us that we become their §YPapal Sanctuary§!. \n[papal_sanctuary_subject_desc] \nDo you want to accept?"
  
+ ask_for_papal_sanctuary_subject_title: "Request Papal Sanctuary"
+ ask_for_papal_sanctuary_subject_desc: "Do you want to offer §Y[From.GetName]§! that we become their Papal Sanctuary? \n[papal_sanctuary_subject_desc]"
+ ask_for_papal_sanctuary_subject_tooltip: "Ask §Y[From.GetName]§! to make §Y[Root.GetName]§! to a [From.GetAdjective] §YPapal Sanctuary§!.\n"
+ ask_for_papal_sanctuary_subject_alert_tooltip: "Request Papal Sanctuary"
+ ask_for_papal_sanctuary_subject_dialog: "§Y[This.GetName]§! offers us that they become our §YPapal Sanctuary§!. \n[papal_sanctuary_subject_desc] \nDo you want to accept?"
+ 
  make_papal_sanctuary_subject_to_theocracy_title: "Convert to Theocracy"
  make_papal_sanctuary_subject_to_theocracy_desc: "Ask §Y[From.GetName]§! to change to a theocratic government form. If they accept, this will cost them §R-10§! papal influence and this will change their liberty desire by §R+25%§! and their yearly devotion by §G+1.00§! for §Y5 years§!. If they decline, we will lose §R-10§! prestige."
  make_papal_sanctuary_subject_to_theocracy_tooltip: "Ask §Y[From.GetName]§! to change to a theocratic government form.\n"
@@ -356,6 +362,11 @@
  cancel_papal_sanctuary_subject_title: "Release Papal Sanctuary"
  cancel_papal_sanctuary_subject_desc: "Cancel the dependency of §Y[From.GetName]§! of us. This will decrease their opinion about us by §R-200§!, if their liberty desire is below §Y50%§!. We will also lose §R-25§! prestige and gain a truce with them for §Y5 years§!."
  cancel_papal_sanctuary_subject_tooltip: "Cancel the vassalisation of §Y[From.GetName]§! and grant them independence.\n"
+ 
+ 
+ establish_client_march_title: "Establish Client State March"
+ establish_client_march_desc: "Make your client state [From.GetName] to a §YClient State March§!. \n[client_march_desc]"
+ establish_client_march_tooltip: "Make your client state [From.GetName] to a §YClient State March§!.\n"
  
  
  return_subject_to_vassal_title: "Demote to Vassal"
@@ -462,4 +473,11 @@
  FROM_HAS_NO_HEIR: "They have no heir"
  FROM_WAS_RECENTLY_ASKED_TO_BECOME_THEOCRACY: "We recently asked them to convert to a theocracy"
  FROM_WAS_RECENTLY_ASKED_TO_BECOME_A_VASSAL: "We recently asked them to become our vassal"
+ ROOT_IS_EMPIRE_RANK: "We are an Empire"
+ ROOT_IS_KINGDOM_RANK: "We are a Kingdom"
+ ROOT_IS_HRE_MEMBER: "We are a member of the Empire"
+ ROOT_IS_MONARCHY: "We are a monarchy"
+ ROOT_IS_A_REPUBLIC: "We are a republic"
+ ROOT_IS_A_THEOCRACY: "We are a theocracy"
+ ROOT_AMOUNT_OF_INVESTED_PAPAL_INFLUENCE: "We invested in the next papal election"
  

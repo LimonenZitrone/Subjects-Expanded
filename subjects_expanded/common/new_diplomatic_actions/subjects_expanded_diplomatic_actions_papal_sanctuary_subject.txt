@@ -483,7 +483,9 @@ establish_papal_sanctuary_subject = {
 		add_entry = {
 			name = FROM_IS_IMPERIAL_CITY
 			limit = {
-				has_reform = free_city
+				FROM = {
+					has_reform = free_city
+				}
 			}
 			export_to_variable = {
 				which = ai_value
@@ -666,6 +668,641 @@ establish_papal_sanctuary_subject = {
 				NOT = { has_country_flag = declined_establish_papal_sanctuary_subject_@ROOT }
 				had_country_flag = { flag = declined_establish_papal_sanctuary_subject_@ROOT days = 1825 }
 			}
+		}
+	}
+}
+
+ask_for_papal_sanctuary_subject = {
+	category = influence
+	
+	alert_index = 6
+	alert_tooltip = ask_for_papal_sanctuary_subject_alert_tooltip
+	
+	require_acceptance = yes
+	
+	is_visible = {
+		FROM = {
+			can_create_subject_type = {
+				subject = ROOT
+				subject_type = papal_sanctuary_subject
+			}
+		}
+	}
+	
+	is_allowed = {
+		FROM = {
+			can_create_subject_type = {
+				subject = ROOT
+				subject_type = papal_sanctuary_subject
+			}
+		}
+		NOT = { truce_with = FROM }
+		is_at_war = no
+		FROM = {
+			is_at_war = no
+		}
+		FROM = {
+			has_opinion = {
+				who = ROOT
+				value = 100
+			}
+		}
+		religious_unity = 0.9
+	}
+	
+	on_accept = {
+		if = {
+			limit = {
+				FROM = {
+					can_create_subject_type = {
+						subject = ROOT
+						subject_type = papal_sanctuary_subject
+					}
+				}
+				NOT = { truce_with = FROM }
+				is_at_war = no
+				FROM = {
+					is_at_war = no
+				}
+				FROM = {
+					has_opinion = {
+						who = ROOT
+						value = 100
+					}
+				}
+				religious_unity = 0.9
+			}
+			FROM = {
+				create_subject = {
+					subject = ROOT
+					subject_type = papal_sanctuary_subject
+				}
+			}
+			add_truce_with = FROM
+		}
+	}
+	
+	on_decline = {
+		if = {
+			limit = {
+				FROM = {
+					can_create_subject_type = {
+						subject = ROOT
+						subject_type = papal_sanctuary_subject
+					}
+				}
+				NOT = { truce_with = FROM }
+				is_at_war = no
+				FROM = {
+					is_at_war = no
+				}
+				FROM = {
+					has_opinion = {
+						who = ROOT
+						value = 100
+					}
+				}
+				religious_unity = 0.9
+			}
+			clr_country_flag = declined_establish_papal_sanctuary_subject_@FROM
+			set_country_flag = declined_establish_papal_sanctuary_subject_@FROM
+			add_opinion = {
+				who = FROM
+				modifier = declined_ask_for_papal_sanctuary_subject_opinion
+			}
+		}
+	}
+	
+	ai_acceptance = {
+		add_entry = {
+			name = FROM_ATTITUDE_TOWARDS_ROOT
+			limit = {
+				FROM = {
+					OR = {
+						ai_attitude = { who = ROOT attitude = attitude_allied }
+						ai_attitude = { who = ROOT attitude = attitude_friendly }
+					}
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 10
+			}
+		}
+		add_entry = {
+			name = FROM_ATTITUDE_TOWARDS_ROOT
+			limit = {
+				FROM = {
+					ai_attitude = { who = ROOT attitude = attitude_threatened }
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 50
+			}
+			multiply_variable = { which = ai_value value = -1 }
+		}
+		add_entry = {
+			name = FROM_ATTITUDE_TOWARDS_ROOT
+			limit = {
+				FROM = {
+					ai_attitude = { who = ROOT attitude = attitude_neutral }
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 10
+			}
+			multiply_variable = { which = ai_value value = -1 }
+		}
+		add_entry = {
+			name = FROM_ATTITUDE_TOWARDS_ROOT
+			limit = {
+				FROM = {
+					OR = {
+						ai_attitude = { who = ROOT attitude = attitude_hostile }
+						ai_attitude = { who = ROOT attitude = attitude_rivalry }
+						ai_attitude = { who = ROOT attitude = attitude_outraged }
+					}
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 1000
+			}
+			multiply_variable = { which = ai_value value = -1 }
+		}
+		add_entry = {
+			name = MODIFIER_DIPLO_SKILL
+			export_to_variable = {
+				which = ai_value
+				value = modifier:diplomatic_reputation
+			}
+			multiply_variable = { which = ai_value value = 3 }
+		}
+		add_entry = {
+			name = ROOT_IS_EMPIRE_RANK
+			limit = {
+				government_rank = 3
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 10
+			}
+		}
+		add_entry = {
+			name = ROOT_IS_KINGDOM_RANK
+			limit = {
+				government_rank = 2
+				NOT = { government_rank = 3 }
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 5
+			}
+		}
+		add_entry = {
+			name = ROOT_FROM_MILITARY_POWER_COMPARED
+			limit = {
+				variable_arithmetic_trigger = {
+					export_to_variable = {
+						which = our_mil_tech
+						value = trigger_value:mil_tech
+						who = FROM
+					}
+					export_to_variable = {
+						which = their_mil_tech
+						value = trigger_value:mil_tech
+					}
+					export_to_variable = {
+						which = our_army_size
+						value = trigger_value:army_size
+						who = FROM
+					}
+					export_to_variable = {
+						which = their_army_size
+						value = trigger_value:army_size
+					}
+					export_to_variable = {
+						which = military_power
+						value = 0
+					}
+					divide_variable = { which = our_army_size value = 10 }
+					divide_variable = { which = their_army_size value = -10 }
+					change_variable = { which = our_army_size which = their_army_size }
+					multiply_variable = { which = their_mil_tech value = -1 }
+					change_variable = { which = our_mil_tech which = their_mil_tech }
+					multiply_variable = { which = our_mil_tech value = 3 }
+					change_variable = { which = military_power which = our_army_size }
+					change_variable = { which = military_power which = our_mil_tech }
+					
+					NOT = { check_variable = { which = military_power value = -39 } }
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 40
+			}
+			multiply_variable = { which = ai_value value = -1 }
+		}
+		add_entry = {
+			name = ROOT_FROM_MILITARY_POWER_COMPARED
+			limit = {
+				variable_arithmetic_trigger = {
+					export_to_variable = {
+						which = our_mil_tech
+						value = trigger_value:mil_tech
+						who = FROM
+					}
+					export_to_variable = {
+						which = their_mil_tech
+						value = trigger_value:mil_tech
+					}
+					export_to_variable = {
+						which = our_army_size
+						value = trigger_value:army_size
+						who = FROM
+					}
+					export_to_variable = {
+						which = their_army_size
+						value = trigger_value:army_size
+					}
+					export_to_variable = {
+						which = military_power
+						value = 0
+					}
+					divide_variable = { which = our_army_size value = 10 }
+					divide_variable = { which = their_army_size value = -10 }
+					change_variable = { which = our_army_size which = their_army_size }
+					multiply_variable = { which = their_mil_tech value = -1 }
+					change_variable = { which = our_mil_tech which = their_mil_tech }
+					multiply_variable = { which = our_mil_tech value = 3 }
+					change_variable = { which = military_power which = our_army_size }
+					change_variable = { which = military_power which = our_mil_tech }
+					
+					check_variable = { which = military_power value = -39 }
+					NOT = { check_variable = { which = military_power value = 30 } }
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 0
+			}
+			export_to_variable = {
+				which = our_mil_tech
+				value = trigger_value:mil_tech
+				who = FROM
+			}
+			export_to_variable = {
+				which = their_mil_tech
+				value = trigger_value:mil_tech
+			}
+			export_to_variable = {
+				which = our_army_size
+				value = trigger_value:army_size
+				who = FROM
+			}
+			export_to_variable = {
+				which = their_army_size
+				value = trigger_value:army_size
+			}
+			divide_variable = { which = our_army_size value = 10 }
+			divide_variable = { which = their_army_size value = -10 }
+			change_variable = { which = our_army_size which = their_army_size }
+			multiply_variable = { which = their_mil_tech value = -1 }
+			change_variable = { which = our_mil_tech which = their_mil_tech }
+			multiply_variable = { which = our_mil_tech value = 3 }
+			change_variable = { which = ai_value which = our_army_size }
+			change_variable = { which = ai_value which = our_mil_tech }
+		}
+		add_entry = {
+			name = ROOT_FROM_MILITARY_POWER_COMPARED
+			limit = {
+				variable_arithmetic_trigger = {
+					export_to_variable = {
+						which = our_mil_tech
+						value = trigger_value:mil_tech
+						who = FROM
+					}
+					export_to_variable = {
+						which = their_mil_tech
+						value = trigger_value:mil_tech
+					}
+					export_to_variable = {
+						which = our_army_size
+						value = trigger_value:army_size
+						who = FROM
+					}
+					export_to_variable = {
+						which = their_army_size
+						value = trigger_value:army_size
+					}
+					export_to_variable = {
+						which = military_power
+						value = 0
+					}
+					divide_variable = { which = our_army_size value = 10 }
+					divide_variable = { which = their_army_size value = -10 }
+					change_variable = { which = our_army_size which = their_army_size }
+					multiply_variable = { which = their_mil_tech value = -1 }
+					change_variable = { which = our_mil_tech which = their_mil_tech }
+					multiply_variable = { which = our_mil_tech value = 3 }
+					change_variable = { which = military_power which = our_army_size }
+					change_variable = { which = military_power which = our_mil_tech }	
+					check_variable = { which = military_power value = 30 }
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 30
+			}
+		}
+		add_entry = {
+			name = ROOT_IS_HRE_MEMBER
+			limit = {
+				is_part_of_hre = yes
+				FROM = {
+					is_part_of_hre = no
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 50
+			}
+			multiply_variable = { which = ai_value value = -1 }
+		}
+		add_entry = {
+			name = ROOT_IS_HRE_MEMBER
+			limit = {
+				is_part_of_hre = yes
+				FROM = {
+					is_part_of_hre = yes
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 25
+			}
+			multiply_variable = { which = ai_value value = -1 }
+		}
+		add_entry = {
+			name = ROOT_IS_CURIA_CONTROLLER
+			limit = {
+				is_papal_controller = yes
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 25
+			}
+		}
+		add_entry = {
+			name = ROOT_DEVELOPMENT
+			export_to_variable = {
+				which = ai_value
+				value = trigger_value:total_development
+			}
+			subtract_variable = { which = ai_value value = 1 }
+			divide_variable = { which = ai_value value = -3 }
+		}
+		add_entry = {
+			name = ROOT_OWNS_FROM_CORE_PROVINCES
+			limit = {
+				any_owned_province = {
+					is_core = FROM
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 1000
+			}
+			multiply_variable = { which = ai_value value = -1 }
+		}
+		add_entry = {
+			name = BORDER_DISTANCE
+			export_to_variable = {
+				which = ai_value
+				value = border_distance
+				who = FROM
+				with = ROOT
+			}
+			divide_variable = { which = ai_value value = -2 }
+		}
+		add_entry = {
+			name = ROOT_FROM_ARE_ALLIED
+			limit = {
+				alliance_with = FROM
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 10
+			}
+		}
+		add_entry = {
+			name = FROM_ROOT_ARE_RIVALS
+			limit = {
+				OR = {
+					is_rival = FROM
+					is_enemy = FROM
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 1000
+			}
+			divide_variable = { which = ai_value value = -1 }
+		}
+		add_entry = {
+			name = ROOT_IS_MONARCHY
+			limit = {
+				government = monarchy
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 50
+			}
+			multiply_variable = { which = ai_value value = -1 }
+		}
+		add_entry = {
+			name = ROOT_IS_A_REPUBLIC
+			limit = {
+				government = republic
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 25
+			}
+			multiply_variable = { which = ai_value value = -1 }
+		}
+		add_entry = {
+			name = ROOT_IS_A_THEOCRACY
+			limit = {
+				government = theocracy
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 10
+			}
+		}
+		add_entry = {
+			name = ROOT_AMOUNT_OF_INVESTED_PAPAL_INFLUENCE
+			limit = {
+				FROM = {
+					invested_papal_influence = 1
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = trigger_value:invested_papal_influence
+				who = FROM
+			}
+			divide_variable = { which = ai_value value = 2 }
+		}
+		add_entry = {
+			name = ROOT_RULER_IS_RELIGIOUS
+			limit = {
+				has_dlc = "Rights of Man"
+				OR = {
+					ruler_has_personality = zealot_personality
+					ruler_has_personality = pious_personality
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 5
+			}
+		}
+		add_entry = {
+			name = ROOT_RULER_IS_SINNER
+			limit = {
+				has_dlc = "Rights of Man"
+				ruler_has_personality = sinner_personality
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 25
+			}
+			multiply_variable = { which = ai_value value = -1 }
+		}
+		add_entry = {
+			name = FROM_RULER_IS_RELIGIOUS
+			limit = {
+				has_dlc = "Rights of Man"
+				FROM = {
+					OR = {
+						ruler_has_personality = zealot_personality
+						ruler_has_personality = pious_personality
+					}
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 10
+			}
+		}
+		add_entry = {
+			name = FROM_RULER_IS_SINNER
+			limit = {
+				has_dlc = "Rights of Man"
+				FROM = {
+					ruler_has_personality = sinner_personality
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 1000
+			}
+			multiply_variable = { which = ai_value value = -1 }
+		}
+		add_entry = {
+			name = ROOT_IS_DEFENDER_OF_FAITH
+			limit = {
+				is_defender_of_faith = yes
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 10
+			}
+		}
+		add_entry = {
+			name = STATEGIC_VALUE
+			limit = {
+				NOT = {
+					FROM = {
+						OR = {
+							is_defender_of_faith = yes
+							is_papal_controller = yes
+							personality = ai_diplomat
+							has_country_modifier = kingdom_of_god
+							AND = {
+								has_dlc = "Rights of Man"
+								OR = {
+									ruler_has_personality = zealot_personality
+									ruler_has_personality = pious_personality
+								}
+							}
+						}
+					}
+					OR = {
+						FROM = {
+							num_of_free_diplomatic_relations = 1
+						}
+						religion = FROM
+						OR = {
+							government = theocracy
+							is_papal_controller = yes
+							is_defender_of_faith = yes
+							crusade_target = {
+								is_neighbor_of = ROOT
+							}
+						}
+					}
+					is_emperor = no
+					NOT = { total_development = 125 }
+					OR = {
+						NOT = { has_country_flag = declined_establish_papal_sanctuary_subject_@FROM }
+						had_country_flag = { flag = declined_establish_papal_sanctuary_subject_@FROM days = 1825 }
+					}
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 1000
+			}
+			multiply_variable = { which = ai_value value = -1 }
+		}
+	}
+	
+	ai_will_do = {
+		NOT = { total_development = 125 }
+		NOT = { government_rank = 3 }
+		is_emperor = no
+		is_elector = no
+		NOT = { has_reform = free_city }
+		invested_papal_influence = 5
+		OR = {
+			government = theocracy
+			alliance_with = FROM
+		}
+		OR = {
+			ai_attitude = { who = FROM attitude = attitude_threatened }
+			ai_attitude = { who = FROM attitude = attitude_allied }
+			ai_attitude = { who = FROM attitude = attitude_friendly }
+		}
+		NOT = { is_rival = FROM }
+		NOT = { is_enemy = FROM }
+		NOT = { army_size = FROM }
+		FROM = {
+			is_subject = no
+			OR = {
+				is_papal_controller = yes
+				is_defender_of_faith = yes
+				has_country_modifier = kingdom_of_god
+				alliance_with = ROOT
+			}
+		}
+		OR = {
+			NOT = { has_country_flag = declined_establish_papal_sanctuary_subject_@FROM }
+			had_country_flag = { flag = declined_establish_papal_sanctuary_subject_@FROM days = 1825 }
 		}
 	}
 }

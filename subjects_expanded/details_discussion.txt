@@ -578,12 +578,14 @@ If a subject gives an additional merchant, the bonuses it gives to its overlord 
 [*] is not  a subject
 [*] has at least 5 ports
 [*] has at least 10 ships
+[*] is not a primitive nation
 [/list]
 
 [b]Conditions (possible subject):[/b]
 [list]
 [*] is a vassal of the possible overlord
 [*] has at least 1 port
+[*] is not a primitive nation
 [/list]
 
 [b]Additional Information:[/b]

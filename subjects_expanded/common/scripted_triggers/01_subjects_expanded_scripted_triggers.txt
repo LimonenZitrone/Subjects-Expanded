@@ -540,6 +540,7 @@ is_possible_subject_of_subject_type_brother_kingdom = {
 			}
 		}
 	}
+	government = monarchy
 	dynasty = PREV
 	has_regency = no
 	religion_group = christian

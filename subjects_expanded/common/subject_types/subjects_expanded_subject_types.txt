@@ -3418,6 +3418,7 @@ brother_kingdom = {
 	# Triggers:
 	is_potential_overlord = {
 		is_subject = no
+		government = monarchy
 		religion_group = christian
 		has_regency = no
 	}

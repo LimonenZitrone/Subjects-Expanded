@@ -171,6 +171,10 @@
  subjects_expanded_dutch_province_subject_events9.EVTOPT6: "Unterstützt §Y[possible_country_to_elect_for_dutch_provinces_overlord_6.GetName]§!."
  subjects_expanded_dutch_province_subject_events9.EVTOPT7: "Abbrechen."
  
+ subjects_expanded_dutch_province_subject_events.EVTNAME10: "Niederländische Provinzen werden unabhängig"
+ subjects_expanded_dutch_province_subject_events.EVTDESC10: "Es scheint so, als ob unser System aus Niederländischen Provinzen nicht so vereint ist, wie wir gehofft haben. Entweder folgen wir nicht mehr der richtigen Kultur oder haben unsere Hauptstadt nicht in der niederländischen Region oder für mindestens eine unserer Niederländischen Provinzen trifft dies zu. Das bedeutet, dass wir die Kontrolle über die entsprechenden Niederländischen Provinze verlieren."
+ subjects_expanded_dutch_province_subject_events10.EVTOPT1: "Schade."
+ 
  subjects_expanded_persian_satrapy_events.EVTNAME3: "[From.GetName] rekrutiert Truppen"
  subjects_expanded_persian_satrapy_events.EVTDESC3: "Unser Lehnsherr hat Truppen aus allen seinen Satrapien rekrutiert.. [From.GetName] wird nun einen militärischen Bonus erhalten, während wir einen Malus erhalten."
  subjects_expanded_persian_satrapy_events3.EVTOPT1: "Ich vermute, das ist sein Recht."

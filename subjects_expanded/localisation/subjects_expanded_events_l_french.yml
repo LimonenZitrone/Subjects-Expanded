@@ -171,6 +171,10 @@
  subjects_expanded_dutch_province_subject_events9.EVTOPT6: "Support §Y[possible_country_to_elect_for_dutch_provinces_overlord_6.GetName]§!."
  subjects_expanded_dutch_province_subject_events9.EVTOPT7: "Cancel."
  
+ subjects_expanded_dutch_province_subject_events.EVTNAME10: "Dutch Provinces become Independent"
+ subjects_expanded_dutch_province_subject_events.EVTDESC10: "It seems that our system of Dutch Provinces is not as united as we hoped. Either we don't follow the right culture anymore or don't have our capital in the Low Countries region or at least one of our Dutch Provinces does. This means we will lose our control over the specific Dutch Provinces."
+ subjects_expanded_dutch_province_subject_events10.EVTOPT1: "What a shame."
+ 
  subjects_expanded_persian_satrapy_events.EVTNAME3: "[From.GetName] conscripted troops"
  subjects_expanded_persian_satrapy_events.EVTDESC3: "Our overlord has conscripted troops of all his Satrapies. [From.GetName] will now get a military bonus, while we receive a malus."
  subjects_expanded_persian_satrapy_events3.EVTOPT1: "I suppose that's his right."

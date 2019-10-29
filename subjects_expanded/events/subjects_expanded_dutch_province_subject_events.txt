@@ -1300,3 +1300,82 @@ country_event = {
 		clr_country_flag = has_dutch_provinces_player_election
 	}
 }
+
+country_event = {
+	id = subjects_expanded_dutch_province_subject_events.10
+	title = subjects_expanded_dutch_province_subject_events.EVTNAME10
+	desc = subjects_expanded_dutch_province_subject_events.EVTDESC10
+	picture = DIPLOMACY_eventPicture
+	
+	trigger = {
+		any_subject_country = {
+			is_subject_of_type = dutch_province_subject
+		}
+		OR = {
+			AND = {
+				NOT = { primary_culture = dutch }
+				NOT = { primary_culture = flemish }
+			}
+			capital_scope = {
+				NOT = { region = low_countries_region }
+			}
+			any_subject_country = {
+				is_subject_of_type = dutch_province_subject
+				OR = {
+					AND = {
+						NOT = { primary_culture = dutch }
+						NOT = { primary_culture = flemish }
+					}
+					capital_scope = {
+						NOT = { region = low_countries_region }
+					}
+				}
+			}
+		}
+	}
+	
+	mean_time_to_happen = { days = 1 }
+	
+	option = {
+		name = subjects_expanded_dutch_province_subject_events10.EVTOPT1
+		
+		ai_chance = { factor = 100 }
+		
+		if = {
+			limit = {
+				OR = {
+					AND = {
+						NOT = { primary_culture = dutch }
+						NOT = { primary_culture = flemish }
+					}
+					capital_scope = {
+						NOT = { region = low_countries_region }
+					}
+				}
+			}
+			every_subject_country = {
+				limit = {
+					is_subject_of_type = dutch_province_subject
+				}
+				grant_independence = yes
+			}
+		}
+		else = {
+			every_subject_country = {
+				limit = {
+					is_subject_of_type = dutch_province_subject
+					OR = {
+						AND = {
+							NOT = { primary_culture = dutch }
+							NOT = { primary_culture = flemish }
+						}
+						capital_scope = {
+							NOT = { region = low_countries_region }
+						}
+					}
+				}
+				grant_independence = yes
+			}
+		}
+	}
+}

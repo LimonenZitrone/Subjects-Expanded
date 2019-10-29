@@ -750,6 +750,19 @@ establish_brother_kingdom = {
 				value = 5
 			}
 		}
+		add_entry = {
+			name = FROM_JUST_CANCELED_BROTHER_KINGDOM
+			limit = {
+				FROM = {
+					has_ruler_modifier = ruler_just_canceled_to_be_brother_kingdom
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 1000
+			}
+			multiply_variable = { which = ai_value value = -1 }
+		}
 	}
 	
 	ai_will_do = {
@@ -1235,8 +1248,13 @@ brother_kingdom_become_independent = {
 				liberty_desire = 50
 			}
 			add_stability = -1
+			add_ruler_modifier = {
+				name = ruler_just_canceled_to_be_brother_kingdom
+				duration = -1
+				hidden = yes
+			}
 			FROM = {
-				country_event = { id = subjects_expanded_brother_kingdom_events.2 days = 1 }
+				country_event = { id = subjects_expanded_brother_kingdom_events.2 }
 			}
 		}
 	}
@@ -1325,6 +1343,11 @@ cancel_brother_kingdom = {
 				}
 				grant_independence = yes
 				add_truce_with = ROOT
+				add_ruler_modifier = {
+					name = ruler_just_canceled_to_be_brother_kingdom
+					duration = -1
+					hidden = yes
+				}
 			}
 			add_truce_with = FROM
 			add_prestige = -25

@@ -545,7 +545,7 @@ If a subject gives an additional merchant, the bonuses it gives to its overlord 
 
 [b]Conditions (possible overlord):[/b]
 [list]
-[*] is not  a subject
+[*] is not a subject
 [*] has a monarchy government
 [*] is either Persia or primary culture is Persian or primary culture is in Iranian group and dominant culture or primary culture is not in the Iranian group and dominent culture is in the Iranian group and accepted or Persian culture is accepted and country owns at least 10 Persian provinces
 [/list]
@@ -575,7 +575,7 @@ If a subject gives an additional merchant, the bonuses it gives to its overlord 
 
 [b]Conditions (possible overlord):[/b]
 [list]
-[*] is not  a subject
+[*] is not a subject
 [*] has at least 5 ports
 [*] has at least 10 ships
 [*] is not a primitive nation
@@ -601,7 +601,7 @@ If a subject gives an additional merchant, the bonuses it gives to its overlord 
 
 [b]Conditions (possible overlord):[/b]
 [list]
-[*] is not  a subject
+[*] is not a subject
 [*] either has a colonist or is a merchant republic
 [*] has its capital in Europe
 [*] has less than 10 Trade Outposts
@@ -637,7 +637,7 @@ If a subject gives an additional merchant, the bonuses it gives to its overlord 
 
 [b]Conditions (possible overlord):[/b]
 [list]
-[*] is not  a subject
+[*] is not a subject
 [*] has at least 1 personal union
 [/list]
 
@@ -661,7 +661,7 @@ If a subject gives an additional merchant, the bonuses it gives to its overlord 
 
 [b]Conditions (possible overlord):[/b]
 [list]
-[*] is not  a subject
+[*] is not a subject
 [*] has a monarchy government
 [*] is in the christian religion group
 [*] does not have a regency
@@ -692,7 +692,7 @@ If a subject gives an additional merchant, the bonuses it gives to its overlord 
 
 [b]Conditions (possible overlord):[/b]
 [list]
-[*] is not  a subject
+[*] is not a subject
 [*] is in the muslim religion group
 [*] is the defender of faith or has Empire rank (or Common Sense DLC is disabled and has at least 1000 development) or has the Caliphate government (Missions Expanded) or has Kingdom rank (or Common Sense DLC is disabled and has at least 300 development) and has Iqta or Caliphate (Extended Timeline) government
 [*] does not have 2 Iqtas already
@@ -716,4 +716,37 @@ If a subject gives an additional merchant, the bonuses it gives to its overlord 
 [*] Iqtas that have the same religion as their overlord and at least 75% religious unity don't cost a diplomatic relation
 [*] Iqtas can get events that convert their provinces to the religion of their overlord
 [*] Iqtas that are not muslim will either switch religion or declare an independence war
+[/list]
+
+[h1]Papal Sanctuary[/h1]
+[i]A Papal Sanctuary is independent in its diplomacy and joins its overlord's wars. The overlord is called to arms to the Papal Sanctuary's defensive wars, but the overlord can decline. It cannot be annexed and doesn't cost a diplomatic relation, if it is a theocracy, Curia Controller, Defender of Faith or a neighbor of the Crusade Target. It pays only very few taxes to its overlord, but grants it a bonus on tax income, diplomatic reputation and devotion. A Papal Sanctuary itself gains a bonus on tax income, legitimacy equivalent, yearly papal influence and religious unity. The overlord can ask a Papal Sanctuary to become a theocracy and to become a direct vassal. It can decide to become independent diplomatically, however only with enough liberty desire, if excommunicated, if the overlord is excommunicated or if the overlord doesn't fulfill the requirements of being an overlord anymore. A Papal Sanctuary can only be established by the Catholic Papal State or owner of the Papal government or \"Kingdom of God\" modifier (if the Papal State doesn't exist) in independent, Catholic nations on the same continent that neither were excommunicated nor have enacted the Statute in Restraint of Appeals.[/i]
+
+[b]Conditions (possible overlord):[/b]
+[list]
+[*] is either the Papal State or has the papacy government or the Kingdom of God modifier and the Papal State doesn't exist
+[*] is catholic
+[*] is not excommunicated
+[*] has the Kingdom of God modifier or the papacy is active
+[/list]
+
+[b]Conditions (possible subject):[/b]
+[list]
+[*] is not a subject
+[*] has the same religion as the possible overlord (cathoic)
+[*] has its capital on the same continent as the possible overlord
+[*] does not have the "The Statue in Restraint of Appeals" modifier
+[*] is not excommunicated
+[/list]
+
+[b]Additional Information:[/b]
+[list]
+[*] Papal Sanctuaries can only be established diplomatically
+[*] Papal Sanctuaries don't have a max government rank
+[*] Papal Sanctuaries gain a bonus on tax income, legitimacy equivalent, yearly papal influence and religious unity
+[*] Papal Sanctuaries grant their overlord a bonus on tax income, diplomatic reputation and devotion
+[*] Papal Sanctuaries are voluntary subjects, which means they can declare their independence diplomatically; this will excommunicate them
+[*] Papal Sanctuaries do not cost a diplomatic relation, if they are a theocracy, Curia Controller, Defender of Faith or a neighbor of the Crusade Target
+[*] Papal Sanctuaries can be turned into theocracies
+[*] Papal Sanctuaries can be transformed into vassals
+[*] Papal Sanctuaries pay 10% of what a vassal pays in taxes to its overlord
 [/list]

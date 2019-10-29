@@ -3663,6 +3663,7 @@ papal_sanctuary_subject = {
 			}
 		}
 		religion = catholic
+		is_excommunicated = no
 		OR = {
 			papacy_active = yes
 			has_country_modifier = kingdom_of_god

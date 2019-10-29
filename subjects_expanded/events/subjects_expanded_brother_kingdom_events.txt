@@ -43,6 +43,11 @@ country_event = {
 				create_marriage = ROOT
 			}
 			create_alliance = ROOT
+			add_ruler_modifier = {
+				name = ruler_just_canceled_to_be_brother_kingdom
+				duration = -1
+				hidden = yes
+			}
 		}
 	}
 	

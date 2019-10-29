@@ -992,3 +992,6 @@ iqta_vassal_is_getting_annexed_modifier = {
 
 cooldown_papal_sanctuary_subject_converted_to_theocracy_modifier = {
 }
+
+ruler_just_canceled_to_be_brother_kingdom = {
+}

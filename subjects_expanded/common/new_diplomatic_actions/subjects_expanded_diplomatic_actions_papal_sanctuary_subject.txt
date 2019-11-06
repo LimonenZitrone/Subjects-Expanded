@@ -2558,7 +2558,13 @@ papal_sanctuary_subject_become_independent = {
 			is_subject_of = FROM
 			is_subject_of_type = papal_sanctuary_subject
 		}
-		NOT = { government = theocracy }
+		OR = {
+			NOT = { government = theocracy }
+			NOT = { religion = FROM }
+			FROM = {
+				NOT = { can_be_overlord = papal_sanctuary_subject }
+			}
+		}
 		NOT = { truce_with = FROM }
 		OR = {
 			is_excommunicated = yes
@@ -2566,7 +2572,11 @@ papal_sanctuary_subject_become_independent = {
 			FROM = {
 				is_excommunicated = yes
 			}
-			liberty_desire = 50
+			AND = {
+				liberty_desire = 50
+				has_country_modifier = the_statue_in_restraint_of_appeals
+			}
+			liberty_desire = 65
 			FROM = {
 				NOT = { can_be_overlord = papal_sanctuary_subject }
 			}
@@ -2580,7 +2590,13 @@ papal_sanctuary_subject_become_independent = {
 					is_subject_of = FROM
 					is_subject_of_type = papal_sanctuary_subject
 				}
-				NOT = { government = theocracy }
+				OR = {
+					NOT = { government = theocracy }
+					NOT = { religion = FROM }
+					FROM = {
+						NOT = { can_be_overlord = papal_sanctuary_subject }
+					}
+				}
 				NOT = { truce_with = FROM }
 				OR = {
 					is_excommunicated = yes
@@ -2588,7 +2604,11 @@ papal_sanctuary_subject_become_independent = {
 					FROM = {
 						is_excommunicated = yes
 					}
-					liberty_desire = 50
+					AND = {
+						liberty_desire = 50
+						has_country_modifier = the_statue_in_restraint_of_appeals
+					}
+					liberty_desire = 65
 					FROM = {
 						NOT = { can_be_overlord = papal_sanctuary_subject }
 					}
@@ -2626,6 +2646,10 @@ papal_sanctuary_subject_become_independent = {
 			NOT = { religion = FROM }
 			FROM = {
 				is_excommunicated = yes
+			}
+			AND = {
+				liberty_desire = 55
+				has_country_modifier = the_statue_in_restraint_of_appeals
 			}
 			liberty_desire = 75
 			FROM = {

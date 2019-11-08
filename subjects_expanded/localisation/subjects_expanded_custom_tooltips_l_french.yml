@@ -61,6 +61,8 @@
  CANNOT_ANNEX_IQTA_VASSAL_OF_OTHER_RELIGION: "You cannot annex an Iqta that doesn't follow your religion (§Y[Root.Religion.GetName]§!)."
  CANNOT_ANNEX_IQTA_VASSAL_WITH_LOW_RELIGIOUS_UNITY: "[From.GetName] needs to have at least §Y25%§! religious unity."
  
+ CANNOT_CALL_PAPAL_SANCTUARY_AGAINST_ITS_OVERLORD: "You cannot call a Papal Sanctuary to arms against its overlord, if that is the Curia Controller."
+ 
  # New Diplomatic Actions:
  DID_NOT_LOWER_DEVELOPMENT_WITHIN_LAST_10_YEARS: "Did NOT reduce the development of an autonomous dominion within the last §Y10 years§!"
  DID_NOT_REPLACE_CURRENT_RULER: "We did NOT help §Y[From.Monarch.GetName]§! to ascend the throne"

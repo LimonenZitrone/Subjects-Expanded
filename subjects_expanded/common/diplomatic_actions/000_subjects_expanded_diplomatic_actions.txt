@@ -231,6 +231,26 @@ callaction = {
 			}
 		}
 	}
+	condition = {
+		tooltip = CANNOT_CALL_PAPAL_SANCTUARY_AGAINST_ITS_OVERLORD
+		potential = {
+			FROM = {
+				religion = catholic
+				is_subject_of_type = papal_sanctuary_subject
+				overlord = {
+					religion = catholic
+					is_papal_controller = yes
+				}
+			}
+		}
+		allow = {
+			FROM = {
+				overlord = {
+					NOT = { war_with = ROOT }
+				}
+			}
+		}
+	}
 }
 
 annexationaction = {

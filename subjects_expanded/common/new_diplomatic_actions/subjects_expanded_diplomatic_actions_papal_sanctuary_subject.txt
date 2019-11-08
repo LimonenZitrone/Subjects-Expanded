@@ -631,6 +631,74 @@ establish_papal_sanctuary_subject = {
 				value = 50
 			}
 		}
+		add_entry = {
+			name = FROM_HAS_STRONG_NEIGHBOR_WITH_DIFFERENT_RELIGION
+			limit = {
+				FROM = {
+					any_neighbor_country = {
+						NOT = { religion = PREV }
+						variable_arithmetic_trigger = {
+							export_to_variable = {
+								which = this_army_size
+								value = trigger_value:army_size
+							}
+							export_to_variable = {
+								which = our_army_size
+								value = trigger_value:army_size
+								who = ROOT
+							}
+							export_to_variable = {
+								which = their_army_size
+								value = trigger_value:army_size
+								who = FROM
+							}
+							divide_variable = { which = this_army_size value = 2 }
+							divide_variable = { which = our_army_size value = 3 }
+							check_variable = { which = this_army_size which = their_army_size }
+							check_variable = { which = our_army_size which = this_army_size }
+						}
+					}
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 30
+			}
+		}
+		add_entry = {
+			name = FROM_HAS_STRONG_NEIGHBOR_WITH_DIFFERENT_RELIGION
+			limit = {
+				FROM = {
+					any_neighbor_country = {
+						NOT = { religion = PREV }
+						variable_arithmetic_trigger = {
+							export_to_variable = {
+								which = this_army_size
+								value = trigger_value:army_size
+							}
+							export_to_variable = {
+								which = our_army_size
+								value = trigger_value:army_size
+								who = ROOT
+							}
+							export_to_variable = {
+								which = their_army_size
+								value = trigger_value:army_size
+								who = FROM
+							}
+							divide_variable = { which = this_army_size value = 2 }
+							divide_variable = { which = our_army_size value = 3 }
+							check_variable = { which = this_army_size which = their_army_size }
+							NOT = { check_variable = { which = our_army_size which = this_army_size } }
+						}
+					}
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 15
+			}
+		}
 	}
 	
 	ai_will_do = {
@@ -1118,7 +1186,7 @@ ask_for_papal_sanctuary_subject = {
 			}
 			export_to_variable = {
 				which = ai_value
-				value = 50
+				value = 20
 			}
 			multiply_variable = { which = ai_value value = -1 }
 		}
@@ -1129,7 +1197,7 @@ ask_for_papal_sanctuary_subject = {
 			}
 			export_to_variable = {
 				which = ai_value
-				value = 25
+				value = 10
 			}
 			multiply_variable = { which = ai_value value = -1 }
 		}
@@ -1433,7 +1501,7 @@ make_papal_sanctuary_subject_to_theocracy = {
 				who = FROM
 				with = ROOT
 			}
-			divide_variable = { which = ai_value value = 20 }
+			divide_variable = { which = ai_value value = 10 }
 		}
 		add_entry = {
 			name = FROM_LIBERTY_DESIRE

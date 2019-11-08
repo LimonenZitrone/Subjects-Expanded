@@ -61,6 +61,8 @@
  CANNOT_ANNEX_IQTA_VASSAL_OF_OTHER_RELIGION: "Ihr könnt eine Iqta nicht annektieren, wenn sie nicht Eurer Religion (§Y[Root.Religion.GetName]§!) folgt."
  CANNOT_ANNEX_IQTA_VASSAL_WITH_LOW_RELIGIOUS_UNITY: "[From.GetName] muss mindestens eine religiöse Einheit von §Y25%§! haben."
  
+ CANNOT_CALL_PAPAL_SANCTUARY_AGAINST_ITS_OVERLORD: "Ihr könnt ein Päpstliches Schutzgebiet nicht gegen seinen Lehnsherrn zu den Waffen rufen, wenn dieser Kontrolleur der Kurie ist."
+ 
  # New Diplomatic Actions:
  DID_NOT_LOWER_DEVELOPMENT_WITHIN_LAST_10_YEARS: "Hat in den letzten §Y10 Jahren§! NICHT die Entwicklung eines Autonomen Herrschaftsgebiets verringert"
  DID_NOT_REPLACE_CURRENT_RULER: "Wir haben §Y[From.Monarch.GetName]§! NICHT auf den Thron verholfen"

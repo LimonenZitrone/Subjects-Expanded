@@ -397,6 +397,7 @@
  FROM_IS_HRE_ELECTOR: "They are an elector"
  FROM_IS_PAPAL_STATE: "They are the Papal State"
  FROM_HAS_MORE_THAN_100_TOTAL_DEVELOPMENT: "They have more than §Y100§! development"
+ FROM_HAS_MORE_THAN_200_TOTAL_DEVELOPMENT: "They have more than §Y200§! development"
  ROOT_OWNS_FROM_CORE_PROVINCES: "We own their cores"
  ROOT_FROM_HAVE_SAME_PRIMARY_CULTURE: "We have the same primary culture"
  FROM_LIBERTY_DESIRE_TOO_HIGH: "Their liberty desire is too high"

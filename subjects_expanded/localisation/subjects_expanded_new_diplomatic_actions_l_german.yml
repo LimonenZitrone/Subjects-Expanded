@@ -397,6 +397,7 @@
  FROM_IS_HRE_ELECTOR: "Sie sind ein Kurfürst"
  FROM_IS_PAPAL_STATE: "Sie sind der Kirchenstaat"
  FROM_HAS_MORE_THAN_100_TOTAL_DEVELOPMENT: "Sie besitzen mehr als §Y100§! Entwicklung"
+ FROM_HAS_MORE_THAN_200_TOTAL_DEVELOPMENT: "Sie besitzen mehr als §Y200§! Entwicklung"
  ROOT_OWNS_FROM_CORE_PROVINCES: "Wir besitzen Kernprovinzen von ihnen"
  ROOT_FROM_HAVE_SAME_PRIMARY_CULTURE: "Wir besitzen dieselbe Primärkultur"
  FROM_LIBERTY_DESIRE_TOO_HIGH: "Ihr Freiheitsstreben ist zu hoch"

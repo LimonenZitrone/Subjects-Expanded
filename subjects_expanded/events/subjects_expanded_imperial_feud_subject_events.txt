@@ -210,7 +210,49 @@ country_event = {
 	option = {
 		name = subjects_expanded_imperial_feud_subject_events5.EVTOPT1
 		
-		ai_chance = { factor = 0.33 }
+		ai_chance = {
+			factor = 0.33
+			modifier = {
+				factor = 3
+				emperor = { alliance_with = ROOT }
+			}
+			modifier = {
+				factor = 1.1
+				any_ally = {
+					is_part_of_hre = yes
+				}
+			}
+			modifier = {
+				factor = 1.15
+				any_ally = {
+					is_elector = yes
+				}
+			}
+			modifier = {
+				factor = 1.5
+				emperor = {
+					reverse_has_opinion = {
+						who = ROOT
+						value = 100
+					}
+				}
+			}
+			modifier = {
+				factor = 1.25
+				emperor = {
+					reverse_has_opinion = {
+						who = ROOT
+						value = 50
+					}
+					NOT = {
+						reverse_has_opinion = {
+							who = ROOT
+							value = 100
+						}
+					}
+				}
+			}
+		}
 		
 		emperor = {
 			create_subject = {
@@ -223,7 +265,40 @@ country_event = {
 	option = {
 		name = subjects_expanded_imperial_feud_subject_events5.EVTOPT2
 		
-		ai_chance = { factor = 0.66 }
+		ai_chance = {
+			factor = 0.66
+			modifier = {
+				factor = 3
+				emperor = {
+					OR = {
+						is_rival = ROOT
+						is_enemy = ROOT
+					}
+				}
+			}
+			modifier = {
+				factor = 1.5
+				emperor = {
+					NOT = {
+						reverse_has_opinion = {
+							who = ROOT
+							value = -50
+						}
+					}
+				}
+			}
+			modifier = {
+				factor = 1.25
+				emperor = {
+					NOT = {
+						reverse_has_opinion = {
+							who = ROOT
+							value = 0
+						}
+					}
+				}
+			}
+		}
 		
 		add_prestige = -5
 	}

@@ -953,6 +953,38 @@ papal_sanctuary_subject_no_diplo_cost_overlord_modifier = {
 	diplomatic_upkeep = 1
 }
 
+# Subject Type: Imperial Feud
+imperial_feud_subject_modifier = {
+	global_tax_modifier = 0.1
+	land_forcelimit_modifier = 0.1
+	fort_maintenance_modifier = -0.15
+}
+
+imperial_feud_subject_is_subject_for_11_years_modifier = {
+	liberty_desire = 10
+}
+
+imperial_feud_subject_is_subject_for_15_years_modifier = {
+	liberty_desire = 10
+}
+
+imperial_feud_subject_is_subject_for_20_years_modifier = {
+	liberty_desire = 10
+}
+
+imperial_feud_subject_is_subject_for_25_years_modifier = {
+	liberty_desire = 10
+}
+
+imperial_feud_subject_is_subject_for_30_years_modifier = {
+	liberty_desire = 10
+}
+
+imperial_feud_subject_overlord_modifier = {
+	global_tax_income = 2
+	imperial_authority_value = 0.01
+}
+
 # Modifiers that function as timers
 protectorate_got_monarch_power_this_year = {
 }

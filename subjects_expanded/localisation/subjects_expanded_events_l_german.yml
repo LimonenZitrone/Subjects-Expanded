@@ -27,6 +27,7 @@
  subjects_expanded_events2.EVTOPT24: "Derzeit gibt es §G[REB.num_of_subjects_of_type_brother_kingdom.GetValue]§! §YBruderkönigreiche§! auf der Welt."
  subjects_expanded_events2.EVTOPT25: "Derzeit gibt es §G[REB.num_of_subjects_of_type_iqta_vassal.GetValue]§! §YIqtas§! auf der Welt."
  subjects_expanded_events2.EVTOPT26: "Derzeit gibt es §G[REB.num_of_subjects_of_type_papal_sanctuary_subject.GetValue]§! §YPäpstliche Schutzgebiete§! auf der Welt."
+ subjects_expanded_events2.EVTOPT27: "Derzeit gibt es §G[REB.num_of_subjects_of_type_imperial_feud_subject.GetValue]§! §YKaiserliche Lehen§! auf der Welt."
  
  subjects_expanded_events.EVTNAME3: "Ideen-Mods?"
  subjects_expanded_events.EVTDESC3: "Herrschaftsgebiete per Entscheidung zu errichten gibt ihnen Ideengruppen abhängig von Euren. Falls Ihr eine Mod benutzt, die die Vanilla-Ideengruppen verändert, könnte dies das Spiel zum §RAbsturz§! bringen. Deshalb solltet Ihr hier die passende Option auswählen, um dies zu verhindern!"
@@ -228,4 +229,22 @@
  subjects_expanded_papal_sanctuary_subject_events.EVTNAME1: "[From.GetName] erklärt Unabhängigkeit"
  subjects_expanded_papal_sanctuary_subject_events.EVTDESC1: "Unser Päpstliches Schutzgebiet [From.GetName] hat seine Unabhängigkeit erklärt. Es erscheint so, als ob sie nicht länger unseren Schutz benötigen und das Wort des Herrn ignonieren!"
  subjects_expanded_papal_sanctuary_subject_events1.EVTOPT1: "Das ist beinahe... ketzerisch."
+ 
+ subjects_expanded_imperial_feud_subject_events.EVTNAME1: "Kaiserliches Lehen erklärt Unabhängigkeit"
+ subjects_expanded_imperial_feud_subject_events.EVTDESC1: "Ein Kaiserliche Lehen, @[From.GetTag] §Y[From.GetName]§!, hat seine Unabhängigkeit erklärt! Das Reich ist schwächer geworden."
+ subjects_expanded_imperial_feud_subject_events1.EVTOPT1: "Das ist ein Problem."
+ 
+ subjects_expanded_imperial_feud_subject_events.EVTNAME2: "Kaiserliche Lehen des vorherigen Kaisers"
+ subjects_expanded_imperial_feud_subject_events.EVTDESC2: "Der vorherige Kaiser des Heiligen Römischen Reiches hatte Kaiserliche Lehen. Nun, wo uns dieser Titel verliehen wurde, werdem wir jenen erneut dieses Recht verleihen, sodass sie unsere loyalen Untertanen sein werden. \nAllerdings könnten einige von ihnen lediglich dem letzten Kaiser ihre Treue geschworen haben und uns nicht als ihren rechtmäßigen Lehnsherrn akzeptieren."
+ subjects_expanded_imperial_feud_subject_events2.EVTOPT1: "Wir sind der Kaiser, sie sind unsere Untertanen!"
+ 
+ subjects_expanded_imperial_feud_subject_events.EVTNAME3: "Ein neuer Kaiser"
+ subjects_expanded_imperial_feud_subject_events.EVTDESC3: "Der ehemalige Kaiser des HRR, derjenige, dem wir unsere Treue geschworen haben, ist gestorben. Der neue Kaiser, [From.Monarch.GetName] [From.Monarch.Dynasty.GetName] (@[From.GetTag] [From.GetName]), verlangt nun, dass wir ihm die Treue schwören."
+ subjects_expanded_imperial_feud_subject_events3.EVTOPT1: "Wir haben dem Reich unsere Treue geschworen, nicht einer einzigen Person."
+ subjects_expanded_imperial_feud_subject_events3.EVTOPT2: "Der Kaiser ist tot, wir sind frei!"
+ 
+ subjects_expanded_imperial_feud_subject_events.EVTNAME5: "Der [Root.GetName] und das Reich"
+ subjects_expanded_imperial_feud_subject_events.EVTDESC5: "Der Kaiser hat uns gelegentlich zu seinen Reichstagen eingeladen, um dort zu sprechen, er hat uns immer nah beim Reich gehalten. Nun könnte die Zeit gekommen sein, um einen weiteren Schritt in Richtung der Mitgliedschaft im Heiligen Römischen Reich zu machen. \nWenn wir dem Kaiser unsere Treue schwören, haben wir gute Chance darauf, in einigen Jahren dem Reich beitreten zu können. \nAußerdem wird uns der Kaiser beschützen, so wie er jeden in seinem Reich beschützt."
+ subjects_expanded_imperial_feud_subject_events5.EVTOPT1: "Dem Reich einen Schritt näher!"
+ subjects_expanded_imperial_feud_subject_events5.EVTOPT2: "Erbärmlich! Wir brauchen keinen Beschützer."
  

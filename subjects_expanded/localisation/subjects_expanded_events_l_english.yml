@@ -27,6 +27,7 @@
  subjects_expanded_events2.EVTOPT24: "There currently are §G[REB.num_of_subjects_of_type_brother_kingdom.GetValue]§! §YBrother Kingdoms§! in the world."
  subjects_expanded_events2.EVTOPT25: "There currently are §G[REB.num_of_subjects_of_type_iqta_vassal.GetValue]§! §YIqtas§! in the world."
  subjects_expanded_events2.EVTOPT26: "There currently are §G[REB.num_of_subjects_of_type_papal_sanctuary_subject.GetValue]§! §YPapal Sanctuaries§! in the world."
+ subjects_expanded_events2.EVTOPT27: "There currently are §G[REB.num_of_subjects_of_type_imperial_feud_subject.GetValue]§! §YImperial Feuds§! in the world."
  
  subjects_expanded_events.EVTNAME3: "Idea Mods?"
  subjects_expanded_events.EVTDESC3: "Spawning Dominions via decisions sets their idea groups depending on the ones you chose. If you are using a mod that alters the vanilla idea groups in any way, this might §Rcrash§! the game. So select the matching option below to prevent that from happening!"
@@ -228,4 +229,22 @@
  subjects_expanded_papal_sanctuary_subject_events.EVTNAME1: "[From.GetName] declares Independence"
  subjects_expanded_papal_sanctuary_subject_events.EVTDESC1: "Our Papal Sanctuary [From.GetName] declared its independence. It seems like they don't need our protection anymore and ignore the word of the Lord!"
  subjects_expanded_papal_sanctuary_subject_events1.EVTOPT1: "That's almost... heretical."
+ 
+ subjects_expanded_imperial_feud_subject_events.EVTNAME1: "Imperial Feud declares Independence"
+ subjects_expanded_imperial_feud_subject_events.EVTDESC1: "An Imperial Feud, @[From.GetTag] §Y[From.GetName]§!, has declared its independence! The empire has gotten weaker."
+ subjects_expanded_imperial_feud_subject_events1.EVTOPT1: "That's a problem."
+ 
+ subjects_expanded_imperial_feud_subject_events.EVTNAME2: "Imperial Feuds of the former Emperor"
+ subjects_expanded_imperial_feud_subject_events.EVTDESC2: "The former Emperor of the Holy Roman Empire had Imperial Feuds. Now that the title was given to us, we will grant this right again to those, so they will be our loyal subjects. \nHowever, some of them might have sworn their allegiance only to the former Emperor and might not accept us as their rightful overlord."
+ subjects_expanded_imperial_feud_subject_events2.EVTOPT1: "We are the Emperor, they are our subjects!"
+ 
+ subjects_expanded_imperial_feud_subject_events.EVTNAME3: "A New Emperor"
+ subjects_expanded_imperial_feud_subject_events.EVTDESC3: "The former Emperor of the HRE, the one we pledged allegiance to, has died. The new Emperor, [From.Monarch.GetName] [From.Monarch.Dynasty.GetName] (@[From.GetTag] [From.GetName]), now demands that we pledge allegiance to him."
+ subjects_expanded_imperial_feud_subject_events3.EVTOPT1: "We pledged allegiance to the Empire, not to a specific person."
+ subjects_expanded_imperial_feud_subject_events3.EVTOPT2: "The Emperor is dead, we are free!"
+ 
+ subjects_expanded_imperial_feud_subject_events.EVTNAME5: "The [Root.GetName] and the Empire"
+ subjects_expanded_imperial_feud_subject_events.EVTDESC5: "The emperor occasionally invited us to speak on the Reichstag, he kept us close to the Empire. Now the time could have come to take another step to the membership in the Holy Roman Empire. \nIf we swear fidelity to the Emperor, we have good chances of becoming a member of the Empire in a couple of years. \nFurthermore, the Emperor will protect us as he does with the members of his realm."
+ subjects_expanded_imperial_feud_subject_events5.EVTOPT1: "One step closer to the Empire!"
+ subjects_expanded_imperial_feud_subject_events5.EVTOPT2: "Pathetic! We don't need a protector."
  

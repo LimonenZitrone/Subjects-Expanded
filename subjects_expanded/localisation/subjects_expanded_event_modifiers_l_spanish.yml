@@ -219,3 +219,11 @@
  papal_sanctuary_subject_overlord_modifier: "Has Papal Sanctuaries"
  papal_sanctuary_subject_no_diplo_cost_overlord_modifier: "Papal Sanctuary is a Theocracy, Defender of Faith, Curia Controller or a Neighbor of the Crusade Target"
  
+ imperial_feud_subject_modifier: "Imperial Feud"
+ imperial_feud_subject_is_subject_for_11_years_modifier: "Is an Imperial Feud for §Y11§! years"
+ imperial_feud_subject_is_subject_for_15_years_modifier: "Is an Imperial Feud for §Y15§! years"
+ imperial_feud_subject_is_subject_for_20_years_modifier: "Is an Imperial Feud for §Y20§! years"
+ imperial_feud_subject_is_subject_for_25_years_modifier: "Is an Imperial Feud for §Y25§! years"
+ imperial_feud_subject_is_subject_for_30_years_modifier: "Is an Imperial Feud for §Y30§! years"
+ imperial_feud_subject_overlord_modifier: "Has Imperial Feuds"
+ 

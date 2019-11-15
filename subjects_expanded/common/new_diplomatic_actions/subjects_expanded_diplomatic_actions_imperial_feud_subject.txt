@@ -1,37 +1,28 @@
-establish_papal_sanctuary_subject = {
+establish_imperial_feud_subject = {
 	category = influence
 	
 	alert_index = 6
-	alert_tooltip = establish_papal_sanctuary_subject_alert_tooltip
+	alert_tooltip = establish_imperial_feud_subject_alert_tooltip
 	
 	require_acceptance = yes
 	
 	is_visible = {
 		can_create_subject_type = {
 			subject = FROM
-			subject_type = papal_sanctuary_subject
+			subject_type = imperial_feud_subject
 		}
 	}
 	
 	is_allowed = {
 		can_create_subject_type = {
 			subject = FROM
-			subject_type = papal_sanctuary_subject
+			subject_type = imperial_feud_subject
 		}
-		NOT = { truce_with = FROM }
 		is_at_war = no
 		FROM = {
 			is_at_war = no
 		}
-		FROM = {
-			has_opinion = {
-				who = ROOT
-				value = 100
-			}
-		}
-		FROM = {
-			religious_unity = 0.9
-		}
+		imperial_influence = 5
 	}
 	
 	on_accept = {
@@ -39,28 +30,19 @@ establish_papal_sanctuary_subject = {
 			limit = {
 				can_create_subject_type = {
 					subject = FROM
-					subject_type = papal_sanctuary_subject
+					subject_type = imperial_feud_subject
 				}
-				NOT = { truce_with = FROM }
 				is_at_war = no
 				FROM = {
 					is_at_war = no
 				}
-				FROM = {
-					has_opinion = {
-						who = ROOT
-						value = 100
-					}
-				}
-				FROM = {
-					religious_unity = 0.9
-				}
+				imperial_influence = 5
 			}
+			add_imperial_influence = -5
 			create_subject = {
 				subject = FROM
-				subject_type = papal_sanctuary_subject
+				subject_type = imperial_feud_subject
 			}
-			add_truce_with = FROM
 		}
 	}
 	
@@ -69,30 +51,21 @@ establish_papal_sanctuary_subject = {
 			limit = {
 				can_create_subject_type = {
 					subject = FROM
-					subject_type = papal_sanctuary_subject
+					subject_type = imperial_feud_subject
 				}
-				NOT = { truce_with = FROM }
 				is_at_war = no
 				FROM = {
 					is_at_war = no
 				}
-				FROM = {
-					has_opinion = {
-						who = ROOT
-						value = 100
-					}
-				}
-				FROM = {
-					religious_unity = 0.9
-				}
+				imperial_influence = 5
 			}
 			FROM = {
-				clr_country_flag = declined_establish_papal_sanctuary_subject_@ROOT
-				set_country_flag = declined_establish_papal_sanctuary_subject_@ROOT
+				clr_country_flag = declined_establish_imperial_feud_subject_@ROOT
+				set_country_flag = declined_establish_imperial_feud_subject_@ROOT
 			}
 			add_opinion = {
 				who = FROM
-				modifier = declined_establish_papal_sanctuary_subject_opinion
+				modifier = declined_establish_imperial_feud_subject_opinion
 			}
 		}
 	}
@@ -122,7 +95,7 @@ establish_papal_sanctuary_subject = {
 			}
 			export_to_variable = {
 				which = ai_value
-				value = 25
+				value = 20
 			}
 		}
 		add_entry = {
@@ -172,7 +145,7 @@ establish_papal_sanctuary_subject = {
 			}
 			export_to_variable = {
 				which = ai_value
-				value = 50
+				value = 1000
 			}
 			multiply_variable = { which = ai_value value = -1 }
 		}
@@ -186,7 +159,7 @@ establish_papal_sanctuary_subject = {
 			}
 			export_to_variable = {
 				which = ai_value
-				value = 25
+				value = 100
 			}
 			multiply_variable = { which = ai_value value = -1 }
 		}
@@ -347,60 +320,6 @@ establish_papal_sanctuary_subject = {
 			}
 		}
 		add_entry = {
-			name = FROM_IS_HRE_MEMBER
-			limit = {
-				is_part_of_hre = no
-				FROM = {
-					is_part_of_hre = yes
-				}
-			}
-			export_to_variable = {
-				which = ai_value
-				value = 50
-			}
-			multiply_variable = { which = ai_value value = -1 }
-		}
-		add_entry = {
-			name = FROM_IS_HRE_MEMBER
-			limit = {
-				is_part_of_hre = yes
-				FROM = {
-					is_part_of_hre = yes
-				}
-			}
-			export_to_variable = {
-				which = ai_value
-				value = 25
-			}
-			multiply_variable = { which = ai_value value = -1 }
-		}
-		add_entry = {
-			name = FROM_IS_HRE_ELECTOR
-			limit = {
-				FROM = {
-					is_elector = yes
-				}
-			}
-			export_to_variable = {
-				which = ai_value
-				value = 1000
-			}
-			multiply_variable = { which = ai_value value = -1 }
-		}
-		add_entry = {
-			name = FROM_IS_EMPEROR
-			limit = {
-				FROM = {
-					is_emperor = yes
-				}
-			}
-			export_to_variable = {
-				which = ai_value
-				value = 1000
-			}
-			multiply_variable = { which = ai_value value = -1 }
-		}
-		add_entry = {
 			name = FROM_HAS_SUBJECTS
 			limit = {
 				FROM = {
@@ -412,16 +331,6 @@ establish_papal_sanctuary_subject = {
 				value = 100
 			}
 			multiply_variable = { which = ai_value value = -1 }
-		}
-		add_entry = {
-			name = ROOT_IS_CURIA_CONTROLLER
-			limit = {
-				is_papal_controller = yes
-			}
-			export_to_variable = {
-				which = ai_value
-				value = 25
-			}
 		}
 		add_entry = {
 			name = FROM_DEVELOPMENT
@@ -454,7 +363,7 @@ establish_papal_sanctuary_subject = {
 				who = FROM
 				with = ROOT
 			}
-			divide_variable = { which = ai_value value = -2 }
+			divide_variable = { which = ai_value value = -4 }
 		}
 		add_entry = {
 			name = ROOT_FROM_ARE_ALLIED
@@ -481,162 +390,11 @@ establish_papal_sanctuary_subject = {
 			divide_variable = { which = ai_value value = -1 }
 		}
 		add_entry = {
-			name = FROM_IS_IMPERIAL_CITY
-			limit = {
-				FROM = {
-					has_reform = free_city
-				}
-			}
-			export_to_variable = {
-				which = ai_value
-				value = 1000
-			}
-			multiply_variable = { which = ai_value value = -1 }
-		}
-		add_entry = {
-			name = FROM_IS_MONARCHY
-			limit = {
-				FROM = {
-					government = monarchy
-				}
-			}
-			export_to_variable = {
-				which = ai_value
-				value = 50
-			}
-			multiply_variable = { which = ai_value value = -1 }
-		}
-		add_entry = {
-			name = FROM_IS_A_REPUBLIC
-			limit = {
-				FROM = {
-					government = republic
-				}
-			}
-			export_to_variable = {
-				which = ai_value
-				value = 25
-			}
-			multiply_variable = { which = ai_value value = -1 }
-		}
-		add_entry = {
-			name = FROM_IS_A_THEOCRACY
-			limit = {
-				FROM = {
-					government = theocracy
-				}
-			}
-			export_to_variable = {
-				which = ai_value
-				value = 10
-			}
-		}
-		add_entry = {
-			name = FROM_AMOUNT_OF_INVESTED_PAPAL_INFLUENCE
-			limit = {
-				FROM = {
-					invested_papal_influence = 1
-				}
-			}
-			export_to_variable = {
-				which = ai_value
-				value = trigger_value:invested_papal_influence
-				who = FROM
-			}
-		}
-		add_entry = {
-			name = ROOT_RULER_IS_RELIGIOUS
-			limit = {
-				has_dlc = "Rights of Man"
-				OR = {
-					ruler_has_personality = zealot_personality
-					ruler_has_personality = pious_personality
-				}
-			}
-			export_to_variable = {
-				which = ai_value
-				value = 5
-			}
-		}
-		add_entry = {
-			name = ROOT_RULER_IS_SINNER
-			limit = {
-				has_dlc = "Rights of Man"
-				ruler_has_personality = sinner_personality
-			}
-			export_to_variable = {
-				which = ai_value
-				value = 25
-			}
-			multiply_variable = { which = ai_value value = -1 }
-		}
-		add_entry = {
-			name = FROM_RULER_IS_RELIGIOUS
-			limit = {
-				has_dlc = "Rights of Man"
-				FROM = {
-					OR = {
-						ruler_has_personality = zealot_personality
-						ruler_has_personality = pious_personality
-					}
-				}
-			}
-			export_to_variable = {
-				which = ai_value
-				value = 10
-			}
-		}
-		add_entry = {
-			name = FROM_RULER_IS_SINNER
-			limit = {
-				has_dlc = "Rights of Man"
-				FROM = {
-					ruler_has_personality = sinner_personality
-				}
-			}
-			export_to_variable = {
-				which = ai_value
-				value = 1000
-			}
-			multiply_variable = { which = ai_value value = -1 }
-		}
-		add_entry = {
-			name = ROOT_IS_SUBJECT
-			limit = {
-				is_subject = yes
-			}
-			export_to_variable = {
-				which = ai_value
-				value = 1000
-			}
-			multiply_variable = { which = ai_value value = -1 }
-		}
-		add_entry = {
-			name = ROOT_IS_DEFENDER_OF_FAITH
-			limit = {
-				is_defender_of_faith = yes
-			}
-			export_to_variable = {
-				which = ai_value
-				value = 10
-			}
-		}
-		add_entry = {
-			name = ROOT_HAS_ESTABLISHED_THE_KINGDOM_OF_GOD
-			limit = {
-				has_country_modifier = kingdom_of_god
-			}
-			export_to_variable = {
-				which = ai_value
-				value = 50
-			}
-		}
-		add_entry = {
-			name = FROM_HAS_STRONG_NEIGHBOR_WITH_DIFFERENT_RELIGION
+			name = FROM_HAS_STRONG_NEIGHBOR_OUTSIDE_OF_HRE
 			limit = {
 				FROM = {
 					any_neighbor_country = {
-						NOT = { religion = PREV }
+						is_part_of_hre = no
 						variable_arithmetic_trigger = {
 							export_to_variable = {
 								which = this_army_size
@@ -666,11 +424,11 @@ establish_papal_sanctuary_subject = {
 			}
 		}
 		add_entry = {
-			name = FROM_HAS_STRONG_NEIGHBOR_WITH_DIFFERENT_RELIGION
+			name = FROM_HAS_STRONG_NEIGHBOR_OUTSIDE_OF_HRE
 			limit = {
 				FROM = {
 					any_neighbor_country = {
-						NOT = { religion = PREV }
+						is_part_of_hre = no
 						variable_arithmetic_trigger = {
 							export_to_variable = {
 								which = this_army_size
@@ -699,52 +457,156 @@ establish_papal_sanctuary_subject = {
 				value = 15
 			}
 		}
-	}
-	
-	ai_will_do = {
-		OR = {
-			is_defender_of_faith = yes
-			is_papal_controller = yes
-			personality = ai_diplomat
-			has_country_modifier = kingdom_of_god
-			AND = {
-				has_dlc = "Rights of Man"
-				OR = {
-					ruler_has_personality = zealot_personality
-					ruler_has_personality = pious_personality
-				}
+		add_entry = {
+			name = FROM_HAS_MARRIAGE_WITH_ROOT
+			limit = {
+				marriage_with = FROM
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 10
 			}
 		}
-		OR = {
-			num_of_free_diplomatic_relations = 1
-			FROM = {
-				religion = ROOT
-				OR = {
-					government = theocracy
-					is_papal_controller = yes
-					is_defender_of_faith = yes
-					crusade_target = {
-						is_neighbor_of = PREV
+		add_entry = {
+			name = ROOT_FROM_NOT_SAME_RELIGION
+			limit = {
+				NOT = { religion = FROM }
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 10
+			}
+			multiply_variable = { which = ai_value value = -1 }
+		}
+		add_entry = {
+			name = FROM_IS_PAPAL_STATE
+			limit = {
+				FROM = {
+					tag = PAP
+					is_papal_controller = no
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 50
+			}
+			multiply_variable = { which = ai_value value = -1 }
+		}
+		add_entry = {
+			name = FROM_IS_CURIA_CONTROLLER
+			limit = {
+				FROM = {
+					tag = PAP
+					is_papal_controller = no
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 50
+			}
+			multiply_variable = { which = ai_value value = -1 }
+		}
+		add_entry = {
+			name = OPINION
+			export_to_variable = {
+				which = ai_value
+				value = opinion
+				who = FROM
+				with = ROOT
+			}
+			divide_variable = { which = ai_value value = 4 }
+		}
+		add_entry = {
+			name = ROOT_FROM_ARE_HISTORICAL_FRIENDS
+			limit = {
+				FROM = {
+					historical_friend_with = ROOT
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 10
+			}
+		}
+		add_entry = {
+			name = FROM_AI_PERSONALITY
+			limit = {
+				FROM = {
+					personality = ai_militarist
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 1000
+			}
+			multiply_variable = { which = ai_value value = -1 }
+		}
+		add_entry = {
+			name = AMOUNT_OF_IMPERIAL_INFLUENCE
+			export_to_variable = {
+				which = ai_value
+				value = trigger_value:imperial_influence
+			}
+			change_variable = { which = ai_value value = -1 }
+			divide_variable = { which = ai_value value = 4 }
+		}
+		add_entry = {
+			name = FROM_OWNS_HRE_PROVINCES
+			limit = {
+				FROM = {
+					NOT = { total_development = 100 }
+					any_owned_province = {
+						is_part_of_hre = yes
 					}
 				}
 			}
+			export_to_variable = {
+				which = ai_value
+				value = 10
+			}
+			divide_variable = { which = ai_value value = 4 }
+		}
+		add_entry = {
+			name = FROM_OWNS_HRE_PROVINCES_BUT_IS_LARGE
+			limit = {
+				FROM = {
+					total_development = 100
+					any_owned_province = {
+						is_part_of_hre = yes
+					}
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 25
+			}
+			multiply_variable = { which = ai_value value = -1 }
+		}
+	}
+	
+	ai_will_do = {
+		imperial_influence = 10
+		OR = {
+			NOT = { religion = catholic }
+			FROM = {
+				NOT = { tag = PAP }
+			}
 		}
 		FROM = {
-			is_emperor = no
-			NOT = { total_development = 125 }
+			NOT = { total_development = 200 }
 			OR = {
-				NOT = { has_country_flag = declined_establish_papal_sanctuary_subject_@ROOT }
-				had_country_flag = { flag = declined_establish_papal_sanctuary_subject_@ROOT days = 1825 }
+				NOT = { has_country_flag = declined_establish_imperial_feud_subject_@ROOT }
+				had_country_flag = { flag = declined_establish_imperial_feud_subject_@ROOT days = 1825 }
 			}
 		}
 	}
 }
 
-ask_for_papal_sanctuary_subject = {
+ask_for_imperial_feud_subject = {
 	category = influence
 	
 	alert_index = 6
-	alert_tooltip = ask_for_papal_sanctuary_subject_alert_tooltip
+	alert_tooltip = ask_for_imperial_feud_subject_alert_tooltip
 	
 	require_acceptance = yes
 	
@@ -752,7 +614,7 @@ ask_for_papal_sanctuary_subject = {
 		FROM = {
 			can_create_subject_type = {
 				subject = ROOT
-				subject_type = papal_sanctuary_subject
+				subject_type = imperial_feud_subject
 			}
 		}
 	}
@@ -761,21 +623,16 @@ ask_for_papal_sanctuary_subject = {
 		FROM = {
 			can_create_subject_type = {
 				subject = ROOT
-				subject_type = papal_sanctuary_subject
+				subject_type = imperial_feud_subject
 			}
 		}
-		NOT = { truce_with = FROM }
 		is_at_war = no
 		FROM = {
 			is_at_war = no
 		}
 		FROM = {
-			has_opinion = {
-				who = ROOT
-				value = 100
-			}
+			imperial_influence = 5
 		}
-		religious_unity = 0.9
 	}
 	
 	on_accept = {
@@ -784,29 +641,24 @@ ask_for_papal_sanctuary_subject = {
 				FROM = {
 					can_create_subject_type = {
 						subject = ROOT
-						subject_type = papal_sanctuary_subject
+						subject_type = imperial_feud_subject
 					}
 				}
-				NOT = { truce_with = FROM }
 				is_at_war = no
 				FROM = {
 					is_at_war = no
 				}
 				FROM = {
-					has_opinion = {
-						who = ROOT
-						value = 100
-					}
+					imperial_influence = 5
 				}
-				religious_unity = 0.9
 			}
 			FROM = {
+				add_imperial_influence = -5
 				create_subject = {
 					subject = ROOT
-					subject_type = papal_sanctuary_subject
+					subject_type = imperial_feud_subject
 				}
 			}
-			add_truce_with = FROM
 		}
 	}
 	
@@ -816,27 +668,22 @@ ask_for_papal_sanctuary_subject = {
 				FROM = {
 					can_create_subject_type = {
 						subject = ROOT
-						subject_type = papal_sanctuary_subject
+						subject_type = imperial_feud_subject
 					}
 				}
-				NOT = { truce_with = FROM }
 				is_at_war = no
 				FROM = {
 					is_at_war = no
 				}
 				FROM = {
-					has_opinion = {
-						who = ROOT
-						value = 100
-					}
+					imperial_influence = 5
 				}
-				religious_unity = 0.9
 			}
-			clr_country_flag = declined_establish_papal_sanctuary_subject_@FROM
-			set_country_flag = declined_establish_papal_sanctuary_subject_@FROM
+			clr_country_flag = declined_establish_imperial_feud_subject_@FROM
+			set_country_flag = declined_establish_imperial_feud_subject_@FROM
 			add_opinion = {
 				who = FROM
-				modifier = declined_ask_for_papal_sanctuary_subject_opinion
+				modifier = declined_ask_for_imperial_feud_subject_opinion
 			}
 		}
 	}
@@ -861,14 +708,13 @@ ask_for_papal_sanctuary_subject = {
 			name = FROM_ATTITUDE_TOWARDS_ROOT
 			limit = {
 				FROM = {
-					ai_attitude = { who = ROOT attitude = attitude_threatened }
+					ai_attitude = { who = ROOT attitude = attitude_protective }
 				}
 			}
 			export_to_variable = {
 				which = ai_value
-				value = 50
+				value = 20
 			}
-			multiply_variable = { which = ai_value value = -1 }
 		}
 		add_entry = {
 			name = FROM_ATTITUDE_TOWARDS_ROOT
@@ -906,7 +752,7 @@ ask_for_papal_sanctuary_subject = {
 				which = ai_value
 				value = modifier:diplomatic_reputation
 			}
-			multiply_variable = { which = ai_value value = 3 }
+			multiply_variable = { which = ai_value value = 5 }
 		}
 		add_entry = {
 			name = ROOT_IS_EMPIRE_RANK
@@ -915,7 +761,7 @@ ask_for_papal_sanctuary_subject = {
 			}
 			export_to_variable = {
 				which = ai_value
-				value = 10
+				value = 30
 			}
 		}
 		add_entry = {
@@ -926,7 +772,7 @@ ask_for_papal_sanctuary_subject = {
 			}
 			export_to_variable = {
 				which = ai_value
-				value = 5
+				value = 15
 			}
 		}
 		add_entry = {
@@ -1086,51 +932,14 @@ ask_for_papal_sanctuary_subject = {
 			}
 		}
 		add_entry = {
-			name = ROOT_IS_HRE_MEMBER
-			limit = {
-				is_part_of_hre = yes
-				FROM = {
-					is_part_of_hre = no
-				}
-			}
-			export_to_variable = {
-				which = ai_value
-				value = 50
-			}
-			multiply_variable = { which = ai_value value = -1 }
-		}
-		add_entry = {
-			name = ROOT_IS_HRE_MEMBER
-			limit = {
-				is_part_of_hre = yes
-				FROM = {
-					is_part_of_hre = yes
-				}
-			}
-			export_to_variable = {
-				which = ai_value
-				value = 25
-			}
-			multiply_variable = { which = ai_value value = -1 }
-		}
-		add_entry = {
-			name = ROOT_IS_CURIA_CONTROLLER
-			limit = {
-				is_papal_controller = yes
-			}
-			export_to_variable = {
-				which = ai_value
-				value = 25
-			}
-		}
-		add_entry = {
 			name = ROOT_DEVELOPMENT
 			export_to_variable = {
 				which = ai_value
 				value = trigger_value:total_development
+				who = FROM
 			}
 			subtract_variable = { which = ai_value value = 1 }
-			divide_variable = { which = ai_value value = -3 }
+			divide_variable = { which = ai_value value = -5 }
 		}
 		add_entry = {
 			name = ROOT_OWNS_FROM_CORE_PROVINCES
@@ -1153,7 +962,7 @@ ask_for_papal_sanctuary_subject = {
 				who = FROM
 				with = ROOT
 			}
-			divide_variable = { which = ai_value value = -2 }
+			divide_variable = { which = ai_value value = -3 }
 		}
 		add_entry = {
 			name = ROOT_FROM_ARE_ALLIED
@@ -1180,20 +989,19 @@ ask_for_papal_sanctuary_subject = {
 			divide_variable = { which = ai_value value = -1 }
 		}
 		add_entry = {
-			name = ROOT_IS_MONARCHY
+			name = FROM_HAS_MARRIAGE_WITH_ROOT
 			limit = {
-				government = monarchy
+				marriage_with = FROM
 			}
 			export_to_variable = {
 				which = ai_value
-				value = 20
+				value = 10
 			}
-			multiply_variable = { which = ai_value value = -1 }
 		}
 		add_entry = {
-			name = ROOT_IS_A_REPUBLIC
+			name = ROOT_FROM_NOT_SAME_RELIGION
 			limit = {
-				government = republic
+				NOT = { religion = FROM }
 			}
 			export_to_variable = {
 				which = ai_value
@@ -1202,78 +1010,12 @@ ask_for_papal_sanctuary_subject = {
 			multiply_variable = { which = ai_value value = -1 }
 		}
 		add_entry = {
-			name = ROOT_IS_A_THEOCRACY
-			limit = {
-				government = theocracy
-			}
-			export_to_variable = {
-				which = ai_value
-				value = 10
-			}
-		}
-		add_entry = {
-			name = ROOT_AMOUNT_OF_INVESTED_PAPAL_INFLUENCE
+			name = ROOT_IS_PAPAL_STATE
 			limit = {
 				FROM = {
-					invested_papal_influence = 1
+					religion = catholic
 				}
-			}
-			export_to_variable = {
-				which = ai_value
-				value = trigger_value:invested_papal_influence
-				who = FROM
-			}
-			divide_variable = { which = ai_value value = 2 }
-		}
-		add_entry = {
-			name = ROOT_RULER_IS_RELIGIOUS
-			limit = {
-				has_dlc = "Rights of Man"
-				OR = {
-					ruler_has_personality = zealot_personality
-					ruler_has_personality = pious_personality
-				}
-			}
-			export_to_variable = {
-				which = ai_value
-				value = 5
-			}
-		}
-		add_entry = {
-			name = ROOT_RULER_IS_SINNER
-			limit = {
-				has_dlc = "Rights of Man"
-				ruler_has_personality = sinner_personality
-			}
-			export_to_variable = {
-				which = ai_value
-				value = 25
-			}
-			multiply_variable = { which = ai_value value = -1 }
-		}
-		add_entry = {
-			name = FROM_RULER_IS_RELIGIOUS
-			limit = {
-				has_dlc = "Rights of Man"
-				FROM = {
-					OR = {
-						ruler_has_personality = zealot_personality
-						ruler_has_personality = pious_personality
-					}
-				}
-			}
-			export_to_variable = {
-				which = ai_value
-				value = 10
-			}
-		}
-		add_entry = {
-			name = FROM_RULER_IS_SINNER
-			limit = {
-				has_dlc = "Rights of Man"
-				FROM = {
-					ruler_has_personality = sinner_personality
-				}
+				tag = PAP
 			}
 			export_to_variable = {
 				which = ai_value
@@ -1281,218 +1023,6 @@ ask_for_papal_sanctuary_subject = {
 			}
 			multiply_variable = { which = ai_value value = -1 }
 		}
-		add_entry = {
-			name = ROOT_IS_DEFENDER_OF_FAITH
-			limit = {
-				is_defender_of_faith = yes
-			}
-			export_to_variable = {
-				which = ai_value
-				value = 10
-			}
-		}
-		add_entry = {
-			name = STATEGIC_VALUE
-			limit = {
-				NOT = {
-					FROM = {
-						OR = {
-							is_defender_of_faith = yes
-							is_papal_controller = yes
-							personality = ai_diplomat
-							has_country_modifier = kingdom_of_god
-							AND = {
-								has_dlc = "Rights of Man"
-								OR = {
-									ruler_has_personality = zealot_personality
-									ruler_has_personality = pious_personality
-								}
-							}
-						}
-					}
-					OR = {
-						FROM = {
-							num_of_free_diplomatic_relations = 1
-						}
-						religion = FROM
-						OR = {
-							government = theocracy
-							is_papal_controller = yes
-							is_defender_of_faith = yes
-							crusade_target = {
-								is_neighbor_of = ROOT
-							}
-						}
-					}
-					is_emperor = no
-					NOT = { total_development = 125 }
-					OR = {
-						NOT = { has_country_flag = declined_establish_papal_sanctuary_subject_@FROM }
-						had_country_flag = { flag = declined_establish_papal_sanctuary_subject_@FROM days = 1825 }
-					}
-				}
-			}
-			export_to_variable = {
-				which = ai_value
-				value = 1000
-			}
-			multiply_variable = { which = ai_value value = -1 }
-		}
-	}
-	
-	ai_will_do = {
-		NOT = { total_development = 125 }
-		NOT = { government_rank = 3 }
-		is_emperor = no
-		is_elector = no
-		NOT = { has_reform = free_city }
-		invested_papal_influence = 5
-		OR = {
-			government = theocracy
-			alliance_with = FROM
-		}
-		OR = {
-			ai_attitude = { who = FROM attitude = attitude_threatened }
-			ai_attitude = { who = FROM attitude = attitude_allied }
-			ai_attitude = { who = FROM attitude = attitude_friendly }
-		}
-		NOT = { is_rival = FROM }
-		NOT = { is_enemy = FROM }
-		NOT = { army_size = FROM }
-		FROM = {
-			is_subject = no
-			OR = {
-				is_papal_controller = yes
-				is_defender_of_faith = yes
-				has_country_modifier = kingdom_of_god
-				alliance_with = ROOT
-			}
-		}
-		OR = {
-			NOT = { has_country_flag = declined_establish_papal_sanctuary_subject_@FROM }
-			had_country_flag = { flag = declined_establish_papal_sanctuary_subject_@FROM days = 1825 }
-		}
-	}
-}
-
-make_papal_sanctuary_subject_to_theocracy = {
-	category = influence
-	
-	alert_index = 6
-	alert_tooltip = make_papal_sanctuary_subject_to_theocracy_alert_tooltip
-	
-	require_acceptance = yes
-	
-	is_visible = {
-		can_be_overlord = papal_sanctuary_subject
-		FROM = {
-			is_subject_of = ROOT
-			is_subject_of_type = papal_sanctuary_subject
-			NOT = { government = theocracy }
-		}
-	}
-	
-	is_allowed = {
-		hidden_trigger = {
-			can_be_overlord = papal_sanctuary_subject
-			FROM = {
-				is_subject_of = ROOT
-				is_subject_of_type = papal_sanctuary_subject
-				NOT = { government = theocracy }
-			}
-		}
-		is_at_war = no
-		FROM = {
-			is_at_war = no
-		}
-		religion = catholic
-		FROM = {
-			religion = catholic
-		}
-		FROM = {
-			papal_influence = 10
-		}
-		FROM = {
-			has_regency = no
-		}
-	}
-	
-	on_accept = {
-		if = {
-			limit = {
-				hidden_trigger = {
-					can_be_overlord = papal_sanctuary_subject
-					FROM = {
-						is_subject_of = ROOT
-						is_subject_of_type = papal_sanctuary_subject
-						NOT = { government = theocracy }
-					}
-				}
-				is_at_war = no
-				FROM = {
-					is_at_war = no
-				}
-				religion = catholic
-				FROM = {
-					religion = catholic
-				}
-				FROM = {
-					papal_influence = 10
-				}
-				FROM = {
-					has_regency = no
-				}
-			}
-			FROM = {
-				change_government = theocracy
-				add_government_reform = leading_clergy_reform
-				add_country_modifier = {
-					name = papal_sanctuary_subject_converted_to_theocracy_modifier
-					duration = 1825
-				}
-				add_papal_influence = -10
-			}
-		}
-	}
-	
-	on_decline = {
-		if = {
-			limit = {
-				hidden_trigger = {
-					can_be_overlord = papal_sanctuary_subject
-					FROM = {
-						is_subject_of = ROOT
-						is_subject_of_type = papal_sanctuary_subject
-						NOT = { government = theocracy }
-					}
-				}
-				is_at_war = no
-				FROM = {
-					is_at_war = no
-				}
-				religion = catholic
-				FROM = {
-					religion = catholic
-				}
-				FROM = {
-					papal_influence = 10
-				}
-				FROM = {
-					has_regency = no
-				}
-			}
-			add_prestige = -10
-			FROM = {
-				add_country_modifier = {
-					name = cooldown_papal_sanctuary_subject_converted_to_theocracy_modifier
-					duration = 1825
-					hidden = yes
-				}
-			}
-		}
-	}
-	
-	ai_acceptance = {
 		add_entry = {
 			name = OPINION
 			export_to_variable = {
@@ -1501,28 +1031,25 @@ make_papal_sanctuary_subject_to_theocracy = {
 				who = FROM
 				with = ROOT
 			}
-			divide_variable = { which = ai_value value = 10 }
+			divide_variable = { which = ai_value value = 4 }
 		}
 		add_entry = {
-			name = FROM_LIBERTY_DESIRE
+			name = ROOT_FROM_ARE_HISTORICAL_FRIENDS
 			limit = {
 				FROM = {
-					NOT = { liberty_desire = 50 }
+					historical_friend_with = ROOT
 				}
 			}
 			export_to_variable = {
 				which = ai_value
-				value = trigger_value:liberty_desire
-				who = FROM
+				value = 10
 			}
-			subtract_variable = { which = ai_value value = 1 }
-			multiply_variable = { which = ai_value value = -1 }
 		}
 		add_entry = {
-			name = FROM_LIBERTY_DESIRE_TOO_HIGH
+			name = FROM_AI_PERSONALITY
 			limit = {
 				FROM = {
-					liberty_desire = 50
+					personality = ai_militarist
 				}
 			}
 			export_to_variable = {
@@ -1532,12 +1059,232 @@ make_papal_sanctuary_subject_to_theocracy = {
 			multiply_variable = { which = ai_value value = -1 }
 		}
 		add_entry = {
+			name = ROOT_OWNS_HRE_PROVINCES
+			limit = {
+				any_owned_province = {
+					is_part_of_hre = yes
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 10
+			}
+		}
+		add_entry = {
+			name = ROOT_TOO_HIGH_DEVELOPMENT
+			limit = {
+				total_development = 200
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 1000
+			}
+			multiply_variable = { which = ai_value value = -1 }
+		}
+		add_entry = {
+			name = NUM_OF_HRE_MEMBERS
+			limit = {
+				NOT = { hre_size = 25 }
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 25
+			}
+			export_to_variable = {
+				which = ai_value_2
+				value = trigger_value:hre_size
+			}
+			change_variable = { which = ai_value_2 value = -1 }
+			subtract_variable = { which = ai_value which = ai_value_2 }
+			multiply_variable = { which = ai_value value = 5 }
+		}
+	}
+	
+	ai_will_do = {
+		is_papal_controller = no
+		NOT = { personality = ai_militarist }
+		NOT = { government_rank = 2 }
+		NOT = { num_of_subjects = 1 }
+		OR = {
+			NOT = { has_country_flag = declined_establish_imperial_feud_subject_@FROM }
+			had_country_flag = { flag = declined_establish_imperial_feud_subject_@FROM days = 1825 }
+		}
+		religion = FROM
+		NOT = { total_development = 150 }
+		OR = {
+			ai_attitude = { who = FROM attitude = attitude_allied }
+			ai_attitude = { who = FROM attitude = attitude_friendly }
+			ai_attitude = { who = FROM attitude = attitude_threatened }
+			any_neighbor_country = {
+				is_part_of_hre = no
+				variable_arithmetic_trigger = {
+					export_to_variable = {
+						which = this_army_size
+						value = trigger_value:army_size
+					}
+					export_to_variable = {
+						which = their_army_size
+						value = trigger_value:army_size
+						who = ROOT
+					}
+					divide_variable = { which = this_army_size value = 2 }
+					check_variable = { which = this_army_size which = their_army_size }
+				}
+			}
+		}
+	}
+}
+
+make_imperial_feud_subject_hre_member = {
+	category = influence
+	
+	alert_index = 21
+	alert_tooltip = make_imperial_feud_subject_hre_member_alert_tooltip
+	
+	require_acceptance = yes
+	
+	is_visible = {
+		FROM = {
+			is_subject_of = ROOT
+			is_subject_of_type = imperial_feud_subject
+			is_part_of_hre = no
+		}
+	}
+	
+	is_allowed = {
+		hidden_trigger = {
+			FROM = {
+				is_subject_of = ROOT
+				is_subject_of_type = imperial_feud_subject
+				is_part_of_hre = no
+			}
+		}
+		is_at_war = no
+		FROM = {
+			is_at_war = no
+		}
+		FROM = {
+			OR = {
+				religion = catholic
+				religion = protestant
+				religion = reformed
+			}
+		}
+		imperial_influence = 5
+		FROM = {
+			years_in_vassalage_under = {
+				who = ROOT
+				years = 10
+				all_subject_country = yes
+			}
+		}
+		FROM = {
+			custom_trigger_tooltip = {
+				tooltip = DID_NOT_REJECT_TO_JOIN_THE_HRE_WITHIN_LAST_5_YEARS
+				OR = {
+					NOT = { has_country_flag = declined_join_hre }
+					had_country_flag = { flag = declined_join_hre days = 1825 }
+				}
+			}
+		}
+	}
+	
+	on_accept = {
+		if = {
+			limit = {
+				FROM = {
+					is_subject_of = ROOT
+					is_subject_of_type = imperial_feud_subject
+					is_part_of_hre = no
+				}
+				is_at_war = no
+				FROM = {
+					is_at_war = no
+				}
+				FROM = {
+					OR = {
+						religion = catholic
+						religion = protestant
+						religion = reformed
+					}
+				}
+				imperial_influence = 5
+				FROM = {
+					years_in_vassalage_under = {
+						who = ROOT
+						years = 10
+						all_subject_country = yes
+					}
+				}
+				FROM = {
+					OR = {
+						NOT = { has_country_flag = declined_join_hre }
+						had_country_flag = { flag = declined_join_hre days = 1825 }
+					}
+				}
+			}
+			FROM = {
+				grant_independence = yes
+				every_owned_province = {
+					limit = {
+						continent = europe
+					}
+					set_in_empire = yes
+				}
+			}
+		}
+	}
+	
+	on_decline = {
+		if = {
+			limit = {
+				FROM = {
+					is_subject_of = ROOT
+					is_subject_of_type = imperial_feud_subject
+					is_part_of_hre = no
+				}
+				is_at_war = no
+				FROM = {
+					is_at_war = no
+				}
+				FROM = {
+					OR = {
+						religion = catholic
+						religion = protestant
+						religion = reformed
+					}
+				}
+				imperial_influence = 5
+				FROM = {
+					years_in_vassalage_under = {
+						who = ROOT
+						years = 10
+						all_subject_country = yes
+					}
+				}
+				FROM = {
+					OR = {
+						NOT = { has_country_flag = declined_join_hre }
+						had_country_flag = { flag = declined_join_hre days = 1825 }
+					}
+				}
+			}
+			add_imperial_influence = -5
+			FROM = {
+				clr_country_flag = declined_join_hre
+				set_country_flag = declined_join_hre
+			}
+		}
+	}
+	
+	ai_acceptance = {
+		add_entry = {
 			name = MODIFIER_DIPLO_SKILL
 			export_to_variable = {
 				which = ai_value
 				value = modifier:diplomatic_reputation
 			}
-			multiply_variable = { which = ai_value value = 5 }
+			multiply_variable = { which = ai_value value = 3 }
 		}
 		add_entry = {
 			name = FROM_IS_EMPIRE_RANK
@@ -1548,7 +1295,7 @@ make_papal_sanctuary_subject_to_theocracy = {
 			}
 			export_to_variable = {
 				which = ai_value
-				value = 50
+				value = 100
 			}
 			multiply_variable = { which = ai_value value = -1 }
 		}
@@ -1562,9 +1309,21 @@ make_papal_sanctuary_subject_to_theocracy = {
 			}
 			export_to_variable = {
 				which = ai_value
-				value = 25
+				value = 50
 			}
 			multiply_variable = { which = ai_value value = -1 }
+		}
+		add_entry = {
+			name = FROM_IS_DUCHY_RANK
+			limit = {
+				FROM = {
+					NOT = { government_rank = 2 }
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 15
+			}
 		}
 		add_entry = {
 			name = ROOT_FROM_MILITARY_POWER_COMPARED
@@ -1723,65 +1482,6 @@ make_papal_sanctuary_subject_to_theocracy = {
 			}
 		}
 		add_entry = {
-			name = FROM_IS_HRE_ELECTOR
-			limit = {
-				FROM = {
-					is_elector = yes
-				}
-			}
-			export_to_variable = {
-				which = ai_value
-				value = 1000
-			}
-			multiply_variable = { which = ai_value value = -1 }
-		}
-		add_entry = {
-			name = FROM_IS_EMPEROR
-			limit = {
-				FROM = {
-					is_emperor = yes
-				}
-			}
-			export_to_variable = {
-				which = ai_value
-				value = 1000
-			}
-			multiply_variable = { which = ai_value value = -1 }
-		}
-		add_entry = {
-			name = FROM_HAS_SUBJECTS
-			limit = {
-				FROM = {
-					num_of_subjects = 1
-				}
-			}
-			export_to_variable = {
-				which = ai_value
-				value = 1000
-			}
-			multiply_variable = { which = ai_value value = -1 }
-		}
-		add_entry = {
-			name = ROOT_IS_CURIA_CONTROLLER
-			limit = {
-				is_papal_controller = yes
-			}
-			export_to_variable = {
-				which = ai_value
-				value = 10
-			}
-		}
-		add_entry = {
-			name = FROM_DEVELOPMENT
-			export_to_variable = {
-				which = ai_value
-				value = trigger_value:total_development
-				who = FROM
-			}
-			subtract_variable = { which = ai_value value = 1 }
-			divide_variable = { which = ai_value value = -3 }
-		}
-		add_entry = {
 			name = ROOT_OWNS_FROM_CORE_PROVINCES
 			limit = {
 				any_owned_province = {
@@ -1805,162 +1505,59 @@ make_papal_sanctuary_subject_to_theocracy = {
 			divide_variable = { which = ai_value value = -2 }
 		}
 		add_entry = {
-			name = FROM_IS_IMPERIAL_CITY
+			name = FROM_HAS_MARRIAGE_WITH_ROOT
 			limit = {
-				has_reform = free_city
+				marriage_with = FROM
 			}
 			export_to_variable = {
 				which = ai_value
-				value = 1000
-			}
-			multiply_variable = { which = ai_value value = -1 }
-		}
-		add_entry = {
-			name = FROM_IS_MONARCHY
-			limit = {
-				FROM = {
-					government = monarchy
-				}
-			}
-			export_to_variable = {
-				which = ai_value
-				value = 50
-			}
-			multiply_variable = { which = ai_value value = -1 }
-		}
-		add_entry = {
-			name = FROM_IS_A_REPUBLIC
-			limit = {
-				FROM = {
-					government = republic
-				}
-			}
-			export_to_variable = {
-				which = ai_value
-				value = 25
-			}
-			multiply_variable = { which = ai_value value = -1 }
-		}
-		add_entry = {
-			name = FROM_AMOUNT_OF_INVESTED_PAPAL_INFLUENCE
-			limit = {
-				FROM = {
-					invested_papal_influence = 1
-				}
-			}
-			export_to_variable = {
-				which = ai_value
-				value = trigger_value:invested_papal_influence
-				who = FROM
+				value = 10
 			}
 		}
 		add_entry = {
-			name = ROOT_RULER_IS_RELIGIOUS
+			name = ROOT_FROM_NOT_SAME_RELIGION
 			limit = {
-				has_dlc = "Rights of Man"
-				OR = {
-					ruler_has_personality = zealot_personality
-					ruler_has_personality = pious_personality
-				}
-			}
-			export_to_variable = {
-				which = ai_value
-				value = 5
-			}
-		}
-		add_entry = {
-			name = ROOT_RULER_IS_SINNER
-			limit = {
-				has_dlc = "Rights of Man"
-				ruler_has_personality = sinner_personality
-			}
-			export_to_variable = {
-				which = ai_value
-				value = 25
-			}
-			multiply_variable = { which = ai_value value = -1 }
-		}
-		add_entry = {
-			name = FROM_RULER_IS_RELIGIOUS
-			limit = {
-				has_dlc = "Rights of Man"
-				FROM = {
-					OR = {
-						ruler_has_personality = zealot_personality
-						ruler_has_personality = pious_personality
-					}
-				}
+				NOT = { religion = FROM }
 			}
 			export_to_variable = {
 				which = ai_value
 				value = 20
 			}
+			multiply_variable = { which = ai_value value = -1 }
 		}
 		add_entry = {
-			name = FROM_RULER_IS_SINNER
+			name = FROM_IS_PAPAL_STATE
 			limit = {
-				has_dlc = "Rights of Man"
 				FROM = {
-					ruler_has_personality = sinner_personality
+					tag = PAP
+					is_papal_controller = no
 				}
 			}
 			export_to_variable = {
 				which = ai_value
-				value = 1000
+				value = 15
 			}
 			multiply_variable = { which = ai_value value = -1 }
 		}
 		add_entry = {
-			name = ROOT_IS_SUBJECT
-			limit = {
-				is_subject = yes
-			}
-			export_to_variable = {
-				which = ai_value
-				value = 1000
-			}
-			multiply_variable = { which = ai_value value = -1 }
-		}
-		add_entry = {
-			name = ROOT_IS_DEFENDER_OF_FAITH
-			limit = {
-				is_defender_of_faith = yes
-			}
-			export_to_variable = {
-				which = ai_value
-				value = 10
-			}
-		}
-		add_entry = {
-			name = ROOT_HAS_ESTABLISHED_THE_KINGDOM_OF_GOD
-			limit = {
-				has_country_modifier = kingdom_of_god
-			}
-			export_to_variable = {
-				which = ai_value
-				value = 50
-			}
-		}
-		add_entry = {
-			name = FROM_HAS_A_HEIR
+			name = FROM_IS_CURIA_CONTROLLER
 			limit = {
 				FROM = {
-					government = monarchy
-					has_heir = yes
+					tag = PAP
+					is_papal_controller = no
 				}
 			}
 			export_to_variable = {
 				which = ai_value
-				value = 1000
+				value = 15
 			}
 			multiply_variable = { which = ai_value value = -1 }
 		}
 		add_entry = {
-			name = FROM_HAS_NO_HEIR
+			name = ROOT_FROM_ARE_HISTORICAL_FRIENDS
 			limit = {
 				FROM = {
-					government = monarchy
-					has_heir = no
+					historical_friend_with = ROOT
 				}
 			}
 			export_to_variable = {
@@ -1969,76 +1566,115 @@ make_papal_sanctuary_subject_to_theocracy = {
 			}
 		}
 		add_entry = {
-			name = FROM_WAS_RECENTLY_ASKED_TO_BECOME_THEOCRACY
+			name = AMOUNT_OF_IMPERIAL_INFLUENCE
+			export_to_variable = {
+				which = ai_value
+				value = trigger_value:imperial_influence
+			}
+			change_variable = { which = ai_value value = -1 }
+			divide_variable = { which = ai_value value = 5 }
+		}
+		add_entry = {
+			name = FROM_OWNS_HRE_PROVINCES
 			limit = {
 				FROM = {
-					OR = {
-						has_country_modifier = papal_sanctuary_subject_converted_to_theocracy_modifier
-						has_country_modifier = cooldown_papal_sanctuary_subject_converted_to_theocracy_modifier
+					any_owned_province = {
+						is_part_of_hre = yes
 					}
 				}
 			}
 			export_to_variable = {
 				which = ai_value
-				value = 100
+				value = 10
+			}
+		}
+		add_entry = {
+			name = FROM_LIBERTY_DESIRE_TOO_HIGH
+			limit = {
+				FROM = {
+					liberty_desire = 50
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 1000
 			}
 			multiply_variable = { which = ai_value value = -1 }
+		}
+		add_entry = {
+			name = FROM_LIBERTY_DESIRE
+			limit = {
+				FROM = {
+					NOT = { liberty_desire = 50 }
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 50
+			}
+			export_to_variable = {
+				which = ai_value_2
+				value = trigger_value:liberty_desire
+				who = FROM
+			}
+			change_variable = { which = ai_value_2 value = -1 }
+			subtract_variable = { which = ai_value which = ai_value_2 }
+		}
+		add_entry = {
+			name = NUM_OF_HRE_REFORMS_PASSED
+			export_to_variable = {
+				which = ai_value
+				value = trigger_value:hre_reform_level
+			}
+			change_variable = { which = ai_value value = -1 }
+			multiply_variable = { which = ai_value value = 5 }
 		}
 	}
 	
 	ai_will_do = {
 		OR = {
-			is_defender_of_faith = yes
-			is_papal_controller = yes
-			has_country_modifier = kingdom_of_god
-		}
-		FROM = {
-			NOT = { liberty_desire = 25 }
-			NOT = { has_country_modifier = papal_sanctuary_subject_converted_to_theocracy_modifier }
-			NOT = { has_country_modifier = cooldown_papal_sanctuary_subject_converted_to_theocracy_modifier }
+			imperial_influence = 10
+			FROM = {
+				ai = yes
+			}
 		}
 	}
 }
 
-make_papal_sanctuary_subject_to_vassal = {
+change_imperial_feud_subject_to_vassal = {
 	category = influence
 	
 	alert_index = 6
-	alert_tooltip = make_papal_sanctuary_subject_to_vassal_alert_tooltip
+	alert_tooltip = change_imperial_feud_subject_to_vassal_alert_tooltip
 	
 	require_acceptance = yes
 	
 	is_visible = {
-		can_be_overlord = papal_sanctuary_subject
 		FROM = {
 			is_subject_of = ROOT
-			is_subject_of_type = papal_sanctuary_subject
+			is_subject_of_type = imperial_feud_subject
 		}
 	}
 	
 	is_allowed = {
-		hidden_trigger = {
-			can_be_overlord = papal_sanctuary_subject
-			FROM = {
-				is_subject_of = ROOT
-				is_subject_of_type = papal_sanctuary_subject
-			}
+		FROM = {
+			is_subject_of = ROOT
+			is_subject_of_type = imperial_feud_subject
 		}
 		is_at_war = no
-		religion = catholic
-		FROM = {
-			religion = catholic
-		}
 		FROM = {
 			is_at_war = no
 		}
 		FROM = {
-			papal_influence = 10
+			has_opinion = {
+				who = ROOT
+				value = 190
+			}
 		}
 		FROM = {
 			years_in_vassalage_under = {
 				who = ROOT
-				years = 5
+				years = 10
 				all_subject_country = yes
 			}
 		}
@@ -2047,35 +1683,27 @@ make_papal_sanctuary_subject_to_vassal = {
 	on_accept = {
 		if = {
 			limit = {
-				hidden_trigger = {
-					can_be_overlord = papal_sanctuary_subject
-					FROM = {
-						is_subject_of = ROOT
-						is_subject_of_type = papal_sanctuary_subject
-					}
+				FROM = {
+					is_subject_of = ROOT
+					is_subject_of_type = imperial_feud_subject
 				}
 				is_at_war = no
-				religion = catholic
-				FROM = {
-					religion = catholic
-				}
 				FROM = {
 					is_at_war = no
 				}
 				FROM = {
-					papal_influence = 10
+					has_opinion = {
+						who = ROOT
+						value = 190
+					}
 				}
 				FROM = {
 					years_in_vassalage_under = {
 						who = ROOT
-						years = 5
+						years = 10
 						all_subject_country = yes
 					}
 				}
-			}
-			FROM = {
-				grant_independence = yes
-				add_papal_influence = -10
 			}
 			vassalize = FROM
 		}
@@ -2084,71 +1712,112 @@ make_papal_sanctuary_subject_to_vassal = {
 	on_decline = {
 		if = {
 			limit = {
-				hidden_trigger = {
-					can_be_overlord = papal_sanctuary_subject
-					FROM = {
-						is_subject_of = ROOT
-						is_subject_of_type = papal_sanctuary_subject
-					}
+				FROM = {
+					is_subject_of = ROOT
+					is_subject_of_type = imperial_feud_subject
 				}
 				is_at_war = no
-				religion = catholic
-				FROM = {
-					religion = catholic
-				}
 				FROM = {
 					is_at_war = no
 				}
 				FROM = {
-					papal_influence = 10
+					has_opinion = {
+						who = ROOT
+						value = 190
+					}
 				}
 				FROM = {
 					years_in_vassalage_under = {
 						who = ROOT
-						years = 5
+						years = 10
 						all_subject_country = yes
 					}
 				}
 			}
-			add_prestige = -10
 			FROM = {
-				clr_country_flag = decline_make_papal_sanctuary_subject_to_vassal_@ROOT
-				set_country_flag = decline_make_papal_sanctuary_subject_to_vassal_@ROOT
-			}
-			add_casus_belli = {
-				target = FROM
-				type = cb_vassalize_papal_sanctuary_subject
-				months = 12
+				clr_country_flag = declined_change_imperial_feud_subject_to_vassal
+				set_country_flag = declined_change_imperial_feud_subject_to_vassal
 			}
 		}
 	}
 	
 	ai_acceptance = {
 		add_entry = {
-			name = FROM_LIBERTY_DESIRE
-			limit = {
-				FROM = {
-					NOT = { liberty_desire = 50 }
-				}
-			}
+			name = base_values
 			export_to_variable = {
 				which = ai_value
-				value = trigger_value:liberty_desire
-				who = FROM
+				value = 25
 			}
-			subtract_variable = { which = ai_value value = 1 }
-			multiply_variable = { which = ai_value value = -1 }
 		}
 		add_entry = {
-			name = FROM_LIBERTY_DESIRE_TOO_HIGH
+			name = FROM_HAS_MARRIAGE_WITH_ROOT
+			limit = {
+				marriage_with = FROM
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 10
+			}
+		}
+		add_entry = {
+			name = TRUST
 			limit = {
 				FROM = {
-					liberty_desire = 50
+					trust = {
+						who = ROOT
+						value = 50
+					}
 				}
 			}
 			export_to_variable = {
 				which = ai_value
-				value = 1000
+				value = trust
+				who = FROM
+				with = ROOT
+			}
+			subtract_variable = { which = ai_value value = 50 }
+			divide_variable = { which = ai_value value = 5 }
+		}
+		add_entry = {
+			name = TRUST
+			limit = {
+				FROM = {
+					trust = {
+						who = ROOT
+						value = 30
+					}
+					NOT = {
+						trust = {
+							who = ROOT
+							value = 50
+						}
+					}
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = trust
+				who = FROM
+				with = ROOT
+			}
+			subtract_variable = { which = ai_value value = 50 }
+			multiply_variable = { which = ai_value value = 2 }
+		}
+		add_entry = {
+			name = TRUST
+			limit = {
+				FROM = {
+					NOT = {
+						trust = {
+							who = ROOT
+							value = 30
+						}
+					}
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 2000
 			}
 			multiply_variable = { which = ai_value value = -1 }
 		}
@@ -2158,32 +1827,30 @@ make_papal_sanctuary_subject_to_vassal = {
 				which = ai_value
 				value = modifier:diplomatic_reputation
 			}
-			multiply_variable = { which = ai_value value = 5 }
+			multiply_variable = { which = ai_value value = 3 }
 		}
 		add_entry = {
-			name = FROM_IS_EMPIRE_RANK
+			name = ROOT_FROM_DIFF_OF_GOV_RANKS
+			export_to_variable = {
+				which = ai_value
+				value = trigger_value:government_rank
+			}
+			export_to_variable = {
+				which = ai_value_2
+				value = trigger_value:government_rank
+				who = FROM
+			}
+			subtract_variable = { which = ai_value which = ai_value_2 }
+			multiply_variable = { which = ai_value value = 10 }
+		}
+		add_entry = {
+			name = ROOT_FROM_NOT_SAME_RELIGION
 			limit = {
-				FROM = {
-					government_rank = 3
-				}
+				NOT = { religion = FROM }
 			}
 			export_to_variable = {
 				which = ai_value
-				value = 50
-			}
-			multiply_variable = { which = ai_value value = -1 }
-		}
-		add_entry = {
-			name = FROM_IS_KINGDOM_RANK
-			limit = {
-				FROM = {
-					government_rank = 2
-					NOT = { government_rank = 3 }
-				}
-			}
-			export_to_variable = {
-				which = ai_value
-				value = 25
+				value = 10
 			}
 			multiply_variable = { which = ai_value value = -1 }
 		}
@@ -2221,7 +1888,6 @@ make_papal_sanctuary_subject_to_vassal = {
 					multiply_variable = { which = our_mil_tech value = 3 }
 					change_variable = { which = military_power which = our_army_size }
 					change_variable = { which = military_power which = our_mil_tech }
-					
 					NOT = { check_variable = { which = military_power value = -39 } }
 				}
 			}
@@ -2265,7 +1931,6 @@ make_papal_sanctuary_subject_to_vassal = {
 					multiply_variable = { which = our_mil_tech value = 3 }
 					change_variable = { which = military_power which = our_army_size }
 					change_variable = { which = military_power which = our_mil_tech }
-					
 					check_variable = { which = military_power value = -39 }
 					NOT = { check_variable = { which = military_power value = 30 } }
 				}
@@ -2334,7 +1999,7 @@ make_papal_sanctuary_subject_to_vassal = {
 					change_variable = { which = our_mil_tech which = their_mil_tech }
 					multiply_variable = { which = our_mil_tech value = 3 }
 					change_variable = { which = military_power which = our_army_size }
-					change_variable = { which = military_power which = our_mil_tech }	
+					change_variable = { which = military_power which = our_mil_tech }
 					check_variable = { which = military_power value = 30 }
 				}
 			}
@@ -2342,32 +2007,6 @@ make_papal_sanctuary_subject_to_vassal = {
 				which = ai_value
 				value = 30
 			}
-		}
-		add_entry = {
-			name = FROM_IS_HRE_ELECTOR
-			limit = {
-				FROM = {
-					is_elector = yes
-				}
-			}
-			export_to_variable = {
-				which = ai_value
-				value = 1000
-			}
-			multiply_variable = { which = ai_value value = -1 }
-		}
-		add_entry = {
-			name = FROM_IS_EMPEROR
-			limit = {
-				FROM = {
-					is_emperor = yes
-				}
-			}
-			export_to_variable = {
-				which = ai_value
-				value = 1000
-			}
-			multiply_variable = { which = ai_value value = -1 }
 		}
 		add_entry = {
 			name = FROM_HAS_SUBJECTS
@@ -2383,24 +2022,30 @@ make_papal_sanctuary_subject_to_vassal = {
 			multiply_variable = { which = ai_value value = -1 }
 		}
 		add_entry = {
-			name = ROOT_IS_CURIA_CONTROLLER
+			name = FROM_IS_PAPAL_STATE
 			limit = {
-				is_papal_controller = yes
+				FROM = {
+					tag = PAP
+				}
 			}
 			export_to_variable = {
 				which = ai_value
-				value = 10
+				value = 1000
 			}
+			multiply_variable = { which = ai_value value = -1 }
 		}
 		add_entry = {
-			name = FROM_DEVELOPMENT
+			name = FROM_HAS_MORE_THAN_200_TOTAL_DEVELOPMENT
+			limit = {
+				FROM = {
+					total_development = 200
+				}
+			}
 			export_to_variable = {
 				which = ai_value
-				value = trigger_value:total_development
-				who = FROM
+				value = 100
 			}
-			subtract_variable = { which = ai_value value = 1 }
-			divide_variable = { which = ai_value value = -2.5 }
+			multiply_variable = { which = ai_value value = -1 }
 		}
 		add_entry = {
 			name = ROOT_OWNS_FROM_CORE_PROVINCES
@@ -2423,139 +2068,130 @@ make_papal_sanctuary_subject_to_vassal = {
 				who = FROM
 				with = ROOT
 			}
-			divide_variable = { which = ai_value value = -2 }
+			divide_variable = { which = ai_value value = -4 }
 		}
 		add_entry = {
-			name = FROM_IS_IMPERIAL_CITY
+			name = ROOT_FROM_ECONOMIC_POWER_COMPARED
 			limit = {
-				has_reform = free_city
-			}
-			export_to_variable = {
-				which = ai_value
-				value = 1000
-			}
-			multiply_variable = { which = ai_value value = -1 }
-		}
-		add_entry = {
-			name = FROM_IS_MONARCHY
-			limit = {
-				FROM = {
-					government = monarchy
+				variable_arithmetic_trigger = {
+					export_to_variable = {
+						which = eco_power
+						value = 60
+					}
+					export_to_variable = {
+						which = our_total_development
+						value = trigger_value:total_development
+					}
+					export_to_variable = {
+						which = their_total_development
+						value = trigger_value:total_development
+						who = FROM
+					}
+					multiply_variable = { which = their_total_development which = their_total_development }
+					divide_variable = { which = our_total_development which = their_total_development }
+					multiply_variable = { which = eco_power which = our_total_development }
+					change_variable = { which = eco_power value = -90 }
+					
+					check_variable = { which = eco_power value = -89 }
+					NOT = { check_variable = { which = eco_power value = 30 } }
 				}
 			}
 			export_to_variable = {
 				which = ai_value
-				value = 50
-			}
-			multiply_variable = { which = ai_value value = -1 }
-		}
-		add_entry = {
-			name = FROM_IS_A_REPUBLIC
-			limit = {
-				FROM = {
-					government = republic
-				}
+				value = 60
 			}
 			export_to_variable = {
-				which = ai_value
-				value = 25
-			}
-			multiply_variable = { which = ai_value value = -1 }
-		}
-		add_entry = {
-			name = FROM_AMOUNT_OF_INVESTED_PAPAL_INFLUENCE
-			limit = {
-				FROM = {
-					invested_papal_influence = 1
-				}
+				which = our_total_development
+				value = trigger_value:total_development
 			}
 			export_to_variable = {
-				which = ai_value
-				value = trigger_value:invested_papal_influence
+				which = their_total_development
+				value = trigger_value:total_development
 				who = FROM
 			}
+			multiply_variable = { which = their_total_development which = their_total_development }
+			divide_variable = { which = our_total_development which = their_total_development }
+			multiply_variable = { which = ai_value which = our_total_development }
+			change_variable = { which = ai_value value = -90 }
 		}
 		add_entry = {
-			name = ROOT_RULER_IS_RELIGIOUS
+			name = ROOT_FROM_ECONOMIC_POWER_COMPARED
 			limit = {
-				has_dlc = "Rights of Man"
-				OR = {
-					ruler_has_personality = zealot_personality
-					ruler_has_personality = pious_personality
-				}
-			}
-			export_to_variable = {
-				which = ai_value
-				value = 5
-			}
-		}
-		add_entry = {
-			name = ROOT_RULER_IS_SINNER
-			limit = {
-				has_dlc = "Rights of Man"
-				ruler_has_personality = sinner_personality
-			}
-			export_to_variable = {
-				which = ai_value
-				value = 25
-			}
-			multiply_variable = { which = ai_value value = -1 }
-		}
-		add_entry = {
-			name = FROM_RULER_IS_RELIGIOUS
-			limit = {
-				has_dlc = "Rights of Man"
-				FROM = {
-					OR = {
-						ruler_has_personality = zealot_personality
-						ruler_has_personality = pious_personality
+				variable_arithmetic_trigger = {
+					export_to_variable = {
+						which = eco_power
+						value = 60
 					}
+					export_to_variable = {
+						which = our_total_development
+						value = trigger_value:total_development
+					}
+					export_to_variable = {
+						which = their_total_development
+						value = trigger_value:total_development
+						who = FROM
+					}
+					multiply_variable = { which = their_total_development which = their_total_development }
+					divide_variable = { which = our_total_development which = their_total_development }
+					multiply_variable = { which = eco_power which = our_total_development }
+					change_variable = { which = eco_power value = -90 }
+					
+					NOT = { check_variable = { which = eco_power value = -89 } }
 				}
 			}
 			export_to_variable = {
 				which = ai_value
-				value = 20
+				value = 90
+			}
+			multiply_variable = { which = ai_value value = -1 }
+		}
+		add_entry = {
+			name = ROOT_FROM_ECONOMIC_POWER_COMPARED
+			limit = {
+				variable_arithmetic_trigger = {
+					export_to_variable = {
+						which = eco_power
+						value = 60
+					}
+					export_to_variable = {
+						which = our_total_development
+						value = trigger_value:total_development
+					}
+					export_to_variable = {
+						which = their_total_development
+						value = trigger_value:total_development
+						who = FROM
+					}
+					multiply_variable = { which = their_total_development which = their_total_development }
+					divide_variable = { which = our_total_development which = their_total_development }
+					multiply_variable = { which = eco_power which = our_total_development }
+					change_variable = { which = eco_power value = -90 }
+					
+					check_variable = { which = eco_power value = 30 }
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 30
 			}
 		}
 		add_entry = {
-			name = FROM_RULER_IS_SINNER
+			name = FROM_IS_MERCHANT_REPUBLIC
 			limit = {
-				has_dlc = "Rights of Man"
 				FROM = {
-					ruler_has_personality = sinner_personality
+					has_reform = merchants_reform
 				}
 			}
 			export_to_variable = {
 				which = ai_value
-				value = 1000
+				value = 30
 			}
 			multiply_variable = { which = ai_value value = -1 }
 		}
 		add_entry = {
-			name = ROOT_IS_SUBJECT
+			name = ROOT_IS_EMPEROR
 			limit = {
-				is_subject = yes
-			}
-			export_to_variable = {
-				which = ai_value
-				value = 1000
-			}
-			multiply_variable = { which = ai_value value = -1 }
-		}
-		add_entry = {
-			name = ROOT_IS_DEFENDER_OF_FAITH
-			limit = {
-				is_defender_of_faith = yes
-			}
-			export_to_variable = {
-				which = ai_value
-				value = 10
-			}
-		}
-		add_entry = {
-			name = ROOT_HAS_ESTABLISHED_THE_KINGDOM_OF_GOD
-			limit = {
-				has_country_modifier = kingdom_of_god
+				is_emperor = yes
 			}
 			export_to_variable = {
 				which = ai_value
@@ -2563,12 +2199,9 @@ make_papal_sanctuary_subject_to_vassal = {
 			}
 		}
 		add_entry = {
-			name = FROM_WAS_RECENTLY_ASKED_TO_BECOME_A_VASSAL
+			name = ROOT_IS_NOT_EMPEROR
 			limit = {
-				FROM = {
-					has_country_flag = decline_make_papal_sanctuary_subject_to_vassal_@ROOT
-					NOT = { had_country_flag = { flag = decline_make_papal_sanctuary_subject_to_vassal_@ROOT days = 1825 } }
-				}
+				is_emperor = no
 			}
 			export_to_variable = {
 				which = ai_value
@@ -2577,155 +2210,92 @@ make_papal_sanctuary_subject_to_vassal = {
 			multiply_variable = { which = ai_value value = -1 }
 		}
 		add_entry = {
-			name = FROM_WAS_RECENTLY_ASKED_TO_BECOME_THEOCRACY
+			name = FROM_LIBERTY_DESIRE_TOO_HIGH
 			limit = {
 				FROM = {
-					OR = {
-						has_country_modifier = papal_sanctuary_subject_converted_to_theocracy_modifier
-						has_country_modifier = cooldown_papal_sanctuary_subject_converted_to_theocracy_modifier
-					}
+					liberty_desire = 50
 				}
 			}
 			export_to_variable = {
 				which = ai_value
-				value = 100
+				value = 1000
 			}
 			multiply_variable = { which = ai_value value = -1 }
 		}
 	}
 	
 	ai_will_do = {
-		OR = {
-			is_papal_controller = yes
-			has_country_modifier = kingdom_of_god
-		}
 		num_of_free_diplomatic_relations = 1
-		is_neighbor_of = FROM
 		FROM = {
-			NOT = { total_development = 100 }
 			OR = {
-				NOT = { has_country_flag = decline_make_papal_sanctuary_subject_to_vassal_@ROOT }
-				had_country_flag = { flag = decline_make_papal_sanctuary_subject_to_vassal_@ROOT days = 1825 }
+				NOT = { has_country_flag = declined_change_imperial_feud_subject_to_vassal }
+				had_country_flag = { flag = declined_change_imperial_feud_subject_to_vassal days = 1825 }
 			}
 		}
 	}
 }
 
-papal_sanctuary_subject_become_independent = {
+imperial_feud_subject_become_independent = {
 	category = influence
 
 	require_acceptance = no
 	
 	is_visible = {
 		is_subject_of = FROM
-		is_subject_of_type = papal_sanctuary_subject
+		is_subject_of_type = imperial_feud_subject
 	}
 	
 	is_allowed = {
 		hidden_trigger = {
 			is_subject_of = FROM
-			is_subject_of_type = papal_sanctuary_subject
-		}
-		OR = {
-			NOT = { government = theocracy }
-			NOT = { religion = FROM }
-			FROM = {
-				NOT = { can_be_overlord = papal_sanctuary_subject }
-			}
+			is_subject_of_type = imperial_feud_subject
 		}
 		NOT = { truce_with = FROM }
-		OR = {
-			is_excommunicated = yes
-			NOT = { religion = FROM }
-			FROM = {
-				is_excommunicated = yes
-			}
-			AND = {
-				liberty_desire = 50
-				has_country_modifier = the_statue_in_restraint_of_appeals
-			}
-			liberty_desire = 65
-			FROM = {
-				NOT = { can_be_overlord = papal_sanctuary_subject }
-			}
-		}
+		liberty_desire = 50
+		is_at_war = no
 	}
 	
 	on_accept = {
 		if = {
 			limit = {
 				is_subject_of = FROM
-				is_subject_of_type = papal_sanctuary_subject
-				OR = {
-					NOT = { government = theocracy }
-					NOT = { religion = FROM }
-					FROM = {
-						NOT = { can_be_overlord = papal_sanctuary_subject }
-					}
-				}
+				is_subject_of_type = imperial_feud_subject
 				NOT = { truce_with = FROM }
-				OR = {
-					is_excommunicated = yes
-					NOT = { religion = FROM }
-					FROM = {
-						is_excommunicated = yes
-					}
-					AND = {
-						liberty_desire = 50
-						has_country_modifier = the_statue_in_restraint_of_appeals
-					}
-					liberty_desire = 65
-					FROM = {
-						NOT = { can_be_overlord = papal_sanctuary_subject }
-					}
-				}
+				liberty_desire = 50
+				is_at_war = no
 			}
 			FROM = {
 				ROOT = { grant_independence = yes }
-				country_event = { id = subjects_expanded_papal_sanctuary_subject_events.1 }
-				add_casus_belli = {
-					target = ROOT
-					type = cb_insult
-					months = 72
-				}
+				country_event = { id = subjects_expanded_imperial_feud_subject_events.1 days = 1 }
 			}
 			add_truce_with = FROM
-			if = {
-				limit = {
-					is_excommunicated = no
+			FROM = {
+				add_casus_belli = {
+					target = ROOT
+					type = cb_disloyal_imperial_feud_subject
 				}
-				excommunicate = ROOT
 			}
 		}
 	}
 	
 	ai_will_do = {
 		OR = {
-			NOT = { has_dlc = "Rights of Man" }
+			liberty_desire = 65
 			AND = {
-				NOT = { ruler_has_personality = zealot_personality }
-				NOT = { ruler_has_personality = pious_personality }
-			}
-		}
-		OR = {
-			is_excommunicated = yes
-			NOT = { religion = FROM }
-			FROM = {
-				is_excommunicated = yes
+				hre_religion_locked = yes
+				NOT = { religion = FROM }
 			}
 			AND = {
-				liberty_desire = 55
-				has_country_modifier = the_statue_in_restraint_of_appeals
-			}
-			liberty_desire = 75
-			FROM = {
-				NOT = { can_be_overlord = papal_sanctuary_subject }
+				FROM = {
+					is_emperor = yes
+					NOT = { can_be_overlord = imperial_feud_subject }
+				}
 			}
 		}
 	}
 }
 
-cancel_papal_sanctuary_subject = {
+cancel_imperial_feud_subject = {
 	category = influence
 
 	require_acceptance = no
@@ -2733,7 +2303,7 @@ cancel_papal_sanctuary_subject = {
 	is_visible = {
 		FROM = {
 			is_subject_of = ROOT
-			is_subject_of_type = papal_sanctuary_subject
+			is_subject_of_type = imperial_feud_subject
 		}
 	}
 	
@@ -2741,9 +2311,10 @@ cancel_papal_sanctuary_subject = {
 		hidden_trigger = {
 			FROM = {
 				is_subject_of = ROOT
-				is_subject_of_type = papal_sanctuary_subject
+				is_subject_of_type = imperial_feud_subject
 			}
 		}
+		is_at_war = no
 		NOT = { truce_with = FROM }
 		prestige = 0
 	}
@@ -2753,8 +2324,9 @@ cancel_papal_sanctuary_subject = {
 			limit = {
 				FROM = {
 					is_subject_of = ROOT
-					is_subject_of_type = papal_sanctuary_subject
+					is_subject_of_type = imperial_feud_subject
 				}
+				is_at_war = no
 				NOT = { truce_with = FROM }
 				prestige = 0
 			}

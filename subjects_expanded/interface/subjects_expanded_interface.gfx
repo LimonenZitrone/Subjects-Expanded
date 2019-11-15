@@ -324,4 +324,17 @@ spriteTypes = {
 		name = "GFX_diplomacy_ampapal_sanctuary_subject"
 		texturefile = "gfx//interface//icon_diplomacy_ampapal_sanctuary_subject.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_icon_imperial_feud_subject"
+		texturefile = "gfx/interface/icon_imperial_feud_subject.dds"
+	}
+	spriteType = {
+		name = "GFX_diplomacy_leadimperial_feud_subject"
+		texturefile = "gfx//interface//icon_diplomacy_leadimperial_feud_subject.dds"
+	}
+	spriteType = {
+		name = "GFX_diplomacy_amimperial_feud_subject"
+		texturefile = "gfx//interface//icon_diplomacy_amimperial_feud_subject.dds"
+	}
 }

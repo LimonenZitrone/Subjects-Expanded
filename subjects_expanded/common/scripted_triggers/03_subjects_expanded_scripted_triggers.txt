@@ -51,6 +51,7 @@ is_similar_tributary_subject = {
 		is_subject_of_type = imperial_tributary_state
 		is_subject_of_type = trade_outpost
 		is_subject_of_type = papal_sanctuary_subject
+		is_subject_of_type = imperial_feud_subject
 	}
 }
 

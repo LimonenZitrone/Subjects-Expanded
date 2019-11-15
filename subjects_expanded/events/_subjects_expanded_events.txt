@@ -70,6 +70,7 @@ country_event = {
 			count_num_of_subjects_of_type = { type = brother_kingdom }
 			count_num_of_subjects_of_type = { type = iqta_vassal }
 			count_num_of_subjects_of_type = { type = papal_sanctuary_subject }
+			count_num_of_subjects_of_type = { type = imperial_feud_subject }
 		}
 	}
 	
@@ -279,6 +280,14 @@ country_event = {
 		ai_chance = { factor = 100 }
 		
 		display_subjects_of_type = { type = papal_sanctuary_subject }
+	}
+	
+	option = {
+		name = subjects_expanded_events2.EVTOPT27
+		
+		ai_chance = { factor = 100 }
+		
+		display_subjects_of_type = { type = imperial_feud_subject }
 	}
 }
 

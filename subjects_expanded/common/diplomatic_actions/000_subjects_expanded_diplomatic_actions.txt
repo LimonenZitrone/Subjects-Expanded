@@ -145,6 +145,24 @@ declarewar = {
 		if = {
 			limit = {
 				FROM = {
+					is_subject_of_type = imperial_feud_subject
+					overlord = {
+						NOT = {
+							is_in_war = {
+								participants = ROOT
+								participants = THIS
+							}
+						}
+					}
+				}
+			}
+			FROM = {
+				country_event = { id = subjects_expanded_imperial_feud_subject_events.6 days = 70 }
+			}
+		}
+		if = {
+			limit = {
+				FROM = {
 					has_country_flag = marked_for_war_by_@ROOT
 				}
 			}

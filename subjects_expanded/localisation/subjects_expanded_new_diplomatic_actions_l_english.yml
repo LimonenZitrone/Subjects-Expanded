@@ -369,6 +369,39 @@
  establish_client_march_tooltip: "Make your client state [From.GetName] to a §YClient State March§!.\n"
  
  
+ establish_imperial_feud_subject_title: "Establish Imperial Feud"
+ establish_imperial_feud_subject_desc: "Do you want to offer §Y[From.GetName]§! to become our Imperial Feud? \n[imperial_feud_subject_desc] \n\nIf they accept, this will change our Imperial Authority by §R-5§!."
+ establish_imperial_feud_subject_tooltip: "Make §Y[From.GetName]§! to a [Root.GetAdjective] §YImperial Feud§!.\n"
+ establish_imperial_feud_subject_alert_tooltip: "Establish Imperial Feud"
+ establish_imperial_feud_subject_dialog: "§Y[This.GetName]§! offers us that we become their §YImperial Feud§!. \n[imperial_feud_subject_desc] \nDo you want to accept?"
+ 
+ ask_for_imperial_feud_subject_title: "Request Imperial Feud"
+ ask_for_imperial_feud_subject_desc: "Do you want to offer §Y[From.GetName]§! that we become their Imperial Feud? \n[imperial_feud_subject_desc]"
+ ask_for_imperial_feud_subject_tooltip: "Ask §Y[From.GetName]§! to make §Y[Root.GetName]§! to a [From.GetAdjective] §YImperial Feud§!.\n"
+ ask_for_imperial_feud_subject_alert_tooltip: "Request Imperial Feud"
+ ask_for_imperial_feud_subject_dialog: "§Y[This.GetName]§! offers us that they become our §YImperial Feud§!. \n[imperial_feud_subject_desc] \n\nIf we accept, this will change our Imperial Authority by §R-5§!. \n\nDo you want to accept?"
+ 
+ make_imperial_feud_subject_hre_member_title: "Offer HRE Membership"
+ make_imperial_feud_subject_hre_member_desc: "Do you want to offer §Y[From.GetName]§! to become a member of the Holy Roman Empire? \nThis will grant them independence and add all their provinces in Europe to the Holy Roman Empire. \nIf they decline, our Imperial Authority is changed by §R-5§!."
+ make_imperial_feud_subject_hre_member_tooltip: "Ask §Y[From.GetName]§! to join the HRE.\n"
+ make_imperial_feud_subject_hre_member_alert_tooltip: "Offer HRE Membership"
+ make_imperial_feud_subject_hre_member_dialog: "§Y[This.GetName]§! offers us that we become a member of the §YHoly Roman Empire§!. \nThis will grant us independence and add all our provinces in Europe to the Holy Roman Empire. \nIf we decline, their Imperial Authority is changed by §R-5§!. \n\nDo you want to accept?"
+ 
+ change_imperial_feud_subject_to_vassal_title: "Demand Vassalization"
+ change_imperial_feud_subject_to_vassal_desc: "Do you want to demand that §Y[From.GetName]§! becomes our vassal? \n[vassal_desc]"
+ change_imperial_feud_subject_to_vassal_tooltip: "Make §Y[From.GetName]§! to a [Root.GetAdjective] vassal.\n"
+ change_imperial_feud_subject_to_vassal_alert_tooltip: "Demand Vassalization"
+ change_imperial_feud_subject_to_vassal_dialog: "§Y[This.GetName]§! demands that we become their vassal. \n[vassal_desc] \n\nDo you want to accept?"
+ 
+ imperial_feud_subject_become_independent_title: "Declare Independence"
+ imperial_feud_subject_become_independent_desc: "Declare your independence from your overlord §Y[From.GetName]§!. This will give us a truce with them for §Y5 years§!."
+ imperial_feud_subject_become_independent_tooltip: "Declare your independence from your overlord §Y[From.GetName]§!.\n"
+ 
+ cancel_imperial_feud_subject_title: "Release Imperial Feud"
+ cancel_imperial_feud_subject_desc: "Cancel the dependency of §Y[From.GetName]§! of us. This will decrease their opinion about us by §R-200§!, if their liberty desire is below §Y50%§!. We will also lose §R-25§! prestige and gain a truce with them for §Y5 years§!."
+ cancel_imperial_feud_subject_tooltip: "Cancel the vassalisation of §Y[From.GetName]§! and grant them independence.\n"
+ 
+ 
  return_subject_to_vassal_title: "Demote to Vassal"
  return_subject_to_vassal_desc: "Cancel the current status §Y[From.GetName]§! has and make them to a vassal. This will decrease their opinion of us by §R-100§! and change their liberty desire by §R+25%§!. We will also lose §R-10§! prestige[Root.GetIfDemoteToVassalGivesStabHit]."
  return_subject_to_vassal_tooltip: "Make §Y[From.GetName]§! to a vassal again.\n"
@@ -483,4 +516,16 @@
  ROOT_AMOUNT_OF_INVESTED_PAPAL_INFLUENCE: "We invested in the next papal election"
  FROM_JUST_CANCELED_BROTHER_KINGDOM: "They were a Brother Kingdom and became independent recently"
  FROM_HAS_STRONG_NEIGHBOR_WITH_DIFFERENT_RELIGION: "They have a strong heretical or heathen neighbor"
+ AMOUNT_OF_IMPERIAL_INFLUENCE: "Imperial Influence"
+ ROOT_OWNS_HRE_PROVINCES: "We own provinces of the Empire"
+ FROM_OWNS_HRE_PROVINCES: "They own provinces of the Empire"
+ FROM_OWNS_HRE_PROVINCES_BUT_IS_LARGE: "They own provinces of the Empire and have at least §Y100§! development"
+ FROM_HAS_STRONG_NEIGHBOR_OUTSIDE_OF_HRE: "They have a strong neighbor outside of the Empire"
+ FROM_IS_DUCHY_RANK: "They are a Duchy"
+ ROOT_TOO_HIGH_DEVELOPMENT: "We have too much development"
+ ROOT_IS_PAPAL_STATE: "We are the Papal State"
+ NUM_OF_HRE_MEMBERS: "Amount of HRE members"
+ ROOT_IS_EMPEROR: "We are Emperor of the HRE"
+ ROOT_IS_NOT_EMPEROR: "We are not Emperor of the HRE"
+ NUM_OF_HRE_REFORMS_PASSED: "Passed HRE reforms"
  

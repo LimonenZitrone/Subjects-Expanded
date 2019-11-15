@@ -574,6 +574,52 @@ is_possible_subject_of_subject_type_papal_sanctuary_subject = {
 	is_excommunicated = no
 }
 
+is_possible_subject_of_subject_type_imperial_feud_subject = {
+	# PREVs in THIS scope refer to possible overlord
+	NOT = { is_subject_of_type = imperial_feud_subject }
+	is_subject = no
+	is_part_of_hre = no
+	capital_scope = {
+		continent = europe
+	}
+	OR = {
+		AND = {
+			hre_religion_locked = no
+			OR = {
+				religion = catholic
+				religion = protestant
+				religion = reformed
+			}
+		}
+		AND = {
+			hre_religion_locked = yes
+			religion = PREV
+		}
+	}
+	any_owned_province = {
+		OR = {
+			any_neighbor_province = {
+				is_part_of_hre = yes
+				owner = {
+					is_part_of_hre = yes
+				}
+			}
+			AND = {
+				has_port = yes
+				sea_zone = {
+					any_neighbor_province = {
+						has_port = yes
+						is_part_of_hre = yes
+						owner = {
+							is_part_of_hre = yes
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
 can_create_subject_type = {
 	can_be_overlord = $subject_type$
 	$subject$ = {

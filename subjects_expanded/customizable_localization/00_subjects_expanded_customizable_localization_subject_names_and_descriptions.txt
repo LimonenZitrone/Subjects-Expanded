@@ -206,6 +206,12 @@ defined_text = {
 		}
 		localisation_key = "[papal_sanctuary_subject]"
 	}
+	text = {
+		trigger = {
+			is_subject_of_type = imperial_feud_subject
+		}
+		localisation_key = "[imperial_feud_subject]"
+	}
 	
 	text = {
 		trigger = {
@@ -962,5 +968,27 @@ defined_text = {
 			always = yes
 		}
 		localisation_key = papal_sanctuary_subject_long_desc
+	}
+}
+
+defined_text = {
+	name = imperial_feud_subject
+	
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = imperial_feud_subject_title
+	}
+}
+
+defined_text = {
+	name = imperial_feud_subject_desc
+	
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = imperial_feud_subject_long_desc
 	}
 }

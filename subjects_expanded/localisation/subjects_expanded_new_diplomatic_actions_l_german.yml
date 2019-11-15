@@ -369,6 +369,39 @@
  establish_client_march_tooltip: "Ernennt Euren Satellitenstaat [From.GetName] zu einer §YSatellitenmark§!.\n"
  
  
+ establish_imperial_feud_subject_title: "Kaiserliches Lehen fordern"
+ establish_imperial_feud_subject_desc: "Wollt Ihr §Y[From.GetName]§! vorschlagen, unser Kaiserliches Lehen zu werden? \n[imperial_feud_subject_desc] \n\nWenn sie akzeptieren, wird dies unsere Reichsauthörität um §R-5§! verändern."
+ establish_imperial_feud_subject_tooltip: "Macht §Y[From.GetName]§! zu einem [Root.GetAdjective]en §YKaiserlichen Lehen§!.\n"
+ establish_imperial_feud_subject_alert_tooltip: "Kaiserliches Lehen fordern"
+ establish_imperial_feud_subject_dialog: "§Y[This.GetName]§! schlägt uns vor, dass wir ihr §YKaiserliches Lehen§! werden. \n[imperial_feud_subject_desc] \nWollt Ihr akzeptieren?"
+ 
+ ask_for_imperial_feud_subject_title: "Kaiserliches Lehen erbitten"
+ ask_for_imperial_feud_subject_desc: "Wollt Ihr §Y[From.GetName]§! vorschlagen, dass wir ihr Kaiserliches Lehen werden? \n[imperial_feud_subject_desc]"
+ ask_for_imperial_feud_subject_tooltip: "§Y[From.GetName]§! bitten, §Y[Root.GetName]§! zu einem [From.GetAdjective]en §YKaiserlichen Lehen§! zu machen.\n"
+ ask_for_imperial_feud_subject_alert_tooltip: "Kaiserliches Lehen erbitten"
+ ask_for_imperial_feud_subject_dialog: "§Y[This.GetName]§! schlägt uns vor, dass sie unser §YKaiserliches Lehen§! werden. \n[imperial_feud_subject_desc] \n\nWenn wir akzeptieren, wird dies unsere Reichsauthörität um §R-5§! verändern. \n\nWollt Ihr akzeptieren?"
+ 
+ make_imperial_feud_subject_hre_member_title: "Offer HRE Membership"
+ make_imperial_feud_subject_hre_member_desc: "Wollt Ihr §Y[From.GetName]§! vorschlagen, ein Mitglied des Heiligen Römischen Reiches zu werden? \nDies wird ihnen ihre Unabhängigkeit gewähren und alle ihre europäischen Provinzen zu dem Heiligen Römischen Reich hinzufügen. \nWenn sie ablehnen, verändert sich unsere Reichsauthörität um §R-5§!."
+ make_imperial_feud_subject_hre_member_tooltip: "Ask §Y[From.GetName]§! to join the HRE.\n"
+ make_imperial_feud_subject_hre_member_alert_tooltip: "Offer HRE Membership"
+ make_imperial_feud_subject_hre_member_dialog: "§Y[This.GetName]§! schlägt uns vor, dass wir ein Mitglied des §YHeiligen Römischen Reiches§! werden. \nDies wird uns unsere Unabhängigkeit gewähren und alle unsere europäischen Provinzen zu dem Heiligen Römischen Reich hinzufügen. \nWenn wir ablehnen, verändert sich ihre Reichsauthörität um §R-5§!. \n\nWollt Ihr akzeptieren?"
+ 
+ change_imperial_feud_subject_to_vassal_title: "Vasallisierung verlangen"
+ change_imperial_feud_subject_to_vassal_desc: "Wollt Ihr von §Y[From.GetName]§! verlangen, dass sie unser Vasall werden? \n[vassal_desc]"
+ change_imperial_feud_subject_to_vassal_tooltip: "Macht §Y[From.GetName]§! zu einem [Root.GetAdjective]en Vasall.\n"
+ change_imperial_feud_subject_to_vassal_alert_tooltip: "Vasallisierung verlangen"
+ change_imperial_feud_subject_to_vassal_dialog: "§Y[This.GetName]§! verlangt, dass wir ihr Vasall werden. \n[vassal_desc] \n\nWollt Ihr akzeptieren?"
+ 
+ imperial_feud_subject_become_independent_title: "Unabhängigkeit erklären"
+ imperial_feud_subject_become_independent_desc: "Erklärt Eure Unabhängigkeit von Eurem Lehnsherrn §Y[From.GetName]§!. Dies wird uns einen §Y5-jährigen§! Waffenstillstand mit ihnen geben."
+ imperial_feud_subject_become_independent_tooltip: "Erklärt Eure Unabhängigkeit von Eurem Lehnsherrn §Y[From.GetName]§!.\n"
+ 
+ cancel_imperial_feud_subject_title: "Päpstliches Schutzgebiet entlassen"
+ cancel_imperial_feud_subject_desc: "Beendet das Abhängigkeitsverhältnis von §Y[From.GetName]§! zu uns. Dies wird ihre Meinung über uns um §R-200§! verschlechtern, sofern sie ein Freiheitsstreben unter §Y50%§! besitzen. Außerdem verlieren wir §R-25§! Prestige und erhalten eine §Y5-jährige§! Waffenruhe mit ihnen."
+ cancel_imperial_feud_subject_tooltip: "Beedet die Vasallisierung von §Y[From.GetName]§! und entlasst sie in die Freiheit.\n"
+ 
+ 
  return_subject_to_vassal_title: "Zum Vasall degradieren"
  return_subject_to_vassal_desc: "Beendet den derzeitigen Status von §Y[From.GetName]§! und macht sie zu einem Vasallen. Dies wird ihre Meinung über uns um §R-100§! verschlechtern und ihr Freiheitsstreben um §R+25%§! ändern. Außerdem verlieren wir §R-10§! Prestige[Root.GetIfDemoteToVassalGivesStabHit]."
  return_subject_to_vassal_tooltip: "Macht §Y[From.GetName]§! wieder zu einem Vasall.\n"
@@ -483,4 +516,16 @@
  ROOT_AMOUNT_OF_INVESTED_PAPAL_INFLUENCE: "Wir haben päpstlichen Einfluss investiert"
  FROM_JUST_CANCELED_BROTHER_KINGDOM: "Sie waren ein Bruderkönigreich und sind kürzlich unabhängig geworden"
  FROM_HAS_STRONG_NEIGHBOR_WITH_DIFFERENT_RELIGION: "Sie haben einen starken häretischen oder ungläubigen Nachbarn"
+ AMOUNT_OF_IMPERIAL_INFLUENCE: "Reichsauthörität"
+ ROOT_OWNS_HRE_PROVINCES: "Wir besitzten Provinzen des Reichs"
+ FROM_OWNS_HRE_PROVINCES: "Se besitzten Provinzen des Reichs"
+ FROM_OWNS_HRE_PROVINCES_BUT_IS_LARGE: "Sie besitzten Provinzen des Reichs und haben mindestens §Y100§! Entwicklung"
+ FROM_HAS_STRONG_NEIGHBOR_OUTSIDE_OF_HRE: "Sie haben einen starken Nachbarn außerhalb des Reiches"
+ FROM_IS_DUCHY_RANK: "Sie sind ein Herzogtum"
+ ROOT_TOO_HIGH_DEVELOPMENT: "Wir haben eine zu hohe Entwicklung"
+ ROOT_IS_PAPAL_STATE: "Wir sind der Kirchenstaat"
+ NUM_OF_HRE_MEMBERS: "Anzahl der HRR-Mitglieder"
+ ROOT_IS_EMPEROR: "Wir sind Kaiser des HRR"
+ ROOT_IS_NOT_EMPEROR: "Wir sind nicht Kaiser des HRR"
+ NUM_OF_HRE_REFORMS_PASSED: "Verabschiedete HRR-Reformen"
  

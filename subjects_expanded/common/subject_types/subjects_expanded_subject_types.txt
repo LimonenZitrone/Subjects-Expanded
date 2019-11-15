@@ -27,6 +27,7 @@ integrated_personal_union = { }
 brother_kingdom = { }
 iqta_vassal = { }
 papal_sanctuary_subject = { }
+imperial_feud_subject = { }
 
 # Subjects
 protectorate = {
@@ -3833,4 +3834,146 @@ papal_sanctuary_subject = {
 	
 	overlord_opinion_modifier = is_papal_sanctuary_subject
 	subject_opinion_modifier = is_papal_sanctuary_subject
+}
+
+imperial_feud_subject = {
+	copy_from = default
+	
+	# Graphics:
+	sprite = GFX_icon_imperial_feud_subject
+	diplomacy_overlord_sprite = GFX_diplomacy_leadimperial_feud_subject
+	diplomacy_subject_sprite = GFX_diplomacy_amimperial_feud_subject
+
+	# Triggers:
+	is_potential_overlord = {
+		is_emperor = yes
+		NOT = { hre_reform_level = 7 }
+	}
+	
+	# Properties:
+	is_voluntary = yes
+	can_send_tribute = yes
+	joins_overlords_wars = no
+	overlord_can_attack = no
+	overlord_can_be_subject = yes
+	can_have_subjects_of_other_types = yes
+	takes_diplo_slot = no
+	uses_military_focus = no
+	overlord_protects_external = yes
+	counts_for_borders = no
+	can_use_claims = no
+	share_rebel_popup = no
+	allows_taking_land_without_independence = yes
+	can_transfer_in_peace = no
+	can_set_mil_focus = no
+	can_send_missionary_to_subject = no
+	overlord_can_fabricate_for = no
+	
+	trust_on_start = 50
+	
+	base_liberty_desire = -5.0
+	liberty_desire_development_ratio = 0.175
+	liberty_desire_same_dynasty = -10.0
+	
+	relative_power_class = 1
+	diplomacy_view_class = 1
+
+	can_fight = {
+		independent_nations = yes
+		other_overlord = all
+		same_overlord = all
+	}
+	can_rival = {
+		independent_nations = yes
+		other_overlord = all
+		same_overlord = all
+	}
+	can_ally = {
+		independent_nations = yes
+		other_overlord = all
+		same_overlord = all
+	}
+	can_marry = {
+		independent_nations = yes
+		other_overlord = all
+		same_overlord = all
+	}
+	
+	restoration_cb = cb_disloyal_imperial_feud_subject
+	
+	# Subject Interactions:
+	# (continuous)
+	embargo_rivals = no
+	# (immediate)
+	enforce_religion = no
+	fortify_march = yes
+	grant_core_claim = no
+	demand_additional_tribute = yes
+	contribute_to_capital = yes
+	return_land = yes
+	conscript_general = yes
+	
+	# Modifiers:
+	modifier_subject = clear
+	modifier_subject = {
+		modifier = imperial_feud_subject_modifier
+	}
+	modifier_subject = {
+		trigger = {
+			years_in_vassalage_under = {
+				who = FROM
+				years = 11
+				all_subject_country = yes
+			}
+		}
+		modifier = imperial_feud_subject_is_subject_for_11_years_modifier
+	}
+	modifier_subject = {
+		trigger = {
+			years_in_vassalage_under = {
+				who = FROM
+				years = 15
+				all_subject_country = yes
+			}
+		}
+		modifier = imperial_feud_subject_is_subject_for_15_years_modifier
+	}
+	modifier_subject = {
+		trigger = {
+			years_in_vassalage_under = {
+				who = FROM
+				years = 20
+				all_subject_country = yes
+			}
+		}
+		modifier = imperial_feud_subject_is_subject_for_20_years_modifier
+	}
+	modifier_subject = {
+		trigger = {
+			years_in_vassalage_under = {
+				who = FROM
+				years = 25
+				all_subject_country = yes
+			}
+		}
+		modifier = imperial_feud_subject_is_subject_for_25_years_modifier
+	}
+	modifier_subject = {
+		trigger = {
+			years_in_vassalage_under = {
+				who = FROM
+				years = 30
+				all_subject_country = yes
+			}
+		}
+		modifier = imperial_feud_subject_is_subject_for_30_years_modifier
+	}
+	
+	modifier_overlord = clear
+	modifier_overlord = {
+		modifier = imperial_feud_subject_overlord_modifier
+	}
+	
+	overlord_opinion_modifier = is_imperial_feud_subject
+	subject_opinion_modifier = is_imperial_feud_subject
 }

@@ -397,6 +397,10 @@
  imperial_feud_subject_become_independent_desc: "Erklärt Eure Unabhängigkeit von Eurem Lehnsherrn §Y[From.GetName]§!. Dies wird uns einen §Y5-jährigen§! Waffenstillstand mit ihnen geben."
  imperial_feud_subject_become_independent_tooltip: "Erklärt Eure Unabhängigkeit von Eurem Lehnsherrn §Y[From.GetName]§!.\n"
  
+ bestow_impirial_grace_to_imperial_feud_subject_title: "Reichsgnade gewähren"
+ bestow_impirial_grace_to_imperial_feud_subject_desc: "Wollt Ihr §Y[From.GetName]§! Reichsgnade gewähren? \nDies wird unsere Reichsauthörität um §R-5§! verändern und ihre Meinung über uns verbessern sowie ihr Freiheitsstreben um §G-10%§! für §Y20§! Jahre verändern."
+ bestow_impirial_grace_to_imperial_feud_subject_tooltip: "Verwendet Reichsauthörität, um das Freiheitsstreben von §Y[From.GetName]§! zu senken.\n"
+ 
  cancel_imperial_feud_subject_title: "Päpstliches Schutzgebiet entlassen"
  cancel_imperial_feud_subject_desc: "Beendet das Abhängigkeitsverhältnis von §Y[From.GetName]§! zu uns. Dies wird ihre Meinung über uns um §R-200§! verschlechtern, sofern sie ein Freiheitsstreben unter §Y50%§! besitzen. Außerdem verlieren wir §R-25§! Prestige und erhalten eine §Y5-jährige§! Waffenruhe mit ihnen."
  cancel_imperial_feud_subject_tooltip: "Beedet die Vasallisierung von §Y[From.GetName]§! und entlasst sie in die Freiheit.\n"

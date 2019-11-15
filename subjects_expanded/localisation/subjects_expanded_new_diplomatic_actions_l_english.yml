@@ -397,6 +397,10 @@
  imperial_feud_subject_become_independent_desc: "Declare your independence from your overlord §Y[From.GetName]§!. This will give us a truce with them for §Y5 years§!."
  imperial_feud_subject_become_independent_tooltip: "Declare your independence from your overlord §Y[From.GetName]§!.\n"
  
+ bestow_impirial_grace_to_imperial_feud_subject_title: "Bestow Imperial Grace"
+ bestow_impirial_grace_to_imperial_feud_subject_desc: "Do you wish to bestow Imperial Grace upon §Y[From.GetName]§!? \nThis will change our Imperial Authority by §R-5§! and improve their relations about us as well as change their liberty desire by §G-10%§! for §Y20§! years."
+ bestow_impirial_grace_to_imperial_feud_subject_tooltip: "Spend Imperial Authority to lower §Y[From.GetName]'s§! liberty desire.\n"
+ 
  cancel_imperial_feud_subject_title: "Release Imperial Feud"
  cancel_imperial_feud_subject_desc: "Cancel the dependency of §Y[From.GetName]§! of us. This will decrease their opinion about us by §R-200§!, if their liberty desire is below §Y50%§!. We will also lose §R-25§! prestige and gain a truce with them for §Y5 years§!."
  cancel_imperial_feud_subject_tooltip: "Cancel the vassalisation of §Y[From.GetName]§! and grant them independence.\n"

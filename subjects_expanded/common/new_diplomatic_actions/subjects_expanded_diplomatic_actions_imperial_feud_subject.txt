@@ -2295,6 +2295,88 @@ imperial_feud_subject_become_independent = {
 	}
 }
 
+bestow_impirial_grace_to_imperial_feud_subject = {
+	category = emperor
+
+	require_acceptance = no
+	
+	is_visible = {
+		is_emperor = yes
+		FROM = {
+			is_subject_of = ROOT
+			is_subject_of_type = imperial_feud_subject
+		}
+	}
+	
+	is_allowed = {
+		hidden_trigger = {
+			is_emperor = yes
+			FROM = {
+				is_subject_of = ROOT
+				is_subject_of_type = imperial_feud_subject
+			}
+		}
+		imperial_influence = 5
+		FROM = {
+			NOT = {
+				has_opinion_modifier = {
+					who = ROOT
+					modifier = improved_imperial_relations
+				}
+			}
+		}
+		FROM = {
+			NOT = {
+				has_country_modifier = imperial_feud_subject_imperial_grace_modifier
+			}
+		}
+	}
+	
+	on_accept = {
+		if = {
+			limit = {
+				is_emperor = yes
+				FROM = {
+					is_subject_of = ROOT
+					is_subject_of_type = imperial_feud_subject
+				}
+				imperial_influence = 5
+				FROM = {
+					NOT = {
+						has_opinion_modifier = {
+							who = ROOT
+							modifier = improved_imperial_relations
+						}
+					}
+				}
+				FROM = {
+					NOT = {
+						has_country_modifier = imperial_feud_subject_imperial_grace_modifier
+					}
+				}
+			}
+			add_imperial_influence = -5
+			FROM = {
+				add_opinion = {
+					who = ROOT
+					modifier = improved_imperial_relations
+				}
+				add_country_modifier = {
+					name = imperial_feud_subject_imperial_grace_modifier
+					duration = 7300
+				}
+			}
+		}
+	}
+	
+	ai_will_do = {
+		imperial_influence = 10
+		FROM = {
+			liberty_desire = 50
+		}
+	}
+}
+
 cancel_imperial_feud_subject = {
 	category = influence
 

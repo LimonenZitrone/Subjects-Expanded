@@ -1144,6 +1144,7 @@ make_imperial_feud_subject_hre_member = {
 	require_acceptance = yes
 	
 	is_visible = {
+		is_emperor = yes
 		FROM = {
 			is_subject_of = ROOT
 			is_subject_of_type = imperial_feud_subject
@@ -1153,6 +1154,7 @@ make_imperial_feud_subject_hre_member = {
 	
 	is_allowed = {
 		hidden_trigger = {
+			is_emperor = yes
 			FROM = {
 				is_subject_of = ROOT
 				is_subject_of_type = imperial_feud_subject
@@ -1192,6 +1194,7 @@ make_imperial_feud_subject_hre_member = {
 	on_accept = {
 		if = {
 			limit = {
+				is_emperor = yes
 				FROM = {
 					is_subject_of = ROOT
 					is_subject_of_type = imperial_feud_subject
@@ -1238,6 +1241,7 @@ make_imperial_feud_subject_hre_member = {
 	on_decline = {
 		if = {
 			limit = {
+				is_emperor = yes
 				FROM = {
 					is_subject_of = ROOT
 					is_subject_of_type = imperial_feud_subject
@@ -1650,6 +1654,7 @@ change_imperial_feud_subject_to_vassal = {
 	require_acceptance = yes
 	
 	is_visible = {
+		is_emperor = yes
 		FROM = {
 			is_subject_of = ROOT
 			is_subject_of_type = imperial_feud_subject
@@ -1657,9 +1662,12 @@ change_imperial_feud_subject_to_vassal = {
 	}
 	
 	is_allowed = {
-		FROM = {
-			is_subject_of = ROOT
-			is_subject_of_type = imperial_feud_subject
+		hidden_trigger = {
+			is_emperor = yes
+			FROM = {
+				is_subject_of = ROOT
+				is_subject_of_type = imperial_feud_subject
+			}
 		}
 		is_at_war = no
 		FROM = {
@@ -1683,6 +1691,7 @@ change_imperial_feud_subject_to_vassal = {
 	on_accept = {
 		if = {
 			limit = {
+				is_emperor = yes
 				FROM = {
 					is_subject_of = ROOT
 					is_subject_of_type = imperial_feud_subject
@@ -1712,6 +1721,7 @@ change_imperial_feud_subject_to_vassal = {
 	on_decline = {
 		if = {
 			limit = {
+				is_emperor = yes
 				FROM = {
 					is_subject_of = ROOT
 					is_subject_of_type = imperial_feud_subject
@@ -2251,7 +2261,15 @@ imperial_feud_subject_become_independent = {
 			is_subject_of_type = imperial_feud_subject
 		}
 		NOT = { truce_with = FROM }
-		liberty_desire = 50
+		OR = {
+			liberty_desire = 50
+			NOT = {
+				has_opinion = {
+					who = FROM
+					value = 0
+				}
+			}
+		}
 		is_at_war = no
 	}
 	
@@ -2281,6 +2299,12 @@ imperial_feud_subject_become_independent = {
 	ai_will_do = {
 		OR = {
 			liberty_desire = 65
+			NOT = {
+				has_opinion = {
+					who = FROM
+					value = 0
+				}
+			}
 			AND = {
 				hre_religion_locked = yes
 				NOT = { religion = FROM }
@@ -2372,7 +2396,19 @@ bestow_impirial_grace_to_imperial_feud_subject = {
 	ai_will_do = {
 		imperial_influence = 10
 		FROM = {
-			liberty_desire = 50
+			OR = {
+				liberty_desire = 60
+				AND = {
+					ai = no
+					liberty_desire = 50
+				}
+				NOT = {
+					has_opinion = {
+						who = ROOT
+						value = 0
+					}
+				}
+			}
 		}
 	}
 }

@@ -244,7 +244,12 @@
  subjects_expanded_imperial_feud_subject_events3.EVTOPT2: "The Emperor is dead, we are free!"
  
  subjects_expanded_imperial_feud_subject_events.EVTNAME5: "The [Root.GetName] and the Empire"
- subjects_expanded_imperial_feud_subject_events.EVTDESC5: "The emperor occasionally invited us to speak on the Reichstag, he kept us close to the Empire. Now the time could have come to take another step to the membership in the Holy Roman Empire. \nIf we swear fidelity to the Emperor, we have good chances of becoming a member of the Empire in a couple of years. \nFurthermore, the Emperor will protect us as he does with the members of his realm."
+ subjects_expanded_imperial_feud_subject_events.EVTDESC5: "The Emperor occasionally invited us to speak on the Reichstag, he kept us close to the Empire. Now the time could have come to take another step to the membership in the Holy Roman Empire. \nIf we swear fidelity to the Emperor, we have good chances of becoming a member of the Empire in a couple of years. \nFurthermore, the Emperor will protect us as he does with the members of his realm."
  subjects_expanded_imperial_feud_subject_events5.EVTOPT1: "One step closer to the Empire!"
  subjects_expanded_imperial_feud_subject_events5.EVTOPT2: "Pathetic! We don't need a protector."
+ 
+ subjects_expanded_imperial_feud_subject_events.EVTNAME5: "Revoked the Privilegia"
+ subjects_expanded_imperial_feud_subject_events.EVTDESC5: "The Emperor, [Root.Overlord.Monarch.GetName], has revoked the privilegia of the members of the Empire. This means our situation becomes irrelevant. We can either join the Emperor and become his direct vassal, or we declare our independence from the Empire."
+ subjects_expanded_imperial_feud_subject_events5.EVTOPT1: "We are part of the Empire!"
+ subjects_expanded_imperial_feud_subject_events5.EVTOPT2: "We wanted a protector, not a master."
  

@@ -402,7 +402,7 @@
  bestow_impirial_grace_to_imperial_feud_subject_tooltip: "Spend Imperial Authority to lower §Y[From.GetName]'s§! liberty desire.\n"
  
  cancel_imperial_feud_subject_title: "Release Imperial Feud"
- cancel_imperial_feud_subject_desc: "Cancel the dependency of §Y[From.GetName]§! of us. This will decrease their opinion about us by §R-200§!, if their liberty desire is below §Y50%§!. We will also lose §R-25§! prestige and gain a truce with them for §Y5 years§!."
+ cancel_imperial_feud_subject_desc: "Cancel the dependency of §Y[From.GetName]§! of us. This will decrease their opinion about us by §R-200§!, if their liberty desire is below §Y50%§!. We will also lose §R-25§! prestige and gain a truce with them for §Y5 years§!. \nThe opinion of all members of the §YHoly Roman Empire§! will change by §R-25§!."
  cancel_imperial_feud_subject_tooltip: "Cancel the vassalisation of §Y[From.GetName]§! and grant them independence.\n"
  
  

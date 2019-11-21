@@ -248,3 +248,8 @@
  subjects_expanded_imperial_feud_subject_events5.EVTOPT1: "Dem Reich einen Schritt näher!"
  subjects_expanded_imperial_feud_subject_events5.EVTOPT2: "Erbärmlich! Wir brauchen keinen Beschützer."
  
+ subjects_expanded_imperial_feud_subject_events.EVTNAME5: "Privileg aufgehoben"
+ subjects_expanded_imperial_feud_subject_events.EVTDESC5: "Der Kaiser, [Root.Overlord.Monarch.GetName], hat das Privileg der Mitglieder des Reiches aufgehoben. Das bedeuted, unsere Situation ist unwichtig geworden. Wir können entweder dem Reich beitreten und des Kaisers direkte Vasallen werden, oder wir erklären unsere Unabhängigkeit vom Reich."
+ subjects_expanded_imperial_feud_subject_events5.EVTOPT1: "Wir sind Teil des Reiches!"
+ subjects_expanded_imperial_feud_subject_events5.EVTOPT2: "Wir wollten einen Beschützer, keinen Unterdrücker."
+ 

@@ -19,9 +19,14 @@ country_event = {
 				grant_independence = yes
 			}
 			add_truce_with = FROM
-			add_casus_belli = {
-				target = FROM
-				type = cb_disloyal_imperial_feud_subject
+			if = {
+				limit = {
+					can_be_overlord = imperial_feud_subject
+				}
+				add_casus_belli = {
+					target = FROM
+					type = cb_disloyal_imperial_feud_subject
+				}
 			}
 		}
 	}
@@ -37,8 +42,8 @@ country_event = {
 		is_emperor = yes
 		can_be_overlord = imperial_feud_subject
 		any_country = {
-			NOT = { is_subject_of = ROOT }
 			is_subject_of_type = imperial_feud_subject
+			NOT = { is_subject_of = ROOT }
 		}
 	}
 	
@@ -205,7 +210,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 24
+		months = 60
 	}
 	
 	option = {
@@ -358,8 +363,57 @@ country_event = {
 	}
 	
 	option = {
-		name = imperial_feud_subject6.EVTOPT1
+		name = subjects_expanded_imperial_feud_subject_events6.EVTOPT1
 		
 		ai_chance = { factor = 100 }
+	}
+}
+
+country_event = {
+	id = subjects_expanded_imperial_feud_subject_events.7
+	title = subjects_expanded_imperial_feud_subject_events.EVTNAME7
+	desc = subjects_expanded_imperial_feud_subject_events.EVTDESC7
+	picture = HRE_eventPicture
+	
+	trigger = {
+		is_subject_of_type = imperial_feud_subject
+		hre_reform_level = 7
+		overlord = {
+			is_emperor = yes
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = subjects_expanded_imperial_feud_subject_events7.EVTOPT1
+		
+		ai_chance = { factor = 0.33 }
+		
+		set_in_empire = yes
+		overlord = {
+			vassalize = ROOT
+		}
+	}
+	
+	option = {
+		name = subjects_expanded_imperial_feud_subject_events7.EVTOPT2
+		
+		ai_chance = { factor = 0.66 }
+		
+		overlord = {
+			ROOT = {
+				grant_independence = yes
+			}
+			add_casus_belli = {
+				target = ROOT
+				type = cb_disloyal_vassal
+			}
+			hidden_effect = {
+				country_event = { id = subjects_expanded_imperial_feud_subject_events.1 }
+			}
+		}
 	}
 }

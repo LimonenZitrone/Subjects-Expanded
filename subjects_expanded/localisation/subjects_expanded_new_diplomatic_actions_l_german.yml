@@ -402,7 +402,7 @@
  bestow_impirial_grace_to_imperial_feud_subject_tooltip: "Verwendet Reichsauthörität, um das Freiheitsstreben von §Y[From.GetName]§! zu senken.\n"
  
  cancel_imperial_feud_subject_title: "Päpstliches Schutzgebiet entlassen"
- cancel_imperial_feud_subject_desc: "Beendet das Abhängigkeitsverhältnis von §Y[From.GetName]§! zu uns. Dies wird ihre Meinung über uns um §R-200§! verschlechtern, sofern sie ein Freiheitsstreben unter §Y50%§! besitzen. Außerdem verlieren wir §R-25§! Prestige und erhalten eine §Y5-jährige§! Waffenruhe mit ihnen."
+ cancel_imperial_feud_subject_desc: "Beendet das Abhängigkeitsverhältnis von §Y[From.GetName]§! zu uns. Dies wird ihre Meinung über uns um §R-200§! verschlechtern, sofern sie ein Freiheitsstreben unter §Y50%§! besitzen. Außerdem verlieren wir §R-25§! Prestige und erhalten eine §Y5-jährige§! Waffenruhe mit ihnen. \nDie Meinung aller Mitglieder des §YHeiligen Römischen Reiches§! über uns ändert sich um §R-25§!."
  cancel_imperial_feud_subject_tooltip: "Beedet die Vasallisierung von §Y[From.GetName]§! und entlasst sie in die Freiheit.\n"
  
  

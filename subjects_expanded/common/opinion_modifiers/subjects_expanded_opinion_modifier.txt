@@ -340,3 +340,9 @@ declined_ask_for_imperial_feud_subject_opinion = {
 	yearly_decay = 1
 	min = -100
 }
+
+emperor_abandoned_imperial_feud_subject = {
+	opinion = -25
+	yearly_decay = 1
+	min = -50
+}

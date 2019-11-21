@@ -2279,7 +2279,15 @@ imperial_feud_subject_become_independent = {
 				is_subject_of = FROM
 				is_subject_of_type = imperial_feud_subject
 				NOT = { truce_with = FROM }
-				liberty_desire = 50
+				OR = {
+					liberty_desire = 50
+					NOT = {
+						has_opinion = {
+							who = FROM
+							value = 0
+						}
+					}
+				}
 				is_at_war = no
 			}
 			FROM = {
@@ -2309,11 +2317,9 @@ imperial_feud_subject_become_independent = {
 				hre_religion_locked = yes
 				NOT = { religion = FROM }
 			}
-			AND = {
-				FROM = {
-					is_emperor = yes
-					NOT = { can_be_overlord = imperial_feud_subject }
-				}
+			FROM = {
+				is_emperor = yes
+				NOT = { can_be_overlord = imperial_feud_subject }
 			}
 		}
 	}
@@ -2463,6 +2469,15 @@ cancel_imperial_feud_subject = {
 			}
 			add_truce_with = FROM
 			add_prestige = -25
+			every_country = {
+				limit = {
+					is_part_of_hre = yes
+				}
+				add_opinion = {
+					who = ROOT
+					modifier = emperor_abandoned_imperial_feud_subject
+				}
+			}
 		}
 	}
 	

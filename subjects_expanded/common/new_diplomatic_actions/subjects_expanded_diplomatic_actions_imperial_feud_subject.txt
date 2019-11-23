@@ -1145,6 +1145,7 @@ make_imperial_feud_subject_hre_member = {
 	
 	is_visible = {
 		is_emperor = yes
+		NOT = { hre_reform_level = 7 }
 		FROM = {
 			is_subject_of = ROOT
 			is_subject_of_type = imperial_feud_subject
@@ -1155,6 +1156,7 @@ make_imperial_feud_subject_hre_member = {
 	is_allowed = {
 		hidden_trigger = {
 			is_emperor = yes
+			NOT = { hre_reform_level = 7 }
 			FROM = {
 				is_subject_of = ROOT
 				is_subject_of_type = imperial_feud_subject
@@ -1195,6 +1197,7 @@ make_imperial_feud_subject_hre_member = {
 		if = {
 			limit = {
 				is_emperor = yes
+				NOT = { hre_reform_level = 7 }
 				FROM = {
 					is_subject_of = ROOT
 					is_subject_of_type = imperial_feud_subject
@@ -1242,6 +1245,7 @@ make_imperial_feud_subject_hre_member = {
 		if = {
 			limit = {
 				is_emperor = yes
+				NOT = { hre_reform_level = 7 }
 				FROM = {
 					is_subject_of = ROOT
 					is_subject_of_type = imperial_feud_subject
@@ -1655,6 +1659,7 @@ change_imperial_feud_subject_to_vassal = {
 	
 	is_visible = {
 		is_emperor = yes
+		NOT = { hre_reform_level = 7 }
 		FROM = {
 			is_subject_of = ROOT
 			is_subject_of_type = imperial_feud_subject
@@ -1664,6 +1669,7 @@ change_imperial_feud_subject_to_vassal = {
 	is_allowed = {
 		hidden_trigger = {
 			is_emperor = yes
+			NOT = { hre_reform_level = 7 }
 			FROM = {
 				is_subject_of = ROOT
 				is_subject_of_type = imperial_feud_subject
@@ -1692,6 +1698,7 @@ change_imperial_feud_subject_to_vassal = {
 		if = {
 			limit = {
 				is_emperor = yes
+				NOT = { hre_reform_level = 7 }
 				FROM = {
 					is_subject_of = ROOT
 					is_subject_of_type = imperial_feud_subject
@@ -1722,6 +1729,7 @@ change_imperial_feud_subject_to_vassal = {
 		if = {
 			limit = {
 				is_emperor = yes
+				NOT = { hre_reform_level = 7 }
 				FROM = {
 					is_subject_of = ROOT
 					is_subject_of_type = imperial_feud_subject
@@ -2329,6 +2337,7 @@ bestow_impirial_grace_to_imperial_feud_subject = {
 	
 	is_visible = {
 		is_emperor = yes
+		NOT = { hre_reform_level = 7 }
 		FROM = {
 			is_subject_of = ROOT
 			is_subject_of_type = imperial_feud_subject
@@ -2338,6 +2347,7 @@ bestow_impirial_grace_to_imperial_feud_subject = {
 	is_allowed = {
 		hidden_trigger = {
 			is_emperor = yes
+			NOT = { hre_reform_level = 7 }
 			FROM = {
 				is_subject_of = ROOT
 				is_subject_of_type = imperial_feud_subject
@@ -2363,6 +2373,7 @@ bestow_impirial_grace_to_imperial_feud_subject = {
 		if = {
 			limit = {
 				is_emperor = yes
+				NOT = { hre_reform_level = 7 }
 				FROM = {
 					is_subject_of = ROOT
 					is_subject_of_type = imperial_feud_subject
@@ -2422,6 +2433,7 @@ cancel_imperial_feud_subject = {
 	require_acceptance = no
 	
 	is_visible = {
+		is_emperor = yes
 		FROM = {
 			is_subject_of = ROOT
 			is_subject_of_type = imperial_feud_subject
@@ -2430,6 +2442,7 @@ cancel_imperial_feud_subject = {
 	
 	is_allowed = {
 		hidden_trigger = {
+			is_emperor = yes
 			FROM = {
 				is_subject_of = ROOT
 				is_subject_of_type = imperial_feud_subject
@@ -2443,6 +2456,7 @@ cancel_imperial_feud_subject = {
 	on_accept = {
 		if = {
 			limit = {
+				is_emperor = yes
 				FROM = {
 					is_subject_of = ROOT
 					is_subject_of_type = imperial_feud_subject

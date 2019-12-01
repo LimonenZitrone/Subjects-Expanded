@@ -93,7 +93,8 @@
  
  DID_NOT_IMPROVE_TRADE_OUTPOST_WITHIN_LAST_5_YEARS: "Hat innerhalb der letzten §Y5 Jahre§! NICHT die Infrastruktur in §Y[This.GetName]§! verbessert"
  
- DID_NOT_REJECT_TO_JOIN_THE_HRE_WITHIN_LAST_5_YEARS: "Hat die Bitte, den HRR beizutreten, innerhalb der letzten §Y5 Jahre§! NICHT abgelehnt"
+ DID_NOT_REJECT_TO_JOIN_THE_HRE_WITHIN_LAST_5_YEARS: "Hat die Bitte, dem HRR beizutreten, innerhalb der letzten §Y5 Jahre§! NICHT abgelehnt"
+ DID_NOT_REJECT_TO_LET_US_JOIN_THE_HRE_WITHIN_LAST_5_YEARS: "Hat unsere Bitte, dem HRR beitreten zu dürfen, innerhalb der letzten §Y5 Jahre§! NICHT abgelehnt"
  
  # Decisions:
  ALL_PROVINCES_IN_INDIAN_TRADE_COMPANY_REGIONS_CEDED_TO_DOMINION: "\nAlle unsere Provinzen in [Root.GetIndianTradeCompanyRegionsSgPl] [Root.GetFirstIndianTradeCompanyRegionWeCede][Root.GetSecondIndianTradeCompanyRegionWeCede][Root.GetThirdIndianTradeCompanyRegionWeCede][Root.GetFourthIndianTradeCompanyRegionWeCede][Root.GetFifthIndianTradeCompanyRegionWeCede] werden an unser dort entlassenes Herrschaftsgebiet \n[Root.GetCreatedADNameIndia] abgetreten."

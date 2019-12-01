@@ -44,6 +44,7 @@ country_event = {
 		any_country = {
 			is_subject_of_type = imperial_feud_subject
 			NOT = { is_subject_of = ROOT }
+			NOT = { has_country_flag = deciding_about_imperial_feud_subject_status }
 		}
 	}
 	
@@ -61,6 +62,7 @@ country_event = {
 				NOT = { is_subject_of = ROOT }
 				is_subject_of_type = imperial_feud_subject
 			}
+			set_country_flag = deciding_about_imperial_feud_subject_status
 			country_event = { id = subjects_expanded_imperial_feud_subject_events.3 }
 		}
 	}
@@ -139,6 +141,10 @@ country_event = {
 				type = cb_disloyal_imperial_feud_subject
 			}
 		}
+	}
+	
+	after = {
+		clr_country_flag = deciding_about_imperial_feud_subject_status
 	}
 }
 
@@ -266,6 +272,9 @@ country_event = {
 				subject_type = imperial_feud_subject
 			}
 		}
+		custom_tooltip = " "
+		custom_tooltip = display_imperial_feud_subject_title_tt
+		custom_tooltip = display_imperial_feud_subject_desc_tt
 	}
 	
 	option = {

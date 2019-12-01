@@ -381,11 +381,17 @@
  ask_for_imperial_feud_subject_alert_tooltip: "Kaiserliches Lehen erbitten"
  ask_for_imperial_feud_subject_dialog: "§Y[This.GetName]§! schlägt uns vor, dass sie unser §YKaiserliches Lehen§! werden. \n[imperial_feud_subject_desc] \n\nWenn wir akzeptieren, wird dies unsere Reichsauthörität um §R-5§! verändern. \n\nWollt Ihr akzeptieren?"
  
- make_imperial_feud_subject_hre_member_title: "Offer HRE Membership"
- make_imperial_feud_subject_hre_member_desc: "Wollt Ihr §Y[From.GetName]§! vorschlagen, ein Mitglied des Heiligen Römischen Reiches zu werden? \nDies wird ihnen ihre Unabhängigkeit gewähren und alle ihre europäischen Provinzen zu dem Heiligen Römischen Reich hinzufügen. \nWenn sie ablehnen, verändert sich unsere Reichsauthörität um §R-5§!."
- make_imperial_feud_subject_hre_member_tooltip: "Ask §Y[From.GetName]§! to join the HRE.\n"
- make_imperial_feud_subject_hre_member_alert_tooltip: "Offer HRE Membership"
- make_imperial_feud_subject_hre_member_dialog: "§Y[This.GetName]§! schlägt uns vor, dass wir ein Mitglied des §YHeiligen Römischen Reiches§! werden. \nDies wird uns unsere Unabhängigkeit gewähren und alle unsere europäischen Provinzen zu dem Heiligen Römischen Reich hinzufügen. \nWenn wir ablehnen, verändert sich ihre Reichsauthörität um §R-5§!. \n\nWollt Ihr akzeptieren?"
+ make_imperial_feud_subject_hre_member_title: "HRR-Mitgliedschaft anbieten"
+ make_imperial_feud_subject_hre_member_desc: "Wollt Ihr §Y[From.GetName]§! vorschlagen, ein Mitglied des Heiligen Römischen Reiches zu werden? \nDies wird ihnen ihre Unabhängigkeit gewähren und alle ihre europäischen Provinzen zu dem Heiligen Römischen Reich hinzufügen. [Root.GetImperialFeudIfMakesElector] \nWenn sie ablehnen, verändert sich unsere Reichsauthörität um §R-5§!."
+ make_imperial_feud_subject_hre_member_tooltip: "Bittet §Y[From.GetName]§!, dem HRR beizutreten.\n"
+ make_imperial_feud_subject_hre_member_alert_tooltip: "HRR-Mitgliedschaft anbieten"
+ make_imperial_feud_subject_hre_member_dialog: "§Y[This.GetName]§! schlägt uns vor, dass wir ein Mitglied des §YHeiligen Römischen Reiches§! werden. \nDies wird uns unsere Unabhängigkeit gewähren und alle unsere europäischen Provinzen zu dem Heiligen Römischen Reich hinzufügen. [Root.GetImperialFeudIfMakesElector] \nWenn wir ablehnen, verändert sich ihre Reichsauthörität um §R-5§!. \n\nWollt Ihr akzeptieren?"
+ 
+ ask_for_imperial_feud_subject_hre_member_title: "HRR-Mitgliedschaft erbitten"
+ ask_for_imperial_feud_subject_hre_member_desc: "Wollt Ihr §Y[From.GetName]§! vorschlagen, dass wir ein Mitglied des Heiligen Römischen Reiches werden? \nDies wird uns Unabhängigkeit gewähren und alle unsere europäischen Provinzen zu dem Heiligen Römischen Reich hinzufügen. [Root.GetImperialFeudIfMakesElector] \nWenn sie ablehnen, verändert sich unser Prestige um §R-5§!."
+ ask_for_imperial_feud_subject_hre_member_tooltip: "Bittet §Y[From.GetName]§! darum, dass wir dem HRR beigetreten dürfen.\n"
+ ask_for_imperial_feud_subject_hre_member_alert_tooltip: "HRR-Mitgliedschaft erbitten"
+ ask_for_imperial_feud_subject_hre_member_dialog: "§Y[This.GetName]§! schlägt uns vor, dass sie ein Mitglied des §YHeiligen Römischen Reiches§! werden. \nDies wird ihnen ihre Unabhängigkeit gewähren und alle ihre europäischen Provinzen zu dem Heiligen Römischen Reich hinzufügen. [Root.GetImperialFeudIfMakesElector] \nWenn wir ablehnen, verändert sich ihr Prestige um §R-5§!. \n\nWollt Ihr akzeptieren?"
  
  change_imperial_feud_subject_to_vassal_title: "Vasallisierung verlangen"
  change_imperial_feud_subject_to_vassal_desc: "Wollt Ihr von §Y[From.GetName]§! verlangen, dass sie unser Vasall werden? \n[vassal_desc]"
@@ -532,4 +538,5 @@
  ROOT_IS_EMPEROR: "Wir sind Kaiser des HRR"
  ROOT_IS_NOT_EMPEROR: "Wir sind nicht Kaiser des HRR"
  NUM_OF_HRE_REFORMS_PASSED: "Verabschiedete HRR-Reformen"
+ FROM_MIGHT_WANT_TO_VASSALIZE_ROOT: "Sie wollen uns eventuell vasallisieren"
  

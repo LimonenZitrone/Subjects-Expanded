@@ -719,7 +719,7 @@ If a subject gives an additional merchant, the bonuses it gives to its overlord 
 [/list]
 
 [h1]Papal Sanctuary[/h1]
-[i]A Papal Sanctuary is independent in its diplomacy and joins its overlord's wars. The overlord is called to arms to the Papal Sanctuary's defensive wars, but the overlord can decline. It cannot be annexed and doesn't cost a diplomatic relation, if it is a theocracy, Curia Controller, Defender of Faith or a neighbor of the Crusade Target. It pays only very few taxes to its overlord, but grants it a bonus on tax income, diplomatic reputation and devotion. A Papal Sanctuary itself gains a bonus on tax income, legitimacy equivalent, yearly papal influence and religious unity. The overlord can ask a Papal Sanctuary to become a theocracy and to become a direct vassal. It can decide to become independent diplomatically, however only with enough liberty desire, if excommunicated, if the overlord is excommunicated or if the overlord doesn't fulfill the requirements of being an overlord anymore. A Papal Sanctuary can only be established by the Catholic Papal State or owner of the Papal government or \"Kingdom of God\" modifier (if the Papal State doesn't exist) in independent, Catholic nations on the same continent that neither were excommunicated nor have enacted the Statute in Restraint of Appeals.[/i]
+[i]A Papal Sanctuary is independent in its diplomacy and joins its overlord's wars. The overlord is called to arms to the Papal Sanctuary's defensive wars, but the overlord can decline. It cannot be annexed and doesn't cost a diplomatic relation, if it is a theocracy, Curia Controller, Defender of Faith or a neighbor of the Crusade Target. It pays only very few taxes to its overlord, but grants it a bonus on tax income, diplomatic reputation and devotion. A Papal Sanctuary itself gains a bonus on tax income, legitimacy equivalent, yearly papal influence and religious unity. The overlord can ask a Papal Sanctuary to become a theocracy and to become a direct vassal. It can decide to become independent diplomatically, however only with enough liberty desire, if excommunicated, if the overlord is excommunicated or if the overlord doesn't fulfill the requirements of being an overlord anymore. A Papal Sanctuary can only be established by the Catholic Papal State or owner of the Papal government or "Kingdom of God" modifier (if the Papal State doesn't exist) in independent, Catholic nations on the same continent that neither were excommunicated nor have enacted the Statute in Restraint of Appeals.[/i]
 
 [b]Conditions (possible overlord):[/b]
 [list]
@@ -749,4 +749,38 @@ If a subject gives an additional merchant, the bonuses it gives to its overlord 
 [*] Papal Sanctuaries can be turned into theocracies
 [*] Papal Sanctuaries can be transformed into vassals
 [*] Papal Sanctuaries pay 10% of what a vassal pays in taxes to its overlord
+[/list]
+
+[h1]Imperial Feud[/h1]
+[i]An Imperial Feud is independent in its diplomacy and doesn't join its overlord's wars. It doesn't cost a diplomatic relation and pays tribute to its overlord. The overlord is called to arms to the Imperial Feud's defensive wars, but the overlord can decline. However declining will decrease the other Imperial Feud's and HRE members opinions of him. An Imperial Feud gains a bonus on tax income, fort maintenance and land forcelimit and grants its overlord a bonus on tax income and imperial authority gain. It can be asked to join the HRE or to become a vassal after 10 years. It has low liberty desire, but gains additional liberty desire after being 11, 15, 20, 25 and 30 years under its overlord. An Imperial Feud is a voluntary subject, which means it can become independent diplomatically. An Imperial Feud can only be established by the Holy Roman Emperor in non-HRE countries that border the HRE before the "Revoke the Privilegia" reform. If the emperor title gets passed to another country, an Imperial Feud can either become independent or will be passed from its old overlord to the new emperor.[/i]
+
+[b]Conditions (possible overlord):[/b]
+[list]
+[*] is emperor of the HRE
+[*] "Revoke the Privilegia" reform (7th reform) of the HRE is NOT enacted
+[/list]
+
+[b]Conditions (possible subject):[/b]
+[list]
+[*] is not a subject
+[*] is not a member of the HRE
+[*] has its capital in Europe
+[*] is either Catholic, Protestant or Reformed (if the HRE religion is not locked) or has the same religion as the possible overlord (if the HRE religion is locked)
+[*] any owned province neighbors a HRE province owned by a HRE member
+[/list]
+
+[b]Additional Information:[/b]
+[list]
+[*] Imperial Feuds can be established diplomatically and by war
+[*] Imperial Feuds don't have a max government rank
+[*] Imperial Feuds gain a bonus on tax income, land forcelimit and fort maintenance cost
+[*] Imperial Feuds grant their overlord a bonus on tax income and imperial authority gain
+[*] Imperial Feuds are voluntary subjects, which means they can declare their independence diplomatically
+[*] Imperial Feuds do not cost a diplomatic relation
+[*] Imperial Feuds can be added to the HRE, which will grant them independence and make them an elector, if there are less than 7
+[*] Imperial Feuds are connected to the current HRE emperor, so if the emperor title gets passed to another country, they will either choose to become independent or become an Imperial Feud of that country
+[*] Imperial Feuds can be transformed into vassals
+[*] Imperial Feuds gain additional liberty desire over time
+[*] The overlord can bestow imperial grace on Imperial Feuds to lower their liberty desire
+[*] Imperial Feuds do not join their overlord's wars
 [/list]

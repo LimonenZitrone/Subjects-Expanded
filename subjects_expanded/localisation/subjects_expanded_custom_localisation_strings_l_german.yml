@@ -135,3 +135,6 @@
  string_dutch_province_reform_bonus_meritocracy: "Meritokratie (Jährlich): §G+0.50§!"
  string_dutch_province_reform_bonus_legitimacy: "Legitimität (Jährlich): §G+0.50§!"
  
+ string_imperial_feud_will_become_elector_tt_us: "\nDies wird §Y[Root.GetName]§! zu einem §YKurfürsten§! machen."
+ string_imperial_feud_will_become_elector_tt_them: "\nDies wird §Y[From.GetName]§! zu einem §YKurfürsten§! machen"
+ 

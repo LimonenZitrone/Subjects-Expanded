@@ -135,3 +135,6 @@
  string_dutch_province_reform_bonus_meritocracy: "Yearly Meritocracy: §G+0.50§!"
  string_dutch_province_reform_bonus_legitimacy: "Yearly Legitimacy: §G+0.50§!"
  
+ string_imperial_feud_will_become_elector_tt_us: "\nThis will grant §Y[Root.GetName]§! the §YElector§! status."
+ string_imperial_feud_will_become_elector_tt_them: "\nThis will grant §Y[From.GetName]§! the §YElector§! status."
+ 

@@ -382,10 +382,16 @@
  ask_for_imperial_feud_subject_dialog: "§Y[This.GetName]§! offers us that they become our §YImperial Feud§!. \n[imperial_feud_subject_desc] \n\nIf we accept, this will change our Imperial Authority by §R-5§!. \n\nDo you want to accept?"
  
  make_imperial_feud_subject_hre_member_title: "Offer HRE Membership"
- make_imperial_feud_subject_hre_member_desc: "Do you want to offer §Y[From.GetName]§! to become a member of the Holy Roman Empire? \nThis will grant them independence and add all their provinces in Europe to the Holy Roman Empire. \nIf they decline, our Imperial Authority is changed by §R-5§!."
+ make_imperial_feud_subject_hre_member_desc: "Do you want to offer §Y[From.GetName]§! to become a member of the Holy Roman Empire? \nThis will grant them independence and add all their provinces in Europe to the Holy Roman Empire. [Root.GetImperialFeudIfMakesElector] \nIf they decline, our Imperial Authority is changed by §R-5§!."
  make_imperial_feud_subject_hre_member_tooltip: "Ask §Y[From.GetName]§! to join the HRE.\n"
  make_imperial_feud_subject_hre_member_alert_tooltip: "Offer HRE Membership"
- make_imperial_feud_subject_hre_member_dialog: "§Y[This.GetName]§! offers us that we become a member of the §YHoly Roman Empire§!. \nThis will grant us independence and add all our provinces in Europe to the Holy Roman Empire. \nIf we decline, their Imperial Authority is changed by §R-5§!. \n\nDo you want to accept?"
+ make_imperial_feud_subject_hre_member_dialog: "§Y[This.GetName]§! offers us that we become a member of the §YHoly Roman Empire§!. \nThis will grant us independence and add all our provinces in Europe to the Holy Roman Empire. [Root.GetImperialFeudIfMakesElector] \nIf we decline, their Imperial Authority is changed by §R-5§!. \n\nDo you want to accept?"
+ 
+ ask_for_imperial_feud_subject_hre_member_title: "Request HRE Membership"
+ ask_for_imperial_feud_subject_hre_member_desc: "Do you want to ask §Y[From.GetName]§! to make us a member of the Holy Roman Empire? \nThis will grant us independence and add all our provinces in Europe to the Holy Roman Empire. [Root.GetImperialFeudIfMakesElector] \nIf they decline, our prestige is changed by §R-5§!."
+ ask_for_imperial_feud_subject_hre_member_tooltip: "Ask §Y[From.GetName]§! to make us a member of the HRE.\n"
+ ask_for_imperial_feud_subject_hre_member_alert_tooltip: "Request HRE Membership"
+ ask_for_imperial_feud_subject_hre_member_dialog: "§Y[This.GetName]§! offers us that they become a member of the §YHoly Roman Empire§!. \nThis will grant them independence and add all their provinces in Europe to the Holy Roman Empire. [Root.GetImperialFeudIfMakesElector] \nIf we decline, their prestige is changed by §R-5§!. \n\nDo you want to accept?"
  
  change_imperial_feud_subject_to_vassal_title: "Demand Vassalization"
  change_imperial_feud_subject_to_vassal_desc: "Do you want to demand that §Y[From.GetName]§! becomes our vassal? \n[vassal_desc]"
@@ -532,4 +538,5 @@
  ROOT_IS_EMPEROR: "We are Emperor of the HRE"
  ROOT_IS_NOT_EMPEROR: "We are not Emperor of the HRE"
  NUM_OF_HRE_REFORMS_PASSED: "Passed HRE reforms"
+ FROM_MIGHT_WANT_TO_VASSALIZE_ROOT: "They might want to vassalize us"
  

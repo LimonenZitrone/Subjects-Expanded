@@ -309,6 +309,10 @@
  make_brother_kingdom_to_personal_union_alert_tooltip: "Convert to Personal Union"
  make_brother_kingdom_to_personal_union_dialog: "§Y[This.GetName]§! demands that we become their §YPersonal Union§!. \n[personal_union_desc] \nDo you want to accept?"
  
+ make_personal_union_to_brother_kingdom_title: "Convert to Brother Kingdom"
+ make_personal_union_to_brother_kingdom_desc: "Do you want to make one of your sons to the ruler of §Y[From.GetName]§!? This will remove this son as possible heir to our throne, possibly reducing the risk of a split on the death of [Root.Monarch.GetName], and convert §Y[From.GetName]§! into a §YBrother Kingdom§!. \n[brother_kingdom_desc]"
+ make_personal_union_to_brother_kingdom_tooltip: "Make your Personal Union §Y[From.GetName]§! to a §YBrother Kingdom§!.\n"
+ 
  brother_kingdom_become_independent_title: "Declare Independence"
  brother_kingdom_become_independent_desc: "Declare independent from your overlord §Y[From.GetName]§!. They can grant you independence or oppose that demand. The latter will lead to §RWAR§! with §Y[From.GetName]§!. \nFurthermore, this will change our stability by §R-1§!."
  brother_kingdom_become_independent_tooltip: "Declare independent from your overlord §Y[From.GetName]§!.\n"

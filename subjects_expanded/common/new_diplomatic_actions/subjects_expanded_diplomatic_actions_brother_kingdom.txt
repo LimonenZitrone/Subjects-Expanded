@@ -1220,6 +1220,148 @@ make_brother_kingdom_to_personal_union = {
 	}
 }
 
+make_personal_union_to_brother_kingdom = {
+	category = influence
+	
+	require_acceptance = no
+	
+	is_visible = {
+		can_be_overlord = brother_kingdom
+		has_reform = salic_reform
+		FROM = {
+			is_subject_of = ROOT
+			OR = {
+				is_subject_of_type = personal_union
+				is_subject_of_type = salic_personal_union
+			}
+			government = monarchy
+			religion_group = christian
+		}
+	}
+	
+	is_allowed = {
+		hidden_trigger = {
+			can_be_overlord = brother_kingdom
+			has_reform = salic_reform
+			FROM = {
+				is_subject_of = ROOT
+				OR = {
+					is_subject_of_type = personal_union
+					is_subject_of_type = salic_personal_union
+				}
+				government = monarchy
+				religion_group = christian
+			}
+		}
+		has_regency = no
+		months_of_ruling = 60
+		legitimacy = 80
+		NOT = { truce_with = FROM }
+		is_at_war = no
+		FROM = {
+			is_at_war = no
+		}
+		OR = {
+			has_country_modifier = two_sons
+			has_country_modifier = three_sons
+		}
+	}
+	
+	on_accept = {
+		if = {
+			limit = {
+				can_be_overlord = brother_kingdom
+				has_reform = salic_reform
+				FROM = {
+					is_subject_of = ROOT
+					OR = {
+						is_subject_of_type = personal_union
+						is_subject_of_type = salic_personal_union
+					}
+					government = monarchy
+					religion_group = christian
+				}
+				has_regency = no
+				months_of_ruling = 60
+				legitimacy = 80
+				NOT = { truce_with = FROM }
+				is_at_war = no
+				FROM = {
+					is_at_war = no
+				}
+				OR = {
+					has_country_modifier = two_sons
+					has_country_modifier = three_sons
+				}
+			}
+			create_subject = {
+				subject = FROM
+				subject_type = brother_kingdom
+			}
+			FROM = {
+				define_ruler = {
+					dynasty = ROOT
+					claim = 80
+					age = 20
+					male = yes
+				}
+			}
+			if = {
+				limit = {
+					has_country_modifier = three_sons
+				}
+				remove_country_modifier = three_sons
+				add_country_modifier = {
+					name = two_sons
+					duration = -1
+				}
+			}
+			else = {
+				remove_country_modifier = two_sons
+			}
+		}
+	}
+	
+	ai_will_do = {
+		ruler_age = 60
+		has_country_modifier = three_sons
+		calc_true_if = {
+			all_subject_country = {
+				OR = {
+					is_subject_of_type = personal_union
+					is_subject_of_type = salic_personal_union
+				}
+			}
+			amount = 2
+		}
+		FROM = {
+			NOT = { total_development = 300 }
+			OR = {
+				AND = {
+					is_subject_of_type = personal_union
+					NOT = {
+						years_in_vassalage_under = {
+							who = ROOT
+							years = 50
+							all_subject_country = yes
+						}
+					}
+				}
+				AND = {
+					is_subject_of_type = salic_personal_union
+					NOT = {
+						years_in_vassalage_under = {
+							who = ROOT
+							years = 10
+							all_subject_country = yes
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
 brother_kingdom_become_independent = {
 	category = influence
 

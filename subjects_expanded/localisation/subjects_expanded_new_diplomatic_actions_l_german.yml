@@ -309,6 +309,10 @@
  make_brother_kingdom_to_personal_union_alert_tooltip: "In Personalunion umwandeln"
  make_brother_kingdom_to_personal_union_dialog: "§Y[This.GetName]§! verlangt, dass wir ihre §YPersonalunion§! werden. \n[personal_union_desc] \nWollt Ihr akzeptieren?"
  
+ make_personal_union_to_brother_kingdom_title: "In Bruderkönigreich umwandeln"
+ make_personal_union_to_brother_kingdom_desc: "Wollt Ihr einen Eurer Söhne zum Herrscher über §Y[From.GetName]§! machen? Dies wird diesen Sohn als möglichen Erben Eures Throns entfernen, wodurch das Risiko einer möglichen Aufteilung des Landes nach dem Tod von [Root.Monarch.GetName] sinken könnte, und §Y[From.GetName]§! in ein §YBruderkönigreich§! umwandeln. \n[brother_kingdom_desc]"
+ make_personal_union_to_brother_kingdom_tooltip: "Macht Eure Personalunion §Y[From.GetName]§! zu einem §YBruderkönigreich§!.\n"
+ 
  brother_kingdom_become_independent_title: "Unabhängigkeit erklären"
  brother_kingdom_become_independent_desc: "Erklärt Eure Unabhängigkeit von Eurem Lehnsherrn §Y[From.GetName]§!. Sie können Euch Unabhängigkeit gewähren oder diese Forderung ablehnen. Im Fall von Letzterem führt dies zu einem §RKRIEG§! mit §Y[From.GetName]§!. \nAußerdem verändert sich unsere Stabilität um §R-1§!."
  brother_kingdom_become_independent_tooltip: "Erklärt Eure Unabhängigkeit von Eurem Lehnsherrn §Y[From.GetName]§!.\n"

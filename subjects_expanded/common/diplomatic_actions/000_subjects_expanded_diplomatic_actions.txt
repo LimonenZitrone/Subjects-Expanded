@@ -188,6 +188,22 @@ declarewar = {
 			}
 			set_country_flag = forcing_government
 		}
+		
+		# Needed for Missions Expanded
+		if = {
+			limit = {
+				is_expanded_mod_active = { mod = missions }
+			}
+			if = {
+				limit = {
+					mission_completed = sweden_support_the_roman_church
+					FROM = {
+						NOT = { religion = catholic }
+					}
+				}
+				change_variable = { which = swe_num_of_wars_against_non_catholics value = 1 }
+			}
+		}
 	}
 }
 

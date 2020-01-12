@@ -1616,6 +1616,8 @@ roman_client_kingdom = {
 	modifier_subject = {
 		modifier = roman_client_kingdom_modifier
 	}
+	
+	modifier_overlord = clear
 	modifier_overlord = {
 		modifier = roman_client_kingdom_overlord_modifier
 	}
@@ -1630,8 +1632,6 @@ roman_client_kingdom = {
 		}
 		modifier = roman_client_kingdom_no_dip_upkeep_cost_modifier
 	}
-	
-	modifier_overlord = clear
 	modifier_overlord = {
 		trigger = {
 			FROM = {

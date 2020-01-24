@@ -430,9 +430,9 @@
  increase_looting_speed_with_pagan_chiefdom_desc: "Do you want to conscript some known marauders from your Chiefdom §Y[From.GetName]§!? \nThis will change our horde unity by §R-10§! and give us the following modifiers for §Y5 years§!: \n   [loot_amount]: §G+5.00%§! \n   [ae_impact]: §R+5.00%§! \n\nThese modifiers stack, if you perform this action on multiple Chiefdoms at the same time."
  increase_looting_speed_with_pagan_chiefdom_tooltip: "Conscript Marauders from §Y[From.GetName]§!.\n"
  
- increase_horde_unity_with_pagan_chiefdom_title: "Sacrifize the Weak"
- increase_horde_unity_with_pagan_chiefdom_desc: "Do you want to sacrafize the weak of the §Y[From.GetAdjective]§! people to our beloved [Root.Religion.GetName] gods? \nThis will change their liberty desire by §R+10%§! and give us the following modifiers for §Y2 years§!: \n   [yearly_horde_unity]: §G+1.00§! \n   [ae_impact]: §R+5.00%§! \n\nThese modifiers stack, if you perform this action on multiple Chiefdoms at the same time."
- increase_horde_unity_with_pagan_chiefdom_tooltip: "Sacrifize the weak §Y[From.GetAdjective]§! people to the gods.\n"
+ increase_horde_unity_with_pagan_chiefdom_title: "Sacrifice the Weak"
+ increase_horde_unity_with_pagan_chiefdom_desc: "Do you want to sacrifice the weak of the §Y[From.GetAdjective]§! people to our beloved [Root.Religion.GetName] gods? \nThis will change their liberty desire by §R+10%§! and give us the following modifiers for §Y2 years§!: \n   [yearly_horde_unity]: §G+1.00§! \n   [ae_impact]: §R+5.00%§! \n\nThese modifiers stack, if you perform this action on multiple Chiefdoms at the same time."
+ increase_horde_unity_with_pagan_chiefdom_tooltip: "Sacrifice the weak §Y[From.GetAdjective]§! people to the gods.\n"
  
  
  return_subject_to_vassal_title: "Demote to Vassal"

@@ -212,6 +212,12 @@ defined_text = {
 		}
 		localisation_key = "[imperial_feud_subject]"
 	}
+	text = {
+		trigger = {
+			is_subject_of_type = pagan_chiefdom
+		}
+		localisation_key = "[pagan_chiefdom]"
+	}
 	
 	text = {
 		trigger = {
@@ -990,5 +996,27 @@ defined_text = {
 			always = yes
 		}
 		localisation_key = imperial_feud_subject_long_desc
+	}
+}
+
+defined_text = {
+	name = pagan_chiefdom
+	
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = pagan_chiefdom_title
+	}
+}
+
+defined_text = {
+	name = pagan_chiefdom_desc
+	
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = pagan_chiefdom_long_desc
 	}
 }

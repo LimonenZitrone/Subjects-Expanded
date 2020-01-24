@@ -337,4 +337,17 @@ spriteTypes = {
 		name = "GFX_diplomacy_amimperial_feud_subject"
 		texturefile = "gfx//interface//icon_diplomacy_amimperial_feud_subject.dds"
 	}
+	
+	spriteType = {
+		name = "GFX_icon_pagan_chiefdom"
+		texturefile = "gfx/interface/icon_pagan_chiefdom.dds"
+	}
+	spriteType = {
+		name = "GFX_diplomacy_leadpagan_chiefdom"
+		texturefile = "gfx//interface//icon_diplomacy_leadpagan_chiefdom.dds"
+	}
+	spriteType = {
+		name = "GFX_diplomacy_ampagan_chiefdom"
+		texturefile = "gfx//interface//icon_diplomacy_ampagan_chiefdom.dds"
+	}
 }

@@ -36,6 +36,7 @@ is_similar_march_subject = {
 	OR = {
 		is_subject_of_type = crusader_state_vassal
 		is_subject_of_type = naval_march
+		is_subject_of_type = pagan_chiefdom
 	}
 }
 

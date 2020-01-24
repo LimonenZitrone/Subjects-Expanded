@@ -92,3 +92,6 @@
  declined_ask_for_imperial_feud_subject_opinion: "Bitte nach Kaiserlichem Lehen abgelehnt"
  emperor_abandoned_imperial_feud_subject: "Kaiser gab Kaiserliches Lehen auf"
  
+ is_pagan_chiefdom: "Stammesfürstentum"
+ declined_ask_to_become_pagan_chiefdom: "Bitte nach Stammesfürstentum abgelehnt"
+ 

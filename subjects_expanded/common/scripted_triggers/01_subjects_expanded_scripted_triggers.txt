@@ -624,6 +624,22 @@ is_possible_subject_of_subject_type_imperial_feud_subject = {
 	}
 }
 
+is_possible_subject_of_subject_type_pagan_chiefdom = {
+	# PREVs in THIS scope refer to possible overlord
+	NOT = { is_subject_of_type = pagan_chiefdom }
+	vassal_of = PREV
+	OR = {
+		religion_group = pagan
+		# Extended Timeline religions
+		religion = druidism
+		religion = zamolxism
+		religion_group = american_pagan
+		religion_group = slavic_pagan
+		religion_group = german_pagan
+		religion = shamanism
+	}
+}
+
 can_create_subject_type = {
 	can_be_overlord = $subject_type$
 	$subject$ = {

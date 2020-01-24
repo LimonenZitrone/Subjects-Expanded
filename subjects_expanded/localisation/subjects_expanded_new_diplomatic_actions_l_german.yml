@@ -110,7 +110,7 @@
  
  establish_peasant_vassal_title: "Bäuerlicher Vasall fordern"
  establish_peasant_vassal_desc: "Wollt Ihr §Y[From.GetName]§! vorschlagen, unser Bäuerlicher Vasall zu werden? \n[peasant_vassal_desc]"
- establish_peasant_vassal_tooltip: "Macht §Y[From.GetName]§! zu einem [Root.GetAdjective] §YBäuerlichen Vasall§!.\n"
+ establish_peasant_vassal_tooltip: "Macht §Y[From.GetName]§! zu einem [Root.GetAdjective]en §YBäuerlichen Vasall§!.\n"
  establish_peasant_vassal_alert_tooltip: "Bäuerlicher Vasall fordern"
  establish_peasant_vassal_dialog: "§Y[This.GetName]§! schlägt uns vor, dass wir ihr §YBäuerlicher Vasall§! werden. [peasant_vassal_desc] \nFalls wir keine Bauernrepublik sind, werden wir zu einer. \n\nWollt Ihr akzeptieren?"
  
@@ -207,13 +207,13 @@
  
  establish_dutch_province_subject_title: "Niederländische Provinz fordern"
  establish_dutch_province_subject_desc: "Wollt Ihr §Y[From.GetName]§! vorschlagen, unsere Niederländische Provinz zu werden? \n[dutch_province_subject_desc]"
- establish_dutch_province_subject_tooltip: "Macht §Y[From.GetName]§! zu einer [Root.GetAdjective] §YNiederländischen Provinz§!.\n"
+ establish_dutch_province_subject_tooltip: "Macht §Y[From.GetName]§! zu einer [Root.GetAdjective]en §YNiederländischen Provinz§!.\n"
  establish_dutch_province_subject_alert_tooltip: "Niederländische Provinz fordern"
  establish_dutch_province_subject_dialog: "§Y[This.GetName]§! schlägt uns vor, dass wir ihre §YNiederländische Provinz§! werden. \n[dutch_province_subject_desc] \nWollt Ihr aktzeptieren?"
  
  ask_for_dutch_province_subject_title: "Niederländische Provinz erbitten"
  ask_for_dutch_province_subject_desc: "Wollt Ihr §Y[From.GetName]§! vorschlagen, dass wir ihre Niederländische Provinz werden? \n[dutch_province_subject_desc]"
- ask_for_dutch_province_subject_tooltip: "§Y[From.GetName]§! bitten, §Y[Root.GetName]§! zu einer [From.GetAdjective] §YNiederländische Provinz§! zu machen.\n"
+ ask_for_dutch_province_subject_tooltip: "§Y[From.GetName]§! bitten, §Y[Root.GetName]§! zu einer [From.GetAdjective]en §YNiederländische Provinz§! zu machen.\n"
  ask_for_dutch_province_subject_alert_tooltip: "Niederländische Provinz erbitten"
  ask_for_dutch_province_subject_dialog: "§Y[This.GetName]§! schlägt uns vor, dass sie unsere §YNiederländische Provinz§! werden. \n[dutch_province_subject_desc] \nWollt Ihr aktzeptieren?"
  
@@ -250,7 +250,7 @@
  
  ask_to_become_naval_march_title: "Marine-Mark erbitten"
  ask_to_become_naval_march_desc: "Wollt Ihr §Y[From.GetName]§! vorschlagen, dass wir ihre Marine-Mark werden? \n[naval_march_desc]  \nWenn die Gesamtentwicklung der Marine-Mark nicht mehr als §Y25%§! von der ihres Lehnsherrn beträgt, erhalten wir die folgenden Boni: \n   [global_sailors_modifier]: §G+25.0%§! \n   [naval_forcelimit_modifier]: §G+50.0%§! \n   [ship_durability]: §G+10.0%§! \n   [naval_maintenance_modifier]: §G-30.0%§! \n   [sailors_recovery_speed]: §G+20.0%§! \n   [blockade_efficiency]: §G+10.0%§! \n   [global_ship_recruit_speed]: §G-10.0%§! \n   [naval_morale]: §G+10.0%§! \n\nUnd der Lehnsherr erhält den folgenden Bonus: \n   [naval_forcelimit]: §G+25§!"
- ask_to_become_naval_march_tooltip: "§Y[From.GetName]§! bitten, §Y[Root.GetName]§! zu einer [From.GetAdjective] §YMarine-Mark§! zu machen.\n"
+ ask_to_become_naval_march_tooltip: "§Y[From.GetName]§! bitten, §Y[Root.GetName]§! zu einer [From.GetAdjective]en §YMarine-Mark§! zu machen.\n"
  ask_to_become_naval_march_alert_tooltip: "Marine-Mark erbitten"
  ask_to_become_naval_march_dialog: "§Y[This.GetName]§! schlägt uns vor, dass sie unsere §YMarine-Mark§! werden. \n[naval_march_desc]  \nWenn die Gesamtentwicklung der Marine-Mark nicht mehr als §Y25%§! von der ihres Lehnsherrn beträgt, erhalten sie die folgenden Boni: \n   [global_sailors_modifier]: §G+25.0%§! \n   [naval_forcelimit_modifier]: §G+50.0%§! \n   [ship_durability]: §G+10.0%§! \n   [naval_maintenance_modifier]: §G-30.0%§! \n   [sailors_recovery_speed]: §G+20.0%§! \n   [blockade_efficiency]: §G+10.0%§! \n   [global_ship_recruit_speed]: §G-10.0%§! \n   [naval_morale]: §G+10.0%§! \n\nUnd der Lehnsherr erhält den folgenden Bonus: \n   [naval_forcelimit]: §G+25§! \n\nWollt Ihr akzeptieren?"
  
@@ -416,6 +416,25 @@
  cancel_imperial_feud_subject_tooltip: "Beedet die Vasallisierung von §Y[From.GetName]§! und entlasst sie in die Freiheit.\n"
  
  
+ establish_pagan_chiefdom_title: "Stammesfürstentum errichten"
+ establish_pagan_chiefdom_desc: "Ernennt Euren Vasallen [From.GetName] zu einem §YStammesfürstentum§!. \n[pagan_chiefdom_desc]"
+ establish_pagan_chiefdom_tooltip: "Ernennt Euren Vasallen [From.GetName] zu einem §YStammesfürstentum§!.\n"
+ 
+ ask_to_become_pagan_chiefdom_title: "Stammesfürstentum erbitten"
+ ask_to_become_pagan_chiefdom_desc: "Wollt Ihr §Y[From.GetName]§! vorschlagen, dass wir ihr Stammesfürstentum werden? \n[pagan_chiefdom_desc]"
+ ask_to_become_pagan_chiefdom_tooltip: "§Y[From.GetName]§! bitten, §Y[Root.GetName]§! zu einem [From.GetAdjective]en §YStammesfürstentum§! zu machen.\n"
+ ask_to_become_pagan_chiefdom_alert_tooltip: "Stammesfürstentum erbitten"
+ ask_to_become_pagan_chiefdom_dialog: "§Y[This.GetName]§! schlägt uns vor, dass sie unser §YStammesfürstentum§! werden. \n[pagan_chiefdom_desc] \n\nWollt Ihr akzeptieren?"
+ 
+ increase_looting_speed_with_pagan_chiefdom_title: "Marodeure einziehen"
+ increase_looting_speed_with_pagan_chiefdom_desc: "Wollt Ihr einige bekannte Marodeure aus Eurem Stammesfürstentum §Y[From.GetName]§! für Eure Armee einziehen? \nDies wird unsere Horden-Einheit um §R-10§! verändern und uns für §Y5 Jahre§! folgende Modifikatoren geben: \n   [loot_amount]: §G+5.00%§! \n[ae_impact]: §R+5.00%§! \n\nDiese Modifikatoren addieren sich, wenn Ihr diese Aktion für mehrere Stammesfürstentümer zur gleichen Zeit durchführt."
+ increase_looting_speed_with_pagan_chiefdom_tooltip: "Marodeure aus §Y[From.GetName]§! einziehen.\n"
+ 
+ increase_horde_unity_with_pagan_chiefdom_title: "Opfert die Schwachen"
+ increase_horde_unity_with_pagan_chiefdom_desc: "Wollt Ihr die Schwachen des §Y[From.GetAdjective]en§! Volks unseren geliebten [Root.Religion.GetName]en Göttern opfern? \nDies wird ihr Freiheitsstreben um §R+10%§! verändern und uns für §Y2 Jahre§! folgende Modifikatoren geben: \n   [yearly_horde_unity]: §G+0.50§! \n[ae_impact]: §R+5.00%§! \n\nDiese Modifikatoren addieren sich, wenn Ihr diese Aktion für mehrere Stammesfürstentümer zur gleichen Zeit durchführt."
+ increase_horde_unity_with_pagan_chiefdom_tooltip: "Opfert die schwachen §Y[From.GetAdjective]en§! Menschen den Göttern.\n"
+ 
+ 
  return_subject_to_vassal_title: "Zum Vasall degradieren"
  return_subject_to_vassal_desc: "Beendet den derzeitigen Status von §Y[From.GetName]§! und macht sie zu einem Vasallen. Dies wird ihre Meinung über uns um §R-100§! verschlechtern und ihr Freiheitsstreben um §R+25%§! ändern. Außerdem verlieren wir §R-10§! Prestige[Root.GetIfDemoteToVassalGivesStabHit]."
  return_subject_to_vassal_tooltip: "Macht §Y[From.GetName]§! wieder zu einem Vasall.\n"
@@ -543,4 +562,5 @@
  ROOT_IS_NOT_EMPEROR: "Wir sind nicht Kaiser des HRR"
  NUM_OF_HRE_REFORMS_PASSED: "Verabschiedete HRR-Reformen"
  FROM_MIGHT_WANT_TO_VASSALIZE_ROOT: "Sie wollen uns eventuell vasallisieren"
+ ROOT_ARMY_SIZE: "Unsere Armeegröße"
  

@@ -416,6 +416,25 @@
  cancel_imperial_feud_subject_tooltip: "Cancel the vassalisation of §Y[From.GetName]§! and grant them independence.\n"
  
  
+ establish_pagan_chiefdom_title: "Establish Chiefdom"
+ establish_pagan_chiefdom_desc: "Make your vassal [From.GetName] to a §YChiefdom§!. \n[pagan_chiefdom_desc]"
+ establish_pagan_chiefdom_tooltip: "Make your vassal [From.GetName] to a §YChiefdom§!.\n"
+ 
+ ask_to_become_pagan_chiefdom_title: "Request Chiefdom"
+ ask_to_become_pagan_chiefdom_desc: "Do you want to offer §Y[From.GetName]§! that we become their Chiefdom? \n[pagan_chiefdom_desc]"
+ ask_to_become_pagan_chiefdom_tooltip: "Ask §Y[From.GetName]§! to make §Y[Root.GetName]§! to a [From.GetAdjective] §YChiefdom§!.\n"
+ ask_to_become_pagan_chiefdom_alert_tooltip: "Request Chiefdom"
+ ask_to_become_pagan_chiefdom_dialog: "§Y[This.GetName]§! offers us that they become our §YChiefdom§!. \n[pagan_chiefdom_desc] \n\nDo you want to accept?"
+ 
+ increase_looting_speed_with_pagan_chiefdom_title: "Conscript Marauders"
+ increase_looting_speed_with_pagan_chiefdom_desc: "Do you want to conscript some known marauders from your Chiefdom §Y[From.GetName]§!? \nThis will change our horde unity by §R-10§! and give us the following modifiers for §Y5 years§!: \n   [loot_amount]: §G+5.00%§! \n[ae_impact]: §R+5.00%§! \n\nThese modifiers stack, if you perform this action on multiple Chiefdoms at the same time."
+ increase_looting_speed_with_pagan_chiefdom_tooltip: "Conscript Marauders from §Y[From.GetName]§!.\n"
+ 
+ increase_horde_unity_with_pagan_chiefdom_title: "Sacrifize the Weak"
+ increase_horde_unity_with_pagan_chiefdom_desc: "Do you want to sacrafize the weak of the §Y[From.GetAdjective]§! people to our beloved [Root.Religion.GetName] gods? \nThis will change their liberty desire by §R+10%§! and give us the following modifiers for §Y2 years§!: \n   [yearly_horde_unity]: §G+0.50§! \n[ae_impact]: §R+5.00%§! \n\nThese modifiers stack, if you perform this action on multiple Chiefdoms at the same time."
+ increase_horde_unity_with_pagan_chiefdom_tooltip: "Sacrifize the weak §Y[From.GetAdjective]§! people to the gods.\n"
+ 
+ 
  return_subject_to_vassal_title: "Demote to Vassal"
  return_subject_to_vassal_desc: "Cancel the current status §Y[From.GetName]§! has and make them to a vassal. This will decrease their opinion of us by §R-100§! and change their liberty desire by §R+25%§!. We will also lose §R-10§! prestige[Root.GetIfDemoteToVassalGivesStabHit]."
  return_subject_to_vassal_tooltip: "Make §Y[From.GetName]§! to a vassal again.\n"
@@ -543,4 +562,5 @@
  ROOT_IS_NOT_EMPEROR: "We are not Emperor of the HRE"
  NUM_OF_HRE_REFORMS_PASSED: "Passed HRE reforms"
  FROM_MIGHT_WANT_TO_VASSALIZE_ROOT: "They might want to vassalize us"
+ ROOT_ARMY_SIZE: "Our army size"
  

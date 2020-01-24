@@ -2,7 +2,7 @@
 This mod adds new subject types and diplomatic actions related to them to add more variety and depth to the subject system.
 
 [h1]Currently Added[/h1]
-Currently [i]Subjects Expanded[/i] adds [b]27[/b] new subject types:
+Currently [i]Subjects Expanded[/i] adds [b]28[/b] new subject types:
 [list]
 [*] Protectorate
 [*] Puppet State
@@ -31,6 +31,7 @@ Currently [i]Subjects Expanded[/i] adds [b]27[/b] new subject types:
 [*] Iqta
 [*] Papal Sanctuary
 [*] Imperial Feud
+[*] Chiefdom
 [/list]
 
 You can find more details on the new subjects [url=https://steamcommunity.com/workshop/filedetails/discussion/1834079712/3647273545685194210/]here[/url].

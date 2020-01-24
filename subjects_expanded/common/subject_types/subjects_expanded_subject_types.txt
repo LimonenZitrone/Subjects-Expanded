@@ -28,6 +28,7 @@ brother_kingdom = { }
 iqta_vassal = { }
 papal_sanctuary_subject = { }
 imperial_feud_subject = { }
+pagan_chiefdom = { }
 
 # Subjects
 protectorate = {
@@ -3975,4 +3976,134 @@ imperial_feud_subject = {
 	
 	overlord_opinion_modifier = is_imperial_feud_subject
 	subject_opinion_modifier = is_imperial_feud_subject
+}
+
+pagan_chiefdom = {
+	copy_from = default
+	count = march
+	
+	# Triggers:
+	is_potential_overlord = {
+		is_subject = no
+		OR = {
+			religion_group = pagan
+			# Extended Timeline religions
+			religion = druidism
+			religion = zamolxism
+			religion_group = american_pagan
+			religion_group = slavic_pagan
+			religion_group = german_pagan
+			religion = shamanism
+		}
+	}
+	
+	# Graphics:
+	sprite = GFX_icon_pagan_chiefdom
+	diplomacy_overlord_sprite = GFX_diplomacy_leadpagan_chiefdom
+	diplomacy_subject_sprite = GFX_diplomacy_ampagan_chiefdom
+	
+	# Properties:
+	has_power_projection = no
+	gets_help_with_rebels = yes
+	
+	max_government_rank = 1
+	
+	base_liberty_desire = -5.0
+	liberty_desire_negative_prestige = 0.1
+	liberty_desire_development_ratio = 0.25
+	liberty_desire_same_dynasty = -5
+	
+	pays_overlord = 0.0
+	forcelimit_bonus = 1
+	forcelimit_to_overlord = 0.2
+	military_focus = 1.5
+	
+	relative_power_class = 2
+	diplomacy_view_class = 1
+
+	can_fight = {
+	}
+	can_rival = {
+	}
+	can_ally = {
+	}
+	can_marry = {
+	}
+	
+	# Subject Interactions:
+	divert_trade = yes
+	grant_province = no
+	enforce_culture = yes
+	fortify_march = yes
+	seize_territory = yes
+	
+	# Modifiers:
+	modifier_subject = clear
+	modifier_subject = {
+		modifier = subject_nation
+	}
+	modifier_subject = {
+		modifier = pagan_chiefdom_modifier
+	}
+	modifier_subject = {
+		modifier = pagan_chiefdom_strong_military_modifier_1
+		trigger = {
+			army_strength = { who = FROM value = 0.75 }
+			NOT = { army_strength = { who = FROM value = 1 } }
+		}
+	}
+	modifier_subject = {
+		modifier = pagan_chiefdom_strong_military_modifier_2
+		trigger = {
+			army_strength = { who = FROM value = 1 }
+			NOT = { army_strength = { who = FROM value = 1.25 } }
+		}
+	}
+	modifier_subject = {
+		modifier = pagan_chiefdom_strong_military_modifier_3
+		trigger = {
+			army_strength = { who = FROM value = 1.25 }
+			NOT = { army_strength = { who = FROM value = 1.5 } }
+		}
+	}
+	modifier_subject = {
+		modifier = pagan_chiefdom_strong_military_modifier_4
+		trigger = {
+			army_strength = { who = FROM value = 1.5 }
+			NOT = { army_strength = { who = FROM value = 1.75 } }
+		}
+	}
+	modifier_subject = {
+		modifier = pagan_chiefdom_strong_military_modifier_5
+		trigger = {
+			army_strength = { who = FROM value = 1.75 }
+			NOT = { army_strength = { who = FROM value = 2 } }
+		}
+	}
+	modifier_subject = {
+		modifier = pagan_chiefdom_strong_military_modifier_6
+		trigger = {
+			army_strength = { who = FROM value = 2 }
+		}
+	}
+	
+	modifier_overlord = clear
+	modifier_overlord = {
+		modifier = pagan_chiefdom_overlord_modifier
+	}
+	modifier_overlord = {
+		modifier = pagan_chiefdom_increased_looting_speed_overlord_modifier
+		trigger = {
+			has_country_modifier = increase_looting_speed_with_pagan_chiefdom_cooldown
+		}
+	}
+	modifier_overlord = {
+		modifier = pagan_chiefdom_increased_horde_unity_overlord_modifier
+		trigger = {
+			has_country_modifier = increase_horde_unity_with_pagan_chiefdom_cooldown
+		}
+	}
+	
+	overlord_opinion_modifier = is_pagan_chiefdom
+	subject_opinion_modifier = is_pagan_chiefdom
 }

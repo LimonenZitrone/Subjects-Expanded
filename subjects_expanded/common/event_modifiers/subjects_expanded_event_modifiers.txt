@@ -989,6 +989,51 @@ imperial_feud_subject_overlord_modifier = {
 	imperial_authority_value = 0.01
 }
 
+# Subject Type: Chiefdom
+pagan_chiefdom_modifier = {
+	global_manpower_modifier = 0.25
+	land_morale = 0.1
+}
+
+pagan_chiefdom_strong_military_modifier_1 = {
+	liberty_desire = 5
+}
+
+pagan_chiefdom_strong_military_modifier_2 = {
+	liberty_desire = 10
+}
+
+pagan_chiefdom_strong_military_modifier_3 = {
+	liberty_desire = 15
+}
+
+pagan_chiefdom_strong_military_modifier_4 = {
+	liberty_desire = 20
+}
+
+pagan_chiefdom_strong_military_modifier_5 = {
+	liberty_desire = 25
+}
+
+pagan_chiefdom_strong_military_modifier_6 = {
+	liberty_desire = 30
+}
+
+pagan_chiefdom_overlord_modifier = {
+	core_creation = -0.05
+	fabricate_claims_cost = -0.05
+}
+
+pagan_chiefdom_increased_looting_speed_overlord_modifier = {
+	loot_amount = 0.05
+	ae_impact = 0.05
+}
+
+pagan_chiefdom_increased_horde_unity_overlord_modifier = {
+	horde_unity = 0.5
+	ae_impact = 0.05
+}
+
 # Modifiers that function as timers
 protectorate_got_monarch_power_this_year = {
 }
@@ -1030,4 +1075,10 @@ cooldown_papal_sanctuary_subject_converted_to_theocracy_modifier = {
 }
 
 ruler_just_canceled_to_be_brother_kingdom = {
+}
+
+increase_looting_speed_with_pagan_chiefdom_cooldown = {
+}
+
+increase_horde_unity_with_pagan_chiefdom_cooldown = {
 }

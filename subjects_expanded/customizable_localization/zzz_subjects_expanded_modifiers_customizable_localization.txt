@@ -96,3 +96,37 @@ defined_text = {
 		localisation_key = NAVAL_MORALE
 	}
 }
+
+defined_text = {
+	name = yearly_horde_unity
+	
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = YEARLY_HORDE_UNITY
+	}
+}
+
+defined_text = {
+	name = ae_impact
+	
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_AE_IMPACT
+	}
+}
+
+defined_text = {
+	name = loot_amount
+	
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_LOOT_AMOUNT
+	}
+}
+

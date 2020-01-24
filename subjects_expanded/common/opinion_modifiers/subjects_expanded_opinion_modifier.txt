@@ -346,3 +346,13 @@ emperor_abandoned_imperial_feud_subject = {
 	yearly_decay = 1
 	min = -50
 }
+
+is_pagan_chiefdom = {
+	opinion = 40
+}
+
+declined_ask_to_become_pagan_chiefdom = {
+	opinion = -25
+	yearly_decay = 1
+	min = -100
+}

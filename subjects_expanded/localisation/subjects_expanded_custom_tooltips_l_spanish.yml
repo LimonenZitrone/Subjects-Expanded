@@ -37,6 +37,7 @@
  IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_iqta_vassal: "Can be made to an §YIqta§!"
  IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_papal_sanctuary_subject: "Can be made to a §YPapal Sanctuary§!"
  IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_imperial_feud_subject: "Can be made to an §YImperial Feud§!"
+ IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_pagan_chiefdom: "Can be made to a §YChiefdom§!"
  
  THIS_IS_FORMER_AUTONOMOUS_DOMINION: "Is a former §YDominion§! or a former §YColonial Nation§!"
  
@@ -227,4 +228,6 @@
  display_papal_sanctuary_subject_desc_tt: "§g[papal_sanctuary_subject_desc]§W"
  display_imperial_feud_subject_title_tt: "§Y[imperial_feud_subject]§!"
  display_imperial_feud_subject_desc_tt: "§g[imperial_feud_subject_desc]§W"
+ display_pagan_chiefdom_title_tt: "§Y[pagan_chiefdom]§!"
+ display_pagan_chiefdom_desc_tt: "§g[pagan_chiefdom_desc]§W"
  

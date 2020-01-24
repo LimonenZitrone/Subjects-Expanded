@@ -28,6 +28,7 @@
  subjects_expanded_events2.EVTOPT25: "There currently are §G[REB.num_of_subjects_of_type_iqta_vassal.GetValue]§! §YIqtas§! in the world."
  subjects_expanded_events2.EVTOPT26: "There currently are §G[REB.num_of_subjects_of_type_papal_sanctuary_subject.GetValue]§! §YPapal Sanctuaries§! in the world."
  subjects_expanded_events2.EVTOPT27: "There currently are §G[REB.num_of_subjects_of_type_imperial_feud_subject.GetValue]§! §YImperial Feuds§! in the world."
+ subjects_expanded_events2.EVTOPT28: "There currently are §G[REB.num_of_subjects_of_type_pagan_chiefdom.GetValue]§! §YChiefdoms§! in the world."
  
  subjects_expanded_events.EVTNAME3: "Idea Mods?"
  subjects_expanded_events.EVTDESC3: "Spawning Dominions via decisions sets their idea groups depending on the ones you chose. If you are using a mod that alters the vanilla idea groups in any way, this might §Rcrash§! the game. So select the matching option below to prevent that from happening!"

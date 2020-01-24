@@ -228,3 +228,14 @@
  imperial_feud_subject_imperial_grace_modifier: "Imperial Grace"
  imperial_feud_subject_overlord_modifier: "Has Imperial Feuds"
  
+ pagan_chiefdom_modifier: "Chiefdom"
+ pagan_chiefdom_strong_military_modifier_1: "Army strength compared to overlord at least §Y75%§!"
+ pagan_chiefdom_strong_military_modifier_2: "Army strength compared to overlord at least §Y100%§!"
+ pagan_chiefdom_strong_military_modifier_3: "Army strength compared to overlord at least §Y125%§!"
+ pagan_chiefdom_strong_military_modifier_4: "Army strength compared to overlord at least §Y150%§!"
+ pagan_chiefdom_strong_military_modifier_5: "Army strength compared to overlord at least §Y175%§!"
+ pagan_chiefdom_strong_military_modifier_6: "Army strength compared to overlord at least §Y200%§!"
+ pagan_chiefdom_overlord_modifier: "Has Chiefdoms"
+ pagan_chiefdom_increased_looting_speed_overlord_modifier: "Conscripted Marauders from a Chiefdom"
+ pagan_chiefdom_increased_horde_unity_overlord_modifier: "Sacrifized the Weak of a Chiefdom"
+ 

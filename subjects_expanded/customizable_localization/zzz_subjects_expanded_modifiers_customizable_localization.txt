@@ -98,13 +98,13 @@ defined_text = {
 }
 
 defined_text = {
-	name = yearly_horde_unity
+	name = movement_speed
 	
 	text = {
 		trigger = {
 			always = yes
 		}
-		localisation_key = YEARLY_HORDE_UNITY
+		localisation_key = MODIFIER_MOVEMENT_SPEED
 	}
 }
 

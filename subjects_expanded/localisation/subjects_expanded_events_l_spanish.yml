@@ -254,3 +254,7 @@
  subjects_expanded_imperial_feud_subject_events5.EVTOPT1: "We are part of the Empire!"
  subjects_expanded_imperial_feud_subject_events5.EVTOPT2: "We wanted a protector, not a master."
  
+ subjects_expanded_pagan_chiefdom_events.EVTNAME1: "Chiefdoms and Vassals"
+ subjects_expanded_pagan_chiefdom_events.EVTDESC1: "After our conversion to the [Root.Religion.GetName] faith, we lost the right to have chiefdoms under us. A few of our priests and nobles demand that we get rid of the heathens. We should really give in to these demands, however we cannot just let go of our interests in their lands. We should just replace the old dependency system with a new one, instead of Chiefdoms let us just call them vassals..."
+ subjects_expanded_pagan_chiefdom_events1.EVTOPT1: "As long as everything stays about the same..."
+ 

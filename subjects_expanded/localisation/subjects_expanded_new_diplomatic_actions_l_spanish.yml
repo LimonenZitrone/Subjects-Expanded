@@ -427,11 +427,11 @@
  ask_to_become_pagan_chiefdom_dialog: "§Y[This.GetName]§! offers us that they become our §YChiefdom§!. \n[pagan_chiefdom_desc] \n\nDo you want to accept?"
  
  increase_looting_speed_with_pagan_chiefdom_title: "Conscript Marauders"
- increase_looting_speed_with_pagan_chiefdom_desc: "Do you want to conscript some known marauders from your Chiefdom §Y[From.GetName]§!? \nThis will change our horde unity by §R-10§! and give us the following modifiers for §Y5 years§!: \n   [loot_amount]: §G+5.00%§! \n   [ae_impact]: §R+5.00%§! \n\nThese modifiers stack, if you perform this action on multiple Chiefdoms at the same time."
+ increase_looting_speed_with_pagan_chiefdom_desc: "Do you want to conscript some known marauders from your Chiefdom §Y[From.GetName]§!? \nThis will change our horde unity by §R-5§! and give us the following modifiers for §Y10 years§!: \n   [loot_amount]: §G+25.00%§! \n   [movement_speed]: §G+5.00%§!\n   [ae_impact]: §R+5.00%§! \n\nThese modifiers stack, if you perform this action on multiple Chiefdoms at the same time."
  increase_looting_speed_with_pagan_chiefdom_tooltip: "Conscript Marauders from §Y[From.GetName]§!.\n"
  
  increase_horde_unity_with_pagan_chiefdom_title: "Sacrifice the Weak"
- increase_horde_unity_with_pagan_chiefdom_desc: "Do you want to sacrifice the weak of the §Y[From.GetAdjective]§! people to our beloved [Root.Religion.GetName] gods? \nThis will change their liberty desire by §R+10%§! and give us the following modifiers for §Y2 years§!: \n   [yearly_horde_unity]: §G+1.00§! \n   [ae_impact]: §R+5.00%§! \n\nThese modifiers stack, if you perform this action on multiple Chiefdoms at the same time."
+ increase_horde_unity_with_pagan_chiefdom_desc: "Do you want to sacrifice the weak of the §Y[From.GetAdjective]§! people to our beloved [Root.Religion.GetName] gods? \n[From.GetChiefdomSacrificeTheWeakEffects] and this will give us the following modifiers for §Y5 years§!: \n   [ae_impact]: §R+5.00%§! \n\nThese modifiers stack, if you perform this action on multiple Chiefdoms at the same time."
  increase_horde_unity_with_pagan_chiefdom_tooltip: "Sacrifice the weak §Y[From.GetAdjective]§! people to the gods.\n"
  
  

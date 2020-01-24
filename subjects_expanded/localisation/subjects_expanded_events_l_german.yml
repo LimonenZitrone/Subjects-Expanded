@@ -254,3 +254,7 @@
  subjects_expanded_imperial_feud_subject_events5.EVTOPT1: "Wir sind Teil des Reiches!"
  subjects_expanded_imperial_feud_subject_events5.EVTOPT2: "Wir wollten einen Beschützer, keinen Unterdrücker."
  
+ subjects_expanded_pagan_chiefdom_events.EVTNAME1: "Stammesfürstentümer und Vasallen"
+ subjects_expanded_pagan_chiefdom_events.EVTDESC1: "Nach unserer Konvertierung zum [Root.Religion.GetName]en Glauben haben wir das Recht verloren, Stammesfürstentümer unter uns zu besitzen. Einige unserer Priester und Adligen verlangen, dass wir uns der Heiden entledigen müssen. Wir sollten diesen Aufforderungen nachkommen, allerdings können wir nicht einfach unsere Interessen an ihren Ländereien aufgeben. Wir sollten einfach das alte Abhängigkeitssystem durch ein neues ersetzen, anstatt Stammesfürstentümer, lasst sie uns einfach Vasallen nennen..."
+ subjects_expanded_pagan_chiefdom_events1.EVTOPT1: "Solange alles ungefähr so bleibt, wie es vorher war..."
+ 

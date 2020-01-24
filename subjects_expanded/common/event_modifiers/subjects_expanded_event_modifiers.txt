@@ -1026,12 +1026,12 @@ pagan_chiefdom_overlord_modifier = {
 }
 
 pagan_chiefdom_increased_looting_speed_overlord_modifier = {
-	loot_amount = 0.05
+	loot_amount = 0.25
+	movement_speed = 0.05
 	ae_impact = 0.05
 }
 
 pagan_chiefdom_increased_horde_unity_overlord_modifier = {
-	horde_unity = 1
 	ae_impact = 0.05
 }
 

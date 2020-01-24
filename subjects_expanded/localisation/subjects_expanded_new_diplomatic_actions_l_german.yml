@@ -427,11 +427,11 @@
  ask_to_become_pagan_chiefdom_dialog: "§Y[This.GetName]§! schlägt uns vor, dass sie unser §YStammesfürstentum§! werden. \n[pagan_chiefdom_desc] \n\nWollt Ihr akzeptieren?"
  
  increase_looting_speed_with_pagan_chiefdom_title: "Marodeure einziehen"
- increase_looting_speed_with_pagan_chiefdom_desc: "Wollt Ihr einige bekannte Marodeure aus Eurem Stammesfürstentum §Y[From.GetName]§! für Eure Armee einziehen? \nDies wird unsere Horden-Einheit um §R-10§! verändern und uns für §Y5 Jahre§! folgende Modifikatoren geben: \n   [loot_amount]: §G+5.00%§! \n[ae_impact]: §R+5.00%§! \n\nDiese Modifikatoren addieren sich, wenn Ihr diese Aktion für mehrere Stammesfürstentümer zur gleichen Zeit durchführt."
+ increase_looting_speed_with_pagan_chiefdom_desc: "Wollt Ihr einige bekannte Marodeure aus Eurem Stammesfürstentum §Y[From.GetName]§! für Eure Armee einziehen? \nDies wird unsere Horden-Einheit um §R-10§! verändern und uns für §Y5 Jahre§! folgende Modifikatoren geben: \n   [loot_amount]: §G+5.00%§! \n   [ae_impact]: §R+5.00%§! \n\nDiese Modifikatoren addieren sich, wenn Ihr diese Aktion für mehrere Stammesfürstentümer zur gleichen Zeit durchführt."
  increase_looting_speed_with_pagan_chiefdom_tooltip: "Marodeure aus §Y[From.GetName]§! einziehen.\n"
  
  increase_horde_unity_with_pagan_chiefdom_title: "Opfert die Schwachen"
- increase_horde_unity_with_pagan_chiefdom_desc: "Wollt Ihr die Schwachen des §Y[From.GetAdjective]en§! Volks unseren geliebten [Root.Religion.GetName]en Göttern opfern? \nDies wird ihr Freiheitsstreben um §R+10%§! verändern und uns für §Y2 Jahre§! folgende Modifikatoren geben: \n   [yearly_horde_unity]: §G+0.50§! \n[ae_impact]: §R+5.00%§! \n\nDiese Modifikatoren addieren sich, wenn Ihr diese Aktion für mehrere Stammesfürstentümer zur gleichen Zeit durchführt."
+ increase_horde_unity_with_pagan_chiefdom_desc: "Wollt Ihr die Schwachen des §Y[From.GetAdjective]en§! Volks unseren geliebten [Root.Religion.GetName]en Göttern opfern? \nDies wird ihr Freiheitsstreben um §R+10%§! verändern und uns für §Y2 Jahre§! folgende Modifikatoren geben: \n   [yearly_horde_unity]: §G+1.00§! \n   [ae_impact]: §R+5.00%§! \n\nDiese Modifikatoren addieren sich, wenn Ihr diese Aktion für mehrere Stammesfürstentümer zur gleichen Zeit durchführt."
  increase_horde_unity_with_pagan_chiefdom_tooltip: "Opfert die schwachen §Y[From.GetAdjective]en§! Menschen den Göttern.\n"
  
  

@@ -991,6 +991,7 @@ imperial_feud_subject_overlord_modifier = {
 
 # Subject Type: Chiefdom
 pagan_chiefdom_modifier = {
+	horde_unity = 1
 	global_manpower_modifier = 0.25
 	land_morale = 0.1
 }
@@ -1030,7 +1031,7 @@ pagan_chiefdom_increased_looting_speed_overlord_modifier = {
 }
 
 pagan_chiefdom_increased_horde_unity_overlord_modifier = {
-	horde_unity = 0.5
+	horde_unity = 1
 	ae_impact = 0.05
 }
 

@@ -97,6 +97,9 @@
  DID_NOT_REJECT_TO_JOIN_THE_HRE_WITHIN_LAST_5_YEARS: "Hat die Bitte, dem HRR beizutreten, innerhalb der letzten §Y5 Jahre§! NICHT abgelehnt"
  DID_NOT_REJECT_TO_LET_US_JOIN_THE_HRE_WITHIN_LAST_5_YEARS: "Hat unsere Bitte, dem HRR beitreten zu dürfen, innerhalb der letzten §Y5 Jahre§! NICHT abgelehnt"
  
+ DID_NOT_INCREASE_LOOTING_SPEED_WITH_THIS_PAGAN_CHIEFDOM_WITHIN_LAST_5_YEARS: "Hat innerhalb der letzten §Y5 Jahre§! KEINE Marodeure aus §Y[This.GetName]§! eingezogen"
+ DID_NOT_INCREASE_HORDE_UNITY_WITH_THIS_PAGAN_CHIEFDOM_WITHIN_LAST_5_YEARS: "Hat innerhalb der letzten §Y2 Jahre§! KEINE Schwachen aus §Y[This.GetName]§! geopfert"
+ 
  # Decisions:
  ALL_PROVINCES_IN_INDIAN_TRADE_COMPANY_REGIONS_CEDED_TO_DOMINION: "\nAlle unsere Provinzen in [Root.GetIndianTradeCompanyRegionsSgPl] [Root.GetFirstIndianTradeCompanyRegionWeCede][Root.GetSecondIndianTradeCompanyRegionWeCede][Root.GetThirdIndianTradeCompanyRegionWeCede][Root.GetFourthIndianTradeCompanyRegionWeCede][Root.GetFifthIndianTradeCompanyRegionWeCede] werden an unser dort entlassenes Herrschaftsgebiet \n[Root.GetCreatedADNameIndia] abgetreten."
  ALL_PROVINCES_IN_EAST_INDIES_TRADE_COMPANY_REGIONS_CEDED_TO_DOMINION: "\nAlle unsere Provinzen in [Root.GetEastIndiesTradeCompanyRegionsSgPl] [Root.GetFirstEastIndiesTradeCompanyRegionWeCede][Root.GetSecondEastIndiesTradeCompanyRegionWeCede] werden an unser dort entlassenes Herrschaftsgebiet \n[Root.GetCreatedADNameEastIndies] abgetreten."

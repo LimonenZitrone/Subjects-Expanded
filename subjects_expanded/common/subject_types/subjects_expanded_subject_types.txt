@@ -4036,6 +4036,7 @@ pagan_chiefdom = {
 	enforce_culture = yes
 	fortify_march = yes
 	seize_territory = yes
+	demand_artifacts = yes
 	
 	# Modifiers:
 	modifier_subject = clear

@@ -39,6 +39,7 @@ is_possible_subject_of_subject_type_tributary_state = {
 
 is_possible_subject_of_subject_type_protectorate = {
 	# PREVs in THIS scope refer to possible overlord
+	NOT = { is_subject_of_type = protectorate }
 	is_subject = no
 	NOT = { technology_group = western }
 	NOT = { technology_group = eastern }
@@ -102,6 +103,7 @@ is_possible_subject_of_subject_type_protectorate = {
 
 is_possible_subject_of_subject_type_puppet_state = {
 	# PREVs in THIS scope refer to possible overlord
+	NOT = { is_subject_of_type = puppet_state }
 	OR = {
 		is_subject = no
 		AND = {

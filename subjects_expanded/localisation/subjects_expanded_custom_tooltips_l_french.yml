@@ -174,6 +174,9 @@
  # Scripted Effect Tooltips:
  ELECT_THIS_AS_DUTCH_PROVINCE_OVERLORD_TT: "We will support §Y[This.GetName]§! as the new overlord of the §YDutch Provinces§!.\n"
  
+ # Scripted Functions:
+ NO_CAPITAL_MOVE_DUTCH_PROVINCE: "§RA Dutch Province cannot move its capital outside of the Low Countries region.§!"
+ 
  # Special Tooltips:
  DISPLAY_SUBJECTS_OF_TYPE_TT_OWNER_IS_SUBJECT_OF_TYPE: "@[This.Owner.GetTag] §Y[This.Owner.GetName]§! is a §Y[This.Owner.GetSubjectType]§! of @[This.Owner.Overlord.GetTag] §Y[This.Owner.Overlord.GetName]§!."
  

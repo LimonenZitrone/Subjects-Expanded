@@ -10,6 +10,10 @@ country_event = {
 	
 	trigger = {
 		is_subject_of_type = integrated_personal_union
+		OR = {
+			NOT = { has_country_flag = integrated_personal_union_automatic_integration_chance }
+			had_country_flag = { flag = integrated_personal_union_automatic_integration_chance days = 3650 }
+		}
 		overlord = {
 			ROOT = {
 				years_in_vassalage_under = {
@@ -22,11 +26,13 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 120
+		days = 1
 	}
 	
 	immediate = {
 		hidden_effect = {
+			clr_country_flag = integrated_personal_union_automatic_integration_chance
+			set_country_flag = integrated_personal_union_automatic_integration_chance
 			if = {
 				limit = {
 					NOT = { liberty_desire = 50 }

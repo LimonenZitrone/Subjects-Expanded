@@ -784,3 +784,30 @@ If a subject gives an additional merchant, the bonuses it gives to its overlord 
 [*] The overlord can bestow imperial grace on Imperial Feuds to lower their liberty desire
 [*] Imperial Feuds do not join their overlord's wars
 [/list]
+
+[h1]Chiefdom[/h1]
+[i]Chiefdoms are very similar to marches, however they get a bonus to horde unity, manpower and army morale. Furthermore, they give their overlord a bonus on core creation cost and fabricate claim cost. If their overlord is a horde, he has two additional actions that he can use on Chiefdoms: In exchange for horde unity, he can gain a small bonus on looting speed and movement speed as well as a small malus on aggressive expansion impact. And in exchange for the subject getting an increase in liberty desire, he can gain a small bonus on horde unity and a small malus on aggressive expansion impact. A Chiefdom gains additional liberty desire, if it has at least 75% of its overlord's army size. It can only be established by independent nations following a religion of the Pagan, American Pagan, Slavic Pagan or German Pagan religion groups or the Druidist or Zamolxist religions, on their own vassals that follow any of these religions or a religion in any of those groups as well.[/i]
+
+[b]Conditions (possible overlord):[/b]
+[list]
+[*] is not a subject nation
+[*] is either in a pagan religion group or follows the Duridist or Zamolxist religions (Extended Timeline)
+[/list]
+
+[b]Conditions (possible subject):[/b]
+[list]
+[*] is a vassal of the possible overlord
+[*] is either in a pagan religion group or follows the Duridist or Zamolxist religions (Extended Timeline)
+[/list]
+
+[b]Additional Information:[/b]
+[list]
+[*] Chiefdoms can only be established diplomatically
+[*] Chiefdoms have a max government rank of 1 (Duchy)
+[*] Chiefdoms gain a bonus on yearly horde unity, army morale and manpower
+[*] Chiefdoms grant their overlord a bonus on core creation cost and fabricate claims cost
+[*] Chiefdoms gain additional liberty desire if they have at least 75% of their overlord's army size
+[*] Chiefdoms have a subject interaction (diplomatic action) that allows the overlord to gain additional looting speed and movement speed in exchange for horde unity and an increased aggressive expansion (requires to be a horde and the "The Cossacks" DLC)
+[*] Chiefdoms have a subject interaction (diplomatic action) that allows the overlord to gain additional horde unity in exchange for an increased liberty desire in the Chiefdom and an increased aggressive expansion (requires to be a horde and the "The Cossacks" DLC)
+[*] Chiefdoms 
+[/list]

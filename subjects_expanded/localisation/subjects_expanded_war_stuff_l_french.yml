@@ -53,67 +53,67 @@
  IMPERIAL_FEUD_WAR_NAME: "$ORDER$ $FIRST$-$SECOND$ War of Imperial Strength"
  
  # Peace Treaties:
- make_protectorate_desc: "@[From.GetTag] §Y[From.GetName]§! is made to a Protectorate of @[Root.GetTag] §Y[Root.GetName]§!."
+ make_protectorate_desc: "@[From.GetTag] §Y[From.GetName]§! is made into a Protectorate of @[Root.GetTag] §Y[Root.GetName]§!."
  CB_ALLOWED_make_protectorate: "Force Protectorate"
  PEACE_make_protectorate: "$TAKERS$ Protectorate"
  
- make_puppet_state_desc: "@[From.GetTag] §Y[From.GetName]§! is made to a Puppet State of @[Root.GetTag] §Y[Root.GetName]§!."
+ make_puppet_state_desc: "@[From.GetTag] §Y[From.GetName]§! is made into a Puppet State of @[Root.GetTag] §Y[Root.GetName]§!."
  CB_ALLOWED_make_puppet_state: "Force Puppet State"
  PEACE_make_puppet_state: "$TAKERS$ Puppet State"
  
- make_puppet_state_et_desc: "@[From.GetTag] §Y[From.GetName]§! is made to a Puppet State of @[Root.GetTag] §Y[Root.GetName]§!."
+ make_puppet_state_et_desc: "@[From.GetTag] §Y[From.GetName]§! is made into a Puppet State of @[Root.GetTag] §Y[Root.GetName]§!."
  CB_ALLOWED_make_puppet_state_et: "Force Puppet State"
  PEACE_make_puppet_state_et: "$TAKERS$ Puppet State"
  
- make_roman_client_kingdom_desc: "@[From.GetTag] §Y[From.GetName]§! is made to a Roman Client Kingdom of @[Root.GetTag] §Y[Root.GetName]§!."
+ make_roman_client_kingdom_desc: "@[From.GetTag] §Y[From.GetName]§! is made into a Roman Client Kingdom of @[Root.GetTag] §Y[Root.GetName]§!."
  CB_ALLOWED_make_roman_client_kingdom: "Force Roman Client Kingdom"
  PEACE_make_roman_client_kingdom: "$TAKERS$ Client Kingdom"
  
- make_fief_subject_desc: "@[From.GetTag] §Y[From.GetName]§! is made to a Fiefdom of @[Root.GetTag] §Y[Root.GetName]§!."
+ make_fief_subject_desc: "@[From.GetTag] §Y[From.GetName]§! is made into a Fiefdom of @[Root.GetTag] §Y[Root.GetName]§!."
  CB_ALLOWED_make_fief_subject: "Force Fiefdom"
  PEACE_make_fief_subject: "$TAKERS$ Fiefdom"
  
- make_salic_personal_union_desc: "@[From.GetTag] §Y[From.GetName]§! is made to a Salic Union of @[Root.GetTag] §Y[Root.GetName]§!."
+ make_salic_personal_union_desc: "@[From.GetTag] §Y[From.GetName]§! is made into a Salic Union of @[Root.GetTag] §Y[Root.GetName]§!."
  CB_ALLOWED_make_salic_personal_union: "Force Salic Union"
  PEACE_make_salic_personal_union: "$TAKERS$ Salic Union"
  
- make_peasant_vassal_desc: "@[From.GetTag] §Y[From.GetName]§! is made to a Peasant Vassal of @[Root.GetTag] §Y[Root.GetName]§!. If [From.GetName] is not a §YPeasants Republic§!, they will become one."
+ make_peasant_vassal_desc: "@[From.GetTag] §Y[From.GetName]§! is made into a Peasant Vassal of @[Root.GetTag] §Y[Root.GetName]§!. If [From.GetName] is not a §YPeasants Republic§!, they will become one."
  CB_ALLOWED_make_peasant_vassal: "Force Peasant Vassal"
  PEACE_make_peasant_vassal: "$TAKERS$ Peasant Vassal"
  
- make_pirate_brotherhood_vassal_desc: "@[From.GetTag] §Y[From.GetName]§! is made to a Pirate Brotherhood of @[Root.GetTag] §Y[Root.GetName]§!. If [From.GetName] does not have a Pirate government, they will become one."
+ make_pirate_brotherhood_vassal_desc: "@[From.GetTag] §Y[From.GetName]§! is made into a Pirate Brotherhood of @[Root.GetTag] §Y[Root.GetName]§!. If [From.GetName] does not have a Pirate government, they will become one."
  CB_ALLOWED_make_pirate_brotherhood_vassal: "Force Pirate Brotherhood"
  PEACE_make_pirate_brotherhood_vassal: "$TAKERS$ Pirate Brotherhood"
  
- make_imperial_tributary_state_desc: "@[From.GetTag] §Y[From.GetName]§! is made to an Imperial Tributary State of @[Root.GetTag] §Y[Root.GetName]§!. If [From.GetName] is not a monarchy, they will become one."
+ make_imperial_tributary_state_desc: "@[From.GetTag] §Y[From.GetName]§! is made into an Imperial Tributary State of @[Root.GetTag] §Y[Root.GetName]§!. If [From.GetName] is not a monarchy, they will become one."
  CB_ALLOWED_make_imperial_tributary_state: "Force Imperial Tributary State"
  PEACE_make_imperial_tributary_state: "$TAKERS$ Imperial Tributary State"
  
- make_muslim_tributary_vassal_desc: "@[From.GetTag] §Y[From.GetName]§! is made to a Dar al-Sulh Territory of @[Root.GetTag] §Y[Root.GetName]§!. If [From.GetName] is not a monarchy, they will become one."
+ make_muslim_tributary_vassal_desc: "@[From.GetTag] §Y[From.GetName]§! is made into a Dar al-Sulh Territory of @[Root.GetTag] §Y[Root.GetName]§!. If [From.GetName] is not a monarchy, they will become one."
  CB_ALLOWED_make_muslim_tributary_vassal: "Force Dar al-Sulh Territory"
  PEACE_make_muslim_tributary_vassal: "$TAKERS$ Dar al-Sulh Territory"
  
- make_mandala_trade_vassal_desc: "@[From.GetTag] §Y[From.GetName]§! is made to a Mandala Vassal of @[Root.GetTag] §Y[Root.GetName]§!. If [From.GetName] has Mandala Vassals themselves, they will keep them. All other subjects are transfered to §Y[Root.GetName]§!."
+ make_mandala_trade_vassal_desc: "@[From.GetTag] §Y[From.GetName]§! is made into a Mandala Vassal of @[Root.GetTag] §Y[Root.GetName]§!. If [From.GetName] has Mandala Vassals themselves, they will keep them. All other subjects are transfered to §Y[Root.GetName]§!."
  CB_ALLOWED_make_mandala_trade_vassal: "Force Mandala Vassal"
  PEACE_make_mandala_trade_vassal: "$TAKERS$ Mandala Vassal"
 
- make_revolution_subject_desc: "@[From.GetTag] §Y[From.GetName]§! is made to a Revolutionary Confederation of @[Root.GetTag] §Y[Root.GetName]§!."
+ make_revolution_subject_desc: "@[From.GetTag] §Y[From.GetName]§! is made into a Revolutionary Confederation of @[Root.GetTag] §Y[Root.GetName]§!."
  CB_ALLOWED_make_revolution_subject: "Force Revolutionary Confederation"
  PEACE_make_revolution_subject: "$TAKERS$ Revolutionary Confederation"
  
- make_persian_satrapy_desc: "@[From.GetTag] §Y[From.GetName]§! is made to a Satrapy of @[Root.GetTag] §Y[Root.GetName]§!. If [From.GetName] is not a Republican Dictatorship, they will become one."
+ make_persian_satrapy_desc: "@[From.GetTag] §Y[From.GetName]§! is made into a Satrapy of @[Root.GetTag] §Y[Root.GetName]§!. If [From.GetName] is not a Republican Dictatorship, they will become one."
  CB_ALLOWED_make_persian_satrapy: "Force Satrapy"
  PEACE_make_persian_satrapy: "$TAKERS$ Satrapy"
  
- make_trade_outpost_desc: "@[From.GetTag] §Y[From.GetName]§! is made to a Trade Outpost of @[Root.GetTag] §Y[Root.GetName]§!."
+ make_trade_outpost_desc: "@[From.GetTag] §Y[From.GetName]§! is made into a Trade Outpost of @[Root.GetTag] §Y[Root.GetName]§!."
  CB_ALLOWED_make_trade_outpost: "Force Trade Outpost"
  PEACE_make_trade_outpost: "$TAKERS$ Trade Outpost"
  
- make_iqta_vassal_desc: "@[From.GetTag] §Y[From.GetName]§! is made to an Iqta of @[Root.GetTag] §Y[Root.GetName]§!. If [From.GetName] is not a monarchy, they will become one."
+ make_iqta_vassal_desc: "@[From.GetTag] §Y[From.GetName]§! is made into an Iqta of @[Root.GetTag] §Y[Root.GetName]§!. If [From.GetName] is not a monarchy, they will become one."
  CB_ALLOWED_make_iqta_vassal: "Force Iqta"
  PEACE_make_iqta_vassal: "$TAKERS$ Iqta"
  
- make_imperial_feud_subject_desc: "@[From.GetTag] §Y[From.GetName]§! is made to an Imperial Feud of @[Root.GetTag] §Y[Root.GetName]§!."
+ make_imperial_feud_subject_desc: "@[From.GetTag] §Y[From.GetName]§! is made into an Imperial Feud of @[Root.GetTag] §Y[Root.GetName]§!."
  CB_ALLOWED_make_imperial_feud_subject: "Force Imperial Feud"
  PEACE_make_imperial_feud_subject: "$TAKERS$ Imperial Feud"
  

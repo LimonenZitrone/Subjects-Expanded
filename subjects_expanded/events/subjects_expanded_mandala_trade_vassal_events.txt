@@ -24,6 +24,7 @@ country_event = {
 					subject_type = mandala_trade_vassal
 				}
 			}
+			add_liberty_desire = -100
 			add_truce_with = FROM
 			add_opinion = {
 				who = FROM

@@ -72,9 +72,18 @@ establish_mandala_trade_vassal = {
 							who = ROOT
 							modifier = mandala_trade_vassal_forced
 						}
+						set_country_flag = will_get_reduced_liberty_desire
 					}
 					transfer_subjects_of_type_to = { type = mandala_trade_vassal who = ROOT }
 				}
+			}
+			every_subject_country = {
+				limit = {
+					is_subject_of_type = mandala_trade_vassal
+					has_country_flag = will_get_reduced_liberty_desire
+				}
+				clr_country_flag = will_get_reduced_liberty_desire
+				add_liberty_desire = -50
 			}
 			create_subject = {
 				subject = FROM
@@ -86,6 +95,7 @@ establish_mandala_trade_vassal = {
 					modifier = mandala_trade_vassal_forced
 				}
 				add_truce_with = ROOT
+				add_liberty_desire = -100
 				country_event = { id = subjects_expanded_mandala_trade_vassal_events.1 }
 			}
 		}

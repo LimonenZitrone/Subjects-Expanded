@@ -167,3 +167,36 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = subjects_expanded_brother_kingdom_events.3
+	title = subjects_expanded_brother_kingdom_events.EVTNAME3
+	desc = subjects_expanded_brother_kingdom_events.EVTDESC3
+	picture = BATTLE_eventPicture
+	
+	hidden = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		can_be_overlord = brother_kingdom
+		war_with = FROM
+		FROM = {
+			is_subject = no
+		}
+	}
+	
+	immediate = {
+		hidden_effect = {
+			add_casus_belli = {
+				target = FROM
+				type = cb_disloyal_brother_kingdom
+			}
+		}
+	}
+	
+	option = {
+		name = subjects_expanded_brother_kingdom_events3.EVTOPT1
+		
+		ai_chance = { factor = 100 }
+	}
+}

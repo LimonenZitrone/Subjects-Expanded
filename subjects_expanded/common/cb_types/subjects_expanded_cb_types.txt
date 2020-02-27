@@ -154,10 +154,27 @@ cb_disloyal_imperial_feud_subject = {
 	months = 66
 	
 	prerequisites = {
+		can_be_overlord = imperial_feud_subject
 		FROM = {
 			NOT = { is_subject_of = ROOT }
 		}
 	}
 
 	war_goal = take_capital_force_imperial_feud_subject
+}
+
+cb_disloyal_brother_kingdom = {
+	valid_for_subject = no
+	
+	is_triggered_only = yes
+	months = 80
+	
+	prerequisites = {
+		can_be_overlord = brother_kingdom
+		FROM = {
+			NOT = { is_subject_of = ROOT }
+		}
+	}
+
+	war_goal = take_capital_restore_brother_kingdom
 }

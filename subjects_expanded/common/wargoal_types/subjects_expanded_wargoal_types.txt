@@ -100,3 +100,17 @@ take_capital_force_imperial_feud_subject = {
 	
 	war_name = IMPERIAL_FEUD_WAR_NAME
 }
+
+take_capital_restore_brother_kingdom = {
+	type = take_capital
+	
+	badboy_factor = 1
+	prestige_factor = 2
+	peace_cost_factor = 0.5
+	
+	peace_options = {
+		make_brother_kingdom
+	}
+	
+	war_name = BROTHER_KINGDOM_WAR_NAME
+}

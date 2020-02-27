@@ -176,6 +176,20 @@ declarewar = {
 			}
 			clr_country_flag = marked_for_war_by_@FROM
 		}
+		if = {
+			limit = {
+				is_subject_of_type = brother_kingdom
+				overlord = {
+					OR = {
+						alliance_with = FROM
+						guaranteed_by = FROM
+					}
+				}
+			}
+			overlord = {
+				country_event = { id = subjects_expanded_brother_kingdom_events.3 days = 70 }
+			}
+		}
 		
 		# Needed for Extended Timeline
 		if = {

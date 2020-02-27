@@ -24,6 +24,9 @@
  cb_disloyal_imperial_feud_subject: "Disloyal Imperial Feud"
  cb_disloyal_imperial_feud_subject_desc: "They are not a loyal Imperial Feud anymore. We have to change that."
  
+ cb_disloyal_brother_kingdom: "Disloyal Brother Kingdom"
+ cb_disloyal_brother_kingdom_desc: "They are not a loyal Brother Kingdom anymore. We have to change that."
+ 
  # War Goals:
  take_capital_force_imperial_tributary_state: "Take Capital"
  take_capital_force_imperial_tributary_state_desc: "The war goal is to conquer the target's capital."
@@ -46,11 +49,15 @@
  take_capital_force_imperial_feud_subject: "Take Capital"
  take_capital_force_imperial_feud_subject_desc: "The war goal is to conquer the target's capital."
  
+ take_capital_restore_brother_kingdom: "Take Capital"
+ take_capital_restore_brother_kingdom_desc: "The war goal is to conquer the target's capital."
+ 
  # War Names:
  MANDALA_WAR_NAME: "$ORDER$ $FIRST$ War of Mandala Enforcement"
  SATRAPY_WAR_NAME: "$ORDER$ $FIRST$ War of Persian Hegemony"
  TRADE_OUTPOST_WAR_NAME: "$ORDER$ $FIRST$ Creation of a Trade Outpost in $SECOND_NAME$"
  IMPERIAL_FEUD_WAR_NAME: "$ORDER$ $FIRST$-$SECOND$ War of Imperial Strength"
+ BROTHER_KINGDOM_WAR_NAME: "$ORDER$ $FIRST$-$SECOND$ War of Dynastical Dominance"
  
  # Peace Treaties:
  make_protectorate_desc: "@[From.GetTag] §Y[From.GetName]§! is made into a Protectorate of @[Root.GetTag] §Y[Root.GetName]§!."
@@ -116,4 +123,8 @@
  make_imperial_feud_subject_desc: "@[From.GetTag] §Y[From.GetName]§! is made into an Imperial Feud of @[Root.GetTag] §Y[Root.GetName]§!."
  CB_ALLOWED_make_imperial_feud_subject: "Force Imperial Feud"
  PEACE_make_imperial_feud_subject: "$TAKERS$ Imperial Feud"
+ 
+ make_brother_kingdom_desc: "@[From.GetTag] §Y[From.GetName]§! is made into a Brother Kingdom of @[Root.GetTag] §Y[Root.GetName]§!."
+ CB_ALLOWED_make_brother_kingdom: "Restore Brother Kingdom"
+ PEACE_make_brother_kingdom: "$TAKERS$ Brother Kingdom"
  

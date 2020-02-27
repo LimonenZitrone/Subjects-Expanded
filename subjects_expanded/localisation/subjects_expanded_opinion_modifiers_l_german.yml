@@ -78,6 +78,7 @@
  declined_ask_to_become_trade_outpost: "Bitte nach Handelsaußenposten abgelehnt"
  
  is_brother_kingdom: "Bruderkönigreich"
+ brother_kingdom_forced: "Bruderkönigreich erzwungen"
  declined_establish_brother_kingdom_opinion: "Forderung nach Bruderkönigreich abgelehnt"
  
  is_iqta_vassal: "Iqta"

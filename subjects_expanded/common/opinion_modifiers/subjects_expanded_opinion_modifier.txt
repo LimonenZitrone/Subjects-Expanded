@@ -293,6 +293,12 @@ is_brother_kingdom = {
 	opinion = 25
 }
 
+brother_kingdom_forced = {
+	opinion = -30
+	yearly_decay = 1
+	min = -30
+}
+
 declined_establish_brother_kingdom_opinion = {
 	opinion = -25
 	yearly_decay = 1

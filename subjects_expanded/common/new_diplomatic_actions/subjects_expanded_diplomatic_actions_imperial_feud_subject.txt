@@ -1,18 +1,18 @@
 establish_imperial_feud_subject = {
 	category = influence
-	
+
 	alert_index = 6
 	alert_tooltip = establish_imperial_feud_subject_alert_tooltip
-	
+
 	require_acceptance = yes
-	
+
 	is_visible = {
 		can_create_subject_type = {
 			subject = FROM
 			subject_type = imperial_feud_subject
 		}
 	}
-	
+
 	is_allowed = {
 		can_create_subject_type = {
 			subject = FROM
@@ -24,7 +24,7 @@ establish_imperial_feud_subject = {
 		}
 		imperial_influence = 5
 	}
-	
+
 	on_accept = {
 		if = {
 			limit = {
@@ -45,7 +45,7 @@ establish_imperial_feud_subject = {
 			}
 		}
 	}
-	
+
 	on_decline = {
 		if = {
 			limit = {
@@ -69,7 +69,7 @@ establish_imperial_feud_subject = {
 			}
 		}
 	}
-	
+
 	ai_acceptance = {
 		add_entry = {
 			name = FROM_ATTITUDE_TOWARDS_ROOT
@@ -134,7 +134,7 @@ establish_imperial_feud_subject = {
 				which = ai_value
 				value = modifier:diplomatic_reputation
 			}
-			multiply_variable = { which = ai_value value = 5 }
+			multiply_variable = { which = ai_value value = 2 }
 		}
 		add_entry = {
 			name = FROM_IS_EMPIRE_RANK
@@ -197,7 +197,7 @@ establish_imperial_feud_subject = {
 					multiply_variable = { which = our_mil_tech value = 3 }
 					change_variable = { which = military_power which = our_army_size }
 					change_variable = { which = military_power which = our_mil_tech }
-					
+
 					NOT = { check_variable = { which = military_power value = -39 } }
 				}
 			}
@@ -241,7 +241,7 @@ establish_imperial_feud_subject = {
 					multiply_variable = { which = our_mil_tech value = 3 }
 					change_variable = { which = military_power which = our_army_size }
 					change_variable = { which = military_power which = our_mil_tech }
-					
+
 					check_variable = { which = military_power value = -39 }
 					NOT = { check_variable = { which = military_power value = 30 } }
 				}
@@ -310,7 +310,7 @@ establish_imperial_feud_subject = {
 					change_variable = { which = our_mil_tech which = their_mil_tech }
 					multiply_variable = { which = our_mil_tech value = 3 }
 					change_variable = { which = military_power which = our_army_size }
-					change_variable = { which = military_power which = our_mil_tech }	
+					change_variable = { which = military_power which = our_mil_tech }
 					check_variable = { which = military_power value = 30 }
 				}
 			}
@@ -345,8 +345,16 @@ establish_imperial_feud_subject = {
 		add_entry = {
 			name = ROOT_OWNS_FROM_CORE_PROVINCES
 			limit = {
-				any_owned_province = {
-					is_core = FROM
+				OR = {
+					any_owned_province = {
+						is_core = FROM
+					}
+					any_subject_country = {
+						is_subject_other_than_tributary_trigger = yes
+						any_owned_province = {
+							is_core = FROM
+						}
+					}
 				}
 			}
 			export_to_variable = {
@@ -582,8 +590,27 @@ establish_imperial_feud_subject = {
 			}
 			multiply_variable = { which = ai_value value = -1 }
 		}
+		add_entry = {
+			name = FROM_LEFT_DURING_SHADOW_KINGDOM_EVENT
+			limit = {
+				FROM = {
+					has_country_flag = shadow_kingdom
+					OR = {
+						culture_group = latin
+						capital_scope = {
+							region = italy_region
+						}
+					}
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 1000
+			}
+			multiply_variable = { which = ai_value value = -1 }
+		}
 	}
-	
+
 	ai_will_do = {
 		imperial_influence = 10
 		OR = {
@@ -604,12 +631,12 @@ establish_imperial_feud_subject = {
 
 ask_for_imperial_feud_subject = {
 	category = influence
-	
+
 	alert_index = 6
 	alert_tooltip = ask_for_imperial_feud_subject_alert_tooltip
-	
+
 	require_acceptance = yes
-	
+
 	is_visible = {
 		FROM = {
 			can_create_subject_type = {
@@ -618,7 +645,7 @@ ask_for_imperial_feud_subject = {
 			}
 		}
 	}
-	
+
 	is_allowed = {
 		FROM = {
 			can_create_subject_type = {
@@ -634,7 +661,7 @@ ask_for_imperial_feud_subject = {
 			imperial_influence = 5
 		}
 	}
-	
+
 	on_accept = {
 		if = {
 			limit = {
@@ -661,7 +688,7 @@ ask_for_imperial_feud_subject = {
 			}
 		}
 	}
-	
+
 	on_decline = {
 		if = {
 			limit = {
@@ -687,7 +714,7 @@ ask_for_imperial_feud_subject = {
 			}
 		}
 	}
-	
+
 	ai_acceptance = {
 		add_entry = {
 			name = FROM_ATTITUDE_TOWARDS_ROOT
@@ -809,7 +836,7 @@ ask_for_imperial_feud_subject = {
 					multiply_variable = { which = our_mil_tech value = 3 }
 					change_variable = { which = military_power which = our_army_size }
 					change_variable = { which = military_power which = our_mil_tech }
-					
+
 					NOT = { check_variable = { which = military_power value = -39 } }
 				}
 			}
@@ -853,7 +880,7 @@ ask_for_imperial_feud_subject = {
 					multiply_variable = { which = our_mil_tech value = 3 }
 					change_variable = { which = military_power which = our_army_size }
 					change_variable = { which = military_power which = our_mil_tech }
-					
+
 					check_variable = { which = military_power value = -39 }
 					NOT = { check_variable = { which = military_power value = 30 } }
 				}
@@ -922,7 +949,7 @@ ask_for_imperial_feud_subject = {
 					change_variable = { which = our_mil_tech which = their_mil_tech }
 					multiply_variable = { which = our_mil_tech value = 3 }
 					change_variable = { which = military_power which = our_army_size }
-					change_variable = { which = military_power which = our_mil_tech }	
+					change_variable = { which = military_power which = our_mil_tech }
 					check_variable = { which = military_power value = 30 }
 				}
 			}
@@ -1099,7 +1126,7 @@ ask_for_imperial_feud_subject = {
 			multiply_variable = { which = ai_value value = 5 }
 		}
 	}
-	
+
 	ai_will_do = {
 		is_papal_controller = no
 		NOT = { personality = ai_militarist }
@@ -1132,17 +1159,43 @@ ask_for_imperial_feud_subject = {
 				}
 			}
 		}
+		FROM = {
+			NOT = {
+				any_owned_province = {
+					is_core = ROOT
+				}
+			}
+			NOT = {
+				any_subject_country = {
+					is_subject_other_than_tributary_trigger = yes
+					any_owned_province = {
+						is_core = ROOT
+					}
+				}
+			}
+		}
+		OR = {
+			NOT = { has_country_flag = shadow_kingdom }
+			NOT = {
+				OR = {
+					culture_group = latin
+					capital_scope = {
+						region = italy_region
+					}
+				}
+			}
+		}
 	}
 }
 
 make_imperial_feud_subject_hre_member = {
 	category = influence
-	
+
 	alert_index = 21
 	alert_tooltip = make_imperial_feud_subject_hre_member_alert_tooltip
-	
+
 	require_acceptance = yes
-	
+
 	is_visible = {
 		is_emperor = yes
 		NOT = { hre_reform_level = 7 }
@@ -1152,7 +1205,7 @@ make_imperial_feud_subject_hre_member = {
 			is_part_of_hre = no
 		}
 	}
-	
+
 	is_allowed = {
 		hidden_trigger = {
 			is_emperor = yes
@@ -1192,7 +1245,7 @@ make_imperial_feud_subject_hre_member = {
 			}
 		}
 	}
-	
+
 	on_accept = {
 		if = {
 			limit = {
@@ -1246,7 +1299,7 @@ make_imperial_feud_subject_hre_member = {
 			}
 		}
 	}
-	
+
 	on_decline = {
 		if = {
 			limit = {
@@ -1290,7 +1343,7 @@ make_imperial_feud_subject_hre_member = {
 			}
 		}
 	}
-	
+
 	ai_acceptance = {
 		add_entry = {
 			name = MODIFIER_DIPLO_SKILL
@@ -1373,7 +1426,7 @@ make_imperial_feud_subject_hre_member = {
 					multiply_variable = { which = our_mil_tech value = 3 }
 					change_variable = { which = military_power which = our_army_size }
 					change_variable = { which = military_power which = our_mil_tech }
-					
+
 					NOT = { check_variable = { which = military_power value = -39 } }
 				}
 			}
@@ -1417,7 +1470,7 @@ make_imperial_feud_subject_hre_member = {
 					multiply_variable = { which = our_mil_tech value = 3 }
 					change_variable = { which = military_power which = our_army_size }
 					change_variable = { which = military_power which = our_mil_tech }
-					
+
 					check_variable = { which = military_power value = -39 }
 					NOT = { check_variable = { which = military_power value = 30 } }
 				}
@@ -1486,7 +1539,7 @@ make_imperial_feud_subject_hre_member = {
 					change_variable = { which = our_mil_tech which = their_mil_tech }
 					multiply_variable = { which = our_mil_tech value = 3 }
 					change_variable = { which = military_power which = our_army_size }
-					change_variable = { which = military_power which = our_mil_tech }	
+					change_variable = { which = military_power which = our_mil_tech }
 					check_variable = { which = military_power value = 30 }
 				}
 			}
@@ -1643,8 +1696,27 @@ make_imperial_feud_subject_hre_member = {
 			change_variable = { which = ai_value value = -1 }
 			multiply_variable = { which = ai_value value = 5 }
 		}
+		add_entry = {
+			name = FROM_LEFT_DURING_SHADOW_KINGDOM_EVENT
+			limit = {
+				FROM = {
+					has_country_flag = shadow_kingdom
+					OR = {
+						culture_group = latin
+						capital_scope = {
+							region = italy_region
+						}
+					}
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 1000
+			}
+			multiply_variable = { which = ai_value value = -1 }
+		}
 	}
-	
+
 	ai_will_do = {
 		OR = {
 			imperial_influence = 10
@@ -1657,12 +1729,12 @@ make_imperial_feud_subject_hre_member = {
 
 ask_for_imperial_feud_subject_hre_member = {
 	category = influence
-	
+
 	alert_index = 21
 	alert_tooltip = ask_for_imperial_feud_subject_hre_member_alert_tooltip
-	
+
 	require_acceptance = yes
-	
+
 	is_visible = {
 		is_subject_of = FROM
 		is_subject_of_type = imperial_feud_subject
@@ -1672,7 +1744,7 @@ ask_for_imperial_feud_subject_hre_member = {
 			is_emperor = yes
 		}
 	}
-	
+
 	is_allowed = {
 		hidden_trigger = {
 			is_subject_of = FROM
@@ -1707,7 +1779,7 @@ ask_for_imperial_feud_subject_hre_member = {
 			}
 		}
 	}
-	
+
 	on_accept = {
 		if = {
 			limit = {
@@ -1758,7 +1830,7 @@ ask_for_imperial_feud_subject_hre_member = {
 			}
 		}
 	}
-	
+
 	on_decline = {
 		if = {
 			limit = {
@@ -1797,7 +1869,7 @@ ask_for_imperial_feud_subject_hre_member = {
 			}
 		}
 	}
-	
+
 	ai_acceptance = {
 		add_entry = {
 			name = MODIFIER_DIPLO_SKILL
@@ -1841,7 +1913,7 @@ ask_for_imperial_feud_subject_hre_member = {
 					multiply_variable = { which = our_mil_tech value = 3 }
 					change_variable = { which = military_power which = our_army_size }
 					change_variable = { which = military_power which = our_mil_tech }
-					
+
 					NOT = { check_variable = { which = military_power value = -39 } }
 				}
 			}
@@ -1885,7 +1957,7 @@ ask_for_imperial_feud_subject_hre_member = {
 					multiply_variable = { which = our_mil_tech value = 3 }
 					change_variable = { which = military_power which = our_army_size }
 					change_variable = { which = military_power which = our_mil_tech }
-					
+
 					check_variable = { which = military_power value = -39 }
 					NOT = { check_variable = { which = military_power value = 30 } }
 				}
@@ -1954,7 +2026,7 @@ ask_for_imperial_feud_subject_hre_member = {
 					change_variable = { which = our_mil_tech which = their_mil_tech }
 					multiply_variable = { which = our_mil_tech value = 3 }
 					change_variable = { which = military_power which = our_army_size }
-					change_variable = { which = military_power which = our_mil_tech }	
+					change_variable = { which = military_power which = our_mil_tech }
 					check_variable = { which = military_power value = 30 }
 				}
 			}
@@ -2114,7 +2186,7 @@ ask_for_imperial_feud_subject_hre_member = {
 			}
 		}
 	}
-	
+
 	ai_will_do = {
 		NOT = { tag = PAP }
 		NOT = { liberty_desire = 50 }
@@ -2127,18 +2199,37 @@ ask_for_imperial_feud_subject_hre_member = {
 					is_core = ROOT
 				}
 			}
+			NOT = {
+				any_subject_country = {
+					is_subject_other_than_tributary_trigger = yes
+					any_owned_province = {
+						is_core = ROOT
+					}
+				}
+			}
+		}
+		OR = {
+			NOT = { has_country_flag = shadow_kingdom }
+			NOT = {
+				OR = {
+					culture_group = latin
+					capital_scope = {
+						region = italy_region
+					}
+				}
+			}
 		}
 	}
 }
 
 change_imperial_feud_subject_to_vassal = {
 	category = influence
-	
+
 	alert_index = 6
 	alert_tooltip = change_imperial_feud_subject_to_vassal_alert_tooltip
-	
+
 	require_acceptance = yes
-	
+
 	is_visible = {
 		is_emperor = yes
 		NOT = { hre_reform_level = 7 }
@@ -2147,7 +2238,7 @@ change_imperial_feud_subject_to_vassal = {
 			is_subject_of_type = imperial_feud_subject
 		}
 	}
-	
+
 	is_allowed = {
 		hidden_trigger = {
 			is_emperor = yes
@@ -2175,7 +2266,7 @@ change_imperial_feud_subject_to_vassal = {
 			}
 		}
 	}
-	
+
 	on_accept = {
 		if = {
 			limit = {
@@ -2206,7 +2297,7 @@ change_imperial_feud_subject_to_vassal = {
 			vassalize = FROM
 		}
 	}
-	
+
 	on_decline = {
 		if = {
 			limit = {
@@ -2240,7 +2331,7 @@ change_imperial_feud_subject_to_vassal = {
 			}
 		}
 	}
-	
+
 	ai_acceptance = {
 		add_entry = {
 			name = base_values
@@ -2591,7 +2682,7 @@ change_imperial_feud_subject_to_vassal = {
 					divide_variable = { which = our_total_development which = their_total_development }
 					multiply_variable = { which = eco_power which = our_total_development }
 					change_variable = { which = eco_power value = -90 }
-					
+
 					check_variable = { which = eco_power value = -89 }
 					NOT = { check_variable = { which = eco_power value = 30 } }
 				}
@@ -2635,7 +2726,7 @@ change_imperial_feud_subject_to_vassal = {
 					divide_variable = { which = our_total_development which = their_total_development }
 					multiply_variable = { which = eco_power which = our_total_development }
 					change_variable = { which = eco_power value = -90 }
-					
+
 					NOT = { check_variable = { which = eco_power value = -89 } }
 				}
 			}
@@ -2666,7 +2757,7 @@ change_imperial_feud_subject_to_vassal = {
 					divide_variable = { which = our_total_development which = their_total_development }
 					multiply_variable = { which = eco_power which = our_total_development }
 					change_variable = { which = eco_power value = -90 }
-					
+
 					check_variable = { which = eco_power value = 30 }
 				}
 			}
@@ -2723,7 +2814,7 @@ change_imperial_feud_subject_to_vassal = {
 			multiply_variable = { which = ai_value value = -1 }
 		}
 	}
-	
+
 	ai_will_do = {
 		num_of_free_diplomatic_relations = 1
 		FROM = {
@@ -2739,12 +2830,12 @@ imperial_feud_subject_become_independent = {
 	category = influence
 
 	require_acceptance = no
-	
+
 	is_visible = {
 		is_subject_of = FROM
 		is_subject_of_type = imperial_feud_subject
 	}
-	
+
 	is_allowed = {
 		hidden_trigger = {
 			is_subject_of = FROM
@@ -2759,10 +2850,27 @@ imperial_feud_subject_become_independent = {
 					value = 0
 				}
 			}
+			AND = {
+				has_dlc = "Art of War"
+				hre_religion_locked = yes
+				NOT = { religion = FROM }
+			}
+			AND = {
+				custom_trigger_tooltip = {
+					tooltip = ROOT_HAS_LEFT_HRE_DURING_SHADOW_KINGDOM_EVENT
+					has_country_flag = shadow_kingdom
+				}
+				OR = {
+					culture_group = latin
+					capital_scope = {
+						region = italy_region
+					}
+				}
+			}
 		}
 		is_at_war = no
 	}
-	
+
 	on_accept = {
 		if = {
 			limit = {
@@ -2793,7 +2901,7 @@ imperial_feud_subject_become_independent = {
 			}
 		}
 	}
-	
+
 	ai_will_do = {
 		OR = {
 			liberty_desire = 65
@@ -2808,6 +2916,15 @@ imperial_feud_subject_become_independent = {
 				hre_religion_locked = yes
 				NOT = { religion = FROM }
 			}
+			AND = {
+				has_country_flag = shadow_kingdom
+				OR = {
+					culture_group = latin
+					capital_scope = {
+						region = italy_region
+					}
+				}
+			}
 		}
 	}
 }
@@ -2816,7 +2933,7 @@ bestow_impirial_grace_to_imperial_feud_subject = {
 	category = emperor
 
 	require_acceptance = no
-	
+
 	is_visible = {
 		is_emperor = yes
 		NOT = { hre_reform_level = 7 }
@@ -2825,7 +2942,7 @@ bestow_impirial_grace_to_imperial_feud_subject = {
 			is_subject_of_type = imperial_feud_subject
 		}
 	}
-	
+
 	is_allowed = {
 		hidden_trigger = {
 			is_emperor = yes
@@ -2850,7 +2967,7 @@ bestow_impirial_grace_to_imperial_feud_subject = {
 			}
 		}
 	}
-	
+
 	on_accept = {
 		if = {
 			limit = {
@@ -2888,7 +3005,7 @@ bestow_impirial_grace_to_imperial_feud_subject = {
 			}
 		}
 	}
-	
+
 	ai_will_do = {
 		imperial_influence = 10
 		FROM = {
@@ -2913,7 +3030,7 @@ cancel_imperial_feud_subject = {
 	category = influence
 
 	require_acceptance = no
-	
+
 	is_visible = {
 		is_emperor = yes
 		FROM = {
@@ -2921,7 +3038,7 @@ cancel_imperial_feud_subject = {
 			is_subject_of_type = imperial_feud_subject
 		}
 	}
-	
+
 	is_allowed = {
 		hidden_trigger = {
 			is_emperor = yes
@@ -2934,7 +3051,7 @@ cancel_imperial_feud_subject = {
 		NOT = { truce_with = FROM }
 		prestige = 0
 	}
-	
+
 	on_accept = {
 		if = {
 			limit = {
@@ -2973,7 +3090,7 @@ cancel_imperial_feud_subject = {
 			}
 		}
 	}
-	
+
 	ai_will_do = {
 		FROM = {
 			liberty_desire = 100

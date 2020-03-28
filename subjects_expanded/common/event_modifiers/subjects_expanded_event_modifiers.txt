@@ -924,7 +924,7 @@ iqta_vassal_same_religion_overlord_modifier = {
 
 # Subject Type: Papal Sanctuary
 papal_sanctuary_subject_modifier = {
-	global_tax_income = 0.2
+	global_tax_modifier = 0.2
 	papal_influence = 2
 	religious_unity = 0.1
 	legitimacy = 0.1
@@ -946,7 +946,7 @@ papal_sanctuary_subject_converted_to_theocracy_modifier = {
 papal_sanctuary_subject_overlord_modifier = {
 	devotion = 0.25
 	diplomatic_reputation = 0.5
-	global_tax_income = 0.05
+	global_tax_modifier = 0.05
 }
 
 papal_sanctuary_subject_no_diplo_cost_overlord_modifier = {

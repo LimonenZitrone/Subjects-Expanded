@@ -33,12 +33,12 @@ pagan_chiefdom = { }
 # Subjects
 protectorate = {
 	copy_from = default
-	
+
 	# Graphics:
 	sprite = GFX_icon_protectorate
 	diplomacy_overlord_sprite = GFX_diplomacy_leadprotectorate
 	diplomacy_subject_sprite = GFX_diplomacy_amprotectorate
-	
+
 	# Triggers:
 	is_potential_overlord = {
 		is_subject = no
@@ -49,7 +49,7 @@ protectorate = {
 			technology_group = muslim
 		}
 	}
-	
+
 	# Properties:
 	transfer_trade_power = yes
 	joins_overlords_wars = no
@@ -66,7 +66,7 @@ protectorate = {
 	can_transfer_in_peace = no
 	can_set_mil_focus = no
 	can_send_missionary_to_subject = no
-	
+
 	cities_required_for_bonuses = 25
 	trust_on_start = 5
 
@@ -198,7 +198,7 @@ protectorate = {
 		}
 		modifier = protectorate_advanced_mil_liberty_desire_modifier
 	}
-	
+
 	modifier_overlord = clear
 	modifier_overlord = {
 		modifier = large_colonial_nation
@@ -214,7 +214,7 @@ protectorate = {
 puppet_state = {
 	copy_from = default
 	count = vassal
-	
+
 	# Graphics:
 	sprite = GFX_icon_puppet
 	diplomacy_overlord_sprite = GFX_diplomacy_leadpuppet
@@ -229,13 +229,13 @@ puppet_state = {
 		legitimacy_equivalent = 50
 		total_development = 300
 	}
-	
+
 	# Properties:
 	can_be_annexed = yes
 	forcelimit_to_overlord = 0.2
 	has_power_projection = no
 	can_transfer_in_peace = no
-	
+
 	max_government_rank = 1
 	cities_required_for_bonuses = 0
 	trust_on_start = 35
@@ -285,7 +285,7 @@ puppet_state = {
 			}
 		}
 	}
-	
+
 	modifier_overlord = clear
 	modifier_overlord = {
 		modifier = puppet_state_overlord_modifier
@@ -298,12 +298,12 @@ puppet_state = {
 dominion = {
 	copy_from = colony
 	count = colony
-	
+
 	# Graphics:
 	sprite = GFX_icon_dominion
 	diplomacy_overlord_sprite = GFX_diplomacy_leaddominion
 	diplomacy_subject_sprite = GFX_diplomacy_amdominion
-	
+
 	# Triggers:
 	is_potential_overlord = {
 		is_subject = no
@@ -312,11 +312,11 @@ dominion = {
 			current_age = age_of_absolutism
 		}
 	}
-	
+
 	# Properties:
 	uses_tariffs = no
 	can_release_in_peace = yes
-	
+
 	base_liberty_desire = -10.0
 	liberty_desire_development_ratio = 0.075
 	pays_overlord = 2.0
@@ -326,7 +326,7 @@ dominion = {
 
 	relative_power_class = 0
 	diplomacy_view_class = 2
-	
+
 	can_fight = {
 		other_overlord = colony
 		other_overlord = dominion
@@ -344,19 +344,19 @@ dominion = {
 	can_ally = {
 		neighboring_primitives = yes
 	}
-	
+
 	# Subject Interactions:
 	divert_trade = yes
 	start_colonial_war = no
 	increase_tariffs = no
 	decrease_tariffs = no
-	
+
 	# Modifiers:
 	modifier_subject = clear
 	modifier_subject = {
 		modifier = subject_nation
 	}
-	
+
 	modifier_overlord = clear
 	modifier_overlord = {
 		modifier = large_colonial_nation
@@ -372,12 +372,12 @@ dominion = {
 dominion_tc = {
 	copy_from = colony
 	count = colony
-	
+
 	# Graphics:
 	sprite = GFX_icon_dominion
 	diplomacy_overlord_sprite = GFX_diplomacy_leaddominion
 	diplomacy_subject_sprite = GFX_diplomacy_amdominion
-	
+
 	# Triggers:
 	is_potential_overlord = {
 		is_subject = no
@@ -400,12 +400,12 @@ dominion_tc = {
 			has_country_flag = is_releasing_dominion_in_trade_company_region
 		}
 	}
-	
+
 	# Properties:
 	uses_tariffs = no
 	can_release_in_peace = yes
 	eats_overlords_colonies = no
-	
+
 	base_liberty_desire = -10.0
 	liberty_desire_development_ratio = 0.075
 	pays_overlord = 2.0
@@ -415,7 +415,7 @@ dominion_tc = {
 
 	relative_power_class = 0
 	diplomacy_view_class = 2
-	
+
 	can_fight = {
 		other_overlord = colony
 		other_overlord = dominion
@@ -433,14 +433,14 @@ dominion_tc = {
 	can_ally = {
 		neighboring_primitives = yes
 	}
-	
+
 	# Subject Interactions:
 	customize_subject = no
 	divert_trade = yes
 	start_colonial_war = no
 	increase_tariffs = no
 	decrease_tariffs = no
-	
+
 	# Modifiers:
 	modifier_subject = clear
 	modifier_subject = {
@@ -454,7 +454,7 @@ dominion_tc = {
 		}
 		modifier = dominion_trade_company_modifier
 	}
-	
+
 	modifier_overlord = clear
 	modifier_overlord = {
 		modifier = large_colonial_nation
@@ -920,12 +920,12 @@ dominion_tc = {
 autonomous_dominion = {
 	copy_from = dominion
 	count = colony
-	
+
 	# Graphics:
 	sprite = GFX_icon_autonomous_dominion
 	diplomacy_overlord_sprite = GFX_diplomacy_leadautonomous_dominion
 	diplomacy_subject_sprite = GFX_diplomacy_amautonomous_dominion
-	
+
 	# Triggers:
 	is_potential_overlord = {
 		OR = {
@@ -939,7 +939,7 @@ autonomous_dominion = {
 	overlord_protects_external = yes
 	uses_military_focus = no
 	can_set_mil_focus = no
-	
+
 	base_liberty_desire = -20.0
 	liberty_desire_development_ratio = 0.05
 	pays_overlord = 0.0
@@ -949,7 +949,7 @@ autonomous_dominion = {
 
 	relative_power_class = 0
 	diplomacy_view_class = 2
-	
+
 	can_fight = {
 		other_overlord = colony
 		other_overlord = dominion
@@ -973,18 +973,18 @@ autonomous_dominion = {
 	can_ally = {
 		neighboring_primitives = yes
 	}
-	
+
 	# Subject Interactions:
 	divert_trade = yes
 	replace_governor = no
 	press_sailors = no
-	
+
 	# Modifiers:
 	modifier_subject = clear
 	modifier_subject = {
 		modifier = subject_nation
 	}
-	
+
 	modifier_overlord = clear
 	modifier_overlord = {
 		modifier = large_colonial_nation
@@ -998,7 +998,7 @@ autonomous_dominion = {
 			num_of_cities = 20
 		}
 	}
-	
+
 	overlord_opinion_modifier = is_autonomous_dominion
 	subject_opinion_modifier = is_autonomous_dominion
 }
@@ -1006,12 +1006,12 @@ autonomous_dominion = {
 autonomous_dominion_tc = {
 	copy_from = dominion_tc
 	count = colony
-	
+
 	# Graphics:
 	sprite = GFX_icon_autonomous_dominion
 	diplomacy_overlord_sprite = GFX_diplomacy_leadautonomous_dominion
 	diplomacy_subject_sprite = GFX_diplomacy_amautonomous_dominion
-	
+
 	# Triggers:
 	is_potential_overlord = {
 		OR = {
@@ -1025,7 +1025,7 @@ autonomous_dominion_tc = {
 	overlord_protects_external = yes
 	uses_military_focus = no
 	can_set_mil_focus = no
-	
+
 	base_liberty_desire = -20.0
 	liberty_desire_development_ratio = 0.05
 	pays_overlord = 0.0
@@ -1035,7 +1035,7 @@ autonomous_dominion_tc = {
 
 	relative_power_class = 0
 	diplomacy_view_class = 2
-	
+
 	can_fight = {
 		other_overlord = colony
 		other_overlord = dominion
@@ -1059,12 +1059,12 @@ autonomous_dominion_tc = {
 	can_ally = {
 		neighboring_primitives = yes
 	}
-	
+
 	# Subject Interactions:
 	divert_trade = yes
 	replace_governor = no
 	press_sailors = no
-	
+
 	# Modifiers:
 	modifier_subject = clear
 	modifier_subject = {
@@ -1078,7 +1078,7 @@ autonomous_dominion_tc = {
 		}
 		modifier = autonomous_dominion_trade_company_modifier
 	}
-	
+
 	modifier_overlord = clear
 	modifier_overlord = {
 		modifier = large_colonial_nation
@@ -1550,7 +1550,7 @@ autonomous_dominion_tc = {
 roman_client_kingdom = {
 	copy_from = default
 	count = vassal
-	
+
 	# Graphics:
 	sprite = GFX_icon_roman_client_kingdom
 	diplomacy_overlord_sprite = GFX_diplomacy_leadroman_client_kingdom
@@ -1565,16 +1565,16 @@ roman_client_kingdom = {
 		}
 		NOT = { has_reform = salic_reform }
 	}
-	
+
 	# Properties:
 	can_be_annexed = yes
 	takes_diplo_slot = yes
 	overlord_enforce_peace_attacking = yes
 	gets_help_with_rebels = yes
 	allows_taking_land_without_independence = no
-	
+
 	max_government_rank = 2
-	
+
 	base_liberty_desire = -10.0
 	liberty_desire_development_ratio = 0.25
 	liberty_desire_same_dynasty = -5.0
@@ -1599,7 +1599,7 @@ roman_client_kingdom = {
 	can_marry = {
 		same_overlord = roman_client_kingdom
 	}
-	
+
 	restoration_cb = cb_disloyal_vassal
 
 	# Subject Interactions:
@@ -1617,7 +1617,7 @@ roman_client_kingdom = {
 	modifier_subject = {
 		modifier = roman_client_kingdom_modifier
 	}
-	
+
 	modifier_overlord = clear
 	modifier_overlord = {
 		modifier = roman_client_kingdom_overlord_modifier
@@ -1649,7 +1649,7 @@ roman_client_kingdom = {
 voivodeship = {
 	copy_from = default
 	count = vassal
-	
+
 	# Graphics:
 	sprite = GFX_icon_voivodeship
 	diplomacy_overlord_sprite = GFX_diplomacy_leadvoivodeship
@@ -1664,13 +1664,13 @@ voivodeship = {
 		}
 		is_subject = no
 	}
-	
+
 	# Properties:
 	can_be_annexed = yes
 	forcelimit_to_overlord = 0.2
 	has_power_projection = no
 	can_transfer_in_peace = no
-	
+
 	max_government_rank = 1
 	cities_required_for_bonuses = 0
 	trust_on_start = 35
@@ -1685,7 +1685,7 @@ voivodeship = {
 	diplomacy_view_class = 1
 
 	restoration_cb = cb_disloyal_vassal
-	
+
 	# Subject Interactions:
 	# (continuous)
 	subsidize_armies = yes
@@ -1709,7 +1709,7 @@ voivodeship = {
 			}
 		}
 	}
-	
+
 	modifier_overlord = clear
 
 	overlord_opinion_modifier = is_voivodeship
@@ -1719,7 +1719,7 @@ voivodeship = {
 fief_subject = {
 	copy_from = default
 	count = vassal
-	
+
 	# Graphics:
 	sprite = GFX_icon_fief_subject
 	diplomacy_overlord_sprite = GFX_diplomacy_leadfief_subject
@@ -1757,7 +1757,7 @@ fief_subject = {
 			has_reform = imperial_march_reform
 		}
 	}
-	
+
 	# Properties:
 	transfer_trade_if_merchant_republic = yes
 	joins_overlords_wars = no
@@ -1783,16 +1783,16 @@ fief_subject = {
 
 	relative_power_class = 2
 	diplomacy_view_class = 1
-	
+
 	restoration_cb = cb_disloyal_vassal
-	
+
 	can_ally = {
 		same_overlord = brother_kingdom
 	}
 	can_marry = {
 		same_overlord = brother_kingdom
 	}
-	
+
 	# Subject Interactions:
 	divert_trade = no
 	place_relative_on_throne = yes
@@ -1814,7 +1814,7 @@ fief_subject = {
 	modifier_subject = {
 		modifier = fief_subject_modifier
 	}
-	
+
 	modifier_overlord = clear
 	modifier_overlord = {
 		modifier = vassal_subject
@@ -1830,7 +1830,7 @@ fief_subject = {
 crusader_state_vassal = {
 	copy_from = default
 	count = march
-	
+
 	# Graphics:
 	sprite = GFX_icon_crusader_state_vassal
 	diplomacy_overlord_sprite = GFX_diplomacy_leadcrusader_state_vassal
@@ -1861,7 +1861,7 @@ crusader_state_vassal = {
 			}
 		}
 	}
-	
+
 	# Properties:
 	transfer_trade_if_merchant_republic = yes
 	overlord_can_attack = no
@@ -1870,7 +1870,7 @@ crusader_state_vassal = {
 	can_transfer_in_peace = no
 	can_set_mil_focus = yes
 	can_send_missionary_to_subject = yes
-	
+
 	max_government_rank = 2
 	cities_required_for_bonuses = 0
 	trust_on_start = 50
@@ -1924,7 +1924,7 @@ crusader_state_vassal = {
 		}
 		modifier = crusader_state_vassal_overlord_is_papal_controller_modifier
 	}
-	
+
 	modifier_overlord = clear
 	modifier_overlord = {
 		modifier = crusader_state_vassal_overlord_modifier
@@ -1937,18 +1937,18 @@ crusader_state_vassal = {
 salic_personal_union = {
 	copy_from = personal_union
 	count = personal_union
-	
+
 	# Graphics:
 	sprite = GFX_court_union
 	diplomacy_overlord_sprite = GFX_diplomacy_leadunions
 	diplomacy_subject_sprite = GFX_diplomacy_inunion
-	
+
 	# Triggers:
 	is_potential_overlord = {
 		is_subject = no
 		has_reform = salic_reform
 	}
-	
+
 	# Properties:
 	can_be_integrated = no
 	can_be_annexed = yes
@@ -1957,7 +1957,7 @@ salic_personal_union = {
 nahuatl_vassal = {
 	copy_from = vassal
 	count = vassal
-	
+
 	# Graphics:
 	sprite = GFX_icon_nahuatl_vassal
 	diplomacy_overlord_sprite = GFX_diplomacy_leadnahuatl_vassal
@@ -1969,17 +1969,17 @@ nahuatl_vassal = {
 		religion = nahuatl
 		is_religion_reformed = no
 	}
-	
+
 	# Properties:
 	takes_diplo_slot = no
 
 	max_government_rank = 1
-	
+
 	base_liberty_desire = -10.0
-	
+
 	relative_power_class = 2
 	diplomacy_view_class = 1
-	
+
 	restoration_cb = cb_disloyal_vassal
 
 	# Subject Interactions:
@@ -2009,7 +2009,7 @@ nahuatl_vassal = {
 peasant_vassal = {
 	copy_from = default
 	count = vassal
-	
+
 	# Graphics:
 	sprite = GFX_icon_peasant_vassal
 	diplomacy_overlord_sprite = GFX_diplomacy_leadpeasant_vassal
@@ -2021,7 +2021,7 @@ peasant_vassal = {
 		primitives = no
 		has_reform = peasants_republic
 	}
-	
+
 	# Properties:
 	joins_overlords_wars = no
 	can_send_tribute = yes
@@ -2034,9 +2034,9 @@ peasant_vassal = {
 	can_set_mil_focus = no
 	can_send_missionary_to_subject = yes
 	overlord_can_fabricate_for = no
-	
+
 	max_government_rank = 1
-	
+
 	base_liberty_desire = 0.0
 	liberty_desire_negative_prestige = 1.0
 	liberty_desire_development_ratio = 0.33
@@ -2044,7 +2044,7 @@ peasant_vassal = {
 	pays_overlord = 0.0
 	forcelimit_bonus = 1.5
 	forcelimit_to_overlord = 0.2
-	
+
 	relative_power_class = 2
 	diplomacy_view_class = 1
 
@@ -2084,7 +2084,7 @@ peasant_vassal = {
 	modifier_subject = {
 		modifier = peasant_vassal_modifier
 	}
-	
+
 	modifier_overlord = clear
 	modifier_overlord = {
 		modifier = peasant_vassal_overlord_modifier
@@ -2097,7 +2097,7 @@ peasant_vassal = {
 pirate_brotherhood_vassal = {
 	copy_from = default
 	count = vassal
-	
+
 	# Graphics:
 	sprite = GFX_icon_pirate_brotherhood_vassal
 	diplomacy_overlord_sprite = GFX_diplomacy_leadpirate_brotherhood_vassal
@@ -2114,7 +2114,7 @@ pirate_brotherhood_vassal = {
 		num_of_ports = 3
 		navy_size = 20
 	}
-	
+
 	# Properties:
 	uses_tariffs = yes
 	overlord_can_attack = no
@@ -2122,7 +2122,7 @@ pirate_brotherhood_vassal = {
 	can_have_subjects_of_other_types = yes
 	can_be_annexed = yes
 	separatists_become_subjects = yes
-	
+
 	max_government_rank = 0
 	cities_required_for_bonuses = 0
 	trust_on_start = 25
@@ -2201,7 +2201,7 @@ pirate_brotherhood_vassal = {
 		}
 		modifier = pirate_brotherhood_vassal_overlord_has_many_pirate_brotherhood_vassals_modifier
 	}
-	
+
 	modifier_overlord = clear
 	modifier_overlord = {
 		modifier = pirate_brotherhood_vassal_overlord_modifier
@@ -2214,7 +2214,7 @@ pirate_brotherhood_vassal = {
 imperial_tributary_state = {
 	copy_from = default
 	count = tributary_state
-	
+
 	# Graphics:
 	sprite = GFX_icon_imperial_tributary_state
 	diplomacy_overlord_sprite = GFX_diplomacy_leadimperial_tributary_state
@@ -2259,7 +2259,7 @@ imperial_tributary_state = {
 			}
 		}
 	}
-	
+
 	# Properties:
 	is_voluntary = yes
 	transfer_trade_if_merchant_republic = yes
@@ -2272,15 +2272,15 @@ imperial_tributary_state = {
 	allows_taking_land_without_independence = yes
 	can_send_missionary_to_subject = no
 	overlord_can_fabricate_for = no
-	
+
 	max_government_rank = 2
-	
+
 	liberty_desire_negative_prestige = 0.5
 	liberty_desire_development_ratio = 0.175
 	liberty_desire_same_dynasty = -5.0
 	pays_overlord = 1
 	forcelimit_bonus = 1.0
-	
+
 	relative_power_class = 1
 	diplomacy_view_class = 1
 
@@ -2322,7 +2322,7 @@ imperial_tributary_state = {
 	modifier_subject = {
 		modifier = imperial_tributary_state_modifier
 	}
-	
+
 	modifier_overlord = clear
 	modifier_overlord = {
 		modifier = imperial_tributary_state_overlord_modifier
@@ -2335,7 +2335,7 @@ imperial_tributary_state = {
 sister_republic = {
 	copy_from = default
 	count = personal_union
-	
+
 	# Graphics:
 	sprite = GFX_icon_sister_republic
 	diplomacy_overlord_sprite = GFX_diplomacy_leadsister_republic
@@ -2356,7 +2356,7 @@ sister_republic = {
 			}
 		}
 	}
-	
+
 	# Properties:
 	has_overlords_ruler = yes
 	can_be_integrated = yes
@@ -2367,13 +2367,13 @@ sister_republic = {
 	gets_help_with_rebels = yes
 	allows_taking_land_without_independence = yes
 	can_transfer_in_peace = no
-	
+
 	trust_on_start = 60
 
 	base_liberty_desire = -5.0
 	liberty_desire_negative_prestige = 1.5
 	military_focus = 0.66
-	
+
 	relative_power_class = 1
 	diplomacy_view_class = 1
 
@@ -2395,7 +2395,7 @@ sister_republic = {
 	}
 
 	restoration_cb = cb_disloyal_vassal
-	
+
 	# Subject Interactions:
 	# (continuous)
 	support_loyalists = yes
@@ -2425,7 +2425,7 @@ sister_republic = {
 		}
 		modifier = sister_republic_low_dev_modifier
 	}
-	
+
 	modifier_overlord = clear
 	modifier_overlord = {
 		trigger = {
@@ -2441,7 +2441,7 @@ sister_republic = {
 muslim_tributary_vassal = {
 	copy_from = default
 	count = vassal
-	
+
 	# Graphics:
 	sprite = GFX_icon_muslim_tributary_vassal
 	diplomacy_overlord_sprite = GFX_diplomacy_leadmuslim_tributary_vassal
@@ -2463,7 +2463,7 @@ muslim_tributary_vassal = {
 			government = theocracy
 		}
 	}
-	
+
 	# Properties:
 	transfer_trade_if_merchant_republic = yes
 	overlord_can_attack = no
@@ -2477,13 +2477,13 @@ muslim_tributary_vassal = {
 	can_set_mil_focus = no
 	can_send_missionary_to_subject = no
 	overlord_can_fabricate_for = no
-	
+
 	max_government_rank = 2
 	cities_required_for_bonuses = 0
 	trust_on_start = 0
 
 	liberty_desire_development_ratio = 0.175
-	
+
 	relative_power_class = 1
 	diplomacy_view_class = 1
 
@@ -2542,7 +2542,7 @@ muslim_tributary_vassal = {
 		}
 		modifier = muslim_tributary_vassal_same_religion_modifier
 	}
-	
+
 	modifier_overlord = clear
 	modifier_overlord = {
 		modifier = muslim_tributary_vassal_overlord_modifier
@@ -2555,7 +2555,7 @@ muslim_tributary_vassal = {
 mandala_trade_vassal = {
 	copy_from = default
 	count = vassal
-	
+
 	# Graphics:
 	sprite = GFX_icon_mandala_trade_vassal
 	diplomacy_overlord_sprite = GFX_diplomacy_leadmandala_trade_vassal
@@ -2563,6 +2563,7 @@ mandala_trade_vassal = {
 
 	# Triggers:
 	is_potential_overlord = {
+		government = monarchy
 		OR = {
 			AND = {
 				OR = {
@@ -2572,6 +2573,12 @@ mandala_trade_vassal = {
 				OR = {
 					culture_group = malay
 					culture_group = southeastasian_group
+					culture_group = burman
+					culture = sinhala
+					AND = {
+						has_dlc = "Dharma"
+						has_reform = mandala_reform
+					}
 				}
 			}
 			is_subject_of_type = mandala_trade_vassal
@@ -2580,7 +2587,7 @@ mandala_trade_vassal = {
 			continent = asia
 		}
 	}
-	
+
 	# Properties:
 	can_send_tribute = yes
 	transfer_trade_power = yes
@@ -2592,7 +2599,7 @@ mandala_trade_vassal = {
 	can_transfer_in_peace = no
 	can_set_mil_focus = no
 	can_send_missionary_to_subject = no
-	
+
 	cities_required_for_bonuses = 15
 	trust_on_start = 25
 
@@ -2646,7 +2653,7 @@ mandala_trade_vassal = {
 	demand_artifacts = yes
 	demand_additional_tribute = yes
 	conscript_general = yes
-	
+
 	# Modifiers:
 	modifier_subject = clear
 	modifier_subject = {
@@ -2711,7 +2718,7 @@ mandala_trade_vassal = {
 		}
 		modifier = mandala_trade_vassal_large_amount_of_cities_modifier
 	}
-	
+
 	modifier_overlord = clear
 	modifier_overlord = {
 		modifier = mandala_trade_vassal_overlord_modifier
@@ -2730,7 +2737,7 @@ mandala_trade_vassal = {
 integrated_tribe_subject = {
 	copy_from = default
 	count = vassal
-	
+
 	# Graphics:
 	sprite = GFX_icon_integrated_tribe_subject
 	diplomacy_overlord_sprite = GFX_diplomacy_leadintegrated_tribe_subject
@@ -2755,7 +2762,7 @@ integrated_tribe_subject = {
 			}
 		}
 	}
-	
+
 	# Properties:
 	can_send_tribute = yes
 	overlord_can_attack = no
@@ -2767,15 +2774,15 @@ integrated_tribe_subject = {
 	allows_taking_land_without_independence = yes
 	can_transfer_in_peace = no
 	can_set_mil_focus = no
-	
+
 	max_government_rank = 1
-	
+
 	base_liberty_desire = -5.0
 	liberty_desire_development_ratio = 0.25
 	liberty_desire_same_dynasty = -5.0
 	forcelimit_bonus = 1.0
 	forcelimit_to_overlord = 0.5
-	
+
 	relative_power_class = 2
 	diplomacy_view_class = 1
 
@@ -2832,7 +2839,7 @@ integrated_tribe_subject = {
 		}
 		modifier = integrated_tribe_subject_different_culture_modifier
 	}
-	
+
 	modifier_overlord = clear
 
 	overlord_opinion_modifier = is_integrated_tribe_subject
@@ -2842,7 +2849,7 @@ integrated_tribe_subject = {
 dutch_province_subject = {
 	copy_from = default
 	count = vassal
-	
+
 	# Graphics:
 	sprite = GFX_icon_dutch_province_subject
 	diplomacy_overlord_sprite = GFX_diplomacy_leaddutch_province_subject
@@ -2876,7 +2883,7 @@ dutch_province_subject = {
 			}
 		}
 	}
-	
+
 	# Properties:
 	transfer_trade_if_merchant_republic = yes
 	joins_overlords_wars = yes
@@ -2887,14 +2894,14 @@ dutch_province_subject = {
 	gets_help_with_rebels = yes
 	allows_taking_land_without_independence = yes
 	can_transfer_in_peace = no
-	
+
 	base_liberty_desire = -10.0
 	liberty_desire_negative_prestige = 0.25
 	liberty_desire_development_ratio = 0.33
 	pays_overlord = 1.0
 	forcelimit_bonus = 0.5
 	forcelimit_to_overlord = 0.25
-	
+
 	relative_power_class = 1
 	diplomacy_view_class = 1
 
@@ -2937,7 +2944,7 @@ dutch_province_subject = {
 	modifier_subject = {
 		modifier = dutch_province_subject_modifier
 	}
-	
+
 	modifier_overlord = clear
 	modifier_overlord = {
 		modifier = dutch_province_subject_overlord_modifier
@@ -2950,7 +2957,7 @@ dutch_province_subject = {
 revolution_subject = {
 	copy_from = default
 	count = vassal
-	
+
 	# Graphics:
 	sprite = GFX_icon_revolution_subject
 	diplomacy_overlord_sprite = GFX_diplomacy_leadrevolution_subject
@@ -2960,7 +2967,7 @@ revolution_subject = {
 	is_potential_overlord = {
 		is_revolution_target = yes
 	}
-	
+
 	# Properties:
 	has_overlords_ruler = yes
 	overlord_can_attack = no
@@ -2970,7 +2977,7 @@ revolution_subject = {
 	gets_help_with_rebels = yes
 	separatists_become_subjects = yes
 	can_transfer_in_peace = no
-	
+
 	trust_on_start = 10
 
 	base_liberty_desire = -20.0
@@ -2979,7 +2986,7 @@ revolution_subject = {
 	pays_overlord = 1.0
 	forcelimit_bonus = 1.0
 	forcelimit_to_overlord = 1.0
-	
+
 	relative_power_class = 3
 	diplomacy_view_class = 1
 
@@ -3024,7 +3031,7 @@ revolution_subject = {
 		}
 		modifier = revolution_subject_overlord_no_revolution_target_modifier
 	}
-	
+
 	modifier_overlord = clear
 	modifier_overlord = {
 		modifier = revolution_subject_overlord_modifier
@@ -3057,7 +3064,7 @@ revolution_subject = {
 persian_satrapy = {
 	copy_from = default
 	count = vassal
-	
+
 	# Graphics:
 	sprite = GFX_icon_persian_satrapy
 	diplomacy_overlord_sprite = GFX_diplomacy_leadpersian_satrapy
@@ -3120,7 +3127,7 @@ persian_satrapy = {
 			}
 		}
 	}
-	
+
 	# Properties:
 	transfer_trade_if_merchant_republic = yes
 	uses_tariffs = yes
@@ -3133,19 +3140,19 @@ persian_satrapy = {
 	allows_taking_land_without_independence = yes
 	can_transfer_in_peace = no
 	transfer_subjects_when_made = yes
-	
+
 	max_government_rank = 1
-	
+
 	base_liberty_desire = -20.0
 	liberty_desire_negative_prestige = 0.05
 	liberty_desire_development_ratio = 0.25
 	liberty_desire_same_dynasty = -10.0
 	forcelimit_bonus = 1.0
 	forcelimit_to_overlord = 0.2
-	
+
 	relative_power_class = 4
 	diplomacy_view_class = 1
-	
+
 	restoration_cb = cb_disloyal_vassal
 
 	can_fight = {
@@ -3200,7 +3207,7 @@ persian_satrapy = {
 		}
 		modifier = persian_satrapy_overlord_has_low_legitimacy_modifier
 	}
-	
+
 	modifier_overlord = clear
 	modifier_overlord = {
 		modifier = persian_satrapy_overlord_modifier
@@ -3221,7 +3228,7 @@ persian_satrapy = {
 		}
 		modifier = persian_satrapy_overlord_sword_hunt_modifier
 	}
-	
+
 	overlord_opinion_modifier = is_persian_satrapy
 	subject_opinion_modifier = is_persian_satrapy
 }
@@ -3229,7 +3236,7 @@ persian_satrapy = {
 naval_march = {
 	copy_from = march
 	count = march
-	
+
 	# Triggers:
 	is_potential_overlord = {
 		is_subject = no
@@ -3237,15 +3244,15 @@ naval_march = {
 		navy_size = 10
 		primitives = no
 	}
-	
+
 	# Graphics:
 	sprite = GFX_icon_naval_march
 	diplomacy_overlord_sprite = GFX_diplomacy_leadnaval_march
 	diplomacy_subject_sprite = GFX_diplomacy_amnaval_march
-	
+
 	# Properties:
 	press_sailors = yes
-	
+
 	# Modifiers:
 	modifier_subject = clear
 	modifier_subject = {
@@ -3259,7 +3266,7 @@ naval_march = {
 		expiration_message_overlord = MARCHTOOLARGE
 		expiration_message_subject = MARCHTOOLARGEUS
 	}
-	
+
 	modifier_overlord = clear
 	modifier_overlord = {
 		modifier = march_subject
@@ -3270,14 +3277,14 @@ naval_march = {
 			NOT = { development_of_overlord_fraction = 0.25 }
 		}
 	}
-	
+
 	overlord_opinion_modifier = is_naval_march
 	subject_opinion_modifier = is_naval_march
 }
 
 trade_outpost = {
 	copy_from = default
-	
+
 	# Graphics:
 	sprite = GFX_icon_trade_outpost
 	diplomacy_overlord_sprite = GFX_diplomacy_leadtrade_outpost
@@ -3303,7 +3310,7 @@ trade_outpost = {
 			}
 		}
 	}
-	
+
 	# Properties:
 	is_voluntary = yes
 	has_colonial_parent = yes
@@ -3319,7 +3326,7 @@ trade_outpost = {
 	can_transfer_in_peace = no
 	can_set_mil_focus = no
 	overlord_can_fabricate_for = no
-	
+
 	cities_required_for_bonuses = 1
 
 	liberty_desire_development_ratio = 0.5
@@ -3365,7 +3372,7 @@ trade_outpost = {
 		}
 		modifier = trade_outpost_bankrupt_modifier
 	}
-	
+
 	modifier_overlord = clear
 	modifier_overlord = {
 		modifier = trade_outpost_overlord_modifier
@@ -3384,21 +3391,21 @@ trade_outpost = {
 integrated_personal_union = {
 	copy_from = personal_union
 	count = personal_union
-	
+
 	# Graphics:
 	sprite = GFX_icon_integrated_personal_union
 	diplomacy_overlord_sprite = GFX_diplomacy_leadintegrated_personal_union
 	diplomacy_subject_sprite = GFX_diplomacy_amintegrated_personal_union
-	
+
 	# Triggers:
 	is_potential_overlord = {
 		is_subject = no
 		personal_union = 1
 	}
-	
+
 	# Properties:
 	can_be_integrated = no
-	
+
 	liberty_desire_negative_prestige = 1.0
 	liberty_desire_development_ratio = 0.1
 	military_focus = 0.66
@@ -3412,12 +3419,12 @@ integrated_personal_union = {
 brother_kingdom = {
 	copy_from = default
 	count = personal_union
-	
+
 	# Graphics:
 	sprite = GFX_icon_brother_kingdom
 	diplomacy_overlord_sprite = GFX_diplomacy_leadbrother_kingdom
 	diplomacy_subject_sprite = GFX_diplomacy_ambrother_kingdom
-	
+
 	# Triggers:
 	is_potential_overlord = {
 		is_subject = no
@@ -3425,16 +3432,16 @@ brother_kingdom = {
 		religion_group = christian
 		has_regency = no
 	}
-	
+
 	# Properties:
 	overlord_can_attack = no
 	can_have_subjects_of_other_types = yes
 	overlord_protects_external = yes
 	gets_help_with_rebels = yes
 	allows_taking_land_without_independence = yes
-	
+
 	max_government_rank = 2
-	
+
 	liberty_desire_negative_prestige = 0.5
 	forcelimit_bonus = 1.0
 	forcelimit_to_overlord = 0.1
@@ -3473,7 +3480,7 @@ brother_kingdom = {
 	send_additional_troops = yes
 	contribute_to_capital = yes
 	conscript_general = yes
-	
+
 	# Modifiers:
 	modifier_subject = clear
 	modifier_subject = {
@@ -3491,7 +3498,7 @@ brother_kingdom = {
 		}
 		modifier = brother_kingdom_other_culture_group_modifier
 	}
-	
+
 	modifier_overlord = clear
 	modifier_overlord = {
 		modifier = brother_kingdom_overlord_modifier
@@ -3504,7 +3511,7 @@ brother_kingdom = {
 iqta_vassal = {
 	copy_from = default
 	count = vassal
-	
+
 	# Graphics:
 	sprite = GFX_icon_iqta_vassal
 	diplomacy_overlord_sprite = GFX_diplomacy_leadiqta_vassal
@@ -3547,7 +3554,7 @@ iqta_vassal = {
 			}
 		}
 	}
-	
+
 	# Properties:
 	transfer_trade_if_merchant_republic = yes
 	can_be_annexed = yes
@@ -3556,14 +3563,14 @@ iqta_vassal = {
 	overlord_enforce_peace_attacking = yes
 	allows_taking_land_without_independence = yes
 	pays_overlord = 0.25
-	
+
 	max_government_rank = 1
-	
+
 	liberty_desire_development_ratio = 0.2
 	liberty_desire_same_dynasty = -5.0
 	forcelimit_bonus = 1.0
 	forcelimit_to_overlord = 0.1
-	
+
 	relative_power_class = 1
 	diplomacy_view_class = 1
 
@@ -3590,7 +3597,7 @@ iqta_vassal = {
 	place_relative_on_throne = yes
 	enforce_culture = yes
 	seize_territory = yes
-	
+
 	# Modifiers:
 	modifier_subject = clear
 	modifier_subject = {
@@ -3628,7 +3635,7 @@ iqta_vassal = {
 		}
 		modifier = iqta_vassal_scutage_modifier
 	}
-	
+
 	modifier_overlord = clear
 	modifier_overlord = {
 		modifier = iqta_vassal_overlord_modifier
@@ -3647,7 +3654,7 @@ iqta_vassal = {
 
 papal_sanctuary_subject = {
 	copy_from = default
-	
+
 	# Graphics:
 	sprite = GFX_icon_papal_sanctuary_subject
 	diplomacy_overlord_sprite = GFX_diplomacy_leadpapal_sanctuary_subject
@@ -3672,7 +3679,7 @@ papal_sanctuary_subject = {
 			has_country_modifier = kingdom_of_god
 		}
 	}
-	
+
 	# Properties:
 	is_voluntary = yes
 	overlord_can_be_subject = yes
@@ -3685,12 +3692,12 @@ papal_sanctuary_subject = {
 	can_transfer_in_peace = no
 	can_set_mil_focus = no
 	overlord_can_fabricate_for = no
-	
+
 	trust_on_start = 50
 
 	liberty_desire_development_ratio = 0.25
 	pays_overlord = 0.1
-	
+
 	relative_power_class = 1
 	diplomacy_view_class = 1
 
@@ -3799,7 +3806,7 @@ papal_sanctuary_subject = {
 	enforce_religion = no
 	siphon_income = yes
 	send_additional_troops = yes
-	
+
 	# Modifiers:
 	modifier_subject = clear
 	modifier_subject = {
@@ -3813,7 +3820,7 @@ papal_sanctuary_subject = {
 		}
 		modifier = papal_sanctuary_subject_overlord_is_papal_controller_modifier
 	}
-	
+
 	modifier_overlord = clear
 	modifier_overlord = {
 		modifier = papal_sanctuary_subject_overlord_modifier
@@ -3832,14 +3839,14 @@ papal_sanctuary_subject = {
 		}
 		modifier = papal_sanctuary_subject_no_diplo_cost_overlord_modifier
 	}
-	
+
 	overlord_opinion_modifier = is_papal_sanctuary_subject
 	subject_opinion_modifier = is_papal_sanctuary_subject
 }
 
 imperial_feud_subject = {
 	copy_from = default
-	
+
 	# Graphics:
 	sprite = GFX_icon_imperial_feud_subject
 	diplomacy_overlord_sprite = GFX_diplomacy_leadimperial_feud_subject
@@ -3850,7 +3857,7 @@ imperial_feud_subject = {
 		is_emperor = yes
 		NOT = { hre_reform_level = 7 }
 	}
-	
+
 	# Properties:
 	is_voluntary = yes
 	can_send_tribute = yes
@@ -3869,13 +3876,13 @@ imperial_feud_subject = {
 	can_set_mil_focus = no
 	can_send_missionary_to_subject = no
 	overlord_can_fabricate_for = no
-	
+
 	trust_on_start = 50
-	
+
 	base_liberty_desire = -5.0
 	liberty_desire_development_ratio = 0.175
 	liberty_desire_same_dynasty = -10.0
-	
+
 	relative_power_class = 1
 	diplomacy_view_class = 1
 
@@ -3899,9 +3906,9 @@ imperial_feud_subject = {
 		other_overlord = all
 		same_overlord = all
 	}
-	
+
 	restoration_cb = cb_disloyal_imperial_feud_subject
-	
+
 	# Subject Interactions:
 	# (continuous)
 	embargo_rivals = no
@@ -3912,7 +3919,7 @@ imperial_feud_subject = {
 	contribute_to_capital = yes
 	return_land = yes
 	conscript_general = yes
-	
+
 	# Modifiers:
 	modifier_subject = clear
 	modifier_subject = {
@@ -3968,12 +3975,12 @@ imperial_feud_subject = {
 		}
 		modifier = imperial_feud_subject_is_subject_for_30_years_modifier
 	}
-	
+
 	modifier_overlord = clear
 	modifier_overlord = {
 		modifier = imperial_feud_subject_overlord_modifier
 	}
-	
+
 	overlord_opinion_modifier = is_imperial_feud_subject
 	subject_opinion_modifier = is_imperial_feud_subject
 }
@@ -3981,7 +3988,7 @@ imperial_feud_subject = {
 pagan_chiefdom = {
 	copy_from = default
 	count = march
-	
+
 	# Triggers:
 	is_potential_overlord = {
 		is_subject = no
@@ -3996,28 +4003,28 @@ pagan_chiefdom = {
 			religion = shamanism
 		}
 	}
-	
+
 	# Graphics:
 	sprite = GFX_icon_pagan_chiefdom
 	diplomacy_overlord_sprite = GFX_diplomacy_leadpagan_chiefdom
 	diplomacy_subject_sprite = GFX_diplomacy_ampagan_chiefdom
-	
+
 	# Properties:
 	has_power_projection = no
 	gets_help_with_rebels = yes
-	
+
 	max_government_rank = 1
-	
+
 	base_liberty_desire = -5.0
 	liberty_desire_negative_prestige = 0.1
 	liberty_desire_development_ratio = 0.25
 	liberty_desire_same_dynasty = -5
-	
+
 	pays_overlord = 0.0
 	forcelimit_bonus = 1
 	forcelimit_to_overlord = 0.2
 	military_focus = 1.5
-	
+
 	relative_power_class = 2
 	diplomacy_view_class = 1
 
@@ -4029,7 +4036,7 @@ pagan_chiefdom = {
 	}
 	can_marry = {
 	}
-	
+
 	# Subject Interactions:
 	divert_trade = yes
 	grant_province = no
@@ -4037,7 +4044,7 @@ pagan_chiefdom = {
 	fortify_march = yes
 	seize_territory = yes
 	demand_artifacts = yes
-	
+
 	# Modifiers:
 	modifier_subject = clear
 	modifier_subject = {
@@ -4087,7 +4094,7 @@ pagan_chiefdom = {
 			army_strength = { who = FROM value = 2 }
 		}
 	}
-	
+
 	modifier_overlord = clear
 	modifier_overlord = {
 		modifier = pagan_chiefdom_overlord_modifier
@@ -4104,7 +4111,7 @@ pagan_chiefdom = {
 			has_country_modifier = increase_horde_unity_with_pagan_chiefdom_cooldown
 		}
 	}
-	
+
 	overlord_opinion_modifier = is_pagan_chiefdom
 	subject_opinion_modifier = is_pagan_chiefdom
 }

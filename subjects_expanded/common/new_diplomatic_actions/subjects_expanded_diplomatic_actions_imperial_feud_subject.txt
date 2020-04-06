@@ -130,11 +130,25 @@ establish_imperial_feud_subject = {
 		}
 		add_entry = {
 			name = MODIFIER_DIPLO_SKILL
+			limit = {
+				diplomatic_reputation = 0
+			}
 			export_to_variable = {
 				which = ai_value
 				value = modifier:diplomatic_reputation
 			}
 			multiply_variable = { which = ai_value value = 2 }
+		}
+		add_entry = {
+			name = MODIFIER_DIPLO_SKILL
+			limit = {
+				NOT = { diplomatic_reputation = 0 }
+			}
+			export_to_variable = {
+				which = ai_value
+				value = modifier:diplomatic_reputation
+			}
+			multiply_variable = { which = ai_value value = 5 }
 		}
 		add_entry = {
 			name = FROM_IS_EMPIRE_RANK

@@ -1,18 +1,18 @@
 establish_brother_kingdom = {
 	category = influence
-	
+
 	alert_index = 6
 	alert_tooltip = establish_brother_kingdom_alert_tooltip
-	
+
 	require_acceptance = yes
-	
+
 	is_visible = {
 		can_create_subject_type = {
 			subject = FROM
 			subject_type = brother_kingdom
 		}
 	}
-	
+
 	is_allowed = {
 		can_create_subject_type = {
 			subject = FROM
@@ -42,7 +42,7 @@ establish_brother_kingdom = {
 			}
 		}
 	}
-	
+
 	on_accept = {
 		if = {
 			limit = {
@@ -77,7 +77,7 @@ establish_brother_kingdom = {
 			add_truce_with = FROM
 		}
 	}
-	
+
 	on_decline = {
 		if = {
 			limit = {
@@ -115,7 +115,7 @@ establish_brother_kingdom = {
 			}
 		}
 	}
-	
+
 	ai_acceptance = {
 		add_entry = {
 			name = FROM_IS_VASSAL_OF_ROOT
@@ -270,7 +270,7 @@ establish_brother_kingdom = {
 				which = ai_value
 				value = modifier:diplomatic_reputation
 			}
-			multiply_variable = { which = ai_value value = 3 }
+			multiply_variable = { which = ai_value value = 4 }
 		}
 		add_entry = {
 			name = FROM_IS_EMPIRE_RANK
@@ -362,7 +362,7 @@ establish_brother_kingdom = {
 					multiply_variable = { which = our_mil_tech value = 3 }
 					change_variable = { which = military_power which = our_army_size }
 					change_variable = { which = military_power which = our_mil_tech }
-					
+
 					NOT = { check_variable = { which = military_power value = -39 } }
 				}
 			}
@@ -407,7 +407,7 @@ establish_brother_kingdom = {
 					multiply_variable = { which = our_mil_tech value = 3 }
 					change_variable = { which = military_power which = our_army_size }
 					change_variable = { which = military_power which = our_mil_tech }
-					
+
 					check_variable = { which = military_power value = -39 }
 					NOT = { check_variable = { which = military_power value = 30 } }
 				}
@@ -477,7 +477,7 @@ establish_brother_kingdom = {
 					change_variable = { which = our_mil_tech which = their_mil_tech }
 					multiply_variable = { which = our_mil_tech value = 3 }
 					change_variable = { which = military_power which = our_army_size }
-					change_variable = { which = military_power which = our_mil_tech }	
+					change_variable = { which = military_power which = our_mil_tech }
 					check_variable = { which = military_power value = 30 }
 				}
 			}
@@ -613,6 +613,9 @@ establish_brother_kingdom = {
 		}
 		add_entry = {
 			name = ROOT_FROM_RULER_STATS_COMPARED
+			limit = {
+				full_idea_group = diplomatic_ideas
+			}
 			export_to_variable = {
 				which = ai_value
 				value = 0
@@ -651,6 +654,50 @@ establish_brother_kingdom = {
 			subtract_variable = { which = ai_value which = their_ruler_dip }
 			subtract_variable = { which = ai_value which = their_ruler_mil }
 			multiply_variable = { which = ai_value value = 10 }
+		}
+		add_entry = {
+			name = ROOT_FROM_RULER_STATS_COMPARED
+			limit = {
+				NOT = { full_idea_group = diplomatic_ideas }
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 0
+			}
+			export_to_variable = {
+				which = their_ruler_adm
+				value = ADM
+				who = FROM
+			}
+			export_to_variable = {
+				which = their_ruler_dip
+				value = DIP
+				who = FROM
+			}
+			export_to_variable = {
+				which = their_ruler_mil
+				value = MIL
+				who = FROM
+			}
+			export_to_variable = {
+				which = our_ruler_adm
+				value = ADM
+			}
+			export_to_variable = {
+				which = our_ruler_dip
+				value = DIP
+			}
+			export_to_variable = {
+				which = our_ruler_mil
+				value = MIL
+			}
+			change_variable = { which = ai_value which = our_ruler_adm }
+			change_variable = { which = ai_value which = our_ruler_dip }
+			change_variable = { which = ai_value which = our_ruler_mil }
+			subtract_variable = { which = ai_value which = their_ruler_adm }
+			subtract_variable = { which = ai_value which = their_ruler_dip }
+			subtract_variable = { which = ai_value which = their_ruler_mil }
+			multiply_variable = { which = ai_value value = 5 }
 		}
 		add_entry = {
 			name = FROM_RULER_IS_OLDER
@@ -764,7 +811,7 @@ establish_brother_kingdom = {
 			multiply_variable = { which = ai_value value = -1 }
 		}
 	}
-	
+
 	ai_will_do = {
 		NOT = { personal_union = 2 }
 		FROM = {
@@ -788,19 +835,19 @@ establish_brother_kingdom = {
 
 make_brother_kingdom_to_personal_union = {
 	category = influence
-	
+
 	alert_index = 2
 	alert_tooltip = make_brother_kingdom_to_personal_union_alert_tooltip
-	
+
 	require_acceptance = yes
-	
+
 	is_visible = {
 		FROM = {
 			is_subject_of = ROOT
 			is_subject_of_type = brother_kingdom
 		}
 	}
-	
+
 	is_allowed = {
 		hidden_trigger = {
 			FROM = {
@@ -829,7 +876,7 @@ make_brother_kingdom_to_personal_union = {
 			}
 		}
 	}
-	
+
 	on_accept = {
 		if = {
 			limit = {
@@ -864,7 +911,7 @@ make_brother_kingdom_to_personal_union = {
 			}
 		}
 	}
-	
+
 	on_decline = {
 		if = {
 			limit = {
@@ -901,7 +948,7 @@ make_brother_kingdom_to_personal_union = {
 			}
 		}
 	}
-	
+
 	ai_acceptance = {
 		add_entry = {
 			name = FROM_LIBERTY_DESIRE_TOO_HIGH
@@ -993,12 +1040,25 @@ make_brother_kingdom_to_personal_union = {
 			name = MODIFIER_DIPLO_SKILL
 			limit = {
 				NOT = { overlord_of = FROM }
+				diplomatic_reputation = 0
 			}
 			export_to_variable = {
 				which = ai_value
 				value = modifier:diplomatic_reputation
 			}
-			multiply_variable = { which = ai_value value = 4 }
+			multiply_variable = { which = ai_value value = 3 }
+		}
+		add_entry = {
+			name = MODIFIER_DIPLO_SKILL
+			limit = {
+				NOT = { overlord_of = FROM }
+				NOT = { diplomatic_reputation = 0 }
+			}
+			export_to_variable = {
+				which = ai_value
+				value = modifier:diplomatic_reputation
+			}
+			multiply_variable = { which = ai_value value = 5 }
 		}
 		add_entry = {
 			name = ROOT_FROM_NOT_SAME_RELIGION
@@ -1208,7 +1268,7 @@ make_brother_kingdom_to_personal_union = {
 			}
 		}
 	}
-	
+
 	ai_will_do = {
 		prestige = 1
 		FROM = {
@@ -1222,9 +1282,9 @@ make_brother_kingdom_to_personal_union = {
 
 make_personal_union_to_brother_kingdom = {
 	category = influence
-	
+
 	require_acceptance = no
-	
+
 	is_visible = {
 		can_be_overlord = brother_kingdom
 		has_reform = salic_reform
@@ -1238,7 +1298,7 @@ make_personal_union_to_brother_kingdom = {
 			religion_group = christian
 		}
 	}
-	
+
 	is_allowed = {
 		hidden_trigger = {
 			can_be_overlord = brother_kingdom
@@ -1266,7 +1326,7 @@ make_personal_union_to_brother_kingdom = {
 			has_country_modifier = three_sons
 		}
 	}
-	
+
 	on_accept = {
 		if = {
 			limit = {
@@ -1321,7 +1381,7 @@ make_personal_union_to_brother_kingdom = {
 			}
 		}
 	}
-	
+
 	ai_will_do = {
 		ruler_age = 60
 		has_country_modifier = three_sons
@@ -1366,12 +1426,12 @@ brother_kingdom_become_independent = {
 	category = influence
 
 	require_acceptance = no
-	
+
 	is_visible = {
 		is_subject_of = FROM
 		is_subject_of_type = brother_kingdom
 	}
-	
+
 	is_allowed = {
 		hidden_trigger = {
 			is_subject_of = FROM
@@ -1380,7 +1440,7 @@ brother_kingdom_become_independent = {
 		NOT = { truce_with = FROM }
 		liberty_desire = 50
 	}
-	
+
 	on_accept = {
 		if = {
 			limit = {
@@ -1400,7 +1460,7 @@ brother_kingdom_become_independent = {
 			}
 		}
 	}
-	
+
 	ai_will_do = {
 		stability = 1
 		NOT = { war_exhaustion = 1 }
@@ -1444,14 +1504,14 @@ cancel_brother_kingdom = {
 	category = influence
 
 	require_acceptance = no
-	
+
 	is_visible = {
 		FROM = {
 			is_subject_of = ROOT
 			is_subject_of_type = brother_kingdom
 		}
 	}
-	
+
 	is_allowed = {
 		hidden_trigger = {
 			FROM = {
@@ -1462,7 +1522,7 @@ cancel_brother_kingdom = {
 		NOT = { truce_with = FROM }
 		prestige = 0
 	}
-	
+
 	on_accept = {
 		if = {
 			limit = {
@@ -1495,7 +1555,7 @@ cancel_brother_kingdom = {
 			add_prestige = -25
 		}
 	}
-	
+
 	ai_will_do = {
 		FROM = {
 			liberty_desire = 100

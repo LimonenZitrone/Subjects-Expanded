@@ -426,7 +426,8 @@ If a subject gives an additional merchant, the bonuses it gives to its overlord 
 
 [b]Conditions (possible overlord):[/b]
 [list]
-[*] is either a Mandala Vassal or not a subject or a tributary and is in the South East Asian or Malaya culture group
+[*] has a monarchy
+[*] is either a Mandala Vassal or not a subject or a tributary and is in the South East Asian, Malaya or Burman culture group or has the Sinhala culture of has the "Mandala System" government reform
 [*] has its capital in Asia
 [/list]
 

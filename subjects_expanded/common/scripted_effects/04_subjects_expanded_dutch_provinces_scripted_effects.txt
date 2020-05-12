@@ -412,14 +412,19 @@ set_dutch_province_value_for_target = {
 				}
 				change_variable = { which = election_value_of_dutch_province_$target$ value = -100 }
 			}
-			export_to_variable = {
-				which = our_opinion
-				value = opinion
-				who = ROOT
-				with = PREV
+			if = {
+				limit = {
+					NOT = { tag = PREV }
+				}
+				export_to_variable = {
+					which = our_opinion
+					value = opinion
+					who = ROOT
+					with = PREV
+				}
+				divide_variable = { which = our_opinion value = 4 }
+				change_variable = { which = election_value_of_dutch_province_$target$ which = our_opinion }
 			}
-			divide_variable = { which = our_opinion value = 4 }
-			change_variable = { which = election_value_of_dutch_province_$target$ which = our_opinion }
 			if = {
 				limit = {
 					is_subject_of = PREV

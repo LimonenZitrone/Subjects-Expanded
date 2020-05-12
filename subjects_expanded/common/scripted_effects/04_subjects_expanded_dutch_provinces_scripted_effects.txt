@@ -156,14 +156,14 @@ AI_dutch_province_select_elected_overlord = {
 			}
 		}
 	}
-	
+
 	set_dutch_province_value_for_target = { target = 1 }
 	set_dutch_province_value_for_target = { target = 2 }
 	set_dutch_province_value_for_target = { target = 3 }
 	set_dutch_province_value_for_target = { target = 4 }
 	set_dutch_province_value_for_target = { target = 5 }
 	set_dutch_province_value_for_target = { target = 6 }
-	
+
 	select_dutch_province_country_to_vote_for = yes
 }
 
@@ -191,7 +191,7 @@ set_dutch_province_value_for_target = {
 	# Is subject and LD over 50: -1000
 	# Is subject and LD under 50: +5
 	# Is overlord themselves: +10
-	
+
 	set_variable = { which = election_value_of_dutch_province_$target$ value = 0 }
 	every_country = {
 		limit = {
@@ -206,6 +206,7 @@ set_dutch_province_value_for_target = {
 			}
 			if = {
 				limit = {
+					NOT = { tag = PREV }
 					dynasty = PREV
 				}
 				change_variable = { which = election_value_of_dutch_province_$target$ value = 20 }
@@ -237,6 +238,7 @@ set_dutch_province_value_for_target = {
 			}
 			if = {
 				limit = {
+					NOT = { tag = PREV }
 					primary_culture = PREV
 				}
 				change_variable = { which = election_value_of_dutch_province_$target$ value = 10 }
@@ -249,12 +251,14 @@ set_dutch_province_value_for_target = {
 			}
 			if = {
 				limit = {
+					NOT = { tag = PREV }
 					religion = PREV
 				}
 				change_variable = { which = election_value_of_dutch_province_$target$ value = 15 }
 			}
 			if = {
 				limit = {
+					NOT = { tag = PREV }
 					religion_group = PREV
 					NOT = { religion = PREV }
 				}
@@ -397,6 +401,7 @@ set_dutch_province_value_for_target = {
 			}
 			if = {
 				limit = {
+					NOT = { tag = PREV }
 					is_neighbor_of = PREV
 				}
 				change_variable = { which = election_value_of_dutch_province_$target$ value = 5 }
@@ -431,7 +436,7 @@ set_dutch_province_value_for_target = {
 			}
 			if = {
 				limit = {
-					tag = ROOT
+					tag = PREV
 					any_subject_country = {
 						is_subject_of_type = dutch_province_subject
 					}
@@ -477,7 +482,7 @@ select_dutch_province_country_to_vote_for = {
 		}
 		set_variable = { which = dutch_province_election_variable which = election_value_of_dutch_province_6 }
 	}
-	
+
 	set_variable = { which = dutch_province_dutch_province_election_variable_rival value = 0 }
 	if = {
 		limit = {
@@ -521,7 +526,7 @@ select_dutch_province_country_to_vote_for = {
 		}
 		set_variable = { which = dutch_province_dutch_province_election_variable_rival which = election_value_of_dutch_province_6 }
 	}
-	
+
 	if = {
 		limit = {
 			NOT = { check_variable = { which = dutch_province_election_variable value = 0 } }
@@ -674,7 +679,7 @@ find_new_dutch_province_overlord = {
 		}
 		set_variable = { which = num_of_dutch_province_votes_for_this value = 1 }
 	}
-	
+
 	every_subject_country = {
 		limit = {
 			is_subject_of_type = dutch_province_subject
@@ -747,7 +752,7 @@ find_new_dutch_province_overlord = {
 			set_variable = { which = num_of_dutch_province_votes_for_this value = 1 }
 		}
 	}
-	
+
 	if = {
 		limit = {
 			all_subject_country = {

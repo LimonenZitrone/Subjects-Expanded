@@ -190,7 +190,7 @@ set_dutch_province_value_for_target = {
 	# Opinion: Amount / 4
 	# Is subject and LD over 50: -1000
 	# Is subject and LD under 50: +5
-	# Is overlord themselves: +10
+	# Is overlord themselves: +25
 
 	set_variable = { which = election_value_of_dutch_province_$target$ value = 0 }
 	every_country = {
@@ -441,7 +441,7 @@ set_dutch_province_value_for_target = {
 						is_subject_of_type = dutch_province_subject
 					}
 				}
-				change_variable = { which = election_value_of_dutch_province_$target$ value = 10 }
+				change_variable = { which = election_value_of_dutch_province_$target$ value = 25 }
 			}
 		}
 	}

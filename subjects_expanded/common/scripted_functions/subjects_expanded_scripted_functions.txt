@@ -22,3 +22,49 @@ can_move_capital = {
 		}
 	}
 }
+
+can_colonize_province = {
+	condition = {
+		tooltip = NATIVE_RESERVE_CANNOT_COLONIZE_PROVINCE_WITH_OTHER_CULTURE
+		potential = {
+			FROM = {
+				is_subject_of_type = native_reserve
+			}
+		}
+		allow = {
+			culture = FROM
+		}
+	}
+	condition = {
+		tooltip = NEED_TECH_TO_COLONIZE
+		potential = {
+			has_province_modifier = hard_to_colonize
+		}
+		allow = {
+			FROM = { dip_tech = 78 }
+		}
+	}
+}
+
+can_colonize_province_siberian_frontier = {
+	condition = {
+		tooltip = NATIVE_RESERVE_CANNOT_COLONIZE_PROVINCE_WITH_OTHER_CULTURE
+		potential = {
+			FROM = {
+				is_subject_of_type = native_reserve
+			}
+		}
+		allow = {
+			culture = FROM
+		}
+	}
+	condition = {
+		tooltip = NEED_TECH_TO_COLONIZE
+		potential = {
+			has_province_modifier = hard_to_colonize
+		}
+		allow = {
+			FROM = { dip_tech = 78 }
+		}
+	}
+}

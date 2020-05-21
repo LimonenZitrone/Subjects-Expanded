@@ -411,7 +411,7 @@
  bestow_impirial_grace_to_imperial_feud_subject_desc: "Wollt Ihr §Y[From.GetName]§! Reichsgnade gewähren? \nDies wird unsere Reichsauthörität um §R-5§! verändern und ihre Meinung über uns verbessern sowie ihr Freiheitsstreben um §G-10%§! für §Y20§! Jahre verändern."
  bestow_impirial_grace_to_imperial_feud_subject_tooltip: "Verwendet Reichsauthörität, um das Freiheitsstreben von §Y[From.GetName]§! zu senken.\n"
 
- cancel_imperial_feud_subject_title: "Päpstliches Schutzgebiet entlassen"
+ cancel_imperial_feud_subject_title: "Kaiserliches Lehen entlassen"
  cancel_imperial_feud_subject_desc: "Beendet das Abhängigkeitsverhältnis von §Y[From.GetName]§! zu uns. Dies wird ihre Meinung über uns um §R-200§! verschlechtern, sofern sie ein Freiheitsstreben unter §Y50%§! besitzen. Außerdem verlieren wir §R-25§! Prestige und erhalten eine §Y5-jährige§! Waffenruhe mit ihnen. \nDie Meinung aller Mitglieder des §YHeiligen Römischen Reiches§! über uns ändert sich um §R-25§!."
  cancel_imperial_feud_subject_tooltip: "Beedet die Vasallisierung von §Y[From.GetName]§! und entlasst sie in die Freiheit.\n"
 
@@ -433,6 +433,23 @@
  increase_horde_unity_with_pagan_chiefdom_title: "Opfert die Schwachen"
  increase_horde_unity_with_pagan_chiefdom_desc: "Wollt Ihr die Schwachen des §Y[From.GetAdjective]en§! Volks unseren geliebten [Root.Religion.GetName]en Göttern opfern? \n[From.GetChiefdomSacrificeTheWeakEffects] und dis wird uns für §Y5 Jahre§! folgende Modifikatoren geben: \n   [ae_impact]: §R+5.00%§! \n\nDiese Modifikatoren addieren sich, wenn Ihr diese Aktion für mehrere Stammesfürstentümer zur gleichen Zeit durchführt."
  increase_horde_unity_with_pagan_chiefdom_tooltip: "Opfert die schwachen §Y[From.GetAdjective]en§! Menschen den Göttern.\n"
+
+
+ establish_native_reserve_title: "Eingeborenenreservat fordern"
+ establish_native_reserve_desc: "Wollt Ihr §Y[From.GetName]§! vorschlagen, unser Eingeborenenreservat zu werden? \n[native_reserve_desc]"
+ establish_native_reserve_tooltip: "Macht §Y[From.GetName]§! zu einem [Root.GetAdjective]en §YEingeborenenreservat§!.\n"
+ establish_native_reserve_alert_tooltip: "Eingeborenenreservat fordern"
+ establish_native_reserve_dialog: "§Y[This.GetName]§! verlangt, dass wir ihr §YEingeborenenreservat§!. \n[native_reserve_desc] \nWollt Ihr akzeptieren?"
+
+ ask_to_become_native_reserve_title: "Eingeborenenreservat erbitten"
+ ask_to_become_native_reserve_desc: "Wollt Ihr §Y[From.GetName]§! vorschlagen, dass wir ihr Eingeborenenreservat werden? \n[native_reserve_desc]"
+ ask_to_become_native_reserve_tooltip: "§Y[From.GetName]§! bitten, §Y[Root.GetName]§! zu einem [From.GetAdjective]en §YEingeborenenreservat§! zu machen.\n"
+ ask_to_become_native_reserve_alert_tooltip: "Eingeborenenreservat erbitten"
+ ask_to_become_native_reserve_dialog: "§Y[This.GetName]§! schlägt uns vor, dass sie unser §YEingeborenenreservat§! werden. \n[native_reserve_desc] \nWollt Ihr akzeptieren?"
+
+ cancel_native_reserve_title: "Eingeborenenreservat entlassen"
+ cancel_native_reserve_desc: "Beendet das Abhängigkeitsverhältnis von §Y[From.GetName]§! zu uns. Dies wird ihre Meinung über uns um §R-200§! verschlechtern, sofern sie ein Freiheitsstreben unter §Y50%§! besitzen. Außerdem verlieren wir §R-25§! Prestige und erhalten eine §Y5-jährige§! Waffenruhe mit ihnen."
+ cancel_native_reserve_tooltip: "Beedet die Vasallisierung von §Y[From.GetName]§! und entlasst sie in die Freiheit.\n"
 
 
  return_subject_to_vassal_title: "Zum Vasall degradieren"

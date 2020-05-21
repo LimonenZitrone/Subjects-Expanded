@@ -362,3 +362,19 @@ declined_ask_to_become_pagan_chiefdom = {
 	yearly_decay = 1
 	min = -100
 }
+
+is_native_reserve = {
+	opinion = 25
+}
+
+declined_establish_native_reserve_opinion = {
+	opinion = -25
+	yearly_decay = 1
+	min = -100
+}
+
+declined_ask_for_native_reserve_opinion = {
+	opinion = -25
+	yearly_decay = 1
+	min = -100
+}

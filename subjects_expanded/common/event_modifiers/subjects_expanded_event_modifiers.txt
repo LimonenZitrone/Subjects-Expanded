@@ -1035,6 +1035,62 @@ pagan_chiefdom_increased_horde_unity_overlord_modifier = {
 	ae_impact = 0.05
 }
 
+# Subject Type: Native Reserve
+native_reserve_civilized_modifier = {
+	global_tax_modifier = 0.25
+	development_cost = -0.1
+	land_forcelimit_modifier = -0.75
+}
+
+native_reserve_uncivilized_modifier = {
+	global_tax_modifier = 0.25
+	development_cost = -0.1
+	land_forcelimit_modifier = -0.75
+	liberty_desire = 25
+}
+
+native_reserve_behind_in_institutions_modifier = {
+	global_institution_spread = 0.1
+	embracement_cost = -0.1
+}
+
+native_reserve_ahead_in_institutions_modifier = {
+	liberty_desire = 20
+}
+
+native_reserve_behind_in_adm_tech_modifier = {
+	adm_tech_cost_modifier = -0.1
+}
+
+native_reserve_ahead_in_adm_tech_modifier = {
+	liberty_desire = 20
+}
+
+native_reserve_behind_in_dip_tech_modifier = {
+	dip_tech_cost_modifier = -0.1
+}
+
+native_reserve_ahead_in_dip_tech_modifier = {
+	liberty_desire = 20
+}
+
+native_reserve_behind_in_mil_tech_modifier = {
+	mil_tech_cost_modifier = -0.1
+}
+
+native_reserve_ahead_in_mil_tech_modifier = {
+	liberty_desire = 20
+}
+
+native_reserve_civilized_overlord_modifier = {
+	prestige = 0.05
+	diplomatic_reputation = 0.2
+}
+
+native_reserve_uncivilized_overlord_modifier = {
+	land_morale = 0.05
+}
+
 # Modifiers that function as timers
 protectorate_got_monarch_power_this_year = {
 }

@@ -29,6 +29,7 @@ iqta_vassal = { }
 papal_sanctuary_subject = { }
 imperial_feud_subject = { }
 pagan_chiefdom = { }
+native_reserve = { }
 
 # Subjects
 protectorate = {
@@ -4114,4 +4115,192 @@ pagan_chiefdom = {
 
 	overlord_opinion_modifier = is_pagan_chiefdom
 	subject_opinion_modifier = is_pagan_chiefdom
+}
+
+native_reserve = {
+	copy_from = default
+
+	# Triggers:
+	is_potential_overlord = {
+		is_subject = no
+		OR = {
+			AND = {
+				is_former_colonial_nation = yes
+				capital_scope = {
+					OR = {
+						continent = north_america
+						continent = south_america
+						continent = oceania
+					}
+				}
+			}
+			AND = {
+				calc_true_if = {
+					all_subject_country = {
+						OR = {
+							is_subject_of_type = colony
+							is_any_dominion_subject = yes
+						}
+					}
+					amount = 1
+				}
+				NOT = {
+					has_global_modifier_value = {
+						which = native_uprising_chance
+						value = -0.9
+					}
+				}
+			}
+		}
+	}
+
+	# Graphics:
+	sprite = GFX_icon_native_reserve
+	diplomacy_overlord_sprite = GFX_diplomacy_leadnative_reserve
+	diplomacy_subject_sprite = GFX_diplomacy_amnative_reserve
+
+	# Properties:
+	transfer_trade_power = yes
+	joins_overlords_wars = no
+	overlord_can_attack = no
+	can_have_subjects_of_other_types = yes
+	takes_diplo_slot = no
+	uses_military_focus = no
+	can_use_claims = no
+	gets_help_with_rebels = yes
+	can_transfer_in_peace = no
+	can_set_mil_focus = no
+	can_send_missionary_to_subject = no
+	overlord_can_fabricate_for = no
+
+	max_government_rank = 1
+
+	liberty_desire_development_ratio = 0.125
+	military_focus = 0.0
+
+	relative_power_class = 1
+	diplomacy_view_class = 1
+
+	can_fight = {
+	}
+	can_rival = {
+		other_overlord = native_reserve
+	}
+	can_ally = {
+		same_overlord = native_reserve
+	}
+	can_marry = {
+		same_overlord = native_reserve
+	}
+
+	# Subject Interactions:
+	# (immediate)
+	placate_rulers = no
+	enforce_religion = no
+	grant_core_claim = no
+
+	# Modifiers:
+	modifier_subject = clear
+	modifier_subject = {
+		modifier = subject_nation
+	}
+	modifier_subject = {
+		modifier = native_reserve_civilized_modifier
+		trigger = {
+			NOT = { government = native }
+			NOT = { government = tribal }
+		}
+	}
+	modifier_subject = {
+		modifier = native_reserve_uncivilized_modifier
+		trigger = {
+			OR = {
+				government = native
+				government = tribal
+			}
+		}
+	}
+	modifier_subject = {
+		modifier = native_reserve_behind_in_institutions_modifier
+		trigger = {
+			FROM = {
+				institution_difference = {
+					who = ROOT
+					value = 1
+				}
+			}
+		}
+	}
+	modifier_subject = {
+		modifier = native_reserve_ahead_in_institutions_modifier
+		trigger = {
+			institution_difference = {
+				who = FROM
+				value = 1
+			}
+		}
+	}
+	modifier_subject = {
+		modifier = native_reserve_behind_in_adm_tech_modifier
+		trigger = {
+			NOT = { adm_tech = FROM }
+		}
+	}
+	modifier_subject = {
+		modifier = native_reserve_ahead_in_adm_tech_modifier
+		trigger = {
+			FROM = {
+				NOT = { adm_tech = ROOT }
+			}
+		}
+	}
+	modifier_subject = {
+		modifier = native_reserve_behind_in_dip_tech_modifier
+		trigger = {
+			NOT = { dip_tech = FROM }
+		}
+	}
+	modifier_subject = {
+		modifier = native_reserve_ahead_in_dip_tech_modifier
+		trigger = {
+			FROM = {
+				NOT = { dip_tech = ROOT }
+			}
+		}
+	}
+	modifier_subject = {
+		modifier = native_reserve_behind_in_mil_tech_modifier
+		trigger = {
+			NOT = { mil_tech = FROM }
+		}
+	}
+	modifier_subject = {
+		modifier = native_reserve_ahead_in_mil_tech_modifier
+		trigger = {
+			FROM = {
+				NOT = { mil_tech = ROOT }
+			}
+		}
+	}
+
+	modifier_overlord = clear
+	modifier_overlord = {
+		modifier = native_reserve_civilized_overlord_modifier
+		trigger = {
+			NOT = { government = native }
+			NOT = { government = tribal }
+		}
+	}
+	modifier_overlord = {
+		modifier = native_reserve_uncivilized_overlord_modifier
+		trigger = {
+			OR = {
+				government = native
+				government = tribal
+			}
+		}
+	}
+
+	overlord_opinion_modifier = is_native_reserve
+	subject_opinion_modifier = is_native_reserve
 }

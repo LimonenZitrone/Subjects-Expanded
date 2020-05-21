@@ -1,7 +1,7 @@
 defined_text = {
 	name = GetSubjectType
 	random = no
-	
+
 	text = {
 		trigger = {
 			is_subject_of_type = vassal
@@ -218,7 +218,13 @@ defined_text = {
 		}
 		localisation_key = "[pagan_chiefdom]"
 	}
-	
+	text = {
+		trigger = {
+			is_subject_of_type = native_reserve
+		}
+		localisation_key = "[native_reserve]"
+	}
+
 	text = {
 		trigger = {
 			always = yes
@@ -230,7 +236,7 @@ defined_text = {
 # Vanilla Subjects Names & Descs
 defined_text = {
 	name = vassal
-	
+
 	text = {
 		trigger = {
 			always = yes
@@ -241,7 +247,7 @@ defined_text = {
 
 defined_text = {
 	name = vassal_desc
-	
+
 	text = {
 		trigger = {
 			always = yes
@@ -252,7 +258,7 @@ defined_text = {
 
 defined_text = {
 	name = march
-	
+
 	text = {
 		trigger = {
 			always = yes
@@ -263,7 +269,7 @@ defined_text = {
 
 defined_text = {
 	name = march_desc
-	
+
 	text = {
 		trigger = {
 			always = yes
@@ -274,7 +280,7 @@ defined_text = {
 
 defined_text = {
 	name = daimyo_vassal
-	
+
 	text = {
 		trigger = {
 			always = yes
@@ -285,7 +291,7 @@ defined_text = {
 
 defined_text = {
 	name = daimyo_vassal_desc
-	
+
 	text = {
 		trigger = {
 			always = yes
@@ -296,7 +302,7 @@ defined_text = {
 
 defined_text = {
 	name = personal_union
-	
+
 	text = {
 		trigger = {
 			always = yes
@@ -307,7 +313,7 @@ defined_text = {
 
 defined_text = {
 	name = personal_union_desc
-	
+
 	text = {
 		trigger = {
 			always = yes
@@ -318,7 +324,7 @@ defined_text = {
 
 defined_text = {
 	name = client_vassal
-	
+
 	text = {
 		trigger = {
 			always = yes
@@ -329,7 +335,7 @@ defined_text = {
 
 defined_text = {
 	name = client_vassal_desc
-	
+
 	text = {
 		trigger = {
 			always = yes
@@ -340,7 +346,7 @@ defined_text = {
 
 defined_text = {
 	name = client_march
-	
+
 	text = {
 		trigger = {
 			always = yes
@@ -351,7 +357,7 @@ defined_text = {
 
 defined_text = {
 	name = client_march_desc
-	
+
 	text = {
 		trigger = {
 			always = yes
@@ -362,7 +368,7 @@ defined_text = {
 
 defined_text = {
 	name = colony
-	
+
 	text = {
 		trigger = {
 			always = yes
@@ -373,7 +379,7 @@ defined_text = {
 
 defined_text = {
 	name = colony_desc
-	
+
 	text = {
 		trigger = {
 			always = yes
@@ -384,7 +390,7 @@ defined_text = {
 
 defined_text = {
 	name = tributary_state
-	
+
 	text = {
 		trigger = {
 			always = yes
@@ -395,7 +401,7 @@ defined_text = {
 
 defined_text = {
 	name = tributary_state_desc
-	
+
 	text = {
 		trigger = {
 			always = yes
@@ -407,7 +413,7 @@ defined_text = {
 # SE Subjects Names & Descs
 defined_text = {
 	name = protectorate
-	
+
 	text = {
 		trigger = {
 			always = yes
@@ -418,7 +424,7 @@ defined_text = {
 
 defined_text = {
 	name = protectorate_desc
-	
+
 	text = {
 		trigger = {
 			always = yes
@@ -429,7 +435,7 @@ defined_text = {
 
 defined_text = {
 	name = puppet_state
-	
+
 	text = {
 		trigger = {
 			always = yes
@@ -440,7 +446,7 @@ defined_text = {
 
 defined_text = {
 	name = puppet_state_desc
-	
+
 	text = {
 		trigger = {
 			always = yes
@@ -451,7 +457,7 @@ defined_text = {
 
 defined_text = {
 	name = dominion
-	
+
 	text = {
 		trigger = {
 			always = yes
@@ -462,7 +468,7 @@ defined_text = {
 
 defined_text = {
 	name = dominion_desc
-	
+
 	text = {
 		trigger = {
 			always = yes
@@ -473,7 +479,7 @@ defined_text = {
 
 defined_text = {
 	name = autonomous_dominion
-	
+
 	text = {
 		trigger = {
 			always = yes
@@ -484,7 +490,7 @@ defined_text = {
 
 defined_text = {
 	name = autonomous_dominion_desc
-	
+
 	text = {
 		trigger = {
 			always = yes
@@ -495,7 +501,7 @@ defined_text = {
 
 defined_text = {
 	name = roman_client_kingdom
-	
+
 	text = {
 		trigger = {
 			always = yes
@@ -506,7 +512,7 @@ defined_text = {
 
 defined_text = {
 	name = roman_client_kingdom_desc
-	
+
 	text = {
 		trigger = {
 			always = yes
@@ -517,7 +523,7 @@ defined_text = {
 
 defined_text = {
 	name = voivodeship
-	
+
 	text = {
 		trigger = {
 			always = yes
@@ -528,7 +534,7 @@ defined_text = {
 
 defined_text = {
 	name = voivodeship_desc
-	
+
 	text = {
 		trigger = {
 			always = yes
@@ -539,7 +545,7 @@ defined_text = {
 
 defined_text = {
 	name = fief_subject
-	
+
 	text = {
 		trigger = {
 			always = yes
@@ -550,7 +556,7 @@ defined_text = {
 
 defined_text = {
 	name = fief_subject_desc
-	
+
 	text = {
 		trigger = {
 			always = yes
@@ -561,7 +567,7 @@ defined_text = {
 
 defined_text = {
 	name = crusader_state_vassal
-	
+
 	text = {
 		trigger = {
 			always = yes
@@ -572,7 +578,7 @@ defined_text = {
 
 defined_text = {
 	name = crusader_state_vassal_desc
-	
+
 	text = {
 		trigger = {
 			always = yes
@@ -583,7 +589,7 @@ defined_text = {
 
 defined_text = {
 	name = salic_personal_union
-	
+
 	text = {
 		trigger = {
 			always = yes
@@ -594,7 +600,7 @@ defined_text = {
 
 defined_text = {
 	name = salic_personal_union_desc
-	
+
 	text = {
 		trigger = {
 			always = yes
@@ -605,7 +611,7 @@ defined_text = {
 
 defined_text = {
 	name = nahuatl_vassal
-	
+
 	text = {
 		trigger = {
 			always = yes
@@ -616,7 +622,7 @@ defined_text = {
 
 defined_text = {
 	name = nahuatl_vassal_desc
-	
+
 	text = {
 		trigger = {
 			always = yes
@@ -627,7 +633,7 @@ defined_text = {
 
 defined_text = {
 	name = peasant_vassal
-	
+
 	text = {
 		trigger = {
 			always = yes
@@ -638,7 +644,7 @@ defined_text = {
 
 defined_text = {
 	name = peasant_vassal_desc
-	
+
 	text = {
 		trigger = {
 			always = yes
@@ -649,7 +655,7 @@ defined_text = {
 
 defined_text = {
 	name = pirate_brotherhood_vassal
-	
+
 	text = {
 		trigger = {
 			always = yes
@@ -660,7 +666,7 @@ defined_text = {
 
 defined_text = {
 	name = pirate_brotherhood_vassal_desc
-	
+
 	text = {
 		trigger = {
 			always = yes
@@ -671,7 +677,7 @@ defined_text = {
 
 defined_text = {
 	name = imperial_tributary_state
-	
+
 	text = {
 		trigger = {
 			always = yes
@@ -682,7 +688,7 @@ defined_text = {
 
 defined_text = {
 	name = imperial_tributary_state_desc
-	
+
 	text = {
 		trigger = {
 			always = yes
@@ -693,7 +699,7 @@ defined_text = {
 
 defined_text = {
 	name = sister_republic
-	
+
 	text = {
 		trigger = {
 			always = yes
@@ -704,7 +710,7 @@ defined_text = {
 
 defined_text = {
 	name = sister_republic_desc
-	
+
 	text = {
 		trigger = {
 			always = yes
@@ -715,7 +721,7 @@ defined_text = {
 
 defined_text = {
 	name = muslim_tributary_vassal
-	
+
 	text = {
 		trigger = {
 			always = yes
@@ -726,7 +732,7 @@ defined_text = {
 
 defined_text = {
 	name = muslim_tributary_vassal_desc
-	
+
 	text = {
 		trigger = {
 			always = yes
@@ -737,7 +743,7 @@ defined_text = {
 
 defined_text = {
 	name = mandala_trade_vassal
-	
+
 	text = {
 		trigger = {
 			always = yes
@@ -748,7 +754,7 @@ defined_text = {
 
 defined_text = {
 	name = mandala_trade_vassal_desc
-	
+
 	text = {
 		trigger = {
 			always = yes
@@ -759,7 +765,7 @@ defined_text = {
 
 defined_text = {
 	name = integrated_tribe_subject
-	
+
 	text = {
 		trigger = {
 			always = yes
@@ -770,7 +776,7 @@ defined_text = {
 
 defined_text = {
 	name = integrated_tribe_subject_desc
-	
+
 	text = {
 		trigger = {
 			always = yes
@@ -781,7 +787,7 @@ defined_text = {
 
 defined_text = {
 	name = dutch_province_subject
-	
+
 	text = {
 		trigger = {
 			always = yes
@@ -792,7 +798,7 @@ defined_text = {
 
 defined_text = {
 	name = dutch_province_subject_desc
-	
+
 	text = {
 		trigger = {
 			always = yes
@@ -803,7 +809,7 @@ defined_text = {
 
 defined_text = {
 	name = revolution_subject
-	
+
 	text = {
 		trigger = {
 			always = yes
@@ -814,7 +820,7 @@ defined_text = {
 
 defined_text = {
 	name = revolution_subject_desc
-	
+
 	text = {
 		trigger = {
 			always = yes
@@ -825,7 +831,7 @@ defined_text = {
 
 defined_text = {
 	name = persian_satrapy
-	
+
 	text = {
 		trigger = {
 			always = yes
@@ -836,7 +842,7 @@ defined_text = {
 
 defined_text = {
 	name = persian_satrapy_desc
-	
+
 	text = {
 		trigger = {
 			always = yes
@@ -847,7 +853,7 @@ defined_text = {
 
 defined_text = {
 	name = naval_march
-	
+
 	text = {
 		trigger = {
 			always = yes
@@ -858,7 +864,7 @@ defined_text = {
 
 defined_text = {
 	name = naval_march_desc
-	
+
 	text = {
 		trigger = {
 			always = yes
@@ -869,7 +875,7 @@ defined_text = {
 
 defined_text = {
 	name = trade_outpost
-	
+
 	text = {
 		trigger = {
 			always = yes
@@ -880,7 +886,7 @@ defined_text = {
 
 defined_text = {
 	name = trade_outpost_desc
-	
+
 	text = {
 		trigger = {
 			always = yes
@@ -891,7 +897,7 @@ defined_text = {
 
 defined_text = {
 	name = integrated_personal_union
-	
+
 	text = {
 		trigger = {
 			always = yes
@@ -902,7 +908,7 @@ defined_text = {
 
 defined_text = {
 	name = integrated_personal_union_desc
-	
+
 	text = {
 		trigger = {
 			always = yes
@@ -913,7 +919,7 @@ defined_text = {
 
 defined_text = {
 	name = brother_kingdom
-	
+
 	text = {
 		trigger = {
 			always = yes
@@ -924,7 +930,7 @@ defined_text = {
 
 defined_text = {
 	name = brother_kingdom_desc
-	
+
 	text = {
 		trigger = {
 			always = yes
@@ -935,7 +941,7 @@ defined_text = {
 
 defined_text = {
 	name = iqta_vassal
-	
+
 	text = {
 		trigger = {
 			always = yes
@@ -946,7 +952,7 @@ defined_text = {
 
 defined_text = {
 	name = iqta_vassal_desc
-	
+
 	text = {
 		trigger = {
 			always = yes
@@ -957,7 +963,7 @@ defined_text = {
 
 defined_text = {
 	name = papal_sanctuary_subject
-	
+
 	text = {
 		trigger = {
 			always = yes
@@ -968,7 +974,7 @@ defined_text = {
 
 defined_text = {
 	name = papal_sanctuary_subject_desc
-	
+
 	text = {
 		trigger = {
 			always = yes
@@ -979,7 +985,7 @@ defined_text = {
 
 defined_text = {
 	name = imperial_feud_subject
-	
+
 	text = {
 		trigger = {
 			always = yes
@@ -990,7 +996,7 @@ defined_text = {
 
 defined_text = {
 	name = imperial_feud_subject_desc
-	
+
 	text = {
 		trigger = {
 			always = yes
@@ -1001,7 +1007,7 @@ defined_text = {
 
 defined_text = {
 	name = pagan_chiefdom
-	
+
 	text = {
 		trigger = {
 			always = yes
@@ -1012,11 +1018,33 @@ defined_text = {
 
 defined_text = {
 	name = pagan_chiefdom_desc
-	
+
 	text = {
 		trigger = {
 			always = yes
 		}
 		localisation_key = pagan_chiefdom_long_desc
+	}
+}
+
+defined_text = {
+	name = native_reserve
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = native_reserve_title
+	}
+}
+
+defined_text = {
+	name = native_reserve_desc
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = native_reserve_long_desc
 	}
 }

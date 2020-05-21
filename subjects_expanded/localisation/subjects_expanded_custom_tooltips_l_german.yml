@@ -38,6 +38,7 @@
  IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_papal_sanctuary_subject: "Kann zu einem §YPäpstlichen Schutzgebiet§! gemacht werden"
  IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_imperial_feud_subject: "Kann zu einem §YKaiserlichen Lehen§! gemacht werden"
  IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_pagan_chiefdom: "Kann zu einem §YStammesfürstentum§! gemacht werden"
+ IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_native_reserve: "Kann zu einem §YEingeborenenreservat§! gemacht werden"
 
  THIS_IS_FORMER_AUTONOMOUS_DOMINION: "Ist ein ehemaliges §YHerrschaftsgebiet§! oder eine ehemalige §YKolonialnation§!"
 
@@ -177,6 +178,7 @@
 
  # Scripted Functions:
  NO_CAPITAL_MOVE_DUTCH_PROVINCE: "§REine Niederländische Provinz kann ihre Hauptstadt nicht nach außerhalb der niederländischen Region verlegen.§!"
+ NATIVE_RESERVE_CANNOT_COLONIZE_PROVINCE_WITH_OTHER_CULTURE: "§REin Eingeborenenreservat kann keine Provinz mit einer anderen Kultur als ihrer Primärkultur kolonisieren.§!"
 
  # Special Tooltips:
  DISPLAY_SUBJECTS_OF_TYPE_TT_OWNER_IS_SUBJECT_OF_TYPE: "@[This.Owner.GetTag] §Y[This.Owner.GetName]§! ist ein(e) §Y[This.Owner.GetSubjectType]§! von @[This.Owner.Overlord.GetTag] §Y[This.Owner.Overlord.GetName]§!."
@@ -237,3 +239,5 @@
  display_imperial_feud_subject_desc_tt: "§g[imperial_feud_subject_desc]§W"
  display_pagan_chiefdom_title_tt: "§Y[pagan_chiefdom]§!"
  display_pagan_chiefdom_desc_tt: "§g[pagan_chiefdom_desc]§W"
+ display_native_reserve_title_tt: "§Y[native_reserve]§!"
+ display_native_reserve_desc_tt: "§g[native_reserve_desc]§W"

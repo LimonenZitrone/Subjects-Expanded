@@ -435,6 +435,23 @@
  increase_horde_unity_with_pagan_chiefdom_tooltip: "Sacrifice the weak §Y[From.GetAdjective]§! people to the gods.\n"
 
 
+ establish_native_reserve_title: "Establish Native Reservation"
+ establish_native_reserve_desc: "Do you want to offer §Y[From.GetName]§! to become our Native Reservation? \n[native_reserve_desc]"
+ establish_native_reserve_tooltip: "Make §Y[From.GetName]§! to a [Root.GetAdjective] §YNative Reservation§!.\n"
+ establish_native_reserve_alert_tooltip: "Establish Native Reservation"
+ establish_native_reserve_dialog: "§Y[This.GetName]§! offers us that we become their §YNative Reservation§!. \n[native_reserve_desc] \nDo you want to accept?"
+
+ ask_to_become_native_reserve_title: "Request Native Reservation"
+ ask_to_become_native_reserve_desc: "Do you want to offer §Y[From.GetName]§! that we become their Native Reservation? \n[native_reserve_desc]"
+ ask_to_become_native_reserve_tooltip: "Ask §Y[From.GetName]§! to make §Y[Root.GetName]§! to a [From.GetAdjective] §YNative Reservation§!.\n"
+ ask_to_become_native_reserve_alert_tooltip: "Request Native Reservation"
+ ask_to_become_native_reserve_dialog: "§Y[This.GetName]§! offers us that they become our §YNative Reservation§!. \n[native_reserve_desc] \nDo you want to accept?"
+
+ cancel_native_reserve_title: "Release Native Reservation"
+ cancel_native_reserve_desc: "Cancel the dependency of §Y[From.GetName]§! of us. This will decrease their opinion about us by §R-200§!, if their liberty desire is below §Y50%§!. We will also lose §R-25§! prestige and gain a truce with them for §Y5 years§!."
+ cancel_native_reserve_tooltip: "Cancel the vassalisation of §Y[From.GetName]§! and grant them independence.\n"
+
+
  return_subject_to_vassal_title: "Demote to Vassal"
  return_subject_to_vassal_desc: "Cancel the current status §Y[From.GetName]§! has and make them to a vassal. This will decrease their opinion of us by §R-100§! and change their liberty desire by §R+25%§!. We will also lose §R-10§! prestige[Root.GetIfDemoteToVassalGivesStabHit]."
  return_subject_to_vassal_tooltip: "Make §Y[From.GetName]§! to a vassal again.\n"

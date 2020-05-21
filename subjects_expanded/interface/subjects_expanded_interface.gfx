@@ -12,7 +12,7 @@ spriteTypes = {
 		name = "GFX_diplomacy_amprotectorate"
 		texturefile = "gfx//interface//icon_diplomacy_amprotectorate.dds"
 	}
-	
+
 	spriteType = {
 		name = "GFX_icon_puppet"
 		texturefile = "gfx/interface/icon_puppet.dds"
@@ -25,7 +25,7 @@ spriteTypes = {
 		name = "GFX_diplomacy_ampuppet"
 		texturefile = "gfx//interface//icon_diplomacy_ampuppet.dds"
 	}
-	
+
 	spriteType = {
 		name = "GFX_icon_dominion"
 		texturefile = "gfx/interface/icon_dominion.dds"
@@ -38,7 +38,7 @@ spriteTypes = {
 		name = "GFX_diplomacy_amdominion"
 		texturefile = "gfx//interface//icon_diplomacy_amdominion.dds"
 	}
-	
+
 	spriteType = {
 		name = "GFX_icon_autonomous_dominion"
 		texturefile = "gfx/interface/icon_autonomous_dominion.dds"
@@ -51,7 +51,7 @@ spriteTypes = {
 		name = "GFX_diplomacy_amautonomous_dominion"
 		texturefile = "gfx//interface//icon_diplomacy_amautonomous_dominion.dds"
 	}
-	
+
 	spriteType = {
 		name = "GFX_icon_roman_client_kingdom"
 		texturefile = "gfx/interface/icon_roman_client_kingdom.dds"
@@ -64,7 +64,7 @@ spriteTypes = {
 		name = "GFX_diplomacy_amroman_client_kingdom"
 		texturefile = "gfx//interface//icon_diplomacy_amroman_client_kingdom.dds"
 	}
-	
+
 	spriteType = {
 		name = "GFX_icon_voivodeship"
 		texturefile = "gfx/interface/icon_voivodeship.dds"
@@ -77,7 +77,7 @@ spriteTypes = {
 		name = "GFX_diplomacy_amvoivodeship"
 		texturefile = "gfx//interface//icon_diplomacy_amvoivodeship.dds"
 	}
-	
+
 	spriteType = {
 		name = "GFX_icon_fief_subject"
 		texturefile = "gfx/interface/icon_fief_subject.dds"
@@ -90,7 +90,7 @@ spriteTypes = {
 		name = "GFX_diplomacy_amfief_subject"
 		texturefile = "gfx//interface//icon_diplomacy_amfief_subject.dds"
 	}
-	
+
 	spriteType = {
 		name = "GFX_icon_crusader_state_vassal"
 		texturefile = "gfx/interface/icon_crusader_state_vassal.dds"
@@ -103,7 +103,7 @@ spriteTypes = {
 		name = "GFX_diplomacy_amcrusader_state_vassal"
 		texturefile = "gfx//interface//icon_diplomacy_amcrusader_state_vassal.dds"
 	}
-	
+
 	spriteType = {
 		name = "GFX_icon_nahuatl_vassal"
 		texturefile = "gfx/interface/icon_nahuatl_vassal.dds"
@@ -116,7 +116,7 @@ spriteTypes = {
 		name = "GFX_diplomacy_amnahuatl_vassal"
 		texturefile = "gfx//interface//icon_diplomacy_amnahuatl_vassal.dds"
 	}
-	
+
 	spriteType = {
 		name = "GFX_icon_peasant_vassal"
 		texturefile = "gfx/interface/icon_peasant_vassal.dds"
@@ -129,7 +129,7 @@ spriteTypes = {
 		name = "GFX_diplomacy_ampeasant_vassal"
 		texturefile = "gfx//interface//icon_diplomacy_ampeasant_vassal.dds"
 	}
-	
+
 	spriteType = {
 		name = "GFX_icon_pirate_brotherhood_vassal"
 		texturefile = "gfx/interface/icon_pirate_brotherhood_vassal.dds"
@@ -142,7 +142,7 @@ spriteTypes = {
 		name = "GFX_diplomacy_ampirate_brotherhood_vassal"
 		texturefile = "gfx//interface//icon_diplomacy_ampirate_brotherhood_vassal.dds"
 	}
-	
+
 	spriteType = {
 		name = "GFX_icon_imperial_tributary_state"
 		texturefile = "gfx/interface/icon_imperial_tributary_state.dds"
@@ -155,7 +155,7 @@ spriteTypes = {
 		name = "GFX_diplomacy_amimperial_tributary_state"
 		texturefile = "gfx//interface//icon_diplomacy_amimperial_tributary_state.dds"
 	}
-	
+
 	spriteType = {
 		name = "GFX_icon_sister_republic"
 		texturefile = "gfx/interface/icon_sister_republic.dds"
@@ -168,7 +168,7 @@ spriteTypes = {
 		name = "GFX_diplomacy_amsister_republic"
 		texturefile = "gfx//interface//icon_diplomacy_amsister_republic.dds"
 	}
-	
+
 	spriteType = {
 		name = "GFX_icon_muslim_tributary_vassal"
 		texturefile = "gfx/interface/icon_muslim_tributary_vassal.dds"
@@ -181,7 +181,7 @@ spriteTypes = {
 		name = "GFX_diplomacy_ammuslim_tributary_vassal"
 		texturefile = "gfx//interface//icon_diplomacy_ammuslim_tributary_vassal.dds"
 	}
-	
+
 	spriteType = {
 		name = "GFX_icon_mandala_trade_vassal"
 		texturefile = "gfx/interface/icon_mandala_trade_vassal.dds"
@@ -194,7 +194,7 @@ spriteTypes = {
 		name = "GFX_diplomacy_ammandala_trade_vassal"
 		texturefile = "gfx//interface//icon_diplomacy_ammandala_trade_vassal.dds"
 	}
-	
+
 	spriteType = {
 		name = "GFX_icon_integrated_tribe_subject"
 		texturefile = "gfx/interface/icon_integrated_tribe_subject.dds"
@@ -207,7 +207,7 @@ spriteTypes = {
 		name = "GFX_diplomacy_amintegrated_tribe_subject"
 		texturefile = "gfx//interface//icon_diplomacy_amintegrated_tribe_subject.dds"
 	}
-	
+
 	spriteType = {
 		name = "GFX_icon_dutch_province_subject"
 		texturefile = "gfx/interface/icon_dutch_province_subject.dds"
@@ -220,7 +220,7 @@ spriteTypes = {
 		name = "GFX_diplomacy_amdutch_province_subject"
 		texturefile = "gfx//interface//icon_diplomacy_amdutch_province_subject.dds"
 	}
-	
+
 	spriteType = {
 		name = "GFX_icon_revolution_subject"
 		texturefile = "gfx/interface/icon_revolution_subject.dds"
@@ -233,7 +233,7 @@ spriteTypes = {
 		name = "GFX_diplomacy_amrevolution_subject"
 		texturefile = "gfx//interface//icon_diplomacy_amrevolution_subject.dds"
 	}
-	
+
 	spriteType = {
 		name = "GFX_icon_persian_satrapy"
 		texturefile = "gfx/interface/icon_persian_satrapy.dds"
@@ -246,7 +246,7 @@ spriteTypes = {
 		name = "GFX_diplomacy_ampersian_satrapy"
 		texturefile = "gfx//interface//icon_diplomacy_ampersian_satrapy.dds"
 	}
-	
+
 	spriteType = {
 		name = "GFX_icon_naval_march"
 		texturefile = "gfx/interface/icon_naval_march.dds"
@@ -259,7 +259,7 @@ spriteTypes = {
 		name = "GFX_diplomacy_amnaval_march"
 		texturefile = "gfx//interface//icon_diplomacy_amnaval_march.dds"
 	}
-	
+
 	spriteType = {
 		name = "GFX_icon_trade_outpost"
 		texturefile = "gfx/interface/icon_trade_outpost.dds"
@@ -272,7 +272,7 @@ spriteTypes = {
 		name = "GFX_diplomacy_amtrade_outpost"
 		texturefile = "gfx//interface//icon_diplomacy_amtrade_outpost.dds"
 	}
-	
+
 	spriteType = {
 		name = "GFX_icon_integrated_personal_union"
 		texturefile = "gfx/interface/icon_integrated_personal_union.dds"
@@ -285,7 +285,7 @@ spriteTypes = {
 		name = "GFX_diplomacy_amintegrated_personal_union"
 		texturefile = "gfx//interface//icon_diplomacy_amintegrated_personal_union.dds"
 	}
-	
+
 	spriteType = {
 		name = "GFX_icon_brother_kingdom"
 		texturefile = "gfx/interface/icon_brother_kingdom.dds"
@@ -298,7 +298,7 @@ spriteTypes = {
 		name = "GFX_diplomacy_ambrother_kingdom"
 		texturefile = "gfx//interface//icon_diplomacy_ambrother_kingdom.dds"
 	}
-	
+
 	spriteType = {
 		name = "GFX_icon_iqta_vassal"
 		texturefile = "gfx/interface/icon_iqta_vassal.dds"
@@ -311,7 +311,7 @@ spriteTypes = {
 		name = "GFX_diplomacy_amiqta_vassal"
 		texturefile = "gfx//interface//icon_diplomacy_amiqta_vassal.dds"
 	}
-	
+
 	spriteType = {
 		name = "GFX_icon_papal_sanctuary_subject"
 		texturefile = "gfx/interface/icon_papal_sanctuary_subject.dds"
@@ -324,7 +324,7 @@ spriteTypes = {
 		name = "GFX_diplomacy_ampapal_sanctuary_subject"
 		texturefile = "gfx//interface//icon_diplomacy_ampapal_sanctuary_subject.dds"
 	}
-	
+
 	spriteType = {
 		name = "GFX_icon_imperial_feud_subject"
 		texturefile = "gfx/interface/icon_imperial_feud_subject.dds"
@@ -337,7 +337,7 @@ spriteTypes = {
 		name = "GFX_diplomacy_amimperial_feud_subject"
 		texturefile = "gfx//interface//icon_diplomacy_amimperial_feud_subject.dds"
 	}
-	
+
 	spriteType = {
 		name = "GFX_icon_pagan_chiefdom"
 		texturefile = "gfx/interface/icon_pagan_chiefdom.dds"
@@ -349,5 +349,18 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_diplomacy_ampagan_chiefdom"
 		texturefile = "gfx//interface//icon_diplomacy_ampagan_chiefdom.dds"
+	}
+
+	spriteType = {
+		name = "GFX_icon_native_reserve"
+		texturefile = "gfx/interface/icon_native_reserve.dds"
+	}
+	spriteType = {
+		name = "GFX_diplomacy_leadnative_reserve"
+		texturefile = "gfx//interface//icon_diplomacy_leadnative_reserve.dds"
+	}
+	spriteType = {
+		name = "GFX_diplomacy_amnative_reserve"
+		texturefile = "gfx//interface//icon_diplomacy_amnative_reserve.dds"
 	}
 }

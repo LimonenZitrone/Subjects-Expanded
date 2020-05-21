@@ -642,6 +642,28 @@ is_possible_subject_of_subject_type_pagan_chiefdom = {
 	}
 }
 
+is_possible_subject_of_subject_type_native_reserve = {
+	# PREVs in THIS scope refer to possible overlord
+	NOT = { is_subject_of_type = native_reserve }
+	is_subject = no
+	is_former_colonial_nation = no
+	capital_scope = {
+		OR = {
+			continent = north_america
+			continent = south_america
+			continent = oceania
+		}
+	}
+	PREV = {
+		NOT = {
+			border_distance = {
+				who = PREV
+				distance = 10
+			}
+		}
+	}
+}
+
 can_create_subject_type = {
 	can_be_overlord = $subject_type$
 	$subject$ = {

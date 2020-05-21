@@ -842,4 +842,5 @@ If a subject gives an additional merchant, the bonuses it gives to its overlord 
 [*] Native Reservations gain additional liberty desire if they are ahead of their overlord in institutions or technologies
 [*] Native Reservations gain additional liberty desire if they have a native or tribal government
 [*] Native Reservations do not join their overlord's wars
+[*] Native Reservations can only colonize provinces of their primary culture
 [/list]

@@ -97,7 +97,7 @@
 
  DID_NOT_REJECT_TO_JOIN_THE_HRE_WITHIN_LAST_5_YEARS: "Did NOT decline the offer to join the HRE within the last §Y5 years§!"
  DID_NOT_REJECT_TO_LET_US_JOIN_THE_HRE_WITHIN_LAST_5_YEARS: "Did NOT decline our request to join the HRE within the last §Y5 years§!"
- ROOT_HAS_LEFT_HRE_DURING_SHADOW_KINGDOM_EVENT: "Has left the §YHoly Roman Empire§! during the §YShadow Kingdom§! event"
+ ROOT_HAS_LEFT_HRE_DURING_SHADOW_KINGDOM_EVENT: "Was member of and has left the §YHoly Roman Empire§!"
 
  DID_NOT_INCREASE_LOOTING_SPEED_WITH_THIS_PAGAN_CHIEFDOM_WITHIN_LAST_10_YEARS: "Did NOT conscript the marauders from §Y[This.GetName]§! within the last §Y10 years§!"
  DID_NOT_INCREASE_HORDE_UNITY_WITH_THIS_PAGAN_CHIEFDOM_WITHIN_LAST_5_YEARS: "Did NOT sacrifice the weak of §Y[This.GetName]§! within the last §Y5 years§!"

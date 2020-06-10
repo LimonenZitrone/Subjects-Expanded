@@ -436,3 +436,52 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = subjects_expanded_imperial_feud_subject_events.8
+	title = subjects_expanded_imperial_feud_subject_events.EVTNAME8
+	desc = subjects_expanded_imperial_feud_subject_events.EVTDESC8
+	picture = HRE_eventPicture
+
+	hidden = yes
+
+	trigger = {
+		OR = {
+			AND = {
+				is_part_of_hre = yes
+				NOT = { has_country_flag = was_member_of_HRE }
+			}
+			AND = {
+				is_part_of_hre = no
+				has_country_flag = was_member_of_HRE
+				NOT = { has_country_flag = was_member_of_HRE_and_left }
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = {
+					is_part_of_hre = yes
+					NOT = { has_country_flag = was_member_of_HRE }
+				}
+				set_country_flag = was_member_of_HRE
+				clr_country_flag = was_member_of_HRE_and_left
+			}
+			if = {
+				limit = {
+					is_part_of_hre = no
+					has_country_flag = was_member_of_HRE
+					NOT = { has_country_flag = was_member_of_HRE_and_left }
+				}
+				set_country_flag = was_member_of_HRE_and_left
+				clr_country_flag = was_member_of_HRE
+			}
+		}
+	}
+}

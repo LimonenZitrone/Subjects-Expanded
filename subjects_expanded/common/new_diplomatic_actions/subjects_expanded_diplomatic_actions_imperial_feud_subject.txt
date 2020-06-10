@@ -608,13 +608,7 @@ establish_imperial_feud_subject = {
 			name = FROM_LEFT_DURING_SHADOW_KINGDOM_EVENT
 			limit = {
 				FROM = {
-					has_country_flag = shadow_kingdom
-					OR = {
-						culture_group = latin
-						capital_scope = {
-							region = italy_region
-						}
-					}
+					has_country_flag = was_member_of_HRE_and_left
 				}
 			}
 			export_to_variable = {
@@ -1188,17 +1182,7 @@ ask_for_imperial_feud_subject = {
 				}
 			}
 		}
-		OR = {
-			NOT = { has_country_flag = shadow_kingdom }
-			NOT = {
-				OR = {
-					culture_group = latin
-					capital_scope = {
-						region = italy_region
-					}
-				}
-			}
-		}
+		NOT = { has_country_flag = was_member_of_HRE_and_left }
 	}
 }
 
@@ -2588,13 +2572,7 @@ make_imperial_feud_subject_hre_member = {
 			name = FROM_LEFT_DURING_SHADOW_KINGDOM_EVENT
 			limit = {
 				FROM = {
-					has_country_flag = shadow_kingdom
-					OR = {
-						culture_group = latin
-						capital_scope = {
-							region = italy_region
-						}
-					}
+					has_country_flag = was_member_of_HRE_and_left
 				}
 			}
 			export_to_variable = {
@@ -3970,17 +3948,7 @@ ask_for_imperial_feud_subject_hre_member = {
 				}
 			}
 		}
-		OR = {
-			NOT = { has_country_flag = shadow_kingdom }
-			NOT = {
-				OR = {
-					culture_group = latin
-					capital_scope = {
-						region = italy_region
-					}
-				}
-			}
-		}
+		NOT = { has_country_flag = was_member_of_HRE_and_left }
 	}
 }
 
@@ -4621,17 +4589,9 @@ imperial_feud_subject_become_independent = {
 				hre_religion_locked = yes
 				NOT = { religion = FROM }
 			}
-			AND = {
-				custom_trigger_tooltip = {
-					tooltip = ROOT_HAS_LEFT_HRE_DURING_SHADOW_KINGDOM_EVENT
-					has_country_flag = shadow_kingdom
-				}
-				OR = {
-					culture_group = latin
-					capital_scope = {
-						region = italy_region
-					}
-				}
+			custom_trigger_tooltip = {
+				tooltip = ROOT_HAS_LEFT_HRE_DURING_SHADOW_KINGDOM_EVENT
+				has_country_flag = was_member_of_HRE_and_left
 			}
 		}
 		is_at_war = no
@@ -4682,15 +4642,7 @@ imperial_feud_subject_become_independent = {
 				hre_religion_locked = yes
 				NOT = { religion = FROM }
 			}
-			AND = {
-				has_country_flag = shadow_kingdom
-				OR = {
-					culture_group = latin
-					capital_scope = {
-						region = italy_region
-					}
-				}
-			}
+			has_country_flag = was_member_of_HRE_and_left
 		}
 	}
 }

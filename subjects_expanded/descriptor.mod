@@ -1,5 +1,4 @@
 name="Subjects Expanded"
-path="D:/Alex/Dokumente/Paradox Interactive/Europa Universalis IV/mod/subjects_expanded"
 dependencies={
 	"Missions Expanded"
 	"Extended Timeline"
@@ -10,4 +9,5 @@ tags={
 }
 picture="thumbnail.jpg"
 supported_version="1.30.*.*"
+path="D:/Alex/Dokumente/Paradox Interactive/Europa Universalis IV/mod/subjects_expanded"
 remote_file_id="1834079712"

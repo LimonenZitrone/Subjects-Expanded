@@ -97,7 +97,7 @@
 
  DID_NOT_REJECT_TO_JOIN_THE_HRE_WITHIN_LAST_5_YEARS: "Hat die Bitte, dem HRR beizutreten, innerhalb der letzten §Y5 Jahre§! NICHT abgelehnt"
  DID_NOT_REJECT_TO_LET_US_JOIN_THE_HRE_WITHIN_LAST_5_YEARS: "Hat unsere Bitte, dem HRR beitreten zu dürfen, innerhalb der letzten §Y5 Jahre§! NICHT abgelehnt"
- ROOT_HAS_LEFT_HRE_DURING_SHADOW_KINGDOM_EVENT: "Hat das §YHeilige Römische Reich§! während des §YSchattenkönigreich§!-Ereignisses verlassen"
+ ROOT_HAS_LEFT_HRE_DURING_SHADOW_KINGDOM_EVENT: "War ein Mitglied und hat das §YHeilige Römische Reich§! verlassen"
 
  DID_NOT_INCREASE_LOOTING_SPEED_WITH_THIS_PAGAN_CHIEFDOM_WITHIN_LAST_10_YEARS: "Hat innerhalb der letzten §Y10 Jahre§! KEINE Marodeure aus §Y[This.GetName]§! eingezogen"
  DID_NOT_INCREASE_HORDE_UNITY_WITH_THIS_PAGAN_CHIEFDOM_WITHIN_LAST_5_YEARS: "Hat innerhalb der letzten §Y5 Jahre§! KEINE Schwachen aus §Y[This.GetName]§! geopfert"

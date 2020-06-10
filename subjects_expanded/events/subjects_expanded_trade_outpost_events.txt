@@ -228,19 +228,11 @@ country_event = {
 				custom_tooltip = RELEASE_TRADE_OUTPOST_IN_THIS_PROVINCE
 			}
 			hidden_effect = {
-				set_country_flag = is_releasing_trade_outpost
 				event_target:trade_outpost_province_1 = {
 					set_province_flag = release_trade_outpost_here_@ROOT
-					set_estate = trade_outpost_release_estate
 				}
 				create_independent_estate = { estate = trade_outpost_release_estate government = republic government_reform = noble_elite_reform }
 				event_target:trade_outpost_province_1 = {
-					if = {
-						limit = {
-							has_estate = trade_outpost_release_estate
-						}
-						remove_estate = trade_outpost_release_estate
-					}
 					clr_province_flag = release_trade_outpost_here_@ROOT
 					owner = {
 						ROOT = {
@@ -252,7 +244,6 @@ country_event = {
 						add_truce_with = ROOT
 					}
 				}
-				clr_country_flag = is_releasing_trade_outpost
 				REB = {
 					change_variable = { which = num_of_autonomy_civil_wars value = 1 }
 				}
@@ -319,19 +310,11 @@ country_event = {
 				custom_tooltip = RELEASE_TRADE_OUTPOST_IN_THIS_PROVINCE
 			}
 			hidden_effect = {
-				set_country_flag = is_releasing_trade_outpost
 				event_target:trade_outpost_province_2 = {
 					set_province_flag = release_trade_outpost_here_@ROOT
-					set_estate = trade_outpost_release_estate
 				}
 				create_independent_estate = { estate = trade_outpost_release_estate government = republic government_reform = noble_elite_reform }
 				event_target:trade_outpost_province_2 = {
-					if = {
-						limit = {
-							has_estate = trade_outpost_release_estate
-						}
-						remove_estate = trade_outpost_release_estate
-					}
 					clr_province_flag = release_trade_outpost_here_@ROOT
 					owner = {
 						ROOT = {
@@ -343,7 +326,6 @@ country_event = {
 						add_truce_with = ROOT
 					}
 				}
-				clr_country_flag = is_releasing_trade_outpost
 				REB = {
 					change_variable = { which = num_of_autonomy_civil_wars value = 1 }
 				}
@@ -410,19 +392,11 @@ country_event = {
 				custom_tooltip = RELEASE_TRADE_OUTPOST_IN_THIS_PROVINCE
 			}
 			hidden_effect = {
-				set_country_flag = is_releasing_trade_outpost
 				event_target:trade_outpost_province_3 = {
 					set_province_flag = release_trade_outpost_here_@ROOT
-					set_estate = trade_outpost_release_estate
 				}
 				create_independent_estate = { estate = trade_outpost_release_estate government = republic government_reform = noble_elite_reform }
 				event_target:trade_outpost_province_3 = {
-					if = {
-						limit = {
-							has_estate = trade_outpost_release_estate
-						}
-						remove_estate = trade_outpost_release_estate
-					}
 					clr_province_flag = release_trade_outpost_here_@ROOT
 					owner = {
 						ROOT = {
@@ -434,7 +408,6 @@ country_event = {
 						add_truce_with = ROOT
 					}
 				}
-				clr_country_flag = is_releasing_trade_outpost
 				REB = {
 					change_variable = { which = num_of_autonomy_civil_wars value = 1 }
 				}
@@ -501,19 +474,11 @@ country_event = {
 				custom_tooltip = RELEASE_TRADE_OUTPOST_IN_THIS_PROVINCE
 			}
 			hidden_effect = {
-				set_country_flag = is_releasing_trade_outpost
 				event_target:trade_outpost_province_4 = {
 					set_province_flag = release_trade_outpost_here_@ROOT
-					set_estate = trade_outpost_release_estate
 				}
 				create_independent_estate = { estate = trade_outpost_release_estate government = republic government_reform = noble_elite_reform }
 				event_target:trade_outpost_province_4 = {
-					if = {
-						limit = {
-							has_estate = trade_outpost_release_estate
-						}
-						remove_estate = trade_outpost_release_estate
-					}
 					clr_province_flag = release_trade_outpost_here_@ROOT
 					owner = {
 						ROOT = {
@@ -525,7 +490,6 @@ country_event = {
 						add_truce_with = ROOT
 					}
 				}
-				clr_country_flag = is_releasing_trade_outpost
 				REB = {
 					change_variable = { which = num_of_autonomy_civil_wars value = 1 }
 				}
@@ -592,19 +556,11 @@ country_event = {
 				custom_tooltip = RELEASE_TRADE_OUTPOST_IN_THIS_PROVINCE
 			}
 			hidden_effect = {
-				set_country_flag = is_releasing_trade_outpost
 				event_target:trade_outpost_province_5 = {
 					set_province_flag = release_trade_outpost_here_@ROOT
-					set_estate = trade_outpost_release_estate
 				}
 				create_independent_estate = { estate = trade_outpost_release_estate government = republic government_reform = noble_elite_reform }
 				event_target:trade_outpost_province_5 = {
-					if = {
-						limit = {
-							has_estate = trade_outpost_release_estate
-						}
-						remove_estate = trade_outpost_release_estate
-					}
 					clr_province_flag = release_trade_outpost_here_@ROOT
 					owner = {
 						ROOT = {
@@ -616,7 +572,6 @@ country_event = {
 						add_truce_with = ROOT
 					}
 				}
-				clr_country_flag = is_releasing_trade_outpost
 				REB = {
 					change_variable = { which = num_of_autonomy_civil_wars value = 1 }
 				}
@@ -947,19 +902,11 @@ country_event = {
 				custom_tooltip = RELEASE_TRADE_OUTPOST_IN_THIS_PROVINCE
 			}
 			hidden_effect = {
-				set_country_flag = is_releasing_trade_outpost
 				event_target:trade_outpost_province_1 = {
 					set_province_flag = release_trade_outpost_here_@ROOT
-					set_estate = trade_outpost_release_estate
 				}
 				create_independent_estate = { estate = trade_outpost_release_estate government = republic government_reform = noble_elite_reform }
 				event_target:trade_outpost_province_1 = {
-					if = {
-						limit = {
-							has_estate = trade_outpost_release_estate
-						}
-						remove_estate = trade_outpost_release_estate
-					}
 					clr_province_flag = release_trade_outpost_here_@ROOT
 					owner = {
 						ROOT = {
@@ -971,7 +918,6 @@ country_event = {
 						add_truce_with = ROOT
 					}
 				}
-				clr_country_flag = is_releasing_trade_outpost
 				REB = {
 					change_variable = { which = num_of_autonomy_civil_wars value = 1 }
 				}
@@ -1038,19 +984,11 @@ country_event = {
 				custom_tooltip = RELEASE_TRADE_OUTPOST_IN_THIS_PROVINCE
 			}
 			hidden_effect = {
-				set_country_flag = is_releasing_trade_outpost
 				event_target:trade_outpost_province_2 = {
 					set_province_flag = release_trade_outpost_here_@ROOT
-					set_estate = trade_outpost_release_estate
 				}
 				create_independent_estate = { estate = trade_outpost_release_estate government = republic government_reform = noble_elite_reform }
 				event_target:trade_outpost_province_2 = {
-					if = {
-						limit = {
-							has_estate = trade_outpost_release_estate
-						}
-						remove_estate = trade_outpost_release_estate
-					}
 					clr_province_flag = release_trade_outpost_here_@ROOT
 					owner = {
 						ROOT = {
@@ -1062,7 +1000,6 @@ country_event = {
 						add_truce_with = ROOT
 					}
 				}
-				clr_country_flag = is_releasing_trade_outpost
 				REB = {
 					change_variable = { which = num_of_autonomy_civil_wars value = 1 }
 				}
@@ -1129,19 +1066,11 @@ country_event = {
 				custom_tooltip = RELEASE_TRADE_OUTPOST_IN_THIS_PROVINCE
 			}
 			hidden_effect = {
-				set_country_flag = is_releasing_trade_outpost
 				event_target:trade_outpost_province_3 = {
 					set_province_flag = release_trade_outpost_here_@ROOT
-					set_estate = trade_outpost_release_estate
 				}
 				create_independent_estate = { estate = trade_outpost_release_estate government = republic government_reform = noble_elite_reform }
 				event_target:trade_outpost_province_3 = {
-					if = {
-						limit = {
-							has_estate = trade_outpost_release_estate
-						}
-						remove_estate = trade_outpost_release_estate
-					}
 					clr_province_flag = release_trade_outpost_here_@ROOT
 					owner = {
 						ROOT = {
@@ -1153,7 +1082,6 @@ country_event = {
 						add_truce_with = ROOT
 					}
 				}
-				clr_country_flag = is_releasing_trade_outpost
 				REB = {
 					change_variable = { which = num_of_autonomy_civil_wars value = 1 }
 				}
@@ -1220,19 +1148,11 @@ country_event = {
 				custom_tooltip = RELEASE_TRADE_OUTPOST_IN_THIS_PROVINCE
 			}
 			hidden_effect = {
-				set_country_flag = is_releasing_trade_outpost
 				event_target:trade_outpost_province_4 = {
 					set_province_flag = release_trade_outpost_here_@ROOT
-					set_estate = trade_outpost_release_estate
 				}
 				create_independent_estate = { estate = trade_outpost_release_estate government = republic government_reform = noble_elite_reform }
 				event_target:trade_outpost_province_4 = {
-					if = {
-						limit = {
-							has_estate = trade_outpost_release_estate
-						}
-						remove_estate = trade_outpost_release_estate
-					}
 					clr_province_flag = release_trade_outpost_here_@ROOT
 					owner = {
 						ROOT = {
@@ -1244,7 +1164,6 @@ country_event = {
 						add_truce_with = ROOT
 					}
 				}
-				clr_country_flag = is_releasing_trade_outpost
 				REB = {
 					change_variable = { which = num_of_autonomy_civil_wars value = 1 }
 				}
@@ -1311,19 +1230,11 @@ country_event = {
 				custom_tooltip = RELEASE_TRADE_OUTPOST_IN_THIS_PROVINCE
 			}
 			hidden_effect = {
-				set_country_flag = is_releasing_trade_outpost
 				event_target:trade_outpost_province_5 = {
 					set_province_flag = release_trade_outpost_here_@ROOT
-					set_estate = trade_outpost_release_estate
 				}
 				create_independent_estate = { estate = trade_outpost_release_estate government = republic government_reform = noble_elite_reform }
 				event_target:trade_outpost_province_5 = {
-					if = {
-						limit = {
-							has_estate = trade_outpost_release_estate
-						}
-						remove_estate = trade_outpost_release_estate
-					}
 					clr_province_flag = release_trade_outpost_here_@ROOT
 					owner = {
 						ROOT = {
@@ -1335,7 +1246,6 @@ country_event = {
 						add_truce_with = ROOT
 					}
 				}
-				clr_country_flag = is_releasing_trade_outpost
 				REB = {
 					change_variable = { which = num_of_autonomy_civil_wars value = 1 }
 				}

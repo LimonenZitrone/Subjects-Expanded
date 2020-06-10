@@ -102,6 +102,8 @@
  DID_NOT_INCREASE_LOOTING_SPEED_WITH_THIS_PAGAN_CHIEFDOM_WITHIN_LAST_10_YEARS: "Did NOT conscript the marauders from §Y[This.GetName]§! within the last §Y10 years§!"
  DID_NOT_INCREASE_HORDE_UNITY_WITH_THIS_PAGAN_CHIEFDOM_WITHIN_LAST_5_YEARS: "Did NOT sacrifice the weak of §Y[This.GetName]§! within the last §Y5 years§!"
 
+ DID_NOT_REQUEST_CURIA_MONEY_FROM_THIS_RULER: "Did NOT request a donation from §Y[This.Monarch.GetName]§!"
+
  # Decisions:
  ALL_PROVINCES_IN_INDIAN_TRADE_COMPANY_REGIONS_CEDED_TO_DOMINION: "\nAll our provinces in [Root.GetIndianTradeCompanyRegionsSgPl] [Root.GetFirstIndianTradeCompanyRegionWeCede][Root.GetSecondIndianTradeCompanyRegionWeCede][Root.GetThirdIndianTradeCompanyRegionWeCede][Root.GetFourthIndianTradeCompanyRegionWeCede][Root.GetFifthIndianTradeCompanyRegionWeCede] are ceded to our dominion \n[Root.GetCreatedADNameIndia], which is released there."
  ALL_PROVINCES_IN_EAST_INDIES_TRADE_COMPANY_REGIONS_CEDED_TO_DOMINION: "\nAll our provinces in [Root.GetEastIndiesTradeCompanyRegionsSgPl] [Root.GetFirstEastIndiesTradeCompanyRegionWeCede][Root.GetSecondEastIndiesTradeCompanyRegionWeCede] are ceded to our dominion \n[Root.GetCreatedADNameEastIndies], which is released there."

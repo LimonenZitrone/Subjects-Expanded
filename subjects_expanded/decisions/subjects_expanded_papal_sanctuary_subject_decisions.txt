@@ -17,6 +17,12 @@ country_decisions = {
 			dip_power = 100
 		}
 		effect = {
+			if = {
+				limit = {
+					has_dlc = "Emperor"
+				}
+				add_curia_treasury = 250
+			}
 			add_treasury = -250
 			add_dip_power = -100
 			if = {
@@ -80,7 +86,7 @@ country_decisions = {
 		}
 		ai_will_do = {
 			factor = 1
-			
+
 			modifier = {
 				factor = 0
 				any_neighbor_country = {

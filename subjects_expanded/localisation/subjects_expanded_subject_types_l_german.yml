@@ -50,7 +50,7 @@
  fief_subject_title: "Feudalvasall"
  fief_subject_title_plural: "Feudalvasallen"
  fief_subject_is_our: "§Y$NAME$§! ist unser Feudalvasall."
- fief_subject_long_desc: "Ein Feudalvasall ist ein Vasall mit der gleichen Primärkultur, der gleichen Kulturgruppe oder eine akzeptierten Kultur. Er verhält sich ähnlich wie ein Vasall, hat jedoch ein leicht reduziertes Freiheitsstreben, tritt Kriegen seines Lehnsherrn nicht bei und kann nur integriert werden. Allerdings zahlt es mehr Geld an seinen Lehnsherrn und der Lehnsherr kann Truppen von ihm fordern. Weiterhin besitzt er erhöhte Steuereinnahmen und reduzierte Kulturkonvertierungskosten und beeinflusst diese Modifikatoren auch bei seinem Lehnsherrn.\n"
+ fief_subject_long_desc: "Ein Feudalvasall ist ein Vasall mit der gleichen Primärkultur, der gleichen Kulturgruppe oder eine akzeptierten Kultur. Er verhält sich ähnlich wie ein Vasall, hat jedoch ein leicht reduziertes Freiheitsstreben, tritt Kriegen seines Lehnsherrn normalerweise nicht bei - kann jedoch im Austausch für ein erhöhtes Freiheitsstreben zu den Waffen gerufen werden - und kann nur integriert werden. Allerdings zahlt es mehr Geld an seinen Lehnsherrn und der Lehnsherr kann Truppen von ihm fordern. Weiterhin besitzt er erhöhte Steuereinnahmen und reduzierte Kulturkonvertierungskosten und beeinflusst diese Modifikatoren auch bei seinem Lehnsherrn.\n"
  fief_subject_no_overlord_dow: "Ihr könnt Eurem eigenen Feudalvasall nicht den Krieg erklären."
 
  crusader_state_vassal_title: "Kreuzfahrerstaat"

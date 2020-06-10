@@ -3856,7 +3856,8 @@ imperial_feud_subject = {
 	# Triggers:
 	is_potential_overlord = {
 		is_emperor = yes
-		NOT = { hre_reform_level = 7 }
+		NOT = { hre_reform_passed = emperor_privilegia_de_non_appelando }
+		NOT = { hre_reform_passed = privilegia_de_non_appelando }
 	}
 
 	# Properties:

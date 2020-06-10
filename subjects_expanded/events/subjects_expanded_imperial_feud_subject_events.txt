@@ -386,7 +386,10 @@ country_event = {
 
 	trigger = {
 		is_subject_of_type = imperial_feud_subject
-		hre_reform_level = 7
+		OR = {
+			hre_reform_passed = emperor_privilegia_de_non_appelando
+			hre_reform_passed = privilegia_de_non_appelando
+		}
 		overlord = {
 			is_emperor = yes
 		}

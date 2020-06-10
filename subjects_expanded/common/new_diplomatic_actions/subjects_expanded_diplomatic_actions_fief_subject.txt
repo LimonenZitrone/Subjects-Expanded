@@ -1,18 +1,18 @@
 establish_fief_subject = {
 	category = influence
-	
+
 	alert_index = 6
 	alert_tooltip = establish_fief_subject_alert_tooltip
-	
+
 	require_acceptance = yes
-	
+
 	is_visible = {
 		can_create_subject_type = {
 			subject = FROM
 			subject_type = fief_subject
 		}
 	}
-	
+
 	is_allowed = {
 		can_create_subject_type = {
 			subject = FROM
@@ -45,7 +45,7 @@ establish_fief_subject = {
 			}
 		}
 	}
-	
+
 	on_accept = {
 		if = {
 			limit = {
@@ -86,7 +86,7 @@ establish_fief_subject = {
 			}
 		}
 	}
-	
+
 	on_decline = {
 		if = {
 			limit = {
@@ -131,7 +131,7 @@ establish_fief_subject = {
 			}
 		}
 	}
-	
+
 	ai_acceptance = {
 		add_entry = {
 			name = FROM_IS_VASSAL_OF_ROOT
@@ -395,7 +395,7 @@ establish_fief_subject = {
 					multiply_variable = { which = our_mil_tech value = 3 }
 					change_variable = { which = military_power which = our_army_size }
 					change_variable = { which = military_power which = our_mil_tech }
-					
+
 					NOT = { check_variable = { which = military_power value = -39 } }
 				}
 			}
@@ -440,7 +440,7 @@ establish_fief_subject = {
 					multiply_variable = { which = our_mil_tech value = 3 }
 					change_variable = { which = military_power which = our_army_size }
 					change_variable = { which = military_power which = our_mil_tech }
-					
+
 					check_variable = { which = military_power value = -39 }
 					NOT = { check_variable = { which = military_power value = 30 } }
 				}
@@ -510,7 +510,7 @@ establish_fief_subject = {
 					change_variable = { which = our_mil_tech which = their_mil_tech }
 					multiply_variable = { which = our_mil_tech value = 3 }
 					change_variable = { which = military_power which = our_army_size }
-					change_variable = { which = military_power which = our_mil_tech }	
+					change_variable = { which = military_power which = our_mil_tech }
 					check_variable = { which = military_power value = 30 }
 				}
 			}
@@ -654,7 +654,7 @@ establish_fief_subject = {
 					divide_variable = { which = our_total_development which = their_total_development }
 					multiply_variable = { which = eco_power which = our_total_development }
 					change_variable = { which = eco_power value = -90 }
-					
+
 					check_variable = { which = eco_power value = -89 }
 					NOT = { check_variable = { which = eco_power value = 30 } }
 				}
@@ -699,7 +699,7 @@ establish_fief_subject = {
 					divide_variable = { which = our_total_development which = their_total_development }
 					multiply_variable = { which = eco_power which = our_total_development }
 					change_variable = { which = eco_power value = -90 }
-					
+
 					NOT = { check_variable = { which = eco_power value = -89 } }
 				}
 			}
@@ -731,7 +731,7 @@ establish_fief_subject = {
 					divide_variable = { which = our_total_development which = their_total_development }
 					multiply_variable = { which = eco_power which = our_total_development }
 					change_variable = { which = eco_power value = -90 }
-					
+
 					check_variable = { which = eco_power value = 30 }
 				}
 			}
@@ -766,7 +766,7 @@ establish_fief_subject = {
 			multiply_variable = { which = ai_value value = -1 }
 		}
 	}
-	
+
 	ai_will_do = {
 		is_emperor = no
 		NOT = { calc_true_if = { all_subject_country = { is_subject_of_type = fief_subject } amount = 5 } }
@@ -784,14 +784,14 @@ demand_troops_from_fief_subject = {
 	category = influence
 
 	require_acceptance = no
-	
+
 	is_visible = {
 		FROM = {
 			is_subject_of = ROOT
 			is_subject_of_type = fief_subject
 		}
 	}
-	
+
 	is_allowed = {
 		hidden_trigger = {
 			FROM = {
@@ -813,7 +813,7 @@ demand_troops_from_fief_subject = {
 			}
 		}
 	}
-	
+
 	on_accept = {
 		if = {
 			limit = {
@@ -900,7 +900,7 @@ demand_troops_from_fief_subject = {
 			}
 		}
 	}
-	
+
 	ai_will_do = {
 		is_at_war = yes
 		NOT = { manpower = 1 }
@@ -919,18 +919,96 @@ demand_troops_from_fief_subject = {
 	}
 }
 
+enforce_call_to_arms_from_fief_subject = {
+	category = influence
+
+	require_acceptance = no
+
+	is_visible = {
+		FROM = {
+			is_subject_of = ROOT
+			is_subject_of_type = fief_subject
+		}
+		is_at_war = yes
+		NOT = {
+			is_in_war = {
+				participants = ROOT
+				participants = FROM
+			}
+		}
+	}
+
+	is_allowed = {
+		hidden_trigger = {
+			FROM = {
+				is_subject_of = ROOT
+				is_subject_of_type = fief_subject
+			}
+			is_at_war = yes
+			NOT = {
+				is_in_war = {
+					participants = ROOT
+					participants = FROM
+				}
+			}
+		}
+		FROM = {
+			is_at_war = no
+		}
+		FROM = { NOT = { liberty_desire = 50 } }
+	}
+
+	on_accept = {
+		if = {
+			limit = {
+				FROM = {
+					is_subject_of = ROOT
+					is_subject_of_type = fief_subject
+				}
+				is_at_war = yes
+				NOT = {
+					is_in_war = {
+						participants = ROOT
+						participants = FROM
+					}
+				}
+				FROM = {
+					is_at_war = no
+				}
+				FROM = { NOT = { liberty_desire = 50 } }
+			}
+			FROM = {
+				add_liberty_desire = 25
+				join_all_defensive_wars_of = ROOT
+				join_all_offensive_wars_of = ROOT
+				country_event = { id = subjects_expanded_fief_subject_events.2 }
+			}
+		}
+	}
+
+	ai_will_do = {
+		is_at_war = yes
+		manpower_percentage = 0.1
+		NOT = { war_score = -25 }
+		FROM = {
+			army_size = 5
+			NOT = { liberty_desire = 25 }
+		}
+	}
+}
+
 cancel_fief_subject = {
 	category = influence
 
 	require_acceptance = no
-	
+
 	is_visible = {
 		FROM = {
 			is_subject_of = ROOT
 			is_subject_of_type = fief_subject
 		}
 	}
-	
+
 	is_allowed = {
 		hidden_trigger = {
 			FROM = {
@@ -941,7 +1019,7 @@ cancel_fief_subject = {
 		NOT = { truce_with = FROM }
 		prestige = 0
 	}
-	
+
 	on_accept = {
 		if = {
 			limit = {
@@ -969,7 +1047,7 @@ cancel_fief_subject = {
 			add_prestige = -25
 		}
 	}
-	
+
 	ai_will_do = {
 		FROM = {
 			liberty_desire = 100

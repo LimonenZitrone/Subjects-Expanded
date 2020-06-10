@@ -5,15 +5,34 @@ country_event = {
 	title = subjects_expanded_fief_subject_events.EVTNAME1
 	desc = subjects_expanded_fief_subject_events.EVTDESC1
 	picture = BATTLE_eventPicture
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = subjects_expanded_fief_subject_events1.EVTOPT1
-		
+
 		custom_tooltip = FIEF_OVERLORD_DEMANDED_TROOPS
 		tooltip = {
 			add_liberty_desire = 10
+		}
+	}
+}
+
+country_event = {
+	id = subjects_expanded_fief_subject_events.2
+	title = subjects_expanded_fief_subject_events.EVTNAME2
+	desc = subjects_expanded_fief_subject_events.EVTDESC2
+	picture = BATTLE_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = subjects_expanded_fief_subject_events2.EVTOPT1
+
+		tooltip = {
+			add_liberty_desire = 25
+			join_all_defensive_wars_of = FROM
+			join_all_offensive_wars_of = FROM
 		}
 	}
 }

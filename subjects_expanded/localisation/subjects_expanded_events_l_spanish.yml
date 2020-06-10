@@ -109,6 +109,10 @@
  subjects_expanded_fief_subject_events.EVTDESC1: "Our overlord made use of his right and demanded troops for his army."
  subjects_expanded_fief_subject_events1.EVTOPT1: "Was this really necessary?"
 
+ subjects_expanded_fief_subject_events.EVTNAME2: "War Participation Demanded"
+ subjects_expanded_fief_subject_events.EVTDESC2: "Our overlord made use of his right and demanded that we help him in his wars."
+ subjects_expanded_fief_subject_events2.EVTOPT1: "Was this really necessary?"
+
  subjects_expanded_pirate_brotherhood_vassal_events.EVTNAME2: "Brotherhoods declare Independence"
  subjects_expanded_pirate_brotherhood_vassal_events.EVTDESC2: "We are not lead by a Pirate government anymore. Our Pirate Brotherhoods that were loyal to us until now take this as a valid reason to declare independence."
  subjects_expanded_pirate_brotherhood_vassal_events2.EVTOPT1: "That's unfortunate..."
@@ -121,10 +125,6 @@
  subjects_expanded_sister_republic_events.EVTNAME1: "Sister Republic becomes independent"
  subjects_expanded_sister_republic_events.EVTDESC1: "The governments of [Root.GetName] and our Sister Republic were drifting apart in the last time and now the time has come to admit that this relationship cannot be kept as close as before."
  subjects_expanded_sister_republic_events1.EVTOPT1: "We will still stick together in war!"
-
- subjects_expanded_sister_republic_events.EVTNAME3: "Sister Republic chose a war target"
- subjects_expanded_sister_republic_events.EVTDESC3: "Our Sister Republic, [From.GetName], has marked §R[FROM_marked_THIS_for_war.GetName]§! as their war target. They may ask you to declare a common war on this country within the next 90 days."
- subjects_expanded_sister_republic_events3.EVTOPT1: "Interesting."
 
  subjects_expanded_muslim_tributary_vassal_events.EVTNAME2: "Trouble with Dar al-Sulh Territories"
  subjects_expanded_muslim_tributary_vassal_events.EVTDESC2: "Our Dar al-Sulh Territories are making problems. Either at least one of them has come under the muslim law, which makes it an invalid Dar al-Sulh Territory and we should focus on integrating it further into our empire, or we do not follow the muslim law anymore, which makes us an invalid overlord of Dar al-Sulh Territories. The latter would demand us to release all our Dar al-Sulh Territories."

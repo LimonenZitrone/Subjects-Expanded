@@ -1,18 +1,18 @@
 establish_papal_sanctuary_subject = {
 	category = influence
-	
+
 	alert_index = 6
 	alert_tooltip = establish_papal_sanctuary_subject_alert_tooltip
-	
+
 	require_acceptance = yes
-	
+
 	is_visible = {
 		can_create_subject_type = {
 			subject = FROM
 			subject_type = papal_sanctuary_subject
 		}
 	}
-	
+
 	is_allowed = {
 		can_create_subject_type = {
 			subject = FROM
@@ -33,7 +33,7 @@ establish_papal_sanctuary_subject = {
 			religious_unity = 0.9
 		}
 	}
-	
+
 	on_accept = {
 		if = {
 			limit = {
@@ -63,7 +63,7 @@ establish_papal_sanctuary_subject = {
 			add_truce_with = FROM
 		}
 	}
-	
+
 	on_decline = {
 		if = {
 			limit = {
@@ -96,7 +96,7 @@ establish_papal_sanctuary_subject = {
 			}
 		}
 	}
-	
+
 	ai_acceptance = {
 		add_entry = {
 			name = FROM_ATTITUDE_TOWARDS_ROOT
@@ -224,7 +224,7 @@ establish_papal_sanctuary_subject = {
 					multiply_variable = { which = our_mil_tech value = 3 }
 					change_variable = { which = military_power which = our_army_size }
 					change_variable = { which = military_power which = our_mil_tech }
-					
+
 					NOT = { check_variable = { which = military_power value = -39 } }
 				}
 			}
@@ -268,7 +268,7 @@ establish_papal_sanctuary_subject = {
 					multiply_variable = { which = our_mil_tech value = 3 }
 					change_variable = { which = military_power which = our_army_size }
 					change_variable = { which = military_power which = our_mil_tech }
-					
+
 					check_variable = { which = military_power value = -39 }
 					NOT = { check_variable = { which = military_power value = 30 } }
 				}
@@ -337,7 +337,7 @@ establish_papal_sanctuary_subject = {
 					change_variable = { which = our_mil_tech which = their_mil_tech }
 					multiply_variable = { which = our_mil_tech value = 3 }
 					change_variable = { which = military_power which = our_army_size }
-					change_variable = { which = military_power which = our_mil_tech }	
+					change_variable = { which = military_power which = our_mil_tech }
 					check_variable = { which = military_power value = 30 }
 				}
 			}
@@ -700,7 +700,7 @@ establish_papal_sanctuary_subject = {
 			}
 		}
 	}
-	
+
 	ai_will_do = {
 		OR = {
 			is_defender_of_faith = yes
@@ -742,12 +742,12 @@ establish_papal_sanctuary_subject = {
 
 ask_for_papal_sanctuary_subject = {
 	category = influence
-	
+
 	alert_index = 6
 	alert_tooltip = ask_for_papal_sanctuary_subject_alert_tooltip
-	
+
 	require_acceptance = yes
-	
+
 	is_visible = {
 		FROM = {
 			can_create_subject_type = {
@@ -756,7 +756,7 @@ ask_for_papal_sanctuary_subject = {
 			}
 		}
 	}
-	
+
 	is_allowed = {
 		FROM = {
 			can_create_subject_type = {
@@ -777,7 +777,7 @@ ask_for_papal_sanctuary_subject = {
 		}
 		religious_unity = 0.9
 	}
-	
+
 	on_accept = {
 		if = {
 			limit = {
@@ -809,7 +809,7 @@ ask_for_papal_sanctuary_subject = {
 			add_truce_with = FROM
 		}
 	}
-	
+
 	on_decline = {
 		if = {
 			limit = {
@@ -840,7 +840,7 @@ ask_for_papal_sanctuary_subject = {
 			}
 		}
 	}
-	
+
 	ai_acceptance = {
 		add_entry = {
 			name = FROM_ATTITUDE_TOWARDS_ROOT
@@ -963,7 +963,7 @@ ask_for_papal_sanctuary_subject = {
 					multiply_variable = { which = our_mil_tech value = 3 }
 					change_variable = { which = military_power which = our_army_size }
 					change_variable = { which = military_power which = our_mil_tech }
-					
+
 					NOT = { check_variable = { which = military_power value = -39 } }
 				}
 			}
@@ -1007,7 +1007,7 @@ ask_for_papal_sanctuary_subject = {
 					multiply_variable = { which = our_mil_tech value = 3 }
 					change_variable = { which = military_power which = our_army_size }
 					change_variable = { which = military_power which = our_mil_tech }
-					
+
 					check_variable = { which = military_power value = -39 }
 					NOT = { check_variable = { which = military_power value = 30 } }
 				}
@@ -1076,7 +1076,7 @@ ask_for_papal_sanctuary_subject = {
 					change_variable = { which = our_mil_tech which = their_mil_tech }
 					multiply_variable = { which = our_mil_tech value = 3 }
 					change_variable = { which = military_power which = our_army_size }
-					change_variable = { which = military_power which = our_mil_tech }	
+					change_variable = { which = military_power which = our_mil_tech }
 					check_variable = { which = military_power value = 30 }
 				}
 			}
@@ -1339,7 +1339,7 @@ ask_for_papal_sanctuary_subject = {
 			multiply_variable = { which = ai_value value = -1 }
 		}
 	}
-	
+
 	ai_will_do = {
 		NOT = { total_development = 125 }
 		NOT = { government_rank = 3 }
@@ -1375,14 +1375,444 @@ ask_for_papal_sanctuary_subject = {
 	}
 }
 
+request_curia_money_from_papal_sanctuary_subject = {
+	category = papacy
+
+	alert_index = 6
+	alert_tooltip = request_curia_money_from_papal_sanctuary_subject_alert_tooltip
+
+	require_acceptance = yes
+
+	is_visible = {
+		has_dlc = "Emperor"
+		FROM = {
+			is_subject_of = ROOT
+			is_subject_of_type = papal_sanctuary_subject
+		}
+	}
+
+	is_allowed = {
+		hidden_trigger = {
+			has_dlc = "Emperor"
+			FROM = {
+				is_subject_of = ROOT
+				is_subject_of_type = papal_sanctuary_subject
+			}
+		}
+		is_papal_controller = yes
+		FROM = {
+			has_regency = no
+		}
+		FROM = {
+			custom_trigger_tooltip = {
+				tooltip = DID_NOT_REQUEST_CURIA_MONEY_FROM_THIS_RULER
+				NOT = { has_ruler_flag = requested_curia_money_from_papal_sanctuary_subject }
+			}
+		}
+		FROM = {
+			if = {
+				limit = {
+					total_development = 300
+				}
+				treasury = 250
+			}
+			else_if = {
+				limit = {
+					total_development = 250
+				}
+				treasury = 200
+			}
+			else_if = {
+				limit = {
+					total_development = 200
+				}
+				treasury = 150
+			}
+			else_if = {
+				limit = {
+					total_development = 100
+				}
+				treasury = 100
+			}
+			else = {
+				treasury = 50
+			}
+		}
+	}
+
+	on_accept = {
+		if = {
+			limit = {
+				has_dlc = "Emperor"
+				FROM = {
+					is_subject_of = ROOT
+					is_subject_of_type = papal_sanctuary_subject
+				}
+				is_papal_controller = yes
+				FROM = {
+					has_regency = no
+				}
+				FROM = {
+					NOT = { has_ruler_flag = requested_curia_money_from_papal_sanctuary_subject }
+				}
+				FROM = {
+					if = {
+						limit = {
+							total_development = 300
+						}
+						treasury = 250
+					}
+					else_if = {
+						limit = {
+							total_development = 250
+						}
+						treasury = 200
+					}
+					else_if = {
+						limit = {
+							total_development = 200
+						}
+						treasury = 150
+					}
+					else_if = {
+						limit = {
+							total_development = 100
+						}
+						treasury = 100
+					}
+					else = {
+						treasury = 50
+					}
+				}
+			}
+			FROM = {
+				add_papal_influence = 5
+				set_ruler_flag = requested_curia_money_from_papal_sanctuary_subject
+				if = {
+					limit = {
+						total_development = 300
+					}
+					add_treasury = -250
+					add_curia_treasury = 250
+				}
+				else_if = {
+					limit = {
+						total_development = 250
+					}
+					add_treasury = -200
+					add_curia_treasury = 200
+				}
+				else_if = {
+					limit = {
+						total_development = 200
+					}
+					add_treasury = -150
+					add_curia_treasury = 150
+				}
+				else_if = {
+					limit = {
+						total_development = 100
+					}
+					add_treasury = -100
+					add_curia_treasury = 100
+				}
+				else = {
+					add_treasury = -50
+					add_curia_treasury = 50
+				}
+			}
+		}
+	}
+
+	on_decline = {
+		if = {
+			limit = {
+				has_dlc = "Emperor"
+				FROM = {
+					is_subject_of = ROOT
+					is_subject_of_type = papal_sanctuary_subject
+				}
+				is_papal_controller = yes
+				FROM = {
+					has_regency = no
+				}
+				FROM = {
+					NOT = { has_ruler_flag = requested_curia_money_from_papal_sanctuary_subject }
+				}
+				FROM = {
+					if = {
+						limit = {
+							total_development = 300
+						}
+						treasury = 250
+					}
+					else_if = {
+						limit = {
+							total_development = 250
+						}
+						treasury = 200
+					}
+					else_if = {
+						limit = {
+							total_development = 200
+						}
+						treasury = 150
+					}
+					else_if = {
+						limit = {
+							total_development = 100
+						}
+						treasury = 100
+					}
+					else = {
+						treasury = 50
+					}
+				}
+			}
+			FROM = {
+				set_ruler_flag = requested_curia_money_from_papal_sanctuary_subject
+			}
+			add_opinion = {
+				who = ROOT
+				modifier = declined_request_curia_money_from_papal_sanctuary_subject_opinion
+			}
+		}
+	}
+
+	ai_acceptance = {
+		add_entry = {
+			name = MODIFIER_DIPLO_SKILL
+			export_to_variable = {
+				which = ai_value
+				value = modifier:diplomatic_reputation
+			}
+			multiply_variable = { which = ai_value value = 3 }
+		}
+		add_entry = {
+			name = OPINION
+			export_to_variable = {
+				which = ai_value
+				value = opinion
+				who = FROM
+				with = ROOT
+			}
+			divide_variable = { which = ai_value value = 5 }
+		}
+		add_entry = {
+			name = FROM_IS_EMPIRE_RANK
+			limit = {
+				FROM = {
+					government_rank = 3
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 30
+			}
+			multiply_variable = { which = ai_value value = -1 }
+		}
+		add_entry = {
+			name = FROM_IS_KINGDOM_RANK
+			limit = {
+				FROM = {
+					government_rank = 2
+					NOT = { government_rank = 3 }
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 15
+			}
+			multiply_variable = { which = ai_value value = -1 }
+		}
+		add_entry = {
+			name = FROM_IS_EMPEROR
+			limit = {
+				FROM = {
+					is_emperor = yes
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 5
+			}
+		}
+		add_entry = {
+			name = FROM_DEVELOPMENT
+			export_to_variable = {
+				which = ai_value
+				value = trigger_value:total_development
+				who = FROM
+			}
+			subtract_variable = { which = ai_value value = 1 }
+			divide_variable = { which = ai_value value = -5 }
+		}
+		add_entry = {
+			name = ROOT_OWNS_FROM_CORE_PROVINCES
+			limit = {
+				any_owned_province = {
+					is_core = FROM
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 1000
+			}
+			multiply_variable = { which = ai_value value = -1 }
+		}
+		add_entry = {
+			name = BORDER_DISTANCE
+			export_to_variable = {
+				which = ai_value
+				value = border_distance
+				who = FROM
+				with = ROOT
+			}
+			divide_variable = { which = ai_value value = -2 }
+		}
+		add_entry = {
+			name = FROM_RULER_IS_RELIGIOUS
+			limit = {
+				has_dlc = "Rights of Man"
+				FROM = {
+					OR = {
+						ruler_has_personality = zealot_personality
+						ruler_has_personality = pious_personality
+					}
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 10
+			}
+		}
+		add_entry = {
+			name = FROM_RULER_IS_SINNER
+			limit = {
+				has_dlc = "Rights of Man"
+				FROM = {
+					ruler_has_personality = sinner_personality
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 1000
+			}
+			multiply_variable = { which = ai_value value = -1 }
+		}
+		add_entry = {
+			name = ROOT_IS_DEFENDER_OF_FAITH
+			limit = {
+				is_defender_of_faith = yes
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 10
+			}
+		}
+		add_entry = {
+			name = ROOT_HAS_ESTABLISHED_THE_KINGDOM_OF_GOD
+			limit = {
+				has_country_modifier = kingdom_of_god
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 50
+			}
+		}
+		add_entry = {
+			name = FROM_HAS_NOT_MUCH_MONEY
+			limit = {
+				FROM = {
+					OR = {
+						AND = {
+							total_development = 300
+							NOT = { treasury = 1000 }
+						}
+						AND = {
+							NOT = { total_development = 300 }
+							total_development = 250
+							NOT = { treasury = 800 }
+						}
+						AND = {
+							NOT = { total_development = 250 }
+							total_development = 200
+							NOT = { treasury = 600 }
+						}
+						AND = {
+							NOT = { total_development = 200 }
+							total_development = 150
+							NOT = { treasury = 500 }
+						}
+						AND = {
+							NOT = { total_development = 150 }
+							total_development = 100
+							NOT = { treasury = 400 }
+						}
+						AND = {
+							NOT = { total_development = 100 }
+							NOT = { treasury = 300 }
+						}
+					}
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 50
+			}
+		}
+		add_entry = {
+			name = FROM_HAS_ALREAD_CONTRIBUTED_MUCH_TO_CURIA_TREASURY
+			limit = {
+				FROM = {
+					curia_treasury_contribution = 0.5
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 100
+			}
+			multiply_variable = { which = ai_value value = -1 }
+		}
+		add_entry = {
+			name = FROM_LIBERTY_DESIRE_TOO_HIGH
+			limit = {
+				FROM = {
+					liberty_desire = 50
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 1000
+			}
+			multiply_variable = { which = ai_value value = -1 }
+		}
+	}
+
+	ai_will_do = {
+		OR = {
+			personality = ai_capitalist
+			AND = {
+				ruler_has_personality = pious_personality
+				FROM = {
+					ruler_has_personality = pious_personality
+				}
+			}
+			FROM = {
+				is_defender_of_faith = yes
+			}
+		}
+	}
+}
+
 make_papal_sanctuary_subject_to_theocracy = {
 	category = influence
-	
+
 	alert_index = 6
 	alert_tooltip = make_papal_sanctuary_subject_to_theocracy_alert_tooltip
-	
+
 	require_acceptance = yes
-	
+
 	is_visible = {
 		can_be_overlord = papal_sanctuary_subject
 		FROM = {
@@ -1391,7 +1821,7 @@ make_papal_sanctuary_subject_to_theocracy = {
 			NOT = { government = theocracy }
 		}
 	}
-	
+
 	is_allowed = {
 		hidden_trigger = {
 			can_be_overlord = papal_sanctuary_subject
@@ -1416,7 +1846,7 @@ make_papal_sanctuary_subject_to_theocracy = {
 			has_regency = no
 		}
 	}
-	
+
 	on_accept = {
 		if = {
 			limit = {
@@ -1454,7 +1884,7 @@ make_papal_sanctuary_subject_to_theocracy = {
 			}
 		}
 	}
-	
+
 	on_decline = {
 		if = {
 			limit = {
@@ -1491,7 +1921,7 @@ make_papal_sanctuary_subject_to_theocracy = {
 			}
 		}
 	}
-	
+
 	ai_acceptance = {
 		add_entry = {
 			name = OPINION
@@ -1600,7 +2030,7 @@ make_papal_sanctuary_subject_to_theocracy = {
 					multiply_variable = { which = our_mil_tech value = 3 }
 					change_variable = { which = military_power which = our_army_size }
 					change_variable = { which = military_power which = our_mil_tech }
-					
+
 					NOT = { check_variable = { which = military_power value = -39 } }
 				}
 			}
@@ -1644,7 +2074,7 @@ make_papal_sanctuary_subject_to_theocracy = {
 					multiply_variable = { which = our_mil_tech value = 3 }
 					change_variable = { which = military_power which = our_army_size }
 					change_variable = { which = military_power which = our_mil_tech }
-					
+
 					check_variable = { which = military_power value = -39 }
 					NOT = { check_variable = { which = military_power value = 30 } }
 				}
@@ -1713,7 +2143,7 @@ make_papal_sanctuary_subject_to_theocracy = {
 					change_variable = { which = our_mil_tech which = their_mil_tech }
 					multiply_variable = { which = our_mil_tech value = 3 }
 					change_variable = { which = military_power which = our_army_size }
-					change_variable = { which = military_power which = our_mil_tech }	
+					change_variable = { which = military_power which = our_mil_tech }
 					check_variable = { which = military_power value = 30 }
 				}
 			}
@@ -1985,7 +2415,7 @@ make_papal_sanctuary_subject_to_theocracy = {
 			multiply_variable = { which = ai_value value = -1 }
 		}
 	}
-	
+
 	ai_will_do = {
 		OR = {
 			is_defender_of_faith = yes
@@ -2002,12 +2432,12 @@ make_papal_sanctuary_subject_to_theocracy = {
 
 make_papal_sanctuary_subject_to_vassal = {
 	category = influence
-	
+
 	alert_index = 6
 	alert_tooltip = make_papal_sanctuary_subject_to_vassal_alert_tooltip
-	
+
 	require_acceptance = yes
-	
+
 	is_visible = {
 		can_be_overlord = papal_sanctuary_subject
 		FROM = {
@@ -2015,7 +2445,7 @@ make_papal_sanctuary_subject_to_vassal = {
 			is_subject_of_type = papal_sanctuary_subject
 		}
 	}
-	
+
 	is_allowed = {
 		hidden_trigger = {
 			can_be_overlord = papal_sanctuary_subject
@@ -2043,7 +2473,7 @@ make_papal_sanctuary_subject_to_vassal = {
 			}
 		}
 	}
-	
+
 	on_accept = {
 		if = {
 			limit = {
@@ -2080,7 +2510,7 @@ make_papal_sanctuary_subject_to_vassal = {
 			vassalize = FROM
 		}
 	}
-	
+
 	on_decline = {
 		if = {
 			limit = {
@@ -2122,7 +2552,7 @@ make_papal_sanctuary_subject_to_vassal = {
 			}
 		}
 	}
-	
+
 	ai_acceptance = {
 		add_entry = {
 			name = FROM_LIBERTY_DESIRE
@@ -2221,7 +2651,7 @@ make_papal_sanctuary_subject_to_vassal = {
 					multiply_variable = { which = our_mil_tech value = 3 }
 					change_variable = { which = military_power which = our_army_size }
 					change_variable = { which = military_power which = our_mil_tech }
-					
+
 					NOT = { check_variable = { which = military_power value = -39 } }
 				}
 			}
@@ -2265,7 +2695,7 @@ make_papal_sanctuary_subject_to_vassal = {
 					multiply_variable = { which = our_mil_tech value = 3 }
 					change_variable = { which = military_power which = our_army_size }
 					change_variable = { which = military_power which = our_mil_tech }
-					
+
 					check_variable = { which = military_power value = -39 }
 					NOT = { check_variable = { which = military_power value = 30 } }
 				}
@@ -2334,7 +2764,7 @@ make_papal_sanctuary_subject_to_vassal = {
 					change_variable = { which = our_mil_tech which = their_mil_tech }
 					multiply_variable = { which = our_mil_tech value = 3 }
 					change_variable = { which = military_power which = our_army_size }
-					change_variable = { which = military_power which = our_mil_tech }	
+					change_variable = { which = military_power which = our_mil_tech }
 					check_variable = { which = military_power value = 30 }
 				}
 			}
@@ -2593,7 +3023,7 @@ make_papal_sanctuary_subject_to_vassal = {
 			multiply_variable = { which = ai_value value = -1 }
 		}
 	}
-	
+
 	ai_will_do = {
 		OR = {
 			is_papal_controller = yes
@@ -2615,12 +3045,12 @@ papal_sanctuary_subject_become_independent = {
 	category = influence
 
 	require_acceptance = no
-	
+
 	is_visible = {
 		is_subject_of = FROM
 		is_subject_of_type = papal_sanctuary_subject
 	}
-	
+
 	is_allowed = {
 		hidden_trigger = {
 			is_subject_of = FROM
@@ -2650,7 +3080,7 @@ papal_sanctuary_subject_become_independent = {
 			}
 		}
 	}
-	
+
 	on_accept = {
 		if = {
 			limit = {
@@ -2698,7 +3128,7 @@ papal_sanctuary_subject_become_independent = {
 			}
 		}
 	}
-	
+
 	ai_will_do = {
 		OR = {
 			NOT = { has_dlc = "Rights of Man" }
@@ -2729,14 +3159,14 @@ cancel_papal_sanctuary_subject = {
 	category = influence
 
 	require_acceptance = no
-	
+
 	is_visible = {
 		FROM = {
 			is_subject_of = ROOT
 			is_subject_of_type = papal_sanctuary_subject
 		}
 	}
-	
+
 	is_allowed = {
 		hidden_trigger = {
 			FROM = {
@@ -2747,7 +3177,7 @@ cancel_papal_sanctuary_subject = {
 		NOT = { truce_with = FROM }
 		prestige = 0
 	}
-	
+
 	on_accept = {
 		if = {
 			limit = {
@@ -2775,7 +3205,7 @@ cancel_papal_sanctuary_subject = {
 			add_prestige = -25
 		}
 	}
-	
+
 	ai_will_do = {
 		FROM = {
 			liberty_desire = 100

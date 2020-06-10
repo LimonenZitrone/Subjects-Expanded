@@ -171,7 +171,7 @@ If a subject gives an additional merchant, the bonuses it gives to its overlord 
 [/list]
 
 [h1]Fiefdom[/h1]
-[i]A Fiefdom is a vassal of the same culture, culture group or of an accepted culture. It behaves similar to normal vassals, but has a slightly lower liberty desire, does not join its overlord's wars, and can only be integrated. However, it pays more money to its overlord and the overlord can demand troops from it. Further more it has increased tax income and decreased culture conversion cost and also affects these modifiers for its overlord. It can only be established when having the "Feudal Nobility" or "Salic Monarchy" (from the Extended Timeline mod) government or any feudal government of the Governments Expanded mod.[/i]
+[i]A Fiefdom is a vassal of the same culture, culture group or of an accepted culture. It behaves similar as normal vassals, but has a slightly lower liberty desire, does normally not join its overlord's wars - but can be called to arms in exchange for an increased liberty desire -, and can only be integrated. However, it pays more money to its overlord and the overlord can demand troops from it. Further more it has increased tax income and decreased culture conversion cost and also affects these modifiers for its overlord.[/i]
 
 [b]Conditions (possible overlord):[/b]
 [list]

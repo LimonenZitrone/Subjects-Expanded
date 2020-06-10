@@ -50,7 +50,7 @@
  fief_subject_title: "Fiefdom"
  fief_subject_title_plural: "Fiefdoms"
  fief_subject_is_our: "§Y$NAME$§! is our Fiefdom."
- fief_subject_long_desc: "A Fiefdom is a vassal of the same culture, culture group or of an accepted culture. It behaves similar as normal vassals, but has a slightly lower liberty desire, does not join its overlord's wars, and can only be integrated. However, it pays more money to its overlord and the overlord can demand troops from it. Further more it has increased tax income and decreased culture conversion cost and also affects these modifiers for its overlord.\n"
+ fief_subject_long_desc: "A Fiefdom is a vassal of the same culture, culture group or of an accepted culture. It behaves similar as normal vassals, but has a slightly lower liberty desire, does normally not join its overlord's wars - but can be called to arms in exchange for an increased liberty desire -, and can only be integrated. However, it pays more money to its overlord and the overlord can demand troops from it. Further more it has increased tax income and decreased culture conversion cost and also affects these modifiers for its overlord.\n"
  fief_subject_no_overlord_dow: "You cannot declare war on your own Fiefdom."
 
  crusader_state_vassal_title: "Crusader State"

@@ -1,18 +1,18 @@
 establish_sister_republic = {
 	category = influence
-	
+
 	alert_index = 6
 	alert_tooltip = establish_sister_republic_alert_tooltip
-	
+
 	require_acceptance = yes
-	
+
 	is_visible = {
 		can_create_subject_type = {
 			subject = FROM
 			subject_type = sister_republic
 		}
 	}
-	
+
 	is_allowed = {
 		can_create_subject_type = {
 			subject = FROM
@@ -78,7 +78,7 @@ establish_sister_republic = {
 			}
 		}
 	}
-	
+
 	on_accept = {
 		if = {
 			limit = {
@@ -152,7 +152,7 @@ establish_sister_republic = {
 			}
 		}
 	}
-	
+
 	on_decline = {
 		if = {
 			limit = {
@@ -230,7 +230,7 @@ establish_sister_republic = {
 			}
 		}
 	}
-	
+
 	ai_acceptance = {
 		add_entry = {
 			name = base_values
@@ -734,7 +734,7 @@ establish_sister_republic = {
 					divide_variable = { which = our_total_development which = their_total_development }
 					multiply_variable = { which = eco_power which = our_total_development }
 					change_variable = { which = eco_power value = -90 }
-					
+
 					check_variable = { which = eco_power value = -89 }
 					NOT = { check_variable = { which = eco_power value = 30 } }
 				}
@@ -778,7 +778,7 @@ establish_sister_republic = {
 					divide_variable = { which = our_total_development which = their_total_development }
 					multiply_variable = { which = eco_power which = our_total_development }
 					change_variable = { which = eco_power value = -90 }
-					
+
 					NOT = { check_variable = { which = eco_power value = -89 } }
 				}
 			}
@@ -809,7 +809,7 @@ establish_sister_republic = {
 					divide_variable = { which = our_total_development which = their_total_development }
 					multiply_variable = { which = eco_power which = our_total_development }
 					change_variable = { which = eco_power value = -90 }
-					
+
 					check_variable = { which = eco_power value = 30 }
 				}
 			}
@@ -845,7 +845,7 @@ establish_sister_republic = {
 			multiply_variable = { which = ai_value value = -1 }
 		}
 	}
-	
+
 	ai_will_do = {
 		FROM = {
 			NOT = { is_subject_of = ROOT }
@@ -860,12 +860,12 @@ establish_sister_republic = {
 
 ask_for_sister_republic = {
 	category = influence
-	
+
 	alert_index = 6
 	alert_tooltip = ask_for_sister_republic_alert_tooltip
-	
+
 	require_acceptance = yes
-	
+
 	is_visible = {
 		FROM = {
 			can_create_subject_type = {
@@ -874,7 +874,7 @@ ask_for_sister_republic = {
 			}
 		}
 	}
-	
+
 	is_allowed = {
 		FROM = {
 			can_create_subject_type = {
@@ -942,7 +942,7 @@ ask_for_sister_republic = {
 			NOT = { liberty_desire = 50 }
 		}
 	}
-	
+
 	on_accept = {
 		if = {
 			limit = {
@@ -1020,7 +1020,7 @@ ask_for_sister_republic = {
 			}
 		}
 	}
-	
+
 	on_decline = {
 		if = {
 			limit = {
@@ -1098,7 +1098,7 @@ ask_for_sister_republic = {
 			}
 		}
 	}
-	
+
 	ai_acceptance = {
 		add_entry = {
 			name = STRATEGIC_VALUE
@@ -1530,7 +1530,7 @@ ask_for_sister_republic = {
 					divide_variable = { which = our_total_development which = their_total_development }
 					multiply_variable = { which = eco_power which = our_total_development }
 					change_variable = { which = eco_power value = -90 }
-					
+
 					check_variable = { which = eco_power value = -89 }
 					NOT = { check_variable = { which = eco_power value = 30 } }
 				}
@@ -1574,7 +1574,7 @@ ask_for_sister_republic = {
 					divide_variable = { which = our_total_development which = their_total_development }
 					multiply_variable = { which = eco_power which = our_total_development }
 					change_variable = { which = eco_power value = -90 }
-					
+
 					NOT = { check_variable = { which = eco_power value = -89 } }
 				}
 			}
@@ -1605,7 +1605,7 @@ ask_for_sister_republic = {
 					divide_variable = { which = our_total_development which = their_total_development }
 					multiply_variable = { which = eco_power which = our_total_development }
 					change_variable = { which = eco_power value = -90 }
-					
+
 					check_variable = { which = eco_power value = 30 }
 				}
 			}
@@ -1615,7 +1615,7 @@ ask_for_sister_republic = {
 			}
 		}
 	}
-	
+
 	ai_will_do = {
 		NOT = { has_reform = free_city }
 		NOT = { num_of_subjects = 1 }
@@ -1654,14 +1654,13 @@ ask_for_sister_republic = {
 
 sister_republic_ask_overlord_to_join_war = {
 	category = alliance
-	
+
 	alert_index = 6
 	alert_tooltip = sister_republic_ask_overlord_to_join_war_alert_tooltip
-	
+
 	require_acceptance = yes
-	
+
 	is_visible = {
-		ai = no
 		FROM = {
 			is_subject = no
 			overlord_of = ROOT
@@ -1669,36 +1668,28 @@ sister_republic_ask_overlord_to_join_war = {
 		is_subject_of_type = sister_republic
 		any_country = {
 			is_subject = no
-			has_country_flag = marked_for_war_by_@ROOT
+			is_in_war = {
+				defender_leader = THIS
+				attacker_leader = ROOT
+			}
 		}
 	}
-	
+
 	is_allowed = {
 		hidden_trigger = {
-			ai = no
 			FROM = {
 				is_subject = no
 				overlord_of = ROOT
 			}
+			is_subject_of_type = sister_republic
 			any_country = {
 				is_subject = no
-				has_country_flag = marked_for_war_by_@ROOT
-			}
-			NOT = {
-				any_country = {
-					has_country_flag = marked_for_war_by_@ROOT
-					OR = {
-						is_in_war = {
-							participants = FROM
-							participants = THIS
-						}
-						alliance_with = FROM
-					}
+				is_in_war = {
+					defender_leader = THIS
+					attacker_leader = ROOT
 				}
 			}
 		}
-		is_subject_of_type = sister_republic
-		is_at_war = no
 		FROM = {
 			custom_trigger_tooltip = {
 				tooltip = DID_NOT_DECLINE_A_CALL_TO_ARMY_OF_A_SISTER_REPUBLIC_WITHIN_LAST_1_YEAR
@@ -1709,33 +1700,22 @@ sister_republic_ask_overlord_to_join_war = {
 			}
 		}
 	}
-	
+
 	on_accept = {
 		if = {
 			limit = {
-				ai = no
 				FROM = {
 					is_subject = no
 					overlord_of = ROOT
 				}
+				is_subject_of_type = sister_republic
 				any_country = {
 					is_subject = no
-					has_country_flag = marked_for_war_by_@ROOT
-				}
-				NOT = {
-					any_country = {
-						has_country_flag = marked_for_war_by_@ROOT
-						OR = {
-							is_in_war = {
-								participants = FROM
-								participants = THIS
-							}
-							alliance_with = FROM
-						}
+					is_in_war = {
+						defender_leader = THIS
+						attacker_leader = ROOT
 					}
 				}
-				is_subject_of_type = sister_republic
-				is_at_war = no
 				FROM = {
 					OR = {
 						NOT = { has_country_flag = declined_sister_republic_offensive_call_to_arms }
@@ -1743,54 +1723,29 @@ sister_republic_ask_overlord_to_join_war = {
 					}
 				}
 			}
-			random_country = {
-				limit = {
-					has_country_flag = marked_for_war_by_@ROOT
-				}
-				clr_country_flag = marked_for_war_by_@ROOT
-				reverse_add_casus_belli = {
-					target = FROM
-					type = cb_sister_republic_offensive_war
-				}
-				FROM = {
-					declare_war_with_cb = {
-						who = PREV
-						casus_belli = cb_sister_republic_offensive_war
-					}
-				}
-			}
 			FROM = {
+				join_all_offensive_wars_of = ROOT
 				clr_country_flag = accepted_sister_republic_offensive_call_to_arms
 				set_country_flag = accepted_sister_republic_offensive_call_to_arms
 			}
 		}
 	}
-	
+
 	on_decline = {
 		if = {
 			limit = {
-				ai = no
 				FROM = {
 					is_subject = no
 					overlord_of = ROOT
 				}
+				is_subject_of_type = sister_republic
 				any_country = {
-					has_country_flag = marked_for_war_by_@ROOT
-				}
-				NOT = {
-					any_country = {
-						has_country_flag = marked_for_war_by_@ROOT
-						OR = {
-							is_in_war = {
-								participants = FROM
-								participants = THIS
-							}
-							alliance_with = FROM
-						}
+					is_subject = no
+					is_in_war = {
+						defender_leader = THIS
+						attacker_leader = ROOT
 					}
 				}
-				is_subject_of_type = sister_republic
-				is_at_war = no
 				FROM = {
 					OR = {
 						NOT = { has_country_flag = declined_sister_republic_offensive_call_to_arms }
@@ -1805,7 +1760,7 @@ sister_republic_ask_overlord_to_join_war = {
 			add_liberty_desire = 10
 		}
 	}
-	
+
 	ai_acceptance = {
 		add_entry = {
 			name = FROM_RULER_MIL_SKILL
@@ -1898,7 +1853,10 @@ sister_republic_ask_overlord_to_join_war = {
 			name = FROM_ATTITUDE_TOWARDS_COALITION_TARGET
 			limit = {
 				any_country = {
-					has_country_flag = marked_for_war_by_@ROOT
+					is_in_war = {
+						defender_leader = THIS
+						attacker_leader = ROOT
+					}
 					FROM = {
 						ai_attitude = { who = PREV attitude = atittude_rivalry }
 					}
@@ -1913,7 +1871,10 @@ sister_republic_ask_overlord_to_join_war = {
 			name = FROM_ATTITUDE_TOWARDS_COALITION_TARGET
 			limit = {
 				any_country = {
-					has_country_flag = marked_for_war_by_@ROOT
+					is_in_war = {
+						defender_leader = THIS
+						attacker_leader = ROOT
+					}
 					FROM = {
 						ai_attitude = { who = PREV attitude = attitude_hostile }
 					}
@@ -1928,7 +1889,10 @@ sister_republic_ask_overlord_to_join_war = {
 			name = FROM_ATTITUDE_TOWARDS_COALITION_TARGET
 			limit = {
 				any_country = {
-					has_country_flag = marked_for_war_by_@ROOT
+					is_in_war = {
+						defender_leader = THIS
+						attacker_leader = ROOT
+					}
 					FROM = {
 						ai_attitude = { who = PREV attitude = attitude_threatened }
 					}
@@ -1944,7 +1908,10 @@ sister_republic_ask_overlord_to_join_war = {
 			name = FROM_ATTITUDE_TOWARDS_COALITION_TARGET
 			limit = {
 				any_country = {
-					has_country_flag = marked_for_war_by_@ROOT
+					is_in_war = {
+						defender_leader = THIS
+						attacker_leader = ROOT
+					}
 					FROM = {
 						ai_attitude = { who = PREV attitude = attitude_friendly }
 					}
@@ -1973,7 +1940,10 @@ sister_republic_ask_overlord_to_join_war = {
 			name = FROM_ALREADY_PARTICIPANT_IN_WAR_WITH_COALITION_TARGET
 			limit = {
 				any_country = {
-					has_country_flag = marked_for_war_by_@ROOT
+					is_in_war = {
+						defender_leader = THIS
+						attacker_leader = ROOT
+					}
 					is_in_war = {
 						participants = FROM
 						participants = THIS
@@ -1990,7 +1960,10 @@ sister_republic_ask_overlord_to_join_war = {
 			name = FROM_HAS_TRUCE_WITH_COALITION_TARGET
 			limit = {
 				any_country = {
-					has_country_flag = marked_for_war_by_@ROOT
+					is_in_war = {
+						defender_leader = THIS
+						attacker_leader = ROOT
+					}
 					truce_with = FROM
 				}
 			}
@@ -2004,7 +1977,10 @@ sister_republic_ask_overlord_to_join_war = {
 			name = FROM_ALLIED_TO_COALITION_TARGET
 			limit = {
 				any_country = {
-					has_country_flag = marked_for_war_by_@ROOT
+					is_in_war = {
+						defender_leader = THIS
+						attacker_leader = ROOT
+					}
 					alliance_with = FROM
 				}
 			}
@@ -2033,7 +2009,10 @@ sister_republic_ask_overlord_to_join_war = {
 			limit = {
 				OR = {
 					any_country = {
-						has_country_flag = marked_for_war_by_@ROOT
+						is_in_war = {
+							defender_leader = THIS
+							attacker_leader = ROOT
+						}
 						OR = {
 							marriage_with = FROM
 							truce_with = FROM
@@ -2071,80 +2050,7 @@ sister_republic_ask_overlord_to_join_war = {
 			multiply_variable = { which = ai_value value = -10 }
 		}
 	}
-	
-	ai_will_do = {
-		always = no
-	}
-}
 
-sister_republic_mark_country_as_target_for_war = {
-	category = influence
-
-	require_acceptance = no
-	
-	is_visible = {
-		ai = no
-		is_subject_of_type = sister_republic
-		overlord = {
-			is_subject = no
-		}
-		FROM = {
-			NOT = { has_country_flag = marked_for_war_by_@ROOT }
-			NOT = { overlord_of = ROOT }
-			is_subject = no
-		}
-	}
-	
-	is_allowed = {
-		hidden_trigger = {
-			ai = no
-			overlord = {
-				is_subject = no
-			}
-		}
-		is_subject_of_type = sister_republic
-		is_at_war = no
-		has_casus_belli_against = FROM
-		FROM = {
-			NOT = { has_country_flag = marked_for_war_by_@ROOT }
-			NOT = { overlord_of = ROOT }
-			is_subject = no
-		}
-		NOT = { truce_with = FROM }
-	}
-	
-	on_accept = {
-		if = {
-			limit = {
-				ai = no
-				is_subject_of_type = sister_republic
-				overlord = {
-					is_subject = no
-				}
-				is_at_war = no
-				has_casus_belli_against = FROM
-				FROM = {
-					NOT = { has_country_flag = marked_for_war_by_@ROOT }
-					NOT = { overlord_of = ROOT }
-					is_subject = no
-				}
-				NOT = { truce_with = FROM }
-			}
-			every_country = {
-				limit = {
-					has_country_flag = marked_for_war_by_@ROOT
-				}
-				clr_country_flag = marked_for_war_by_@ROOT
-			}
-			FROM = {
-				set_country_flag = marked_for_war_by_@ROOT
-			}
-			overlord = {
-				country_event = { id = subjects_expanded_sister_republic_events.3 }
-			}
-		}
-	}
-	
 	ai_will_do = {
 		always = no
 	}
@@ -2154,7 +2060,7 @@ cancel_sister_republic = {
 	category = influence
 
 	require_acceptance = no
-	
+
 	is_visible = {
 		NOT = { has_dlc = "Rights of Man" }
 		FROM = {
@@ -2162,7 +2068,7 @@ cancel_sister_republic = {
 			is_subject_of_type = sister_republic
 		}
 	}
-	
+
 	is_allowed = {
 		hidden_trigger = {
 			NOT = { has_dlc = "Rights of Man" }
@@ -2174,7 +2080,7 @@ cancel_sister_republic = {
 		NOT = { truce_with = FROM }
 		prestige = 0
 	}
-	
+
 	on_accept = {
 		if = {
 			limit = {
@@ -2203,7 +2109,7 @@ cancel_sister_republic = {
 			add_prestige = -25
 		}
 	}
-	
+
 	ai_will_do = {
 		FROM = {
 			liberty_desire = 100

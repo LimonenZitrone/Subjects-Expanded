@@ -38,95 +38,12 @@ country_decisions = {
 			}
 		}
 		effect = {
-			if = {
-				limit = {
-					ai = no
-				}
-				set_selected_trade_outpost_region_or_area = { region = yes name = south_china_region }
-				country_event = { id = subjects_expanded_trade_outpost_events.1 }
-			}
-			else = {
-				if = {
-					limit = {
-						south_china_region = {
-							owned_by = ROOT
-							has_port = yes
-							development = 30
-							any_core_country = {
-								exists = no
-							}
-						}
-					}
-					random_owned_province = {
-						limit = {
-							region = south_china_region
-							has_port = yes
-							development = 30
-							any_core_country = {
-								exists = no
-							}
-						}
-						random_core_country = {
-							limit = {
-								exists = no
-							}
-							cede_province = PREV
-							ROOT = {
-								create_subject = {
-									subject = PREV
-									subject_type = trade_outpost
-								}
-							}
-							add_truce_with = ROOT
-						}
-						if = {
-							limit = {
-								is_core = ROOT
-							}
-							remove_core = ROOT
-						}
-					}
-				}
-				else = {
-					set_country_flag = is_releasing_trade_outpost
-					random_owned_province = {
-						limit = {
-							region = south_china_region
-							has_port = yes
-							development = 30
-						}
-						set_province_flag = release_trade_outpost_here_@ROOT
-						set_estate = trade_outpost_release_estate
-					}
-					create_independent_estate = { estate = trade_outpost_release_estate government = republic government_reform = noble_elite_reform }
-					every_province = {
-						limit = {
-							has_province_flag = release_trade_outpost_here_@ROOT
-						}
-						if = {
-							limit = {
-								has_estate = trade_outpost_release_estate
-							}
-							remove_estate = trade_outpost_release_estate
-						}
-						clr_province_flag = release_trade_outpost_here_@ROOT
-						if = {
-							limit = {
-								is_core = ROOT
-							}
-							remove_core = ROOT
-						}
-					}
-					clr_country_flag = is_releasing_trade_outpost
-					REB = {
-						change_variable = { which = num_of_autonomy_civil_wars value = 1 }
-					}
-				}
-			}
+			set_selected_trade_outpost_region_or_area = { region = yes name = south_china_region }
+			country_event = { id = subjects_expanded_trade_outpost_events.1 days = 5 }
 		}
 		ai_will_do = {
 			factor = 1
-			
+
 			modifier = {
 				factor = 0
 				any_subject_country = {
@@ -138,7 +55,7 @@ country_decisions = {
 			}
 		}
 	}
-	
+
 	release_trade_outpost_in_north_china = {
 		potential = {
 			OR = {
@@ -178,95 +95,12 @@ country_decisions = {
 			}
 		}
 		effect = {
-			if = {
-				limit = {
-					ai = no
-				}
-				set_selected_trade_outpost_region_or_area = { region = yes name = north_china_region }
-				country_event = { id = subjects_expanded_trade_outpost_events.1 }
-			}
-			else = {
-				if = {
-					limit = {
-						north_china_region = {
-							owned_by = ROOT
-							has_port = yes
-							development = 30
-							any_core_country = {
-								exists = no
-							}
-						}
-					}
-					random_owned_province = {
-						limit = {
-							region = north_china_region
-							has_port = yes
-							development = 30
-							any_core_country = {
-								exists = no
-							}
-						}
-						random_core_country = {
-							limit = {
-								exists = no
-							}
-							cede_province = PREV
-							ROOT = {
-								create_subject = {
-									subject = PREV
-									subject_type = trade_outpost
-								}
-							}
-							add_truce_with = ROOT
-						}
-						if = {
-							limit = {
-								is_core = ROOT
-							}
-							remove_core = ROOT
-						}
-					}
-				}
-				else = {
-					set_country_flag = is_releasing_trade_outpost
-					random_owned_province = {
-						limit = {
-							region = north_china_region
-							has_port = yes
-							development = 30
-						}
-						set_province_flag = release_trade_outpost_here_@ROOT
-						set_estate = trade_outpost_release_estate
-					}
-					create_independent_estate = { estate = trade_outpost_release_estate government = republic government_reform = noble_elite_reform }
-					every_province = {
-						limit = {
-							has_province_flag = release_trade_outpost_here_@ROOT
-						}
-						if = {
-							limit = {
-								has_estate = trade_outpost_release_estate
-							}
-							remove_estate = trade_outpost_release_estate
-						}
-						clr_province_flag = release_trade_outpost_here_@ROOT
-						if = {
-							limit = {
-								is_core = ROOT
-							}
-							remove_core = ROOT
-						}
-					}
-					clr_country_flag = is_releasing_trade_outpost
-					REB = {
-						change_variable = { which = num_of_autonomy_civil_wars value = 1 }
-					}
-				}
-			}
+			set_selected_trade_outpost_region_or_area = { region = yes name = north_china_region }
+			country_event = { id = subjects_expanded_trade_outpost_events.1 days = 5 }
 		}
 		ai_will_do = {
 			factor = 1
-			
+
 			modifier = {
 				factor = 0
 				any_subject_country = {
@@ -278,7 +112,7 @@ country_decisions = {
 			}
 		}
 	}
-	
+
 	release_trade_outpost_in_korea = {
 		potential = {
 			can_be_overlord = trade_outpost
@@ -311,95 +145,12 @@ country_decisions = {
 			}
 		}
 		effect = {
-			if = {
-				limit = {
-					ai = no
-				}
-				set_selected_trade_outpost_region_or_area = { region = yes name = korea_region }
-				country_event = { id = subjects_expanded_trade_outpost_events.1 }
-			}
-			else = {
-				if = {
-					limit = {
-						korea_region = {
-							owned_by = ROOT
-							has_port = yes
-							development = 30
-							any_core_country = {
-								exists = no
-							}
-						}
-					}
-					random_owned_province = {
-						limit = {
-							region = korea_region
-							has_port = yes
-							development = 30
-							any_core_country = {
-								exists = no
-							}
-						}
-						random_core_country = {
-							limit = {
-								exists = no
-							}
-							cede_province = PREV
-							ROOT = {
-								create_subject = {
-									subject = PREV
-									subject_type = trade_outpost
-								}
-							}
-							add_truce_with = ROOT
-						}
-						if = {
-							limit = {
-								is_core = ROOT
-							}
-							remove_core = ROOT
-						}
-					}
-				}
-				else = {
-					set_country_flag = is_releasing_trade_outpost
-					random_owned_province = {
-						limit = {
-							region = korea_region
-							has_port = yes
-							development = 30
-						}
-						set_province_flag = release_trade_outpost_here_@ROOT
-						set_estate = trade_outpost_release_estate
-					}
-					create_independent_estate = { estate = trade_outpost_release_estate government = republic government_reform = noble_elite_reform }
-					every_province = {
-						limit = {
-							has_province_flag = release_trade_outpost_here_@ROOT
-						}
-						if = {
-							limit = {
-								has_estate = trade_outpost_release_estate
-							}
-							remove_estate = trade_outpost_release_estate
-						}
-						clr_province_flag = release_trade_outpost_here_@ROOT
-						if = {
-							limit = {
-								is_core = ROOT
-							}
-							remove_core = ROOT
-						}
-					}
-					clr_country_flag = is_releasing_trade_outpost
-					REB = {
-						change_variable = { which = num_of_autonomy_civil_wars value = 1 }
-					}
-				}
-			}
+			set_selected_trade_outpost_region_or_area = { region = yes name = korea_region }
+			country_event = { id = subjects_expanded_trade_outpost_events.1 days = 5 }
 		}
 		ai_will_do = {
 			factor = 1
-			
+
 			modifier = {
 				factor = 0
 				any_subject_country = {
@@ -411,7 +162,7 @@ country_decisions = {
 			}
 		}
 	}
-	
+
 	release_trade_outpost_in_japan = {
 		potential = {
 			can_be_overlord = trade_outpost
@@ -444,95 +195,12 @@ country_decisions = {
 			}
 		}
 		effect = {
-			if = {
-				limit = {
-					ai = no
-				}
-				set_selected_trade_outpost_region_or_area = { region = yes name = japan_region }
-				country_event = { id = subjects_expanded_trade_outpost_events.1 }
-			}
-			else = {
-				if = {
-					limit = {
-						japan_region = {
-							owned_by = ROOT
-							has_port = yes
-							development = 30
-							any_core_country = {
-								exists = no
-							}
-						}
-					}
-					random_owned_province = {
-						limit = {
-							region = japan_region
-							has_port = yes
-							development = 30
-							any_core_country = {
-								exists = no
-							}
-						}
-						random_core_country = {
-							limit = {
-								exists = no
-							}
-							cede_province = PREV
-							ROOT = {
-								create_subject = {
-									subject = PREV
-									subject_type = trade_outpost
-								}
-							}
-							add_truce_with = ROOT
-						}
-						if = {
-							limit = {
-								is_core = ROOT
-							}
-							remove_core = ROOT
-						}
-					}
-				}
-				else = {
-					set_country_flag = is_releasing_trade_outpost
-					random_owned_province = {
-						limit = {
-							region = japan_region
-							has_port = yes
-							development = 30
-						}
-						set_province_flag = release_trade_outpost_here_@ROOT
-						set_estate = trade_outpost_release_estate
-					}
-					create_independent_estate = { estate = trade_outpost_release_estate government = republic government_reform = noble_elite_reform }
-					every_province = {
-						limit = {
-							has_province_flag = release_trade_outpost_here_@ROOT
-						}
-						if = {
-							limit = {
-								has_estate = trade_outpost_release_estate
-							}
-							remove_estate = trade_outpost_release_estate
-						}
-						clr_province_flag = release_trade_outpost_here_@ROOT
-						if = {
-							limit = {
-								is_core = ROOT
-							}
-							remove_core = ROOT
-						}
-					}
-					clr_country_flag = is_releasing_trade_outpost
-					REB = {
-						change_variable = { which = num_of_autonomy_civil_wars value = 1 }
-					}
-				}
-			}
+			set_selected_trade_outpost_region_or_area = { region = yes name = japan_region }
+			country_event = { id = subjects_expanded_trade_outpost_events.1 days = 5 }
 		}
 		ai_will_do = {
 			factor = 1
-			
+
 			modifier = {
 				factor = 0
 				any_subject_country = {
@@ -544,7 +212,7 @@ country_decisions = {
 			}
 		}
 	}
-	
+
 	release_trade_outpost_in_liaoning = {
 		potential = {
 			OR = {
@@ -584,95 +252,12 @@ country_decisions = {
 			}
 		}
 		effect = {
-			if = {
-				limit = {
-					ai = no
-				}
-				set_selected_trade_outpost_region_or_area = { area = yes name = liaoning_area }
-				country_event = { id = subjects_expanded_trade_outpost_events.1 }
-			}
-			else = {
-				if = {
-					limit = {
-						liaoning_area = {
-							owned_by = ROOT
-							has_port = yes
-							development = 30
-							any_core_country = {
-								exists = no
-							}
-						}
-					}
-					random_owned_province = {
-						limit = {
-							area = liaoning_area
-							has_port = yes
-							development = 30
-							any_core_country = {
-								exists = no
-							}
-						}
-						random_core_country = {
-							limit = {
-								exists = no
-							}
-							cede_province = PREV
-							ROOT = {
-								create_subject = {
-									subject = PREV
-									subject_type = trade_outpost
-								}
-							}
-							add_truce_with = ROOT
-						}
-						if = {
-							limit = {
-								is_core = ROOT
-							}
-							remove_core = ROOT
-						}
-					}
-				}
-				else = {
-					set_country_flag = is_releasing_trade_outpost
-					random_owned_province = {
-						limit = {
-							area = liaoning_area
-							has_port = yes
-							development = 30
-						}
-						set_province_flag = release_trade_outpost_here_@ROOT
-						set_estate = trade_outpost_release_estate
-					}
-					create_independent_estate = { estate = trade_outpost_release_estate government = republic government_reform = noble_elite_reform }
-					every_province = {
-						limit = {
-							has_province_flag = release_trade_outpost_here_@ROOT
-						}
-						if = {
-							limit = {
-								has_estate = trade_outpost_release_estate
-							}
-							remove_estate = trade_outpost_release_estate
-						}
-						clr_province_flag = release_trade_outpost_here_@ROOT
-						if = {
-							limit = {
-								is_core = ROOT
-							}
-							remove_core = ROOT
-						}
-					}
-					clr_country_flag = is_releasing_trade_outpost
-					REB = {
-						change_variable = { which = num_of_autonomy_civil_wars value = 1 }
-					}
-				}
-			}
+			set_selected_trade_outpost_region_or_area = { area = yes name = liaoning_area }
+			country_event = { id = subjects_expanded_trade_outpost_events.1 days = 5 }
 		}
 		ai_will_do = {
 			factor = 1
-			
+
 			modifier = {
 				factor = 0
 				any_subject_country = {

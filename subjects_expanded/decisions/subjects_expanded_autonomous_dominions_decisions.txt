@@ -12,10 +12,10 @@ country_decisions = {
 			can_be_overlord = dominion_tc
 			NOT = { is_dominion_tag = yes }
 			capital_scope = {
-				is_node_in_trade_company_region = no
-			}
-			any_owned_province = {
-				is_node_in_trade_company_region = yes
+				NOT = { superregion = india_superregion }
+				NOT = { superregion = china_superregion }
+				NOT = { region = japan_region }
+				NOT = { continent = oceania }
 			}
 			OR = {
 				AND = {
@@ -72,6 +72,23 @@ country_decisions = {
 			NOT = {
 				any_subject_country = {
 					is_dominion_tag_in_india = yes
+				}
+			}
+			OR = {
+				trade_company_west_india = {
+					has_discovered = ROOT
+				}
+				trade_company_deccan = {
+					has_discovered = ROOT
+				}
+				trade_company_east_india = {
+					has_discovered = ROOT
+				}
+				trade_company_coromandel = {
+					has_discovered = ROOT
+				}
+				trade_company_north_india = {
+					has_discovered = ROOT
 				}
 			}
 			trade_company_west_india = {
@@ -1500,7 +1517,7 @@ country_decisions = {
 		}
 		ai_will_do = {
 			factor = 10
-			
+
 			modifier = {
 				factor = 5
 				tag = GBR
@@ -1599,7 +1616,7 @@ country_decisions = {
 			}
 		}
 	}
-	
+
 	create_dominion_in_east_indies = {
 		potential = {
 			OR = {
@@ -1612,11 +1629,11 @@ country_decisions = {
 			is_subject = no
 			can_be_overlord = dominion_tc
 			NOT = { is_dominion_tag = yes }
-			any_owned_province = {
-				is_node_in_trade_company_region = yes
-			}
 			capital_scope = {
-				is_node_in_trade_company_region = no
+				NOT = { superregion = india_superregion }
+				NOT = { superregion = china_superregion }
+				NOT = { region = japan_region }
+				NOT = { continent = oceania }
 			}
 			OR = {
 				AND = {
@@ -1704,6 +1721,14 @@ country_decisions = {
 			NOT = {
 				any_subject_country = {
 					is_dominion_tag_in_east_indies = yes
+				}
+			}
+			OR = {
+				trade_company_indonesia = {
+					has_discovered = ROOT
+				}
+				trade_company_moluccas = {
+					has_discovered = ROOT
 				}
 			}
 			trade_company_indonesia = {
@@ -2580,7 +2605,7 @@ country_decisions = {
 		}
 		ai_will_do = {
 			factor = 10
-			
+
 			modifier = {
 				factor = 5
 				tag = NED
@@ -2626,7 +2651,7 @@ country_decisions = {
 							who = ROOT
 						}
 						divide_variable = { which = their_total_dev_temp_var value = 3 }
-						
+
 						check_variable = { which = their_total_dev_temp_var which = our_total_dev_temp_var }
 					}
 				}
@@ -2659,7 +2684,7 @@ country_decisions = {
 			}
 		}
 	}
-	
+
 	create_dominion_in_indochina = {
 		potential = {
 			OR = {
@@ -2672,11 +2697,11 @@ country_decisions = {
 			is_subject = no
 			can_be_overlord = dominion_tc
 			NOT = { is_dominion_tag = yes }
-			any_owned_province = {
-				is_node_in_trade_company_region = yes
-			}
 			capital_scope = {
-				is_node_in_trade_company_region = no
+				NOT = { superregion = india_superregion }
+				NOT = { superregion = china_superregion }
+				NOT = { region = japan_region }
+				NOT = { continent = oceania }
 			}
 			OR = {
 				AND = {
@@ -2731,6 +2756,14 @@ country_decisions = {
 			NOT = {
 				any_subject_country = {
 					is_dominion_tag_in_indochina = yes
+				}
+			}
+			OR = {
+				trade_company_indochina = {
+					has_discovered = ROOT
+				}
+				trade_company_burma = {
+					has_discovered = ROOT
 				}
 			}
 			trade_company_indochina = {
@@ -3322,7 +3355,7 @@ country_decisions = {
 		}
 		ai_will_do = {
 			factor = 10
-			
+
 			modifier = {
 				factor = 5
 				tag = FRA
@@ -3360,7 +3393,7 @@ country_decisions = {
 							who = ROOT
 						}
 						divide_variable = { which = their_total_dev_temp_var value = 3 }
-						
+
 						check_variable = { which = their_total_dev_temp_var which = our_total_dev_temp_var }
 					}
 				}
@@ -3393,7 +3426,7 @@ country_decisions = {
 			}
 		}
 	}
-	
+
 	create_dominion_in_west_africa = {
 		potential = {
 			OR = {
@@ -3406,11 +3439,11 @@ country_decisions = {
 			is_subject = no
 			can_be_overlord = dominion_tc
 			NOT = { is_dominion_tag = yes }
-			any_owned_province = {
-				is_node_in_trade_company_region = yes
-			}
 			capital_scope = {
-				is_node_in_trade_company_region = no
+				NOT = { superregion = india_superregion }
+				NOT = { superregion = china_superregion }
+				NOT = { region = japan_region }
+				NOT = { continent = oceania }
 			}
 			OR = {
 				AND = {
@@ -3466,6 +3499,9 @@ country_decisions = {
 				any_subject_country = {
 					is_dominion_tag_in_west_africa = yes
 				}
+			}
+			trade_company_west_africa = {
+				has_discovered = ROOT
 			}
 			trade_company_west_africa = {
 				type = all
@@ -3951,7 +3987,7 @@ country_decisions = {
 		}
 		ai_will_do = {
 			factor = 10
-			
+
 			modifier = {
 				factor = 5
 				tag = FRA
@@ -3990,7 +4026,7 @@ country_decisions = {
 							who = ROOT
 						}
 						divide_variable = { which = their_total_dev_temp_var value = 3 }
-						
+
 						check_variable = { which = their_total_dev_temp_var which = our_total_dev_temp_var }
 					}
 				}
@@ -4015,7 +4051,7 @@ country_decisions = {
 			}
 		}
 	}
-	
+
 	create_dominion_in_south_africa = {
 		potential = {
 			OR = {
@@ -4028,11 +4064,11 @@ country_decisions = {
 			is_subject = no
 			can_be_overlord = dominion_tc
 			NOT = { is_dominion_tag = yes }
-			any_owned_province = {
-				is_node_in_trade_company_region = yes
-			}
 			capital_scope = {
-				is_node_in_trade_company_region = no
+				NOT = { superregion = india_superregion }
+				NOT = { superregion = china_superregion }
+				NOT = { region = japan_region }
+				NOT = { continent = oceania }
 			}
 			OR = {
 				AND = {
@@ -4088,6 +4124,9 @@ country_decisions = {
 				any_subject_country = {
 					is_dominion_tag_in_south_africa = yes
 				}
+			}
+			trade_company_south_africa = {
+				has_discovered = ROOT
 			}
 			trade_company_south_africa = {
 				type = all
@@ -4573,7 +4612,7 @@ country_decisions = {
 		}
 		ai_will_do = {
 			factor = 10
-			
+
 			modifier = {
 				factor = 5
 				tag = GBR
@@ -4608,7 +4647,7 @@ country_decisions = {
 							who = ROOT
 						}
 						divide_variable = { which = their_total_dev_temp_var value = 3 }
-						
+
 						check_variable = { which = their_total_dev_temp_var which = our_total_dev_temp_var }
 					}
 				}
@@ -4633,7 +4672,7 @@ country_decisions = {
 			}
 		}
 	}
-	
+
 	create_dominion_in_east_africa = {
 		potential = {
 			OR = {
@@ -4646,11 +4685,11 @@ country_decisions = {
 			is_subject = no
 			can_be_overlord = dominion_tc
 			NOT = { is_dominion_tag = yes }
-			any_owned_province = {
-				is_node_in_trade_company_region = yes
-			}
 			capital_scope = {
-				is_node_in_trade_company_region = no
+				NOT = { superregion = india_superregion }
+				NOT = { superregion = china_superregion }
+				NOT = { region = japan_region }
+				NOT = { continent = oceania }
 			}
 			OR = {
 				AND = {
@@ -4706,6 +4745,9 @@ country_decisions = {
 				any_subject_country = {
 					is_dominion_tag_in_east_africa = yes
 				}
+			}
+			trade_company_east_africa = {
+				has_discovered = ROOT
 			}
 			trade_company_east_africa = {
 				type = all
@@ -5191,7 +5233,7 @@ country_decisions = {
 		}
 		ai_will_do = {
 			factor = 10
-			
+
 			modifier = {
 				factor = 5
 				tag = GBR
@@ -5226,7 +5268,7 @@ country_decisions = {
 							who = ROOT
 						}
 						divide_variable = { which = their_total_dev_temp_var value = 3 }
-						
+
 						check_variable = { which = their_total_dev_temp_var which = our_total_dev_temp_var }
 					}
 				}
@@ -5251,7 +5293,7 @@ country_decisions = {
 			}
 		}
 	}
-	
+
 	create_dominion_in_philippines = {
 		potential = {
 			OR = {
@@ -5264,11 +5306,11 @@ country_decisions = {
 			is_subject = no
 			can_be_overlord = dominion_tc
 			NOT = { is_dominion_tag = yes }
-			any_owned_province = {
-				is_node_in_trade_company_region = yes
-			}
 			capital_scope = {
-				is_node_in_trade_company_region = no
+				NOT = { superregion = india_superregion }
+				NOT = { superregion = china_superregion }
+				NOT = { region = japan_region }
+				NOT = { continent = oceania }
 			}
 			OR = {
 				AND = {
@@ -5357,6 +5399,9 @@ country_decisions = {
 				any_subject_country = {
 					is_dominion_tag_in_philippines = yes
 				}
+			}
+			trade_company_philippines = {
+				has_discovered = ROOT
 			}
 			trade_company_philippines = {
 				type = all
@@ -6045,7 +6090,7 @@ country_decisions = {
 		}
 		ai_will_do = {
 			factor = 10
-			
+
 			modifier = {
 				factor = 5
 				tag = SPA
@@ -6087,7 +6132,7 @@ country_decisions = {
 							who = ROOT
 						}
 						divide_variable = { which = their_total_dev_temp_var value = 3 }
-						
+
 						check_variable = { which = their_total_dev_temp_var which = our_total_dev_temp_var }
 					}
 				}

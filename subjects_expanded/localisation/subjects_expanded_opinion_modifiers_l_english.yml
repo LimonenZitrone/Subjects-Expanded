@@ -87,6 +87,7 @@
  is_papal_sanctuary_subject: "Papal Sanctuary"
  declined_establish_papal_sanctuary_subject_opinion: "Demand for Papal Sanctuary declined"
  declined_ask_for_papal_sanctuary_subject_opinion: "Offer for Papal Sanctuary declined"
+ declined_request_curia_money_from_papal_sanctuary_subject_opinion: "Demand for Donation declined"
 
  is_imperial_feud_subject: "Imperial Feud"
  declined_establish_imperial_feud_subject_opinion: "Demand for Imperial Feud declined"

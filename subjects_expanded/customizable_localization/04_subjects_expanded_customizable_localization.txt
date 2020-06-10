@@ -1,7 +1,7 @@
 defined_text = {
 	name = GetChiefdomSacrificeTheWeakEffects
 	random = no
-	
+
 	text = {
 		trigger = {
 			total_development = 200
@@ -127,5 +127,41 @@ defined_text = {
 			always = yes
 		}
 		localisation_key = string_chiefdom_sacrifice_the_weak_effects_base
+	}
+}
+
+defined_text = {
+	name = GetPapalSanctuaryDonationAmount
+	random = no
+
+	text = {
+		trigger = {
+			total_development = 300
+		}
+		localisation_key = "250"
+	}
+	text = {
+		trigger = {
+			total_development = 250
+		}
+		localisation_key = "200"
+	}
+	text = {
+		trigger = {
+			total_development = 200
+		}
+		localisation_key = "150"
+	}
+	text = {
+		trigger = {
+			total_development = 100
+		}
+		localisation_key = "100"
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = "50"
 	}
 }

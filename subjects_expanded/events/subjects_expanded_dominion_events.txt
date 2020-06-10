@@ -5,9 +5,9 @@ country_event = {
 	title = subjects_expanded_dominion_events.EVTNAME1
 	desc = subjects_expanded_dominion_events.EVTDESC1
 	picture = DIPLOMACY_eventPicture
-	
+
 	hidden = yes
-	
+
 	trigger = {
 		is_any_dominion_subject = yes
 		OR = {
@@ -15,6 +15,8 @@ country_event = {
 			NOT = { has_country_flag = was_dominion_subject }
 			AND = {
 				capital_scope = {
+					NOT = { continent = north_america }
+					NOT = { continent = south_america }
 					is_node_in_trade_company_region = yes
 				}
 				OR = {
@@ -24,9 +26,9 @@ country_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = { days = 1 }
-	
+
 	immediate = {
 		hidden_effect = {
 			if = {
@@ -45,6 +47,8 @@ country_event = {
 			if = {
 				limit = {
 					capital_scope = {
+						NOT = { continent = north_america }
+						NOT = { continent = south_america }
 						is_node_in_trade_company_region = yes
 					}
 				}
@@ -77,10 +81,10 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = subjects_expanded_dominion_events1.EVTOPT1
-		
+
 		ai_chance = { factor = 100 }
 	}
 }
@@ -90,14 +94,14 @@ country_event = {
 	title = subjects_expanded_dominion_events.EVTNAME2
 	desc = subjects_expanded_dominion_events.EVTDESC2
 	picture = BATTLE_eventPicture
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = subjects_expanded_dominion_events2.EVTOPT1
-		
+
 		ai_chance = { factor = 100 }
-		
+
 		tooltip = {
 			FROM = {
 				add_manpower = 5
@@ -114,12 +118,15 @@ country_event = {
 	title = subjects_expanded_dominion_events.EVTNAME3
 	desc = subjects_expanded_dominion_events.EVTDESC3
 	picture = DIPLOMACY_eventPicture
-	
+
 	# hidden = yes
-	
+
 	trigger = {
 		capital_scope = {
-			is_node_in_trade_company_region = no
+			NOT = { superregion = india_superregion }
+			NOT = { superregion = china_superregion }
+			NOT = { region = japan_region }
+			NOT = { continent = oceania }
 		}
 		NOT = { is_dominion_tag = yes }
 		any_subject_country = {
@@ -138,9 +145,9 @@ country_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = { days = 1 }
-	
+
 	immediate = {
 		hidden_effect = {
 			set_variable = { which = num_of_provinces_ceded_to_autonomous_dominion_india value = 0 }
@@ -271,10 +278,10 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = subjects_expanded_dominion_events3.EVTOPT1
-		
+
 		ai_chance = { factor = 100 }
 	}
 }
@@ -285,12 +292,15 @@ country_event = {
 	title = subjects_expanded_dominion_events.EVTNAME4
 	desc = subjects_expanded_dominion_events.EVTDESC4
 	picture = DIPLOMACY_eventPicture
-	
+
 	# hidden = yes
-	
+
 	trigger = {
 		capital_scope = {
-			is_node_in_trade_company_region = no
+			NOT = { superregion = india_superregion }
+			NOT = { superregion = china_superregion }
+			NOT = { region = japan_region }
+			NOT = { continent = oceania }
 		}
 		NOT = { is_dominion_tag = yes }
 		any_subject_country = {
@@ -306,9 +316,9 @@ country_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = { days = 1 }
-	
+
 	immediate = {
 		hidden_effect = {
 			set_variable = { which = num_of_provinces_ceded_to_autonomous_dominion_east_indies value = 0 }
@@ -364,10 +374,10 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = subjects_expanded_dominion_events4.EVTOPT1
-		
+
 		ai_chance = { factor = 100 }
 	}
 }
@@ -378,12 +388,15 @@ country_event = {
 	title = subjects_expanded_dominion_events.EVTNAME5
 	desc = subjects_expanded_dominion_events.EVTDESC5
 	picture = DIPLOMACY_eventPicture
-	
+
 	# hidden = yes
-	
+
 	trigger = {
 		capital_scope = {
-			is_node_in_trade_company_region = no
+			NOT = { superregion = india_superregion }
+			NOT = { superregion = china_superregion }
+			NOT = { region = japan_region }
+			NOT = { continent = oceania }
 		}
 		NOT = { is_dominion_tag = yes }
 		any_subject_country = {
@@ -399,9 +412,9 @@ country_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = { days = 1 }
-	
+
 	immediate = {
 		hidden_effect = {
 			set_variable = { which = num_of_provinces_ceded_to_autonomous_dominion_indochina value = 0 }
@@ -457,10 +470,10 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = subjects_expanded_dominion_events5.EVTOPT1
-		
+
 		ai_chance = { factor = 100 }
 	}
 }
@@ -471,12 +484,15 @@ country_event = {
 	title = subjects_expanded_dominion_events.EVTNAME6
 	desc = subjects_expanded_dominion_events.EVTDESC6
 	picture = DIPLOMACY_eventPicture
-	
+
 	# hidden = yes
-	
+
 	trigger = {
 		capital_scope = {
-			is_node_in_trade_company_region = no
+			NOT = { superregion = india_superregion }
+			NOT = { superregion = china_superregion }
+			NOT = { region = japan_region }
+			NOT = { continent = oceania }
 		}
 		NOT = { is_dominion_tag = yes }
 		any_subject_country = {
@@ -489,9 +505,9 @@ country_event = {
 			trade_company_region = trade_company_west_africa
 		}
 	}
-	
+
 	mean_time_to_happen = { days = 1 }
-	
+
 	immediate = {
 		hidden_effect = {
 			set_variable = { which = num_of_provinces_ceded_to_autonomous_dominion_west_africa value = 0 }
@@ -522,10 +538,10 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = subjects_expanded_dominion_events6.EVTOPT1
-		
+
 		ai_chance = { factor = 100 }
 	}
 }
@@ -536,12 +552,15 @@ country_event = {
 	title = subjects_expanded_dominion_events.EVTNAME7
 	desc = subjects_expanded_dominion_events.EVTDESC7
 	picture = DIPLOMACY_eventPicture
-	
+
 	# hidden = yes
-	
+
 	trigger = {
 		capital_scope = {
-			is_node_in_trade_company_region = no
+			NOT = { superregion = india_superregion }
+			NOT = { superregion = china_superregion }
+			NOT = { region = japan_region }
+			NOT = { continent = oceania }
 		}
 		NOT = { is_dominion_tag = yes }
 		any_subject_country = {
@@ -554,9 +573,9 @@ country_event = {
 			trade_company_region = trade_company_east_africa
 		}
 	}
-	
+
 	mean_time_to_happen = { days = 1 }
-	
+
 	immediate = {
 		hidden_effect = {
 			set_variable = { which = num_of_provinces_ceded_to_autonomous_dominion_east_africa value = 0 }
@@ -587,10 +606,10 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = subjects_expanded_dominion_events7.EVTOPT1
-		
+
 		ai_chance = { factor = 100 }
 	}
 }
@@ -601,12 +620,15 @@ country_event = {
 	title = subjects_expanded_dominion_events.EVTNAME8
 	desc = subjects_expanded_dominion_events.EVTDESC8
 	picture = DIPLOMACY_eventPicture
-	
+
 	# hidden = yes
-	
+
 	trigger = {
 		capital_scope = {
-			is_node_in_trade_company_region = no
+			NOT = { superregion = india_superregion }
+			NOT = { superregion = china_superregion }
+			NOT = { region = japan_region }
+			NOT = { continent = oceania }
 		}
 		NOT = { is_dominion_tag = yes }
 		any_subject_country = {
@@ -619,9 +641,9 @@ country_event = {
 			trade_company_region = trade_company_south_africa
 		}
 	}
-	
+
 	mean_time_to_happen = { days = 1 }
-	
+
 	immediate = {
 		hidden_effect = {
 			set_variable = { which = num_of_provinces_ceded_to_autonomous_dominion_south_africa value = 0 }
@@ -652,10 +674,10 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = subjects_expanded_dominion_events8.EVTOPT1
-		
+
 		ai_chance = { factor = 100 }
 	}
 }
@@ -666,12 +688,15 @@ country_event = {
 	title = subjects_expanded_dominion_events.EVTNAME9
 	desc = subjects_expanded_dominion_events.EVTDESC9
 	picture = DIPLOMACY_eventPicture
-	
+
 	# hidden = yes
-	
+
 	trigger = {
 		capital_scope = {
-			is_node_in_trade_company_region = no
+			NOT = { superregion = india_superregion }
+			NOT = { superregion = china_superregion }
+			NOT = { region = japan_region }
+			NOT = { continent = oceania }
 		}
 		NOT = { is_dominion_tag = yes }
 		any_subject_country = {
@@ -684,9 +709,9 @@ country_event = {
 			trade_company_region = trade_company_philippines
 		}
 	}
-	
+
 	mean_time_to_happen = { days = 1 }
-	
+
 	immediate = {
 		hidden_effect = {
 			set_variable = { which = num_of_provinces_ceded_to_autonomous_dominion_philippines value = 0 }
@@ -717,10 +742,10 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = subjects_expanded_dominion_events9.EVTOPT1
-		
+
 		ai_chance = { factor = 100 }
 	}
 }

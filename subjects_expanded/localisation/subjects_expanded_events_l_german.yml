@@ -106,8 +106,12 @@
  subjects_expanded_voivodeship_events1.EVTOPT2: "Sie dienen besser als [BOH.GetAdjective]er Vasall."
 
  subjects_expanded_fief_subject_events.EVTNAME1: "Truppen gefordert"
- subjects_expanded_fief_subject_events.EVTDESC1: "Unser LehnshOur hat von seinem Recht Gebrauch gemacht und Truppen für seine Armee gefordert."
+ subjects_expanded_fief_subject_events.EVTDESC1: "Unser Lehnsherr hat von seinem Recht Gebrauch gemacht und Truppen für seine Armee gefordert."
  subjects_expanded_fief_subject_events1.EVTOPT1: "War das wirklich nötig?"
+
+ subjects_expanded_fief_subject_events.EVTNAME2: "Kriegsdienst gefordert"
+ subjects_expanded_fief_subject_events.EVTDESC2: "Unser Lehnsherr hat von seinem Recht Gebrauch gemacht und verlangt, dass wir ihm in seinen Kriegen helfen."
+ subjects_expanded_fief_subject_events2.EVTOPT1: "War das wirklich nötig?"
 
  subjects_expanded_pirate_brotherhood_vassal_events.EVTNAME2: "Bruderschaften erklären Unabhängigkeit"
  subjects_expanded_pirate_brotherhood_vassal_events.EVTDESC2: "Wir werden nicht mehr von einer Piratenregierung regiert. Unsere bis jetzt noch loyalen Piratenbruderschaften haben dies als legitimen Grund zur Erklärung ihrer Unabhängigkeit verwendet."
@@ -121,10 +125,6 @@
  subjects_expanded_sister_republic_events.EVTNAME1: "Schwesterrepublik wird unabhängig"
  subjects_expanded_sister_republic_events.EVTDESC1: "Die Regierungen von [Root.GetName] und unserer Schwesterrepublik sind in letzter Zeit immer weiter auseinandergedriftet und es ist an der Zeit, dass wir uns eingestehen, dass diese Beziehung nicht mehr in dieser Art und Weise geführt werden kann."
  subjects_expanded_sister_republic_events1.EVTOPT1: "Wir werden weiterhin in Kriegen zueinander stehen!"
-
- subjects_expanded_sister_republic_events.EVTNAME3: "Schwesterrepublik wählt Kriegsziel"
- subjects_expanded_sister_republic_events.EVTDESC3: "Unsere Schwesterrepublik, [From.GetName], hat §R[FROM_marked_THIS_for_war.GetName]§! als ihr Kriegsziel gewählt. Sie werden Euch eventuell innerhalb der nächsten 90 Tage darum bitten, diesem Land einen gemeinsamen Krieg zu erklären."
- subjects_expanded_sister_republic_events3.EVTOPT1: "Interessant."
 
  subjects_expanded_muslim_tributary_vassal_events.EVTNAME2: "Probleme mit Dar al-Sulh Territorien"
  subjects_expanded_muslim_tributary_vassal_events.EVTDESC2: "Unsere Dar al-Sulh Territorien machen Probleme. Entweder ist eines von ihnen unter das islamische Gesetz gefallen, wodurch es zu einem irregulären invalid Dar al-Sulh Territorium geworden ist und wir uns darauf konzentrieren sollten, es weiter in unser Reich zu integrieren, oder wir folgen nicht mehr dem islamischen Gesetz, wodurch wir das Recht auf Dar al-Sulh Territorien verloren hätten. Im Falle von letzterem würde das von uns verlangen, alle Dar al-Sulh Territorien freizulassen."

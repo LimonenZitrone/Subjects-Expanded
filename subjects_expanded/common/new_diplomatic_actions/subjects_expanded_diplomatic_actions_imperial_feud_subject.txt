@@ -1212,7 +1212,8 @@ make_imperial_feud_subject_hre_member = {
 
 	is_visible = {
 		is_emperor = yes
-		NOT = { hre_reform_level = 7 }
+		NOT = { hre_reform_passed = emperor_privilegia_de_non_appelando }
+		NOT = { hre_reform_passed = privilegia_de_non_appelando }
 		FROM = {
 			is_subject_of = ROOT
 			is_subject_of_type = imperial_feud_subject
@@ -1223,7 +1224,8 @@ make_imperial_feud_subject_hre_member = {
 	is_allowed = {
 		hidden_trigger = {
 			is_emperor = yes
-			NOT = { hre_reform_level = 7 }
+			NOT = { hre_reform_passed = emperor_privilegia_de_non_appelando }
+			NOT = { hre_reform_passed = privilegia_de_non_appelando }
 			FROM = {
 				is_subject_of = ROOT
 				is_subject_of_type = imperial_feud_subject
@@ -1264,7 +1266,8 @@ make_imperial_feud_subject_hre_member = {
 		if = {
 			limit = {
 				is_emperor = yes
-				NOT = { hre_reform_level = 7 }
+				NOT = { hre_reform_passed = emperor_privilegia_de_non_appelando }
+				NOT = { hre_reform_passed = privilegia_de_non_appelando }
 				FROM = {
 					is_subject_of = ROOT
 					is_subject_of_type = imperial_feud_subject
@@ -1318,7 +1321,8 @@ make_imperial_feud_subject_hre_member = {
 		if = {
 			limit = {
 				is_emperor = yes
-				NOT = { hre_reform_level = 7 }
+				NOT = { hre_reform_passed = emperor_privilegia_de_non_appelando }
+				NOT = { hre_reform_passed = privilegia_de_non_appelando }
 				FROM = {
 					is_subject_of = ROOT
 					is_subject_of_type = imperial_feud_subject
@@ -1702,12 +1706,882 @@ make_imperial_feud_subject_hre_member = {
 			subtract_variable = { which = ai_value which = ai_value_2 }
 		}
 		add_entry = {
-			name = NUM_OF_HRE_REFORMS_PASSED
+			name = NUM_OF_HRE_REFORMS
+			limit = {
+				NOT = { has_dlc = "Emperor" }
+				calc_true_if = {
+					amount = 8
+					hre_reform_passed = reichsreform
+					hre_reform_passed = reichsregiment
+					hre_reform_passed = hofgericht
+					hre_reform_passed = gemeinerpfennig
+					hre_reform_passed = landfriede
+					hre_reform_passed = erbkaisertum
+					hre_reform_passed = privilegia_de_non_appelando
+					hre_reform_passed = renovatio
+				}
+			}
 			export_to_variable = {
 				which = ai_value
-				value = trigger_value:hre_reform_level
+				value = 8
 			}
-			change_variable = { which = ai_value value = -1 }
+			multiply_variable = { which = ai_value value = 5 }
+		}
+		add_entry = {
+			name = NUM_OF_HRE_REFORMS
+			limit = {
+				NOT = { has_dlc = "Emperor" }
+				NOT = {
+					calc_true_if = {
+						amount = 8
+						hre_reform_passed = reichsreform
+						hre_reform_passed = reichsregiment
+						hre_reform_passed = hofgericht
+						hre_reform_passed = gemeinerpfennig
+						hre_reform_passed = landfriede
+						hre_reform_passed = erbkaisertum
+						hre_reform_passed = privilegia_de_non_appelando
+						hre_reform_passed = renovatio
+					}
+				}
+				calc_true_if = {
+					amount = 7
+					hre_reform_passed = reichsreform
+					hre_reform_passed = reichsregiment
+					hre_reform_passed = hofgericht
+					hre_reform_passed = gemeinerpfennig
+					hre_reform_passed = landfriede
+					hre_reform_passed = erbkaisertum
+					hre_reform_passed = privilegia_de_non_appelando
+					hre_reform_passed = renovatio
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 7
+			}
+			multiply_variable = { which = ai_value value = 5 }
+		}
+		add_entry = {
+			name = NUM_OF_HRE_REFORMS
+			limit = {
+				NOT = { has_dlc = "Emperor" }
+				NOT = {
+					calc_true_if = {
+						amount = 7
+						hre_reform_passed = reichsreform
+						hre_reform_passed = reichsregiment
+						hre_reform_passed = hofgericht
+						hre_reform_passed = gemeinerpfennig
+						hre_reform_passed = landfriede
+						hre_reform_passed = erbkaisertum
+						hre_reform_passed = privilegia_de_non_appelando
+						hre_reform_passed = renovatio
+					}
+				}
+				calc_true_if = {
+					amount = 6
+					hre_reform_passed = reichsreform
+					hre_reform_passed = reichsregiment
+					hre_reform_passed = hofgericht
+					hre_reform_passed = gemeinerpfennig
+					hre_reform_passed = landfriede
+					hre_reform_passed = erbkaisertum
+					hre_reform_passed = privilegia_de_non_appelando
+					hre_reform_passed = renovatio
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 6
+			}
+			multiply_variable = { which = ai_value value = 5 }
+		}
+		add_entry = {
+			name = NUM_OF_HRE_REFORMS
+			limit = {
+				NOT = { has_dlc = "Emperor" }
+				NOT = {
+					calc_true_if = {
+						amount = 6
+						hre_reform_passed = reichsreform
+						hre_reform_passed = reichsregiment
+						hre_reform_passed = hofgericht
+						hre_reform_passed = gemeinerpfennig
+						hre_reform_passed = landfriede
+						hre_reform_passed = erbkaisertum
+						hre_reform_passed = privilegia_de_non_appelando
+						hre_reform_passed = renovatio
+					}
+				}
+				calc_true_if = {
+					amount = 5
+					hre_reform_passed = reichsreform
+					hre_reform_passed = reichsregiment
+					hre_reform_passed = hofgericht
+					hre_reform_passed = gemeinerpfennig
+					hre_reform_passed = landfriede
+					hre_reform_passed = erbkaisertum
+					hre_reform_passed = privilegia_de_non_appelando
+					hre_reform_passed = renovatio
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 5
+			}
+			multiply_variable = { which = ai_value value = 5 }
+		}
+		add_entry = {
+			name = NUM_OF_HRE_REFORMS
+			limit = {
+				NOT = { has_dlc = "Emperor" }
+				NOT = {
+					calc_true_if = {
+						amount = 5
+						hre_reform_passed = reichsreform
+						hre_reform_passed = reichsregiment
+						hre_reform_passed = hofgericht
+						hre_reform_passed = gemeinerpfennig
+						hre_reform_passed = landfriede
+						hre_reform_passed = erbkaisertum
+						hre_reform_passed = privilegia_de_non_appelando
+						hre_reform_passed = renovatio
+					}
+				}
+				calc_true_if = {
+					amount = 4
+					hre_reform_passed = reichsreform
+					hre_reform_passed = reichsregiment
+					hre_reform_passed = hofgericht
+					hre_reform_passed = gemeinerpfennig
+					hre_reform_passed = landfriede
+					hre_reform_passed = erbkaisertum
+					hre_reform_passed = privilegia_de_non_appelando
+					hre_reform_passed = renovatio
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 4
+			}
+			multiply_variable = { which = ai_value value = 5 }
+		}
+		add_entry = {
+			name = NUM_OF_HRE_REFORMS
+			limit = {
+				NOT = { has_dlc = "Emperor" }
+				NOT = {
+					calc_true_if = {
+						amount = 4
+						hre_reform_passed = reichsreform
+						hre_reform_passed = reichsregiment
+						hre_reform_passed = hofgericht
+						hre_reform_passed = gemeinerpfennig
+						hre_reform_passed = landfriede
+						hre_reform_passed = erbkaisertum
+						hre_reform_passed = privilegia_de_non_appelando
+						hre_reform_passed = renovatio
+					}
+				}
+				calc_true_if = {
+					amount = 3
+					hre_reform_passed = reichsreform
+					hre_reform_passed = reichsregiment
+					hre_reform_passed = hofgericht
+					hre_reform_passed = gemeinerpfennig
+					hre_reform_passed = landfriede
+					hre_reform_passed = erbkaisertum
+					hre_reform_passed = privilegia_de_non_appelando
+					hre_reform_passed = renovatio
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 3
+			}
+			multiply_variable = { which = ai_value value = 5 }
+		}
+		add_entry = {
+			name = NUM_OF_HRE_REFORMS
+			limit = {
+				NOT = { has_dlc = "Emperor" }
+				NOT = {
+					calc_true_if = {
+						amount = 3
+						hre_reform_passed = reichsreform
+						hre_reform_passed = reichsregiment
+						hre_reform_passed = hofgericht
+						hre_reform_passed = gemeinerpfennig
+						hre_reform_passed = landfriede
+						hre_reform_passed = erbkaisertum
+						hre_reform_passed = privilegia_de_non_appelando
+						hre_reform_passed = renovatio
+					}
+				}
+				calc_true_if = {
+					amount = 2
+					hre_reform_passed = reichsreform
+					hre_reform_passed = reichsregiment
+					hre_reform_passed = hofgericht
+					hre_reform_passed = gemeinerpfennig
+					hre_reform_passed = landfriede
+					hre_reform_passed = erbkaisertum
+					hre_reform_passed = privilegia_de_non_appelando
+					hre_reform_passed = renovatio
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 2
+			}
+			multiply_variable = { which = ai_value value = 5 }
+		}
+		add_entry = {
+			name = NUM_OF_HRE_REFORMS
+			limit = {
+				NOT = { has_dlc = "Emperor" }
+				NOT = {
+					calc_true_if = {
+						amount = 2
+						hre_reform_passed = reichsreform
+						hre_reform_passed = reichsregiment
+						hre_reform_passed = hofgericht
+						hre_reform_passed = gemeinerpfennig
+						hre_reform_passed = landfriede
+						hre_reform_passed = erbkaisertum
+						hre_reform_passed = privilegia_de_non_appelando
+						hre_reform_passed = renovatio
+					}
+				}
+				OR = {
+					hre_reform_passed = reichsreform
+					hre_reform_passed = reichsregiment
+					hre_reform_passed = hofgericht
+					hre_reform_passed = gemeinerpfennig
+					hre_reform_passed = landfriede
+					hre_reform_passed = erbkaisertum
+					hre_reform_passed = privilegia_de_non_appelando
+					hre_reform_passed = renovatio
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 1
+			}
+			multiply_variable = { which = ai_value value = 5 }
+		}
+		add_entry = {
+			name = NUM_OF_HRE_REFORMS
+			limit = {
+				has_dlc = "Emperor"
+				calc_true_if = {
+					amount = 12
+					hre_reform_passed = emperor_reichsreform
+					hre_reform_passed = emperor_reichsregiment
+					hre_reform_passed = emperor_reichsstabilitaet
+					hre_reform_passed = emperor_gemeinerpfennig
+					hre_reform_passed = emperor_perpetual_diet
+					hre_reform_passed = emperor_landsknechtswesen
+					hre_reform_passed = emperor_landfriede
+					hre_reform_passed = emperor_reichstag_collegia
+					hre_reform_passed = emperor_expand_gemeiner_pfennig
+					hre_reform_passed = emperor_rechenschaft
+					hre_reform_passed = emperor_geteilte_macht
+					hre_reform_passed = emperor_reichskrieg
+					hre_reform_passed = emperor_hofgericht
+					hre_reform_passed = emperor_imperial_estates
+					hre_reform_passed = emperor_erbkaisertum
+					hre_reform_passed = emperor_privilegia_de_non_appelando
+					hre_reform_passed = emperor_renovatio
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 12
+			}
+			multiply_variable = { which = ai_value value = 5 }
+		}
+		add_entry = {
+			name = NUM_OF_HRE_REFORMS
+			limit = {
+				has_dlc = "Emperor"
+				NOT = {
+					calc_true_if = {
+						amount = 12
+						hre_reform_passed = emperor_reichsreform
+						hre_reform_passed = emperor_reichsregiment
+						hre_reform_passed = emperor_reichsstabilitaet
+						hre_reform_passed = emperor_gemeinerpfennig
+						hre_reform_passed = emperor_perpetual_diet
+						hre_reform_passed = emperor_landsknechtswesen
+						hre_reform_passed = emperor_landfriede
+						hre_reform_passed = emperor_reichstag_collegia
+						hre_reform_passed = emperor_expand_gemeiner_pfennig
+						hre_reform_passed = emperor_rechenschaft
+						hre_reform_passed = emperor_geteilte_macht
+						hre_reform_passed = emperor_reichskrieg
+						hre_reform_passed = emperor_hofgericht
+						hre_reform_passed = emperor_imperial_estates
+						hre_reform_passed = emperor_erbkaisertum
+						hre_reform_passed = emperor_privilegia_de_non_appelando
+						hre_reform_passed = emperor_renovatio
+					}
+				}
+				calc_true_if = {
+					amount = 11
+					hre_reform_passed = emperor_reichsreform
+					hre_reform_passed = emperor_reichsregiment
+					hre_reform_passed = emperor_reichsstabilitaet
+					hre_reform_passed = emperor_gemeinerpfennig
+					hre_reform_passed = emperor_perpetual_diet
+					hre_reform_passed = emperor_landsknechtswesen
+					hre_reform_passed = emperor_landfriede
+					hre_reform_passed = emperor_reichstag_collegia
+					hre_reform_passed = emperor_expand_gemeiner_pfennig
+					hre_reform_passed = emperor_rechenschaft
+					hre_reform_passed = emperor_geteilte_macht
+					hre_reform_passed = emperor_reichskrieg
+					hre_reform_passed = emperor_hofgericht
+					hre_reform_passed = emperor_imperial_estates
+					hre_reform_passed = emperor_erbkaisertum
+					hre_reform_passed = emperor_privilegia_de_non_appelando
+					hre_reform_passed = emperor_renovatio
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 11
+			}
+			multiply_variable = { which = ai_value value = 5 }
+		}
+		add_entry = {
+			name = NUM_OF_HRE_REFORMS
+			limit = {
+				has_dlc = "Emperor"
+				NOT = {
+					calc_true_if = {
+						amount = 11
+						hre_reform_passed = emperor_reichsreform
+						hre_reform_passed = emperor_reichsregiment
+						hre_reform_passed = emperor_reichsstabilitaet
+						hre_reform_passed = emperor_gemeinerpfennig
+						hre_reform_passed = emperor_perpetual_diet
+						hre_reform_passed = emperor_landsknechtswesen
+						hre_reform_passed = emperor_landfriede
+						hre_reform_passed = emperor_reichstag_collegia
+						hre_reform_passed = emperor_expand_gemeiner_pfennig
+						hre_reform_passed = emperor_rechenschaft
+						hre_reform_passed = emperor_geteilte_macht
+						hre_reform_passed = emperor_reichskrieg
+						hre_reform_passed = emperor_hofgericht
+						hre_reform_passed = emperor_imperial_estates
+						hre_reform_passed = emperor_erbkaisertum
+						hre_reform_passed = emperor_privilegia_de_non_appelando
+						hre_reform_passed = emperor_renovatio
+					}
+				}
+				calc_true_if = {
+					amount = 10
+					hre_reform_passed = emperor_reichsreform
+					hre_reform_passed = emperor_reichsregiment
+					hre_reform_passed = emperor_reichsstabilitaet
+					hre_reform_passed = emperor_gemeinerpfennig
+					hre_reform_passed = emperor_perpetual_diet
+					hre_reform_passed = emperor_landsknechtswesen
+					hre_reform_passed = emperor_landfriede
+					hre_reform_passed = emperor_reichstag_collegia
+					hre_reform_passed = emperor_expand_gemeiner_pfennig
+					hre_reform_passed = emperor_rechenschaft
+					hre_reform_passed = emperor_geteilte_macht
+					hre_reform_passed = emperor_reichskrieg
+					hre_reform_passed = emperor_hofgericht
+					hre_reform_passed = emperor_imperial_estates
+					hre_reform_passed = emperor_erbkaisertum
+					hre_reform_passed = emperor_privilegia_de_non_appelando
+					hre_reform_passed = emperor_renovatio
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 10
+			}
+			multiply_variable = { which = ai_value value = 5 }
+		}
+		add_entry = {
+			name = NUM_OF_HRE_REFORMS
+			limit = {
+				has_dlc = "Emperor"
+				NOT = {
+					calc_true_if = {
+						amount = 10
+						hre_reform_passed = emperor_reichsreform
+						hre_reform_passed = emperor_reichsregiment
+						hre_reform_passed = emperor_reichsstabilitaet
+						hre_reform_passed = emperor_gemeinerpfennig
+						hre_reform_passed = emperor_perpetual_diet
+						hre_reform_passed = emperor_landsknechtswesen
+						hre_reform_passed = emperor_landfriede
+						hre_reform_passed = emperor_reichstag_collegia
+						hre_reform_passed = emperor_expand_gemeiner_pfennig
+						hre_reform_passed = emperor_rechenschaft
+						hre_reform_passed = emperor_geteilte_macht
+						hre_reform_passed = emperor_reichskrieg
+						hre_reform_passed = emperor_hofgericht
+						hre_reform_passed = emperor_imperial_estates
+						hre_reform_passed = emperor_erbkaisertum
+						hre_reform_passed = emperor_privilegia_de_non_appelando
+						hre_reform_passed = emperor_renovatio
+					}
+				}
+				calc_true_if = {
+					amount = 9
+					hre_reform_passed = emperor_reichsreform
+					hre_reform_passed = emperor_reichsregiment
+					hre_reform_passed = emperor_reichsstabilitaet
+					hre_reform_passed = emperor_gemeinerpfennig
+					hre_reform_passed = emperor_perpetual_diet
+					hre_reform_passed = emperor_landsknechtswesen
+					hre_reform_passed = emperor_landfriede
+					hre_reform_passed = emperor_reichstag_collegia
+					hre_reform_passed = emperor_expand_gemeiner_pfennig
+					hre_reform_passed = emperor_rechenschaft
+					hre_reform_passed = emperor_geteilte_macht
+					hre_reform_passed = emperor_reichskrieg
+					hre_reform_passed = emperor_hofgericht
+					hre_reform_passed = emperor_imperial_estates
+					hre_reform_passed = emperor_erbkaisertum
+					hre_reform_passed = emperor_privilegia_de_non_appelando
+					hre_reform_passed = emperor_renovatio
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 9
+			}
+			multiply_variable = { which = ai_value value = 5 }
+		}
+		add_entry = {
+			name = NUM_OF_HRE_REFORMS
+			limit = {
+				has_dlc = "Emperor"
+				NOT = {
+					calc_true_if = {
+						amount = 9
+						hre_reform_passed = emperor_reichsreform
+						hre_reform_passed = emperor_reichsregiment
+						hre_reform_passed = emperor_reichsstabilitaet
+						hre_reform_passed = emperor_gemeinerpfennig
+						hre_reform_passed = emperor_perpetual_diet
+						hre_reform_passed = emperor_landsknechtswesen
+						hre_reform_passed = emperor_landfriede
+						hre_reform_passed = emperor_reichstag_collegia
+						hre_reform_passed = emperor_expand_gemeiner_pfennig
+						hre_reform_passed = emperor_rechenschaft
+						hre_reform_passed = emperor_geteilte_macht
+						hre_reform_passed = emperor_reichskrieg
+						hre_reform_passed = emperor_hofgericht
+						hre_reform_passed = emperor_imperial_estates
+						hre_reform_passed = emperor_erbkaisertum
+						hre_reform_passed = emperor_privilegia_de_non_appelando
+						hre_reform_passed = emperor_renovatio
+					}
+				}
+				calc_true_if = {
+					amount = 8
+					hre_reform_passed = emperor_reichsreform
+					hre_reform_passed = emperor_reichsregiment
+					hre_reform_passed = emperor_reichsstabilitaet
+					hre_reform_passed = emperor_gemeinerpfennig
+					hre_reform_passed = emperor_perpetual_diet
+					hre_reform_passed = emperor_landsknechtswesen
+					hre_reform_passed = emperor_landfriede
+					hre_reform_passed = emperor_reichstag_collegia
+					hre_reform_passed = emperor_expand_gemeiner_pfennig
+					hre_reform_passed = emperor_rechenschaft
+					hre_reform_passed = emperor_geteilte_macht
+					hre_reform_passed = emperor_reichskrieg
+					hre_reform_passed = emperor_hofgericht
+					hre_reform_passed = emperor_imperial_estates
+					hre_reform_passed = emperor_erbkaisertum
+					hre_reform_passed = emperor_privilegia_de_non_appelando
+					hre_reform_passed = emperor_renovatio
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 8
+			}
+			multiply_variable = { which = ai_value value = 5 }
+		}
+		add_entry = {
+			name = NUM_OF_HRE_REFORMS
+			limit = {
+				has_dlc = "Emperor"
+				NOT = {
+					calc_true_if = {
+						amount = 8
+						hre_reform_passed = emperor_reichsreform
+						hre_reform_passed = emperor_reichsregiment
+						hre_reform_passed = emperor_reichsstabilitaet
+						hre_reform_passed = emperor_gemeinerpfennig
+						hre_reform_passed = emperor_perpetual_diet
+						hre_reform_passed = emperor_landsknechtswesen
+						hre_reform_passed = emperor_landfriede
+						hre_reform_passed = emperor_reichstag_collegia
+						hre_reform_passed = emperor_expand_gemeiner_pfennig
+						hre_reform_passed = emperor_rechenschaft
+						hre_reform_passed = emperor_geteilte_macht
+						hre_reform_passed = emperor_reichskrieg
+						hre_reform_passed = emperor_hofgericht
+						hre_reform_passed = emperor_imperial_estates
+						hre_reform_passed = emperor_erbkaisertum
+						hre_reform_passed = emperor_privilegia_de_non_appelando
+						hre_reform_passed = emperor_renovatio
+					}
+				}
+				calc_true_if = {
+					amount = 7
+					hre_reform_passed = emperor_reichsreform
+					hre_reform_passed = emperor_reichsregiment
+					hre_reform_passed = emperor_reichsstabilitaet
+					hre_reform_passed = emperor_gemeinerpfennig
+					hre_reform_passed = emperor_perpetual_diet
+					hre_reform_passed = emperor_landsknechtswesen
+					hre_reform_passed = emperor_landfriede
+					hre_reform_passed = emperor_reichstag_collegia
+					hre_reform_passed = emperor_expand_gemeiner_pfennig
+					hre_reform_passed = emperor_rechenschaft
+					hre_reform_passed = emperor_geteilte_macht
+					hre_reform_passed = emperor_reichskrieg
+					hre_reform_passed = emperor_hofgericht
+					hre_reform_passed = emperor_imperial_estates
+					hre_reform_passed = emperor_erbkaisertum
+					hre_reform_passed = emperor_privilegia_de_non_appelando
+					hre_reform_passed = emperor_renovatio
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 7
+			}
+			multiply_variable = { which = ai_value value = 5 }
+		}
+		add_entry = {
+			name = NUM_OF_HRE_REFORMS
+			limit = {
+				has_dlc = "Emperor"
+				NOT = {
+					calc_true_if = {
+						amount = 7
+						hre_reform_passed = emperor_reichsreform
+						hre_reform_passed = emperor_reichsregiment
+						hre_reform_passed = emperor_reichsstabilitaet
+						hre_reform_passed = emperor_gemeinerpfennig
+						hre_reform_passed = emperor_perpetual_diet
+						hre_reform_passed = emperor_landsknechtswesen
+						hre_reform_passed = emperor_landfriede
+						hre_reform_passed = emperor_reichstag_collegia
+						hre_reform_passed = emperor_expand_gemeiner_pfennig
+						hre_reform_passed = emperor_rechenschaft
+						hre_reform_passed = emperor_geteilte_macht
+						hre_reform_passed = emperor_reichskrieg
+						hre_reform_passed = emperor_hofgericht
+						hre_reform_passed = emperor_imperial_estates
+						hre_reform_passed = emperor_erbkaisertum
+						hre_reform_passed = emperor_privilegia_de_non_appelando
+						hre_reform_passed = emperor_renovatio
+					}
+				}
+				calc_true_if = {
+					amount = 6
+					hre_reform_passed = emperor_reichsreform
+					hre_reform_passed = emperor_reichsregiment
+					hre_reform_passed = emperor_reichsstabilitaet
+					hre_reform_passed = emperor_gemeinerpfennig
+					hre_reform_passed = emperor_perpetual_diet
+					hre_reform_passed = emperor_landsknechtswesen
+					hre_reform_passed = emperor_landfriede
+					hre_reform_passed = emperor_reichstag_collegia
+					hre_reform_passed = emperor_expand_gemeiner_pfennig
+					hre_reform_passed = emperor_rechenschaft
+					hre_reform_passed = emperor_geteilte_macht
+					hre_reform_passed = emperor_reichskrieg
+					hre_reform_passed = emperor_hofgericht
+					hre_reform_passed = emperor_imperial_estates
+					hre_reform_passed = emperor_erbkaisertum
+					hre_reform_passed = emperor_privilegia_de_non_appelando
+					hre_reform_passed = emperor_renovatio
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 6
+			}
+			multiply_variable = { which = ai_value value = 5 }
+		}
+		add_entry = {
+			name = NUM_OF_HRE_REFORMS
+			limit = {
+				has_dlc = "Emperor"
+				NOT = {
+					calc_true_if = {
+						amount = 6
+						hre_reform_passed = emperor_reichsreform
+						hre_reform_passed = emperor_reichsregiment
+						hre_reform_passed = emperor_reichsstabilitaet
+						hre_reform_passed = emperor_gemeinerpfennig
+						hre_reform_passed = emperor_perpetual_diet
+						hre_reform_passed = emperor_landsknechtswesen
+						hre_reform_passed = emperor_landfriede
+						hre_reform_passed = emperor_reichstag_collegia
+						hre_reform_passed = emperor_expand_gemeiner_pfennig
+						hre_reform_passed = emperor_rechenschaft
+						hre_reform_passed = emperor_geteilte_macht
+						hre_reform_passed = emperor_reichskrieg
+						hre_reform_passed = emperor_hofgericht
+						hre_reform_passed = emperor_imperial_estates
+						hre_reform_passed = emperor_erbkaisertum
+						hre_reform_passed = emperor_privilegia_de_non_appelando
+						hre_reform_passed = emperor_renovatio
+					}
+				}
+				calc_true_if = {
+					amount = 5
+					hre_reform_passed = emperor_reichsreform
+					hre_reform_passed = emperor_reichsregiment
+					hre_reform_passed = emperor_reichsstabilitaet
+					hre_reform_passed = emperor_gemeinerpfennig
+					hre_reform_passed = emperor_perpetual_diet
+					hre_reform_passed = emperor_landsknechtswesen
+					hre_reform_passed = emperor_landfriede
+					hre_reform_passed = emperor_reichstag_collegia
+					hre_reform_passed = emperor_expand_gemeiner_pfennig
+					hre_reform_passed = emperor_rechenschaft
+					hre_reform_passed = emperor_geteilte_macht
+					hre_reform_passed = emperor_reichskrieg
+					hre_reform_passed = emperor_hofgericht
+					hre_reform_passed = emperor_imperial_estates
+					hre_reform_passed = emperor_erbkaisertum
+					hre_reform_passed = emperor_privilegia_de_non_appelando
+					hre_reform_passed = emperor_renovatio
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 5
+			}
+			multiply_variable = { which = ai_value value = 5 }
+		}
+		add_entry = {
+			name = NUM_OF_HRE_REFORMS
+			limit = {
+				has_dlc = "Emperor"
+				NOT = {
+					calc_true_if = {
+						amount = 5
+						hre_reform_passed = emperor_reichsreform
+						hre_reform_passed = emperor_reichsregiment
+						hre_reform_passed = emperor_reichsstabilitaet
+						hre_reform_passed = emperor_gemeinerpfennig
+						hre_reform_passed = emperor_perpetual_diet
+						hre_reform_passed = emperor_landsknechtswesen
+						hre_reform_passed = emperor_landfriede
+						hre_reform_passed = emperor_reichstag_collegia
+						hre_reform_passed = emperor_expand_gemeiner_pfennig
+						hre_reform_passed = emperor_rechenschaft
+						hre_reform_passed = emperor_geteilte_macht
+						hre_reform_passed = emperor_reichskrieg
+						hre_reform_passed = emperor_hofgericht
+						hre_reform_passed = emperor_imperial_estates
+						hre_reform_passed = emperor_erbkaisertum
+						hre_reform_passed = emperor_privilegia_de_non_appelando
+						hre_reform_passed = emperor_renovatio
+					}
+				}
+				calc_true_if = {
+					amount = 4
+					hre_reform_passed = emperor_reichsreform
+					hre_reform_passed = emperor_reichsregiment
+					hre_reform_passed = emperor_reichsstabilitaet
+					hre_reform_passed = emperor_gemeinerpfennig
+					hre_reform_passed = emperor_perpetual_diet
+					hre_reform_passed = emperor_landsknechtswesen
+					hre_reform_passed = emperor_landfriede
+					hre_reform_passed = emperor_reichstag_collegia
+					hre_reform_passed = emperor_expand_gemeiner_pfennig
+					hre_reform_passed = emperor_rechenschaft
+					hre_reform_passed = emperor_geteilte_macht
+					hre_reform_passed = emperor_reichskrieg
+					hre_reform_passed = emperor_hofgericht
+					hre_reform_passed = emperor_imperial_estates
+					hre_reform_passed = emperor_erbkaisertum
+					hre_reform_passed = emperor_privilegia_de_non_appelando
+					hre_reform_passed = emperor_renovatio
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 4
+			}
+			multiply_variable = { which = ai_value value = 5 }
+		}
+		add_entry = {
+			name = NUM_OF_HRE_REFORMS
+			limit = {
+				has_dlc = "Emperor"
+				NOT = {
+					calc_true_if = {
+						amount = 4
+						hre_reform_passed = emperor_reichsreform
+						hre_reform_passed = emperor_reichsregiment
+						hre_reform_passed = emperor_reichsstabilitaet
+						hre_reform_passed = emperor_gemeinerpfennig
+						hre_reform_passed = emperor_perpetual_diet
+						hre_reform_passed = emperor_landsknechtswesen
+						hre_reform_passed = emperor_landfriede
+						hre_reform_passed = emperor_reichstag_collegia
+						hre_reform_passed = emperor_expand_gemeiner_pfennig
+						hre_reform_passed = emperor_rechenschaft
+						hre_reform_passed = emperor_geteilte_macht
+						hre_reform_passed = emperor_reichskrieg
+						hre_reform_passed = emperor_hofgericht
+						hre_reform_passed = emperor_imperial_estates
+						hre_reform_passed = emperor_erbkaisertum
+						hre_reform_passed = emperor_privilegia_de_non_appelando
+						hre_reform_passed = emperor_renovatio
+					}
+				}
+				calc_true_if = {
+					amount = 3
+					hre_reform_passed = emperor_reichsreform
+					hre_reform_passed = emperor_reichsregiment
+					hre_reform_passed = emperor_reichsstabilitaet
+					hre_reform_passed = emperor_gemeinerpfennig
+					hre_reform_passed = emperor_perpetual_diet
+					hre_reform_passed = emperor_landsknechtswesen
+					hre_reform_passed = emperor_landfriede
+					hre_reform_passed = emperor_reichstag_collegia
+					hre_reform_passed = emperor_expand_gemeiner_pfennig
+					hre_reform_passed = emperor_rechenschaft
+					hre_reform_passed = emperor_geteilte_macht
+					hre_reform_passed = emperor_reichskrieg
+					hre_reform_passed = emperor_hofgericht
+					hre_reform_passed = emperor_imperial_estates
+					hre_reform_passed = emperor_erbkaisertum
+					hre_reform_passed = emperor_privilegia_de_non_appelando
+					hre_reform_passed = emperor_renovatio
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 3
+			}
+			multiply_variable = { which = ai_value value = 5 }
+		}
+		add_entry = {
+			name = NUM_OF_HRE_REFORMS
+			limit = {
+				has_dlc = "Emperor"
+				NOT = {
+					calc_true_if = {
+						amount = 3
+						hre_reform_passed = emperor_reichsreform
+						hre_reform_passed = emperor_reichsregiment
+						hre_reform_passed = emperor_reichsstabilitaet
+						hre_reform_passed = emperor_gemeinerpfennig
+						hre_reform_passed = emperor_perpetual_diet
+						hre_reform_passed = emperor_landsknechtswesen
+						hre_reform_passed = emperor_landfriede
+						hre_reform_passed = emperor_reichstag_collegia
+						hre_reform_passed = emperor_expand_gemeiner_pfennig
+						hre_reform_passed = emperor_rechenschaft
+						hre_reform_passed = emperor_geteilte_macht
+						hre_reform_passed = emperor_reichskrieg
+						hre_reform_passed = emperor_hofgericht
+						hre_reform_passed = emperor_imperial_estates
+						hre_reform_passed = emperor_erbkaisertum
+						hre_reform_passed = emperor_privilegia_de_non_appelando
+						hre_reform_passed = emperor_renovatio
+					}
+				}
+				calc_true_if = {
+					amount = 2
+					hre_reform_passed = emperor_reichsreform
+					hre_reform_passed = emperor_reichsregiment
+					hre_reform_passed = emperor_reichsstabilitaet
+					hre_reform_passed = emperor_gemeinerpfennig
+					hre_reform_passed = emperor_perpetual_diet
+					hre_reform_passed = emperor_landsknechtswesen
+					hre_reform_passed = emperor_landfriede
+					hre_reform_passed = emperor_reichstag_collegia
+					hre_reform_passed = emperor_expand_gemeiner_pfennig
+					hre_reform_passed = emperor_rechenschaft
+					hre_reform_passed = emperor_geteilte_macht
+					hre_reform_passed = emperor_reichskrieg
+					hre_reform_passed = emperor_hofgericht
+					hre_reform_passed = emperor_imperial_estates
+					hre_reform_passed = emperor_erbkaisertum
+					hre_reform_passed = emperor_privilegia_de_non_appelando
+					hre_reform_passed = emperor_renovatio
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 2
+			}
+			multiply_variable = { which = ai_value value = 5 }
+		}
+		add_entry = {
+			name = NUM_OF_HRE_REFORMS
+			limit = {
+				has_dlc = "Emperor"
+				NOT = {
+					calc_true_if = {
+						amount = 2
+						hre_reform_passed = emperor_reichsreform
+						hre_reform_passed = emperor_reichsregiment
+						hre_reform_passed = emperor_reichsstabilitaet
+						hre_reform_passed = emperor_gemeinerpfennig
+						hre_reform_passed = emperor_perpetual_diet
+						hre_reform_passed = emperor_landsknechtswesen
+						hre_reform_passed = emperor_landfriede
+						hre_reform_passed = emperor_reichstag_collegia
+						hre_reform_passed = emperor_expand_gemeiner_pfennig
+						hre_reform_passed = emperor_rechenschaft
+						hre_reform_passed = emperor_geteilte_macht
+						hre_reform_passed = emperor_reichskrieg
+						hre_reform_passed = emperor_hofgericht
+						hre_reform_passed = emperor_imperial_estates
+						hre_reform_passed = emperor_erbkaisertum
+						hre_reform_passed = emperor_privilegia_de_non_appelando
+						hre_reform_passed = emperor_renovatio
+					}
+				}
+				OR = {
+					hre_reform_passed = emperor_reichsreform
+					hre_reform_passed = emperor_reichsregiment
+					hre_reform_passed = emperor_reichsstabilitaet
+					hre_reform_passed = emperor_gemeinerpfennig
+					hre_reform_passed = emperor_perpetual_diet
+					hre_reform_passed = emperor_landsknechtswesen
+					hre_reform_passed = emperor_landfriede
+					hre_reform_passed = emperor_reichstag_collegia
+					hre_reform_passed = emperor_expand_gemeiner_pfennig
+					hre_reform_passed = emperor_rechenschaft
+					hre_reform_passed = emperor_geteilte_macht
+					hre_reform_passed = emperor_reichskrieg
+					hre_reform_passed = emperor_hofgericht
+					hre_reform_passed = emperor_imperial_estates
+					hre_reform_passed = emperor_erbkaisertum
+					hre_reform_passed = emperor_privilegia_de_non_appelando
+					hre_reform_passed = emperor_renovatio
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 1
+			}
 			multiply_variable = { which = ai_value value = 5 }
 		}
 		add_entry = {
@@ -1753,7 +2627,8 @@ ask_for_imperial_feud_subject_hre_member = {
 		is_subject_of = FROM
 		is_subject_of_type = imperial_feud_subject
 		is_part_of_hre = no
-		NOT = { hre_reform_level = 7 }
+		NOT = { hre_reform_passed = emperor_privilegia_de_non_appelando }
+		NOT = { hre_reform_passed = privilegia_de_non_appelando }
 		FROM = {
 			is_emperor = yes
 		}
@@ -1764,7 +2639,8 @@ ask_for_imperial_feud_subject_hre_member = {
 			is_subject_of = FROM
 			is_subject_of_type = imperial_feud_subject
 			is_part_of_hre = no
-			NOT = { hre_reform_level = 7 }
+			NOT = { hre_reform_passed = emperor_privilegia_de_non_appelando }
+			NOT = { hre_reform_passed = privilegia_de_non_appelando }
 			FROM = {
 				is_emperor = yes
 			}
@@ -1800,7 +2676,8 @@ ask_for_imperial_feud_subject_hre_member = {
 				is_subject_of = FROM
 				is_subject_of_type = imperial_feud_subject
 				is_part_of_hre = no
-				NOT = { hre_reform_level = 7 }
+				NOT = { hre_reform_passed = emperor_privilegia_de_non_appelando }
+				NOT = { hre_reform_passed = privilegia_de_non_appelando }
 				FROM = {
 					is_emperor = yes
 				}
@@ -1851,7 +2728,8 @@ ask_for_imperial_feud_subject_hre_member = {
 				is_subject_of = FROM
 				is_subject_of_type = imperial_feud_subject
 				is_part_of_hre = no
-				NOT = { hre_reform_level = 7 }
+				NOT = { hre_reform_passed = emperor_privilegia_de_non_appelando }
+				NOT = { hre_reform_passed = privilegia_de_non_appelando }
 				FROM = {
 					is_emperor = yes
 				}
@@ -2105,12 +2983,882 @@ ask_for_imperial_feud_subject_hre_member = {
 			}
 		}
 		add_entry = {
-			name = NUM_OF_HRE_REFORMS_PASSED
+			name = NUM_OF_HRE_REFORMS
+			limit = {
+				NOT = { has_dlc = "Emperor" }
+				calc_true_if = {
+					amount = 8
+					hre_reform_passed = reichsreform
+					hre_reform_passed = reichsregiment
+					hre_reform_passed = hofgericht
+					hre_reform_passed = gemeinerpfennig
+					hre_reform_passed = landfriede
+					hre_reform_passed = erbkaisertum
+					hre_reform_passed = privilegia_de_non_appelando
+					hre_reform_passed = renovatio
+				}
+			}
 			export_to_variable = {
 				which = ai_value
-				value = trigger_value:hre_reform_level
+				value = 8
 			}
-			change_variable = { which = ai_value value = -1 }
+			multiply_variable = { which = ai_value value = 3 }
+		}
+		add_entry = {
+			name = NUM_OF_HRE_REFORMS
+			limit = {
+				NOT = { has_dlc = "Emperor" }
+				NOT = {
+					calc_true_if = {
+						amount = 8
+						hre_reform_passed = reichsreform
+						hre_reform_passed = reichsregiment
+						hre_reform_passed = hofgericht
+						hre_reform_passed = gemeinerpfennig
+						hre_reform_passed = landfriede
+						hre_reform_passed = erbkaisertum
+						hre_reform_passed = privilegia_de_non_appelando
+						hre_reform_passed = renovatio
+					}
+				}
+				calc_true_if = {
+					amount = 7
+					hre_reform_passed = reichsreform
+					hre_reform_passed = reichsregiment
+					hre_reform_passed = hofgericht
+					hre_reform_passed = gemeinerpfennig
+					hre_reform_passed = landfriede
+					hre_reform_passed = erbkaisertum
+					hre_reform_passed = privilegia_de_non_appelando
+					hre_reform_passed = renovatio
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 7
+			}
+			multiply_variable = { which = ai_value value = 3 }
+		}
+		add_entry = {
+			name = NUM_OF_HRE_REFORMS
+			limit = {
+				NOT = { has_dlc = "Emperor" }
+				NOT = {
+					calc_true_if = {
+						amount = 7
+						hre_reform_passed = reichsreform
+						hre_reform_passed = reichsregiment
+						hre_reform_passed = hofgericht
+						hre_reform_passed = gemeinerpfennig
+						hre_reform_passed = landfriede
+						hre_reform_passed = erbkaisertum
+						hre_reform_passed = privilegia_de_non_appelando
+						hre_reform_passed = renovatio
+					}
+				}
+				calc_true_if = {
+					amount = 6
+					hre_reform_passed = reichsreform
+					hre_reform_passed = reichsregiment
+					hre_reform_passed = hofgericht
+					hre_reform_passed = gemeinerpfennig
+					hre_reform_passed = landfriede
+					hre_reform_passed = erbkaisertum
+					hre_reform_passed = privilegia_de_non_appelando
+					hre_reform_passed = renovatio
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 6
+			}
+			multiply_variable = { which = ai_value value = 3 }
+		}
+		add_entry = {
+			name = NUM_OF_HRE_REFORMS
+			limit = {
+				NOT = { has_dlc = "Emperor" }
+				NOT = {
+					calc_true_if = {
+						amount = 6
+						hre_reform_passed = reichsreform
+						hre_reform_passed = reichsregiment
+						hre_reform_passed = hofgericht
+						hre_reform_passed = gemeinerpfennig
+						hre_reform_passed = landfriede
+						hre_reform_passed = erbkaisertum
+						hre_reform_passed = privilegia_de_non_appelando
+						hre_reform_passed = renovatio
+					}
+				}
+				calc_true_if = {
+					amount = 5
+					hre_reform_passed = reichsreform
+					hre_reform_passed = reichsregiment
+					hre_reform_passed = hofgericht
+					hre_reform_passed = gemeinerpfennig
+					hre_reform_passed = landfriede
+					hre_reform_passed = erbkaisertum
+					hre_reform_passed = privilegia_de_non_appelando
+					hre_reform_passed = renovatio
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 5
+			}
+			multiply_variable = { which = ai_value value = 3 }
+		}
+		add_entry = {
+			name = NUM_OF_HRE_REFORMS
+			limit = {
+				NOT = { has_dlc = "Emperor" }
+				NOT = {
+					calc_true_if = {
+						amount = 5
+						hre_reform_passed = reichsreform
+						hre_reform_passed = reichsregiment
+						hre_reform_passed = hofgericht
+						hre_reform_passed = gemeinerpfennig
+						hre_reform_passed = landfriede
+						hre_reform_passed = erbkaisertum
+						hre_reform_passed = privilegia_de_non_appelando
+						hre_reform_passed = renovatio
+					}
+				}
+				calc_true_if = {
+					amount = 4
+					hre_reform_passed = reichsreform
+					hre_reform_passed = reichsregiment
+					hre_reform_passed = hofgericht
+					hre_reform_passed = gemeinerpfennig
+					hre_reform_passed = landfriede
+					hre_reform_passed = erbkaisertum
+					hre_reform_passed = privilegia_de_non_appelando
+					hre_reform_passed = renovatio
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 4
+			}
+			multiply_variable = { which = ai_value value = 3 }
+		}
+		add_entry = {
+			name = NUM_OF_HRE_REFORMS
+			limit = {
+				NOT = { has_dlc = "Emperor" }
+				NOT = {
+					calc_true_if = {
+						amount = 4
+						hre_reform_passed = reichsreform
+						hre_reform_passed = reichsregiment
+						hre_reform_passed = hofgericht
+						hre_reform_passed = gemeinerpfennig
+						hre_reform_passed = landfriede
+						hre_reform_passed = erbkaisertum
+						hre_reform_passed = privilegia_de_non_appelando
+						hre_reform_passed = renovatio
+					}
+				}
+				calc_true_if = {
+					amount = 3
+					hre_reform_passed = reichsreform
+					hre_reform_passed = reichsregiment
+					hre_reform_passed = hofgericht
+					hre_reform_passed = gemeinerpfennig
+					hre_reform_passed = landfriede
+					hre_reform_passed = erbkaisertum
+					hre_reform_passed = privilegia_de_non_appelando
+					hre_reform_passed = renovatio
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 3
+			}
+			multiply_variable = { which = ai_value value = 3 }
+		}
+		add_entry = {
+			name = NUM_OF_HRE_REFORMS
+			limit = {
+				NOT = { has_dlc = "Emperor" }
+				NOT = {
+					calc_true_if = {
+						amount = 3
+						hre_reform_passed = reichsreform
+						hre_reform_passed = reichsregiment
+						hre_reform_passed = hofgericht
+						hre_reform_passed = gemeinerpfennig
+						hre_reform_passed = landfriede
+						hre_reform_passed = erbkaisertum
+						hre_reform_passed = privilegia_de_non_appelando
+						hre_reform_passed = renovatio
+					}
+				}
+				calc_true_if = {
+					amount = 2
+					hre_reform_passed = reichsreform
+					hre_reform_passed = reichsregiment
+					hre_reform_passed = hofgericht
+					hre_reform_passed = gemeinerpfennig
+					hre_reform_passed = landfriede
+					hre_reform_passed = erbkaisertum
+					hre_reform_passed = privilegia_de_non_appelando
+					hre_reform_passed = renovatio
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 2
+			}
+			multiply_variable = { which = ai_value value = 3 }
+		}
+		add_entry = {
+			name = NUM_OF_HRE_REFORMS
+			limit = {
+				NOT = { has_dlc = "Emperor" }
+				NOT = {
+					calc_true_if = {
+						amount = 2
+						hre_reform_passed = reichsreform
+						hre_reform_passed = reichsregiment
+						hre_reform_passed = hofgericht
+						hre_reform_passed = gemeinerpfennig
+						hre_reform_passed = landfriede
+						hre_reform_passed = erbkaisertum
+						hre_reform_passed = privilegia_de_non_appelando
+						hre_reform_passed = renovatio
+					}
+				}
+				OR = {
+					hre_reform_passed = reichsreform
+					hre_reform_passed = reichsregiment
+					hre_reform_passed = hofgericht
+					hre_reform_passed = gemeinerpfennig
+					hre_reform_passed = landfriede
+					hre_reform_passed = erbkaisertum
+					hre_reform_passed = privilegia_de_non_appelando
+					hre_reform_passed = renovatio
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 1
+			}
+			multiply_variable = { which = ai_value value = 3 }
+		}
+		add_entry = {
+			name = NUM_OF_HRE_REFORMS
+			limit = {
+				has_dlc = "Emperor"
+				calc_true_if = {
+					amount = 12
+					hre_reform_passed = emperor_reichsreform
+					hre_reform_passed = emperor_reichsregiment
+					hre_reform_passed = emperor_reichsstabilitaet
+					hre_reform_passed = emperor_gemeinerpfennig
+					hre_reform_passed = emperor_perpetual_diet
+					hre_reform_passed = emperor_landsknechtswesen
+					hre_reform_passed = emperor_landfriede
+					hre_reform_passed = emperor_reichstag_collegia
+					hre_reform_passed = emperor_expand_gemeiner_pfennig
+					hre_reform_passed = emperor_rechenschaft
+					hre_reform_passed = emperor_geteilte_macht
+					hre_reform_passed = emperor_reichskrieg
+					hre_reform_passed = emperor_hofgericht
+					hre_reform_passed = emperor_imperial_estates
+					hre_reform_passed = emperor_erbkaisertum
+					hre_reform_passed = emperor_privilegia_de_non_appelando
+					hre_reform_passed = emperor_renovatio
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 12
+			}
+			multiply_variable = { which = ai_value value = 3 }
+		}
+		add_entry = {
+			name = NUM_OF_HRE_REFORMS
+			limit = {
+				has_dlc = "Emperor"
+				NOT = {
+					calc_true_if = {
+						amount = 12
+						hre_reform_passed = emperor_reichsreform
+						hre_reform_passed = emperor_reichsregiment
+						hre_reform_passed = emperor_reichsstabilitaet
+						hre_reform_passed = emperor_gemeinerpfennig
+						hre_reform_passed = emperor_perpetual_diet
+						hre_reform_passed = emperor_landsknechtswesen
+						hre_reform_passed = emperor_landfriede
+						hre_reform_passed = emperor_reichstag_collegia
+						hre_reform_passed = emperor_expand_gemeiner_pfennig
+						hre_reform_passed = emperor_rechenschaft
+						hre_reform_passed = emperor_geteilte_macht
+						hre_reform_passed = emperor_reichskrieg
+						hre_reform_passed = emperor_hofgericht
+						hre_reform_passed = emperor_imperial_estates
+						hre_reform_passed = emperor_erbkaisertum
+						hre_reform_passed = emperor_privilegia_de_non_appelando
+						hre_reform_passed = emperor_renovatio
+					}
+				}
+				calc_true_if = {
+					amount = 11
+					hre_reform_passed = emperor_reichsreform
+					hre_reform_passed = emperor_reichsregiment
+					hre_reform_passed = emperor_reichsstabilitaet
+					hre_reform_passed = emperor_gemeinerpfennig
+					hre_reform_passed = emperor_perpetual_diet
+					hre_reform_passed = emperor_landsknechtswesen
+					hre_reform_passed = emperor_landfriede
+					hre_reform_passed = emperor_reichstag_collegia
+					hre_reform_passed = emperor_expand_gemeiner_pfennig
+					hre_reform_passed = emperor_rechenschaft
+					hre_reform_passed = emperor_geteilte_macht
+					hre_reform_passed = emperor_reichskrieg
+					hre_reform_passed = emperor_hofgericht
+					hre_reform_passed = emperor_imperial_estates
+					hre_reform_passed = emperor_erbkaisertum
+					hre_reform_passed = emperor_privilegia_de_non_appelando
+					hre_reform_passed = emperor_renovatio
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 11
+			}
+			multiply_variable = { which = ai_value value = 3 }
+		}
+		add_entry = {
+			name = NUM_OF_HRE_REFORMS
+			limit = {
+				has_dlc = "Emperor"
+				NOT = {
+					calc_true_if = {
+						amount = 11
+						hre_reform_passed = emperor_reichsreform
+						hre_reform_passed = emperor_reichsregiment
+						hre_reform_passed = emperor_reichsstabilitaet
+						hre_reform_passed = emperor_gemeinerpfennig
+						hre_reform_passed = emperor_perpetual_diet
+						hre_reform_passed = emperor_landsknechtswesen
+						hre_reform_passed = emperor_landfriede
+						hre_reform_passed = emperor_reichstag_collegia
+						hre_reform_passed = emperor_expand_gemeiner_pfennig
+						hre_reform_passed = emperor_rechenschaft
+						hre_reform_passed = emperor_geteilte_macht
+						hre_reform_passed = emperor_reichskrieg
+						hre_reform_passed = emperor_hofgericht
+						hre_reform_passed = emperor_imperial_estates
+						hre_reform_passed = emperor_erbkaisertum
+						hre_reform_passed = emperor_privilegia_de_non_appelando
+						hre_reform_passed = emperor_renovatio
+					}
+				}
+				calc_true_if = {
+					amount = 10
+					hre_reform_passed = emperor_reichsreform
+					hre_reform_passed = emperor_reichsregiment
+					hre_reform_passed = emperor_reichsstabilitaet
+					hre_reform_passed = emperor_gemeinerpfennig
+					hre_reform_passed = emperor_perpetual_diet
+					hre_reform_passed = emperor_landsknechtswesen
+					hre_reform_passed = emperor_landfriede
+					hre_reform_passed = emperor_reichstag_collegia
+					hre_reform_passed = emperor_expand_gemeiner_pfennig
+					hre_reform_passed = emperor_rechenschaft
+					hre_reform_passed = emperor_geteilte_macht
+					hre_reform_passed = emperor_reichskrieg
+					hre_reform_passed = emperor_hofgericht
+					hre_reform_passed = emperor_imperial_estates
+					hre_reform_passed = emperor_erbkaisertum
+					hre_reform_passed = emperor_privilegia_de_non_appelando
+					hre_reform_passed = emperor_renovatio
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 10
+			}
+			multiply_variable = { which = ai_value value = 3 }
+		}
+		add_entry = {
+			name = NUM_OF_HRE_REFORMS
+			limit = {
+				has_dlc = "Emperor"
+				NOT = {
+					calc_true_if = {
+						amount = 10
+						hre_reform_passed = emperor_reichsreform
+						hre_reform_passed = emperor_reichsregiment
+						hre_reform_passed = emperor_reichsstabilitaet
+						hre_reform_passed = emperor_gemeinerpfennig
+						hre_reform_passed = emperor_perpetual_diet
+						hre_reform_passed = emperor_landsknechtswesen
+						hre_reform_passed = emperor_landfriede
+						hre_reform_passed = emperor_reichstag_collegia
+						hre_reform_passed = emperor_expand_gemeiner_pfennig
+						hre_reform_passed = emperor_rechenschaft
+						hre_reform_passed = emperor_geteilte_macht
+						hre_reform_passed = emperor_reichskrieg
+						hre_reform_passed = emperor_hofgericht
+						hre_reform_passed = emperor_imperial_estates
+						hre_reform_passed = emperor_erbkaisertum
+						hre_reform_passed = emperor_privilegia_de_non_appelando
+						hre_reform_passed = emperor_renovatio
+					}
+				}
+				calc_true_if = {
+					amount = 9
+					hre_reform_passed = emperor_reichsreform
+					hre_reform_passed = emperor_reichsregiment
+					hre_reform_passed = emperor_reichsstabilitaet
+					hre_reform_passed = emperor_gemeinerpfennig
+					hre_reform_passed = emperor_perpetual_diet
+					hre_reform_passed = emperor_landsknechtswesen
+					hre_reform_passed = emperor_landfriede
+					hre_reform_passed = emperor_reichstag_collegia
+					hre_reform_passed = emperor_expand_gemeiner_pfennig
+					hre_reform_passed = emperor_rechenschaft
+					hre_reform_passed = emperor_geteilte_macht
+					hre_reform_passed = emperor_reichskrieg
+					hre_reform_passed = emperor_hofgericht
+					hre_reform_passed = emperor_imperial_estates
+					hre_reform_passed = emperor_erbkaisertum
+					hre_reform_passed = emperor_privilegia_de_non_appelando
+					hre_reform_passed = emperor_renovatio
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 9
+			}
+			multiply_variable = { which = ai_value value = 3 }
+		}
+		add_entry = {
+			name = NUM_OF_HRE_REFORMS
+			limit = {
+				has_dlc = "Emperor"
+				NOT = {
+					calc_true_if = {
+						amount = 9
+						hre_reform_passed = emperor_reichsreform
+						hre_reform_passed = emperor_reichsregiment
+						hre_reform_passed = emperor_reichsstabilitaet
+						hre_reform_passed = emperor_gemeinerpfennig
+						hre_reform_passed = emperor_perpetual_diet
+						hre_reform_passed = emperor_landsknechtswesen
+						hre_reform_passed = emperor_landfriede
+						hre_reform_passed = emperor_reichstag_collegia
+						hre_reform_passed = emperor_expand_gemeiner_pfennig
+						hre_reform_passed = emperor_rechenschaft
+						hre_reform_passed = emperor_geteilte_macht
+						hre_reform_passed = emperor_reichskrieg
+						hre_reform_passed = emperor_hofgericht
+						hre_reform_passed = emperor_imperial_estates
+						hre_reform_passed = emperor_erbkaisertum
+						hre_reform_passed = emperor_privilegia_de_non_appelando
+						hre_reform_passed = emperor_renovatio
+					}
+				}
+				calc_true_if = {
+					amount = 8
+					hre_reform_passed = emperor_reichsreform
+					hre_reform_passed = emperor_reichsregiment
+					hre_reform_passed = emperor_reichsstabilitaet
+					hre_reform_passed = emperor_gemeinerpfennig
+					hre_reform_passed = emperor_perpetual_diet
+					hre_reform_passed = emperor_landsknechtswesen
+					hre_reform_passed = emperor_landfriede
+					hre_reform_passed = emperor_reichstag_collegia
+					hre_reform_passed = emperor_expand_gemeiner_pfennig
+					hre_reform_passed = emperor_rechenschaft
+					hre_reform_passed = emperor_geteilte_macht
+					hre_reform_passed = emperor_reichskrieg
+					hre_reform_passed = emperor_hofgericht
+					hre_reform_passed = emperor_imperial_estates
+					hre_reform_passed = emperor_erbkaisertum
+					hre_reform_passed = emperor_privilegia_de_non_appelando
+					hre_reform_passed = emperor_renovatio
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 8
+			}
+			multiply_variable = { which = ai_value value = 3 }
+		}
+		add_entry = {
+			name = NUM_OF_HRE_REFORMS
+			limit = {
+				has_dlc = "Emperor"
+				NOT = {
+					calc_true_if = {
+						amount = 8
+						hre_reform_passed = emperor_reichsreform
+						hre_reform_passed = emperor_reichsregiment
+						hre_reform_passed = emperor_reichsstabilitaet
+						hre_reform_passed = emperor_gemeinerpfennig
+						hre_reform_passed = emperor_perpetual_diet
+						hre_reform_passed = emperor_landsknechtswesen
+						hre_reform_passed = emperor_landfriede
+						hre_reform_passed = emperor_reichstag_collegia
+						hre_reform_passed = emperor_expand_gemeiner_pfennig
+						hre_reform_passed = emperor_rechenschaft
+						hre_reform_passed = emperor_geteilte_macht
+						hre_reform_passed = emperor_reichskrieg
+						hre_reform_passed = emperor_hofgericht
+						hre_reform_passed = emperor_imperial_estates
+						hre_reform_passed = emperor_erbkaisertum
+						hre_reform_passed = emperor_privilegia_de_non_appelando
+						hre_reform_passed = emperor_renovatio
+					}
+				}
+				calc_true_if = {
+					amount = 7
+					hre_reform_passed = emperor_reichsreform
+					hre_reform_passed = emperor_reichsregiment
+					hre_reform_passed = emperor_reichsstabilitaet
+					hre_reform_passed = emperor_gemeinerpfennig
+					hre_reform_passed = emperor_perpetual_diet
+					hre_reform_passed = emperor_landsknechtswesen
+					hre_reform_passed = emperor_landfriede
+					hre_reform_passed = emperor_reichstag_collegia
+					hre_reform_passed = emperor_expand_gemeiner_pfennig
+					hre_reform_passed = emperor_rechenschaft
+					hre_reform_passed = emperor_geteilte_macht
+					hre_reform_passed = emperor_reichskrieg
+					hre_reform_passed = emperor_hofgericht
+					hre_reform_passed = emperor_imperial_estates
+					hre_reform_passed = emperor_erbkaisertum
+					hre_reform_passed = emperor_privilegia_de_non_appelando
+					hre_reform_passed = emperor_renovatio
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 7
+			}
+			multiply_variable = { which = ai_value value = 3 }
+		}
+		add_entry = {
+			name = NUM_OF_HRE_REFORMS
+			limit = {
+				has_dlc = "Emperor"
+				NOT = {
+					calc_true_if = {
+						amount = 7
+						hre_reform_passed = emperor_reichsreform
+						hre_reform_passed = emperor_reichsregiment
+						hre_reform_passed = emperor_reichsstabilitaet
+						hre_reform_passed = emperor_gemeinerpfennig
+						hre_reform_passed = emperor_perpetual_diet
+						hre_reform_passed = emperor_landsknechtswesen
+						hre_reform_passed = emperor_landfriede
+						hre_reform_passed = emperor_reichstag_collegia
+						hre_reform_passed = emperor_expand_gemeiner_pfennig
+						hre_reform_passed = emperor_rechenschaft
+						hre_reform_passed = emperor_geteilte_macht
+						hre_reform_passed = emperor_reichskrieg
+						hre_reform_passed = emperor_hofgericht
+						hre_reform_passed = emperor_imperial_estates
+						hre_reform_passed = emperor_erbkaisertum
+						hre_reform_passed = emperor_privilegia_de_non_appelando
+						hre_reform_passed = emperor_renovatio
+					}
+				}
+				calc_true_if = {
+					amount = 6
+					hre_reform_passed = emperor_reichsreform
+					hre_reform_passed = emperor_reichsregiment
+					hre_reform_passed = emperor_reichsstabilitaet
+					hre_reform_passed = emperor_gemeinerpfennig
+					hre_reform_passed = emperor_perpetual_diet
+					hre_reform_passed = emperor_landsknechtswesen
+					hre_reform_passed = emperor_landfriede
+					hre_reform_passed = emperor_reichstag_collegia
+					hre_reform_passed = emperor_expand_gemeiner_pfennig
+					hre_reform_passed = emperor_rechenschaft
+					hre_reform_passed = emperor_geteilte_macht
+					hre_reform_passed = emperor_reichskrieg
+					hre_reform_passed = emperor_hofgericht
+					hre_reform_passed = emperor_imperial_estates
+					hre_reform_passed = emperor_erbkaisertum
+					hre_reform_passed = emperor_privilegia_de_non_appelando
+					hre_reform_passed = emperor_renovatio
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 6
+			}
+			multiply_variable = { which = ai_value value = 3 }
+		}
+		add_entry = {
+			name = NUM_OF_HRE_REFORMS
+			limit = {
+				has_dlc = "Emperor"
+				NOT = {
+					calc_true_if = {
+						amount = 6
+						hre_reform_passed = emperor_reichsreform
+						hre_reform_passed = emperor_reichsregiment
+						hre_reform_passed = emperor_reichsstabilitaet
+						hre_reform_passed = emperor_gemeinerpfennig
+						hre_reform_passed = emperor_perpetual_diet
+						hre_reform_passed = emperor_landsknechtswesen
+						hre_reform_passed = emperor_landfriede
+						hre_reform_passed = emperor_reichstag_collegia
+						hre_reform_passed = emperor_expand_gemeiner_pfennig
+						hre_reform_passed = emperor_rechenschaft
+						hre_reform_passed = emperor_geteilte_macht
+						hre_reform_passed = emperor_reichskrieg
+						hre_reform_passed = emperor_hofgericht
+						hre_reform_passed = emperor_imperial_estates
+						hre_reform_passed = emperor_erbkaisertum
+						hre_reform_passed = emperor_privilegia_de_non_appelando
+						hre_reform_passed = emperor_renovatio
+					}
+				}
+				calc_true_if = {
+					amount = 5
+					hre_reform_passed = emperor_reichsreform
+					hre_reform_passed = emperor_reichsregiment
+					hre_reform_passed = emperor_reichsstabilitaet
+					hre_reform_passed = emperor_gemeinerpfennig
+					hre_reform_passed = emperor_perpetual_diet
+					hre_reform_passed = emperor_landsknechtswesen
+					hre_reform_passed = emperor_landfriede
+					hre_reform_passed = emperor_reichstag_collegia
+					hre_reform_passed = emperor_expand_gemeiner_pfennig
+					hre_reform_passed = emperor_rechenschaft
+					hre_reform_passed = emperor_geteilte_macht
+					hre_reform_passed = emperor_reichskrieg
+					hre_reform_passed = emperor_hofgericht
+					hre_reform_passed = emperor_imperial_estates
+					hre_reform_passed = emperor_erbkaisertum
+					hre_reform_passed = emperor_privilegia_de_non_appelando
+					hre_reform_passed = emperor_renovatio
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 5
+			}
+			multiply_variable = { which = ai_value value = 3 }
+		}
+		add_entry = {
+			name = NUM_OF_HRE_REFORMS
+			limit = {
+				has_dlc = "Emperor"
+				NOT = {
+					calc_true_if = {
+						amount = 5
+						hre_reform_passed = emperor_reichsreform
+						hre_reform_passed = emperor_reichsregiment
+						hre_reform_passed = emperor_reichsstabilitaet
+						hre_reform_passed = emperor_gemeinerpfennig
+						hre_reform_passed = emperor_perpetual_diet
+						hre_reform_passed = emperor_landsknechtswesen
+						hre_reform_passed = emperor_landfriede
+						hre_reform_passed = emperor_reichstag_collegia
+						hre_reform_passed = emperor_expand_gemeiner_pfennig
+						hre_reform_passed = emperor_rechenschaft
+						hre_reform_passed = emperor_geteilte_macht
+						hre_reform_passed = emperor_reichskrieg
+						hre_reform_passed = emperor_hofgericht
+						hre_reform_passed = emperor_imperial_estates
+						hre_reform_passed = emperor_erbkaisertum
+						hre_reform_passed = emperor_privilegia_de_non_appelando
+						hre_reform_passed = emperor_renovatio
+					}
+				}
+				calc_true_if = {
+					amount = 4
+					hre_reform_passed = emperor_reichsreform
+					hre_reform_passed = emperor_reichsregiment
+					hre_reform_passed = emperor_reichsstabilitaet
+					hre_reform_passed = emperor_gemeinerpfennig
+					hre_reform_passed = emperor_perpetual_diet
+					hre_reform_passed = emperor_landsknechtswesen
+					hre_reform_passed = emperor_landfriede
+					hre_reform_passed = emperor_reichstag_collegia
+					hre_reform_passed = emperor_expand_gemeiner_pfennig
+					hre_reform_passed = emperor_rechenschaft
+					hre_reform_passed = emperor_geteilte_macht
+					hre_reform_passed = emperor_reichskrieg
+					hre_reform_passed = emperor_hofgericht
+					hre_reform_passed = emperor_imperial_estates
+					hre_reform_passed = emperor_erbkaisertum
+					hre_reform_passed = emperor_privilegia_de_non_appelando
+					hre_reform_passed = emperor_renovatio
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 4
+			}
+			multiply_variable = { which = ai_value value = 3 }
+		}
+		add_entry = {
+			name = NUM_OF_HRE_REFORMS
+			limit = {
+				has_dlc = "Emperor"
+				NOT = {
+					calc_true_if = {
+						amount = 4
+						hre_reform_passed = emperor_reichsreform
+						hre_reform_passed = emperor_reichsregiment
+						hre_reform_passed = emperor_reichsstabilitaet
+						hre_reform_passed = emperor_gemeinerpfennig
+						hre_reform_passed = emperor_perpetual_diet
+						hre_reform_passed = emperor_landsknechtswesen
+						hre_reform_passed = emperor_landfriede
+						hre_reform_passed = emperor_reichstag_collegia
+						hre_reform_passed = emperor_expand_gemeiner_pfennig
+						hre_reform_passed = emperor_rechenschaft
+						hre_reform_passed = emperor_geteilte_macht
+						hre_reform_passed = emperor_reichskrieg
+						hre_reform_passed = emperor_hofgericht
+						hre_reform_passed = emperor_imperial_estates
+						hre_reform_passed = emperor_erbkaisertum
+						hre_reform_passed = emperor_privilegia_de_non_appelando
+						hre_reform_passed = emperor_renovatio
+					}
+				}
+				calc_true_if = {
+					amount = 3
+					hre_reform_passed = emperor_reichsreform
+					hre_reform_passed = emperor_reichsregiment
+					hre_reform_passed = emperor_reichsstabilitaet
+					hre_reform_passed = emperor_gemeinerpfennig
+					hre_reform_passed = emperor_perpetual_diet
+					hre_reform_passed = emperor_landsknechtswesen
+					hre_reform_passed = emperor_landfriede
+					hre_reform_passed = emperor_reichstag_collegia
+					hre_reform_passed = emperor_expand_gemeiner_pfennig
+					hre_reform_passed = emperor_rechenschaft
+					hre_reform_passed = emperor_geteilte_macht
+					hre_reform_passed = emperor_reichskrieg
+					hre_reform_passed = emperor_hofgericht
+					hre_reform_passed = emperor_imperial_estates
+					hre_reform_passed = emperor_erbkaisertum
+					hre_reform_passed = emperor_privilegia_de_non_appelando
+					hre_reform_passed = emperor_renovatio
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 3
+			}
+			multiply_variable = { which = ai_value value = 3 }
+		}
+		add_entry = {
+			name = NUM_OF_HRE_REFORMS
+			limit = {
+				has_dlc = "Emperor"
+				NOT = {
+					calc_true_if = {
+						amount = 3
+						hre_reform_passed = emperor_reichsreform
+						hre_reform_passed = emperor_reichsregiment
+						hre_reform_passed = emperor_reichsstabilitaet
+						hre_reform_passed = emperor_gemeinerpfennig
+						hre_reform_passed = emperor_perpetual_diet
+						hre_reform_passed = emperor_landsknechtswesen
+						hre_reform_passed = emperor_landfriede
+						hre_reform_passed = emperor_reichstag_collegia
+						hre_reform_passed = emperor_expand_gemeiner_pfennig
+						hre_reform_passed = emperor_rechenschaft
+						hre_reform_passed = emperor_geteilte_macht
+						hre_reform_passed = emperor_reichskrieg
+						hre_reform_passed = emperor_hofgericht
+						hre_reform_passed = emperor_imperial_estates
+						hre_reform_passed = emperor_erbkaisertum
+						hre_reform_passed = emperor_privilegia_de_non_appelando
+						hre_reform_passed = emperor_renovatio
+					}
+				}
+				calc_true_if = {
+					amount = 2
+					hre_reform_passed = emperor_reichsreform
+					hre_reform_passed = emperor_reichsregiment
+					hre_reform_passed = emperor_reichsstabilitaet
+					hre_reform_passed = emperor_gemeinerpfennig
+					hre_reform_passed = emperor_perpetual_diet
+					hre_reform_passed = emperor_landsknechtswesen
+					hre_reform_passed = emperor_landfriede
+					hre_reform_passed = emperor_reichstag_collegia
+					hre_reform_passed = emperor_expand_gemeiner_pfennig
+					hre_reform_passed = emperor_rechenschaft
+					hre_reform_passed = emperor_geteilte_macht
+					hre_reform_passed = emperor_reichskrieg
+					hre_reform_passed = emperor_hofgericht
+					hre_reform_passed = emperor_imperial_estates
+					hre_reform_passed = emperor_erbkaisertum
+					hre_reform_passed = emperor_privilegia_de_non_appelando
+					hre_reform_passed = emperor_renovatio
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 2
+			}
+			multiply_variable = { which = ai_value value = 3 }
+		}
+		add_entry = {
+			name = NUM_OF_HRE_REFORMS
+			limit = {
+				has_dlc = "Emperor"
+				NOT = {
+					calc_true_if = {
+						amount = 2
+						hre_reform_passed = emperor_reichsreform
+						hre_reform_passed = emperor_reichsregiment
+						hre_reform_passed = emperor_reichsstabilitaet
+						hre_reform_passed = emperor_gemeinerpfennig
+						hre_reform_passed = emperor_perpetual_diet
+						hre_reform_passed = emperor_landsknechtswesen
+						hre_reform_passed = emperor_landfriede
+						hre_reform_passed = emperor_reichstag_collegia
+						hre_reform_passed = emperor_expand_gemeiner_pfennig
+						hre_reform_passed = emperor_rechenschaft
+						hre_reform_passed = emperor_geteilte_macht
+						hre_reform_passed = emperor_reichskrieg
+						hre_reform_passed = emperor_hofgericht
+						hre_reform_passed = emperor_imperial_estates
+						hre_reform_passed = emperor_erbkaisertum
+						hre_reform_passed = emperor_privilegia_de_non_appelando
+						hre_reform_passed = emperor_renovatio
+					}
+				}
+				OR = {
+					hre_reform_passed = emperor_reichsreform
+					hre_reform_passed = emperor_reichsregiment
+					hre_reform_passed = emperor_reichsstabilitaet
+					hre_reform_passed = emperor_gemeinerpfennig
+					hre_reform_passed = emperor_perpetual_diet
+					hre_reform_passed = emperor_landsknechtswesen
+					hre_reform_passed = emperor_landfriede
+					hre_reform_passed = emperor_reichstag_collegia
+					hre_reform_passed = emperor_expand_gemeiner_pfennig
+					hre_reform_passed = emperor_rechenschaft
+					hre_reform_passed = emperor_geteilte_macht
+					hre_reform_passed = emperor_reichskrieg
+					hre_reform_passed = emperor_hofgericht
+					hre_reform_passed = emperor_imperial_estates
+					hre_reform_passed = emperor_erbkaisertum
+					hre_reform_passed = emperor_privilegia_de_non_appelando
+					hre_reform_passed = emperor_renovatio
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 1
+			}
 			multiply_variable = { which = ai_value value = 3 }
 		}
 		add_entry = {
@@ -2246,7 +3994,8 @@ change_imperial_feud_subject_to_vassal = {
 
 	is_visible = {
 		is_emperor = yes
-		NOT = { hre_reform_level = 7 }
+		NOT = { hre_reform_passed = emperor_privilegia_de_non_appelando }
+		NOT = { hre_reform_passed = privilegia_de_non_appelando }
 		FROM = {
 			is_subject_of = ROOT
 			is_subject_of_type = imperial_feud_subject
@@ -2256,7 +4005,8 @@ change_imperial_feud_subject_to_vassal = {
 	is_allowed = {
 		hidden_trigger = {
 			is_emperor = yes
-			NOT = { hre_reform_level = 7 }
+			NOT = { hre_reform_passed = emperor_privilegia_de_non_appelando }
+			NOT = { hre_reform_passed = privilegia_de_non_appelando }
 			FROM = {
 				is_subject_of = ROOT
 				is_subject_of_type = imperial_feud_subject
@@ -2285,7 +4035,8 @@ change_imperial_feud_subject_to_vassal = {
 		if = {
 			limit = {
 				is_emperor = yes
-				NOT = { hre_reform_level = 7 }
+				NOT = { hre_reform_passed = emperor_privilegia_de_non_appelando }
+				NOT = { hre_reform_passed = privilegia_de_non_appelando }
 				FROM = {
 					is_subject_of = ROOT
 					is_subject_of_type = imperial_feud_subject
@@ -2316,7 +4067,8 @@ change_imperial_feud_subject_to_vassal = {
 		if = {
 			limit = {
 				is_emperor = yes
-				NOT = { hre_reform_level = 7 }
+				NOT = { hre_reform_passed = emperor_privilegia_de_non_appelando }
+				NOT = { hre_reform_passed = privilegia_de_non_appelando }
 				FROM = {
 					is_subject_of = ROOT
 					is_subject_of_type = imperial_feud_subject
@@ -2950,7 +4702,8 @@ bestow_impirial_grace_to_imperial_feud_subject = {
 
 	is_visible = {
 		is_emperor = yes
-		NOT = { hre_reform_level = 7 }
+		NOT = { hre_reform_passed = emperor_privilegia_de_non_appelando }
+		NOT = { hre_reform_passed = privilegia_de_non_appelando }
 		FROM = {
 			is_subject_of = ROOT
 			is_subject_of_type = imperial_feud_subject
@@ -2960,7 +4713,8 @@ bestow_impirial_grace_to_imperial_feud_subject = {
 	is_allowed = {
 		hidden_trigger = {
 			is_emperor = yes
-			NOT = { hre_reform_level = 7 }
+			NOT = { hre_reform_passed = emperor_privilegia_de_non_appelando }
+			NOT = { hre_reform_passed = privilegia_de_non_appelando }
 			FROM = {
 				is_subject_of = ROOT
 				is_subject_of_type = imperial_feud_subject
@@ -2986,7 +4740,8 @@ bestow_impirial_grace_to_imperial_feud_subject = {
 		if = {
 			limit = {
 				is_emperor = yes
-				NOT = { hre_reform_level = 7 }
+				NOT = { hre_reform_passed = emperor_privilegia_de_non_appelando }
+				NOT = { hre_reform_passed = privilegia_de_non_appelando }
 				FROM = {
 					is_subject_of = ROOT
 					is_subject_of_type = imperial_feud_subject

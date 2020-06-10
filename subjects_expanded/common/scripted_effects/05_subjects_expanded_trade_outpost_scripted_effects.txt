@@ -1,5 +1,6 @@
 set_selected_trade_outpost_region_or_area = {
 	hidden_effect = {
+		set_country_flag = is_releasing_trade_outpost
 		[[area]
 			if = {
 				limit = {
@@ -20,6 +21,12 @@ set_selected_trade_outpost_region_or_area = {
 }
 
 clear_selected_trade_outpost_region_or_area = {
+	if = {
+		limit = {
+			has_country_flag = is_releasing_trade_outpost
+		}
+		clr_country_flag = is_releasing_trade_outpost
+	}
 	if = {
 		limit = {
 			has_country_flag = selected_trade_outpost_region_south_china_region

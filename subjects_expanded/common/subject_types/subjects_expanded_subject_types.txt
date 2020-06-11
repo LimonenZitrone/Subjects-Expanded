@@ -3871,6 +3871,14 @@ imperial_feud_subject = {
 		is_emperor = yes
 		NOT = { hre_reform_passed = emperor_privilegia_de_non_appelando }
 		NOT = { hre_reform_passed = privilegia_de_non_appelando }
+		NOT = {
+			calc_true_if = {
+				all_country = {
+					is_subject_of_type = imperial_feud_subject
+				}
+				amount = 5
+			}
+		}
 	}
 
 	# Properties:
@@ -3995,6 +4003,9 @@ imperial_feud_subject = {
 
 	modifier_overlord = clear
 	modifier_overlord = {
+		trigger = {
+			NOT = { liberty_desire = 50 }
+		}
 		modifier = imperial_feud_subject_overlord_modifier
 	}
 

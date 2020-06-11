@@ -93,6 +93,7 @@
  declined_establish_imperial_feud_subject_opinion: "Demand for Imperial Feud declined"
  declined_ask_for_imperial_feud_subject_opinion: "Offer for Imperial Feud declined"
  emperor_abandoned_imperial_feud_subject: "Emperor Abandoned Imperial Feud"
+ imperial_feud_subject_forced: "Forced Imperial Feud"
 
  is_pagan_chiefdom: "Chiefdom"
  declined_ask_to_become_pagan_chiefdom: "Offer for Chiefdom declined"
@@ -100,3 +101,4 @@
  is_native_reserve: "Native Reservation"
  declined_establish_native_reserve_opinion: "Demand for Native Reservation declined"
  declined_ask_for_native_reserve_opinion: "Offer for Native Reservation declined"
+ native_reserve_forced: "Forced Native Reservation"

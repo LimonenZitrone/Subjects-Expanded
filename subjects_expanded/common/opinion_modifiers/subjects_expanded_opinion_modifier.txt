@@ -358,6 +358,12 @@ emperor_abandoned_imperial_feud_subject = {
 	min = -50
 }
 
+imperial_feud_subject_forced = {
+	opinion = -100
+	yearly_decay = 4
+	min = -100
+}
+
 is_pagan_chiefdom = {
 	opinion = 40
 }
@@ -381,5 +387,11 @@ declined_establish_native_reserve_opinion = {
 declined_ask_for_native_reserve_opinion = {
 	opinion = -25
 	yearly_decay = 1
+	min = -100
+}
+
+native_reserve_forced = {
+	opinion = -100
+	yearly_decay = 4
 	min = -100
 }

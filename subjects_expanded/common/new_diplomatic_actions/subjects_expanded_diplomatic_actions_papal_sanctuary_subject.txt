@@ -624,7 +624,7 @@ establish_papal_sanctuary_subject = {
 		add_entry = {
 			name = ROOT_HAS_ESTABLISHED_THE_KINGDOM_OF_GOD
 			limit = {
-				has_country_modifier = kingdom_of_god
+				has_country_flag = is_kingdom_of_god_flag
 			}
 			export_to_variable = {
 				which = ai_value
@@ -706,7 +706,7 @@ establish_papal_sanctuary_subject = {
 			is_defender_of_faith = yes
 			is_papal_controller = yes
 			personality = ai_diplomat
-			has_country_modifier = kingdom_of_god
+			has_country_flag = is_kingdom_of_god_flag
 			AND = {
 				has_dlc = "Rights of Man"
 				OR = {
@@ -1300,7 +1300,7 @@ ask_for_papal_sanctuary_subject = {
 							is_defender_of_faith = yes
 							is_papal_controller = yes
 							personality = ai_diplomat
-							has_country_modifier = kingdom_of_god
+							has_country_flag = is_kingdom_of_god_flag
 							AND = {
 								has_dlc = "Rights of Man"
 								OR = {
@@ -1364,7 +1364,7 @@ ask_for_papal_sanctuary_subject = {
 			OR = {
 				is_papal_controller = yes
 				is_defender_of_faith = yes
-				has_country_modifier = kingdom_of_god
+				has_country_flag = is_kingdom_of_god_flag
 				alliance_with = ROOT
 			}
 		}
@@ -1713,7 +1713,7 @@ request_curia_money_from_papal_sanctuary_subject = {
 		add_entry = {
 			name = ROOT_HAS_ESTABLISHED_THE_KINGDOM_OF_GOD
 			limit = {
-				has_country_modifier = kingdom_of_god
+				has_country_flag = is_kingdom_of_god_flag
 			}
 			export_to_variable = {
 				which = ai_value
@@ -2364,7 +2364,7 @@ make_papal_sanctuary_subject_to_theocracy = {
 		add_entry = {
 			name = ROOT_HAS_ESTABLISHED_THE_KINGDOM_OF_GOD
 			limit = {
-				has_country_modifier = kingdom_of_god
+				has_country_flag = is_kingdom_of_god_flag
 			}
 			export_to_variable = {
 				which = ai_value
@@ -2420,7 +2420,7 @@ make_papal_sanctuary_subject_to_theocracy = {
 		OR = {
 			is_defender_of_faith = yes
 			is_papal_controller = yes
-			has_country_modifier = kingdom_of_god
+			has_country_flag = is_kingdom_of_god_flag
 		}
 		FROM = {
 			NOT = { liberty_desire = 25 }
@@ -2985,7 +2985,7 @@ make_papal_sanctuary_subject_to_vassal = {
 		add_entry = {
 			name = ROOT_HAS_ESTABLISHED_THE_KINGDOM_OF_GOD
 			limit = {
-				has_country_modifier = kingdom_of_god
+				has_country_flag = is_kingdom_of_god_flag
 			}
 			export_to_variable = {
 				which = ai_value
@@ -3027,7 +3027,7 @@ make_papal_sanctuary_subject_to_vassal = {
 	ai_will_do = {
 		OR = {
 			is_papal_controller = yes
-			has_country_modifier = kingdom_of_god
+			has_country_flag = is_kingdom_of_god_flag
 		}
 		num_of_free_diplomatic_relations = 1
 		is_neighbor_of = FROM

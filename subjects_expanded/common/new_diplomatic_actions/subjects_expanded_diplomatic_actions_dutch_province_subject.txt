@@ -1,19 +1,23 @@
 establish_dutch_province_subject = {
 	category = influence
-	
+
 	alert_index = 6
 	alert_tooltip = establish_dutch_province_subject_alert_tooltip
-	
+
 	require_acceptance = yes
-	
+
 	is_visible = {
+		NOT = { exists = NED }
 		can_create_subject_type = {
 			subject = FROM
 			subject_type = dutch_province_subject
 		}
 	}
-	
+
 	is_allowed = {
+		hidden_trigger = {
+			NOT = { exists = NED }
+		}
 		can_create_subject_type = {
 			subject = FROM
 			subject_type = dutch_province_subject
@@ -39,10 +43,11 @@ establish_dutch_province_subject = {
 			}
 		}
 	}
-	
+
 	on_accept = {
 		if = {
 			limit = {
+				NOT = { exists = NED }
 				can_create_subject_type = {
 					subject = FROM
 					subject_type = dutch_province_subject
@@ -75,10 +80,11 @@ establish_dutch_province_subject = {
 			add_truce_with = FROM
 		}
 	}
-	
+
 	on_decline = {
 		if = {
 			limit = {
+				NOT = { exists = NED }
 				can_create_subject_type = {
 					subject = FROM
 					subject_type = dutch_province_subject
@@ -114,7 +120,7 @@ establish_dutch_province_subject = {
 			}
 		}
 	}
-	
+
 	ai_acceptance = {
 		add_entry = {
 			name = FROM_IS_VASSAL_OF_ROOT
@@ -498,7 +504,7 @@ establish_dutch_province_subject = {
 			multiply_variable = { which = ai_value value = -5 }
 		}
 	}
-	
+
 	ai_will_do = {
 		NOT = { has_country_flag = formed_netherlands_flag }
 		OR = {
@@ -538,13 +544,14 @@ establish_dutch_province_subject = {
 
 ask_for_dutch_province_subject = {
 	category = influence
-	
+
 	alert_index = 6
 	alert_tooltip = ask_for_dutch_province_subject_alert_tooltip
-	
+
 	require_acceptance = yes
-	
+
 	is_visible = {
+		NOT = { exists = NED }
 		FROM = {
 			can_create_subject_type = {
 				subject = ROOT
@@ -552,8 +559,11 @@ ask_for_dutch_province_subject = {
 			}
 		}
 	}
-	
+
 	is_allowed = {
+		hidden_trigger = {
+			NOT = { exists = NED }
+		}
 		FROM = {
 			can_create_subject_type = {
 				subject = ROOT
@@ -581,10 +591,11 @@ ask_for_dutch_province_subject = {
 			NOT = { liberty_desire = 50 }
 		}
 	}
-	
+
 	on_accept = {
 		if = {
 			limit = {
+				NOT = { exists = NED }
 				FROM = {
 					can_create_subject_type = {
 						subject = ROOT
@@ -621,10 +632,11 @@ ask_for_dutch_province_subject = {
 			}
 		}
 	}
-	
+
 	on_decline = {
 		if = {
 			limit = {
+				NOT = { exists = NED }
 				FROM = {
 					can_create_subject_type = {
 						subject = ROOT
@@ -660,7 +672,7 @@ ask_for_dutch_province_subject = {
 			}
 		}
 	}
-	
+
 	ai_acceptance = {
 		add_entry = {
 			name = ROOT_IS_VASSAL_OF_FROM
@@ -992,7 +1004,7 @@ ask_for_dutch_province_subject = {
 			multiply_variable = { which = ai_value value = -1 }
 		}
 	}
-	
+
 	ai_will_do = {
 		OR = {
 			owns = 95
@@ -1038,18 +1050,18 @@ ask_for_dutch_province_subject = {
 
 dutch_province_subject_ask_for_independence = {
 	category = influence
-	
+
 	alert_index = 2
 	alert_tooltip = dutch_province_subject_ask_for_independence_alert_tooltip
-	
+
 	require_acceptance = yes
-	
+
 	is_visible = {
 		NOT = { has_global_flag = dutch_province_subject_no_leader_election }
 		is_subject_of = FROM
 		is_subject_of_type = dutch_province_subject
 	}
-	
+
 	is_allowed = {
 		hidden_trigger = {
 			NOT = { has_global_flag = dutch_province_subject_no_leader_election }
@@ -1065,7 +1077,7 @@ dutch_province_subject_ask_for_independence = {
 			NOT = { has_country_modifier = cooldown_dutch_province_subject_ask_for_independence }
 		}
 	}
-	
+
 	on_accept = {
 		if = {
 			limit = {
@@ -1082,7 +1094,7 @@ dutch_province_subject_ask_for_independence = {
 			}
 		}
 	}
-	
+
 	on_decline = {
 		if = {
 			limit = {
@@ -1106,7 +1118,7 @@ dutch_province_subject_ask_for_independence = {
 			}
 		}
 	}
-	
+
 	ai_acceptance = {
 		add_entry = {
 			name = ROOT_LIBERTY_DESIRE_TOO_LOW
@@ -1273,7 +1285,7 @@ dutch_province_subject_ask_for_independence = {
 			multiply_variable = { which = ai_value value = -1 }
 		}
 	}
-	
+
 	ai_will_do = {
 		num_of_allies = 1
 		liberty_desire = 70
@@ -1282,12 +1294,12 @@ dutch_province_subject_ask_for_independence = {
 
 dutch_province_subject_force_white_peace = {
 	category = influence
-	
+
 	alert_index = 2
 	alert_tooltip = dutch_province_subject_force_white_peace_alert_tooltip
-	
+
 	require_acceptance = yes
-	
+
 	is_visible = {
 		has_global_flag = dutch_province_subject_no_leader_election
 		FROM = {
@@ -1295,7 +1307,7 @@ dutch_province_subject_force_white_peace = {
 			is_subject_of_type = dutch_province_subject
 		}
 	}
-	
+
 	is_allowed = {
 		hidden_trigger = {
 			has_global_flag = dutch_province_subject_no_leader_election
@@ -1361,7 +1373,7 @@ dutch_province_subject_force_white_peace = {
 			}
 		}
 	}
-	
+
 	on_accept = {
 		if = {
 			limit = {
@@ -1462,7 +1474,7 @@ dutch_province_subject_force_white_peace = {
 			}
 		}
 	}
-	
+
 	on_decline = {
 		if = {
 			limit = {
@@ -1532,7 +1544,7 @@ dutch_province_subject_force_white_peace = {
 			}
 		}
 	}
-	
+
 	ai_acceptance = {
 		add_entry = {
 			name = base_values
@@ -1919,7 +1931,7 @@ dutch_province_subject_force_white_peace = {
 			divide_variable = { which = ai_value value = -2 }
 		}
 	}
-	
+
 	ai_will_do = {
 		calc_true_if = {
 			all_subject_country = {
@@ -1948,14 +1960,14 @@ cancel_dutch_province_subject = {
 	category = influence
 
 	require_acceptance = no
-	
+
 	is_visible = {
 		FROM = {
 			is_subject_of = ROOT
 			is_subject_of_type = dutch_province_subject
 		}
 	}
-	
+
 	is_allowed = {
 		hidden_trigger = {
 			FROM = {
@@ -1966,7 +1978,7 @@ cancel_dutch_province_subject = {
 		NOT = { truce_with = FROM }
 		prestige = 0
 	}
-	
+
 	on_accept = {
 		if = {
 			limit = {
@@ -1994,7 +2006,7 @@ cancel_dutch_province_subject = {
 			add_prestige = -25
 		}
 	}
-	
+
 	ai_will_do = {
 		OR = {
 			AND = {

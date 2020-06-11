@@ -484,4 +484,10 @@ country_event = {
 			}
 		}
 	}
+
+	option = {
+		name = subjects_expanded_imperial_feud_subject_events8.EVTOPT1
+
+		ai_chance = { factor = 100 }
+	}
 }

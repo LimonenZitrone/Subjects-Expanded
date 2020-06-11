@@ -181,6 +181,7 @@
  # Scripted Functions:
  NO_CAPITAL_MOVE_DUTCH_PROVINCE: "§REine Niederländische Provinz kann ihre Hauptstadt nicht nach außerhalb der niederländischen Region verlegen.§!"
  NATIVE_RESERVE_CANNOT_COLONIZE_PROVINCE_WITH_OTHER_CULTURE: "§REin Eingeborenenreservat kann keine Provinz mit einer anderen Kultur als ihrer Primärkultur kolonisieren.§!"
+ IMPERIAL_FEUD_SUBJECTS_CANNOT_ADD_PROVINCES_TO_THE_HRE: "§REin Kaiserliches Lehen kann keine Provinzen zum HRR hinzufügen. Ihr müsst zunächst ein vollwertiges Mitglied des HRR werden.§!"
 
  # Special Tooltips:
  DISPLAY_SUBJECTS_OF_TYPE_TT_OWNER_IS_SUBJECT_OF_TYPE: "@[This.Owner.GetTag] §Y[This.Owner.GetName]§! ist ein(e) §Y[This.Owner.GetSubjectType]§! von @[This.Owner.Overlord.GetTag] §Y[This.Owner.Overlord.GetName]§!."

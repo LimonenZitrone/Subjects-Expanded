@@ -181,6 +181,7 @@
  # Scripted Functions:
  NO_CAPITAL_MOVE_DUTCH_PROVINCE: "§RA Dutch Province cannot move its capital outside of the Low Countries region.§!"
  NATIVE_RESERVE_CANNOT_COLONIZE_PROVINCE_WITH_OTHER_CULTURE: "§RA Native Reservation cannot colonize a province with a different culture than their primary culture.§!"
+ IMPERIAL_FEUD_SUBJECTS_CANNOT_ADD_PROVINCES_TO_THE_HRE: "§RAn Imperial Feud cannot add provinces to the HRE. You need to become a member of the HRE first.§!"
 
  # Special Tooltips:
  DISPLAY_SUBJECTS_OF_TYPE_TT_OWNER_IS_SUBJECT_OF_TYPE: "@[This.Owner.GetTag] §Y[This.Owner.GetName]§! is a §Y[This.Owner.GetSubjectType]§! of @[This.Owner.Overlord.GetTag] §Y[This.Owner.Overlord.GetName]§!."

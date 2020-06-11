@@ -491,3 +491,35 @@ country_event = {
 		ai_chance = { factor = 100 }
 	}
 }
+
+country_event = {
+	id = subjects_expanded_imperial_feud_subject_events.9
+	title = subjects_expanded_imperial_feud_subject_events.EVTNAME9
+	desc = subjects_expanded_imperial_feud_subject_events.EVTDESC9
+	picture = HRE_eventPicture
+
+	hidden = yes
+
+	trigger = {
+		is_subject_of_type = imperial_feud_subject
+		is_part_of_hre = yes
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	immediate = {
+		hidden_effect = {
+			overlord = {
+				ROOT = { grant_independence = yes }
+			}
+		}
+	}
+
+	option = {
+		name = subjects_expanded_imperial_feud_subject_events9.EVTOPT1
+
+		ai_chance = { factor = 100 }
+	}
+}

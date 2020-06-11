@@ -68,3 +68,17 @@ can_colonize_province_siberian_frontier = {
 		}
 	}
 }
+
+can_add_province_to_hre = {
+	condition = {
+		tooltip = IMPERIAL_FEUD_SUBJECTS_CANNOT_ADD_PROVINCES_TO_THE_HRE
+		potential = {
+			FROM = {
+				is_subject_of_type = imperial_feud_subject
+			}
+		}
+		allow = {
+			always = no
+		}
+	}
+}

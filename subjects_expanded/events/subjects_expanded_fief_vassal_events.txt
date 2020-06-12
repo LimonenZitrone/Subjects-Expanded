@@ -36,3 +36,104 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = subjects_expanded_fief_subject_events.3
+	title = subjects_expanded_fief_subject_events.EVTNAME3
+	desc = subjects_expanded_fief_subject_events.EVTDESC3
+	picture = DIPLOMACY_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = FRA
+		is_year = 1444
+		NOT = { is_year = 1450 }
+		has_estate = estate_nobles
+		NOT = { has_estate_privilege = estate_nobles_french_strong_duchies }
+		NOT = {
+			calc_true_if = {
+				all_subject_country = {
+					OR = {
+						is_vassal = yes
+						is_march = yes
+					}
+				}
+				amount = 2
+			}
+		}
+		calc_true_if = {
+			all_subject_country = {
+				is_subject_of_type = fief_subject
+			}
+			amount = 2
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = {
+					ORL = {
+						is_subject_of = ROOT
+						is_subject_of_type = fief_subject
+					}
+					BOU = {
+						is_subject_of = ROOT
+						is_subject_of_type = fief_subject
+					}
+				}
+				ORL = {
+					save_event_target_as = first_fief_to_make_vassal
+				}
+				BOU = {
+					save_event_target_as = second_fief_to_make_vassal
+				}
+			}
+			else = {
+				random_subject_country = {
+					limit = {
+						is_subject_of_type = fief_subject
+						NOT = { tag = event_target:first_fief_to_make_vassal }
+						NOT = { tag = event_target:second_fief_to_make_vassal }
+					}
+					save_event_target_as = first_fief_to_make_vassal
+				}
+				random_subject_country = {
+					limit = {
+						is_subject_of_type = fief_subject
+						NOT = { tag = event_target:first_fief_to_make_vassal }
+						NOT = { tag = event_target:second_fief_to_make_vassal }
+					}
+					save_event_target_as = second_fief_to_make_vassal
+				}
+			}
+		}
+	}
+
+	option = {
+		name = subjects_expanded_fief_subject_events3.EVTOPT1
+
+		ai_chance = { factor = 100 }
+
+		vassalize = event_target:first_fief_to_make_vassal
+		event_target:first_fief_to_make_vassal = {
+			add_liberty_desire = 15
+		}
+		vassalize = event_target:second_fief_to_make_vassal
+		event_target:second_fief_to_make_vassal = {
+			add_liberty_desire = 15
+		}
+		set_estate_privilege = estate_nobles_french_strong_duchies
+	}
+
+	option = {
+		name = subjects_expanded_fief_subject_events3.EVTOPT2
+
+		ai_chance = { factor = 0 }
+	}
+}

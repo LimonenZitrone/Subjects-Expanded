@@ -113,6 +113,11 @@
  subjects_expanded_fief_subject_events.EVTDESC2: "Unser Lehnsherr hat von seinem Recht Gebrauch gemacht und verlangt, dass wir ihm in seinen Kriegen helfen."
  subjects_expanded_fief_subject_events2.EVTOPT1: "War das wirklich nötig?"
 
+ subjects_expanded_fief_subject_events.EVTNAME3: "Starke [Root.GetAdjective]e Herzögtümer"
+ subjects_expanded_fief_subject_events.EVTDESC3: "[Root.GetName] ist eine dezentralisierte Nation, in der die lokalen Herzöge und Grafen eine beträchtliche Unabhängigkeit von [Root.GetMdemder] [Root.Monarch.GetTitle] genießen. Dieses System hat seine Vorteile, macht die Aufrechterhaltung der königlichen Macht allerdings zu einer bedeutenden Herausforderung. \nZwei unserer Feudalvasallen zu direkten Vasallen zu machen, wird diese zwar verärgern, uns jedoch auch Vorteile verschaffen, die uns in naher Zukunft helfen werden."
+ subjects_expanded_fief_subject_events3.EVTOPT1: "§Y[first_fief_to_make_vassal.GetName]§! und §Y[second_fief_to_make_vassal.GetName]§! sollen zu direkten Vasallen werden."
+ subjects_expanded_fief_subject_events3.EVTOPT2: "Sie sind als Feudalvasallen nützlicher."
+
  subjects_expanded_pirate_brotherhood_vassal_events.EVTNAME2: "Bruderschaften erklären Unabhängigkeit"
  subjects_expanded_pirate_brotherhood_vassal_events.EVTDESC2: "Wir werden nicht mehr von einer Piratenregierung regiert. Unsere bis jetzt noch loyalen Piratenbruderschaften haben dies als legitimen Grund zur Erklärung ihrer Unabhängigkeit verwendet."
  subjects_expanded_pirate_brotherhood_vassal_events2.EVTOPT1: "Das ist unglücklich..."

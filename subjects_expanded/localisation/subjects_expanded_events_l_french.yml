@@ -113,6 +113,11 @@
  subjects_expanded_fief_subject_events.EVTDESC2: "Our overlord made use of his right and demanded that we help him in his wars."
  subjects_expanded_fief_subject_events2.EVTOPT1: "Was this really necessary?"
 
+ subjects_expanded_fief_subject_events.EVTNAME3: "[Root.GetAdjective] Strong Duchies"
+ subjects_expanded_fief_subject_events.EVTDESC3: "[Root.GetName] is a decentralized nation in which local dukes and counts have considerable independence from the [Root.Monarch.GetTitle]. This system has its benefits but makes maintaining the primacy of royal power a significant challenge. \nMaking two of our Fiefdoms into direct vassals will anger them, but give our nation advantages we will benefit from in the near future."
+ subjects_expanded_fief_subject_events3.EVTOPT1: "§Y[first_fief_to_make_vassal.GetName]§! and §Y[second_fief_to_make_vassal.GetName]§! shall become direct vassals."
+ subjects_expanded_fief_subject_events3.EVTOPT2: "They will be more useful as Fiefdoms."
+
  subjects_expanded_pirate_brotherhood_vassal_events.EVTNAME2: "Brotherhoods declare Independence"
  subjects_expanded_pirate_brotherhood_vassal_events.EVTDESC2: "We are not lead by a Pirate government anymore. Our Pirate Brotherhoods that were loyal to us until now take this as a valid reason to declare independence."
  subjects_expanded_pirate_brotherhood_vassal_events2.EVTOPT1: "That's unfortunate..."

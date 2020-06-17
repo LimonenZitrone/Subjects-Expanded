@@ -249,6 +249,7 @@ country_decisions = {
 						subject_type = dominion_tc
 					}
 					DI1 = {
+						rename_dominion_accordingly_to_overlord = { dominion_region = INDIA }
 						add_treasury = 3000
 						add_truce_with = ROOT
 						country_event = { id = subjects_expanded_dominion_events.1 }
@@ -401,6 +402,7 @@ country_decisions = {
 						subject_type = dominion_tc
 					}
 					DI2 = {
+						rename_dominion_accordingly_to_overlord = { dominion_region = INDIA }
 						add_treasury = 3000
 						add_truce_with = ROOT
 						country_event = { id = subjects_expanded_dominion_events.1 }
@@ -555,6 +557,7 @@ country_decisions = {
 						subject_type = dominion_tc
 					}
 					DI3 = {
+						rename_dominion_accordingly_to_overlord = { dominion_region = INDIA }
 						add_treasury = 3000
 						add_truce_with = ROOT
 						country_event = { id = subjects_expanded_dominion_events.1 }
@@ -709,6 +712,7 @@ country_decisions = {
 						subject_type = dominion_tc
 					}
 					DI4 = {
+						rename_dominion_accordingly_to_overlord = { dominion_region = INDIA }
 						add_treasury = 3000
 						add_truce_with = ROOT
 						country_event = { id = subjects_expanded_dominion_events.1 }
@@ -860,6 +864,7 @@ country_decisions = {
 						subject_type = dominion_tc
 					}
 					DI5 = {
+						rename_dominion_accordingly_to_overlord = { dominion_region = INDIA }
 						add_treasury = 3000
 						add_truce_with = ROOT
 						country_event = { id = subjects_expanded_dominion_events.1 }
@@ -1008,6 +1013,7 @@ country_decisions = {
 						subject_type = dominion_tc
 					}
 					DI6 = {
+						rename_dominion_accordingly_to_overlord = { dominion_region = INDIA }
 						add_treasury = 3000
 						add_truce_with = ROOT
 						country_event = { id = subjects_expanded_dominion_events.1 }
@@ -1155,6 +1161,7 @@ country_decisions = {
 						subject_type = dominion_tc
 					}
 					DI7 = {
+						rename_dominion_accordingly_to_overlord = { dominion_region = INDIA }
 						add_treasury = 3000
 						add_truce_with = ROOT
 						country_event = { id = subjects_expanded_dominion_events.1 }
@@ -1302,6 +1309,7 @@ country_decisions = {
 						subject_type = dominion_tc
 					}
 					DI8 = {
+						rename_dominion_accordingly_to_overlord = { dominion_region = INDIA }
 						add_treasury = 3000
 						add_truce_with = ROOT
 						country_event = { id = subjects_expanded_dominion_events.1 }
@@ -1448,6 +1456,7 @@ country_decisions = {
 						subject_type = dominion_tc
 					}
 					DI9 = {
+						rename_dominion_accordingly_to_overlord = { dominion_region = INDIA }
 						add_treasury = 3000
 						add_truce_with = ROOT
 						country_event = { id = subjects_expanded_dominion_events.1 }
@@ -1813,6 +1822,7 @@ country_decisions = {
 						subject_type = dominion_tc
 					}
 					DE1 = {
+						rename_dominion_accordingly_to_overlord = { dominion_region = EAST_INDIES }
 						add_treasury = 3000
 						add_truce_with = ROOT
 						country_event = { id = subjects_expanded_dominion_events.1 }
@@ -1912,6 +1922,7 @@ country_decisions = {
 						subject_type = dominion_tc
 					}
 					DE2 = {
+						rename_dominion_accordingly_to_overlord = { dominion_region = EAST_INDIES }
 						add_treasury = 3000
 						add_truce_with = ROOT
 						country_event = { id = subjects_expanded_dominion_events.1 }
@@ -2005,6 +2016,7 @@ country_decisions = {
 						subject_type = dominion_tc
 					}
 					DE3 = {
+						rename_dominion_accordingly_to_overlord = { dominion_region = EAST_INDIES }
 						add_treasury = 3000
 						add_truce_with = ROOT
 						country_event = { id = subjects_expanded_dominion_events.1 }
@@ -2098,6 +2110,7 @@ country_decisions = {
 						subject_type = dominion_tc
 					}
 					DE4 = {
+						rename_dominion_accordingly_to_overlord = { dominion_region = EAST_INDIES }
 						add_treasury = 3000
 						add_truce_with = ROOT
 						country_event = { id = subjects_expanded_dominion_events.1 }
@@ -2196,6 +2209,7 @@ country_decisions = {
 						subject_type = dominion_tc
 					}
 					DE5 = {
+						rename_dominion_accordingly_to_overlord = { dominion_region = EAST_INDIES }
 						add_treasury = 3000
 						add_truce_with = ROOT
 						country_event = { id = subjects_expanded_dominion_events.1 }
@@ -2291,6 +2305,7 @@ country_decisions = {
 						subject_type = dominion_tc
 					}
 					DE6 = {
+						rename_dominion_accordingly_to_overlord = { dominion_region = EAST_INDIES }
 						add_treasury = 3000
 						add_truce_with = ROOT
 						country_event = { id = subjects_expanded_dominion_events.1 }
@@ -2382,6 +2397,7 @@ country_decisions = {
 						subject_type = dominion_tc
 					}
 					DE7 = {
+						rename_dominion_accordingly_to_overlord = { dominion_region = EAST_INDIES }
 						add_treasury = 3000
 						add_truce_with = ROOT
 						country_event = { id = subjects_expanded_dominion_events.1 }
@@ -2468,6 +2484,7 @@ country_decisions = {
 						subject_type = dominion_tc
 					}
 					DE8 = {
+						rename_dominion_accordingly_to_overlord = { dominion_region = EAST_INDIES }
 						add_treasury = 3000
 						add_truce_with = ROOT
 						country_event = { id = subjects_expanded_dominion_events.1 }
@@ -2554,6 +2571,7 @@ country_decisions = {
 						subject_type = dominion_tc
 					}
 					DE9 = {
+						rename_dominion_accordingly_to_overlord = { dominion_region = EAST_INDIES }
 						add_treasury = 3000
 						add_truce_with = ROOT
 						country_event = { id = subjects_expanded_dominion_events.1 }
@@ -2848,6 +2866,7 @@ country_decisions = {
 						subject_type = dominion_tc
 					}
 					DC1 = {
+						rename_dominion_accordingly_to_overlord = { dominion_region = INDOCHINA }
 						add_treasury = 3000
 						add_truce_with = ROOT
 						country_event = { id = subjects_expanded_dominion_events.1 }
@@ -2927,6 +2946,7 @@ country_decisions = {
 						subject_type = dominion_tc
 					}
 					DC2 = {
+						rename_dominion_accordingly_to_overlord = { dominion_region = INDOCHINA }
 						add_treasury = 3000
 						add_truce_with = ROOT
 						country_event = { id = subjects_expanded_dominion_events.1 }
@@ -3008,6 +3028,7 @@ country_decisions = {
 						subject_type = dominion_tc
 					}
 					DC3 = {
+						rename_dominion_accordingly_to_overlord = { dominion_region = INDOCHINA }
 						add_treasury = 3000
 						add_truce_with = ROOT
 						country_event = { id = subjects_expanded_dominion_events.1 }
@@ -3089,6 +3110,7 @@ country_decisions = {
 						subject_type = dominion_tc
 					}
 					DC4 = {
+						rename_dominion_accordingly_to_overlord = { dominion_region = INDOCHINA }
 						add_treasury = 3000
 						add_truce_with = ROOT
 						country_event = { id = subjects_expanded_dominion_events.1 }
@@ -3167,6 +3189,7 @@ country_decisions = {
 						subject_type = dominion_tc
 					}
 					DC5 = {
+						rename_dominion_accordingly_to_overlord = { dominion_region = INDOCHINA }
 						add_treasury = 3000
 						add_truce_with = ROOT
 						country_event = { id = subjects_expanded_dominion_events.1 }
@@ -3242,6 +3265,7 @@ country_decisions = {
 						subject_type = dominion_tc
 					}
 					DC6 = {
+						rename_dominion_accordingly_to_overlord = { dominion_region = INDOCHINA }
 						add_treasury = 3000
 						add_truce_with = ROOT
 						country_event = { id = subjects_expanded_dominion_events.1 }
@@ -3316,6 +3340,7 @@ country_decisions = {
 						subject_type = dominion_tc
 					}
 					DC7 = {
+						rename_dominion_accordingly_to_overlord = { dominion_region = INDOCHINA }
 						add_treasury = 3000
 						add_truce_with = ROOT
 						country_event = { id = subjects_expanded_dominion_events.1 }
@@ -3564,6 +3589,7 @@ country_decisions = {
 						subject_type = dominion_tc
 					}
 					DW1 = {
+						rename_dominion_accordingly_to_overlord = { dominion_region = WEST_AFRICA }
 						add_treasury = 3000
 						add_truce_with = ROOT
 						country_event = { id = subjects_expanded_dominion_events.1 }
@@ -3629,6 +3655,7 @@ country_decisions = {
 						subject_type = dominion_tc
 					}
 					DW2 = {
+						rename_dominion_accordingly_to_overlord = { dominion_region = WEST_AFRICA }
 						add_treasury = 3000
 						add_truce_with = ROOT
 						country_event = { id = subjects_expanded_dominion_events.1 }
@@ -3696,6 +3723,7 @@ country_decisions = {
 						subject_type = dominion_tc
 					}
 					DW3 = {
+						rename_dominion_accordingly_to_overlord = { dominion_region = WEST_AFRICA }
 						add_treasury = 3000
 						add_truce_with = ROOT
 						country_event = { id = subjects_expanded_dominion_events.1 }
@@ -3763,6 +3791,7 @@ country_decisions = {
 						subject_type = dominion_tc
 					}
 					DW4 = {
+						rename_dominion_accordingly_to_overlord = { dominion_region = WEST_AFRICA }
 						add_treasury = 3000
 						add_truce_with = ROOT
 						country_event = { id = subjects_expanded_dominion_events.1 }
@@ -3827,6 +3856,7 @@ country_decisions = {
 						subject_type = dominion_tc
 					}
 					DW5 = {
+						rename_dominion_accordingly_to_overlord = { dominion_region = WEST_AFRICA }
 						add_treasury = 3000
 						add_truce_with = ROOT
 						country_event = { id = subjects_expanded_dominion_events.1 }
@@ -3888,6 +3918,7 @@ country_decisions = {
 						subject_type = dominion_tc
 					}
 					DW6 = {
+						rename_dominion_accordingly_to_overlord = { dominion_region = WEST_AFRICA }
 						add_treasury = 3000
 						add_truce_with = ROOT
 						country_event = { id = subjects_expanded_dominion_events.1 }
@@ -3948,6 +3979,7 @@ country_decisions = {
 						subject_type = dominion_tc
 					}
 					DW7 = {
+						rename_dominion_accordingly_to_overlord = { dominion_region = WEST_AFRICA }
 						add_treasury = 3000
 						add_truce_with = ROOT
 						country_event = { id = subjects_expanded_dominion_events.1 }
@@ -4189,6 +4221,7 @@ country_decisions = {
 						subject_type = dominion_tc
 					}
 					DS1 = {
+						rename_dominion_accordingly_to_overlord = { dominion_region = SOUTH_AFRICA }
 						add_treasury = 3000
 						add_truce_with = ROOT
 						country_event = { id = subjects_expanded_dominion_events.1 }
@@ -4254,6 +4287,7 @@ country_decisions = {
 						subject_type = dominion_tc
 					}
 					DS2 = {
+						rename_dominion_accordingly_to_overlord = { dominion_region = SOUTH_AFRICA }
 						add_treasury = 3000
 						add_truce_with = ROOT
 						country_event = { id = subjects_expanded_dominion_events.1 }
@@ -4321,6 +4355,7 @@ country_decisions = {
 						subject_type = dominion_tc
 					}
 					DS3 = {
+						rename_dominion_accordingly_to_overlord = { dominion_region = SOUTH_AFRICA }
 						add_treasury = 3000
 						add_truce_with = ROOT
 						country_event = { id = subjects_expanded_dominion_events.1 }
@@ -4388,6 +4423,7 @@ country_decisions = {
 						subject_type = dominion_tc
 					}
 					DS4 = {
+						rename_dominion_accordingly_to_overlord = { dominion_region = SOUTH_AFRICA }
 						add_treasury = 3000
 						add_truce_with = ROOT
 						country_event = { id = subjects_expanded_dominion_events.1 }
@@ -4452,6 +4488,7 @@ country_decisions = {
 						subject_type = dominion_tc
 					}
 					DS5 = {
+						rename_dominion_accordingly_to_overlord = { dominion_region = SOUTH_AFRICA }
 						add_treasury = 3000
 						add_truce_with = ROOT
 						country_event = { id = subjects_expanded_dominion_events.1 }
@@ -4513,6 +4550,7 @@ country_decisions = {
 						subject_type = dominion_tc
 					}
 					DS6 = {
+						rename_dominion_accordingly_to_overlord = { dominion_region = SOUTH_AFRICA }
 						add_treasury = 3000
 						add_truce_with = ROOT
 						country_event = { id = subjects_expanded_dominion_events.1 }
@@ -4573,6 +4611,7 @@ country_decisions = {
 						subject_type = dominion_tc
 					}
 					DS7 = {
+						rename_dominion_accordingly_to_overlord = { dominion_region = SOUTH_AFRICA }
 						add_treasury = 3000
 						add_truce_with = ROOT
 						country_event = { id = subjects_expanded_dominion_events.1 }
@@ -4810,6 +4849,7 @@ country_decisions = {
 						subject_type = dominion_tc
 					}
 					DA1 = {
+						rename_dominion_accordingly_to_overlord = { dominion_region = EAST_AFRICA }
 						add_treasury = 3000
 						add_truce_with = ROOT
 						country_event = { id = subjects_expanded_dominion_events.1 }
@@ -4875,6 +4915,7 @@ country_decisions = {
 						subject_type = dominion_tc
 					}
 					DA2 = {
+						rename_dominion_accordingly_to_overlord = { dominion_region = EAST_AFRICA }
 						add_treasury = 3000
 						add_truce_with = ROOT
 						country_event = { id = subjects_expanded_dominion_events.1 }
@@ -4942,6 +4983,7 @@ country_decisions = {
 						subject_type = dominion_tc
 					}
 					DA3 = {
+						rename_dominion_accordingly_to_overlord = { dominion_region = EAST_AFRICA }
 						add_treasury = 3000
 						add_truce_with = ROOT
 						country_event = { id = subjects_expanded_dominion_events.1 }
@@ -5009,6 +5051,7 @@ country_decisions = {
 						subject_type = dominion_tc
 					}
 					DA4 = {
+						rename_dominion_accordingly_to_overlord = { dominion_region = EAST_AFRICA }
 						add_treasury = 3000
 						add_truce_with = ROOT
 						country_event = { id = subjects_expanded_dominion_events.1 }
@@ -5073,6 +5116,7 @@ country_decisions = {
 						subject_type = dominion_tc
 					}
 					DA5 = {
+						rename_dominion_accordingly_to_overlord = { dominion_region = EAST_AFRICA }
 						add_treasury = 3000
 						add_truce_with = ROOT
 						country_event = { id = subjects_expanded_dominion_events.1 }
@@ -5134,6 +5178,7 @@ country_decisions = {
 						subject_type = dominion_tc
 					}
 					DA6 = {
+						rename_dominion_accordingly_to_overlord = { dominion_region = EAST_AFRICA }
 						add_treasury = 3000
 						add_truce_with = ROOT
 						country_event = { id = subjects_expanded_dominion_events.1 }
@@ -5194,6 +5239,7 @@ country_decisions = {
 						subject_type = dominion_tc
 					}
 					DA7 = {
+						rename_dominion_accordingly_to_overlord = { dominion_region = EAST_AFRICA }
 						add_treasury = 3000
 						add_truce_with = ROOT
 						country_event = { id = subjects_expanded_dominion_events.1 }
@@ -5458,6 +5504,7 @@ country_decisions = {
 						subject_type = dominion_tc
 					}
 					DP1 = {
+						rename_dominion_accordingly_to_overlord = { dominion_region = PHILIPPINES }
 						add_treasury = 3000
 						add_truce_with = ROOT
 						country_event = { id = subjects_expanded_dominion_events.1 }
@@ -5529,6 +5576,7 @@ country_decisions = {
 						subject_type = dominion_tc
 					}
 					DP2 = {
+						rename_dominion_accordingly_to_overlord = { dominion_region = PHILIPPINES }
 						add_treasury = 3000
 						add_truce_with = ROOT
 						country_event = { id = subjects_expanded_dominion_events.1 }
@@ -5610,6 +5658,7 @@ country_decisions = {
 						subject_type = dominion_tc
 					}
 					DP3 = {
+						rename_dominion_accordingly_to_overlord = { dominion_region = PHILIPPINES }
 						add_treasury = 3000
 						add_truce_with = ROOT
 						country_event = { id = subjects_expanded_dominion_events.1 }
@@ -5683,6 +5732,7 @@ country_decisions = {
 						subject_type = dominion_tc
 					}
 					DP4 = {
+						rename_dominion_accordingly_to_overlord = { dominion_region = PHILIPPINES }
 						add_treasury = 3000
 						add_truce_with = ROOT
 						country_event = { id = subjects_expanded_dominion_events.1 }
@@ -5761,6 +5811,7 @@ country_decisions = {
 						subject_type = dominion_tc
 					}
 					DP5 = {
+						rename_dominion_accordingly_to_overlord = { dominion_region = PHILIPPINES }
 						add_treasury = 3000
 						add_truce_with = ROOT
 						country_event = { id = subjects_expanded_dominion_events.1 }
@@ -5842,6 +5893,7 @@ country_decisions = {
 						subject_type = dominion_tc
 					}
 					DP6 = {
+						rename_dominion_accordingly_to_overlord = { dominion_region = PHILIPPINES }
 						add_treasury = 3000
 						add_truce_with = ROOT
 						country_event = { id = subjects_expanded_dominion_events.1 }
@@ -5913,6 +5965,7 @@ country_decisions = {
 						subject_type = dominion_tc
 					}
 					DP7 = {
+						rename_dominion_accordingly_to_overlord = { dominion_region = PHILIPPINES }
 						add_treasury = 3000
 						add_truce_with = ROOT
 						country_event = { id = subjects_expanded_dominion_events.1 }
@@ -5979,6 +6032,7 @@ country_decisions = {
 						subject_type = dominion_tc
 					}
 					DP8 = {
+						rename_dominion_accordingly_to_overlord = { dominion_region = PHILIPPINES }
 						add_treasury = 3000
 						add_truce_with = ROOT
 						country_event = { id = subjects_expanded_dominion_events.1 }
@@ -6045,6 +6099,7 @@ country_decisions = {
 						subject_type = dominion_tc
 					}
 					DP9 = {
+						rename_dominion_accordingly_to_overlord = { dominion_region = PHILIPPINES }
 						add_treasury = 3000
 						add_truce_with = ROOT
 						country_event = { id = subjects_expanded_dominion_events.1 }

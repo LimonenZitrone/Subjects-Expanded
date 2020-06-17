@@ -1,18 +1,18 @@
 establish_trade_outpost = {
 	category = influence
-	
+
 	alert_index = 6
 	alert_tooltip = establish_trade_outpost_alert_tooltip
-	
+
 	require_acceptance = yes
-	
+
 	is_visible = {
 		can_create_subject_type = {
 			subject = FROM
 			subject_type = trade_outpost
 		}
 	}
-	
+
 	is_allowed = {
 		can_create_subject_type = {
 			subject = FROM
@@ -24,7 +24,7 @@ establish_trade_outpost = {
 			capital_scope = { trade_range = ROOT }
 		}
 	}
-	
+
 	on_accept = {
 		if = {
 			limit = {
@@ -45,7 +45,7 @@ establish_trade_outpost = {
 			add_truce_with = FROM
 		}
 	}
-	
+
 	on_decline = {
 		if = {
 			limit = {
@@ -69,7 +69,7 @@ establish_trade_outpost = {
 			}
 		}
 	}
-	
+
 	ai_acceptance = {
 		add_entry = {
 			name = OPINION
@@ -565,7 +565,7 @@ establish_trade_outpost = {
 			multiply_variable = { which = ai_value value = -1 }
 		}
 	}
-	
+
 	ai_will_do = {
 		OR = {
 			NOT = { overlord_of = FROM }
@@ -596,7 +596,10 @@ establish_trade_outpost = {
 			}
 			FROM = {
 				capital_scope = {
-					is_node_in_trade_company_region = no
+					NOT = { superregion = india_superregion }
+					NOT = { superregion = china_superregion }
+					NOT = { region = japan_region }
+					NOT = { continent = oceania }
 				}
 			}
 		}
@@ -605,12 +608,12 @@ establish_trade_outpost = {
 
 ask_to_become_trade_outpost = {
 	category = influence
-	
+
 	alert_index = 6
 	alert_tooltip = ask_to_become_trade_outpost_alert_tooltip
-	
+
 	require_acceptance = yes
-	
+
 	is_visible = {
 		is_subject = no
 		FROM = {
@@ -620,7 +623,7 @@ ask_to_become_trade_outpost = {
 			}
 		}
 	}
-	
+
 	is_allowed = {
 		FROM = {
 			can_create_subject_type = {
@@ -632,7 +635,7 @@ ask_to_become_trade_outpost = {
 		FROM = { is_at_war = no }
 		capital_scope = { trade_range = FROM }
 	}
-	
+
 	on_accept = {
 		if = {
 			limit = {
@@ -655,7 +658,7 @@ ask_to_become_trade_outpost = {
 			add_truce_with = FROM
 		}
 	}
-	
+
 	on_decline = {
 		if = {
 			limit = {
@@ -677,7 +680,7 @@ ask_to_become_trade_outpost = {
 			}
 		}
 	}
-	
+
 	ai_acceptance = {
 		add_entry = {
 			name = OPINION
@@ -879,7 +882,10 @@ ask_to_become_trade_outpost = {
 							NOT = { has_dlc = "Dharma" }
 						}
 						capital_scope = {
-							is_node_in_trade_company_region = no
+							NOT = { superregion = india_superregion }
+							NOT = { superregion = china_superregion }
+							NOT = { region = japan_region }
+							NOT = { continent = oceania }
 						}
 					}
 				}
@@ -904,7 +910,7 @@ ask_to_become_trade_outpost = {
 			multiply_variable = { which = ai_value value = -1 }
 		}
 	}
-	
+
 	ai_will_do = {
 		NOT = { num_of_subjects = 1 }
 		OR = {
@@ -942,14 +948,14 @@ improve_trade_outpost = {
 	category = influence
 
 	require_acceptance = no
-	
+
 	is_visible = {
 		FROM = {
 			is_subject_of = ROOT
 			is_subject_of_type = trade_outpost
 		}
 	}
-	
+
 	is_allowed = {
 		hidden_trigger = {
 			FROM = {
@@ -975,7 +981,7 @@ improve_trade_outpost = {
 			}
 		}
 	}
-	
+
 	on_accept = {
 		if = {
 			limit = {
@@ -1022,7 +1028,7 @@ improve_trade_outpost = {
 			}
 		}
 	}
-	
+
 	ai_will_do = {
 		treasury = 2000
 		adm_power = 100
@@ -1049,19 +1055,19 @@ end_trade_outpost = {
 	category = influence
 
 	require_acceptance = no
-	
+
 	is_visible = {
 		is_subject_of = FROM
 		is_subject_of_type = trade_outpost
 	}
-	
+
 	is_allowed = {
 		is_subject_of = FROM
 		is_subject_of_type = trade_outpost
 		NOT = { truce_with = FROM }
 		is_at_war = no
 	}
-	
+
 	on_accept = {
 		if = {
 			limit = {
@@ -1077,7 +1083,7 @@ end_trade_outpost = {
 			add_stability = -1
 		}
 	}
-	
+
 	ai_will_do = {
 		liberty_desire = 70
 	}
@@ -1087,14 +1093,14 @@ cancel_trade_outpost = {
 	category = influence
 
 	require_acceptance = no
-	
+
 	is_visible = {
 		FROM = {
 			is_subject_of = ROOT
 			is_subject_of_type = trade_outpost
 		}
 	}
-	
+
 	is_allowed = {
 		hidden_trigger = {
 			FROM = {
@@ -1105,7 +1111,7 @@ cancel_trade_outpost = {
 		NOT = { truce_with = FROM }
 		prestige = 0
 	}
-	
+
 	on_accept = {
 		if = {
 			limit = {
@@ -1133,7 +1139,7 @@ cancel_trade_outpost = {
 			add_prestige = -25
 		}
 	}
-	
+
 	ai_will_do = {
 		FROM = {
 			liberty_desire = 100

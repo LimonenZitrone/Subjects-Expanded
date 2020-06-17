@@ -392,7 +392,10 @@ dominion_tc = {
 					}
 				}
 				capital_scope = {
-					is_node_in_trade_company_region = no
+					NOT = { superregion = india_superregion }
+					NOT = { superregion = china_superregion }
+					NOT = { region = japan_region }
+					NOT = { continent = oceania }
 				}
 				any_owned_province = {
 					is_node_in_trade_company_region = yes

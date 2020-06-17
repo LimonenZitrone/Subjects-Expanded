@@ -19,6 +19,20 @@ country_decisions = {
 			}
 		}
 		effect = {
+			hidden_effect = {
+				restore_country_name = yes
+				clr_country_flag = renamed_dominion_accordingly_to_free
+				every_country = {
+					limit = {
+						ROOT = {
+							has_country_flag = renamed_dominion_accordingly_to_@PREV
+						}
+					}
+					ROOT = {
+						clr_country_flag = renamed_dominion_accordingly_to_@PREV
+					}
+				}
+			}
 			add_prestige = 25
 			change_tag = THL
 			set_country_flag = changed_from_colonial_nation
@@ -32,7 +46,7 @@ country_decisions = {
 			factor = 1
 		}
 	}
-	
+
 	autonomous_dominion_india_nation = {
 		major = yes
 		potential = {
@@ -59,6 +73,20 @@ country_decisions = {
 			}
 		}
 		effect = {
+			hidden_effect = {
+				restore_country_name = yes
+				clr_country_flag = renamed_dominion_accordingly_to_free
+				every_country = {
+					limit = {
+						ROOT = {
+							has_country_flag = renamed_dominion_accordingly_to_@PREV
+						}
+					}
+					ROOT = {
+						clr_country_flag = renamed_dominion_accordingly_to_@PREV
+					}
+				}
+			}
 			add_prestige = 25
 			change_tag = IND
 			set_country_flag = changed_from_colonial_nation
@@ -72,7 +100,7 @@ country_decisions = {
 			factor = 1
 		}
 	}
-	
+
 	autonomous_dominion_indonesia_nation = {
 		major = yes
 		potential = {
@@ -96,6 +124,20 @@ country_decisions = {
 			}
 		}
 		effect = {
+			hidden_effect = {
+				restore_country_name = yes
+				clr_country_flag = renamed_dominion_accordingly_to_free
+				every_country = {
+					limit = {
+						ROOT = {
+							has_country_flag = renamed_dominion_accordingly_to_@PREV
+						}
+					}
+					ROOT = {
+						clr_country_flag = renamed_dominion_accordingly_to_@PREV
+					}
+				}
+			}
 			add_prestige = 25
 			change_tag = IDN
 			set_country_flag = changed_from_colonial_nation
@@ -109,7 +151,7 @@ country_decisions = {
 			factor = 1
 		}
 	}
-	
+
 	autonomous_dominion_ghana_nation = {
 		major = yes
 		potential = {
@@ -130,6 +172,20 @@ country_decisions = {
 			}
 		}
 		effect = {
+			hidden_effect = {
+				restore_country_name = yes
+				clr_country_flag = renamed_dominion_accordingly_to_free
+				every_country = {
+					limit = {
+						ROOT = {
+							has_country_flag = renamed_dominion_accordingly_to_@PREV
+						}
+					}
+					ROOT = {
+						clr_country_flag = renamed_dominion_accordingly_to_@PREV
+					}
+				}
+			}
 			add_prestige = 25
 			change_tag = GHA
 			set_country_flag = changed_from_colonial_nation
@@ -164,6 +220,20 @@ country_decisions = {
 			}
 		}
 		effect = {
+			hidden_effect = {
+				restore_country_name = yes
+				clr_country_flag = renamed_dominion_accordingly_to_free
+				every_country = {
+					limit = {
+						ROOT = {
+							has_country_flag = renamed_dominion_accordingly_to_@PREV
+						}
+					}
+					ROOT = {
+						clr_country_flag = renamed_dominion_accordingly_to_@PREV
+					}
+				}
+			}
 			add_prestige = 25
 			change_tag = ZIB
 			set_country_flag = changed_from_colonial_nation
@@ -198,6 +268,20 @@ country_decisions = {
 			}
 		}
 		effect = {
+			hidden_effect = {
+				restore_country_name = yes
+				clr_country_flag = renamed_dominion_accordingly_to_free
+				every_country = {
+					limit = {
+						ROOT = {
+							has_country_flag = renamed_dominion_accordingly_to_@PREV
+						}
+					}
+					ROOT = {
+						clr_country_flag = renamed_dominion_accordingly_to_@PREV
+					}
+				}
+			}
 			add_prestige = 25
 			change_tag = RSA
 			set_country_flag = changed_from_colonial_nation
@@ -211,7 +295,7 @@ country_decisions = {
 			factor = 1
 		}
 	}
-	
+
 	autonomous_dominion_philippines_nation = {
 		major = yes
 		potential = {
@@ -232,6 +316,20 @@ country_decisions = {
 			}
 		}
 		effect = {
+			hidden_effect = {
+				restore_country_name = yes
+				clr_country_flag = renamed_dominion_accordingly_to_free
+				every_country = {
+					limit = {
+						ROOT = {
+							has_country_flag = renamed_dominion_accordingly_to_@PREV
+						}
+					}
+					ROOT = {
+						clr_country_flag = renamed_dominion_accordingly_to_@PREV
+					}
+				}
+			}
 			add_prestige = 25
 			change_tag = PHI
 			set_country_flag = changed_from_colonial_nation

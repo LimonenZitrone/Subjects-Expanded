@@ -749,3 +749,106 @@ country_event = {
 		ai_chance = { factor = 100 }
 	}
 }
+
+# apply/remove custom name
+country_event = {
+	id = subjects_expanded_dominion_events.10
+	title = subjects_expanded_dominion_events.EVTNAME10
+	desc = subjects_expanded_dominion_events.EVTDESC10
+	picture = DIPLOMACY_eventPicture
+
+	hidden = yes
+
+	trigger = {
+		is_dominion_tag = yes
+		OR = {
+			AND = {
+				is_subject = yes
+				OR = {
+					has_country_flag = renamed_dominion_accordingly_to_free
+					overlord = {
+						country_has_custom_name_for_dominions = yes
+						OR = {
+							NOT = { tag = DE7 }
+							overlord = {
+								NOT = { tag = NED }
+								NOT = { tag = HOL }
+							}
+						}
+						OR = {
+							NOT = { tag = DI1 }
+							overlord = {
+								NOT = { tag = GBR }
+								NOT = { tag = ENG }
+							}
+						}
+						ROOT = {
+							NOT = { has_country_flag = renamed_dominion_accordingly_to_@PREV }
+						}
+					}
+				}
+			}
+			AND = {
+				is_subject = no
+				NOT = { has_country_flag = renamed_dominion_accordingly_to_free }
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = {
+					is_dominion_tag_in_east_africa = yes
+				}
+				rename_dominion_accordingly_to_overlord = { dominion_region = EAST_AFRICA }
+			}
+			else_if = {
+				limit = {
+					is_dominion_tag_in_indochina = yes
+				}
+				rename_dominion_accordingly_to_overlord = { dominion_region = INDOCHINA }
+			}
+			else_if = {
+				limit = {
+					is_dominion_tag_in_east_indies = yes
+				}
+				rename_dominion_accordingly_to_overlord = { dominion_region = EAST_INDIES }
+			}
+			else_if = {
+				limit = {
+					is_dominion_tag_in_india = yes
+				}
+				rename_dominion_accordingly_to_overlord = { dominion_region = INDIA }
+			}
+			else_if = {
+				limit = {
+					is_dominion_tag_in_south_africa = yes
+				}
+				rename_dominion_accordingly_to_overlord = { dominion_region = SOUTH_AFRICA }
+			}
+			else_if = {
+				limit = {
+					is_dominion_tag_in_west_africa = yes
+				}
+				rename_dominion_accordingly_to_overlord = { dominion_region = WEST_AFRICA }
+			}
+			else_if = {
+				limit = {
+					is_dominion_tag_in_philippines = yes
+				}
+				rename_dominion_accordingly_to_overlord = { dominion_region = PHILIPPINES }
+			}
+		}
+	}
+
+	option = {
+		name = subjects_expanded_dominion_events10.EVTOPT1
+
+		ai_chance = { factor = 100 }
+	}
+}

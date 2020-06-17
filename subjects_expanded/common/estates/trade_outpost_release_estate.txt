@@ -3,14 +3,9 @@ trade_outpost_release_estate = {
 
 	color = { 200 150 150 }
 
-	# If true, country will get estate
-	trigger = {
-		has_country_flag = is_releasing_trade_outpost
-	}
-
 	# Used for when declaring independence
 	independence_government = republic
-	starting_reform = noble_elite_reform
+	starting_reform = merchants_reform
 	independence_tech_group = western
 
 	province_independence_weight = {
@@ -21,7 +16,10 @@ trade_outpost_release_estate = {
 		}
 	}
 
-	influence_from_dev_modifier = 0
+	# If true, country will get estate
+	trigger = {
+		has_country_flag = is_releasing_trade_outpost
+	}
 
 	# These scale with loyalty & power
 	country_modifier_happy = {

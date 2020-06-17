@@ -5,9 +5,9 @@ country_event = {
 	title = subjects_expanded_trade_outpost_events.EVTNAME1
 	desc = subjects_expanded_trade_outpost_events.EVTDESC1
 	picture = CITY_VIEW_eventPicture
-	
+
 	is_triggered_only = yes
-	
+
 	immediate = {
 		hidden_effect = {
 			random_owned_province = {
@@ -192,19 +192,19 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = subjects_expanded_trade_outpost_events1.EVTOPT1
-		
+
 		trigger = {
 			event_target:trade_outpost_province_1 = {
 				owned_by = ROOT
 				NOT = { has_province_flag = already_rejected_trade_outpost_province_@ROOT }
 			}
 		}
-		
+
 		ai_chance = { factor = 100 }
-		
+
 		add_treasury = -3000
 		if = {
 			limit = {
@@ -231,7 +231,8 @@ country_event = {
 				event_target:trade_outpost_province_1 = {
 					set_province_flag = release_trade_outpost_here_@ROOT
 				}
-				create_independent_estate = { estate = trade_outpost_release_estate government = republic government_reform = noble_elite_reform }
+				change_estate_land_share = { estate = trade_outpost_release_estate share = 1 }
+				create_independent_estate = { estate = trade_outpost_release_estate government = republic government_reform = merchants_reform }
 				event_target:trade_outpost_province_1 = {
 					clr_province_flag = release_trade_outpost_here_@ROOT
 					owner = {
@@ -242,6 +243,14 @@ country_event = {
 							}
 						}
 						add_truce_with = ROOT
+						every_owned_province = {
+							limit = {
+								NOT = { province_id = event_target:trade_outpost_province_1 }
+							}
+							remove_core = PREV
+							add_core = ROOT
+							cede_province = ROOT
+						}
 					}
 				}
 				REB = {
@@ -249,7 +258,7 @@ country_event = {
 				}
 			}
 		}
-		
+
 		hidden_effect = {
 			event_target:trade_outpost_province_1 = {
 				if = {
@@ -274,19 +283,19 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = subjects_expanded_trade_outpost_events1.EVTOPT2
-		
+
 		trigger = {
 			event_target:trade_outpost_province_2 = {
 				owned_by = ROOT
 				NOT = { has_province_flag = already_rejected_trade_outpost_province_@ROOT }
 			}
 		}
-		
+
 		ai_chance = { factor = 100 }
-		
+
 		add_treasury = -3000
 		if = {
 			limit = {
@@ -313,7 +322,8 @@ country_event = {
 				event_target:trade_outpost_province_2 = {
 					set_province_flag = release_trade_outpost_here_@ROOT
 				}
-				create_independent_estate = { estate = trade_outpost_release_estate government = republic government_reform = noble_elite_reform }
+				change_estate_land_share = { estate = trade_outpost_release_estate share = 1 }
+				create_independent_estate = { estate = trade_outpost_release_estate government = republic government_reform = merchants_reform }
 				event_target:trade_outpost_province_2 = {
 					clr_province_flag = release_trade_outpost_here_@ROOT
 					owner = {
@@ -324,6 +334,14 @@ country_event = {
 							}
 						}
 						add_truce_with = ROOT
+						every_owned_province = {
+							limit = {
+								NOT = { province_id = event_target:trade_outpost_province_2 }
+							}
+							remove_core = PREV
+							add_core = ROOT
+							cede_province = ROOT
+						}
 					}
 				}
 				REB = {
@@ -331,7 +349,7 @@ country_event = {
 				}
 			}
 		}
-		
+
 		hidden_effect = {
 			event_target:trade_outpost_province_2 = {
 				if = {
@@ -356,19 +374,19 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = subjects_expanded_trade_outpost_events1.EVTOPT3
-		
+
 		trigger = {
 			event_target:trade_outpost_province_3 = {
 				owned_by = ROOT
 				NOT = { has_province_flag = already_rejected_trade_outpost_province_@ROOT }
 			}
 		}
-		
+
 		ai_chance = { factor = 100 }
-		
+
 		add_treasury = -3000
 		if = {
 			limit = {
@@ -395,7 +413,8 @@ country_event = {
 				event_target:trade_outpost_province_3 = {
 					set_province_flag = release_trade_outpost_here_@ROOT
 				}
-				create_independent_estate = { estate = trade_outpost_release_estate government = republic government_reform = noble_elite_reform }
+				change_estate_land_share = { estate = trade_outpost_release_estate share = 1 }
+				create_independent_estate = { estate = trade_outpost_release_estate government = republic government_reform = merchants_reform }
 				event_target:trade_outpost_province_3 = {
 					clr_province_flag = release_trade_outpost_here_@ROOT
 					owner = {
@@ -406,6 +425,14 @@ country_event = {
 							}
 						}
 						add_truce_with = ROOT
+						every_owned_province = {
+							limit = {
+								NOT = { province_id = event_target:trade_outpost_province_3 }
+							}
+							remove_core = PREV
+							add_core = ROOT
+							cede_province = ROOT
+						}
 					}
 				}
 				REB = {
@@ -413,7 +440,7 @@ country_event = {
 				}
 			}
 		}
-		
+
 		hidden_effect = {
 			event_target:trade_outpost_province_3 = {
 				if = {
@@ -438,19 +465,19 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = subjects_expanded_trade_outpost_events1.EVTOPT4
-		
+
 		trigger = {
 			event_target:trade_outpost_province_4 = {
 				owned_by = ROOT
 				NOT = { has_province_flag = already_rejected_trade_outpost_province_@ROOT }
 			}
 		}
-		
+
 		ai_chance = { factor = 100 }
-		
+
 		add_treasury = -3000
 		if = {
 			limit = {
@@ -477,7 +504,8 @@ country_event = {
 				event_target:trade_outpost_province_4 = {
 					set_province_flag = release_trade_outpost_here_@ROOT
 				}
-				create_independent_estate = { estate = trade_outpost_release_estate government = republic government_reform = noble_elite_reform }
+				change_estate_land_share = { estate = trade_outpost_release_estate share = 1 }
+				create_independent_estate = { estate = trade_outpost_release_estate government = republic government_reform = merchants_reform }
 				event_target:trade_outpost_province_4 = {
 					clr_province_flag = release_trade_outpost_here_@ROOT
 					owner = {
@@ -488,6 +516,14 @@ country_event = {
 							}
 						}
 						add_truce_with = ROOT
+						every_owned_province = {
+							limit = {
+								NOT = { province_id = event_target:trade_outpost_province_4 }
+							}
+							remove_core = PREV
+							add_core = ROOT
+							cede_province = ROOT
+						}
 					}
 				}
 				REB = {
@@ -495,7 +531,7 @@ country_event = {
 				}
 			}
 		}
-		
+
 		hidden_effect = {
 			event_target:trade_outpost_province_4 = {
 				if = {
@@ -520,19 +556,19 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = subjects_expanded_trade_outpost_events1.EVTOPT5
-		
+
 		trigger = {
 			event_target:trade_outpost_province_5 = {
 				owned_by = ROOT
 				NOT = { has_province_flag = already_rejected_trade_outpost_province_@ROOT }
 			}
 		}
-		
+
 		ai_chance = { factor = 100 }
-		
+
 		add_treasury = -3000
 		if = {
 			limit = {
@@ -559,7 +595,8 @@ country_event = {
 				event_target:trade_outpost_province_5 = {
 					set_province_flag = release_trade_outpost_here_@ROOT
 				}
-				create_independent_estate = { estate = trade_outpost_release_estate government = republic government_reform = noble_elite_reform }
+				change_estate_land_share = { estate = trade_outpost_release_estate share = 1 }
+				create_independent_estate = { estate = trade_outpost_release_estate government = republic government_reform = merchants_reform }
 				event_target:trade_outpost_province_5 = {
 					clr_province_flag = release_trade_outpost_here_@ROOT
 					owner = {
@@ -570,6 +607,14 @@ country_event = {
 							}
 						}
 						add_truce_with = ROOT
+						every_owned_province = {
+							limit = {
+								NOT = { province_id = event_target:trade_outpost_province_5 }
+							}
+							remove_core = PREV
+							add_core = ROOT
+							cede_province = ROOT
+						}
 					}
 				}
 				REB = {
@@ -577,7 +622,7 @@ country_event = {
 				}
 			}
 		}
-		
+
 		hidden_effect = {
 			event_target:trade_outpost_province_5 = {
 				if = {
@@ -602,10 +647,10 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = subjects_expanded_trade_outpost_events1.EVTOPT6
-		
+
 		trigger = {
 			any_owned_province = {
 				is_in_selected_trade_outpost_region_or_area = yes
@@ -627,11 +672,11 @@ country_event = {
 				}
 			}
 		}
-		
+
 		ai_chance = { factor = 0 }
-		
+
 		country_event = { id = subjects_expanded_trade_outpost_events.2 }
-		
+
 		hidden_effect = {
 			event_target:trade_outpost_province_1 = {
 				set_province_flag = already_rejected_trade_outpost_province_@ROOT
@@ -650,12 +695,12 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = subjects_expanded_trade_outpost_events1.EVTOPT7
-		
+
 		ai_chance = { factor = 1 }
-		
+
 		hidden_effect = {
 			clear_selected_trade_outpost_region_or_area = yes
 			every_province = {
@@ -679,9 +724,9 @@ country_event = {
 	title = subjects_expanded_trade_outpost_events.EVTNAME1
 	desc = subjects_expanded_trade_outpost_events.EVTDESC1
 	picture = CITY_VIEW_eventPicture
-	
+
 	is_triggered_only = yes
-	
+
 	immediate = {
 		hidden_effect = {
 			random_owned_province = {
@@ -866,19 +911,19 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = subjects_expanded_trade_outpost_events1.EVTOPT1
-		
+
 		trigger = {
 			event_target:trade_outpost_province_1 = {
 				owned_by = ROOT
 				NOT = { has_province_flag = already_rejected_trade_outpost_province_@ROOT }
 			}
 		}
-		
+
 		ai_chance = { factor = 100 }
-		
+
 		add_treasury = -3000
 		if = {
 			limit = {
@@ -905,7 +950,8 @@ country_event = {
 				event_target:trade_outpost_province_1 = {
 					set_province_flag = release_trade_outpost_here_@ROOT
 				}
-				create_independent_estate = { estate = trade_outpost_release_estate government = republic government_reform = noble_elite_reform }
+				change_estate_land_share = { estate = trade_outpost_release_estate share = 1 }
+				create_independent_estate = { estate = trade_outpost_release_estate government = republic government_reform = merchants_reform }
 				event_target:trade_outpost_province_1 = {
 					clr_province_flag = release_trade_outpost_here_@ROOT
 					owner = {
@@ -916,6 +962,14 @@ country_event = {
 							}
 						}
 						add_truce_with = ROOT
+						every_owned_province = {
+							limit = {
+								NOT = { province_id = event_target:trade_outpost_province_1 }
+							}
+							remove_core = PREV
+							add_core = ROOT
+							cede_province = ROOT
+						}
 					}
 				}
 				REB = {
@@ -923,7 +977,7 @@ country_event = {
 				}
 			}
 		}
-		
+
 		hidden_effect = {
 			event_target:trade_outpost_province_1 = {
 				if = {
@@ -948,19 +1002,19 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = subjects_expanded_trade_outpost_events1.EVTOPT2
-		
+
 		trigger = {
 			event_target:trade_outpost_province_2 = {
 				owned_by = ROOT
 				NOT = { has_province_flag = already_rejected_trade_outpost_province_@ROOT }
 			}
 		}
-		
+
 		ai_chance = { factor = 100 }
-		
+
 		add_treasury = -3000
 		if = {
 			limit = {
@@ -987,7 +1041,8 @@ country_event = {
 				event_target:trade_outpost_province_2 = {
 					set_province_flag = release_trade_outpost_here_@ROOT
 				}
-				create_independent_estate = { estate = trade_outpost_release_estate government = republic government_reform = noble_elite_reform }
+				change_estate_land_share = { estate = trade_outpost_release_estate share = 1 }
+				create_independent_estate = { estate = trade_outpost_release_estate government = republic government_reform = merchants_reform }
 				event_target:trade_outpost_province_2 = {
 					clr_province_flag = release_trade_outpost_here_@ROOT
 					owner = {
@@ -998,6 +1053,14 @@ country_event = {
 							}
 						}
 						add_truce_with = ROOT
+						every_owned_province = {
+							limit = {
+								NOT = { province_id = event_target:trade_outpost_province_2 }
+							}
+							remove_core = PREV
+							add_core = ROOT
+							cede_province = ROOT
+						}
 					}
 				}
 				REB = {
@@ -1005,7 +1068,7 @@ country_event = {
 				}
 			}
 		}
-		
+
 		hidden_effect = {
 			event_target:trade_outpost_province_2 = {
 				if = {
@@ -1030,19 +1093,19 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = subjects_expanded_trade_outpost_events1.EVTOPT3
-		
+
 		trigger = {
 			event_target:trade_outpost_province_3 = {
 				owned_by = ROOT
 				NOT = { has_province_flag = already_rejected_trade_outpost_province_@ROOT }
 			}
 		}
-		
+
 		ai_chance = { factor = 100 }
-		
+
 		add_treasury = -3000
 		if = {
 			limit = {
@@ -1069,7 +1132,8 @@ country_event = {
 				event_target:trade_outpost_province_3 = {
 					set_province_flag = release_trade_outpost_here_@ROOT
 				}
-				create_independent_estate = { estate = trade_outpost_release_estate government = republic government_reform = noble_elite_reform }
+				change_estate_land_share = { estate = trade_outpost_release_estate share = 1 }
+				create_independent_estate = { estate = trade_outpost_release_estate government = republic government_reform = merchants_reform }
 				event_target:trade_outpost_province_3 = {
 					clr_province_flag = release_trade_outpost_here_@ROOT
 					owner = {
@@ -1080,6 +1144,14 @@ country_event = {
 							}
 						}
 						add_truce_with = ROOT
+						every_owned_province = {
+							limit = {
+								NOT = { province_id = event_target:trade_outpost_province_3 }
+							}
+							remove_core = PREV
+							add_core = ROOT
+							cede_province = ROOT
+						}
 					}
 				}
 				REB = {
@@ -1087,7 +1159,7 @@ country_event = {
 				}
 			}
 		}
-		
+
 		hidden_effect = {
 			event_target:trade_outpost_province_3 = {
 				if = {
@@ -1112,19 +1184,19 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = subjects_expanded_trade_outpost_events1.EVTOPT4
-		
+
 		trigger = {
 			event_target:trade_outpost_province_4 = {
 				owned_by = ROOT
 				NOT = { has_province_flag = already_rejected_trade_outpost_province_@ROOT }
 			}
 		}
-		
+
 		ai_chance = { factor = 100 }
-		
+
 		add_treasury = -3000
 		if = {
 			limit = {
@@ -1151,7 +1223,8 @@ country_event = {
 				event_target:trade_outpost_province_4 = {
 					set_province_flag = release_trade_outpost_here_@ROOT
 				}
-				create_independent_estate = { estate = trade_outpost_release_estate government = republic government_reform = noble_elite_reform }
+				change_estate_land_share = { estate = trade_outpost_release_estate share = 1 }
+				create_independent_estate = { estate = trade_outpost_release_estate government = republic government_reform = merchants_reform }
 				event_target:trade_outpost_province_4 = {
 					clr_province_flag = release_trade_outpost_here_@ROOT
 					owner = {
@@ -1162,6 +1235,14 @@ country_event = {
 							}
 						}
 						add_truce_with = ROOT
+						every_owned_province = {
+							limit = {
+								NOT = { province_id = event_target:trade_outpost_province_4 }
+							}
+							remove_core = PREV
+							add_core = ROOT
+							cede_province = ROOT
+						}
 					}
 				}
 				REB = {
@@ -1169,7 +1250,7 @@ country_event = {
 				}
 			}
 		}
-		
+
 		hidden_effect = {
 			event_target:trade_outpost_province_4 = {
 				if = {
@@ -1194,19 +1275,19 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = subjects_expanded_trade_outpost_events1.EVTOPT5
-		
+
 		trigger = {
 			event_target:trade_outpost_province_5 = {
 				owned_by = ROOT
 				NOT = { has_province_flag = already_rejected_trade_outpost_province_@ROOT }
 			}
 		}
-		
+
 		ai_chance = { factor = 100 }
-		
+
 		add_treasury = -3000
 		if = {
 			limit = {
@@ -1233,7 +1314,8 @@ country_event = {
 				event_target:trade_outpost_province_5 = {
 					set_province_flag = release_trade_outpost_here_@ROOT
 				}
-				create_independent_estate = { estate = trade_outpost_release_estate government = republic government_reform = noble_elite_reform }
+				change_estate_land_share = { estate = trade_outpost_release_estate share = 1 }
+				create_independent_estate = { estate = trade_outpost_release_estate government = republic government_reform = merchants_reform }
 				event_target:trade_outpost_province_5 = {
 					clr_province_flag = release_trade_outpost_here_@ROOT
 					owner = {
@@ -1244,6 +1326,14 @@ country_event = {
 							}
 						}
 						add_truce_with = ROOT
+						every_owned_province = {
+							limit = {
+								NOT = { province_id = event_target:trade_outpost_province_5 }
+							}
+							remove_core = PREV
+							add_core = ROOT
+							cede_province = ROOT
+						}
 					}
 				}
 				REB = {
@@ -1251,7 +1341,7 @@ country_event = {
 				}
 			}
 		}
-		
+
 		hidden_effect = {
 			event_target:trade_outpost_province_5 = {
 				if = {
@@ -1276,10 +1366,10 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = subjects_expanded_trade_outpost_events1.EVTOPT6
-		
+
 		trigger = {
 			any_owned_province = {
 				is_in_selected_trade_outpost_region_or_area = yes
@@ -1301,11 +1391,11 @@ country_event = {
 				}
 			}
 		}
-		
+
 		ai_chance = { factor = 0 }
-		
+
 		country_event = { id = subjects_expanded_trade_outpost_events.1 }
-		
+
 		hidden_effect = {
 			event_target:trade_outpost_province_1 = {
 				set_province_flag = already_rejected_trade_outpost_province_@ROOT
@@ -1324,12 +1414,12 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = subjects_expanded_trade_outpost_events1.EVTOPT7
-		
+
 		ai_chance = { factor = 1 }
-		
+
 		hidden_effect = {
 			clear_selected_trade_outpost_region_or_area = yes
 			every_province = {
@@ -1353,23 +1443,23 @@ country_event = {
 	title = subjects_expanded_trade_outpost_events.EVTNAME3
 	desc = subjects_expanded_trade_outpost_events.EVTDESC3
 	picture = GOOD_WITH_MONARCH_eventPicture
-	
+
 	major = yes
-	
+
 	trigger = {
 		is_subject_of_type = trade_outpost
 		num_of_cities = 2
 	}
-	
+
 	mean_time_to_happen = {
 		months = 1
 	}
-	
+
 	option = {
 		name = subjects_expanded_trade_outpost_events3.EVTOPT1
-		
+
 		ai_chance = { factor = 100 }
-		
+
 		overlord = {
 			grant_independence = yes
 		}
@@ -1381,14 +1471,14 @@ country_event = {
 	title = subjects_expanded_trade_outpost_events.EVTNAME4
 	desc = subjects_expanded_trade_outpost_events.EVTDESC4
 	picture = BAD_WITH_MONARCH_eventPicture
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = subjects_expanded_trade_outpost_events4.EVTOPT1
-		
+
 		ai_chance = { factor = 100 }
-		
+
 		tooltip = {
 			FROM = { grant_independence = yes }
 		}
@@ -1400,9 +1490,9 @@ country_event = {
 	title = subjects_expanded_trade_outpost_events.EVTNAME5
 	desc = subjects_expanded_trade_outpost_events.EVTDESC5
 	picture = BAD_WITH_MONARCH_eventPicture
-	
+
 	hidden = yes
-	
+
 	trigger = {
 		OR = {
 			any_subject_country = {
@@ -1430,11 +1520,11 @@ country_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 1
 	}
-	
+
 	immediate = {
 		hidden_effect = {
 			if = {
@@ -1495,10 +1585,10 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = subjects_expanded_trade_outpost_events5.EVTOPT1
-		
+
 		ai_chance = { factor = 100 }
 	}
 }

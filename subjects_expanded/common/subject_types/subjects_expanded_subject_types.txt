@@ -2470,6 +2470,7 @@ muslim_tributary_vassal = {
 		}
 		OR = {
 			government = monarchy
+			has_reform = ottoman_government
 			government = theocracy
 		}
 	}

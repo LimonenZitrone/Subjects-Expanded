@@ -852,3 +852,42 @@ country_event = {
 		ai_chance = { factor = 100 }
 	}
 }
+
+# remove custom name
+country_event = {
+	id = subjects_expanded_dominion_events.11
+	title = subjects_expanded_dominion_events.EVTNAME11
+	desc = subjects_expanded_dominion_events.EVTDESC11
+	picture = DIPLOMACY_eventPicture
+
+	hidden = yes
+
+	trigger = {
+		was_dominion_tag = yes
+		NOT = { is_dominion_tag = yes }
+		OR = {
+			has_country_flag = renamed_dominion_accordingly_to_free
+			any_country = {
+				ROOT = {
+					has_country_flag = renamed_dominion_accordingly_to_@PREV
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	immediate = {
+		hidden_effect = {
+			restore_country_name = yes
+		}
+	}
+
+	option = {
+		name = subjects_expanded_dominion_events11.EVTOPT1
+
+		ai_chance = { factor = 100 }
+	}
+}

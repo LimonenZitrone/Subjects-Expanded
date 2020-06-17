@@ -10,6 +10,18 @@ is_dominion_tag = {
 	}
 }
 
+was_dominion_tag = {
+	OR = {
+		was_dominion_tag_in_east_africa = yes
+		was_dominion_tag_in_indochina = yes
+		was_dominion_tag_in_east_indies = yes
+		was_dominion_tag_in_india = yes
+		was_dominion_tag_in_south_africa = yes
+		was_dominion_tag_in_west_africa = yes
+		was_dominion_tag_in_philippines = yes
+	}
+}
+
 is_former_autonomous_dominion = {
 	custom_trigger_tooltip = {
 		tooltip = THIS_IS_FORMER_AUTONOMOUS_DOMINION
@@ -110,5 +122,95 @@ is_dominion_tag_in_philippines = {
 		tag = DP7
 		tag = DP8
 		tag = DP9
+	}
+}
+
+was_dominion_tag_in_east_africa = {
+	OR = {
+		was_tag = DA1
+		was_tag = DA2
+		was_tag = DA3
+		was_tag = DA4
+		was_tag = DA5
+		was_tag = DA6
+		was_tag = DA7
+	}
+}
+
+was_dominion_tag_in_indochina = {
+	OR = {
+		was_tag = DC1
+		was_tag = DC2
+		was_tag = DC3
+		was_tag = DC4
+		was_tag = DC5
+		was_tag = DC6
+		was_tag = DC7
+	}
+}
+
+was_dominion_tag_in_east_indies = {
+	OR = {
+		was_tag = DE1
+		was_tag = DE2
+		was_tag = DE3
+		was_tag = DE4
+		was_tag = DE5
+		was_tag = DE6
+		was_tag = DE7
+		was_tag = DE8
+		was_tag = DE9
+	}
+}
+
+was_dominion_tag_in_india = {
+	OR = {
+		was_tag = DI1
+		was_tag = DI2
+		was_tag = DI3
+		was_tag = DI4
+		was_tag = DI5
+		was_tag = DI6
+		was_tag = DI7
+		was_tag = DI8
+		was_tag = DI9
+	}
+}
+
+was_dominion_tag_in_south_africa = {
+	OR = {
+		was_tag = DS1
+		was_tag = DS2
+		was_tag = DS3
+		was_tag = DS4
+		was_tag = DS5
+		was_tag = DS6
+		was_tag = DS7
+	}
+}
+
+was_dominion_tag_in_west_africa = {
+	OR = {
+		was_tag = DW1
+		was_tag = DW2
+		was_tag = DW3
+		was_tag = DW4
+		was_tag = DW5
+		was_tag = DW6
+		was_tag = DW7
+	}
+}
+
+was_dominion_tag_in_philippines = {
+	OR = {
+		was_tag = DP1
+		was_tag = DP2
+		was_tag = DP3
+		was_tag = DP4
+		was_tag = DP5
+		was_tag = DP6
+		was_tag = DP7
+		was_tag = DP8
+		was_tag = DP9
 	}
 }

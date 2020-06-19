@@ -3428,6 +3428,10 @@ integrated_personal_union = {
 	diplomacy_view_class = 1
 
 	restoration_cb = cb_restore_personal_union
+
+	modifier_subject = {
+		modifier = integrated_personal_union_modifier
+	}
 }
 
 brother_kingdom = {

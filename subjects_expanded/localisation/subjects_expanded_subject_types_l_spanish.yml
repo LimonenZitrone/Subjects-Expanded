@@ -146,7 +146,7 @@
  integrated_personal_union_title: "Integrated Personal Union"
  integrated_personal_union_title_plural: "Integrated Personal Unions"
  integrated_personal_union_is_our: "§Y$NAME$§! is the junior partner in an Integrated Personal Union under us."
- integrated_personal_union_long_desc: "An Integrated Personal Union behaves like a normal personal union, but cannot be integrated and its development affects its liberty desire. However there's a §Y10%§! chance every §Y10 years§! that it is integrated automatically for a cost of §Y100§! £dip£, if its liberty desire is below §Y50%§!.\n"
+ integrated_personal_union_long_desc: "An Integrated Personal Union behaves like a normal personal union, but cannot be integrated and its development affects its liberty desire. However there's a §Y10%§! chance every §Y10 years§! that it is integrated automatically for a cost of §Y100§! £dip£, if its liberty desire is below §Y50%§!. Furthermore an Integrated Personal Union that is an elector halfs the penalty for being a subject for the imperial election reasons.\n"
  integrated_personal_union_no_overlord_dow: "You cannot declare war on your own Integrated Personal Union."
 
  brother_kingdom_title: "Brother Kingdom"

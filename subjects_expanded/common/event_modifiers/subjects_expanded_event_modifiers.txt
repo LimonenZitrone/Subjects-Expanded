@@ -857,6 +857,10 @@ improved_trade_outpost_overlord_modifier = {
 }
 
 # Subject Type: Integrated Personal Union
+integrated_personal_union_modifier = {
+	legitimate_subject_elector = 25
+}
+
 increase_chance_to_integrate_integrated_personal_union_modifier = {
 	development_cost = -0.15
 }

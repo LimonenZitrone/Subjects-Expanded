@@ -763,6 +763,7 @@ revolution_subject_modifier = {
 	naval_forcelimit_modifier = 0.2
 	papal_influence = -50
 	election_cycle = 10000
+	yearly_revolutionary_zeal = 0.25
 }
 
 revolution_subject_overlord_no_revolution_target_modifier = {
@@ -775,6 +776,7 @@ revolution_subject_overlord_modifier = {
 	ae_impact = -0.025
 	legitimacy = 0.1
 	republican_tradition = 0.05
+	yearly_revolutionary_zeal = 0.5
 }
 
 revolution_subject_overlord_no_diplomatic_relation_slot_modifier = {

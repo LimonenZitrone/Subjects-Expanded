@@ -2995,6 +2995,7 @@ revolution_subject = {
 	base_liberty_desire = -20.0
 	liberty_desire_negative_prestige = 1.0
 	liberty_desire_development_ratio = 0.15
+	liberty_desire_revolution = -10
 	pays_overlord = 1.0
 	forcelimit_bonus = 1.0
 	forcelimit_to_overlord = 1.0

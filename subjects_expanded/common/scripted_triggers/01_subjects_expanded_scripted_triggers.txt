@@ -159,7 +159,21 @@ is_possible_subject_of_subject_type_dominion_tc = {
 	}
 	total_development = 100
 	capital_scope = {
-		is_node_in_trade_company_region = yes
+		OR = {
+			trade_company_region = trade_company_west_india
+			trade_company_region = trade_company_deccan
+			trade_company_region = trade_company_east_india
+			trade_company_region = trade_company_coromandel
+			trade_company_region = trade_company_north_india
+			trade_company_region = trade_company_indonesia
+			trade_company_region = trade_company_moluccas
+			trade_company_region = trade_company_indochina
+			trade_company_region = trade_company_burma
+			trade_company_region = trade_company_west_africa
+			trade_company_region = trade_company_south_africa
+			trade_company_region = trade_company_east_africa
+			trade_company_region = trade_company_philippines
+		}
 	}
 	# Capital in Trade Range of possible Overlord has to be checked additionally
 }
@@ -184,7 +198,21 @@ is_possible_subject_of_subject_type_autonomous_dominion_tc = {
 	is_dominion_or_similar_subject = yes
 	total_development = 300
 	capital_scope = {
-		is_node_in_trade_company_region = yes
+		OR = {
+			trade_company_region = trade_company_west_india
+			trade_company_region = trade_company_deccan
+			trade_company_region = trade_company_east_india
+			trade_company_region = trade_company_coromandel
+			trade_company_region = trade_company_north_india
+			trade_company_region = trade_company_indonesia
+			trade_company_region = trade_company_moluccas
+			trade_company_region = trade_company_indochina
+			trade_company_region = trade_company_burma
+			trade_company_region = trade_company_west_africa
+			trade_company_region = trade_company_south_africa
+			trade_company_region = trade_company_east_africa
+			trade_company_region = trade_company_philippines
+		}
 	}
 	# Capital in Trade Range of possible Overlord has to be checked additionally
 }

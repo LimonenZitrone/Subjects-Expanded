@@ -86,7 +86,7 @@ If a subject gives an additional merchant, the bonuses it gives to its overlord 
 [list]
 [*] Dominions can only be established diplomatically or by decision
 [*] Dominions have a max government rank of 1 (Duchy)
-[*] Dominions can be released in trade company regions by decision
+[*] Dominions can be released in the Indian, East Africa, West Africa, South Africa, Philippines, East Indies and Indochinese trade company regions by decision
 [*] Dominions in trade company regions gain a bonus on national unrest, institution spread, trade power, religious unity, max amount of states, tolerance of heretics and heathens, min autonomy and amount of accepted cultures
 [*] Dominions in trade company regions receive a malus on missionary strength, tax income, sailors and manpower
 [*] Dominions in trade company regions grant their overlord a bonus on naval forcelimit based on their amount of provinces

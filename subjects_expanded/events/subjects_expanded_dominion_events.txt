@@ -15,14 +15,28 @@ country_event = {
 			NOT = { has_country_flag = was_dominion_subject }
 			AND = {
 				capital_scope = {
-					NOT = { continent = north_america }
-					NOT = { continent = south_america }
-					is_node_in_trade_company_region = yes
+					OR = {
+						trade_company_region = trade_company_west_india
+						trade_company_region = trade_company_deccan
+						trade_company_region = trade_company_east_india
+						trade_company_region = trade_company_coromandel
+						trade_company_region = trade_company_north_india
+						trade_company_region = trade_company_indonesia
+						trade_company_region = trade_company_moluccas
+						trade_company_region = trade_company_indochina
+						trade_company_region = trade_company_burma
+						trade_company_region = trade_company_west_africa
+						trade_company_region = trade_company_south_africa
+						trade_company_region = trade_company_east_africa
+						trade_company_region = trade_company_philippines
+					}
 				}
 				OR = {
 					is_subject_of_type = dominion
 					is_subject_of_type = autonomous_dominion
 				}
+				NOT = { is_subject_of_type = dominion_tc }
+				NOT = { is_subject_of_type = autonomous_dominion_tc }
 			}
 		}
 	}
@@ -47,9 +61,21 @@ country_event = {
 			if = {
 				limit = {
 					capital_scope = {
-						NOT = { continent = north_america }
-						NOT = { continent = south_america }
-						is_node_in_trade_company_region = yes
+						OR = {
+							trade_company_region = trade_company_west_india
+							trade_company_region = trade_company_deccan
+							trade_company_region = trade_company_east_india
+							trade_company_region = trade_company_coromandel
+							trade_company_region = trade_company_north_india
+							trade_company_region = trade_company_indonesia
+							trade_company_region = trade_company_moluccas
+							trade_company_region = trade_company_indochina
+							trade_company_region = trade_company_burma
+							trade_company_region = trade_company_west_africa
+							trade_company_region = trade_company_south_africa
+							trade_company_region = trade_company_east_africa
+							trade_company_region = trade_company_philippines
+						}
 					}
 				}
 				if = {
@@ -127,6 +153,7 @@ country_event = {
 			NOT = { superregion = china_superregion }
 			NOT = { region = japan_region }
 			NOT = { continent = oceania }
+			NOT = { continent = africa }
 		}
 		NOT = { is_dominion_tag = yes }
 		any_subject_country = {
@@ -301,6 +328,7 @@ country_event = {
 			NOT = { superregion = china_superregion }
 			NOT = { region = japan_region }
 			NOT = { continent = oceania }
+			NOT = { continent = africa }
 		}
 		NOT = { is_dominion_tag = yes }
 		any_subject_country = {
@@ -397,6 +425,7 @@ country_event = {
 			NOT = { superregion = china_superregion }
 			NOT = { region = japan_region }
 			NOT = { continent = oceania }
+			NOT = { continent = africa }
 		}
 		NOT = { is_dominion_tag = yes }
 		any_subject_country = {
@@ -493,6 +522,7 @@ country_event = {
 			NOT = { superregion = china_superregion }
 			NOT = { region = japan_region }
 			NOT = { continent = oceania }
+			NOT = { continent = africa }
 		}
 		NOT = { is_dominion_tag = yes }
 		any_subject_country = {
@@ -561,6 +591,7 @@ country_event = {
 			NOT = { superregion = china_superregion }
 			NOT = { region = japan_region }
 			NOT = { continent = oceania }
+			NOT = { continent = africa }
 		}
 		NOT = { is_dominion_tag = yes }
 		any_subject_country = {
@@ -629,6 +660,7 @@ country_event = {
 			NOT = { superregion = china_superregion }
 			NOT = { region = japan_region }
 			NOT = { continent = oceania }
+			NOT = { continent = africa }
 		}
 		NOT = { is_dominion_tag = yes }
 		any_subject_country = {
@@ -697,6 +729,7 @@ country_event = {
 			NOT = { superregion = china_superregion }
 			NOT = { region = japan_region }
 			NOT = { continent = oceania }
+			NOT = { continent = africa }
 		}
 		NOT = { is_dominion_tag = yes }
 		any_subject_country = {

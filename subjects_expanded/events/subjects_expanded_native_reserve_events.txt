@@ -25,6 +25,7 @@ country_event = {
 					NOT = { continent = north_america }
 					NOT = { continent = south_america }
 					NOT = { continent = oceania }
+					NOT = { continent = africa }
 				}
 				any_subject_country = {
 					is_subject_of_type = native_reserve
@@ -36,6 +37,7 @@ country_event = {
 					NOT = { continent = north_america }
 					NOT = { continent = south_america }
 					NOT = { continent = oceania }
+					NOT = { continent = africa }
 				}
 			}
 		}
@@ -68,6 +70,7 @@ country_event = {
 					NOT = { continent = north_america }
 					NOT = { continent = south_america }
 					NOT = { continent = oceania }
+					NOT = { continent = africa }
 				}
 				any_subject_country = {
 					is_subject_of_type = native_reserve
@@ -88,6 +91,7 @@ country_event = {
 						NOT = { continent = north_america }
 						NOT = { continent = south_america }
 						NOT = { continent = oceania }
+						NOT = { continent = africa }
 					}
 				}
 				grant_independence = yes

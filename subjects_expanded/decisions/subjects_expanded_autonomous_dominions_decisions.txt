@@ -16,6 +16,7 @@ country_decisions = {
 				NOT = { superregion = china_superregion }
 				NOT = { region = japan_region }
 				NOT = { continent = oceania }
+				NOT = { continent = africa }
 			}
 			OR = {
 				AND = {
@@ -1643,6 +1644,7 @@ country_decisions = {
 				NOT = { superregion = china_superregion }
 				NOT = { region = japan_region }
 				NOT = { continent = oceania }
+				NOT = { continent = africa }
 			}
 			OR = {
 				AND = {
@@ -2720,6 +2722,7 @@ country_decisions = {
 				NOT = { superregion = china_superregion }
 				NOT = { region = japan_region }
 				NOT = { continent = oceania }
+				NOT = { continent = africa }
 			}
 			OR = {
 				AND = {
@@ -3469,6 +3472,7 @@ country_decisions = {
 				NOT = { superregion = china_superregion }
 				NOT = { region = japan_region }
 				NOT = { continent = oceania }
+				NOT = { continent = africa }
 			}
 			OR = {
 				AND = {
@@ -4101,6 +4105,7 @@ country_decisions = {
 				NOT = { superregion = china_superregion }
 				NOT = { region = japan_region }
 				NOT = { continent = oceania }
+				NOT = { continent = africa }
 			}
 			OR = {
 				AND = {
@@ -4729,6 +4734,7 @@ country_decisions = {
 				NOT = { superregion = china_superregion }
 				NOT = { region = japan_region }
 				NOT = { continent = oceania }
+				NOT = { continent = africa }
 			}
 			OR = {
 				AND = {
@@ -5357,6 +5363,7 @@ country_decisions = {
 				NOT = { superregion = china_superregion }
 				NOT = { region = japan_region }
 				NOT = { continent = oceania }
+				NOT = { continent = africa }
 			}
 			OR = {
 				AND = {

@@ -132,7 +132,21 @@ increase_colonial_autonomy = {
 					limit = {
 						FROM = {
 							capital_scope = {
-								is_node_in_trade_company_region = yes
+								OR = {
+									trade_company_region = trade_company_west_india
+									trade_company_region = trade_company_deccan
+									trade_company_region = trade_company_east_india
+									trade_company_region = trade_company_coromandel
+									trade_company_region = trade_company_north_india
+									trade_company_region = trade_company_indonesia
+									trade_company_region = trade_company_moluccas
+									trade_company_region = trade_company_indochina
+									trade_company_region = trade_company_burma
+									trade_company_region = trade_company_west_africa
+									trade_company_region = trade_company_south_africa
+									trade_company_region = trade_company_east_africa
+									trade_company_region = trade_company_philippines
+								}
 							}
 						}
 					}
@@ -153,7 +167,21 @@ increase_colonial_autonomy = {
 					limit = {
 						FROM = {
 							capital_scope = {
-								is_node_in_trade_company_region = yes
+								OR = {
+									trade_company_region = trade_company_west_india
+									trade_company_region = trade_company_deccan
+									trade_company_region = trade_company_east_india
+									trade_company_region = trade_company_coromandel
+									trade_company_region = trade_company_north_india
+									trade_company_region = trade_company_indonesia
+									trade_company_region = trade_company_moluccas
+									trade_company_region = trade_company_indochina
+									trade_company_region = trade_company_burma
+									trade_company_region = trade_company_west_africa
+									trade_company_region = trade_company_south_africa
+									trade_company_region = trade_company_east_africa
+									trade_company_region = trade_company_philippines
+								}
 							}
 						}
 					}
@@ -616,6 +644,7 @@ decrease_colonial_autonomy = {
 						NOT = { superregion = china_superregion }
 						NOT = { region = japan_region }
 						NOT = { continent = oceania }
+						NOT = { continent = africa }
 					}
 				}
 				is_autonomous_dominion_or_similar_subject = yes
@@ -636,6 +665,7 @@ decrease_colonial_autonomy = {
 							NOT = { superregion = china_superregion }
 							NOT = { region = japan_region }
 							NOT = { continent = oceania }
+							NOT = { continent = africa }
 						}
 					}
 					is_autonomous_dominion_or_similar_subject = yes
@@ -666,6 +696,7 @@ decrease_colonial_autonomy = {
 								NOT = { superregion = china_superregion }
 								NOT = { region = japan_region }
 								NOT = { continent = oceania }
+								NOT = { continent = africa }
 							}
 						}
 						is_autonomous_dominion_or_similar_subject = yes
@@ -688,7 +719,21 @@ decrease_colonial_autonomy = {
 					limit = {
 						FROM = {
 							capital_scope = {
-								is_node_in_trade_company_region = yes
+								OR = {
+									trade_company_region = trade_company_west_india
+									trade_company_region = trade_company_deccan
+									trade_company_region = trade_company_east_india
+									trade_company_region = trade_company_coromandel
+									trade_company_region = trade_company_north_india
+									trade_company_region = trade_company_indonesia
+									trade_company_region = trade_company_moluccas
+									trade_company_region = trade_company_indochina
+									trade_company_region = trade_company_burma
+									trade_company_region = trade_company_west_africa
+									trade_company_region = trade_company_south_africa
+									trade_company_region = trade_company_east_africa
+									trade_company_region = trade_company_philippines
+								}
 							}
 						}
 					}

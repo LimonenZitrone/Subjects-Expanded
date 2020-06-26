@@ -600,6 +600,7 @@ establish_trade_outpost = {
 					NOT = { superregion = china_superregion }
 					NOT = { region = japan_region }
 					NOT = { continent = oceania }
+					NOT = { continent = africa }
 				}
 			}
 		}
@@ -886,6 +887,7 @@ ask_to_become_trade_outpost = {
 							NOT = { superregion = china_superregion }
 							NOT = { region = japan_region }
 							NOT = { continent = oceania }
+							NOT = { continent = africa }
 						}
 					}
 				}

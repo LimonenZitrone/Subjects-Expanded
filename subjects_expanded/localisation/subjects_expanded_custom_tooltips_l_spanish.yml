@@ -66,6 +66,8 @@
 
  CANNOT_CALL_PAPAL_SANCTUARY_AGAINST_ITS_OVERLORD: "You cannot call a Papal Sanctuary to arms against its overlord, if that is the Curia Controller."
 
+ CANNOT_DECLARE_WAR_ON_COUNTRY_THAT_BROTHER_KINGDOM_IS_AT_WAR_WITH: "You cannot declare war on a country that already is at war with one of your Brother Kingdoms."
+
  # New Diplomatic Actions:
  DID_NOT_LOWER_DEVELOPMENT_WITHIN_LAST_10_YEARS: "Did NOT reduce the development of an autonomous dominion within the last §Y10 years§!"
  DID_NOT_REPLACE_CURRENT_RULER: "We did NOT help §Y[From.Monarch.GetName]§! to ascend the throne"
@@ -103,6 +105,8 @@
  DID_NOT_INCREASE_HORDE_UNITY_WITH_THIS_PAGAN_CHIEFDOM_WITHIN_LAST_5_YEARS: "Did NOT sacrifice the weak of §Y[This.GetName]§! within the last §Y5 years§!"
 
  DID_NOT_REQUEST_CURIA_MONEY_FROM_THIS_RULER: "Did NOT request a donation from §Y[This.Monarch.GetName]§!"
+
+ DID_NOT_DECLINE_A_CALL_TO_ARMS_OF_A_SUBJECT_WITHIN_LAST_1_YEAR: "Did NOT decline a call to arms of §Y[Root.GetName]§! within the year"
 
  # Decisions:
  ALL_PROVINCES_IN_INDIAN_TRADE_COMPANY_REGIONS_CEDED_TO_DOMINION: "\nAll our provinces in [Root.GetIndianTradeCompanyRegionsSgPl] [Root.GetFirstIndianTradeCompanyRegionWeCede][Root.GetSecondIndianTradeCompanyRegionWeCede][Root.GetThirdIndianTradeCompanyRegionWeCede][Root.GetFourthIndianTradeCompanyRegionWeCede][Root.GetFifthIndianTradeCompanyRegionWeCede] are ceded to our dominion \n[Root.GetCreatedADNameIndia], which is released there. \n\nThe name might be adapted to your country's adjective after release."

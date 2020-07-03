@@ -1692,7 +1692,7 @@ sister_republic_ask_overlord_to_join_war = {
 		}
 		FROM = {
 			custom_trigger_tooltip = {
-				tooltip = DID_NOT_DECLINE_A_CALL_TO_ARMY_OF_A_SISTER_REPUBLIC_WITHIN_LAST_1_YEAR
+				tooltip = DID_NOT_DECLINE_A_CALL_TO_ARMS_OF_A_SUBJECT_WITHIN_LAST_1_YEAR
 				OR = {
 					NOT = { has_country_flag = declined_sister_republic_offensive_call_to_arms }
 					had_country_flag = { flag = declined_sister_republic_offensive_call_to_arms days = 365 }
@@ -2052,7 +2052,28 @@ sister_republic_ask_overlord_to_join_war = {
 	}
 
 	ai_will_do = {
-		always = no
+		overlord = {
+			is_at_war = no
+		}
+		any_country = {
+			is_subject = no
+			is_in_war = {
+				defender_leader = THIS
+				attacker_leader = ROOT
+			}
+			war_score_against = { who = ROOT value = 25 }
+		}
+		NOT = {
+			calc_true_if = {
+				all_country = {
+					is_in_war = {
+						defender_leader = THIS
+						attacker_leader = ROOT
+					}
+				}
+				amount = 3
+			}
+		}
 	}
 }
 

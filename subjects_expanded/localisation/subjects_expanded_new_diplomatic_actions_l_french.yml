@@ -313,6 +313,12 @@
  make_personal_union_to_brother_kingdom_desc: "Do you want to make one of your sons to the ruler of §Y[From.GetName]§!? This will remove this son as possible heir to our throne, possibly reducing the risk of a split on the death of [Root.Monarch.GetName], and convert §Y[From.GetName]§! into a §YBrother Kingdom§!. \n[brother_kingdom_desc]"
  make_personal_union_to_brother_kingdom_tooltip: "Make your Personal Union §Y[From.GetName]§! to a §YBrother Kingdom§!.\n"
 
+ brother_kingdom_ask_overlord_to_join_war_title: "Ask for War Support"
+ brother_kingdom_ask_overlord_to_join_war_desc: "Ask §Y[From.GetName]§! to join all your offensive wars."
+ brother_kingdom_ask_overlord_to_join_war_tooltip: "Ask §Y[From.GetName]§! to join all your offensive wars.\n"
+ brother_kingdom_ask_overlord_to_join_war_alert_tooltip: "Ask for War Support"
+ brother_kingdom_ask_overlord_to_join_war_dialog: "§Y[From.GetName]§! wants us to join all their offensive wars. \nIf we accept, we will join their offensive wars as normal alliance. \nIf we decline, their liberty desire is changed by §R+10%§!. \n\nDo you want to accept?"
+
  brother_kingdom_become_independent_title: "Declare Independence"
  brother_kingdom_become_independent_desc: "Declare independent from your overlord §Y[From.GetName]§!. They can grant you independence or oppose that demand. The latter will lead to §RWAR§! with §Y[From.GetName]§!. \nFurthermore, this will change our stability by §R-1§!."
  brother_kingdom_become_independent_tooltip: "Declare independent from your overlord §Y[From.GetName]§!.\n"

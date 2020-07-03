@@ -123,6 +123,18 @@ declarewar = {
 			has_global_flag = dutch_province_subject_no_leader_election
 		}
 	}
+	condition = {
+		tooltip = CANNOT_DECLARE_WAR_ON_COUNTRY_THAT_BROTHER_KINGDOM_IS_AT_WAR_WITH
+		potential = {
+			any_subject_country = {
+				is_subject_of_type = brother_kingdom
+				war_with = FROM
+			}
+		}
+		allow = {
+			always = no
+		}
+	}
 	effect = {
 		if = {
 			limit = {
@@ -174,7 +186,7 @@ declarewar = {
 				country_event = { id = subjects_expanded_brother_kingdom_events.3 days = 70 }
 			}
 		}
-		
+
 		# Needed for Extended Timeline
 		if = {
 			limit = {
@@ -186,7 +198,7 @@ declarewar = {
 			}
 			set_country_flag = forcing_government
 		}
-		
+
 		# Needed for Missions Expanded
 		if = {
 			limit = {

@@ -66,6 +66,8 @@
 
  CANNOT_CALL_PAPAL_SANCTUARY_AGAINST_ITS_OVERLORD: "Ihr könnt ein Päpstliches Schutzgebiet nicht gegen seinen Lehnsherrn zu den Waffen rufen, wenn dieser Kontrolleur der Kurie ist."
 
+ CANNOT_DECLARE_WAR_ON_COUNTRY_THAT_BROTHER_KINGDOM_IS_AT_WAR_WITH: "Ihr könnt einem Land, mit dem sich eines Eurer Bruderkönigreiche im Krieg befindet, nicht den Krieg erklären."
+
  # New Diplomatic Actions:
  DID_NOT_LOWER_DEVELOPMENT_WITHIN_LAST_10_YEARS: "Hat in den letzten §Y10 Jahren§! NICHT die Entwicklung eines Autonomen Herrschaftsgebiets verringert"
  DID_NOT_REPLACE_CURRENT_RULER: "Wir haben §Y[From.Monarch.GetName]§! NICHT auf den Thron verholfen"
@@ -103,6 +105,8 @@
  DID_NOT_INCREASE_HORDE_UNITY_WITH_THIS_PAGAN_CHIEFDOM_WITHIN_LAST_5_YEARS: "Hat innerhalb der letzten §Y5 Jahre§! KEINE Schwachen aus §Y[This.GetName]§! geopfert"
 
  DID_NOT_REQUEST_CURIA_MONEY_FROM_THIS_RULER: "Hat KEINE Spende von §Y[This.Monarch.GetName]§! erbeten"
+
+ DID_NOT_DECLINE_A_CALL_TO_ARMS_OF_A_SUBJECT_WITHIN_LAST_1_YEAR: "Hat innerhalb des letzten Jahres KEINEN Ruf zu den Waffen von §Y[Root.GetName]§! abgelehnt"
 
  # Decisions:
  ALL_PROVINCES_IN_INDIAN_TRADE_COMPANY_REGIONS_CEDED_TO_DOMINION: "\nAlle unsere Provinzen in [Root.GetIndianTradeCompanyRegionsSgPl] [Root.GetFirstIndianTradeCompanyRegionWeCede][Root.GetSecondIndianTradeCompanyRegionWeCede][Root.GetThirdIndianTradeCompanyRegionWeCede][Root.GetFourthIndianTradeCompanyRegionWeCede][Root.GetFifthIndianTradeCompanyRegionWeCede] werden an unser dort entlassenes Herrschaftsgebiet \n[Root.GetCreatedADNameIndia] abgetreten. \n\nDer Name kann sich nach Entlassung an das Adjektiv Eures Landes anpassen."

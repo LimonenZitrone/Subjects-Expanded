@@ -2,6 +2,7 @@ name="Subjects Expanded"
 path="mod/subjects_expanded"
 dependencies={
 	"Missions Expanded"
+	"Missions Expanded (old)"
 	"Extended Timeline"
 }
 tags={

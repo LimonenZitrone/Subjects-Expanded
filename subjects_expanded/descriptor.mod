@@ -1,6 +1,7 @@
 name="Subjects Expanded"
 dependencies={
 	"Missions Expanded"
+	"Missions Expanded (old)"
 	"Extended Timeline"
 }
 tags={

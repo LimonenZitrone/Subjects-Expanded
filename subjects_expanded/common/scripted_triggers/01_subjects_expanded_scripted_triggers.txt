@@ -51,7 +51,7 @@ is_possible_subject_of_subject_type_protectorate = {
 	is_nomad = no
 	OR = {
 		PREV = { institution_difference = { who = PREV value = 3 } }
-		# THIS is at least 9 techs behind PREV
+		# THIS is at least 4 or 9 techs behind PREV
 		variable_arithmetic_trigger = {
 			export_to_variable = {
 				which = our_adm_tech_level
@@ -94,7 +94,18 @@ is_possible_subject_of_subject_type_protectorate = {
 			change_variable = { which = their_total_tech_level which = their_adm_tech_level }
 			change_variable = { which = their_total_tech_level which = their_dip_tech_level }
 			change_variable = { which = their_total_tech_level which = their_mil_tech_level }
-			change_variable = { which = their_total_tech_level value = -9 }
+			if = {
+				limit = {
+					started_in = 1444.11.11
+					NOT = { adm_tech = 33 }
+					NOT = { dip_tech = 33 }
+					NOT = { mil_tech = 33 }
+				}
+				change_variable = { which = their_total_tech_level value = -4 }
+			}
+			else = {
+				change_variable = { which = their_total_tech_level value = -9 }
+			}
 			check_variable = { which = their_total_tech_level which = our_total_tech_level }
 		}
 	}
@@ -234,7 +245,10 @@ is_possible_subject_of_subject_type_voivodeship = {
 	# PREVs in THIS scope refer to possible overlord
 	NOT = { is_subject_of_type = voivodeship }
 	is_subject_of = PREV
-	is_vassal_or_similar_subject = yes
+	OR = {
+		is_vassal_or_similar_subject = yes
+		is_subject_of_type = march
+	}
 	is_neighbor_of = PREV
 }
 
@@ -516,7 +530,10 @@ is_possible_subject_of_subject_type_persian_satrapy = {
 is_possible_subject_of_subject_type_naval_march = {
 	# PREVs in THIS scope refer to possible overlord
 	NOT = { is_subject_of_type = naval_march }
-	vassal_of = PREV
+	OR = {
+		vassal_of = PREV
+		march_of = PREV
+	}
 	num_of_ports = 1
 	primitives = no
 }

@@ -1229,10 +1229,42 @@ make_imperial_feud_subject_hre_member = {
 		}
 		imperial_influence = 5
 		FROM = {
-			years_in_vassalage_under = {
-				who = ROOT
-				years = 10
-				all_subject_country = yes
+			if = {
+				limit = {
+					has_dlc = "Emperor"
+				}
+				OR = {
+					AND = {
+						hre_reform_passed = emperor_reichsstabilitaet
+						years_in_vassalage_under = {
+							who = ROOT
+							years = 5
+							all_subject_country = yes
+						}
+					}
+					years_in_vassalage_under = {
+						who = ROOT
+						years = 10
+						all_subject_country = yes
+					}
+				}
+			}
+			else = {
+				OR = {
+					AND = {
+						hre_reform_passed = hofgericht
+						years_in_vassalage_under = {
+							who = ROOT
+							years = 5
+							all_subject_country = yes
+						}
+					}
+					years_in_vassalage_under = {
+						who = ROOT
+						years = 10
+						all_subject_country = yes
+					}
+				}
 			}
 		}
 		FROM = {
@@ -1270,10 +1302,42 @@ make_imperial_feud_subject_hre_member = {
 				}
 				imperial_influence = 5
 				FROM = {
-					years_in_vassalage_under = {
-						who = ROOT
-						years = 10
-						all_subject_country = yes
+					if = {
+						limit = {
+							has_dlc = "Emperor"
+						}
+						OR = {
+							AND = {
+								hre_reform_passed = emperor_reichsstabilitaet
+								years_in_vassalage_under = {
+									who = ROOT
+									years = 5
+									all_subject_country = yes
+								}
+							}
+							years_in_vassalage_under = {
+								who = ROOT
+								years = 10
+								all_subject_country = yes
+							}
+						}
+					}
+					else = {
+						OR = {
+							AND = {
+								hre_reform_passed = hofgericht
+								years_in_vassalage_under = {
+									who = ROOT
+									years = 5
+									all_subject_country = yes
+								}
+							}
+							years_in_vassalage_under = {
+								who = ROOT
+								years = 10
+								all_subject_country = yes
+							}
+						}
 					}
 				}
 				FROM = {
@@ -1325,10 +1389,42 @@ make_imperial_feud_subject_hre_member = {
 				}
 				imperial_influence = 5
 				FROM = {
-					years_in_vassalage_under = {
-						who = ROOT
-						years = 10
-						all_subject_country = yes
+					if = {
+						limit = {
+							has_dlc = "Emperor"
+						}
+						OR = {
+							AND = {
+								hre_reform_passed = emperor_reichsstabilitaet
+								years_in_vassalage_under = {
+									who = ROOT
+									years = 5
+									all_subject_country = yes
+								}
+							}
+							years_in_vassalage_under = {
+								who = ROOT
+								years = 10
+								all_subject_country = yes
+							}
+						}
+					}
+					else = {
+						OR = {
+							AND = {
+								hre_reform_passed = hofgericht
+								years_in_vassalage_under = {
+									who = ROOT
+									years = 5
+									all_subject_country = yes
+								}
+							}
+							years_in_vassalage_under = {
+								who = ROOT
+								years = 10
+								all_subject_country = yes
+							}
+						}
 					}
 				}
 				FROM = {
@@ -2634,7 +2730,7 @@ ask_for_imperial_feud_subject_hre_member = {
 		}
 		years_in_vassalage_under = {
 			who = FROM
-			years = 10
+			years = 3
 			all_subject_country = yes
 		}
 		FROM = {
@@ -2670,7 +2766,7 @@ ask_for_imperial_feud_subject_hre_member = {
 				}
 				years_in_vassalage_under = {
 					who = FROM
-					years = 10
+					years = 3
 					all_subject_country = yes
 				}
 				FROM = {
@@ -2722,7 +2818,7 @@ ask_for_imperial_feud_subject_hre_member = {
 				}
 				years_in_vassalage_under = {
 					who = FROM
-					years = 10
+					years = 3
 					all_subject_country = yes
 				}
 				FROM = {
@@ -2748,162 +2844,6 @@ ask_for_imperial_feud_subject_hre_member = {
 				value = modifier:diplomatic_reputation
 			}
 			multiply_variable = { which = ai_value value = 3 }
-		}
-		add_entry = {
-			name = ROOT_FROM_MILITARY_POWER_COMPARED
-			limit = {
-				variable_arithmetic_trigger = {
-					export_to_variable = {
-						which = our_mil_tech
-						value = trigger_value:mil_tech
-						who = FROM
-					}
-					export_to_variable = {
-						which = their_mil_tech
-						value = trigger_value:mil_tech
-					}
-					export_to_variable = {
-						which = our_army_size
-						value = trigger_value:army_size
-						who = FROM
-					}
-					export_to_variable = {
-						which = their_army_size
-						value = trigger_value:army_size
-					}
-					export_to_variable = {
-						which = military_power
-						value = 0
-					}
-					divide_variable = { which = our_army_size value = 10 }
-					divide_variable = { which = their_army_size value = -10 }
-					change_variable = { which = our_army_size which = their_army_size }
-					multiply_variable = { which = their_mil_tech value = -1 }
-					change_variable = { which = our_mil_tech which = their_mil_tech }
-					multiply_variable = { which = our_mil_tech value = 3 }
-					change_variable = { which = military_power which = our_army_size }
-					change_variable = { which = military_power which = our_mil_tech }
-
-					NOT = { check_variable = { which = military_power value = -39 } }
-				}
-			}
-			export_to_variable = {
-				which = ai_value
-				value = 40
-			}
-			multiply_variable = { which = ai_value value = -1 }
-		}
-		add_entry = {
-			name = ROOT_FROM_MILITARY_POWER_COMPARED
-			limit = {
-				variable_arithmetic_trigger = {
-					export_to_variable = {
-						which = our_mil_tech
-						value = trigger_value:mil_tech
-						who = FROM
-					}
-					export_to_variable = {
-						which = their_mil_tech
-						value = trigger_value:mil_tech
-					}
-					export_to_variable = {
-						which = our_army_size
-						value = trigger_value:army_size
-						who = FROM
-					}
-					export_to_variable = {
-						which = their_army_size
-						value = trigger_value:army_size
-					}
-					export_to_variable = {
-						which = military_power
-						value = 0
-					}
-					divide_variable = { which = our_army_size value = 10 }
-					divide_variable = { which = their_army_size value = -10 }
-					change_variable = { which = our_army_size which = their_army_size }
-					multiply_variable = { which = their_mil_tech value = -1 }
-					change_variable = { which = our_mil_tech which = their_mil_tech }
-					multiply_variable = { which = our_mil_tech value = 3 }
-					change_variable = { which = military_power which = our_army_size }
-					change_variable = { which = military_power which = our_mil_tech }
-
-					check_variable = { which = military_power value = -39 }
-					NOT = { check_variable = { which = military_power value = 30 } }
-				}
-			}
-			export_to_variable = {
-				which = ai_value
-				value = 0
-			}
-			export_to_variable = {
-				which = our_mil_tech
-				value = trigger_value:mil_tech
-				who = FROM
-			}
-			export_to_variable = {
-				which = their_mil_tech
-				value = trigger_value:mil_tech
-			}
-			export_to_variable = {
-				which = our_army_size
-				value = trigger_value:army_size
-				who = FROM
-			}
-			export_to_variable = {
-				which = their_army_size
-				value = trigger_value:army_size
-			}
-			divide_variable = { which = our_army_size value = 10 }
-			divide_variable = { which = their_army_size value = -10 }
-			change_variable = { which = our_army_size which = their_army_size }
-			multiply_variable = { which = their_mil_tech value = -1 }
-			change_variable = { which = our_mil_tech which = their_mil_tech }
-			multiply_variable = { which = our_mil_tech value = 3 }
-			change_variable = { which = ai_value which = our_army_size }
-			change_variable = { which = ai_value which = our_mil_tech }
-		}
-		add_entry = {
-			name = ROOT_FROM_MILITARY_POWER_COMPARED
-			limit = {
-				variable_arithmetic_trigger = {
-					export_to_variable = {
-						which = our_mil_tech
-						value = trigger_value:mil_tech
-						who = FROM
-					}
-					export_to_variable = {
-						which = their_mil_tech
-						value = trigger_value:mil_tech
-					}
-					export_to_variable = {
-						which = our_army_size
-						value = trigger_value:army_size
-						who = FROM
-					}
-					export_to_variable = {
-						which = their_army_size
-						value = trigger_value:army_size
-					}
-					export_to_variable = {
-						which = military_power
-						value = 0
-					}
-					divide_variable = { which = our_army_size value = 10 }
-					divide_variable = { which = their_army_size value = -10 }
-					change_variable = { which = our_army_size which = their_army_size }
-					multiply_variable = { which = their_mil_tech value = -1 }
-					change_variable = { which = our_mil_tech which = their_mil_tech }
-					multiply_variable = { which = our_mil_tech value = 3 }
-					change_variable = { which = military_power which = our_army_size }
-					change_variable = { which = military_power which = our_mil_tech }
-					check_variable = { which = military_power value = 30 }
-				}
-			}
-			export_to_variable = {
-				which = ai_value
-				value = 30
-			}
 		}
 		add_entry = {
 			name = BORDER_DISTANCE
@@ -3840,51 +3780,6 @@ ask_for_imperial_feud_subject_hre_member = {
 			multiply_variable = { which = ai_value value = 3 }
 		}
 		add_entry = {
-			name = NUM_OF_HRE_MEMBERS
-			export_to_variable = {
-				which = ai_value
-				value = trigger_value:hre_size
-			}
-			change_variable = { which = ai_value value = -1 }
-			change_variable = { which = ai_value value = -25 }
-			multiply_variable = { which = ai_value value = -1 }
-		}
-		add_entry = {
-			name = ROOT_DEVELOPMENT
-			limit = {
-				NOT = { total_development = 50 }
-			}
-			export_to_variable = {
-				which = ai_value
-				value = 1000
-			}
-			multiply_variable = { which = ai_value value = -1 }
-		}
-		add_entry = {
-			name = ROOT_DEVELOPMENT
-			limit = {
-				total_development = 50
-				NOT = { total_development = 100 }
-			}
-			export_to_variable = {
-				which = ai_value
-				value = 100
-			}
-			multiply_variable = { which = ai_value value = -1 }
-		}
-		add_entry = {
-			name = ROOT_DEVELOPMENT
-			limit = {
-				total_development = 100
-			}
-			export_to_variable = {
-				which = ai_value
-				value = trigger_value:total_development
-			}
-			change_variable = { which = ai_value value = -1 }
-			divide_variable = { which = ai_value value = -7 }
-		}
-		add_entry = {
 			name = FROM_MIGHT_WANT_TO_VASSALIZE_ROOT
 			limit = {
 				FROM = {
@@ -3949,6 +3844,38 @@ ask_for_imperial_feud_subject_hre_member = {
 			}
 		}
 		NOT = { has_country_flag = was_member_of_HRE_and_left }
+		OR = {
+			years_in_vassalage_under = {
+				who = FROM
+				years = 10
+				all_subject_country = yes
+			}
+			AND = {
+				has_opinion = {
+					who = FROM
+					value = 150
+				}
+				reverse_has_opinion = {
+					who = FROM
+					value = 150
+				}
+				years_in_vassalage_under = {
+					who = FROM
+					years = 5
+					all_subject_country = yes
+				}
+			}
+			AND = {
+				has_opinion = {
+					who = FROM
+					value = 200
+				}
+				reverse_has_opinion = {
+					who = FROM
+					value = 200
+				}
+			}
+		}
 	}
 }
 

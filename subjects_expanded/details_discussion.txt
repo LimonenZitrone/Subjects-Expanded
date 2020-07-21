@@ -16,7 +16,7 @@ If a subject gives an additional merchant, the bonuses it gives to its overlord 
 [*] is neither in the Western, Eastern, Muslim nor Roman technology group
 [*] its capital is not on the same continent as the one of the possible overlord
 [*] is not a nomadic nation
-[*] is at least 9 technologies behind the possible overlord
+[*] is at least 4 (vanilla) or 9 (Extended Timeline) technologies behind the possible overlord
 [*] its capital is within the trade range of the possible overlord
 [/list]
 
@@ -24,7 +24,7 @@ If a subject gives an additional merchant, the bonuses it gives to its overlord 
 [list]
 [*] Protectorates can be established diplomatically and by war
 [*] Protectorates don't have a max government rank
-[*] Protectorates receive 12 of each monarch power once per year
+[*] Protectorates get an additional 1 of each monarch power per month
 [*] Protectorates have reduced national unrest and institution embracement cost
 [*] if Protectorates are behind their overlord in institutions, they receive a bonus to institution spread
 [*] if Protectorates are behind their overlord in technologies, they receive a bonus to technology cost of the technology they are behind in
@@ -157,7 +157,7 @@ If a subject gives an additional merchant, the bonuses it gives to its overlord 
 
 [b]Conditions (possible subject):[/b]
 [list]
-[*] is a vassal of the possible overlord
+[*] is a vassal or march of the possible overlord
 [*] is a neighbor of the possible overlord
 [/list]
 
@@ -584,7 +584,7 @@ If a subject gives an additional merchant, the bonuses it gives to its overlord 
 
 [b]Conditions (possible subject):[/b]
 [list]
-[*] is a vassal of the possible overlord
+[*] is a vassal or march of the possible overlord
 [*] has at least 1 port
 [*] is not a primitive nation
 [/list]
@@ -754,7 +754,7 @@ If a subject gives an additional merchant, the bonuses it gives to its overlord 
 [/list]
 
 [h1]Imperial Feud[/h1]
-[i]An Imperial Feud is independent in its diplomacy and doesn't join its overlord's wars. It doesn't cost a diplomatic relation and pays tribute to its overlord. The overlord is called to arms to the Imperial Feud's defensive wars, but the overlord can decline. However declining will decrease the other Imperial Feud's and HRE members opinions of him. An Imperial Feud gains a bonus on tax income, fort maintenance and land forcelimit and grants its overlord a bonus on tax income and imperial authority gain. It can be asked to join the HRE or to become a vassal after 10 years. It has low liberty desire, but gains additional liberty desire after being 11, 15, 20, 25 and 30 years under its overlord. An Imperial Feud is a voluntary subject, which means it can become independent diplomatically. An Imperial Feud can only be established by the Holy Roman Emperor in non-HRE countries that border the HRE before the "Revoke the Privilegia" reform. If the emperor title gets passed to another country, an Imperial Feud can either become independent or will be passed from its old overlord to the new emperor. The emperor can have at most 5 Imperial Feuds at the same time.[/i]
+[i]An Imperial Feud is independent in its diplomacy and doesn't join its overlord's wars. It doesn't cost a diplomatic relation and pays tribute to its overlord. The overlord is called to arms to the Imperial Feud's defensive wars, but the overlord can decline. However declining will decrease the other Imperial Feud's and HRE members opinions of him. An Imperial Feud gains a bonus on tax income, fort maintenance and land forcelimit and grants its overlord a bonus on tax income and imperial authority gain. It can be asked to join the HRE after 5 or to become a vassal after 10 years. It can ask to join the HRE after 3 years itself. It has low liberty desire, but gains additional liberty desire after being 11, 15, 20, 25 and 30 years under its overlord. An Imperial Feud is a voluntary subject, which means it can become independent diplomatically. An Imperial Feud can only be established by the Holy Roman Emperor in non-HRE countries that border the HRE before the "Revoke the Privilegia" reform. If the emperor title gets passed to another country, an Imperial Feud can either become independent or will be passed from its old overlord to the new emperor. The emperor can have at most 5 Imperial Feuds at the same time.[/i]
 
 [b]Conditions (possible overlord):[/b]
 [list]

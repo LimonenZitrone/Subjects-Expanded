@@ -6,15 +6,15 @@ country_event = {
 	title = subjects_expanded_dutch_province_subject_events.EVTNAME1
 	desc = subjects_expanded_dutch_province_subject_events.EVTDESC1
 	picture = GOOD_WITH_MONARCH_eventPicture
-	
+
 	major = yes
 	is_triggered_only = yes
-	
+
 	option = {
 		name = subjects_expanded_dutch_province_subject_events1.EVTOPT1
-		
+
 		ai_chance = { factor = 100 }
-		
+
 		custom_tooltip = DUTCH_PROVINCE_SUBJECT_NO_INTERNAL_WAR_TT
 	}
 }
@@ -25,15 +25,15 @@ country_event = {
 	title = subjects_expanded_dutch_province_subject_events.EVTNAME2
 	desc = subjects_expanded_dutch_province_subject_events.EVTDESC2
 	picture = GOOD_WITH_MONARCH_eventPicture
-	
+
 	major = yes
 	is_triggered_only = yes
-	
+
 	option = {
 		name = subjects_expanded_dutch_province_subject_events2.EVTOPT1
-		
+
 		ai_chance = { factor = 100 }
-		
+
 		custom_tooltip = DUTCH_PROVINCE_SUBJECT_NO_EXTERNAL_WAR_TT
 	}
 }
@@ -44,15 +44,15 @@ country_event = {
 	title = subjects_expanded_dutch_province_subject_events.EVTNAME3
 	desc = subjects_expanded_dutch_province_subject_events.EVTDESC3
 	picture = GOOD_WITH_MONARCH_eventPicture
-	
+
 	major = yes
 	is_triggered_only = yes
-	
+
 	option = {
 		name = subjects_expanded_dutch_province_subject_events3.EVTOPT1
-		
+
 		ai_chance = { factor = 100 }
-		
+
 		custom_tooltip = DUTCH_PROVINCE_SUBJECT_NO_LEADER_ELECTION_TT
 	}
 }
@@ -63,9 +63,9 @@ country_event = {
 	title = subjects_expanded_dutch_province_subject_events.EVTNAME4
 	desc = subjects_expanded_dutch_province_subject_events.EVTDESC4
 	picture = GOOD_WITH_MONARCH_eventPicture
-	
+
 	hidden = yes
-	
+
 	trigger = {
 		NOT = { has_global_flag = dutch_province_subject_no_leader_election }
 		NOT = { is_month = 1 }
@@ -74,9 +74,31 @@ country_event = {
 			is_subject_of_type = dutch_province_subject
 		}
 	}
-	
+
 	immediate = {
 		hidden_effect = {
+			every_country = {
+				limit = {
+					NOT = { tag = ROOT }
+					NOT = { is_subject_of_type = dutch_province_subject }
+					PREV = { has_country_flag = elected_as_dutch_province_overlord_by_@PREV }
+				}
+				PREV = { clr_country_flag = elected_as_dutch_province_overlord_by_@PREV }
+			}
+			every_subject_country = {
+				limit = {
+					is_subject_of_type = dutch_province_subject
+				}
+				every_country = {
+					limit = {
+						NOT = { tag = ROOT }
+						NOT = { is_subject_of_type = dutch_province_subject }
+						PREV = { has_country_flag = elected_as_dutch_province_overlord_by_@PREV }
+					}
+					PREV = { clr_country_flag = elected_as_dutch_province_overlord_by_@PREV }
+				}
+			}
+
 			add_country_modifier = {
 				name = cooldown_dutch_provinces_election
 				duration = 50
@@ -95,7 +117,7 @@ country_event = {
 				}
 				country_event = { id = subjects_expanded_dutch_province_subject_events.5 }
 			}
-			
+
 			if = {
 				limit = {
 					ai = yes
@@ -117,7 +139,7 @@ country_event = {
 				}
 				country_event = { id = subjects_expanded_dutch_province_subject_events.6 }
 			}
-			
+
 			if = {
 				limit = {
 					ai = yes
@@ -144,14 +166,14 @@ country_event = {
 				}
 				country_event = { id = subjects_expanded_dutch_province_subject_events.5 }
 			}
-			
+
 			country_event = { id = subjects_expanded_dutch_province_subject_events.7 days = 1 }
 		}
 	}
-	
+
 	option = {
 		name = subjects_expanded_dutch_province_subject_events4.EVTOPT1
-		
+
 		ai_chance = { factor = 100 }
 	}
 }
@@ -161,19 +183,19 @@ country_event = {
 	title = subjects_expanded_dutch_province_subject_events.EVTNAME5
 	desc = subjects_expanded_dutch_province_subject_events.EVTDESC5
 	picture = GOOD_WITH_MONARCH_eventPicture
-	
+
 	hidden = yes
 	is_triggered_only = yes
-	
+
 	immediate = {
 		hidden_effect = {
 			AI_dutch_province_select_elected_overlord = yes
 		}
 	}
-	
+
 	option = {
 		name = subjects_expanded_dutch_province_subject_events5.EVTOPT1
-		
+
 		ai_chance = { factor = 100 }
 	}
 }
@@ -183,19 +205,25 @@ country_event = {
 	title = subjects_expanded_dutch_province_subject_events.EVTNAME6
 	desc = subjects_expanded_dutch_province_subject_events.EVTDESC6
 	picture = GOOD_WITH_MONARCH_eventPicture
-	
+
 	hidden = yes
 	is_triggered_only = yes
-	
+
 	immediate = {
 		hidden_effect = {
+			every_country = {
+				limit = {
+					has_country_flag = elected_as_dutch_province_overlord_by_@ROOT
+				}
+				clr_country_flag = elected_as_dutch_province_overlord_by_@ROOT
+			}
 			elect_this_as_dutch_province_overlord = yes
 		}
 	}
-	
+
 	option = {
 		name = subjects_expanded_dutch_province_subject_events6.EVTOPT1
-		
+
 		ai_chance = { factor = 100 }
 	}
 }
@@ -206,9 +234,9 @@ country_event = {
 	title = subjects_expanded_dutch_province_subject_events.EVTNAME7
 	desc = subjects_expanded_dutch_province_subject_events.EVTDESC7
 	picture = DIPLOMACY_eventPicture
-	
+
 	is_triggered_only = yes
-	
+
 	immediate = {
 		hidden_effect = {
 			find_new_dutch_province_overlord = yes
@@ -221,12 +249,12 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = subjects_expanded_dutch_province_subject_events7.EVTOPT1
-		
+
 		ai_chance = { factor = 100 }
-		
+
 		if = {
 			limit = {
 				has_country_flag = new_overlord_of_dutch_provinces
@@ -250,7 +278,7 @@ country_event = {
 				}
 			}
 		}
-		
+
 		hidden_effect = {
 			every_country = {
 				limit = {
@@ -273,9 +301,9 @@ country_event = {
 	title = subjects_expanded_dutch_province_subject_events.EVTNAME8
 	desc = subjects_expanded_dutch_province_subject_events.EVTDESC8
 	picture = DIPLOMACY_eventPicture
-	
+
 	is_triggered_only = yes
-	
+
 	immediate = {
 		hidden_effect = {
 			if = {
@@ -815,14 +843,14 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = subjects_expanded_dutch_province_subject_events8.EVTOPT1
-		
+
 		event_target:new_dutch_provinces_overlord = {
 			custom_tooltip = THIS_IS_NEW_OVERLORD_OF_DUTCH_PROVINCES
 		}
-		
+
 		if = {
 			limit = {
 				any_country = {
@@ -849,7 +877,7 @@ country_event = {
 			}
 			custom_tooltip = DUTCH_PROVINCES_OVERLORD_ELECTION_INDIVIDUAL_RESULT_TT_1_NO_RIVAL
 		}
-		
+
 		if = {
 			limit = {
 				any_country = {
@@ -876,7 +904,7 @@ country_event = {
 			}
 			custom_tooltip = DUTCH_PROVINCES_OVERLORD_ELECTION_INDIVIDUAL_RESULT_TT_2_NO_RIVAL
 		}
-		
+
 		if = {
 			limit = {
 				any_country = {
@@ -903,7 +931,7 @@ country_event = {
 			}
 			custom_tooltip = DUTCH_PROVINCES_OVERLORD_ELECTION_INDIVIDUAL_RESULT_TT_3_NO_RIVAL
 		}
-		
+
 		if = {
 			limit = {
 				any_country = {
@@ -930,7 +958,7 @@ country_event = {
 			}
 			custom_tooltip = DUTCH_PROVINCES_OVERLORD_ELECTION_INDIVIDUAL_RESULT_TT_4_NO_RIVAL
 		}
-		
+
 		if = {
 			limit = {
 				any_country = {
@@ -957,7 +985,7 @@ country_event = {
 			}
 			custom_tooltip = DUTCH_PROVINCES_OVERLORD_ELECTION_INDIVIDUAL_RESULT_TT_5_NO_RIVAL
 		}
-		
+
 		if = {
 			limit = {
 				any_country = {
@@ -993,9 +1021,9 @@ country_event = {
 	title = subjects_expanded_dutch_province_subject_events.EVTNAME9
 	desc = subjects_expanded_dutch_province_subject_events.EVTDESC9
 	picture = DIPLOMACY_eventPicture
-	
+
 	is_triggered_only = yes
-	
+
 	immediate = {
 		hidden_effect = {
 			if = {
@@ -1121,10 +1149,10 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = subjects_expanded_dutch_province_subject_events9.EVTOPT1
-		
+
 		trigger = {
 			OR = {
 				tag = event_target:possible_country_to_elect_for_dutch_provinces_overlord_1
@@ -1133,9 +1161,9 @@ country_event = {
 				}
 			}
 		}
-		
+
 		ai_chance = { factor = 0 }
-		
+
 		hidden_effect = {
 			every_country = {
 				limit = {
@@ -1144,15 +1172,15 @@ country_event = {
 				clr_country_flag = elected_as_dutch_province_overlord_by_@ROOT
 			}
 		}
-		
+
 		event_target:possible_country_to_elect_for_dutch_provinces_overlord_1 = {
 			elect_this_as_dutch_province_overlord = yes
 		}
 	}
-	
+
 	option = {
 		name = subjects_expanded_dutch_province_subject_events9.EVTOPT2
-		
+
 		trigger = {
 			OR = {
 				tag = event_target:possible_country_to_elect_for_dutch_provinces_overlord_2
@@ -1161,9 +1189,9 @@ country_event = {
 				}
 			}
 		}
-		
+
 		ai_chance = { factor = 0 }
-		
+
 		hidden_effect = {
 			every_country = {
 				limit = {
@@ -1172,15 +1200,15 @@ country_event = {
 				clr_country_flag = elected_as_dutch_province_overlord_by_@ROOT
 			}
 		}
-		
+
 		event_target:possible_country_to_elect_for_dutch_provinces_overlord_2 = {
 			elect_this_as_dutch_province_overlord = yes
 		}
 	}
-	
+
 	option = {
 		name = subjects_expanded_dutch_province_subject_events9.EVTOPT3
-		
+
 		trigger = {
 			OR = {
 				tag = event_target:possible_country_to_elect_for_dutch_provinces_overlord_3
@@ -1189,9 +1217,9 @@ country_event = {
 				}
 			}
 		}
-		
+
 		ai_chance = { factor = 0 }
-		
+
 		hidden_effect = {
 			every_country = {
 				limit = {
@@ -1200,15 +1228,15 @@ country_event = {
 				clr_country_flag = elected_as_dutch_province_overlord_by_@ROOT
 			}
 		}
-		
+
 		event_target:possible_country_to_elect_for_dutch_provinces_overlord_3 = {
 			elect_this_as_dutch_province_overlord = yes
 		}
 	}
-	
+
 	option = {
 		name = subjects_expanded_dutch_province_subject_events9.EVTOPT4
-		
+
 		trigger = {
 			OR = {
 				tag = event_target:possible_country_to_elect_for_dutch_provinces_overlord_4
@@ -1217,9 +1245,9 @@ country_event = {
 				}
 			}
 		}
-		
+
 		ai_chance = { factor = 0 }
-		
+
 		hidden_effect = {
 			every_country = {
 				limit = {
@@ -1228,15 +1256,15 @@ country_event = {
 				clr_country_flag = elected_as_dutch_province_overlord_by_@ROOT
 			}
 		}
-		
+
 		event_target:possible_country_to_elect_for_dutch_provinces_overlord_4 = {
 			elect_this_as_dutch_province_overlord = yes
 		}
 	}
-	
+
 	option = {
 		name = subjects_expanded_dutch_province_subject_events9.EVTOPT5
-		
+
 		trigger = {
 			OR = {
 				tag = event_target:possible_country_to_elect_for_dutch_provinces_overlord_5
@@ -1245,9 +1273,9 @@ country_event = {
 				}
 			}
 		}
-		
+
 		ai_chance = { factor = 0 }
-		
+
 		hidden_effect = {
 			every_country = {
 				limit = {
@@ -1256,15 +1284,15 @@ country_event = {
 				clr_country_flag = elected_as_dutch_province_overlord_by_@ROOT
 			}
 		}
-		
+
 		event_target:possible_country_to_elect_for_dutch_provinces_overlord_5 = {
 			elect_this_as_dutch_province_overlord = yes
 		}
 	}
-	
+
 	option = {
 		name = subjects_expanded_dutch_province_subject_events9.EVTOPT6
-		
+
 		trigger = {
 			OR = {
 				tag = event_target:possible_country_to_elect_for_dutch_provinces_overlord_6
@@ -1273,9 +1301,9 @@ country_event = {
 				}
 			}
 		}
-		
+
 		ai_chance = { factor = 0 }
-		
+
 		hidden_effect = {
 			every_country = {
 				limit = {
@@ -1284,18 +1312,18 @@ country_event = {
 				clr_country_flag = elected_as_dutch_province_overlord_by_@ROOT
 			}
 		}
-		
+
 		event_target:possible_country_to_elect_for_dutch_provinces_overlord_6 = {
 			elect_this_as_dutch_province_overlord = yes
 		}
 	}
-	
+
 	option = {
 		name = subjects_expanded_dutch_province_subject_events9.EVTOPT7
-		
+
 		ai_chance = { factor = 100 }
 	}
-	
+
 	after = {
 		clr_country_flag = has_dutch_provinces_player_election
 	}
@@ -1306,7 +1334,7 @@ country_event = {
 	title = subjects_expanded_dutch_province_subject_events.EVTNAME10
 	desc = subjects_expanded_dutch_province_subject_events.EVTDESC10
 	picture = DIPLOMACY_eventPicture
-	
+
 	trigger = {
 		any_subject_country = {
 			is_subject_of_type = dutch_province_subject
@@ -1333,14 +1361,14 @@ country_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = { days = 1 }
-	
+
 	option = {
 		name = subjects_expanded_dutch_province_subject_events10.EVTOPT1
-		
+
 		ai_chance = { factor = 100 }
-		
+
 		if = {
 			limit = {
 				OR = {

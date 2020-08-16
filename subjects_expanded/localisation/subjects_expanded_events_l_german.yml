@@ -224,6 +224,11 @@
  subjects_expanded_brother_kingdom_events2.EVTOPT1: "Sie haben sich ihre Freiheit verdient."
  subjects_expanded_brother_kingdom_events2.EVTOPT2: "Nur über meine Leiche!"
 
+ subjects_expanded_brother_kingdom_events.EVTNAME4: "[invalid_brother_kingdom.GetName] erklärt Unabhängigkeit"
+ subjects_expanded_brother_kingdom_events.EVTDESC4: "Weil wir die Bedingungen eines Lehnsherrn für Brüderkönigreiche nicht mehr erfüllen, hat unser Bruderkönigreich §Y[invalid_brother_kingdom.GetName]§! seine Unabhängigkeit erklärt! Wir können dies akzeptieren und ihnen Unabhängigkeit gewähren. Andernfalls wird dies zu einem §RUnabhängigkeitskrieg§! eskalieren."
+ subjects_expanded_brother_kingdom_events4.EVTOPT1: "So sei es."
+ subjects_expanded_brother_kingdom_events4.EVTOPT2: "Dann werden sie eben unser Vasall!"
+
  subjects_expanded_iqta_vassal_events.EVTNAME1: "Islamisches Gesetz außer Kraft gesetzt"
  subjects_expanded_iqta_vassal_events.EVTDESC1: "Das Islamische Gesetz wurde in unserem Land außer Kraft gesetzt. Wir können keine Iqta bleiben, wenn wir nicht dem Islamischen Gesetz folgen. Wir müssen entweder zum [Root.Overlord.Religion.GetName]en Glauben wechseln oder unsere Unabhängigkeit erklären."
  subjects_expanded_iqta_vassal_events1.EVTOPT1: "Wir werden dem Islamischen Gesetz wieder folgen."

@@ -224,6 +224,11 @@
  subjects_expanded_brother_kingdom_events2.EVTOPT1: "They earned their freedom."
  subjects_expanded_brother_kingdom_events2.EVTOPT2: "Over my dead body!"
 
+ subjects_expanded_brother_kingdom_events.EVTNAME4: "[invalid_brother_kingdom.GetName] declares independence"
+ subjects_expanded_brother_kingdom_events.EVTDESC4: "Because we do not fulfill the conditions of being an overlord of a Brother Kingdom anymore, our Brother Kingdom §Y[invalid_brother_kingdom.GetName]§! has declared itself independent! We can accept that and grant them independence. Otherwise this will escalate into an §RIndependence War§!."
+ subjects_expanded_brother_kingdom_events4.EVTOPT1: "So be it."
+ subjects_expanded_brother_kingdom_events4.EVTOPT2: "Then we shall have them as vassal!"
+
  subjects_expanded_iqta_vassal_events.EVTNAME1: "Islamic Law Invalidated"
  subjects_expanded_iqta_vassal_events.EVTDESC1: "The Islamic Law in our country has been invalidated. We cannot remain to be an Iqta without following the Islamic Law. We either have to adopt the [Root.Overlord.Religion.GetName] faith or declare our independence."
  subjects_expanded_iqta_vassal_events1.EVTOPT1: "We will follow the Islamic Law again."

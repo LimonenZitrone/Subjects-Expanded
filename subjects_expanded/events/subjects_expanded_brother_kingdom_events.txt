@@ -5,18 +5,21 @@ country_event = {
 	title = subjects_expanded_brother_kingdom_events.EVTNAME1
 	desc = subjects_expanded_brother_kingdom_events.EVTDESC1
 	picture = BAD_WITH_MONARCH_eventPicture
-	
+
 	trigger = {
+		is_subject = no
+		government = monarchy
+		religion_group = christian
 		any_subject_country = {
 			is_subject_of_type = brother_kingdom
 			NOT = { dynasty = ROOT }
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		months = 1
 	}
-	
+
 	immediate = {
 		hidden_effect = {
 			random_subject_country = {
@@ -28,16 +31,17 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = subjects_expanded_brother_kingdom_events1.EVTOPT1
-		
+
 		ai_chance = { factor = 0.5 }
-		
+
 		event_target:invalid_brother_kingdom = {
 			grant_independence = yes
 			if = {
 				limit = {
+					government = monarchy
 					NOT = { marriage_with = ROOT }
 				}
 				create_marriage = ROOT
@@ -50,10 +54,10 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = subjects_expanded_brother_kingdom_events1.EVTOPT2
-		
+
 		trigger = {
 			religion_group = christian
 			has_regency = no
@@ -61,12 +65,19 @@ country_event = {
 				religion_group = christian
 			}
 		}
-		
+
 		ai_chance = { factor = 0.5 }
-		
+
 		add_legitimacy = -25
 		event_target:invalid_brother_kingdom = {
 			add_liberty_desire = 100
+			if = {
+				limit = {
+					NOT = { government = monarchy }
+				}
+				change_government = monarchy
+				add_government_reform = feudalism_reform
+			}
 			if = {
 				limit = {
 					marriage_with = ROOT
@@ -102,16 +113,16 @@ country_event = {
 	title = subjects_expanded_brother_kingdom_events.EVTNAME2
 	desc = subjects_expanded_brother_kingdom_events.EVTDESC2
 	picture = BATTLE_eventPicture
-	
+
 	major = yes
 	is_triggered_only = yes
-	
+
 	option = {
 		name = subjects_expanded_brother_kingdom_events2.EVTOPT1
-		
+
 		ai_chance = {
 			factor = 0.5
-			
+
 			modifier = {
 				factor = 3
 				army_strength = { who = FROM value = 1.5 }
@@ -130,19 +141,19 @@ country_event = {
 				war_exhaustion = 10
 			}
 		}
-		
+
 		add_prestige = -5
 		FROM = {
 			grant_independence = yes
 		}
 	}
-	
+
 	option = {
 		name = subjects_expanded_brother_kingdom_events2.EVTOPT2
-		
+
 		ai_chance = {
 			factor = 0.5
-			
+
 			modifier = {
 				factor = 3
 				army_strength = { who = FROM value = 1.5 }
@@ -152,7 +163,7 @@ country_event = {
 				army_strength = { who = FROM value = 3 }
 			}
 		}
-		
+
 		FROM = {
 			hidden_effect = {
 				add_casus_belli = {
@@ -173,10 +184,10 @@ country_event = {
 	title = subjects_expanded_brother_kingdom_events.EVTNAME3
 	desc = subjects_expanded_brother_kingdom_events.EVTDESC3
 	picture = BATTLE_eventPicture
-	
+
 	hidden = yes
 	is_triggered_only = yes
-	
+
 	trigger = {
 		can_be_overlord = brother_kingdom
 		war_with = FROM
@@ -184,7 +195,7 @@ country_event = {
 			is_subject = no
 		}
 	}
-	
+
 	immediate = {
 		hidden_effect = {
 			add_casus_belli = {
@@ -193,10 +204,109 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = subjects_expanded_brother_kingdom_events3.EVTOPT1
-		
+
 		ai_chance = { factor = 100 }
+	}
+}
+
+country_event = {
+	id = subjects_expanded_brother_kingdom_events.4
+	title = subjects_expanded_brother_kingdom_events.EVTNAME4
+	desc = subjects_expanded_brother_kingdom_events.EVTDESC4
+	picture = BAD_WITH_MONARCH_eventPicture
+
+	trigger = {
+		OR = {
+			is_subject = yes
+			NOT = { government = monarchy }
+			NOT = { religion_group = christian }
+		}
+		any_subject_country = {
+			is_subject_of_type = brother_kingdom
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	immediate = {
+		hidden_effect = {
+			random_subject_country = {
+				limit = {
+					is_subject_of_type = brother_kingdom
+				}
+				save_event_target_as = invalid_brother_kingdom
+			}
+		}
+	}
+
+	option = {
+		name = subjects_expanded_brother_kingdom_events4.EVTOPT1
+
+		ai_chance = { factor = 0.9 }
+
+		event_target:invalid_brother_kingdom = {
+			grant_independence = yes
+			if = {
+				limit = {
+					government = monarchy
+					NOT = { marriage_with = ROOT }
+				}
+				create_marriage = ROOT
+			}
+			create_alliance = ROOT
+			add_ruler_modifier = {
+				name = ruler_just_canceled_to_be_brother_kingdom
+				duration = -1
+				hidden = yes
+			}
+		}
+	}
+
+	option = {
+		name = subjects_expanded_brother_kingdom_events4.EVTOPT2
+
+		ai_chance = {
+			factor = 0.1
+			modifier = {
+				factor = 0
+				is_at_war = yes
+			}
+			modifier = {
+				factor = 0
+				any_country = {
+					is_supporting_independence_of = event_target:invalid_brother_kingdom
+				}
+			}
+		}
+
+		event_target:invalid_brother_kingdom = {
+			hidden_effect = {
+				if = {
+					limit = {
+						marriage_with = ROOT
+					}
+					break_marriage = ROOT
+				}
+				grant_independence = yes
+				ROOT = { vassalize = PREV }
+				add_liberty_desire = 100
+				add_casus_belli = {
+					target = ROOT
+					type = cb_independence_war
+				}
+			}
+			tooltip = {
+				ROOT = { vassalize = PREV }
+			}
+			declare_war_with_cb = {
+				who = ROOT
+				casus_belli = cb_independence_war
+			}
+		}
 	}
 }

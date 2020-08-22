@@ -72,7 +72,7 @@ If a subject gives an additional merchant, the bonuses it gives to its overlord 
 [b]Conditions (possible overlord):[/b]
 [list]
 [*] is not a subject
-[*] it's either the year 1700 or later, the Age of Absolutism or owns a province in a trade company region and does not have its capital in a trade company region
+[*] it's either the year 1700 or later, the Age of Absolutism or owns a province in the West India, Deccan, East India, Coromandel, North India, Indonesia, Moluccas, Indochina, Burma, West Africa, East Africa, South Africa or Philippines trade company region and does not have its capital in India, China, Japan, Africa or Oceania
 [/list]
 
 [b]Conditions (possible subject):[/b]

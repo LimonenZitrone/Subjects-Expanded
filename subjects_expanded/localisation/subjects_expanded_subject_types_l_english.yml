@@ -51,7 +51,7 @@
  voivodeship_title: "Voivodeship"
  voivodeship_title_plural: "Voivodeships"
  voivodeship_is_our: "§Y$NAME$§! is our Voivodeship."
- voivodeship_long_desc: "A Voivodeship is a mixture of a vassal and a march. It receives similar bonuses as a march, but can be annexed after 10 years. Further more it has increased military expanses and can only be established by §YPoland§! or §YCommonwealth§!.\n"
+ voivodeship_long_desc: "A Voivodeship is a mixture of a vassal and a march. It receives similar bonuses as a march, but can be annexed after 10 years. Further more it has increased military expenses and can only be established by §YPoland§! or §YCommonwealth§!.\n"
  voivodeship_no_overlord_dow: "You cannot declare war on your own Voivodeship."
  voivodeship_overlord_title: "Overlord"
 

@@ -147,7 +147,7 @@ If a subject gives an additional merchant, the bonuses it gives to its overlord 
 [/list]
 
 [h1]Voivodeship[/h1]
-[i]A Voivodeship is a mixture of a vassal and a march. It receives similar bonuses as a march, but can be annexed after 10 years. Further more it has increased military expanses and can only be established by Poland or Commonwealth.[/i]
+[i]A Voivodeship is a mixture of a vassal and a march. It receives similar bonuses as a march, but can be annexed after 10 years. Further more it has increased military expenses and can only be established by Poland or Commonwealth.[/i]
 
 [b]Conditions (possible overlord):[/b]
 [list]

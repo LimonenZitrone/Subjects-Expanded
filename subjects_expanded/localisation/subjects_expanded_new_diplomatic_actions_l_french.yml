@@ -589,7 +589,7 @@
  NUM_OF_HRE_MEMBERS: "Amount of HRE members"
  ROOT_IS_EMPEROR: "We are Emperor of the HRE"
  ROOT_IS_NOT_EMPEROR: "We are not Emperor of the HRE"
- NUM_OF_HRE_REFORMS_PASSED: "Passed HRE reforms"
+ NUM_OF_HRE_REFORMS: "Passed HRE reforms"
  FROM_MIGHT_WANT_TO_VASSALIZE_ROOT: "They might want to vassalize us"
  ROOT_ARMY_SIZE: "Our army size"
  FROM_LEFT_DURING_SHADOW_KINGDOM_EVENT: "They were a member and left the HRE"

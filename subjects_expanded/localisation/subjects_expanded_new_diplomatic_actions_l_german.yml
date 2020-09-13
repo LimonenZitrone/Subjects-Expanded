@@ -589,7 +589,7 @@
  NUM_OF_HRE_MEMBERS: "Anzahl der HRR-Mitglieder"
  ROOT_IS_EMPEROR: "Wir sind Kaiser des HRR"
  ROOT_IS_NOT_EMPEROR: "Wir sind nicht Kaiser des HRR"
- NUM_OF_HRE_REFORMS_PASSED: "Verabschiedete HRR-Reformen"
+ NUM_OF_HRE_REFORMS: "Verabschiedete HRR-Reformen"
  FROM_MIGHT_WANT_TO_VASSALIZE_ROOT: "Sie wollen uns eventuell vasallisieren"
  ROOT_ARMY_SIZE: "Unsere Armeegröße"
  FROM_LEFT_DURING_SHADOW_KINGDOM_EVENT: "Sie waren ein Mitglied und verließen das HRR"

@@ -2,21 +2,23 @@ return_subject_to_vassal = {
 	category = influence
 
 	require_acceptance = no
-	
+
 	is_visible = {
 		FROM = {
 			is_subject_of = ROOT
+			NOT = { is_subject_of_type = daimyo_vassal }
 			OR = {
 				is_similar_vassal_subject = yes
 				is_similar_march_subject = yes
 			}
 		}
 	}
-	
+
 	is_allowed = {
 		hidden_trigger = {
 			FROM = {
 				is_subject_of = ROOT
+				NOT = { is_subject_of_type = daimyo_vassal }
 				OR = {
 					is_similar_vassal_subject = yes
 					is_similar_march_subject = yes
@@ -54,12 +56,13 @@ return_subject_to_vassal = {
 			is_at_war = no
 		}
 	}
-	
+
 	on_accept = {
 		if = {
 			limit = {
 				FROM = {
 					is_subject_of = ROOT
+					NOT = { is_subject_of_type = daimyo_vassal }
 					OR = {
 						is_similar_vassal_subject = yes
 						is_similar_march_subject = yes
@@ -99,7 +102,7 @@ return_subject_to_vassal = {
 			}
 		}
 	}
-	
+
 	ai_will_do = {
 		NOT = { truce_with = FROM }
 		OR = {

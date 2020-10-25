@@ -16,6 +16,7 @@ country_decisions = {
 				NOT = { superregion = china_superregion }
 				NOT = { region = japan_region }
 				NOT = { continent = oceania }
+				NOT = { superregion = east_indies_superregion }
 				NOT = { continent = africa }
 			}
 			OR = {
@@ -1538,6 +1539,7 @@ country_decisions = {
 					OR = {
 						continent = asia
 						continent = oceania
+						superregion = east_indies_superregion
 					}
 				}
 			}
@@ -1644,6 +1646,7 @@ country_decisions = {
 				NOT = { superregion = china_superregion }
 				NOT = { region = japan_region }
 				NOT = { continent = oceania }
+				NOT = { superregion = east_indies_superregion }
 				NOT = { continent = africa }
 			}
 			OR = {
@@ -2636,6 +2639,7 @@ country_decisions = {
 					OR = {
 						continent = asia
 						continent = oceania
+						superregion = east_indies_superregion
 					}
 				}
 			}
@@ -2722,6 +2726,7 @@ country_decisions = {
 				NOT = { superregion = china_superregion }
 				NOT = { region = japan_region }
 				NOT = { continent = oceania }
+				NOT = { superregion = east_indies_superregion }
 				NOT = { continent = africa }
 			}
 			OR = {
@@ -3394,6 +3399,7 @@ country_decisions = {
 					OR = {
 						continent = asia
 						continent = oceania
+						superregion = east_indies_superregion
 					}
 				}
 			}
@@ -3472,6 +3478,7 @@ country_decisions = {
 				NOT = { superregion = china_superregion }
 				NOT = { region = japan_region }
 				NOT = { continent = oceania }
+				NOT = { superregion = east_indies_superregion }
 				NOT = { continent = africa }
 			}
 			OR = {
@@ -4105,6 +4112,7 @@ country_decisions = {
 				NOT = { superregion = china_superregion }
 				NOT = { region = japan_region }
 				NOT = { continent = oceania }
+				NOT = { superregion = east_indies_superregion }
 				NOT = { continent = africa }
 			}
 			OR = {
@@ -4734,6 +4742,7 @@ country_decisions = {
 				NOT = { superregion = china_superregion }
 				NOT = { region = japan_region }
 				NOT = { continent = oceania }
+				NOT = { superregion = east_indies_superregion }
 				NOT = { continent = africa }
 			}
 			OR = {
@@ -5363,6 +5372,7 @@ country_decisions = {
 				NOT = { superregion = china_superregion }
 				NOT = { region = japan_region }
 				NOT = { continent = oceania }
+				NOT = { superregion = east_indies_superregion }
 				NOT = { continent = africa }
 			}
 			OR = {
@@ -6163,6 +6173,7 @@ country_decisions = {
 					OR = {
 						continent = asia
 						continent = oceania
+						superregion = east_indies_superregion
 					}
 				}
 			}

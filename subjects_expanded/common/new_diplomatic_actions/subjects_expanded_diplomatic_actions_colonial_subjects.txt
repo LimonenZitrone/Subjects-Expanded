@@ -644,6 +644,7 @@ decrease_colonial_autonomy = {
 						NOT = { superregion = china_superregion }
 						NOT = { region = japan_region }
 						NOT = { continent = oceania }
+						NOT = { superregion = east_indies_superregion }
 						NOT = { continent = africa }
 					}
 				}
@@ -665,6 +666,7 @@ decrease_colonial_autonomy = {
 							NOT = { superregion = china_superregion }
 							NOT = { region = japan_region }
 							NOT = { continent = oceania }
+							NOT = { superregion = east_indies_superregion }
 							NOT = { continent = africa }
 						}
 					}
@@ -696,6 +698,7 @@ decrease_colonial_autonomy = {
 								NOT = { superregion = china_superregion }
 								NOT = { region = japan_region }
 								NOT = { continent = oceania }
+								NOT = { superregion = east_indies_superregion }
 								NOT = { continent = africa }
 							}
 						}

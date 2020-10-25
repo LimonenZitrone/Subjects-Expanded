@@ -396,6 +396,7 @@ dominion_tc = {
 					NOT = { superregion = china_superregion }
 					NOT = { region = japan_region }
 					NOT = { continent = oceania }
+					NOT = { superregion = east_indies_superregion }
 					NOT = { continent = africa }
 				}
 				any_owned_province = {
@@ -5609,6 +5610,7 @@ native_reserve = {
 					OR = {
 						continent = north_america
 						continent = south_america
+						continent = africa
 						continent = oceania
 					}
 				}

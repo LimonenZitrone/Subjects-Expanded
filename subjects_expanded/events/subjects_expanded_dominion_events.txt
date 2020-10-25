@@ -157,6 +157,7 @@ country_event = {
 			NOT = { superregion = china_superregion }
 			NOT = { region = japan_region }
 			NOT = { continent = oceania }
+			NOT = { superregion = east_indies_superregion }
 			NOT = { continent = africa }
 		}
 		NOT = { is_dominion_tag = yes }
@@ -332,6 +333,7 @@ country_event = {
 			NOT = { superregion = china_superregion }
 			NOT = { region = japan_region }
 			NOT = { continent = oceania }
+			NOT = { superregion = east_indies_superregion }
 			NOT = { continent = africa }
 		}
 		NOT = { is_dominion_tag = yes }
@@ -429,6 +431,7 @@ country_event = {
 			NOT = { superregion = china_superregion }
 			NOT = { region = japan_region }
 			NOT = { continent = oceania }
+			NOT = { superregion = east_indies_superregion }
 			NOT = { continent = africa }
 		}
 		NOT = { is_dominion_tag = yes }
@@ -526,6 +529,7 @@ country_event = {
 			NOT = { superregion = china_superregion }
 			NOT = { region = japan_region }
 			NOT = { continent = oceania }
+			NOT = { superregion = east_indies_superregion }
 			NOT = { continent = africa }
 		}
 		NOT = { is_dominion_tag = yes }
@@ -595,6 +599,7 @@ country_event = {
 			NOT = { superregion = china_superregion }
 			NOT = { region = japan_region }
 			NOT = { continent = oceania }
+			NOT = { superregion = east_indies_superregion }
 			NOT = { continent = africa }
 		}
 		NOT = { is_dominion_tag = yes }
@@ -664,6 +669,7 @@ country_event = {
 			NOT = { superregion = china_superregion }
 			NOT = { region = japan_region }
 			NOT = { continent = oceania }
+			NOT = { superregion = east_indies_superregion }
 			NOT = { continent = africa }
 		}
 		NOT = { is_dominion_tag = yes }
@@ -733,6 +739,7 @@ country_event = {
 			NOT = { superregion = china_superregion }
 			NOT = { region = japan_region }
 			NOT = { continent = oceania }
+			NOT = { superregion = east_indies_superregion }
 			NOT = { continent = africa }
 		}
 		NOT = { is_dominion_tag = yes }

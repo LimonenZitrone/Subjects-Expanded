@@ -696,6 +696,7 @@ is_possible_subject_of_subject_type_native_reserve = {
 		OR = {
 			continent = north_america
 			continent = south_america
+			continent = africa
 			continent = oceania
 		}
 	}

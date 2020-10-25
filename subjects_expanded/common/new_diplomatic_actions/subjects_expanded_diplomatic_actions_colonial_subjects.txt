@@ -638,7 +638,7 @@ decrease_colonial_autonomy = {
 			is_subject_of = ROOT
 			OR = {
 				AND = {
-					is_dominion_or_similar_subject = yes
+					is_subject_of_type = dominion
 					capital_scope = {
 						NOT = { superregion = india_superregion }
 						NOT = { superregion = china_superregion }
@@ -659,7 +659,7 @@ decrease_colonial_autonomy = {
 				is_subject_of = ROOT
 				OR = {
 					AND = {
-						is_dominion_or_similar_subject = yes
+						is_subject_of_type = dominion
 						capital_scope = {
 							NOT = { superregion = india_superregion }
 							NOT = { superregion = china_superregion }
@@ -690,7 +690,7 @@ decrease_colonial_autonomy = {
 					is_subject_of = ROOT
 					OR = {
 						AND = {
-							is_dominion_or_similar_subject = yes
+							is_subject_of_type = dominion
 							capital_scope = {
 								NOT = { superregion = india_superregion }
 								NOT = { superregion = china_superregion }

@@ -72,7 +72,7 @@ If a subject gives an additional merchant, the bonuses it gives to its overlord 
 [b]Conditions (possible overlord):[/b]
 [list]
 [*] is not a subject
-[*] it's either the year 1700 or later, the Age of Absolutism or owns a province in the West India, Deccan, East India, Coromandel, North India, Indonesia, Moluccas, Indochina, Burma, West Africa, East Africa, South Africa or Philippines trade company region and does not have its capital in India, China, Japan, Africa or Oceania
+[*] it's either the year 1700 or later, the Age of Absolutism or owns a province in the West India, Deccan, East India, Coromandel, North India, Indonesia, Moluccas, Indochina, Burma, West Africa, East Africa, South Africa or Philippines trade company region and does not have its capital in India, China, Japan, Africa, East Indies or Oceania
 [/list]
 
 [b]Conditions (possible subject):[/b]
@@ -814,19 +814,19 @@ If a subject gives an additional merchant, the bonuses it gives to its overlord 
 [/list]
 
 [h1]Native Reservation[/h1]
-[i]A Native Reservation is restricted in its diplomacy and doesn't join its overlord's wars. It doesn't cost a diplomatic relation and transfers trade power to its overlord. It gains a bonus on tax income and development cost as well as a malus on land forcelimit. Further more it gains a bonus on institution spread and embracement cost, if it is behind its overlord in institutions, as well as additional liberty desire, if it is ahead. It also gains a bonus on a specific technology cost, if it is behind its overlord in the specific technology, as well as additional liberty desire, if it is ahead. A civilized Native Reservation, which means one that doesn't have a native or tribal government, grants its overlord a bonus on yearly prestige and diplomatic reputation. An uncivilized Native Reservation grants its overlord a bonus on army morale and has a higher liberty desire. A Native Reservation can only be established by independent former colonial nations in North America, South America or Oceania or independent nations with at least 1 colonial subject and a native uprising chance modifier value of less than -90% in independent nations with their capital in North America, South America or Oceania that were no colonial nations before and that they have a very small border distance to.[/i]
+[i]A Native Reservation is restricted in its diplomacy and doesn't join its overlord's wars. It doesn't cost a diplomatic relation and transfers trade power to its overlord. It gains a bonus on tax income and development cost as well as a malus on land forcelimit. Further more it gains a bonus on institution spread and embracement cost, if it is behind its overlord in institutions, as well as additional liberty desire, if it is ahead. It also gains a bonus on a specific technology cost, if it is behind its overlord in the specific technology, as well as additional liberty desire, if it is ahead. A civilized Native Reservation, which means one that doesn't have a native or tribal government, grants its overlord a bonus on yearly prestige and diplomatic reputation. An uncivilized Native Reservation grants its overlord a bonus on army morale and has a higher liberty desire. A Native Reservation can only be established by independent former colonial nations in North America, South America, Africa or Oceania or independent nations with at least 1 colonial subject and a native uprising chance modifier value of less than -90% in independent nations with their capital in North America, South America, Africa or Oceania that were no colonial nations before and that they have a very small border distance to.[/i]
 
 [b]Conditions (possible overlord):[/b]
 [list]
 [*] is not a subject nation
-[*] is either a former colonial nation with capital in North America, South America or Oceania or has at least 1 colonial subject and a native uprising change modifier value of less than -90%
+[*] is either a former colonial nation with capital in North America, South America, Africa or Oceania or has at least 1 colonial subject and a native uprising change modifier value of less than -90%
 [/list]
 
 [b]Conditions (possible subject):[/b]
 [list]
 [*] is not a subject nation
 [*] is not a former colonial nation
-[*] has its capital in North America, South America or Oceania
+[*] has its capital in North America, South America, Africa or Oceania
 [*] the border distance to the potential overlord is very small (< 10)
 [/list]
 

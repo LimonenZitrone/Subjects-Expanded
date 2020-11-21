@@ -520,7 +520,7 @@ roman_client_kingdom_modifier = {
 }
 
 roman_client_kingdom_overlord_modifier = {
-	land_forcelimit = 1
+	land_forcelimit = 5
 }
 
 roman_client_kingdom_no_dip_upkeep_cost_modifier = {

@@ -692,6 +692,7 @@ is_possible_subject_of_subject_type_native_reserve = {
 	NOT = { is_subject_of_type = native_reserve }
 	is_subject = no
 	is_former_colonial_nation = no
+	NOT = { technology_group = western }
 	capital_scope = {
 		OR = {
 			continent = north_america

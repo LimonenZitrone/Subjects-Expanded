@@ -826,6 +826,7 @@ If a subject gives an additional merchant, the bonuses it gives to its overlord 
 [list]
 [*] is not a subject nation
 [*] is not a former colonial nation
+[*] is not in the western technology group
 [*] has its capital in North America, South America, Africa or Oceania
 [*] the border distance to the potential overlord is very small (< 10)
 [/list]

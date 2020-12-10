@@ -190,6 +190,8 @@
 
  naval_march_low_dev_modifier: "Marine-Mark"
  naval_march_low_dev_overlord_modifier: "Besitzt Marine-Marken"
+ naval_march_send_officers_modifier: "Lehnsherr hat Marineoffiziere gesendet"
+ naval_march_send_officers_overlord_modifier: "Marineoffiziere gesendet"
 
  trade_outpost_modifier: "Handelsaußenposten"
  improved_trade_outpost_modifier: "Handelsaußenposten-Infrastruktur verbessert"

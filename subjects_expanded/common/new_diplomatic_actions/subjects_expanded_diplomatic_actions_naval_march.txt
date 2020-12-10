@@ -2,14 +2,14 @@ establish_naval_march = {
 	category = influence
 
 	require_acceptance = no
-	
+
 	is_visible = {
 		can_create_subject_type = {
 			subject = FROM
 			subject_type = naval_march
 		}
 	}
-	
+
 	is_allowed = {
 		can_create_subject_type = {
 			subject = FROM
@@ -19,7 +19,7 @@ establish_naval_march = {
 		FROM = { is_at_war = no }
 		FROM = { NOT = { liberty_desire = 50 } }
 	}
-	
+
 	on_accept = {
 		if = {
 			limit = {
@@ -37,7 +37,7 @@ establish_naval_march = {
 			}
 		}
 	}
-	
+
 	ai_will_do = {
 		navy_size = 50
 		FROM = {
@@ -61,12 +61,12 @@ establish_naval_march = {
 
 ask_to_become_naval_march = {
 	category = influence
-	
+
 	alert_index = 6
 	alert_tooltip = ask_to_become_naval_march_alert_tooltip
-	
+
 	require_acceptance = yes
-	
+
 	is_visible = {
 		FROM = {
 			can_create_subject_type = {
@@ -75,7 +75,7 @@ ask_to_become_naval_march = {
 			}
 		}
 	}
-	
+
 	is_allowed = {
 		FROM = {
 			can_create_subject_type = {
@@ -87,7 +87,7 @@ ask_to_become_naval_march = {
 		FROM = { is_at_war = no }
 		NOT = { liberty_desire = 50 }
 	}
-	
+
 	on_accept = {
 		if = {
 			limit = {
@@ -109,7 +109,7 @@ ask_to_become_naval_march = {
 			}
 		}
 	}
-	
+
 	on_decline = {
 		if = {
 			limit = {
@@ -133,7 +133,7 @@ ask_to_become_naval_march = {
 			}
 		}
 	}
-	
+
 	ai_acceptance = {
 		add_entry = {
 			name = OPINION
@@ -211,7 +211,7 @@ ask_to_become_naval_march = {
 			multiply_variable = { which = ai_value value = -1 }
 		}
 	}
-	
+
 	ai_will_do = {
 		num_of_ports = 5
 		navy_size = 20
@@ -227,5 +227,95 @@ ask_to_become_naval_march = {
 				had_country_flag = { flag = declined_become_naval_march_@ROOT days = 1825 }
 			}
 		}
+	}
+}
+
+naval_march_enable_send_officers = {
+	category = influence
+
+	require_acceptance = no
+
+	is_visible = {
+		FROM = {
+			is_subject_of = ROOT
+			is_subject_of_type = naval_march
+			NOT = { has_country_flag = naval_march_send_officers }
+		}
+	}
+
+	is_allowed = {
+		hidden_trigger = {
+			FROM = {
+				is_subject_of = ROOT
+				is_subject_of_type = naval_march
+				NOT = { has_country_flag = naval_march_send_officers }
+			}
+		}
+		FROM = { NOT = { liberty_desire = 50 } }
+	}
+
+	on_accept = {
+		if = {
+			limit = {
+				FROM = {
+					is_subject_of = ROOT
+					is_subject_of_type = naval_march
+					NOT = { has_country_flag = naval_march_send_officers }
+				}
+				FROM = { NOT = { liberty_desire = 50 } }
+			}
+			FROM = {
+				set_country_flag = naval_march_send_officers
+			}
+		}
+	}
+
+	ai_will_do = {
+		always = no
+	}
+}
+
+naval_march_disable_send_officers = {
+	category = influence
+
+	require_acceptance = no
+
+	is_visible = {
+		FROM = {
+			is_subject_of = ROOT
+			is_subject_of_type = naval_march
+			has_country_flag = naval_march_send_officers
+		}
+	}
+
+	is_allowed = {
+		hidden_trigger = {
+			FROM = {
+				is_subject_of = ROOT
+				is_subject_of_type = naval_march
+				has_country_flag = naval_march_send_officers
+			}
+		}
+		FROM = { NOT = { liberty_desire = 50 } }
+	}
+
+	on_accept = {
+		if = {
+			limit = {
+				FROM = {
+					is_subject_of = ROOT
+					is_subject_of_type = naval_march
+					has_country_flag = naval_march_send_officers
+				}
+				FROM = { NOT = { liberty_desire = 50 } }
+			}
+			FROM = {
+				clr_country_flag = naval_march_send_officers
+			}
+		}
+	}
+
+	ai_will_do = {
+		always = no
 	}
 }

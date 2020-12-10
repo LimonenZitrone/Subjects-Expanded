@@ -4709,6 +4709,7 @@ naval_march = {
 	diplomacy_subject_sprite = GFX_diplomacy_amnaval_march
 
 	# Properties:
+	send_officers = no
 	press_sailors = yes
 
 	# Modifiers:
@@ -4724,6 +4725,12 @@ naval_march = {
 		expiration_message_overlord = MARCHTOOLARGE
 		expiration_message_subject = MARCHTOOLARGEUS
 	}
+	modifier_subject = {
+		modifier = naval_march_send_officers_modifier
+		trigger = {
+			has_country_flag = naval_march_send_officers
+		}
+	}
 
 	modifier_overlord = clear
 	modifier_overlord = {
@@ -4733,6 +4740,12 @@ naval_march = {
 		modifier = naval_march_low_dev_overlord_modifier
 		trigger = {
 			NOT = { development_of_overlord_fraction = 0.25 }
+		}
+	}
+	modifier_overlord = {
+		modifier = naval_march_send_officers_overlord_modifier
+		trigger = {
+			has_country_flag = naval_march_send_officers
 		}
 	}
 

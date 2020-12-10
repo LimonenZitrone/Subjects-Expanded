@@ -254,6 +254,14 @@
  ask_to_become_naval_march_alert_tooltip: "Request Naval March"
  ask_to_become_naval_march_dialog: "§Y[This.GetName]§! offers us that they become our §YNaval March§!. \n[naval_march_desc]  \nIf the total development of the Naval March is not more than §Y25%§! of its overlord, they will get the following bonuses: \n   [global_sailors_modifier]: §G+25.0%§! \n   [naval_forcelimit_modifier]: §G+50.0%§! \n   [ship_durability]: §G+10.0%§! \n   [naval_maintenance_modifier]: §G-30.0%§! \n   [sailors_recovery_speed]: §G+20.0%§! \n   [blockade_efficiency]: §G+10.0%§! \n   [global_ship_recruit_speed]: §G-10.0%§! \n   [naval_morale]: §G+10.0%§! \n\nAnd the overlord will gain the following bonus: \n   [naval_forcelimit]: §G+25§! \n\nDo you want to accept?"
 
+ naval_march_enable_send_officers_title: "Enable Send Naval Officers"
+ naval_march_enable_send_officers_desc: "Start sending naval officers to §Y[From.GetName]§!. This will increase our navy maintenance by §R+10%§! and change their liberty desire by §G-10%§!. \n\nIt will also have the following effects for §Y[From.GetName]§!: \n   [naval_morale]: §G+20.0%§! \n   [heavy_ship_power]: §G+5.0%§! \n   [light_ship_power]: §G+5.0%§! \n   [galley_power]: §G+5.0%§!"
+ naval_march_enable_send_officers_tooltip: "Start sending naval officers to §Y[From.GetName]§!.\n"
+
+ naval_march_disable_send_officers_title: "Disable Send Naval Officers"
+ naval_march_disable_send_officers_desc: "Stop sending naval officers to §Y[From.GetName]§!. This will remove the §R+10%§! increase of our navy maintenance and the §G-10%§! reduction of their liberty desire. \n\nIt will also remove the following bonuses from §Y[From.GetName]§!: \n   [naval_morale]: §G+20.0%§! \n   [heavy_ship_power]: §G+5.0%§! \n   [light_ship_power]: §G+5.0%§! \n   [galley_power]: §G+5.0%§!"
+ naval_march_disable_send_officers_tooltip: "Stop sending naval officers to §Y[From.GetName]§!.\n"
+
 
  establish_trade_outpost_title: "Establish Trade Outpost"
  establish_trade_outpost_desc: "Do you want to offer §Y[From.GetName]§! to become our Trade Outpost? \n[trade_outpost_desc]"

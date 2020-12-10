@@ -1,6 +1,6 @@
 defined_text = {
 	name = global_sailors_modifier
-	
+
 	text = {
 		trigger = {
 			always = yes
@@ -11,7 +11,7 @@ defined_text = {
 
 defined_text = {
 	name = naval_forcelimit_modifier
-	
+
 	text = {
 		trigger = {
 			always = yes
@@ -22,7 +22,7 @@ defined_text = {
 
 defined_text = {
 	name = naval_forcelimit
-	
+
 	text = {
 		trigger = {
 			always = yes
@@ -33,7 +33,7 @@ defined_text = {
 
 defined_text = {
 	name = ship_durability
-	
+
 	text = {
 		trigger = {
 			always = yes
@@ -44,7 +44,7 @@ defined_text = {
 
 defined_text = {
 	name = naval_maintenance_modifier
-	
+
 	text = {
 		trigger = {
 			always = yes
@@ -55,7 +55,7 @@ defined_text = {
 
 defined_text = {
 	name = sailors_recovery_speed
-	
+
 	text = {
 		trigger = {
 			always = yes
@@ -66,7 +66,7 @@ defined_text = {
 
 defined_text = {
 	name = blockade_efficiency
-	
+
 	text = {
 		trigger = {
 			always = yes
@@ -77,7 +77,7 @@ defined_text = {
 
 defined_text = {
 	name = global_ship_recruit_speed
-	
+
 	text = {
 		trigger = {
 			always = yes
@@ -88,7 +88,7 @@ defined_text = {
 
 defined_text = {
 	name = naval_morale
-	
+
 	text = {
 		trigger = {
 			always = yes
@@ -99,7 +99,7 @@ defined_text = {
 
 defined_text = {
 	name = movement_speed
-	
+
 	text = {
 		trigger = {
 			always = yes
@@ -110,7 +110,7 @@ defined_text = {
 
 defined_text = {
 	name = ae_impact
-	
+
 	text = {
 		trigger = {
 			always = yes
@@ -121,7 +121,7 @@ defined_text = {
 
 defined_text = {
 	name = loot_amount
-	
+
 	text = {
 		trigger = {
 			always = yes
@@ -130,3 +130,35 @@ defined_text = {
 	}
 }
 
+defined_text = {
+	name = heavy_ship_power
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = HEAVYSHIP_POWER
+	}
+}
+
+defined_text = {
+	name = light_ship_power
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = LIGHTSHIP_POWER
+	}
+}
+
+defined_text = {
+	name = galley_power
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = GALLEY_POWER
+	}
+}

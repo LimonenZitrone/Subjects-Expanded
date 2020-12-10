@@ -33,11 +33,14 @@ country_event = {
 			}
 			any_subject_country = {
 				is_subject_of_type = native_reserve
-				capital_scope = {
-					NOT = { continent = north_america }
-					NOT = { continent = south_america }
-					NOT = { continent = oceania }
-					NOT = { continent = africa }
+				OR = {
+					capital_scope = {
+						NOT = { continent = north_america }
+						NOT = { continent = south_america }
+						NOT = { continent = oceania }
+						NOT = { continent = africa }
+					}
+					technology_group = western
 				}
 			}
 		}
@@ -87,11 +90,14 @@ country_event = {
 			every_subject_country = {
 				limit = {
 					is_subject_of_type = native_reserve
-					capital_scope = {
-						NOT = { continent = north_america }
-						NOT = { continent = south_america }
-						NOT = { continent = oceania }
-						NOT = { continent = africa }
+					OR = {
+						capital_scope = {
+							NOT = { continent = north_america }
+							NOT = { continent = south_america }
+							NOT = { continent = oceania }
+							NOT = { continent = africa }
+						}
+						technology_group = western
 					}
 				}
 				grant_independence = yes

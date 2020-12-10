@@ -4743,6 +4743,34 @@ naval_march = {
 		}
 	}
 	modifier_overlord = {
+		modifier = naval_march_low_dev_overlord_modifier
+		trigger = {
+			num_of_cities = 2
+			NOT = { development_of_overlord_fraction = 0.25 }
+		}
+	}
+	modifier_overlord = {
+		modifier = naval_march_low_dev_overlord_modifier
+		trigger = {
+			num_of_cities = 3
+			NOT = { development_of_overlord_fraction = 0.25 }
+		}
+	}
+	modifier_overlord = {
+		modifier = naval_march_low_dev_overlord_modifier
+		trigger = {
+			num_of_cities = 4
+			NOT = { development_of_overlord_fraction = 0.25 }
+		}
+	}
+	modifier_overlord = {
+		modifier = naval_march_low_dev_overlord_modifier
+		trigger = {
+			num_of_cities = 5
+			NOT = { development_of_overlord_fraction = 0.25 }
+		}
+	}
+	modifier_overlord = {
 		modifier = naval_march_send_officers_overlord_modifier
 		trigger = {
 			has_country_flag = naval_march_send_officers

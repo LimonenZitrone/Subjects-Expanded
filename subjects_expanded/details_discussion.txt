@@ -594,7 +594,8 @@ If a subject gives an additional merchant, the bonuses it gives to its overlord 
 [*] Naval Marches can only be established diplomatically
 [*] Naval Marches have a max government rank of 1 (Duchy)
 [*] Naval Marches gain a bonus on morale of navies, sailors, sailor recovery speed, naval forcelimit, navy maintenance, blockade efficiency, shipbuilding time and ship duratbility as long as they have less than 25% of their overlord's total development
-[*] Naval Marches give their overlord a bonus on naval forcelimit as long as they have less than 25% of their overlord's total development
+[*] Naval Marches give their overlord a bonus on naval forcelimit as long as they have less than 25% of their overlord's total development (+5 per province they own, capped at 25)
+[*] Naval Marches have a subject interaction (diplomatic action) similar to the "Send Officers" subject interaction, but with naval bonuses
 [/list]
 
 [h1]Trade Outpost[/h1]

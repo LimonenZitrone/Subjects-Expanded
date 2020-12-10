@@ -825,14 +825,14 @@ naval_march_low_dev_modifier = {
 }
 
 naval_march_low_dev_overlord_modifier = {
-	naval_forcelimit = 25
+	naval_forcelimit = 5
 }
 
 naval_march_send_officers_modifier = {
 	naval_morale = 0.2
-	heavy_ship_power = 0.05
-	light_ship_power = 0.05
-	galley_power = 0.05
+	heavy_ship_power = 0.1
+	light_ship_power = 0.1
+	galley_power = 0.1
 	liberty_desire = -10
 }
 

@@ -603,3 +603,5 @@
  FROM_LEFT_DURING_SHADOW_KINGDOM_EVENT: "Sie waren ein Mitglied und verließen das HRR"
  FROM_HAS_NOT_MUCH_MONEY: "Sie haben nur wenig Geld"
  FROM_HAS_ALREAD_CONTRIBUTED_MUCH_TO_CURIA_TREASURY: "Sie haben bereits viel zur päpstlichen Schatzkammer beigetragen"
+ ROOT_IS_FRISIAN: "Wir haben die Primärkultur §YFrisisch§!"
+ FROM_IS_FRISIAN: "Sie haben die Primärkultur §YFrisisch§!"

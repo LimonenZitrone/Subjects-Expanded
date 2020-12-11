@@ -4317,6 +4317,7 @@ dutch_province_subject = {
 		OR = {
 			primary_culture = dutch
 			primary_culture = flemish
+			primary_culture = frisian
 		}
 		capital_scope = {
 			region = low_countries_region

@@ -603,3 +603,5 @@
  FROM_LEFT_DURING_SHADOW_KINGDOM_EVENT: "They were a member and left the HRE"
  FROM_HAS_NOT_MUCH_MONEY: "They only have few money"
  FROM_HAS_ALREAD_CONTRIBUTED_MUCH_TO_CURIA_TREASURY: "They already contributed a lot to the curia treasury"
+ ROOT_IS_FRISIAN: "We have the primary culture §YFrisian§!"
+ FROM_IS_FRISIAN: "They have the primary culture §YFrisian§!"

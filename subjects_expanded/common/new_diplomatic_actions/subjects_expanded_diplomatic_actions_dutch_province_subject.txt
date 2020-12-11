@@ -503,6 +503,30 @@ establish_dutch_province_subject = {
 			}
 			multiply_variable = { which = ai_value value = -5 }
 		}
+		add_entry = {
+			name = FROM_IS_FRISIAN
+			limit = {
+				FROM = {
+					primary_culture = frisian
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 10
+			}
+			multiply_variable = { which = ai_value value = -1 }
+		}
+		add_entry = {
+			name = ROOT_IS_FRISIAN
+			limit = {
+				primary_culture = frisian
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 20
+			}
+			multiply_variable = { which = ai_value value = -1 }
+		}
 	}
 
 	ai_will_do = {
@@ -523,6 +547,12 @@ establish_dutch_province_subject = {
 			owns = 99
 			owns = 100
 			owns = 4383
+		}
+		OR = {
+			NOT = { primary_culture = frisian }
+			FROM = {
+				NOT = { primary_culture = frisian }
+			}
 		}
 		FROM = {
 			OR = {
@@ -1003,6 +1033,30 @@ ask_for_dutch_province_subject = {
 			}
 			multiply_variable = { which = ai_value value = -1 }
 		}
+		add_entry = {
+			name = FROM_IS_FRISIAN
+			limit = {
+				FROM = {
+					primary_culture = frisian
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 20
+			}
+			multiply_variable = { which = ai_value value = -1 }
+		}
+		add_entry = {
+			name = ROOT_IS_FRISIAN
+			limit = {
+				primary_culture = frisian
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 10
+			}
+			multiply_variable = { which = ai_value value = -1 }
+		}
 	}
 
 	ai_will_do = {
@@ -1024,6 +1078,12 @@ ask_for_dutch_province_subject = {
 		NOT = { num_of_subjects = 1 }
 		NOT = { num_of_cities = 20 }
 		NOT = { num_of_cities = FROM }
+		OR = {
+			NOT = { primary_culture = frisian }
+			FROM = {
+				NOT = { primary_culture = frisian }
+			}
+		}
 		FROM = {
 			NOT = { has_country_flag = formed_netherlands_flag }
 			OR = {

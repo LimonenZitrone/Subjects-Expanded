@@ -30,6 +30,7 @@
  subjects_expanded_events2.EVTOPT27: "There currently are §G[REB.num_of_subjects_of_type_imperial_feud_subject.GetValue]§! §YImperial Feuds§! in the world."
  subjects_expanded_events2.EVTOPT28: "There currently are §G[REB.num_of_subjects_of_type_pagan_chiefdom.GetValue]§! §YChiefdoms§! in the world."
  subjects_expanded_events2.EVTOPT29: "There currently are §G[REB.num_of_subjects_of_type_native_reserve.GetValue]§! §YNative Reservations§! in the world."
+ subjects_expanded_events2.EVTOPT30: "There currently are §G[REB.num_of_subjects_of_type_administrative_region.GetValue]§! §YAdministrative Regions§! in the world."
 
  subjects_expanded_events.EVTNAME3: "Idea Mods?"
  subjects_expanded_events.EVTDESC3: "Spawning Dominions via decisions sets their idea groups depending on the ones you chose. If you are using a mod that alters the vanilla idea groups in any way, this might §Rcrash§! the game. So select the matching option below to prevent that from happening!"
@@ -272,3 +273,15 @@
  subjects_expanded_native_reserve_events.EVTNAME1: "Native Reserves become Independent"
  subjects_expanded_native_reserve_events.EVTDESC1: "Either we lost the rights to establish Native Reservations or at least one of our Native Reservations has moved its capital position to a different continent. We will now have to grant them independence."
  subjects_expanded_native_reserve_events1.EVTOPT1: "We could vassalize them at some point..."
+
+ subjects_expanded_administrative_region_events.EVTNAME2: "[From.Monarch.GetName] crowned [From.Monarch.GetTitle] of [From.GetName]"
+ subjects_expanded_administrative_region_events.EVTDESC2: "[From.Monarch.GetName] [From.Monarch.Dynasty.GetName] has been crowned [From.Monarch.GetTitle] of [From.GetName], our Administrative Region."
+ subjects_expanded_administrative_region_events2.EVTOPT1: "Wonderful."
+
+ subjects_expanded_administrative_region_events.EVTNAME3: "Heir disinherited"
+ subjects_expanded_administrative_region_events.EVTDESC3: "Our overlord [From.GetName] has forced us to disinherit our beloved heir [Root.Heir.GetName]."
+ subjects_expanded_administrative_region_events3.EVTOPT1: "How dare they do that..."
+
+ subjects_expanded_administrative_region_events.EVTNAME4: "Administrative Region demoted to a vassal"
+ subjects_expanded_administrative_region_events.EVTDESC4: "Our Administrative Region has stopped being a monarchy or theocracy and thus was demoted to a normal vassal again."
+ subjects_expanded_administrative_region_events4.EVTOPT1: "That's a shame."

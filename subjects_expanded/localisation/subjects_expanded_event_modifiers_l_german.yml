@@ -254,3 +254,6 @@
  native_reserve_ahead_in_mil_tech_modifier: "Ist in Bezug auf militärische Technologie fortschrittlich"
  native_reserve_civilized_overlord_modifier: "Besitzt zivilisierte Eingeborenenreservate"
  native_reserve_uncivilized_overlord_modifier: "Besitzt unzivilisierte Eingeborenenreservate"
+
+ administrative_region_modifier: "Administrative Region"
+ administrative_region_modifier_overlord_modifier: "Besitzt Administrative Regionen"

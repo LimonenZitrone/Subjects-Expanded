@@ -436,7 +436,7 @@
  cancel_imperial_feud_subject_tooltip: "Beedet die Vasallisierung von §Y[From.GetName]§! und entlasst sie in die Freiheit.\n"
 
 
- establish_pagan_chiefdom_title: "Stammesfürstentum errichten"
+ establish_pagan_chiefdom_title: "Stammesfürstentum ernennen"
  establish_pagan_chiefdom_desc: "Ernennt Euren Vasallen [From.GetName] zu einem §YStammesfürstentum§!. \n[pagan_chiefdom_desc]"
  establish_pagan_chiefdom_tooltip: "Ernennt Euren Vasallen [From.GetName] zu einem §YStammesfürstentum§!.\n"
 
@@ -470,6 +470,15 @@
  cancel_native_reserve_title: "Eingeborenenreservat entlassen"
  cancel_native_reserve_desc: "Beendet das Abhängigkeitsverhältnis von §Y[From.GetName]§! zu uns. Dies wird ihre Meinung über uns um §R-200§! verschlechtern, sofern sie ein Freiheitsstreben unter §Y50%§! besitzen. Außerdem verlieren wir §R-25§! Prestige und erhalten eine §Y5-jährige§! Waffenruhe mit ihnen."
  cancel_native_reserve_tooltip: "Beedet die Vasallisierung von §Y[From.GetName]§! und entlasst sie in die Freiheit.\n"
+
+
+ establish_administrative_region_title: "Administrative Region ernennen"
+ establish_administrative_region_desc: "Ernennt Euren Vasallen [From.GetName] zu einer §YAdministrative Region§!. \n[administrative_region_desc]"
+ establish_administrative_region_tooltip: "Ernennt Euren Vasallen [From.GetName] zu einer §YAdministrative Region§!.\n"
+
+ administrative_region_remove_heir_title: "Nachfolger enterben"
+ administrative_region_remove_heir_desc: "Zwingt §Y[From.GetName]§! dazu, ihren Nachfolger zu enterben. \nDies wird ihr Freiheitsstreben um §R+25%§! und ihre Meinung über uns um §R-100§! verändern."
+ administrative_region_remove_heir_tooltip: "Zwingt §Y[From.GetName]§! dazu, ihren Nachfolger zu enterben.\n"
 
 
  return_subject_to_vassal_title: "Zum Vasall degradieren"

@@ -395,3 +395,13 @@ native_reserve_forced = {
 	yearly_decay = 4
 	min = -100
 }
+
+is_administrative_region = {
+	opinion = 50
+}
+
+administrative_region_removed_heir_opinion = {
+	opinion = -100
+	yearly_decay = 5
+	min = -150
+}

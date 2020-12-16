@@ -712,6 +712,20 @@ is_possible_subject_of_subject_type_native_reserve = {
 	}
 }
 
+is_possible_subject_of_subject_type_administrative_region = {
+	# PREVs in THIS scope refer to possible overlord
+	NOT = { is_subject_of_type = administrative_region }
+	is_subject_of = PREV
+	is_vassal_or_similar_subject = yes
+	OR = {
+		government = monarchy
+		government = theocracy
+	}
+	capital_scope = {
+		development = 30
+	}
+}
+
 can_create_subject_type = {
 	can_be_overlord = $subject_type$
 	$subject$ = {

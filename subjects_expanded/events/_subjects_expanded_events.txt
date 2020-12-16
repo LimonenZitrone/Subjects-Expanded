@@ -73,6 +73,7 @@ country_event = {
 			count_num_of_subjects_of_type = { type = imperial_feud_subject }
 			count_num_of_subjects_of_type = { type = pagan_chiefdom }
 			count_num_of_subjects_of_type = { type = native_reserve }
+			count_num_of_subjects_of_type = { type = administrative_region }
 		}
 	}
 
@@ -306,6 +307,14 @@ country_event = {
 		ai_chance = { factor = 100 }
 
 		display_subjects_of_type = { type = native_reserve }
+	}
+
+	option = {
+		name = subjects_expanded_events2.EVTOPT30
+
+		ai_chance = { factor = 100 }
+
+		display_subjects_of_type = { type = administrative_region }
 	}
 }
 

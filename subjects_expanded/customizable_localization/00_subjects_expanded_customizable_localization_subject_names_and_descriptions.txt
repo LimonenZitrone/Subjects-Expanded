@@ -224,6 +224,12 @@ defined_text = {
 		}
 		localisation_key = "[native_reserve]"
 	}
+	text = {
+		trigger = {
+			is_subject_of_type = administrative_region
+		}
+		localisation_key = "[administrative_region]"
+	}
 
 	text = {
 		trigger = {
@@ -1046,5 +1052,27 @@ defined_text = {
 			always = yes
 		}
 		localisation_key = native_reserve_long_desc
+	}
+}
+
+defined_text = {
+	name = administrative_region
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = administrative_region_title
+	}
+}
+
+defined_text = {
+	name = administrative_region_desc
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = administrative_region_long_desc
 	}
 }

@@ -30,6 +30,7 @@
  subjects_expanded_events2.EVTOPT27: "Derzeit gibt es §G[REB.num_of_subjects_of_type_imperial_feud_subject.GetValue]§! §YKaiserliche Lehen§! auf der Welt."
  subjects_expanded_events2.EVTOPT28: "Derzeit gibt es §G[REB.num_of_subjects_of_type_pagan_chiefdom.GetValue]§! §YStammesfürstentümer§! auf der Welt."
  subjects_expanded_events2.EVTOPT29: "Derzeit gibt es §G[REB.num_of_subjects_of_type_native_reserve.GetValue]§! §YEingeborenenreservate§! auf der Welt."
+ subjects_expanded_events2.EVTOPT30: "Derzeit gibt es §G[REB.num_of_subjects_of_type_administrative_region.GetValue]§! §YAdministrative Regionen§! auf der Welt."
 
  subjects_expanded_events.EVTNAME3: "Ideen-Mods?"
  subjects_expanded_events.EVTDESC3: "Herrschaftsgebiete per Entscheidung zu errichten gibt ihnen Ideengruppen abhängig von Euren. Falls Ihr eine Mod benutzt, die die Vanilla-Ideengruppen verändert, könnte dies das Spiel zum §RAbsturz§! bringen. Deshalb solltet Ihr hier die passende Option auswählen, um dies zu verhindern!"
@@ -272,3 +273,15 @@
  subjects_expanded_native_reserve_events.EVTNAME1: "Eingeborenenreservate werden unabhängig"
  subjects_expanded_native_reserve_events.EVTDESC1: "Entweder haben wir die Rechte verloren, um Eingeborenenreservate zu etablieren, oder zumindest eines unserer Eingeborenenreservate hat seine Hauptstadt auf einen anderen Kontinent verlegt. Wir werden sie nun in die Freiheit entlassen müssen."
  subjects_expanded_native_reserve_events1.EVTOPT1: "Wir könnten sie irgendwann vasallisieren..."
+
+ subjects_expanded_administrative_region_events.EVTNAME2: "[From.Monarch.GetName] [From.GetMzumzur] [From.Monarch.GetTitle] von [From.GetName] gekrönt"
+ subjects_expanded_administrative_region_events.EVTDESC2: "[From.Monarch.GetName] [From.Monarch.Dynasty.GetName] wurde [From.GetMzumzur] [From.Monarch.GetTitle] von [From.GetName], unserer Administrativen Region, gekrönt."
+ subjects_expanded_administrative_region_events2.EVTOPT1: "Wundervoll."
+
+ subjects_expanded_administrative_region_events.EVTNAME3: "Thronfolger enterbt"
+ subjects_expanded_administrative_region_events.EVTDESC3: "Unser Lehnsherr [From.GetName] hat uns dazu gezwungen, unseren geliebten Thronfolger [Root.Heir.GetName] zu enterben."
+ subjects_expanded_administrative_region_events3.EVTOPT1: "Wie können sie es wagen, das zu tun..."
+
+ subjects_expanded_administrative_region_events.EVTNAME4: "Administrative Region zum Vasallen degradiert"
+ subjects_expanded_administrative_region_events.EVTDESC4: "Unsere Administrative Region ist keine Monarchie oder Theokratie mehr und wurde deshalb wieder zu einem normalen Vasallen degradiert."
+ subjects_expanded_administrative_region_events4.EVTOPT1: "Das ist schade."

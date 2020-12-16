@@ -39,6 +39,7 @@
  IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_imperial_feud_subject: "Kann zu einem §YKaiserlichen Lehen§! gemacht werden"
  IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_pagan_chiefdom: "Kann zu einem §YStammesfürstentum§! gemacht werden"
  IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_native_reserve: "Kann zu einem §YEingeborenenreservat§! gemacht werden"
+ IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_administrative_region: "Kann zu einer §YAdministrativen Region§! gemacht werden"
 
  THIS_IS_FORMER_AUTONOMOUS_DOMINION: "Ist ein ehemaliges §YHerrschaftsgebiet§! oder eine ehemalige §YKolonialnation§!"
 
@@ -171,6 +172,8 @@
  RELEASE_TRADE_OUTPOST_IN_THIS_PROVINCE: "Ein @[Root.GetTag] §Y[Root.GetAdjective]er§! Handelsaußenposten wird in §Y[This.GetName]§! errichtet.\n"
 
  FORMER_PAPAL_SANCTUARY_SUBJECT_GETS_EXCOMMUNICATED: "§Y[This.GetName]§! wird exkommuniziert."
+
+ ADMINISTRATIVE_REGION_GAIN_MONARCH_POWER_FROM_RULER_TT: "Erhält §G[From.adm_power_to_gain_from_administrative_region.GetValue]§! £adm£. \nErhält §G[From.dip_power_to_gain_from_administrative_region.GetValue]§! £dip£. \nErhält §G[From.mil_power_to_gain_from_administrative_region.GetValue]§! £mil£."
 
  # Triggered Modifiers:
  HAS_AT_LEAST_3_DOMINIONS_OR_AUTONOMOUS_DOMINIONS_IN_TRADE_COMPANY_REGIONS: "Besitzt mindestens §Y3§! §YHerrschaftsgebiete§! oder §YAutonome Herrschaftsgebiete§! mit Hauptstadt in einer Handelshaus-Region (errichted durch nationale Entscheidungen)"

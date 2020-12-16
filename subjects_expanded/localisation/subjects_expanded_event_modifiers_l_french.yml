@@ -254,3 +254,6 @@
  native_reserve_ahead_in_mil_tech_modifier: "Is ahead in military technology"
  native_reserve_civilized_overlord_modifier: "Has civilized Native Reservations"
  native_reserve_uncivilized_overlord_modifier: "Has uncivilized Native Reservations"
+
+ administrative_region_modifier: "Administrative Region"
+ administrative_region_modifier_overlord_modifier: "Has Administrative Regions"

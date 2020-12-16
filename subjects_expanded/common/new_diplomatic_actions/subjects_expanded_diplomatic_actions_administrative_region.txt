@@ -1,0 +1,142 @@
+establish_administrative_region = {
+	category = influence
+
+	require_acceptance = no
+
+	is_visible = {
+		can_create_subject_type = {
+			subject = FROM
+			subject_type = administrative_region
+		}
+	}
+
+	is_allowed = {
+		can_create_subject_type = {
+			subject = FROM
+			subject_type = administrative_region
+		}
+		is_at_war = no
+		FROM = { is_at_war = no }
+		FROM = { NOT = { liberty_desire = 50 } }
+		NOT = { truce_with = FROM }
+	}
+
+	on_accept = {
+		if = {
+			limit = {
+				can_create_subject_type = {
+					subject = FROM
+					subject_type = administrative_region
+				}
+				is_at_war = no
+				FROM = { is_at_war = no }
+				FROM = { NOT = { liberty_desire = 50 } }
+				NOT = { truce_with = FROM }
+			}
+			create_subject = {
+				subject = FROM
+				subject_type = administrative_region
+			}
+		}
+	}
+
+	ai_will_do = {
+		is_neighbor_of = FROM
+		calc_true_if = {
+			all_subject_country = {
+				is_vassal_or_similar_subject = yes
+			}
+			amount = 3
+		}
+		FROM = {
+			NOT = { total_development = 100 }
+		}
+	}
+}
+
+administrative_region_remove_heir = {
+	category = influence
+
+	require_acceptance = no
+
+	is_visible = {
+		FROM = {
+			is_subject_of = ROOT
+			is_subject_of_type = administrative_region
+			government = monarchy
+		}
+	}
+
+	is_allowed = {
+		hidden_trigger = {
+			FROM = {
+				is_subject_of = ROOT
+				is_subject_of_type = administrative_region
+				government = monarchy
+			}
+		}
+		is_at_war = no
+		FROM = { is_at_war = no }
+		FROM = { NOT = { liberty_desire = 50 } }
+		FROM = {
+			has_regency = no
+		}
+		FROM = {
+			has_heir = yes
+		}
+	}
+
+	on_accept = {
+		if = {
+			limit = {
+				FROM = {
+					is_subject_of = ROOT
+					is_subject_of_type = administrative_region
+					government = monarchy
+				}
+				is_at_war = no
+				FROM = { is_at_war = no }
+				FROM = { NOT = { liberty_desire = 50 } }
+				FROM = {
+					has_regency = no
+				}
+				FROM = {
+					has_heir = yes
+				}
+			}
+			FROM = {
+				set_ruler_flag = administrative_region_remove_heir
+				country_event = { id = subjects_expanded_administrative_region_events.3 }
+			}
+		}
+	}
+
+	ai_will_do = {
+		FROM = {
+			NOT = { has_ruler_flag = administrative_region_remove_heir }
+			NOT = { liberty_desire = 25 }
+			OR = {
+				AND = {
+					NOT = { heir_adm = 3 }
+					NOT = { heir_dip = 3 }
+					NOT = { heir_mil = 3 }
+				}
+				AND = {
+					NOT = { heir_adm = 1 }
+					NOT = { heir_dip = 4 }
+					NOT = { heir_mil = 4 }
+				}
+				AND = {
+					NOT = { heir_adm = 4 }
+					NOT = { heir_dip = 1 }
+					NOT = { heir_mil = 4 }
+				}
+				AND = {
+					NOT = { heir_adm = 4 }
+					NOT = { heir_dip = 4 }
+					NOT = { heir_mil = 1 }
+				}
+			}
+		}
+	}
+}

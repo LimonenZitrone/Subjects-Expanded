@@ -30,6 +30,7 @@ papal_sanctuary_subject = { }
 imperial_feud_subject = { }
 pagan_chiefdom = { }
 native_reserve = { }
+administrative_region = { }
 
 # Subjects
 protectorate = {
@@ -5830,4 +5831,83 @@ native_reserve = {
 
 	overlord_opinion_modifier = is_native_reserve
 	subject_opinion_modifier = is_native_reserve
+}
+
+administrative_region = {
+	copy_from = default
+
+	# Graphics:
+	sprite = GFX_icon_administrative_region
+	diplomacy_overlord_sprite = GFX_diplomacy_leadadministrative_region
+	diplomacy_subject_sprite = GFX_diplomacy_amadministrative_region
+
+	# Triggers:
+	is_potential_overlord = {
+		total_development = 100
+		NOT = {
+			any_subject_country = {
+				is_subject_of_type = administrative_region
+			}
+		}
+	}
+
+	# Properties:
+	transfer_trade_if_merchant_republic = yes
+	joins_overlords_wars = no
+	takes_diplo_slot = no
+	has_power_projection = no
+	can_use_claims = no
+	can_set_mil_focus = no
+
+	max_government_rank = 1
+
+	liberty_desire_development_ratio = 0.2
+	liberty_desire_same_dynasty = -5.0
+	pays_overlord = 0.0
+	forcelimit_bonus = 1.0
+	forcelimit_to_overlord = 0.1
+
+	relative_power_class = 2
+	diplomacy_view_class = 1
+
+	can_fight = {
+	}
+	can_rival = {
+	}
+	can_ally = {
+		same_overlord = administrative_region
+		same_overlord = vassal
+		same_overlord = march
+		same_overlord = client_vassal
+		same_overlord = client_march
+	}
+	can_marry = {
+		same_overlord = administrative_region
+		same_overlord = vassal
+		same_overlord = march
+		same_overlord = client_vassal
+		same_overlord = client_march
+	}
+
+	# Subject Interactions:
+	# (immediate)
+	siphon_income = yes
+	contribute_to_capital = yes
+
+	# Modifiers:
+	modifier_subject = clear
+	modifier_subject = {
+		modifier = subject_nation
+	}
+	modifier_subject = {
+		modifier = administrative_region_modifier
+	}
+
+	modifier_overlord = clear
+	modifier_overlord = {
+		modifier = administrative_region_overlord_modifier
+	}
+
+	overlord_opinion_modifier = is_administrative_region
+	subject_opinion_modifier = is_administrative_region
 }

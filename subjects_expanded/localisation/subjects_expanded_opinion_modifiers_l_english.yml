@@ -102,3 +102,6 @@
  declined_establish_native_reserve_opinion: "Demand for Native Reservation declined"
  declined_ask_for_native_reserve_opinion: "Offer for Native Reservation declined"
  native_reserve_forced: "Forced Native Reservation"
+
+ is_administrative_region: "Administrative Region"
+ administrative_region_removed_heir_opinion: "Forced us to disinherit our heir"

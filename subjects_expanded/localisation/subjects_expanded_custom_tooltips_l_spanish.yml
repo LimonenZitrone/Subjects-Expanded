@@ -39,6 +39,7 @@
  IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_imperial_feud_subject: "Can be made into an §YImperial Feud§!"
  IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_pagan_chiefdom: "Can be made into a §YChiefdom§!"
  IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_native_reserve: "Can be made into a §YNative Reservation§!"
+ IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_administrative_region: "Can be made into an §YAdministrative Region§!"
 
  THIS_IS_FORMER_AUTONOMOUS_DOMINION: "Is a former §YDominion§! or a former §YColonial Nation§!"
 
@@ -171,6 +172,8 @@
  RELEASE_TRADE_OUTPOST_IN_THIS_PROVINCE: "A @[Root.GetTag] §Y[Root.GetAdjective]§! Trade Outpost is created in §Y[This.GetName]§!.\n"
 
  FORMER_PAPAL_SANCTUARY_SUBJECT_GETS_EXCOMMUNICATED: "§Y[This.GetName]§! gets excommunicated."
+
+ ADMINISTRATIVE_REGION_GAIN_MONARCH_POWER_FROM_RULER_TT: "Gain §G[From.adm_power_to_gain_from_administrative_region.GetValue]§! £adm£. \nGain §G[From.dip_power_to_gain_from_administrative_region.GetValue]§! £dip£. \nGain §G[From.mil_power_to_gain_from_administrative_region.GetValue]§! £mil£."
 
  # Triggered Modifiers:
  HAS_AT_LEAST_3_DOMINIONS_OR_AUTONOMOUS_DOMINIONS_IN_TRADE_COMPANY_REGIONS: "Has at least §Y3§! §YDominions§! or §YAutonomous Dominions§! with their capital in a trade company region (established via decisions)"

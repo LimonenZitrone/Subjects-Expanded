@@ -878,4 +878,5 @@ If a subject gives an additional merchant, the bonuses it gives to its overlord 
 [*] Administrative Regions grant their overlord additional monarch power when they get a new ruler
 [*] Administrative Regions do not join their overlord's wars
 [*] Administrative Regions do not cost a diplomatic slot
+[*] Administrative Regions cannot be annexed or integrated
 [/list]

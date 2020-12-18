@@ -717,12 +717,13 @@ is_possible_subject_of_subject_type_administrative_region = {
 	NOT = { is_subject_of_type = administrative_region }
 	is_subject_of = PREV
 	is_vassal_or_similar_subject = yes
+	is_neighbor_of = PREV
 	OR = {
 		government = monarchy
 		government = theocracy
 	}
 	capital_scope = {
-		development = 30
+		development = 25
 	}
 }
 

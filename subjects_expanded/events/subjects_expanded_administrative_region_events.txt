@@ -183,3 +183,92 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = subjects_expanded_administrative_region_events.5
+	title = subjects_expanded_administrative_region_events.EVTNAME5
+	desc = subjects_expanded_administrative_region_events.EVTDESC5
+	picture = GOOD_WITH_MONARCH_eventPicture
+
+	hidden = yes
+
+	trigger = {
+		calc_true_if = {
+			all_subject_country = {
+				is_subject_of_type = administrative_region
+			}
+			amount = 2
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = {
+					any_subject_country = {
+						is_subject_of_type = administrative_region
+						truce_with = ROOT
+					}
+				}
+				every_subject_country = {
+					limit = {
+						is_subject_of_type = administrative_region
+						truce_with = ROOT
+					}
+					ROOT = { vassalize = PREV }
+				}
+			}
+			if = {
+				limit = {
+					any_subject_country = {
+						is_subject_of_type = administrative_region
+						NOT = { is_neighbor_of = ROOT }
+					}
+				}
+				every_subject_country = {
+					limit = {
+						is_subject_of_type = administrative_region
+						NOT = { is_neighbor_of = ROOT }
+					}
+					ROOT = { vassalize = PREV }
+				}
+			}
+			if = {
+				limit = {
+					calc_true_if = {
+						all_subject_country = {
+							is_subject_of_type = administrative_region
+						}
+						amount = 2
+					}
+				}
+				while = {
+					limit = {
+						calc_true_if = {
+							all_subject_country = {
+								is_subject_of_type = administrative_region
+							}
+							amount = 2
+						}
+					}
+					random_subject_country = {
+						limit = {
+							is_subject_of_type = administrative_region
+						}
+						ROOT = { vassalize = PREV }
+					}
+				}
+			}
+		}
+	}
+
+	option = {
+		name = subjects_expanded_administrative_region_events5.EVTOPT1
+
+		ai_chance = { factor = 100 }
+	}
+}

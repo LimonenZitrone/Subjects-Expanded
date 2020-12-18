@@ -257,3 +257,4 @@
 
  administrative_region_modifier: "Administrative Region"
  administrative_region_modifier_overlord_modifier: "Has Administrative Regions"
+ administrative_region_overlord_admin_eff_modifier: "Has Administrative Regions"

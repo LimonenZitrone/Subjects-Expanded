@@ -251,3 +251,5 @@
  display_pagan_chiefdom_desc_tt: "§g[pagan_chiefdom_desc]§W"
  display_native_reserve_title_tt: "§Y[native_reserve]§!"
  display_native_reserve_desc_tt: "§g[native_reserve_desc]§W"
+ display_administrative_region_title_tt: "§Y[administrative_region]§!"
+ display_administrative_region_desc_tt: "§g[administrative_region_desc]§W"

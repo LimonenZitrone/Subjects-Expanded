@@ -41,7 +41,6 @@ establish_administrative_region = {
 	}
 
 	ai_will_do = {
-		is_neighbor_of = FROM
 		calc_true_if = {
 			all_subject_country = {
 				is_vassal_or_similar_subject = yes

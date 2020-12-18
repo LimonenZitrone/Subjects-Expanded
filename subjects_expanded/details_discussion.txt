@@ -847,3 +847,35 @@ If a subject gives an additional merchant, the bonuses it gives to its overlord 
 [*] Native Reservations do not join their overlord's wars
 [*] Native Reservations can only colonize provinces of their primary culture
 [/list]
+
+[h1]Administrative Region[/h1]
+[i]An Administrative Region is limited in its own diplomacy, does not join its overlord's wars and does not cost a diplomatic relation. It gains a bonus on future ruler's administrative, diplomatic and military skill as well as governing capacity and grants its overlord a bonus on vassal tax and administrative efficiency. Furthermore it grants a bonus for tax income to the vassals of its overlord. Additionally, when a new ruler ascends to the throne in an Administrative Region, the overlord gains the new ruler's skills times 10 in monarch points. A country can only have 1 Administrative Region at the same time. An Administrative Region can be created by countries with at least 100 total development in their neighboring vassals that have a monarchy or theocracy and that have at least 25 development in their capital.[/i]
+
+[b]Conditions (possible overlord):[/b]
+[list]
+[*] is not a subject nation
+[*] has at least 100 total development
+[*] does not have an Administrative Region already
+[/list]
+
+[b]Conditions (possible subject):[/b]
+[list]
+[*] is a vassal of the possible overlord
+[*] is a neighbor of the possible overlord
+[*] has a monarchy or theocracy
+[*] has at least 25 development in its capital
+[/list]
+
+[b]Additional Information:[/b]
+[list]
+[*] Administrative Regions can only be established diplomatically
+[*] Administrative Regions have a max government rank of 1 (Duchy)
+[*] Administrative Regions gain a bonus on administrative, diplomatic and military skill of future rulers as well as governing cost
+[*] Administrative Regions gain less liberty desire from development than vassals
+[*] Administrative Regions grant their overlord's vassals a bonus on tax income
+[*] Administrative Regions grant their overlord a bonus on vassal tax
+[*] Administrative Regions grant their overlord a bonus on administrative efficiency (+1% per province they own, capped at +5%)
+[*] Administrative Regions grant their overlord additional monarch power when they get a new ruler
+[*] Administrative Regions do not join their overlord's wars
+[*] Administrative Regions do not cost a diplomatic slot
+[/list]

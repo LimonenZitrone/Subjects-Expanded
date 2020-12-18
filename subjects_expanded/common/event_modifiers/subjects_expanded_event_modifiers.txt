@@ -1117,11 +1117,15 @@ administrative_region_modifier = {
 	monarch_admin_power = 1
 	monarch_diplomatic_power = 1
 	monarch_military_power = 1
+	governing_capacity_modifier = 0.1
 }
 
 administrative_region_overlord_modifier = {
 	vassal_income = 0.1
-	core_creation = -0.05
+}
+
+administrative_region_overlord_admin_eff_modifier = {
+	administrative_efficiency = 0.01
 }
 
 # Modifiers that function as timers

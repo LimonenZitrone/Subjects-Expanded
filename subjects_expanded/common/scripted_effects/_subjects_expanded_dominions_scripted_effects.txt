@@ -3598,7 +3598,17 @@ rename_dominion_accordingly_to_overlord = {
 					tag = MAD
 				}
 			}
-			override_country_name = MAD_DOMINION_$dominion_region$
+			set_country_flag = region_$dominion_region$
+			if = {
+				limit = {
+					has_country_flag = region_EAST_AFRICA
+				}
+				override_country_name = MAD__DOMINION_$dominion_region$
+			}
+			else = {
+				override_country_name = MAD_DOMINION_$dominion_region$
+			}
+			clr_country_flag = region_$dominion_region$
 		}
 		else_if = {
 			limit = {

@@ -245,7 +245,7 @@
 
 
  establish_naval_march_title: "Establish Naval March"
- establish_naval_march_desc: "Make your vassal [From.GetName] to a §YNaval March§!. \n[naval_march_desc] \nIf the total development of the Naval March is not more than §Y25%§! of its overlord, they will get the following bonuses: \n   [global_sailors_modifier]: §G+25.0%§! \n   [naval_forcelimit_modifier]: §G+50.0%§! \n   [ship_durability]: §G+10.0%§! \n   [naval_maintenance_modifier]: §G-30.0%§! \n   [sailors_recovery_speed]: §G+20.0%§! \n   [blockade_efficiency]: §G+10.0%§! \n   [global_ship_recruit_speed]: §G-10.0%§! \n   [naval_morale]: §G+10.0%§! \n\nAnd the overlord will gain the following bonus: \n   [naval_forcelimit]: §G+25§!"
+ establish_naval_march_desc: "Make your vassal [From.GetName] to a §YNaval March§!. \n[naval_march_desc] \nIf the total development of the Naval March is not more than §Y25%§! of its overlord, they will get the following bonuses: \n   [global_sailors_modifier]: §G+25.0%§! \n   [naval_forcelimit_modifier]: §G+50.0%§! \n   [ship_durability]: §G+10.0%§! \n   [naval_maintenance_modifier]: §G-30.0%§! \n   [sailors_recovery_speed]: §G+20.0%§! \n   [blockade_efficiency]: §G+10.0%§! \n   [global_ship_recruit_speed]: §G-10.0%§! \n   [naval_morale]: §G+10.0%§! \n\nAnd the overlord will gain the following bonus: \n   [naval_forcelimit]: §G[From.GetNavalMarchOverlordForcelimitBonus]§! (§G+5§! per province owned by §Y[From.GetName]§!, capped at §G+25§!)"
  establish_naval_march_tooltip: "Make your vassal [From.GetName] to a §YNaval March§!.\n"
 
  ask_to_become_naval_march_title: "Request Naval March"

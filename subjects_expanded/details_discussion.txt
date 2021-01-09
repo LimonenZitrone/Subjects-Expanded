@@ -760,7 +760,7 @@ If a subject gives an additional merchant, the bonuses it gives to its overlord 
 [b]Conditions (possible overlord):[/b]
 [list]
 [*] is emperor of the HRE
-[*] "Revoke the Privilegia" reform (7th reform) of the HRE is NOT enacted
+[*] "Revoke the Privilegia" reform of the HRE is NOT enacted
 [/list]
 
 [b]Conditions (possible subject):[/b]

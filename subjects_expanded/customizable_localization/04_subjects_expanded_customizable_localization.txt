@@ -165,3 +165,45 @@ defined_text = {
 		localisation_key = "50"
 	}
 }
+
+defined_text = {
+	name = GetNavalMarchOverlordForcelimitBonus
+	random = no
+
+	text = {
+		trigger = {
+			num_of_cities = 5
+		}
+		localisation_key = "+25"
+	}
+	text = {
+		trigger = {
+			num_of_cities = 4
+		}
+		localisation_key = "+20"
+	}
+	text = {
+		trigger = {
+			num_of_cities = 3
+		}
+		localisation_key = "+15"
+	}
+	text = {
+		trigger = {
+			num_of_cities = 2
+		}
+		localisation_key = "+10"
+	}
+	text = {
+		trigger = {
+			num_of_cities = 1
+		}
+		localisation_key = "+5"
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = "0"
+	}
+}

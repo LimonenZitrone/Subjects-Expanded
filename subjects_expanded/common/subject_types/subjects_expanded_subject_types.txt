@@ -5868,7 +5868,7 @@ administrative_region = {
 	forcelimit_bonus = 1.0
 	forcelimit_to_overlord = 0.1
 
-	relative_power_class = 2
+	relative_power_class = 1
 	diplomacy_view_class = 1
 
 	can_fight = {
@@ -5876,14 +5876,12 @@ administrative_region = {
 	can_rival = {
 	}
 	can_ally = {
-		same_overlord = administrative_region
 		same_overlord = vassal
 		same_overlord = march
 		same_overlord = client_vassal
 		same_overlord = client_march
 	}
 	can_marry = {
-		same_overlord = administrative_region
 		same_overlord = vassal
 		same_overlord = march
 		same_overlord = client_vassal

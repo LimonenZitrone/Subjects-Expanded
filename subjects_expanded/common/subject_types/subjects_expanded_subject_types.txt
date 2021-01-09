@@ -5858,6 +5858,7 @@ administrative_region = {
 	takes_diplo_slot = no
 	has_power_projection = no
 	can_use_claims = no
+	uses_military_focus = no
 	can_set_mil_focus = no
 
 	max_government_rank = 1

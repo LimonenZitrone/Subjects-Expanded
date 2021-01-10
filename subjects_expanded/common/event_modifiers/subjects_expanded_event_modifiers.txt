@@ -1128,6 +1128,22 @@ administrative_region_overlord_admin_eff_modifier = {
 	administrative_efficiency = 0.01
 }
 
+administrative_region_modifier_administrative_help = {
+	liberty_desire = 40
+}
+
+administrative_region_overlord_modifier_administrative_help_adm = {
+	country_admin_power = 1
+}
+
+administrative_region_overlord_modifier_administrative_help_dip = {
+	country_diplomatic_power = 1
+}
+
+administrative_region_overlord_modifier_administrative_help_mil = {
+	country_military_power = 1
+}
+
 # Modifiers that function as timers
 established_autonomous_dominion = {
 }

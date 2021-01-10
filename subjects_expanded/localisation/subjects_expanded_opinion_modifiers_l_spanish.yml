@@ -105,3 +105,4 @@
 
  is_administrative_region: "Administrative Region"
  administrative_region_removed_heir_opinion: "Forced us to disinherit our heir"
+ administrative_region_enable_administrative_help_opinion: "Enabled Administrative Help"

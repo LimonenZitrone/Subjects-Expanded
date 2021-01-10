@@ -405,3 +405,8 @@ administrative_region_removed_heir_opinion = {
 	yearly_decay = 5
 	min = -150
 }
+
+administrative_region_enable_administrative_help_opinion = {
+	opinion = -100
+	yearly_decay = 3
+}

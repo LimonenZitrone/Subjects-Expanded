@@ -139,3 +139,120 @@ administrative_region_remove_heir = {
 		}
 	}
 }
+
+administrative_region_enable_administrative_help = {
+	category = influence
+
+	require_acceptance = no
+
+	is_visible = {
+		FROM = {
+			is_subject_of = ROOT
+			is_subject_of_type = administrative_region
+			NOT = { has_country_flag = administrative_region_enable_administrative_help }
+		}
+	}
+
+	is_allowed = {
+		hidden_trigger = {
+			FROM = {
+				is_subject_of = ROOT
+				is_subject_of_type = administrative_region
+				NOT = { has_country_flag = administrative_region_enable_administrative_help }
+			}
+		}
+		is_at_war = no
+		NOT = { truce_with = FROM }
+		FROM = { is_at_war = no }
+		FROM = { NOT = { liberty_desire = 50 } }
+		FROM = {
+			has_regency = no
+		}
+	}
+
+	on_accept = {
+		if = {
+			limit = {
+				FROM = {
+					is_subject_of = ROOT
+					is_subject_of_type = administrative_region
+					NOT = { has_country_flag = administrative_region_enable_administrative_help }
+				}
+				is_at_war = no
+				NOT = { truce_with = FROM }
+				FROM = { is_at_war = no }
+				FROM = { NOT = { liberty_desire = 50 } }
+				FROM = {
+					has_regency = no
+				}
+			}
+			FROM = {
+				set_country_flag = administrative_region_enable_administrative_help
+				add_opinion = {
+					who = ROOT
+					modifier = administrative_region_enable_administrative_help_opinion
+				}
+			}
+		}
+	}
+
+	ai_will_do = {
+		has_regency = no
+		OR = {
+			NOT = { ADM = 1 }
+			NOT = { DIP = 1 }
+			NOT = { MIL = 1 }
+		}
+		FROM = {
+			NOT = { liberty_desire = 5 }
+		}
+	}
+}
+
+administrative_region_disable_administrative_help = {
+	category = influence
+
+	require_acceptance = no
+
+	is_visible = {
+		FROM = {
+			is_subject_of = ROOT
+			is_subject_of_type = administrative_region
+			has_country_flag = administrative_region_enable_administrative_help
+		}
+	}
+
+	is_allowed = {
+		hidden_trigger = {
+			FROM = {
+				is_subject_of = ROOT
+				is_subject_of_type = administrative_region
+				has_country_flag = administrative_region_enable_administrative_help
+			}
+		}
+		has_regency = no
+	}
+
+	on_accept = {
+		if = {
+			limit = {
+				FROM = {
+					is_subject_of = ROOT
+					is_subject_of_type = administrative_region
+					has_country_flag = administrative_region_enable_administrative_help
+				}
+				has_regency = no
+			}
+			FROM = {
+				clr_country_flag = administrative_region_enable_administrative_help
+				add_liberty_desire = 40
+			}
+		}
+	}
+
+	ai_will_do = {
+		FROM = {
+			liberty_desire = 55
+		}
+	}
+}

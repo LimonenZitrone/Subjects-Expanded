@@ -480,6 +480,14 @@
  administrative_region_remove_heir_desc: "Force §Y[From.GetName]§! to disinherit their current heir. \nThis will change their liberty desire by §R+25%§! and change their opinion of us by §R-100§!."
  administrative_region_remove_heir_tooltip: "Force §Y[From.GetName]§! to disinherit their current heir.\n"
 
+ administrative_region_enable_administrative_help_title: "Enable Administrative Help"
+ administrative_region_enable_administrative_help_desc: "Start getting administrative help from our Administrative Region §Y[From.GetName]§!. This will change their opinion of us by §R-100§! and increase their liberty desire by §R+40%§! until we disable the Administrative Help again. \n\nWhile it is enabled and §Y[From.GetName]§! has less than §Y50%§! liberty desire, we will receive either §G+1§! £adm£, §G+1§! £dip£ or §G+1§! £mil£ monthly, depending on which is the best skill of the [From.GetAdjective] ruler."
+ administrative_region_enable_administrative_help_tooltip: "Enable receiving Administrative Help from §Y[From.GetName]§!, which grants us monthly monarch power in exchange for liberty desire.\n"
+
+ administrative_region_disable_administrative_help_title: "Disable Administrative Help"
+ administrative_region_disable_administrative_help_desc: "Stop getting administrative help from our Administrative Region §Y[From.GetName]§!. This will remove the additional power bonus we receive and their liberty desire malus, which however will not be removed instantly but decay yearly."
+ administrative_region_disable_administrative_help_tooltip: "Disable receiving Administrative Help from §Y[From.GetName]§!.\n"
+
 
  return_subject_to_vassal_title: "Demote to Vassal"
  return_subject_to_vassal_desc: "Cancel the current status §Y[From.GetName]§! has and make them to a vassal. This will decrease their opinion of us by §R-100§! and change their liberty desire by §R+25%§!. We will also lose §R-10§! prestige[Root.GetIfDemoteToVassalGivesStabHit]."

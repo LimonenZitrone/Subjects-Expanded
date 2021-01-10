@@ -258,3 +258,7 @@
  administrative_region_modifier: "Administrative Region"
  administrative_region_modifier_overlord_modifier: "Besitzt Administrative Regionen"
  administrative_region_overlord_admin_eff_modifier: "Besitzt Administrative Regionen"
+ administrative_region_modifier_administrative_help: "Gewährt administrative Hilfe"
+ administrative_region_overlord_modifier_administrative_help_adm: "Erhält administrative Hilfe"
+ administrative_region_overlord_modifier_administrative_help_dip: "Erhält Administrative Hilfe"
+ administrative_region_overlord_modifier_administrative_help_mil: "Erhält Administrative Hilfe"

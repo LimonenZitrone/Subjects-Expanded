@@ -480,6 +480,14 @@
  administrative_region_remove_heir_desc: "Zwingt §Y[From.GetName]§! dazu, ihren Nachfolger zu enterben. \nDies wird ihr Freiheitsstreben um §R+25%§! und ihre Meinung über uns um §R-100§! verändern."
  administrative_region_remove_heir_tooltip: "Zwingt §Y[From.GetName]§! dazu, ihren Nachfolger zu enterben.\n"
 
+ administrative_region_enable_administrative_help_title: "Administrative Hilfe aktivieren"
+ administrative_region_enable_administrative_help_desc: "Beginnt damit, administrative Hilfe von Eurer Administrativen Region §Y[From.GetName]§! zu erhalten. Dies wird ihre Meinung von uns um §R-100§! verändern und ihr Freiheitsstreben um §R+40%§! verändern, bis wir die administrative Hilfe wieder deaktiveren. \n\nWährend die administrative Hilfe aktiviert ist und §Y[From.GetName]§! weniger als §Y50%§! Freiheitsstreben besitzt, erhalten wir entweder §G+1§! £adm£, §G+1§! £dip£ oder §G+1§! £mil£ monatlich, abhängig davon, welche die beste Fähigkeit des [From.GetAdjective]en Herrschers ist."
+ administrative_region_enable_administrative_help_tooltip: "Aktiviert den Erhalt von administrativer Hilfe von §Y[From.GetName]§!, wodruch wir monatlich Macht im Austausch für Freiheitsstreben erhalten.\n"
+
+ administrative_region_disable_administrative_help_title: "Administrative Hilfe deaktivieren"
+ administrative_region_disable_administrative_help_desc: "Hört damit auf, administrative Hilfe von Eurer Administrativen Region §Y[From.GetName]§! zu erhalten. Dies wird sofort den Machtbonus, den wir erhalten, sowie auch ihren Malus auf Freiheitsstreben schrittweise entfernen."
+ administrative_region_disable_administrative_help_tooltip: "Deaktiviert den Erhalt von administrativer Hilfe von §Y[From.GetName]§!.\n"
+
 
  return_subject_to_vassal_title: "Zum Vasall degradieren"
  return_subject_to_vassal_desc: "Beendet den derzeitigen Status von §Y[From.GetName]§! und macht sie zu einem Vasallen. Dies wird ihre Meinung über uns um §R-100§! verschlechtern und ihr Freiheitsstreben um §R+25%§! ändern. Außerdem verlieren wir §R-10§! Prestige[Root.GetIfDemoteToVassalGivesStabHit]."

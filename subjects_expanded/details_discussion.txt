@@ -879,4 +879,6 @@ If a subject gives an additional merchant, the bonuses it gives to its overlord 
 [*] Administrative Regions do not join their overlord's wars
 [*] Administrative Regions do not cost a diplomatic slot
 [*] Administrative Regions cannot be annexed or integrated
+[*] Administrative Regions have a diplomatic action that allows the overlord to disinherit their heir
+[*] Administrative Regions have a diplomatic action that allows the overlord to receive administrative help, which grants the overlord +1 of the specific monthly monarch power of which the Administrative Region's ruler has the highest skill; while this is active, the Administrative Region gains +40% liberty desire
 [/list]

@@ -1344,6 +1344,7 @@ country_event = {
 				NOT = { primary_culture = dutch }
 				NOT = { primary_culture = flemish }
 				NOT = { primary_culture = frisian }
+				NOT = { primary_culture = wallonian }
 			}
 			capital_scope = {
 				NOT = { region = low_countries_region }
@@ -1355,6 +1356,7 @@ country_event = {
 						NOT = { primary_culture = dutch }
 						NOT = { primary_culture = flemish }
 						NOT = { primary_culture = frisian }
+						NOT = { primary_culture = wallonian }
 					}
 					capital_scope = {
 						NOT = { region = low_countries_region }
@@ -1378,6 +1380,7 @@ country_event = {
 						NOT = { primary_culture = dutch }
 						NOT = { primary_culture = flemish }
 						NOT = { primary_culture = frisian }
+						NOT = { primary_culture = wallonian }
 					}
 					capital_scope = {
 						NOT = { region = low_countries_region }
@@ -1400,6 +1403,7 @@ country_event = {
 							NOT = { primary_culture = dutch }
 							NOT = { primary_culture = flemish }
 							NOT = { primary_culture = frisian }
+							NOT = { primary_culture = wallonian }
 						}
 						capital_scope = {
 							NOT = { region = low_countries_region }

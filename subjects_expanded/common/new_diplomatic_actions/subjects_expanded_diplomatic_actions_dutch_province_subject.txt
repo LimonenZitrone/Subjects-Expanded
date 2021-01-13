@@ -517,6 +517,19 @@ establish_dutch_province_subject = {
 			multiply_variable = { which = ai_value value = -1 }
 		}
 		add_entry = {
+			name = FROM_IS_WALLONIAN
+			limit = {
+				FROM = {
+					primary_culture = wallonian
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 15
+			}
+			multiply_variable = { which = ai_value value = -1 }
+		}
+		add_entry = {
 			name = ROOT_IS_FRISIAN
 			limit = {
 				primary_culture = frisian
@@ -524,6 +537,17 @@ establish_dutch_province_subject = {
 			export_to_variable = {
 				which = ai_value
 				value = 20
+			}
+			multiply_variable = { which = ai_value value = -1 }
+		}
+		add_entry = {
+			name = ROOT_IS_WALLONIAN
+			limit = {
+				primary_culture = wallonian
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 25
 			}
 			multiply_variable = { which = ai_value value = -1 }
 		}
@@ -552,6 +576,12 @@ establish_dutch_province_subject = {
 			NOT = { primary_culture = frisian }
 			FROM = {
 				NOT = { primary_culture = frisian }
+			}
+		}
+		OR = {
+			NOT = { primary_culture = wallonian }
+			FROM = {
+				NOT = { primary_culture = wallonian }
 			}
 		}
 		FROM = {
@@ -1047,6 +1077,19 @@ ask_for_dutch_province_subject = {
 			multiply_variable = { which = ai_value value = -1 }
 		}
 		add_entry = {
+			name = FROM_IS_WALLONIAN
+			limit = {
+				FROM = {
+					primary_culture = wallonian
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 25
+			}
+			multiply_variable = { which = ai_value value = -1 }
+		}
+		add_entry = {
 			name = ROOT_IS_FRISIAN
 			limit = {
 				primary_culture = frisian
@@ -1054,6 +1097,17 @@ ask_for_dutch_province_subject = {
 			export_to_variable = {
 				which = ai_value
 				value = 10
+			}
+			multiply_variable = { which = ai_value value = -1 }
+		}
+		add_entry = {
+			name = ROOT_IS_WALLONIAN
+			limit = {
+				primary_culture = wallonian
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 15
 			}
 			multiply_variable = { which = ai_value value = -1 }
 		}
@@ -1082,6 +1136,12 @@ ask_for_dutch_province_subject = {
 			NOT = { primary_culture = frisian }
 			FROM = {
 				NOT = { primary_culture = frisian }
+			}
+		}
+		OR = {
+			NOT = { primary_culture = wallonian }
+			FROM = {
+				NOT = { primary_culture = wallonian }
 			}
 		}
 		FROM = {

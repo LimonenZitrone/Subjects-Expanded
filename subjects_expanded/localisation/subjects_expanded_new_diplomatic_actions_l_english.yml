@@ -622,3 +622,5 @@
  FROM_HAS_ALREAD_CONTRIBUTED_MUCH_TO_CURIA_TREASURY: "They already contributed a lot to the curia treasury"
  ROOT_IS_FRISIAN: "We have the primary culture §YFrisian§!"
  FROM_IS_FRISIAN: "They have the primary culture §YFrisian§!"
+ ROOT_IS_WALLONIAN: "We have the primary culture §YWalloon§!"
+ FROM_IS_WALLONIAN: "They have the primary culture §YWalloon§!"

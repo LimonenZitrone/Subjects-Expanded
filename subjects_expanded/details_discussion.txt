@@ -489,7 +489,7 @@ If a subject gives an additional merchant, the bonuses it gives to its overlord 
 [list]
 [*] Netherlands does not exist
 [*] is not a subject
-[*] has either Dutch or Flemish primary culture
+[*] has either Dutch, Flemish, Frisian or Walloon primary culture
 [*] has its capital in the Low Countries region
 [*] no other country has Dutch Provinces as subjects
 [*] has less than 5 Dutch Provinces as subjects
@@ -499,7 +499,7 @@ If a subject gives an additional merchant, the bonuses it gives to its overlord 
 [list]
 [*] the third reform was not enacted yet
 [*] is either not a subject or a vassal of the possible overlord
-[*] has either Dutch or Flemish primary culture
+[*] has either Dutch, Flemish, Frisian or Walloon primary culture
 [*] has its capital in the Low Countries region
 [/list]
 

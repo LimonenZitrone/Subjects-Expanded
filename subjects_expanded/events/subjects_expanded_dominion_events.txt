@@ -199,7 +199,10 @@ country_event = {
 					PREV = {
 						if = {
 							limit = {
-								is_core = ROOT
+								OR = {
+									is_core = ROOT
+									has_construction = core
+								}
 							}
 							remove_core = ROOT
 							add_core = PREV
@@ -224,7 +227,10 @@ country_event = {
 					PREV = {
 						if = {
 							limit = {
-								is_core = ROOT
+								OR = {
+									is_core = ROOT
+									has_construction = core
+								}
 							}
 							remove_core = ROOT
 							add_core = PREV
@@ -249,7 +255,10 @@ country_event = {
 					PREV = {
 						if = {
 							limit = {
-								is_core = ROOT
+								OR = {
+									is_core = ROOT
+									has_construction = core
+								}
 							}
 							remove_core = ROOT
 							add_core = PREV
@@ -274,7 +283,10 @@ country_event = {
 					PREV = {
 						if = {
 							limit = {
-								is_core = ROOT
+								OR = {
+									is_core = ROOT
+									has_construction = core
+								}
 							}
 							remove_core = ROOT
 							add_core = PREV
@@ -299,7 +311,10 @@ country_event = {
 					PREV = {
 						if = {
 							limit = {
-								is_core = ROOT
+								OR = {
+									is_core = ROOT
+									has_construction = core
+								}
 							}
 							remove_core = ROOT
 							add_core = PREV
@@ -372,7 +387,10 @@ country_event = {
 					PREV = {
 						if = {
 							limit = {
-								is_core = ROOT
+								OR = {
+									is_core = ROOT
+									has_construction = core
+								}
 							}
 							remove_core = ROOT
 							add_core = PREV
@@ -397,7 +415,10 @@ country_event = {
 					PREV = {
 						if = {
 							limit = {
-								is_core = ROOT
+								OR = {
+									is_core = ROOT
+									has_construction = core
+								}
 							}
 							remove_core = ROOT
 							add_core = PREV
@@ -470,7 +491,10 @@ country_event = {
 					PREV = {
 						if = {
 							limit = {
-								is_core = ROOT
+								OR = {
+									is_core = ROOT
+									has_construction = core
+								}
 							}
 							remove_core = ROOT
 							add_core = PREV
@@ -495,7 +519,10 @@ country_event = {
 					PREV = {
 						if = {
 							limit = {
-								is_core = ROOT
+								OR = {
+									is_core = ROOT
+									has_construction = core
+								}
 							}
 							remove_core = ROOT
 							add_core = PREV
@@ -565,7 +592,10 @@ country_event = {
 					PREV = {
 						if = {
 							limit = {
-								is_core = ROOT
+								OR = {
+									is_core = ROOT
+									has_construction = core
+								}
 							}
 							remove_core = ROOT
 							add_core = PREV
@@ -635,7 +665,10 @@ country_event = {
 					PREV = {
 						if = {
 							limit = {
-								is_core = ROOT
+								OR = {
+									is_core = ROOT
+									has_construction = core
+								}
 							}
 							remove_core = ROOT
 							add_core = PREV
@@ -705,7 +738,10 @@ country_event = {
 					PREV = {
 						if = {
 							limit = {
-								is_core = ROOT
+								OR = {
+									is_core = ROOT
+									has_construction = core
+								}
 							}
 							remove_core = ROOT
 							add_core = PREV
@@ -775,7 +811,10 @@ country_event = {
 					PREV = {
 						if = {
 							limit = {
-								is_core = ROOT
+								OR = {
+									is_core = ROOT
+									has_construction = core
+								}
 							}
 							remove_core = ROOT
 							add_core = PREV

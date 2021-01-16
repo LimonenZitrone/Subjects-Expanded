@@ -394,7 +394,7 @@ overlord_has_administrative_region_triggered_modifier = {
 	potential = {
 		is_subject = yes
 		NOT = { is_subject_of_type = administrative_region }
-		is_vassal_or_similar_subject = yes
+		is_subject_type_that_pays_vassal_tax
 		overlord = {
 			any_subject_country = {
 				is_subject_of_type = administrative_region

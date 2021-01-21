@@ -6,6 +6,8 @@ country_decisions = {
 			NOT = { has_country_flag = changed_from_colonial_nation }
 			OR = {
 				is_former_autonomous_dominion = yes
+				is_subject_of_type = dominion_tc
+				is_subject_of_type = autonomous_dominion_tc
 				is_colonial_nation = yes
 			}
 			is_dominion_tag_in_indochina = yes
@@ -54,6 +56,8 @@ country_decisions = {
 			NOT = { has_country_flag = changed_from_colonial_nation }
 			OR = {
 				is_former_autonomous_dominion = yes
+				is_subject_of_type = dominion_tc
+				is_subject_of_type = autonomous_dominion_tc
 				is_colonial_nation = yes
 			}
 			is_dominion_tag_in_india = yes
@@ -108,6 +112,8 @@ country_decisions = {
 			NOT = { has_country_flag = changed_from_colonial_nation }
 			OR = {
 				is_former_autonomous_dominion = yes
+				is_subject_of_type = dominion_tc
+				is_subject_of_type = autonomous_dominion_tc
 				is_colonial_nation = yes
 			}
 			is_dominion_tag_in_east_indies = yes
@@ -159,6 +165,8 @@ country_decisions = {
 			NOT = { has_country_flag = changed_from_colonial_nation }
 			OR = {
 				is_former_autonomous_dominion = yes
+				is_subject_of_type = dominion_tc
+				is_subject_of_type = autonomous_dominion_tc
 				is_colonial_nation = yes
 			}
 			is_dominion_tag_in_west_africa = yes
@@ -207,6 +215,8 @@ country_decisions = {
 			NOT = { has_country_flag = changed_from_colonial_nation }
 			OR = {
 				is_former_autonomous_dominion = yes
+				is_subject_of_type = dominion_tc
+				is_subject_of_type = autonomous_dominion_tc
 				is_colonial_nation = yes
 			}
 			is_dominion_tag_in_east_africa = yes
@@ -255,6 +265,8 @@ country_decisions = {
 			NOT = { has_country_flag = changed_from_colonial_nation }
 			OR = {
 				is_former_autonomous_dominion = yes
+				is_subject_of_type = dominion_tc
+				is_subject_of_type = autonomous_dominion_tc
 				is_colonial_nation = yes
 			}
 			is_dominion_tag_in_south_africa = yes
@@ -303,6 +315,8 @@ country_decisions = {
 			NOT = { has_country_flag = changed_from_colonial_nation }
 			OR = {
 				is_former_autonomous_dominion = yes
+				is_subject_of_type = dominion_tc
+				is_subject_of_type = autonomous_dominion_tc
 				is_colonial_nation = yes
 			}
 			is_dominion_tag_in_philippines = yes

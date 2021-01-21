@@ -1,18 +1,18 @@
 establish_protectorate = {
 	category = influence
-	
+
 	alert_index = 4
 	alert_tooltip = establish_protectorate_alert_tooltip
-	
+
 	require_acceptance = yes
-	
+
 	is_visible = {
 		can_create_subject_type = {
 			subject = FROM
 			subject_type = protectorate
 		}
 	}
-	
+
 	is_allowed = {
 		can_create_subject_type = {
 			subject = FROM
@@ -24,7 +24,7 @@ establish_protectorate = {
 			capital_scope = { trade_range = ROOT }
 		}
 	}
-	
+
 	on_accept = {
 		if = {
 			limit = {
@@ -47,12 +47,14 @@ establish_protectorate = {
 					any_country = {
 						is_subject_of = FROM
 						is_colonial_nation = no
+						NOT = { is_any_dominion_subject = yes }
 					}
 				}
 				every_country = {
 					limit = {
 						is_subject_of = FROM
 						is_colonial_nation = no
+						NOT = { is_any_dominion_subject = yes }
 					}
 					FROM = {
 						PREV = { grant_independence = yes }
@@ -61,7 +63,7 @@ establish_protectorate = {
 			}
 		}
 	}
-	
+
 	on_decline = {
 		if = {
 			limit = {
@@ -85,7 +87,7 @@ establish_protectorate = {
 			}
 		}
 	}
-	
+
 	ai_acceptance = {
 		add_entry = {
 			name = OPINION
@@ -528,7 +530,7 @@ establish_protectorate = {
 					divide_variable = { which = our_total_development which = their_total_development }
 					multiply_variable = { which = eco_power which = our_total_development }
 					change_variable = { which = eco_power value = -90 }
-					
+
 					check_variable = { which = eco_power value = -89 }
 					NOT = { check_variable = { which = eco_power value = 30 } }
 				}
@@ -572,7 +574,7 @@ establish_protectorate = {
 					divide_variable = { which = our_total_development which = their_total_development }
 					multiply_variable = { which = eco_power which = our_total_development }
 					change_variable = { which = eco_power value = -90 }
-					
+
 					NOT = { check_variable = { which = eco_power value = -89 } }
 				}
 			}
@@ -603,7 +605,7 @@ establish_protectorate = {
 					divide_variable = { which = our_total_development which = their_total_development }
 					multiply_variable = { which = eco_power which = our_total_development }
 					change_variable = { which = eco_power value = -90 }
-					
+
 					check_variable = { which = eco_power value = 30 }
 				}
 			}
@@ -613,7 +615,7 @@ establish_protectorate = {
 			}
 		}
 	}
-	
+
 	ai_will_do = {
 		FROM = {
 			total_development = 70
@@ -660,12 +662,12 @@ establish_protectorate = {
 
 ask_to_become_protectorate = {
 	category = influence
-	
+
 	alert_index = 4
 	alert_tooltip = ask_to_become_protectorate_alert_tooltip
-	
+
 	require_acceptance = yes
-	
+
 	is_visible = {
 		FROM = {
 			can_create_subject_type = {
@@ -674,7 +676,7 @@ ask_to_become_protectorate = {
 			}
 		}
 	}
-	
+
 	is_allowed = {
 		FROM = {
 			can_create_subject_type = {
@@ -686,7 +688,7 @@ ask_to_become_protectorate = {
 		FROM = { is_at_war = no }
 		capital_scope = { trade_range = FROM }
 	}
-	
+
 	on_accept = {
 		if = {
 			limit = {
@@ -711,12 +713,14 @@ ask_to_become_protectorate = {
 					any_country = {
 						is_subject_of = ROOT
 						is_colonial_nation = no
+						NOT = { is_any_dominion_subject = yes }
 					}
 				}
 				every_country = {
 					limit = {
 						is_subject_of = ROOT
 						is_colonial_nation = no
+						NOT = { is_any_dominion_subject = yes }
 					}
 					ROOT = {
 						PREV = { grant_independence = yes }
@@ -725,7 +729,7 @@ ask_to_become_protectorate = {
 			}
 		}
 	}
-	
+
 	on_decline = {
 		if = {
 			limit = {
@@ -749,7 +753,7 @@ ask_to_become_protectorate = {
 			}
 		}
 	}
-	
+
 	ai_acceptance = {
 		add_entry = {
 			name = OPINION
@@ -1053,7 +1057,7 @@ ask_to_become_protectorate = {
 					divide_variable = { which = our_total_development which = their_total_development }
 					multiply_variable = { which = eco_power which = our_total_development }
 					change_variable = { which = eco_power value = -90 }
-					
+
 					check_variable = { which = eco_power value = -349 }
 					NOT = { check_variable = { which = eco_power value = 60 } }
 				}
@@ -1097,7 +1101,7 @@ ask_to_become_protectorate = {
 					divide_variable = { which = our_total_development which = their_total_development }
 					multiply_variable = { which = eco_power which = our_total_development }
 					change_variable = { which = eco_power value = -90 }
-					
+
 					NOT = { check_variable = { which = eco_power value = -349 } }
 				}
 			}
@@ -1128,7 +1132,7 @@ ask_to_become_protectorate = {
 					divide_variable = { which = our_total_development which = their_total_development }
 					multiply_variable = { which = eco_power which = our_total_development }
 					change_variable = { which = eco_power value = -90 }
-					
+
 					check_variable = { which = eco_power value = 60 }
 				}
 			}
@@ -1138,7 +1142,7 @@ ask_to_become_protectorate = {
 			}
 		}
 	}
-	
+
 	ai_will_do = {
 		total_development = 70
 		NOT = { total_development = 200 }
@@ -1147,7 +1151,7 @@ ask_to_become_protectorate = {
 		NOT = { mil_tech = FROM }
 		NOT = { num_of_subjects = 1 }
 		has_opinion = { who = FROM value = 50 }
-		FROM = { 
+		FROM = {
 			OR = {
 				NOT = { has_country_flag = declined_become_protectorate_@ROOT }
 				had_country_flag = { flag = declined_become_protectorate_@ROOT days = 1825 }
@@ -1187,16 +1191,16 @@ ask_to_become_protectorate = {
 
 cancel_protectorate = {
 	category = influence
-	
+
 	require_acceptance = no
-	
+
 	is_visible = {
 		FROM = {
 			is_subject_of = ROOT
 			is_subject_of_type = protectorate
 		}
 	}
-	
+
 	is_allowed = {
 		hidden_trigger = {
 			FROM = {
@@ -1208,7 +1212,7 @@ cancel_protectorate = {
 		FROM = { is_at_war = no }
 		NOT = { truce_with = FROM }
 	}
-	
+
 	on_accept = {
 		if = {
 			limit = {

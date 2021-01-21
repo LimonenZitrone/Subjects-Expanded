@@ -423,6 +423,7 @@ dominion_tc = {
 	}
 
 	# Properties:
+	has_colonial_parent = no
 	uses_tariffs = no
 	can_release_in_peace = yes
 	eats_overlords_colonies = no
@@ -1758,6 +1759,7 @@ autonomous_dominion_tc = {
 	}
 
 	# Properties:
+	has_colonial_parent = no
 	transfer_trade_power = no
 	overlord_protects_external = yes
 	uses_military_focus = no

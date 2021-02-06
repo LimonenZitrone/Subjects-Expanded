@@ -97,7 +97,7 @@
  CB_ALLOWED_make_muslim_tributary_vassal: "Dar al-Sulh Territorium erzwingen"
  PEACE_make_muslim_tributary_vassal: "$TAKERS$es Dar al-Sulh Territorium"
 
- make_mandala_trade_vassal_desc: "@[From.GetTag] §Y[From.GetName]§! wird zu einem Mandala-Vasall von @[Root.GetTag] §Y[Root.GetName]§!. Falls [From.GetName] selbst Mandala-Vasall besitzt, behalten sie diese. Alle anderen Untertanen werden an §Y[Root.GetName]§! übergeben."
+ make_mandala_trade_vassal_desc: "@[From.GetTag] §Y[From.GetName]§! wird zu einem Mandala-Vasall von @[Root.GetTag] §Y[Root.GetName]§!. Falls [From.GetName] selbst Mandala-Vasall besitzt, behalten sie diese. Die meisten ihrer Untertanen eines anderen Typs werden an §Y[Root.GetName]§! übergeben."
  CB_ALLOWED_make_mandala_trade_vassal: "Mandala-Vasall erzwingen"
  PEACE_make_mandala_trade_vassal: "$TAKERS$er Mandala-Vasall"
 

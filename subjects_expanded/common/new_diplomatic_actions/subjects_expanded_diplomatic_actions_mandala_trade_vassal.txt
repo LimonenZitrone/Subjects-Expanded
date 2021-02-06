@@ -2,7 +2,7 @@ establish_mandala_trade_vassal = {
 	category = influence
 
 	require_acceptance = no
-	
+
 	is_visible = {
 		is_subject_of = FROM
 		is_subject_of_type = mandala_trade_vassal
@@ -11,7 +11,7 @@ establish_mandala_trade_vassal = {
 			subject_type = mandala_trade_vassal
 		}
 	}
-	
+
 	is_allowed = {
 		hidden_trigger = {
 			is_subject_of = FROM
@@ -26,7 +26,7 @@ establish_mandala_trade_vassal = {
 		FROM = { is_at_war = no }
 		liberty_desire = 75
 	}
-	
+
 	on_accept = {
 		if = {
 			limit = {
@@ -58,6 +58,8 @@ establish_mandala_trade_vassal = {
 				transfer_subjects_of_type_to = { type = muslim_tributary_vassal who = ROOT }
 				transfer_subjects_of_type_to = { type = integrated_tribe_subject who = ROOT }
 				transfer_subjects_of_type_to = { type = naval_march who = ROOT }
+				transfer_subjects_of_type_to = { type = iqta_vassal who = ROOT }
+				transfer_subjects_of_type_to = { type = pagan_chiefdom who = ROOT }
 				if = {
 					limit = {
 						any_subject_country = {
@@ -100,7 +102,7 @@ establish_mandala_trade_vassal = {
 			}
 		}
 	}
-	
+
 	ai_will_do = {
 		NOT = { war_exhaustion = 5 }
 		OR = {
@@ -126,14 +128,14 @@ cancel_mandala_trade_vassal = {
 	category = influence
 
 	require_acceptance = no
-	
+
 	is_visible = {
 		FROM = {
 			is_subject_of = ROOT
 			is_subject_of_type = mandala_trade_vassal
 		}
 	}
-	
+
 	is_allowed = {
 		hidden_trigger = {
 			FROM = {
@@ -144,7 +146,7 @@ cancel_mandala_trade_vassal = {
 		NOT = { truce_with = FROM }
 		prestige = 0
 	}
-	
+
 	on_accept = {
 		if = {
 			limit = {
@@ -172,7 +174,7 @@ cancel_mandala_trade_vassal = {
 			add_prestige = -25
 		}
 	}
-	
+
 	ai_will_do = {
 		FROM = {
 			liberty_desire = 100

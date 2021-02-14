@@ -52,6 +52,12 @@ establish_sister_republic = {
 		if = {
 			limit = {
 				has_dlc = "The Cossacks"
+				OR = {
+					ai = yes
+					FROM = {
+						ai = yes
+					}
+				}
 			}
 			trust = {
 				who = FROM
@@ -120,6 +126,12 @@ establish_sister_republic = {
 				if = {
 					limit = {
 						has_dlc = "The Cossacks"
+						OR = {
+							ai = yes
+							FROM = {
+								ai = yes
+							}
+						}
 					}
 					trust = {
 						who = FROM
@@ -194,6 +206,12 @@ establish_sister_republic = {
 				if = {
 					limit = {
 						has_dlc = "The Cossacks"
+						OR = {
+							ai = yes
+							FROM = {
+								ai = yes
+							}
+						}
 					}
 					trust = {
 						who = FROM

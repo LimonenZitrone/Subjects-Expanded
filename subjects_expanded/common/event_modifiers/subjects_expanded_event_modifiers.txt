@@ -669,7 +669,7 @@ muslim_tributary_vassal_same_religion_modifier = {
 }
 
 muslim_tributary_vassal_overlord_modifier = {
-	monthly_piety = 0.01
+	monthly_piety = 0.001
 	tolerance_heathen = 0.2
 	tolerance_own = -0.2
 }

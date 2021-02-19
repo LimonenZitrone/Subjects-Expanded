@@ -79,6 +79,20 @@ is_autonomous_dominion_or_similar_subject = {
 	}
 }
 
+is_any_colonial_region_dominion_subject = {
+	OR = {
+		is_subject_of_type = dominion
+		is_subject_of_type = autonomous_dominion
+	}
+}
+
+is_any_trade_company_region_dominion_subject = {
+	OR = {
+		is_subject_of_type = dominion_tc
+		is_subject_of_type = autonomous_dominion_tc
+	}
+}
+
 is_subject_type_that_pays_vassal_tax = {
 	OR = {
 		is_subject_of_type = vassal

@@ -44,6 +44,10 @@
  seize_provinces_in_other_colonial_regions_desc: "Beschlagnahmt diejenigen Provinzen von §Y[From.GetName]§!, die nicht in derselben Kolonialregion liegen wie ihre Hauptstadt (§Y[From.Capital.GetName]§!), und die entweder in einer Kolonialregion liegen, in der Ihr eine Kolonialnation, ein Herrschaftsgebiet oder eine Autonomes Herrschaftsgebiet besitzt, oder in der Ihr keinen dieser Untertanen besitzt. Falls letzteres der Fall ist, muss [From.GetName] mindestens §Y5§! passende Provinzen in derselben Kolonialregion besitzen. \nDies wird Euch den Besitz über die passenden Provinzen übertragen und letztendlich diese Provinzen an existierende oder neue Untertanen übertragen. \nDies wird ihr Freiheitsstreben um §R+15%§! ändern."
  seize_provinces_in_other_colonial_regions_tooltip: "Beschlagnahmt diejenigen Provinzen von §Y[From.GetName]§!, die nicht in derselben Kolonialregion liegen wie ihre Hauptstadt (§Y[From.Capital.GetName]§!).\n"
 
+ seize_provinces_in_other_trade_company_regions_title: "Provinzen beschlagnahmen"
+ seize_provinces_in_other_trade_company_regions_desc: "Beschlagnahmt diejenigen Provinzen von §Y[From.GetName]§!, die sich nicht in den richtigen Handelshausregionen befinden. \nDies wird Euch den Besitz über die passenden Provinzen übertragen. \nDies wird ihr Freiheitsstreben um §R+10%§! verändern."
+ seize_provinces_in_other_trade_company_regions_tooltip: "Beschlagnahmt diejenigen Provinzen von §Y[From.GetName]§!, die sich nicht in den richtigen Handelshausregionen befinden.\n"
+
 
  establish_roman_client_kingdom_title: "Klientelkönigtum ernennen"
  establish_roman_client_kingdom_desc: "Ernennt Euren Vasallen [From.GetName] zu einem §YRömischen Klientelkönigtum§!. \n[roman_client_kingdom_desc]"

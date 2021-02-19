@@ -312,6 +312,7 @@ dominion = {
 		OR = {
 			is_year = 1700
 			current_age = age_of_absolutism
+			has_country_flag = is_releasing_dominion_in_trade_company_region
 		}
 	}
 
@@ -384,6 +385,7 @@ dominion_tc = {
 	is_potential_overlord = {
 		is_subject = no
 		OR = {
+			has_country_flag = is_releasing_dominion_in_trade_company_region
 			AND = {
 				OR = {
 					ai = no
@@ -412,13 +414,22 @@ dominion_tc = {
 						trade_company_region = trade_company_indochina
 						trade_company_region = trade_company_burma
 						trade_company_region = trade_company_west_africa
+						trade_company_region = trade_company_timbuktu
+						trade_company_region = trade_company_katsina
+						trade_company_region = trade_company_kongo
 						trade_company_region = trade_company_south_africa
 						trade_company_region = trade_company_east_africa
+						trade_company_region = trade_company_zambezi
+						trade_company_region = trade_company_great_lakes
+						trade_company_region = trade_company_ethiopia
+						AND = {
+							trade_company_region = trade_company_gulf_of_aden
+							continent = africa
+						}
 						trade_company_region = trade_company_philippines
 					}
 				}
 			}
-			has_country_flag = is_releasing_dominion_in_trade_company_region
 		}
 	}
 
@@ -482,8 +493,18 @@ dominion_tc = {
 					trade_company_region = trade_company_indochina
 					trade_company_region = trade_company_burma
 					trade_company_region = trade_company_west_africa
+					trade_company_region = trade_company_timbuktu
+					trade_company_region = trade_company_katsina
+					trade_company_region = trade_company_kongo
 					trade_company_region = trade_company_south_africa
 					trade_company_region = trade_company_east_africa
+					trade_company_region = trade_company_zambezi
+					trade_company_region = trade_company_great_lakes
+					trade_company_region = trade_company_ethiopia
+					AND = {
+						trade_company_region = trade_company_gulf_of_aden
+						continent = africa
+					}
 					trade_company_region = trade_company_philippines
 				}
 			}
@@ -512,8 +533,18 @@ dominion_tc = {
 					trade_company_region = trade_company_indochina
 					trade_company_region = trade_company_burma
 					trade_company_region = trade_company_west_africa
+					trade_company_region = trade_company_timbuktu
+					trade_company_region = trade_company_katsina
+					trade_company_region = trade_company_kongo
 					trade_company_region = trade_company_south_africa
 					trade_company_region = trade_company_east_africa
+					trade_company_region = trade_company_zambezi
+					trade_company_region = trade_company_great_lakes
+					trade_company_region = trade_company_ethiopia
+					AND = {
+						trade_company_region = trade_company_gulf_of_aden
+						continent = africa
+					}
 					trade_company_region = trade_company_philippines
 				}
 			}
@@ -535,8 +566,18 @@ dominion_tc = {
 					trade_company_region = trade_company_indochina
 					trade_company_region = trade_company_burma
 					trade_company_region = trade_company_west_africa
+					trade_company_region = trade_company_timbuktu
+					trade_company_region = trade_company_katsina
+					trade_company_region = trade_company_kongo
 					trade_company_region = trade_company_south_africa
 					trade_company_region = trade_company_east_africa
+					trade_company_region = trade_company_zambezi
+					trade_company_region = trade_company_great_lakes
+					trade_company_region = trade_company_ethiopia
+					AND = {
+						trade_company_region = trade_company_gulf_of_aden
+						continent = africa
+					}
 					trade_company_region = trade_company_philippines
 				}
 			}
@@ -558,8 +599,18 @@ dominion_tc = {
 					trade_company_region = trade_company_indochina
 					trade_company_region = trade_company_burma
 					trade_company_region = trade_company_west_africa
+					trade_company_region = trade_company_timbuktu
+					trade_company_region = trade_company_katsina
+					trade_company_region = trade_company_kongo
 					trade_company_region = trade_company_south_africa
 					trade_company_region = trade_company_east_africa
+					trade_company_region = trade_company_zambezi
+					trade_company_region = trade_company_great_lakes
+					trade_company_region = trade_company_ethiopia
+					AND = {
+						trade_company_region = trade_company_gulf_of_aden
+						continent = africa
+					}
 					trade_company_region = trade_company_philippines
 				}
 			}
@@ -581,8 +632,18 @@ dominion_tc = {
 					trade_company_region = trade_company_indochina
 					trade_company_region = trade_company_burma
 					trade_company_region = trade_company_west_africa
+					trade_company_region = trade_company_timbuktu
+					trade_company_region = trade_company_katsina
+					trade_company_region = trade_company_kongo
 					trade_company_region = trade_company_south_africa
 					trade_company_region = trade_company_east_africa
+					trade_company_region = trade_company_zambezi
+					trade_company_region = trade_company_great_lakes
+					trade_company_region = trade_company_ethiopia
+					AND = {
+						trade_company_region = trade_company_gulf_of_aden
+						continent = africa
+					}
 					trade_company_region = trade_company_philippines
 				}
 			}
@@ -604,8 +665,18 @@ dominion_tc = {
 					trade_company_region = trade_company_indochina
 					trade_company_region = trade_company_burma
 					trade_company_region = trade_company_west_africa
+					trade_company_region = trade_company_timbuktu
+					trade_company_region = trade_company_katsina
+					trade_company_region = trade_company_kongo
 					trade_company_region = trade_company_south_africa
 					trade_company_region = trade_company_east_africa
+					trade_company_region = trade_company_zambezi
+					trade_company_region = trade_company_great_lakes
+					trade_company_region = trade_company_ethiopia
+					AND = {
+						trade_company_region = trade_company_gulf_of_aden
+						continent = africa
+					}
 					trade_company_region = trade_company_philippines
 				}
 			}
@@ -627,8 +698,18 @@ dominion_tc = {
 					trade_company_region = trade_company_indochina
 					trade_company_region = trade_company_burma
 					trade_company_region = trade_company_west_africa
+					trade_company_region = trade_company_timbuktu
+					trade_company_region = trade_company_katsina
+					trade_company_region = trade_company_kongo
 					trade_company_region = trade_company_south_africa
 					trade_company_region = trade_company_east_africa
+					trade_company_region = trade_company_zambezi
+					trade_company_region = trade_company_great_lakes
+					trade_company_region = trade_company_ethiopia
+					AND = {
+						trade_company_region = trade_company_gulf_of_aden
+						continent = africa
+					}
 					trade_company_region = trade_company_philippines
 				}
 			}
@@ -650,8 +731,18 @@ dominion_tc = {
 					trade_company_region = trade_company_indochina
 					trade_company_region = trade_company_burma
 					trade_company_region = trade_company_west_africa
+					trade_company_region = trade_company_timbuktu
+					trade_company_region = trade_company_katsina
+					trade_company_region = trade_company_kongo
 					trade_company_region = trade_company_south_africa
 					trade_company_region = trade_company_east_africa
+					trade_company_region = trade_company_zambezi
+					trade_company_region = trade_company_great_lakes
+					trade_company_region = trade_company_ethiopia
+					AND = {
+						trade_company_region = trade_company_gulf_of_aden
+						continent = africa
+					}
 					trade_company_region = trade_company_philippines
 				}
 			}
@@ -673,8 +764,18 @@ dominion_tc = {
 					trade_company_region = trade_company_indochina
 					trade_company_region = trade_company_burma
 					trade_company_region = trade_company_west_africa
+					trade_company_region = trade_company_timbuktu
+					trade_company_region = trade_company_katsina
+					trade_company_region = trade_company_kongo
 					trade_company_region = trade_company_south_africa
 					trade_company_region = trade_company_east_africa
+					trade_company_region = trade_company_zambezi
+					trade_company_region = trade_company_great_lakes
+					trade_company_region = trade_company_ethiopia
+					AND = {
+						trade_company_region = trade_company_gulf_of_aden
+						continent = africa
+					}
 					trade_company_region = trade_company_philippines
 				}
 			}
@@ -696,8 +797,18 @@ dominion_tc = {
 					trade_company_region = trade_company_indochina
 					trade_company_region = trade_company_burma
 					trade_company_region = trade_company_west_africa
+					trade_company_region = trade_company_timbuktu
+					trade_company_region = trade_company_katsina
+					trade_company_region = trade_company_kongo
 					trade_company_region = trade_company_south_africa
 					trade_company_region = trade_company_east_africa
+					trade_company_region = trade_company_zambezi
+					trade_company_region = trade_company_great_lakes
+					trade_company_region = trade_company_ethiopia
+					AND = {
+						trade_company_region = trade_company_gulf_of_aden
+						continent = africa
+					}
 					trade_company_region = trade_company_philippines
 				}
 			}
@@ -719,8 +830,18 @@ dominion_tc = {
 					trade_company_region = trade_company_indochina
 					trade_company_region = trade_company_burma
 					trade_company_region = trade_company_west_africa
+					trade_company_region = trade_company_timbuktu
+					trade_company_region = trade_company_katsina
+					trade_company_region = trade_company_kongo
 					trade_company_region = trade_company_south_africa
 					trade_company_region = trade_company_east_africa
+					trade_company_region = trade_company_zambezi
+					trade_company_region = trade_company_great_lakes
+					trade_company_region = trade_company_ethiopia
+					AND = {
+						trade_company_region = trade_company_gulf_of_aden
+						continent = africa
+					}
 					trade_company_region = trade_company_philippines
 				}
 			}
@@ -742,8 +863,18 @@ dominion_tc = {
 					trade_company_region = trade_company_indochina
 					trade_company_region = trade_company_burma
 					trade_company_region = trade_company_west_africa
+					trade_company_region = trade_company_timbuktu
+					trade_company_region = trade_company_katsina
+					trade_company_region = trade_company_kongo
 					trade_company_region = trade_company_south_africa
 					trade_company_region = trade_company_east_africa
+					trade_company_region = trade_company_zambezi
+					trade_company_region = trade_company_great_lakes
+					trade_company_region = trade_company_ethiopia
+					AND = {
+						trade_company_region = trade_company_gulf_of_aden
+						continent = africa
+					}
 					trade_company_region = trade_company_philippines
 				}
 			}
@@ -765,8 +896,18 @@ dominion_tc = {
 					trade_company_region = trade_company_indochina
 					trade_company_region = trade_company_burma
 					trade_company_region = trade_company_west_africa
+					trade_company_region = trade_company_timbuktu
+					trade_company_region = trade_company_katsina
+					trade_company_region = trade_company_kongo
 					trade_company_region = trade_company_south_africa
 					trade_company_region = trade_company_east_africa
+					trade_company_region = trade_company_zambezi
+					trade_company_region = trade_company_great_lakes
+					trade_company_region = trade_company_ethiopia
+					AND = {
+						trade_company_region = trade_company_gulf_of_aden
+						continent = africa
+					}
 					trade_company_region = trade_company_philippines
 				}
 			}
@@ -788,8 +929,18 @@ dominion_tc = {
 					trade_company_region = trade_company_indochina
 					trade_company_region = trade_company_burma
 					trade_company_region = trade_company_west_africa
+					trade_company_region = trade_company_timbuktu
+					trade_company_region = trade_company_katsina
+					trade_company_region = trade_company_kongo
 					trade_company_region = trade_company_south_africa
 					trade_company_region = trade_company_east_africa
+					trade_company_region = trade_company_zambezi
+					trade_company_region = trade_company_great_lakes
+					trade_company_region = trade_company_ethiopia
+					AND = {
+						trade_company_region = trade_company_gulf_of_aden
+						continent = africa
+					}
 					trade_company_region = trade_company_philippines
 				}
 			}
@@ -811,8 +962,18 @@ dominion_tc = {
 					trade_company_region = trade_company_indochina
 					trade_company_region = trade_company_burma
 					trade_company_region = trade_company_west_africa
+					trade_company_region = trade_company_timbuktu
+					trade_company_region = trade_company_katsina
+					trade_company_region = trade_company_kongo
 					trade_company_region = trade_company_south_africa
 					trade_company_region = trade_company_east_africa
+					trade_company_region = trade_company_zambezi
+					trade_company_region = trade_company_great_lakes
+					trade_company_region = trade_company_ethiopia
+					AND = {
+						trade_company_region = trade_company_gulf_of_aden
+						continent = africa
+					}
 					trade_company_region = trade_company_philippines
 				}
 			}
@@ -834,8 +995,18 @@ dominion_tc = {
 					trade_company_region = trade_company_indochina
 					trade_company_region = trade_company_burma
 					trade_company_region = trade_company_west_africa
+					trade_company_region = trade_company_timbuktu
+					trade_company_region = trade_company_katsina
+					trade_company_region = trade_company_kongo
 					trade_company_region = trade_company_south_africa
 					trade_company_region = trade_company_east_africa
+					trade_company_region = trade_company_zambezi
+					trade_company_region = trade_company_great_lakes
+					trade_company_region = trade_company_ethiopia
+					AND = {
+						trade_company_region = trade_company_gulf_of_aden
+						continent = africa
+					}
 					trade_company_region = trade_company_philippines
 				}
 			}
@@ -857,8 +1028,18 @@ dominion_tc = {
 					trade_company_region = trade_company_indochina
 					trade_company_region = trade_company_burma
 					trade_company_region = trade_company_west_africa
+					trade_company_region = trade_company_timbuktu
+					trade_company_region = trade_company_katsina
+					trade_company_region = trade_company_kongo
 					trade_company_region = trade_company_south_africa
 					trade_company_region = trade_company_east_africa
+					trade_company_region = trade_company_zambezi
+					trade_company_region = trade_company_great_lakes
+					trade_company_region = trade_company_ethiopia
+					AND = {
+						trade_company_region = trade_company_gulf_of_aden
+						continent = africa
+					}
 					trade_company_region = trade_company_philippines
 				}
 			}
@@ -880,8 +1061,18 @@ dominion_tc = {
 					trade_company_region = trade_company_indochina
 					trade_company_region = trade_company_burma
 					trade_company_region = trade_company_west_africa
+					trade_company_region = trade_company_timbuktu
+					trade_company_region = trade_company_katsina
+					trade_company_region = trade_company_kongo
 					trade_company_region = trade_company_south_africa
 					trade_company_region = trade_company_east_africa
+					trade_company_region = trade_company_zambezi
+					trade_company_region = trade_company_great_lakes
+					trade_company_region = trade_company_ethiopia
+					AND = {
+						trade_company_region = trade_company_gulf_of_aden
+						continent = africa
+					}
 					trade_company_region = trade_company_philippines
 				}
 			}
@@ -903,8 +1094,18 @@ dominion_tc = {
 					trade_company_region = trade_company_indochina
 					trade_company_region = trade_company_burma
 					trade_company_region = trade_company_west_africa
+					trade_company_region = trade_company_timbuktu
+					trade_company_region = trade_company_katsina
+					trade_company_region = trade_company_kongo
 					trade_company_region = trade_company_south_africa
 					trade_company_region = trade_company_east_africa
+					trade_company_region = trade_company_zambezi
+					trade_company_region = trade_company_great_lakes
+					trade_company_region = trade_company_ethiopia
+					AND = {
+						trade_company_region = trade_company_gulf_of_aden
+						continent = africa
+					}
 					trade_company_region = trade_company_philippines
 				}
 			}
@@ -926,8 +1127,18 @@ dominion_tc = {
 					trade_company_region = trade_company_indochina
 					trade_company_region = trade_company_burma
 					trade_company_region = trade_company_west_africa
+					trade_company_region = trade_company_timbuktu
+					trade_company_region = trade_company_katsina
+					trade_company_region = trade_company_kongo
 					trade_company_region = trade_company_south_africa
 					trade_company_region = trade_company_east_africa
+					trade_company_region = trade_company_zambezi
+					trade_company_region = trade_company_great_lakes
+					trade_company_region = trade_company_ethiopia
+					AND = {
+						trade_company_region = trade_company_gulf_of_aden
+						continent = africa
+					}
 					trade_company_region = trade_company_philippines
 				}
 			}
@@ -949,8 +1160,18 @@ dominion_tc = {
 					trade_company_region = trade_company_indochina
 					trade_company_region = trade_company_burma
 					trade_company_region = trade_company_west_africa
+					trade_company_region = trade_company_timbuktu
+					trade_company_region = trade_company_katsina
+					trade_company_region = trade_company_kongo
 					trade_company_region = trade_company_south_africa
 					trade_company_region = trade_company_east_africa
+					trade_company_region = trade_company_zambezi
+					trade_company_region = trade_company_great_lakes
+					trade_company_region = trade_company_ethiopia
+					AND = {
+						trade_company_region = trade_company_gulf_of_aden
+						continent = africa
+					}
 					trade_company_region = trade_company_philippines
 				}
 			}
@@ -972,8 +1193,18 @@ dominion_tc = {
 					trade_company_region = trade_company_indochina
 					trade_company_region = trade_company_burma
 					trade_company_region = trade_company_west_africa
+					trade_company_region = trade_company_timbuktu
+					trade_company_region = trade_company_katsina
+					trade_company_region = trade_company_kongo
 					trade_company_region = trade_company_south_africa
 					trade_company_region = trade_company_east_africa
+					trade_company_region = trade_company_zambezi
+					trade_company_region = trade_company_great_lakes
+					trade_company_region = trade_company_ethiopia
+					AND = {
+						trade_company_region = trade_company_gulf_of_aden
+						continent = africa
+					}
 					trade_company_region = trade_company_philippines
 				}
 			}
@@ -995,8 +1226,18 @@ dominion_tc = {
 					trade_company_region = trade_company_indochina
 					trade_company_region = trade_company_burma
 					trade_company_region = trade_company_west_africa
+					trade_company_region = trade_company_timbuktu
+					trade_company_region = trade_company_katsina
+					trade_company_region = trade_company_kongo
 					trade_company_region = trade_company_south_africa
 					trade_company_region = trade_company_east_africa
+					trade_company_region = trade_company_zambezi
+					trade_company_region = trade_company_great_lakes
+					trade_company_region = trade_company_ethiopia
+					AND = {
+						trade_company_region = trade_company_gulf_of_aden
+						continent = africa
+					}
 					trade_company_region = trade_company_philippines
 				}
 			}
@@ -1018,8 +1259,18 @@ dominion_tc = {
 					trade_company_region = trade_company_indochina
 					trade_company_region = trade_company_burma
 					trade_company_region = trade_company_west_africa
+					trade_company_region = trade_company_timbuktu
+					trade_company_region = trade_company_katsina
+					trade_company_region = trade_company_kongo
 					trade_company_region = trade_company_south_africa
 					trade_company_region = trade_company_east_africa
+					trade_company_region = trade_company_zambezi
+					trade_company_region = trade_company_great_lakes
+					trade_company_region = trade_company_ethiopia
+					AND = {
+						trade_company_region = trade_company_gulf_of_aden
+						continent = africa
+					}
 					trade_company_region = trade_company_philippines
 				}
 			}
@@ -1041,8 +1292,18 @@ dominion_tc = {
 					trade_company_region = trade_company_indochina
 					trade_company_region = trade_company_burma
 					trade_company_region = trade_company_west_africa
+					trade_company_region = trade_company_timbuktu
+					trade_company_region = trade_company_katsina
+					trade_company_region = trade_company_kongo
 					trade_company_region = trade_company_south_africa
 					trade_company_region = trade_company_east_africa
+					trade_company_region = trade_company_zambezi
+					trade_company_region = trade_company_great_lakes
+					trade_company_region = trade_company_ethiopia
+					AND = {
+						trade_company_region = trade_company_gulf_of_aden
+						continent = africa
+					}
 					trade_company_region = trade_company_philippines
 				}
 			}
@@ -1064,8 +1325,18 @@ dominion_tc = {
 					trade_company_region = trade_company_indochina
 					trade_company_region = trade_company_burma
 					trade_company_region = trade_company_west_africa
+					trade_company_region = trade_company_timbuktu
+					trade_company_region = trade_company_katsina
+					trade_company_region = trade_company_kongo
 					trade_company_region = trade_company_south_africa
 					trade_company_region = trade_company_east_africa
+					trade_company_region = trade_company_zambezi
+					trade_company_region = trade_company_great_lakes
+					trade_company_region = trade_company_ethiopia
+					AND = {
+						trade_company_region = trade_company_gulf_of_aden
+						continent = africa
+					}
 					trade_company_region = trade_company_philippines
 				}
 			}
@@ -1087,8 +1358,18 @@ dominion_tc = {
 					trade_company_region = trade_company_indochina
 					trade_company_region = trade_company_burma
 					trade_company_region = trade_company_west_africa
+					trade_company_region = trade_company_timbuktu
+					trade_company_region = trade_company_katsina
+					trade_company_region = trade_company_kongo
 					trade_company_region = trade_company_south_africa
 					trade_company_region = trade_company_east_africa
+					trade_company_region = trade_company_zambezi
+					trade_company_region = trade_company_great_lakes
+					trade_company_region = trade_company_ethiopia
+					AND = {
+						trade_company_region = trade_company_gulf_of_aden
+						continent = africa
+					}
 					trade_company_region = trade_company_philippines
 				}
 			}
@@ -1110,8 +1391,18 @@ dominion_tc = {
 					trade_company_region = trade_company_indochina
 					trade_company_region = trade_company_burma
 					trade_company_region = trade_company_west_africa
+					trade_company_region = trade_company_timbuktu
+					trade_company_region = trade_company_katsina
+					trade_company_region = trade_company_kongo
 					trade_company_region = trade_company_south_africa
 					trade_company_region = trade_company_east_africa
+					trade_company_region = trade_company_zambezi
+					trade_company_region = trade_company_great_lakes
+					trade_company_region = trade_company_ethiopia
+					AND = {
+						trade_company_region = trade_company_gulf_of_aden
+						continent = africa
+					}
 					trade_company_region = trade_company_philippines
 				}
 			}
@@ -1133,8 +1424,18 @@ dominion_tc = {
 					trade_company_region = trade_company_indochina
 					trade_company_region = trade_company_burma
 					trade_company_region = trade_company_west_africa
+					trade_company_region = trade_company_timbuktu
+					trade_company_region = trade_company_katsina
+					trade_company_region = trade_company_kongo
 					trade_company_region = trade_company_south_africa
 					trade_company_region = trade_company_east_africa
+					trade_company_region = trade_company_zambezi
+					trade_company_region = trade_company_great_lakes
+					trade_company_region = trade_company_ethiopia
+					AND = {
+						trade_company_region = trade_company_gulf_of_aden
+						continent = africa
+					}
 					trade_company_region = trade_company_philippines
 				}
 			}
@@ -1156,8 +1457,18 @@ dominion_tc = {
 					trade_company_region = trade_company_indochina
 					trade_company_region = trade_company_burma
 					trade_company_region = trade_company_west_africa
+					trade_company_region = trade_company_timbuktu
+					trade_company_region = trade_company_katsina
+					trade_company_region = trade_company_kongo
 					trade_company_region = trade_company_south_africa
 					trade_company_region = trade_company_east_africa
+					trade_company_region = trade_company_zambezi
+					trade_company_region = trade_company_great_lakes
+					trade_company_region = trade_company_ethiopia
+					AND = {
+						trade_company_region = trade_company_gulf_of_aden
+						continent = africa
+					}
 					trade_company_region = trade_company_philippines
 				}
 			}
@@ -1179,8 +1490,18 @@ dominion_tc = {
 					trade_company_region = trade_company_indochina
 					trade_company_region = trade_company_burma
 					trade_company_region = trade_company_west_africa
+					trade_company_region = trade_company_timbuktu
+					trade_company_region = trade_company_katsina
+					trade_company_region = trade_company_kongo
 					trade_company_region = trade_company_south_africa
 					trade_company_region = trade_company_east_africa
+					trade_company_region = trade_company_zambezi
+					trade_company_region = trade_company_great_lakes
+					trade_company_region = trade_company_ethiopia
+					AND = {
+						trade_company_region = trade_company_gulf_of_aden
+						continent = africa
+					}
 					trade_company_region = trade_company_philippines
 				}
 			}
@@ -1202,8 +1523,18 @@ dominion_tc = {
 					trade_company_region = trade_company_indochina
 					trade_company_region = trade_company_burma
 					trade_company_region = trade_company_west_africa
+					trade_company_region = trade_company_timbuktu
+					trade_company_region = trade_company_katsina
+					trade_company_region = trade_company_kongo
 					trade_company_region = trade_company_south_africa
 					trade_company_region = trade_company_east_africa
+					trade_company_region = trade_company_zambezi
+					trade_company_region = trade_company_great_lakes
+					trade_company_region = trade_company_ethiopia
+					AND = {
+						trade_company_region = trade_company_gulf_of_aden
+						continent = africa
+					}
 					trade_company_region = trade_company_philippines
 				}
 			}
@@ -1225,8 +1556,18 @@ dominion_tc = {
 					trade_company_region = trade_company_indochina
 					trade_company_region = trade_company_burma
 					trade_company_region = trade_company_west_africa
+					trade_company_region = trade_company_timbuktu
+					trade_company_region = trade_company_katsina
+					trade_company_region = trade_company_kongo
 					trade_company_region = trade_company_south_africa
 					trade_company_region = trade_company_east_africa
+					trade_company_region = trade_company_zambezi
+					trade_company_region = trade_company_great_lakes
+					trade_company_region = trade_company_ethiopia
+					AND = {
+						trade_company_region = trade_company_gulf_of_aden
+						continent = africa
+					}
 					trade_company_region = trade_company_philippines
 				}
 			}
@@ -1248,8 +1589,18 @@ dominion_tc = {
 					trade_company_region = trade_company_indochina
 					trade_company_region = trade_company_burma
 					trade_company_region = trade_company_west_africa
+					trade_company_region = trade_company_timbuktu
+					trade_company_region = trade_company_katsina
+					trade_company_region = trade_company_kongo
 					trade_company_region = trade_company_south_africa
 					trade_company_region = trade_company_east_africa
+					trade_company_region = trade_company_zambezi
+					trade_company_region = trade_company_great_lakes
+					trade_company_region = trade_company_ethiopia
+					AND = {
+						trade_company_region = trade_company_gulf_of_aden
+						continent = africa
+					}
 					trade_company_region = trade_company_philippines
 				}
 			}
@@ -1271,8 +1622,18 @@ dominion_tc = {
 					trade_company_region = trade_company_indochina
 					trade_company_region = trade_company_burma
 					trade_company_region = trade_company_west_africa
+					trade_company_region = trade_company_timbuktu
+					trade_company_region = trade_company_katsina
+					trade_company_region = trade_company_kongo
 					trade_company_region = trade_company_south_africa
 					trade_company_region = trade_company_east_africa
+					trade_company_region = trade_company_zambezi
+					trade_company_region = trade_company_great_lakes
+					trade_company_region = trade_company_ethiopia
+					AND = {
+						trade_company_region = trade_company_gulf_of_aden
+						continent = africa
+					}
 					trade_company_region = trade_company_philippines
 				}
 			}
@@ -1294,8 +1655,18 @@ dominion_tc = {
 					trade_company_region = trade_company_indochina
 					trade_company_region = trade_company_burma
 					trade_company_region = trade_company_west_africa
+					trade_company_region = trade_company_timbuktu
+					trade_company_region = trade_company_katsina
+					trade_company_region = trade_company_kongo
 					trade_company_region = trade_company_south_africa
 					trade_company_region = trade_company_east_africa
+					trade_company_region = trade_company_zambezi
+					trade_company_region = trade_company_great_lakes
+					trade_company_region = trade_company_ethiopia
+					AND = {
+						trade_company_region = trade_company_gulf_of_aden
+						continent = africa
+					}
 					trade_company_region = trade_company_philippines
 				}
 			}
@@ -1317,8 +1688,18 @@ dominion_tc = {
 					trade_company_region = trade_company_indochina
 					trade_company_region = trade_company_burma
 					trade_company_region = trade_company_west_africa
+					trade_company_region = trade_company_timbuktu
+					trade_company_region = trade_company_katsina
+					trade_company_region = trade_company_kongo
 					trade_company_region = trade_company_south_africa
 					trade_company_region = trade_company_east_africa
+					trade_company_region = trade_company_zambezi
+					trade_company_region = trade_company_great_lakes
+					trade_company_region = trade_company_ethiopia
+					AND = {
+						trade_company_region = trade_company_gulf_of_aden
+						continent = africa
+					}
 					trade_company_region = trade_company_philippines
 				}
 			}
@@ -1340,8 +1721,18 @@ dominion_tc = {
 					trade_company_region = trade_company_indochina
 					trade_company_region = trade_company_burma
 					trade_company_region = trade_company_west_africa
+					trade_company_region = trade_company_timbuktu
+					trade_company_region = trade_company_katsina
+					trade_company_region = trade_company_kongo
 					trade_company_region = trade_company_south_africa
 					trade_company_region = trade_company_east_africa
+					trade_company_region = trade_company_zambezi
+					trade_company_region = trade_company_great_lakes
+					trade_company_region = trade_company_ethiopia
+					AND = {
+						trade_company_region = trade_company_gulf_of_aden
+						continent = africa
+					}
 					trade_company_region = trade_company_philippines
 				}
 			}
@@ -1363,8 +1754,18 @@ dominion_tc = {
 					trade_company_region = trade_company_indochina
 					trade_company_region = trade_company_burma
 					trade_company_region = trade_company_west_africa
+					trade_company_region = trade_company_timbuktu
+					trade_company_region = trade_company_katsina
+					trade_company_region = trade_company_kongo
 					trade_company_region = trade_company_south_africa
 					trade_company_region = trade_company_east_africa
+					trade_company_region = trade_company_zambezi
+					trade_company_region = trade_company_great_lakes
+					trade_company_region = trade_company_ethiopia
+					AND = {
+						trade_company_region = trade_company_gulf_of_aden
+						continent = africa
+					}
 					trade_company_region = trade_company_philippines
 				}
 			}
@@ -1386,8 +1787,18 @@ dominion_tc = {
 					trade_company_region = trade_company_indochina
 					trade_company_region = trade_company_burma
 					trade_company_region = trade_company_west_africa
+					trade_company_region = trade_company_timbuktu
+					trade_company_region = trade_company_katsina
+					trade_company_region = trade_company_kongo
 					trade_company_region = trade_company_south_africa
 					trade_company_region = trade_company_east_africa
+					trade_company_region = trade_company_zambezi
+					trade_company_region = trade_company_great_lakes
+					trade_company_region = trade_company_ethiopia
+					AND = {
+						trade_company_region = trade_company_gulf_of_aden
+						continent = africa
+					}
 					trade_company_region = trade_company_philippines
 				}
 			}
@@ -1409,8 +1820,18 @@ dominion_tc = {
 					trade_company_region = trade_company_indochina
 					trade_company_region = trade_company_burma
 					trade_company_region = trade_company_west_africa
+					trade_company_region = trade_company_timbuktu
+					trade_company_region = trade_company_katsina
+					trade_company_region = trade_company_kongo
 					trade_company_region = trade_company_south_africa
 					trade_company_region = trade_company_east_africa
+					trade_company_region = trade_company_zambezi
+					trade_company_region = trade_company_great_lakes
+					trade_company_region = trade_company_ethiopia
+					AND = {
+						trade_company_region = trade_company_gulf_of_aden
+						continent = africa
+					}
 					trade_company_region = trade_company_philippines
 				}
 			}
@@ -1432,8 +1853,18 @@ dominion_tc = {
 					trade_company_region = trade_company_indochina
 					trade_company_region = trade_company_burma
 					trade_company_region = trade_company_west_africa
+					trade_company_region = trade_company_timbuktu
+					trade_company_region = trade_company_katsina
+					trade_company_region = trade_company_kongo
 					trade_company_region = trade_company_south_africa
 					trade_company_region = trade_company_east_africa
+					trade_company_region = trade_company_zambezi
+					trade_company_region = trade_company_great_lakes
+					trade_company_region = trade_company_ethiopia
+					AND = {
+						trade_company_region = trade_company_gulf_of_aden
+						continent = africa
+					}
 					trade_company_region = trade_company_philippines
 				}
 			}
@@ -1455,8 +1886,18 @@ dominion_tc = {
 					trade_company_region = trade_company_indochina
 					trade_company_region = trade_company_burma
 					trade_company_region = trade_company_west_africa
+					trade_company_region = trade_company_timbuktu
+					trade_company_region = trade_company_katsina
+					trade_company_region = trade_company_kongo
 					trade_company_region = trade_company_south_africa
 					trade_company_region = trade_company_east_africa
+					trade_company_region = trade_company_zambezi
+					trade_company_region = trade_company_great_lakes
+					trade_company_region = trade_company_ethiopia
+					AND = {
+						trade_company_region = trade_company_gulf_of_aden
+						continent = africa
+					}
 					trade_company_region = trade_company_philippines
 				}
 			}
@@ -1478,8 +1919,18 @@ dominion_tc = {
 					trade_company_region = trade_company_indochina
 					trade_company_region = trade_company_burma
 					trade_company_region = trade_company_west_africa
+					trade_company_region = trade_company_timbuktu
+					trade_company_region = trade_company_katsina
+					trade_company_region = trade_company_kongo
 					trade_company_region = trade_company_south_africa
 					trade_company_region = trade_company_east_africa
+					trade_company_region = trade_company_zambezi
+					trade_company_region = trade_company_great_lakes
+					trade_company_region = trade_company_ethiopia
+					AND = {
+						trade_company_region = trade_company_gulf_of_aden
+						continent = africa
+					}
 					trade_company_region = trade_company_philippines
 				}
 			}
@@ -1501,8 +1952,18 @@ dominion_tc = {
 					trade_company_region = trade_company_indochina
 					trade_company_region = trade_company_burma
 					trade_company_region = trade_company_west_africa
+					trade_company_region = trade_company_timbuktu
+					trade_company_region = trade_company_katsina
+					trade_company_region = trade_company_kongo
 					trade_company_region = trade_company_south_africa
 					trade_company_region = trade_company_east_africa
+					trade_company_region = trade_company_zambezi
+					trade_company_region = trade_company_great_lakes
+					trade_company_region = trade_company_ethiopia
+					AND = {
+						trade_company_region = trade_company_gulf_of_aden
+						continent = africa
+					}
 					trade_company_region = trade_company_philippines
 				}
 			}
@@ -1524,8 +1985,18 @@ dominion_tc = {
 					trade_company_region = trade_company_indochina
 					trade_company_region = trade_company_burma
 					trade_company_region = trade_company_west_africa
+					trade_company_region = trade_company_timbuktu
+					trade_company_region = trade_company_katsina
+					trade_company_region = trade_company_kongo
 					trade_company_region = trade_company_south_africa
 					trade_company_region = trade_company_east_africa
+					trade_company_region = trade_company_zambezi
+					trade_company_region = trade_company_great_lakes
+					trade_company_region = trade_company_ethiopia
+					AND = {
+						trade_company_region = trade_company_gulf_of_aden
+						continent = africa
+					}
 					trade_company_region = trade_company_philippines
 				}
 			}
@@ -1547,8 +2018,18 @@ dominion_tc = {
 					trade_company_region = trade_company_indochina
 					trade_company_region = trade_company_burma
 					trade_company_region = trade_company_west_africa
+					trade_company_region = trade_company_timbuktu
+					trade_company_region = trade_company_katsina
+					trade_company_region = trade_company_kongo
 					trade_company_region = trade_company_south_africa
 					trade_company_region = trade_company_east_africa
+					trade_company_region = trade_company_zambezi
+					trade_company_region = trade_company_great_lakes
+					trade_company_region = trade_company_ethiopia
+					AND = {
+						trade_company_region = trade_company_gulf_of_aden
+						continent = africa
+					}
 					trade_company_region = trade_company_philippines
 				}
 			}
@@ -1570,8 +2051,18 @@ dominion_tc = {
 					trade_company_region = trade_company_indochina
 					trade_company_region = trade_company_burma
 					trade_company_region = trade_company_west_africa
+					trade_company_region = trade_company_timbuktu
+					trade_company_region = trade_company_katsina
+					trade_company_region = trade_company_kongo
 					trade_company_region = trade_company_south_africa
 					trade_company_region = trade_company_east_africa
+					trade_company_region = trade_company_zambezi
+					trade_company_region = trade_company_great_lakes
+					trade_company_region = trade_company_ethiopia
+					AND = {
+						trade_company_region = trade_company_gulf_of_aden
+						continent = africa
+					}
 					trade_company_region = trade_company_philippines
 				}
 			}
@@ -1593,8 +2084,18 @@ dominion_tc = {
 					trade_company_region = trade_company_indochina
 					trade_company_region = trade_company_burma
 					trade_company_region = trade_company_west_africa
+					trade_company_region = trade_company_timbuktu
+					trade_company_region = trade_company_katsina
+					trade_company_region = trade_company_kongo
 					trade_company_region = trade_company_south_africa
 					trade_company_region = trade_company_east_africa
+					trade_company_region = trade_company_zambezi
+					trade_company_region = trade_company_great_lakes
+					trade_company_region = trade_company_ethiopia
+					AND = {
+						trade_company_region = trade_company_gulf_of_aden
+						continent = africa
+					}
 					trade_company_region = trade_company_philippines
 				}
 			}
@@ -1616,8 +2117,18 @@ dominion_tc = {
 					trade_company_region = trade_company_indochina
 					trade_company_region = trade_company_burma
 					trade_company_region = trade_company_west_africa
+					trade_company_region = trade_company_timbuktu
+					trade_company_region = trade_company_katsina
+					trade_company_region = trade_company_kongo
 					trade_company_region = trade_company_south_africa
 					trade_company_region = trade_company_east_africa
+					trade_company_region = trade_company_zambezi
+					trade_company_region = trade_company_great_lakes
+					trade_company_region = trade_company_ethiopia
+					AND = {
+						trade_company_region = trade_company_gulf_of_aden
+						continent = africa
+					}
 					trade_company_region = trade_company_philippines
 				}
 			}
@@ -1639,8 +2150,18 @@ dominion_tc = {
 					trade_company_region = trade_company_indochina
 					trade_company_region = trade_company_burma
 					trade_company_region = trade_company_west_africa
+					trade_company_region = trade_company_timbuktu
+					trade_company_region = trade_company_katsina
+					trade_company_region = trade_company_kongo
 					trade_company_region = trade_company_south_africa
 					trade_company_region = trade_company_east_africa
+					trade_company_region = trade_company_zambezi
+					trade_company_region = trade_company_great_lakes
+					trade_company_region = trade_company_ethiopia
+					AND = {
+						trade_company_region = trade_company_gulf_of_aden
+						continent = africa
+					}
 					trade_company_region = trade_company_philippines
 				}
 			}
@@ -1825,8 +2346,18 @@ autonomous_dominion_tc = {
 					trade_company_region = trade_company_indochina
 					trade_company_region = trade_company_burma
 					trade_company_region = trade_company_west_africa
+					trade_company_region = trade_company_timbuktu
+					trade_company_region = trade_company_katsina
+					trade_company_region = trade_company_kongo
 					trade_company_region = trade_company_south_africa
 					trade_company_region = trade_company_east_africa
+					trade_company_region = trade_company_zambezi
+					trade_company_region = trade_company_great_lakes
+					trade_company_region = trade_company_ethiopia
+					AND = {
+						trade_company_region = trade_company_gulf_of_aden
+						continent = africa
+					}
 					trade_company_region = trade_company_philippines
 				}
 			}
@@ -1861,8 +2392,18 @@ autonomous_dominion_tc = {
 					trade_company_region = trade_company_indochina
 					trade_company_region = trade_company_burma
 					trade_company_region = trade_company_west_africa
+					trade_company_region = trade_company_timbuktu
+					trade_company_region = trade_company_katsina
+					trade_company_region = trade_company_kongo
 					trade_company_region = trade_company_south_africa
 					trade_company_region = trade_company_east_africa
+					trade_company_region = trade_company_zambezi
+					trade_company_region = trade_company_great_lakes
+					trade_company_region = trade_company_ethiopia
+					AND = {
+						trade_company_region = trade_company_gulf_of_aden
+						continent = africa
+					}
 					trade_company_region = trade_company_philippines
 				}
 			}
@@ -1884,8 +2425,18 @@ autonomous_dominion_tc = {
 					trade_company_region = trade_company_indochina
 					trade_company_region = trade_company_burma
 					trade_company_region = trade_company_west_africa
+					trade_company_region = trade_company_timbuktu
+					trade_company_region = trade_company_katsina
+					trade_company_region = trade_company_kongo
 					trade_company_region = trade_company_south_africa
 					trade_company_region = trade_company_east_africa
+					trade_company_region = trade_company_zambezi
+					trade_company_region = trade_company_great_lakes
+					trade_company_region = trade_company_ethiopia
+					AND = {
+						trade_company_region = trade_company_gulf_of_aden
+						continent = africa
+					}
 					trade_company_region = trade_company_philippines
 				}
 			}
@@ -1907,8 +2458,18 @@ autonomous_dominion_tc = {
 					trade_company_region = trade_company_indochina
 					trade_company_region = trade_company_burma
 					trade_company_region = trade_company_west_africa
+					trade_company_region = trade_company_timbuktu
+					trade_company_region = trade_company_katsina
+					trade_company_region = trade_company_kongo
 					trade_company_region = trade_company_south_africa
 					trade_company_region = trade_company_east_africa
+					trade_company_region = trade_company_zambezi
+					trade_company_region = trade_company_great_lakes
+					trade_company_region = trade_company_ethiopia
+					AND = {
+						trade_company_region = trade_company_gulf_of_aden
+						continent = africa
+					}
 					trade_company_region = trade_company_philippines
 				}
 			}
@@ -1930,8 +2491,18 @@ autonomous_dominion_tc = {
 					trade_company_region = trade_company_indochina
 					trade_company_region = trade_company_burma
 					trade_company_region = trade_company_west_africa
+					trade_company_region = trade_company_timbuktu
+					trade_company_region = trade_company_katsina
+					trade_company_region = trade_company_kongo
 					trade_company_region = trade_company_south_africa
 					trade_company_region = trade_company_east_africa
+					trade_company_region = trade_company_zambezi
+					trade_company_region = trade_company_great_lakes
+					trade_company_region = trade_company_ethiopia
+					AND = {
+						trade_company_region = trade_company_gulf_of_aden
+						continent = africa
+					}
 					trade_company_region = trade_company_philippines
 				}
 			}
@@ -1953,8 +2524,18 @@ autonomous_dominion_tc = {
 					trade_company_region = trade_company_indochina
 					trade_company_region = trade_company_burma
 					trade_company_region = trade_company_west_africa
+					trade_company_region = trade_company_timbuktu
+					trade_company_region = trade_company_katsina
+					trade_company_region = trade_company_kongo
 					trade_company_region = trade_company_south_africa
 					trade_company_region = trade_company_east_africa
+					trade_company_region = trade_company_zambezi
+					trade_company_region = trade_company_great_lakes
+					trade_company_region = trade_company_ethiopia
+					AND = {
+						trade_company_region = trade_company_gulf_of_aden
+						continent = africa
+					}
 					trade_company_region = trade_company_philippines
 				}
 			}
@@ -1976,8 +2557,18 @@ autonomous_dominion_tc = {
 					trade_company_region = trade_company_indochina
 					trade_company_region = trade_company_burma
 					trade_company_region = trade_company_west_africa
+					trade_company_region = trade_company_timbuktu
+					trade_company_region = trade_company_katsina
+					trade_company_region = trade_company_kongo
 					trade_company_region = trade_company_south_africa
 					trade_company_region = trade_company_east_africa
+					trade_company_region = trade_company_zambezi
+					trade_company_region = trade_company_great_lakes
+					trade_company_region = trade_company_ethiopia
+					AND = {
+						trade_company_region = trade_company_gulf_of_aden
+						continent = africa
+					}
 					trade_company_region = trade_company_philippines
 				}
 			}
@@ -1999,8 +2590,18 @@ autonomous_dominion_tc = {
 					trade_company_region = trade_company_indochina
 					trade_company_region = trade_company_burma
 					trade_company_region = trade_company_west_africa
+					trade_company_region = trade_company_timbuktu
+					trade_company_region = trade_company_katsina
+					trade_company_region = trade_company_kongo
 					trade_company_region = trade_company_south_africa
 					trade_company_region = trade_company_east_africa
+					trade_company_region = trade_company_zambezi
+					trade_company_region = trade_company_great_lakes
+					trade_company_region = trade_company_ethiopia
+					AND = {
+						trade_company_region = trade_company_gulf_of_aden
+						continent = africa
+					}
 					trade_company_region = trade_company_philippines
 				}
 			}
@@ -2022,8 +2623,18 @@ autonomous_dominion_tc = {
 					trade_company_region = trade_company_indochina
 					trade_company_region = trade_company_burma
 					trade_company_region = trade_company_west_africa
+					trade_company_region = trade_company_timbuktu
+					trade_company_region = trade_company_katsina
+					trade_company_region = trade_company_kongo
 					trade_company_region = trade_company_south_africa
 					trade_company_region = trade_company_east_africa
+					trade_company_region = trade_company_zambezi
+					trade_company_region = trade_company_great_lakes
+					trade_company_region = trade_company_ethiopia
+					AND = {
+						trade_company_region = trade_company_gulf_of_aden
+						continent = africa
+					}
 					trade_company_region = trade_company_philippines
 				}
 			}
@@ -2045,8 +2656,18 @@ autonomous_dominion_tc = {
 					trade_company_region = trade_company_indochina
 					trade_company_region = trade_company_burma
 					trade_company_region = trade_company_west_africa
+					trade_company_region = trade_company_timbuktu
+					trade_company_region = trade_company_katsina
+					trade_company_region = trade_company_kongo
 					trade_company_region = trade_company_south_africa
 					trade_company_region = trade_company_east_africa
+					trade_company_region = trade_company_zambezi
+					trade_company_region = trade_company_great_lakes
+					trade_company_region = trade_company_ethiopia
+					AND = {
+						trade_company_region = trade_company_gulf_of_aden
+						continent = africa
+					}
 					trade_company_region = trade_company_philippines
 				}
 			}
@@ -2068,8 +2689,18 @@ autonomous_dominion_tc = {
 					trade_company_region = trade_company_indochina
 					trade_company_region = trade_company_burma
 					trade_company_region = trade_company_west_africa
+					trade_company_region = trade_company_timbuktu
+					trade_company_region = trade_company_katsina
+					trade_company_region = trade_company_kongo
 					trade_company_region = trade_company_south_africa
 					trade_company_region = trade_company_east_africa
+					trade_company_region = trade_company_zambezi
+					trade_company_region = trade_company_great_lakes
+					trade_company_region = trade_company_ethiopia
+					AND = {
+						trade_company_region = trade_company_gulf_of_aden
+						continent = africa
+					}
 					trade_company_region = trade_company_philippines
 				}
 			}
@@ -2091,8 +2722,18 @@ autonomous_dominion_tc = {
 					trade_company_region = trade_company_indochina
 					trade_company_region = trade_company_burma
 					trade_company_region = trade_company_west_africa
+					trade_company_region = trade_company_timbuktu
+					trade_company_region = trade_company_katsina
+					trade_company_region = trade_company_kongo
 					trade_company_region = trade_company_south_africa
 					trade_company_region = trade_company_east_africa
+					trade_company_region = trade_company_zambezi
+					trade_company_region = trade_company_great_lakes
+					trade_company_region = trade_company_ethiopia
+					AND = {
+						trade_company_region = trade_company_gulf_of_aden
+						continent = africa
+					}
 					trade_company_region = trade_company_philippines
 				}
 			}
@@ -2114,8 +2755,18 @@ autonomous_dominion_tc = {
 					trade_company_region = trade_company_indochina
 					trade_company_region = trade_company_burma
 					trade_company_region = trade_company_west_africa
+					trade_company_region = trade_company_timbuktu
+					trade_company_region = trade_company_katsina
+					trade_company_region = trade_company_kongo
 					trade_company_region = trade_company_south_africa
 					trade_company_region = trade_company_east_africa
+					trade_company_region = trade_company_zambezi
+					trade_company_region = trade_company_great_lakes
+					trade_company_region = trade_company_ethiopia
+					AND = {
+						trade_company_region = trade_company_gulf_of_aden
+						continent = africa
+					}
 					trade_company_region = trade_company_philippines
 				}
 			}
@@ -2137,8 +2788,18 @@ autonomous_dominion_tc = {
 					trade_company_region = trade_company_indochina
 					trade_company_region = trade_company_burma
 					trade_company_region = trade_company_west_africa
+					trade_company_region = trade_company_timbuktu
+					trade_company_region = trade_company_katsina
+					trade_company_region = trade_company_kongo
 					trade_company_region = trade_company_south_africa
 					trade_company_region = trade_company_east_africa
+					trade_company_region = trade_company_zambezi
+					trade_company_region = trade_company_great_lakes
+					trade_company_region = trade_company_ethiopia
+					AND = {
+						trade_company_region = trade_company_gulf_of_aden
+						continent = africa
+					}
 					trade_company_region = trade_company_philippines
 				}
 			}
@@ -2160,8 +2821,18 @@ autonomous_dominion_tc = {
 					trade_company_region = trade_company_indochina
 					trade_company_region = trade_company_burma
 					trade_company_region = trade_company_west_africa
+					trade_company_region = trade_company_timbuktu
+					trade_company_region = trade_company_katsina
+					trade_company_region = trade_company_kongo
 					trade_company_region = trade_company_south_africa
 					trade_company_region = trade_company_east_africa
+					trade_company_region = trade_company_zambezi
+					trade_company_region = trade_company_great_lakes
+					trade_company_region = trade_company_ethiopia
+					AND = {
+						trade_company_region = trade_company_gulf_of_aden
+						continent = africa
+					}
 					trade_company_region = trade_company_philippines
 				}
 			}
@@ -2183,8 +2854,18 @@ autonomous_dominion_tc = {
 					trade_company_region = trade_company_indochina
 					trade_company_region = trade_company_burma
 					trade_company_region = trade_company_west_africa
+					trade_company_region = trade_company_timbuktu
+					trade_company_region = trade_company_katsina
+					trade_company_region = trade_company_kongo
 					trade_company_region = trade_company_south_africa
 					trade_company_region = trade_company_east_africa
+					trade_company_region = trade_company_zambezi
+					trade_company_region = trade_company_great_lakes
+					trade_company_region = trade_company_ethiopia
+					AND = {
+						trade_company_region = trade_company_gulf_of_aden
+						continent = africa
+					}
 					trade_company_region = trade_company_philippines
 				}
 			}
@@ -2206,8 +2887,18 @@ autonomous_dominion_tc = {
 					trade_company_region = trade_company_indochina
 					trade_company_region = trade_company_burma
 					trade_company_region = trade_company_west_africa
+					trade_company_region = trade_company_timbuktu
+					trade_company_region = trade_company_katsina
+					trade_company_region = trade_company_kongo
 					trade_company_region = trade_company_south_africa
 					trade_company_region = trade_company_east_africa
+					trade_company_region = trade_company_zambezi
+					trade_company_region = trade_company_great_lakes
+					trade_company_region = trade_company_ethiopia
+					AND = {
+						trade_company_region = trade_company_gulf_of_aden
+						continent = africa
+					}
 					trade_company_region = trade_company_philippines
 				}
 			}
@@ -2229,8 +2920,18 @@ autonomous_dominion_tc = {
 					trade_company_region = trade_company_indochina
 					trade_company_region = trade_company_burma
 					trade_company_region = trade_company_west_africa
+					trade_company_region = trade_company_timbuktu
+					trade_company_region = trade_company_katsina
+					trade_company_region = trade_company_kongo
 					trade_company_region = trade_company_south_africa
 					trade_company_region = trade_company_east_africa
+					trade_company_region = trade_company_zambezi
+					trade_company_region = trade_company_great_lakes
+					trade_company_region = trade_company_ethiopia
+					AND = {
+						trade_company_region = trade_company_gulf_of_aden
+						continent = africa
+					}
 					trade_company_region = trade_company_philippines
 				}
 			}
@@ -2252,8 +2953,18 @@ autonomous_dominion_tc = {
 					trade_company_region = trade_company_indochina
 					trade_company_region = trade_company_burma
 					trade_company_region = trade_company_west_africa
+					trade_company_region = trade_company_timbuktu
+					trade_company_region = trade_company_katsina
+					trade_company_region = trade_company_kongo
 					trade_company_region = trade_company_south_africa
 					trade_company_region = trade_company_east_africa
+					trade_company_region = trade_company_zambezi
+					trade_company_region = trade_company_great_lakes
+					trade_company_region = trade_company_ethiopia
+					AND = {
+						trade_company_region = trade_company_gulf_of_aden
+						continent = africa
+					}
 					trade_company_region = trade_company_philippines
 				}
 			}
@@ -2275,8 +2986,18 @@ autonomous_dominion_tc = {
 					trade_company_region = trade_company_indochina
 					trade_company_region = trade_company_burma
 					trade_company_region = trade_company_west_africa
+					trade_company_region = trade_company_timbuktu
+					trade_company_region = trade_company_katsina
+					trade_company_region = trade_company_kongo
 					trade_company_region = trade_company_south_africa
 					trade_company_region = trade_company_east_africa
+					trade_company_region = trade_company_zambezi
+					trade_company_region = trade_company_great_lakes
+					trade_company_region = trade_company_ethiopia
+					AND = {
+						trade_company_region = trade_company_gulf_of_aden
+						continent = africa
+					}
 					trade_company_region = trade_company_philippines
 				}
 			}
@@ -2298,8 +3019,18 @@ autonomous_dominion_tc = {
 					trade_company_region = trade_company_indochina
 					trade_company_region = trade_company_burma
 					trade_company_region = trade_company_west_africa
+					trade_company_region = trade_company_timbuktu
+					trade_company_region = trade_company_katsina
+					trade_company_region = trade_company_kongo
 					trade_company_region = trade_company_south_africa
 					trade_company_region = trade_company_east_africa
+					trade_company_region = trade_company_zambezi
+					trade_company_region = trade_company_great_lakes
+					trade_company_region = trade_company_ethiopia
+					AND = {
+						trade_company_region = trade_company_gulf_of_aden
+						continent = africa
+					}
 					trade_company_region = trade_company_philippines
 				}
 			}
@@ -2321,8 +3052,18 @@ autonomous_dominion_tc = {
 					trade_company_region = trade_company_indochina
 					trade_company_region = trade_company_burma
 					trade_company_region = trade_company_west_africa
+					trade_company_region = trade_company_timbuktu
+					trade_company_region = trade_company_katsina
+					trade_company_region = trade_company_kongo
 					trade_company_region = trade_company_south_africa
 					trade_company_region = trade_company_east_africa
+					trade_company_region = trade_company_zambezi
+					trade_company_region = trade_company_great_lakes
+					trade_company_region = trade_company_ethiopia
+					AND = {
+						trade_company_region = trade_company_gulf_of_aden
+						continent = africa
+					}
 					trade_company_region = trade_company_philippines
 				}
 			}
@@ -2344,8 +3085,18 @@ autonomous_dominion_tc = {
 					trade_company_region = trade_company_indochina
 					trade_company_region = trade_company_burma
 					trade_company_region = trade_company_west_africa
+					trade_company_region = trade_company_timbuktu
+					trade_company_region = trade_company_katsina
+					trade_company_region = trade_company_kongo
 					trade_company_region = trade_company_south_africa
 					trade_company_region = trade_company_east_africa
+					trade_company_region = trade_company_zambezi
+					trade_company_region = trade_company_great_lakes
+					trade_company_region = trade_company_ethiopia
+					AND = {
+						trade_company_region = trade_company_gulf_of_aden
+						continent = africa
+					}
 					trade_company_region = trade_company_philippines
 				}
 			}
@@ -2367,8 +3118,18 @@ autonomous_dominion_tc = {
 					trade_company_region = trade_company_indochina
 					trade_company_region = trade_company_burma
 					trade_company_region = trade_company_west_africa
+					trade_company_region = trade_company_timbuktu
+					trade_company_region = trade_company_katsina
+					trade_company_region = trade_company_kongo
 					trade_company_region = trade_company_south_africa
 					trade_company_region = trade_company_east_africa
+					trade_company_region = trade_company_zambezi
+					trade_company_region = trade_company_great_lakes
+					trade_company_region = trade_company_ethiopia
+					AND = {
+						trade_company_region = trade_company_gulf_of_aden
+						continent = africa
+					}
 					trade_company_region = trade_company_philippines
 				}
 			}
@@ -2390,8 +3151,18 @@ autonomous_dominion_tc = {
 					trade_company_region = trade_company_indochina
 					trade_company_region = trade_company_burma
 					trade_company_region = trade_company_west_africa
+					trade_company_region = trade_company_timbuktu
+					trade_company_region = trade_company_katsina
+					trade_company_region = trade_company_kongo
 					trade_company_region = trade_company_south_africa
 					trade_company_region = trade_company_east_africa
+					trade_company_region = trade_company_zambezi
+					trade_company_region = trade_company_great_lakes
+					trade_company_region = trade_company_ethiopia
+					AND = {
+						trade_company_region = trade_company_gulf_of_aden
+						continent = africa
+					}
 					trade_company_region = trade_company_philippines
 				}
 			}
@@ -2413,8 +3184,18 @@ autonomous_dominion_tc = {
 					trade_company_region = trade_company_indochina
 					trade_company_region = trade_company_burma
 					trade_company_region = trade_company_west_africa
+					trade_company_region = trade_company_timbuktu
+					trade_company_region = trade_company_katsina
+					trade_company_region = trade_company_kongo
 					trade_company_region = trade_company_south_africa
 					trade_company_region = trade_company_east_africa
+					trade_company_region = trade_company_zambezi
+					trade_company_region = trade_company_great_lakes
+					trade_company_region = trade_company_ethiopia
+					AND = {
+						trade_company_region = trade_company_gulf_of_aden
+						continent = africa
+					}
 					trade_company_region = trade_company_philippines
 				}
 			}
@@ -2436,8 +3217,18 @@ autonomous_dominion_tc = {
 					trade_company_region = trade_company_indochina
 					trade_company_region = trade_company_burma
 					trade_company_region = trade_company_west_africa
+					trade_company_region = trade_company_timbuktu
+					trade_company_region = trade_company_katsina
+					trade_company_region = trade_company_kongo
 					trade_company_region = trade_company_south_africa
 					trade_company_region = trade_company_east_africa
+					trade_company_region = trade_company_zambezi
+					trade_company_region = trade_company_great_lakes
+					trade_company_region = trade_company_ethiopia
+					AND = {
+						trade_company_region = trade_company_gulf_of_aden
+						continent = africa
+					}
 					trade_company_region = trade_company_philippines
 				}
 			}
@@ -2459,8 +3250,18 @@ autonomous_dominion_tc = {
 					trade_company_region = trade_company_indochina
 					trade_company_region = trade_company_burma
 					trade_company_region = trade_company_west_africa
+					trade_company_region = trade_company_timbuktu
+					trade_company_region = trade_company_katsina
+					trade_company_region = trade_company_kongo
 					trade_company_region = trade_company_south_africa
 					trade_company_region = trade_company_east_africa
+					trade_company_region = trade_company_zambezi
+					trade_company_region = trade_company_great_lakes
+					trade_company_region = trade_company_ethiopia
+					AND = {
+						trade_company_region = trade_company_gulf_of_aden
+						continent = africa
+					}
 					trade_company_region = trade_company_philippines
 				}
 			}
@@ -2482,8 +3283,18 @@ autonomous_dominion_tc = {
 					trade_company_region = trade_company_indochina
 					trade_company_region = trade_company_burma
 					trade_company_region = trade_company_west_africa
+					trade_company_region = trade_company_timbuktu
+					trade_company_region = trade_company_katsina
+					trade_company_region = trade_company_kongo
 					trade_company_region = trade_company_south_africa
 					trade_company_region = trade_company_east_africa
+					trade_company_region = trade_company_zambezi
+					trade_company_region = trade_company_great_lakes
+					trade_company_region = trade_company_ethiopia
+					AND = {
+						trade_company_region = trade_company_gulf_of_aden
+						continent = africa
+					}
 					trade_company_region = trade_company_philippines
 				}
 			}
@@ -2505,8 +3316,18 @@ autonomous_dominion_tc = {
 					trade_company_region = trade_company_indochina
 					trade_company_region = trade_company_burma
 					trade_company_region = trade_company_west_africa
+					trade_company_region = trade_company_timbuktu
+					trade_company_region = trade_company_katsina
+					trade_company_region = trade_company_kongo
 					trade_company_region = trade_company_south_africa
 					trade_company_region = trade_company_east_africa
+					trade_company_region = trade_company_zambezi
+					trade_company_region = trade_company_great_lakes
+					trade_company_region = trade_company_ethiopia
+					AND = {
+						trade_company_region = trade_company_gulf_of_aden
+						continent = africa
+					}
 					trade_company_region = trade_company_philippines
 				}
 			}
@@ -2528,8 +3349,18 @@ autonomous_dominion_tc = {
 					trade_company_region = trade_company_indochina
 					trade_company_region = trade_company_burma
 					trade_company_region = trade_company_west_africa
+					trade_company_region = trade_company_timbuktu
+					trade_company_region = trade_company_katsina
+					trade_company_region = trade_company_kongo
 					trade_company_region = trade_company_south_africa
 					trade_company_region = trade_company_east_africa
+					trade_company_region = trade_company_zambezi
+					trade_company_region = trade_company_great_lakes
+					trade_company_region = trade_company_ethiopia
+					AND = {
+						trade_company_region = trade_company_gulf_of_aden
+						continent = africa
+					}
 					trade_company_region = trade_company_philippines
 				}
 			}
@@ -2551,8 +3382,18 @@ autonomous_dominion_tc = {
 					trade_company_region = trade_company_indochina
 					trade_company_region = trade_company_burma
 					trade_company_region = trade_company_west_africa
+					trade_company_region = trade_company_timbuktu
+					trade_company_region = trade_company_katsina
+					trade_company_region = trade_company_kongo
 					trade_company_region = trade_company_south_africa
 					trade_company_region = trade_company_east_africa
+					trade_company_region = trade_company_zambezi
+					trade_company_region = trade_company_great_lakes
+					trade_company_region = trade_company_ethiopia
+					AND = {
+						trade_company_region = trade_company_gulf_of_aden
+						continent = africa
+					}
 					trade_company_region = trade_company_philippines
 				}
 			}
@@ -2574,8 +3415,18 @@ autonomous_dominion_tc = {
 					trade_company_region = trade_company_indochina
 					trade_company_region = trade_company_burma
 					trade_company_region = trade_company_west_africa
+					trade_company_region = trade_company_timbuktu
+					trade_company_region = trade_company_katsina
+					trade_company_region = trade_company_kongo
 					trade_company_region = trade_company_south_africa
 					trade_company_region = trade_company_east_africa
+					trade_company_region = trade_company_zambezi
+					trade_company_region = trade_company_great_lakes
+					trade_company_region = trade_company_ethiopia
+					AND = {
+						trade_company_region = trade_company_gulf_of_aden
+						continent = africa
+					}
 					trade_company_region = trade_company_philippines
 				}
 			}
@@ -2597,8 +3448,18 @@ autonomous_dominion_tc = {
 					trade_company_region = trade_company_indochina
 					trade_company_region = trade_company_burma
 					trade_company_region = trade_company_west_africa
+					trade_company_region = trade_company_timbuktu
+					trade_company_region = trade_company_katsina
+					trade_company_region = trade_company_kongo
 					trade_company_region = trade_company_south_africa
 					trade_company_region = trade_company_east_africa
+					trade_company_region = trade_company_zambezi
+					trade_company_region = trade_company_great_lakes
+					trade_company_region = trade_company_ethiopia
+					AND = {
+						trade_company_region = trade_company_gulf_of_aden
+						continent = africa
+					}
 					trade_company_region = trade_company_philippines
 				}
 			}
@@ -2620,8 +3481,18 @@ autonomous_dominion_tc = {
 					trade_company_region = trade_company_indochina
 					trade_company_region = trade_company_burma
 					trade_company_region = trade_company_west_africa
+					trade_company_region = trade_company_timbuktu
+					trade_company_region = trade_company_katsina
+					trade_company_region = trade_company_kongo
 					trade_company_region = trade_company_south_africa
 					trade_company_region = trade_company_east_africa
+					trade_company_region = trade_company_zambezi
+					trade_company_region = trade_company_great_lakes
+					trade_company_region = trade_company_ethiopia
+					AND = {
+						trade_company_region = trade_company_gulf_of_aden
+						continent = africa
+					}
 					trade_company_region = trade_company_philippines
 				}
 			}
@@ -2643,8 +3514,18 @@ autonomous_dominion_tc = {
 					trade_company_region = trade_company_indochina
 					trade_company_region = trade_company_burma
 					trade_company_region = trade_company_west_africa
+					trade_company_region = trade_company_timbuktu
+					trade_company_region = trade_company_katsina
+					trade_company_region = trade_company_kongo
 					trade_company_region = trade_company_south_africa
 					trade_company_region = trade_company_east_africa
+					trade_company_region = trade_company_zambezi
+					trade_company_region = trade_company_great_lakes
+					trade_company_region = trade_company_ethiopia
+					AND = {
+						trade_company_region = trade_company_gulf_of_aden
+						continent = africa
+					}
 					trade_company_region = trade_company_philippines
 				}
 			}
@@ -2666,8 +3547,18 @@ autonomous_dominion_tc = {
 					trade_company_region = trade_company_indochina
 					trade_company_region = trade_company_burma
 					trade_company_region = trade_company_west_africa
+					trade_company_region = trade_company_timbuktu
+					trade_company_region = trade_company_katsina
+					trade_company_region = trade_company_kongo
 					trade_company_region = trade_company_south_africa
 					trade_company_region = trade_company_east_africa
+					trade_company_region = trade_company_zambezi
+					trade_company_region = trade_company_great_lakes
+					trade_company_region = trade_company_ethiopia
+					AND = {
+						trade_company_region = trade_company_gulf_of_aden
+						continent = africa
+					}
 					trade_company_region = trade_company_philippines
 				}
 			}
@@ -2689,8 +3580,18 @@ autonomous_dominion_tc = {
 					trade_company_region = trade_company_indochina
 					trade_company_region = trade_company_burma
 					trade_company_region = trade_company_west_africa
+					trade_company_region = trade_company_timbuktu
+					trade_company_region = trade_company_katsina
+					trade_company_region = trade_company_kongo
 					trade_company_region = trade_company_south_africa
 					trade_company_region = trade_company_east_africa
+					trade_company_region = trade_company_zambezi
+					trade_company_region = trade_company_great_lakes
+					trade_company_region = trade_company_ethiopia
+					AND = {
+						trade_company_region = trade_company_gulf_of_aden
+						continent = africa
+					}
 					trade_company_region = trade_company_philippines
 				}
 			}
@@ -2712,8 +3613,18 @@ autonomous_dominion_tc = {
 					trade_company_region = trade_company_indochina
 					trade_company_region = trade_company_burma
 					trade_company_region = trade_company_west_africa
+					trade_company_region = trade_company_timbuktu
+					trade_company_region = trade_company_katsina
+					trade_company_region = trade_company_kongo
 					trade_company_region = trade_company_south_africa
 					trade_company_region = trade_company_east_africa
+					trade_company_region = trade_company_zambezi
+					trade_company_region = trade_company_great_lakes
+					trade_company_region = trade_company_ethiopia
+					AND = {
+						trade_company_region = trade_company_gulf_of_aden
+						continent = africa
+					}
 					trade_company_region = trade_company_philippines
 				}
 			}
@@ -2735,8 +3646,18 @@ autonomous_dominion_tc = {
 					trade_company_region = trade_company_indochina
 					trade_company_region = trade_company_burma
 					trade_company_region = trade_company_west_africa
+					trade_company_region = trade_company_timbuktu
+					trade_company_region = trade_company_katsina
+					trade_company_region = trade_company_kongo
 					trade_company_region = trade_company_south_africa
 					trade_company_region = trade_company_east_africa
+					trade_company_region = trade_company_zambezi
+					trade_company_region = trade_company_great_lakes
+					trade_company_region = trade_company_ethiopia
+					AND = {
+						trade_company_region = trade_company_gulf_of_aden
+						continent = africa
+					}
 					trade_company_region = trade_company_philippines
 				}
 			}
@@ -2758,8 +3679,18 @@ autonomous_dominion_tc = {
 					trade_company_region = trade_company_indochina
 					trade_company_region = trade_company_burma
 					trade_company_region = trade_company_west_africa
+					trade_company_region = trade_company_timbuktu
+					trade_company_region = trade_company_katsina
+					trade_company_region = trade_company_kongo
 					trade_company_region = trade_company_south_africa
 					trade_company_region = trade_company_east_africa
+					trade_company_region = trade_company_zambezi
+					trade_company_region = trade_company_great_lakes
+					trade_company_region = trade_company_ethiopia
+					AND = {
+						trade_company_region = trade_company_gulf_of_aden
+						continent = africa
+					}
 					trade_company_region = trade_company_philippines
 				}
 			}
@@ -2781,8 +3712,18 @@ autonomous_dominion_tc = {
 					trade_company_region = trade_company_indochina
 					trade_company_region = trade_company_burma
 					trade_company_region = trade_company_west_africa
+					trade_company_region = trade_company_timbuktu
+					trade_company_region = trade_company_katsina
+					trade_company_region = trade_company_kongo
 					trade_company_region = trade_company_south_africa
 					trade_company_region = trade_company_east_africa
+					trade_company_region = trade_company_zambezi
+					trade_company_region = trade_company_great_lakes
+					trade_company_region = trade_company_ethiopia
+					AND = {
+						trade_company_region = trade_company_gulf_of_aden
+						continent = africa
+					}
 					trade_company_region = trade_company_philippines
 				}
 			}
@@ -2804,8 +3745,18 @@ autonomous_dominion_tc = {
 					trade_company_region = trade_company_indochina
 					trade_company_region = trade_company_burma
 					trade_company_region = trade_company_west_africa
+					trade_company_region = trade_company_timbuktu
+					trade_company_region = trade_company_katsina
+					trade_company_region = trade_company_kongo
 					trade_company_region = trade_company_south_africa
 					trade_company_region = trade_company_east_africa
+					trade_company_region = trade_company_zambezi
+					trade_company_region = trade_company_great_lakes
+					trade_company_region = trade_company_ethiopia
+					AND = {
+						trade_company_region = trade_company_gulf_of_aden
+						continent = africa
+					}
 					trade_company_region = trade_company_philippines
 				}
 			}
@@ -2827,8 +3778,18 @@ autonomous_dominion_tc = {
 					trade_company_region = trade_company_indochina
 					trade_company_region = trade_company_burma
 					trade_company_region = trade_company_west_africa
+					trade_company_region = trade_company_timbuktu
+					trade_company_region = trade_company_katsina
+					trade_company_region = trade_company_kongo
 					trade_company_region = trade_company_south_africa
 					trade_company_region = trade_company_east_africa
+					trade_company_region = trade_company_zambezi
+					trade_company_region = trade_company_great_lakes
+					trade_company_region = trade_company_ethiopia
+					AND = {
+						trade_company_region = trade_company_gulf_of_aden
+						continent = africa
+					}
 					trade_company_region = trade_company_philippines
 				}
 			}
@@ -2850,8 +3811,18 @@ autonomous_dominion_tc = {
 					trade_company_region = trade_company_indochina
 					trade_company_region = trade_company_burma
 					trade_company_region = trade_company_west_africa
+					trade_company_region = trade_company_timbuktu
+					trade_company_region = trade_company_katsina
+					trade_company_region = trade_company_kongo
 					trade_company_region = trade_company_south_africa
 					trade_company_region = trade_company_east_africa
+					trade_company_region = trade_company_zambezi
+					trade_company_region = trade_company_great_lakes
+					trade_company_region = trade_company_ethiopia
+					AND = {
+						trade_company_region = trade_company_gulf_of_aden
+						continent = africa
+					}
 					trade_company_region = trade_company_philippines
 				}
 			}
@@ -2873,8 +3844,18 @@ autonomous_dominion_tc = {
 					trade_company_region = trade_company_indochina
 					trade_company_region = trade_company_burma
 					trade_company_region = trade_company_west_africa
+					trade_company_region = trade_company_timbuktu
+					trade_company_region = trade_company_katsina
+					trade_company_region = trade_company_kongo
 					trade_company_region = trade_company_south_africa
 					trade_company_region = trade_company_east_africa
+					trade_company_region = trade_company_zambezi
+					trade_company_region = trade_company_great_lakes
+					trade_company_region = trade_company_ethiopia
+					AND = {
+						trade_company_region = trade_company_gulf_of_aden
+						continent = africa
+					}
 					trade_company_region = trade_company_philippines
 				}
 			}
@@ -2896,8 +3877,18 @@ autonomous_dominion_tc = {
 					trade_company_region = trade_company_indochina
 					trade_company_region = trade_company_burma
 					trade_company_region = trade_company_west_africa
+					trade_company_region = trade_company_timbuktu
+					trade_company_region = trade_company_katsina
+					trade_company_region = trade_company_kongo
 					trade_company_region = trade_company_south_africa
 					trade_company_region = trade_company_east_africa
+					trade_company_region = trade_company_zambezi
+					trade_company_region = trade_company_great_lakes
+					trade_company_region = trade_company_ethiopia
+					AND = {
+						trade_company_region = trade_company_gulf_of_aden
+						continent = africa
+					}
 					trade_company_region = trade_company_philippines
 				}
 			}
@@ -2919,8 +3910,18 @@ autonomous_dominion_tc = {
 					trade_company_region = trade_company_indochina
 					trade_company_region = trade_company_burma
 					trade_company_region = trade_company_west_africa
+					trade_company_region = trade_company_timbuktu
+					trade_company_region = trade_company_katsina
+					trade_company_region = trade_company_kongo
 					trade_company_region = trade_company_south_africa
 					trade_company_region = trade_company_east_africa
+					trade_company_region = trade_company_zambezi
+					trade_company_region = trade_company_great_lakes
+					trade_company_region = trade_company_ethiopia
+					AND = {
+						trade_company_region = trade_company_gulf_of_aden
+						continent = africa
+					}
 					trade_company_region = trade_company_philippines
 				}
 			}
@@ -2942,8 +3943,18 @@ autonomous_dominion_tc = {
 					trade_company_region = trade_company_indochina
 					trade_company_region = trade_company_burma
 					trade_company_region = trade_company_west_africa
+					trade_company_region = trade_company_timbuktu
+					trade_company_region = trade_company_katsina
+					trade_company_region = trade_company_kongo
 					trade_company_region = trade_company_south_africa
 					trade_company_region = trade_company_east_africa
+					trade_company_region = trade_company_zambezi
+					trade_company_region = trade_company_great_lakes
+					trade_company_region = trade_company_ethiopia
+					AND = {
+						trade_company_region = trade_company_gulf_of_aden
+						continent = africa
+					}
 					trade_company_region = trade_company_philippines
 				}
 			}
@@ -2965,8 +3976,18 @@ autonomous_dominion_tc = {
 					trade_company_region = trade_company_indochina
 					trade_company_region = trade_company_burma
 					trade_company_region = trade_company_west_africa
+					trade_company_region = trade_company_timbuktu
+					trade_company_region = trade_company_katsina
+					trade_company_region = trade_company_kongo
 					trade_company_region = trade_company_south_africa
 					trade_company_region = trade_company_east_africa
+					trade_company_region = trade_company_zambezi
+					trade_company_region = trade_company_great_lakes
+					trade_company_region = trade_company_ethiopia
+					AND = {
+						trade_company_region = trade_company_gulf_of_aden
+						continent = africa
+					}
 					trade_company_region = trade_company_philippines
 				}
 			}
@@ -2988,8 +4009,18 @@ autonomous_dominion_tc = {
 					trade_company_region = trade_company_indochina
 					trade_company_region = trade_company_burma
 					trade_company_region = trade_company_west_africa
+					trade_company_region = trade_company_timbuktu
+					trade_company_region = trade_company_katsina
+					trade_company_region = trade_company_kongo
 					trade_company_region = trade_company_south_africa
 					trade_company_region = trade_company_east_africa
+					trade_company_region = trade_company_zambezi
+					trade_company_region = trade_company_great_lakes
+					trade_company_region = trade_company_ethiopia
+					AND = {
+						trade_company_region = trade_company_gulf_of_aden
+						continent = africa
+					}
 					trade_company_region = trade_company_philippines
 				}
 			}

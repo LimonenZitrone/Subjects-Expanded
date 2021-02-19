@@ -214,3 +214,129 @@ was_dominion_tag_in_philippines = {
 		was_tag = DP9
 	}
 }
+
+tc_dominion_owns_provinces_in_wrong_trade_company_region = {
+	OR = {
+		AND = {
+			is_dominion_tag_in_east_africa = yes
+			any_owned_province = {
+				NOT = { trade_company_region = trade_company_east_africa }
+				NOT = { trade_company_region = trade_company_zambezi }
+				NOT = { trade_company_region = trade_company_great_lakes }
+				NOT = { trade_company_region = trade_company_ethiopia }
+				OR = {
+					NOT = { trade_company_region = trade_company_gulf_of_aden }
+					NOT = { continent = africa }
+				}
+			}
+		}
+		AND = {
+			is_dominion_tag_in_indochina = yes
+			any_owned_province = {
+				NOT = { trade_company_region = trade_company_indochina }
+				NOT = { trade_company_region = trade_company_burma }
+			}
+		}
+		AND = {
+			is_dominion_tag_in_east_indies = yes
+			any_owned_province = {
+				NOT = { trade_company_region = trade_company_indonesia }
+				NOT = { trade_company_region = trade_company_moluccas }
+			}
+		}
+		AND = {
+			is_dominion_tag_in_india = yes
+			any_owned_province = {
+				NOT = { trade_company_region = trade_company_west_india }
+				NOT = { trade_company_region = trade_company_deccan }
+				NOT = { trade_company_region = trade_company_east_india }
+				NOT = { trade_company_region = trade_company_coromandel }
+				NOT = { trade_company_region = trade_company_north_india }
+			}
+		}
+		AND = {
+			is_dominion_tag_in_south_africa = yes
+			any_owned_province = {
+				NOT = { trade_company_region = trade_company_south_africa }
+			}
+		}
+		AND = {
+			is_dominion_tag_in_west_africa = yes
+			any_owned_province = {
+				NOT = { trade_company_region = trade_company_west_africa }
+				NOT = { trade_company_region = trade_company_timbuktu }
+				NOT = { trade_company_region = trade_company_katsina }
+				NOT = { trade_company_region = trade_company_kongo }
+			}
+		}
+		AND = {
+			is_dominion_tag_in_philippines = yes
+			any_owned_province = {
+				NOT = { trade_company_region = trade_company_philippines }
+			}
+		}
+	}
+}
+
+tc_dominion_province_is_in_wrong_trade_company_region = {
+	OR = {
+		AND = {
+			owner = {
+				is_dominion_tag_in_east_africa = yes
+			}
+			NOT = { trade_company_region = trade_company_east_africa }
+			NOT = { trade_company_region = trade_company_zambezi }
+			NOT = { trade_company_region = trade_company_great_lakes }
+			NOT = { trade_company_region = trade_company_ethiopia }
+			OR = {
+				NOT = { trade_company_region = trade_company_gulf_of_aden }
+				NOT = { continent = africa }
+			}
+		}
+		AND = {
+			owner = {
+				is_dominion_tag_in_indochina = yes
+			}
+			NOT = { trade_company_region = trade_company_indochina }
+			NOT = { trade_company_region = trade_company_burma }
+		}
+		AND = {
+			owner = {
+				is_dominion_tag_in_east_indies = yes
+			}
+			NOT = { trade_company_region = trade_company_indonesia }
+			NOT = { trade_company_region = trade_company_moluccas }
+		}
+		AND = {
+			owner = {
+				is_dominion_tag_in_india = yes
+			}
+			NOT = { trade_company_region = trade_company_west_india }
+			NOT = { trade_company_region = trade_company_deccan }
+			NOT = { trade_company_region = trade_company_east_india }
+			NOT = { trade_company_region = trade_company_coromandel }
+			NOT = { trade_company_region = trade_company_north_india }
+		}
+		AND = {
+			owner = {
+				is_dominion_tag_in_south_africa = yes
+			}
+			NOT = { trade_company_region = trade_company_south_africa }
+		}
+		AND = {
+			owner = {
+				is_dominion_tag_in_west_africa = yes
+			}
+			NOT = { trade_company_region = trade_company_west_africa }
+			NOT = { trade_company_region = trade_company_timbuktu }
+			NOT = { trade_company_region = trade_company_katsina }
+			NOT = { trade_company_region = trade_company_kongo }
+		}
+		AND = {
+			owner = {
+				is_dominion_tag_in_philippines = yes
+			}
+			NOT = { trade_company_region = trade_company_philippines }
+		}
+	}
+}

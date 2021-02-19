@@ -93,6 +93,23 @@ country_decisions = {
 					has_discovered = ROOT
 				}
 			}
+			OR = {
+				trade_company_west_india = {
+					owned_by = ROOT
+				}
+				trade_company_deccan = {
+					owned_by = ROOT
+				}
+				trade_company_east_india = {
+					owned_by = ROOT
+				}
+				trade_company_coromandel = {
+					owned_by = ROOT
+				}
+				trade_company_north_india = {
+					owned_by = ROOT
+				}
+			}
 			trade_company_west_india = {
 				type = all
 				OR = {
@@ -128,6 +145,16 @@ country_decisions = {
 					is_in_capital_area = no
 				}
 			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				trade_company_region = trade_company_west_india
+				trade_company_region = trade_company_deccan
+				trade_company_region = trade_company_east_india
+				trade_company_region = trade_company_coromandel
+				trade_company_region = trade_company_north_india
+			}
+			has_discovered = ROOT
 		}
 		allow = {
 			treasury = 3000
@@ -245,6 +272,10 @@ country_decisions = {
 							add_core = DI1
 						}
 						cede_province = DI1
+					}
+					create_subject = {
+						subject = DI1
+						subject_type = dominion
 					}
 					create_subject = {
 						subject = DI1
@@ -398,6 +429,10 @@ country_decisions = {
 							add_core = DI2
 						}
 						cede_province = DI2
+					}
+					create_subject = {
+						subject = DI2
+						subject_type = dominion
 					}
 					create_subject = {
 						subject = DI2
@@ -556,6 +591,10 @@ country_decisions = {
 					}
 					create_subject = {
 						subject = DI3
+						subject_type = dominion
+					}
+					create_subject = {
+						subject = DI3
 						subject_type = dominion_tc
 					}
 					DI3 = {
@@ -711,6 +750,10 @@ country_decisions = {
 					}
 					create_subject = {
 						subject = DI4
+						subject_type = dominion
+					}
+					create_subject = {
+						subject = DI4
 						subject_type = dominion_tc
 					}
 					DI4 = {
@@ -863,6 +906,10 @@ country_decisions = {
 					}
 					create_subject = {
 						subject = DI5
+						subject_type = dominion
+					}
+					create_subject = {
+						subject = DI5
 						subject_type = dominion_tc
 					}
 					DI5 = {
@@ -1009,6 +1056,10 @@ country_decisions = {
 							add_core = DI6
 						}
 						cede_province = DI6
+					}
+					create_subject = {
+						subject = DI6
+						subject_type = dominion
 					}
 					create_subject = {
 						subject = DI6
@@ -1160,6 +1211,10 @@ country_decisions = {
 					}
 					create_subject = {
 						subject = DI7
+						subject_type = dominion
+					}
+					create_subject = {
+						subject = DI7
 						subject_type = dominion_tc
 					}
 					DI7 = {
@@ -1308,6 +1363,10 @@ country_decisions = {
 					}
 					create_subject = {
 						subject = DI8
+						subject_type = dominion
+					}
+					create_subject = {
+						subject = DI8
 						subject_type = dominion_tc
 					}
 					DI8 = {
@@ -1452,6 +1511,10 @@ country_decisions = {
 							add_core = DI9
 						}
 						cede_province = DI9
+					}
+					create_subject = {
+						subject = DI9
+						subject_type = dominion
 					}
 					create_subject = {
 						subject = DI9
@@ -1621,7 +1684,7 @@ country_decisions = {
 				factor = 0.1
 				calc_true_if = {
 					all_subject_country = {
-						is_any_dominion_subject = yes
+						is_any_trade_company_region_dominion_subject = yes
 					}
 					amount = 3
 				}
@@ -1745,6 +1808,14 @@ country_decisions = {
 					has_discovered = ROOT
 				}
 			}
+			OR = {
+				trade_company_indonesia = {
+					owned_by = ROOT
+				}
+				trade_company_moluccas = {
+					owned_by = ROOT
+				}
+			}
 			trade_company_indonesia = {
 				type = all
 				OR = {
@@ -1759,6 +1830,13 @@ country_decisions = {
 					is_in_capital_area = no
 				}
 			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				trade_company_region = trade_company_indonesia
+				trade_company_region = trade_company_moluccas
+			}
+			has_discovered = ROOT
 		}
 		allow = {
 			treasury = 3000
@@ -1821,6 +1899,10 @@ country_decisions = {
 							add_core = DE1
 						}
 						cede_province = DE1
+					}
+					create_subject = {
+						subject = DE1
+						subject_type = dominion
 					}
 					create_subject = {
 						subject = DE1
@@ -1924,6 +2006,10 @@ country_decisions = {
 					}
 					create_subject = {
 						subject = DE2
+						subject_type = dominion
+					}
+					create_subject = {
+						subject = DE2
 						subject_type = dominion_tc
 					}
 					DE2 = {
@@ -2018,6 +2104,10 @@ country_decisions = {
 					}
 					create_subject = {
 						subject = DE3
+						subject_type = dominion
+					}
+					create_subject = {
+						subject = DE3
 						subject_type = dominion_tc
 					}
 					DE3 = {
@@ -2109,6 +2199,10 @@ country_decisions = {
 							add_core = DE4
 						}
 						cede_province = DE4
+					}
+					create_subject = {
+						subject = DE4
+						subject_type = dominion
 					}
 					create_subject = {
 						subject = DE4
@@ -2211,6 +2305,10 @@ country_decisions = {
 					}
 					create_subject = {
 						subject = DE5
+						subject_type = dominion
+					}
+					create_subject = {
+						subject = DE5
 						subject_type = dominion_tc
 					}
 					DE5 = {
@@ -2307,6 +2405,10 @@ country_decisions = {
 					}
 					create_subject = {
 						subject = DE6
+						subject_type = dominion
+					}
+					create_subject = {
+						subject = DE6
 						subject_type = dominion_tc
 					}
 					DE6 = {
@@ -2399,6 +2501,10 @@ country_decisions = {
 					}
 					create_subject = {
 						subject = DE7
+						subject_type = dominion
+					}
+					create_subject = {
+						subject = DE7
 						subject_type = dominion_tc
 					}
 					DE7 = {
@@ -2486,6 +2592,10 @@ country_decisions = {
 					}
 					create_subject = {
 						subject = DE8
+						subject_type = dominion
+					}
+					create_subject = {
+						subject = DE8
 						subject_type = dominion_tc
 					}
 					DE8 = {
@@ -2570,6 +2680,10 @@ country_decisions = {
 							add_core = DE9
 						}
 						cede_province = DE9
+					}
+					create_subject = {
+						subject = DE9
+						subject_type = dominion
 					}
 					create_subject = {
 						subject = DE9
@@ -2701,7 +2815,7 @@ country_decisions = {
 				factor = 0.1
 				calc_true_if = {
 					all_subject_country = {
-						is_any_dominion_subject = yes
+						is_any_trade_company_region_dominion_subject = yes
 					}
 					amount = 3
 				}
@@ -2792,6 +2906,14 @@ country_decisions = {
 					has_discovered = ROOT
 				}
 			}
+			OR = {
+				trade_company_indochina = {
+					owned_by = ROOT
+				}
+				trade_company_burma = {
+					owned_by = ROOT
+				}
+			}
 			trade_company_indochina = {
 				type = all
 				OR = {
@@ -2806,6 +2928,13 @@ country_decisions = {
 					is_in_capital_area = no
 				}
 			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				trade_company_region = trade_company_indochina
+				trade_company_region = trade_company_burma
+			}
+			has_discovered = ROOT
 		}
 		allow = {
 			treasury = 3000
@@ -2868,6 +2997,10 @@ country_decisions = {
 							add_core = DC1
 						}
 						cede_province = DC1
+					}
+					create_subject = {
+						subject = DC1
+						subject_type = dominion
 					}
 					create_subject = {
 						subject = DC1
@@ -2948,6 +3081,10 @@ country_decisions = {
 							add_core = DC2
 						}
 						cede_province = DC2
+					}
+					create_subject = {
+						subject = DC2
+						subject_type = dominion
 					}
 					create_subject = {
 						subject = DC2
@@ -3033,6 +3170,10 @@ country_decisions = {
 					}
 					create_subject = {
 						subject = DC3
+						subject_type = dominion
+					}
+					create_subject = {
+						subject = DC3
 						subject_type = dominion_tc
 					}
 					DC3 = {
@@ -3115,6 +3256,10 @@ country_decisions = {
 					}
 					create_subject = {
 						subject = DC4
+						subject_type = dominion
+					}
+					create_subject = {
+						subject = DC4
 						subject_type = dominion_tc
 					}
 					DC4 = {
@@ -3194,6 +3339,10 @@ country_decisions = {
 					}
 					create_subject = {
 						subject = DC5
+						subject_type = dominion
+					}
+					create_subject = {
+						subject = DC5
 						subject_type = dominion_tc
 					}
 					DC5 = {
@@ -3270,6 +3419,10 @@ country_decisions = {
 					}
 					create_subject = {
 						subject = DC6
+						subject_type = dominion
+					}
+					create_subject = {
+						subject = DC6
 						subject_type = dominion_tc
 					}
 					DC6 = {
@@ -3342,6 +3495,10 @@ country_decisions = {
 							add_core = DC7
 						}
 						cede_province = DC7
+					}
+					create_subject = {
+						subject = DC7
+						subject_type = dominion
 					}
 					create_subject = {
 						subject = DC7
@@ -3453,7 +3610,7 @@ country_decisions = {
 				factor = 0.1
 				calc_true_if = {
 					all_subject_country = {
-						is_any_dominion_subject = yes
+						is_any_trade_company_region_dominion_subject = yes
 					}
 					amount = 3
 				}
@@ -3536,10 +3693,56 @@ country_decisions = {
 					is_dominion_tag_in_west_africa = yes
 				}
 			}
-			trade_company_west_africa = {
-				has_discovered = ROOT
+			OR = {
+				trade_company_west_africa = {
+					has_discovered = ROOT
+				}
+				trade_company_timbuktu = {
+					has_discovered = ROOT
+				}
+				trade_company_katsina = {
+					has_discovered = ROOT
+				}
+				trade_company_kongo = {
+					has_discovered = ROOT
+				}
+			}
+			OR = {
+				trade_company_west_africa = {
+					owned_by = ROOT
+				}
+				trade_company_timbuktu = {
+					owned_by = ROOT
+				}
+				trade_company_katsina = {
+					owned_by = ROOT
+				}
+				trade_company_kongo = {
+					owned_by = ROOT
+				}
 			}
 			trade_company_west_africa = {
+				type = all
+				OR = {
+					NOT = { owned_by = ROOT }
+					is_in_capital_area = no
+				}
+			}
+			trade_company_timbuktu = {
+				type = all
+				OR = {
+					NOT = { owned_by = ROOT }
+					is_in_capital_area = no
+				}
+			}
+			trade_company_katsina = {
+				type = all
+				OR = {
+					NOT = { owned_by = ROOT }
+					is_in_capital_area = no
+				}
+			}
+			trade_company_kongo = {
 				type = all
 				OR = {
 					NOT = { owned_by = ROOT }
@@ -3553,6 +3756,16 @@ country_decisions = {
 				}
 			}
 		}
+		provinces_to_highlight = {
+			OR = {
+				trade_company_region = trade_company_west_africa
+				trade_company_region = trade_company_timbuktu
+				trade_company_region = trade_company_katsina
+				trade_company_region = trade_company_kongo
+			}
+			has_discovered = ROOT
+			is_sea = no
+		}
 		allow = {
 			treasury = 3000
 			is_at_war = no
@@ -3561,9 +3774,23 @@ country_decisions = {
 				has_idea_group = exploration_ideas
 				has_idea_group = trade_ideas
 			}
-			trade_company_west_africa = {
-				owned_by = ROOT
-				is_city = yes
+			OR = {
+				trade_company_west_africa = {
+					owned_by = ROOT
+					is_city = yes
+				}
+				trade_company_timbuktu = {
+					owned_by = ROOT
+					is_city = yes
+				}
+				trade_company_katsina = {
+					owned_by = ROOT
+					is_city = yes
+				}
+				trade_company_kongo = {
+					owned_by = ROOT
+					is_city = yes
+				}
 			}
 		}
 		effect = {
@@ -3594,6 +3821,52 @@ country_decisions = {
 							add_core = DW1
 						}
 						cede_province = DW1
+					}
+					trade_company_timbuktu = {
+						limit = {
+							owned_by = ROOT
+							is_city = yes
+						}
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DW1
+						}
+						cede_province = DW1
+					}
+					trade_company_katsina = {
+						limit = {
+							owned_by = ROOT
+							is_city = yes
+						}
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DW1
+						}
+						cede_province = DW1
+					}
+					trade_company_kongo = {
+						limit = {
+							owned_by = ROOT
+							is_city = yes
+						}
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DW1
+						}
+						cede_province = DW1
+					}
+					create_subject = {
+						subject = DW1
+						subject_type = dominion
 					}
 					create_subject = {
 						subject = DW1
@@ -3660,6 +3933,52 @@ country_decisions = {
 							add_core = DW2
 						}
 						cede_province = DW2
+					}
+					trade_company_timbuktu = {
+						limit = {
+							owned_by = ROOT
+							is_city = yes
+						}
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DW2
+						}
+						cede_province = DW2
+					}
+					trade_company_katsina = {
+						limit = {
+							owned_by = ROOT
+							is_city = yes
+						}
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DW2
+						}
+						cede_province = DW2
+					}
+					trade_company_kongo = {
+						limit = {
+							owned_by = ROOT
+							is_city = yes
+						}
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DW2
+						}
+						cede_province = DW2
+					}
+					create_subject = {
+						subject = DW2
+						subject_type = dominion
 					}
 					create_subject = {
 						subject = DW2
@@ -3729,6 +4048,52 @@ country_decisions = {
 						}
 						cede_province = DW3
 					}
+					trade_company_timbuktu = {
+						limit = {
+							owned_by = ROOT
+							is_city = yes
+						}
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DW3
+						}
+						cede_province = DW3
+					}
+					trade_company_katsina = {
+						limit = {
+							owned_by = ROOT
+							is_city = yes
+						}
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DW3
+						}
+						cede_province = DW3
+					}
+					trade_company_kongo = {
+						limit = {
+							owned_by = ROOT
+							is_city = yes
+						}
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DW3
+						}
+						cede_province = DW3
+					}
+					create_subject = {
+						subject = DW3
+						subject_type = dominion
+					}
 					create_subject = {
 						subject = DW3
 						subject_type = dominion_tc
@@ -3797,6 +4162,52 @@ country_decisions = {
 						}
 						cede_province = DW4
 					}
+					trade_company_timbuktu = {
+						limit = {
+							owned_by = ROOT
+							is_city = yes
+						}
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DW4
+						}
+						cede_province = DW4
+					}
+					trade_company_katsina = {
+						limit = {
+							owned_by = ROOT
+							is_city = yes
+						}
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DW4
+						}
+						cede_province = DW4
+					}
+					trade_company_kongo = {
+						limit = {
+							owned_by = ROOT
+							is_city = yes
+						}
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DW4
+						}
+						cede_province = DW4
+					}
+					create_subject = {
+						subject = DW4
+						subject_type = dominion
+					}
 					create_subject = {
 						subject = DW4
 						subject_type = dominion_tc
@@ -3862,6 +4273,52 @@ country_decisions = {
 						}
 						cede_province = DW5
 					}
+					trade_company_timbuktu = {
+						limit = {
+							owned_by = ROOT
+							is_city = yes
+						}
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DW5
+						}
+						cede_province = DW5
+					}
+					trade_company_katsina = {
+						limit = {
+							owned_by = ROOT
+							is_city = yes
+						}
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DW5
+						}
+						cede_province = DW5
+					}
+					trade_company_kongo = {
+						limit = {
+							owned_by = ROOT
+							is_city = yes
+						}
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DW5
+						}
+						cede_province = DW5
+					}
+					create_subject = {
+						subject = DW5
+						subject_type = dominion
+					}
 					create_subject = {
 						subject = DW5
 						subject_type = dominion_tc
@@ -3924,6 +4381,52 @@ country_decisions = {
 						}
 						cede_province = DW6
 					}
+					trade_company_timbuktu = {
+						limit = {
+							owned_by = ROOT
+							is_city = yes
+						}
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DW6
+						}
+						cede_province = DW6
+					}
+					trade_company_katsina = {
+						limit = {
+							owned_by = ROOT
+							is_city = yes
+						}
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DW6
+						}
+						cede_province = DW6
+					}
+					trade_company_kongo = {
+						limit = {
+							owned_by = ROOT
+							is_city = yes
+						}
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DW6
+						}
+						cede_province = DW6
+					}
+					create_subject = {
+						subject = DW6
+						subject_type = dominion
+					}
 					create_subject = {
 						subject = DW6
 						subject_type = dominion_tc
@@ -3984,6 +4487,52 @@ country_decisions = {
 							add_core = DW7
 						}
 						cede_province = DW7
+					}
+					trade_company_timbuktu = {
+						limit = {
+							owned_by = ROOT
+							is_city = yes
+						}
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DW7
+						}
+						cede_province = DW7
+					}
+					trade_company_katsina = {
+						limit = {
+							owned_by = ROOT
+							is_city = yes
+						}
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DW7
+						}
+						cede_province = DW7
+					}
+					trade_company_kongo = {
+						limit = {
+							owned_by = ROOT
+							is_city = yes
+						}
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DW7
+						}
+						cede_province = DW7
+					}
+					create_subject = {
+						subject = DW7
+						subject_type = dominion
 					}
 					create_subject = {
 						subject = DW7
@@ -4076,18 +4625,38 @@ country_decisions = {
 			}
 			modifier = {
 				factor = 0
-				trade_company_west_africa = {
-					type = all
-					owned_by = ROOT
-					is_city = yes
-					is_state = yes
+				OR = {
+					trade_company_west_africa = {
+						type = all
+						owned_by = ROOT
+						is_city = yes
+						is_state = yes
+					}
+					trade_company_timbuktu = {
+						type = all
+						owned_by = ROOT
+						is_city = yes
+						is_state = yes
+					}
+					trade_company_katsina = {
+						type = all
+						owned_by = ROOT
+						is_city = yes
+						is_state = yes
+					}
+					trade_company_kongo = {
+						type = all
+						owned_by = ROOT
+						is_city = yes
+						is_state = yes
+					}
 				}
 			}
 			modifier = {
 				factor = 0.1
 				calc_true_if = {
 					all_subject_country = {
-						is_any_dominion_subject = yes
+						is_any_trade_company_region_dominion_subject = yes
 					}
 					amount = 3
 				}
@@ -4174,6 +4743,9 @@ country_decisions = {
 				has_discovered = ROOT
 			}
 			trade_company_south_africa = {
+				owned_by = ROOT
+			}
+			trade_company_south_africa = {
 				type = all
 				OR = {
 					NOT = { owned_by = ROOT }
@@ -4186,6 +4758,10 @@ country_decisions = {
 					colonial_region = colonial_south_africa
 				}
 			}
+		}
+		provinces_to_highlight = {
+			trade_company_region = trade_company_south_africa
+			has_discovered = ROOT
 		}
 		allow = {
 			treasury = 3000
@@ -4228,6 +4804,10 @@ country_decisions = {
 							add_core = DS1
 						}
 						cede_province = DS1
+					}
+					create_subject = {
+						subject = DS1
+						subject_type = dominion
 					}
 					create_subject = {
 						subject = DS1
@@ -4294,6 +4874,10 @@ country_decisions = {
 							add_core = DS2
 						}
 						cede_province = DS2
+					}
+					create_subject = {
+						subject = DS2
+						subject_type = dominion
 					}
 					create_subject = {
 						subject = DS2
@@ -4365,6 +4949,10 @@ country_decisions = {
 					}
 					create_subject = {
 						subject = DS3
+						subject_type = dominion
+					}
+					create_subject = {
+						subject = DS3
 						subject_type = dominion_tc
 					}
 					DS3 = {
@@ -4433,6 +5021,10 @@ country_decisions = {
 					}
 					create_subject = {
 						subject = DS4
+						subject_type = dominion
+					}
+					create_subject = {
+						subject = DS4
 						subject_type = dominion_tc
 					}
 					DS4 = {
@@ -4498,6 +5090,10 @@ country_decisions = {
 					}
 					create_subject = {
 						subject = DS5
+						subject_type = dominion
+					}
+					create_subject = {
+						subject = DS5
 						subject_type = dominion_tc
 					}
 					DS5 = {
@@ -4560,6 +5156,10 @@ country_decisions = {
 					}
 					create_subject = {
 						subject = DS6
+						subject_type = dominion
+					}
+					create_subject = {
+						subject = DS6
 						subject_type = dominion_tc
 					}
 					DS6 = {
@@ -4618,6 +5218,10 @@ country_decisions = {
 							add_core = DS7
 						}
 						cede_province = DS7
+					}
+					create_subject = {
+						subject = DS7
+						subject_type = dominion
 					}
 					create_subject = {
 						subject = DS7
@@ -4717,7 +5321,7 @@ country_decisions = {
 				factor = 0.1
 				calc_true_if = {
 					all_subject_country = {
-						is_any_dominion_subject = yes
+						is_any_trade_company_region_dominion_subject = yes
 					}
 					amount = 3
 				}
@@ -4800,12 +5404,74 @@ country_decisions = {
 					is_dominion_tag_in_east_africa = yes
 				}
 			}
-			trade_company_east_africa = {
-				has_discovered = ROOT
+			OR = {
+				trade_company_east_africa = {
+					has_discovered = ROOT
+				}
+				trade_company_zambezi = {
+					has_discovered = ROOT
+				}
+				trade_company_great_lakes = {
+					has_discovered = ROOT
+				}
+				trade_company_ethiopia = {
+					has_discovered = ROOT
+				}
+				trade_company_gulf_of_aden = {
+					continent = africa
+					has_discovered = ROOT
+				}
+			}
+			OR = {
+				trade_company_east_africa = {
+					owned_by = ROOT
+				}
+				trade_company_zambezi = {
+					owned_by = ROOT
+				}
+				trade_company_great_lakes = {
+					owned_by = ROOT
+				}
+				trade_company_ethiopia = {
+					owned_by = ROOT
+				}
+				trade_company_gulf_of_aden = {
+					continent = africa
+					owned_by = ROOT
+				}
 			}
 			trade_company_east_africa = {
 				type = all
 				OR = {
+					NOT = { owned_by = ROOT }
+					is_in_capital_area = no
+				}
+			}
+			trade_company_zambezi = {
+				type = all
+				OR = {
+					NOT = { owned_by = ROOT }
+					is_in_capital_area = no
+				}
+			}
+			trade_company_great_lakes = {
+				type = all
+				OR = {
+					NOT = { owned_by = ROOT }
+					is_in_capital_area = no
+				}
+			}
+			trade_company_ethiopia = {
+				type = all
+				OR = {
+					NOT = { owned_by = ROOT }
+					is_in_capital_area = no
+				}
+			}
+			trade_company_gulf_of_aden = {
+				type = all
+				OR = {
+					NOT = { continent = africa }
 					NOT = { owned_by = ROOT }
 					is_in_capital_area = no
 				}
@@ -4817,6 +5483,19 @@ country_decisions = {
 				}
 			}
 		}
+		provinces_to_highlight = {
+			OR = {
+				trade_company_region = trade_company_east_africa
+				trade_company_region = trade_company_zambezi
+				trade_company_region = trade_company_great_lakes
+				trade_company_region = trade_company_ethiopia
+				AND = {
+					trade_company_region = trade_company_gulf_of_aden
+					continent = africa
+				}
+			}
+			has_discovered = ROOT
+		}
 		allow = {
 			treasury = 3000
 			is_at_war = no
@@ -4825,9 +5504,28 @@ country_decisions = {
 				has_idea_group = exploration_ideas
 				has_idea_group = trade_ideas
 			}
-			trade_company_east_africa = {
-				owned_by = ROOT
-				is_city = yes
+			OR = {
+				trade_company_east_africa = {
+					owned_by = ROOT
+					is_city = yes
+				}
+				trade_company_zambezi = {
+					owned_by = ROOT
+					is_city = yes
+				}
+				trade_company_great_lakes = {
+					owned_by = ROOT
+					is_city = yes
+				}
+				trade_company_ethiopia = {
+					owned_by = ROOT
+					is_city = yes
+				}
+				trade_company_gulf_of_aden = {
+					continent = africa
+					owned_by = ROOT
+					is_city = yes
+				}
 			}
 		}
 		effect = {
@@ -4858,6 +5556,67 @@ country_decisions = {
 							add_core = DA1
 						}
 						cede_province = DA1
+					}
+					trade_company_zambezi = {
+						limit = {
+							owned_by = ROOT
+							is_city = yes
+						}
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DA1
+						}
+						cede_province = DA1
+					}
+					trade_company_great_lakes = {
+						limit = {
+							owned_by = ROOT
+							is_city = yes
+						}
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DA1
+						}
+						cede_province = DA1
+					}
+					trade_company_ethiopia = {
+						limit = {
+							owned_by = ROOT
+							is_city = yes
+						}
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DA1
+						}
+						cede_province = DA1
+					}
+					trade_company_gulf_of_aden = {
+						limit = {
+							continent = africa
+							owned_by = ROOT
+							is_city = yes
+						}
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DA1
+						}
+						cede_province = DA1
+					}
+					create_subject = {
+						subject = DA1
+						subject_type = dominion
 					}
 					create_subject = {
 						subject = DA1
@@ -4924,6 +5683,67 @@ country_decisions = {
 							add_core = DA2
 						}
 						cede_province = DA2
+					}
+					trade_company_zambezi = {
+						limit = {
+							owned_by = ROOT
+							is_city = yes
+						}
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DA2
+						}
+						cede_province = DA2
+					}
+					trade_company_great_lakes = {
+						limit = {
+							owned_by = ROOT
+							is_city = yes
+						}
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DA2
+						}
+						cede_province = DA2
+					}
+					trade_company_ethiopia = {
+						limit = {
+							owned_by = ROOT
+							is_city = yes
+						}
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DA2
+						}
+						cede_province = DA2
+					}
+					trade_company_gulf_of_aden = {
+						limit = {
+							continent = africa
+							owned_by = ROOT
+							is_city = yes
+						}
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DA2
+						}
+						cede_province = DA2
+					}
+					create_subject = {
+						subject = DA2
+						subject_type = dominion
 					}
 					create_subject = {
 						subject = DA2
@@ -4993,6 +5813,67 @@ country_decisions = {
 						}
 						cede_province = DA3
 					}
+					trade_company_zambezi = {
+						limit = {
+							owned_by = ROOT
+							is_city = yes
+						}
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DA3
+						}
+						cede_province = DA3
+					}
+					trade_company_great_lakes = {
+						limit = {
+							owned_by = ROOT
+							is_city = yes
+						}
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DA3
+						}
+						cede_province = DA3
+					}
+					trade_company_ethiopia = {
+						limit = {
+							owned_by = ROOT
+							is_city = yes
+						}
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DA3
+						}
+						cede_province = DA3
+					}
+					trade_company_gulf_of_aden = {
+						limit = {
+							continent = africa
+							owned_by = ROOT
+							is_city = yes
+						}
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DA3
+						}
+						cede_province = DA3
+					}
+					create_subject = {
+						subject = DA3
+						subject_type = dominion
+					}
 					create_subject = {
 						subject = DA3
 						subject_type = dominion_tc
@@ -5061,6 +5942,67 @@ country_decisions = {
 						}
 						cede_province = DA4
 					}
+					trade_company_zambezi = {
+						limit = {
+							owned_by = ROOT
+							is_city = yes
+						}
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DA4
+						}
+						cede_province = DA4
+					}
+					trade_company_great_lakes = {
+						limit = {
+							owned_by = ROOT
+							is_city = yes
+						}
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DA4
+						}
+						cede_province = DA4
+					}
+					trade_company_ethiopia = {
+						limit = {
+							owned_by = ROOT
+							is_city = yes
+						}
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DA4
+						}
+						cede_province = DA4
+					}
+					trade_company_gulf_of_aden = {
+						limit = {
+							continent = africa
+							owned_by = ROOT
+							is_city = yes
+						}
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DA4
+						}
+						cede_province = DA4
+					}
+					create_subject = {
+						subject = DA4
+						subject_type = dominion
+					}
 					create_subject = {
 						subject = DA4
 						subject_type = dominion_tc
@@ -5126,6 +6068,67 @@ country_decisions = {
 						}
 						cede_province = DA5
 					}
+					trade_company_zambezi = {
+						limit = {
+							owned_by = ROOT
+							is_city = yes
+						}
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DA5
+						}
+						cede_province = DA5
+					}
+					trade_company_great_lakes = {
+						limit = {
+							owned_by = ROOT
+							is_city = yes
+						}
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DA5
+						}
+						cede_province = DA5
+					}
+					trade_company_ethiopia = {
+						limit = {
+							owned_by = ROOT
+							is_city = yes
+						}
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DA5
+						}
+						cede_province = DA5
+					}
+					trade_company_gulf_of_aden = {
+						limit = {
+							continent = africa
+							owned_by = ROOT
+							is_city = yes
+						}
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DA5
+						}
+						cede_province = DA5
+					}
+					create_subject = {
+						subject = DA5
+						subject_type = dominion
+					}
 					create_subject = {
 						subject = DA5
 						subject_type = dominion_tc
@@ -5188,6 +6191,67 @@ country_decisions = {
 						}
 						cede_province = DA6
 					}
+					trade_company_zambezi = {
+						limit = {
+							owned_by = ROOT
+							is_city = yes
+						}
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DA6
+						}
+						cede_province = DA6
+					}
+					trade_company_great_lakes = {
+						limit = {
+							owned_by = ROOT
+							is_city = yes
+						}
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DA6
+						}
+						cede_province = DA6
+					}
+					trade_company_ethiopia = {
+						limit = {
+							owned_by = ROOT
+							is_city = yes
+						}
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DA6
+						}
+						cede_province = DA6
+					}
+					trade_company_gulf_of_aden = {
+						limit = {
+							continent = africa
+							owned_by = ROOT
+							is_city = yes
+						}
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DA6
+						}
+						cede_province = DA6
+					}
+					create_subject = {
+						subject = DA6
+						subject_type = dominion
+					}
 					create_subject = {
 						subject = DA6
 						subject_type = dominion_tc
@@ -5248,6 +6312,67 @@ country_decisions = {
 							add_core = DA7
 						}
 						cede_province = DA7
+					}
+					trade_company_zambezi = {
+						limit = {
+							owned_by = ROOT
+							is_city = yes
+						}
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DA7
+						}
+						cede_province = DA7
+					}
+					trade_company_great_lakes = {
+						limit = {
+							owned_by = ROOT
+							is_city = yes
+						}
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DA7
+						}
+						cede_province = DA7
+					}
+					trade_company_ethiopia = {
+						limit = {
+							owned_by = ROOT
+							is_city = yes
+						}
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DA7
+						}
+						cede_province = DA7
+					}
+					trade_company_gulf_of_aden = {
+						limit = {
+							continent = africa
+							owned_by = ROOT
+							is_city = yes
+						}
+						if = {
+							limit = {
+								is_core = ROOT
+							}
+							remove_core = ROOT
+							add_core = DA7
+						}
+						cede_province = DA7
+					}
+					create_subject = {
+						subject = DA7
+						subject_type = dominion
 					}
 					create_subject = {
 						subject = DA7
@@ -5336,18 +6461,49 @@ country_decisions = {
 			}
 			modifier = {
 				factor = 0
-				trade_company_east_africa = {
-					type = all
-					owned_by = ROOT
-					is_city = yes
-					is_state = yes
+				OR = {
+					trade_company_east_africa = {
+						type = all
+						owned_by = ROOT
+						is_city = yes
+						is_state = yes
+					}
+					trade_company_zambezi = {
+						type = all
+						owned_by = ROOT
+						is_city = yes
+						is_state = yes
+					}
+					trade_company_great_lakes = {
+						type = all
+						owned_by = ROOT
+						is_city = yes
+						is_state = yes
+					}
+					trade_company_ethiopia = {
+						type = all
+						owned_by = ROOT
+						is_city = yes
+						is_state = yes
+					}
+					trade_company_gulf_of_aden = {
+						type = all
+						OR = {
+							AND = {
+								owned_by = ROOT
+								is_city = yes
+								is_state = yes
+							}
+							NOT = { continent = africa }
+						}
+					}
 				}
 			}
 			modifier = {
 				factor = 0.1
 				calc_true_if = {
 					all_subject_country = {
-						is_any_dominion_subject = yes
+						is_any_trade_company_region_dominion_subject = yes
 					}
 					amount = 3
 				}
@@ -5467,12 +6623,19 @@ country_decisions = {
 				has_discovered = ROOT
 			}
 			trade_company_philippines = {
+				owned_by = ROOT
+			}
+			trade_company_philippines = {
 				type = all
 				OR = {
 					NOT = { owned_by = ROOT }
 					is_in_capital_area = no
 				}
 			}
+		}
+		provinces_to_highlight = {
+			trade_company_region = trade_company_philippines
+			has_discovered = ROOT
 		}
 		allow = {
 			treasury = 3000
@@ -5515,6 +6678,10 @@ country_decisions = {
 							add_core = DP1
 						}
 						cede_province = DP1
+					}
+					create_subject = {
+						subject = DP1
+						subject_type = dominion
 					}
 					create_subject = {
 						subject = DP1
@@ -5587,6 +6754,10 @@ country_decisions = {
 							add_core = DP2
 						}
 						cede_province = DP2
+					}
+					create_subject = {
+						subject = DP2
+						subject_type = dominion
 					}
 					create_subject = {
 						subject = DP2
@@ -5672,6 +6843,10 @@ country_decisions = {
 					}
 					create_subject = {
 						subject = DP3
+						subject_type = dominion
+					}
+					create_subject = {
+						subject = DP3
 						subject_type = dominion_tc
 					}
 					DP3 = {
@@ -5743,6 +6918,10 @@ country_decisions = {
 							add_core = DP4
 						}
 						cede_province = DP4
+					}
+					create_subject = {
+						subject = DP4
+						subject_type = dominion
 					}
 					create_subject = {
 						subject = DP4
@@ -5822,6 +7001,10 @@ country_decisions = {
 							add_core = DP5
 						}
 						cede_province = DP5
+					}
+					create_subject = {
+						subject = DP5
+						subject_type = dominion
 					}
 					create_subject = {
 						subject = DP5
@@ -5907,6 +7090,10 @@ country_decisions = {
 					}
 					create_subject = {
 						subject = DP6
+						subject_type = dominion
+					}
+					create_subject = {
+						subject = DP6
 						subject_type = dominion_tc
 					}
 					DP6 = {
@@ -5979,6 +7166,10 @@ country_decisions = {
 					}
 					create_subject = {
 						subject = DP7
+						subject_type = dominion
+					}
+					create_subject = {
+						subject = DP7
 						subject_type = dominion_tc
 					}
 					DP7 = {
@@ -6046,6 +7237,10 @@ country_decisions = {
 					}
 					create_subject = {
 						subject = DP8
+						subject_type = dominion
+					}
+					create_subject = {
+						subject = DP8
 						subject_type = dominion_tc
 					}
 					DP8 = {
@@ -6110,6 +7305,10 @@ country_decisions = {
 							add_core = DP9
 						}
 						cede_province = DP9
+					}
+					create_subject = {
+						subject = DP9
+						subject_type = dominion
 					}
 					create_subject = {
 						subject = DP9
@@ -6223,7 +7422,7 @@ country_decisions = {
 				factor = 0.1
 				calc_true_if = {
 					all_subject_country = {
-						is_any_dominion_subject = yes
+						is_any_trade_company_region_dominion_subject = yes
 					}
 					amount = 3
 				}

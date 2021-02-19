@@ -143,8 +143,18 @@ increase_colonial_autonomy = {
 									trade_company_region = trade_company_indochina
 									trade_company_region = trade_company_burma
 									trade_company_region = trade_company_west_africa
+									trade_company_region = trade_company_timbuktu
+									trade_company_region = trade_company_katsina
+									trade_company_region = trade_company_kongo
 									trade_company_region = trade_company_south_africa
 									trade_company_region = trade_company_east_africa
+									trade_company_region = trade_company_zambezi
+									trade_company_region = trade_company_great_lakes
+									trade_company_region = trade_company_ethiopia
+									AND = {
+										trade_company_region = trade_company_gulf_of_aden
+										continent = africa
+									}
 									trade_company_region = trade_company_philippines
 								}
 							}
@@ -178,8 +188,18 @@ increase_colonial_autonomy = {
 									trade_company_region = trade_company_indochina
 									trade_company_region = trade_company_burma
 									trade_company_region = trade_company_west_africa
+									trade_company_region = trade_company_timbuktu
+									trade_company_region = trade_company_katsina
+									trade_company_region = trade_company_kongo
 									trade_company_region = trade_company_south_africa
 									trade_company_region = trade_company_east_africa
+									trade_company_region = trade_company_zambezi
+									trade_company_region = trade_company_great_lakes
+									trade_company_region = trade_company_ethiopia
+									AND = {
+										trade_company_region = trade_company_gulf_of_aden
+										continent = africa
+									}
 									trade_company_region = trade_company_philippines
 								}
 							}
@@ -398,7 +418,7 @@ seize_provinces_in_other_colonial_regions = {
 			is_subject_of = ROOT
 			OR = {
 				is_subject_of_type = colony
-				is_dominion_or_similar_subject = yes
+				is_subject_of_type = dominion
 			}
 			any_owned_province = {
 				NOT = { colonial_region = CAPITAL }
@@ -414,7 +434,7 @@ seize_provinces_in_other_colonial_regions = {
 				is_subject_of = ROOT
 				OR = {
 					is_subject_of_type = colony
-					is_dominion_or_similar_subject = yes
+					is_subject_of_type = dominion
 				}
 				any_owned_province = {
 					NOT = { colonial_region = CAPITAL }
@@ -445,7 +465,7 @@ seize_provinces_in_other_colonial_regions = {
 									is_subject_of = ROOT
 									OR = {
 										is_subject_of_type = colony
-										is_any_dominion_subject = yes
+										is_any_colonial_region_dominion_subject = yes
 									}
 								}
 							}
@@ -467,7 +487,7 @@ seize_provinces_in_other_colonial_regions = {
 								is_subject_of = ROOT
 								OR = {
 									is_subject_of_type = colony
-									is_any_dominion_subject = yes
+									is_any_colonial_region_dominion_subject = yes
 								}
 							}
 						}
@@ -486,7 +506,7 @@ seize_provinces_in_other_colonial_regions = {
 					is_subject_of = ROOT
 					OR = {
 						is_subject_of_type = colony
-						is_dominion_or_similar_subject = yes
+						is_subject_of_type = dominion
 					}
 					any_owned_province = {
 						NOT = { colonial_region = CAPITAL }
@@ -516,7 +536,7 @@ seize_provinces_in_other_colonial_regions = {
 											is_subject_of = ROOT
 											OR = {
 												is_subject_of_type = colony
-												is_any_dominion_subject = yes
+												is_any_colonial_region_dominion_subject = yes
 											}
 										}
 									}
@@ -538,7 +558,7 @@ seize_provinces_in_other_colonial_regions = {
 										is_subject_of = ROOT
 										OR = {
 											is_subject_of_type = colony
-											is_any_dominion_subject = yes
+											is_any_colonial_region_dominion_subject = yes
 										}
 									}
 								}
@@ -563,7 +583,7 @@ seize_provinces_in_other_colonial_regions = {
 											is_subject_of = ROOT
 											OR = {
 												is_subject_of_type = colony
-												is_any_dominion_subject = yes
+												is_any_colonial_region_dominion_subject = yes
 											}
 										}
 									}
@@ -583,7 +603,7 @@ seize_provinces_in_other_colonial_regions = {
 													is_subject_of = ROOT
 													OR = {
 														is_subject_of_type = colony
-														is_any_dominion_subject = yes
+														is_any_colonial_region_dominion_subject = yes
 													}
 												}
 											}
@@ -602,7 +622,7 @@ seize_provinces_in_other_colonial_regions = {
 										is_subject_of = ROOT
 										OR = {
 											is_subject_of_type = colony
-											is_any_dominion_subject = yes
+											is_any_colonial_region_dominion_subject = yes
 										}
 									}
 								}
@@ -624,6 +644,80 @@ seize_provinces_in_other_colonial_regions = {
 
 	ai_will_do = {
 		always = no
+	}
+}
+
+seize_provinces_in_other_trade_company_regions = {
+	category = influence
+
+	require_acceptance = no
+
+	is_visible = {
+		FROM = {
+			is_subject_of = ROOT
+			is_subject_of_type = dominion_tc
+			is_dominion_tag = yes
+			tc_dominion_owns_provinces_in_wrong_trade_company_region = yes
+		}
+	}
+
+	is_allowed = {
+		hidden_trigger = {
+			FROM = {
+				is_subject_of = ROOT
+				is_subject_of_type = dominion_tc
+				is_dominion_tag = yes
+				tc_dominion_owns_provinces_in_wrong_trade_company_region = yes
+			}
+		}
+		is_at_war = no
+		FROM = { is_at_war = no }
+		FROM = {
+			NOT = { liberty_desire = 50 }
+		}
+	}
+
+	on_accept = {
+		if = {
+			limit = {
+				FROM = {
+					is_subject_of = ROOT
+					is_subject_of_type = dominion_tc
+					is_dominion_tag = yes
+					tc_dominion_owns_provinces_in_wrong_trade_company_region = yes
+				}
+				is_at_war = no
+				FROM = { is_at_war = no }
+				FROM = {
+					NOT = { liberty_desire = 50 }
+				}
+			}
+			FROM = {
+				add_liberty_desire = 10
+				every_owned_province = {
+					limit = {
+						tc_dominion_province_is_in_wrong_trade_company_region = yes
+					}
+					if = {
+						limit = {
+							is_core = PREV
+						}
+						remove_core = PREV
+						add_core = ROOT
+					}
+					cede_province = ROOT
+				}
+			}
+		}
+	}
+
+	ai_will_do = {
+		FROM = {
+			num_of_owned_provinces_with = {
+				value = 5
+				tc_dominion_province_is_in_wrong_trade_company_region = yes
+			}
+		}
 	}
 }
 
@@ -733,8 +827,18 @@ decrease_colonial_autonomy = {
 									trade_company_region = trade_company_indochina
 									trade_company_region = trade_company_burma
 									trade_company_region = trade_company_west_africa
+									trade_company_region = trade_company_timbuktu
+									trade_company_region = trade_company_katsina
+									trade_company_region = trade_company_kongo
 									trade_company_region = trade_company_south_africa
 									trade_company_region = trade_company_east_africa
+									trade_company_region = trade_company_zambezi
+									trade_company_region = trade_company_great_lakes
+									trade_company_region = trade_company_ethiopia
+									AND = {
+										trade_company_region = trade_company_gulf_of_aden
+										continent = africa
+									}
 									trade_company_region = trade_company_philippines
 								}
 							}

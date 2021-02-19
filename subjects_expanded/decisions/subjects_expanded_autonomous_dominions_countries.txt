@@ -176,7 +176,12 @@ country_decisions = {
 			is_subject = no
 			is_at_war = no
 			capital_scope = {
-				trade_company_region = trade_company_west_africa
+				OR = {
+					trade_company_region = trade_company_west_africa
+					trade_company_region = trade_company_timbuktu
+					trade_company_region = trade_company_katsina
+					trade_company_region = trade_company_kongo
+				}
 			}
 		}
 		effect = {
@@ -226,7 +231,16 @@ country_decisions = {
 			is_subject = no
 			is_at_war = no
 			capital_scope = {
-				trade_company_region = trade_company_east_africa
+				OR = {
+					trade_company_region = trade_company_east_africa
+					trade_company_region = trade_company_zambezi
+					trade_company_region = trade_company_great_lakes
+					trade_company_region = trade_company_ethiopia
+					AND = {
+						trade_company_region = trade_company_gulf_of_aden
+						continent = africa
+					}
+				}
 			}
 		}
 		effect = {

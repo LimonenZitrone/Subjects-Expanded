@@ -44,6 +44,10 @@
  seize_provinces_in_other_colonial_regions_desc: "Seize the provinces of §Y[From.GetName]§! that are not in the same colonial region as their capital (§Y[From.Capital.GetName]§!) and that are either in a colonial region in which you have a Colonial Nation, Dominion or Autonomous Dominion or in a colonial region you have neither of those subjects in. In the latter case, [From.GetName] has to own at least §Y5§! matching provinces in the same colonial region. \nThis will give you ownership over the matching provinces and eventually cede them to one of your matching subjects or create a new one. \nThis will change their liberty desire by §R+15%§!."
  seize_provinces_in_other_colonial_regions_tooltip: "Seize the provinces of §Y[From.GetName]§! that are not in the same colonial region as their capital (§Y[From.Capital.GetName]§!).\n"
 
+ seize_provinces_in_other_trade_company_regions_title: "Seize Provinces"
+ seize_provinces_in_other_trade_company_regions_desc: "Seize the provinces of §Y[From.GetName]§! that are not in the right trade company regions. \nThis will give you ownership over the matching provinces. \nThis will change their liberty desire by §R+10%§!."
+ seize_provinces_in_other_trade_company_regions_tooltip: "Seize the provinces of §Y[From.GetName]§! that are not in the right trade company regions.\n"
+
 
  establish_roman_client_kingdom_title: "Establish Client Kingdom"
  establish_roman_client_kingdom_desc: "Make your vassal [From.GetName] to a §YRoman Client Kingdom§!. \n[roman_client_kingdom_desc]"

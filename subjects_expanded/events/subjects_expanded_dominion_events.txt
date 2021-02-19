@@ -29,8 +29,18 @@ country_event = {
 						trade_company_region = trade_company_indochina
 						trade_company_region = trade_company_burma
 						trade_company_region = trade_company_west_africa
+						trade_company_region = trade_company_timbuktu
+						trade_company_region = trade_company_katsina
+						trade_company_region = trade_company_kongo
 						trade_company_region = trade_company_south_africa
 						trade_company_region = trade_company_east_africa
+						trade_company_region = trade_company_zambezi
+						trade_company_region = trade_company_great_lakes
+						trade_company_region = trade_company_ethiopia
+						AND = {
+							trade_company_region = trade_company_gulf_of_aden
+							continent = africa
+						}
 						trade_company_region = trade_company_philippines
 					}
 				}
@@ -76,8 +86,18 @@ country_event = {
 							trade_company_region = trade_company_indochina
 							trade_company_region = trade_company_burma
 							trade_company_region = trade_company_west_africa
+							trade_company_region = trade_company_timbuktu
+							trade_company_region = trade_company_katsina
+							trade_company_region = trade_company_kongo
 							trade_company_region = trade_company_south_africa
 							trade_company_region = trade_company_east_africa
+							trade_company_region = trade_company_zambezi
+							trade_company_region = trade_company_great_lakes
+							trade_company_region = trade_company_ethiopia
+							AND = {
+								trade_company_region = trade_company_gulf_of_aden
+								continent = africa
+							}
 							trade_company_region = trade_company_philippines
 						}
 					}
@@ -567,7 +587,12 @@ country_event = {
 		any_owned_province = {
 			is_in_capital_area = no
 			is_city = yes
-			trade_company_region = trade_company_west_africa
+			OR = {
+				trade_company_region = trade_company_west_africa
+				trade_company_region = trade_company_timbuktu
+				trade_company_region = trade_company_katsina
+				trade_company_region = trade_company_kongo
+			}
 		}
 	}
 
@@ -577,6 +602,90 @@ country_event = {
 		hidden_effect = {
 			set_variable = { which = num_of_provinces_ceded_to_autonomous_dominion_west_africa value = 0 }
 			trade_company_west_africa = {
+				limit = {
+					owned_by = ROOT
+					is_in_capital_area = no
+					is_city = yes
+				}
+				ROOT = { change_variable = { which = num_of_provinces_ceded_to_autonomous_dominion_west_africa value = 1 } }
+				random_country = {
+					limit = {
+						is_subject_of = ROOT
+						is_any_dominion_subject = yes
+						is_dominion_tag_in_west_africa = yes
+					}
+					PREV = {
+						if = {
+							limit = {
+								OR = {
+									is_core = ROOT
+									has_construction = core
+								}
+							}
+							remove_core = ROOT
+							add_core = PREV
+						}
+						cede_province = PREV
+					}
+				}
+			}
+			trade_company_timbuktu = {
+				limit = {
+					owned_by = ROOT
+					is_in_capital_area = no
+					is_city = yes
+				}
+				ROOT = { change_variable = { which = num_of_provinces_ceded_to_autonomous_dominion_west_africa value = 1 } }
+				random_country = {
+					limit = {
+						is_subject_of = ROOT
+						is_any_dominion_subject = yes
+						is_dominion_tag_in_west_africa = yes
+					}
+					PREV = {
+						if = {
+							limit = {
+								OR = {
+									is_core = ROOT
+									has_construction = core
+								}
+							}
+							remove_core = ROOT
+							add_core = PREV
+						}
+						cede_province = PREV
+					}
+				}
+			}
+			trade_company_katsina = {
+				limit = {
+					owned_by = ROOT
+					is_in_capital_area = no
+					is_city = yes
+				}
+				ROOT = { change_variable = { which = num_of_provinces_ceded_to_autonomous_dominion_west_africa value = 1 } }
+				random_country = {
+					limit = {
+						is_subject_of = ROOT
+						is_any_dominion_subject = yes
+						is_dominion_tag_in_west_africa = yes
+					}
+					PREV = {
+						if = {
+							limit = {
+								OR = {
+									is_core = ROOT
+									has_construction = core
+								}
+							}
+							remove_core = ROOT
+							add_core = PREV
+						}
+						cede_province = PREV
+					}
+				}
+			}
+			trade_company_kongo = {
 				limit = {
 					owned_by = ROOT
 					is_in_capital_area = no
@@ -640,7 +749,16 @@ country_event = {
 		any_owned_province = {
 			is_in_capital_area = no
 			is_city = yes
-			trade_company_region = trade_company_east_africa
+			OR = {
+				trade_company_region = trade_company_east_africa
+				trade_company_region = trade_company_zambezi
+				trade_company_region = trade_company_great_lakes
+				trade_company_region = trade_company_ethiopia
+				AND = {
+					trade_company_region = trade_company_gulf_of_aden
+					continent = africa
+				}
+			}
 		}
 	}
 
@@ -651,6 +769,119 @@ country_event = {
 			set_variable = { which = num_of_provinces_ceded_to_autonomous_dominion_east_africa value = 0 }
 			trade_company_east_africa = {
 				limit = {
+					owned_by = ROOT
+					is_in_capital_area = no
+					is_city = yes
+				}
+				ROOT = { change_variable = { which = num_of_provinces_ceded_to_autonomous_dominion_east_africa value = 1 } }
+				random_country = {
+					limit = {
+						is_subject_of = ROOT
+						is_any_dominion_subject = yes
+						is_dominion_tag_in_east_africa = yes
+					}
+					PREV = {
+						if = {
+							limit = {
+								OR = {
+									is_core = ROOT
+									has_construction = core
+								}
+							}
+							remove_core = ROOT
+							add_core = PREV
+						}
+						cede_province = PREV
+					}
+				}
+			}
+			trade_company_zambezi = {
+				limit = {
+					owned_by = ROOT
+					is_in_capital_area = no
+					is_city = yes
+				}
+				ROOT = { change_variable = { which = num_of_provinces_ceded_to_autonomous_dominion_east_africa value = 1 } }
+				random_country = {
+					limit = {
+						is_subject_of = ROOT
+						is_any_dominion_subject = yes
+						is_dominion_tag_in_east_africa = yes
+					}
+					PREV = {
+						if = {
+							limit = {
+								OR = {
+									is_core = ROOT
+									has_construction = core
+								}
+							}
+							remove_core = ROOT
+							add_core = PREV
+						}
+						cede_province = PREV
+					}
+				}
+			}
+			trade_company_great_lakes = {
+				limit = {
+					owned_by = ROOT
+					is_in_capital_area = no
+					is_city = yes
+				}
+				ROOT = { change_variable = { which = num_of_provinces_ceded_to_autonomous_dominion_east_africa value = 1 } }
+				random_country = {
+					limit = {
+						is_subject_of = ROOT
+						is_any_dominion_subject = yes
+						is_dominion_tag_in_east_africa = yes
+					}
+					PREV = {
+						if = {
+							limit = {
+								OR = {
+									is_core = ROOT
+									has_construction = core
+								}
+							}
+							remove_core = ROOT
+							add_core = PREV
+						}
+						cede_province = PREV
+					}
+				}
+			}
+			trade_company_ethiopia = {
+				limit = {
+					owned_by = ROOT
+					is_in_capital_area = no
+					is_city = yes
+				}
+				ROOT = { change_variable = { which = num_of_provinces_ceded_to_autonomous_dominion_east_africa value = 1 } }
+				random_country = {
+					limit = {
+						is_subject_of = ROOT
+						is_any_dominion_subject = yes
+						is_dominion_tag_in_east_africa = yes
+					}
+					PREV = {
+						if = {
+							limit = {
+								OR = {
+									is_core = ROOT
+									has_construction = core
+								}
+							}
+							remove_core = ROOT
+							add_core = PREV
+						}
+						cede_province = PREV
+					}
+				}
+			}
+			trade_company_gulf_of_aden = {
+				limit = {
+					continent = africa
 					owned_by = ROOT
 					is_in_capital_area = no
 					is_city = yes

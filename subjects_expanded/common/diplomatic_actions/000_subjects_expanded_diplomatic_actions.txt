@@ -231,11 +231,39 @@ allianceaction = {
 		}
 	}
 	condition = {
+		tooltip = CANNOT_ALLY_SISTER_REPUBLIC_AS_OVERLORD_RIVAL
+		potential = {
+			FROM = {
+				is_subject_of_type = sister_republic
+				overlord = {
+					is_rival = ROOT
+				}
+			}
+		}
+		allow = {
+			always = no
+		}
+	}
+	condition = {
 		tooltip = CANNOT_ALLY_SISTER_REPUBLIC_RIVAL
 		potential = {
 			any_subject_country = {
 				is_subject_of_type = sister_republic
 				is_rival = FROM
+			}
+		}
+		allow = {
+			always = no
+		}
+	}
+	condition = {
+		tooltip = CANNOT_ALLY_OVERLORD_OF_SISTER_REPUBLIC_AS_RIVAL
+		potential = {
+			FROM = {
+				any_subject_country = {
+					is_subject_of_type = sister_republic
+					is_rival = ROOT
+				}
 			}
 		}
 		allow = {

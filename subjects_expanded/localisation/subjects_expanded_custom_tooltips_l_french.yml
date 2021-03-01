@@ -49,7 +49,9 @@
  CANNOT_DECLARE_WAR_ON_NEIGHBOR_PUPPET_STATE_OF_RIVAL_WITHOUT_CORE_CLAIM: "You cannot declare war on a neighboring puppet state of a rival or enemy without having a core claim in a neighbor province owned by them. Declare war on [From.Overlord.GetName] instead."
 
  CANNOT_ALLY_OVERLORD_RIVAL: "You cannot ally a rival of your overlord."
+ CANNOT_ALLY_SISTER_REPUBLIC_AS_OVERLORD_RIVAL: "You cannot ally a Sister Republic, if their overlord selected you as a rival."
  CANNOT_ALLY_SISTER_REPUBLIC_RIVAL: "You cannot ally a rival of your Sister Republic."
+ CANNOT_ALLY_OVERLORD_OF_SISTER_REPUBLIC_AS_RIVAL: "You cannot ally the overlord of a Sister Republic, if the Sister Republic selected you as a rival."
 
  CANNOT_DECLARE_WAR_ON_NON_PRIMITIVE_NON_INTEGRATED_TRIBE: "Integrated tribes can only declare war on neighboring primitives and Integrated Tribes of other overlords."
 

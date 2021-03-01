@@ -222,11 +222,12 @@ allianceaction = {
 		tooltip = CANNOT_ALLY_OVERLORD_RIVAL
 		potential = {
 			is_subject_of_type = sister_republic
-		}
-		allow = {
 			overlord = {
 				is_rival = FROM
 			}
+		}
+		allow = {
+			always = no
 		}
 	}
 	condition = {

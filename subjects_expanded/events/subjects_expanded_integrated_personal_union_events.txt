@@ -33,6 +33,7 @@ country_event = {
 		hidden_effect = {
 			clr_country_flag = integrated_personal_union_automatic_integration_chance
 			set_country_flag = integrated_personal_union_automatic_integration_chance
+			change_variable = { which = num_of_integrated_pu_random_chance_iterations value = 1 }
 			if = {
 				limit = {
 					NOT = { liberty_desire = 50 }
@@ -41,27 +42,1021 @@ country_event = {
 					limit = {
 						has_country_modifier = increase_chance_to_integrate_integrated_personal_union_modifier
 					}
-					random_list = {
-						80 = {
-							# No Effects
+					if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 128 }
 						}
-						20 = {
-							overlord = {
-								country_event = { id = subjects_expanded_integrated_personal_union_events.2 }
-							}
+						random_chance_to_annex_integrated_personal_union = { chance = 99 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 127 }
 						}
+						random_chance_to_annex_integrated_personal_union = { chance = 98 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 126 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 97 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 125 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 96 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 124 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 95 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 123 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 94 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 122 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 93 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 121 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 92 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 120 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 91 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 119 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 90 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 118 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 89 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 117 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 88 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 116 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 87 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 115 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 86 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 114 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 85 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 113 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 84 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 112 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 83 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 111 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 82 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 110 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 81 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 109 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 80 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 108 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 79 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 107 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 78 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 106 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 77 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 105 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 76 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 104 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 75 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 103 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 74 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 102 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 73 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 101 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 72 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 100 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 71 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 99 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 70 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 98 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 69 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 97 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 68 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 96 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 67 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 95 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 66 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 94 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 65 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 93 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 64 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 92 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 63 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 91 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 62 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 90 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 61 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 89 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 60 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 88 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 59 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 87 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 58 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 86 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 57 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 85 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 56 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 84 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 55 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 83 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 54 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 82 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 53 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 81 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 52 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 80 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 51 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 79 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 50 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 78 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 49 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 77 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 48 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 76 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 47 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 75 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 46 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 74 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 45 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 73 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 44 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 72 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 43 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 71 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 42 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 70 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 41 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 69 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 40 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 68 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 39 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 67 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 38 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 66 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 37 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 65 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 36 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 64 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 35 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 63 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 34 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 62 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 33 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 61 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 32 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 60 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 31 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 59 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 30 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 58 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 29 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 57 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 28 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 56 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 27 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 55 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 26 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 54 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 25 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 53 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 24 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 52 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 23 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 51 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 22 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 50 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 21 }
+					}
+					else = {
+						random_chance_to_annex_integrated_personal_union = { chance = 20 }
 					}
 				}
 				else = {
-					random_list = {
-						90 = {
-							# No Effects
+					if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 138 }
 						}
-						10 = {
-							overlord = {
-								country_event = { id = subjects_expanded_integrated_personal_union_events.2 }
-							}
+						random_chance_to_annex_integrated_personal_union = { chance = 99 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 137 }
 						}
+						random_chance_to_annex_integrated_personal_union = { chance = 98 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 136 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 97 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 135 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 96 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 134 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 95 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 133 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 94 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 132 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 93 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 131 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 92 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 130 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 91 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 129 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 90 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 128 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 89 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 127 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 88 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 126 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 87 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 125 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 86 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 124 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 85 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 123 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 84 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 122 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 83 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 121 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 82 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 120 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 81 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 119 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 80 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 118 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 79 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 117 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 78 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 116 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 77 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 115 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 76 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 114 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 75 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 113 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 74 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 112 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 73 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 111 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 72 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 110 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 71 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 109 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 70 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 108 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 69 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 107 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 68 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 106 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 67 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 105 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 66 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 104 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 65 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 103 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 64 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 102 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 63 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 101 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 62 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 100 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 61 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 99 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 60 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 98 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 59 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 97 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 58 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 96 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 57 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 95 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 56 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 94 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 55 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 93 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 54 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 92 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 53 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 91 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 52 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 90 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 51 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 89 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 50 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 88 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 49 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 87 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 48 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 86 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 47 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 85 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 46 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 84 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 45 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 83 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 44 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 82 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 43 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 81 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 42 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 80 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 41 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 79 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 40 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 78 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 39 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 77 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 38 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 76 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 37 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 75 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 36 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 74 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 35 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 73 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 34 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 72 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 33 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 71 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 32 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 70 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 31 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 69 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 30 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 68 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 29 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 67 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 28 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 66 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 27 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 65 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 26 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 64 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 25 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 63 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 24 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 62 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 23 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 61 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 22 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 60 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 21 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 59 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 20 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 58 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 19 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 57 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 18 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 56 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 17 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 55 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 16 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 54 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 15 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 53 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 14 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 52 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 13 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 51 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 12 }
+					}
+					else_if = {
+						limit = {
+							check_variable = { which = num_of_integrated_pu_random_chance_iterations value = 50 }
+						}
+						random_chance_to_annex_integrated_personal_union = { chance = 11 }
+					}
+					else = {
+						random_chance_to_annex_integrated_personal_union = { chance = 10 }
 					}
 				}
 			}
@@ -82,6 +1077,14 @@ country_event = {
 	picture = GOOD_WITH_MONARCH_eventPicture
 
 	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			FROM = {
+				set_variable = { which = num_of_integrated_pu_random_chance_iterations value = 0 }
+			}
+		}
+	}
 
 	option = {
 		name = subjects_expanded_integrated_personal_union_events2.EVTOPT1

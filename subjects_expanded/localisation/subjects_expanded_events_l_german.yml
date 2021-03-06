@@ -119,6 +119,11 @@
  subjects_expanded_fief_subject_events3.EVTOPT1: "§Y[first_fief_to_make_vassal.GetName]§! und §Y[second_fief_to_make_vassal.GetName]§! sollen zu direkten Vasallen werden."
  subjects_expanded_fief_subject_events3.EVTOPT2: "Sie sind als Feudalvasallen nützlicher."
 
+ subjects_expanded_fief_subject_events.EVTNAME4: "Die [Root.GetAdjective]en Feudalvasallen und der Hundertjährige Krieg"
+ subjects_expanded_fief_subject_events.EVTDESC4: "Unsere Feudalvasallen treten unseren Kriegen normalerweise nicht bei. Sie zur Hilfe zu rufen würde ihr Freiheitsstreben erhöhen, aber in dieser schwierigen Sitation können wir sie vielleicht davon überzeugen, es für ihr Land zu tun und nicht für die Krone..."
+ subjects_expanded_fief_subject_events4.EVTOPT1: "Wir brauchen ihre Hilfe!"
+ subjects_expanded_fief_subject_events4.EVTOPT2: "Ihre direkte Hilfe ist nicht von Nöten, es ist genug, wenn sie einige Männer entsenden."
+
  subjects_expanded_pirate_brotherhood_vassal_events.EVTNAME2: "Bruderschaften erklären Unabhängigkeit"
  subjects_expanded_pirate_brotherhood_vassal_events.EVTDESC2: "Wir werden nicht mehr von einer Piratenregierung regiert. Unsere bis jetzt noch loyalen Piratenbruderschaften haben dies als legitimen Grund zur Erklärung ihrer Unabhängigkeit verwendet."
  subjects_expanded_pirate_brotherhood_vassal_events2.EVTOPT1: "Das ist unglücklich..."

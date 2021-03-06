@@ -180,6 +180,8 @@
  ADMINISTRATIVE_REGION_GIVES_US_MONTHLY_DIP_TT: "\n\nAufgrund der aktivierten administrativen Hilfe gibt uns @[From.GetTag] §Y[From.GetName]§! monatlich §G+1§! £dip£ während der Herrschaft von §Y[From.Monarch.GetName]§!."
  ADMINISTRATIVE_REGION_GIVES_US_MONTHLY_MIL_TT: "\n\nAufgrund der aktivierten administrativen Hilfe gibt uns @[From.GetTag] §Y[From.GetName]§! monatlich §G+1§! £mil£ während der Herrschaft von §Y[From.Monarch.GetName]§!."
 
+ FRA_FIEFDOM_GET_MANPOWER: "Erhält §G1,000§! Mannstärke pro §YFeudalvasall§!."
+
  # Triggered Modifiers:
  HAS_AT_LEAST_3_DOMINIONS_OR_AUTONOMOUS_DOMINIONS_IN_TRADE_COMPANY_REGIONS: "Besitzt mindestens §Y3§! §YHerrschaftsgebiete§! oder §YAutonome Herrschaftsgebiete§! mit Hauptstadt in einer Handelshaus-Region (errichted durch nationale Entscheidungen)"
 

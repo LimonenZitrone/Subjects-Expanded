@@ -180,6 +180,8 @@
  ADMINISTRATIVE_REGION_GIVES_US_MONTHLY_DIP_TT: "\n\nBecause of the enabled administrative help, @[From.GetTag] §Y[From.GetName]§! will give us §G+1§! £dip£ monthly during the reign of §Y[From.Monarch.GetName]§!."
  ADMINISTRATIVE_REGION_GIVES_US_MONTHLY_MIL_TT: "\n\nBecause of the enabled administrative help, @[From.GetTag] §Y[From.GetName]§! will give us §G+1§! £mil£ monthly during the reign of §Y[From.Monarch.GetName]§!."
 
+ FRA_FIEFDOM_GET_MANPOWER: "Gains §G1,000§! Manpower per §YFiefdom§!."
+
  # Triggered Modifiers:
  HAS_AT_LEAST_3_DOMINIONS_OR_AUTONOMOUS_DOMINIONS_IN_TRADE_COMPANY_REGIONS: "Has at least §Y3§! §YDominions§! or §YAutonomous Dominions§! with their capital in a trade company region (established via decisions)"
 

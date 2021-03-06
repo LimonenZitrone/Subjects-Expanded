@@ -137,3 +137,73 @@ country_event = {
 		ai_chance = { factor = 0 }
 	}
 }
+
+country_event = {
+	id = subjects_expanded_fief_subject_events.4
+	title = subjects_expanded_fief_subject_events.EVTNAME4
+	desc = subjects_expanded_fief_subject_events.EVTDESC4
+	picture = BATTLE_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = FRA
+		NOT = { is_year = 1450 }
+		exists = ENG
+		177 = {
+			owned_by = ENG
+		}
+		ENG = {
+			NOT = { has_country_flag = rb_gave_up_maine }
+		}
+		is_in_war = {
+			attacker_leader = ENG
+			defender_leader = ROOT
+			casus_belli = cb_restore_personal_union
+		}
+		any_subject_country = {
+			is_subject_of_type = fief_subject
+		}
+		NOT = {
+			any_subject_country = {
+				is_subject_of_type = fief_subject
+				war_with = ENG
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = subjects_expanded_fief_subject_events4.EVTOPT1
+
+		ai_chance = { factor = 100 }
+
+		every_subject_country = {
+			limit = {
+				is_subject_of_type = fief_subject
+			}
+			join_all_defensive_wars_of = ROOT
+		}
+	}
+
+	option = {
+		name = subjects_expanded_fief_subject_events4.EVTOPT2
+
+		ai_chance = { factor = 0 }
+
+		custom_tooltip = FRA_FIEFDOM_GET_MANPOWER
+		hidden_effect = {
+			every_subject_country = {
+				limit = {
+					is_subject_of_type = fief_subject
+				}
+				ROOT = {
+					add_manpower = 1
+				}
+			}
+		}
+	}
+}

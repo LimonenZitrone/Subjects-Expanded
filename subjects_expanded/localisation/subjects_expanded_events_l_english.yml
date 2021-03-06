@@ -119,6 +119,11 @@
  subjects_expanded_fief_subject_events3.EVTOPT1: "§Y[first_fief_to_make_vassal.GetName]§! and §Y[second_fief_to_make_vassal.GetName]§! shall become direct vassals."
  subjects_expanded_fief_subject_events3.EVTOPT2: "They will be more useful as Fiefdoms."
 
+ subjects_expanded_fief_subject_events.EVTNAME4: "The [Root.GetAdjective] Fiefdoms and the Hundred Years War"
+ subjects_expanded_fief_subject_events.EVTDESC4: "Our Fiefdoms usually do not have to join our wars. Calling them to aid would increase their liberty desire, but in this difficult situation, we might be able to convince them to do it for their land rather than the crown..."
+ subjects_expanded_fief_subject_events4.EVTOPT1: "We need their support!"
+ subjects_expanded_fief_subject_events4.EVTOPT2: "There is no need for their direct support, if they send some men that will be sufficient."
+
  subjects_expanded_pirate_brotherhood_vassal_events.EVTNAME2: "Brotherhoods declare Independence"
  subjects_expanded_pirate_brotherhood_vassal_events.EVTDESC2: "We are not lead by a Pirate government anymore. Our Pirate Brotherhoods that were loyal to us until now take this as a valid reason to declare independence."
  subjects_expanded_pirate_brotherhood_vassal_events2.EVTOPT1: "That's unfortunate..."

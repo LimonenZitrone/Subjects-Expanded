@@ -2,6 +2,7 @@
 #Country Name: Please see filename.
 
 graphical_culture = westerngfx
+
 color = { 224  182  139 }
 
 historical_score = 3500

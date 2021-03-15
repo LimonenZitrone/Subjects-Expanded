@@ -3,7 +3,7 @@
 
 graphical_culture = indiangfx
 
-color = { 247  271  250 }
+color = { 247  255  250 }
 
 historical_idea_groups = {
 	early_religious_ideas

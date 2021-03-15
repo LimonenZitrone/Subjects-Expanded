@@ -3,7 +3,7 @@
 
 graphical_culture = asiangfx
 
-color = { 210  157  217 }
+color = { 210  157  117 }
 
 historical_idea_groups = {
 	early_religious_ideas
@@ -32,18 +32,18 @@ historical_units = {
 }
 
 leader_names = {
-	Abdulfatah Ahmad Al-Bukhary Amir Anwar Azmi 
-	Batuta 
+	Abdulfatah Ahmad Al-Bukhary Amir Anwar Azmi
+	Batuta
 	Chairul Chan Cheah Cheng
-	Hamzah Hasanuddin 
-	Ibnu 
-	King Kyai 
-	Mahat Mukhtar 
-	Najamuddin Natzar Nazmizan 
-	Roem 
-	Siew Singh Sulong Syarifuddin 
+	Hamzah Hasanuddin
+	Ibnu
+	King Kyai
+	Mahat Mukhtar
+	Najamuddin Natzar Nazmizan
+	Roem
+	Siew Singh Sulong Syarifuddin
 	Tan Tong
-	Zulkifli 
+	Zulkifli
 }
 
 monarch_names = {

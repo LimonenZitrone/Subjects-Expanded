@@ -3,7 +3,7 @@
 
 graphical_culture = indiangfx
 
-color = { 152  258  150 }
+color = { 152  255  150 }
 
 historical_idea_groups = {
 	early_adm_ideas

@@ -38,10 +38,6 @@ country_event = {
 
 	is_triggered_only = yes
 
-	trigger = {
-		always = no # only via console
-	}
-
 	immediate = {
 		hidden_effect = {
 			count_num_of_subjects_of_type = { type = protectorate }
@@ -316,6 +312,42 @@ country_event = {
 
 		display_subjects_of_type = { type = administrative_region }
 	}
+
+	after = {
+		hidden_effect = {
+			clr_country_flag = used_subjects_expanded_info_decision
+			clear_display_variable_for_subjects_of_type = { type = protectorate }
+			clear_display_variable_for_subjects_of_type = { type = puppet_state }
+			clear_display_variable_for_subjects_of_type = { type = dominion }
+			clear_display_variable_for_subjects_of_type = { type = autonomous_dominion }
+			clear_display_variable_for_subjects_of_type = { type = roman_client_kingdom }
+			clear_display_variable_for_subjects_of_type = { type = voivodeship }
+			clear_display_variable_for_subjects_of_type = { type = fief_subject }
+			clear_display_variable_for_subjects_of_type = { type = crusader_state_vassal }
+			clear_display_variable_for_subjects_of_type = { type = salic_personal_union }
+			clear_display_variable_for_subjects_of_type = { type = nahuatl_vassal }
+			clear_display_variable_for_subjects_of_type = { type = peasant_vassal }
+			clear_display_variable_for_subjects_of_type = { type = pirate_brotherhood_vassal }
+			clear_display_variable_for_subjects_of_type = { type = imperial_tributary_state }
+			clear_display_variable_for_subjects_of_type = { type = sister_republic }
+			clear_display_variable_for_subjects_of_type = { type = muslim_tributary_vassal }
+			clear_display_variable_for_subjects_of_type = { type = mandala_trade_vassal }
+			clear_display_variable_for_subjects_of_type = { type = integrated_tribe_subject }
+			clear_display_variable_for_subjects_of_type = { type = dutch_province_subject }
+			clear_display_variable_for_subjects_of_type = { type = revolution_subject }
+			clear_display_variable_for_subjects_of_type = { type = persian_satrapy }
+			clear_display_variable_for_subjects_of_type = { type = naval_march }
+			clear_display_variable_for_subjects_of_type = { type = trade_outpost }
+			clear_display_variable_for_subjects_of_type = { type = integrated_personal_union }
+			clear_display_variable_for_subjects_of_type = { type = brother_kingdom }
+			clear_display_variable_for_subjects_of_type = { type = iqta_vassal }
+			clear_display_variable_for_subjects_of_type = { type = papal_sanctuary_subject }
+			clear_display_variable_for_subjects_of_type = { type = imperial_feud_subject }
+			clear_display_variable_for_subjects_of_type = { type = pagan_chiefdom }
+			clear_display_variable_for_subjects_of_type = { type = native_reserve }
+			clear_display_variable_for_subjects_of_type = { type = administrative_region }
+		}
+	}
 }
 
 country_event = {
@@ -351,5 +383,285 @@ country_event = {
 
 		custom_tooltip = SE_NO_IDEA_CHANGING_MOD_ACTIVE_TT
 		clr_global_flag = idea_changing_mod_active
+	}
+}
+
+country_event = {
+	id = subjects_expanded_events.4
+	title = subjects_expanded_events.EVTNAME4
+	desc = subjects_expanded_events.EVTDESC4
+	picture = INVENTION_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = subjects_expanded_events4.EVTOPT1
+
+		country_event = { id = subjects_expanded_events.5 }
+	}
+
+	option = {
+		name = subjects_expanded_events4.EVTOPT2
+
+		country_event = { id = subjects_expanded_events.2 }
+	}
+
+	option = {
+		name = subjects_expanded_events4.EVTOPT3
+
+		clr_country_flag = used_subjects_expanded_info_decision
+	}
+}
+
+country_event = {
+	id = subjects_expanded_events.5
+	title = subjects_expanded_events.EVTNAME5
+	desc = subjects_expanded_events.EVTDESC5
+	picture = INVENTION_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = subjects_expanded_events5.EVTOPT1
+
+		ai_chance = { factor = 100 }
+
+		display_info_for_subject_type = { type = protectorate }
+	}
+
+	option = {
+		name = subjects_expanded_events5.EVTOPT2
+
+		ai_chance = { factor = 100 }
+
+		display_info_for_subject_type = { type = puppet_state }
+	}
+
+	option = {
+		name = subjects_expanded_events5.EVTOPT3
+
+		ai_chance = { factor = 100 }
+
+		display_info_for_subject_type = { type = dominion }
+	}
+
+	option = {
+		name = subjects_expanded_events5.EVTOPT4
+
+		ai_chance = { factor = 100 }
+
+		display_info_for_subject_type = { type = autonomous_dominion }
+	}
+
+	option = {
+		name = subjects_expanded_events5.EVTOPT5
+
+		ai_chance = { factor = 100 }
+
+		display_info_for_subject_type = { type = roman_client_kingdom }
+	}
+
+	option = {
+		name = subjects_expanded_events5.EVTOPT6
+
+		ai_chance = { factor = 100 }
+
+		display_info_for_subject_type = { type = voivodeship }
+	}
+
+	option = {
+		name = subjects_expanded_events5.EVTOPT7
+
+		ai_chance = { factor = 100 }
+
+		display_info_for_subject_type = { type = fief_subject }
+	}
+
+	option = {
+		name = subjects_expanded_events5.EVTOPT8
+
+		ai_chance = { factor = 100 }
+
+		display_info_for_subject_type = { type = crusader_state_vassal }
+	}
+
+	option = {
+		name = subjects_expanded_events5.EVTOPT9
+
+		ai_chance = { factor = 100 }
+
+		display_info_for_subject_type = { type = salic_personal_union }
+	}
+
+	option = {
+		name = subjects_expanded_events5.EVTOPT10
+
+		ai_chance = { factor = 100 }
+
+		display_info_for_subject_type = { type = nahuatl_vassal }
+	}
+
+	option = {
+		name = subjects_expanded_events5.EVTOPT11
+
+		ai_chance = { factor = 100 }
+
+		display_info_for_subject_type = { type = peasant_vassal }
+	}
+
+	option = {
+		name = subjects_expanded_events5.EVTOPT12
+
+		ai_chance = { factor = 100 }
+
+		display_info_for_subject_type = { type = pirate_brotherhood_vassal }
+	}
+
+	option = {
+		name = subjects_expanded_events5.EVTOPT13
+
+		ai_chance = { factor = 100 }
+
+		display_info_for_subject_type = { type = imperial_tributary_state }
+	}
+
+	option = {
+		name = subjects_expanded_events5.EVTOPT14
+
+		ai_chance = { factor = 100 }
+
+		display_info_for_subject_type = { type = sister_republic }
+	}
+
+	option = {
+		name = subjects_expanded_events5.EVTOPT15
+
+		ai_chance = { factor = 100 }
+
+		display_info_for_subject_type = { type = muslim_tributary_vassal }
+	}
+
+	option = {
+		name = subjects_expanded_events5.EVTOPT16
+
+		ai_chance = { factor = 100 }
+
+		display_info_for_subject_type = { type = mandala_trade_vassal }
+	}
+
+	option = {
+		name = subjects_expanded_events5.EVTOPT17
+
+		ai_chance = { factor = 100 }
+
+		display_info_for_subject_type = { type = integrated_tribe_subject }
+	}
+
+	option = {
+		name = subjects_expanded_events5.EVTOPT18
+
+		ai_chance = { factor = 100 }
+
+		display_info_for_subject_type = { type = dutch_province_subject }
+	}
+
+	option = {
+		name = subjects_expanded_events5.EVTOPT19
+
+		ai_chance = { factor = 100 }
+
+		display_info_for_subject_type = { type = revolution_subject }
+	}
+
+	option = {
+		name = subjects_expanded_events5.EVTOPT20
+
+		ai_chance = { factor = 100 }
+
+		display_info_for_subject_type = { type = persian_satrapy }
+	}
+
+	option = {
+		name = subjects_expanded_events5.EVTOPT21
+
+		ai_chance = { factor = 100 }
+
+		display_info_for_subject_type = { type = naval_march }
+	}
+
+	option = {
+		name = subjects_expanded_events5.EVTOPT22
+
+		ai_chance = { factor = 100 }
+
+		display_info_for_subject_type = { type = trade_outpost }
+	}
+
+	option = {
+		name = subjects_expanded_events5.EVTOPT23
+
+		ai_chance = { factor = 100 }
+
+		display_info_for_subject_type = { type = integrated_personal_union }
+	}
+
+	option = {
+		name = subjects_expanded_events5.EVTOPT24
+
+		ai_chance = { factor = 100 }
+
+		display_info_for_subject_type = { type = brother_kingdom }
+	}
+
+	option = {
+		name = subjects_expanded_events5.EVTOPT25
+
+		ai_chance = { factor = 100 }
+
+		display_info_for_subject_type = { type = iqta_vassal }
+	}
+
+	option = {
+		name = subjects_expanded_events5.EVTOPT26
+
+		ai_chance = { factor = 100 }
+
+		display_info_for_subject_type = { type = papal_sanctuary_subject }
+	}
+
+	option = {
+		name = subjects_expanded_events5.EVTOPT27
+
+		ai_chance = { factor = 100 }
+
+		display_info_for_subject_type = { type = imperial_feud_subject }
+	}
+
+	option = {
+		name = subjects_expanded_events5.EVTOPT28
+
+		ai_chance = { factor = 100 }
+
+		display_info_for_subject_type = { type = pagan_chiefdom }
+	}
+
+	option = {
+		name = subjects_expanded_events5.EVTOPT29
+
+		ai_chance = { factor = 100 }
+
+		display_info_for_subject_type = { type = native_reserve }
+	}
+
+	option = {
+		name = subjects_expanded_events5.EVTOPT30
+
+		ai_chance = { factor = 100 }
+
+		display_info_for_subject_type = { type = administrative_region }
+	}
+
+	after = {
+		clr_country_flag = used_subjects_expanded_info_decision
 	}
 }

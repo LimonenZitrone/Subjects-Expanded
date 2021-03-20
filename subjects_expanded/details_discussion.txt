@@ -87,7 +87,7 @@ If a subject gives an additional merchant, the bonuses it gives to its overlord 
 [*] Dominions can only be established diplomatically or by decision
 [*] Dominions have a max government rank of 1 (Duchy)
 [*] Dominions can be released in the Indian, East Africa, West Africa, South Africa, Philippines, East Indies and Indochinese trade company regions by decision
-[*] Dominions in trade company regions gain a bonus on national unrest, institution spread, trade power, religious unity, max amount of states, tolerance of heretics and heathens, min autonomy and amount of accepted cultures
+[*] Dominions in trade company regions gain a bonus on national unrest, institution spread, trade power, religious unity, tolerance of heretics and heathens, min autonomy and amount of accepted cultures
 [*] Dominions in trade company regions receive a malus on missionary strength, tax income, sailors and manpower
 [*] Dominions in trade company regions grant their overlord a bonus on naval forcelimit based on their amount of provinces
 [*] Dominions have a subject interaction (diplomatic action) to seize provinces that are not in their capital's colonial region (also available for Colonial Nations)
@@ -114,7 +114,7 @@ If a subject gives an additional merchant, the bonuses it gives to its overlord 
 [*] Autonomous Dominions can only be established diplomatically
 [*] Autonomous Dominions have a max government rank of 1 (Duchy)
 [*] Autonomous Dominions grant their overlord 2 merchants
-[*] Autonomous Dominions in trade company regions gain a bonus on national unrest, institution spread, trade power, religious unity, max amount of states, tolerance of heretics and heathens, min autonomy and amount of accepted cultures
+[*] Autonomous Dominions in trade company regions gain a bonus on national unrest, institution spread, trade power, religious unity, tolerance of heretics and heathens, min autonomy and amount of accepted cultures
 [*] Autonomous Dominions in trade company regions receive a malus on missionary strength, tax income, sailors and manpower
 [*] Autonomous Dominions in trade company regions grant their overlord a bonus on naval forcelimit based on their amount of provinces
 [*] Autonomous Dominions have a subject interaction (diplomatic action) to demand manpower
@@ -213,7 +213,7 @@ If a subject gives an additional merchant, the bonuses it gives to its overlord 
 [*] is a vassal of the possible overlord
 [*] is Catholic
 [*] is not excommunicated
-[*] has its capital in Europe
+[*] has its capital in Europe or Jerusalem
 [/list]
 
 [b]Additional Information:[/b]
@@ -296,7 +296,7 @@ If a subject gives an additional merchant, the bonuses it gives to its overlord 
 [list]
 [*] Peasant Vassals can be established diplomatically and by war
 [*] Peasant Vassals have a max government rank of 1 (Duchy)
-[*] Peasant Vassals gain +1 yearly tax income, their overlord receives -1 yearly tax income
+[*] Peasant Vassals gain +1 yearly tax income, their overlord receives -15% yearly tax income
 [*] Peasant Vassals gain a bonus on production efficiency, manpower and army morale
 [*] Peasant Vassals receive a malus on tax income
 [*] Peasant Vassals grant their overlord a bonus on aggressive expansion
@@ -385,8 +385,7 @@ If a subject gives an additional merchant, the bonuses it gives to its overlord 
 [*] Sister Republics grant their overlord a bonus on development cost, construction cost and production efficiency
 [*] a country can have max 1 Sister Republic
 [*] a Sister Republics has the same ruler as its overlord
-[*] Sister Republics have a diplomatic action to mark another, free nation as war target
-[*] Sister Republics have a diplomatic action to ask their overlord to declare a common war on the selected war target
+[*] Sister Republics have a diplomatic action to call their overlord to arms
 [*] Sister Republics and their overlord cannot declare war on the other's alliances or guaranteed nations
 [*] Sister Republics and their overlord cannot ally the other's rivals
 [/list]
@@ -761,6 +760,7 @@ If a subject gives an additional merchant, the bonuses it gives to its overlord 
 [list]
 [*] is emperor of the HRE
 [*] "Revoke the Privilegia" reform of the HRE is NOT enacted
+[*] does not have 5 Imperial Feuds already
 [/list]
 
 [b]Conditions (possible subject):[/b]

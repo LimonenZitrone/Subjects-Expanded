@@ -597,7 +597,7 @@ peasant_vassal_modifier = {
 }
 
 peasant_vassal_overlord_modifier = {
-	global_tax_income = -1
+	global_tax_modifier = -0.15
 	all_power_cost = 0.01
 	ae_impact = -0.03
 }

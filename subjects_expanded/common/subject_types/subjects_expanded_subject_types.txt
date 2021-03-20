@@ -4123,7 +4123,8 @@ roman_client_kingdom = {
 	modifier_overlord = {
 		trigger = {
 			FROM = {
-				NOT = { num_of_colonists = 1 }
+				# for some fucking reason checking for anything connected to colonists fucking crashes when loading a save, jesus fuck, PDX
+				NOT = { has_country_flag = once_had_a_colonist }
 			}
 		}
 		modifier = roman_client_kingdom_extra_range_modifier

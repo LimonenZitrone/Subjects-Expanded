@@ -5,24 +5,24 @@ country_event = {
 	title = subjects_expanded_roman_client_kingdom_events.EVTNAME1
 	desc = subjects_expanded_roman_client_kingdom_events.EVTDESC1
 	picture = DIPLOMACY_eventPicture
-	
+
 	is_triggered_only = yes
-	
+
 	trigger = {
 		NOT = { has_country_flag = roman_client_kingdom_ruler_killed_after_peace }
 	}
-	
+
 	immediate = {
 		hidden_effect = {
 			set_country_flag = roman_client_kingdom_ruler_killed_after_peace
 		}
 	}
-	
+
 	option = {
 		name = subjects_expanded_roman_client_kingdom_events1.EVTOPT1
-		
+
 		ai_chance = { factor = 100 }
-		
+
 		kill_ruler = yes
 		clr_country_flag = roman_client_kingdom_ruler_killed_after_peace
 	}
@@ -33,9 +33,9 @@ country_event = {
 	title = subjects_expanded_roman_client_kingdom_events.EVTNAME2
 	desc = subjects_expanded_roman_client_kingdom_events.EVTDESC2
 	picture = DIPLOMACY_eventPicture
-	
+
 	is_triggered_only = yes
-	
+
 	immediate = {
 		hidden_effect = {
 			export_to_variable = {
@@ -47,13 +47,13 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = subjects_expanded_roman_client_kingdom_events2.EVTOPT1
-		
+
 		ai_chance = {
 			factor = 1
-			
+
 			modifier = {
 				factor = 0.1
 				FROM = {
@@ -63,7 +63,7 @@ country_event = {
 					}
 				}
 			}
-			
+
 			modifier = {
 				factor = 0
 				FROM = {
@@ -80,19 +80,19 @@ country_event = {
 					}
 				}
 			}
-			
+
 			modifier = {
 				factor = 0.01
 				dynasty = FROM
 			}
-			
+
 			modifier = {
 				factor = 10
 				FROM = {
 					NOT = { heir_claim = 60 }
 				}
 			}
-			
+
 			modifier = {
 				factor = 100
 				FROM = {
@@ -100,7 +100,7 @@ country_event = {
 				}
 			}
 		}
-		
+
 		FROM = {
 			remove_heir = yes
 			add_opinion = {
@@ -111,13 +111,13 @@ country_event = {
 			country_event = { id = subjects_expanded_roman_client_kingdom_events.6 }
 		}
 	}
-	
+
 	option = {
 		name = subjects_expanded_roman_client_kingdom_events2.EVTOPT2
-		
+
 		ai_chance = {
 			factor = 1
-			
+
 			modifier = {
 				factor = 10
 				FROM = {
@@ -127,21 +127,21 @@ country_event = {
 					}
 				}
 			}
-			
+
 			modifier = {
 				factor = 10
 				FROM = {
 					heir_claim = 80
 				}
 			}
-			
+
 			modifier = {
 				factor = 100
 				FROM = {
 					has_ruler_flag = placed_on_throne_by_@ROOT
 				}
 			}
-			
+
 			modifier = {
 				factor = 5
 				FROM = {
@@ -149,9 +149,9 @@ country_event = {
 				}
 			}
 		}
-		
+
 		custom_tooltip = ROMAN_CLIENT_KINGDOM_HEIR_ACCEPTED
-		
+
 		FROM = {
 			add_opinion = {
 				who = ROOT
@@ -167,10 +167,10 @@ country_event = {
 	title = subjects_expanded_roman_client_kingdom_events.EVTNAME3
 	desc = subjects_expanded_roman_client_kingdom_events.EVTDESC3
 	picture = DIPLOMACY_eventPicture
-	
+
 	hidden = yes
 	is_triggered_only = yes
-	
+
 	immediate = {
 		hidden_effect = {
 			# Yearly Manpower
@@ -204,10 +204,10 @@ country_event = {
 			FROM = { country_event = { id = subjects_expanded_roman_client_kingdom_events.4 } }
 		}
 	}
-	
+
 	option = {
 		name = subjects_expanded_roman_client_kingdom_events3.EVTOPT1
-		
+
 		ai_chance = { factor = 100 }
 	}
 }
@@ -217,20 +217,20 @@ country_event = {
 	title = subjects_expanded_roman_client_kingdom_events.EVTNAME4
 	desc = subjects_expanded_roman_client_kingdom_events.EVTDESC4
 	picture = DIPLOMACY_eventPicture
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = subjects_expanded_roman_client_kingdom_events4.EVTOPT1
-		
+
 		trigger = {
 			FROM = { check_variable = { which = roman_client_kingdom_yearly_years_of_income_var value = 0.01 } }
 		}
-		
+
 		FROM = {
 			add_liberty_desire = 25
 		}
-		
+
 		custom_tooltip = ROMAN_CLIENT_KINGDOM_PAYS_ONE_YEAR_OF_INCOME
 		hidden_effect = {
 			FROM = { add_years_of_income = -1 }
@@ -313,18 +313,18 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = subjects_expanded_roman_client_kingdom_events4.EVTOPT2
-		
+
 		trigger = {
 			FROM = { check_variable = { which = roman_client_kingdom_yearly_manpower_var value = 0.01 } }
 		}
-		
+
 		FROM = {
 			add_liberty_desire = 25
 		}
-		
+
 		custom_tooltip = ROMAN_CLIENT_KINGDOM_PAYS_YEARLY_MANPOWER
 		hidden_effect = {
 			FROM = { add_yearly_manpower = -1 }
@@ -374,10 +374,10 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = subjects_expanded_roman_client_kingdom_events4.EVTOPT3
-		
+
 		trigger = {
 			FROM = {
 				OR = {
@@ -387,11 +387,11 @@ country_event = {
 				}
 			}
 		}
-		
+
 		FROM = {
 			add_liberty_desire = 25
 		}
-		
+
 		custom_tooltip = ROMAN_CLIENT_KINGDOM_PAYS_YEARLY_MONARCH_POWER
 		hidden_effect = {
 			while = {
@@ -468,13 +468,13 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = subjects_expanded_roman_client_kingdom_events4.EVTOPT4
-		
+
 		ai_chance = { factor = 100 }
 	}
-	
+
 	after = {
 		FROM = {
 			set_variable = { which = roman_client_kingdom_yearly_manpower_var value = 0 }
@@ -491,9 +491,9 @@ country_event = {
 	title = subjects_expanded_roman_client_kingdom_events.EVTNAME5
 	desc = subjects_expanded_roman_client_kingdom_events.EVTDESC5
 	picture = DIPLOMACY_eventPicture
-	
+
 	hidden = yes
-	
+
 	trigger = {
 		is_subject_of_type = roman_client_kingdom
 		government = monarchy
@@ -501,18 +501,18 @@ country_event = {
 		has_regency = no
 		NOT = { has_heir_flag = accteped_by_roman_overlord }
 	}
-	
+
 	mean_time_to_happen = { days = 1 }
-	
+
 	immediate = {
 		hidden_effect = {
 			overlord = { country_event = { id = subjects_expanded_roman_client_kingdom_events.2 } }
 		}
 	}
-	
+
 	option = {
 		name = subjects_expanded_roman_client_kingdom_events5.EVTOPT1
-		
+
 		ai_chance = { factor = 100 }
 	}
 }
@@ -522,14 +522,14 @@ country_event = {
 	title = subjects_expanded_roman_client_kingdom_events.EVTNAME6
 	desc = subjects_expanded_roman_client_kingdom_events.EVTDESC6
 	picture = DIPLOMACY_eventPicture
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = subjects_expanded_roman_client_kingdom_events6.EVTOPT1
-		
+
 		ai_chance = { factor = 100 }
-		
+
 		tooltip = {
 			add_liberty_desire = 5
 			add_opinion = {
@@ -537,5 +537,39 @@ country_event = {
 				modifier = roman_client_kingdom_rejected_heir
 			}
 		}
+	}
+}
+
+
+
+
+# for some fucking reason checking for anything connected to colonists in a modifier in subject types fucking crashes when loading a save, so this shit is needed, jesus fuck, PDX
+country_event = {
+	id = subjects_expanded_roman_client_kingdom_events.1000
+	title = subjects_expanded_roman_client_kingdom_events.EVTNAME1000
+	desc = subjects_expanded_roman_client_kingdom_events.EVTDESC1000
+	picture = DIPLOMACY_eventPicture
+
+	hidden = yes
+
+	trigger = {
+		NOT = { has_country_flag = once_had_a_colonist }
+		num_of_colonists = 1
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = once_had_a_colonist
+		}
+	}
+
+	option = {
+		name = subjects_expanded_roman_client_kingdom_events1000.EVTOPT1
+
+		ai_chance = { factor = 100 }
 	}
 }

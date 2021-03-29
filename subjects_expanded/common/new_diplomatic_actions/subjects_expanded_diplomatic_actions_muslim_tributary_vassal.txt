@@ -1,18 +1,18 @@
 establish_muslim_tributary_vassal = {
 	category = influence
-	
+
 	alert_index = 6
 	alert_tooltip = establish_muslim_tributary_vassal_alert_tooltip
-	
+
 	require_acceptance = yes
-	
+
 	is_visible = {
 		can_create_subject_type = {
 			subject = FROM
 			subject_type = muslim_tributary_vassal
 		}
 	}
-	
+
 	is_allowed = {
 		can_create_subject_type = {
 			subject = FROM
@@ -28,7 +28,7 @@ establish_muslim_tributary_vassal = {
 		}
 		army_size = 20
 	}
-	
+
 	on_accept = {
 		if = {
 			limit = {
@@ -56,7 +56,7 @@ establish_muslim_tributary_vassal = {
 			}
 		}
 	}
-	
+
 	on_decline = {
 		if = {
 			limit = {
@@ -84,7 +84,7 @@ establish_muslim_tributary_vassal = {
 			}
 		}
 	}
-	
+
 	ai_acceptance = {
 		add_entry = {
 			name = FROM_IS_VASSAL_OF_ROOT
@@ -391,6 +391,73 @@ establish_muslim_tributary_vassal = {
 			multiply_variable = { which = ai_value value = -1 }
 		}
 		add_entry = {
+			name = FROM_IS_ALLIED_TO_PAPAL_STATE
+			limit = {
+				FROM = {
+					religion = catholic
+					OR = {
+						alliance_with = PAP
+						guaranteed_by = PAP
+					}
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 100
+			}
+			multiply_variable = { which = ai_value value = -1 }
+		}
+		add_entry = {
+			name = FROM_IS_DEFENDER_OF_FAITH
+			limit = {
+				NOT = { overlord_of = FROM }
+				FROM = {
+					is_defender_of_faith = yes
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 1000
+			}
+			multiply_variable = { which = ai_value value = -1 }
+		}
+		add_entry = {
+			name = FROM_IS_ALLIED_TO_DEFENDER_OF_FAITH
+			limit = {
+				NOT = { overlord_of = FROM }
+				FROM = {
+					any_ally = {
+						religion = PREV
+						is_defender_of_faith = yes
+						NOT = { army_size = ROOT }
+					}
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 50
+			}
+			multiply_variable = { which = ai_value value = -1 }
+		}
+		add_entry = {
+			name = FROM_IS_ALLIED_TO_DEFENDER_OF_FAITH
+			limit = {
+				NOT = { overlord_of = FROM }
+				FROM = {
+					any_ally = {
+						religion = PREV
+						is_defender_of_faith = yes
+						army_size = ROOT
+					}
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 100
+			}
+			multiply_variable = { which = ai_value value = -1 }
+		}
+		add_entry = {
 			name = ROOT_OWNS_FROM_CORE_PROVINCES
 			limit = {
 				any_owned_province = {
@@ -443,6 +510,58 @@ establish_muslim_tributary_vassal = {
 			multiply_variable = { which = ai_value value = -1 }
 		}
 		add_entry = {
+			name = FROM_IS_ALLIED_TO_EMPEROR
+			limit = {
+				FROM = {
+					OR = {
+						any_ally = {
+							is_emperor = yes
+						}
+						guaranteed_by = emperor
+					}
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 100
+			}
+			multiply_variable = { which = ai_value value = -1 }
+		}
+		add_entry = {
+			name = FROM_HAS_STRONG_ALLIES
+			limit = {
+				FROM = {
+					any_ally = {
+						NOT = { tag = ROOT }
+						army_size = 20
+					}
+					NOT = {
+						calc_true_if = {
+							all_ally = {
+								NOT = { tag = ROOT }
+								army_size = 20
+							}
+							amount = 2
+						}
+					}
+					NOT = {
+						any_ally = {
+							NOT = { tag = ROOT }
+							OR = {
+								army_size = 100
+								military_strength = { who = ROOT value = 2 }
+							}
+						}
+					}
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 15
+			}
+			multiply_variable = { which = ai_value value = -1 }
+		}
+		add_entry = {
 			name = FROM_HAS_STRONG_ALLIES
 			limit = {
 				FROM = {
@@ -453,11 +572,132 @@ establish_muslim_tributary_vassal = {
 						}
 						amount = 2
 					}
+					NOT = {
+						any_ally = {
+							NOT = { tag = ROOT }
+							OR = {
+								army_size = 100
+								military_strength = { who = ROOT value = 2 }
+							}
+						}
+					}
 				}
 			}
 			export_to_variable = {
 				which = ai_value
 				value = 50
+			}
+			multiply_variable = { which = ai_value value = -1 }
+		}
+		add_entry = {
+			name = FROM_HAS_STRONG_ALLIES
+			limit = {
+				FROM = {
+					any_ally = {
+						NOT = { tag = ROOT }
+						OR = {
+							army_size = 100
+							military_strength = { who = ROOT value = 2 }
+						}
+					}
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 1000
+			}
+			multiply_variable = { which = ai_value value = -1 }
+		}
+		add_entry = {
+			name = FROM_HAS_STRONG_GUARANTEES
+			limit = {
+				any_country = {
+					NOT = { tag = ROOT }
+					FROM = {
+						guaranteed_by = PREV
+					}
+					army_size = 20
+				}
+				NOT = {
+					calc_true_if = {
+						all_country = {
+							NOT = { tag = ROOT }
+							FROM = {
+								guaranteed_by = PREV
+							}
+							army_size = 20
+						}
+						amount = 2
+					}
+				}
+				NOT = {
+					any_country = {
+						NOT = { tag = ROOT }
+						FROM = {
+							guaranteed_by = PREV
+						}
+						OR = {
+							army_size = 100
+							military_strength = { who = ROOT value = 2 }
+						}
+					}
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 15
+			}
+			multiply_variable = { which = ai_value value = -1 }
+		}
+		add_entry = {
+			name = FROM_HAS_STRONG_GUARANTEES
+			limit = {
+				calc_true_if = {
+					all_country = {
+						NOT = { tag = ROOT }
+						FROM = {
+							guaranteed_by = PREV
+						}
+						army_size = 20
+					}
+					amount = 2
+				}
+				NOT = {
+					any_country = {
+						NOT = { tag = ROOT }
+						FROM = {
+							guaranteed_by = PREV
+						}
+						OR = {
+							army_size = 100
+							military_strength = { who = ROOT value = 2 }
+						}
+					}
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 50
+			}
+			multiply_variable = { which = ai_value value = -1 }
+		}
+		add_entry = {
+			name = FROM_HAS_STRONG_GUARANTEES
+			limit = {
+				any_country = {
+					NOT = { tag = ROOT }
+					FROM = {
+						guaranteed_by = PREV
+					}
+					OR = {
+						army_size = 100
+						military_strength = { who = ROOT value = 2 }
+					}
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = 1000
 			}
 			multiply_variable = { which = ai_value value = -1 }
 		}
@@ -533,8 +773,198 @@ establish_muslim_tributary_vassal = {
 			}
 			multiply_variable = { which = ai_value value = -1 }
 		}
+		add_entry = {
+			name = FROM_ALLIED_TO_ROOT_RIVALS
+			limit = {
+				any_country = {
+					OR = {
+						alliance_with = FROM
+						FROM = {
+							guaranteed_by = PREV
+						}
+					}
+					OR = {
+						is_enemy = ROOT
+						is_rival = ROOT
+					}
+				}
+				NOT = {
+					calc_true_if = {
+						all_country = {
+							OR = {
+								alliance_with = FROM
+								FROM = {
+									guaranteed_by = PREV
+								}
+							}
+							OR = {
+								is_enemy = ROOT
+								is_rival = ROOT
+							}
+						}
+						amount = 2
+					}
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = -25
+			}
+			multiply_variable = { which = ai_value value = -1 }
+		}
+		add_entry = {
+			name = FROM_ALLIED_TO_ROOT_RIVALS
+			limit = {
+				calc_true_if = {
+					all_country = {
+						OR = {
+							alliance_with = FROM
+							FROM = {
+								guaranteed_by = PREV
+							}
+						}
+						OR = {
+							is_enemy = ROOT
+							is_rival = ROOT
+						}
+					}
+					amount = 2
+				}
+				NOT = {
+					calc_true_if = {
+						all_country = {
+							OR = {
+								alliance_with = FROM
+								FROM = {
+									guaranteed_by = PREV
+								}
+							}
+							OR = {
+								is_enemy = ROOT
+								is_rival = ROOT
+							}
+						}
+						amount = 3
+					}
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = -50
+			}
+			multiply_variable = { which = ai_value value = -1 }
+		}
+		add_entry = {
+			name = FROM_ALLIED_TO_ROOT_RIVALS
+			limit = {
+				calc_true_if = {
+					all_country = {
+						OR = {
+							alliance_with = FROM
+							FROM = {
+								guaranteed_by = PREV
+							}
+						}
+						OR = {
+							is_enemy = ROOT
+							is_rival = ROOT
+						}
+					}
+					amount = 3
+				}
+				NOT = {
+					calc_true_if = {
+						all_country = {
+							OR = {
+								alliance_with = FROM
+								FROM = {
+									guaranteed_by = PREV
+								}
+							}
+							OR = {
+								is_enemy = ROOT
+								is_rival = ROOT
+							}
+						}
+						amount = 4
+					}
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = -75
+			}
+			multiply_variable = { which = ai_value value = -1 }
+		}
+		add_entry = {
+			name = FROM_ALLIED_TO_ROOT_RIVALS
+			limit = {
+				calc_true_if = {
+					all_country = {
+						OR = {
+							alliance_with = FROM
+							FROM = {
+								guaranteed_by = PREV
+							}
+						}
+						OR = {
+							is_enemy = ROOT
+							is_rival = ROOT
+						}
+					}
+					amount = 4
+				}
+				NOT = {
+					calc_true_if = {
+						all_country = {
+							OR = {
+								alliance_with = FROM
+								FROM = {
+									guaranteed_by = PREV
+								}
+							}
+							OR = {
+								is_enemy = ROOT
+								is_rival = ROOT
+							}
+						}
+						amount = 5
+					}
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = -100
+			}
+			multiply_variable = { which = ai_value value = -1 }
+		}
+		add_entry = {
+			name = FROM_ALLIED_TO_ROOT_RIVALS
+			limit = {
+				calc_true_if = {
+					all_country = {
+						OR = {
+							alliance_with = FROM
+							FROM = {
+								guaranteed_by = PREV
+							}
+						}
+						OR = {
+							is_enemy = ROOT
+							is_rival = ROOT
+						}
+					}
+					amount = 5
+				}
+			}
+			export_to_variable = {
+				which = ai_value
+				value = -1000
+			}
+			multiply_variable = { which = ai_value value = -1 }
+		}
 	}
-	
+
 	ai_will_do = {
 		religion = sunni
 		FROM = {
@@ -562,12 +992,12 @@ establish_muslim_tributary_vassal = {
 
 ask_for_muslim_tributary_vassal = {
 	category = influence
-	
+
 	alert_index = 6
 	alert_tooltip = establish_muslim_tributary_vassal_alert_tooltip
-	
+
 	require_acceptance = yes
-	
+
 	is_visible = {
 		FROM = {
 			can_create_subject_type = {
@@ -576,7 +1006,7 @@ ask_for_muslim_tributary_vassal = {
 			}
 		}
 	}
-	
+
 	is_allowed = {
 		FROM = {
 			can_create_subject_type = {
@@ -594,7 +1024,7 @@ ask_for_muslim_tributary_vassal = {
 			army_size = 20
 		}
 	}
-	
+
 	on_accept = {
 		if = {
 			limit = {
@@ -624,7 +1054,7 @@ ask_for_muslim_tributary_vassal = {
 			country_event = { id = subjects_expanded_muslim_tributary_vassal_events.1 }
 		}
 	}
-	
+
 	on_decline = {
 		if = {
 			limit = {
@@ -652,7 +1082,7 @@ ask_for_muslim_tributary_vassal = {
 			}
 		}
 	}
-	
+
 	ai_acceptance = {
 		add_entry = {
 			name = ROOT_IS_VASSAL_OF_FROM
@@ -945,12 +1375,13 @@ ask_for_muslim_tributary_vassal = {
 			multiply_variable = { which = ai_value value = -1 }
 		}
 	}
-	
+
 	ai_will_do = {
 		NOT = { tag = PAP }
 		is_papal_controller = no
 		government = monarchy
 		is_emperor = no
+		is_defender_of_faith = no
 		religion_group = christian
 		is_part_of_hre = no
 		NOT = { num_of_cities = 10 }
@@ -959,11 +1390,74 @@ ask_for_muslim_tributary_vassal = {
 		}
 		NOT = { historical_rival_with = FROM }
 		NOT = { alliance_with = FROM }
+		OR = {
+			NOT = { religion = catholic }
+			NOT = { alliance_with = PAP }
+		}
+		OR = {
+			AND = {
+				NOT = { religion = catholic }
+				NOT = { religion = protestant }
+				NOT = { religion = reformed }
+			}
+			NOT = { alliance_with = emperor }
+		}
 		NOT = {
 			calc_true_if = {
 				all_ally = {
 					NOT = { tag = FROM }
 					army_size = 20
+				}
+				amount = 2
+			}
+		}
+		NOT = {
+			any_ally = {
+				NOT = { tag = FROM }
+				OR = {
+					army_size = 100
+					military_strength = { who = FROM value = 2 }
+					is_defender_of_faith = yes
+				}
+			}
+		}
+		NOT = {
+			calc_true_if = {
+				all_country = {
+					NOT = { tag = FROM }
+					ROOT = {
+						guaranteed_by = PREV
+					}
+					army_size = 20
+				}
+				amount = 2
+			}
+		}
+		NOT = {
+			any_country = {
+				NOT = { tag = FROM }
+				ROOT = {
+					guaranteed_by = PREV
+				}
+				OR = {
+					army_size = 100
+					military_strength = { who = FROM value = 2 }
+				}
+			}
+		}
+		NOT = {
+			calc_true_if = {
+				all_country = {
+					OR = {
+						alliance_with = FROM
+						FROM = {
+							guaranteed_by = PREV
+						}
+					}
+					OR = {
+						is_enemy = ROOT
+						is_rival = ROOT
+					}
 				}
 				amount = 2
 			}
@@ -1016,14 +1510,14 @@ cancel_muslim_tributary_vassal = {
 	category = influence
 
 	require_acceptance = no
-	
+
 	is_visible = {
 		FROM = {
 			is_subject_of = ROOT
 			is_subject_of_type = muslim_tributary_vassal
 		}
 	}
-	
+
 	is_allowed = {
 		hidden_trigger = {
 			FROM = {
@@ -1034,7 +1528,7 @@ cancel_muslim_tributary_vassal = {
 		NOT = { truce_with = FROM }
 		prestige = 0
 	}
-	
+
 	on_accept = {
 		if = {
 			limit = {
@@ -1062,7 +1556,7 @@ cancel_muslim_tributary_vassal = {
 			add_prestige = -25
 		}
 	}
-	
+
 	ai_will_do = {
 		FROM = {
 			liberty_desire = 100

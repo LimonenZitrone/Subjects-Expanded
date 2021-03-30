@@ -186,6 +186,7 @@ country_event = {
 			limit = {
 				is_subject_of_type = fief_subject
 			}
+			add_liberty_desire = 10
 			join_all_defensive_wars_of = ROOT
 		}
 	}

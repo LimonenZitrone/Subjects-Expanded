@@ -146,6 +146,16 @@ country_event = {
 
 	fire_only_once = yes
 
+	major = yes
+	major_trigger = {
+		is_in_war = {
+			attacker_leader = ENG
+			defender_leader = FRA
+			attackers = THIS
+			casus_belli = cb_restore_personal_union
+		}
+	}
+
 	trigger = {
 		tag = FRA
 		started_in = 1444.11.11
@@ -180,7 +190,7 @@ country_event = {
 	option = {
 		name = subjects_expanded_fief_subject_events4.EVTOPT1
 
-		ai_chance = { factor = 100 }
+		ai_chance = { factor = 0.6 }
 
 		every_subject_country = {
 			limit = {
@@ -194,7 +204,7 @@ country_event = {
 	option = {
 		name = subjects_expanded_fief_subject_events4.EVTOPT2
 
-		ai_chance = { factor = 0 }
+		ai_chance = { factor = 0.4 }
 
 		custom_tooltip = FRA_FIEFDOM_GET_MANPOWER
 		hidden_effect = {

@@ -322,7 +322,7 @@
  make_brother_kingdom_to_personal_union_dialog: "§Y[This.GetName]§! verlangt, dass wir ihre §YPersonalunion§! werden. \n[personal_union_desc] \nWollt Ihr akzeptieren?"
 
  make_personal_union_to_brother_kingdom_title: "In Bruderkönigreich umwandeln"
- make_personal_union_to_brother_kingdom_desc: "Wollt Ihr einen Eurer Söhne zum Herrscher über §Y[From.GetName]§! machen? Dies wird diesen Sohn als möglichen Erben Eures Throns entfernen, wodurch das Risiko einer möglichen Aufteilung des Landes nach dem Tod von [Root.Monarch.GetName] sinken könnte, und §Y[From.GetName]§! in ein §YBruderkönigreich§! umwandeln. \n[brother_kingdom_desc]"
+ make_personal_union_to_brother_kingdom_desc: "Wollt Ihr Euren Nachfolger §Y[Root.Heir.GetName]§! (£adm£ §G[Root.GetHeirAdm]§! / £dip£ §G[Root.GetHeirDip]§! / £mil£ §G[Root.GetHeirMil]§! ) zum Herrscher von §Y[From.GetName]§! machen? \nDies wird ihr Freiheitsstreben um §G-10%§! verändern. [Root.Heir.GetSheHeCap] wird als möglicher Nachfolger unseres Throns entfernt und §Y[From.GetName]§! wird zu einem §YBruderkönigreich§! gemacht. \n\n[brother_kingdom_desc]"
  make_personal_union_to_brother_kingdom_tooltip: "Macht Eure Personalunion §Y[From.GetName]§! zu einem §YBruderkönigreich§!.\n"
 
  brother_kingdom_ask_overlord_to_join_war_title: "Um Kriegsunterstützung bitten"

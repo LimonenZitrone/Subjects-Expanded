@@ -493,6 +493,11 @@
  administrative_region_disable_administrative_help_tooltip: "Deaktiviert den Erhalt von administrativer Hilfe von §Y[From.GetName]§!.\n"
 
 
+ viking_settlement_demand_raid_loot_title: "Anteil an Beute verlangen"
+ viking_settlement_demand_raid_loot_desc: "Verlangt von §Y[From.GetName]§!, dass sie uns einen Teil ihrer geplünderten Beute übergeben. \nWird wird uns §G10%§! ihrer maximalen Anzahl von Seeleuten und §G50%§! ihres letzten Jahreseinkommens geben. Ihr Freiheitsstreben wird sich um §R+15%§! und ihre Meinung über uns um §R-50§! verändern."
+ viking_settlement_demand_raid_loot_tooltip: "Fordert Seeleute und Geld von §Y[From.GetName]§!.\n"
+
+
  return_subject_to_vassal_title: "Zum Vasall degradieren"
  return_subject_to_vassal_desc: "Beendet den derzeitigen Status von §Y[From.GetName]§! und macht sie zu einem Vasallen. Dies wird ihre Meinung über uns um §R-100§! verschlechtern und ihr Freiheitsstreben um §R+25%§! ändern. Außerdem verlieren wir §R-10§! Prestige[Root.GetIfDemoteToVassalGivesStabHit]."
  return_subject_to_vassal_tooltip: "Macht §Y[From.GetName]§! wieder zu einem Vasall.\n"

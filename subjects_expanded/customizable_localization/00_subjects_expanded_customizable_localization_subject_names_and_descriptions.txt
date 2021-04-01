@@ -230,6 +230,12 @@ defined_text = {
 		}
 		localisation_key = "[administrative_region]"
 	}
+	text = {
+		trigger = {
+			is_subject_of_type = viking_settlement
+		}
+		localisation_key = "[viking_settlement]"
+	}
 
 	text = {
 		trigger = {
@@ -1074,5 +1080,27 @@ defined_text = {
 			always = yes
 		}
 		localisation_key = administrative_region_long_desc
+	}
+}
+
+defined_text = {
+	name = viking_settlement
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = viking_settlement_title
+	}
+}
+
+defined_text = {
+	name = viking_settlement_desc
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = viking_settlement_long_desc
 	}
 }

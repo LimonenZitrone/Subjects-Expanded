@@ -70,6 +70,7 @@ country_event = {
 			count_num_of_subjects_of_type = { type = pagan_chiefdom }
 			count_num_of_subjects_of_type = { type = native_reserve }
 			count_num_of_subjects_of_type = { type = administrative_region }
+			count_num_of_subjects_of_type = { type = viking_settlement }
 		}
 	}
 
@@ -313,6 +314,14 @@ country_event = {
 		display_subjects_of_type = { type = administrative_region }
 	}
 
+	option = {
+		name = subjects_expanded_events2.EVTOPT31
+
+		ai_chance = { factor = 100 }
+
+		display_subjects_of_type = { type = viking_settlement }
+	}
+
 	after = {
 		hidden_effect = {
 			clr_country_flag = used_subjects_expanded_info_decision
@@ -346,6 +355,7 @@ country_event = {
 			clear_display_variable_for_subjects_of_type = { type = pagan_chiefdom }
 			clear_display_variable_for_subjects_of_type = { type = native_reserve }
 			clear_display_variable_for_subjects_of_type = { type = administrative_region }
+			clear_display_variable_for_subjects_of_type = { type = viking_settlement }
 		}
 	}
 }
@@ -659,6 +669,14 @@ country_event = {
 		ai_chance = { factor = 100 }
 
 		display_info_for_subject_type = { type = administrative_region }
+	}
+
+	option = {
+		name = subjects_expanded_events5.EVTOPT31
+
+		ai_chance = { factor = 100 }
+
+		display_info_for_subject_type = { type = viking_settlement }
 	}
 
 	after = {

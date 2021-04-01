@@ -748,6 +748,17 @@ is_possible_subject_of_subject_type_administrative_region = {
 	}
 }
 
+is_possible_subject_of_subject_type_viking_settlement = {
+	# PREVs in THIS scope refer to possible overlord
+	NOT = { is_subject_of_type = viking_settlement }
+	is_subject_of = PREV
+	is_subject_of_type = colony
+	capital_scope = {
+		continent = north_america
+		NOT = { colonial_region = colonial_mexico }
+	}
+}
+
 can_create_subject_type = {
 	can_be_overlord = $subject_type$
 	$subject$ = {

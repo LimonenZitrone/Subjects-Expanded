@@ -31,6 +31,7 @@
  subjects_expanded_events2.EVTOPT28: "Derzeit gibt es §G[REB.num_of_subjects_of_type_pagan_chiefdom.GetValue]§! §YStammesfürstentümer§! auf der Welt."
  subjects_expanded_events2.EVTOPT29: "Derzeit gibt es §G[REB.num_of_subjects_of_type_native_reserve.GetValue]§! §YEingeborenenreservate§! auf der Welt."
  subjects_expanded_events2.EVTOPT30: "Derzeit gibt es §G[REB.num_of_subjects_of_type_administrative_region.GetValue]§! §YAdministrative Regionen§! auf der Welt."
+ subjects_expanded_events2.EVTOPT31: "Derzeit gibt es §G[REB.num_of_subjects_of_type_viking_settlement.GetValue]§! §YWikingersiedlungen§! auf der Welt."
 
  subjects_expanded_events.EVTNAME3: "Ideen-Mods?"
  subjects_expanded_events.EVTDESC3: "Herrschaftsgebiete per Entscheidung zu errichten gibt ihnen Ideengruppen abhängig von Euren. Falls Ihr eine Mod benutzt, die die Vanilla-Ideengruppen verändert, könnte dies das Spiel zum §RAbsturz§! bringen. Deshalb solltet Ihr hier die passende Option auswählen, um dies zu verhindern!"
@@ -44,7 +45,7 @@
  subjects_expanded_events4.EVTOPT3: "Schließen."
 
  subjects_expanded_events.EVTNAME5: "§YSubjects Expanded§!: Weitere Informationen"
- subjects_expanded_events.EVTDESC5: "Dieses Ereignis zeigt die Namen und weiterführenden Informationen (diese teilweise in Englisch) für jeden neuen Untertantyp an, den §GSubjects Expanded§! hinzufügt. \nDie Bedingungen, um einen der Untertanstypen zu erstellen, müssen erfüllt sein, damit die diplomatische Aktion oder die Friedensoption sichtbar sind, eventuell müssen noch weitere Bedingungen erfüllt werden, damit sie auch ausgewählt werden können. \n\nWenn ein Untertantyp einen zusätzlichen Händler gibt, sind die anderen Boni, die er dem Lehnsherrn gibt, möglicherweise auch erst dann aktiv, wenn die benötigte Anzahl an Provinzen zur Freischaltung des Händlers erreicht wurde. \n\nWählt eine beliebige der Optionen aus, um das Ereignis zu schließen."
+ subjects_expanded_events.EVTDESC5: "Dieses Ereignis zeigt die Namen und weiterführenden Informationen (diese teilweise in Englisch) für jeden neuen Untertantyp an, den §GSubjects Expanded§! hinzufügt. \nDie Bedingungen, um einen der Untertanstypen zu erstellen, müssen erfüllt sein, damit die diplomatische Aktion oder die Friedensoption sichtbar sind, eventuell müssen noch weitere Bedingungen erfüllt werden, damit sie auch ausgewählt werden können. \n\n§RWenn ein Untertantyp einen zusätzlichen Händler gibt, sind die anderen Boni, die er dem Lehnsherrn gibt, möglicherweise auch erst dann aktiv, wenn die benötigte Anzahl an Provinzen zur Freischaltung des Händlers erreicht wurde.§! \n\nEin £yes£-Symbol bei den Overlord Conditions bedeutet, dass wir ein valider Lehnsherr dieses Untertantyps sind. Ein £yes£-Symbol bei den Subject Conditions bedeutet, dass wir momentan in der Lage sind, ein Land zu diesem Untertantyp zu machen. \n\nWählt eine beliebige der Optionen aus, um das Ereignis zu schließen."
  subjects_expanded_events5.EVTOPT1: "[protectorate]"
  subjects_expanded_events5.EVTOPT2: "[puppet_state]"
  subjects_expanded_events5.EVTOPT3: "[dominion]"
@@ -75,6 +76,7 @@
  subjects_expanded_events5.EVTOPT28: "[pagan_chiefdom]"
  subjects_expanded_events5.EVTOPT29: "[native_reserve]"
  subjects_expanded_events5.EVTOPT30: "[administrative_region]"
+ subjects_expanded_events5.EVTOPT31: "[viking_settlement]"
 
  subjects_expanded_protectorate_events.EVTNAME2: "Unabhängigkeit gewährt!"
  subjects_expanded_protectorate_events.EVTDESC2: "Unser ehemaliger Lehnsherr [From.GetName] hat sich dazu entschlossen, uns Unabhängigkeit zu gewähren. Das bedeutet allerdings auch, dass sie uns jetzt wieder den Krieg erklären könnten..."
@@ -329,3 +331,11 @@
  subjects_expanded_administrative_region_events.EVTNAME4: "Administrative Region zum Vasallen degradiert"
  subjects_expanded_administrative_region_events.EVTDESC4: "Unsere Administrative Region ist keine Monarchie oder Theokratie mehr und wurde deshalb wieder zu einem normalen Vasallen degradiert."
  subjects_expanded_administrative_region_events4.EVTOPT1: "Das ist schade."
+
+ subjects_expanded_viking_settlement_events.EVTNAME2: "Das Erbe der Wikinger"
+ subjects_expanded_viking_settlement_events.EVTDESC2: "Wir sind eine Wikingersiedlung, wir können nicht einfach unsere Wurzeln verraten. Wir müssen wieder zu unserem ursprünglichen Glauben konvertieren!"
+ subjects_expanded_viking_settlement_events2.EVTOPT1: "Verstanden."
+
+ subjects_expanded_viking_settlement_events.EVTNAME4: "Lehnsherr verlangt einen Anteil an unserer Beute"
+ subjects_expanded_viking_settlement_events.EVTDESC4: "Unser Lehnsherr, @[Root.Overlord.GetTag] §Y[Root.Overlord.GetName]§!, verlangt, dass wir ihnen einen Teil unserer geplünderten Beute überlassen."
+ subjects_expanded_viking_settlement_events4.EVTOPT1: "Wir haben wohl keine Wahl..."

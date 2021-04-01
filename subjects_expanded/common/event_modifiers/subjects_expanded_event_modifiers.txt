@@ -1110,7 +1110,7 @@ native_reserve_uncivilized_overlord_modifier = {
 	land_morale = 0.05
 }
 
-# Subject Type: Native Reserve
+# Subject Type: Administrative Region
 administrative_region_modifier = {
 	monarch_admin_power = 1
 	monarch_diplomatic_power = 1
@@ -1140,6 +1140,26 @@ administrative_region_overlord_modifier_administrative_help_dip = {
 
 administrative_region_overlord_modifier_administrative_help_mil = {
 	country_military_power = 1
+}
+
+# Subject Type: Viking Settlement
+viking_settlement_modifier = {
+	may_perform_slave_raid = yes
+	colonists = 1
+	global_sailors_modifier = 0.05
+	naval_forcelimit_modifier = 0.1
+	ship_durability = 0.05
+	naval_maintenance_modifier = -0.05
+	sailors_recovery_speed = 0.05
+	blockade_efficiency = 0.025
+	global_ship_recruit_speed = -0.025
+	naval_morale = 0.05
+}
+
+viking_settlement_overlord_modifier = {
+	may_perform_slave_raid = yes
+	naval_forcelimit_modifier = 0.05
+	global_sailors_modifier = 0.05
 }
 
 # Modifiers that function as timers

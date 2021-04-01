@@ -262,3 +262,6 @@
  administrative_region_overlord_modifier_administrative_help_adm: "Receives Administrative Help"
  administrative_region_overlord_modifier_administrative_help_dip: "Receives Administrative Help"
  administrative_region_overlord_modifier_administrative_help_mil: "Receives Administrative Help"
+
+ viking_settlement_modifier: "Viking Settlement"
+ viking_settlement_overlord_modifier: "Has Viking Settlements"

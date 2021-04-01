@@ -419,6 +419,7 @@ seize_provinces_in_other_colonial_regions = {
 			OR = {
 				is_subject_of_type = colony
 				is_subject_of_type = dominion
+				is_subject_of_type = viking_settlement
 			}
 			any_owned_province = {
 				NOT = { colonial_region = CAPITAL }
@@ -435,6 +436,7 @@ seize_provinces_in_other_colonial_regions = {
 				OR = {
 					is_subject_of_type = colony
 					is_subject_of_type = dominion
+					is_subject_of_type = viking_settlement
 				}
 				any_owned_province = {
 					NOT = { colonial_region = CAPITAL }
@@ -466,6 +468,7 @@ seize_provinces_in_other_colonial_regions = {
 									OR = {
 										is_subject_of_type = colony
 										is_any_colonial_region_dominion_subject = yes
+										is_subject_of_type = viking_settlement
 									}
 								}
 							}
@@ -488,6 +491,7 @@ seize_provinces_in_other_colonial_regions = {
 								OR = {
 									is_subject_of_type = colony
 									is_any_colonial_region_dominion_subject = yes
+									is_subject_of_type = viking_settlement
 								}
 							}
 						}
@@ -507,6 +511,7 @@ seize_provinces_in_other_colonial_regions = {
 					OR = {
 						is_subject_of_type = colony
 						is_subject_of_type = dominion
+						is_subject_of_type = viking_settlement
 					}
 					any_owned_province = {
 						NOT = { colonial_region = CAPITAL }
@@ -537,6 +542,7 @@ seize_provinces_in_other_colonial_regions = {
 											OR = {
 												is_subject_of_type = colony
 												is_any_colonial_region_dominion_subject = yes
+												is_subject_of_type = viking_settlement
 											}
 										}
 									}
@@ -559,6 +565,7 @@ seize_provinces_in_other_colonial_regions = {
 										OR = {
 											is_subject_of_type = colony
 											is_any_colonial_region_dominion_subject = yes
+											is_subject_of_type = viking_settlement
 										}
 									}
 								}
@@ -571,9 +578,9 @@ seize_provinces_in_other_colonial_regions = {
 				add_liberty_desire = 15
 				every_owned_province = {
 					limit = {
+						NOT = { colonial_region = CAPITAL }
 						OR = {
 							AND = {
-								NOT = { colonial_region = CAPITAL }
 								NOT = {
 									any_province = {
 										colonial_region = PREV
@@ -584,26 +591,33 @@ seize_provinces_in_other_colonial_regions = {
 											OR = {
 												is_subject_of_type = colony
 												is_any_colonial_region_dominion_subject = yes
+												is_subject_of_type = viking_settlement
 											}
 										}
 									}
 								}
 								calc_true_if = {
 									all_province = {
-										owned_by = FROM
-										colonial_region = PREV
-										NOT = { province_id = PREV }
-										NOT = { colonial_region = CAPITAL }
-										NOT = {
-											any_province = {
+										OR = {
+											has_province_flag = was_seized_by_colony_overlord_@ROOT
+											AND = {
+												owned_by = FROM
 												colonial_region = PREV
-												colonial_region = CAPITAL
-												owner = {
-													NOT = { tag = FROM }
-													is_subject_of = ROOT
-													OR = {
-														is_subject_of_type = colony
-														is_any_colonial_region_dominion_subject = yes
+												NOT = { province_id = PREV }
+												NOT = { colonial_region = CAPITAL }
+												NOT = {
+													any_province = {
+														colonial_region = PREV
+														colonial_region = CAPITAL
+														owner = {
+															NOT = { tag = FROM }
+															is_subject_of = ROOT
+															OR = {
+																is_subject_of_type = colony
+																is_any_colonial_region_dominion_subject = yes
+																is_subject_of_type = viking_settlement
+															}
+														}
 													}
 												}
 											}
@@ -612,23 +626,22 @@ seize_provinces_in_other_colonial_regions = {
 									amount = 4
 								}
 							}
-							AND = {
-								NOT = { colonial_region = CAPITAL }
-								any_province = {
-									colonial_region = PREV
-									colonial_region = CAPITAL
-									owner = {
-										NOT = { tag = FROM }
-										is_subject_of = ROOT
-										OR = {
-											is_subject_of_type = colony
-											is_any_colonial_region_dominion_subject = yes
-										}
+							any_province = {
+								colonial_region = PREV
+								colonial_region = CAPITAL
+								owner = {
+									NOT = { tag = FROM }
+									is_subject_of = ROOT
+									OR = {
+										is_subject_of_type = colony
+										is_any_colonial_region_dominion_subject = yes
+										is_subject_of_type = viking_settlement
 									}
 								}
 							}
 						}
 					}
+					set_province_flag = was_seized_by_colony_overlord_@ROOT
 					if = {
 						limit = {
 							is_core = PREV
@@ -638,6 +651,9 @@ seize_provinces_in_other_colonial_regions = {
 					}
 					cede_province = ROOT
 				}
+			}
+			every_owned_province = {
+				clr_province_flag = was_seized_by_colony_overlord_@ROOT
 			}
 		}
 	}

@@ -119,10 +119,33 @@ clear_display_variable_for_subjects_of_type = {
 display_info_for_subject_type = {
 	custom_tooltip = display_$type$_title_tt
 	custom_tooltip = " "
-	custom_tooltip = display_information_for_subject_tt_conditions_overlord
+	if = {
+		limit = {
+			can_be_overlord = $type$
+		}
+		custom_tooltip = display_information_for_subject_tt_conditions_overlord
+	}
+	else = {
+		custom_tooltip = display_information_for_subject_tt_conditions_overlord_impossible
+	}
 	custom_tooltip = display_information_for_$type$_tt_conditions_overlord
 	custom_tooltip = " "
-	custom_tooltip = display_information_for_subject_tt_conditions_subject
+	if = {
+		limit = {
+			any_known_country = {
+				ROOT = {
+					can_create_subject_type = {
+						subject = PREV
+						subject_type = $type$
+					}
+				}
+			}
+		}
+		custom_tooltip = display_information_for_subject_tt_conditions_subject
+	}
+	else = {
+		custom_tooltip = display_information_for_subject_tt_conditions_subject_impossible
+	}
 	custom_tooltip = display_information_for_$type$_tt_conditions_subject
 	custom_tooltip = " "
 	custom_tooltip = display_information_for_subject_tt

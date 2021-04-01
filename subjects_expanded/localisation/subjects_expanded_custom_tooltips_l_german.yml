@@ -40,6 +40,7 @@
  IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_pagan_chiefdom: "Kann zu einem §YStammesfürstentum§! gemacht werden"
  IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_native_reserve: "Kann zu einem §YEingeborenenreservat§! gemacht werden"
  IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_administrative_region: "Kann zu einer §YAdministrativen Region§! gemacht werden"
+ IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_viking_settlement: "Kann zu einer §YWikingersiedlung§! gemacht werden"
 
  THIS_IS_FORMER_AUTONOMOUS_DOMINION: "Ist ein ehemaliges §YHerrschaftsgebiet§! oder eine ehemalige §YKolonialnation§!"
 
@@ -182,6 +183,9 @@
 
  FRA_FIEFDOM_GET_MANPOWER: "Erhält §G1,000§! Mannstärke pro §YFeudalvasall§!."
 
+ SE_VIKING_SETTLEMENT_MONEY_PAYMENT_TT: "([This.GetName]): \n   Verliert §R[This.income_to_give_to_overlord_display.GetValue]§! Dukaten. \n([From.GetName]): \n   Erhält §G[This.income_to_give_to_overlord_display.GetValue]§! Dukaten."
+ SE_VIKING_SETTLEMENT_SAILORS_PAYMENT_TT: "([This.GetName]): \n   Verliert §R[This.sailors_to_give_to_overlord_display.GetValue]§! Seeleute. \n([From.GetName]): \n   Erhält §G[This.sailors_to_give_to_overlord_display.GetValue]§! Seeleute."
+
  # Triggered Modifiers:
  HAS_AT_LEAST_3_DOMINIONS_OR_AUTONOMOUS_DOMINIONS_IN_TRADE_COMPANY_REGIONS: "Besitzt mindestens §Y3§! §YHerrschaftsgebiete§! oder §YAutonome Herrschaftsgebiete§! mit Hauptstadt in einer Handelshaus-Region (errichted durch nationale Entscheidungen)"
 
@@ -260,3 +264,5 @@
  display_native_reserve_desc_tt: "§g[native_reserve_desc]§W"
  display_administrative_region_title_tt: "§Y[administrative_region]§!"
  display_administrative_region_desc_tt: "§g[administrative_region_desc]§W"
+ display_viking_settlement_title_tt: "§Y[viking_settlement]§!"
+ display_viking_settlement_desc_tt: "§g[viking_settlement_desc]§W"

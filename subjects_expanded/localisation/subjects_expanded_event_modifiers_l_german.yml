@@ -262,3 +262,6 @@
  administrative_region_overlord_modifier_administrative_help_adm: "Erhält administrative Hilfe"
  administrative_region_overlord_modifier_administrative_help_dip: "Erhält Administrative Hilfe"
  administrative_region_overlord_modifier_administrative_help_mil: "Erhält Administrative Hilfe"
+
+ viking_settlement_modifier: "Wikingersiedlung"
+ viking_settlement_overlord_modifier: "Besitzt Wikingersiedlungen"

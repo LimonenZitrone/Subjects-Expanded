@@ -376,4 +376,17 @@ spriteTypes = {
 		name = "GFX_diplomacy_amadministrative_region"
 		texturefile = "gfx//interface//icon_diplomacy_amadministrative_region.dds"
 	}
+
+	spriteType = {
+		name = "GFX_icon_viking_settlement"
+		texturefile = "gfx/interface/icon_viking_settlement.dds"
+	}
+	spriteType = {
+		name = "GFX_diplomacy_leadviking_settlement"
+		texturefile = "gfx//interface//icon_diplomacy_leadviking_settlement.dds"
+	}
+	spriteType = {
+		name = "GFX_diplomacy_amviking_settlement"
+		texturefile = "gfx//interface//icon_diplomacy_amviking_settlement.dds"
+	}
 }

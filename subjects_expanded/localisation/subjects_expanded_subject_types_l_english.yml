@@ -222,3 +222,10 @@
  administrative_region_long_desc: "An Administrative Region is limited in its own diplomacy, does not join its overlord's wars and does not cost a diplomatic relation. It gains a bonus on future ruler's administrative, diplomatic and military skill as well as governing capacity and grants its overlord a bonus on vassal tax and administrative efficiency. Furthermore it grants a bonus for tax income to the vassals of its overlord. Additionally, when a new ruler ascends to the throne in an Administrative Region, the overlord gains the new ruler's skills times §Y10§! in monarch points. A country can only have §Y1§! Administrative Region at the same time. An Administrative Region can be created by countries with at least §Y100§! total development in their neighboring vassals that have a monarchy or theocracy and that have at least §Y25§! development in their capital.\n"
  administrative_region_no_overlord_dow: "You cannot declare war on your own Administrative Region."
  administrative_region_overlord_title: "Overlord"
+
+ viking_settlement_title: "Viking Settlement"
+ viking_settlement_title_plural: "Viking Settlements"
+ viking_settlement_is_our: "§Y$NAME$§! is our Viking Settlement."
+ viking_settlement_long_desc: "A Viking Settlement is a mixture of a Colony and a Tributary State. It behaves like a Colony, but doesn't pay tariffs but tribute. It has less liberty desire than a Colony and the overlord gets access to the '§YSupport Loyalists§!' subject interaction to further reduce it. It gets the same bonuses as a Naval March, but weaker. Furthermore it gets §Y1§! colonist and the ability to raid coasts. It gives its overlord a bonus on sailors and naval forcelimit and grants it the ability to raid coasts as well. A Viking Settlement must be §YNorse§! and is automatically created a few days after a Colonial Nation spawned in North America, if its overlord is §YNorse§!. If the overlord changes religion, the Viking Settlement will be reverted to a Colony again.\n"
+ viking_settlement_no_overlord_dow: "You cannot declare war on your own Viking Settlement."
+ viking_settlement_overlord_title: "Overlord"

@@ -31,6 +31,7 @@
  subjects_expanded_events2.EVTOPT28: "There currently are §G[REB.num_of_subjects_of_type_pagan_chiefdom.GetValue]§! §YChiefdoms§! in the world."
  subjects_expanded_events2.EVTOPT29: "There currently are §G[REB.num_of_subjects_of_type_native_reserve.GetValue]§! §YNative Reservations§! in the world."
  subjects_expanded_events2.EVTOPT30: "There currently are §G[REB.num_of_subjects_of_type_administrative_region.GetValue]§! §YAdministrative Regions§! in the world."
+ subjects_expanded_events2.EVTOPT31: "There currently are §G[REB.num_of_subjects_of_type_viking_settlement.GetValue]§! §YViking Settlements§! in the world."
 
  subjects_expanded_events.EVTNAME3: "Idea Mods?"
  subjects_expanded_events.EVTDESC3: "Spawning Dominions via decisions sets their idea groups depending on the ones you chose. If you are using a mod that alters the vanilla idea groups in any way, this might §Rcrash§! the game. So select the matching option below to prevent that from happening!"
@@ -44,7 +45,7 @@
  subjects_expanded_events4.EVTOPT3: "Close."
 
  subjects_expanded_events.EVTNAME5: "§YSubjects Expanded§!: Additional Information"
- subjects_expanded_events.EVTDESC5: "This event shows the names and additional information for every new subject type introduced by §GSubjects Expanded§!. \nThe conditions for establishing one of the subject types must be met for the diplomatic action or peace deal to be visible, there still might be additional conditions to be able to select them. \n\nIf a subject gives an additional merchant, the bonuses it gives to its overlord might also be only unlocked if they reached the required amount of provinces for the merchant. \n\nClick on any option to close the event."
+ subjects_expanded_events.EVTDESC5: "This event shows the names and additional information for every new subject type introduced by §GSubjects Expanded§!. \nThe conditions for establishing one of the subject types must be met for the diplomatic action or peace deal to be visible, there still might be additional conditions to be able to select them. \n\n§RIf a subject gives an additional merchant, the bonuses it gives to its overlord might also be only unlocked if they reached the required amount of provinces for the merchant.§! \n\nA £yes£ icon for the overlord conditions means that we are a valid overlord of that subject type. A £yes£ icon for the subject conditions means we are able to establish this subject on a country. \n\nClick on any option to close the event."
  subjects_expanded_events5.EVTOPT1: "[protectorate]"
  subjects_expanded_events5.EVTOPT2: "[puppet_state]"
  subjects_expanded_events5.EVTOPT3: "[dominion]"
@@ -75,6 +76,7 @@
  subjects_expanded_events5.EVTOPT28: "[pagan_chiefdom]"
  subjects_expanded_events5.EVTOPT29: "[native_reserve]"
  subjects_expanded_events5.EVTOPT30: "[administrative_region]"
+ subjects_expanded_events5.EVTOPT31: "[viking_settlement]"
 
  subjects_expanded_protectorate_events.EVTNAME2: "Independence granted!"
  subjects_expanded_protectorate_events.EVTDESC2: "Our former overlord [From.GetName] decided to grant us independence. But this also means that they could attack as again..."
@@ -329,3 +331,11 @@
  subjects_expanded_administrative_region_events.EVTNAME4: "Administrative Region demoted to a vassal"
  subjects_expanded_administrative_region_events.EVTDESC4: "Our Administrative Region has stopped being a monarchy or theocracy and thus was demoted to a normal vassal again."
  subjects_expanded_administrative_region_events4.EVTOPT1: "That's a shame."
+
+ subjects_expanded_viking_settlement_events.EVTNAME2: "The Viking Heritage"
+ subjects_expanded_viking_settlement_events.EVTDESC2: "We are a Viking Settlement, we cannot just abandon our roots. We must convert back to our original faith!"
+ subjects_expanded_viking_settlement_events2.EVTOPT1: "Understood."
+
+ subjects_expanded_viking_settlement_events.EVTNAME4: "Overlord demanded Share of Raid Loot"
+ subjects_expanded_viking_settlement_events.EVTDESC4: "Our overlord, @[Root.Overlord.GetTag] §Y[Root.Overlord.GetName]§!, demanded that we share some of our raided loot with them."
+ subjects_expanded_viking_settlement_events4.EVTOPT1: "It's not like we have choice..."

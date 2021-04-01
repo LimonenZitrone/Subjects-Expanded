@@ -10,8 +10,10 @@
  DISPLAY_INFORMATION_SE_OVERLORD_GETS_IF_NOT_TRIBAL: "§YOverlord Modifiers per Subject of this Type (if no Tribal or Native Government):§!"
  DISPLAY_INFORMATION_SE_OVERLORD_GETS_IF_SUBJECT_IS_LOYAL: "§YOverlord Modifiers per Subject of this Type (if less than 50% Liberty Desire):§!"
 
- display_information_for_subject_tt_conditions_overlord: "§YConditions (Overlord):§!"
- display_information_for_subject_tt_conditions_subject: "§YConditions (Subject):§!"
+ display_information_for_subject_tt_conditions_overlord: "£yes£ §YConditions (Overlord):§!"
+ display_information_for_subject_tt_conditions_overlord_impossible: "£no£ §YConditions (Overlord):§!"
+ display_information_for_subject_tt_conditions_subject: "£yes£ §YConditions (Subject):§!"
+ display_information_for_subject_tt_conditions_subject_impossible: "£no£ §YConditions (Subject):§!"
  display_information_for_subject_tt: "§YAdditional Information:§!"
 
  display_information_for_protectorate_tt_conditions_overlord: "- is not a subject \n- is either in the §YWestern§!, §YEastern§!, §YMuslim§! or §YRoman§! technology group"
@@ -132,4 +134,8 @@
 
  display_information_for_administrative_region_tt_conditions_overlord: "- is not a subject \n- has at least §Y100§! total development \n- does not have an §YAdministrative Region§! already"
  display_information_for_administrative_region_tt_conditions_subject: "- is a §YVassal§! of the possible overlord \n- is a neighbor of the possible overlord \n- has a monarchy or theocracy \n- has at least §Y25§! development in its capital"
- display_information_for_administrative_region_tt: "- subject can only be established diplomatically \n- subject gains less liberty desire from development than vassals \n- subject grants their overlord's vassals a bonus on tax income \n- subject grants their overlord a bonus on administrative efficiency (§G+1%§! per province they own, capped at §G+5%§!) \n- subject grants its overlord additional monarch power when it gets a new ruler \n- subject does not join its overlord's wars \n- subject does not cost a diplomatic slot \n- subject cannot be annexed or integrated \n- subject has a diplomatic action that allows the overlord to disinherit their heir \n- subject has a diplomatic action that allows the overlord to receive administrative help, which grants the overlord §G+1§! of the specific monthly monarch power of which the Administrative Region's ruler has the highest skill; while this is active, the Administrative Region gains §R+40%§! liberty desire"
+ display_information_for_administrative_region_tt: "- subject can only be established diplomatically \n- subject gains less liberty desire from development than vassals \n- subject grants their overlord's vassals a bonus on tax income \n- subject grants their overlord a bonus on administrative efficiency (§G+1%§! per province they own, capped at §G+5%§!) \n- subject grants its overlord additional monarch power when it gets a new ruler \n- subject does not join its overlord's wars \n- subject does not cost a diplomatic slot \n- subject cannot be annexed or integrated \n- subject has a §Mdiplomatic action§! that allows the overlord to disinherit their heir \n- subject has a §Mdiplomatic action§! that allows the overlord to receive administrative help, which grants the overlord §G+1§! of the specific monthly monarch power of which the Administrative Region's ruler has the highest skill; while this is active, the Administrative Region gains §R+40%§! liberty desire"
+
+ display_information_for_viking_settlement_tt_conditions_overlord: "- is §YNorse§!"
+ display_information_for_viking_settlement_tt_conditions_subject: "- is a Colonial Nation of the possible overlord \n- has its capital on the §YNorth American§! continent but not in the §YColonial Mexico§! colonial region"
+ display_information_for_viking_settlement_tt: "- subject is established automatically in fitting colonial nations for fitting overlords a few days after they spawned \n- subject gains less liberty desire from development than colonial nations \n- subject pays tribute \n- subject does not cost a slot \n- subject has a §Mdiplomatic action§! that allows the overlord to receive §Y50%§! of the subjects last year's income and §Y10%§! of their maximum sailors in exchange for liberty desire and a decrease in opinion"

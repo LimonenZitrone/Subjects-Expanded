@@ -410,3 +410,13 @@ administrative_region_enable_administrative_help_opinion = {
 	opinion = -100
 	yearly_decay = 3
 }
+
+is_viking_settlement = {
+	opinion = 50
+}
+
+viking_settlement_demanded_raid_loot_opinion = {
+	opinion = -50
+	yearly_decay = 2
+	min = -150
+}

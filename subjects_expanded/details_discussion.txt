@@ -882,3 +882,30 @@ If a subject gives an additional merchant, the bonuses it gives to its overlord 
 [*] Administrative Regions have a diplomatic action that allows the overlord to disinherit their heir
 [*] Administrative Regions have a diplomatic action that allows the overlord to receive administrative help, which grants the overlord +1 of the specific monthly monarch power of which the Administrative Region's ruler has the highest skill; while this is active, the Administrative Region gains +40% liberty desire
 [/list]
+
+[h1]Viking Settlement[/h1]
+[i]A Viking Settlement is a mixture of a Colony and a Tributary State. It behaves like a Colony, but doesn't pay tariffs but tribute. It has less liberty desire than a Colony and the overlord gets access to the 'Support Loyalists' subject interaction to further reduce it. It gets the same bonuses as a Naval March, but weaker. Furthermore it gets 1 colonist and the ability to raid coasts. It gives its overlord a bonus on sailors and naval forcelimit and grants it the ability to raid coasts as well. A Viking Settlement must be Norse and is automatically created a few days after a Colonial Nation spawned in North America, if its overlord is Norse. If the overlord changes religion, the Viking Settlement will be reverted to a Colony again.[/i]
+
+[b]Conditions (possible overlord):[/b]
+[list]
+[*] is Norse
+[/list]
+
+[b]Conditions (possible subject):[/b]
+[list]
+[*] is a Colonial Nation of the possible overlord
+[*] has its capital on the North American continent but not in the Colonial Mexico colonial region
+[/list]
+
+[b]Additional Information:[/b]
+[list]
+[*] Viking Settlements are established automatically in fitting colonial nations for fitting overlords a few days after they spawned
+[*] Viking Settlements have a max government rank of 1 (Duchy)
+[*] Viking Settlements gain a bonus on morale of navies, sailors, sailor recovery speed, naval forcelimit, navy maintenance, blockade efficiency, shipbuilding time and ship duratbility
+[*] Viking Settlements get the ability to raid coasts
+[*] Viking Settlements gain less liberty desire from development than colonial nations
+[*] Viking Settlements grant their overlord a bonus on sailors and naval forcelimit
+[*] Viking Settlements grant their overlord the ability to raid coasts
+[*] Viking Settlements pay tribute
+[*] Viking Settlements have a diplomatic action that allows the overlord to receive 50% of the subjects last year's income and 10% of their maximum sailors in exchange for liberty desire and a decrease in opinion
+[/list]

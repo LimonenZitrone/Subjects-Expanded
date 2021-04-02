@@ -38,6 +38,7 @@ country_event = {
 					subject_type = viking_settlement
 				}
 			}
+			swap_free_idea_group = yes
 		}
 	}
 
@@ -112,6 +113,7 @@ country_event = {
 					}
 				}
 			}
+			swap_free_idea_group = yes
 		}
 	}
 

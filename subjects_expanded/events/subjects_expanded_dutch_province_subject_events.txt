@@ -1336,6 +1336,7 @@ country_event = {
 	picture = DIPLOMACY_eventPicture
 
 	trigger = {
+		num_of_subjects = 1
 		any_subject_country = {
 			is_subject_of_type = dutch_province_subject
 		}
@@ -1411,6 +1412,38 @@ country_event = {
 					}
 				}
 				grant_independence = yes
+			}
+		}
+	}
+}
+
+country_event = {
+	id = subjects_expanded_dutch_province_subject_events.11
+	title = subjects_expanded_dutch_province_subject_events.EVTNAME11
+	desc = subjects_expanded_dutch_province_subject_events.EVTDESC11
+	picture = DIPLOMACY_eventPicture
+
+	trigger = {
+		tag = NED
+		num_of_subjects = 1
+		any_subject_country = {
+			is_subject_of_type = dutch_province_subject
+		}
+	}
+
+	mean_time_to_happen = { months = 1 }
+
+	option = {
+		name = subjects_expanded_dutch_province_subject_events11.EVTOPT1
+
+		ai_chance = { factor = 100 }
+
+		every_subject_country = {
+			limit = {
+				is_subject_of_type = dutch_province_subject
+			}
+			ROOT = {
+				vassalize = PREV
 			}
 		}
 	}

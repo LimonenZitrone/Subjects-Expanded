@@ -230,6 +230,10 @@
  subjects_expanded_dutch_province_subject_events.EVTDESC10: "It seems that our system of Dutch Provinces is not as united as we hoped. Either we don't follow the right culture anymore or don't have our capital in the Low Countries region or at least one of our Dutch Provinces does. This means we will lose our control over the specific Dutch Provinces."
  subjects_expanded_dutch_province_subject_events10.EVTOPT1: "What a shame."
 
+ subjects_expanded_dutch_province_subject_events.EVTNAME11: "The Dutch Provinces"
+ subjects_expanded_dutch_province_subject_events.EVTDESC11: "We have unified the Netherlands in a different way than we had originally planned. We still have Dutch Provinces under us. It is time to bind them more firmly to us."
+ subjects_expanded_dutch_province_subject_events11.EVTOPT1: "Sounds reasonable."
+
  subjects_expanded_persian_satrapy_events.EVTNAME3: "[From.GetName] conscripted troops"
  subjects_expanded_persian_satrapy_events.EVTDESC3: "Our overlord has conscripted troops of all his Satrapies. [From.GetName] will now get a military bonus, while we receive a malus."
  subjects_expanded_persian_satrapy_events3.EVTOPT1: "I suppose that's his right."

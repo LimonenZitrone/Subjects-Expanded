@@ -661,6 +661,7 @@ is_possible_subject_of_subject_type_imperial_feud_subject = {
 				religion = catholic
 				religion = protestant
 				religion = reformed
+				religion = PREV
 			}
 		}
 		AND = {

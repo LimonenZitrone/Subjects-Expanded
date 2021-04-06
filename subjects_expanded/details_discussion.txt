@@ -768,7 +768,7 @@ If a subject gives an additional merchant, the bonuses it gives to its overlord 
 [*] is not a subject
 [*] is not a member of the HRE
 [*] has its capital in Europe
-[*] is either Catholic, Protestant or Reformed (if the HRE religion is not locked) or has the same religion as the possible overlord (if the HRE religion is locked)
+[*] is either Catholic, Protestant, Reformed or the religion of the possible overlord (if the HRE religion is not locked) or has the same religion as the possible overlord (if the HRE religion is locked)
 [*] any owned province neighbors a HRE province owned by a HRE member
 [/list]
 

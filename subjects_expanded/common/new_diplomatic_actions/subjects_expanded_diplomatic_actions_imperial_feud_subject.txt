@@ -1225,6 +1225,7 @@ make_imperial_feud_subject_hre_member = {
 				religion = catholic
 				religion = protestant
 				religion = reformed
+				religion = ROOT
 			}
 		}
 		imperial_influence = 5
@@ -1298,6 +1299,7 @@ make_imperial_feud_subject_hre_member = {
 						religion = catholic
 						religion = protestant
 						religion = reformed
+						religion = ROOT
 					}
 				}
 				imperial_influence = 5
@@ -1385,6 +1387,7 @@ make_imperial_feud_subject_hre_member = {
 						religion = catholic
 						religion = protestant
 						religion = reformed
+						religion = ROOT
 					}
 				}
 				imperial_influence = 5
@@ -2727,6 +2730,7 @@ ask_for_imperial_feud_subject_hre_member = {
 			religion = catholic
 			religion = protestant
 			religion = reformed
+			religion = FROM
 		}
 		years_in_vassalage_under = {
 			who = FROM
@@ -2763,6 +2767,7 @@ ask_for_imperial_feud_subject_hre_member = {
 					religion = catholic
 					religion = protestant
 					religion = reformed
+					religion = FROM
 				}
 				years_in_vassalage_under = {
 					who = FROM
@@ -2815,6 +2820,7 @@ ask_for_imperial_feud_subject_hre_member = {
 					religion = catholic
 					religion = protestant
 					religion = reformed
+					religion = FROM
 				}
 				years_in_vassalage_under = {
 					who = FROM

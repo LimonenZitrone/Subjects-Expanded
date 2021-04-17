@@ -1,0 +1,15 @@
+has_total_development_fraction_of = {
+	variable_arithmetic_trigger = {
+		export_to_variable = {
+			which = this_dev
+			value = trigger_value:total_development
+		}
+		export_to_variable = {
+			which = their_dev
+			value = trigger_value:total_development
+			who = $who$
+		}
+		divide_variable = { which = this_dev which = their_dev }
+		check_variable = { which = this_dev value = $value$ }
+	}
+}

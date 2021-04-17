@@ -162,3 +162,47 @@ defined_text = {
 		localisation_key = GALLEY_POWER
 	}
 }
+
+defined_text = {
+	name = global_manpower_modifier
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = GLOBAL_MANPOWER
+	}
+}
+
+defined_text = {
+	name = manpower_recovery_speed
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MANPOWER_RECOVERY
+	}
+}
+
+defined_text = {
+	name = land_forcelimit_modifier
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = LAND_FORCELIMIT_MODIFIER
+	}
+}
+
+defined_text = {
+	name = yearly_republican_tradition
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = YEARLY_REPUBLICAN_TRADITION
+	}
+}

@@ -278,6 +278,8 @@ puppet_state = {
 				development_of_overlord_fraction = 0.33
 			}
 		}
+		expiration_message_overlord = MARCHTOOLARGE
+		expiration_message_subject = MARCHTOOLARGEUS
 	}
 	modifier_subject = {
 		modifier = puppet_state_overlord_has_parliament_modifier
@@ -4205,6 +4207,8 @@ voivodeship = {
 				development_of_overlord_fraction = 0.33
 			}
 		}
+		expiration_message_overlord = MARCHTOOLARGE
+		expiration_message_subject = MARCHTOOLARGEUS
 	}
 
 	modifier_overlord = clear

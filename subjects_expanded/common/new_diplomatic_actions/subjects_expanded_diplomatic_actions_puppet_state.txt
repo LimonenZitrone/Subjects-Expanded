@@ -1,18 +1,18 @@
 establish_puppet_state = {
 	category = influence
-	
+
 	alert_index = 6
 	alert_tooltip = establish_puppet_state_alert_tooltip
-	
+
 	require_acceptance = yes
-	
+
 	is_visible = {
 		can_create_subject_type = {
 			subject = FROM
 			subject_type = puppet_state
 		}
 	}
-	
+
 	is_allowed = {
 		can_create_subject_type = {
 			subject = FROM
@@ -28,7 +28,7 @@ establish_puppet_state = {
 			NOT = { total_development = 300 }
 		}
 	}
-	
+
 	on_accept = {
 		if = {
 			limit = {
@@ -55,7 +55,7 @@ establish_puppet_state = {
 			}
 		}
 	}
-	
+
 	on_decline = {
 		if = {
 			limit = {
@@ -83,7 +83,7 @@ establish_puppet_state = {
 			}
 		}
 	}
-	
+
 	ai_acceptance = {
 		add_entry = {
 			name = FROM_IS_SUBJECT_AT_RIVAL_BORDER
@@ -739,7 +739,7 @@ establish_puppet_state = {
 						who = FROM
 					}
 					divide_variable = { which = our_total_development value = 2 }
-					
+
 					check_variable = { which = their_total_development which = our_total_development }
 				}
 			}
@@ -947,7 +947,7 @@ establish_puppet_state = {
 					divide_variable = { which = our_total_development which = their_total_development }
 					multiply_variable = { which = eco_power which = our_total_development }
 					change_variable = { which = eco_power value = -90 }
-					
+
 					check_variable = { which = eco_power value = -49 }
 					NOT = { check_variable = { which = eco_power value = 50 } }
 				}
@@ -991,7 +991,7 @@ establish_puppet_state = {
 					divide_variable = { which = our_total_development which = their_total_development }
 					multiply_variable = { which = eco_power which = our_total_development }
 					change_variable = { which = eco_power value = -90 }
-					
+
 					NOT = { check_variable = { which = eco_power value = -49 } }
 				}
 			}
@@ -1022,7 +1022,7 @@ establish_puppet_state = {
 					divide_variable = { which = our_total_development which = their_total_development }
 					multiply_variable = { which = eco_power which = our_total_development }
 					change_variable = { which = eco_power value = -90 }
-					
+
 					check_variable = { which = eco_power value = 50 }
 				}
 			}
@@ -1045,7 +1045,7 @@ establish_puppet_state = {
 			multiply_variable = { which = ai_value value = -1 }
 		}
 	}
-	
+
 	ai_will_do = {
 		FROM = {
 			OR = {
@@ -1097,16 +1097,16 @@ establish_puppet_state = {
 
 cancel_puppet_state = {
 	category = influence
-	
+
 	require_acceptance = no
-	
+
 	is_visible = {
 		FROM = {
 			is_subject_of = ROOT
 			is_subject_of_type = puppet_state
 		}
 	}
-	
+
 	is_allowed = {
 		hidden_trigger = {
 			FROM = {
@@ -1118,7 +1118,7 @@ cancel_puppet_state = {
 		FROM = { is_at_war = no }
 		NOT = { truce_with = FROM }
 	}
-	
+
 	on_accept = {
 		if = {
 			limit = {
@@ -1149,7 +1149,7 @@ cancel_puppet_state = {
 			add_truce_with = FROM
 		}
 	}
-	
+
 	ai_will_do = {
 		OR = {
 			stability = 1

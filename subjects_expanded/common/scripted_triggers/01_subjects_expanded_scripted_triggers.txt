@@ -255,6 +255,7 @@ is_possible_subject_of_subject_type_roman_client_kingdom = {
 		AND = {
 			is_subject_of = PREV
 			is_vassal_or_similar_subject = yes
+			NOT = { is_subject_of_type = daimyo_vassal }
 			government = monarchy
 		}
 		war_with = PREV
@@ -266,7 +267,10 @@ is_possible_subject_of_subject_type_voivodeship = {
 	NOT = { is_subject_of_type = voivodeship }
 	is_subject_of = PREV
 	OR = {
-		is_vassal_or_similar_subject = yes
+		AND = {
+			is_vassal_or_similar_subject = yes
+			NOT = { is_subject_of_type = daimyo_vassal }
+		}
 		is_subject_of_type = march
 	}
 	is_neighbor_of = PREV
@@ -280,6 +284,7 @@ is_possible_subject_of_subject_type_fief_subject = {
 		AND = {
 			is_subject_of = PREV
 			is_vassal_or_similar_subject = yes
+			NOT = { is_subject_of_type = daimyo_vassal }
 		}
 	}
 	OR = {
@@ -311,6 +316,7 @@ is_possible_subject_of_subject_type_crusader_state_vassal = {
 	NOT = { is_subject_of_type = crusader_state_vassal }
 	is_subject_of = PREV
 	is_vassal_or_similar_subject = yes
+	NOT = { is_subject_of_type = daimyo_vassal }
 	is_excommunicated = no
 	religion = catholic
 	capital_scope = {
@@ -345,6 +351,7 @@ is_possible_subject_of_subject_type_nahuatl_vassal = {
 	NOT = { is_subject_of_type = nahuatl_vassal }
 	is_subject_of = PREV
 	is_vassal_or_similar_subject = yes
+	NOT = { is_subject_of_type = daimyo_vassal }
 	capital_scope = {
 		OR = {
 			region = california_region
@@ -373,6 +380,7 @@ is_possible_subject_of_subject_type_pirate_brotherhood_vassal = {
 		AND = {
 			is_subject_of = PREV
 			is_vassal_or_similar_subject = yes
+			NOT = { is_subject_of_type = daimyo_vassal }
 			OR = {
 				has_reform = pirate_republic_reform
 				has_reform = pirate_king_reform
@@ -391,6 +399,7 @@ is_possible_subject_of_subject_type_imperial_tributary_state = {
 		AND = {
 			is_subject_of = PREV
 			is_vassal_or_similar_subject = yes
+			NOT = { is_subject_of_type = daimyo_vassal }
 			government = monarchy
 		}
 	}
@@ -439,6 +448,7 @@ is_possible_subject_of_subject_type_sister_republic = {
 		AND = {
 			is_subject_of = PREV
 			is_vassal_or_similar_subject = yes
+			NOT = { is_subject_of_type = daimyo_vassal }
 		}
 	}
 	same_continent = PREV
@@ -491,6 +501,7 @@ is_possible_subject_of_subject_type_integrated_tribe_subject = {
 	NOT = { is_subject_of_type = integrated_tribe_subject }
 	is_subject_of = PREV
 	is_vassal_or_similar_subject = yes
+	NOT = { is_subject_of_type = daimyo_vassal }
 	OR = {
 		government = tribal
 		AND = {
@@ -512,6 +523,7 @@ is_possible_subject_of_subject_type_dutch_province_subject = {
 		AND = {
 			is_subject_of = PREV
 			is_vassal_or_similar_subject = yes
+			NOT = { is_subject_of_type = daimyo_vassal }
 		}
 	}
 	OR = {
@@ -545,6 +557,7 @@ is_possible_subject_of_subject_type_persian_satrapy = {
 		AND = {
 			is_subject_of = PREV
 			is_vassal_or_similar_subject = yes
+			NOT = { is_subject_of_type = daimyo_vassal }
 		}
 	}
 }
@@ -568,6 +581,7 @@ is_possible_subject_of_subject_type_trade_outpost = {
 		AND = {
 			is_subject_of = PREV
 			is_vassal_or_similar_subject = yes
+			NOT = { is_subject_of_type = daimyo_vassal }
 		}
 	}
 	NOT = { num_of_cities = 2 }
@@ -625,6 +639,7 @@ is_possible_subject_of_subject_type_iqta_vassal = {
 		AND = {
 			is_subject_of = PREV
 			is_vassal_or_similar_subject = yes
+			NOT = { is_subject_of_type = daimyo_vassal }
 			religion = PREV
 			PREV = {
 				is_defender_of_faith = yes
@@ -739,6 +754,7 @@ is_possible_subject_of_subject_type_administrative_region = {
 	NOT = { is_subject_of_type = administrative_region }
 	is_subject_of = PREV
 	is_vassal_or_similar_subject = yes
+	NOT = { is_subject_of_type = daimyo_vassal }
 	is_neighbor_of = PREV
 	OR = {
 		government = monarchy

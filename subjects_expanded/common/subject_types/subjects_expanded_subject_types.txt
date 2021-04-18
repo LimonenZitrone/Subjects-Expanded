@@ -2294,6 +2294,7 @@ autonomous_dominion_tc = {
 	overlord_protects_external = yes
 	uses_military_focus = no
 	can_set_mil_focus = no
+	eats_overlords_colonies = no
 
 	base_liberty_desire = -20.0
 	liberty_desire_development_ratio = 0.05

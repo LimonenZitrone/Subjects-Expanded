@@ -5,9 +5,9 @@ country_event = {
 	title = subjects_expanded_imperial_tributary_state_events.EVTNAME1
 	desc = subjects_expanded_imperial_tributary_state_events.EVTDESC1
 	picture = DEATH_OF_HEIR_eventPicture
-	
+
 	major = yes
-	
+
 	trigger = {
 		is_subject_of_type = imperial_tributary_state
 		OR = {
@@ -22,14 +22,48 @@ country_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = { days = 1 }
-	
+
 	option = {
 		name = subjects_expanded_imperial_tributary_state_events1.EVTOPT1
-		
+
 		ai_chance = { factor = 0.5 }
-		
+
+		trigger = {
+			OR = {
+				capital_scope = {
+					NOT = {
+						OR = {
+							trade_company_region = trade_company_west_india
+							trade_company_region = trade_company_deccan
+							trade_company_region = trade_company_east_india
+							trade_company_region = trade_company_coromandel
+							trade_company_region = trade_company_north_india
+						}
+					}
+				}
+				overlord = {
+					NOT = {
+						any_subject_country = {
+							is_any_dominion_subject = yes
+							is_dominion_tag_in_india = yes
+						}
+					}
+				}
+			}
+		}
+
+		overlord = {
+			inherit = ROOT
+		}
+	}
+
+	option = {
+		name = subjects_expanded_imperial_tributary_state_events1.EVTOPT1
+
+		ai_chance = { factor = 0.5 }
+
 		trigger = {
 			capital_scope = {
 				OR = {
@@ -47,7 +81,7 @@ country_event = {
 				}
 			}
 		}
-		
+
 		overlord = {
 			random_subject_country = {
 				limit = {
@@ -58,49 +92,19 @@ country_event = {
 			}
 		}
 	}
-	
-	option = {
-		name = subjects_expanded_imperial_tributary_state_events1.EVTOPT1
-		
-		ai_chance = { factor = 0.5 }
-		
-		trigger = {
-			NOT = {
-				capital_scope = {
-					OR = {
-						trade_company_region = trade_company_west_india
-						trade_company_region = trade_company_deccan
-						trade_company_region = trade_company_east_india
-						trade_company_region = trade_company_coromandel
-						trade_company_region = trade_company_north_india
-					}
-				}
-				overlord = {
-					any_subject_country = {
-						is_any_dominion_subject = yes
-						is_dominion_tag_in_india = yes
-					}
-				}
-			}
-		}
-		
-		overlord = {
-			inherit = ROOT
-		}
-	}
-	
+
 	option = {
 		name = subjects_expanded_imperial_tributary_state_events1.EVTOPT2
-		
+
 		ai_chance = {
 			factor = 0.5
-			
+
 			modifier = {
 				factor = 0
 				NOT = { liberty_desire = 50 }
 			}
 		}
-		
+
 		overlord = {
 			ROOT = {
 				hidden_effect = {
@@ -115,7 +119,7 @@ country_event = {
 				}
 			}
 		}
-		
+
 		hidden_effect = {
 			clr_country_flag = imperial_tributary_state_no_heir
 			clr_heir_flag = imperial_tributary_state_heir_will_be_new_ruler
@@ -129,9 +133,9 @@ country_event = {
 	title = subjects_expanded_imperial_tributary_state_events.EVTNAME2
 	desc = subjects_expanded_imperial_tributary_state_events.EVTDESC2
 	picture = DEATH_OF_HEIR_eventPicture
-	
+
 	hidden = yes
-	
+
 	trigger = {
 		is_subject_of_type = imperial_tributary_state
 		OR = {
@@ -148,9 +152,9 @@ country_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = { days = 1 }
-	
+
 	immediate = {
 		hidden_effect = {
 			if = {
@@ -166,10 +170,10 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = subjects_expanded_imperial_tributary_state_events2.EVTOPT1
-		
+
 		ai_chance = { factor = 100 }
 	}
 }
@@ -179,17 +183,17 @@ country_event = {
 	title = subjects_expanded_imperial_tributary_state_events.EVTNAME3
 	desc = subjects_expanded_imperial_tributary_state_events.EVTDESC3
 	picture = DIPLOMACY_eventPicture
-	
+
 	hidden = yes
-	
+
 	trigger = {
 		is_subject_of_type = imperial_tributary_state
 		NOT = { government = monarchy }
 		NOT = { has_country_flag = executing_subjects_expanded_imperial_tributary_state_events_3 }
 	}
-	
+
 	mean_time_to_happen = { days = 1 }
-	
+
 	immediate = {
 		hidden_effect = {
 			set_country_flag = executing_subjects_expanded_imperial_tributary_state_events_3
@@ -202,12 +206,12 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = subjects_expanded_imperial_tributary_state_events3.EVTOPT1
-		
+
 		ai_chance = { factor = 100 }
-		
+
 		clr_country_flag = executing_subjects_expanded_imperial_tributary_state_events_3
 	}
 }

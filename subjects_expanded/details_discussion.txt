@@ -673,7 +673,7 @@ If a subject gives an additional merchant, the bonuses it gives to its overlord 
 [list]
 [*] is either not a subject or a vassal or client vassal of the possible overlord
 [*] has a monarchy government
-[*] has the same dynasty has the possible overlord
+[*] has the same dynasty as the possible overlord
 [*] does not have a regency
 [*] is in the christian religion group
 [/list]

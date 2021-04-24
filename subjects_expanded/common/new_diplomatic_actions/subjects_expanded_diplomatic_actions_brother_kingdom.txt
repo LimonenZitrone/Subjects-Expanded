@@ -1844,6 +1844,12 @@ brother_kingdom_become_independent = {
 		OR = {
 			num_of_allies = 2
 			army_size = FROM
+			calc_true_if = {
+				all_country = {
+					is_supporting_independence_of = ROOT
+				}
+				amount = 2
+			}
 		}
 		OR = {
 			liberty_desire = 60

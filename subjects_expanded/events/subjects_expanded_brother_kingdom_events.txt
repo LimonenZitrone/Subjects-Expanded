@@ -9,10 +9,12 @@ country_event = {
 	trigger = {
 		is_subject = no
 		government = monarchy
+		has_regency = no
 		religion_group = christian
 		any_subject_country = {
 			is_subject_of_type = brother_kingdom
 			NOT = { dynasty = ROOT }
+			has_regency = no
 		}
 	}
 
@@ -26,6 +28,7 @@ country_event = {
 				limit = {
 					is_subject_of_type = brother_kingdom
 					NOT = { dynasty = ROOT }
+					has_regency = no
 				}
 				save_event_target_as = invalid_brother_kingdom
 			}
@@ -60,7 +63,6 @@ country_event = {
 
 		trigger = {
 			religion_group = christian
-			has_regency = no
 			event_target:invalid_brother_kingdom = {
 				religion_group = christian
 			}
@@ -219,13 +221,22 @@ country_event = {
 	picture = BAD_WITH_MONARCH_eventPicture
 
 	trigger = {
+		num_of_subjects = 1
 		OR = {
-			is_subject = yes
-			NOT = { government = monarchy }
-			NOT = { religion_group = christian }
-		}
-		any_subject_country = {
-			is_subject_of_type = brother_kingdom
+			AND = {
+				OR = {
+					is_subject = yes
+					NOT = { government = monarchy }
+					NOT = { religion_group = christian }
+				}
+				any_subject_country = {
+					is_subject_of_type = brother_kingdom
+				}
+			}
+			any_subject_country = {
+				is_subject_of_type = brother_kingdom
+				NOT = { government = monarchy }
+			}
 		}
 	}
 
@@ -235,11 +246,28 @@ country_event = {
 
 	immediate = {
 		hidden_effect = {
-			random_subject_country = {
+			if = {
 				limit = {
-					is_subject_of_type = brother_kingdom
+					any_subject_country = {
+						is_subject_of_type = brother_kingdom
+						NOT = { government = monarchy }
+					}
 				}
-				save_event_target_as = invalid_brother_kingdom
+				random_subject_country = {
+					limit = {
+						is_subject_of_type = brother_kingdom
+						NOT = { government = monarchy }
+					}
+					save_event_target_as = invalid_brother_kingdom
+				}
+			}
+			else = {
+				random_subject_country = {
+					limit = {
+						is_subject_of_type = brother_kingdom
+					}
+					save_event_target_as = invalid_brother_kingdom
+				}
 			}
 		}
 	}

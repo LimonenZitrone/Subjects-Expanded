@@ -40,7 +40,7 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			is_subject_of_type = colony
+			is_colonial_subject_type = yes
 		}
 		localisation_key = "[colony]"
 	}

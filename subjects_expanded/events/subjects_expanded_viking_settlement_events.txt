@@ -10,7 +10,7 @@ country_event = {
 
 	trigger = {
 		is_subject = yes
-		is_subject_of_type = colony
+		is_colonial_subject_type = yes
 		NOT = { is_subject_of_type = viking_settlement }
 		overlord = {
 			can_create_subject_type = {

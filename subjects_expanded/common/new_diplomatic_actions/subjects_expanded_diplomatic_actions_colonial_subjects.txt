@@ -7,7 +7,7 @@ increase_colonial_autonomy = {
 		num_of_colonists = 1
 		OR = {
 			AND = {
-				FROM = { is_subject_of_type = colony }
+				FROM = { is_colonial_subject_type = yes }
 				OR = {
 					can_create_subject_type = {
 						subject = FROM
@@ -42,7 +42,7 @@ increase_colonial_autonomy = {
 			num_of_colonists = 1
 			OR = {
 				AND = {
-					FROM = { is_subject_of_type = colony }
+					FROM = { is_colonial_subject_type = yes }
 					OR = {
 						can_create_subject_type = {
 							subject = FROM
@@ -87,7 +87,7 @@ increase_colonial_autonomy = {
 				num_of_colonists = 1
 				OR = {
 					AND = {
-						FROM = { is_subject_of_type = colony }
+						FROM = { is_colonial_subject_type = yes }
 						OR = {
 							can_create_subject_type = {
 								subject = FROM
@@ -126,7 +126,7 @@ increase_colonial_autonomy = {
 			}
 			if = {
 				limit = {
-					FROM = { is_subject_of_type = colony }
+					FROM = { is_colonial_subject_type = yes }
 				}
 				if = {
 					limit = {
@@ -265,7 +265,7 @@ increase_colonial_autonomy = {
 						calc_true_if = {
 							all_subject_country = {
 								OR = {
-									is_subject_of_type = colony
+									is_colonial_subject_type = yes
 									is_any_dominion_subject = yes
 								}
 							}
@@ -278,7 +278,7 @@ increase_colonial_autonomy = {
 					FROM = { is_dominion_or_similar_subject = yes }
 					FROM = { liberty_desire = 50 }
 					any_subject_country = {
-						is_subject_of_type = colony
+						is_colonial_subject_type = yes
 						NOT = { is_any_dominion_subject = yes }
 						NOT = { tag = FROM }
 						variable_arithmetic_trigger = {
@@ -417,7 +417,7 @@ seize_provinces_in_other_colonial_regions = {
 		FROM = {
 			is_subject_of = ROOT
 			OR = {
-				is_subject_of_type = colony
+				is_colonial_subject_type = yes
 				is_subject_of_type = dominion
 				is_subject_of_type = viking_settlement
 			}
@@ -434,7 +434,7 @@ seize_provinces_in_other_colonial_regions = {
 			FROM = {
 				is_subject_of = ROOT
 				OR = {
-					is_subject_of_type = colony
+					is_colonial_subject_type = yes
 					is_subject_of_type = dominion
 					is_subject_of_type = viking_settlement
 				}
@@ -466,7 +466,7 @@ seize_provinces_in_other_colonial_regions = {
 									NOT = { tag = FROM }
 									is_subject_of = ROOT
 									OR = {
-										is_subject_of_type = colony
+										is_colonial_subject_type = yes
 										is_any_colonial_region_dominion_subject = yes
 										is_subject_of_type = viking_settlement
 									}
@@ -489,7 +489,7 @@ seize_provinces_in_other_colonial_regions = {
 								NOT = { tag = FROM }
 								is_subject_of = ROOT
 								OR = {
-									is_subject_of_type = colony
+									is_colonial_subject_type = yes
 									is_any_colonial_region_dominion_subject = yes
 									is_subject_of_type = viking_settlement
 								}
@@ -509,7 +509,7 @@ seize_provinces_in_other_colonial_regions = {
 				FROM = {
 					is_subject_of = ROOT
 					OR = {
-						is_subject_of_type = colony
+						is_colonial_subject_type = yes
 						is_subject_of_type = dominion
 						is_subject_of_type = viking_settlement
 					}
@@ -540,7 +540,7 @@ seize_provinces_in_other_colonial_regions = {
 											NOT = { tag = FROM }
 											is_subject_of = ROOT
 											OR = {
-												is_subject_of_type = colony
+												is_colonial_subject_type = yes
 												is_any_colonial_region_dominion_subject = yes
 												is_subject_of_type = viking_settlement
 											}
@@ -563,7 +563,7 @@ seize_provinces_in_other_colonial_regions = {
 										NOT = { tag = FROM }
 										is_subject_of = ROOT
 										OR = {
-											is_subject_of_type = colony
+											is_colonial_subject_type = yes
 											is_any_colonial_region_dominion_subject = yes
 											is_subject_of_type = viking_settlement
 										}
@@ -589,7 +589,7 @@ seize_provinces_in_other_colonial_regions = {
 											NOT = { tag = FROM }
 											is_subject_of = ROOT
 											OR = {
-												is_subject_of_type = colony
+												is_colonial_subject_type = yes
 												is_any_colonial_region_dominion_subject = yes
 												is_subject_of_type = viking_settlement
 											}
@@ -613,7 +613,7 @@ seize_provinces_in_other_colonial_regions = {
 															NOT = { tag = FROM }
 															is_subject_of = ROOT
 															OR = {
-																is_subject_of_type = colony
+																is_colonial_subject_type = yes
 																is_any_colonial_region_dominion_subject = yes
 																is_subject_of_type = viking_settlement
 															}
@@ -633,7 +633,7 @@ seize_provinces_in_other_colonial_regions = {
 									NOT = { tag = FROM }
 									is_subject_of = ROOT
 									OR = {
-										is_subject_of_type = colony
+										is_colonial_subject_type = yes
 										is_any_colonial_region_dominion_subject = yes
 										is_subject_of_type = viking_settlement
 									}

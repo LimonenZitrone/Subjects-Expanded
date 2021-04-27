@@ -1382,6 +1382,7 @@ brother_kingdom_ask_overlord_to_join_war = {
 	require_acceptance = yes
 
 	is_visible = {
+		always = no # currently broken due to add to war effect not affecting overlord
 		FROM = {
 			is_subject = no
 			overlord_of = ROOT
@@ -1398,6 +1399,7 @@ brother_kingdom_ask_overlord_to_join_war = {
 
 	is_allowed = {
 		hidden_trigger = {
+			always = no # currently broken due to add to war effect not affecting overlord
 			FROM = {
 				is_subject = no
 				overlord_of = ROOT
@@ -1756,7 +1758,7 @@ brother_kingdom_ask_overlord_to_join_war = {
 			}
 			export_to_variable = {
 				which = ai_value
-				value = num_of_loans
+				value = trigger_value:num_of_loans
 				who = FROM
 			}
 			multiply_variable = { which = ai_value value = -10 }

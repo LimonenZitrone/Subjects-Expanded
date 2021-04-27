@@ -29,7 +29,7 @@ is_possible_subject_of_subject_type_client_march = {
 }
 
 is_possible_subject_of_subject_type_colony = {
-	NOT = { is_subject_of_type = colony }
+	NOT = { is_colonial_subject_type = yes }
 }
 
 is_possible_subject_of_subject_type_tributary_state = {
@@ -149,7 +149,7 @@ is_possible_subject_of_subject_type_dominion = {
 	NOT = { is_dominion_or_similar_subject = yes }
 	is_subject_of = PREV
 	OR = {
-		is_subject_of_type = colony
+		is_colonial_subject_type = yes
 		is_autonomous_dominion_or_similar_subject = yes
 	}
 	total_development = 100
@@ -165,7 +165,7 @@ is_possible_subject_of_subject_type_dominion_tc = {
 	NOT = { is_dominion_or_similar_subject = yes }
 	is_subject_of = PREV
 	OR = {
-		is_subject_of_type = colony
+		is_colonial_subject_type = yes
 		is_autonomous_dominion_or_similar_subject = yes
 	}
 	total_development = 100
@@ -769,7 +769,7 @@ is_possible_subject_of_subject_type_viking_settlement = {
 	# PREVs in THIS scope refer to possible overlord
 	NOT = { is_subject_of_type = viking_settlement }
 	is_subject_of = PREV
-	is_subject_of_type = colony
+	is_colonial_subject_type = yes
 	capital_scope = {
 		continent = north_america
 		NOT = { colonial_region = colonial_mexico }

@@ -49,7 +49,7 @@ You can find more details on the new subjects [url=https://steamcommunity.com/wo
 
 [h1]Compatibility[/h1]
 [list]
-[*] EU4 Version: [b]1.30[/b]
+[*] EU4 Version: [b]1.31[/b]
 [*] should be compatible with any DLC
 [*] should be compatible with most mods (that do not edit the declarewar, allianceaction, callaction or annexationaction diplomatic action)
 [list]

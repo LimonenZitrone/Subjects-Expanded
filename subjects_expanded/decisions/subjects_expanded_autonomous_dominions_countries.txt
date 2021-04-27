@@ -52,7 +52,7 @@ country_decisions = {
 	autonomous_dominion_india_nation = {
 		major = yes
 		potential = {
-			NOT = { exists = IND }
+			NOT = { exists = INI }
 			NOT = { has_country_flag = changed_from_colonial_nation }
 			OR = {
 				is_former_autonomous_dominion = yes
@@ -92,7 +92,7 @@ country_decisions = {
 				}
 			}
 			add_prestige = 25
-			change_tag = IND
+			change_tag = INI
 			set_country_flag = changed_from_colonial_nation
 			add_country_modifier = {
 				name = "centralization_modifier"

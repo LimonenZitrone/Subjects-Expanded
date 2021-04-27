@@ -23,7 +23,7 @@ defined_text = {
 	text = {
         localisation_key = string_increase_colonial_autonomy_colony
         trigger = {
-			is_subject_of_type = colony
+			is_colonial_subject_type = yes
         }
     }
 	text = {

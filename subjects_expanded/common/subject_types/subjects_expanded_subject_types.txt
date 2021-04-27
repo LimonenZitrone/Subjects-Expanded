@@ -322,6 +322,8 @@ dominion = {
 	# Properties:
 	uses_tariffs = no
 	can_release_in_peace = yes
+	change_colonial_type = no
+	upgrade_subject_type = yes
 
 	base_liberty_desire = -10.0
 	liberty_desire_development_ratio = 0.075
@@ -443,6 +445,8 @@ dominion_tc = {
 	uses_tariffs = no
 	can_release_in_peace = yes
 	eats_overlords_colonies = no
+	change_colonial_type = no
+	upgrade_subject_type = no
 
 	base_liberty_desire = -10.0
 	liberty_desire_development_ratio = 0.075
@@ -2203,6 +2207,8 @@ autonomous_dominion = {
 	overlord_protects_external = yes
 	uses_military_focus = no
 	can_set_mil_focus = no
+	change_colonial_type = no
+	upgrade_subject_type = no
 
 	base_liberty_desire = -20.0
 	liberty_desire_development_ratio = 0.05
@@ -2295,6 +2301,8 @@ autonomous_dominion_tc = {
 	uses_military_focus = no
 	can_set_mil_focus = no
 	eats_overlords_colonies = no
+	change_colonial_type = no
+	upgrade_subject_type = no
 
 	base_liberty_desire = -20.0
 	liberty_desire_development_ratio = 0.05
@@ -6713,6 +6721,9 @@ native_reserve = {
 					all_subject_country = {
 						OR = {
 							is_subject_of_type = colony
+							is_subject_of_type = crown_colony
+							is_subject_of_type = private_enterprise
+							is_subject_of_type = self_governing_colony
 							is_subject_of_type = dominion
 							is_subject_of_type = dominion_tc
 							is_subject_of_type = autonomous_dominion

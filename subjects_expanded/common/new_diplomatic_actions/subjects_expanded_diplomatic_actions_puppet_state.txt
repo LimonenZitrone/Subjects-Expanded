@@ -1140,7 +1140,6 @@ cancel_puppet_state = {
 			FROM = {
 				grant_independence = yes
 				country_event = { id = subjects_expanded_puppet_state_events.2 }
-				country_event = { id = subjects_expanded_puppet_state_events.3 }
 				add_opinion = {
 					who = ROOT
 					modifier = released_puppet_state

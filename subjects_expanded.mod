@@ -1,5 +1,4 @@
 name="Subjects Expanded"
-path="mod/subjects_expanded"
 dependencies={
 	"Missions Expanded"
 	"Missions Expanded (old)"
@@ -10,5 +9,6 @@ tags={
 	"Gameplay"
 }
 picture="thumbnail.jpg"
-remote_file_id="1834079712"
 supported_version="1.30.*.*"
+path="D:/Alex/Dokumente/Paradox Interactive/Europa Universalis IV/mod/subjects_expanded"
+remote_file_id="1834079712"

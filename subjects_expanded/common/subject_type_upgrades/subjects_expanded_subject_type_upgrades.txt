@@ -1,0 +1,22 @@
+#Crown Colony Upgrades
+test_dominion_upgrade = {
+	can_upgrade_trigger = {
+		is_subject_of_type = dominion
+		adm_power = 25
+	}
+
+	cost = 100
+
+	effect = {
+		add_liberty_desire = 10
+		add_adm_power = -25
+	}
+
+	modifier_overlord = {
+		land_forcelimit = 5
+	}
+
+	modifier_subject = {
+		land_forcelimit = -5
+	}
+}

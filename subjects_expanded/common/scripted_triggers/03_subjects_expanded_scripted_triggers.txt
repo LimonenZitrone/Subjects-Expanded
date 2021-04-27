@@ -118,3 +118,12 @@ is_subject_type_that_pays_vassal_tax = {
 		is_subject_of_type = papal_sanctuary_subject
 	}
 }
+
+is_colonial_subject_type = {
+	OR = {
+		is_subject_of_type = colony
+		is_subject_of_type = crown_colony
+		is_subject_of_type = private_enterprise
+		is_subject_of_type = self_governing_colony
+	}
+}

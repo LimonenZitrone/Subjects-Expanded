@@ -229,9 +229,7 @@ country_event = {
 					NOT = { government = monarchy }
 					NOT = { religion_group = christian }
 				}
-				any_subject_country = {
-					is_subject_of_type = brother_kingdom
-				}
+				has_subject_of_type = brother_kingdom
 			}
 			any_subject_country = {
 				is_subject_of_type = brother_kingdom

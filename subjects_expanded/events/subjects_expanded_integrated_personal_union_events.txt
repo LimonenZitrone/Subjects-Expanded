@@ -1139,11 +1139,9 @@ country_event = {
 			is_subject_of_type = integrated_personal_union
 			is_subject_of_type = personal_union
 		}
-		any_subject_country = {
-			OR = {
-				is_subject_of_type = integrated_personal_union
-				is_subject_of_type = personal_union
-			}
+		OR = {
+			has_subject_of_type = integrated_personal_union
+			has_subject_of_type = personal_union
 		}
 	}
 

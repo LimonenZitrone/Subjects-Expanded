@@ -96,9 +96,7 @@ cb_convert_heathen_for_iqta = {
 		NOT = { religion_group = FROM }
 		NOT = { truce_with = FROM }
 		NOT = { alliance_with = FROM }
-		any_subject_country = {
-			is_subject_of_type = iqta_vassal
-		}
+		has_subject_of_type = iqta_vassal
 		FROM = {
 			any_neighbor_country = {
 				OR = {

@@ -27,9 +27,7 @@ country_event = {
 					NOT = { continent = oceania }
 					NOT = { continent = africa }
 				}
-				any_subject_country = {
-					is_subject_of_type = native_reserve
-				}
+				has_subject_of_type = native_reserve
 			}
 			any_subject_country = {
 				is_subject_of_type = native_reserve
@@ -75,9 +73,7 @@ country_event = {
 					NOT = { continent = oceania }
 					NOT = { continent = africa }
 				}
-				any_subject_country = {
-					is_subject_of_type = native_reserve
-				}
+				has_subject_of_type = native_reserve
 			}
 			every_subject_country = {
 				limit = {

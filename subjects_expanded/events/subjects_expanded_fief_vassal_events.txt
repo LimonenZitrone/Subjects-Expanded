@@ -172,9 +172,7 @@ country_event = {
 			defender_leader = ROOT
 			casus_belli = cb_restore_personal_union
 		}
-		any_subject_country = {
-			is_subject_of_type = fief_subject
-		}
+		has_subject_of_type = fief_subject
 		NOT = {
 			any_subject_country = {
 				is_subject_of_type = fief_subject

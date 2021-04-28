@@ -3,9 +3,7 @@ transfer_subjects_of_type_to = {
 	set_country_flag = transfer_subjects_of_type_$type$
 	if = {
 		limit = {
-			any_subject_country = {
-				is_subject_of_type = $type$
-			}
+			has_subject_of_type = $type$
 		}
 		every_subject_country = {
 			limit = {

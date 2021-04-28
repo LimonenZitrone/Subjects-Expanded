@@ -23,9 +23,7 @@ persian_satrapies_increased_tariffs_triggered_modifier = {
 	trigger = {
 		NOT = { num_of_colonists = 1 }
 		NOT = { colony = 1 }
-		any_subject_country = {
-			is_subject_of_type = persian_satrapy
-		}
+		has_subject_of_type = persian_satrapy
 	}
 
 	global_tariffs = 0.5
@@ -270,9 +268,7 @@ dutch_provinces_reform_1_overlord = {
 	potential = {
 		OR = {
 			has_country_flag = united_the_dutch_provinces
-			any_subject_country = {
-				is_subject_of_type = dutch_province_subject
-			}
+			has_subject_of_type = dutch_province_subject
 		}
 	}
 
@@ -309,9 +305,7 @@ dutch_provinces_reform_2_overlord = {
 	potential = {
 		OR = {
 			has_country_flag = united_the_dutch_provinces
-			any_subject_country = {
-				is_subject_of_type = dutch_province_subject
-			}
+			has_subject_of_type = dutch_province_subject
 		}
 	}
 
@@ -346,9 +340,7 @@ dutch_provinces_reform_3_overlord = {
 	potential = {
 		OR = {
 			has_country_flag = united_the_dutch_provinces
-			any_subject_country = {
-				is_subject_of_type = dutch_province_subject
-			}
+			has_subject_of_type = dutch_province_subject
 		}
 	}
 
@@ -396,9 +388,7 @@ overlord_has_administrative_region_triggered_modifier = {
 		NOT = { is_subject_of_type = administrative_region }
 		is_subject_type_that_pays_vassal_tax = yes
 		overlord = {
-			any_subject_country = {
-				is_subject_of_type = administrative_region
-			}
+			has_subject_of_type = administrative_region
 		}
 	}
 

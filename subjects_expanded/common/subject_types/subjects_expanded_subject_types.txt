@@ -338,6 +338,9 @@ dominion = {
 	can_fight = {
 		other_overlord = viking_settlement
 		other_overlord = colony
+		other_overlord = crown_colony
+		other_overlord = private_enterprise
+		other_overlord = self_governing_colony
 		other_overlord = dominion
 		other_overlord = dominion_tc
 		neighboring_primitives = yes
@@ -346,6 +349,9 @@ dominion = {
 	can_rival = {
 		other_overlord = viking_settlement
 		other_overlord = colony
+		other_overlord = crown_colony
+		other_overlord = private_enterprise
+		other_overlord = self_governing_colony
 		other_overlord = dominion
 		other_overlord = dominion_tc
 		neighboring_primitives = yes
@@ -461,6 +467,9 @@ dominion_tc = {
 	can_fight = {
 		other_overlord = viking_settlement
 		other_overlord = colony
+		other_overlord = crown_colony
+		other_overlord = private_enterprise
+		other_overlord = self_governing_colony
 		other_overlord = dominion
 		other_overlord = dominion_tc
 		neighboring_primitives = yes
@@ -469,6 +478,9 @@ dominion_tc = {
 	can_rival = {
 		other_overlord = viking_settlement
 		other_overlord = colony
+		other_overlord = crown_colony
+		other_overlord = private_enterprise
+		other_overlord = self_governing_colony
 		other_overlord = dominion
 		other_overlord = dominion_tc
 		neighboring_primitives = yes
@@ -2223,6 +2235,9 @@ autonomous_dominion = {
 	can_fight = {
 		other_overlord = viking_settlement
 		other_overlord = colony
+		other_overlord = crown_colony
+		other_overlord = private_enterprise
+		other_overlord = self_governing_colony
 		other_overlord = dominion
 		other_overlord = dominion_tc
 		other_overlord = autonomous_dominion
@@ -2234,6 +2249,9 @@ autonomous_dominion = {
 	can_rival = {
 		other_overlord = viking_settlement
 		other_overlord = colony
+		other_overlord = crown_colony
+		other_overlord = private_enterprise
+		other_overlord = self_governing_colony
 		other_overlord = dominion
 		other_overlord = dominion_tc
 		other_overlord = autonomous_dominion
@@ -2317,6 +2335,9 @@ autonomous_dominion_tc = {
 	can_fight = {
 		other_overlord = viking_settlement
 		other_overlord = colony
+		other_overlord = crown_colony
+		other_overlord = private_enterprise
+		other_overlord = self_governing_colony
 		other_overlord = dominion
 		other_overlord = dominion_tc
 		other_overlord = autonomous_dominion
@@ -2328,6 +2349,9 @@ autonomous_dominion_tc = {
 	can_rival = {
 		other_overlord = viking_settlement
 		other_overlord = colony
+		other_overlord = crown_colony
+		other_overlord = private_enterprise
+		other_overlord = self_governing_colony
 		other_overlord = dominion
 		other_overlord = dominion_tc
 		other_overlord = autonomous_dominion
@@ -4860,11 +4884,7 @@ sister_republic = {
 		}
 		is_nomad = no
 		primitives = no
-		NOT = {
-			any_subject_country = {
-				is_subject_of_type = sister_republic
-			}
-		}
+		NOT = { has_subject_of_type = sister_republic }
 	}
 
 	# Properties:
@@ -5199,9 +5219,7 @@ mandala_trade_vassal = {
 	}
 	modifier_subject = {
 		trigger = {
-			any_subject_country = {
-				is_subject_of_type = mandala_trade_vassal
-			}
+			has_subject_of_type = mandala_trade_vassal
 		}
 		modifier = mandala_trade_vassal_has_mandalas_on_its_own_modifier
 	}
@@ -6905,11 +6923,7 @@ administrative_region = {
 	is_potential_overlord = {
 		is_subject = no
 		total_development = 100
-		NOT = {
-			any_subject_country = {
-				is_subject_of_type = administrative_region
-			}
-		}
+		NOT = { has_subject_of_type = administrative_region }
 	}
 
 	# Properties:
@@ -7096,6 +7110,8 @@ viking_settlement = {
 	can_send_tribute = yes
 	uses_military_focus = no
 	can_set_mil_focus = no
+	change_colonial_type = no
+	upgrade_subject_type = yes
 
 	liberty_desire_development_ratio = 0.075
 
@@ -7108,6 +7124,9 @@ viking_settlement = {
 	can_fight = {
 		other_overlord = viking_settlement
 		other_overlord = colony
+		other_overlord = crown_colony
+		other_overlord = private_enterprise
+		other_overlord = self_governing_colony
 		other_overlord = dominion
 		other_overlord = dominion_tc
 		neighboring_primitives = yes
@@ -7116,6 +7135,9 @@ viking_settlement = {
 	can_rival = {
 		other_overlord = viking_settlement
 		other_overlord = colony
+		other_overlord = crown_colony
+		other_overlord = private_enterprise
+		other_overlord = self_governing_colony
 		other_overlord = dominion
 		other_overlord = dominion_tc
 		neighboring_primitives = yes

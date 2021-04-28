@@ -3,9 +3,7 @@ country_decisions = {
 		potential = {
 			papacy_active = yes
 			can_be_overlord = papal_sanctuary_subject
-			any_subject_country = {
-				is_subject_of_type = papal_sanctuary_subject
-			}
+			has_subject_of_type = papal_sanctuary_subject
 			OR = {
 				NOT = { has_country_flag = increased_papal_influence_of_papal_sanctuary_subjects }
 				had_country_flag = { flag = increased_papal_influence_of_papal_sanctuary_subjects days = 3650 }

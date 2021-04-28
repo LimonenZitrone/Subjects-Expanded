@@ -559,9 +559,7 @@ establish_dutch_province_subject = {
 			tag = HOL
 			tag = UTR
 			tag = GEL
-			any_subject_country = {
-				is_subject_of_type = dutch_province_subject
-			}
+			has_subject_of_type = dutch_province_subject
 		}
 		OR = {
 			owns = 95
@@ -1028,9 +1026,7 @@ ask_for_dutch_province_subject = {
 							tag = HOL
 							tag = UTR
 							tag = GEL
-							any_subject_country = {
-								is_subject_of_type = dutch_province_subject
-							}
+							has_subject_of_type = dutch_province_subject
 						}
 						OR = {
 							owns = 95
@@ -1151,9 +1147,7 @@ ask_for_dutch_province_subject = {
 				tag = UTR
 				tag = GEL
 				overlord_of = ROOT
-				any_subject_country = {
-					is_subject_of_type = dutch_province_subject
-				}
+				has_subject_of_type = dutch_province_subject
 			}
 			OR = {
 				owns = 95

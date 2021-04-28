@@ -62,9 +62,7 @@ establish_mandala_trade_vassal = {
 				transfer_subjects_of_type_to = { type = pagan_chiefdom who = ROOT }
 				if = {
 					limit = {
-						any_subject_country = {
-							is_subject_of_type = mandala_trade_vassal
-						}
+						has_subject_of_type = mandala_trade_vassal
 					}
 					every_subject_country = {
 						limit = {

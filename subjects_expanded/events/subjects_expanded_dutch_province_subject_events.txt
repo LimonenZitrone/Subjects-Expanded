@@ -70,9 +70,7 @@ country_event = {
 		NOT = { has_global_flag = dutch_province_subject_no_leader_election }
 		NOT = { is_month = 1 }
 		NOT = { has_country_modifier = cooldown_dutch_provinces_election }
-		any_subject_country = {
-			is_subject_of_type = dutch_province_subject
-		}
+		has_subject_of_type = dutch_province_subject
 	}
 
 	immediate = {
@@ -1337,9 +1335,7 @@ country_event = {
 
 	trigger = {
 		num_of_subjects = 1
-		any_subject_country = {
-			is_subject_of_type = dutch_province_subject
-		}
+		has_subject_of_type = dutch_province_subject
 		OR = {
 			AND = {
 				NOT = { primary_culture = dutch }
@@ -1426,9 +1422,7 @@ country_event = {
 	trigger = {
 		tag = NED
 		num_of_subjects = 1
-		any_subject_country = {
-			is_subject_of_type = dutch_province_subject
-		}
+		has_subject_of_type = dutch_province_subject
 	}
 
 	mean_time_to_happen = { months = 1 }

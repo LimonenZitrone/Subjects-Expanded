@@ -25,9 +25,7 @@ AI_dutch_province_select_elected_overlord = {
 	}
 	if = {
 		limit = {
-			any_subject_country = {
-				is_subject_of_type = dutch_province_subject
-			}
+			has_subject_of_type = dutch_province_subject
 		}
 		set_country_flag = election_value_of_dutch_province_1_@ROOT
 		random_subject_country = {
@@ -442,9 +440,7 @@ set_dutch_province_value_for_target = {
 			if = {
 				limit = {
 					tag = PREV
-					any_subject_country = {
-						is_subject_of_type = dutch_province_subject
-					}
+					has_subject_of_type = dutch_province_subject
 				}
 				change_variable = { which = election_value_of_dutch_province_$target$ value = 25 }
 			}
@@ -760,6 +756,7 @@ find_new_dutch_province_overlord = {
 
 	if = {
 		limit = {
+			num_of_subjects = 1
 			all_subject_country = {
 				OR = {
 					NOT = { is_subject_of_type = dutch_province_subject }

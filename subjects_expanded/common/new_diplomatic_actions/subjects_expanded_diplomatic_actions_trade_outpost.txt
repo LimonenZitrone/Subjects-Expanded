@@ -142,9 +142,7 @@ establish_trade_outpost = {
 		add_entry = {
 			name = NUM_OF_TRADE_OUTPOSTS
 			limit = {
-				any_subject_country = {
-					is_subject_of_type = trade_outpost
-				}
+				has_subject_of_type = trade_outpost
 				NOT = {
 					calc_true_if = {
 						all_subject_country = {

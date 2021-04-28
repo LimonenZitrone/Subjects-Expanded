@@ -100,9 +100,20 @@ country_event = {
 	immediate = {
 		hidden_effect = {
 			overlord = {
-				create_subject = {
-					subject = ROOT
-					subject_type = colony
+				if = {
+					limit = {
+						has_dlc = "Leviathan"
+					}
+					create_subject = {
+						subject = FROM
+						subject_type = crown_colony
+					}
+				}
+				else = {
+					create_subject = {
+						subject = FROM
+						subject_type = colony
+					}
 				}
 				ROOT = {
 					if = {

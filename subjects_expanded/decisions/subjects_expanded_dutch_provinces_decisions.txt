@@ -3,9 +3,7 @@ country_decisions = {
 		major = yes
 		potential = {
 			NOT = { has_global_flag = dutch_province_subject_no_internal_war }
-			any_subject_country = {
-				is_subject_of_type = dutch_province_subject
-			}
+			has_subject_of_type = dutch_province_subject
 		}
 		allow = {
 			is_month = 1
@@ -94,15 +92,13 @@ country_decisions = {
 			}
 		}
 	}
-	
+
 	dutch_provinces_reform_2 = {
 		major = yes
 		potential = {
 			has_global_flag = dutch_province_subject_no_internal_war
 			NOT = { has_global_flag = dutch_province_subject_no_external_war }
-			any_subject_country = {
-				is_subject_of_type = dutch_province_subject
-			}
+			has_subject_of_type = dutch_province_subject
 		}
 		allow = {
 			is_month = 1
@@ -195,15 +191,13 @@ country_decisions = {
 			}
 		}
 	}
-	
+
 	dutch_provinces_reform_3 = {
 		major = yes
 		potential = {
 			has_global_flag = dutch_province_subject_no_external_war
 			NOT = { has_global_flag = dutch_province_subject_no_leader_election }
-			any_subject_country = {
-				is_subject_of_type = dutch_province_subject
-			}
+			has_subject_of_type = dutch_province_subject
 		}
 		allow = {
 			is_month = 1
@@ -296,16 +290,14 @@ country_decisions = {
 			}
 		}
 	}
-	
+
 	dutch_provinces_overlord_form_netherlands = {
 		major = yes
 		potential = {
 			has_global_flag = dutch_province_subject_no_leader_election
 			NOT = { exists = NED }
 			NOT = { has_country_flag = formed_netherlands_flag }
-			any_subject_country = {
-				is_subject_of_type = dutch_province_subject
-			}
+			has_subject_of_type = dutch_province_subject
 		}
 		provinces_to_highlight = {
 			region = low_countries_region
@@ -321,6 +313,28 @@ country_decisions = {
 				}
 				NOT = { is_core = owner }
 			}
+			ROOT = {
+				NOT = {
+					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+						value = 15
+						region = low_countries_region
+						OR = {
+							AND = {
+								owned_by = ROOT
+								is_core = ROOT
+							}
+							custom_trigger_tooltip = {
+								tooltip = PROVINCE_OWNED_BY_DUTCH_PROVINCE_AND_IS_CORE
+								owner = {
+									is_subject_of = ROOT
+									is_subject_of_type = dutch_province_subject
+								}
+								is_core = owner
+							}
+						}
+					}
+				}
+			}
 		}
 		allow = {
 			is_subject = no
@@ -330,23 +344,6 @@ country_decisions = {
 			adm_power = 200
 			dip_power = 200
 			mil_power = 200
-			low_countries_region = {
-				type = all
-				OR = {
-					AND = {
-						owned_by = ROOT
-						is_core = ROOT
-					}
-					custom_trigger_tooltip = {
-						tooltip = PROVINCE_OWNED_BY_DUTCH_PROVINCE_AND_IS_CORE
-						owner = {
-							is_subject_of = ROOT
-							is_subject_of_type = dutch_province_subject
-						}
-						is_core = owner
-					}
-				}
-			}
 			custom_trigger_tooltip = {
 				tooltip = AT_LEAST_5_YEARS_AFTER_DUTCH_PROVINCES_REFORM_3
 				had_global_flag = { flag = dutch_province_subject_no_leader_election days = 1825 }
@@ -392,6 +389,24 @@ country_decisions = {
 					OR = {
 						NOT = { is_subject_of_type = dutch_province_subject }
 						NOT = { liberty_desire = 50 }
+					}
+				}
+			}
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 15
+				region = low_countries_region
+				OR = {
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+					custom_trigger_tooltip = {
+						tooltip = PROVINCE_OWNED_BY_DUTCH_PROVINCE_AND_IS_CORE
+						owner = {
+							is_subject_of = ROOT
+							is_subject_of_type = dutch_province_subject
+						}
+						is_core = owner
 					}
 				}
 			}
@@ -494,7 +509,7 @@ country_decisions = {
 			}
 		}
 	}
-	
+
 	dutch_provinces_player_election = {
 		potential = {
 			ai = no
@@ -502,9 +517,7 @@ country_decisions = {
 			NOT = { has_country_flag = has_dutch_provinces_player_election }
 			OR = {
 				is_subject_of_type = dutch_province_subject
-				any_subject_country = {
-					is_subject_of_type = dutch_province_subject
-				}
+				has_subject_of_type = dutch_province_subject
 			}
 		}
 		allow = {

@@ -5,9 +5,9 @@ country_event = {
 	title = subjects_expanded_pirate_brotherhood_vassal_events.EVTNAME1
 	desc = subjects_expanded_pirate_brotherhood_vassal_events.EVTDESC1
 	picture = DIPLOMACY_eventPicture
-	
+
 	hidden = yes
-	
+
 	trigger = {
 		is_subject_of_type = pirate_brotherhood_vassal
 		NOT = { has_reform = pirate_republic_reform }
@@ -15,9 +15,9 @@ country_event = {
 		NOT = { has_reform = war_against_the_world_doctrine_reform }
 		NOT = { has_country_flag = executing_subjects_expanded_pirate_brotherhood_vassal_events_1 }
 	}
-	
+
 	mean_time_to_happen = { days = 1 }
-	
+
 	immediate = {
 		hidden_effect = {
 			set_country_flag = executing_subjects_expanded_pirate_brotherhood_vassal_events_1
@@ -32,12 +32,12 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = subjects_expanded_pirate_brotherhood_vassal_events1.EVTOPT1
-		
+
 		ai_chance = { factor = 100 }
-		
+
 		clr_country_flag = executing_subjects_expanded_pirate_brotherhood_vassal_events_1
 	}
 }
@@ -47,21 +47,19 @@ country_event = {
 	title = subjects_expanded_pirate_brotherhood_vassal_events.EVTNAME2
 	desc = subjects_expanded_pirate_brotherhood_vassal_events.EVTDESC2
 	picture = SHIP_SAILING_eventPicture
-	
+
 	trigger = {
 		NOT = { can_be_overlord = pirate_brotherhood_vassal }
-		any_subject_country = {
-			is_subject_of_type = pirate_brotherhood_vassal
-		}
+		has_subject_of_type = pirate_brotherhood_vassal
 	}
-	
+
 	mean_time_to_happen = { days = 1 }
-	
+
 	option = {
 		name = subjects_expanded_pirate_brotherhood_vassal_events2.EVTOPT1
-		
+
 		ai_chance = { factor = 100 }
-		
+
 		add_prestige = -25
 		every_subject_country = {
 			limit = {

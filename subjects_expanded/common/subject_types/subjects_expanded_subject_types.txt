@@ -5108,10 +5108,7 @@ mandala_trade_vassal = {
 					culture_group = southeastasian_group
 					culture_group = burman
 					culture = sinhala
-					AND = {
-						has_dlc = "Dharma"
-						has_reform = mandala_reform
-					}
+					has_reform = mandala_reform
 				}
 			}
 			is_subject_of_type = mandala_trade_vassal

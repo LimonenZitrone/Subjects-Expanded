@@ -1,4 +1,5 @@
 ﻿l_spanish:
+ protectorate: "Protectorate"
  protectorate_title: "Protectorate"
  protectorate_title_plural: "Protectorates"
  protectorate_is_our: "§Y$NAME$§! is our Protectorate."
@@ -6,6 +7,7 @@
  protectorate_no_overlord_dow: "You cannot declare war on your own Protectorate."
  protectorate_overlord_title: "Protector"
 
+ puppet_state: "Puppet State"
  puppet_state_title: "Puppet State"
  puppet_state_title_plural: "Puppet States"
  puppet_state_is_our: "§Y$NAME$§! is our Puppet State."
@@ -13,6 +15,7 @@
  puppet_state_no_overlord_dow: "You cannot declare war on your own Puppet State."
  puppet_state_overlord_title: "Overlord"
 
+ dominion: "Dominion"
  dominion_title: "Dominion"
  dominion_title_plural: "Dominions"
  dominion_is_our: "§Y$NAME$§! is our Dominion."
@@ -20,6 +23,7 @@
  dominion_no_overlord_dow: "You cannot declare war on your own Dominion."
  dominion_overlord_title: "Parent Country"
 
+ dominion_tc: "Dominion"
  dominion_tc_title: "Dominion"
  dominion_tc_title_plural: "Dominions"
  dominion_tc_is_our: "§Y$NAME$§! is our Dominion."
@@ -27,6 +31,7 @@
  dominion_tc_no_overlord_dow: "You cannot declare war on your own Dominion."
  dominion_tc_overlord_title: "Parent Country"
 
+ autonomous_dominion: "Autonomous Dominion"
  autonomous_dominion_title: "Autonomous Dominion"
  autonomous_dominion_title_plural: "Autonomous Dominions"
  autonomous_dominion_is_our: "§Y$NAME$§! is our Autonomous Dominion."
@@ -34,6 +39,7 @@
  autonomous_dominion_no_overlord_dow: "You cannot declare war on your own Autonomous Dominion."
  autonomous_dominion_overlord_title: "Parent Country"
 
+ autonomous_dominion_tc: "Autonomous Dominion"
  autonomous_dominion_tc_title: "Autonomous Dominion"
  autonomous_dominion_tc_title_plural: "Autonomous Dominions"
  autonomous_dominion_tc_is_our: "§Y$NAME$§! is our Autonomous Dominion."
@@ -41,6 +47,7 @@
  autonomous_dominion_tc_no_overlord_dow: "You cannot declare war on your own Autonomous Dominion."
  autonomous_dominion_tc_overlord_title: "Parent Country"
 
+ roman_client_kingdom: "Roman Client Kingdom"
  roman_client_kingdom_title: "Roman Client Kingdom"
  roman_client_kingdom_title_plural: "Roman Client Kingdoms"
  roman_client_kingdom_is_our: "§Y$NAME$§! is our Roman Client Kingdom."
@@ -48,6 +55,7 @@
  roman_client_kingdom_no_overlord_dow: "You cannot declare war on your own Roman Client Kingdom."
  roman_client_kingdom_overlord_title: "Overlord"
 
+ voivodeship: "Voivodeship"
  voivodeship_title: "Voivodeship"
  voivodeship_title_plural: "Voivodeships"
  voivodeship_is_our: "§Y$NAME$§! is our Voivodeship."
@@ -55,6 +63,7 @@
  voivodeship_no_overlord_dow: "You cannot declare war on your own Voivodeship."
  voivodeship_overlord_title: "Overlord"
 
+ fief_subject: "Fiefdom"
  fief_subject_title: "Fiefdom"
  fief_subject_title_plural: "Fiefdoms"
  fief_subject_is_our: "§Y$NAME$§! is our Fiefdom."
@@ -62,6 +71,7 @@
  fief_subject_no_overlord_dow: "You cannot declare war on your own Fiefdom."
  fief_subject_overlord_title: "Overlord"
 
+ crusader_state_vassal: "Crusader State"
  crusader_state_vassal_title: "Crusader State"
  crusader_state_vassal_title_plural: "Crusader States"
  crusader_state_vassal_is_our: "§Y$NAME$§! is our Crusader State."
@@ -69,6 +79,7 @@
  crusader_state_vassal_no_overlord_dow: "You cannot declare war on your own Crusader State."
  crusader_state_vassal_overlord_title: "Overlord"
 
+ salic_personal_union: "Salic Union"
  salic_personal_union_title: "Salic Union"
  salic_personal_union_title_plural: "Salic Unions"
  salic_personal_union_is_our: "§Y$NAME$§! is our Salic Union."
@@ -76,6 +87,7 @@
  salic_personal_union_no_overlord_dow: "You cannot declare war on your own Salic Union."
  salic_personal_union_overlord_title: "Senior Partner"
 
+ nahuatl_vassal: "Nahuatl Vassal"
  nahuatl_vassal_title: "Nahuatl Vassal"
  nahuatl_vassal_title_plural: "Nahuatl Vassals"
  nahuatl_vassal_is_our: "§Y$NAME$§! is our Nahuatl Vassal."
@@ -83,6 +95,7 @@
  nahuatl_vassal_no_overlord_dow: "You cannot declare war on your own Nahuatl Vassal."
  nahuatl_vassal_overlord_title: "Overlord"
 
+ peasant_vassal: "Peasant Vassal"
  peasant_vassal_title: "Peasant Vassal"
  peasant_vassal_title_plural: "Peasant Vassals"
  peasant_vassal_is_our: "§Y$NAME$§! is our Peasant Vassal."
@@ -90,6 +103,7 @@
  peasant_vassal_no_overlord_dow: "You cannot declare war on your own Peasant Vassal."
  peasant_vassal_overlord_title: "Overlord"
 
+ pirate_brotherhood_vassal: "Pirate Brotherhood"
  pirate_brotherhood_vassal_title: "Pirate Brotherhood"
  pirate_brotherhood_vassal_title_plural: "Pirate Brotherhoods"
  pirate_brotherhood_vassal_is_our: "§Y$NAME$§! is our Pirate Brotherhood."
@@ -97,6 +111,7 @@
  pirate_brotherhood_vassal_no_overlord_dow: "You cannot declare war on your own Pirate Brotherhood."
  pirate_brotherhood_vassal_overlord_title: "Overlord"
 
+ imperial_tributary_state: "Imperial Tributary State"
  imperial_tributary_state_title: "Imperial Tributary State"
  imperial_tributary_state_title_plural: "Imperial Tributary States"
  imperial_tributary_state_is_our: "§Y$NAME$§! is our Imperial Tributary State."
@@ -104,6 +119,7 @@
  imperial_tributary_state_no_overlord_dow: "You cannot declare war on your own Imperial Tributary State."
  imperial_tributary_state_overlord_title: "Overlord"
 
+ sister_republic: "Sister Republic"
  sister_republic_title: "Sister Republic"
  sister_republic_title_plural: "Sister Republics"
  sister_republic_is_our: "§Y$NAME$§! is our Sister Republic."
@@ -111,6 +127,7 @@
  sister_republic_no_overlord_dow: "You cannot declare war on your own Sister Republic."
  sister_republic_overlord_title: "Sister Republic"
 
+ muslim_tributary_vassal: "Dar al-Sulh Territory"
  muslim_tributary_vassal_title: "Dar al-Sulh Territory"
  muslim_tributary_vassal_title_plural: "Dar al-Sulh Territories"
  muslim_tributary_vassal_is_our: "§Y$NAME$§! is our Dar al-Sulh Territory."
@@ -118,6 +135,7 @@
  muslim_tributary_vassal_no_overlord_dow: "You cannot declare war on your own Dar al-Sulh Territory."
  muslim_tributary_vassal_overlord_title: "Protector"
 
+ mandala_trade_vassal: "Mandala Vassal"
  mandala_trade_vassal_title: "Mandala Vassal"
  mandala_trade_vassal_title_plural: "Mandala Vassals"
  mandala_trade_vassal_is_our: "§Y$NAME$§! is our Mandala Vassal."
@@ -125,6 +143,7 @@
  mandala_trade_vassal_no_overlord_dow: "You cannot declare war on your own Mandala Vassal."
  mandala_trade_vassal_overlord_title: "Overlord"
 
+ integrated_tribe_subject: "Integrated Tribe"
  integrated_tribe_subject_title: "Integrated Tribe"
  integrated_tribe_subject_title_plural: "Integrated Tribes"
  integrated_tribe_subject_is_our: "§Y$NAME$§! is our Integrated Tribe."
@@ -132,6 +151,7 @@
  integrated_tribe_subject_no_overlord_dow: "You cannot declare war on your own Integrated Tribe."
  integrated_tribe_subject_overlord_title: "Overlord"
 
+ dutch_province_subject: "Dutch Province"
  dutch_province_subject_title: "Dutch Province"
  dutch_province_subject_title_plural: "Dutch Provinces"
  dutch_province_subject_is_our: "§Y$NAME$§! is our Dutch Province."
@@ -139,6 +159,7 @@
  dutch_province_subject_no_overlord_dow: "You cannot declare war on your own Dutch Province."
  dutch_province_subject_overlord_title: "Overlord"
 
+ revolution_subject: "Revolutionary Confederation"
  revolution_subject_title: "Revolutionary Confederation"
  revolution_subject_title_plural: "Revolutionary Confederations"
  revolution_subject_is_our: "§Y$NAME$§! is our Revolutionary Confederation."
@@ -146,6 +167,7 @@
  revolution_subject_no_overlord_dow: "You cannot declare war on your own Revolutionary Confederation."
  revolution_subject_overlord_title: "Revolutionary Overlord"
 
+ persian_satrapy: "Satrapy"
  persian_satrapy_title: "Satrapy"
  persian_satrapy_title_plural: "Satrapies"
  persian_satrapy_is_our: "§Y$NAME$§! is our Satrapy."
@@ -153,6 +175,7 @@
  persian_satrapy_no_overlord_dow: "You cannot declare war on your own Satrapy."
  persian_satrapy_overlord_title: "Overlord"
 
+ naval_march: "Naval March"
  naval_march_title: "Naval March"
  naval_march_title_plural: "Naval Marches"
  naval_march_is_our: "§Y$NAME$§! is our Naval March."
@@ -160,6 +183,7 @@
  naval_march_no_overlord_dow: "You cannot declare war on your own Naval March."
  naval_march_overlord_title: "Overlord"
 
+ trade_outpost: "Trade Outpost"
  trade_outpost_title: "Trade Outpost"
  trade_outpost_title_plural: "Trade Outposts"
  trade_outpost_is_our: "§Y$NAME$§! is our Trade Outpost."
@@ -167,6 +191,7 @@
  trade_outpost_no_overlord_dow: "You cannot declare war on your own Trade Outpost."
  trade_outpost_overlord_title: "Overlord"
 
+ integrated_personal_union: "Integrated Personal Union"
  integrated_personal_union_title: "Integrated Personal Union"
  integrated_personal_union_title_plural: "Integrated Personal Unions"
  integrated_personal_union_is_our: "§Y$NAME$§! is the junior partner in an Integrated Personal Union under us."
@@ -174,6 +199,7 @@
  integrated_personal_union_no_overlord_dow: "You cannot declare war on your own Integrated Personal Union."
  integrated_personal_union_overlord_title: "Senior Partner"
 
+ brother_kingdom: "Brother Kingdom"
  brother_kingdom_title: "Brother Kingdom"
  brother_kingdom_title_plural: "Brother Kingdoms"
  brother_kingdom_is_our: "§Y$NAME$§! is our Brother Kingdom."
@@ -181,6 +207,7 @@
  brother_kingdom_no_overlord_dow: "You cannot declare war on your own Brother Kingdom."
  brother_kingdom_overlord_title: "Brother Kingdom"
 
+ iqta_vassal: "Iqta"
  iqta_vassal_title: "Iqta"
  iqta_vassal_title_plural: "Iqtas"
  iqta_vassal_is_our: "§Y$NAME$§! is our Iqta."
@@ -188,6 +215,7 @@
  iqta_vassal_no_overlord_dow: "You cannot declare war on your own Iqta."
  iqta_vassal_overlord_title: "Overlord"
 
+ papal_sanctuary_subject: "Papal Sanctuary"
  papal_sanctuary_subject_title: "Papal Sanctuary"
  papal_sanctuary_subject_title_plural: "Papal Sanctuaries"
  papal_sanctuary_subject_is_our: "§Y$NAME$§! is our Papal Sanctuary."
@@ -195,6 +223,7 @@
  papal_sanctuary_subject_no_overlord_dow: "You cannot declare war on your own Papal Sanctuary."
  papal_sanctuary_subject_overlord_title: "Pope"
 
+ imperial_feud_subject: "Imperial Feud"
  imperial_feud_subject_title: "Imperial Feud"
  imperial_feud_subject_title_plural: "Imperial Feuds"
  imperial_feud_subject_is_our: "§Y$NAME$§! is our Imperial Feud."
@@ -202,6 +231,7 @@
  imperial_feud_subject_no_overlord_dow: "You cannot declare war on your own Imperial Feud."
  imperial_feud_subject_overlord_title: "Emperor"
 
+ pagan_chiefdom: "Chiefdom"
  pagan_chiefdom_title: "Chiefdom"
  pagan_chiefdom_title_plural: "Chiefdoms"
  pagan_chiefdom_is_our: "§Y$NAME$§! is our Chiefdom."
@@ -209,6 +239,7 @@
  pagan_chiefdom_no_overlord_dow: "You cannot declare war on your own Chiefdom."
  pagan_chiefdom_overlord_title: "Overlord"
 
+ native_reserve: "Native Reservation"
  native_reserve_title: "Native Reservation"
  native_reserve_title_plural: "Native Reservations"
  native_reserve_is_our: "§Y$NAME$§! is our Native Reservation."
@@ -216,6 +247,7 @@
  native_reserve_no_overlord_dow: "You cannot declare war on your own Native Reservation."
  native_reserve_overlord_title: "Overlord"
 
+ administrative_region: "Administrative Region"
  administrative_region_title: "Administrative Region"
  administrative_region_title_plural: "Administrative Regions"
  administrative_region_is_our: "§Y$NAME$§! is our Administrative Region."
@@ -223,6 +255,7 @@
  administrative_region_no_overlord_dow: "You cannot declare war on your own Administrative Region."
  administrative_region_overlord_title: "Overlord"
 
+ viking_settlement: "Viking Settlement"
  viking_settlement_title: "Viking Settlement"
  viking_settlement_title_plural: "Viking Settlements"
  viking_settlement_is_our: "§Y$NAME$§! is our Viking Settlement."

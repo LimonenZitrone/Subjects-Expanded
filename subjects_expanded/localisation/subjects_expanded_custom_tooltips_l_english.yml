@@ -201,6 +201,14 @@
  NATIVE_RESERVE_CANNOT_COLONIZE_PROVINCE_WITH_OTHER_CULTURE: "§RA Native Reservation cannot colonize a province with a different culture than their primary culture.§!"
  IMPERIAL_FEUD_SUBJECTS_CANNOT_ADD_PROVINCES_TO_THE_HRE: "§RAn Imperial Feud cannot add provinces to the HRE. You need to become a member of the HRE first.§!"
 
+ # Subject Types:
+ NEVER_HAD_A_COLONIST: "We never had a colonist"
+ HAS_NAVAL_MARCH_SEND_OFFICERS: "Send Naval Officers is enabled"
+ HAS_ADMINISTRATIVE_REGION_ENABLE_ADMINISTRATIVE_HELP: "Administrative Help is enabled"
+ ADMINISTRATIVE_REGION_HAS_BEST_RULER_SKILL_ADM: "£adm£ is the best ruler skill"
+ ADMINISTRATIVE_REGION_HAS_BEST_RULER_SKILL_DIP: "£dip£ is the best ruler skill"
+ ADMINISTRATIVE_REGION_HAS_BEST_RULER_SKILL_MIL: "£mil£ is the best ruler skill"
+
  # Special Tooltips:
  DISPLAY_SUBJECTS_OF_TYPE_TT_OWNER_IS_SUBJECT_OF_TYPE: "@[This.Owner.GetTag] §Y[This.Owner.GetName]§! is a §Y[This.Owner.GetSubjectType]§! of @[This.Owner.Overlord.GetTag] §Y[This.Owner.Overlord.GetName]§!."
 

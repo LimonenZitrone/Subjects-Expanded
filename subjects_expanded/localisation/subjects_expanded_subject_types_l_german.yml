@@ -1,4 +1,5 @@
 ﻿l_german:
+ protectorate: "Protektorat"
  protectorate_title: "Protektorat"
  protectorate_title_plural: "Protektorate"
  protectorate_is_our: "§Y$NAME$§! ist unser Protektorat."
@@ -6,6 +7,7 @@
  protectorate_no_overlord_dow: "Ihr könnt Eurem eigenen Protektorat nicht den Krieg erklären."
  protectorate_overlord_title: "Beschützer"
 
+ puppet_state: "Marionettenstaat"
  puppet_state_title: "Marionettenstaat"
  puppet_state_title_plural: "Marionettenstaaten"
  puppet_state_is_our: "§Y$NAME$§! ist unser Marionettenstaat."
@@ -13,6 +15,7 @@
  puppet_state_no_overlord_dow: "Ihr könnt Eurem eigenen Marionettenstaat nicht den Krieg erklären."
  puppet_state_overlord_title: "Lehnsherr"
 
+ dominion: "Herrschaftsgebiet"
  dominion_title: "Herrschaftsgebiet"
  dominion_title_plural: "Herrschaftsgebiete"
  dominion_is_our: "§Y$NAME$§! ist unser Herrschaftsgebiet."
@@ -20,6 +23,7 @@
  dominion_no_overlord_dow: "Ihr könnt Eurem eigenen Herrschaftsgebiet nicht den Krieg erklären."
  dominion_overlord_title: "Mutterland"
 
+ dominion_tc: "Herrschaftsgebiet"
  dominion_tc_title: "Herrschaftsgebiet"
  dominion_tc_title_plural: "Herrschaftsgebiete"
  dominion_tc_is_our: "§Y$NAME$§! ist unser Herrschaftsgebiet."
@@ -27,6 +31,7 @@
  dominion_tc_no_overlord_dow: "Ihr könnt Eurem eigenen Herrschaftsgebiet nicht den Krieg erklären."
  dominion_tc_overlord_title: "Mutterland"
 
+ autonomous_dominion: "Autonomes Herrschaftsgebiet"
  autonomous_dominion_title: "Autonomes Herrschaftsgebiet"
  autonomous_dominion_title_plural: "Autonome Herrschaftsgebiete"
  autonomous_dominion_is_our: "§Y$NAME$§! ist unser Autonomes Herrschaftsgebiet."
@@ -34,6 +39,7 @@
  autonomous_dominion_no_overlord_dow: "Ihr könnt Eurem eigenen Autonomen Herrschaftsgebiet nicht den Krieg erklären."
  autonomous_dominion_overlord_title: "Mutterland"
 
+ autonomous_dominion_tc: "Autonomes Herrschaftsgebiet"
  autonomous_dominion_tc_title: "Autonomes Herrschaftsgebiet"
  autonomous_dominion_tc_title_plural: "Autonome Herrschaftsgebiete"
  autonomous_dominion_tc_is_our: "§Y$NAME$§! ist unser Autonomes Herrschaftsgebiet."
@@ -41,6 +47,7 @@
  autonomous_dominion_tc_no_overlord_dow: "Ihr könnt Eurem eigenen Autonomen Herrschaftsgebiet nicht den Krieg erklären."
  autonomous_dominion_tc_overlord_title: "Mutterland"
 
+ roman_client_kingdom: "Römisches Klientelkönigtum"
  roman_client_kingdom_title: "Römisches Klientelkönigtum"
  roman_client_kingdom_title_plural: "Römische Klientelkönigtümer"
  roman_client_kingdom_is_our: "§Y$NAME$§! ist unser Römisches Klientelkönigtum."
@@ -48,6 +55,7 @@
  roman_client_kingdom_no_overlord_dow: "Ihr könnt Eurem eigenen Römischen Klientelkönigtum nicht den Krieg erklären."
  roman_client_kingdom_overlord_title: "Lehnsherr"
 
+ voivodeship: "Woiwodschaft"
  voivodeship_title: "Woiwodschaft"
  voivodeship_title_plural: "Woiwodschaften"
  voivodeship_is_our: "§Y$NAME$§! ist unsere Woiwodschaft."
@@ -55,6 +63,7 @@
  voivodeship_no_overlord_dow: "Ihr könnt Eurer eigenen Woiwodschaft nicht den Krieg erklären."
  voivodeship_overlord_title: "Lehnsherr"
 
+ fief_subject: "Feudalvasall"
  fief_subject_title: "Feudalvasall"
  fief_subject_title_plural: "Feudalvasallen"
  fief_subject_is_our: "§Y$NAME$§! ist unser Feudalvasall."
@@ -62,6 +71,7 @@
  fief_subject_no_overlord_dow: "Ihr könnt Eurem eigenen Feudalvasall nicht den Krieg erklären."
  fief_subject_overlord_title: "Lehnsherr"
 
+ crusader_state_vassal: "Kreuzfahrerstaat"
  crusader_state_vassal_title: "Kreuzfahrerstaat"
  crusader_state_vassal_title_plural: "Kreuzfahrerstaat"
  crusader_state_vassal_is_our: "§Y$NAME$§! ist unser Kreuzfahrerstaat."
@@ -69,6 +79,7 @@
  crusader_state_vassal_no_overlord_dow: "Ihr könnt Eurem eigenen Kreuzfahrerstaat nicht den Krieg erklären."
  crusader_state_vassal_overlord_title: "Lehnsherr"
 
+ salic_personal_union: "Salische Union"
  salic_personal_union_title: "Salische Union"
  salic_personal_union_title_plural: "Salische Unionen"
  salic_personal_union_is_our: "§Y$NAME$§! ist unsere Salische Union."
@@ -76,6 +87,7 @@
  salic_personal_union_no_overlord_dow: "Ihr könnt Eurer eigenen Salischen Union nicht den Krieg erklären."
  salic_personal_union_overlord_title: "Seniorpartner"
 
+ nahuatl_vassal: "Nahuatlischer Vasall"
  nahuatl_vassal_title: "Nahuatlischer Vasall"
  nahuatl_vassal_title_plural: "Nahuatlische Vasallen"
  nahuatl_vassal_is_our: "§Y$NAME$§! ist unser Nahuatlischer Vasall."
@@ -83,6 +95,7 @@
  nahuatl_vassal_no_overlord_dow: "Ihr könnt Eurem eigenen Nahuatlischen Vasall nicht den Krieg erklären."
  nahuatl_vassal_overlord_title: "Lehnsherr"
 
+ peasant_vassal: "Bäuerlicher Vasall"
  peasant_vassal_title: "Bäuerlicher Vasall"
  peasant_vassal_title_plural: "Bäuerliche Vasallen"
  peasant_vassal_is_our: "§Y$NAME$§! ist unser Bäuerlicher Vasall."
@@ -90,6 +103,7 @@
  peasant_vassal_no_overlord_dow: "Ihr könnt Eurem eigenen Bäuerlichen Vasall nicht den Krieg erklären."
  peasant_vassal_overlord_title: "Lehnsherr"
 
+ pirate_brotherhood_vassal: "Piratenbruderschaft"
  pirate_brotherhood_vassal_title: "Piratenbruderschaft"
  pirate_brotherhood_vassal_title_plural: "Piratenbruderschaften"
  pirate_brotherhood_vassal_is_our: "§Y$NAME$§! ist unsere Piratenbruderschaft."
@@ -97,6 +111,7 @@
  pirate_brotherhood_vassal_no_overlord_dow: "Ihr könnt Eurer eigenen Piratenbruderschaft nicht den Krieg erklären."
  pirate_brotherhood_vassal_overlord_title: "Lehnsherr"
 
+ imperial_tributary_state: "Kaiserlicher Tributstaat"
  imperial_tributary_state_title: "Kaiserlicher Tributstaat"
  imperial_tributary_state_title_plural: "Kaiserliche Tributstaaten"
  imperial_tributary_state_is_our: "§Y$NAME$§! ist unser Kaiserlicher Tributstaat."
@@ -104,6 +119,7 @@
  imperial_tributary_state_no_overlord_dow: "Ihr könnt Eurem eigenen Kaiserlichen Tributstaat nicht den Krieg erklären."
  imperial_tributary_state_overlord_title: "Lehnsherr"
 
+ sister_republic: "Schwesterrepublik"
  sister_republic_title: "Schwesterrepublik"
  sister_republic_title_plural: "Schwesterrepubliken"
  sister_republic_is_our: "§Y$NAME$§! ist unsere Schwesterrepublik."
@@ -111,6 +127,7 @@
  sister_republic_no_overlord_dow: "Ihr könnt Eurer eigenen Schwesterrepublik nicht den Krieg erklären."
  sister_republic_overlord_title: "Schwesterrepublik"
 
+ muslim_tributary_vassal: "Dar al-Sulh Territorium"
  muslim_tributary_vassal_title: "Dar al-Sulh Territorium"
  muslim_tributary_vassal_title_plural: "Dar al-Sulh Territorien"
  muslim_tributary_vassal_is_our: "§Y$NAME$§! ist unser Dar al-Sulh Territorium."
@@ -118,6 +135,7 @@
  muslim_tributary_vassal_no_overlord_dow: "Ihr könnt Eurem eigenen Dar al-Sulh Territorium nicht den Krieg erklären."
  muslim_tributary_vassal_overlord_title: "Beschützer"
 
+ mandala_trade_vassal: "Mandala-Vasall"
  mandala_trade_vassal_title: "Mandala-Vasall"
  mandala_trade_vassal_title_plural: "Mandala-Vasallen"
  mandala_trade_vassal_is_our: "§Y$NAME$§! ist unser Mandala-Vasall."
@@ -125,6 +143,7 @@
  mandala_trade_vassal_no_overlord_dow: "Ihr könnt Eurem eigenen Mandala-Vasall nicht den Krieg erklären."
  mandala_trade_vassal_overlord_title: "Lehnsherr"
 
+ integrated_tribe_subject: "Integrierter Stamm"
  integrated_tribe_subject_title: "Integrierter Stamm"
  integrated_tribe_subject_title_plural: "Integrierte Stämme"
  integrated_tribe_subject_is_our: "§Y$NAME$§! ist unser Integrierter Stamm."
@@ -132,6 +151,7 @@
  integrated_tribe_subject_no_overlord_dow: "Ihr könnt Eurem eigenen Integrierten Stamm nicht den Krieg erklären."
  integrated_tribe_subject_overlord_title: "Lehnsherr"
 
+ dutch_province_subject: "Niederländische Provinz"
  dutch_province_subject_title: "Niederländische Provinz"
  dutch_province_subject_title_plural: "Niederländische Provinzen"
  dutch_province_subject_is_our: "§Y$NAME$§! ist unsere Niederländische Provinz."
@@ -139,6 +159,7 @@
  dutch_province_subject_no_overlord_dow: "Ihr könnt Eurer eigenen Niederländischen Provinz nicht den Krieg erklären."
  dutch_province_subject_overlord_title: "Lehnsherr"
 
+ revolution_subject: "Revolutionäre Konföderation"
  revolution_subject_title: "Revolutionäre Konföderation"
  revolution_subject_title_plural: "Revolutionäre Konföderationen"
  revolution_subject_is_our: "§Y$NAME$§! ist unsere Revolutionäre Konföderation."
@@ -146,6 +167,7 @@
  revolution_subject_no_overlord_dow: "Ihr könnt Eurer eigenen Revolutionären Konföderation nicht den Krieg erklären."
  revolution_subject_overlord_title: "Revolutionärer Lehnsherr"
 
+ persian_satrapy: "Satrapie"
  persian_satrapy_title: "Satrapie"
  persian_satrapy_title_plural: "Satrapien"
  persian_satrapy_is_our: "§Y$NAME$§! ist unsere Satrapie."
@@ -153,6 +175,7 @@
  persian_satrapy_no_overlord_dow: "Ihr könnt Eurer eigenen Satrapie nicht den Krieg erklären."
  persian_satrapy_overlord_title: "Lehnsherr"
 
+ naval_march: "Marine-Mark"
  naval_march_title: "Marine-Mark"
  naval_march_title_plural: "Marine-Marken"
  naval_march_is_our: "§Y$NAME$§! ist unsere Marine-Mark."
@@ -160,6 +183,7 @@
  naval_march_no_overlord_dow: "Ihr könnt Eurer eigenen Marine-Mark nicht den Krieg erklären."
  naval_march_overlord_title: "Lehnsherr"
 
+ trade_outpost: "Handelsaußenposten"
  trade_outpost_title: "Handelsaußenposten"
  trade_outpost_title_plural: "Handelsaußenposten"
  trade_outpost_is_our: "§Y$NAME$§! ist unser Handelsaußenposten."
@@ -167,6 +191,7 @@
  trade_outpost_no_overlord_dow: "Ihr könnt Eurem eigenen Handelsaußenposten nicht den Krieg erklären."
  trade_outpost_overlord_title: "Lehnsherr"
 
+ integrated_personal_union: "Integrierte Personalunion"
  integrated_personal_union_title: "Integrierte Personalunion"
  integrated_personal_union_title_plural: "Integrierte Personalunionen"
  integrated_personal_union_is_our: "§Y$NAME$§! ist der Juniorpartner in einer Integrierten Personalunion unter uns."
@@ -174,6 +199,7 @@
  integrated_personal_union_no_overlord_dow: "Ihr könnt Eurer eigenen Integrierten Personalunion nicht den Krieg erklären."
  integrated_personal_union_overlord_title: "Seniorpartner"
 
+ brother_kingdom: "Bruderkönigreich"
  brother_kingdom_title: "Bruderkönigreich"
  brother_kingdom_title_plural: "Bruderkönigreiche"
  brother_kingdom_is_our: "§Y$NAME$§! ist unser Bruderkönigreich."
@@ -181,6 +207,7 @@
  brother_kingdom_no_overlord_dow: "Ihr könnt Eurem eigenen Bruderkönigreich nicht den Krieg erklären."
  brother_kingdom_overlord_title: "Bruderkönigreich"
 
+ iqta_vassal: "Iqta"
  iqta_vassal_title: "Iqta"
  iqta_vassal_title_plural: "Iqtas"
  iqta_vassal_is_our: "§Y$NAME$§! ist unsere Iqta."
@@ -188,6 +215,7 @@
  iqta_vassal_no_overlord_dow: "Ihr könnt Eurer eigenen Iqta nicht den Krieg erklären."
  iqta_vassal_overlord_title: "Lehnsherr"
 
+ papal_sanctuary_subject: "Päpstliches Schutzgebiet"
  papal_sanctuary_subject_title: "Päpstliches Schutzgebiet"
  papal_sanctuary_subject_title_plural: "Päpstliche Schutzgebiete"
  papal_sanctuary_subject_is_our: "§Y$NAME$§! ist unser Päpstliches Schutzgebiet."
@@ -195,6 +223,7 @@
  papal_sanctuary_subject_no_overlord_dow: "Ihr könnt Eurem eigenen Päpstlichen Schutzgebiet nicht den Krieg erklären."
  papal_sanctuary_subject_overlord_title: "Papst"
 
+ imperial_feud_subject: "Kaiserliches Lehen"
  imperial_feud_subject_title: "Kaiserliches Lehen"
  imperial_feud_subject_title_plural: "Kaiserliche Lehen"
  imperial_feud_subject_is_our: "§Y$NAME$§! ist unser Kaiserliches Lehen."
@@ -202,6 +231,7 @@
  imperial_feud_subject_no_overlord_dow: "Ihr könnt Eurem eigenen Kaiserlichen Lehen nicht den Krieg erklären."
  imperial_feud_subject_overlord_title: "Kaiser"
 
+ pagan_chiefdom: "Stammesfürstentum"
  pagan_chiefdom_title: "Stammesfürstentum"
  pagan_chiefdom_title_plural: "Stammesfürstentümer"
  pagan_chiefdom_is_our: "§Y$NAME$§! ist unser Stammesfürstentum."
@@ -209,6 +239,7 @@
  pagan_chiefdom_no_overlord_dow: "Ihr könnt Eurem eigenen Stammesfürstentum nicht den Krieg erklären."
  pagan_chiefdom_overlord_title: "Lehnsherr"
 
+ native_reserve: "Eingeborenenreservat"
  native_reserve_title: "Eingeborenenreservat"
  native_reserve_title_plural: "Eingeborenenreservate"
  native_reserve_is_our: "§Y$NAME$§! ist unser Eingeborenenreservat."
@@ -216,6 +247,7 @@
  native_reserve_no_overlord_dow: "Ihr könnt Eurem eigenen Eingeborenenreservat nicht den Krieg erklären."
  native_reserve_overlord_title: "Lehnsherr"
 
+ administrative_region: "Administrative Region"
  administrative_region_title: "Administrative Region"
  administrative_region_title_plural: "Administrative Regionen"
  administrative_region_is_our: "§Y$NAME$§! ist unsere Administrative Region."
@@ -223,6 +255,7 @@
  administrative_region_no_overlord_dow: "Ihr könnt Eurer eigenen Administrativen Region nicht den Krieg erklären."
  administrative_region_overlord_title: "Lehnsherr"
 
+ viking_settlement: "Wikingersiedlung"
  viking_settlement_title: "Wikingersiedlung"
  viking_settlement_title_plural: "Wikingersiedlungen"
  viking_settlement_is_our: "§Y$NAME$§! ist unsere Wikingersiedlung."

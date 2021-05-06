@@ -770,6 +770,7 @@ establish_fief_subject = {
 	ai_will_do = {
 		is_emperor = no
 		NOT = { calc_true_if = { all_subject_country = { is_subject_of_type = fief_subject } amount = 5 } }
+		num_of_free_diplomatic_relations = 1
 		FROM = {
 			OR = {
 				NOT = { has_country_flag = declined_establish_fief_subject_@ROOT }

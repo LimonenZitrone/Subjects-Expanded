@@ -1017,16 +1017,39 @@ ask_for_dutch_province_subject = {
 			multiply_variable = { which = ai_value value = -4 }
 		}
 		add_entry = {
-			name = STRATEGIC_INTEREST
+			name = STRATEGIC_VALUE
 			limit = {
 				NOT = {
-					FROM = {
-						NOT = { has_country_flag = formed_netherlands_flag }
+					AND = {
+						FROM = {
+							NOT = { has_country_flag = formed_netherlands_flag }
+							OR = {
+								tag = HOL
+								tag = UTR
+								tag = GEL
+								has_subject_of_type = dutch_province_subject
+							}
+							OR = {
+								owns = 95
+								owns = 96
+								owns = 97
+								owns = 98
+								owns = 99
+								owns = 100
+								owns = 4383
+							}
+						}
 						OR = {
-							tag = HOL
-							tag = UTR
-							tag = GEL
-							has_subject_of_type = dutch_province_subject
+							NOT = { primary_culture = frisian }
+							FROM = {
+								NOT = { primary_culture = frisian }
+							}
+						}
+						OR = {
+							NOT = { primary_culture = wallonian }
+							FROM = {
+								NOT = { primary_culture = wallonian }
+							}
 						}
 						OR = {
 							owns = 95
@@ -1037,19 +1060,10 @@ ask_for_dutch_province_subject = {
 							owns = 100
 							owns = 4383
 						}
-					}
-					OR = {
-						owns = 95
-						owns = 96
-						owns = 97
-						owns = 98
-						owns = 99
-						owns = 100
-						owns = 4383
-					}
-					OR = {
-						NOT = { has_country_flag = declined_establish_dutch_province_subject_@FROM }
-						had_country_flag = { flag = declined_establish_dutch_province_subject_@FROM days = 1825 }
+						OR = {
+							NOT = { has_country_flag = declined_establish_dutch_province_subject_@FROM }
+							had_country_flag = { flag = declined_establish_dutch_province_subject_@FROM days = 1825 }
+						}
 					}
 				}
 			}

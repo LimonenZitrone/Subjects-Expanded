@@ -1047,6 +1047,7 @@ establish_puppet_state = {
 	}
 
 	ai_will_do = {
+		num_of_free_diplomatic_relations = 1
 		FROM = {
 			OR = {
 				NOT = { has_country_flag = declined_establish_puppet_state_@ROOT }

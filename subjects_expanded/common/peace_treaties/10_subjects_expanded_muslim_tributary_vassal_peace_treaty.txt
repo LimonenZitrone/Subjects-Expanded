@@ -64,6 +64,7 @@ make_muslim_tributary_vassal = {
 			value = 1
 		}
 		limit = {
+			num_of_free_diplomatic_relations = 1
 			religion = sunni
 			FROM = {
 				capital_scope = {

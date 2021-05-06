@@ -1,18 +1,18 @@
 establish_peasant_vassal = {
 	category = influence
-	
+
 	alert_index = 6
 	alert_tooltip = establish_peasant_vassal_alert_tooltip
-	
+
 	require_acceptance = yes
-	
+
 	is_visible = {
 		can_create_subject_type = {
 			subject = FROM
 			subject_type = peasant_vassal
 		}
 	}
-	
+
 	is_allowed = {
 		can_create_subject_type = {
 			subject = FROM
@@ -33,7 +33,7 @@ establish_peasant_vassal = {
 			NOT = { total_development = 100 }
 		}
 	}
-	
+
 	on_accept = {
 		if = {
 			limit = {
@@ -66,7 +66,7 @@ establish_peasant_vassal = {
 			}
 		}
 	}
-	
+
 	on_decline = {
 		if = {
 			limit = {
@@ -99,7 +99,7 @@ establish_peasant_vassal = {
 			}
 		}
 	}
-	
+
 	ai_acceptance = {
 		add_entry = {
 			name = FROM_ATTITUDE_TOWARDS_ROOT
@@ -544,7 +544,7 @@ establish_peasant_vassal = {
 					divide_variable = { which = our_total_development which = their_total_development }
 					multiply_variable = { which = eco_power which = our_total_development }
 					change_variable = { which = eco_power value = -90 }
-					
+
 					check_variable = { which = eco_power value = -89 }
 					NOT = { check_variable = { which = eco_power value = 30 } }
 				}
@@ -588,7 +588,7 @@ establish_peasant_vassal = {
 					divide_variable = { which = our_total_development which = their_total_development }
 					multiply_variable = { which = eco_power which = our_total_development }
 					change_variable = { which = eco_power value = -90 }
-					
+
 					NOT = { check_variable = { which = eco_power value = -89 } }
 				}
 			}
@@ -619,7 +619,7 @@ establish_peasant_vassal = {
 					divide_variable = { which = our_total_development which = their_total_development }
 					multiply_variable = { which = eco_power which = our_total_development }
 					change_variable = { which = eco_power value = -90 }
-					
+
 					check_variable = { which = eco_power value = 30 }
 				}
 			}
@@ -667,8 +667,9 @@ establish_peasant_vassal = {
 			multiply_variable = { which = ai_value value = -1 }
 		}
 	}
-	
+
 	ai_will_do = {
+		num_of_free_diplomatic_relations = 1
 		has_global_modifier_value = {
 			which = global_tax_income
 			value = 2
@@ -688,14 +689,14 @@ cancel_peasant_vassal = {
 	category = influence
 
 	require_acceptance = no
-	
+
 	is_visible = {
 		FROM = {
 			is_subject_of = ROOT
 			is_subject_of_type = peasant_vassal
 		}
 	}
-	
+
 	is_allowed = {
 		hidden_trigger = {
 			FROM = {
@@ -706,7 +707,7 @@ cancel_peasant_vassal = {
 		NOT = { truce_with = FROM }
 		prestige = 0
 	}
-	
+
 	on_accept = {
 		if = {
 			limit = {
@@ -734,7 +735,7 @@ cancel_peasant_vassal = {
 			add_prestige = -25
 		}
 	}
-	
+
 	ai_will_do = {
 		FROM = {
 			liberty_desire = 100

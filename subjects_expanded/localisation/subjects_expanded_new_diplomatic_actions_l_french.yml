@@ -639,3 +639,4 @@
  FROM_IS_ALLIED_TO_EMPEROR: "They are allied to the Holy Roman Emperor"
  FROM_HAS_STRONG_GUARANTEES: "They are guaranteed by strong nations"
  FROM_ALLIED_TO_ROOT_RIVALS: "They are allied to our rivals or enemies"
+ STRATEGIC_VALUE: "Strategic Interests"

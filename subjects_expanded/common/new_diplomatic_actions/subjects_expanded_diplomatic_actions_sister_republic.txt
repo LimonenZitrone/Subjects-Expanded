@@ -1017,11 +1017,13 @@ ask_for_sister_republic = {
 			name = STRATEGIC_VALUE
 			limit = {
 				NOT = {
-					NOT = { is_subject_of = FROM }
-					is_neighbor_of = FROM
-					OR = {
-						NOT = { has_country_flag = declined_establish_sister_republic_@FROM }
-						had_country_flag = { flag = declined_establish_sister_republic_@FROM days = 1825 }
+					AND = {
+						NOT = { is_subject_of = FROM }
+						is_neighbor_of = FROM
+						OR = {
+							NOT = { has_country_flag = declined_establish_sister_republic_@FROM }
+							had_country_flag = { flag = declined_establish_sister_republic_@FROM days = 1825 }
+						}
 					}
 				}
 			}

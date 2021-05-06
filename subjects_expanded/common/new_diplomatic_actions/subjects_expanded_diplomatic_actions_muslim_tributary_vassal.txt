@@ -967,6 +967,7 @@ establish_muslim_tributary_vassal = {
 
 	ai_will_do = {
 		religion = sunni
+		num_of_free_diplomatic_relations = 1
 		FROM = {
 			OR = {
 				NOT = { has_country_flag = declined_establish_muslim_tributary_vassal_@ROOT }
@@ -1310,24 +1311,27 @@ ask_for_muslim_tributary_vassal = {
 			name = STRATEGIC_VALUE
 			limit = {
 				NOT = {
-					FROM = {
-						religion = sunni
-					}
-					OR = {
-						NOT = { has_country_flag = declined_establish_muslim_tributary_vassal_@FROM }
-						had_country_flag = { flag = declined_establish_muslim_tributary_vassal_@FROM days = 1825 }
-					}
-					NOT = { is_subject_of = FROM }
-					capital_scope = {
-						continent = europe
-					}
-					NOT = { total_development = 150 }
-					NOT = {
-						num_of_owned_provinces_with = {
-							value = 5
-							OR = {
-								is_claim = FROM
-								is_core = FROM
+					AND = {
+						FROM = {
+							religion = sunni
+							num_of_free_diplomatic_relations = 1
+						}
+						OR = {
+							NOT = { has_country_flag = declined_establish_muslim_tributary_vassal_@FROM }
+							had_country_flag = { flag = declined_establish_muslim_tributary_vassal_@FROM days = 1825 }
+						}
+						NOT = { is_subject_of = FROM }
+						capital_scope = {
+							continent = europe
+						}
+						NOT = { total_development = 150 }
+						NOT = {
+							num_of_owned_provinces_with = {
+								value = 5
+								OR = {
+									is_claim = FROM
+									is_core = FROM
+								}
 							}
 						}
 					}
@@ -1481,6 +1485,7 @@ ask_for_muslim_tributary_vassal = {
 		NOT = { ai_attitude = { who = FROM attitude = atittude_rivalry } }
 		NOT = { coalition_target = FROM }
 		FROM = {
+			num_of_free_diplomatic_relations = 1
 			OR = {
 				tag = TUR
 				AND = {

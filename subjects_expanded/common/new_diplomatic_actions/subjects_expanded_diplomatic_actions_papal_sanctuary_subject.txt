@@ -1314,13 +1314,15 @@ ask_for_papal_sanctuary_subject = {
 						FROM = {
 							num_of_free_diplomatic_relations = 1
 						}
-						religion = FROM
-						OR = {
-							government = theocracy
-							is_papal_controller = yes
-							is_defender_of_faith = yes
-							crusade_target = {
-								is_neighbor_of = ROOT
+						AND = {
+							religion = FROM
+							OR = {
+								government = theocracy
+								is_papal_controller = yes
+								is_defender_of_faith = yes
+								crusade_target = {
+									is_neighbor_of = ROOT
+								}
 							}
 						}
 					}
@@ -3029,7 +3031,22 @@ make_papal_sanctuary_subject_to_vassal = {
 			is_papal_controller = yes
 			has_country_flag = is_kingdom_of_god_flag
 		}
-		num_of_free_diplomatic_relations = 1
+		OR = {
+			num_of_free_diplomatic_relations = 1
+			FROM = {
+				OR = {
+					NOT = { religion = ROOT }
+					NOT = {
+						government = theocracy
+						is_papal_controller = yes
+						is_defender_of_faith = yes
+						crusade_target = {
+							is_neighbor_of = PREV
+						}
+					}
+				}
+			}
+		}
 		is_neighbor_of = FROM
 		FROM = {
 			NOT = { total_development = 100 }

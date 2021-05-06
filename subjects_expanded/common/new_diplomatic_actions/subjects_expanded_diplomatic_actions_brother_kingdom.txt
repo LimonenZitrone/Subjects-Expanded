@@ -814,6 +814,7 @@ establish_brother_kingdom = {
 
 	ai_will_do = {
 		NOT = { personal_union = 2 }
+		num_of_free_diplomatic_relations = 1
 		FROM = {
 			is_emperor = no
 			OR = {

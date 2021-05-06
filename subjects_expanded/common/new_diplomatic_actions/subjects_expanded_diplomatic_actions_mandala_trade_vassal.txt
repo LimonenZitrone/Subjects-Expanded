@@ -102,6 +102,7 @@ establish_mandala_trade_vassal = {
 	}
 
 	ai_will_do = {
+		num_of_free_diplomatic_relations = 1
 		NOT = { war_exhaustion = 5 }
 		OR = {
 			AND = {

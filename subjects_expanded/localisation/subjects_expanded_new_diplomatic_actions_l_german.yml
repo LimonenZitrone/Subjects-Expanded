@@ -639,3 +639,4 @@
  FROM_IS_ALLIED_TO_EMPEROR: "Sie sind mit dem Kaiser des HRR verbündet"
  FROM_HAS_STRONG_GUARANTEES: "Ihre Unabhängigkeit wird von starken Ländern garantiert"
  FROM_ALLIED_TO_ROOT_RIVALS: "Sie sind mit unseren Rivalen oder Feinden verbündet"
+ STRATEGIC_VALUE: "Strategische Interessen"

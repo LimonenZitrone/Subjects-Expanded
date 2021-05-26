@@ -4,6 +4,15 @@ set_overlord_idea_groups = {
 	if = {
 		limit = {
 			overlord = {
+				technology_group = western
+			}
+		}
+		change_technology_group = western
+		change_unit_type = western
+	}
+	else_if = {
+		limit = {
+			overlord = {
 				technology_group = high_american
 			}
 		}
@@ -130,6 +139,24 @@ set_overlord_idea_groups = {
 	else_if = {
 		limit = {
 			overlord = {
+				technology_group = aboriginal_tech
+			}
+		}
+		change_technology_group = aboriginal_tech
+		change_unit_type = aboriginal_tech
+	}
+	else_if = {
+		limit = {
+			overlord = {
+				technology_group = polynesian_tech
+			}
+		}
+		change_technology_group = polynesian_tech
+		change_unit_type = polynesian_tech
+	}
+	else_if = {
+		limit = {
+			overlord = {
 				technology_group = roman_group
 			}
 		}
@@ -203,10 +230,10 @@ set_overlord_idea_groups = {
 		change_technology_group = western
 		change_unit_type = western
 	}
-	
+
 	# National Ideas
 	swap_free_idea_group = yes
-	
+
 	if = {
 		limit = {
 			NOT = { has_global_flag = idea_variation_voting_started }
@@ -215,7 +242,7 @@ set_overlord_idea_groups = {
 		}
 		# Idea Groups
 		set_variable = { which = num_of_overlord_ideas value = 0 }
-		
+
 		# Overlord's idea groups are checked and total number of ideas is counted
 		# Early Ideas (Extended Timeline)
 		count_idea_group_if_overlord_has = { idea_group = early_adm_ideas }
@@ -224,7 +251,7 @@ set_overlord_idea_groups = {
 		count_idea_group_if_overlord_has = { idea_group = early_trade_ideas }
 		count_idea_group_if_overlord_has = { idea_group = early_mil_ideas }
 		count_idea_group_if_overlord_has = { idea_group = early_defensive_ideas }
-		
+
 		# Vanilla Ideas
 		count_idea_group_if_overlord_has = { idea_group = aristocracy_ideas }
 		count_idea_group_if_overlord_has = { idea_group = plutocracy_ideas }
@@ -245,16 +272,19 @@ set_overlord_idea_groups = {
 		count_idea_group_if_overlord_has = { idea_group = humanist_ideas }
 		count_idea_group_if_overlord_has = { idea_group = influence_ideas }
 		count_idea_group_if_overlord_has = { idea_group = naval_ideas }
-		
+		count_idea_group_if_overlord_has = { idea_group = horde_gov_ideas }
+		count_idea_group_if_overlord_has = { idea_group = theocracy_gov_ideas }
+		count_idea_group_if_overlord_has = { idea_group = indigenous_ideas }
+
 		# Late Ideas (Extended Timeline)
 		count_idea_group_if_overlord_has = { idea_group = order_ideas }
 		count_idea_group_if_overlord_has = { idea_group = freedom_ideas }
 		count_idea_group_if_overlord_has = { idea_group = autocracy_ideas }
-		
+
 		# If you want to check for other ideas group, add them here.
-		
+
 		change_variable = { which = num_of_overlord_ideas value = -10 } # Colonial Nations start with 10 ideas less than their overlord
-		
+
 		# Overlord's idea groups are added to Subject; as long as "num_of_overlord_ideas" is >= 1 ideas are completed
 		# Early Ideas (Extended Timeline)
 		add_idea_group_if_overlord_has = { idea_group = early_adm_ideas }
@@ -263,7 +293,7 @@ set_overlord_idea_groups = {
 		add_idea_group_if_overlord_has = { idea_group = early_trade_ideas }
 		add_idea_group_if_overlord_has = { idea_group = early_mil_ideas }
 		add_idea_group_if_overlord_has = { idea_group = early_defensive_ideas }
-		
+
 		# Vanilla Ideas
 		add_idea_group_if_overlord_has = { idea_group = aristocracy_ideas }
 		add_idea_group_if_overlord_has = { idea_group = plutocracy_ideas }
@@ -284,12 +314,15 @@ set_overlord_idea_groups = {
 		add_idea_group_if_overlord_has = { idea_group = humanist_ideas }
 		add_idea_group_if_overlord_has = { idea_group = influence_ideas }
 		add_idea_group_if_overlord_has = { idea_group = naval_ideas }
-		
+		add_idea_group_if_overlord_has = { idea_group = horde_gov_ideas }
+		add_idea_group_if_overlord_has = { idea_group = theocracy_gov_ideas }
+		add_idea_group_if_overlord_has = { idea_group = indigenous_ideas }
+
 		# Late Ideas (Extended Timeline)
 		add_idea_group_if_overlord_has = { idea_group = order_ideas }
 		add_idea_group_if_overlord_has = { idea_group = freedom_ideas }
 		add_idea_group_if_overlord_has = { idea_group = autocracy_ideas }
-		
+
 		# If you want to possibly add other idea groups to subject, add them here. If you want ideas to be possibly completed, you need to add them with an "add_ideas_of_idea_group_<idea_group_name>" scripted effect
 	}
 	else = {
@@ -373,7 +406,7 @@ add_idea_group_if_overlord_has = {
 			has_country_flag = overlord_has_$idea_group$
 		}
 		clr_country_flag = overlord_has_$idea_group$
-		
+
 		# Debugging:
 		add_idea_group = $idea_group$
 		remove_idea_group = $idea_group$

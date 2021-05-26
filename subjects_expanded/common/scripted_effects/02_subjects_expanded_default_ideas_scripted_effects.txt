@@ -1042,3 +1042,159 @@ add_ideas_of_idea_group_naval_ideas = {
 		add_idea = superior_seamanship
 	}
 }
+
+add_ideas_of_idea_group_horde_gov_ideas = {
+	if = {
+		limit = {
+			check_variable = { which = num_of_overlord_ideas value = 1 }
+		}
+		change_variable = { which = num_of_overlord_ideas value = -1 }
+		add_idea = horse_lords
+	}
+	if = {
+		limit = {
+			check_variable = { which = num_of_overlord_ideas value = 1 }
+		}
+		change_variable = { which = num_of_overlord_ideas value = -1 }
+		add_idea = beyond_the_sun
+	}
+	if = {
+		limit = {
+			check_variable = { which = num_of_overlord_ideas value = 1 }
+		}
+		change_variable = { which = num_of_overlord_ideas value = -1 }
+		add_idea = mandate_of_the_khan
+	}
+	if = {
+		limit = {
+			check_variable = { which = num_of_overlord_ideas value = 1 }
+		}
+		change_variable = { which = num_of_overlord_ideas value = -1 }
+		add_idea = there_shall_be_no_grass
+	}
+	if = {
+		limit = {
+			check_variable = { which = num_of_overlord_ideas value = 1 }
+		}
+		change_variable = { which = num_of_overlord_ideas value = -1 }
+		add_idea = horde_loyalty
+	}
+	if = {
+		limit = {
+			check_variable = { which = num_of_overlord_ideas value = 1 }
+		}
+		change_variable = { which = num_of_overlord_ideas value = -1 }
+		add_idea = watchers_of_the_silk_road
+	}
+	if = {
+		limit = {
+			check_variable = { which = num_of_overlord_ideas value = 1 }
+		}
+		change_variable = { which = num_of_overlord_ideas value = -1 }
+		add_idea = a_magnanimous_empire
+	}
+}
+
+add_ideas_of_idea_group_theocracy_gov_ideas = {
+	if = {
+		limit = {
+			check_variable = { which = num_of_overlord_ideas value = 1 }
+		}
+		change_variable = { which = num_of_overlord_ideas value = -1 }
+		add_idea = servants_of_god
+	}
+	if = {
+		limit = {
+			check_variable = { which = num_of_overlord_ideas value = 1 }
+		}
+		change_variable = { which = num_of_overlord_ideas value = -1 }
+		add_idea = by_the_grace_of_god
+	}
+	if = {
+		limit = {
+			check_variable = { which = num_of_overlord_ideas value = 1 }
+		}
+		change_variable = { which = num_of_overlord_ideas value = -1 }
+		add_idea = friends_in_high_places
+	}
+	if = {
+		limit = {
+			check_variable = { which = num_of_overlord_ideas value = 1 }
+		}
+		change_variable = { which = num_of_overlord_ideas value = -1 }
+		add_idea = flesh_is_weak
+	}
+	if = {
+		limit = {
+			check_variable = { which = num_of_overlord_ideas value = 1 }
+		}
+		change_variable = { which = num_of_overlord_ideas value = -1 }
+		add_idea = alpha_and_omega
+	}
+	if = {
+		limit = {
+			check_variable = { which = num_of_overlord_ideas value = 1 }
+		}
+		change_variable = { which = num_of_overlord_ideas value = -1 }
+		add_idea = conviction_of_sin
+	}
+	if = {
+		limit = {
+			check_variable = { which = num_of_overlord_ideas value = 1 }
+		}
+		change_variable = { which = num_of_overlord_ideas value = -1 }
+		add_idea = martyrs
+	}
+}
+
+add_ideas_of_idea_group_indigenous_ideas = {
+	if = {
+		limit = {
+			check_variable = { which = num_of_overlord_ideas value = 1 }
+		}
+		change_variable = { which = num_of_overlord_ideas value = -1 }
+		add_idea = indigenous_bountiful_land
+	}
+	if = {
+		limit = {
+			check_variable = { which = num_of_overlord_ideas value = 1 }
+		}
+		change_variable = { which = num_of_overlord_ideas value = -1 }
+		add_idea = indigenous_irregular_warfare
+	}
+	if = {
+		limit = {
+			check_variable = { which = num_of_overlord_ideas value = 1 }
+		}
+		change_variable = { which = num_of_overlord_ideas value = -1 }
+		add_idea = indigenous_constitution
+	}
+	if = {
+		limit = {
+			check_variable = { which = num_of_overlord_ideas value = 1 }
+		}
+		change_variable = { which = num_of_overlord_ideas value = -1 }
+		add_idea = indigenous_braves
+	}
+	if = {
+		limit = {
+			check_variable = { which = num_of_overlord_ideas value = 1 }
+		}
+		change_variable = { which = num_of_overlord_ideas value = -1 }
+		add_idea = indigenous_controlled_burns
+	}
+	if = {
+		limit = {
+			check_variable = { which = num_of_overlord_ideas value = 1 }
+		}
+		change_variable = { which = num_of_overlord_ideas value = -1 }
+		add_idea = indigenous_trade_with_foreigners
+	}
+	if = {
+		limit = {
+			check_variable = { which = num_of_overlord_ideas value = 1 }
+		}
+		change_variable = { which = num_of_overlord_ideas value = -1 }
+		add_idea = indigenous_treaties
+	}
+}

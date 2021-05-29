@@ -385,6 +385,15 @@ annexationaction = {
 			}
 		}
 	}
+	condition = {
+		tooltip = CANNOT_ANNEX_SUBJECT_IF_OVERLORD_DISALLOWED_IT
+		potential = {
+			is_subject = yes
+		}
+		allow = {
+			NOT = { has_country_modifier = disallow_subject_from_annexing_subjects_modifier }
+		}
+	}
 	effect = {
 		FROM = {
 			if = {
@@ -398,6 +407,32 @@ annexationaction = {
 					hidden = yes
 				}
 			}
+		}
+	}
+}
+
+integrationaction = {
+	condition = {
+		tooltip = INTEGRATETOOLOWDESC
+		potential = {
+			senior_union_with = FROM
+		}
+		allow = {
+			FROM = {
+				has_opinion = {
+					who = ROOT
+					value = 190
+				}
+			}
+		}
+	}
+	condition = {
+		tooltip = CANNOT_ANNEX_SUBJECT_IF_OVERLORD_DISALLOWED_IT
+		potential = {
+			is_subject = yes
+		}
+		allow = {
+			NOT = { has_country_modifier = disallow_subject_from_annexing_subjects_modifier }
 		}
 	}
 }

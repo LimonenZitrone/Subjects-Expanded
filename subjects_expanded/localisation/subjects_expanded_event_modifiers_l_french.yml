@@ -1,4 +1,7 @@
-﻿:
+﻿l_french:
+ disallow_subject_from_annexing_subjects_modifier: "Disallowed Subject Annexation"
+ desc_disallow_subject_from_annexing_subjects_modifier: "Allowed to Annex or Integrate Subjects: §RNo§! \n\nOur overlord has disallowed us to annex or integrate our subjects. As long as we are a subject nation and this modifier is active we are not able to annex or integrate our subjects."
+
  protectorate_modifier: "Protectorate"
  protectorate_institution_modifier_1: "Protectorate"
  protectorate_institution_modifier_2: "Protectorate"

@@ -1,4 +1,7 @@
 ﻿l_german:
+ disallow_subject_from_annexing_subjects_modifier: "Untertan-Annexion verboten"
+ desc_disallow_subject_from_annexing_subjects_modifier: "Erlaubnis, Untertanen zu annektieren oder zu integrieren: §RNein§! \n\nUnser Lehnsherr hat es uns verboten, unsere Untertanen zu annektieren oder zu integrieren. Solange wir ein Untertan sind und dieser Modifikator aktiv is, sind wir nicht in der Lage, unsere Untertanen zu annektieren oder zu integrieren."
+
  protectorate_modifier: "Protektorat"
  protectorate_institution_modifier_1: "Protektorat"
  protectorate_institution_modifier_2: "Protektorat"

@@ -1,3 +1,192 @@
+disallow_subject_from_annexing_subjects = {
+	category = influence
+
+	require_acceptance = no
+
+	is_visible = {
+		ai = no
+		FROM = {
+			is_subject_of = ROOT
+			NOT = { is_tributary_or_similar_subject = yes }
+			num_of_subjects = 1
+			NOT = { has_country_modifier = disallow_subject_from_annexing_subjects_modifier }
+		}
+	}
+
+	is_allowed = {
+		hidden_trigger = {
+			ai = no
+			FROM = {
+				is_subject_of = ROOT
+				NOT = { is_tributary_or_similar_subject = yes }
+				num_of_subjects = 1
+				NOT = { has_country_modifier = disallow_subject_from_annexing_subjects_modifier }
+			}
+		}
+		FROM = {
+			NOT = { liberty_desire = 50 }
+		}
+		FROM = {
+			has_opinion = {
+				who = ROOT
+				value = 50
+			}
+		}
+	}
+
+	on_accept = {
+		if = {
+			limit = {
+				ai = no
+				FROM = {
+					is_subject_of = ROOT
+					NOT = { is_tributary_or_similar_subject = yes }
+					num_of_subjects = 1
+					NOT = { has_country_modifier = disallow_subject_from_annexing_subjects_modifier }
+				}
+				FROM = {
+					NOT = { liberty_desire = 50 }
+				}
+				FROM = {
+					has_opinion = {
+						who = ROOT
+						value = 50
+					}
+				}
+			}
+			FROM = {
+				add_liberty_desire = 20
+				add_country_modifier = {
+					name = disallow_subject_from_annexing_subjects_modifier
+					duration = 7300
+				}
+				country_event = { id = subjects_expanded_general_events.1 }
+			}
+		}
+	}
+
+	ai_will_do = {
+		always = no
+	}
+}
+
+transfer_vassal_to_subject = {
+	category = influence
+
+	alert_index = 6
+	alert_tooltip = transfer_vassal_to_subject_alert_tooltip
+
+	require_acceptance = yes
+
+	is_visible = {
+		ai = no
+		is_free_or_tributary_trigger = yes
+		NOT = { has_country_flag = uses_transfer_vassal_to_subject }
+		FROM = {
+			is_subject_of = ROOT
+			NOT = { is_tributary_or_similar_subject = yes }
+			is_subject_type_that_can_have_subjects = yes
+		}
+		any_subject_country = {
+			NOT = { tag = FROM }
+			is_neighbor_of = FROM
+			OR = {
+				is_subject_of_type = vassal
+				is_subject_of_type = client_vassal
+				is_subject_of_type = march
+				is_subject_of_type = client_march
+				is_subject_of_type = naval_march
+			}
+		}
+	}
+
+	is_allowed = {
+		hidden_trigger = {
+			ai = no
+			is_free_or_tributary_trigger = yes
+			NOT = { has_country_flag = uses_transfer_vassal_to_subject }
+			FROM = {
+				is_subject_of = ROOT
+				NOT = { is_tributary_or_similar_subject = yes }
+				is_subject_type_that_can_have_subjects = yes
+			}
+		}
+		is_at_war = no
+		FROM = {
+			is_at_war = no
+		}
+		FROM = {
+			NOT = { liberty_desire = 50 }
+		}
+		any_subject_country = {
+			NOT = { tag = FROM }
+			is_neighbor_of = FROM
+			OR = {
+				is_subject_of_type = vassal
+				is_subject_of_type = client_vassal
+				is_subject_of_type = march
+				is_subject_of_type = client_march
+				is_subject_of_type = naval_march
+			}
+		}
+	}
+
+	on_accept = {
+		if = {
+			limit = {
+				ai = no
+				is_free_or_tributary_trigger = yes
+				NOT = { has_country_flag = uses_transfer_vassal_to_subject }
+				FROM = {
+					is_subject_of = ROOT
+					NOT = { is_tributary_or_similar_subject = yes }
+					is_subject_type_that_can_have_subjects = yes
+				}
+				is_at_war = no
+				FROM = {
+					is_at_war = no
+				}
+				FROM = {
+					NOT = { liberty_desire = 50 }
+				}
+				any_subject_country = {
+					NOT = { tag = FROM }
+					is_neighbor_of = FROM
+					OR = {
+						is_subject_of_type = vassal
+						is_subject_of_type = client_vassal
+						is_subject_of_type = march
+						is_subject_of_type = client_march
+						is_subject_of_type = naval_march
+					}
+				}
+			}
+			FROM = {
+				save_event_target_as = transfer_to_subject_target_overlord_target
+			}
+			set_country_flag = uses_transfer_vassal_to_subject
+			country_event = { id = subjects_expanded_general_events.2 }
+		}
+	}
+
+	on_decline = {
+	}
+
+	ai_acceptance = {
+		add_entry = {
+			name = SE_REASON_BASE_VALUE
+			export_to_variable = {
+				which = ai_value
+				value = 50
+			}
+		}
+	}
+
+	ai_will_do = {
+		always = no
+	}
+}
+
 return_subject_to_vassal = {
 	category = influence
 
@@ -179,6 +368,24 @@ return_subject_to_vassal = {
 							}
 						}
 					}
+				}
+			}
+			FROM = {
+				is_lesser_in_union = no
+				liberty_desire = 100
+				years_in_vassalage_under = {
+					who = ROOT
+					years = 25
+					all_subject_country = yes
+				}
+			}
+			FROM = {
+				is_lesser_in_union = yes
+				liberty_desire = 100
+				years_in_vassalage_under = {
+					who = ROOT
+					years = 60
+					all_subject_country = yes
 				}
 			}
 		}

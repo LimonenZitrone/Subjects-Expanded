@@ -78,6 +78,20 @@
  subjects_expanded_events5.EVTOPT30: "[administrative_region]"
  subjects_expanded_events5.EVTOPT31: "[viking_settlement]"
 
+ subjects_expanded_general_events.EVTNAME1: "New Overlord Law about Subjects"
+ subjects_expanded_general_events.EVTDESC1: "Our overlord, [Root.Overlord.GetName], has passed a new law which prevents us from annexing or integrating our own subjects for the next 20 years. This does not stop currently on-going annexations and integrations."
+ subjects_expanded_general_events1.EVTOPT1: "Damn."
+
+ subjects_expanded_general_events.EVTNAME2: "Transfer Subject"
+ subjects_expanded_general_events.EVTDESC2: "Select here, which of your vassals or marches you want to transfer to [transfer_to_subject_target_overlord_target.GetName]."
+ subjects_expanded_general_events2.EVTOPT1: "Transfer @[transfer_to_subject_target_1.GetTag] §Y[transfer_to_subject_target_1.GetName]§!."
+ subjects_expanded_general_events2.EVTOPT2: "Transfer @[transfer_to_subject_target_2.GetTag] §Y[transfer_to_subject_target_2.GetName]§!."
+ subjects_expanded_general_events2.EVTOPT3: "Transfer @[transfer_to_subject_target_3.GetTag] §Y[transfer_to_subject_target_3.GetName]§!."
+ subjects_expanded_general_events2.EVTOPT4: "Transfer @[transfer_to_subject_target_4.GetTag] §Y[transfer_to_subject_target_4.GetName]§!."
+ subjects_expanded_general_events2.EVTOPT5: "Transfer @[transfer_to_subject_target_5.GetTag] §Y[transfer_to_subject_target_5.GetName]§!."
+ subjects_expanded_general_events2.EVTOPT6: "I want to transfer a different subject."
+ subjects_expanded_general_events2.EVTOPT7: "Cancel."
+
  subjects_expanded_protectorate_events.EVTNAME2: "Independence granted!"
  subjects_expanded_protectorate_events.EVTDESC2: "Our former overlord [From.GetName] decided to grant us independence. But this also means that they could attack as again..."
  subjects_expanded_protectorate_events2.EVTOPT1: "All right."

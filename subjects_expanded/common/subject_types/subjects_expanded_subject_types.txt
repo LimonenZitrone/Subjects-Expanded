@@ -5974,7 +5974,6 @@ naval_march = {
 
 	# Triggers:
 	is_potential_overlord = {
-		is_subject = no
 		num_of_ports = 5
 		navy_size = 10
 		primitives = no

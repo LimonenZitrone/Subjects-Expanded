@@ -498,6 +498,16 @@
  viking_settlement_demand_raid_loot_tooltip: "Fordert Seeleute und Geld von §Y[From.GetName]§!.\n"
 
 
+ disallow_subject_from_annexing_subjects_title: "Untertan-Annexion verbieten"
+ disallow_subject_from_annexing_subjects_desc: "Verbietet §Y[From.GetName]§! für die nächsten §Y20 Jahre§!, seine eigenen Untertanen zu annektieren oder zu integrieren. \nDies wird ihr Freiheitsstreben um §R+20%§! verändern. Dies wird keine bereits laufenden Annexionen oder Integrationen beenden."
+ disallow_subject_from_annexing_subjects_tooltip: "Verbietet §Y[From.GetName]§!, seine eigenen Untertanen zu annektieren oder zu integrieren.\n"
+
+ transfer_vassal_to_subject_title: "Untertan übertragen"
+ transfer_vassal_to_subject_desc: "Übertragt einen Eurer Vasallen oder eine Eurer Marken an §Y[From.GetName]§!, die an sie angrenzen. \n\nBeachtet, dass §Y[From.GetName]§! den Mark-Status eventuell nach der Übertragung widerruft."
+ transfer_vassal_to_subject_tooltip: "Übertragt einen Vasall oder eine Mark an §Y[From.GetName]§!.\n"
+ transfer_vassal_to_subject_alert_tooltip: "Untertan übertragen"
+ transfer_vassal_to_subject_dialog: "§Y[This.GetName]§! möchte uns einen benachbarten Vasallen oder eine benachbarte Mark übertragen. Dies würde uns zu dem neuen Lehnsherr des Untertans machen. \n\nWollt Ihr aktzeptieren?"
+
  return_subject_to_vassal_title: "Zum Vasall degradieren"
  return_subject_to_vassal_desc: "Beendet den derzeitigen Status von §Y[From.GetName]§! und macht sie zu einem Vasallen. Dies wird ihre Meinung über uns um §R-100§! verschlechtern und ihr Freiheitsstreben um §R+25%§! ändern. Außerdem verlieren wir §R-10§! Prestige[Root.GetIfDemoteToVassalGivesStabHit]."
  return_subject_to_vassal_tooltip: "Macht §Y[From.GetName]§! wieder zu einem Vasall.\n"
@@ -640,3 +650,4 @@
  FROM_HAS_STRONG_GUARANTEES: "Ihre Unabhängigkeit wird von starken Ländern garantiert"
  FROM_ALLIED_TO_ROOT_RIVALS: "Sie sind mit unseren Rivalen oder Feinden verbündet"
  STRATEGIC_VALUE: "Strategische Interessen"
+ SE_REASON_BASE_VALUE: "Basiswert"

@@ -4,6 +4,7 @@ establish_naval_march = {
 	require_acceptance = no
 
 	is_visible = {
+		is_subject = no
 		can_create_subject_type = {
 			subject = FROM
 			subject_type = naval_march
@@ -11,6 +12,7 @@ establish_naval_march = {
 	}
 
 	is_allowed = {
+		is_subject = no
 		can_create_subject_type = {
 			subject = FROM
 			subject_type = naval_march
@@ -23,6 +25,7 @@ establish_naval_march = {
 	on_accept = {
 		if = {
 			limit = {
+				is_subject = no
 				can_create_subject_type = {
 					subject = FROM
 					subject_type = naval_march
@@ -69,6 +72,7 @@ ask_to_become_naval_march = {
 
 	is_visible = {
 		FROM = {
+			is_subject = no
 			can_create_subject_type = {
 				subject = ROOT
 				subject_type = naval_march
@@ -78,6 +82,7 @@ ask_to_become_naval_march = {
 
 	is_allowed = {
 		FROM = {
+			is_subject = no
 			can_create_subject_type = {
 				subject = ROOT
 				subject_type = naval_march
@@ -92,6 +97,7 @@ ask_to_become_naval_march = {
 		if = {
 			limit = {
 				FROM = {
+					is_subject = no
 					can_create_subject_type = {
 						subject = ROOT
 						subject_type = naval_march
@@ -114,6 +120,7 @@ ask_to_become_naval_march = {
 		if = {
 			limit = {
 				FROM = {
+					is_subject = no
 					can_create_subject_type = {
 						subject = ROOT
 						subject_type = naval_march

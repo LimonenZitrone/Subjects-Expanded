@@ -1207,3 +1207,7 @@ increase_looting_speed_with_pagan_chiefdom_cooldown = {
 
 increase_horde_unity_with_pagan_chiefdom_cooldown = {
 }
+
+disallow_subject_from_annexing_subjects_modifier = {
+	disallow_subject_from_annexing_subjects_faction_influence = 1
+}

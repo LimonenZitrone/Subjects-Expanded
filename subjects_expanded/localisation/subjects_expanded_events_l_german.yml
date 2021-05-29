@@ -78,6 +78,20 @@
  subjects_expanded_events5.EVTOPT30: "[administrative_region]"
  subjects_expanded_events5.EVTOPT31: "[viking_settlement]"
 
+ subjects_expanded_general_events.EVTNAME1: "Neues Gesetz unsere Lehnsherrn bezüglich Untertanen"
+ subjects_expanded_general_events.EVTDESC1: "Unser Lehnsherr, [Root.Overlord.GetName], hat ein Gesetz verabschiedet, dass uns für die nächsten 20 Jahre verbietet, unsere Untertanen zu annektieren oder zu integrieren. Dies beendet keine bereits laufende Annexion bzw. Integration."
+ subjects_expanded_general_events1.EVTOPT1: "Verdammt."
+
+ subjects_expanded_general_events.EVTNAME2: "Untertan übertragen"
+ subjects_expanded_general_events.EVTDESC2: "Wählt hier aus, welchen Vasall oder welche Mark Ihr an [transfer_to_subject_target_overlord_target.GetName] übertragen wollt."
+ subjects_expanded_general_events2.EVTOPT1: "Übertragt @[transfer_to_subject_target_1.GetTag] §Y[transfer_to_subject_target_1.GetName]§!."
+ subjects_expanded_general_events2.EVTOPT2: "Übertragt @[transfer_to_subject_target_2.GetTag] §Y[transfer_to_subject_target_2.GetName]§!."
+ subjects_expanded_general_events2.EVTOPT3: "Übertragt @[transfer_to_subject_target_3.GetTag] §Y[transfer_to_subject_target_3.GetName]§!."
+ subjects_expanded_general_events2.EVTOPT4: "Übertragt @[transfer_to_subject_target_4.GetTag] §Y[transfer_to_subject_target_4.GetName]§!."
+ subjects_expanded_general_events2.EVTOPT5: "Übertragt @[transfer_to_subject_target_5.GetTag] §Y[transfer_to_subject_target_5.GetName]§!."
+ subjects_expanded_general_events2.EVTOPT6: "Ich möchte einen anderen Untertan übertragen."
+ subjects_expanded_general_events2.EVTOPT7: "Abbrechen."
+
  subjects_expanded_protectorate_events.EVTNAME2: "Unabhängigkeit gewährt!"
  subjects_expanded_protectorate_events.EVTDESC2: "Unser ehemaliger Lehnsherr [From.GetName] hat sich dazu entschlossen, uns Unabhängigkeit zu gewähren. Das bedeutet allerdings auch, dass sie uns jetzt wieder den Krieg erklären könnten..."
  subjects_expanded_protectorate_events2.EVTOPT1: "In Ordnung."

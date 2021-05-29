@@ -1,0 +1,1479 @@
+namespace = subjects_expanded_general_events
+
+country_event = {
+	id = subjects_expanded_general_events.1
+	title = subjects_expanded_general_events.EVTNAME1
+	desc = subjects_expanded_general_events.EVTDESC1
+	picture = DIPLOMACY_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = subjects_expanded_general_events1.EVTOPT1
+
+		tooltip = {
+			add_liberty_desire = 20
+			add_country_modifier = {
+				name = disallow_subject_from_annexing_subjects_modifier
+				duration = 7300
+			}
+		}
+		custom_tooltip = desc_disallow_subject_from_annexing_subjects_modifier
+	}
+}
+
+country_event = {
+	id = subjects_expanded_general_events.2
+	title = subjects_expanded_general_events.EVTNAME2
+	desc = subjects_expanded_general_events.EVTDESC2
+	picture = DIPLOMACY_eventPicture
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			random_subject_country = {
+				limit = {
+					is_neighbor_of = event_target:transfer_to_subject_target_overlord_target
+					OR = {
+						is_subject_of_type = vassal
+						is_subject_of_type = client_vassal
+						is_subject_of_type = march
+						is_subject_of_type = client_march
+						is_subject_of_type = naval_march
+					}
+					NOT = { has_country_flag = selected_for_transfer_subject_to_subject }
+				}
+				set_country_flag = selected_for_transfer_subject_to_subject
+				save_event_target_as = transfer_to_subject_target_1
+			}
+			random_subject_country = {
+				limit = {
+					is_neighbor_of = event_target:transfer_to_subject_target_overlord_target
+					OR = {
+						is_subject_of_type = vassal
+						is_subject_of_type = client_vassal
+						is_subject_of_type = march
+						is_subject_of_type = client_march
+						is_subject_of_type = naval_march
+					}
+					NOT = { has_country_flag = selected_for_transfer_subject_to_subject }
+				}
+				set_country_flag = selected_for_transfer_subject_to_subject
+				save_event_target_as = transfer_to_subject_target_2
+			}
+			random_subject_country = {
+				limit = {
+					is_neighbor_of = event_target:transfer_to_subject_target_overlord_target
+					OR = {
+						is_subject_of_type = vassal
+						is_subject_of_type = client_vassal
+						is_subject_of_type = march
+						is_subject_of_type = client_march
+						is_subject_of_type = naval_march
+					}
+					NOT = { has_country_flag = selected_for_transfer_subject_to_subject }
+				}
+				set_country_flag = selected_for_transfer_subject_to_subject
+				save_event_target_as = transfer_to_subject_target_3
+			}
+			random_subject_country = {
+				limit = {
+					is_neighbor_of = event_target:transfer_to_subject_target_overlord_target
+					OR = {
+						is_subject_of_type = vassal
+						is_subject_of_type = client_vassal
+						is_subject_of_type = march
+						is_subject_of_type = client_march
+						is_subject_of_type = naval_march
+					}
+					NOT = { has_country_flag = selected_for_transfer_subject_to_subject }
+				}
+				set_country_flag = selected_for_transfer_subject_to_subject
+				save_event_target_as = transfer_to_subject_target_4
+			}
+			random_subject_country = {
+				limit = {
+					is_neighbor_of = event_target:transfer_to_subject_target_overlord_target
+					OR = {
+						is_subject_of_type = vassal
+						is_subject_of_type = client_vassal
+						is_subject_of_type = march
+						is_subject_of_type = client_march
+						is_subject_of_type = naval_march
+					}
+					NOT = { has_country_flag = selected_for_transfer_subject_to_subject }
+				}
+				set_country_flag = selected_for_transfer_subject_to_subject
+				save_event_target_as = transfer_to_subject_target_5
+			}
+		}
+	}
+
+	option = {
+		name = subjects_expanded_general_events2.EVTOPT1
+
+		trigger = {
+			event_target:transfer_to_subject_target_1 = {
+				is_subject_of = ROOT
+				NOT = { has_country_flag = rejected_for_transfer_subject_to_subject }
+			}
+		}
+
+		event_target:transfer_to_subject_target_1 = {
+			if = {
+				limit = {
+					is_subject_of_type = vassal
+				}
+				hidden_effect = {
+					ROOT = {
+						PREV = {
+							grant_independence = yes
+						}
+					}
+				}
+				event_target:transfer_to_subject_target_overlord_target = {
+					create_subject = {
+						subject = PREV
+						subject_type = vassal
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					is_subject_of_type = client_vassal
+				}
+				hidden_effect = {
+					ROOT = {
+						PREV = {
+							grant_independence = yes
+						}
+					}
+				}
+				event_target:transfer_to_subject_target_overlord_target = {
+					create_subject = {
+						subject = PREV
+						subject_type = client_vassal
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					is_subject_of_type = march
+				}
+				hidden_effect = {
+					ROOT = {
+						PREV = {
+							grant_independence = yes
+						}
+					}
+				}
+				event_target:transfer_to_subject_target_overlord_target = {
+					create_subject = {
+						subject = PREV
+						subject_type = march
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					is_subject_of_type = client_march
+				}
+				hidden_effect = {
+					ROOT = {
+						PREV = {
+							grant_independence = yes
+						}
+					}
+				}
+				event_target:transfer_to_subject_target_overlord_target = {
+					create_subject = {
+						subject = PREV
+						subject_type = client_march
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					is_subject_of_type = naval_march
+				}
+				hidden_effect = {
+					ROOT = {
+						PREV = {
+							grant_independence = yes
+						}
+					}
+				}
+				event_target:transfer_to_subject_target_overlord_target = {
+					create_subject = {
+						subject = PREV
+						subject_type = naval_march
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			every_country = {
+				limit = {
+					OR = {
+						is_subject_of = ROOT
+						is_subject_of = event_target:transfer_to_subject_target_overlord_target
+					}
+				}
+				clr_country_flag = selected_for_transfer_subject_to_subject
+				clr_country_flag = rejected_for_transfer_subject_to_subject
+			}
+			clr_country_flag = uses_transfer_vassal_to_subject
+		}
+	}
+
+	option = {
+		name = subjects_expanded_general_events2.EVTOPT2
+
+		trigger = {
+			event_target:transfer_to_subject_target_2 = {
+				is_subject_of = ROOT
+				NOT = { has_country_flag = rejected_for_transfer_subject_to_subject }
+			}
+		}
+
+		event_target:transfer_to_subject_target_2 = {
+			if = {
+				limit = {
+					is_subject_of_type = vassal
+				}
+				hidden_effect = {
+					ROOT = {
+						PREV = {
+							grant_independence = yes
+						}
+					}
+				}
+				event_target:transfer_to_subject_target_overlord_target = {
+					create_subject = {
+						subject = PREV
+						subject_type = vassal
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					is_subject_of_type = client_vassal
+				}
+				hidden_effect = {
+					ROOT = {
+						PREV = {
+							grant_independence = yes
+						}
+					}
+				}
+				event_target:transfer_to_subject_target_overlord_target = {
+					create_subject = {
+						subject = PREV
+						subject_type = client_vassal
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					is_subject_of_type = march
+				}
+				hidden_effect = {
+					ROOT = {
+						PREV = {
+							grant_independence = yes
+						}
+					}
+				}
+				event_target:transfer_to_subject_target_overlord_target = {
+					create_subject = {
+						subject = PREV
+						subject_type = march
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					is_subject_of_type = client_march
+				}
+				hidden_effect = {
+					ROOT = {
+						PREV = {
+							grant_independence = yes
+						}
+					}
+				}
+				event_target:transfer_to_subject_target_overlord_target = {
+					create_subject = {
+						subject = PREV
+						subject_type = client_march
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					is_subject_of_type = naval_march
+				}
+				hidden_effect = {
+					ROOT = {
+						PREV = {
+							grant_independence = yes
+						}
+					}
+				}
+				event_target:transfer_to_subject_target_overlord_target = {
+					create_subject = {
+						subject = PREV
+						subject_type = naval_march
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			every_country = {
+				limit = {
+					OR = {
+						is_subject_of = ROOT
+						is_subject_of = event_target:transfer_to_subject_target_overlord_target
+					}
+				}
+				clr_country_flag = selected_for_transfer_subject_to_subject
+				clr_country_flag = rejected_for_transfer_subject_to_subject
+			}
+			clr_country_flag = uses_transfer_vassal_to_subject
+		}
+	}
+
+	option = {
+		name = subjects_expanded_general_events2.EVTOPT3
+
+		trigger = {
+			event_target:transfer_to_subject_target_3 = {
+				is_subject_of = ROOT
+				NOT = { has_country_flag = rejected_for_transfer_subject_to_subject }
+			}
+		}
+
+		event_target:transfer_to_subject_target_3 = {
+			if = {
+				limit = {
+					is_subject_of_type = vassal
+				}
+				hidden_effect = {
+					ROOT = {
+						PREV = {
+							grant_independence = yes
+						}
+					}
+				}
+				event_target:transfer_to_subject_target_overlord_target = {
+					create_subject = {
+						subject = PREV
+						subject_type = vassal
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					is_subject_of_type = client_vassal
+				}
+				hidden_effect = {
+					ROOT = {
+						PREV = {
+							grant_independence = yes
+						}
+					}
+				}
+				event_target:transfer_to_subject_target_overlord_target = {
+					create_subject = {
+						subject = PREV
+						subject_type = client_vassal
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					is_subject_of_type = march
+				}
+				hidden_effect = {
+					ROOT = {
+						PREV = {
+							grant_independence = yes
+						}
+					}
+				}
+				event_target:transfer_to_subject_target_overlord_target = {
+					create_subject = {
+						subject = PREV
+						subject_type = march
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					is_subject_of_type = client_march
+				}
+				hidden_effect = {
+					ROOT = {
+						PREV = {
+							grant_independence = yes
+						}
+					}
+				}
+				event_target:transfer_to_subject_target_overlord_target = {
+					create_subject = {
+						subject = PREV
+						subject_type = client_march
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					is_subject_of_type = naval_march
+				}
+				hidden_effect = {
+					ROOT = {
+						PREV = {
+							grant_independence = yes
+						}
+					}
+				}
+				event_target:transfer_to_subject_target_overlord_target = {
+					create_subject = {
+						subject = PREV
+						subject_type = naval_march
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			every_country = {
+				limit = {
+					OR = {
+						is_subject_of = ROOT
+						is_subject_of = event_target:transfer_to_subject_target_overlord_target
+					}
+				}
+				clr_country_flag = selected_for_transfer_subject_to_subject
+				clr_country_flag = rejected_for_transfer_subject_to_subject
+			}
+			clr_country_flag = uses_transfer_vassal_to_subject
+		}
+	}
+
+	option = {
+		name = subjects_expanded_general_events2.EVTOPT4
+
+		trigger = {
+			event_target:transfer_to_subject_target_4 = {
+				is_subject_of = ROOT
+				NOT = { has_country_flag = rejected_for_transfer_subject_to_subject }
+			}
+		}
+
+		event_target:transfer_to_subject_target_4 = {
+			if = {
+				limit = {
+					is_subject_of_type = vassal
+				}
+				hidden_effect = {
+					ROOT = {
+						PREV = {
+							grant_independence = yes
+						}
+					}
+				}
+				event_target:transfer_to_subject_target_overlord_target = {
+					create_subject = {
+						subject = PREV
+						subject_type = vassal
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					is_subject_of_type = client_vassal
+				}
+				hidden_effect = {
+					ROOT = {
+						PREV = {
+							grant_independence = yes
+						}
+					}
+				}
+				event_target:transfer_to_subject_target_overlord_target = {
+					create_subject = {
+						subject = PREV
+						subject_type = client_vassal
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					is_subject_of_type = march
+				}
+				hidden_effect = {
+					ROOT = {
+						PREV = {
+							grant_independence = yes
+						}
+					}
+				}
+				event_target:transfer_to_subject_target_overlord_target = {
+					create_subject = {
+						subject = PREV
+						subject_type = march
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					is_subject_of_type = client_march
+				}
+				hidden_effect = {
+					ROOT = {
+						PREV = {
+							grant_independence = yes
+						}
+					}
+				}
+				event_target:transfer_to_subject_target_overlord_target = {
+					create_subject = {
+						subject = PREV
+						subject_type = client_march
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					is_subject_of_type = naval_march
+				}
+				hidden_effect = {
+					ROOT = {
+						PREV = {
+							grant_independence = yes
+						}
+					}
+				}
+				event_target:transfer_to_subject_target_overlord_target = {
+					create_subject = {
+						subject = PREV
+						subject_type = naval_march
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			every_country = {
+				limit = {
+					OR = {
+						is_subject_of = ROOT
+						is_subject_of = event_target:transfer_to_subject_target_overlord_target
+					}
+				}
+				clr_country_flag = selected_for_transfer_subject_to_subject
+				clr_country_flag = rejected_for_transfer_subject_to_subject
+			}
+			clr_country_flag = uses_transfer_vassal_to_subject
+		}
+	}
+
+	option = {
+		name = subjects_expanded_general_events2.EVTOPT5
+
+		trigger = {
+			event_target:transfer_to_subject_target_5 = {
+				is_subject_of = ROOT
+				NOT = { has_country_flag = rejected_for_transfer_subject_to_subject }
+			}
+		}
+
+		event_target:transfer_to_subject_target_5 = {
+			if = {
+				limit = {
+					is_subject_of_type = vassal
+				}
+				hidden_effect = {
+					ROOT = {
+						PREV = {
+							grant_independence = yes
+						}
+					}
+				}
+				event_target:transfer_to_subject_target_overlord_target = {
+					create_subject = {
+						subject = PREV
+						subject_type = vassal
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					is_subject_of_type = client_vassal
+				}
+				hidden_effect = {
+					ROOT = {
+						PREV = {
+							grant_independence = yes
+						}
+					}
+				}
+				event_target:transfer_to_subject_target_overlord_target = {
+					create_subject = {
+						subject = PREV
+						subject_type = client_vassal
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					is_subject_of_type = march
+				}
+				hidden_effect = {
+					ROOT = {
+						PREV = {
+							grant_independence = yes
+						}
+					}
+				}
+				event_target:transfer_to_subject_target_overlord_target = {
+					create_subject = {
+						subject = PREV
+						subject_type = march
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					is_subject_of_type = client_march
+				}
+				hidden_effect = {
+					ROOT = {
+						PREV = {
+							grant_independence = yes
+						}
+					}
+				}
+				event_target:transfer_to_subject_target_overlord_target = {
+					create_subject = {
+						subject = PREV
+						subject_type = client_march
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					is_subject_of_type = naval_march
+				}
+				hidden_effect = {
+					ROOT = {
+						PREV = {
+							grant_independence = yes
+						}
+					}
+				}
+				event_target:transfer_to_subject_target_overlord_target = {
+					create_subject = {
+						subject = PREV
+						subject_type = naval_march
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			every_country = {
+				limit = {
+					OR = {
+						is_subject_of = ROOT
+						is_subject_of = event_target:transfer_to_subject_target_overlord_target
+					}
+				}
+				clr_country_flag = selected_for_transfer_subject_to_subject
+				clr_country_flag = rejected_for_transfer_subject_to_subject
+			}
+			clr_country_flag = uses_transfer_vassal_to_subject
+		}
+	}
+
+	option = {
+		name = subjects_expanded_general_events2.EVTOPT6
+
+		trigger = {
+			any_subject_country = {
+				is_neighbor_of = event_target:transfer_to_subject_target_overlord_target
+				OR = {
+					is_subject_of_type = vassal
+					is_subject_of_type = client_vassal
+					is_subject_of_type = march
+					is_subject_of_type = client_march
+					is_subject_of_type = naval_march
+				}
+				NOT = { has_country_flag = selected_for_transfer_subject_to_subject }
+			}
+		}
+
+		hidden_effect = {
+			every_subject_country = {
+				limit = {
+					is_neighbor_of = event_target:transfer_to_subject_target_overlord_target
+					OR = {
+						is_subject_of_type = vassal
+						is_subject_of_type = client_vassal
+						is_subject_of_type = march
+						is_subject_of_type = client_march
+						is_subject_of_type = naval_march
+					}
+					has_country_flag = selected_for_transfer_subject_to_subject
+				}
+				set_country_flag = rejected_for_transfer_subject_to_subject
+			}
+		}
+		country_event = { id = subjects_expanded_general_events.3 }
+	}
+
+	option = {
+		name = subjects_expanded_general_events2.EVTOPT7
+
+		hidden_effect = {
+			every_country = {
+				limit = {
+					OR = {
+						is_subject_of = ROOT
+						is_subject_of = event_target:transfer_to_subject_target_overlord_target
+					}
+				}
+				clr_country_flag = selected_for_transfer_subject_to_subject
+				clr_country_flag = rejected_for_transfer_subject_to_subject
+			}
+			clr_country_flag = uses_transfer_vassal_to_subject
+		}
+	}
+}
+
+country_event = {
+	id = subjects_expanded_general_events.3
+	title = subjects_expanded_general_events.EVTNAME2
+	desc = subjects_expanded_general_events.EVTDESC2
+	picture = DIPLOMACY_eventPicture
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			random_subject_country = {
+				limit = {
+					is_neighbor_of = event_target:transfer_to_subject_target_overlord_target
+					OR = {
+						is_subject_of_type = vassal
+						is_subject_of_type = client_vassal
+						is_subject_of_type = march
+						is_subject_of_type = client_march
+						is_subject_of_type = naval_march
+					}
+					NOT = { has_country_flag = selected_for_transfer_subject_to_subject }
+				}
+				set_country_flag = selected_for_transfer_subject_to_subject
+				save_event_target_as = transfer_to_subject_target_1
+			}
+			random_subject_country = {
+				limit = {
+					is_neighbor_of = event_target:transfer_to_subject_target_overlord_target
+					OR = {
+						is_subject_of_type = vassal
+						is_subject_of_type = client_vassal
+						is_subject_of_type = march
+						is_subject_of_type = client_march
+						is_subject_of_type = naval_march
+					}
+					NOT = { has_country_flag = selected_for_transfer_subject_to_subject }
+				}
+				set_country_flag = selected_for_transfer_subject_to_subject
+				save_event_target_as = transfer_to_subject_target_2
+			}
+			random_subject_country = {
+				limit = {
+					is_neighbor_of = event_target:transfer_to_subject_target_overlord_target
+					OR = {
+						is_subject_of_type = vassal
+						is_subject_of_type = client_vassal
+						is_subject_of_type = march
+						is_subject_of_type = client_march
+						is_subject_of_type = naval_march
+					}
+					NOT = { has_country_flag = selected_for_transfer_subject_to_subject }
+				}
+				set_country_flag = selected_for_transfer_subject_to_subject
+				save_event_target_as = transfer_to_subject_target_3
+			}
+			random_subject_country = {
+				limit = {
+					is_neighbor_of = event_target:transfer_to_subject_target_overlord_target
+					OR = {
+						is_subject_of_type = vassal
+						is_subject_of_type = client_vassal
+						is_subject_of_type = march
+						is_subject_of_type = client_march
+						is_subject_of_type = naval_march
+					}
+					NOT = { has_country_flag = selected_for_transfer_subject_to_subject }
+				}
+				set_country_flag = selected_for_transfer_subject_to_subject
+				save_event_target_as = transfer_to_subject_target_4
+			}
+			random_subject_country = {
+				limit = {
+					is_neighbor_of = event_target:transfer_to_subject_target_overlord_target
+					OR = {
+						is_subject_of_type = vassal
+						is_subject_of_type = client_vassal
+						is_subject_of_type = march
+						is_subject_of_type = client_march
+						is_subject_of_type = naval_march
+					}
+					NOT = { has_country_flag = selected_for_transfer_subject_to_subject }
+				}
+				set_country_flag = selected_for_transfer_subject_to_subject
+				save_event_target_as = transfer_to_subject_target_5
+			}
+		}
+	}
+
+	option = {
+		name = subjects_expanded_general_events2.EVTOPT1
+
+		trigger = {
+			event_target:transfer_to_subject_target_1 = {
+				is_subject_of = ROOT
+				NOT = { has_country_flag = rejected_for_transfer_subject_to_subject }
+			}
+		}
+
+		event_target:transfer_to_subject_target_1 = {
+			if = {
+				limit = {
+					is_subject_of_type = vassal
+				}
+				hidden_effect = {
+					ROOT = {
+						PREV = {
+							grant_independence = yes
+						}
+					}
+				}
+				event_target:transfer_to_subject_target_overlord_target = {
+					create_subject = {
+						subject = PREV
+						subject_type = vassal
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					is_subject_of_type = client_vassal
+				}
+				hidden_effect = {
+					ROOT = {
+						PREV = {
+							grant_independence = yes
+						}
+					}
+				}
+				event_target:transfer_to_subject_target_overlord_target = {
+					create_subject = {
+						subject = PREV
+						subject_type = client_vassal
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					is_subject_of_type = march
+				}
+				hidden_effect = {
+					ROOT = {
+						PREV = {
+							grant_independence = yes
+						}
+					}
+				}
+				event_target:transfer_to_subject_target_overlord_target = {
+					create_subject = {
+						subject = PREV
+						subject_type = march
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					is_subject_of_type = client_march
+				}
+				hidden_effect = {
+					ROOT = {
+						PREV = {
+							grant_independence = yes
+						}
+					}
+				}
+				event_target:transfer_to_subject_target_overlord_target = {
+					create_subject = {
+						subject = PREV
+						subject_type = client_march
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					is_subject_of_type = naval_march
+				}
+				hidden_effect = {
+					ROOT = {
+						PREV = {
+							grant_independence = yes
+						}
+					}
+				}
+				event_target:transfer_to_subject_target_overlord_target = {
+					create_subject = {
+						subject = PREV
+						subject_type = naval_march
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			every_country = {
+				limit = {
+					OR = {
+						is_subject_of = ROOT
+						is_subject_of = event_target:transfer_to_subject_target_overlord_target
+					}
+				}
+				clr_country_flag = selected_for_transfer_subject_to_subject
+				clr_country_flag = rejected_for_transfer_subject_to_subject
+			}
+			clr_country_flag = uses_transfer_vassal_to_subject
+		}
+	}
+
+	option = {
+		name = subjects_expanded_general_events2.EVTOPT2
+
+		trigger = {
+			event_target:transfer_to_subject_target_2 = {
+				is_subject_of = ROOT
+				NOT = { has_country_flag = rejected_for_transfer_subject_to_subject }
+			}
+		}
+
+		event_target:transfer_to_subject_target_2 = {
+			if = {
+				limit = {
+					is_subject_of_type = vassal
+				}
+				hidden_effect = {
+					ROOT = {
+						PREV = {
+							grant_independence = yes
+						}
+					}
+				}
+				event_target:transfer_to_subject_target_overlord_target = {
+					create_subject = {
+						subject = PREV
+						subject_type = vassal
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					is_subject_of_type = client_vassal
+				}
+				hidden_effect = {
+					ROOT = {
+						PREV = {
+							grant_independence = yes
+						}
+					}
+				}
+				event_target:transfer_to_subject_target_overlord_target = {
+					create_subject = {
+						subject = PREV
+						subject_type = client_vassal
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					is_subject_of_type = march
+				}
+				hidden_effect = {
+					ROOT = {
+						PREV = {
+							grant_independence = yes
+						}
+					}
+				}
+				event_target:transfer_to_subject_target_overlord_target = {
+					create_subject = {
+						subject = PREV
+						subject_type = march
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					is_subject_of_type = client_march
+				}
+				hidden_effect = {
+					ROOT = {
+						PREV = {
+							grant_independence = yes
+						}
+					}
+				}
+				event_target:transfer_to_subject_target_overlord_target = {
+					create_subject = {
+						subject = PREV
+						subject_type = client_march
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					is_subject_of_type = naval_march
+				}
+				hidden_effect = {
+					ROOT = {
+						PREV = {
+							grant_independence = yes
+						}
+					}
+				}
+				event_target:transfer_to_subject_target_overlord_target = {
+					create_subject = {
+						subject = PREV
+						subject_type = naval_march
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			every_country = {
+				limit = {
+					OR = {
+						is_subject_of = ROOT
+						is_subject_of = event_target:transfer_to_subject_target_overlord_target
+					}
+				}
+				clr_country_flag = selected_for_transfer_subject_to_subject
+				clr_country_flag = rejected_for_transfer_subject_to_subject
+			}
+			clr_country_flag = uses_transfer_vassal_to_subject
+		}
+	}
+
+	option = {
+		name = subjects_expanded_general_events2.EVTOPT3
+
+		trigger = {
+			event_target:transfer_to_subject_target_3 = {
+				is_subject_of = ROOT
+				NOT = { has_country_flag = rejected_for_transfer_subject_to_subject }
+			}
+		}
+
+		event_target:transfer_to_subject_target_3 = {
+			if = {
+				limit = {
+					is_subject_of_type = vassal
+				}
+				hidden_effect = {
+					ROOT = {
+						PREV = {
+							grant_independence = yes
+						}
+					}
+				}
+				event_target:transfer_to_subject_target_overlord_target = {
+					create_subject = {
+						subject = PREV
+						subject_type = vassal
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					is_subject_of_type = client_vassal
+				}
+				hidden_effect = {
+					ROOT = {
+						PREV = {
+							grant_independence = yes
+						}
+					}
+				}
+				event_target:transfer_to_subject_target_overlord_target = {
+					create_subject = {
+						subject = PREV
+						subject_type = client_vassal
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					is_subject_of_type = march
+				}
+				hidden_effect = {
+					ROOT = {
+						PREV = {
+							grant_independence = yes
+						}
+					}
+				}
+				event_target:transfer_to_subject_target_overlord_target = {
+					create_subject = {
+						subject = PREV
+						subject_type = march
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					is_subject_of_type = client_march
+				}
+				hidden_effect = {
+					ROOT = {
+						PREV = {
+							grant_independence = yes
+						}
+					}
+				}
+				event_target:transfer_to_subject_target_overlord_target = {
+					create_subject = {
+						subject = PREV
+						subject_type = client_march
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					is_subject_of_type = naval_march
+				}
+				hidden_effect = {
+					ROOT = {
+						PREV = {
+							grant_independence = yes
+						}
+					}
+				}
+				event_target:transfer_to_subject_target_overlord_target = {
+					create_subject = {
+						subject = PREV
+						subject_type = naval_march
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			every_country = {
+				limit = {
+					OR = {
+						is_subject_of = ROOT
+						is_subject_of = event_target:transfer_to_subject_target_overlord_target
+					}
+				}
+				clr_country_flag = selected_for_transfer_subject_to_subject
+				clr_country_flag = rejected_for_transfer_subject_to_subject
+			}
+			clr_country_flag = uses_transfer_vassal_to_subject
+		}
+	}
+
+	option = {
+		name = subjects_expanded_general_events2.EVTOPT4
+
+		trigger = {
+			event_target:transfer_to_subject_target_4 = {
+				is_subject_of = ROOT
+				NOT = { has_country_flag = rejected_for_transfer_subject_to_subject }
+			}
+		}
+
+		event_target:transfer_to_subject_target_4 = {
+			if = {
+				limit = {
+					is_subject_of_type = vassal
+				}
+				hidden_effect = {
+					ROOT = {
+						PREV = {
+							grant_independence = yes
+						}
+					}
+				}
+				event_target:transfer_to_subject_target_overlord_target = {
+					create_subject = {
+						subject = PREV
+						subject_type = vassal
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					is_subject_of_type = client_vassal
+				}
+				hidden_effect = {
+					ROOT = {
+						PREV = {
+							grant_independence = yes
+						}
+					}
+				}
+				event_target:transfer_to_subject_target_overlord_target = {
+					create_subject = {
+						subject = PREV
+						subject_type = client_vassal
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					is_subject_of_type = march
+				}
+				hidden_effect = {
+					ROOT = {
+						PREV = {
+							grant_independence = yes
+						}
+					}
+				}
+				event_target:transfer_to_subject_target_overlord_target = {
+					create_subject = {
+						subject = PREV
+						subject_type = march
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					is_subject_of_type = client_march
+				}
+				hidden_effect = {
+					ROOT = {
+						PREV = {
+							grant_independence = yes
+						}
+					}
+				}
+				event_target:transfer_to_subject_target_overlord_target = {
+					create_subject = {
+						subject = PREV
+						subject_type = client_march
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					is_subject_of_type = naval_march
+				}
+				hidden_effect = {
+					ROOT = {
+						PREV = {
+							grant_independence = yes
+						}
+					}
+				}
+				event_target:transfer_to_subject_target_overlord_target = {
+					create_subject = {
+						subject = PREV
+						subject_type = naval_march
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			every_country = {
+				limit = {
+					OR = {
+						is_subject_of = ROOT
+						is_subject_of = event_target:transfer_to_subject_target_overlord_target
+					}
+				}
+				clr_country_flag = selected_for_transfer_subject_to_subject
+				clr_country_flag = rejected_for_transfer_subject_to_subject
+			}
+			clr_country_flag = uses_transfer_vassal_to_subject
+		}
+	}
+
+	option = {
+		name = subjects_expanded_general_events2.EVTOPT5
+
+		trigger = {
+			event_target:transfer_to_subject_target_5 = {
+				is_subject_of = ROOT
+				NOT = { has_country_flag = rejected_for_transfer_subject_to_subject }
+			}
+		}
+
+		event_target:transfer_to_subject_target_5 = {
+			if = {
+				limit = {
+					is_subject_of_type = vassal
+				}
+				hidden_effect = {
+					ROOT = {
+						PREV = {
+							grant_independence = yes
+						}
+					}
+				}
+				event_target:transfer_to_subject_target_overlord_target = {
+					create_subject = {
+						subject = PREV
+						subject_type = vassal
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					is_subject_of_type = client_vassal
+				}
+				hidden_effect = {
+					ROOT = {
+						PREV = {
+							grant_independence = yes
+						}
+					}
+				}
+				event_target:transfer_to_subject_target_overlord_target = {
+					create_subject = {
+						subject = PREV
+						subject_type = client_vassal
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					is_subject_of_type = march
+				}
+				hidden_effect = {
+					ROOT = {
+						PREV = {
+							grant_independence = yes
+						}
+					}
+				}
+				event_target:transfer_to_subject_target_overlord_target = {
+					create_subject = {
+						subject = PREV
+						subject_type = march
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					is_subject_of_type = client_march
+				}
+				hidden_effect = {
+					ROOT = {
+						PREV = {
+							grant_independence = yes
+						}
+					}
+				}
+				event_target:transfer_to_subject_target_overlord_target = {
+					create_subject = {
+						subject = PREV
+						subject_type = client_march
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					is_subject_of_type = naval_march
+				}
+				hidden_effect = {
+					ROOT = {
+						PREV = {
+							grant_independence = yes
+						}
+					}
+				}
+				event_target:transfer_to_subject_target_overlord_target = {
+					create_subject = {
+						subject = PREV
+						subject_type = naval_march
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			every_country = {
+				limit = {
+					OR = {
+						is_subject_of = ROOT
+						is_subject_of = event_target:transfer_to_subject_target_overlord_target
+					}
+				}
+				clr_country_flag = selected_for_transfer_subject_to_subject
+				clr_country_flag = rejected_for_transfer_subject_to_subject
+			}
+			clr_country_flag = uses_transfer_vassal_to_subject
+		}
+	}
+
+	option = {
+		name = subjects_expanded_general_events2.EVTOPT6
+
+		trigger = {
+			any_subject_country = {
+				is_neighbor_of = event_target:transfer_to_subject_target_overlord_target
+				OR = {
+					is_subject_of_type = vassal
+					is_subject_of_type = client_vassal
+					is_subject_of_type = march
+					is_subject_of_type = client_march
+					is_subject_of_type = naval_march
+				}
+				NOT = { has_country_flag = selected_for_transfer_subject_to_subject }
+			}
+		}
+
+		hidden_effect = {
+			every_subject_country = {
+				limit = {
+					is_neighbor_of = event_target:transfer_to_subject_target_overlord_target
+					OR = {
+						is_subject_of_type = vassal
+						is_subject_of_type = client_vassal
+						is_subject_of_type = march
+						is_subject_of_type = client_march
+						is_subject_of_type = naval_march
+					}
+					has_country_flag = selected_for_transfer_subject_to_subject
+				}
+				set_country_flag = rejected_for_transfer_subject_to_subject
+			}
+		}
+		country_event = { id = subjects_expanded_general_events.2 }
+	}
+
+	option = {
+		name = subjects_expanded_general_events2.EVTOPT7
+
+		hidden_effect = {
+			every_country = {
+				limit = {
+					OR = {
+						is_subject_of = ROOT
+						is_subject_of = event_target:transfer_to_subject_target_overlord_target
+					}
+				}
+				clr_country_flag = selected_for_transfer_subject_to_subject
+				clr_country_flag = rejected_for_transfer_subject_to_subject
+			}
+			clr_country_flag = uses_transfer_vassal_to_subject
+		}
+	}
+}

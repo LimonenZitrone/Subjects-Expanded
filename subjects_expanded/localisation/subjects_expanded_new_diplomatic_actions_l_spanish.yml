@@ -498,6 +498,16 @@
  viking_settlement_demand_raid_loot_tooltip: "Demand sailors and money from §Y[From.GetName]§!.\n"
 
 
+ disallow_subject_from_annexing_subjects_title: "Disallow Subject Annexations"
+ disallow_subject_from_annexing_subjects_desc: "Disallow §Y[From.GetName]§! to annex or integrate their own subjects for §Y20 years§!. \nThis will change their liberty desire by §R+20%§!. This doesn't cancel already on-going annexations and integrations."
+ disallow_subject_from_annexing_subjects_tooltip: "Disallow §Y[From.GetName]§! to annex or integrate their own subjects.\n"
+
+ transfer_vassal_to_subject_title: "Transfer Subject"
+ transfer_vassal_to_subject_desc: "Transfer a vassal or march of yours that neighbors them to §Y[From.GetName]§!. \n\nNote that §Y[From.GetName]§! might revoke the march status after you transfered the subject."
+ transfer_vassal_to_subject_tooltip: "Transfer a vassal or march to §Y[From.GetName]§!.\n"
+ transfer_vassal_to_subject_alert_tooltip: "Transfer Subject"
+ transfer_vassal_to_subject_dialog: "§Y[This.GetName]§! wants to transfer one of their vassals or marches that neighbors us to us. This would mean we would become that subject's new overlord. \n\nDo you want to accept?"
+
  return_subject_to_vassal_title: "Demote to Vassal"
  return_subject_to_vassal_desc: "Cancel the current status §Y[From.GetName]§! has and make them to a vassal. This will decrease their opinion of us by §R-100§! and change their liberty desire by §R+25%§!. We will also lose §R-10§! prestige[Root.GetIfDemoteToVassalGivesStabHit]."
  return_subject_to_vassal_tooltip: "Make §Y[From.GetName]§! to a vassal again.\n"
@@ -640,3 +650,4 @@
  FROM_HAS_STRONG_GUARANTEES: "They are guaranteed by strong nations"
  FROM_ALLIED_TO_ROOT_RIVALS: "They are allied to our rivals or enemies"
  STRATEGIC_VALUE: "Strategic Interests"
+ SE_REASON_BASE_VALUE: "Base Value"

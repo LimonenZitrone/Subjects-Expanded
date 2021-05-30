@@ -73,6 +73,7 @@
  CANNOT_DECLARE_WAR_ON_COUNTRY_THAT_BROTHER_KINGDOM_IS_AT_WAR_WITH: "You cannot declare war on a country that already is at war with one of your Brother Kingdoms."
 
  CANNOT_ANNEX_SUBJECT_IF_OVERLORD_DISALLOWED_IT: "We cannot annex or integrate subjects while our overlord has disallowed doing that."
+ CANNOT_ANNEX_FIEF_SUBJECT_BEFORE_25_YEARS: "To be able to annex a [fief_subject] they need to be our subject for at least §Y25§! years."
 
  # New Diplomatic Actions:
  DID_NOT_LOWER_DEVELOPMENT_WITHIN_LAST_10_YEARS: "Did NOT reduce the development of an autonomous dominion within the last §Y10 years§!"

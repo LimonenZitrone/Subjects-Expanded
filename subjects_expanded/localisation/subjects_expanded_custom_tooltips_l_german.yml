@@ -73,6 +73,7 @@
  CANNOT_DECLARE_WAR_ON_COUNTRY_THAT_BROTHER_KINGDOM_IS_AT_WAR_WITH: "Ihr könnt einem Land, mit dem sich eines Eurer Bruderkönigreiche im Krieg befindet, nicht den Krieg erklären."
 
  CANNOT_ANNEX_SUBJECT_IF_OVERLORD_DISALLOWED_IT: "Wir können keine Untertanen annektieren oder integrieren während unser Lehnsherr uns das verboten hat."
+ CANNOT_ANNEX_FIEF_SUBJECT_BEFORE_25_YEARS: "Um einen [fief_subject] annektieren zu können, müssen sie mindestens für §Y25§! Jahre unser Untertan sein."
 
  # New Diplomatic Actions:
  DID_NOT_LOWER_DEVELOPMENT_WITHIN_LAST_10_YEARS: "Hat in den letzten §Y10 Jahren§! NICHT die Entwicklung eines Autonomen Herrschaftsgebiets verringert"

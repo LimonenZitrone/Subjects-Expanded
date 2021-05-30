@@ -32,6 +32,18 @@ is_possible_subject_of_subject_type_colony = {
 	NOT = { is_colonial_subject_type = yes }
 }
 
+is_possible_subject_of_subject_type_crown_colony = {
+	NOT = { is_colonial_subject_type = yes }
+}
+
+is_possible_subject_of_subject_type_private_enterprise = {
+	NOT = { is_colonial_subject_type = yes }
+}
+
+is_possible_subject_of_subject_type_self_governing_colony = {
+	NOT = { is_colonial_subject_type = yes }
+}
+
 is_possible_subject_of_subject_type_tributary_state = {
 	has_dlc = "Mandate of Heaven"
 	NOT = { is_subject_of_type = tributary_state }

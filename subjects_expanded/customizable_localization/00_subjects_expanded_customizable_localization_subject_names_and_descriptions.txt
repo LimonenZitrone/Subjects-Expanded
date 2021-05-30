@@ -40,9 +40,27 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			is_colonial_subject_type = yes
+			is_subject_of_type = colony
 		}
 		localisation_key = "[colony]"
+	}
+	text = {
+		trigger = {
+			is_subject_of_type = crown_colony
+		}
+		localisation_key = "[crown_colony]"
+	}
+	text = {
+		trigger = {
+			is_subject_of_type = private_enterprise
+		}
+		localisation_key = "[private_enterprise]"
+	}
+	text = {
+		trigger = {
+			is_subject_of_type = self_governing_colony
+		}
+		localisation_key = "[self_governing_colony]"
 	}
 	text = {
 		trigger = {
@@ -397,6 +415,72 @@ defined_text = {
 			always = yes
 		}
 		localisation_key = colony_long_desc
+	}
+}
+
+defined_text = {
+	name = crown_colony
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = crown_colony_title
+	}
+}
+
+defined_text = {
+	name = crown_colony_desc
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = crown_colony_long_desc
+	}
+}
+
+defined_text = {
+	name = private_enterprise
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = private_enterprise_title
+	}
+}
+
+defined_text = {
+	name = private_enterprise_desc
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = private_enterprise_long_desc
+	}
+}
+
+defined_text = {
+	name = self_governing_colony
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = self_governing_colony_title
+	}
+}
+
+defined_text = {
+	name = self_governing_colony_desc
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = self_governing_colony_long_desc
 	}
 }
 

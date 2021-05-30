@@ -131,6 +131,7 @@ is_colonial_subject_type = {
 is_subject_type_that_can_have_subjects = {
 	OR = {
 		is_subject_of_type = personal_union
+		is_subject_of_type = tributary_state
 		is_subject_of_type = salic_personal_union
 		is_subject_of_type = integrated_personal_union
 		is_subject_of_type = protectorate

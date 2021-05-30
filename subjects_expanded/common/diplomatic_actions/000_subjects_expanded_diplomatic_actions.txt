@@ -386,6 +386,24 @@ annexationaction = {
 		}
 	}
 	condition = {
+		tooltip = CANNOT_ANNEX_FIEF_SUBJECT_BEFORE_25_YEARS
+		potential = {
+			FROM = {
+				is_subject_of = ROOT
+				is_subject_of_type = fief_subject
+			}
+		}
+		allow = {
+			FROM = {
+				years_in_vassalage_under = {
+					who = ROOT
+					years = 25
+					all_subject_country = yes
+				}
+			}
+		}
+	}
+	condition = {
 		tooltip = CANNOT_ANNEX_SUBJECT_IF_OVERLORD_DISALLOWED_IT
 		potential = {
 			is_subject = yes

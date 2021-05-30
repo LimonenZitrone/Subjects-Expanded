@@ -4498,7 +4498,7 @@ fief_subject = {
 	# Properties:
 	transfer_trade_if_merchant_republic = yes
 	joins_overlords_wars = no
-	can_be_integrated = yes
+	can_be_annexed = yes
 	overlord_can_attack = no
 	overlord_can_be_subject = yes
 	can_use_claims = no

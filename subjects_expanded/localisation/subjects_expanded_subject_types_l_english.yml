@@ -67,7 +67,7 @@
  fief_subject_title: "Fiefdom"
  fief_subject_title_plural: "Fiefdoms"
  fief_subject_is_our: "§Y$NAME$§! is our Fiefdom."
- fief_subject_long_desc: "A Fiefdom is a vassal of the same culture, culture group or of an accepted culture. It behaves similar as normal vassals, but has a slightly lower liberty desire, does normally not join its overlord's wars - but can be called to arms in exchange for an increased liberty desire -, and can only be integrated. However, it pays more money to its overlord and the overlord can demand troops from it. Further more it has increased tax income and decreased culture conversion cost and also affects these modifiers for its overlord.\n"
+ fief_subject_long_desc: "A Fiefdom is a vassal of the same culture, culture group or of an accepted culture. It behaves similar as normal vassals, but has a slightly lower liberty desire, does normally not join its overlord's wars - but can be called to arms in exchange for an increased liberty desire -, and can only be annexed after §Y25§! years. However, it pays more money to its overlord and the overlord can demand troops from it. Further more it has increased tax income and decreased culture conversion cost and also affects these modifiers for its overlord.\n"
  fief_subject_no_overlord_dow: "You cannot declare war on your own Fiefdom."
  fief_subject_overlord_title: "Overlord"
 
@@ -262,3 +262,11 @@
  viking_settlement_long_desc: "A Viking Settlement is a mixture of a Colony and a Tributary State. It behaves like a Colony, but doesn't pay tariffs but tribute. It has less liberty desire than a Colony and the overlord gets access to the '§YSupport Loyalists§!' subject interaction to further reduce it. It gets the same bonuses as a Naval March, but weaker. Furthermore it gets §Y1§! colonist and the ability to raid coasts. It gives its overlord a bonus on sailors and naval forcelimit and grants it the ability to raid coasts as well. A Viking Settlement must be §YNorse§! and is automatically created a few days after a Colonial Nation spawned in North America, if its overlord is §YNorse§!. If the overlord changes religion, the Viking Settlement will be reverted to a Colony again.\n"
  viking_settlement_no_overlord_dow: "You cannot declare war on your own Viking Settlement."
  viking_settlement_overlord_title: "Overlord"
+
+ banking_family_subject: "Banking Family Clan"
+ banking_family_subject_title: "Banking Family Clan"
+ banking_family_subject_title_plural: "Banking Family Clans"
+ banking_family_subject_is_our: "§Y$NAME$§! is our Banking Family Clan."
+ banking_family_subject_long_desc: "A Banking Family Clan is a voluntary subject, which means it can decide to become independent without an independence war. A Banking Family Clan doesn't cost a relation slot and does not join its overlord's wars. It is independent in its own diplomacy. It has a slightly reduced liberty desire compared to vassals and cannot be annexed. It grants its overlord a bonus on diplomatic reputation and interest per annum and gains a bonus on diplomatic reputation and tax income. About every §Y10§! years the overlord gets an event to interact with the Banking Family Clan. A country can only have §Y1§! Banking Family Clan at the same time and a Banking Family Clan is only allowed to have at max §Y4§! provinces. A Banking Family Clan can be established by independent nations that are a republic or have special government reforms or selected specific idea groups in small republics with highly developed capital provinces.\n"
+ banking_family_subject_no_overlord_dow: "You cannot declare war on your own Banking Family Clan."
+ banking_family_subject_overlord_title: "Overlord"

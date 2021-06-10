@@ -168,3 +168,23 @@ cb_disloyal_brother_kingdom = {
 
 	war_goal = take_capital_restore_brother_kingdom
 }
+
+cb_disloyal_banking_family_subject = {
+	valid_for_subject = no
+
+	is_triggered_only = yes
+	months = 100
+
+	prerequisites = {
+		is_subject = no
+		can_create_subject_type = {
+			subject = FROM
+			subject_type = banking_family_subject
+		}
+		FROM = {
+			NOT = { is_subject_of = ROOT }
+		}
+	}
+
+	war_goal = take_capital_restore_banking_family_subject
+}

@@ -268,3 +268,13 @@
 
  viking_settlement_modifier: "Viking Settlement"
  viking_settlement_overlord_modifier: "Has Viking Settlements"
+
+ banking_family_subject_modifier: "Banking Family Clan"
+ banking_family_subject_size_modifier: "Banking Family Clan"
+ banking_family_subject_demand_war_chest_contribution_modifier: "Overlord demanded War Chest Contribution"
+ banking_family_subject_overlord_modifier: "Has Banking Family Clans"
+ banking_family_subject_demand_war_chest_contribution_overlord_modifier: "Demanded War Chest Contribution from a Banking Family Clan"
+ banking_family_subject_build_connections_overlord_modifier: "Built Connections with Banking Family Clan"
+ banking_family_subject_redistribute_currency_overlord_modifier: "Redistributed Currency in Banking Family Clan"
+ banking_family_subject_demand_dues_modifier: "Demanded Dues from Banking Family Clan"
+ banking_family_subject_seek_out_reliable_funding_overlord_modifier: "Seeked Out Reliable Funding of Banking Family Clan"

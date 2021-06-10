@@ -268,3 +268,13 @@
 
  viking_settlement_modifier: "Wikingersiedlung"
  viking_settlement_overlord_modifier: "Besitzt Wikingersiedlungen"
+
+ banking_family_subject_modifier: "Bankiersfamilienklan"
+ banking_family_subject_size_modifier: "Bankiersfamilienklan"
+ banking_family_subject_demand_war_chest_contribution_modifier: "Lehnsherr hat Kriegskassenbeitrag verlangt"
+ banking_family_subject_overlord_modifier: "Besitzt Bankiersfamilienklane"
+ banking_family_subject_demand_war_chest_contribution_overlord_modifier: "Hat Kriegskassenbeitrag von einem Bankiersfamilienklan verlangt"
+ banking_family_subject_build_connections_overlord_modifier: "Verbindungen mit Bankiersfamilienklan aufgebaut"
+ banking_family_subject_redistribute_currency_overlord_modifier: "Währung in Bankiersfamilienklan umverteilt"
+ banking_family_subject_demand_dues_modifier: "Zahlung von Bankiersfamilienklan verlangt"
+ banking_family_subject_seek_out_reliable_funding_overlord_modifier: "Zuverlässige Investitionen in Bankiersfamilienklan gefunden"

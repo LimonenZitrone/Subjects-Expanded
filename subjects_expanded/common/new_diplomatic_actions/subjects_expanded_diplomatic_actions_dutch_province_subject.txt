@@ -481,7 +481,7 @@ establish_dutch_province_subject = {
 				value = trigger_value:total_development
 				who = FROM
 			}
-			subtract_variable = { which = ai_value value = 1 }
+			#subtract_variable = { which = ai_value value = 1 }
 			divide_variable = { which = ai_value value = -2 }
 		}
 		add_entry = {
@@ -995,7 +995,7 @@ ask_for_dutch_province_subject = {
 				value = trigger_value:total_development
 				who = FROM
 			}
-			subtract_variable = { which = ai_value value = 1 }
+			#subtract_variable = { which = ai_value value = 1 }
 			divide_variable = { which = ai_value value = -3 }
 		}
 		add_entry = {
@@ -1295,7 +1295,7 @@ dutch_province_subject_ask_for_independence = {
 				value = trigger_value:num_of_allies
 				who = FROM
 			}
-			subtract_variable = { which = ai_value value = 1 }
+			#subtract_variable = { which = ai_value value = 1 }
 			multiply_variable = { which = ai_value value = 10 }
 		}
 		add_entry = {
@@ -1308,7 +1308,7 @@ dutch_province_subject_ask_for_independence = {
 				value = trigger_value:num_of_allies
 				who = FROM
 			}
-			subtract_variable = { which = ai_value value = 1 }
+			#subtract_variable = { which = ai_value value = 1 }
 			multiply_variable = { which = ai_value value = -3 }
 		}
 		add_entry = {
@@ -1328,7 +1328,7 @@ dutch_province_subject_ask_for_independence = {
 				which = ai_value
 				value = trigger_value:total_development
 			}
-			subtract_variable = { which = ai_value value = 1 }
+			#subtract_variable = { which = ai_value value = 1 }
 			divide_variable = { which = ai_value value = -5 }
 		}
 		add_entry = {
@@ -1839,7 +1839,7 @@ dutch_province_subject_force_white_peace = {
 				value = trigger_value:num_of_cities
 				who = FROM
 			}
-			subtract_variable = { which = ai_value value = 1 }
+			#subtract_variable = { which = ai_value value = 1 }
 			divide_variable = { which = ai_value value = -3 }
 		}
 		add_entry = {
@@ -2045,7 +2045,7 @@ dutch_province_subject_force_white_peace = {
 				value = trigger_value:army_size
 				who = FROM
 			}
-			subtract_variable = { which = ai_value value = 1 }
+			#subtract_variable = { which = ai_value value = 1 }
 			divide_variable = { which = ai_value value = -2 }
 		}
 		add_entry = {
@@ -2055,7 +2055,7 @@ dutch_province_subject_force_white_peace = {
 				value = trigger_value:liberty_desire
 				who = FROM
 			}
-			subtract_variable = { which = ai_value value = 1 }
+			#subtract_variable = { which = ai_value value = 1 }
 			divide_variable = { which = ai_value value = -2 }
 		}
 	}

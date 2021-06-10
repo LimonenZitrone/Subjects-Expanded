@@ -24,6 +24,9 @@
  cb_disloyal_brother_kingdom: "Illoyales Bruderkönigreich"
  cb_disloyal_brother_kingdom_desc: "Sie sind kein loyales Bruderkönigreich mehr. Wir müssen das ändern."
 
+ cb_disloyal_banking_family_subject: "Illoyaler Bankiersfamilienklan"
+ cb_disloyal_banking_family_subject_desc: "Sie sind kein loyaler Bankiersfamilienklan mehr. Wir müssen das ändern."
+
  # War Goals:
  take_capital_force_imperial_tributary_state: "Hauptstadt erobern"
  take_capital_force_imperial_tributary_state_desc: "Das Kriegsziel ist es, die Hauptstadt des Ziellandes zu erobern."
@@ -49,12 +52,16 @@
  take_capital_restore_brother_kingdom: "Hauptstadt erobern"
  take_capital_restore_brother_kingdom_desc: "Das Kriegsziel ist es, die Hauptstadt des Ziellandes zu erobern."
 
+ take_capital_restore_banking_family_subject: "Hauptstadt erobern"
+ take_capital_restore_banking_family_subject_desc: "Das Kriegsziel ist es, die Hauptstadt des Ziellandes zu erobern."
+
  # War Names:
  MANDALA_WAR_NAME: "$ORDER$ $FIRST$er Krieg der Mandala-Erzwingung"
  SATRAPY_WAR_NAME: "$ORDER$ $FIRST$er Krieg der persischen Hegemonie"
  TRADE_OUTPOST_WAR_NAME: "$ORDER$ $FIRST$er Errichtung eines Handelsaußenpostens in $SECOND_NAME$"
  IMPERIAL_FEUD_WAR_NAME: "$ORDER$ $FIRST$-$SECOND$er Krieg Kaiserlicher Stärke"
  BROTHER_KINGDOM_WAR_NAME: "$ORDER$ $FIRST$-$SECOND$er Krieg der dynastischen Überlegenheit"
+ BANKING_FAMILY_SUBJECT_WAR_NAME: "$ORDER$ $FIRST$-$SECOND$er Krieg der finanziellen Überlegenheit"
 
  # Peace Treaties:
  make_protectorate_desc: "@[From.GetTag] §Y[From.GetName]§! wird zu einem Protektorat von @[Root.GetTag] §Y[Root.GetName]§!."
@@ -128,3 +135,7 @@
  make_native_reserve_desc: "@[From.GetTag] §Y[From.GetName]§! wird zu einem Eingeborenenreservat von @[Root.GetTag] §Y[Root.GetName]§!."
  CB_ALLOWED_make_native_reserve: "Eingeborenenreservat erzwingen"
  PEACE_make_native_reserve: "$TAKERS$es Eingeborenenreservat"
+
+ make_banking_family_subject_desc: "@[From.GetTag] §Y[From.GetName]§! wird zu einem Bankiersfamilienklan von @[Root.GetTag] §Y[Root.GetName]§!."
+ CB_ALLOWED_make_banking_family_subject: "Bankiersfamilienklan erzwingen"
+ PEACE_make_banking_family_subject: "$TAKERS$er Bankiersfamilienklan"

@@ -254,6 +254,12 @@ defined_text = {
 		}
 		localisation_key = "[viking_settlement]"
 	}
+	text = {
+		trigger = {
+			is_subject_of_type = banking_family_subject
+		}
+		localisation_key = "[banking_family_subject]"
+	}
 
 	text = {
 		trigger = {
@@ -1186,5 +1192,27 @@ defined_text = {
 			always = yes
 		}
 		localisation_key = viking_settlement_long_desc
+	}
+}
+
+defined_text = {
+	name = banking_family_subject
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = banking_family_subject_title
+	}
+}
+
+defined_text = {
+	name = banking_family_subject_desc
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = banking_family_subject_long_desc
 	}
 }

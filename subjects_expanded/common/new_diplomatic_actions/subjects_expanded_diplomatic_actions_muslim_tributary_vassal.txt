@@ -191,7 +191,7 @@ establish_muslim_tributary_vassal = {
 				value = trigger_value:total_development
 				who = FROM
 			}
-			subtract_variable = { which = ai_value value = 1 }
+			#subtract_variable = { which = ai_value value = 1 }
 			divide_variable = { which = ai_value value = -2 }
 		}
 		add_entry = {
@@ -1150,7 +1150,7 @@ ask_for_muslim_tributary_vassal = {
 				which = ai_value
 				value = trigger_value:total_development
 			}
-			subtract_variable = { which = ai_value value = 1 }
+			#subtract_variable = { which = ai_value value = 1 }
 			divide_variable = { which = ai_value value = -4 }
 		}
 		add_entry = {

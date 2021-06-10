@@ -38,13 +38,13 @@ establish_sister_republic = {
 					which = our_total_development
 					value = trigger_value:total_development
 				}
-				subtract_variable = { which = our_total_development value = 1 }
+				#subtract_variable = { which = our_total_development value = 1 }
 				export_to_variable = {
 					which = their_total_development
 					value = trigger_value:total_development
 					who = PREV
 				}
-				subtract_variable = { which = their_total_development value = 1 }
+				#subtract_variable = { which = their_total_development value = 1 }
 				divide_variable = { which = their_total_development value = 3 }
 				check_variable = { which = our_total_development which = their_total_development }
 			}
@@ -112,13 +112,13 @@ establish_sister_republic = {
 							which = our_total_development
 							value = trigger_value:total_development
 						}
-						subtract_variable = { which = our_total_development value = 1 }
+						#subtract_variable = { which = our_total_development value = 1 }
 						export_to_variable = {
 							which = their_total_development
 							value = trigger_value:total_development
 							who = PREV
 						}
-						subtract_variable = { which = their_total_development value = 1 }
+						#subtract_variable = { which = their_total_development value = 1 }
 						divide_variable = { which = their_total_development value = 3 }
 						check_variable = { which = our_total_development which = their_total_development }
 					}
@@ -192,13 +192,13 @@ establish_sister_republic = {
 							which = our_total_development
 							value = trigger_value:total_development
 						}
-						subtract_variable = { which = our_total_development value = 1 }
+						#subtract_variable = { which = our_total_development value = 1 }
 						export_to_variable = {
 							which = their_total_development
 							value = trigger_value:total_development
 							who = PREV
 						}
-						subtract_variable = { which = their_total_development value = 1 }
+						#subtract_variable = { which = their_total_development value = 1 }
 						divide_variable = { which = their_total_development value = 3 }
 						check_variable = { which = our_total_development which = their_total_development }
 					}
@@ -818,13 +818,13 @@ ask_for_sister_republic = {
 						which = our_total_development
 						value = trigger_value:total_development
 					}
-					subtract_variable = { which = our_total_development value = 1 }
+					#subtract_variable = { which = our_total_development value = 1 }
 					export_to_variable = {
 						which = their_total_development
 						value = trigger_value:total_development
 						who = PREV
 					}
-					subtract_variable = { which = their_total_development value = 1 }
+					#subtract_variable = { which = their_total_development value = 1 }
 					divide_variable = { which = their_total_development value = 3 }
 					check_variable = { which = our_total_development which = their_total_development }
 				}
@@ -888,13 +888,13 @@ ask_for_sister_republic = {
 								which = our_total_development
 								value = trigger_value:total_development
 							}
-							subtract_variable = { which = our_total_development value = 1 }
+							#subtract_variable = { which = our_total_development value = 1 }
 							export_to_variable = {
 								which = their_total_development
 								value = trigger_value:total_development
 								who = PREV
 							}
-							subtract_variable = { which = their_total_development value = 1 }
+							#subtract_variable = { which = their_total_development value = 1 }
 							divide_variable = { which = their_total_development value = 3 }
 							check_variable = { which = our_total_development which = their_total_development }
 						}
@@ -966,13 +966,13 @@ ask_for_sister_republic = {
 								which = our_total_development
 								value = trigger_value:total_development
 							}
-							subtract_variable = { which = our_total_development value = 1 }
+							#subtract_variable = { which = our_total_development value = 1 }
 							export_to_variable = {
 								which = their_total_development
 								value = trigger_value:total_development
 								who = PREV
 							}
-							subtract_variable = { which = their_total_development value = 1 }
+							#subtract_variable = { which = their_total_development value = 1 }
 							divide_variable = { which = their_total_development value = 3 }
 							check_variable = { which = our_total_development which = their_total_development }
 						}
@@ -1856,7 +1856,7 @@ sister_republic_ask_overlord_to_join_war = {
 			name = FROM_WAR_EXHAUSTION
 			export_to_variable = {
 				which = ai_value
-				value = war_exhaustion
+				value = trigger_value:war_exhaustion
 				who = FROM
 			}
 			multiply_variable = { which = ai_value value = -10 }

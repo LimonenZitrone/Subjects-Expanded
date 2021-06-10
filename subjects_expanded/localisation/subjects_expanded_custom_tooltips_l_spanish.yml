@@ -41,6 +41,7 @@
  IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_native_reserve: "Can be made into a §YNative Reservation§!"
  IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_administrative_region: "Can be made into an §YAdministrative Region§!"
  IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_viking_settlement: "Can be made into a §YViking Settlement§!"
+ IS_POSSIBLE_SUBJECT_OF_SUBJECT_TYPE_banking_family_subject: "Can be made into a §YBanking Family Clan§!"
 
  THIS_IS_FORMER_AUTONOMOUS_DOMINION: "Is a former §YDominion§! or a former §YColonial Nation§!"
 
@@ -114,6 +115,8 @@
  DID_NOT_REQUEST_CURIA_MONEY_FROM_THIS_RULER: "Did NOT request a donation from §Y[This.Monarch.GetName]§!"
 
  DID_NOT_DECLINE_A_CALL_TO_ARMS_OF_A_SUBJECT_WITHIN_LAST_1_YEAR: "Did NOT decline a call to arms of §Y[Root.GetName]§! within the year"
+
+ NOT_USED_BANKING_FAMILY_SUBJECT_EXTORT_EMERGENCY_FUNDS_WITHIN_LAST_25_YEARS_TT: "Did NOT extort emergency funds within the last §Y25 years§!"
 
  # Decisions:
  ALL_PROVINCES_IN_INDIAN_TRADE_COMPANY_REGIONS_CEDED_TO_DOMINION: "\nAll our provinces in [Root.GetIndianTradeCompanyRegionsSgPl] [Root.GetFirstIndianTradeCompanyRegionWeCede][Root.GetSecondIndianTradeCompanyRegionWeCede][Root.GetThirdIndianTradeCompanyRegionWeCede][Root.GetFourthIndianTradeCompanyRegionWeCede][Root.GetFifthIndianTradeCompanyRegionWeCede] are ceded to our dominion \n[Root.GetCreatedADNameIndia], which is released there. \n\nThe name might be adapted to your country's adjective after release."
@@ -189,6 +192,9 @@
  SE_VIKING_SETTLEMENT_MONEY_PAYMENT_TT: "([This.GetName]): \n   Lose §R[This.income_to_give_to_overlord_display.GetValue]§! Ducats. \n([From.GetName]): \n   Gain §G[This.income_to_give_to_overlord_display.GetValue]§! Ducats."
  SE_VIKING_SETTLEMENT_SAILORS_PAYMENT_TT: "([This.GetName]): \n   Lose §R[This.sailors_to_give_to_overlord_display.GetValue]§! Sailors. \n([From.GetName]): \n   Gain §G[This.sailors_to_give_to_overlord_display.GetValue]§! Sailors."
 
+ BANKING_FAMILY_SUBJECT_DEMAND_DUES_TT: "([This.GetName]): \n   Gain §G[This.their_current_income.GetValue]§! Ducats. \n([banking_family_subject_target.GetName]): \n   Lose §R[This.their_current_income.GetValue]§! Ducats."
+ BANKING_FAMILY_SUBJECT_EXTORT_EMERGENCY_FUNDS_TT: "([This.GetName]): \n   Gain §G[This.subject_income.GetValue]§! Ducats. \n([From.GetName]): \n   Lose §R[This.subject_income.GetValue]§! Ducats."
+
  # Triggered Modifiers:
  HAS_AT_LEAST_3_DOMINIONS_OR_AUTONOMOUS_DOMINIONS_IN_TRADE_COMPANY_REGIONS: "Has at least §Y3§! §YDominions§! or §YAutonomous Dominions§! with their capital in a trade company region (established via decisions)"
 
@@ -211,6 +217,7 @@
  ADMINISTRATIVE_REGION_HAS_BEST_RULER_SKILL_ADM: "£adm£ is the best ruler skill"
  ADMINISTRATIVE_REGION_HAS_BEST_RULER_SKILL_DIP: "£dip£ is the best ruler skill"
  ADMINISTRATIVE_REGION_HAS_BEST_RULER_SKILL_MIL: "£mil£ is the best ruler skill"
+ ENABLED_BANKING_FAMILY_SUBJECT_DEMAND_WAR_CHEST_CONTRIBUTION_TT: "War Chest Contribution is enabled"
 
  # Special Tooltips:
  DISPLAY_SUBJECTS_OF_TYPE_TT_OWNER_IS_SUBJECT_OF_TYPE: "@[This.Owner.GetTag] §Y[This.Owner.GetName]§! is a §Y[This.Owner.GetSubjectType]§! of @[This.Owner.Overlord.GetTag] §Y[This.Owner.Overlord.GetName]§!."
@@ -277,3 +284,5 @@
  display_administrative_region_desc_tt: "§g[administrative_region_desc]§W"
  display_viking_settlement_title_tt: "§Y[viking_settlement]§!"
  display_viking_settlement_desc_tt: "§g[viking_settlement_desc]§W"
+ display_banking_family_subject_title_tt: "§Y[banking_family_subject]§!"
+ display_banking_family_subject_desc_tt: "§g[banking_family_subject_desc]§W"

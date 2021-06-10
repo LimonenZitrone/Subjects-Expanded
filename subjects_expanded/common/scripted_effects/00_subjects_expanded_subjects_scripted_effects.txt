@@ -175,6 +175,24 @@ display_info_for_subject_type = {
 				duration = -1
 			}
 		}
+		if = {
+			limit = {
+				variable_arithmetic_trigger = {
+					export_to_variable = {
+						which = subject_$type$_selected
+						value = 1
+					}
+					check_variable = { which = subject_banking_family_subject_selected value = 1 }
+				}
+			}
+			custom_tooltip = DISPLAY_INFORMATION_SE_SUBJECT_GETS_PER_OWNED_PROVINCE
+			tooltip = {
+				add_country_modifier = {
+					name = banking_family_subject_size_modifier
+					duration = -1
+				}
+			}
+		}
 	}
 	else_if = {
 		limit = {

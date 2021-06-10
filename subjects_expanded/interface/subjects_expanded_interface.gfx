@@ -389,4 +389,17 @@ spriteTypes = {
 		name = "GFX_diplomacy_amviking_settlement"
 		texturefile = "gfx//interface//icon_diplomacy_amviking_settlement.dds"
 	}
+
+	spriteType = {
+		name = "GFX_icon_banking_family_subject"
+		texturefile = "gfx/interface/icon_banking_family_subject.dds"
+	}
+	spriteType = {
+		name = "GFX_diplomacy_leadbanking_family_subject"
+		texturefile = "gfx//interface//icon_diplomacy_leadbanking_family_subject.dds"
+	}
+	spriteType = {
+		name = "GFX_diplomacy_ambanking_family_subject"
+		texturefile = "gfx//interface//icon_diplomacy_ambanking_family_subject.dds"
+	}
 }

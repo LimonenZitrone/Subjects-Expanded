@@ -463,7 +463,7 @@
  establish_native_reserve_desc: "Wollt Ihr §Y[From.GetName]§! vorschlagen, unser Eingeborenenreservat zu werden? \n[native_reserve_desc]"
  establish_native_reserve_tooltip: "Macht §Y[From.GetName]§! zu einem [Root.GetAdjective]en §YEingeborenenreservat§!.\n"
  establish_native_reserve_alert_tooltip: "Eingeborenenreservat fordern"
- establish_native_reserve_dialog: "§Y[This.GetName]§! verlangt, dass wir ihr §YEingeborenenreservat§!. \n[native_reserve_desc] \nWollt Ihr akzeptieren?"
+ establish_native_reserve_dialog: "§Y[This.GetName]§! verlangt, dass wir ihr §YEingeborenenreservat§! werden. \n[native_reserve_desc] \nWollt Ihr akzeptieren?"
 
  ask_to_become_native_reserve_title: "Eingeborenenreservat erbitten"
  ask_to_become_native_reserve_desc: "Wollt Ihr §Y[From.GetName]§! vorschlagen, dass wir ihr Eingeborenenreservat werden? \n[native_reserve_desc]"
@@ -496,6 +496,39 @@
  viking_settlement_demand_raid_loot_title: "Anteil an Beute verlangen"
  viking_settlement_demand_raid_loot_desc: "Verlangt von §Y[From.GetName]§!, dass sie uns einen Teil ihrer geplünderten Beute übergeben. \nWird wird uns §G10%§! ihrer maximalen Anzahl von Seeleuten und §G50%§! ihres letzten Jahreseinkommens geben. Ihr Freiheitsstreben wird sich um §R+15%§! und ihre Meinung über uns um §R-50§! verändern."
  viking_settlement_demand_raid_loot_tooltip: "Fordert Seeleute und Geld von §Y[From.GetName]§!.\n"
+
+
+ establish_banking_family_subject_title: "Bankiersfamilienklan fordern"
+ establish_banking_family_subject_desc: "Wollt Ihr §Y[From.GetName]§! vorschlagen, unser Bankiersfamilienklan zu werden? \n[banking_family_subject_desc]"
+ establish_banking_family_subject_tooltip: "Macht §Y[From.GetName]§! zu einem [Root.GetAdjective]en §YBankiersfamilienklan§!.\n"
+ establish_banking_family_subject_alert_tooltip: "Bankiersfamilienklan fordern"
+ establish_banking_family_subject_dialog: "§Y[This.GetName]§! verlangt, dass wir ihr §YBankiersfamilienklan§! werden. \n[banking_family_subject_desc] \nWollt Ihr akzeptieren?"
+
+ ask_to_become_banking_family_subject_title: "Bankiersfamilienklan erbitten"
+ ask_to_become_banking_family_subject_desc: "Wollt Ihr §Y[From.GetName]§! vorschlagen, dass wir ihr Bankiersfamilienklan werden? \n[banking_family_subject_desc]"
+ ask_to_become_banking_family_subject_tooltip: "§Y[From.GetName]§! bitten, §Y[Root.GetName]§! zu einem [From.GetAdjective]en §YBankiersfamilienklan§! zu machen.\n"
+ ask_to_become_banking_family_subject_alert_tooltip: "Bankiersfamilienklan erbitten"
+ ask_to_become_banking_family_subject_dialog: "§Y[This.GetName]§! schlägt uns vor, dass sie unser §YBankiersfamilienklan§! werden. \n[banking_family_subject_desc] \nWollt Ihr akzeptieren?"
+
+ enable_banking_family_subject_demand_war_chest_contribution_title: "Kriegskassenbeitrag aktivieren"
+ enable_banking_family_subject_demand_war_chest_contribution_desc: "Wollt Ihr den Kriegskassenbeitrag von §Y[From.GetName]§! aktivieren? Dies wird Kriegssteuern für uns kostenlos machen und ihr Freiheitsstreben um §R+15%§! verändern, bis er wieder deaktiviert wird."
+ enable_banking_family_subject_demand_war_chest_contribution_tooltip: "Aktiviert den Kriegskassenbeitrag von §Y[From.GetName]§!.\n"
+
+ disable_banking_family_subject_demand_war_chest_contribution_title: "Kriegskassenbeitrag deaktivieren"
+ disable_banking_family_subject_demand_war_chest_contribution_desc: "Wollt Ihr den Kriegskassenbeitrag von §Y[From.GetName]§! deaktivieren? Dies wird den Malus auf ihr Freiheitsstreben sowie unsere kostenlosen Kriegssteuern entfernen."
+ disable_banking_family_subject_demand_war_chest_contribution_tooltip: "Deaktiviert den Kriegskassenbeitrag von  §Y[From.GetName]§!.\n"
+
+ banking_family_subject_extort_emergency_funds_title: "Notgeld erpressen"
+ banking_family_subject_extort_emergency_funds_desc: "Wollt Ihr Notgeld von §Y[From.GetName]§! erpressen? Dies wird uns das dreifache ihres jährlichen Einkommens geben und ihr Freiheitsstreben um §R+80%§! verändern."
+ banking_family_subject_extort_emergency_funds_tooltip: "Notgeld von §Y[From.GetName]§! erpressen.\n"
+
+ banking_family_subject_become_independent_title: "Unabhängigkeit erklären"
+ banking_family_subject_become_independent_desc: "Erklärt Eure Unabhängigkeit von Eurem Lehnsherrn §Y[From.GetName]§!. Wir erhalten einen §Y5-jährigen§! Waffenstillstand mit [From.GetName]. Dies wird §Y[From.GetName]§! einen Kriegsgrund gegen uns geben.  \nAußerdem wird sich unsere Stabilität um §R-1§! verändern."
+ banking_family_subject_become_independent_tooltip: "Erklärt Eure Unabhängigkeit von Eurem Lehnsherrn §Y[From.GetName]§!.\n"
+
+ cancel_banking_family_subject_title: "Bankiersfamilienklan entlassen"
+ cancel_banking_family_subject_desc: "Beendet das Abhängigkeitsverhältnis von §Y[From.GetName]§! zu uns. Dies wird ihre Meinung über uns um §R-200§! verschlechtern, sofern sie ein Freiheitsstreben unter §Y50%§! besitzen. Außerdem verlieren wir §R-25§! Prestige und erhalten eine §Y5-jährige§! Waffenruhe mit ihnen."
+ cancel_banking_family_subject_tooltip: "Beedet die Vasallisierung von §Y[From.GetName]§! und entlasst sie in die Freiheit.\n"
 
 
  disallow_subject_from_annexing_subjects_title: "Untertan-Annexion verbieten"
@@ -561,6 +594,7 @@
  ROOT_HAS_MORE_THAN_200_TOTAL_DEVELOPMENT: "Wir haben mehr als §Y200§! Entwicklung"
  FROM_IS_A_THEOCRACY: "Sie sind eine Theokratie"
  FROM_IS_A_REPUBLIC: "Sie sind eine Republik"
+ FROM_IS_NOT_A_REPUBLIC: "Sie sind keine Republik"
  FROM_IS_KINGDOM_RANK: "Sie sind ein Königreich"
  FROM_IS_EMPIRE_RANK: "Sie sind ein Kaiserreich"
  FROM_DEVELOPMENT: "Ihre Entwicklung"
@@ -618,6 +652,7 @@
  ROOT_IS_HRE_MEMBER: "Wir sind Teil des Reiches"
  ROOT_IS_MONARCHY: "Wir sind eine Monarchie"
  ROOT_IS_A_REPUBLIC: "Wir sind eine Republik"
+ ROOT_IS_NOT_A_REPUBLIC: "Wir sind keine Republik"
  ROOT_IS_A_THEOCRACY: "Wir sind eine Theokratie"
  ROOT_AMOUNT_OF_INVESTED_PAPAL_INFLUENCE: "Wir haben päpstlichen Einfluss investiert"
  FROM_JUST_CANCELED_BROTHER_KINGDOM: "Sie waren ein Bruderkönigreich und sind kürzlich unabhängig geworden"
@@ -651,3 +686,5 @@
  FROM_ALLIED_TO_ROOT_RIVALS: "Sie sind mit unseren Rivalen oder Feinden verbündet"
  STRATEGIC_VALUE: "Strategische Interessen"
  SE_REASON_BASE_VALUE: "Basiswert"
+ FROM_JUST_CANCELED_BANKING_FAMILY_SUBJECT: "Sie waren ein Bankiersfamilienklan und sind kürzlich unabhängig geworden"
+ FROM_NUM_OF_LOANS: "Ihre Anzahl an Krediten"

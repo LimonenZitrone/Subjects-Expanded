@@ -161,7 +161,7 @@ country_event = {
 				which = sailors_to_give_to_overlord
 				value = trigger_value:max_sailors
 			}
-			change_variable = { which = sailors_to_give_to_overlord value = -1 }
+			#change_variable = { which = sailors_to_give_to_overlord value = -1 }
 			multiply_variable = { which = sailors_to_give_to_overlord value = 0.1 }
 			divide_variable = { which = sailors_to_give_to_overlord value = 1000 }
 			multiply_variable = { which = sailors_to_give_to_overlord value = 1000 }

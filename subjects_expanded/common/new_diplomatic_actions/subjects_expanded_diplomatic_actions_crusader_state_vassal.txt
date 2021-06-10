@@ -41,13 +41,13 @@ establish_crusader_state_vassal = {
 					which = our_total_dev
 					value = trigger_value:total_development
 				}
-				subtract_variable = { which = our_total_dev value = 1 }
+				#subtract_variable = { which = our_total_dev value = 1 }
 				export_to_variable = {
 					which = their_total_dev
 					value = trigger_value:total_development
 					who = PREV
 				}
-				subtract_variable = { which = their_total_dev value = 1 }
+				#subtract_variable = { which = their_total_dev value = 1 }
 				divide_variable = { which = their_total_dev value = 2 }
 				NOT = { check_variable = { which = our_total_dev which = their_total_dev } }
 			}

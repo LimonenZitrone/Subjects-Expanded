@@ -11,4 +11,6 @@
  WEAKSUBJECTSLIST_WITH_NAME:0 "$COUNTRYNAME|Y$ ist ein(e) $SUBJECTTYPE$ unter $LIST$"
  OUR_SUBJECT_DESC:0 "unser(e) $LOYALDISLOYAL$e(r/s) $SUBJECTTYPE$"
  CW_WARN_LOSE_SUBJECT:0 "\nWenn wir annehmen, wird $WHO|Y$ nicht länger unser(e) $SUBJECTTYPE$ sein."
- 
+
+ mechanic_can_create_banking_family_subject_rule: "Errichtung von Bankiersfamilienklanen"
+ mechanic_can_create_banking_family_subject_rule_yes: "Erlaubt die Errichtung des Untertantyps §YBankiersfamilienklan§! in passenden Ländern."

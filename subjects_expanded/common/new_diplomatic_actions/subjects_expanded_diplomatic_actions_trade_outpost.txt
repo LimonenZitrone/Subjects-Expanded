@@ -456,7 +456,7 @@ establish_trade_outpost = {
 				value = trigger_value:total_development
 				who = FROM
 			}
-			subtract_variable = { which = ai_value value = 1 }
+			#subtract_variable = { which = ai_value value = 1 }
 			divide_variable = { which = ai_value value = -2 }
 		}
 		add_entry = {
@@ -783,7 +783,7 @@ ask_to_become_trade_outpost = {
 				value = trigger_value:total_development
 				who = FROM
 			}
-			subtract_variable = { which = ai_value value = 1 }
+			#subtract_variable = { which = ai_value value = 1 }
 			divide_variable = { which = ai_value value = -3 }
 		}
 		add_entry = {

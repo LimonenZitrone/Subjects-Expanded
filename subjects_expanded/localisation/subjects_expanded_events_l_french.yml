@@ -32,6 +32,7 @@
  subjects_expanded_events2.EVTOPT29: "There currently are §G[REB.num_of_subjects_of_type_native_reserve.GetValue]§! §YNative Reservations§! in the world."
  subjects_expanded_events2.EVTOPT30: "There currently are §G[REB.num_of_subjects_of_type_administrative_region.GetValue]§! §YAdministrative Regions§! in the world."
  subjects_expanded_events2.EVTOPT31: "There currently are §G[REB.num_of_subjects_of_type_viking_settlement.GetValue]§! §YViking Settlements§! in the world."
+ subjects_expanded_events2.EVTOPT32: "There currently are §G[REB.num_of_subjects_of_type_banking_family_subject.GetValue]§! §YBanking Family Clans§! in the world."
 
  subjects_expanded_events.EVTNAME3: "Idea Mods?"
  subjects_expanded_events.EVTDESC3: "Spawning Dominions via decisions sets their idea groups depending on the ones you chose. If you are using a mod that alters the vanilla idea groups in any way, this might §Rcrash§! the game. So select the matching option below to prevent that from happening!"
@@ -77,6 +78,7 @@
  subjects_expanded_events5.EVTOPT29: "[native_reserve]"
  subjects_expanded_events5.EVTOPT30: "[administrative_region]"
  subjects_expanded_events5.EVTOPT31: "[viking_settlement]"
+ subjects_expanded_events5.EVTOPT32: "[banking_family_subject]"
 
  subjects_expanded_general_events.EVTNAME1: "New Overlord Law about Subjects"
  subjects_expanded_general_events.EVTDESC1: "Our overlord, [Root.Overlord.GetName], has passed a new law which prevents us from annexing or integrating our own subjects for the next 20 years. This does not stop currently on-going annexations and integrations."
@@ -357,3 +359,19 @@
  subjects_expanded_viking_settlement_events.EVTNAME4: "Overlord demanded Share of Raid Loot"
  subjects_expanded_viking_settlement_events.EVTDESC4: "Our overlord, @[Root.Overlord.GetTag] §Y[Root.Overlord.GetName]§!, demanded that we share some of our raided loot with them."
  subjects_expanded_viking_settlement_events4.EVTOPT1: "It's not like we have choice..."
+
+ subjects_expanded_banking_family_subject_events.EVTNAME1: "[banking_family_subject_to_release.GetName] declares Independence"
+ subjects_expanded_banking_family_subject_events.EVTDESC1: "[banking_family_subject_to_release.GetName] has become too large, is no longer a republic or we simply have more than one Banking Family Clan. Therefore [banking_family_subject_to_release.GetName] is now granted independence."
+ subjects_expanded_banking_family_subject_events1.EVTOPT1: "Damn."
+
+ subjects_expanded_banking_family_subject_events.EVTNAME2: "The Banks of [banking_family_subject_target.GetName]"
+ subjects_expanded_banking_family_subject_events.EVTDESC2: "Due to our relation to the Banking Family Clan of [banking_family_subject_target.GetName], we can choose one of the following interactions for them for the next years."
+ subjects_expanded_banking_family_subject_events2.EVTOPT1: "Build Connections."
+ subjects_expanded_banking_family_subject_events2.EVTOPT2: "Redistribute Currency."
+ subjects_expanded_banking_family_subject_events2.EVTOPT3: "Demand Dues."
+ subjects_expanded_banking_family_subject_events2.EVTOPT4: "Seek Out Reliable Funding."
+
+ subjects_expanded_banking_family_subject_events.EVTNAME4: "Extort Emergency Funds from [From.GetName]"
+ subjects_expanded_banking_family_subject_events.EVTDESC4: "Although it will upset [From.GetName], we should press some more money out of them."
+ subjects_expanded_banking_family_subject_events4.EVTOPT1: "Extort Emergency Funds."
+ subjects_expanded_banking_family_subject_events4.EVTOPT2: "I have changed my mind."

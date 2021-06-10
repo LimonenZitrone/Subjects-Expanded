@@ -1,5 +1,6 @@
 name="Subjects Expanded"
 dependencies={
+	"Governments Expanded"
 	"Missions Expanded"
 	"Missions Expanded (old)"
 	"Extended Timeline"

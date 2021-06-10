@@ -2,7 +2,7 @@ establish_imperial_tributary_state = {
 	category = influence
 
 	require_acceptance = no
-	
+
 	is_visible = {
 		can_create_subject_type = {
 			subject = FROM
@@ -13,7 +13,7 @@ establish_imperial_tributary_state = {
 			capital_scope = { trade_range = ROOT }
 		}
 	}
-	
+
 	is_allowed = {
 		can_create_subject_type = {
 			subject = FROM
@@ -30,7 +30,7 @@ establish_imperial_tributary_state = {
 		FROM = { is_at_war = no }
 		FROM = { NOT = { liberty_desire = 90 } }
 	}
-	
+
 	on_accept = {
 		if = {
 			limit = {
@@ -56,7 +56,7 @@ establish_imperial_tributary_state = {
 			}
 		}
 	}
-	
+
 	ai_will_do = {
 		OR = {
 			AND = {
@@ -105,12 +105,12 @@ establish_imperial_tributary_state = {
 
 ask_for_imperial_tributary_state = {
 	category = influence
-	
+
 	alert_index = 6
 	alert_tooltip = ask_for_imperial_tributary_state_alert_tooltip
-	
+
 	require_acceptance = yes
-	
+
 	is_visible = {
 		FROM = {
 			can_create_subject_type = {
@@ -121,7 +121,7 @@ ask_for_imperial_tributary_state = {
 		is_subject_of = FROM
 		capital_scope = { trade_range = FROM }
 	}
-	
+
 	is_allowed = {
 		FROM = {
 			can_create_subject_type = {
@@ -145,7 +145,7 @@ ask_for_imperial_tributary_state = {
 			}
 		}
 	}
-	
+
 	on_accept = {
 		if = {
 			limit = {
@@ -175,7 +175,7 @@ ask_for_imperial_tributary_state = {
 			add_liberty_desire = -25
 		}
 	}
-	
+
 	on_decline = {
 		if = {
 			limit = {
@@ -201,7 +201,7 @@ ask_for_imperial_tributary_state = {
 			set_country_flag = ask_for_imperial_tributary_state_declined
 		}
 	}
-	
+
 	ai_acceptance = {
 		add_entry = {
 			name = STATEGIC_VALUE
@@ -266,7 +266,7 @@ ask_for_imperial_tributary_state = {
 				which = ai_value
 				value = trigger_value:liberty_desire
 			}
-			subtract_variable = { which = ai_value value = 1 }
+			#subtract_variable = { which = ai_value value = 1 }
 			divide_variable = { which = ai_value value = 2 }
 		}
 		add_entry = {
@@ -408,7 +408,7 @@ ask_for_imperial_tributary_state = {
 			multiply_variable = { which = ai_value value = -1 }
 		}
 	}
-	
+
 	ai_will_do = {
 		liberty_desire = 60
 		has_heir = yes
@@ -420,14 +420,14 @@ cancel_imperial_tributary_state = {
 	category = influence
 
 	require_acceptance = no
-	
+
 	is_visible = {
 		FROM = {
 			is_subject_of = ROOT
 			is_subject_of_type = imperial_tributary_state
 		}
 	}
-	
+
 	is_allowed = {
 		hidden_trigger = {
 			FROM = {
@@ -438,7 +438,7 @@ cancel_imperial_tributary_state = {
 		NOT = { truce_with = FROM }
 		prestige = 0
 	}
-	
+
 	on_accept = {
 		if = {
 			limit = {
@@ -466,7 +466,7 @@ cancel_imperial_tributary_state = {
 			add_prestige = -25
 		}
 	}
-	
+
 	ai_will_do = {
 		FROM = {
 			liberty_desire = 100

@@ -420,3 +420,31 @@ viking_settlement_demanded_raid_loot_opinion = {
 	yearly_decay = 2
 	min = -150
 }
+
+is_banking_family_subject = {
+	opinion = 50
+}
+
+declined_establish_banking_family_subject_opinion = {
+	opinion = -25
+	yearly_decay = 1
+	min = -100
+}
+
+declined_ask_to_become_banking_family_subject = {
+	opinion = -25
+	yearly_decay = 1
+	min = -100
+}
+
+banking_family_subject_forced = {
+	opinion = -75
+	yearly_decay = 3
+	min = -75
+}
+
+banking_family_subject_extord_emergency_funds_opinion = {
+	opinion = -50
+	yearly_decay = 3
+	min = -100
+}

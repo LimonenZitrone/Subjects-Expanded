@@ -109,3 +109,9 @@
 
  is_viking_settlement: "Viking Settlement"
  viking_settlement_demanded_raid_loot_opinion: "Demanded to share raid loot"
+
+ is_banking_family_subject: "Banking Family Clan"
+ declined_establish_banking_family_subject_opinion: "Demand for Banking Family Clan declined"
+ declined_ask_to_become_banking_family_subject: "Offer for Banking Family Clan declined"
+ banking_family_subject_forced: "Forced Banking Family Clan"
+ banking_family_subject_extord_emergency_funds_opinion: "Extorted Emergency Funds"

@@ -273,7 +273,7 @@ set_dutch_province_value_for_target = {
 				value = trigger_value:prestige
 				who = PREV
 			}
-			subtract_variable = { which = their_prestige value = 1 }
+			#subtract_variable = { which = their_prestige value = 1 }
 			divide_variable = { which = their_prestige value = 2 }
 			change_variable = { which = election_value_of_dutch_province_$target$ which = their_prestige }
 			export_to_variable = {
@@ -295,7 +295,7 @@ set_dutch_province_value_for_target = {
 				value = trigger_value:corruption
 				who = PREV
 			}
-			subtract_variable = { which = their_corruption value = 1 }
+			#subtract_variable = { which = their_corruption value = 1 }
 			if = {
 				limit = {
 					NOT = { check_variable = { which = their_corruption value = 0 } }

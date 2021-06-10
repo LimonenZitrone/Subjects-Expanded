@@ -498,6 +498,39 @@
  viking_settlement_demand_raid_loot_tooltip: "Demand sailors and money from §Y[From.GetName]§!.\n"
 
 
+ establish_banking_family_subject_title: "Establish Banking Family Clan"
+ establish_banking_family_subject_desc: "Do you want to offer §Y[From.GetName]§! to become our Banking Family Clan? \n[banking_family_subject_desc]"
+ establish_banking_family_subject_tooltip: "Make §Y[From.GetName]§! to a [Root.GetAdjective] §YBanking Family Clan§!.\n"
+ establish_banking_family_subject_alert_tooltip: "Establish Banking Family Clan"
+ establish_banking_family_subject_dialog: "§Y[This.GetName]§! offers us that we become their §YBanking Family Clan§!. \n[banking_family_subject_desc] \nDo you want to accept?"
+
+ ask_to_become_banking_family_subject_title: "Request Banking Family Clan"
+ ask_to_become_banking_family_subject_desc: "Do you want to offer §Y[From.GetName]§! that we become their Banking Family Clan? \n[banking_family_subject_desc]"
+ ask_to_become_banking_family_subject_tooltip: "Ask §Y[From.GetName]§! to make §Y[Root.GetName]§! to a [From.GetAdjective] §YBanking Family Clan§!.\n"
+ ask_to_become_banking_family_subject_alert_tooltip: "Request Banking Family Clan"
+ ask_to_become_banking_family_subject_dialog: "§Y[This.GetName]§! offers us that they become our §YBanking Family Clan§!. \n[banking_family_subject_desc] \nDo you want to accept?"
+
+ enable_banking_family_subject_demand_war_chest_contribution_title: "Enable War Chest Contribution"
+ enable_banking_family_subject_demand_war_chest_contribution_desc: "Do you want to enable War Chest Contribution from §Y[From.GetName]§!? This will make war taxes free for us and change their liberty desire by §R+15%§! until disabled again."
+ enable_banking_family_subject_demand_war_chest_contribution_tooltip: "Enable War Chest Contribution from §Y[From.GetName]§!.\n"
+
+ disable_banking_family_subject_demand_war_chest_contribution_title: "Disable War Chest Contribution"
+ disable_banking_family_subject_demand_war_chest_contribution_desc: "Do you want to disable War Chest Contribution from §Y[From.GetName]§!? This will remove their malus on liberty desire and our free war taxes."
+ disable_banking_family_subject_demand_war_chest_contribution_tooltip: "Disable War Chest Contribution from §Y[From.GetName]§!.\n"
+
+ banking_family_subject_extort_emergency_funds_title: "Extort Emergency Funds"
+ banking_family_subject_extort_emergency_funds_desc: "Do you want to extort emergency funds from §Y[From.GetName]§!? This will give us 3 years worth of their income and change their liberty desire by §R+80%§!."
+ banking_family_subject_extort_emergency_funds_tooltip: "Extort Emergency Funds from §Y[From.GetName]§!.\n"
+
+ banking_family_subject_become_independent_title: "Declare Independence"
+ banking_family_subject_become_independent_desc: "Declare independent from your overlord §Y[From.GetName]§!. We will gain a truce with [From.GetName] for §Y5 years§!. This will grant §Y[From.GetName]§! a casus belli on us.  \nFurthermore, this will change our stability by §R-1§!."
+ banking_family_subject_become_independent_tooltip: "Declare independent from your overlord §Y[From.GetName]§!.\n"
+
+ cancel_banking_family_subject_title: "Release Banking Family Clan"
+ cancel_banking_family_subject_desc: "Cancel the dependency of §Y[From.GetName]§! of us. This will decrease their opinion about us by §R-200§!, if their liberty desire is below §Y50%§!. We will also lose §R-25§! prestige and gain a truce with them for §Y5 years§!."
+ cancel_banking_family_subject_tooltip: "Cancel the vassalisation of §Y[From.GetName]§! and grant them independence.\n"
+
+
  disallow_subject_from_annexing_subjects_title: "Disallow Subject Annexations"
  disallow_subject_from_annexing_subjects_desc: "Disallow §Y[From.GetName]§! to annex or integrate their own subjects for §Y20 years§!. \nThis will change their liberty desire by §R+20%§!. This doesn't cancel already on-going annexations and integrations."
  disallow_subject_from_annexing_subjects_tooltip: "Disallow §Y[From.GetName]§! to annex or integrate their own subjects.\n"
@@ -561,6 +594,7 @@
  ROOT_HAS_MORE_THAN_200_TOTAL_DEVELOPMENT: "We have more than §Y200§! development"
  FROM_IS_A_THEOCRACY: "They are a theocracy"
  FROM_IS_A_REPUBLIC: "They are a republic"
+ FROM_IS_NOT_A_REPUBLIC: "They are not a republic"
  FROM_IS_KINGDOM_RANK: "They are a Kingdom"
  FROM_IS_EMPIRE_RANK: "They are an Empire"
  FROM_DEVELOPMENT: "Their development"
@@ -618,6 +652,7 @@
  ROOT_IS_HRE_MEMBER: "We are a member of the Empire"
  ROOT_IS_MONARCHY: "We are a monarchy"
  ROOT_IS_A_REPUBLIC: "We are a republic"
+ ROOT_IS_NOT_A_REPUBLIC: "We are not a republic"
  ROOT_IS_A_THEOCRACY: "We are a theocracy"
  ROOT_AMOUNT_OF_INVESTED_PAPAL_INFLUENCE: "We invested in the next papal election"
  FROM_JUST_CANCELED_BROTHER_KINGDOM: "They were a Brother Kingdom and became independent recently"
@@ -651,3 +686,5 @@
  FROM_ALLIED_TO_ROOT_RIVALS: "They are allied to our rivals or enemies"
  STRATEGIC_VALUE: "Strategic Interests"
  SE_REASON_BASE_VALUE: "Base Value"
+ FROM_JUST_CANCELED_BANKING_FAMILY_SUBJECT: "They were a Banking Family Clan and became independent recently"
+ FROM_NUM_OF_LOANS: "Their amount of loans"

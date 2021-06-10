@@ -560,7 +560,7 @@ establish_brother_kingdom = {
 				value = trigger_value:total_development
 				who = FROM
 			}
-			subtract_variable = { which = ai_value value = 1 }
+			#subtract_variable = { which = ai_value value = 1 }
 			divide_variable = { which = ai_value value = -3 }
 		}
 		add_entry = {
@@ -597,8 +597,9 @@ establish_brother_kingdom = {
 			export_to_variable = {
 				which = ai_value
 				value = trigger_value:war_exhaustion
+				who = FROM
 			}
-			subtract_variable = { which = ai_value value = 1 }
+			#subtract_variable = { which = ai_value value = 1 }
 			divide_variable = { which = ai_value value = 2 }
 		}
 		add_entry = {
@@ -1120,7 +1121,7 @@ make_brother_kingdom_to_personal_union = {
 				value = trigger_value:total_development
 				who = FROM
 			}
-			subtract_variable = { which = ai_value value = 1 }
+			#subtract_variable = { which = ai_value value = 1 }
 			divide_variable = { which = ai_value value = -5 }
 		}
 		add_entry = {
@@ -1144,6 +1145,7 @@ make_brother_kingdom_to_personal_union = {
 			export_to_variable = {
 				which = ai_value
 				value = trigger_value:war_exhaustion
+				who = FROM
 			}
 			subtract_variable = { which = ai_value value = 2 }
 		}
@@ -1768,7 +1770,7 @@ brother_kingdom_ask_overlord_to_join_war = {
 			name = FROM_WAR_EXHAUSTION
 			export_to_variable = {
 				which = ai_value
-				value = war_exhaustion
+				value = trigger_value:war_exhaustion
 				who = FROM
 			}
 			multiply_variable = { which = ai_value value = -10 }

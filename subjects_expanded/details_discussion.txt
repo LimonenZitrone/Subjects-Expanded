@@ -171,7 +171,7 @@ If a subject gives an additional merchant, the bonuses it gives to its overlord 
 [/list]
 
 [h1]Fiefdom[/h1]
-[i]A Fiefdom is a vassal of the same culture, culture group or of an accepted culture. It behaves similar as normal vassals, but has a slightly lower liberty desire, does normally not join its overlord's wars - but can be called to arms in exchange for an increased liberty desire -, and can only be integrated. However, it pays more money to its overlord and the overlord can demand troops from it. Further more it has increased tax income and decreased culture conversion cost and also affects these modifiers for its overlord.[/i]
+[i]A Fiefdom is a vassal of the same culture, culture group or of an accepted culture. It behaves similar as normal vassals, but has a slightly lower liberty desire, does normally not join its overlord's wars - but can be called to arms in exchange for an increased liberty desire -, and can only be annexed after 25 years. However, it pays more money to its overlord and the overlord can demand troops from it. Further more it has increased tax income and decreased culture conversion cost and also affects these modifiers for its overlord.[/i]
 
 [b]Conditions (possible overlord):[/b]
 [list]
@@ -908,4 +908,40 @@ If a subject gives an additional merchant, the bonuses it gives to its overlord 
 [*] Viking Settlements grant their overlord the ability to raid coasts
 [*] Viking Settlements pay tribute
 [*] Viking Settlements have a diplomatic action that allows the overlord to receive 50% of the subjects last year's income and 10% of their maximum sailors in exchange for liberty desire and a decrease in opinion
+[/list]
+
+[h1]Banking Family Clan[/h1]
+[i]A Banking Family Clan is a voluntary subject, which means it can decide to become independent without an independence war. A Banking Family Clan doesn't cost a relation slot and does not join its overlord's wars. It is independent in its own diplomacy. It has a slightly reduced liberty desire compared to vassals and cannot be annexed. It grants its overlord a bonus on diplomatic reputation and interest per annum and gains a bonus on diplomatic reputation and tax income. About every 10 years the overlord gets an event to interact with the Banking Family Clan. A country can only have 1 Banking Family Clan at the same time and a Banking Family Clan is only allowed to have at max 4 provinces. A Banking Family Clan can be established by independent nations that are a republic or have special government reforms or selected specific idea groups in small republics with highly developed capital provinces.[/i]
+
+[b]Conditions (possible overlord):[/b]
+[list]
+[*] is not a subject
+[*] does not have a Banking Family Clan already
+[*] is either a republic, or has the "Eastern Plutocracy", "Enforce Trader Privileges", "Strengthen Bengali Traders", "Meritocratic Recruitment" or "Mercantile Tithe" reform, or has a custom reform that allows establishing this subject type, or has completed "Economic Ideas" and "Trade Ideas" and either "Influence Ideas" or "Diplomatic Ideas"
+[/list]
+
+[b]Conditions (possible subject):[/b]
+[list]
+[*] is not a subject or a Vassal of the possible overlord
+[*] is a republic
+[*] has less than 5 provinces
+[*] capital has at least 10 base tax
+[*] capital has at least 20 development
+[/list]
+
+[b]Additional Information:[/b]
+[list]
+[*] Banking Family Clans can only be established diplomatically
+[*] Banking Family Clans have a max government rank of 1 (Duchy)
+[*] Banking Family Clans gain a bonus on diplomatic reputation and tax income
+[*] Banking Family Clans grant their overlord a bonus on diplomatic reputation and interest per annum
+[*] Banking Family Clans gain less liberty desire than vassals
+[*] Banking Family Clans do not cost a relation slot
+[*] Banking Family Clans don't join their overlord's wars
+[*] Banking Family Clans are voluntary
+[*] Banking Family Clans have independent diplomacy
+[*] Banking Family Clans cannot be annexed or integrated
+[*] Banking Family Clans have a subject interaction (diplomatic action) that allows the overlord to get free war taxes in exchange for higher liberty desire of the subject
+[*] Banking Family Clans have a subject interaction (diplomatic action) that allows the overlord to get money from the subject in exchange for higher liberty desire
+[*] Banking Family Clans' overlords get an event about every 10 years that allows to get bonuses from the subject
 [/list]

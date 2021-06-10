@@ -71,6 +71,7 @@ country_event = {
 			count_num_of_subjects_of_type = { type = native_reserve }
 			count_num_of_subjects_of_type = { type = administrative_region }
 			count_num_of_subjects_of_type = { type = viking_settlement }
+			count_num_of_subjects_of_type = { type = banking_family_subject }
 		}
 	}
 
@@ -322,6 +323,14 @@ country_event = {
 		display_subjects_of_type = { type = viking_settlement }
 	}
 
+	option = {
+		name = subjects_expanded_events2.EVTOPT32
+
+		ai_chance = { factor = 100 }
+
+		display_subjects_of_type = { type = banking_family_subject }
+	}
+
 	after = {
 		hidden_effect = {
 			clr_country_flag = used_subjects_expanded_info_decision
@@ -356,6 +365,7 @@ country_event = {
 			clear_display_variable_for_subjects_of_type = { type = native_reserve }
 			clear_display_variable_for_subjects_of_type = { type = administrative_region }
 			clear_display_variable_for_subjects_of_type = { type = viking_settlement }
+			clear_display_variable_for_subjects_of_type = { type = banking_family_subject }
 		}
 	}
 }
@@ -677,6 +687,14 @@ country_event = {
 		ai_chance = { factor = 100 }
 
 		display_info_for_subject_type = { type = viking_settlement }
+	}
+
+	option = {
+		name = subjects_expanded_events5.EVTOPT32
+
+		ai_chance = { factor = 100 }
+
+		display_info_for_subject_type = { type = banking_family_subject }
 	}
 
 	after = {

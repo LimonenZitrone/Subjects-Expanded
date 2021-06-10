@@ -24,6 +24,9 @@
  cb_disloyal_brother_kingdom: "Disloyal Brother Kingdom"
  cb_disloyal_brother_kingdom_desc: "They are not a loyal Brother Kingdom anymore. We have to change that."
 
+ cb_disloyal_banking_family_subject: "Disloyal Banking Family Clan"
+ cb_disloyal_banking_family_subject_desc: "They are not a loyal Banking Family Clan anymore. We have to change that."
+
  # War Goals:
  take_capital_force_imperial_tributary_state: "Take Capital"
  take_capital_force_imperial_tributary_state_desc: "The war goal is to conquer the target's capital."
@@ -49,12 +52,16 @@
  take_capital_restore_brother_kingdom: "Take Capital"
  take_capital_restore_brother_kingdom_desc: "The war goal is to conquer the target's capital."
 
+ take_capital_restore_banking_family_subject: "Take Capital"
+ take_capital_restore_banking_family_subject_desc: "The war goal is to conquer the target's capital."
+
  # War Names:
  MANDALA_WAR_NAME: "$ORDER$ $FIRST$ War of Mandala Enforcement"
  SATRAPY_WAR_NAME: "$ORDER$ $FIRST$ War of Persian Hegemony"
  TRADE_OUTPOST_WAR_NAME: "$ORDER$ $FIRST$ Creation of a Trade Outpost in $SECOND_NAME$"
  IMPERIAL_FEUD_WAR_NAME: "$ORDER$ $FIRST$-$SECOND$ War of Imperial Strength"
  BROTHER_KINGDOM_WAR_NAME: "$ORDER$ $FIRST$-$SECOND$ War of Dynastical Dominance"
+ BANKING_FAMILY_SUBJECT_WAR_NAME: "$ORDER$ $FIRST$-$SECOND$ War of Financial Dominance"
 
  # Peace Treaties:
  make_protectorate_desc: "@[From.GetTag] §Y[From.GetName]§! is made into a Protectorate of @[Root.GetTag] §Y[Root.GetName]§!."
@@ -128,3 +135,7 @@
  make_native_reserve_desc: "@[From.GetTag] §Y[From.GetName]§! is made into a Native Reservation of @[Root.GetTag] §Y[Root.GetName]§!."
  CB_ALLOWED_make_native_reserve: "Force Native Reservation"
  PEACE_make_native_reserve: "$TAKERS$ Native Reservation"
+
+ make_banking_family_subject_desc: "@[From.GetTag] §Y[From.GetName]§! is made into a Banking Family Clan of @[Root.GetTag] §Y[Root.GetName]§!."
+ CB_ALLOWED_make_banking_family_subject: "Force Banking Family Clan"
+ PEACE_make_banking_family_subject: "$TAKERS$ Banking Family Clan"

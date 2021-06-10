@@ -477,13 +477,13 @@ is_possible_subject_of_subject_type_muslim_tributary_vassal = {
 			which = our_total_development
 			value = trigger_value:total_development
 		}
-		subtract_variable = { which = our_total_development value = 1 }
+		#subtract_variable = { which = our_total_development value = 1 }
 		export_to_variable = {
 			which = their_total_development
 			value = trigger_value:total_development
 			who = PREV
 		}
-		subtract_variable = { which = their_total_development value = 1 }
+		#subtract_variable = { which = their_total_development value = 1 }
 		divide_variable = { which = their_total_development value = 3 }
 		NOT = { check_variable = { which = our_total_development which = their_total_development } }
 	}
@@ -786,6 +786,24 @@ is_possible_subject_of_subject_type_viking_settlement = {
 		continent = north_america
 		NOT = { colonial_region = colonial_mexico }
 	}
+}
+
+is_possible_subject_of_subject_type_banking_family_subject = {
+	# PREVs in THIS scope refer to possible overlord
+	NOT = { is_subject_of_type = banking_family_subject }
+	OR = {
+		is_subject = no
+		AND = {
+			is_subject_of = PREV
+			is_vassal_or_similar_subject = yes
+		}
+	}
+	government = republic
+	capital_scope = {
+		base_tax = 10
+		development = 20
+	}
+	NOT = { num_of_cities = 5 }
 }
 
 can_create_subject_type = {

@@ -32,6 +32,7 @@
  subjects_expanded_events2.EVTOPT29: "Derzeit gibt es §G[REB.num_of_subjects_of_type_native_reserve.GetValue]§! §YEingeborenenreservate§! auf der Welt."
  subjects_expanded_events2.EVTOPT30: "Derzeit gibt es §G[REB.num_of_subjects_of_type_administrative_region.GetValue]§! §YAdministrative Regionen§! auf der Welt."
  subjects_expanded_events2.EVTOPT31: "Derzeit gibt es §G[REB.num_of_subjects_of_type_viking_settlement.GetValue]§! §YWikingersiedlungen§! auf der Welt."
+ subjects_expanded_events2.EVTOPT32: "Derzeit gibt es §G[REB.num_of_subjects_of_type_banking_family_subject.GetValue]§! §YBankiersfamilienklane§! auf der Welt."
 
  subjects_expanded_events.EVTNAME3: "Ideen-Mods?"
  subjects_expanded_events.EVTDESC3: "Herrschaftsgebiete per Entscheidung zu errichten gibt ihnen Ideengruppen abhängig von Euren. Falls Ihr eine Mod benutzt, die die Vanilla-Ideengruppen verändert, könnte dies das Spiel zum §RAbsturz§! bringen. Deshalb solltet Ihr hier die passende Option auswählen, um dies zu verhindern!"
@@ -77,6 +78,7 @@
  subjects_expanded_events5.EVTOPT29: "[native_reserve]"
  subjects_expanded_events5.EVTOPT30: "[administrative_region]"
  subjects_expanded_events5.EVTOPT31: "[viking_settlement]"
+ subjects_expanded_events5.EVTOPT32: "[banking_family_subject]"
 
  subjects_expanded_general_events.EVTNAME1: "Neues Gesetz unsere Lehnsherrn bezüglich Untertanen"
  subjects_expanded_general_events.EVTDESC1: "Unser Lehnsherr, [Root.Overlord.GetName], hat ein Gesetz verabschiedet, dass uns für die nächsten 20 Jahre verbietet, unsere Untertanen zu annektieren oder zu integrieren. Dies beendet keine bereits laufende Annexion bzw. Integration."
@@ -357,3 +359,19 @@
  subjects_expanded_viking_settlement_events.EVTNAME4: "Lehnsherr verlangt einen Anteil an unserer Beute"
  subjects_expanded_viking_settlement_events.EVTDESC4: "Unser Lehnsherr, @[Root.Overlord.GetTag] §Y[Root.Overlord.GetName]§!, verlangt, dass wir ihnen einen Teil unserer geplünderten Beute überlassen."
  subjects_expanded_viking_settlement_events4.EVTOPT1: "Wir haben wohl keine Wahl..."
+
+ subjects_expanded_banking_family_subject_events.EVTNAME1: "[banking_family_subject_to_release.GetName] erklärt Unabhängigkeit"
+ subjects_expanded_banking_family_subject_events.EVTDESC1: "[banking_family_subject_to_release.GetName] ist zu groß geworden, ist nicht länger eine Republik oder wir besitzen mehr als einen Bankiersfamilienklan. Deshalb wird [banking_family_subject_to_release.GetName] nun die Unabhängigkeit gewährt."
+ subjects_expanded_banking_family_subject_events1.EVTOPT1: "Verdammt."
+
+ subjects_expanded_banking_family_subject_events.EVTNAME2: "Die Banken von [banking_family_subject_target.GetName]"
+ subjects_expanded_banking_family_subject_events.EVTDESC2: "Aufgrund unserem Verhältnis zu dem Bankiersfamilienklan aus [banking_family_subject_target.GetName] können wir nun aus einer der folgenden Interaktionen für die nächsten Jahre mit ihnen wählen."
+ subjects_expanded_banking_family_subject_events2.EVTOPT1: "Verbindungen aufbauen."
+ subjects_expanded_banking_family_subject_events2.EVTOPT2: "Währung umverteilen."
+ subjects_expanded_banking_family_subject_events2.EVTOPT3: "Zahlung verlangen."
+ subjects_expanded_banking_family_subject_events2.EVTOPT4: "Nach zuverlässigen Investionen suchen."
+
+ subjects_expanded_banking_family_subject_events.EVTNAME4: "Notgeld von [From.GetName] erpressen"
+ subjects_expanded_banking_family_subject_events.EVTDESC4: "Obwohl es [From.GetName] verärgern wird, sollten wir von ihnen Geld erpressen."
+ subjects_expanded_banking_family_subject_events4.EVTOPT1: "Notgeld erpressen."
+ subjects_expanded_banking_family_subject_events4.EVTOPT2: "Ich habe meine Meinung geändert."

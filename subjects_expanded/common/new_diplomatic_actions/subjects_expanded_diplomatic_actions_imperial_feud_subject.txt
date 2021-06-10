@@ -353,7 +353,7 @@ establish_imperial_feud_subject = {
 				value = trigger_value:total_development
 				who = FROM
 			}
-			subtract_variable = { which = ai_value value = 1 }
+			#subtract_variable = { which = ai_value value = 1 }
 			divide_variable = { which = ai_value value = -3 }
 		}
 		add_entry = {
@@ -569,7 +569,7 @@ establish_imperial_feud_subject = {
 				which = ai_value
 				value = trigger_value:imperial_influence
 			}
-			change_variable = { which = ai_value value = -1 }
+			#change_variable = { which = ai_value value = -1 }
 			divide_variable = { which = ai_value value = 4 }
 		}
 		add_entry = {
@@ -973,7 +973,7 @@ ask_for_imperial_feud_subject = {
 				value = trigger_value:total_development
 				who = FROM
 			}
-			subtract_variable = { which = ai_value value = 1 }
+			#subtract_variable = { which = ai_value value = 1 }
 			divide_variable = { which = ai_value value = -5 }
 		}
 		add_entry = {
@@ -1129,7 +1129,7 @@ ask_for_imperial_feud_subject = {
 				which = ai_value_2
 				value = trigger_value:hre_size
 			}
-			change_variable = { which = ai_value_2 value = -1 }
+			#change_variable = { which = ai_value_2 value = -1 }
 			subtract_variable = { which = ai_value which = ai_value_2 }
 			multiply_variable = { which = ai_value value = 5 }
 		}
@@ -1739,7 +1739,7 @@ make_imperial_feud_subject_hre_member = {
 				which = ai_value
 				value = trigger_value:imperial_influence
 			}
-			change_variable = { which = ai_value value = -1 }
+			#change_variable = { which = ai_value value = -1 }
 			divide_variable = { which = ai_value value = 5 }
 		}
 		add_entry = {
@@ -1785,7 +1785,7 @@ make_imperial_feud_subject_hre_member = {
 				value = trigger_value:liberty_desire
 				who = FROM
 			}
-			change_variable = { which = ai_value_2 value = -1 }
+			#change_variable = { which = ai_value_2 value = -1 }
 			subtract_variable = { which = ai_value which = ai_value_2 }
 		}
 		add_entry = {
@@ -3802,7 +3802,7 @@ ask_for_imperial_feud_subject_hre_member = {
 				which = ai_value
 				value = 1000
 			}
-			change_variable = { which = ai_value value = -1 }
+			#change_variable = { which = ai_value value = -1 }
 			divide_variable = { which = ai_value value = -7 }
 		}
 		add_entry = {

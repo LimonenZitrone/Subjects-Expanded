@@ -7485,6 +7485,7 @@ banking_family_subject = {
 
 	# Triggers:
 	is_potential_overlord = {
+		is_subject = no
 		OR = {
 			AND = {
 				full_idea_group = economic_ideas

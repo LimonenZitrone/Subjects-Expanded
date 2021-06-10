@@ -7,7 +7,6 @@ establish_banking_family_subject = {
 	require_acceptance = yes
 
 	is_visible = {
-		is_subject = no
 		can_create_subject_type = {
 			subject = FROM
 			subject_type = banking_family_subject
@@ -15,9 +14,6 @@ establish_banking_family_subject = {
 	}
 
 	is_allowed = {
-		hidden_trigger = {
-			is_subject = no
-		}
 		can_create_subject_type = {
 			subject = FROM
 			subject_type = banking_family_subject
@@ -42,7 +38,6 @@ establish_banking_family_subject = {
 	on_accept = {
 		if = {
 			limit = {
-				is_subject = no
 				can_create_subject_type = {
 					subject = FROM
 					subject_type = banking_family_subject
@@ -74,7 +69,6 @@ establish_banking_family_subject = {
 	on_decline = {
 		if = {
 			limit = {
-				is_subject = no
 				can_create_subject_type = {
 					subject = FROM
 					subject_type = banking_family_subject
@@ -537,7 +531,6 @@ ask_to_become_banking_family_subject = {
 
 	is_visible = {
 		FROM = {
-			is_subject = no
 			can_create_subject_type = {
 				subject = ROOT
 				subject_type = banking_family_subject
@@ -547,7 +540,6 @@ ask_to_become_banking_family_subject = {
 
 	is_allowed = {
 		FROM = {
-			is_subject = no
 			can_create_subject_type = {
 				subject = ROOT
 				subject_type = banking_family_subject
@@ -568,7 +560,6 @@ ask_to_become_banking_family_subject = {
 		if = {
 			limit = {
 				FROM = {
-					is_subject = no
 					can_create_subject_type = {
 						subject = ROOT
 						subject_type = banking_family_subject
@@ -598,7 +589,6 @@ ask_to_become_banking_family_subject = {
 		if = {
 			limit = {
 				FROM = {
-					is_subject = no
 					can_create_subject_type = {
 						subject = ROOT
 						subject_type = banking_family_subject

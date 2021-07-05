@@ -2,7 +2,7 @@
 If a subject gives an additional merchant, the bonuses it gives to its overlord might also be only unlocked if they reached the required amount of provinces for the merchant.
 
 [h1]Protectorate[/h1]
-[i]A Protectorate gives us some of their trade power in return for technological progress and military protection.[/i]
+[i]A Protectorate gives us some of its trade power in return for technological progress and military protection.[/i]
 
 [b]Conditions (possible overlord):[/b]
 [list]
@@ -33,7 +33,7 @@ If a subject gives an additional merchant, the bonuses it gives to its overlord 
 [/list]
 
 [h1]Puppet State[/h1]
-[i]A Puppet State is a mixture of a vassal and a march. It receives similar bonuses as a march, but can be annexed after 10 years. Furthermore it increases your reputation at home and in foreign countries.[/i]
+[i]A Puppet State is a mixture of a vassal and a march. It receives similar bonuses as a march, but can be annexed after 10 years. Furthermore, it increases your reputation at home and in foreign countries.[/i]
 
 [b]Conditions (possible overlord):[/b]
 [list]
@@ -67,7 +67,7 @@ If a subject gives an additional merchant, the bonuses it gives to its overlord 
 [/list]
 
 [h1]Dominion[/h1]
-[i]A Dominion behaves like a colonial nation, but has less liberty desire and pays no tariffs to its overlord. They are a little bit less limited than colonial nations in diplomatic actions, but cannot be forced to start colonial wars. Dominions in trade company regions, cannot be individualized, but give a bonus to its overlord's naval forcelimit.[/i]
+[i]A Dominion behaves like a colonial nation, but has less liberty desire and pays no tariffs to its overlord. It is a little less restricted than colonial nations in diplomacy and cannot be forced to start colonial wars. \nDominions in trade company regions cannot be individualized, but give a bonus to the overlord's naval force limit.[/i]
 
 [b]Conditions (possible overlord):[/b]
 [list]
@@ -94,7 +94,7 @@ If a subject gives an additional merchant, the bonuses it gives to its overlord 
 [/list]
 
 [h1]Autonomous Dominion[/h1]
-[i]An Autonomous Dominion behaves like a colonial nation, but has less liberty desire, pays no tariffs to its overlord and does not join its overlord's wars. They are less limited in diplomatic actions than colonial nations and their overlord can decline helping them in defensive wars. Furthermore they grant two merchants to its overlord. Autonomous Dominions in trade company regions cannot be individualized, but give a bonus to its overlord's naval forcelimit.[/i]
+[i]An Autonomous Dominion behaves like a colonial nation, but has less liberty desire, pays no tariffs to its overlord and does not join its overlord's wars. It is less restricted in diplomacy than colonial nations and its overlord can decline to help it in defensive wars. Furthermore it grants two merchants to its overlord. \nAutonomous Dominions in trade company regions cannot be individualized, but give a bonus to the overlord's naval force limit.[/i]
 
 [b]Conditions (possible overlord):[/b]
 [list]
@@ -121,7 +121,7 @@ If a subject gives an additional merchant, the bonuses it gives to its overlord 
 [/list]
 
 [h1]Roman Client Kingdom[/h1]
-[i]A Roman Client Kingdom behaves like a vassal, but has less liberty desire and can only be created by the Roman Empire, Western Roman Empire, and Byzantine Empire. Furthermore, they pay more money to their overlord and are a slightly less restricted in their diplomatic actions than normal vassals. If they border one of our rivals or enemies, Roman Client Kingdoms do not cost a diplomatic relation and as long as you do not have any colonists, they increase your core range by +5% each. When they receive a new heir, he/she has to be acknowledged by you or he/she will not be accepted as rightful heir.[/i]
+[i]A Roman Client Kingdom behaves like a vassal, but has less liberty desire and can only be created by the Roman Empire, Western Roman Empire, and Byzantium. Furthermore, it pays more money to its overlord and is less restricted in its diplomatic actions than normal vassals. If it borders one of the overlord's rivals or enemies, a Roman Client Kingdom does not cost a diplomatic relation. As long as the overlord does not have any colonists it increases core range by +5% per. Upon receiving a new heir, that heir has to be acknowledged by the overlord or they will not be accepted as legitimate.[/i]
 
 [b]Conditions (possible overlord):[/b]
 [list]
@@ -147,7 +147,7 @@ If a subject gives an additional merchant, the bonuses it gives to its overlord 
 [/list]
 
 [h1]Voivodeship[/h1]
-[i]A Voivodeship is a mixture of a vassal and a march. It receives similar bonuses as a march, but can be annexed after 10 years. Further more it has increased military expenses and can only be established by Poland or Commonwealth.[/i]
+[i]A Voivodeship is a mixture of a vassal and a march. It receives similar bonuses to a march, but can be annexed after 10 years. Furthermore it has increased military expenses and can only be established by Poland or Commonwealth.[/i]
 
 [b]Conditions (possible overlord):[/b]
 [list]
@@ -171,7 +171,7 @@ If a subject gives an additional merchant, the bonuses it gives to its overlord 
 [/list]
 
 [h1]Fiefdom[/h1]
-[i]A Fiefdom is a vassal of the same culture, culture group or of an accepted culture. It behaves similar as normal vassals, but has a slightly lower liberty desire, does normally not join its overlord's wars - but can be called to arms in exchange for an increased liberty desire -, and can only be annexed after 25 years. However, it pays more money to its overlord and the overlord can demand troops from it. Further more it has increased tax income and decreased culture conversion cost and also affects these modifiers for its overlord.[/i]
+[i]A Fiefdom is a vassal of the same culture, culture group or of an accepted culture. It behaves similarly to normal vassals, but has a lower liberty desire and doesn't normally join its overlord's wars, but can be called to arms in exchange for increased liberty desire. It can be annexed after 25 years. However, it pays more money to its overlord and the overlord can demand troops from it. Furthermore it has increased tax income and decreased culture conversion cost, granting its overlord the same.[/i]
 
 [b]Conditions (possible overlord):[/b]
 [list]
@@ -197,7 +197,7 @@ If a subject gives an additional merchant, the bonuses it gives to its overlord 
 [/list]
 
 [h1]Crusader State[/h1]
-[i]A Crusader State is a mixture of a vassal and a march. It receives bonuses to discipline, manpower, war score cost against other religions and missionary strength. Furthermore, they increase your papal authority and missionary strength and cannot be annexed. They can only be established by the Papal State, Jerusalem, Monastic Orders and Crusader Kingdoms in Europe and Jerusalem and a country can only have 2 Crusader States at the same time.[/i]
+[i]A Crusader State is a mixture of a vassal and a march. It receives bonuses to discipline, manpower, war score cost against other religions and missionary strength. Furthermore, it increases its overlord's papal influence and missionary strength. It cannot be annexed. It can only be established by the Papal State, Jerusalem, Monastic Orders and Crusader Kingdoms in Europe and Jerusalem and a country can only have 2 Crusader States at the same time.[/i]
 
 [b]Conditions (possible overlord):[/b]
 [list]
@@ -252,7 +252,7 @@ If a subject gives an additional merchant, the bonuses it gives to its overlord 
 [/list]
 
 [h1]Nahuatl Vassal[/h1]
-[i]A Nahuatl Vassal behaves like a vassal, but does not cost a diplomatic relation and has reduced liberty desire. Furthermore, it gives a bonus for manpower, manpower recovery speed, and province war score cost to its overlord. It can only be established by Nahuatl nations, which did not reform their religion, in Mexico, California, Rio Grande and Central America. If an overlord does not fulfill these requirements, the Nahuatl Vassal will get +100% liberty desire. (Requires El Dorado DLC)[/i]
+[i]A Nahuatl Vassal behaves like a vassal, but does not cost a diplomatic relation and has reduced liberty desire. Furthermore, it gives bonuses to manpower, manpower recovery speed, and province war score cost to its overlord. It can only be established by Nahuatl nations which have not reformed their religion in Mexico, California, Rio Grande and Central America. If an overlord does not fulfill these requirements, the Nahuatl Vassal will get +100% liberty desire. (Requires El Dorado DLC)[/i]
 
 [b]Conditions (possible overlord):[/b]
 [list]
@@ -275,7 +275,7 @@ If a subject gives an additional merchant, the bonuses it gives to its overlord 
 [/list]
 
 [h1]Peasant Vassal[/h1]
-[i]A Peasant Vassal is a mixture of a vassal and a tributary. It does not join its overlord's wars, is not very limited in its diplomatic actions, has a higher forcelimit, and grants more forcelimit to its overlord than vassals. Furthermore, the overlord can demand tribute from them and receives a bonus to aggressive expansion and a malus to all power cost for each Peasant Vassal. A Peasant Vassal has reduced tax income, but increased production efficiency, army morale, and manpower, however the overlord pays it and it has a slightly higher liberty desire from development than vassals.[/i]
+[i]A Peasant Vassal is a mixture of a vassal and a tributary. It does not join its overlord's wars, is significantly less restricted in its diplomacy, has a higher force limit and force limit contribution than other vassals and the overlord can demand tribute from it. The overlord gains reduced aggressive expansion impact but suffers from increased power costs and a national tax malus for each Peasant Vassal. A Peasant Vassal has reduced tax income, increased production efficiency, army morale, manpower and liberty desire from development.[/i]
 
 [b]Conditions (possible overlord):[/b]
 [list]
@@ -304,7 +304,7 @@ If a subject gives an additional merchant, the bonuses it gives to its overlord 
 [/list]
 
 [h1]Pirate Brotherhood[/h1]
-[i]A Pirate Brotherhood is a mixture of a vassal and a colonial nation. It can only be established by nations with a Pirate government, at least three ports, and 20 ships, and is locked to Pirate governments itself. It pays tariffs and can have subjects on its own. It has a lower liberty desire than vassals, but is less restricted in its diplomatic actions. It receives a bonus to privateer efficiency, naval forcelimit and naval morale and gives its overlord a bonus to privateer efficiency and naval forcelimit. (Requires Golden Century DLC)[/i]
+[i]A Pirate Brotherhood is a mixture of a vassal and a colonial nation. It can only be established by nations with a Pirate government, at least three ports and 20 ships. It is locked to Pirate governments. It pays tariffs and can have subjects of its own. It has a lower liberty desire than vassals, but is less restricted in diplomacy. It receives a bonus to privateer efficiency, naval force limit and naval morale and gives its overlord a bonus to privateer efficiency and naval force limit. (Requires Golden Century DLC)[/i]
 
 [b]Conditions (possible overlord):[/b]
 [list]
@@ -333,7 +333,7 @@ If a subject gives an additional merchant, the bonuses it gives to its overlord 
 [/list]
 
 [h1]Imperial Tributary State[/h1]
-[i]An Imperial Tributary State is a mixture of a tributary state and a vassal. It is not restricted in its diplomatic actions, but it cannot declare independence without a war. It pays taxes to its overlord and does not cost a diplomatic relations. It receives a malus on heir chance and army forcelimit and grants its overlord a bonus on vassal income It is locked to monarchy governments and if its ruler dies without a heir or it gets a regency council while the heir is younger than 12 years, it either gets annexed by its overlord or has to declare an independence war. An Imperial Tributary State can only be established by the Roman Empire or any country with the Empire rank and its capital in Europe that has a Dominion or Autonomous Dominion in India on tribal nations or nations in India.[/i]
+[i]An Imperial Tributary State is a mixture of a tributary state and a vassal. It is not restricted in its diplomacy, but cannot declare independence without a war. It pays taxes to its overlord and does not cost a diplomatic relation. It receives a malus to heir chance and army force limit and grants its overlord a bonus to vassal income. It is locked to monarchy governments and if its ruler dies without a heir or it gets a regency council while the heir is younger than 12, it is either annexed by its overlord or declares an independence war. An Imperial Tributary State can only be established by the Roman Empire or any country with the Empire rank and its capital in Europe that has a Dominion or Autonomous Dominion in India with tribal nations or nations in India.[/i]
 
 [b]Conditions (possible overlord):[/b]
 [list]
@@ -358,7 +358,7 @@ If a subject gives an additional merchant, the bonuses it gives to its overlord 
 [/list]
 
 [h1]Sister Republic[/h1]
-[i]A Sister Republic behaves similar to a personal union. However, it is far less restricted in its diplomatic actions and cannot break on the ruler's death. It can only be established by republics and theocracies and a country can have only 1 Sister Republic at the same time. If the overlord and the Sister Republic do not have the same government (republic or theocracy) anymore, the Sister Republic will become free and enter an alliance with its former overlord. Both, the overlord and the Sister Republic, gain an equal bonus on development cost, construction cost and production efficiency.[/i]
+[i]A Sister Republic behaves similarly to a personal union. However, it is less restricted in its diplomacy and cannot break on the ruler's death. It can only be established by republics and theocracies and a country can have only 1 Sister Republic. If the overlord and the Sister Republic do not have the same government (republic or theocracy) anymore, the Sister Republic will become free and enter an alliance with its former overlord. Both the overlord and the Sister Republic gain an equal bonus to development cost, construction cost and production efficiency.[/i]
 
 [b]Conditions (possible overlord):[/b]
 [list]
@@ -391,7 +391,7 @@ If a subject gives an additional merchant, the bonuses it gives to its overlord 
 [/list]
 
 [h1]Dar al-Sulh Territory[/h1]
-[i]A Dar al-Sulh Territory is a mixture of a vassal and a tributary. In its diplomatic actions it is less restricted than vassals, but more restricted than tributaries. It pays tribute, joins its overlord wars and can only become independent by war, their overlord is not muslim anymore or if the overlord decides it. It can only be established by muslim nations on neighboring non muslim countries. A Dar al-Sulh Territory gains a bonus on tolerance of heathens, national unrest and garrison size. It grants its overlord a bonus on tolerance of heathens, a malus on tolerance of the true faith as well as makes it drift towards legalism. Furthermore, a muslim Dar al-Sulh Territory gains +100% liberty desire and drifts towards mysticism and its overlord will eventually get an event to either release it or make it to a normal vassal, which increases its liberty desire.[/i]
+[i]A Dar al-Sulh Territory is a mixture of a vassal and a tributary. It is less restricted in its diplomacy than vassals, but more restricted than tributaries. It pays tribute, joins its overlord wars and can only become independent by war, if its overlord is not muslim anymore or if the overlord chooses. It can only be established by Muslim nations with neighboring non-Muslim countries. A Dar al-Sulh Territory gains a bonus to tolerance of heathens, national unrest and garrison size. It grants its overlord a bonus to tolerance of heathens and a malus to tolerance of the true faith, as well as making them drift towards legalism. Furthermore, a Muslim Dar al-Sulh Territory gains +100% liberty desire and drifts towards mysticism and its overlord will eventually get an event to either release it or make it to a normal vassal. If vassalised, its liberty desire will increase temporarily.[/i]
 
 [b]Conditions (possible overlord):[/b]
 [list]
@@ -421,7 +421,7 @@ If a subject gives an additional merchant, the bonuses it gives to its overlord 
 [/list]
 
 [h1]Mandala Vassal[/h1]
-[i]A Mandala Vassal is a mixture of a vassal and a tributary. It joins its overlord's wars, costs a diplomatic relation and pays tribute to its overlord. It is not as restricted as a normal vassal in its diplomatic actions and can have Mandala Vassals on its own. When establishing a Mandala Vassal, all its current subjects are transfered to its new overlord. It gains a bonus on tax income, trade power and caravan power and grants its overlord a bonus on trade power, prestige and legitimacy, if it has at least 15 provinces. Furthermore, it gives its overlord an additional merchant, if it has 15 or more provinces and receives an additional merchant itself, if it has 25 or more provinces. If a Mandala Vassal becomes too powerful and reaches 75% liberty desire, it can take over its overlord's title and become the overlord itself. Otherwise it can only be established by countries in the South East Asian and Malay culture groups by war in Asia.[/i]
+[i]A Mandala Vassal is a mixture of a vassal and tributary. It joins its overlord's wars, costs a diplomatic relation and pays tribute to its overlord. It is not as restricted as a vassal in its diplomacy and can have Mandala Vassals of its own. Upon establishing a Mandala Vassal, all its current subjects are transfered to its new overlord. It gains a bonus to tax income, trade power and caravan power. If it has at least 15 provinces, it grants its overlord a bonus on trade power, prestige and legitimacy, as well as a merchant. If it has 25 or more provinces, it receives an additional merchant itself, as well as liberty desire. If a Mandala Vassal becomes too powerful and reaches 75% liberty desire, it can take over its overlord's title and become the overlord.[/i]
 
 [b]Conditions (possible overlord):[/b]
 [list]
@@ -453,7 +453,7 @@ If a subject gives an additional merchant, the bonuses it gives to its overlord 
 [/list]
 
 [h1]Integrated Tribe[/h1]
-[i]An Integrated Tribe is a mixture of a vassal and a tributary. It joins its overlord's wars, costs a diplomatic relation and pays tribute to its overlord. It is not as restricted as a normal vassal in its diplomatic actions. If scutage is activated, it pays 10% of its yearly manpower to its overlord, if it doesn't have the same culture as its overlord, otherwise it pays 25%. It can pay an additional tribute to its overlord every 5 years, if it wants to. It has a slightly reduced liberty desire and can only become independent by war. An Integrated Tribe can only be established by tribal nations or by nations in the Caucasia region that are in the Caucasian culture group on other tribals or Caucasian nations in Caucasia.[/i]
+[i]An Integrated Tribe is a mixture of a vassal and a tributary. It joins its overlord's wars, costs a diplomatic relation and pays tribute to its overlord. It less restricted than a vassal in its diplomacy. If scutage is activated, it pays 10% of its yearly manpower to its overlord, or 25% if it has the same culture as its overlord. It can pay an additional tribute to its overlord every 5 years, if it wishes. It has reduced liberty desire and can only become independent by war. An Integrated Tribe can only be established by tribal nations or by nations in the Caucasia region that are in the Caucasian culture group with other tribals or Caucasian nations in Caucasia.[/i]
 
 [b]Conditions (possible overlord):[/b]
 [list]
@@ -482,7 +482,7 @@ If a subject gives an additional merchant, the bonuses it gives to its overlord 
 [/list]
 
 [h1]Dutch Province[/h1]
-[i]A Dutch Province behaves similar as a normal vassal and joins its overlord wars, but has a slightly reduced base liberty desire and slightly increased liberty desire from development, is not restricted in its diplomatic actions and costs no diplomatic relation. It gains a bonus on trade efficiency and diplomatic reputation and grants its overlord a bonus on diplomatic reputation. It can only be established by Dutch or Flemish countries in the Low Countries region on Dutch or Flemish countries in the Low Countries region. Only one country can have Dutch Provinces at the same time and it can only have 5 at most. The overlord can enact up to three reforms - to disallow Dutch Provinces to declare war on each other, to disallow Dutch Provinces to declare wars in general (activating scutage allows them to declare war again) and to disable Dutch Provinces Elections. Unless the third reform was enacted, each January the current overlord and all Dutch Provinces elect the next overlord. If a different country than the current overlord wins, all Dutch Provinces are transfered to that country and the current overlord becomes a Dutch Province himself. The third reform also allows Dutch Provinces to declare independence wars, before they can only diplomatically request independence. After all three reforms were enacted, the current overlord receives a special decision to form the Netherlands with the help of the Dutch Provinces.[/i]
+[i]A Dutch Province behaves similarly to a normal vassal and joins its overlord's wars, has a slightly reduced base liberty desire and slightly increased liberty desire from development, is not restricted in its diplomacy and doesn't cost a diplomatic relation. It gains a bonus to trade efficiency and diplomatic reputation and grants its overlord a bonus to diplomatic reputation. It can only be established by Dutch or Flemish countries in the Low Countries region with Dutch or Flemish countries in the Low Countries region. Only one country can have Dutch Provinces at the same time and they can only have 5 at most. The overlord can enact up to three reforms - forbidding Dutch Provinces to declare war on each other, forbidding Dutch Provinces to declare wars in general (activating scutage allows them to declare war again) and to disable Dutch Provinces Elections. Unless the third reform has been enacted, each January the current overlord and all Dutch Provinces elect the next overlord. If a country other than the current overlord wins, all Dutch Provinces are transfered to that country and the current overlord becomes a Dutch Province themself. The third reform also allows Dutch Provinces to declare independence wars, before which they can only diplomatically request independence. \nAfter all three reforms are enacted, the current overlord receives a special decision to form the Netherlands with the help of the Dutch Provinces.[/i]
 
 [b]Conditions (possible overlord):[/b]
 [list]
@@ -516,7 +516,7 @@ If a subject gives an additional merchant, the bonuses it gives to its overlord 
 [/list]
 
 [h1]Revolutionary Confederation[/h1]
-[i]A Revolutionary Confederation is a mixture of a vassal and a personal union. If it borders its overlord or other Revolutionary Confederations of its overlord as well as another country that is not a Revolutionary Confederation and not the Revolution Target, it does not cost a diplomatic relation. It can only be established by the Revolution Target on independent monarchies and republics with their capital on the same continent. A Revolutionary Confederation can only be established by war with the 'Spread the Revolution' or 'Crush the Revolution' Casus Belli. It has a lower liberty desire than vassals and pays taxes to its overlord, but it has the same ruler as its overlord. A Revolutionary Confederation gains half of the bonuses the Revolution Target gains and gives its overlord a bonus on the military skill of future rulers and legitimacy, if it is a monarchy, a bonus to republican tradition and influence of the Girondists faction, if it's a republic, as well as a bonus on aggressive expansion. If the overlord of a Revolutionary Confederation is not the Revolution Target anymore, the Revolutionary Confederation receives additional +100% liberty desire.[/i]
+[i]A Revolutionary Confederation is a mixture of a vassal and a personal union. If it borders its overlord or another Revolutionary Confederation of its overlord as well as another country that is not a Revolutionary Confederation and not the Revolutionary Target, it does not cost a diplomatic relation. It can only be established by the Revolution Target with independent monarchies and republics with their capital on the same continent. A Revolutionary Confederation can only be established by war with the Spread the Revolution or Crush the Revolution Casus Belli. It has a lower liberty desire than vassals and pays taxes to its overlord, but has the same ruler as its overlord. A Revolutionary Confederation gains half of the bonuses the Revolutionary Target gains. If it is a monarchy gives its overlord a bonus to legitimacy and the military skill of future rulers, or a bonus to republican tradition and influence of the Girondists faction if it is a republic, as well as reduction to aggressive expansion. If the overlord of a Revolutionary Confederation is not the Revolutionary Target anymore, the Revolutionary Confederation receives an additional +100% liberty desire.[/i]
 
 [b]Conditions (possible overlord):[/b]
 [list]
@@ -541,7 +541,7 @@ If a subject gives an additional merchant, the bonuses it gives to its overlord 
 [/list]
 
 [h1]Satrapy[/h1]
-[i]A Satrapy is a mixture of a vassal and a colonial nation. It behaves like a vassal, but is a little bit less restricted in its diplomatic actions and has a reduced liberty desire, and pays tariffs like a colonial nation. It only joins its overlord's defensive wars, but the overlord can conscript troops from all Satrapies, which works similar to the Daimyo's Sword Hunt. A Satrapy will automatically switch to a Republican Dictatorship. It can only be established by monarchies that are either Persia or a nation with the primary culture Persian, with a primary culture in the Iranian group that is also their dominant culture, with a primary culture not in the Iranian group but with any of them being the dominant culture as well as an accepted culture or with Persian as the accepted culture and at least 10 Persian provinces on neighboring countries. A Satrapy does not cost a diplomatic relation, if it has it's capital in the same region as its overlord. A Satrapy gains a bonus on culture conversion cost and primary culture advisor cost and gives its overlord a bonus on possible advisors and minimum autonomy in territories.[/i]
+[i]A Satrapy is a mixture of a vassal and a colonial nation. It behaves like a vassal, but is less restricted in its diplomacy and has reduced liberty desire while paying tariffs like a colonial nation. It only joins its overlord's defensive wars, but the overlord can conscript troops from all Satrapies, which works similarly to the Daimyo's Sword Hunt. A Satrapy will automatically switch to a Republican Dictatorship. It can only be established by monarchies that are either Persia or a nation with the primary culture Persian, with a primary culture in the Iranian group that is also their dominant culture, with a primary culture not in the Iranian group but with any of them being the dominant culture as well as an accepted culture or with Persian as an accepted culture and at least 10 Persian provinces. If it has it's capital in the same region as its overlord, a Satrapy does not cost a diplomatic relation. A Satrapy gains a reduction to culture conversion cost and primary culture advisor cost and gives its overlord a bonus to possible advisors and minimum autonomy in territories.[/i]
 
 [b]Conditions (possible overlord):[/b]
 [list]
@@ -571,7 +571,7 @@ If a subject gives an additional merchant, the bonuses it gives to its overlord 
 [/list]
 
 [h1]Naval March[/h1]
-[i]A Naval March behaves like a normal march, but receives naval bonuses instead of army related bonuses. Furthermore, it gives its overlord a bonus on naval force limit. It can only be established by countries that have at least 5 ports and at least 10 ships in their vassals with at least 1 port.[/i]
+[i]A Naval March behaves like a normal march, but receives naval bonuses instead of army related bonuses. Furthermore, it gives its overlord a bonus to naval force limit. It can only be established by countries that have at least 5 ports and at least 10 ships in their vassals with at least 1 port.[/i]
 
 [b]Conditions (possible overlord):[/b]
 [list]
@@ -598,7 +598,7 @@ If a subject gives an additional merchant, the bonuses it gives to its overlord 
 [/list]
 
 [h1]Trade Outpost[/h1]
-[i]A Trade Outpost pays taxes to its overlord, but does not join its overlord's wars and cannot declare its own wars. Furthermore, it does not cost a relation slot and can only own 1 province. If a country has at least one Trade Outpost in a trade node, it gains +35 trade power in that node. A Trade Outpost gains a bonus on province trade power, produced trade goods, trade steering and trade efficiency and gives its overlord a bonus on center of trade upgrade cost, foreign trade power and trade company investment cost. Additionally it gives its overlord 1 merchant. It can only be established by independent nations with their capital in Europe that either have at least 1 colonist or are a Merchant Republic. A Trade Outpost can be created in South China, North China, Korea, Japan and Liaoning via decision or by asking nations diplomatically or forcing nations by war. Trade Outposts are voluntary subjects, which means they can decide to become independent without an independence war.[/i]
+[i]A Trade Outpost pays taxes to its overlord, but does not join its overlord's wars and cannot declare its own wars. Furthermore, it does not cost a diplomatic relation and can only own 1 province. If a country has at least one Trade Outpost in a trade node, it gains +35 trade power in that node. A Trade Outpost gains a bonus to province trade power, goods produced, trade steering and trade efficiency and gives its overlord a bonus to center of trade upgrade cost, foreign trade power and trade company investment cost. Additionally it gives its overlord 1 merchant. It can only be established by independent nations with their capital in Europe that either have at least 1 colonist or are a Merchant Republic. A Trade Outpost can be created in South China, North China, Korea, Japan and Liaoning via decision or by asking nations diplomatically or forcing nations by war. Trade Outposts are voluntary subjects, which means they can decide to become independent without an independence war.[/i]
 
 [b]Conditions (possible overlord):[/b]
 [list]
@@ -634,7 +634,7 @@ If a subject gives an additional merchant, the bonuses it gives to its overlord 
 [/list]
 
 [h1]Integrated Personal Union[/h1]
-[i]An Integrated Personal Union behaves like a normal personal union, but cannot be integrated and its development affects its liberty desire. However there's a 10% chance every 10 years that it is integrated automatically for a cost of 100 diplomatic power, if its liberty desire is below 50%. Furthermore an Integrated Personal Union that is an elector halfs the penalty for being a subject for the imperial election reasons.[/i]
+[i]An Integrated Personal Union behaves like a normal personal union, but cannot be integrated and its development affects its liberty desire. However there's a 10% chance every 10 years that it is integrated automatically for a cost of 100 £dip£, if its liberty desire is below 50%. Furthermore an elector in an Integrated Personal Union is considered a 'more legitimate subject elector'.[/i]
 
 [b]Conditions (possible overlord):[/b]
 [list]
@@ -659,7 +659,7 @@ If a subject gives an additional merchant, the bonuses it gives to its overlord 
 [/list]
 
 [h1]Brother Kingdom[/h1]
-[i]A Brother Kingdom must have the same dynasty as its overlord and can be converted into a personal union after 25 years. It joins its overlord's wars, but is barely restricted in its own diplomacy. It gains a bonus on future ruler skill in all categories and grants its overlord a bonus on legitimacy, heir chance and manpower recovery speed. A Brother Kingdom can declare its independence diplomatically, however the overlord can decline it, which leads to an independence war. It can only be established by independent nations in other independent nations or vassals with the same dynasty.[/i]
+[i]A Brother Kingdom must have the same dynasty as its overlord and can be converted into a personal union after 25 years. It joins its overlord's wars, but is barely restricted in its diplomacy. It gains a bonus to future ruler skill in all categories and grants its overlord a bonus to legitimacy, heir chance and manpower recovery speed. A Brother Kingdom can declare its independence diplomatically, which the overlord can decline, leading to an independence war. It can only be established by independent nations in other independent nations or vassals with the same dynasty.[/i]
 
 [b]Conditions (possible overlord):[/b]
 [list]
@@ -690,7 +690,7 @@ If a subject gives an additional merchant, the bonuses it gives to its overlord 
 [/list]
 
 [h1]Iqta[/h1]
-[i]An Iqta behaves similar as a normal vassal, but is a little bit less restricted in its diplomatic actions, has a slightly reduced liberty desire and pays less money to its overlord, and is locked to be a monarchy. It joins its overlord's wars and doesn't cost a relation slot, if it has its overlord's religion and at least 75% religious unity. It has to have its overlord's religion for him to prepare the annexation, which is needed to be able to annex it. This preparation increases its liberty desire and gives it maluses that effectively half the bonuses it gets from being an Iqta. It gains bonuses on tax income, mercenacy cost and army maintenance cost and grants its overlord a bonus on missionary strength and missionary maintenance cost. Furthermore, an Iqta is influenced towards Mysticism, if it follows its overlord's religion, and towards Legalism, if it doesn't. Enabling scutage will change the liberty desire of an Iqta by -10% as long as the annexation was not prepared. It can only be established by Muslim nations in other, neighboring Muslim nations, and a country can have at most 2 Iqtas. If an Iqta switches to another religion group, it is forced to either switch to its overlord's religion or declare an independence war. A Muslim Iqta can get events that the spread its overlord's religion in its provinces.[/i]
+[i]An Iqta behaves similarly to a vassal, but is less restricted in its diplomacy, has reduced liberty desire, pays less money to its overlord and is locked to monarchy. It joins its overlord's wars and doesn't cost a diplomatic relation if it has its overlord's religion and at least 75% religious unity. It has to have its overlord's religion for them to prepare annexation, a prerequisite to annexing. This preparation increases its liberty desire and grants maluses that effectively halve the bonuses it gets from being an Iqta. It gains bonuses to tax income, mercenary cost and army maintenance cost and grants its overlord bonuses to missionary strength and missionary maintenance cost. Furthermore, an Iqta is influenced towards Mysticism if it follows its overlord's religion and towards Legalism if it doesn't. Enabling scutage will change the liberty desire of an Iqta by -10% as long as annexation has not been prepared. It can only be established by Muslim nations in other neighboring Muslim nations, and a country can have no more than 2 Iqtas. If an Iqta switches to another religion group, it must either switch to its overlord's religion or declare an independence war. A Muslim Iqta can get events that the spread its overlord's religion in its provinces.[/i]
 
 [b]Conditions (possible overlord):[/b]
 [list]
@@ -721,7 +721,7 @@ If a subject gives an additional merchant, the bonuses it gives to its overlord 
 [/list]
 
 [h1]Papal Sanctuary[/h1]
-[i]A Papal Sanctuary is independent in its diplomacy and joins its overlord's wars. The overlord is called to arms to the Papal Sanctuary's defensive wars, but the overlord can decline. It cannot be annexed and doesn't cost a diplomatic relation, if it is a theocracy, Curia Controller, Defender of Faith or a neighbor of the Crusade Target. It pays only very few taxes to its overlord, but grants it a bonus on tax income, diplomatic reputation and devotion. A Papal Sanctuary itself gains a bonus on tax income, legitimacy equivalent, yearly papal influence and religious unity. The overlord can ask a Papal Sanctuary to become a theocracy and to become a direct vassal. It can decide to become independent diplomatically, however only with enough liberty desire, if excommunicated, if the overlord is excommunicated or if the overlord doesn't fulfill the requirements of being an overlord anymore. A Papal Sanctuary can only be established by the Catholic Papal State or owner of the Papal government or "Kingdom of God" modifier (if the Papal State doesn't exist) in independent, Catholic nations on the same continent that neither were excommunicated nor have enacted the Statute in Restraint of Appeals.[/i]
+[i]A Papal Sanctuary is independent in its diplomacy and joins its overlord's wars. The overlord is called to arms by the Papal Sanctuary's defensive wars, but the overlord can decline. It cannot be annexed and if it is a theocracy, Curia Controller, Defender of Faith or a neighbor of the Crusade Target, doesn't cost a diplomatic relation. It pays very little to its overlord, but grants them a bonus to tax income, diplomatic reputation and devotion. A Papal Sanctuary itself gains a bonus to tax income, legitimacy equivalent, yearly papal influence and religious unity. The overlord can ask a Papal Sanctuary to become a theocracy and to become a direct vassal. It can decide to become independent diplomatically, though only with enough liberty desire, if excommunicated, if the overlord is excommunicated or if the overlord doesn't fulfill the requirements of being overlord anymore. A Papal Sanctuary can only be established by the Catholic Papal State or owner of the Papal government or \"Kingdom of God\" modifier (if the Papal State doesn't exist) in independent, Catholic nations on the same continent that are neither excommunicated nor have the Statute in Restraint of Appeals.[/i]
 
 [b]Conditions (possible overlord):[/b]
 [list]
@@ -754,7 +754,7 @@ If a subject gives an additional merchant, the bonuses it gives to its overlord 
 [/list]
 
 [h1]Imperial Feud[/h1]
-[i]An Imperial Feud is independent in its diplomacy and doesn't join its overlord's wars. It doesn't cost a diplomatic relation and pays tribute to its overlord. The overlord is called to arms to the Imperial Feud's defensive wars, but the overlord can decline. However declining will decrease the other Imperial Feud's and HRE members opinions of him. An Imperial Feud gains a bonus on tax income, fort maintenance and land forcelimit and grants its overlord a bonus on tax income and imperial authority gain. It can be asked to join the HRE after 5 or to become a vassal after 10 years. It can ask to join the HRE after 3 years itself. It has low liberty desire, but gains additional liberty desire after being 11, 15, 20, 25 and 30 years under its overlord. An Imperial Feud is a voluntary subject, which means it can become independent diplomatically. An Imperial Feud can only be established by the Holy Roman Emperor in non-HRE countries that border the HRE before the "Revoke the Privilegia" reform. If the emperor title gets passed to another country, an Imperial Feud can either become independent or will be passed from its old overlord to the new emperor. The emperor can have at most 5 Imperial Feuds at the same time.[/i]
+[i]An Imperial Feud is independent in its diplomacy and doesn't join its overlord's wars. It doesn't cost a diplomatic relation and pays tribute to its overlord. The overlord is called to arms by the Imperial Feud's defensive wars, but the overlord can decline. Declining will decrease the other Imperial Feuds' and HRE members' opinions of the overlord. An Imperial Feud gains a bonus to tax income, fort maintenance and land force limit and grants its overlord a bonus to tax income and imperial authority gain. It can be asked to join the HRE after 5 years, or to become a vassal after 10 years. It can ask to join the HRE after 3 years. It has low liberty desire, but gains additional liberty desire after 11, 15, 20, 25 and 30 years under its overlord. An Imperial Feud is a voluntary subject, which means it can become independent diplomatically. An Imperial Feud can only be established by the Holy Roman Emperor in non-HRE countries that border the HRE before the \"Revoke the Privilegia\" reform. If the emperor title gets passed to another country, an Imperial Feud can either become independent or will be passed from its old overlord to the new emperor. The emperor can have at most 5 Imperial Feuds at the same time.[/i]
 
 [b]Conditions (possible overlord):[/b]
 [list]
@@ -789,7 +789,7 @@ If a subject gives an additional merchant, the bonuses it gives to its overlord 
 [/list]
 
 [h1]Chiefdom[/h1]
-[i]Chiefdoms are very similar to marches, however they get a bonus to horde unity, manpower and army morale. Furthermore, they give their overlord a bonus on core creation cost and fabricate claim cost. If their overlord is a horde, he has two additional actions that he can use on Chiefdoms: In exchange for horde unity, he can gain a small bonus on looting speed and movement speed as well as a small malus on aggressive expansion impact. And in exchange for the subject getting an increase in liberty desire, he can gain a small bonus on horde unity and a small malus on aggressive expansion impact. A Chiefdom gains additional liberty desire, if it has at least 75% of its overlord's army size. It can only be established by independent nations following a religion of the Pagan, American Pagan, Slavic Pagan or German Pagan religion groups or the Druidist or Zamolxist religions, on their own vassals that follow any of these religions or a religion in any of those groups as well.[/i]
+[i]Chiefdoms are very similar to marches, however they get a bonus to horde unity, manpower and army morale. Furthermore, they give their overlord a reduction to core creation cost and fabricate claim cost. If their overlord is a horde, they have two additional actions that they can use on Chiefdoms: In exchange for horde unity, they can gain a small bonus on looting speed and movement speed as well as a small increase to aggressive expansion impact. In exchange for increasing the subject's liberty desire, they can gain a small bonus to horde unity and a small increase to aggressive expansion impact. A Chiefdom gains additional liberty desire if it has at least 75% of its overlord's army size. It can only be established by independent nations following a religion of the Pagan, American Pagan, Slavic Pagan or German Pagan religion groups or the Druidist or Zamolxist religions, on their own vassals that follow any of these religions or a religion in any of those groups as well.[/i]
 
 [b]Conditions (possible overlord):[/b]
 [list]
@@ -815,7 +815,7 @@ If a subject gives an additional merchant, the bonuses it gives to its overlord 
 [/list]
 
 [h1]Native Reservation[/h1]
-[i]A Native Reservation is restricted in its diplomacy and doesn't join its overlord's wars. It doesn't cost a diplomatic relation and transfers trade power to its overlord. It gains a bonus on tax income and development cost as well as a malus on land forcelimit. Further more it gains a bonus on institution spread and embracement cost, if it is behind its overlord in institutions, as well as additional liberty desire, if it is ahead. It also gains a bonus on a specific technology cost, if it is behind its overlord in the specific technology, as well as additional liberty desire, if it is ahead. A civilized Native Reservation, which means one that doesn't have a native or tribal government, grants its overlord a bonus on yearly prestige and diplomatic reputation. An uncivilized Native Reservation grants its overlord a bonus on army morale and has a higher liberty desire. A Native Reservation can only be established by independent former colonial nations in North America, South America, Africa or Oceania or independent nations with at least 1 colonial subject and a native uprising chance modifier value of less than -90% in independent nations with their capital in North America, South America, Africa or Oceania that were no colonial nations before and that they have a very small border distance to.[/i]
+[i]A Native Reservation is restricted in its diplomacy and doesn't join its overlord's wars. It doesn't cost a diplomatic relation and transfers trade power to its overlord. It gains a bonus to tax income and development cost as well as a malus to land force limit. Furthermore it gains a bonus to institution spread and embracement cost if it is behind its overlord in institutions, as well as additional liberty desire if it is ahead. It also gains a bonus to a specific technology cost if it is behind its overlord in the specific technology, as well as additional liberty desire if it is ahead. A civilized Native Reservation, which means one that doesn't have a native or tribal government, grants its overlord a bonus to yearly prestige and diplomatic reputation. An uncivilized Native Reservation grants its overlord a bonus to army morale and has a higher liberty desire. A Native Reservation can only be established by independent former colonial nations in North America, South America or Oceania or independent nations with at least 1 colonial subject and a native uprising chance modifier value of less than -90% in independent nations with their capital in North America, South America or Oceania that were not colonial nations before and that they have a very small border distance to.[/i]
 
 [b]Conditions (possible overlord):[/b]
 [list]
@@ -849,7 +849,7 @@ If a subject gives an additional merchant, the bonuses it gives to its overlord 
 [/list]
 
 [h1]Administrative Region[/h1]
-[i]An Administrative Region is limited in its own diplomacy, does not join its overlord's wars and does not cost a diplomatic relation. It gains a bonus on future ruler's administrative, diplomatic and military skill as well as governing capacity and grants its overlord a bonus on vassal tax and administrative efficiency. Furthermore it grants a bonus for tax income to the vassals of its overlord. Additionally, when a new ruler ascends to the throne in an Administrative Region, the overlord gains the new ruler's skills times 10 in monarch points. A country can only have 1 Administrative Region at the same time. An Administrative Region can be created by countries with at least 100 total development in their neighboring vassals that have a monarchy or theocracy and that have at least 25 development in their capital.[/i]
+[i]An Administrative Region is limited in its diplomacy, does not join its overlord's wars and does not cost a diplomatic relation. It gains a bonus to future ruler's administrative, diplomatic and military skill as well as governing capacity and grants its overlord a bonus to vassal tax and administrative efficiency. Furthermore it grants a bonus to tax income to the vassals of its overlord. Additionally, when a new ruler ascends to the throne in an Administrative Region, the overlord gains the new ruler's skills times 10 in monarch points. A country can only have 1 Administrative Region at the same time. An Administrative Region can be created by countries with at least 100 total development in their neighboring vassals that have a monarchy or theocracy and that have at least 25 development in their capital.[/i]
 
 [b]Conditions (possible overlord):[/b]
 [list]
@@ -884,7 +884,7 @@ If a subject gives an additional merchant, the bonuses it gives to its overlord 
 [/list]
 
 [h1]Viking Settlement[/h1]
-[i]A Viking Settlement is a mixture of a Colony and a Tributary State. It behaves like a Colony, but doesn't pay tariffs but tribute. It has less liberty desire than a Colony and the overlord gets access to the 'Support Loyalists' subject interaction to further reduce it. It gets the same bonuses as a Naval March, but weaker. Furthermore it gets 1 colonist and the ability to raid coasts. It gives its overlord a bonus on sailors and naval forcelimit and grants it the ability to raid coasts as well. A Viking Settlement must be Norse and is automatically created a few days after a Colonial Nation spawned in North America, if its overlord is Norse. If the overlord changes religion, the Viking Settlement will be reverted to a Colony again.[/i]
+[i]A Viking Settlement is a mixture of a Colony and a Tributary State. It behaves like a Colony, but tribute in place of tariffs. It has less liberty desire than a Colony and the overlord gets access to the 'Support Loyalists' subject interaction to further reduce it. It gets the same bonuses as a Naval March, but weaker. Furthermore it gets 1 colonist and the ability to raid coasts. It gives its overlord a bonus to sailors and naval force limit and grants them the ability to raid coasts as well. A Viking Settlement must be Norse and is automatically created a few days after a Colonial Nation spawned in North America, if its overlord is Norse. If the overlord changes religion, the Viking Settlement will be reverted to a Colony again.[/i]
 
 [b]Conditions (possible overlord):[/b]
 [list]
@@ -911,7 +911,7 @@ If a subject gives an additional merchant, the bonuses it gives to its overlord 
 [/list]
 
 [h1]Banking Family Clan[/h1]
-[i]A Banking Family Clan is a voluntary subject, which means it can decide to become independent without an independence war. A Banking Family Clan doesn't cost a relation slot and does not join its overlord's wars. It is independent in its own diplomacy. It has a slightly reduced liberty desire compared to vassals and cannot be annexed. It grants its overlord a bonus on diplomatic reputation and interest per annum and gains a bonus on diplomatic reputation and tax income. About every 10 years the overlord gets an event to interact with the Banking Family Clan. A country can only have 1 Banking Family Clan at the same time and a Banking Family Clan is only allowed to have at max 4 provinces. A Banking Family Clan can be established by independent nations that are a republic or have special government reforms or selected specific idea groups in small republics with highly developed capital provinces.[/i]
+[i]A Banking Family Clan is a voluntary subject, which means it can decide to become independent without an independence war. A Banking Family Clan doesn't cost a diplomatic relation and doesn't join its overlord's wars. It is independent in its own diplomacy. It has a reduced liberty desire compared to vassals and cannot be annexed. It grants its overlord a bonus to diplomatic reputation and interest per annum and gains a bonus to diplomatic reputation and tax income. Approximately every 10 years the overlord gets an event to interact with the Banking Family Clan. A country can only have 1 Banking Family Clan at the same time and a Banking Family Clan is only allowed at max 4 provinces. A Banking Family Clan can be established by independent nations that are a republic or have special government reforms or selected specific idea groups in small republics with highly developed capital provinces.[/i]
 
 [b]Conditions (possible overlord):[/b]
 [list]

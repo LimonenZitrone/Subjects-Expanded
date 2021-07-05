@@ -36,6 +36,17 @@ can_colonize_province = {
 		}
 	}
 	condition = {
+		tooltip = TRADE_OUTPOST_CANNOT_COLONIZE
+		potential = {
+			FROM = {
+				is_subject_of_type = trade_outpost
+			}
+		}
+		allow = {
+			always = no
+		}
+	}
+	condition = {
 		tooltip = NEED_TECH_TO_COLONIZE
 		potential = {
 			has_province_modifier = hard_to_colonize
@@ -56,6 +67,17 @@ can_colonize_province_siberian_frontier = {
 		}
 		allow = {
 			culture = FROM
+		}
+	}
+	condition = {
+		tooltip = TRADE_OUTPOST_CANNOT_COLONIZE
+		potential = {
+			FROM = {
+				is_subject_of_type = trade_outpost
+			}
+		}
+		allow = {
+			always = no
 		}
 	}
 	condition = {

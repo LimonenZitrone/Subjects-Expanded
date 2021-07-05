@@ -209,6 +209,7 @@
  NO_CAPITAL_MOVE_DUTCH_PROVINCE: "§RA Dutch Province cannot move its capital outside of the Low Countries region.§!"
  NATIVE_RESERVE_CANNOT_COLONIZE_PROVINCE_WITH_OTHER_CULTURE: "§RA Native Reservation cannot colonize a province with a different culture than their primary culture.§!"
  IMPERIAL_FEUD_SUBJECTS_CANNOT_ADD_PROVINCES_TO_THE_HRE: "§RAn Imperial Feud cannot add provinces to the HRE. You need to become a member of the HRE first.§!"
+ TRADE_OUTPOST_CANNOT_COLONIZE: "§RTrade Outposts are not allowed to colonize.§!"
 
  # Subject Types:
  NEVER_HAD_A_COLONIST: "We never had a colonist"

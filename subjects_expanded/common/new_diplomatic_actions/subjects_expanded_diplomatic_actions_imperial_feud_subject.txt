@@ -518,8 +518,7 @@ establish_imperial_feud_subject = {
 			name = FROM_IS_CURIA_CONTROLLER
 			limit = {
 				FROM = {
-					tag = PAP
-					is_papal_controller = no
+					is_papal_controller = yes
 				}
 			}
 			export_to_variable = {
